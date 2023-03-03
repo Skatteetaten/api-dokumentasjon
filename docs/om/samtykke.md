@@ -23,12 +23,12 @@ Når konsumenten har fått tilgang til Altinn's Samtykkeløsning og API'et hos S
 
 Den overordnetete tekniske flyten for samtykkedialogen blir da som følger:
 1. Bruker logger seg på konsumentens nettløsning f.eks for å søke om lån eller se sine krav og betalinger. Konsument må ha brukerens samtykke eller fullmakt for å innhente opplysninger på vegne av denne.
-2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med ServiceCode og ServiceCodeEdition for de aktuelle tjenestene og mottar en AuthorizationCode.
-3. Konsument sender brukeren til samtykkesiden hos Altinn med Authorization Code fra samtykkeforespørselen og en RedirectURL.
+2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med *ServiceCode* og *ServiceCodeEdition* for de aktuelle tjenestene og mottar en *AuthorizationCode*.
+3. Konsument sender brukeren til samtykkesiden hos Altinn med *Authorization Code* fra samtykkeforespørselen og en *RedirectURL*.
 4. Brukeren blir presentert for samtykkesiden som beskriver hva det kan gis samtykke til i henhold til malen for den bestemte Samtykketjenesten.
-5. Bruker gir samtykke og sendes tilbake til konsumenten på Redirect URL'en som ble oppgitt.
-6. Konsument henter et samtykketoken fra Altinn ved bruk av Authorization Code https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token/
-7. Konsument bruker Skatteetatens API med samtykketokenet som AltinnSamtykke-headerverdi. Forespørselen må også inneholde et Maskinporten token, se egne beskrivelser av dette (lenke).
+5. Bruker gir samtykke og sendes tilbake til konsumenten på *Redirect URL'en* som ble oppgitt.
+6. Konsument henter et samtykketoken fra Altinn ved bruk av *Authorization Code* https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token/
+7. Konsument bruker Skatteetatens API med samtykketokenet som *AltinnSamtykke*-headerverdi. Forespørselen må også inneholde et Maskinporten token, se egne beskrivelser av dette.
 8. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
 ## Restriksjon på bruk av iFrames
