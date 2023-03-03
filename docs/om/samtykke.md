@@ -13,78 +13,22 @@ hide_table_of_contents: true
 
 ## Samtykke
 
-Samtykke gis via [samtykkeløsningen til Altinn](https://altinn.github.io/docs/utviklingsguider/samtykke/)
-
 ![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)
 
-For å bruke løsningen må virksomheten først redirecte skattepliktig til samtykkeløsningen til Altinn. Dersom skattepliktig samtykker til at ønskede data kan utleveres til virksomheten oppretter Altinn et samtykke (en representasjon av hva som er avtalt mellom Datakonsument og Skattepliktig). Virksomheten kan så hente data fra Skatteetatens datatjenester. Samtykket må sendes med dataforespørselen og blir kontrollert av Skatteetaten. 
+Konsument må få tilgang til Altinns samtykke og fullmaktsløsning: https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/komme-i-gang/. Skatteetaten er datakilden og har opprettet tjenestekoder og tjenestekodeutgavekoder for det aktuelle api'et og dette er beskrevet i dokumentasjonen for det enkelte api'et. Skatteetaten benytter ikke tjenesteeierstyrt rettighetsregister.
 
-## Tjenester med støtte for samtykke
+Når konsumenten har fått tilgang til Altinn's Samtykkeløsning og API'et hos Skatteetaten kan de be om samtykke i henhold til følgende beskrivelse: https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/be-om-samtykke/. Skatteetaten støtter kun Forhåndsregistrerte samtykkeforespørsler og det heller ikke mulig å overstyre den forhåndsdefinerte teksten. Request Message skal derfor ikke benyttes i forespørselen. 
 
-Samtykke fra skatteyter:
-  - [Inntekt API](../tjenester/inntekt.md)
-  - [Spesifisert summert skattegrunnlag API](../tjenester/spesifisertsummertskattegrunnlag.md)
-  
-Samtykke fra virksomhet
-  - [Arbeidsgiveravgift API](../tjenester/arbeidsgiveravgift.md)
-  - [Mva meldingsopplysning API](../tjenester/mva_meldingsopplysning.md)
-  - [Oppdrag utenlanske virksomheter API](../tjenester/oppdragutenlandskevirksomheter.md)
-  - [Restanser API](../tjenester/restanser.md)
-
-De spesifikke tjenestekodene som skal benyttes ligger dokumentert pr. api.
-
-
-## Skatteetaten sine krav ifm redirect til Altinn sin samtykketjeneste
-
-For å starte en samtykkeinngåelse må man benytte Altinn's løsning for samtykker.
-Nedenfor er en oversikt over hvilke parametre/verdier som må benyttes for å etablere samtykke for bruk av Skatteetaten sine datatjenester.
-
-For full oversikt over alle parametre som må/kan settes, se [Altinn: be om samtykke](https://altinn.github.io/docs/guides/samtykke/datakonsument/be-om-samtykke/#url)
-
-| parameter | forklaring | eksempelverdi |
-| ------ | ---------- | ------------- |
-| Resources | Punktum separert liste med ID_VERSJON for data tjenester man ønsker samtykke for. | 4628_210607.4804_210607 |
-| CoveredBy | Orgnummer for virksomhet. Må matche orgnummer til autentisert virksomhet | 123456789 |
-| HandledBy | Orgnummer for leverandøren, dersom tilgangen er delegert | 123456789 |
-| RedirectURL | Url-encoded url som sluttbruker skal redirectes til etter inngått samtykke | https%3A%2F%2Fwww.virksomhet.no |
-| ValidToDate | Kan maksimalt være 10 dager frem i tid. Skatteetaten vil avvise samtykker med gyldighetsperioder lengre perioder enn 10 dager (selv om samtykket benyttes innen 10 dager) |2017-04-30T10:30:00Z |
-| RequestMessage (tidl. DelegationContext) | I ny samtykkeløsning skal denne ikke fylles ut, tekstene er definert i malene  | N/A |
-| 4804_210607_fraOgMed | Parameter for Inntekt | 2018-03 |
-| 4804_210607_tilOgMed | Parameter for Inntekt | 2018-06 |
-| 4628_210607_inntektsaar | Parameter for Skattegrunnlag | 2017 |
-
-
-### Tjenesteparametre
-
-Når man starter samtykkeinngåelsen må man ha med tjenestespesifikke parametre for de tjenestene man vil ha samtykke for. 
-
-Eksempler for SBL:
-
-|Resource| obligatoriske parametere | forklaring | eksempel |
-|--------| ------ | ---------- | ------------- |
-| 4628_210607 | 4628_210607_inntektsaar| inntektsaar det skal hentes skattedata for | &4628_210607_inntektsaar=2017 |
-| 4804_210607 | 4804_210607_fraOgMed | startmåned det skal hentes inntektsopplysninger for | &4804_210607_fraOgMed=2018-08 |
-| 4804_210607 | 4804_210607_fraOgMed | sluttmåned det skal hentes inntektsopplysninger for | &4804_210607_tilOgMed=2018-10 |
-
-
-### Krav om kontroll av samtykke
-
-Hvis virksomheten ikke vet med sikkerhet hvem som har samtykket skal virksomheten kontrollere hvem samtykketoken gjelder for *før* spørring mot Datasamarbeid API utføres. Dette er spesielt aktuelt i tilfeller der det gis flere samtykker i samme saksflyt (for eksempel at flere personer søker lån sammen). 
-
-Se [Spørsmål og svar](../spoersmaalogsvar/samtykketokenfeil.md) for hvordan man kan kontrollere samtykketoken, og mulige årsaker til problemet.
-
-
-### Restriksjon på bruk av iFrames
-
-Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
-
-Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
-
-
-## Veksle inn authcode
-
-Se [Altinn: veksle inn autorisasjonskode i token](https://altinn.github.io/docs/guides/samtykke/datakonsument/hente-token/)
-
+Den overordnetete tekniske flyten for samtykkedialogen blir da som følger:
+1. Bruker logger seg på konsumentens nettløsning f.eks for å søke om lån eller se sine krav og betalinger. Konsument har behov for brukerens samtykke eller fullmakt for å innhente opplysninger på vegne av denne.
+2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med ServiceCode og ServiceCodeEdition for de aktuelle tjenestene og mottar en AuthorizationCode.
+3. Konsument sender brukeren til samtykkesiden hos Altinn med Authorization Code fra samtykkeforespørselen og en RedirectURL.
+3. Brukeren blir presentert for samtykkesiden som beskriver hva det kan gis samtykke til i henhold til malen for den bestemte Samtykketjenesten.
+4. Bruker gir samtykke og sendes tilbake til konsumenten på Redirect URL'en som ble oppgitt.
+5. Konsument henter et samtykketoken fra Altinn ved bruk av Authorization Code https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token/
+6. Konsument bruker Skatteetatens API med samtykketokenet som AltinnSamtykke-headerverdi. Forespørselen må også inneholde et Maskinporten token, se egne beskrivelser av dette (lenke).
+7. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
+ 
 ## Headerinformasjon
 For virksomheter som benytter samtykke må Altinn samtykketoken settes i header i request til Skatteetaten sine datatjenester. 
 
@@ -100,4 +44,24 @@ Det er ikke nødvendig for virksomheten å lese samtykketoken eller sette seg in
 
 Samtykketoken er base64-encodet og signert når det hentes fra Altinn sin datatjeneste. Det er bare gyldig i 30 sekunder, men man kan hente nytt token basert på authcoden så ofte man vil. 
 
-Samtykketoken er et JWT token og det finnes gode online verktøy for å lese tokens, f.eks. [jwt.io](https://jwt.io)
+Samtykketoken er et JWT token og det finnes gode online verktøy for å lese tokens, f.eks. [jwt.io](https://jwt.io)](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/)
+
+### Restriksjon på bruk av iFrames
+
+Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
+
+Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
+
+## Tjenester med støtte for samtykke
+
+Følgende api'er hos Skatteetaten støtter utlevering gjennom samtykke eller fullmakt. Detaljer om parameterne som er nødvendig for å få utstedt samtykker eller fullmakt er beskrevet i dokumentasjonen for hvert enkelt api.
+
+Samtykke fra skatteyter:
+  - [Inntekt API](../tjenester/inntekt.md)
+  - [Spesifisert summert skattegrunnlag API](../tjenester/spesifisertsummertskattegrunnlag.md)
+  
+Samtykke fra virksomhet
+  - [Arbeidsgiveravgift API](../tjenester/arbeidsgiveravgift.md)
+  - [Mva meldingsopplysning API](../tjenester/mva_meldingsopplysning.md)
+  - [Oppdrag utenlanske virksomheter API](../tjenester/oppdragutenlandskevirksomheter.md)
+  - [Restanser API](../tjenester/restanser.md)
