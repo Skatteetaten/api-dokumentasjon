@@ -22,8 +22,8 @@ Før du som konsument kan benytte Skatteetaten API'er som krever samtykke eller 
 Når du har fått tilgang til Altinn's Samtykkeløsning og API'et til Skatteetaten kan det [bes om samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/be-om-samtykke). Skatteetaten støtter kun *Forhåndsregistrerte samtykkeforespørsler* og det er heller ikke mulig å overstyre de forhåndsdefinerte tekstene. *Request Message* skal derfor ikke benyttes i forespørselen. 
 
 Den overordnetete flyten for samtykkedialogen blir da som følger:
-1. Bruker logger seg på nettløsningen for å f.eks. søke om lån eller se sine Krav og betalinger. Konsumenter må dermed et samtykke eller fullmakt for å innhente opplysninger på vegne av brukeren. 
-2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med *ServiceCode* og *ServiceCodeEdition* for de aktuelle tjenestene og mottar en *AuthorizationCode*. Dersom det allerede foreligger et gyldig samtykke innenfor utløpstiden (f.eks. 90 dager for *Krav og betalinger*), fortsetter flyten i steg 6.  
+1. Bruker logger seg på nettløsningen for å f.eks. søke om lån eller se sine Krav og betalinger. Konsumenter må dermed ha et samtykke eller fullmakt for å innhente opplysninger på vegne av brukeren. 
+2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med *ServiceCode* og *ServiceCodeEdition* for de aktuelle tjenestene og mottar en *AuthorizationCode*. Dersom det allerede foreligger et gyldig samtykke som er innenfor utløpstiden (f.eks. 90 dager for *Krav og betalinger*), fortsetter flyten i steg 6.  
 3. Konsument sender deretter brukeren til samtykkesiden hos Altinn med *Authorization Code* fra samtykkeforespørselen og en *RedirectURL*, som er en lenke til siden brukeren skal sendes tilbake til etter at samtykket er gitt.
 4. Brukeren blir presentert for samtykkesiden som inneholder en beskrivelse av hva det skal gis samtykke til. Det er Skatteetaten som har definert dette innholdet.
 5. Brukeren gir samtykke og sendes tilbake til konsumentens nettsider på *Redirect URL'en* som ble oppgitt.
