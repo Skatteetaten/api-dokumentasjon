@@ -16,20 +16,20 @@ hide_table_of_contents: true
 ![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)
 
 ### Få tilgang
-Før du som konsument kan benytte Skatteetaten API'er som krever samtykke eller fullmakt må du få tilgang til Altinn's samtykkeløsning. De har beskrevet det som skal til for å [komme i gang med samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/komme-i-gang). Skatteetaten er her datakilden og har opprettet tjenestekoder og tjenesteutgavekoder for api'ene. Nærmere informasjon om dette finner du i dokumentasjonen for det enkelte api'et. Skatteetaten benytter ikke tjenesteeierstyrt rettighetsregister.
+Før du som konsument kan benytte Skatteetaten API'er som krever samtykke eller fullmakt må du få tilgang til Altinn's samtykkeløsning. Altinn har beskrevet det som skal til for å [komme i gang med samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/komme-i-gang). Skatteetaten er her datakilden og har på forhånd opprettet tjenestekoder og tjenesteutgavekoder for api'ene. Nærmere informasjon om dette finner du i api-dokumentasjonen. Merk at Skatteetaten ikke benytter tjenesteeierstyrt rettighetsregister.
 
 ### Be om samtykke
 Når du har fått tilgang til Altinn's Samtykkeløsning og API'et til Skatteetaten kan det [bes om samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/be-om-samtykke). Skatteetaten støtter kun *Forhåndsregistrerte samtykkeforespørsler* og det er heller ikke mulig å overstyre de forhåndsdefinerte tekstene. *Request Message* skal derfor ikke benyttes i forespørselen. 
 
-Den overordnetete tekniske flyten for samtykkedialogen blir da som følger:
-1. Bruker logger seg på nettløsningen deres f.eks for å søke om lån eller se sine krav og betalinger. Konsumenter må ha brukerens samtykke eller fullmakt for å innhente opplysninger på vegne av denne. 
-2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med *ServiceCode* og *ServiceCodeEdition* for de aktuelle tjenestene og mottar en *AuthorizationCode*. Dersom det allerede foreligger et gyldig samtykke innenfor utløpstiden (f.eks. 90 dager for *Krav og betalinger*), kan man gå direkte til steg 7.  
-3. Konsument sender deretter brukeren til samtykkesiden hos Altinn med *Authorization Code* fra samtykkeforespørselen og en *RedirectURL*.
+Den overordnetete flyten for samtykkedialogen blir da som følger:
+1. Bruker logger seg på nettløsningen for å f.eks. søke om lån eller se sine Krav og betalinger. Konsumenter må dermed et samtykke eller fullmakt for å innhente opplysninger på vegne av brukeren. 
+2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med *ServiceCode* og *ServiceCodeEdition* for de aktuelle tjenestene og mottar en *AuthorizationCode*. Dersom det allerede foreligger et gyldig samtykke innenfor utløpstiden (f.eks. 90 dager for *Krav og betalinger*), fortsetter flyten i steg 6.  
+3. Konsument sender deretter brukeren til samtykkesiden hos Altinn med *Authorization Code* fra samtykkeforespørselen og en *RedirectURL*, som er en lenke til siden brukeren skal sendes tilbake til etter at samtykket er gitt.
 4. Brukeren blir presentert for samtykkesiden som inneholder en beskrivelse av hva det skal gis samtykke til. Det er Skatteetaten som har definert dette innholdet.
-5. Bruker gir samtykke og sendes tilbake til konsumenten på *Redirect URL'en* som ble oppgitt.
-6. Konsument [henter et Samtykketoken](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token) fra Altinn ved bruk av *Authorization Code* 
-7. Konsument bruker Skatteetatens API med samtykketokenet som *AltinnSamtykke*-headerverdi. Forespørselen må også inneholde et [Maskinporten-token](Sikkerhet.md).
-8. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
+5. Brukeren gir samtykke og sendes tilbake til konsumentens nettsider på *Redirect URL'en* som ble oppgitt.
+6. Konsument [henter et Samtykketoken](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token) fra Altinn ved bruk av *Authorization Code*. 
+7. Konsument sender med samtykketokenet i forespørslene til api'et gjennom å sette en HTTP-headerverdi: `AltinnSamtykke: <samtykketoken>`. Forespørselen må også inneholde et [Maskinporten-token](Sikkerhet.md).
+9. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
 ## Restriksjon på bruk av iFrames
 
