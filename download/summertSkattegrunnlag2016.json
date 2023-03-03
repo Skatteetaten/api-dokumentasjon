@@ -1,0 +1,123 @@
+{
+  "personidentifikator": "12345678910",
+  "inntektsaar": "2016",
+  "skjermet": false,
+  "grunnlag": [
+    {
+      "tekniskNavn": "samletOverskuddAvDeltakerlignetSelskapInnenAnnenNaering",
+      "beloep": 159730
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraDeltakerlignetSelskapInnenAnnenNaering",
+      "beloep": 419730
+    },
+    {
+      "tekniskNavn": "samletAndelAvInntektIBoligselskapEllerBoligsameie",
+      "beloep": 139730
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenJordbrukReindriftSkiferproduksjonOgAnnenNaering",
+      "beloep": 919460
+    },
+    {
+      "tekniskNavn": "samletOverskuddPaaUtgiftsgodtgjoerelse",
+      "beloep": 1568380
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygden",
+      "beloep": 459730
+    },
+    {
+      "tekniskNavn": "samletTrekkpliktigUtgiftsgodtgjoerelse",
+      "beloep": 1568380
+    },
+    {
+      "tekniskNavn": "samletUfoereytelseFraAndreEnnFolketrygden",
+      "beloep": 399730
+    },
+    {
+      "tekniskNavn": "dagpengerForNaeringsdrivendeOgFisker",
+      "beloep": 589730
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddAvUtleieAvFritidseiendom",
+      "beloep": 659730
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigAksjegevinstEllerGevinstVedRealisasjonAvObligasjonEllerVerdipapirfondsandel",
+      "beloep": 569730
+    },
+    {
+      "tekniskNavn": "samletAnnenInntekt",
+      "beloep": 619730
+    },
+    {
+      "tekniskNavn": "samletLottinntekt",
+      "beloep": 289730
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddFraUtleieAvFastEiendomIUtlandet",
+      "beloep": 639730
+    },
+    {
+      "tekniskNavn": "samletAnnenTrekkpliktigPensjon",
+      "beloep": 549460
+    },
+    {
+      "tekniskNavn": "samletLoennsinntekt",
+      "beloep": 1198650
+    },
+    {
+      "tekniskNavn": "samletUnderskuddINaeringsvirksomhet",
+      "beloep": 1539190
+    },
+    {
+      "tekniskNavn": "samletInntektFraSkattepliktigUtbytteForVerdipapirfondsandel",
+      "beloep": 519460
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigGevinstVedSalgAvFastEiendomMv",
+      "beloep": 899460
+    },
+    {
+      "tekniskNavn": "samletPensjonsinnbetalingTilIndividuellPensjonsordning",
+      "beloep": 259730
+    },
+    {
+      "tekniskNavn": "samletAnnenRenteinntekt",
+      "beloep": 679730
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem",
+      "beloep": 359730
+    },
+    {
+      "tekniskNavn": "samletSkjermingsfradrag",
+      "beloep": 449730
+    },
+    {
+      "tekniskNavn": "samletBarnepensjonOgLivrenteTilBarnUnderSyttenAar",
+      "beloep": 549460
+    },
+    {
+      "tekniskNavn": "samletSkattefriPensjonFraUtlandet",
+      "beloep": 169730
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektTilBarnUnderTrettenAar",
+      "beloep": 309730
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigUtbyttePaaAksjerIkkeRegistrertIVerdipapirsentralen",
+      "beloep": 219730
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering",
+      "beloep": 689460
+    },
+    {
+      "tekniskNavn": "samletAvtalefestetPensjon",
+      "beloep": 469730
+    }
+  ]
+}

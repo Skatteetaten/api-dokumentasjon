@@ -1,0 +1,1382 @@
+{
+  "personidentifikator": "12345678910",
+  "inntektsaar": "2017",
+  "skjermet": false,
+  "grunnlag": [
+    {
+      "tekniskNavn": "samledePaaloepteRenter",
+      "beloep": 779981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAndelAvInntektIBoligselskapEllerBoligsameie",
+      "beloep": 849981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedSalgAvAndelINOKUS",
+      "beloep": 1919981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "andreFradragsberettigedeKostnader",
+      "beloep": 59981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "dagpengerForNaeringsdrivendeOgFisker",
+      "beloep": 109981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOpptjenteRenterIUtlandskeBanker",
+      "beloep": 1309981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddAvUtleieAvFritidseiendom",
+      "beloep": 1609981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "arbeidsavklaringspenger",
+      "beloep": 79981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLottinntekt",
+      "beloep": 1289981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "inntektFraGevinstOgTapskonto",
+      "beloep": 339981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samledeUnderholdsbidrag",
+      "beloep": 819981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "investeringIOppstartsselskap",
+      "beloep": 369981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigGevinstVedSalgAvFastEiendomMv",
+      "beloep": 1599981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonMedTrekkfritak",
+      "beloep": 879981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygdenEksklusiveEktefelletillegg",
+      "beloep": 1689981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "etterlattepensjonFraFolketrygden",
+      "beloep": 139981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattefriPensjonFraUtlandet",
+      "beloep": 1569981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigGevinstVedRealisasjonAvObligasjonEllerVerdipapirfondsandel",
+      "beloep": 1579981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "annenArbeidsinntekt",
+      "beloep": 69981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraVerdipapirfondsandel",
+      "beloep": 1789981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonFoerAlderspensjon",
+      "beloep": 869981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvVerdipapirfondsandelKnyttetTilAksjedel",
+      "beloep": 289981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAndelAvFradragsberettigetFelleskostnadForBoligselskapEllerBoligsameie",
+      "beloep": 839981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAvtalefestetPensjon",
+      "beloep": 919981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletGevinstVedRealisasjonAvAndreFinansprodukter",
+      "beloep": 1149981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenJordbrukReindriftSkiferproduksjonOgAnnenNaering",
+      "beloep": 1479981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "fradragsberettigetTapVedRealisasjonAvFastEiendom",
+      "beloep": 239981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel",
+      "beloep": 279981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSupplerendeStoenad",
+      "beloep": 1649981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenReindrift",
+      "beloep": 1379981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenSkiferproduksjon",
+      "beloep": 1389981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFoerAlderspensjon",
+      "beloep": 1679981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 1279981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletGevinstVedRealisasjonAvVerdipapirfondsandelKnyttetTilRentedel",
+      "beloep": 1159981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenJordbrukGartneriOgPelsdyr",
+      "beloep": 1369981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenFiskeOgFangst",
+      "beloep": 1359981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigGevinstVedSalgAvAndelerIKNANSNOKUS",
+      "beloep": 1589981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraVerdipapirfondsandelTilBarn",
+      "beloep": 1799981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkjermingsfradrag",
+      "beloep": 1639981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletBarnepensjonOgLivrente",
+      "beloep": 929981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletBarnepensjonOgLivrenteTilBarnUnderSyttenAar",
+      "beloep": 939981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletInntektSomGirRettTilSaerskiltFradragForSjoefolk",
+      "beloep": 1229981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektTilBarnUnderTrettenAar",
+      "beloep": 1269981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvVerdipapirfondsandelKnyttetTilAksjedel",
+      "beloep": 1909981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "ektefelletilleggTilUfoeretrygd",
+      "beloep": 129981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "underskuddAvEnkeltpersonforetakFordeltFraEktefelle",
+      "beloep": 1929981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering",
+      "beloep": 1339981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "ektefelletilleggTilPensjon",
+      "beloep": 119981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "oevrigInntekt",
+      "beloep": 479981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvAksje",
+      "beloep": 1869981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "overskuddAvEnkeltpersonforetakInnenSkogbruk",
+      "beloep": 689981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "kapitalkostnadFraSkogbruk",
+      "beloep": 389981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvDeltakerlignetSelskapInnenAnnenNaering",
+      "beloep": 1319981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddFraUtleieAvFastEiendom",
+      "beloep": 1619981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "kapitalinntektFraSkogbruk",
+      "beloep": 379981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletFradragsberettigetUnderskuddVedUtleieAvFastEiendom",
+      "beloep": 1129981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddPaaUtgiftsgodtgjoerelse",
+      "beloep": 1399981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattefriLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 1729981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "fradragsberettigetTapVedRealisasjonAvFastEiendomIUtlandet",
+      "beloep": 249981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraDeltakerlignetSelskapInnenFiskeEllerFamiliebarnehage",
+      "beloep": 1449981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvAksjesparekonto",
+      "beloep": 1879981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 1249981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvAksjesparekonto",
+      "beloep": 259981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "inntektsfoeringAvNegativSaldo",
+      "beloep": 349981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvObligasjoner",
+      "beloep": 1889981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samledePaaloepteRenterPaaGjeldIUtlandet",
+      "beloep": 799981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenRenteinntekt",
+      "beloep": 899981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAvkastningAvKapitalforsikringsavtale",
+      "beloep": 909981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedSalgAvAndelISDF",
+      "beloep": 299981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "kvalifiseringsstoenad",
+      "beloep": 409981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem",
+      "beloep": 1349981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraAksjeIkkeRegistrertIVerdipapirsentralen",
+      "beloep": 1759981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletTapVedRealisasjonAvVerdipapirfondsandelKnyttetTilRentedel",
+      "beloep": 1659981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraDeltakerlignetSelskapInnenAnnenNaering",
+      "beloep": 1439981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapValutalaan",
+      "beloep": 1859981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoereytelseFraAndreEnnFolketrygden",
+      "beloep": 1699981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvFastEiendomMvIUtlandet",
+      "beloep": 269981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPensjonFraEOeSStatSomTilsvarerNorskAlderspensjonEllerAvtalefestetPensjon",
+      "beloep": 1409981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletRenteinntektPaaLaanTilSelskapSomSkalEkstrabeskattes",
+      "beloep": 1509981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletFremfoerbartUnderskuddFraTidligereAar",
+      "beloep": 1139981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddFraUtleieAvFastEiendomIUtlandet",
+      "beloep": 1629981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samledeUfoererenterOgLivrenter",
+      "beloep": 809981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUnderskuddINaeringsvirksomhet",
+      "beloep": 1709981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samledeOpptjenteRenterIInnenlandskeBanker",
+      "beloep": 769981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvDeltakerlignetSelskapInnenFiskeEllerFamiliebarnehage",
+      "beloep": 1329981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel",
+      "beloep": 1899981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenFiskeOgFangst",
+      "beloep": 1469981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "utbytteFraAksjesparekonto",
+      "beloep": 1959981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "overgangsstoenadTilEnsligForelder",
+      "beloep": 679981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem",
+      "beloep": 1459981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "andelIFellesTapVedSalgAvAndelISDF",
+      "beloep": 29981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigAksjegevinst",
+      "beloep": 1739981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPensjonFraFolketrygden",
+      "beloep": 1419981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonMedTrekkpliktEksklusiveEktefelletillegg",
+      "beloep": 889981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraAksjeINOKUSIkkeRegistrertIVerdipapirsentralen",
+      "beloep": 1769981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraAksjerRegistrertIVerdipapirsentralen",
+      "beloep": 1779981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigAvkastningEllerKundeutbytte",
+      "beloep": 1749981,
+      "kategori": [
+        "inntekt"
+      ]
+    }
+  ],
+  "skatteoppgjoersdato": "2018-10-04",
+  "svalbardGrunnlag": [
+    {
+      "tekniskNavn": "samledePaaloepteRenter",
+      "beloep": 779981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAndelAvInntektIBoligselskapEllerBoligsameie",
+      "beloep": 849981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedSalgAvAndelINOKUS",
+      "beloep": 1919981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "andreFradragsberettigedeKostnader",
+      "beloep": 59981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "dagpengerForNaeringsdrivendeOgFisker",
+      "beloep": 109981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOpptjenteRenterIUtlandskeBanker",
+      "beloep": 1309981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddAvUtleieAvFritidseiendom",
+      "beloep": 1609981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "arbeidsavklaringspenger",
+      "beloep": 79981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLottinntekt",
+      "beloep": 1289981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "inntektFraGevinstOgTapskonto",
+      "beloep": 339981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samledeUnderholdsbidrag",
+      "beloep": 819981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "investeringIOppstartsselskap",
+      "beloep": 369981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigGevinstVedSalgAvFastEiendomMv",
+      "beloep": 1599981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonMedTrekkfritak",
+      "beloep": 879981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygdenEksklusiveEktefelletillegg",
+      "beloep": 1689981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "underskuddAvEnkeltpersonforetakPaaSvalbard",
+      "beloep": 1939981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "etterlattepensjonFraFolketrygden",
+      "beloep": 139981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattefriPensjonFraUtlandet",
+      "beloep": 1569981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigGevinstVedRealisasjonAvObligasjonEllerVerdipapirfondsandel",
+      "beloep": 1579981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "annenArbeidsinntekt",
+      "beloep": 69981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraVerdipapirfondsandel",
+      "beloep": 1789981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonFoerAlderspensjon",
+      "beloep": 869981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvVerdipapirfondsandelKnyttetTilAksjedel",
+      "beloep": 289981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAndelAvFradragsberettigetFelleskostnadForBoligselskapEllerBoligsameie",
+      "beloep": 839981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAvtalefestetPensjon",
+      "beloep": 919981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletGevinstVedRealisasjonAvAndreFinansprodukter",
+      "beloep": 1149981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenJordbrukReindriftSkiferproduksjonOgAnnenNaering",
+      "beloep": 1479981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "fradragsberettigetTapVedRealisasjonAvFastEiendom",
+      "beloep": 239981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel",
+      "beloep": 279981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSupplerendeStoenad",
+      "beloep": 1649981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenReindrift",
+      "beloep": 1379981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenSkiferproduksjon",
+      "beloep": 1389981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFoerAlderspensjon",
+      "beloep": 1679981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 1279981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletGevinstVedRealisasjonAvVerdipapirfondsandelKnyttetTilRentedel",
+      "beloep": 1159981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenJordbrukGartneriOgPelsdyr",
+      "beloep": 1369981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenFiskeOgFangst",
+      "beloep": 1359981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigGevinstVedSalgAvAndelerIKNANSNOKUS",
+      "beloep": 1589981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraVerdipapirfondsandelTilBarn",
+      "beloep": 1799981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkjermingsfradrag",
+      "beloep": 1639981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletBarnepensjonOgLivrente",
+      "beloep": 929981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletBarnepensjonOgLivrenteTilBarnUnderSyttenAar",
+      "beloep": 939981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletInntektSomGirRettTilSaerskiltFradragForSjoefolk",
+      "beloep": 1229981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektTilBarnUnderTrettenAar",
+      "beloep": 1269981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvVerdipapirfondsandelKnyttetTilAksjedel",
+      "beloep": 1909981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "ektefelletilleggTilUfoeretrygd",
+      "beloep": 129981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "underskuddAvEnkeltpersonforetakFordeltFraEktefelle",
+      "beloep": 1929981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering",
+      "beloep": 1339981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "ektefelletilleggTilPensjon",
+      "beloep": 119981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "oevrigInntekt",
+      "beloep": 479981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvAksje",
+      "beloep": 1869981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "overskuddAvEnkeltpersonforetakInnenSkogbruk",
+      "beloep": 689981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "kapitalkostnadFraSkogbruk",
+      "beloep": 389981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvDeltakerlignetSelskapInnenAnnenNaering",
+      "beloep": 1319981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddFraUtleieAvFastEiendom",
+      "beloep": 1619981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "kapitalinntektFraSkogbruk",
+      "beloep": 379981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletFradragsberettigetUnderskuddVedUtleieAvFastEiendom",
+      "beloep": 1129981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddPaaUtgiftsgodtgjoerelse",
+      "beloep": 1399981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattefriLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 1729981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "fradragsberettigetTapVedRealisasjonAvFastEiendomIUtlandet",
+      "beloep": 249981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraDeltakerlignetSelskapInnenFiskeEllerFamiliebarnehage",
+      "beloep": 1449981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvAksjesparekonto",
+      "beloep": 1879981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 1249981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvAksjesparekonto",
+      "beloep": 259981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "inntektsfoeringAvNegativSaldo",
+      "beloep": 349981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvObligasjoner",
+      "beloep": 1889981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samledePaaloepteRenterPaaGjeldIUtlandet",
+      "beloep": 799981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenRenteinntekt",
+      "beloep": 899981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAvkastningAvKapitalforsikringsavtale",
+      "beloep": 909981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedSalgAvAndelISDF",
+      "beloep": 299981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "kvalifiseringsstoenad",
+      "beloep": 409981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem",
+      "beloep": 1349981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraAksjeIkkeRegistrertIVerdipapirsentralen",
+      "beloep": 1759981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletTapVedRealisasjonAvVerdipapirfondsandelKnyttetTilRentedel",
+      "beloep": 1659981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraDeltakerlignetSelskapInnenAnnenNaering",
+      "beloep": 1439981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapValutalaan",
+      "beloep": 1859981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoereytelseFraAndreEnnFolketrygden",
+      "beloep": 1699981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvFastEiendomMvIUtlandet",
+      "beloep": 269981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPensjonFraEOeSStatSomTilsvarerNorskAlderspensjonEllerAvtalefestetPensjon",
+      "beloep": 1409981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletRenteinntektPaaLaanTilSelskapSomSkalEkstrabeskattes",
+      "beloep": 1509981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletFremfoerbartUnderskuddFraTidligereAar",
+      "beloep": 1139981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddFraUtleieAvFastEiendomIUtlandet",
+      "beloep": 1629981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samledeUfoererenterOgLivrenter",
+      "beloep": 809981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUnderskuddINaeringsvirksomhet",
+      "beloep": 1709981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samledeOpptjenteRenterIInnenlandskeBanker",
+      "beloep": 769981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvDeltakerlignetSelskapInnenFiskeEllerFamiliebarnehage",
+      "beloep": 1329981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "tapVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel",
+      "beloep": 1899981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenFiskeOgFangst",
+      "beloep": 1469981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "utbytteFraAksjesparekonto",
+      "beloep": 1959981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "overgangsstoenadTilEnsligForelder",
+      "beloep": 679981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem",
+      "beloep": 1459981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "andelIFellesTapVedSalgAvAndelISDF",
+      "beloep": 29981,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigAksjegevinst",
+      "beloep": 1739981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletPensjonFraFolketrygden",
+      "beloep": 1419981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonMedTrekkpliktEksklusiveEktefelletillegg",
+      "beloep": 889981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "positivPersoninntektFraEnkeltpersonforetakPaaSvalbard",
+      "beloep": 709981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraAksjeINOKUSIkkeRegistrertIVerdipapirsentralen",
+      "beloep": 1769981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigUtbytteFraAksjerRegistrertIVerdipapirsentralen",
+      "beloep": 1779981,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "skattepliktigAvkastningEllerKundeutbytte",
+      "beloep": 1749981,
+      "kategori": [
+        "inntekt"
+      ]
+    }
+  ]
+}

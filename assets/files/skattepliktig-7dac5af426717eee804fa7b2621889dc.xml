@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<skattepliktig xmlns="urn:no:skatteetaten:datasamarbeid:skattepliktig:v1">
+  <person>
+    <personidentifikator>18018188888</personidentifikator>
+    <navn>
+      <fornavn>OLA</fornavn>
+      <mellomnavn>KALED</mellomnavn>
+      <etternavn>NORDMANN</etternavn>
+    </navn>
+    <bostedsadresse>
+      <adresse1>NORD-STATLAND 411 Å</adresse1>
+      <tilleggsadresse>c/o Per Post</tilleggsadresse>
+      <postnummer>1234</postnummer>
+      <kommunenummer>1749</kommunenummer>
+      <registreringsdato>2017-01-24</registreringsdato>
+    </bostedsadresse>
+    <postadresse>
+      <adresse1>Ole Danviks gate 10</adresse1>
+      <adresse2>H0101</adresse2>
+      <adresse3>1234 Oslo</adresse3>
+      <land>
+        <landnummerDsf>0</landnummerDsf>
+        <landkodeIsoAlfa2>NO</landkodeIsoAlfa2>
+      </land>
+      <registreringsdato>2018-01-20</registreringsdato>
+    </postadresse>
+    <hjemlandsadresse>
+      <adresse1>Kaled Dome 1337 Kaalann, Skaro</adresse1>
+      <adresse2>Madrid</adresse2>
+      <adresse3>SPANIA</adresse3>
+      <land>
+        <landnummerDsf>34</landnummerDsf>
+        <landkodeIsoAlfa2>ES</landkodeIsoAlfa2>
+      </land>
+      <registreringsdato>2017-01-24</registreringsdato>
+    </hjemlandsadresse>
+    <doedsdato>2018-04-30</doedsdato>
+    <klientadresse>false</klientadresse>
+    <utenFastBopel>false</utenFastBopel>
+  </person>
+  <skjermet>false</skjermet>
+</skattepliktig>

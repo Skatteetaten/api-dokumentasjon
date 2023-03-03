@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:ske:fastsetting:aktivkonto:valgtutbetalingskonto:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:typekatalog="urn:ske:informasjonsrammeverk:typekatalog" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:ske:fastsetting:aktivkonto:valgtutbetalingskonto:v1">
+    <xsd:annotation>
+        <xsd:documentation>
+            <xsd:attribute fixed="2019-02-04T08:44:13.414+0100" name="generertDato"/>
+            <xsd:attribute fixed="v1" name="versjon"/>
+            <xsd:attribute fixed="" name="beskrivelse"/>
+            <xsd:attribute fixed="v1" name="modellnavn"/>
+            <xsd:attribute fixed="urn:ske:fastsetting:aktivkonto:valgtutbetalingskonto:v1" name="navnerom"/>
+            <xsd:attribute fixed="false" name="begrepsreferanse"/>
+            <xsd:attribute fixed="false" name="dokumentasjon"/>
+            <xsd:attribute fixed="false" name="nillable"/>
+            <xsd:attribute fixed="false" name="modellelement"/>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:import namespace="urn:ske:informasjonsrammeverk:typekatalog" schemaLocation="http://informasjonsmodeller/xsd/typekatalog/v2/typekatalog.xsd"/>
+    <xsd:element name="valgtUtbetalingsmetode" type="ValgtUtbetalingsmetode"/>
+    <xsd:complexType name="ValgtUtbetalingsmetode">
+        <xsd:sequence>
+            <xsd:element name="inntektsaar" type="typekatalog:Inntektsaar"/>
+            <xsd:element name="partsnummer" type="typekatalog:Partsnummer"/>
+            <xsd:element minOccurs="0" name="konto" type="Konto"/>
+            <xsd:element minOccurs="0" name="disponentrolle" type="Disponentrolle"/>
+            <xsd:element minOccurs="0" name="gyldigFraDato" type="typekatalog:Dato"/>
+            <xsd:element minOccurs="0" name="gyldigTilDato" type="typekatalog:Dato"/>
+            <xsd:element name="valgtDato" type="typekatalog:Dato"/>
+            <xsd:element name="valgtAv" type="typekatalog:Tekst"/>
+            <xsd:element minOccurs="0" name="oenskerUtbetalingskort" type="typekatalog:Boolsk"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Disponentrolle">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:complexType name="Konto">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="kontonummer" type="typekatalog:Kontonummer"/>
+            <xsd:element minOccurs="0" name="kontotype" type="Kontotype"/>
+            <xsd:element minOccurs="0" name="skattekontoegnethet" type="Skattekontoegnethetstype"/>
+            <xsd:element minOccurs="0" name="bank" type="Bank"/>
+            <xsd:element minOccurs="0" name="iban" type="typekatalog:Tekst"/>
+            <xsd:element minOccurs="0" name="valuta" type="typekatalog:Valutakode"/>
+            <xsd:element minOccurs="0" name="kontoeieridentifikator" type="IdentifikatorForEnhetEllerPerson"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Kontotype">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Skattekontoegnethetstype">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="ikkeEgnet"/>
+            <xsd:enumeration value="finnesLoennsutbetaling"/>
+            <xsd:enumeration value="finnesMinibankkort"/>
+            <xsd:enumeration value="brukskonto"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="Bank">
+        <xsd:sequence>
+            <xsd:choice>
+                <xsd:element minOccurs="0" name="bicEllerSwift" type="typekatalog:Tekst"/>
+                <xsd:element minOccurs="0" name="bankkode" type="typekatalog:Tekst"/>
+            </xsd:choice>
+            <xsd:element minOccurs="0" name="navn" type="typekatalog:Tekst"/>
+            <xsd:element minOccurs="0" name="landkode" type="typekatalog:Landkode"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="IdentifikatorForEnhetEllerPerson">
+        <xsd:sequence>
+            <xsd:choice>
+                <xsd:sequence>
+                    <xsd:element name="organisasjonsnummer" type="typekatalog:Organisasjonsnummer"/>
+                </xsd:sequence>
+                <xsd:sequence>
+                    <xsd:element name="personidentifikator" type="NorskPersonidentifikator"/>
+                </xsd:sequence>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="NorskPersonidentifikator">
+        <xsd:restriction base="typekatalog:Tekst">
+            <xsd:pattern value="[0-9]+"/>
+            <xsd:length value="11"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:no:skatteetaten:datasamarbeid:hendelser:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:no:skatteetaten:datasamarbeid:hendelser:v1">
+    <xsd:annotation>
+        <xsd:documentation>
+            <xsd:attribute fixed="2021-12-21T17:02:28.721+0100" name="generertDato"/>
+            <xsd:attribute fixed="1.4" name="versjon"/>
+            <xsd:attribute fixed="" name="beskrivelse"/>
+            <xsd:attribute fixed="Hendelser" name="modellnavn"/>
+            <xsd:attribute fixed="urn:no:skatteetaten:datasamarbeid:hendelser:v1" name="navnerom"/>
+            <xsd:attribute fixed="true" name="begrepsreferanse"/>
+            <xsd:attribute fixed="true" name="dokumentasjon"/>
+            <xsd:attribute fixed="false" name="nillable"/>
+            <xsd:attribute fixed="false" name="modellelement"/>
+            <xsd:attribute fixed="false" name="norskeTegn"/>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="hendelser" type="Hendelser"/>
+    <xsd:complexType name="Hendelser">
+        <xsd:sequence>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="hendelse" type="Hendelse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Hendelse">
+        <xsd:sequence>
+            <xsd:element name="sekvensnummer" type="Heltall"/>
+            <xsd:element name="identifikator" type="Tekst"/>
+            <xsd:element minOccurs="0" name="gjelderPeriode" type="Tekst"/>
+            <xsd:element minOccurs="0" name="registreringstidspunkt" type="DatoKlokkeslett">
+                <xsd:annotation>
+                    <xsd:documentation>Dato for når årsaken til hendelsen ble registrert.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element minOccurs="0" name="hendelsetype" type="Hendelsetype"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Hendelsetype" skatt:eksternKodeliste="https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/download/kodelister/deling/hendelsetyper.xml">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Heltall" skatt:begrepsreferanse="https://data.skatteetaten.no/begrep/20b52af0-9fe1-11e5-a9f8-e4115b280940">
+        <xsd:annotation>
+            <xsd:documentation>hele tall, dvs. hele tall i mengden {..., -2, -1, 0, 1, 2, ...}</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:long"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tekst" skatt:begrepsreferanse="https://data.skatteetaten.no/begrep/20b52af3-9fe1-11e5-a9f8-e4115b280940">
+        <xsd:annotation>
+            <xsd:documentation>vilkårlig lang sekvens av tegn inkludert aksenter og spesielle tegn fra standardiserte tegnsett</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="DatoKlokkeslett" skatt:begrepsreferanse="https://data.skatteetaten.no/begrep/20b52aee-9fe1-11e5-a9f8-e4115b280940">
+        <xsd:annotation>
+            <xsd:documentation>en kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times).</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:dateTime"/>
+    </xsd:simpleType>
+</xsd:schema>

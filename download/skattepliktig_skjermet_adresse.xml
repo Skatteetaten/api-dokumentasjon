@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<skattepliktig xmlns="urn:no:skatteetaten:datasamarbeid:skattepliktig:v1">
+  <person>
+    <personidentifikator>18018188888</personidentifikator>
+    <navn>
+      <fornavn>FREDRIK</fornavn>
+      <etternavn>ENGSEL</etternavn>
+    </navn>
+    <doedsdato>2018-04-30</doedsdato>
+    <klientadresse>true</klientadresse>
+  </person>
+  <skjermet>true</skjermet>
+</skattepliktig>
