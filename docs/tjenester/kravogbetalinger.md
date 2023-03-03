@@ -27,10 +27,10 @@ For generell informasjon om tjenestene se egne sider om:
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
 Tjenesten har 4 endepunkter:
-  * Åpne krav: Hent oversikt over åpne krav og uplasserte innbetalinger. Gjør oppslag mot reskontrosystemene på åpne krav og uplasserte innbetalinger og oppgir de samlet med en summert oversikt
-  * Krav: Hent alle krav innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle krav innen et gitt tidsrom på maks ett år.
-  * Innbetalinger: Hent alle innbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle innbetalinger innen et gitt tidsrom på maks ett år.
-  * Utbetalinger: Ikke tilgjengelig for bruk og vil komme senere. Detaljer rundt implementasjonen kan endres.
+  * **Åpne krav**: Hent oversikt over åpne krav og uplasserte innbetalinger. Gjør oppslag mot reskontrosystemene på åpne krav og uplasserte innbetalinger og oppgir de samlet med en summert oversikt
+  * **Krav**: Hent alle krav innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle krav innen et gitt tidsrom på maks ett år.
+  * **Innbetalinger**: Hent alle innbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle innbetalinger innen et gitt tidsrom på maks ett år.
+  * **Utbetalinger**: Ikke tilgjengelig for bruk og vil komme senere. Detaljer rundt implementasjonen kan endres.
   
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:kravogbetalinger`
@@ -44,7 +44,7 @@ For denne tjenesten finns følgende rettighetspakker
 |Navn på rettighetspakke | Formål med rettighetspakke | Egenskaper ved rettighetspakken |
 |---|---|---|
 | finans | Banker og finansforetak som skal vise krav og betalinger i nettbank | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag på organisasjonsnumre |
+| regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter |
 
 ## Samtykke
 For rettighetspakkene `finans` og `regnskapssystem` kreves [samtykke](../om/samtykke.md) for denne tjenesten.
