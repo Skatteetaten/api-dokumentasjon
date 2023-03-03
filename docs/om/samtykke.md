@@ -28,7 +28,7 @@ Den overordnetete tekniske flyten for samtykkedialogen blir da som følger:
 4. Brukeren blir presentert for samtykkesiden som inneholder en beskrivelse av hva det skal gis samtykke til. Det er Skatteetaten som har definert dette innholdet.
 5. Bruker gir samtykke og sendes tilbake til konsumenten på *Redirect URL'en* som ble oppgitt.
 6. Konsument [henter et Samtykketoken](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token) fra Altinn ved bruk av *Authorization Code* 
-7. Konsument bruker Skatteetatens API med samtykketokenet som *AltinnSamtykke*-headerverdi. Forespørselen må også inneholde et Maskinporten-token.
+7. Konsument bruker Skatteetatens API med samtykketokenet som *AltinnSamtykke*-headerverdi. Forespørselen må også inneholde et [Maskinporten-token](Sikkerhet.md).
 8. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
 ## Restriksjon på bruk av iFrames
@@ -45,7 +45,7 @@ Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesif
 
 Samtykketoken er base64-encodet og signert når det hentes fra Altinn sin datatjeneste. Det er bare gyldig i 30 sekunder, men man kan hente nytt token basert på *Authorization Code* så ofte man vil. 
 
-Samtykketoken er et JWT token og det finnes gode online verktøy for å lese tokens, f.eks. [jwt.io](https://jwt.io)](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/)
+Samtykketoken er et JWT token og det finnes gode online verktøy for å lese tokens, f.eks. [jwt.io](https://jwt.io)
 
 ## Tjenester med støtte for samtykke
 
