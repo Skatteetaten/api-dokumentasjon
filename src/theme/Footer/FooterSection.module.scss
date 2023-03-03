@@ -1,0 +1,44 @@
+@mixin breakpoint-max($breakpoint) {
+  @media all and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+.link {
+  a {
+    border-bottom: none;
+    color: #fff;
+    font-size: 0.9rem;
+
+    @include breakpoint-max(900px) {
+      padding-bottom: 0;
+    }
+  }
+
+  i {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    a {
+      padding: 2px 0;
+      border-bottom: none;
+      background-color: #fff;
+      box-shadow: 0 0 0 2px #fff;
+      color: #000;
+    }
+
+    i {
+      color: #fff;
+    }
+
+    ::before {
+      color: #fff;
+    }
+  }
+}
+
+.subheading {
+  font-size: 0.9rem;
+}

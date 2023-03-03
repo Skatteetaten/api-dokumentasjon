@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:no:skatteetaten:innkreving:restanser:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:no:skatteetaten:innkreving:restanser:v1">
+    <xsd:annotation>
+        <xsd:documentation>
+            <xsd:attribute fixed="2015-11-17T13:39:15.063+0100" name="generertDato"/>
+            <xsd:attribute fixed="v1" name="version"/>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="restanser" type="Restanser"/>
+    <xsd:complexType name="Restanser">
+        <xsd:sequence>
+            <xsd:element name="forespurtOrganisasjonsnummer" type="Organisasjonsnummer"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="andreRelaterteOrganisasjonsnummer" type="Organisasjonsnummer"/>
+            <xsd:element name="skatt" type="Restanse"/>
+            <xsd:element name="arbeidsgiveravgift" type="Restanse"/>
+            <xsd:element name="merverdiavgift" type="Restanse"/>
+            <xsd:element name="forskuddstrekk" type="Restanse"/>
+            <xsd:element name="ansvarskravSkatt" type="Restanse"/>
+            <xsd:element name="ansvarskravMva" type="Restanse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Restanse">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="renterOgGebyrer" type="Beloep"/>
+            <xsd:element name="forfaltOgUbetalt" type="Beloep"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Organisasjonsnummer">
+        <xsd:annotation>
+            <xsd:documentation>9 sifret nummer gitt de som er registrert i Enhetsregisteret. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="[0-9]+"/>
+            <xsd:length value="9"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Beloep">
+        <xsd:annotation>
+            <xsd:documentation>en sum av penger brukt i en kontekst. Dette kan være en transaksjon, saldo o.l. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="Desimaltall"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tekst">
+        <xsd:annotation>
+            <xsd:documentation>vilkårlig lang sekvens av tegn inkludert aksenter og spesielle tegn fra standardiserte tegnsett 
+</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Desimaltall">
+        <xsd:annotation>
+            <xsd:documentation>tall som er satt sammen av en heltallsdel og en fraksjondel [wikipedia] </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:decimal"/>
+    </xsd:simpleType>
+</xsd:schema>

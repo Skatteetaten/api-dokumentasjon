@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<boligsparingForUngdom xmlns="no:skatteetaten:datasamarbeid:boligsparingforungdom:v1">
+  <personidentifikator>17055401993</personidentifikator>
+    <inntektsaar>2015</inntektsaar>
+    <aaretsRenter>10.50</aaretsRenter>
+</boligsparingForUngdom>

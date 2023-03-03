@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<beregnetSkatt xmlns="no:skatteetaten:datasamarbeid:beregnetskatt:v1">
+  <personidentifikator>12345678910</personidentifikator>
+  <inntektsaar>2019</inntektsaar>
+  <skjermet>false</skjermet>
+  <sumSaerfradrag>123</sumSaerfradrag>
+  <tolvdeler>12</tolvdeler>
+  <skatteklasse>6</skatteklasse>
+  <nettoformue>12345</nettoformue>
+  <nettoinntekt>54321</nettoinntekt>
+  <utlignetSkatt>654321</utlignetSkatt>
+  <formueskattStat>11589</formueskattStat>
+  <formueskattKommune>3767</formueskattKommune>
+  <kreditfradragFormue>14560</kreditfradragFormue>
+  <kreditfradragInntekt>37896</kreditfradragInntekt>
+  <alminneligInntektFoerSaerfradrag>5689</alminneligInntektFoerSaerfradrag>
+  <skatteoppgjoersdato>2020-06-07</skatteoppgjoersdato>
+  <skatteregnskapskommune>7015</skatteregnskapskommune>
+  <svalbardLoennLoennstrekkordningen>54331</svalbardLoennLoennstrekkordningen>
+  <svalbardPensjonLoennstrekkordningen>431</svalbardPensjonLoennstrekkordningen>
+  <svalbardLoennUtenTrygdeavgiftLoennstrekkordningen>321</svalbardLoennUtenTrygdeavgiftLoennstrekkordningen>
+  <svalbardNettoformue>22251</svalbardNettoformue>
+  <svalbardNettoinntekt>37891</svalbardNettoinntekt>
+  <svalbardUtlignetSkatt>10258</svalbardUtlignetSkatt>
+  <svalbardUfoeretrygdLoennstrekkordningen>123</svalbardUfoeretrygdLoennstrekkordningen>
+  <svalbardSkattOrdinaerAlminneligInntekt>2358</svalbardSkattOrdinaerAlminneligInntekt>
+  <svalbardFormueskatt>125</svalbardFormueskatt>
+  <svalbardFastsattSkattEtterLoennstrekkordningen>222</svalbardFastsattSkattEtterLoennstrekkordningen>
+  <svalbardSkatteregnskapskommune>1111</svalbardSkatteregnskapskommune>
+</beregnetSkatt>

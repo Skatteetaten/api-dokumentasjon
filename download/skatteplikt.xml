@@ -1,0 +1,10 @@
+<skatteplikt xmlns="urn:no:skatteetaten:datasamarbeid:skatteplikt:v1">
+    <personidentifikator>23117323456</personidentifikator>
+    <inntektsaar>2016</inntektsaar>
+    <skjermet>false</skjermet>
+    <skattested>1234</skattested>
+    <skattepliktTilNorge>global</skattepliktTilNorge>
+    <skattepliktTilSvalbard>begrenset</skattepliktTilSvalbard>
+    <alderIInntektsaar>56</alderIInntektsaar>
+    <saerskiltSkatteplikt>skattepliktEtterPetroleumsskatteloven</saerskiltSkatteplikt>
+</skatteplikt>

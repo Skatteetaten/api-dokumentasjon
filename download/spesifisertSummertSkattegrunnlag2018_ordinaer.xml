@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<spesifisertSummertSkattegrunnlag xmlns="urn:no:skatteetaten:datasamarbeid:spesifisertsummertskattegrunnlag:v1">
+  <personidentifikator>12345678901</personidentifikator>
+  <inntektsaar>2018</inntektsaar>
+  <grunnlag>
+    <tekniskNavn>samletInnskuddIInnenlandskeBanker</tekniskNavn>
+    <beloep>4500000</beloep>
+    <kategori>formue</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samledeOpptjenteRenterIInnenlandskeBanker</tekniskNavn>
+    <beloep>3000</beloep>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>formuesverdiForPrimaerbolig</tekniskNavn>
+    <beloep>350000</beloep>
+    <kategori>formue</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>formuesverdiForKjoeretoey</tekniskNavn>
+    <beloep>50000</beloep>
+    <kategori>formue</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt</tekniskNavn>
+    <beloep>90000</beloep>
+    <spesifisering xmlns:wstxns1="http://www.w3.org/2001/XMLSchema-instance" wstxns1:type="Generisk">
+      <kildenavn>Arbeidsgivers navn er ikke oppgitt</kildenavn>
+      <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+      <beloep>25914</beloep>
+    </spesifisering>
+    <spesifisering xmlns:wstxns2="http://www.w3.org/2001/XMLSchema-instance" wstxns2:type="Generisk">
+      <kildenavn>Stadlandet Og Venabygd</kildenavn>
+      <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+      <beloep>30000</beloep>
+    </spesifisering>
+    <spesifisering xmlns:wstxns3="http://www.w3.org/2001/XMLSchema-instance" wstxns3:type="Generisk">
+      <kildenavn>Arbeidsgivers navn er ikke oppgitt</kildenavn>
+      <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+      <beloep>1997</beloep>
+    </spesifisering>
+    <spesifisering xmlns:wstxns4="http://www.w3.org/2001/XMLSchema-instance" wstxns4:type="Generisk">
+      <kildenavn>Arbeidsgivers navn er ikke oppgitt</kildenavn>
+      <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+      <beloep>1260</beloep>
+    </spesifisering>
+    <spesifisering xmlns:wstxns5="http://www.w3.org/2001/XMLSchema-instance" wstxns5:type="Generisk">
+      <kildenavn>Stadlandet Og Venabygd</kildenavn>
+      <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+      <beloep>50000</beloep>
+    </spesifisering>
+    <spesifisering xmlns:wstxns6="http://www.w3.org/2001/XMLSchema-instance" wstxns6:type="Generisk">
+      <kildenavn>Hvittingfoss Og Todalen</kildenavn>
+      <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+      <beloep>222346</beloep>
+    </spesifisering>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>etterlattepensjonFraFolketrygden</tekniskNavn>
+    <beloep>35000</beloep>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samletAnnenPensjonMedTrekkpliktEksklusiveEktefelletillegg</tekniskNavn>
+    <beloep>220000</beloep>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>fradragsberettigetTapVedRealisasjonAvFastEiendom</tekniskNavn>
+    <beloep>25000</beloep>
+    <kategori>inntektsfradrag</kategori>
+  </grunnlag>
+  <skjermet>false</skjermet>
+  <skatteoppgjoersdato>2019-03-01</skatteoppgjoersdato>
+</spesifisertSummertSkattegrunnlag>

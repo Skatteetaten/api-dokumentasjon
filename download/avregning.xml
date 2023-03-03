@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<avregning xmlns="urn:no:skatteetaten:datasamarbeid:avregning:v1">
+  <personidentifikator>20125001158</personidentifikator>
+  <inntektsaar>2016</inntektsaar>
+  <skjermet>false</skjermet>
+  <skatteoppgjoersdato>2018-01-01</skatteoppgjoersdato>
+  <beloepTilgode>10018</beloepTilgode>
+  <avregnetForskuddstrekk>4321</avregnetForskuddstrekk>
+  <restskatt>1234</restskatt>
+</avregning>

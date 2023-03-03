@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:no:skatteetaten:datasamarbeid:inntektsmottaker:rapporterte:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:no:skatteetaten:datasamarbeid:inntektsmottaker:rapporterte:v1">
+    <xsd:annotation>
+        <xsd:documentation>
+            <xsd:attribute fixed="2020-10-19T09:41:50.125+0200" name="generertDato"/>
+            <xsd:attribute fixed="0.3" name="versjon"/>
+            <xsd:attribute fixed="" name="beskrivelse"/>
+            <xsd:attribute fixed="Inntektsmottakere" name="modellnavn"/>
+            <xsd:attribute fixed="urn:no:skatteetaten:datasamarbeid:inntektsmottaker:rapporterte:v1" name="navnerom"/>
+            <xsd:attribute fixed="true" name="begrepsreferanse"/>
+            <xsd:attribute fixed="true" name="dokumentasjon"/>
+            <xsd:attribute fixed="false" name="nillable"/>
+            <xsd:attribute fixed="false" name="modellelement"/>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="inntektsmottakere" type="Inntektsmottakere"/>
+    <xsd:complexType name="Inntektsmottakere">
+        <xsd:sequence>
+            <xsd:element name="opplysningspliktig" type="Opplysningspliktig"/>
+            <xsd:element name="fraOgMed" type="AarOgMaaned"/>
+            <xsd:element name="tilOgMed" type="AarOgMaaned"/>
+            <xsd:element minOccurs="0" name="skjermet" type="Boolsk"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="inntektsmottaker" type="Inntektsmottaker"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Inntektsmottaker">
+        <xsd:sequence>
+            <xsd:element name="personidentifikator" type="Foedselsnummer"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Opplysningspliktig">
+        <xsd:sequence>
+            <xsd:element name="norskIdentifikator" type="NorskIdentifikator"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="AarOgMaaned" skatt:begrepsreferanse="https://data.skatteetaten.no/begrep/20b2e149-9fe1-11e5-a9f8-e4115b280940">
+        <xsd:annotation>
+            <xsd:documentation>årstall og måned angitt i nummer</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:gYearMonth"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Boolsk" skatt:begrepsreferanse="https://data.skatteetaten.no/begrep/20b52aec-9fe1-11e5-a9f8-e4115b280940">
+        <xsd:annotation>
+            <xsd:documentation>angir verdien sann eller usann</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tekst" skatt:begrepsreferanse="https://data.skatteetaten.no/begrep/20b52af3-9fe1-11e5-a9f8-e4115b280940">
+        <xsd:annotation>
+            <xsd:documentation>vilkårlig lang sekvens av tegn inkludert aksenter og spesielle tegn fra standardiserte tegnsett 
+</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Foedselsnummer" skatt:begrepsreferanse="https://data.skatteetaten.no/begrep/5138da10-be20-11e6-8004-005056825ca0">
+        <xsd:annotation>
+            <xsd:documentation>ellevesifret identifikasjonsnummer for personer bosatt i Norge, der de seks første sifrene angir fødselsdato og de fem siste personnummer.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="[0-9]+"/>
+            <xsd:length value="11"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="NorskIdentifikator">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+</xsd:schema>

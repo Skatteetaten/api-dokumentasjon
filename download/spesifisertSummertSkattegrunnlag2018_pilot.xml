@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<spesifisertSummertSkattegrunnlag xmlns="urn:no:skatteetaten:datasamarbeid:spesifisertsummertskattegrunnlag:v1">
+  <personidentifikator>12345678901</personidentifikator>
+  <inntektsaar>2018</inntektsaar>
+  <grunnlag>
+    <tekniskNavn>samletFormuesverdiForFastEiendomIUtlandet</tekniskNavn>
+    <beloep>260000</beloep>
+    <kategori>formue</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samletInnskuddIInnenlandskeBanker</tekniskNavn>
+    <beloep>1500000</beloep>
+    <spesifisering xmlns:wstxns1="http://www.w3.org/2001/XMLSchema-instance" wstxns1:type="Konto">
+      <kontonummer>12345678901</kontonummer>
+      <bankensNavn>MinEnesteBank</bankensNavn>
+      <organisasjonsnummer>123456789</organisasjonsnummer>
+      <innskudd>1000000</innskudd>
+      <opptjenteRenter>2000</opptjenteRenter>
+    </spesifisering>
+    <spesifisering xmlns:wstxns2="http://www.w3.org/2001/XMLSchema-instance" wstxns2:type="Konto">
+      <kontonummer>12345678902</kontonummer>
+      <bankensNavn>MinEnesteBank</bankensNavn>
+      <organisasjonsnummer>123456789</organisasjonsnummer>
+      <innskudd>500000</innskudd>
+      <opptjenteRenter>1400</opptjenteRenter>
+    </spesifisering>
+    <kategori>formue</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samledePaaloepteRenter</tekniskNavn>
+    <beloep>25000</beloep>
+    <spesifisering xmlns:wstxns3="http://www.w3.org/2001/XMLSchema-instance" wstxns3:type="Konto">
+      <kontonummer>12345678903</kontonummer>
+      <bankensNavn>MinEnesteBank</bankensNavn>
+      <organisasjonsnummer>123456789</organisasjonsnummer>
+      <gjeld>165000</gjeld>
+      <paaloepteRenter>2500</paaloepteRenter>
+    </spesifisering>
+    <spesifisering xmlns:wstxns4="http://www.w3.org/2001/XMLSchema-instance" wstxns4:type="SkyldigRestskatt">
+      <betalteForsinkelsesrenterForSamletSkyldigRestskatt>5000</betalteForsinkelsesrenterForSamletSkyldigRestskatt>
+      <samletSkyldigRestskatt>200000</samletSkyldigRestskatt>
+    </spesifisering>
+    <kategori>inntektsfradrag</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>kapitalinntektFraSkogbruk</tekniskNavn>
+    <beloep>15000</beloep>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt</tekniskNavn>
+    <beloep>350000</beloep>
+    <spesifisering xmlns:wstxns5="http://www.w3.org/2001/XMLSchema-instance" wstxns5:type="LoennOgTilsvarendeYtelser">
+      <arbeidsgiversNavn>Matre Og Inne</arbeidsgiversNavn>
+      <organisasjonsnummer>123456789</organisasjonsnummer>
+      <beloep>350000</beloep>
+    </spesifisering>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samledeOpptjenteRenterIInnenlandskeBanker</tekniskNavn>
+    <beloep>3400</beloep>
+    <spesifisering xmlns:wstxns6="http://www.w3.org/2001/XMLSchema-instance" wstxns6:type="Konto">
+      <kontonummer>12345678901</kontonummer>
+      <bankensNavn>MinEnesteBank</bankensNavn>
+      <organisasjonsnummer>123456789</organisasjonsnummer>
+      <innskudd>1000000</innskudd>
+      <opptjenteRenter>2000</opptjenteRenter>
+    </spesifisering>
+    <spesifisering xmlns:wstxns7="http://www.w3.org/2001/XMLSchema-instance" wstxns7:type="Konto">
+      <kontonummer>12345678902</kontonummer>
+      <bankensNavn>MinEnesteBank</bankensNavn>
+      <organisasjonsnummer>123456789</organisasjonsnummer>
+      <innskudd>500000</innskudd>
+      <opptjenteRenter>1400</opptjenteRenter>
+    </spesifisering>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>utgifterTilPassOgStellAvHjemmevaerendeBarn</tekniskNavn>
+    <beloep>50000</beloep>
+    <kategori>inntektsfradrag</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>formuesverdiForPrimaerbolig</tekniskNavn>
+    <beloep>780000</beloep>
+    <spesifisering xmlns:wstxns8="http://www.w3.org/2001/XMLSchema-instance" wstxns8:type="Eiendom">
+      <bruksnummer>55</bruksnummer>
+      <gaardsnummer>39</gaardsnummer>
+      <kommunenummer>0020</kommunenummer>
+      <formuesverdi>780000</formuesverdi>
+      <beregnetMarkedsverdiForBolig>5200000</beregnetMarkedsverdiForBolig>
+      <eierandel>50.00</eierandel>
+    </spesifisering>
+    <kategori>formue</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samletInnenlandskGjeld</tekniskNavn>
+    <beloep>365000</beloep>
+    <spesifisering xmlns:wstxns9="http://www.w3.org/2001/XMLSchema-instance" wstxns9:type="Konto">
+      <kontonummer>12345678903</kontonummer>
+      <bankensNavn>MinEnesteBank</bankensNavn>
+      <organisasjonsnummer>123456789</organisasjonsnummer>
+      <gjeld>165000</gjeld>
+      <paaloepteRenter>2500</paaloepteRenter>
+    </spesifisering>
+    <spesifisering xmlns:wstxns10="http://www.w3.org/2001/XMLSchema-instance" wstxns10:type="SkyldigRestskatt">
+      <betalteForsinkelsesrenterForSamletSkyldigRestskatt>5000</betalteForsinkelsesrenterForSamletSkyldigRestskatt>
+      <samletSkyldigRestskatt>200000</samletSkyldigRestskatt>
+    </spesifisering>
+  </grunnlag>
+  <skjermet>false</skjermet>
+  <skatteoppgjoersdato>2019-03-01</skatteoppgjoersdato>
+</spesifisertSummertSkattegrunnlag>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kodeliste xmlns="urn:no:skatteetaten:kodelistebibliotek:domain:v1">
+    <tekniskNavn>2019_klassifiseringAvReiseIArbeidsforhold</tekniskNavn>
+    <beskrivelse>
+        <spraakTekst>
+            <tekst>Kodeliste over klassifisering av reise i arbeidsforhold for lønnstakere og pensjonister</tekst>
+            <spraak>no</spraak>
+        </spraakTekst>
+    </beskrivelse>
+    <kode>
+        <tekniskNavn>arbeidsreise</tekniskNavn>
+        <visningsnavn>
+            <spraakTekst>
+                <tekst>Arbeidsreise</tekst>
+                <spraak>nb_NO</spraak>
+            </spraakTekst>
+            <spraakTekst>
+                <tekst>Arbeidsreise</tekst>
+                <spraak>nn_NO</spraak>
+            </spraakTekst>
+            <spraakTekst>
+                <tekst>Work-related travel</tekst>
+                <spraak>en_GB</spraak>
+            </spraakTekst>
+            <spraakTekst>
+                <tekst>x</tekst>
+                <spraak>se_NO</spraak>
+            </spraakTekst>
+        </visningsnavn>
+        <begrepsreferanse>https://data.skatteetaten.no/begrep/8ea2df4f-7662-11e6-a74e-7e18b36b3fd9</begrepsreferanse>
+    </kode>
+    <kode>
+        <tekniskNavn>besoeksreiseTilHjemInnenforEOeS</tekniskNavn>
+        <visningsnavn>
+            <spraakTekst>
+                <tekst>Besøksreise til hjem innenfor EØS-området (gjelder kun pendlere)</tekst>
+                <spraak>nb_NO</spraak>
+            </spraakTekst>
+            <spraakTekst>
+                <tekst>Besøksreise til heim innanfor EØS-området (gjeld kun pendlare)</tekst>
+                <spraak>nn_NO</spraak>
+            </spraakTekst>
+            <spraakTekst>
+                <tekst>Home visits to residences within the EEA-actual (only applies to commuters)</tekst>
+                <spraak>en_GB</spraak>
+            </spraakTekst>
+        </visningsnavn>
+        <begrepsreferanse>https://data.skatteetaten.no/begrep/b5740886-d96a-11e6-8d9b-005056821322</begrepsreferanse>
+    </kode>
+    <kode>
+        <tekniskNavn>besoeksreiseTilHjemUtenforEOeS</tekniskNavn>
+        <visningsnavn>
+            <spraakTekst>
+                <tekst>Besøksreise til hjem utenfor EØS-området (gjelder kun pendlere)</tekst>
+                <spraak>nb_NO</spraak>
+            </spraakTekst>
+            <spraakTekst>
+                <tekst>Besøksreise til heim utanfor EØS-området (gjeld kun pendlare)</tekst>
+                <spraak>nn_NO</spraak>
+            </spraakTekst>
+            <spraakTekst>
+                <tekst>Home visits to residences outside the EEA-actual (only applies to commuters)</tekst>
+                <spraak>en_GB</spraak>
+            </spraakTekst>
+        </visningsnavn>
+        <begrepsreferanse>https://data.skatteetaten.no/begrep/b5740887-d96a-11e6-8d9b-005056821322</begrepsreferanse>
+    </kode>
+    <lokaltForvaltet>true</lokaltForvaltet>
+</kodeliste>

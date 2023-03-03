@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:no:skatteetaten:fastsetting:oppgaveinnlevering:v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:no:skatteetaten:fastsetting:oppgaveinnlevering:v1">
+    <xsd:annotation>
+        <xsd:documentation>
+            <xsd:attribute fixed="2015-11-11T10:10:08.019+0100" name="generertDato"/>
+            <xsd:attribute fixed="v1" name="version"/>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="oppgaveinnlevering" type="Oppgaveinnlevering"/>
+    <xsd:complexType name="Oppgaveinnlevering">
+        <xsd:sequence>
+            <xsd:element name="organisasjonsnummer" type="Organisasjonsnummer"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="omsetningsoppgave" type="Omsetningsoppgave"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Omsetningsoppgave">
+        <xsd:sequence>
+            <xsd:element name="oppgavetermin" type="Termin"/>
+            <xsd:element minOccurs="0" name="innkomstdato" type="Dato"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="Termin">
+        <xsd:sequence>
+            <xsd:element name="start" type="Dato"/>
+            <xsd:element name="slutt" type="Dato"/>
+            <xsd:element name="forfallsdato" type="Dato"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Organisasjonsnummer">
+        <xsd:annotation>
+            <xsd:documentation>9 sifret nummer gitt de som er registrert i Enhetsregisteret. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="[0-9]+"/>
+            <xsd:length value="9"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Dato">
+        <xsd:annotation>
+            <xsd:documentation>gir verdier for år, måned og dag. Kodes som en tekststreng etter datoformatering spesifisert i  ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). 
+Eksempel : 1998-12-21 eller 19981221. </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Tekst">
+        <xsd:annotation>
+            <xsd:documentation>vilkårlig lang sekvens av tegn inkludert aksenter og spesielle tegn fra standardiserte tegnsett 
+</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hendelser xmlns="urn:no:skatteetaten:datasamarbeid:hendelser:v1">
+    <hendelse>
+        <sekvensnummer>32713</sekvensnummer>
+        <identifikator>01010150317</identifikator>
+        <gjelderPeriode>2016-05</gjelderPeriode>
+    </hendelse>
+    <hendelse>
+        <sekvensnummer>32714</sekvensnummer>
+        <identifikator>01025600157</identifikator>
+        <gjelderPeriode>2016-06</gjelderPeriode>
+    </hendelse>
+    <hendelse>
+        <sekvensnummer>32715</sekvensnummer>
+        <identifikator>01037000198</identifikator>
+        <gjelderPeriode>2016-06</gjelderPeriode>
+    </hendelse>
+    <hendelse>
+        <sekvensnummer>32716</sekvensnummer>
+        <identifikator>29127900300</identifikator>
+        <gjelderPeriode>2016-01</gjelderPeriode>
+    </hendelse>
+    <hendelse>
+        <sekvensnummer>32717</sekvensnummer>
+        <identifikator>29128100391</identifikator>
+        <gjelderPeriode>2016-01</gjelderPeriode>
+    </hendelse>
+</hendelser>

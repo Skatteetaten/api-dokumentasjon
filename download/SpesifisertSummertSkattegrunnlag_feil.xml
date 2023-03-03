@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feil xmlns="urn:no:skatteetaten:datasamarbeid:feil:v1">
+    <kode>SSG-029</kode>
+    <melding>Ugyldig format på inntektsaar. Forventet et år på formatet YYYY.</melding>
+    <korrelasjonsid>00e3291b-861f-4d2d-813e-8c49a5611b95</korrelasjonsid>
+</feil>

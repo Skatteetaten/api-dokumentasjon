@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spesifisertSummertSkattegrunnlag xmlns="urn:no:skatteetaten:datasamarbeid:spesifisertsummertskattegrunnlag:v1">
+  <personidentifikator>12345678910</personidentifikator>
+  <inntektsaar>2020</inntektsaar>
+  <grunnlag>
+    <tekniskNavn>slitertillegg</tekniskNavn>
+    <beloep>110000</beloep>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt</tekniskNavn>
+    <beloep>275000</beloep>
+    <spesifisering xmlns:wstxns1="http://www.w3.org/2001/XMLSchema-instance" wstxns1:type="LoennOgTilsvarendeYtelser">
+      <arbeidsgiversNavn>BYGLANDSFJORD OG VÅGÅ REVISJON</arbeidsgiversNavn>
+      <organisasjonsnummer>810933992</organisasjonsnummer>
+      <beloep>275000</beloep>
+    </spesifisering>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>verdiFoerVerdsettingsrabattForAksje</tekniskNavn>
+    <beloep>2192667</beloep>
+    <kategori>formue</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>bruttoformue</tekniskNavn>
+    <beloep>1425234</beloep>
+    <kategori>-</kategori>
+  </grunnlag>
+  <grunnlag>
+    <tekniskNavn>utbytteFraAksje</tekniskNavn>
+    <beloep>49027</beloep>
+    <spesifisering xmlns:wstxns2="http://www.w3.org/2001/XMLSchema-instance" wstxns2:type="AksjeIAksjonaerregisteret">
+      <organisasjonsnavn>FOO 69619 AS</organisasjonsnavn>
+      <organisasjonsnummer>915800824</organisasjonsnummer>
+      <aksjeklasse>ordinaer</aksjeklasse>
+      <isinnummer>NO1293131072</isinnummer>
+      <antallAksjer>159</antallAksjer>
+      <skattepliktigUtbytte>49027</skattepliktigUtbytte>
+      <verdiFoerVerdsettingsrabattForAksje>848897</verdiFoerVerdsettingsrabattForAksje>
+    </spesifisering>
+    <kategori>inntekt</kategori>
+  </grunnlag>
+  <skjermet>false</skjermet>
+  <skatteoppgjoersdato>2021-02-10</skatteoppgjoersdato>
+</spesifisertSummertSkattegrunnlag>

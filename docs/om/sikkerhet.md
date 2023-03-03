@@ -1,0 +1,63 @@
+---
+title: Sikkerhet
+slug: /sikkerhet
+folder: om
+sidebar: mydoc_sidebar
+datatable: true
+tags: [API reference]
+keywords: [security,sikkerhet]
+last_updated: Nov 24, 2022
+hide_table_of_contents: true
+---
+<summary>Informasjon om nødvendige sikkerhetsmekanismer, autentisering og autorisasjon.</summary>
+
+## Maskinporten
+
+Alle Skatteetatens delingstjenester benytter Maskinporten for autentisering av virksomheter for maskin-til-maskin grensesnitt. Det er ikke lengre mulig å kun benytte virksomhettsertifikat.
+
+Digitaliseringsdirektoratet har beskrevet overordnet hvordan API-sikring med maskinporten gjøres. Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. For å komme i gang med testing må det gjøres noen forberedelser hos virksomheten.
+
+### Ta kontakt med Digitaliseringsdirektoratet for å få tilgang til Maskinporten
+Bestill tilknytning til Maskinporten via [Digdir samarbeidsportal](https://docs.digdir.no/maskinporten_overordnet)
+  
+### Klargjøring fra Skatteetaten
+Så snart korrekt tjeneste og rettighetspakke for virksomheten er avklart, vil Skatteetaten melde inn virksomhetens organisasjonsnummer og tilgangen hos Digitaliseringsdirektoratet. 
+
+### Klargjøring fra Virksomheten
+Når virksomheten har fått beskjed at tilgangen (scopet) er opprettet i Maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data. Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via [ID-porten sitt API for selvbetjening av integrasjoner](https://docs.digdir.no/oidc_api_admin_maskinporten) eller via et brukergrensesnitt i samarbeidsportalen. All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke skatteetatatens apier.
+
+### Bruke Skatteetatens api'er med token fra Maskinporten
+All kommunikasjon mellom virksomheten, Maskinporten og Skatteetaten gjøres over HTTPS (TLS). Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2", se mer informasjon om dette her: [Digidr oauth2](https://docs.digdir.no/oidc_auth_server-to-server-oauth2).
+
+**Overordnet gjøres følgende:**
+1. Først gjøre et kall til Maskinporten for å få et token som kan brukes mot Skatteetaten. Fremgangsmåte er beskrevet på [Digdir sine side for hvordan bruke Maskinporten som konsument](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument#bruke-delegering-som-konsument). Merk at "Resource" er valgfri og skal ikke settes for Skatteetatens API. Dette medfører at audience blir "unspecified" som Skatteetaten forventer.
+2. Tokenet legges ved kallet i Authorization header. Tokenet legges ved slik: `Authorization: Bearer <token>`
+3. Skatteetaten validerer tokenet og at virksomheten har rett til den informasjonen de prøver å hente (tilgangskontroll).
+4. Hvis alt er OK returneres data iht. forespørselen.
+
+### Delegere rettigheter i Altinn ###
+Se egen side for informasjon om [hvordan opptre på vegne av en annen virksomhet](./delegering.md).
+
+## Brannmur
+
+Hvis man kaller delingstjenestene fra bak en utgående brannmur må man lage åpninger i brannmuren sin.
+
+### Adresser det må åpnes for
+
+| Miljø | Host | IP | Port | 
+|---|---|---|---|
+| Test | api-test.sits.no | 159.216.17.148 | 443|
+| Produksjon | api.skatteetaten.no | 159.216.17.168 | 443|
+
+Vi forsøker å holde IP statisk, men kan ikke love at det aldri vil komme endringer.
+Hvis vi må gjøre endringer vil dette bli varslet som en [nyhet](../maintenance/feed/index.md)
+
+### Subnett
+
+Hvis man heller ønsker et brannmur oppsett som ikke vil kreve endringer så kan man åpne mot hele Skatteetaten sitt subnett for eksterne.
+Dette innebærer at man åpner mot alle eksternt rettede tjenester Skatteetaten tilbyr (som for eksempel folkeregisteret).
+
+| Miljø | Subnett | Port | 
+|---|---|---|
+| Preprod miljø (Test++) | 159.216.17.128/27 | 443 |
+| Produksjon (Prod) | 159.216.17.160/28 | 443 |

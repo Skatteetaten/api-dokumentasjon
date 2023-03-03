@@ -1,0 +1,513 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"additionalProperties": false,
+	"definitions": {
+		"oppgaverInntektsmottaker": {
+			"$ref": "#/definitions/OppgaverInntektsmottaker"
+		},
+		"Aarstall": {
+			"description": "årstall er et tall som angir årets nummer i tidsregningen i den gregorianske kalender",
+			"type": "string"
+		},
+		"AldersUfoereEtterlatteAvtalefestetOgKrigspensjon": {
+			"additionalProperties": false,
+			"properties": {
+				"grunnpensjonsbeloep": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"heravEtterlattepensjon": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"pensjonsgrad": {
+					"$ref": "#/definitions/Heltall"
+				},
+				"tidsrom": {
+					"$ref": "#/definitions/Periode"
+				},
+				"tilleggspensjonsbeloep": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"ufoeregrad": {
+					"$ref": "#/definitions/Heltall"
+				}
+			},
+			"type": "object"
+		},
+		"BilOgBaat": {
+			"additionalProperties": false,
+			"properties": {
+				"antallKilometer": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"antallReiser": {
+					"$ref": "#/definitions/Heltall"
+				},
+				"bilregistreringsnummer": {
+					"$ref": "#/definitions/Tekst"
+				},
+				"erAnnenBil": {
+					"$ref": "#/definitions/Boolsk"
+				},
+				"erBilPool": {
+					"$ref": "#/definitions/Boolsk"
+				},
+				"erBilUtenforStandardregelen": {
+					"$ref": "#/definitions/Boolsk"
+				},
+				"heravAntallKilometerMellomHjemOgArbeid": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"listeprisForBil": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"personklassifiseringAvBilbruker": {
+					"$ref": "#/definitions/Tekst"
+				}
+			},
+			"type": "object"
+		},
+		"BonusFraForsvaret": {
+			"additionalProperties": false,
+			"properties": {
+				"aaretUtbetalingenGjelderFor": {
+					"$ref": "#/definitions/Aarstall"
+				}
+			},
+			"type": "object"
+		},
+		"Boolsk": {
+			"description": "angir verdien sann eller usann",
+			"type": "boolean"
+		},
+		"DagmammaIEgenBolig": {
+			"additionalProperties": false,
+			"properties": {
+				"antallBarn": {
+					"$ref": "#/definitions/Heltall"
+				},
+				"antallMaaneder": {
+					"$ref": "#/definitions/Heltall"
+				}
+			},
+			"type": "object"
+		},
+		"Dato": {
+			"description": "gir verdier for år, måned og dag. Kodes som en tekststreng etter datoformatering spesifisert i  ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). \nEksempel : 1998-12-21 eller 19981221. ",
+			"type": "string"
+		},
+		"DatoKlokkeslett": {
+			"description": "en kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). ",
+			"type": "string"
+		},
+		"Desimaltall": {
+			"description": "tall som er satt sammen av en heltallsdel og en fraksjondel [wikipedia] ",
+			"type": "number"
+		},
+		"Forskuddstrekk": {
+			"additionalProperties": false,
+			"description": "skatt på trekkpliktig inntekt som betales av personlige skattepliktige i løpet av året inntekten oppstår, ved at arbeidsgiver foretar skattetrekk i lønn og andre trekkpliktige godtgjørelser i arbeids- og oppdragsforhold\n",
+			"properties": {
+				"beloep": {
+					"$ref": "#/definitions/Heltall",
+					"description": "beløp forskudd"
+				},
+				"beskrivelse": {
+					"$ref": "#/definitions/Tekst"
+				}
+			},
+			"type": "object"
+		},
+		"ForskuddstrekkListe": {
+			"type": "array",
+			"items": [{
+				"type":"object",
+				"$ref": "#/definitions/Forskuddstrekk",
+				"description": "skatt på trekkpliktig inntekt som betales av personlige skattepliktige i løpet av året inntekten oppstår, ved at arbeidsgiver foretar skattetrekk i lønn og andre trekkpliktige godtgjørelser i arbeids- og oppdragsforhold"
+			}]
+		},
+		"Fradrag": {
+			"additionalProperties": false,
+			"description": "beløp som kan trekkes fra grunnlaget for beskatning/avgift eller direkte fra selve skatten/avgiften.",
+			"properties": {
+				"beloep": {
+					"$ref": "#/definitions/Desimaltall",
+					"description": "beløp fradrag"
+				},
+				"beskrivelse": {
+					"$ref": "#/definitions/Tekst"
+				}
+			},
+			"required": [
+				"beskrivelse"
+			],
+			"type": "object"
+		},
+		"FradragListe": {
+			"type": "array",
+			"items": [{
+				"type": "object",
+				"$ref": "#/definitions/Fradrag"
+			}]
+		},
+		"Heltall": {
+			"description": "hele tall, dvs. hele tall i mengden {..., -2, -1, 0, 1, 2, ...}",
+			"maximum": 9223372036854775807,
+			"minimum": -9223372036854775808,
+			"type": "integer"
+		},
+		"Inntekt": {
+			"additionalProperties": false,
+			"description": "\t\ninntekt (begrep)\nsamlebetegnelse for lønnsinntekt (herunder kapitalinntekt), ytelser fra det offentlige, pensjon, trygd og næringsinntekt",
+			"properties": {
+				"beloep": {
+					"$ref": "#/definitions/Desimaltall",
+					"description": "beløp inntekt"
+				},
+				"fordel": {
+					"$ref": "#/definitions/Tekst",
+					"description": "økonomisk verdi som kommer fra andre eller som oppstår innenfor den skattepliktiges egen økonomi\n"
+				},
+				"inngaarIGrunnlagForTrekk": {
+					"$ref": "#/definitions/Boolsk",
+					"description": "inntekt som inngår i grunnlag for trekk"
+				},
+				"loennsinntekt": {
+					"$ref": "#/definitions/Loennsinntekt",
+					"description": "vederlag, godtgjøring for et arbeid el. en tjeneste, bergingslønn 2 fastsatt betaling for et arbeid, gasje dagsl-, månedsl-, årsl-. Se fordel"
+				},
+				"naeringsinntekt": {
+					"$ref": "#/definitions/Naeringsinntekt",
+					"description": "resultat av foretakets virksomhet, og beregnes ut fra resultatregnskap."
+				},
+				"pensjonEllerTrygd": {
+					"$ref": "#/definitions/PensjonEllerTrygd",
+					"description": "typer pensjon eller trygd"
+				},
+				"skatteOgAvgiftsregel": {
+					"$ref": "#/definitions/Tekst",
+					"description": "kategorisering i behandlingstyper av en godtgjørelse i henhold til visse hovedtrekk ved godtgjørelsen eller hvor den er opptjent eller hvilken yrkesgruppe, med tilhørende avtaleverk, inntektsmottakeren tilhører osv."
+				},
+				"utloeserArbeidsgiveravgift": {
+					"$ref": "#/definitions/Boolsk",
+					"description": "inntekt som favnes av folketrygdlovens § 23-2 som beregningsgrunnlag for arbeidsgiveravgift."
+				},
+				"ytelseFraOffentlige": {
+					"$ref": "#/definitions/YtelseFraOffentlige",
+					"description": "utbetaling fra staten som skal sikre økonomisk trygghet ved å sikre inntekt og kompensere for særlige utgifter ved arbeidsløshet, svangerskap og fødsel, aleneomsorg for barn, sykdom og skade, uførhet, alderdom og dødsfall."
+				}
+			},
+			"required": [
+				"beloep",
+				"fordel"
+			],
+			"type": "object"
+		},
+		"Inntekter": {
+			"type": "array",
+			"items": [{
+				"type": "object",
+				"$ref": "#/definitions/Inntekt"
+			}]
+		},
+		"Inntektsmottaker": {
+			"additionalProperties": false,
+			"description": "part som mottar lønn, pensjon, ytelser m.v.",
+			"properties": {
+				"personidentifikator": {
+					"$ref": "#/definitions/Tekst"
+				}
+			},
+			"type": "object"
+		},
+		"Livrente": {
+			"additionalProperties": false,
+			"properties": {
+				"totaltUtbetaltBeloep": {
+					"$ref": "#/definitions/Desimaltall"
+				}
+			},
+			"required": [
+				"totaltUtbetaltBeloep"
+			],
+			"type": "object"
+		},
+		"Loennsbeskrivelse": {
+			"description": "lønnsbeskrivelser",
+			"type": "string"
+		},
+		"Loennsinntekt": {
+			"additionalProperties": false,
+			"description": "vederlag, godtgjøring for et arbeid el. en tjeneste, bergingslønn 2 fastsatt betaling for et arbeid, gasje dagsl-, månedsl-, årsl-. Se fordel",
+			"properties": {
+				"antall": {
+					"$ref": "#/definitions/Tekst"
+				},
+				"beskrivelse": {
+					"$ref": "#/definitions/Loennsbeskrivelse",
+					"description": "beskrivelse på hvilken kategori av lønnsinntekt som en lønnsutbetaling tilhører"
+				},
+				"spesifikasjon": {
+					"$ref": "#/definitions/Spesifikasjon"
+				},
+				"tilleggsinformasjon": {
+					"$ref": "#/definitions/Tilleggsinformasjon"
+				}
+			},
+			"type": "object"
+		},
+		"LottOgPartInnenFiske": {
+			"additionalProperties": false,
+			"properties": {
+				"antallDager": {
+					"$ref": "#/definitions/Heltall"
+				}
+			},
+			"type": "object"
+		},
+		"Naeringsinntekt": {
+			"additionalProperties": false,
+			"description": "resultat av foretakets virksomhet, og beregnes ut fra resultatregnskap.",
+			"properties": {
+				"beskrivelse": {
+					"$ref": "#/definitions/Naeringsinntektbeskrivelse",
+					"description": "Oversikt over hvilke <beskrivelse> koder som brukes for <pensjonEllerTrygd>. Gyldighetsperiode styrer hvilken periode en <beskrivelse> kode er i bruk."
+				},
+				"tilleggsinformasjon": {
+					"$ref": "#/definitions/Tilleggsinformasjon"
+				}
+			},
+			"type": "object"
+		},
+		"Naeringsinntektbeskrivelse": {
+			"description": "typer næringsinntekt",
+			"type": "string"
+		},
+		"Nettoloennsordning": {
+			"additionalProperties": false,
+			"properties": {
+				"betaltSkattebeloepIUtlandet": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"bilinformasjon": {
+					"$ref": "#/definitions/BilOgBaat"
+				},
+				"oppgrossingstabellnummer": {
+					"$ref": "#/definitions/Heltall"
+				}
+			},
+			"type": "object"
+		},
+		"NorskKontinentalsokkel": {
+			"additionalProperties": false,
+			"properties": {
+				"gjelderLoennFoerste60Dager": {
+					"$ref": "#/definitions/Boolsk"
+				},
+				"tidsrom": {
+					"$ref": "#/definitions/Periode"
+				}
+			},
+			"type": "object"
+		},
+		"OppgaveInntektsmottaker": {
+			"additionalProperties": false,
+			"description": "oppgave med inntekts- og arbeidsforhold for en inntektsmottaker\n\n",
+			"properties": {
+				"forskuddstrekk": {
+					"$ref": "#/definitions/ForskuddstrekkListe"
+				},
+				"fradrag": {
+					"$ref": "#/definitions/FradragListe"
+				},
+				"inntekt": {
+					"$ref": "#/definitions/Inntekter"
+				},
+				"inntektsmottaker": {
+					"$ref": "#/definitions/Inntektsmottaker",
+					"description": "part som mottar lønn, pensjon, ytelser m.v."
+				},
+				"kalendermaaned": {
+					"$ref": "#/definitions/Tekst",
+					"description": "måned i et bestemt år en a-melding søker å dekke opplysningsplikten for."
+				},
+				"opplysningspliktigId": {
+					"$ref": "#/definitions/Tekst"
+				},
+				"skjermet": {
+					"$ref": "#/definitions/Boolsk"
+				},
+				"virksomhetId": {
+					"$ref": "#/definitions/Tekst"
+				}
+			},
+			"required": [
+				"inntektsmottaker",
+				"kalendermaaned"
+			],
+			"type": "object"
+		},
+		"OppgaverInntektsmottaker": {
+			"additionalProperties": false,
+			"description": "Samling av oppgaver for inntektsmottakere ",
+			"type": "array", 
+			"items" : [ {
+				"type": "object",
+				"$ref": "#/definitions/OppgaveInntektsmottaker"
+			}]
+		},
+		"PensjonEllerTrygd": {
+			"additionalProperties": false,
+			"description": "Samlebegrep for pensjons- og trygdeytelser",
+			"properties": {
+				"beskrivelse": {
+					"$ref": "#/definitions/PensjonEllerTrygdBeskrivelse",
+					"description": "Oversikt over hvilke <beskrivelse> koder som brukes for <pensjonEllerTrygd>. Gyldighetsperiode styrer hvilken periode en <beskrivelse> kode er i bruk."
+				},
+				"tilleggsinformasjon": {
+					"$ref": "#/definitions/Tilleggsinformasjon"
+				}
+			},
+			"type": "object"
+		},
+		"PensjonEllerTrygdBeskrivelse": {
+			"type": "string"
+		},
+		"Periode": {
+			"additionalProperties": false,
+			"properties": {
+				"sluttdato": {
+					"$ref": "#/definitions/Dato"
+				},
+				"startdato": {
+					"$ref": "#/definitions/Dato"
+				}
+			},
+			"required": [
+				"startdato"
+			],
+			"type": "object"
+		},
+		"ReiseKostOgLosji": {
+			"additionalProperties": false,
+			"properties": {
+				"antallReiser": {
+					"$ref": "#/definitions/Heltall"
+				},
+				"persontype": {
+					"$ref": "#/definitions/Tekst"
+				}
+			},
+			"type": "object"
+		},
+		"Spesifikasjon": {
+			"additionalProperties": false,
+			"properties": {
+				"erOpptjentPaaHjelpefartoey": {
+					"$ref": "#/definitions/Boolsk"
+				},
+				"erOpptjentPaaKontinentalsokkel": {
+					"$ref": "#/definitions/Boolsk"
+				},
+				"opptjeningsland": {
+					"$ref": "#/definitions/Tekst"
+				},
+				"skattemessigBosattILand": {
+					"$ref": "#/definitions/Tekst"
+				}
+			},
+			"type": "object"
+		},
+		"Tekst": {
+			"description": "vilkårlig lang sekvens av tegn inkludert aksenter og spesielle tegn fra standardiserte tegnsett \n",
+			"maxLength": 4000,
+			"type": "string"
+		},
+		"Tilleggsinformasjon": {
+			"additionalProperties": false,
+			"properties": {
+				"bilOgBaat": {
+					"$ref": "#/definitions/BilOgBaat"
+				},
+				"bonusFraForsvaret": {
+					"$ref": "#/definitions/BonusFraForsvaret"
+				},
+				"dagmammaIEgenBolig": {
+					"$ref": "#/definitions/DagmammaIEgenBolig"
+				},
+				"etterbetalingsperiode": {
+					"$ref": "#/definitions/Periode"
+				},
+				"inntektPaaNorskKontinentalsokkel": {
+					"$ref": "#/definitions/NorskKontinentalsokkel"
+				},
+				"inntjeningsforhold": {
+					"$ref": "#/definitions/Tekst"
+				},
+				"livrente": {
+					"$ref": "#/definitions/Livrente"
+				},
+				"lottOgPart": {
+					"$ref": "#/definitions/LottOgPartInnenFiske"
+				},
+				"nettoloenn": {
+					"$ref": "#/definitions/Nettoloennsordning"
+				},
+				"pensjon": {
+					"$ref": "#/definitions/AldersUfoereEtterlatteAvtalefestetOgKrigspensjon"
+				},
+				"reiseKostOgLosji": {
+					"$ref": "#/definitions/ReiseKostOgLosji"
+				},
+				"utenlandskArtist": {
+					"$ref": "#/definitions/UtenlandskArtist"
+				}
+			},
+			"type": "object"
+		},
+		"UtenlandskArtist": {
+			"additionalProperties": false,
+			"properties": {
+				"inntektsaar": {
+					"$ref": "#/definitions/Aarstall"
+				},
+				"oppgrossingsgrunnlag": {
+					"$ref": "#/definitions/Desimaltall"
+				},
+				"trukketArtistskatt": {
+					"$ref": "#/definitions/Heltall"
+				}
+			},
+			"required": [
+				"inntektsaar",
+				"oppgrossingsgrunnlag",
+				"trukketArtistskatt"
+			],
+			"type": "object"
+		},
+		"YtelseFraOffentlige": {
+			"additionalProperties": false,
+			"description": "utbetaling fra staten som skal sikre økonomisk trygghet ved å sikre inntekt og kompensere for særlige utgifter ved arbeidsløshet, svangerskap og fødsel, aleneomsorg for barn, sykdom og skade, uførhet, alderdom og dødsfall.",
+			"properties": {
+				"beskrivelse": {
+					"$ref": "#/definitions/YtelseFraOffentligeBeskrivelse",
+					"description": "beskrivelse på hvilken kategori av ytelsesinntekt som en utbetaling tilhører"
+				},
+				"tilleggsinformasjon": {
+					"$ref": "#/definitions/Tilleggsinformasjon"
+				}
+			},
+			"type": "object"
+		},
+		"YtelseFraOffentligeBeskrivelse": {
+			"description": "beskrivelse på hvilken kategori av ytelsesinntekt som en utbetaling tilhører",
+			"type": "string"
+		}
+	},
+	"description": "Reverse engineered schema for inntektsmottaker",
+	"properties": {
+		"oppgaveInntektsmottaker": {
+			"$ref": "#/definitions/oppgaverInntektsmottaker"
+		}
+	},
+	"type": "object"
+}

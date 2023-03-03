@@ -1,0 +1,64 @@
+{
+  "personidentifikator": "12345678910",
+  "inntektsaar": "2020",
+  "skjermet": false,
+  "grunnlag": [
+    {
+      "tekniskNavn": "samledeOpptjenteRenterIInnenlandskeBanker",
+      "beloep": 24000,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "avkortetFordelVedElektroniskKommunikasjon",
+      "beloep": 4392,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletFremfoerbartUnderskuddFraTidligereAar",
+      "beloep": 34090,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 660000,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "utbetalingFraSkadeforsikring",
+      "beloep": 10000,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAndelAvInntektIBoligselskapEllerBoligsameie",
+      "beloep": 60000,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvAnnetFinansprodukt",
+      "beloep": 100000,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletAndelAvFradragsberettigetFelleskostnadForBoligselskapEllerBoligsameie",
+      "beloep": 70000,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    }
+  ],
+  "skatteoppgjoersdato": "2021-02-10"
+}

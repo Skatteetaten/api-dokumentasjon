@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<detaljertSkattegrunnlag xmlns="urn:no:skatteetaten:datasamarbeid:detaljertskattegrunnlag:v1">
+  <personidentifikator>12345678910</personidentifikator>
+  <inntektsaar>2015</inntektsaar>
+  <skjermet>false</skjermet>
+  <grunnlag wstxns1:type="Eiendom" xmlns:wstxns1="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>formueEiendomLikningsverdiPrimaerbolig</tekniskNavn>
+    <verdi>780000</verdi>
+    <bruksnummer>93</bruksnummer>
+    <gaardsnummer>12</gaardsnummer>
+    <kommunenummer>3</kommunenummer>
+    <festenummer>24</festenummer>
+    <seksjonsnummer>1103</seksjonsnummer>
+  </grunnlag>
+  <grunnlag wstxns2:type="Kjoeretoey" xmlns:wstxns2="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>formueCampingvogn</tekniskNavn>
+    <verdi>50000</verdi>
+    <registreringsnummer>DE90022</registreringsnummer>
+  </grunnlag>
+  <grunnlag wstxns3:type="Kjoeretoey" xmlns:wstxns3="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>formueBil</tekniskNavn>
+    <verdi>20000</verdi>
+    <registreringsnummer>DE90023</registreringsnummer>
+  </grunnlag>
+  <grunnlag wstxns4:type="Generisk" xmlns:wstxns4="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>formueInnskuddInnenlandsBank</tekniskNavn>
+    <verdi>30000</verdi>
+    <kildenavn>DNB Bank ASA</kildenavn>
+    <kildebeskrivelse>Bankens navn</kildebeskrivelse>
+  </grunnlag>
+  <grunnlag wstxns5:type="Generisk" xmlns:wstxns5="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>formueInnskuddBarnUnder17</tekniskNavn>
+    <verdi>10000</verdi>
+    <kildenavn>TEST Bank ASA</kildenavn>
+    <kildebeskrivelse>Bankens navn</kildebeskrivelse>
+  </grunnlag>
+  <grunnlag wstxns6:type="Generisk" xmlns:wstxns6="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>formuesfradragGjeld</tekniskNavn>
+    <verdi>1200000</verdi>
+    <kildenavn>Nordea Bank Norge ASA</kildenavn>
+    <kildebeskrivelse>Lånegivers navn</kildebeskrivelse>
+  </grunnlag>
+  <grunnlag wstxns7:type="Generisk" xmlns:wstxns7="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>inntektRenteinntektInnenlandsBank</tekniskNavn>
+    <verdi>610</verdi>
+    <kildenavn>DNB Bank ASA</kildenavn>
+    <kildebeskrivelse>Bankens navn</kildebeskrivelse>
+  </grunnlag>
+  <grunnlag wstxns8:type="Generisk" xmlns:wstxns8="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>inntektLoenn</tekniskNavn>
+    <verdi>300000</verdi>
+    <kildenavn>Rema 1000</kildenavn>
+    <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+  </grunnlag>
+  <grunnlag wstxns9:type="Generisk" xmlns:wstxns9="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>inntektLoenn</tekniskNavn>
+    <verdi>190000</verdi>
+    <kildenavn>Peppes Pizza</kildenavn>
+    <kildebeskrivelse>Arbeidsgivers navn</kildebeskrivelse>
+  </grunnlag>
+  <grunnlag wstxns10:type="Generisk" xmlns:wstxns10="http://www.w3.org/2001/XMLSchema-instance">
+    <tekniskNavn>inntektsfradragGjeldsrenter</tekniskNavn>
+    <verdi>35000</verdi>
+    <kildenavn>Nordea Bank Norge ASA</kildenavn>
+    <kildebeskrivelse>Lånegivers navn</kildebeskrivelse>
+  </grunnlag>
+</detaljertSkattegrunnlag>

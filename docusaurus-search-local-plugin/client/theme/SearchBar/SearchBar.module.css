@@ -1,0 +1,55 @@
+.searchBar {
+  padding: 0 1rem 0.5rem 1rem;
+  position: relative;
+}
+
+.searchBarList {
+  border-radius: 6px;
+  background-color: #f5f6f7;
+  position: absolute;
+  width: 560px;
+  left: -330px !important;
+}
+
+.searchBarList ol {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 1rem;
+}
+
+.searchBarList ol li {
+  color: #000;
+  background-color: white;
+  padding: 0.5rem 0;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border-radius: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.searchBarList ol li:hover {
+  background-color: #6f2c3f;
+  color: white;
+}
+
+.searchBarList ol li:hover a {
+  color: white;
+}
+
+.searchBarList ol li:hover span {
+  color: white;
+}
+
+.searchBarList ol li a:hover {
+  background-color: transparent;
+}
+
+.searchBarList ol li a {
+  color: #000;
+}
+
+.searchBarList ol li span {
+  padding-left: 0.5rem;
+}

@@ -1,0 +1,5 @@
+<feil xmlns="urn:no:skatteetaten:datasamarbeid:feil:v1">
+    <kode>SG-011</kode>
+    <melding>Feltet 'personidentifikator' har ugyldig format. Må være nøyaktig 11 siffer</melding>
+    <korrelasjonsid>a621a996-315d-4b8a-ac6c-6239e67f03e7</korrelasjonsid>
+</feil>

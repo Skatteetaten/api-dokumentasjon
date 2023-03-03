@@ -1,0 +1,137 @@
+{
+  "personidentifikator": "12345678901",
+  "inntektsaar": "2018",
+  "grunnlag": [
+    {
+      "tekniskNavn": "samletFormuesverdiForFastEiendomIUtlandet",
+      "beloep": 260000,
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "samletInnskuddIInnenlandskeBanker",
+      "beloep": 1500000,
+      "spesifisering": [
+        {
+          "type": "Konto",
+          "kontonummer": "12345678901",
+          "bankensNavn": "MinEnesteBank",
+          "organisasjonsnummer": "123456789",
+          "innskudd": 1000000,
+          "opptjenteRenter": 2000
+        },
+        {
+          "type": "Konto",
+          "kontonummer": "12345678902",
+          "bankensNavn": "MinEnesteBank",
+          "organisasjonsnummer": "123456789",
+          "innskudd": 500000,
+          "opptjenteRenter": 1400
+        }
+      ],
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "samledePaaloepteRenter",
+      "beloep": 25000,
+      "spesifisering": [
+        {
+          "type": "Konto",
+          "kontonummer": "12345678903",
+          "bankensNavn": "MinEnesteBank",
+          "organisasjonsnummer": "123456789",
+          "gjeld": 165000,
+          "paaloepteRenter": 2500
+        },
+        {
+          "type": "SkyldigRestskatt",
+          "betalteForsinkelsesrenterForSamletSkyldigRestskatt": 5000,
+          "samletSkyldigRestskatt": 200000
+        }
+      ],
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "kapitalinntektFraSkogbruk",
+      "beloep": 15000,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 350000,
+      "spesifisering": [
+        {
+          "type": "LoennOgTilsvarendeYtelser",
+          "arbeidsgiversNavn": "Matre Og Inne",
+          "organisasjonsnummer": "123456789",
+          "beloep": 350000
+        }
+      ],
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samledeOpptjenteRenterIInnenlandskeBanker",
+      "beloep": 3400,
+      "spesifisering": [
+        {
+          "type": "Konto",
+          "kontonummer": "12345678901",
+          "bankensNavn": "MinEnesteBank",
+          "organisasjonsnummer": "123456789",
+          "innskudd": 1000000,
+          "opptjenteRenter": 2000
+        },
+        {
+          "type": "Konto",
+          "kontonummer": "12345678902",
+          "bankensNavn": "MinEnesteBank",
+          "organisasjonsnummer": "123456789",
+          "innskudd": 500000,
+          "opptjenteRenter": 1400
+        }
+      ],
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "utgifterTilPassOgStellAvHjemmevaerendeBarn",
+      "beloep": 50000,
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "formuesverdiForPrimaerbolig",
+      "beloep": 780000,
+      "spesifisering": [
+        {
+          "type": "Eiendom",
+          "bruksnummer": "55",
+          "gaardsnummer": "39",
+          "kommunenummer": "0020",
+          "formuesverdi": 780000,
+          "beregnetMarkedsverdiForBolig": 5200000,
+          "eierandel": 50
+        }
+      ],
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "samletInnenlandskGjeld",
+      "beloep": 365000,
+      "spesifisering": [
+        {
+          "type": "Konto",
+          "kontonummer": "12345678903",
+          "bankensNavn": "MinEnesteBank",
+          "organisasjonsnummer": "123456789",
+          "gjeld": 165000,
+          "paaloepteRenter": 2500
+        },
+        {
+          "type": "SkyldigRestskatt",
+          "betalteForsinkelsesrenterForSamletSkyldigRestskatt": 5000,
+          "samletSkyldigRestskatt": 200000
+        }
+      ]
+    }
+  ],
+  "skjermet": false,
+  "skatteoppgjoersdato": "2019-03-01"
+}

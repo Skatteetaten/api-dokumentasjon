@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:no:skatteetaten:fastsetting:formueinntekt:pensjonsgivendeinntektforfolketrygden:nav_overfoering:v1" xmlns:skatt="http://www.skatteetaten.no/xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:no:skatteetaten:fastsetting:formueinntekt:pensjonsgivendeinntektforfolketrygden:nav_overfoering:v1">
+    <xsd:annotation>
+        <xsd:documentation>
+            <xsd:attribute fixed="2020-09-23T10:09:34.221+0200" name="generertDato"/>
+            <xsd:attribute fixed="v1" name="versjon"/>
+            <xsd:attribute fixed="" name="beskrivelse"/>
+            <xsd:attribute fixed="nav-overfoering" name="modellnavn"/>
+            <xsd:attribute fixed="urn:no:skatteetaten:fastsetting:formueinntekt:pensjonsgivendeinntektforfolketrygden:nav_overfoering:v1" name="navnerom"/>
+            <xsd:attribute fixed="false" name="begrepsreferanse"/>
+            <xsd:attribute fixed="false" name="dokumentasjon"/>
+            <xsd:attribute fixed="false" name="nillable"/>
+            <xsd:attribute fixed="false" name="modellelement"/>
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:element name="pensjonsgivendeInntektForFolketrygden" type="PensjonsgivendeInntektForFolketrygden"/>
+    <xsd:complexType name="PensjonsgivendeInntektForFolketrygden">
+        <xsd:sequence>
+            <xsd:element name="norskPersonidentifikator" type="NorskPersonidentifikator"/>
+            <xsd:element name="inntektsaar" type="Inntektsaar"/>
+            <xsd:element maxOccurs="unbounded" minOccurs="0" name="pensjonsgivendeInntekt" type="PensjonsgivendeInntekt"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Tekst">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="4000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="NorskPersonidentifikator">
+        <xsd:restriction base="Tekst">
+            <xsd:pattern value="[0-9]+"/>
+            <xsd:length value="11"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="Heltall">
+        <xsd:restriction base="xsd:long"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Inntektsaar">
+        <xsd:restriction base="Heltall">
+            <xsd:minInclusive value="1000"/>
+            <xsd:totalDigits value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="PensjonsgivendeInntekt">
+        <xsd:sequence>
+            <xsd:element name="datoForFastsetting" type="Dato"/>
+            <xsd:element name="skatteordning" type="Skatteordning"/>
+            <xsd:element minOccurs="0" name="pensjonsgivendeInntektAvLoennsinntekt" type="BeloepSomHeltall"/>
+            <xsd:element minOccurs="0" name="pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel" type="BeloepSomHeltall"/>
+            <xsd:element minOccurs="0" name="pensjonsgivendeInntektAvNaeringsinntekt" type="BeloepSomHeltall"/>
+            <xsd:element minOccurs="0" name="pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage" type="BeloepSomHeltall"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:simpleType name="Dato">
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="Skatteordning">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="fastland"/>
+            <xsd:enumeration value="svalbard"/>
+            <xsd:enumeration value="kildeskattPaaLoenn"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="BeloepSomHeltall">
+        <xsd:restriction base="Heltall"/>
+    </xsd:simpleType>
+</xsd:schema>

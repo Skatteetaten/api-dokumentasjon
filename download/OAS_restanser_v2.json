@@ -1,0 +1,313 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "description": "Restanser inneholder informasjon om hvorvidt en skatteyter har restanser til skatteetaten.",
+    "version": "2.0.0",
+    "title": "Restanser API",
+    "termsOfService": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html",
+    "contact": {
+      "name": "Brukerstøtte datasamarbeid",
+      "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/"
+    }
+  },
+  "externalDocs": {
+    "description": "Dokumentasjon på Skatteetatens GitHub",
+    "url": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon"
+  },
+  "servers": [
+    {
+      "url": "https://api-at.sits.no/api/innkreving/restanser/v2/",
+      "description": "Akseptansetest (AT)"
+    },
+    {
+      "url": "https://api.skatteetaten.no/api/innkreving/restanser/v2/",
+      "description": "Produksjon (Prod)"
+    }
+  ],
+  "paths": {
+    "/{rettighetspakke}/{organisasjonsnummer}": {
+      "get": {
+        "summary": "Hent restansene for enhet",
+        "description": "Hent restansene for enhet",
+        "operationId": "hentRestanseneForEnhet",
+        "tags": [
+          "Hent restansene for enhet"
+        ],
+        "parameters": [
+          {
+            "name": "rettighetspakke",
+            "in": "path",
+            "description": "Datakonsumenter plasseres i en rettighetspakke (per datasett) basert på en juridisk vurdering. Rettighetspakken styrer Skjermingsregler, Filtrering og Detaljering som benyttes nÃ¥r det gis innsyn i data i datasett.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "organisasjonsnummer",
+            "in": "path",
+            "description": "organisasjonsnummer",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/Organisasjonsnummer"
+            }
+          },
+          {
+            "name": "Korrelasjonsid",
+            "in": "header",
+            "description": "Korrelasjonsid, unik identifikator for den tekniske forespÃ¸rselen. Må være på UUID-format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "example": "123e4567-e89b-12d3-a456-426655440000"
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "JWT token",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "jwt"
+            }
+          },
+          {
+            "name": "AltinnSamtykke",
+            "in": "header",
+            "description": "Claims for altinnsamtykke",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "jws"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gyldig respons",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RestanserDto"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/RestanserDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Valideringsfeil",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Bruker har ikke tilgang",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Tekniske feil",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RestanserDto": {
+        "type": "object",
+        "properties": {
+          "levert": {
+            "$ref": "#/components/schemas/DatoKlokkeslett"
+          },
+          "forespurteOrganisasjon": {
+            "$ref": "#/components/schemas/Organisasjonsnummer"
+          },
+          "restanser": {
+            "$ref": "#/components/schemas/Restanser"
+          }
+        },
+        "xml": {
+          "namespace": "urn:no:skatteetaten:datasamarbeid:restanser:v2"
+        }
+      },
+      "Organisasjonsnummer": {
+        "description": "Organisasjonsnummeret",
+        "type": "string",
+        "pattern": "[0-9]*",
+        "example": 987654231
+      },
+      "Restanser": {
+        "type": "object",
+        "properties": {
+          "arbeidsgiveravgift": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Restansebeloep"
+              },
+              {
+                "description": "restanse arbeidsgiveravgift"
+              }
+            ]
+          },
+          "forskuddstrekk": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Restansebeloep"
+              },
+              {
+                "description": "restanse forskuddstrekk"
+              }
+            ]
+          },
+          "forskuddsskatt": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Restansebeloep"
+              },
+              {
+                "description": ""
+              }
+            ]
+          },
+          "restskatt": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Restansebeloep"
+              },
+              {
+                "description": ""
+              }
+            ]
+          },
+          "gebyr": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Restansebeloep"
+              },
+              {
+                "description": "Gebyr inneholder tvangsmulkt, ansvarskravMva, sumForfaltRenterGebyrMVA, ansvarskravSkatt, finansskattLønn, artistskatt "
+              }
+            ]
+          },
+          "merverdiavgift": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Restansebeloep"
+              },
+              {
+                "description": ""
+              }
+            ]
+          }
+        }
+      },
+      "DatoKlokkeslett": {
+        "description": "en kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). '",
+        "type": "string",
+        "format": "datetime",
+        "example": "2020-01-02T12:43:23"
+      },
+      "Restansebeloep": {
+        "type": "object",
+        "properties": {
+          "forfaltOgUbetalt": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/Beloep"
+              },
+              {
+                "description": "dette felt er sum av eventuelle renter og forfalt og ubetalt"
+              }
+            ]
+          }
+        }
+      },
+      "Beloep": {
+        "type": "integer",
+        "description": "en sum av penger brukt i en kontekst. Dette kan være en transaksjon, saldo o.l."
+      },
+      "Desimaltall": {
+        "description": "tall som er satt sammen av en heltallsdel og en fraksjondel [wikipedia]",
+        "type": "integer"
+      },
+      "Feil": {
+        "description": "Feilstruktur for alle feilmeldinger.",
+        "type": "object",
+        "properties": {
+          "kode": {
+            "type": "string",
+            "description": "Feilkode, for maskinell håndtering",
+            "example": "RESTANSE-0xx"
+          },
+          "melding": {
+            "type": "string",
+            "description": "Beskrivelse av feilen som har oppstått",
+            "example": "Fant ikke gitt personidentifikator"
+          },
+          "korrelasjonsid": {
+            "type": "string",
+            "description": "Korrelasjonsid",
+            "example": "123e4567-e89b-12d3-a456-426655440000"
+          }
+        },
+        "xml": {
+          "name": "feil",
+          "namespace": "urn:no:skatteetaten:datasamarbeid:feil:v1"
+        }
+      }
+    }
+  }
+}

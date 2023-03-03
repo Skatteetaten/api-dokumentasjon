@@ -1,0 +1,247 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "description": "Tilbyr tjeneste for uthenting av naeringsspsifikasjon.",
+    "version": "2.0.0",
+    "title": "Naeringsspsifikasjon API",
+    "termsOfService": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html",
+    "contact": {
+      "name": "Brukerstoette datasamarbeid",
+      "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/"
+    }
+  },
+  "externalDocs": {
+    "description": "Dokumentasjon paa Skatteetatens GitHub",
+    "url": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon"
+  },
+  "servers": [
+    {
+      "url": "https://api-at.sits.no/api/formueinntekt/naeringsspesifikasjon/v1/",
+      "description": "Akseptansetest (AT)"
+    },
+    {
+      "url": "https://api-test.sits.no/api/formueinntekt/naeringsspesifikasjon/v1/",
+      "description": "Ekstern deling (ED)"
+    },
+    {
+      "url": "https://api.skatteetaten.no/api/formueinntekt/naeringsspesifikasjon/v1/",
+      "description": "Produksjon (Prod)"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "Feil": {
+        "description": "Feilstruktur for alle feilmeldinger.",
+        "type": "object",
+        "properties": {
+          "kode": {
+            "type": "string",
+            "description": "Feilkode, for maskinell haandtering",
+            "example": "NS-0xx"
+          },
+          "melding": {
+            "type": "string",
+            "description": "Beskrivelse av feilen som har oppstaatt",
+            "example": "Fant ikke gitt personidentifikator"
+          },
+          "korrelasjonsid": {
+            "type": "string",
+            "description": "Korrelasjonsid",
+            "example": "123e4567-e89b-12d3-a456-426655440000"
+          }
+        },
+        "xml": {
+          "name": "feil",
+          "namespace": "urn:no:skatteetaten:datasamarbeid:feil:v1"
+        }
+      }
+    }
+  },
+  "paths": {
+    "/{rettighetspakke}/{inntektsaar}/{personidentifikator}": {
+      "get": {
+        "summary": "Hent naeringsspesifikasjon for person",
+        "description": "Hent naeringsspesifikasjon for person",
+        "operationId": "hentNaeringsspesifikasjonForPerson",
+        "tags": [
+          "Naeringsspesifikasjon"
+        ],
+        "parameters": [
+          {
+            "name": "rettighetspakke",
+            "in": "path",
+            "description": "Datakonsumenter plasseres i en rettighetspakke (per datasett) basert paa en juridisk vurdering. Rettighetspakken styrer Skjermingsregler, Filtrering og Detaljering som benyttes nÃ¥r det gis innsyn i data i datasett.",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "inntektsaar",
+            "in": "path",
+            "description": "Inntektsaaret det skal hentes opplysninger fra.",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "[0-9]{4}"
+            },
+            "example": "2020"
+          },
+          {
+            "name": "personidentifikator",
+            "in": "path",
+            "description": "personidentifikator",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "[0-9]{11}"
+            },
+            "example": "12345678901"
+          },
+          {
+            "name": "gjelderPaaTidspunkt",
+            "in": "query",
+            "description": "Tidspunkt for hvilken gjeldende naeringsspesifikasjon som skal returneres.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "example": "2020-10-21T11:11:11"
+          },{
+            "name": "Korrelasjonsid",
+            "in": "header",
+            "description": "Korrelasjonsid, unik identifikator for den tekniske forespoerselen. Maa vaere paa UUID-format",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            },
+            "example": "123e4567-e89b-12d3-a456-426655440000"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Gyldig respons",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "NaeringsspesifikasjonOAStypes_v1.json#/components/schemas/Naeringsopplysninger"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "NaeringsspesifikasjonOAStypes_v1.json#/components/schemas/Naeringsopplysninger"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Valideringsfeil i innkommede felter",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Bruker er ikke autorisert",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Bruker har ikke tilgang til forespurt ressurs",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Naeringsspesifikasjon ikke funnet for angitt personidentifikator og aar",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "406": {
+            "description": "Oppgitt dataformat ikke stoettet",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Teknisk feil",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Ukjent feil",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feil"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
