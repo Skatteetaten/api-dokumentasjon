@@ -16,18 +16,18 @@ hide_table_of_contents: true
 ![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)
 
 ### Få tilgang
-Konsument må få tilgang til Altinns samtykke og fullmaktsløsning: https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/komme-i-gang/. Skatteetaten er datakilden og har opprettet tjenestekoder og tjenestekodeutgavekoder for det aktuelle api'et og dette er beskrevet i dokumentasjonen for det enkelte api'et. Skatteetaten benytter ikke tjenesteeierstyrt rettighetsregister.
+Før du som konsument kan benytte Skatteetaten API'er som krever samtykke eller fullmakt må du få tilgang til Altinn's samtykkeløsning. De har beskrevet det som skal til for å [komme i gang med samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/komme-i-gang). Skatteetaten er her datakilden og har opprettet tjenestekoder og tjenesteutgavekoder for api'ene. Nærmere informasjon om dette finner du i dokumentasjonen for det enkelte api'et. Skatteetaten benytter ikke tjenesteeierstyrt rettighetsregister.
 
 ### Be om samtykke
-Når konsumenten har fått tilgang til Altinn's Samtykkeløsning og API'et hos Skatteetaten kan de be om samtykke i henhold til følgende beskrivelse: https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/be-om-samtykke/. Skatteetaten støtter kun Forhåndsregistrerte samtykkeforespørsler og det heller ikke mulig å overstyre den forhåndsdefinerte teksten. Request Message skal derfor ikke benyttes i forespørselen. 
+Når du har fått tilgang til Altinn's Samtykkeløsning og API'et til Skatteetaten kan det [bes om samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/be-om-samtykke). Skatteetaten støtter kun Forhåndsregistrerte samtykkeforespørsler og det heller ikke mulig å overstyre den forhåndsdefinerte teksten. *Request Message* skal derfor ikke benyttes i forespørselen. 
 
 Den overordnetete tekniske flyten for samtykkedialogen blir da som følger:
-1. Bruker logger seg på konsumentens nettløsning f.eks for å søke om lån eller se sine krav og betalinger. Konsument må ha brukerens samtykke eller fullmakt for å innhente opplysninger på vegne av denne.
+1. Bruker logger seg på deres nettløsning f.eks for å søke om lån eller se sine krav og betalinger. Konsumenter må ha brukerens samtykke eller fullmakt for å innhente opplysninger på vegne av denne. 
 2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Altinn med *ServiceCode* og *ServiceCodeEdition* for de aktuelle tjenestene og mottar en *AuthorizationCode*.
 3. Konsument sender brukeren til samtykkesiden hos Altinn med *Authorization Code* fra samtykkeforespørselen og en *RedirectURL*.
 4. Brukeren blir presentert for samtykkesiden som beskriver hva det kan gis samtykke til i henhold til malen for den bestemte Samtykketjenesten.
 5. Bruker gir samtykke og sendes tilbake til konsumenten på *Redirect URL'en* som ble oppgitt.
-6. Konsument henter et samtykketoken fra Altinn ved bruk av *Authorization Code* https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token/
+6. Konsument [henter et samtykketoken](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token) fra Altinn ved bruk av *Authorization Code* 
 7. Konsument bruker Skatteetatens API med samtykketokenet som *AltinnSamtykke*-headerverdi. Forespørselen må også inneholde et Maskinporten token, se egne beskrivelser av dette.
 8. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
@@ -38,13 +38,6 @@ Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egne
 Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
 
 ## Headereksempel
-For virksomheter som benytter samtykke må Altinn samtykketoken settes i header i request til Skatteetaten sine datatjenester. 
-
-Verdien i denne headeren skal være et Json Web Token (JWT) signert av Altinn. For informasjon rundt hvordan man skaffer et slikt token, sjekk [Altinn: hente token](https://altinn.github.io/docs/guides/samtykke/datakonsument/hente-token/)
-
-Det er ikke nødvendig for virksomheten å lese samtykketoken eller sette seg inn i tokenformatet. For full dokumentasjon av tokenformat se
- [Altinn: tokenformat](https://altinn.github.io/docs/guides/samtykke/datakilde/bruk-av-token/) 
- 
 
 | header | forklaring | eksempelverdi |
 | ------ | ---------- | ------------- |
