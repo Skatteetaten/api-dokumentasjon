@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [bsu, boligsparing for ungdom, skatteberegning, inntekt, formue]
-last_updated: Des 1, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om BSU renteinntekter pr kalenderår for en person.</summary>
@@ -31,7 +31,7 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/boligsparing-for-ungdom-api) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
-
+ 
 ## Datakatalog
  
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/37b70e5e-b862-3c66-a5f1-4dca6ee30afb) i Felles datakatalog.
