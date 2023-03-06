@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [restanser, skatteyter]
-last_updated: Des 1, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om forfalte og ubetalte skatter og avgifter for en virksomhet.</summary>
@@ -26,19 +26,26 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:re
 
 ## Delegering
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Restanser API - På vegne av`
-
-## Samtykke
-For rettighetspakke `Ebevis` kreves [samtykke](../om/samtykke.md) for denne tjenesten.
-
-| Tjeneste | Tjenestekode |
-|--------| ------ |
-| Restanser API | 5616_5 |
  
 ## Teknisk spesifikasjon
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/restanser-api) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
+## Rettighetspakker
+
+| Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
+|---|---|
+| dibk | Hjemmel |
+| ebevis | Krever samtykke |
+ 
+## Samtykke
+Tjenesten krever [samtykke](../om/samtykke.md).
+
+| Tjenestekode | Formål |
+|--------| ------ |
+| 5616_5 | Kreves for rettighetspakke `ebevis`|
+ 
 ## Datakatalog
  
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/0682ff1e-05b9-3031-8add-780f28853571) i Felles datakatalog.
