@@ -54,9 +54,8 @@ GET https://{env}/api/formueinntekt/summertskattegrunnlag/{rettighetspakke}/{inn
 ### Hendelser
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
 
-### Tilgjengelige data
-
-[Tilgjengeligdata API](./tilgjengeligdata.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
+### Siste tilgjengelige skatteoppgjør
+[Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
   
 ## Datakatalog
  
