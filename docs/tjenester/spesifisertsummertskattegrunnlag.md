@@ -63,9 +63,9 @@ GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{rettighets
 ### Hendelser
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
 
-### Tilgjengelige data
+### Siste tilgjengelige skatteoppgjør
 
-Virksomheter med samtykke har kun lov til å spørre om summert skattegrunnlag for seneste tilgjengelige *inntektsaar*. [Tilgjengeligdata-tjenesten](./tilgjengeligdata.md) kan brukes uten samtykke til å sjekke hva som er seneste tilgjengelige inntektsaar for en skattepliktig.
+Virksomheter med samtykke har kun lov til å spørre om summert skattegrunnlag for seneste tilgjengelige *inntektsaar*. [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md) kan brukes uten samtykke til å sjekke hva som er seneste tilgjengelige inntektsaar for en skattepliktig.
   
 ## Datakatalog
  
