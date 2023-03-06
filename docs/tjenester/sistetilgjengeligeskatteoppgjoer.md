@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [tilgjengeligdata, skattegrunnlag]
-last_updated: Des 1, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om siste inntektsår det foreligger skatteoppgjør på for en person.</summary>
@@ -26,7 +26,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 
 ## Scope
-Man trenger ikke eget scope for denne tjenesten, siden den benytter samme scope som relaterte oppslagstjenester: `skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag`
+Man trenger ikke eget scope for denne tjenesten, siden den benytter samme scope som relaterte oppslagstjenester: `skatteetaten:summertskattegrunnlag` og `skatteetaten:spesifisertsummertskattegrunnlag`
 
 ## Delegering
 Tilgang til hendelseslister delegeres i Altinn når man delegerer oppslagstjenesten.
