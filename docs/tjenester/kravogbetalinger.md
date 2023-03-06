@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [kravogbetalinger, krav og betalinger, innkreving]
-last_updated: Des 14, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part.</summary>
@@ -20,6 +20,12 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+  
+## Scope
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:kravogbetalinger`
+
+## Delegering
+Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger API - På vegne av`
 
 ## Teknisk spesifikasjon
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/krav-og-betalinger-api) ligger på SwaggerHub.
@@ -27,17 +33,11 @@ For generell informasjon om tjenestene se egne sider om:
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
 Tjenesten har 4 endepunkter:
-  * **Åpne krav**: Hent oversikt over åpne krav og uplasserte innbetalinger. Gjør oppslag mot reskontrosystemene på åpne krav og uplasserte innbetalinger og oppgir de samlet med en summert oversikt
-  * **Krav**: Hent alle krav innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle krav innen et gitt tidsrom på maks ett år.
-  * **Innbetalinger**: Hent alle innbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle innbetalinger innen et gitt tidsrom på maks ett år.
-  * **Utbetalinger**: Ikke tilgjengelig for bruk og vil komme senere. Detaljer rundt implementasjonen kan endres.
-  
-## Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:kravogbetalinger`
-
-## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger API - På vegne av`
-  
+  * __Åpne krav__: Hent oversikt over åpne krav og uplasserte innbetalinger. Gjør oppslag mot reskontrosystemene på åpne krav og uplasserte innbetalinger og oppgir de samlet med en summert oversikt
+  * __Krav__: Hent alle krav innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle krav innen et gitt tidsrom på maks ett år.
+  * __Innbetalinger__: Hent alle innbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle innbetalinger innen et gitt tidsrom på maks ett år.
+  * __Utbetalinger__: Ikke tilgjengelig for bruk og vil komme senere. Detaljer rundt implementasjonen kan endres.
+ 
 ## Rettighetspakker
 For denne tjenesten finns følgende rettighetspakker
   
