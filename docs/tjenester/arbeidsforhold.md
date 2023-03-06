@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [arbeidsforhold]
-last_updated: Des 9, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary> Tjenesten leverer informasjon om hvorvidt det foreligger et aktivt arbeidsforhold mellom angitt arbeidstaker og angitt arbeidsgiver.</summary>
