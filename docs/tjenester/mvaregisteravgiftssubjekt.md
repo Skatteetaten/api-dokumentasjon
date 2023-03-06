@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [selvangivelse, skattemelding, SummertSkattegrunnlag, inntekt, formue]
-last_updated: Des 6, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer infomasjon fra mva-register om avgiftssubjekter med skatteplikt.</summary>
@@ -32,6 +32,12 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
   
+## Rettighetspakker
+  
+| Navn på rettighetspakke |	
+|---|
+| ssb |
+
 ## Støttetjenester
   
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API`
