@@ -20,11 +20,6 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
-
-## Teknisk spesifikasjon
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsgiveravgift-api) av API'et ligger på SwaggerHub.
-
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
  
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:arbeidsgiveravgift`
@@ -32,7 +27,12 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:ar
 ## Delegering
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Arbeidsgiveravgift API - På vegne av`
 
-## Rettighetspakker
+## Teknisk spesifikasjon
+[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsgiveravgift-api) av API'et ligger på SwaggerHub.
+
+I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+
+ ## Rettighetspakker
 
 | Navn på rettighetspakke |	Formål med rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|---|
