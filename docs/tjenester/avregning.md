@@ -46,7 +46,7 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 
 ### Siste tilgjengelige skatteoppgjør
 
-[Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
+[Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
   
 ## Datakatalog
  
