@@ -34,9 +34,9 @@ I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av paramete
 
  ## Rettighetspakker
 
-| Navn på rettighetspakke |	Formål med rettighetspakke |	Egenskaper ved rettighetspakke |
-|---|---|---|
-| ebevis | Elektronisk innhenting av dokumentasjonsbevis | Krever samtykke |
+| Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
+|---|---|
+| ebevis | Krever samtykke |
  
 ## Samtykke
 Tjenesten krever [samtykke](../om/samtykke.md).
