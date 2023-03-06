@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [inntektsmottakere, virksomheter]
-last_updated: Des 2, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer en liste over inntektsmottakere der arbeidsgiver (opplysningspliktig), via a-ordningen, har rapportert pensjonsavtale med pensjonsinnretningen som utfører kallet.</summary>
@@ -31,6 +31,12 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntektsmottakere-api) av API'et på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+
+## Rettighetspakker
+ 
+| Navn på rettighetspakke |	
+|---|
+| otp |
 
 ## Datakatalog
  
