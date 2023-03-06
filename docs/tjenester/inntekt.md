@@ -36,19 +36,19 @@ I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av paramete
 
 | Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|
-| afp | |
-| digisos | |
-| gff | |
-| husbanken | |
-| kommuneBoligsosialeFormaal | |
-| laanekassen | |
-| ldir | |
-| otp | |
-| pensjonskasse | |
-| saernamsmann | |
-| spkBoliglaan | |
+| afp | Hjemmel |
+| digisos | Hjemmel |
+| gff | Hjemmel |
+| husbanken | Hjemmel |
+| kommuneBoligsosialeFormaal | Hjemmel |
+| laanekassen | Hjemmel |
+| ldir | Hjemmel |
+| otp | Hjemmel |
+| pensjonskasse | Hjemmel |
+| saernamsmann | Hjemmel |
+| spkBoliglaan | Hjemmel |
 | sbl | Krever samtykke |
-| udi | |
+| udi | Hjemmel |
  
 ## Samtykke
 For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md).
