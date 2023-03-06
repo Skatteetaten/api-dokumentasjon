@@ -21,6 +21,12 @@ For generell informasjon om tjenestene se egne sider om:
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 
+## Scope
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:aktivkonto`
+
+## Delegering
+Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Aktiv konto API - På vegne av`
+
 ## Teknisk spesifikasjon
   
 URL har følgede oppbygging:
@@ -37,12 +43,6 @@ Tjenesten krever innsending av JSON-objekt med følgende format:
 ```bash
 { "tin": "<personidentifikator>" }
 ```
-## Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:aktivkonto`
-
-## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Aktiv konto API - På vegne av`
-
 
 </TabItem>
 
