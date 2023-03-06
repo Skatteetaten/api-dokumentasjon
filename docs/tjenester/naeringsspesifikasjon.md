@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [Næringsspesifikasjon, naeringsspesifikasjon, api]
-last_updated: Des 1, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer næringsopplysninger som enkeltpersonforetak og selskaper har innrapportert til Skatteetaten i forbindelse med skattemeldingen.</summary>
@@ -36,6 +36,12 @@ Dette API'er er tilgjengelig i 2 versjoner, og URL har ulik oppbygging basert p�
 * For inntektsår 2020 benyttes [versjon 1 (v1)](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api/1.0.0)
 * For inntektsår 2021 benyttes [versjon 2 (v2)](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api/2.1.0)
 
+## Rettighetspakker
+  
+| Navn på rettighetspakke |	
+|---|
+| ssb |
+ 
 ## Støttetjeneste
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Næringsspesifikasjon hendelser API`
  
