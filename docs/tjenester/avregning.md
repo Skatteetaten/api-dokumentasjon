@@ -44,9 +44,9 @@ I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av paramete
 ### Hendelser
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
 
-### Tilgjengelige data
+### Siste tilgjengelige skatteoppgjør
 
-[Tilgjengeligdata API](./sistetilgjengeligeskatteoppgjoer.md.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
+[Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
   
 ## Datakatalog
  
