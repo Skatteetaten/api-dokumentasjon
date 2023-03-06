@@ -34,7 +34,7 @@ I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av paramete
 
 ## Rettighetspakker
 
-| Navn på rettighetspakke |	Formål med rettighetspakke |	Egenskaper ved rettighetspakken |
+| Navn på rettighetspakke |	Formål med rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|---|
 | ebevis | Elektronisk innhenting av dokumentasjonsbevis | Krever samtykke |
  
