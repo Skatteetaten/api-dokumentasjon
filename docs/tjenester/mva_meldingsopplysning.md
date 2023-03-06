@@ -36,8 +36,8 @@ I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av paramete
 
 | Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|
+| dibk | Hjemmel |
 | ebevis | Krever samtykke |
-| dibk |  |
  
 ## Samtykke
 Tjenesten kan kreve [samtykke](../om/samtykke.md).
