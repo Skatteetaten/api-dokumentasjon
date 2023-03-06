@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [mva, meldingsopplysning]
-last_updated: Des 2, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer status på mva-melding og informasjon fra reskontro for en virksomhet for de siste tre terminene.</summary>
@@ -27,17 +27,24 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mv
 ## Delegering
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva meldingsopplysning API - På vegne av`
 
-## Samtykke
-For rettighetspakke `Ebevis` kreves [samtykke](../om/samtykke.md) for denne tjenesten.
-
-| Tjeneste | Tjenestekode |
-|--------| ------ |
-| MVA Meldingsopplysning API | 5616_4 |
-
 ## Teknisk spesifikasjon
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-meldingsopplysning-api) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+ 
+## Rettighetspakker
+
+| Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
+|---|---|
+| ebevis | Krever samtykke |
+| dibk |  |
+ 
+## Samtykke
+Tjenesten kan kreve [samtykke](../om/samtykke.md).
+
+| Tjenestekode | Formål |
+|--------| ------ |
+| 5616_4 | Kreves for rettighetspakke `ebevis`|
 
 ## Datakatalog
  
