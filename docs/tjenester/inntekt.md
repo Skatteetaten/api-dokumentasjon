@@ -60,6 +60,7 @@ For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md).
 For denne tjenesten er det enkelte parametre som må følge med:
  
 | parameter | forklaring | eksempelverdi |
+|---|---|---|
 | 4804_210607_fraOgMed | Parameter for Inntekt | 2018-03 |
 | 4804_210607_tilOgMed | Parameter for Inntekt | 2018-06 |
 
