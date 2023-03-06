@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [pgi, folketrygden, skatteberegning, inntekt, formue]
-last_updated: Des 2, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om grunnlag for pensjonsopptjening i folketrygden.</summary>
