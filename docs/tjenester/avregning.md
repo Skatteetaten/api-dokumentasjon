@@ -46,7 +46,7 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 
 ### Tilgjengelige data
 
-[Tilgjengeligdata API](./tilgjengeligdata.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
+[Tilgjengeligdata API](./sistetilgjengeligeskatteoppgjoer.md.md) gir informasjon om hva som er seneste periode med data for en skattepliktig.
   
 ## Datakatalog
  
