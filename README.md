@@ -1,11 +1,14 @@
 # api-dokumentasjon
 Vi jobber med å samle Skatteetatens api-dokumentasjon på en felles Github.
 
-## Endre dokumentasjon
-Nettsiden lages basert på strukturen under /docs mappen på main-branch. Gjør endringer her for å endre informasjonen på nettsiden.
+### Endre dokumentasjon
+Nettsiden lages basert på strukturen under /docs mappen på main-branch. Gjør endringer her for å endre informasjonen på nettsiden. Tjeneste-dokumenter må i tillegg legges inn i [sidebars.js](./sidebars.js) for at de skal vises.
 
-## Dokumentasjon under utarbeidelse
+### Dokumentasjon under utarbeidelse
 Hvis dokumentasjon er under utarbeidelse eller api'et er i en beta-versjon og ikke skal være synlig i sidemenyen, kan man la være å legge det inn i listen over tjeneste-dokumenter i [sidebars.js](./sidebars.js). Dokumentet vil da ikke dukke opp i sidemenyen.
+
+### Deploy
+Nettsiden bygges og deployes automatisk ved commit til main-branch.
 
 # Teknisk
 
