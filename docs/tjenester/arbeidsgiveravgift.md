@@ -21,23 +21,29 @@ For generell informasjon om tjenestene se egne sider om:
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 
+## Teknisk spesifikasjon
+[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsgiveravgift-api) av API'et ligger på SwaggerHub.
+
+I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+ 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:arbeidsgiveravgift`
 
 ## Delegering
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Arbeidsgiveravgift API - På vegne av`
 
-## Samtykke
-For rettighetspakke `Ebevis` kreves [samtykke](../om/samtykke.md) for denne tjenesten.
+## Rettighetspakker
 
-| Tjeneste | Tjenestekode |
-|--------| ------ |
-| Arbeidsgiveravgift API | 5616_3 |
+| Navn på rettighetspakke |	Formål med rettighetspakke |	Egenskaper ved rettighetspakken |
+|---|---|---|
+| ebevis | Elektronisk innhenting av dokumentasjonsbevis | Krever samtykke |
  
-## Teknisk spesifikasjon
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsgiveravgift-api) av API'et ligger på SwaggerHub.
+## Samtykke
+Tjenesten krever [samtykke](../om/samtykke.md).
 
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+| Tjenestekode | Formål |
+|--------| ------ |
+| 5616_3 | Kreves for rettighetspakke `ebevis`|
 
 ## Datakatalog
  
