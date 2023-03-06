@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [beregnetskatt, skatteberegning, inntekt, formue]
-last_updated: Des 6, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om inntekt, fradrag, formue, gjeld og beregnet skatt.</summary>
@@ -20,7 +20,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
-
+  
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:beregnetskatt`
 
@@ -32,8 +32,22 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
-Det finnes for tiden 2 versjoner av denne tjenesten, og versjon 2 støttes foreløpig kun for rettighetspakkene `ssb` og `kommuneLangtidsoppholdInstitusjon`. 
+Det finnes for tiden 2 versjoner av denne tjenesten, og ulike rettighetspakker er støttet i ulike versjoner. 
   
+## Rettighetspakker
+
+| Navn på rettighetspakke | Egenskaper ved rettighetspakke |
+|---|---|
+| distribusjon | Støttes kun i versjon 1 |
+| husbanken | Støttes kun i versjon 1 |
+| kommuneLangtidsoppholdInstitusjon | Støttes kun i versjon 2 |
+| kredittopplysning | Støttes kun i versjon 2 |
+| laanekassen | Støttes kun i versjon 1 |
+| nav | Støttes kun i versjon 1 |
+| norgesbank | Støttes kun i versjon 1 |
+| pensjonskasse | Støttes kun i versjon 1 |
+| ssb | Støttes kun i versjon 2 |
+
 ## Støttetjenester
 
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
