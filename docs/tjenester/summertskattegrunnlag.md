@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [selvangivelse, skattemelding, SummertSkattegrunnlag, inntekt, formue]
-last_updated: Des 6, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer en oppsummering av formue, gjeld, inntekt og fradrag for en person.</summary>
@@ -35,19 +35,35 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
 Det tilbys for tiden 2 endepunkter for uthenting av spesifisert summert skattegrunnlag, hvor URL'en har litt ulik oppbygging.
-Merk at rettighetspakkene har ulik tilgang til bruk av inntektsår og stadie.
 
-For rettighetspakkene `kommuneforeldrebetaling`, `kommuneboligsosialeformaal`, `kommunepersonligassistanse`, `kommuneLangtidsoppholdInstitusjon` og `ssb` gjelder ny URL med stadie:
+Enkelte rettighetspakker er tilrettelagt for ny URL med stadie:
 
 ```bash
 GET https://{env}/api/formueinntekt/summertskattegrunnlag/{stadie}/{rettighetspakke}/{inntektsaar}/{personidentifikator}
 ```
 
-Øvrige rettighetspakker benytter gammel URL uten stadie, men disse vil etter hvert bli tilrettelagt for ny url:
+Andre rettighetspakker må fremdeles benytter gammel URL uten stadie, men disse vil etter hvert bli tilrettelagt for ny url:
 
 ```bash
 GET https://{env}/api/formueinntekt/summertskattegrunnlag/{rettighetspakke}/{inntektsaar}/{personidentifikator}
 ```
+
+## Rettighetspakker  
+ 
+| Navn på rettighetspakke |	Stadie | Kommentarer |
+|---|---|
+| distribusjon | oppgjoer | 
+| frirettshjelp | oppgjoer | 
+| husbanken | oppgjoer | 
+| kommuneBoligsosialeFormaal | oppgjoer | Benytt ny url med stadie |
+| kommuneForeldrebetaling | oppgjoer og utkast | Benytt ny url med stadie |
+| kommunePersonligassistanse | oppgjoer og utkast | Benytt ny url med stadie |
+| kommuneLangtidsoppholdInstitusjon | oppgjoer og utkast | Benytt ny url med stadie |
+| laanekassen | oppgjoer | 
+| ldir | oppgjoer | 
+| nav | oppgjoer | 
+| ssb | oppgjoer | Benytt ny url med stadie |
+| udi | oppgjoer | 
   
 ## Støttetjenester
 
