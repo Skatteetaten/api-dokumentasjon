@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [omregistreringsavgift]
-last_updated: Des 1, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer omregistreringsavgiften for kjøretøy spesifisert av kjennemerke og eventuelt omregistreringsdato.</summary>
@@ -31,7 +31,13 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/omregistreringsavgift-api/1.0.0) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
- 
+
+## Rettighetspakker 
+
+| Navn på rettighetspakke |	
+|---|
+| fnf |
+
 ## Datakatalog
  
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/fce309db-daed-3a5e-bb24-040629d05628) i Felles datakatalog.
