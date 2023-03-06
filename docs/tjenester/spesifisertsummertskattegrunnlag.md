@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [selvangivelse, skattemelding, SummertSkattegrunnlag, inntekt, formue]
-last_updated: Des 6, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer en oppsummering av formue, gjeld, inntekt og fradrag for en person, inkludert spesifisering av hvilke opplysninger fra skattemeldingen som ligger til grunn.</summary>
@@ -27,36 +27,46 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:sp
 ## Delegering
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Spesifisert summert skattegrunnlag API API - På vegne av`
 
-## Samtykke
-For rettighetspakke `SBL` kreves [samtykke](../om/samtykke.md) for denne tjenesten.
+## Teknisk spesifikasjon
+[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/spesifisert-summert-skattegrunnlag-api) ligger på SwaggerHub.
 
-| Tjeneste | Tjenestekode | Kommentar |
-|--------| ------ |-------|
-| Spesifisert summert skattegrunnlag API | 4628_210607 | Sanert tjenestekode: 4628_1 |
+I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+  
+Det tilbys to endepunkter for uthenting av spesifisert summert skattegrunnlag, hvor URL har litt ulik oppbygging.
+  
+```
+GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{stadie}/{rettighetspakke}/{inntektsaar}/{personidentifikator}
+```
+
+I tillegg tilbys et endepunkt uten at stadie spesifiseres. Dette endepunktet vil alltid benytte stadie ‘oppgjoer’. Endepunktet skal utfases og vi ønsker at alle går over til endepunkt hvor stadie spesifiseres.
+```
+GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{rettighetspakke}/{inntektsaar}/{personidentifikator}
+```
+
+## Rettighetspakker
+
+| Navn på rettighetspakke |	Stadie | Egenskaper ved rettighetspakke |
+|---|---|---|
+|  | Krever samtykke | 
+| husbanken | oppgjoer | Hjemmel |
+| navSupplerendeStoenad | oppgjoer og utkast | Hjemmel |
+| norgesbank | oppgjoer og utkast | Hjemmel |
+| saernamsmann | oppgjoer | Hjemmel |
+| sbl | oppgjoer | Krever samtykke |
+| sivilrett | oppgjoer, utkast og fastsatt | Hjemmel |
+| spkBoliglaan | oppgjoer | Hjemmel |
+  
+## Samtykke
+Tjenesten kan kreve [samtykke](../om/samtykke.md).
+
+| Tjenestekode | Formål | Kommentar |
+|---|---|---|
+| 4628_210607 | Kreves for rettighetspakke `sbl`| Sanert tjenestekode: 4628_1 |
   
 For denne tjenesten er det en  parameter som må følge med:
  
 | parameter | forklaring | eksempelverdi |
 | 4628_210607_inntektsaar | Parameter for Skattegrunnlag | 2017 |
-  
-## Teknisk spesifikasjon
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/spesifisert-summert-skattegrunnlag-api) ligger på SwaggerHub.
-
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
-
-Merk at rettighetspakkene har ulik tilgang til bruk av inntektsaar og stadie.  
-  
-Det tilbys for tiden 2 endepunkter for uthenting av spesifisert summert skattegrunnlag, hvor URL'en har litt ulik oppbygging.
-  
-For rettighetspakkene `sivilrett`, `norgesbank`, `spkboliglaan` og `navSupplerendeStoenad` gjelder ny URL med stadie:
-```
-GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{stadie}/{rettighetspakke}/{inntektsaar}/{personidentifikator}
-```
-
-Øvrige rettighetspakker benytter gammel URL uten stadie, men disse vil etter hvert bli tilrettelagt for ny url:
-```
-GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{rettighetspakke}/{inntektsaar}/{personidentifikator}
-```
   
 ## Støttetjenester
 
