@@ -277,7 +277,7 @@ Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endep
 
 ### Åpne krav
 
-[![åpnekrav](../../static/download/Informasjonsmodell_aapnekrav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_aapnekrav.png)
+[![åpnekrav](../../static/download/Informasjonsmodell_Kravogbetalinger_aapnekrav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_aapnekrav.png)
 
 ### Krav
 
