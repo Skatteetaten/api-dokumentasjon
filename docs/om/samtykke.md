@@ -37,6 +37,17 @@ Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egne
 
 Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
 
+```js noeditor
+import { MessageBar } from '@skatteetaten/frontend-components/MessageBar';
+
+<MessageBar type={MessageBar.Type.info}>
+Restriksjon på bruk av iFrames
+Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
+
+Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
+</MessageBar>;
+```
+
 ## Headereksempel
 
 | header | forklaring | eksempelverdi |
