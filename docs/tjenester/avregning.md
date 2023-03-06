@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [fastsetting, avregning]
-last_updated: Des 9, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om forskuddstrekk og restskatt eller beløp til gode i skatteoppgjøret.</summary>
@@ -21,16 +21,23 @@ For generell informasjon om tjenestene se egne sider om:
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 
+## Teknisk spesifikasjon
+[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/avregning-api) ligger på SwaggerHub.
+
+I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+  
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:avregning`
 
 ## Delegering
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Avregning API - På vegne av`
+ 
+## Rettighetspakker
 
-## Teknisk spesifikasjon
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/avregning-api) ligger på SwaggerHub.
-
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+| Navn på rettighetspakke |
+|---|
+| distribusjon |
+| ssb |
   
 ## Støttetjenester
 
