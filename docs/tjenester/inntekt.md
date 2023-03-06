@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [inntekt, inntektsmottaker, oppgave, a-ordning, lønn, inntekt]
-last_updated: Des 2, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om arbeidsgivers (opplysningspliktiges) innrapporterte inntektsopplysninger for en inntektsmottaker for en gitt periode.</summary>
@@ -27,12 +27,35 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:in
 ## Delegering
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
  
-## Samtykke
-For rettighetspakke `SBL` kreves [samtykke](../om/samtykke.md) for denne tjenesten.
+## Teknisk spesifikasjon
+[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-api/) ligger på SwaggerHub.
 
-| Tjeneste | Tjenestekode | Kommentar |
+I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+
+## Rettighetspakker
+
+| Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
+|---|---|
+| afp | |
+| digisos | |
+| gff | |
+| husbanken | |
+| kommuneBoligsosialeFormaal | |
+| laanekassen | |
+| ldir | |
+| otp | |
+| pensjonskasse | |
+| saernamsmann | |
+| spkBoliglaan | |
+| sbl | Krever samtykke |
+| udi | |
+ 
+## Samtykke
+For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md).
+
+| Tjenestekode | Formål | Kommentar |
 |--------| ------ |-------|
-| Inntekt API | 4804_210607 | Sanert tjenestekode: 4804_170223 |
+| 4804_210607 | Samtykke for `sbl` | Sanert tjenestekode: 4804_170223 |
 
 For denne tjenesten er det enkelte parametre som må følge med:
  
@@ -40,11 +63,6 @@ For denne tjenesten er det enkelte parametre som må følge med:
 | 4804_210607_fraOgMed | Parameter for Inntekt | 2018-03 |
 | 4804_210607_tilOgMed | Parameter for Inntekt | 2018-06 |
 
-## Teknisk spesifikasjon
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-api/) ligger på SwaggerHub.
-
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
- 
 ## Støttetjeneste
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Inntekt hendelser API`
 
