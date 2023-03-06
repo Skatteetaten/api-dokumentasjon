@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [selvangivelse, skattemelding, SummertSkattegrunnlag, inntekt, formue]
-last_updated: Des 6, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer opplysninger om trukket kildeskatt på lønn for personer i kildeskatt på lønn ordningen.</summary>
@@ -31,6 +31,12 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/trukketkildeskattpaaloenn-api/) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+
+## Rettighetspakker
+  
+| Navn på rettighetspakke |	
+|---|
+| ssb |
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/06542c2f-0e62-34ba-87d9-b95e61f1de09) i Felles datakatalog.
