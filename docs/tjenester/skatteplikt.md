@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [skatteplikt, inntekt, formue]
-last_updated: Des 6, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer informasjon om type skatteplikt og grunnlag for vurdering av skatteplikten for en person.</summary>
@@ -31,6 +31,13 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteplikt-api) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+
+## Rettighetspakker
+
+| Navn på rettighetspakke |	
+|---|
+| distribusjon |
+| ssb |
   
 ## Støttetjenester
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
