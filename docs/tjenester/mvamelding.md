@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API reference]
 keywords: [selvangivelse, skattemelding, SummertSkattegrunnlag, inntekt, formue]
-last_updated: Des 7, 2022
+last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 <summary>Tjenesten leverer fastsatte mva-meldinger. Fastsatt betyr at skattemeldingen er myndighetsfastsatt, manuelt innlevert, eller automatisk innlevert ved utløp av innleveringsfrist.</summary>
@@ -31,6 +31,12 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-melding-api/) ligger på SwaggerHub.
 
 Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+  
+## Rettighetspakker
+  
+| Navn på rettighetspakke |	
+|---|
+| ssb |
   
 ## Støttetjenester
   
