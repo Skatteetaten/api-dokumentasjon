@@ -208,7 +208,7 @@ I listen under vises navn på de ulike feltene tjenesten leverer. Ta kontakt med
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata for Beregnet skatt API er søkbare i Tenor-adapter "Beregnet skatt".
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Beregnet skatt".
   
 </TabItem>
 </Tabs>
