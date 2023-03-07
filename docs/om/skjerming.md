@@ -4,7 +4,7 @@ slug: /skjerming
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Service Description]
+tags: [Skjerming]
 keywords: [Skjerming, kode 6, kode 7, kode 4]
 last_updated: Des 8, 2022
 hide_table_of_contents: true
