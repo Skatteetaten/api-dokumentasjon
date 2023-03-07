@@ -4,7 +4,7 @@ slug: /skattemelding
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [API]
 keywords: [skattemelding]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
