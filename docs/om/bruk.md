@@ -4,7 +4,7 @@ slug: /bruk
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [API]
 keywords: [API, dokumentasjon]
 last_updated: Des 1, 2022
 hide_table_of_contents: true
