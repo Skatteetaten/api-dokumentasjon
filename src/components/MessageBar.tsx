@@ -1,37 +1,64 @@
-import React from "react";
-import { MessageBar } from "@skatteetaten/frontend-components/MessageBar";
-import { FC } from "react";
+import React, { FC } from "react";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import { MessageBarProps } from "@skatteetaten/frontend-components/MessageBar/MessageBar.types";
+import { MessageBarType } from "@fluentui/react";
+
+const BrowserOnlyMessageBar: FC<MessageBarProps> = (props) => {
+  return (
+    <BrowserOnly>
+      {() => {
+        const MessageBar =
+          require("@skatteetaten/frontend-components/MessageBar").MessageBar;
+        return <MessageBar {...props} />;
+      }}
+    </BrowserOnly>
+  );
+};
 
 export const InfoMessageBar: FC = (props) => {
-  return <MessageBar type={MessageBar.Type.info}>{props.children}</MessageBar>;
+  return (
+    <BrowserOnlyMessageBar type={MessageBarType.info}>
+      {props.children}
+    </BrowserOnlyMessageBar>
+  );
 };
 
 export const ErrorMessageBar: FC = (props) => {
-  return <MessageBar type={MessageBar.Type.error}>{props.children}</MessageBar>;
+  return (
+    <BrowserOnlyMessageBar type={MessageBarType.error}>
+      {props.children}
+    </BrowserOnlyMessageBar>
+  );
 };
 
 export const BlockedMessageBar: FC = (props) => {
   return (
-    <MessageBar type={MessageBar.Type.blocked}>{props.children}</MessageBar>
+    <BrowserOnlyMessageBar type={MessageBarType.blocked}>
+      {props.children}
+    </BrowserOnlyMessageBar>
   );
 };
 
 export const SuccessMessageBar: FC = (props) => {
   return (
-    <MessageBar type={MessageBar.Type.success}>{props.children}</MessageBar>
+    <BrowserOnlyMessageBar type={MessageBarType.success}>
+      {props.children}
+    </BrowserOnlyMessageBar>
   );
 };
 
 export const SevereWarningMessageBar: FC = (props) => {
   return (
-    <MessageBar type={MessageBar.Type.severeWarning}>
+    <BrowserOnlyMessageBar type={MessageBarType.severeWarning}>
       {props.children}
-    </MessageBar>
+    </BrowserOnlyMessageBar>
   );
 };
 
 export const WarningMessageBar: FC = (props) => {
   return (
-    <MessageBar type={MessageBar.Type.warning}>{props.children}</MessageBar>
+    <BrowserOnlyMessageBar type={MessageBarType.warning}>
+      {props.children}
+    </BrowserOnlyMessageBar>
   );
 };

@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react';
-import A from '@theme-original/MDXComponents/A';
-import Icon from '@skatteetaten/frontend-components/Icon';
+import React, { ReactNode } from "react";
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import A from "@theme-original/MDXComponents/A";
 
-import styles from './A.module.css';
+import styles from "./A.module.css";
 
 interface AWrapperProps {
   href: string | undefined;
@@ -10,19 +10,31 @@ interface AWrapperProps {
 }
 
 export default function AWrapper(props: AWrapperProps) {
-  
-  const isExternal = props.href?.startsWith('https://');
-  const externalProps = isExternal ? {
-    target: "_blank",
-    rel: "noopener noreferrer",
-  } : {};
+  const isExternal = props.href?.startsWith("https://");
+  const externalProps = isExternal
+    ? {
+        target: "_blank",
+        rel: "noopener noreferrer",
+      }
+    : {};
 
   return (
-    <>
-      <A {...externalProps} {...props} >
-        {props.children}
-        {isExternal && <Icon className={styles.icon} iconName="OpenInNew" role="presentation" />}
-      </A>
-    </>
+    <BrowserOnly>
+      {() => {
+        const Icon = require("@skatteetaten/frontend-components/Icon").Icon;
+        return (
+          <A {...externalProps} {...props}>
+            {props.children}
+            {isExternal && (
+              <Icon
+                className={styles.icon}
+                iconName="OpenInNew"
+                role="presentation"
+              />
+            )}
+          </A>
+        );
+      }}
+    </BrowserOnly>
   );
 }
