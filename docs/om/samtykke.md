@@ -31,12 +31,12 @@ Den overordnetete flyten for samtykkedialogen blir da som følger:
 7. Konsument sender med samtykketokenet i forespørslene til api'et gjennom å sette en HTTP-headerverdi: `AltinnSamtykke: <samtykketoken>`. Forespørselen må også inneholde et [Maskinporten-token](./sikkerhet.md).
 9. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
+<InfoMessageBar>
+*Restriksjon på bruk av iFrames*
+Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
 
-> *Restriksjon på bruk av iFrames*
-> Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
->
-> Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
-
+Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
+ </InfoMessageBar>
 
 ## Headereksempel
 
