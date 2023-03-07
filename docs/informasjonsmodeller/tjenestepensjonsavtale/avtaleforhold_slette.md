@@ -4,7 +4,7 @@ slug: /avtaleforhold_slette
 folder: informasjonsmodeller/tjenestepensjonsavtale
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [OTP]
 keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
