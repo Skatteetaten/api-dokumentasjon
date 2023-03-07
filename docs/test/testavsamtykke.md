@@ -4,7 +4,7 @@ slug: /testavsamtykke
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API data]
+tags: [Samtykke]
 keywords: [testdata]
 last_updated: Des 6, 2022
 hide_table_of_contents: true
