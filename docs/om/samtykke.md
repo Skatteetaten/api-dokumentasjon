@@ -28,15 +28,15 @@ Den overordnetete flyten for samtykkedialogen blir da som følger:
 4. Brukeren blir presentert for samtykkesiden som inneholder en beskrivelse av hva det skal gis samtykke til. Det er Skatteetaten som har definert dette innholdet.
 5. Brukeren gir samtykke og sendes tilbake til konsumentens nettsider på *Redirect URL'en* som ble oppgitt.
 6. Konsument [henter et Samtykketoken](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token) fra Altinn ved bruk av *Authorization Code*. Samtykketokenet har vanligvis utløpstid på 30 sekunder, men kan innhentes på nytt med samme *AuthorizationCode* så lenge samtykket fortsatt er gyldig.
-7. Konsument sender med samtykketokenet i forespørslene til api'et gjennom å sette en HTTP-headerverdi: `AltinnSamtykke: <samtykketoken>`. Forespørselen må også inneholde et [Maskinporten-token](Sikkerhet.md).
+7. Konsument sender med samtykketokenet i forespørslene til api'et gjennom å sette en HTTP-headerverdi: `AltinnSamtykke: <samtykketoken>`. Forespørselen må også inneholde et [Maskinporten-token](./sikkerhet.md).
 9. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
-<MessageBar type={MessageBar.Type.info}>
+
 *Restriksjon på bruk av iFrames*
 Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
 
 Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
-</MessageBar>
+
 
 ## Headereksempel
 
