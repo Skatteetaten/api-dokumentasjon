@@ -68,7 +68,7 @@ Siden dette er en beta-tjeneste, er den pt. ikke publisert i Felles datakatalog.
 ### Request URL - eksempel
 
 ```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/12345678901/oversikt
+https://{env}/api/innkreving/kravogbetalinger/v1/finans/12345678901/aapnekrav
 ```
 
 ### Eksempel på respons
