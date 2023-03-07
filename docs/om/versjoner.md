@@ -4,7 +4,7 @@ slug: /versjoner
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [API,Versjonering]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
