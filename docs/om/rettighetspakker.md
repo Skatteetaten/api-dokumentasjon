@@ -4,7 +4,7 @@ slug: /rettighetspakker
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Service Description]
+tags: [Rettighetspakke]
 last_updated: Feb 23, 2017
 keywords: [a-ordning, oppgave, arbeidsgiver, lønn, inntektsmottaker]
 hide_table_of_contents: true
