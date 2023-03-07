@@ -3,7 +3,7 @@ slug: /
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [API]
 keywords: [API, dokumentasjon]
 last_updated: Des 1, 2022
 title: Kom i gang
