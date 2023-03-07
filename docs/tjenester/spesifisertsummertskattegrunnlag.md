@@ -47,7 +47,6 @@ GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{rettighets
 
 | Navn på rettighetspakke |	Stadie | Egenskaper ved rettighetspakke |
 |---|---|---|
-|  | Krever samtykke | 
 | husbanken | oppgjoer | Hjemmel |
 | navSupplerendeStoenad | oppgjoer og utkast | Hjemmel |
 | norgesbank | oppgjoer og utkast | Hjemmel |
