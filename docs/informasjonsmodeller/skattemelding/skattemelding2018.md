@@ -4,7 +4,7 @@ slug: /skattemelding2018
 folder: informasjonsmodeller/skattemelding
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [Skattemelding]
 keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
