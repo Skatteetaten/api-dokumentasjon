@@ -4,7 +4,7 @@ slug: /sikkerhet
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [Sikkerhet,Maskinporten,Delegering]
 keywords: [security,sikkerhet]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
