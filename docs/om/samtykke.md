@@ -4,7 +4,7 @@ slug: /samtykke
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [samtykkel]
+tags: [Samtykke]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
@@ -32,10 +32,10 @@ Den overordnetete flyten for samtykkedialogen blir da som følger:
 9. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
 
-*Restriksjon på bruk av iFrames*
-Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
-
-Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
+> *Restriksjon på bruk av iFrames*
+> Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
+>
+> Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
 
 
 ## Headereksempel
