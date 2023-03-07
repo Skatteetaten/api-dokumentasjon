@@ -4,7 +4,7 @@ slug: /samtykke
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Samtykke]
+tags: [Samtykke,Sikkerhet]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
