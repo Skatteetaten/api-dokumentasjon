@@ -4,7 +4,7 @@ slug: /forutsetningerforbruk
 folder: informasjonsmodeller/tjenestepensjonsavtale
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Service Description]
+tags: [OTP]
 keywords: [Tjenestepensjonsavtale, avtaleforhold, virkningsperiode, OTP]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
