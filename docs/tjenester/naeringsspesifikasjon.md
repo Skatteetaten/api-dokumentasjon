@@ -32,10 +32,6 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
-Dette API'er er tilgjengelig i 2 versjoner, og URL har ulik oppbygging basert på hvilket inntektsår som etterspørres:
-* For inntektsår 2020 benyttes [versjon 1 (v1)](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api/1.0.0)
-* For inntektsår 2021 benyttes [versjon 2 (v2)](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api/2.1.0)
-
 ## Rettighetspakker
   
 | Navn på rettighetspakke |	
