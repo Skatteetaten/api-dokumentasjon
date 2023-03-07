@@ -32,10 +32,9 @@ Den overordnetete flyten for samtykkedialogen blir da som følger:
 9. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
 <InfoMessageBar>
-*Restriksjon på bruk av iFrames*
-Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten).
 
-Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
+Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egnet til å utydeliggjøre domenet samtykkedialogen foregår på (som er altinn + idporten). Dette er begrunnet med et potensielt misbruksscenario beskrevet i [OAuth2-spesifikasjonen](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#section-10.13) (clickjacking)
+ 
  </InfoMessageBar>
 
 ## Headereksempel
