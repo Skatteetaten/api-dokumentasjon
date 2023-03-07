@@ -12,7 +12,7 @@ hide_table_of_contents: true
 <summary>Overordnet om Skatteetatens delingstjenester.</summary>
 
 Bruk av Skatteetatens delingstjenester forutsetter følgende:
-* Bruk av [Maksinporten](sikkerhet.md).
+* Bruk av [Maskinporten](sikkerhet.md).
 * Virksomheten må få [tilgang](https://www.skatteetaten.no/deling/) til tjenesten.
 * Dersom virksomheten skal benytte en systemleverandør, må det [delegeres tilgang i Altinn](delegering.md).
 
