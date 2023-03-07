@@ -105,7 +105,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 Det finnes pt. ikke Tenor-adapter for denne tjenesten.
 
 ## Testdata
-Denne tjenesten har for nå kun enkle mockdata, med en statisk mocket respons. For å kunne teste tjenesten er det nok å benytte et syntetisk organisasjonsnummer som har et samtykke. Syntetiske organisasjonsnumre finner du i [Tenor testdatasøk](./test/tenor.md).
+Denne tjenesten har for nå kun enkle mockdata, med en statisk mocket respons. For å kunne teste tjenesten er det nok å benytte et syntetisk organisasjonsnummer som har et samtykke. Syntetiske organisasjonsnumre finner du i [Tenor testdatasøk](../test/tenor.md).
  
 </TabItem>
 </Tabs>
