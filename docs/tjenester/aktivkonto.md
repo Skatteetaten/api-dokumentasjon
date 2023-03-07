@@ -133,7 +133,7 @@ Definerer objektet som kan ligge i listen kontoDto i [rotobjektet](#rotobjekt)
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Det finnes pt. ikke Tenor-adapter for Aktiv konto API, og testdata er derfor listet her.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for Aktiv konto API, og testdata er derfor listet her.
 
 ## Testdata
 Følgende testdata er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
