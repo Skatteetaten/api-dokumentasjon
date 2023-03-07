@@ -260,7 +260,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | KB-002   | 500             | Uventet feil i et bakenforliggende system.                     |
 | KB-003   | 404             | Ukjent url benyttet.                                           |
 | KB-004   | 401             | Feil i forbindelse med autentisering.                          |
-| KB-005   | 403             | Feil i forbindelse med autorisering.                           |
+| KB-005   | 403             | Feil i forbindelse med samtykketoken.                           |
 | KB-006   | 400             | Feil i forbindelse med validering av inputdata.                |
 | KB-007   | 404             | Fant ingen krav/betalinger på angitt identifikator og periode. |
 | KB-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.     |
