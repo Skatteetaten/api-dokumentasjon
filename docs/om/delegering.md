@@ -4,7 +4,7 @@ slug: /delegering
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
-tags: [maskinporten]
+tags: [Maskinporten,Delegering]
 keywords: [security, maskinporten, delegering]
 last_updated: Des 1, 2022
 hide_table_of_contents: true
