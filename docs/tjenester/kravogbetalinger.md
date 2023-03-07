@@ -51,9 +51,9 @@ For rettighetspakkene `finans` og `regnskapssystem` kreves [samtykke](../om/samt
 
 | Endepunkt | Tjenestekode |
 |--------| ------ |
-| Krav og betalinger - Aapne krav | 5928_202301 |
+| Krav og betalinger - Krav | 5928_202301 |
 | Krav og betalinger - Alle krav | 5929_202301 |
-| Krav og betalinger - Betalinger | 5930_202301 |
+| Krav og betalinger - Innbetalinger | 5930_202301 |
 | Krav og betalinger - Utbetalinger | 5931_202301 |
   
 ## Datakatalog
