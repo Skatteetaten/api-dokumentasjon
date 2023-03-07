@@ -118,7 +118,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Det finnes pt. ikke et eget søk i [Tenor](../test/tenor.md) for denne tjenesten, men testdata er søkbare ved å benytte Tenorsøk for "Inntekt A-ordning".
+Det finnes pt. ikke et eget søk i [Tenor](../test/tenor.md) for denne tjenesten, men testdata kan finnes i Tenor med søket for "Inntekt A-ordning".
  
 </TabItem>
 </Tabs>
