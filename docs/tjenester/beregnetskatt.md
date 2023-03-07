@@ -4,7 +4,7 @@ slug: /beregnetskatt
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [API]
 keywords: [beregnetskatt, skatteberegning, inntekt, formue]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
