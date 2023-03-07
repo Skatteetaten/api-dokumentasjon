@@ -314,3 +314,4 @@ Egenskaper ved enhetene kan søkes frem i [TENOR testdatasøk](https://skatteeta
 </TabItem>
 </Tabs>
 
+
