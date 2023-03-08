@@ -2,10 +2,7 @@ const cheerio = require("cheerio");
 const parseDocument = require("./parseDocument").parseDocument;
 const parsePage = require("./parsePage").parsePage;
 
-module.exports.parse = function parse(
-  html,
-  type,
-) {
+module.exports.parse = function parse(html, type) {
   const $ = cheerio.load(html);
 
   $('div[class^="mdxCodeBlock_"] button').remove();
@@ -21,4 +18,4 @@ module.exports.parse = function parse(
   }
 
   return parseDocument($);
-}
+};

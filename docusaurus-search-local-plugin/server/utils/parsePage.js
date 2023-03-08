@@ -24,4 +24,4 @@ module.exports.parsePage = function parsePage($) {
     ],
     breadcrumb: [],
   };
-}
+};

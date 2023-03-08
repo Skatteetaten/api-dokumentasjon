@@ -36,11 +36,7 @@ const BLOCK_TAGS = new Set([
   "th",
 ]);
 
-module.exports.getCondensedText = function getCondensedText(
-  element,
-  $
-) {
-
+module.exports.getCondensedText = function getCondensedText(element, $) {
   const getText = (element) => {
     if (Array.isArray(element)) {
       return element.map((item) => getText(item)).join("");
@@ -65,4 +61,4 @@ module.exports.getCondensedText = function getCondensedText(
   };
 
   return getText(element).trim().replace(/\s+/g, " ");
-}
+};

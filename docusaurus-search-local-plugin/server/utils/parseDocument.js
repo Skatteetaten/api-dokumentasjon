@@ -1,5 +1,5 @@
 const getCondensedText = require("./getCondensedText").getCondensedText;
-const load = require('cheerio').load;
+const load = require("cheerio").load;
 
 const HEADINGS = "h1, h2, h3";
 
@@ -25,7 +25,7 @@ module.exports.parseDocument = function parseDocument($) {
       breadcrumb.push($(element).text().trim());
     });
   }
-  
+
   const getSectionElements = ($h) => {
     if ($h.is($pageTitle)) {
       const $header = $h.parent();
@@ -40,7 +40,6 @@ module.exports.parseDocument = function parseDocument($) {
       if ($headings.length) {
         return $firstElement.nextUntil(HEADINGS);
       } else {
-
         $nextElements.get().map((next) => {
           const heading = $(next).find(HEADINGS);
           if (heading.length) {
@@ -48,11 +47,10 @@ module.exports.parseDocument = function parseDocument($) {
           }
           return next;
         });
-        
       }
     }
     return $h.nextUntil(HEADINGS);
-  }
+  };
 
   $("article")
     .find(HEADINGS)
@@ -67,4 +65,4 @@ module.exports.parseDocument = function parseDocument($) {
     });
 
   return { pageTitle, sections, breadcrumb };
-}
+};

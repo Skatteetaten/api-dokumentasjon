@@ -6,12 +6,12 @@
     "title": "Tjenestepensjonavtale API",
     "termsOfService": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html",
     "contact": {
-      "name": "Brukerstøtte datasamarbeid",
+      "name": "Brukerstï¿½tte datasamarbeid",
       "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/"
     }
   },
   "externalDocs": {
-    "description": "Dokumentasjon på Skatteetatens GitHub",
+    "description": "Dokumentasjon pï¿½ Skatteetatens GitHub",
     "url": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon"
   },
   "servers": [
@@ -30,9 +30,7 @@
         "summary": "Henter gyldighet for avtaleforholdet",
         "description": "Henter gyldighet for avtaleforholdet",
         "operationId": "HentGyldighetForAvtaleforhold",
-        "tags": [
-          "Hent gyldighet for avtaleforhold"
-        ],
+        "tags": ["Hent gyldighet for avtaleforhold"],
         "parameters": [
           {
             "name": "pensjonsinnretning",
@@ -46,7 +44,7 @@
           {
             "name": "rettighetspakke",
             "in": "path",
-            "description": "Datakonsumenter plasseres i en rettighetspakke (per datasett) basert på en juridisk vurdering. Rettighetspakken styrer Skjermingsregler, Filtrering og Detaljering som benyttes når det gis innsyn i data i datasett.",
+            "description": "Datakonsumenter plasseres i en rettighetspakke (per datasett) basert pï¿½ en juridisk vurdering. Rettighetspakken styrer Skjermingsregler, Filtrering og Detaljering som benyttes nï¿½r det gis innsyn i data i datasett.",
             "required": true,
             "schema": {
               "type": "string"
@@ -82,7 +80,7 @@
           {
             "name": "Korrelasjonsid",
             "in": "header",
-            "description": "Korrelasjonsid, unik identifikator for den tekniske forespørselen",
+            "description": "Korrelasjonsid, unik identifikator for den tekniske forespï¿½rselen",
             "required": false,
             "schema": {
               "type": "string"
@@ -148,14 +146,12 @@
         "summary": "Lagrer avtaleforholdet",
         "description": "Lagrer for avtaleforholdet",
         "operationId": "LagreAvtaleforhold",
-        "tags": [
-          "Lagre avtaleforhold for pensjonsinnretningen"
-        ],
+        "tags": ["Lagre avtaleforhold for pensjonsinnretningen"],
         "parameters": [
           {
             "name": "rettighetspakke",
             "in": "path",
-            "description": "Datakonsumenter plasseres i en rettighetspakke (per datasett) basert på en juridisk vurdering. Rettighetspakken styrer Skjermingsregler, Filtrering og Detaljering som benyttes når det gis innsyn i data i datasett.",
+            "description": "Datakonsumenter plasseres i en rettighetspakke (per datasett) basert pï¿½ en juridisk vurdering. Rettighetspakken styrer Skjermingsregler, Filtrering og Detaljering som benyttes nï¿½r det gis innsyn i data i datasett.",
             "required": true,
             "schema": {
               "type": "string"
@@ -164,7 +160,7 @@
           {
             "name": "Korrelasjonsid",
             "in": "header",
-            "description": "Korrelasjonsid, unik identifikator for den tekniske forespørselen",
+            "description": "Korrelasjonsid, unik identifikator for den tekniske forespï¿½rselen",
             "required": false,
             "schema": {
               "type": "string"
@@ -236,12 +232,12 @@
         "properties": {
           "kode": {
             "type": "string",
-            "description": "Feilkode, for maskinell håndtering",
+            "description": "Feilkode, for maskinell hï¿½ndtering",
             "example": "RESTA-0xx"
           },
           "melding": {
             "type": "string",
-            "description": "Beskrivelse av feilen som har oppstått",
+            "description": "Beskrivelse av feilen som har oppstï¿½tt",
             "example": "Fant ikke gitt opplysningspliktig"
           },
           "korrelasjonsid": {

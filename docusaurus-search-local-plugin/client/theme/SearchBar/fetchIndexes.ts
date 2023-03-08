@@ -30,12 +30,12 @@ export async function fetchIndexes(baseUrl: string): Promise<{
     );
 
     return {
-      wrappedIndexes
+      wrappedIndexes,
     };
   }
 
   // The index does not exist in development, therefore load a dummy index here.
   return {
-    wrappedIndexes: []
+    wrappedIndexes: [],
   };
 }

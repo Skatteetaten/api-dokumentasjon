@@ -22,9 +22,7 @@ module.exports.generate = function generate(config, dir) {
     );
   }
 
-  for (const lang of language.filter(
-    (item) => item !== "en"
-  )) {
+  for (const lang of language.filter((item) => item !== "en")) {
     contents.push(
       `require(${JSON.stringify(
         require.resolve(`lunr-languages/lunr.${lang}`)
@@ -62,7 +60,8 @@ module.exports.generate = function generate(config, dir) {
     `export const searchResultLimits = ${JSON.stringify(searchResultLimits)};`
   );
 
-  contents.push( // ja
+  contents.push(
+    // ja
     `export const docsPluginIdForPreferredVersion = ${
       docsPluginIdForPreferredVersion === undefined
         ? "undefined"
@@ -74,4 +73,4 @@ module.exports.generate = function generate(config, dir) {
   fs.writeFileSync(path.join(dir, "generated.js"), contents.join("\n"));
 
   return searchIndexFilename;
-}
+};

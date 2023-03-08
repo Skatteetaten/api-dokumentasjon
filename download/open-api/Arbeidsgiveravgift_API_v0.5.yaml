@@ -3,21 +3,21 @@ info:
   description: Tekst
   version: 0.5.0
   title: Arbeidsgiveravgift API
-  termsOfService: 'https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html'
+  termsOfService: "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html"
   contact:
     name: Brukerstøtte datasamarbeid
     url: >-
       https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/
 externalDocs:
   description: Dokumentasjon på Skatteetatens GitHub
-  url: 'https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon'
+  url: "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon"
 servers:
-  - url: 'https://api-at.sits.no/api/arbeidsgiveravgift/v1/'
+  - url: "https://api-at.sits.no/api/arbeidsgiveravgift/v1/"
     description: Akseptansetest (AT)
-  - url: 'https://api.skatteetaten.no/api/arbeidsgiveravgift/v1/'
+  - url: "https://api.skatteetaten.no/api/arbeidsgiveravgift/v1/"
     description: Produksjon (Prod)
 paths:
-  '/{rettighetspakke}/{organisasjonsnummer}':
+  "/{rettighetspakke}/{organisasjonsnummer}":
     get:
       summary: Hent arbeidsgiveravgift for enhet
       description: Hent arbeidsgiveravgift for enhet
@@ -37,78 +37,78 @@ paths:
             type: string
         - name: organisasjonsnummer
           in: path
-          description: 'organisasjonsnummer'
+          description: "organisasjonsnummer"
           required: true
           schema:
-            $ref: '#/components/schemas/Organisasjonsnummer'
+            $ref: "#/components/schemas/Organisasjonsnummer"
         - name: Korrelasjonsid
           in: header
-          description: 'Korrelasjonsid, unik identifikator for den tekniske forespørselen. Må være på UUID-format'
+          description: "Korrelasjonsid, unik identifikator for den tekniske forespørselen. Må være på UUID-format"
           required: false
           schema:
             type: string
             format: uuid
-          example: '123e4567-e89b-12d3-a456-426655440000'
+          example: "123e4567-e89b-12d3-a456-426655440000"
         - name: Authorization
           in: header
-          description: 'JWT token'
+          description: "JWT token"
           required: true
           schema:
             type: string
             format: jwt
         - name: AltinnSamtykke
           in: header
-          description: 'Claims for altinnsamtykke'
+          description: "Claims for altinnsamtykke"
           required: true
           schema:
             type: string
             format: jws
       responses:
-        '200':
+        "200":
           description: Gyldig respons
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Arbeidsgiveravgifter'
+                $ref: "#/components/schemas/Arbeidsgiveravgifter"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Arbeidsgiveravgifter'
-        '400':
+                $ref: "#/components/schemas/Arbeidsgiveravgifter"
+        "400":
           description: Valideringsfeil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '403':
+                $ref: "#/components/schemas/Feil"
+        "403":
           description: Bruker har ikke tilgang
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '500':
+                $ref: "#/components/schemas/Feil"
+        "500":
           description: Tekniske feil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
         default:
           description: unexpected error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
 components:
   schemas:
     Arbeidsgiveravgifter:
@@ -116,61 +116,61 @@ components:
       type: object
       properties:
         levert:
-          $ref: '#/components/schemas/DatoKlokkeslett'
+          $ref: "#/components/schemas/DatoKlokkeslett"
         forespurteOrganisasjon:
-          $ref: '#/components/schemas/Organisasjonsnummer'
+          $ref: "#/components/schemas/Organisasjonsnummer"
         arbeidsgiveravgifter:
           type: array
           items:
             allOf:
-              - $ref: '#/components/schemas/ArbeidsgiveravgiftDto'
+              - $ref: "#/components/schemas/ArbeidsgiveravgiftDto"
           minItems: 0
       xml:
-        namespace: 'urn:no:skatteetaten:datasamarbeid:arbeidsgiveravgift:v1'
+        namespace: "urn:no:skatteetaten:datasamarbeid:arbeidsgiveravgift:v1"
     ArbeidsgiveravgiftDto:
       type: object
       properties:
         arbeidsgiveravgift:
-          $ref: '#/components/schemas/Arbeidsgiveravgift'
+          $ref: "#/components/schemas/Arbeidsgiveravgift"
     Organisasjonsnummer:
-      description: 'Organisasjonsnummeret'
+      description: "Organisasjonsnummeret"
       type: string
-      pattern: '[0-9]*'
+      pattern: "[0-9]*"
       example: 987654231
     Organisasjonsnavn:
-        description: 'navn på organisasjon'
-        type: string
-        maxLength: 175
-        example: 'Freidige Forretninger AS'
+      description: "navn på organisasjon"
+      type: string
+      maxLength: 175
+      example: "Freidige Forretninger AS"
     Arbeidsgiveravgift:
       type: object
       properties:
         termin:
-          $ref: '#/components/schemas/ArbeidsgiveravgiftTermin'
+          $ref: "#/components/schemas/ArbeidsgiveravgiftTermin"
         aar:
-          $ref: '#/components/schemas/Aarstall'
+          $ref: "#/components/schemas/Aarstall"
         sumavgiftsgrunnlagBeloep:
           allOf:
-            - $ref: '#/components/schemas/Beloep'
-            - description: 'sum av avgiftsgrunnlagBeløp felt i ArbeidsgiveravgiftGrunnlag for 2 måneds- termin'
+            - $ref: "#/components/schemas/Beloep"
+            - description: "sum av avgiftsgrunnlagBeløp felt i ArbeidsgiveravgiftGrunnlag for 2 måneds- termin"
     Skjemamottaker:
       type: object
       properties:
         mottakersOrganisasjonsnavn:
-          $ref: '#/components/schemas/Organisasjonsnavn'
+          $ref: "#/components/schemas/Organisasjonsnavn"
         mottakersOrganisasjonsnummer:
-          $ref: '#/components/schemas/Organisasjonsnummer'
+          $ref: "#/components/schemas/Organisasjonsnummer"
     DatoKlokkeslett:
       description: >-
-       en kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). '
+        en kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). '
       type: string
       format: datetime
-      example: '2020-01-02T12:43:23'
+      example: "2020-01-02T12:43:23"
     Beloep:
-        type: integer
-        description: 'en sum av penger brukt i en kontekst. Dette kan være en transaksjon, saldo o.l.'
+      type: integer
+      description: "en sum av penger brukt i en kontekst. Dette kan være en transaksjon, saldo o.l."
     Aarstall:
-      description: ''
+      description: ""
       type: string
     ArbeidsgiveravgiftTermin:
       description: >-
@@ -197,8 +197,8 @@ components:
       properties:
         kode:
           type: string
-          description: 'Feilkode, for maskinell håndtering'
-          example: 'ARBAVG-0xx'
+          description: "Feilkode, for maskinell håndtering"
+          example: "ARBAVG-0xx"
         melding:
           type: string
           description: Beskrivelse av feilen som har oppstått

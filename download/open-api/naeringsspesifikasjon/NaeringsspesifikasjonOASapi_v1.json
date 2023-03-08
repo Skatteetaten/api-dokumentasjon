@@ -63,9 +63,7 @@
         "summary": "Hent naeringsspesifikasjon for person",
         "description": "Hent naeringsspesifikasjon for person",
         "operationId": "hentNaeringsspesifikasjonForPerson",
-        "tags": [
-          "Naeringsspesifikasjon"
-        ],
+        "tags": ["Naeringsspesifikasjon"],
         "parameters": [
           {
             "name": "rettighetspakke",
@@ -107,7 +105,8 @@
               "type": "string"
             },
             "example": "2020-10-21T11:11:11"
-          },{
+          },
+          {
             "name": "Korrelasjonsid",
             "in": "header",
             "description": "Korrelasjonsid, unik identifikator for den tekniske forespoerselen. Maa vaere paa UUID-format",

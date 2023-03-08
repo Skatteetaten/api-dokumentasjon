@@ -3,21 +3,21 @@ info:
   description: MVA Meldingsoppslysning API
   version: 0.7.0
   title: MVA Meldingsoppslysning API
-  termsOfService: 'https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html'
+  termsOfService: "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html"
   contact:
     name: Brukerstøtte datasamarbeid
     url: >-
       https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/
 externalDocs:
   description: Dokumentasjon på Skatteetatens GitHub
-  url: 'https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon'
+  url: "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon"
 servers:
-  - url: 'https://api-at.sits.no/api/mvamelding/v1'
+  - url: "https://api-at.sits.no/api/mvamelding/v1"
     description: Akseptansetest (AT)
-  - url: 'https://api.skatteetaten.no/api/mvamelding/v1'
+  - url: "https://api.skatteetaten.no/api/mvamelding/v1"
     description: Produksjon (Prod)
 paths:
-  '/{rettighetspakke}/{organisasjonsnummer}':
+  "/{rettighetspakke}/{organisasjonsnummer}":
     get:
       summary: Hent mva meldingsopplysninger for enhet
       description: Hent mva meldingsopplysninger for enhet
@@ -37,194 +37,194 @@ paths:
             type: string
         - name: organisasjonsnummer
           in: path
-          description: 'organisasjonsnummer'
+          description: "organisasjonsnummer"
           required: true
           schema:
-            $ref: '#/components/schemas/Organisasjonsnummer'
+            $ref: "#/components/schemas/Organisasjonsnummer"
         - name: Korrelasjonsid
           in: header
-          description: 'Korrelasjonsid, unik identifikator for den tekniske forespørselen. Må være på UUID-format'
+          description: "Korrelasjonsid, unik identifikator for den tekniske forespørselen. Må være på UUID-format"
           required: false
           schema:
             type: string
             format: uuid
-          example: '123e4567-e89b-12d3-a456-426655440000'
+          example: "123e4567-e89b-12d3-a456-426655440000"
         - name: AltinnSamtykke
           in: header
-          description: ''
+          description: ""
           required: true
           schema:
             type: string
         - name: Authorization
           in: header
-          description: ''
+          description: ""
           required: true
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Gyldig respons
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/MvaAlminneligNaeringDto'
+                $ref: "#/components/schemas/MvaAlminneligNaeringDto"
             application/xml:
               schema:
-                $ref: '#/components/schemas/MvaAlminneligNaeringDto'
-        '400':
+                $ref: "#/components/schemas/MvaAlminneligNaeringDto"
+        "400":
           description: Valideringsfeil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '403':
+                $ref: "#/components/schemas/Feil"
+        "403":
           description: Bruker har ikke tilgang
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '500':
+                $ref: "#/components/schemas/Feil"
+        "500":
           description: Tekniske feil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
         default:
           description: unexpected error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
 components:
   schemas:
     MvaAlminneligNaeringDto:
       type: object
       properties:
         levert:
-          $ref: '#/components/schemas/DatoKlokkeslett'
+          $ref: "#/components/schemas/DatoKlokkeslett"
         forespurteOrganisasjon:
-          $ref: '#/components/schemas/Organisasjonsnummer'
+          $ref: "#/components/schemas/Organisasjonsnummer"
         mvaAlminneligNaering:
-          $ref: '#/components/schemas/MvaAlminneligNaering'
+          $ref: "#/components/schemas/MvaAlminneligNaering"
       xml:
-        namespace: 'urn:no:skatteetaten:datasamarbeid:mvameldingsopplysning:v1'
+        namespace: "urn:no:skatteetaten:datasamarbeid:mvameldingsopplysning:v1"
     Organisasjonsnummer:
-      description: 'Organisasjonsnummeret'
+      description: "Organisasjonsnummeret"
       type: string
-      pattern: '[0-9]*'
+      pattern: "[0-9]*"
       example: 987654231
     Organisasjonsnavn:
-      description: 'Organisasjonens navn'
+      description: "Organisasjonens navn"
       type: string
-      example: 'Freidige Forretninger AS'
+      example: "Freidige Forretninger AS"
     DatoKlokkeslett:
-      description: ''
+      description: ""
       type: string
       format: datetime
-      example: '2020-01-02T12:43:23'
+      example: "2020-01-02T12:43:23"
     Boolsk:
-      description: ''
+      description: ""
       type: boolean
     Heltall:
-      description: ''
+      description: ""
       type: number
     Aarstall:
-      description: ''
+      description: ""
       type: string
     AnsvarligForMvaMelding:
       type: object
       properties:
         organisasjonsnummer:
-          $ref: '#/components/schemas/Organisasjonsnummer'
+          $ref: "#/components/schemas/Organisasjonsnummer"
         organisasjonsnavn:
-          $ref: '#/components/schemas/Organisasjonsnavn'
+          $ref: "#/components/schemas/Organisasjonsnavn"
     MvaAlminneligNaering:
       type: object
       properties:
         skattemeldingsplikt:
-          $ref: '#/components/schemas/Skattemeldingsplikt'
-        ansvarligForMvaMelding: 
-          $ref: '#/components/schemas/AnsvarligForMvaMelding'
+          $ref: "#/components/schemas/Skattemeldingsplikt"
+        ansvarligForMvaMelding:
+          $ref: "#/components/schemas/AnsvarligForMvaMelding"
         samletFastsattOgReskontrofoertForTermin:
-          $ref: '#/components/schemas/SamletFastsattOgReskontrofoertForTerminListe'
+          $ref: "#/components/schemas/SamletFastsattOgReskontrofoertForTerminListe"
     SamletFastsattOgReskontrofoertForTerminListe:
-        description: ''
-        type: array
-        items:
-          $ref: '#/components/schemas/SamletFastsattOgReskontrofoertForTermin'
+      description: ""
+      type: array
+      items:
+        $ref: "#/components/schemas/SamletFastsattOgReskontrofoertForTermin"
     SamletFastsattOgReskontrofoertForTermin:
-        description: 'reskontroført mva opplysninger for en bestemt termin</xsd:documentation. https://begrepskatalog/begrep/6b41c699-50cd-11e7-b7c5-005056821322'
-        type: object
-        properties:
-          gjelderTermin:
-            $ref: '#/components/schemas/TerminMedAar'
-          fastsettingsperiodeStatus:
-            $ref: '#/components/schemas/FastsettingsperiodeStatus'
-          erMyndighetsfastsatt:
-            $ref: '#/components/schemas/Boolsk'
-          grunnMyndighetsfastsatt:
-            $ref: '#/components/schemas/GrunnMyndighetsfastsatt'
-          mvaAvgift:
-            $ref: '#/components/schemas/MvaAvgift'
-          mvaGrunnlag:
-            $ref: '#/components/schemas/MvaGrunnlag'
+      description: "reskontroført mva opplysninger for en bestemt termin</xsd:documentation. https://begrepskatalog/begrep/6b41c699-50cd-11e7-b7c5-005056821322"
+      type: object
+      properties:
+        gjelderTermin:
+          $ref: "#/components/schemas/TerminMedAar"
+        fastsettingsperiodeStatus:
+          $ref: "#/components/schemas/FastsettingsperiodeStatus"
+        erMyndighetsfastsatt:
+          $ref: "#/components/schemas/Boolsk"
+        grunnMyndighetsfastsatt:
+          $ref: "#/components/schemas/GrunnMyndighetsfastsatt"
+        mvaAvgift:
+          $ref: "#/components/schemas/MvaAvgift"
+        mvaGrunnlag:
+          $ref: "#/components/schemas/MvaGrunnlag"
     MvaGrunnlag:
-      description: 'Omsetning med høy sats'
+      description: "Omsetning med høy sats"
       type: object
       properties:
         innlandOmsetningUttakHoeySats:
-          $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
         innlandOmsetningUttakMiddelsSats:
-          $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
         innlandOmsetningUttakLavSats:
-          $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
     MvaAvgift:
-      description: ''
-      properties:  
+      description: ""
+      properties:
         innlandOmsetningUttakHoeySats:
-          $ref: '#/components/schemas/Heltall'        
+          $ref: "#/components/schemas/Heltall"
         innlandOmsetningUttakMiddelsSats:
-           $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
         innlandOmsetningUttakLavSats:
-           $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
         fradragInnlandInngaaendeHoeySats:
-           $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
         fradragInnlandInngaaendeMiddelsSats:
-           $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
         fradragInnlandInngaaendeLavSats:
-           $ref: '#/components/schemas/Heltall'
+          $ref: "#/components/schemas/Heltall"
     Skattemeldingsplikt:
-      description: ''
+      description: ""
       type: object
       properties:
         termintype:
-          $ref: '#/components/schemas/MvaTermintypeForAlminneligOgPrimaerNaering'
+          $ref: "#/components/schemas/MvaTermintypeForAlminneligOgPrimaerNaering"
         foersteTermin:
-          $ref: '#/components/schemas/TerminMedAar'
+          $ref: "#/components/schemas/TerminMedAar"
         sisteTermin:
-            $ref: '#/components/schemas/TerminMedAar'
+          $ref: "#/components/schemas/TerminMedAar"
     TerminMedAar:
-      description: ''
+      description: ""
       type: object
       properties:
         termin:
           type: string
         aar:
-          $ref: '#/components/schemas/Aarstall'
+          $ref: "#/components/schemas/Aarstall"
     FastsettingsperiodeStatus:
-      description: ''
+      description: ""
       type: string
       enum:
         - meldingIkkeLevert
@@ -241,7 +241,7 @@ components:
         - halvMaanedlig
         - maanedlig
     GrunnMyndighetsfastsatt:
-      description: 'grunnen til at skattegrunnlag og beregnet skatt er myndighetsfastsatt - enten manglende eller uriktig mva-melding'
+      description: "grunnen til at skattegrunnlag og beregnet skatt er myndighetsfastsatt - enten manglende eller uriktig mva-melding"
       type: string
       enum:
         - manglendeMvaMelding
@@ -254,7 +254,7 @@ components:
       properties:
         kode:
           type: string
-          description: 'Feilkode, for maskinell håndtering'
+          description: "Feilkode, for maskinell håndtering"
           example: MVA-MELDINGSOPPLYSNING-API-0xx
         melding:
           type: string

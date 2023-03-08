@@ -3,21 +3,21 @@ info:
   description: Tekst
   version: 1.0.0
   title: Inntektsmottaker API
-  termsOfService: 'https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html'
+  termsOfService: "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/faq_hvem.html"
   contact:
     name: Brukerstøtte datasamarbeid
     url: >-
       https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/bestill-attester-og-tilgang-pa-data/skatteetatens-datasamarbeid/skatte--og-inntektsopplysninger/brukerstotte-datasamarbeid/
 externalDocs:
   description: Dokumentasjon på Skatteetatens GitHub
-  url: 'https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon'
+  url: "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon"
 servers:
-  - url: 'https://api-at.sits.no/api/innrapportert/opplysningspliktig/v1/'
+  - url: "https://api-at.sits.no/api/innrapportert/opplysningspliktig/v1/"
     description: Akseptansetest (AT)
-  - url: 'https://api.skatteetaten.no/api/innrapportert/opplysningspliktig/v1/'
+  - url: "https://api.skatteetaten.no/api/innrapportert/opplysningspliktig/v1/"
     description: Produksjon (Prod)
 paths:
-  '/{rettighetspakke}/{opplysningspliktig}/inntektsmottakere':
+  "/{rettighetspakke}/{opplysningspliktig}/inntektsmottakere":
     get:
       summary: Lister opp inntektsmottakere for en angitt opplysningspliktig
       description: Lister opp inntektsmottakere for en angitt opplysningspliktig
@@ -61,54 +61,54 @@ paths:
             type: string
         - name: Korrelasjonsid
           in: header
-          description: 'Korrelasjonsid, unik identifikator for den tekniske forespørselen'
+          description: "Korrelasjonsid, unik identifikator for den tekniske forespørselen"
           required: true
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Gyldig respons
           content:
             application/json:
               schema:
                 $ref: Inntektsmottakere.json
-        '400':
+        "400":
           description: Valideringsfeil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '403':
+                $ref: "#/components/schemas/Feil"
+        "403":
           description: Bruker har ikke tilgang
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '500':
+                $ref: "#/components/schemas/Feil"
+        "500":
           description: Tekniske feil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
         default:
           description: unexpected error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-  '/{rettighetspakke}/{inntektsmottaker}/inntekter':
+                $ref: "#/components/schemas/Feil"
+  "/{rettighetspakke}/{inntektsmottaker}/inntekter":
     get:
       summary: >-
         Lister opp inntektsmottaker, fradrag og forskuddstrekk for en angitt
@@ -149,12 +149,12 @@ paths:
             type: string
         - name: Korrelasjonsid
           in: header
-          description: 'Korrelasjonsid, unik identifikator for den tekniske forespørselen'
+          description: "Korrelasjonsid, unik identifikator for den tekniske forespørselen"
           required: true
           schema:
             type: string
       responses:
-        '200':
+        "200":
           description: Gyldig respons
           content:
             application/json:
@@ -163,42 +163,42 @@ paths:
             application/xml:
               schema:
                 $ref: Inntektsmottaker.xsd
-        '400':
+        "400":
           description: Valideringsfeil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '403':
+                $ref: "#/components/schemas/Feil"
+        "403":
           description: Bruker har ikke tilgang
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
-        '500':
+                $ref: "#/components/schemas/Feil"
+        "500":
           description: Tekniske feil
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
         default:
           description: unexpected error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
             application/xml:
               schema:
-                $ref: '#/components/schemas/Feil'
+                $ref: "#/components/schemas/Feil"
 components:
   schemas:
     Feil:
@@ -210,7 +210,7 @@ components:
       properties:
         kode:
           type: string
-          description: 'Feilkode, for maskinell håndtering'
+          description: "Feilkode, for maskinell håndtering"
           example: INNTM-0xx
         melding:
           type: string

@@ -1,0 +1,7 @@
+.docusaurus
+build
+doc
+.idea
+.vscode
+
+*.md

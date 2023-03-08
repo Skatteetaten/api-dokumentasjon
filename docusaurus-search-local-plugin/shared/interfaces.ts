@@ -14,7 +14,10 @@ export interface SearchDocument {
 const DOC_TITLE = 0;
 const DOC_HEADING = 1;
 const DOC_CONTENT = 2;
-export type SearchDocumentType = typeof DOC_TITLE | typeof DOC_HEADING | typeof DOC_CONTENT;
+export type SearchDocumentType =
+  | typeof DOC_TITLE
+  | typeof DOC_HEADING
+  | typeof DOC_CONTENT;
 
 export interface WrappedIndex {
   documents: SearchDocument[];

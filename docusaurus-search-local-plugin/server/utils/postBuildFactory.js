@@ -15,11 +15,13 @@ module.exports.postBuildFactory = function postBuildFactory(
   return async function postBuild(buildData) {
     const data = processDocInfos(buildData, config);
 
-
     for (const versionData of data) {
-
-      const { titleDocuments, headingDocuments, contentDocuments } = await scanDocuments(versionData.paths);
-      const searchIndex = buildIndex({ titleDocuments, headingDocuments, contentDocuments }, config);
+      const { titleDocuments, headingDocuments, contentDocuments } =
+        await scanDocuments(versionData.paths);
+      const searchIndex = buildIndex(
+        { titleDocuments, headingDocuments, contentDocuments },
+        config
+      );
 
       await writeFileAsync(
         path.join(versionData.outDir, searchIndexFilename),
@@ -28,4 +30,4 @@ module.exports.postBuildFactory = function postBuildFactory(
       );
     }
   };
-}
+};

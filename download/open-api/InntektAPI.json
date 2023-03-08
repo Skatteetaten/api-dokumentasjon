@@ -30,9 +30,7 @@
         "summary": "Lister opp inntektsmottakere for en angitt opplysningspliktig",
         "description": "Lister opp inntektsmottakere for en angitt opplysningspliktig",
         "operationId": "listInntektsmottakere",
-        "tags": [
-          "Liste med inntektsmottakere for opplysningspliktig"
-        ],
+        "tags": ["Liste med inntektsmottakere for opplysningspliktig"],
         "parameters": [
           {
             "name": "rettighetspakke",
@@ -168,9 +166,7 @@
         "summary": "Lister opp inntektsmottaker, fradrag og forskuddstrekk for en angitt inntektsmottaker",
         "description": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/reference_inntektsmottaker.html",
         "operationId": "listInntektsmottaker",
-        "tags": [
-          "Inntekt m.m. for inntektsmottaker"
-        ],
+        "tags": ["Inntekt m.m. for inntektsmottaker"],
         "parameters": [
           {
             "name": "rettighetspakke",
@@ -239,7 +235,6 @@
               "application/xml": {
                 "schema": {
                   "$ref": "https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/download/inntektsmottaker.xsd"
-
                 }
               }
             }

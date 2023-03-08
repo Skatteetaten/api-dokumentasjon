@@ -30,9 +30,7 @@
         "summary": "Hent restansene for enhet",
         "description": "Hent restansene for enhet",
         "operationId": "hentRestanseneForEnhet",
-        "tags": [
-          "Hent restansene for enhet"
-        ],
+        "tags": ["Hent restansene for enhet"],
         "parameters": [
           {
             "name": "rettighetspakke",

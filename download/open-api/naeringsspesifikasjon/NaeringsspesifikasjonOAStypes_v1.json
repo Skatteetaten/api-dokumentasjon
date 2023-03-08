@@ -1509,11 +1509,7 @@
       "Regnskapspliktstype": {
         "type": "string",
         "description": "",
-        "enum": [
-          "1",
-          "2",
-          "5"
-        ]
+        "enum": ["1", "2", "5"]
       },
       "Reindrift": {
         "type": "object",
@@ -1721,19 +1717,7 @@
       "Saldogruppe": {
         "type": "string",
         "description": "",
-        "enum": [
-          "a",
-          "b",
-          "c",
-          "c2",
-          "d",
-          "e",
-          "f",
-          "g",
-          "h",
-          "i",
-          "j"
-        ]
+        "enum": ["a", "b", "c", "c2", "d", "e", "f", "g", "h", "i", "j"]
       },
       "Salgsinntekt": {
         "allOf": [
@@ -1855,10 +1839,7 @@
                 "$ref": "#/components/schemas/BeloepMedSkattemessigeEgenskaper"
               }
             },
-            "oneOf": [
-              {},
-              {}
-            ]
+            "oneOf": [{}, {}]
           }
         ]
       },
@@ -2282,10 +2263,7 @@
       "Verditype": {
         "type": "string",
         "description": "",
-        "enum": [
-          "regnskapsmessigVerdi",
-          "skattemessigVerdi"
-        ]
+        "enum": ["regnskapsmessigVerdi", "skattemessigVerdi"]
       },
       "Verdsettelsesmetode": {
         "type": "string",
