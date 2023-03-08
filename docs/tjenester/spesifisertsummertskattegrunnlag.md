@@ -371,7 +371,8 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata er søkbare i Tenor-adapteren “Spesifisert summert skattegrunnlag”.
+  
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Spesifisert summert skattegrunnlag".
   
 </TabItem>
 </Tabs>
