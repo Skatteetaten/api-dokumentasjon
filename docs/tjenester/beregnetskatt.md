@@ -28,11 +28,11 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:be
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Beregnet skatt API - På vegne av`
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api) ligger på SwaggerHub.
+Det finnes for tiden 2 versjoner av denne tjenesten, og ulike rettighetspakker er støttet i ulike versjoner. Open API spesifikasjonene ligger på Swaggerhub.
+* [Versjon 1](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api/1.0.0)
+* [Versjon 2](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api)
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
-
-Det finnes for tiden 2 versjoner av denne tjenesten, og ulike rettighetspakker er støttet i ulike versjoner. 
   
 ## Rettighetspakker
 
@@ -59,8 +59,9 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## JSON
-Fastland og Svalbard
+## JSON (Versjon 1)
+  
+### Fastland og Svalbard
 
 ```json
 {
@@ -93,7 +94,7 @@ Fastland og Svalbard
   "svalbardSkatteregnskapskommune": "2222"
 }
 ```
-Kildeskatt på lønn (kpl)
+### Kildeskatt på lønn (kpl)
 
 ```json
 {
@@ -110,7 +111,7 @@ Kildeskatt på lønn (kpl)
 }
 ```
 
-## XML
+## XML (Versjon 1)
 
 Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Accept` satt til `application/xml`:
 
@@ -131,7 +132,6 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
    <skatteregnskapskommune>5421</skatteregnskapskommune>
 </beregnetSkatt>
 ```
-  
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
