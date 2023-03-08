@@ -152,15 +152,13 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | BSA-009 | 404 | Ikke treff på oppgitt identifikator. |
 
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+<TabItem headerText="Informasjonsmodell V1" itemKey="itemKey-4">
 
 [Informasjonsmodell](https://data.norge.no/informationmodels/1ee98d61-eb44-33c9-96aa-822b898abed5) i Felles datakatalog. 
 
 Obs. Hvis denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
 
 I listen under vises navn på de ulike feltene tjenesten leverer. Ta kontakt med Skatteetaten for å finne ut hvilken rettighetspakke som er aktuell for din organisasjon og hvilke felter den aktuelle rettighetspakken returnerer.
-
-## Versjon 1  
 
 | Navn på felt | Beskrivelse | Gjelder 2016 | Gjelder 2017 | Gjelder 2018 | Gjelder 2019 | Gjelder 2020 |
 |--------------|-------------|--------------|--------------|--------------| -------------|---------------|
@@ -203,11 +201,18 @@ I listen under vises navn på de ulike feltene tjenesten leverer. Ta kontakt med
 | kildeskattPaaLoennPersoninntektBarePensjonsdel |[personinntekt som medlem i pensjonsdel](https://data.skatteetaten.no/begrep/367f2cc1-a9e1-11e8-8514-005056821322)| | | | X | X |
 | kildeskattPaaLoennSkatteregnskapskommune |[skatteregnskapskommune](https://data.skatteetaten.no/begrep/skatteregnskapskommune)| | | | X | X |
 
-### Informasjonsmodell - skjema (Versjon 1)
+## Informasjonsmodell - skjema
 
 [![BeregnetSkattv1](../../static/download/BeregnetSkatt_v1.png)](../../static/download/BeregnetSkatt_v1.png)
 
-## Versjon 2
+</TabItem>
+<TabItem headerText="Informasjonsmodell V2" itemKey="itemKey-5">
+
+[Informasjonsmodell](https://data.norge.no/informationmodels/1ee98d61-eb44-33c9-96aa-822b898abed5) i Felles datakatalog. 
+
+Obs. Hvis denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
+
+I listen under vises navn på de ulike feltene tjenesten leverer. Ta kontakt med Skatteetaten for å finne ut hvilken rettighetspakke som er aktuell for din organisasjon og hvilke felter den aktuelle rettighetspakken returnerer.    
   
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | -------|
@@ -222,7 +227,7 @@ I listen under vises navn på de ulike feltene tjenesten leverer. Ta kontakt med
 | beregnetSkattSvalbard | vil inneholde verdier fra skatteoppgjør Svalbard| 2017 | [BeregnetSkattPerOppgjoerstype](#beregnetskattperoppgjoerstype) |
 | beregnetSkattKildeskattPaaLoenn | vil inneholde verdier fra kildeskattkvittering| 2019 |[BeregnetSkattPerOppgjoerstype](#beregnetskattperoppgjoerstype)|
 
-### BeregnetSkattPerOppgjoerstype
+## BeregnetSkattPerOppgjoerstype
 Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskattkvittering (kildeskatt på lønn)
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
@@ -240,7 +245,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | skattetillegg | | 2021 | [Skattetillegg](#skattetillegg) |
 | oevrigeResultaterAvBeregning | | 2017 | [OevrigeResultaterAvBeregning](#oevrigeresultateravberegning)|
 
-### InformasjonTilSkattelister
+## InformasjonTilSkattelister
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | -------|
@@ -249,7 +254,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | beregnetSkatt | [Beregnet skatt](https://data.skatteetaten.no/begrep/beregnet%20skatt) | 2017 | BeløpSOmHeltall |
 | kommune | [Kommune](https://data.skatteetaten.no/begrep/kommune)| 2021 | Kommunenummer |
 
-### SkattOgAvgift
+## SkattOgAvgift
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | ------- |
@@ -281,7 +286,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | trygdeavgiftForSykestoenadsdelForArbeidstakereUtsendtFraUSAOgCanada | | 2021 | [Skatt](#skatt) |
 | trygdeavgiftAvLoennsinntektOmfattetAvLoennstrekkordningPaaSvalbard | | 2021 |[Skatt](#skatt) |
 
-### Skattefradrag
+## Skattefradrag
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | ------- |
@@ -303,7 +308,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | korrigertSkattForEtterbetaltPensjonOgTrygdeytelse | [beregnet skatt korrigert ved etterbetalte pensjoner og trygdeytelser](https://data.skatteetaten.no/begrep/367f2c86-a9e1-11e8-8514-005056821322) | 2021 | BeløpSomHeltall |
 | skattefradragForBetaltKildeskattPaaRenterOgRoyaltyMv | | 2021 | BeløpSomHeltall |
 
-### Skattetillegg
+## Skattetillegg
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | -------- |
@@ -311,7 +316,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | skattAvEngangserstatningTilBarn | [Særskilt fastsatt skatt for barn på engangserstatning eller engangsutbetaling](https://data.skatteetaten.no/begrep/367f2ccf-a9e1-11e8-8514-005056821322)| 2021 | BeløpSomHeltall |
 | skattetilleggVedBSU | [Skattetillegg ved vilkårsbrudd for boligsparing for ungdom](https://data.skatteetaten.no/begrep/367f2cd3-a9e1-11e8-8514-005056821322)| 2021 | BeløpSomHeltall |
 
-### OevrigeResultaterAvBeregning
+## OevrigeResultaterAvBeregning
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type | 
 | ---- | -------------------------------------------------------- | -------- | -------|
@@ -346,7 +351,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | endretSkattToAarEtterInntektsaaretOverfoertFraEktefelle | | 2021 | BeløpSomHeltall |
 | fremfoerbartSkattefradragForBetaltKildeskattPaaRenterOgRoyaltyMv | | 2021 |[FremfoerbartSkattefradragForBetaltKildeskattPaaRenterOgRoyaltyMv](#fremfoerbartskattefradragforbetaltkildeskattpaarenterogroyaltymv) |
 
-### FremfoerbartSkattefradragForSkattBetaltIUtlandet
+## FremfoerbartSkattefradragForSkattBetaltIUtlandet
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | ------|
@@ -354,7 +359,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | fremfoerbartSkattefradragForFormuesskattBetaltIUtlandet |  | 2021 | BeløpSomHeltall |
 | fremfoerbartSkattefradragForInntektsskattBetaltIUtlandet |  | 2021 | BeløpSomHeltall |
 
-### ResultaterAvBeregningEtterMetodeVedDobbeltbeskatning
+## ResultaterAvBeregningEtterMetodeVedDobbeltbeskatning
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | ----- |
@@ -368,14 +373,14 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | beregnetMaksimaltKreditfradragIFellesskatt | | 2021 | BeløpSomHeltall |
 | beregnetMaksimaltKreditfradragIFormuesskatt | | 2021 | BeløpSomHeltall |
 
-### FremfoerbartSkattefradragForBetaltKildeskattPaaRenterOgRoyaltyMv
+## FremfoerbartSkattefradragForBetaltKildeskattPaaRenterOgRoyaltyMv
 
 | Felt | Beskrivelse | Gjelder fra inntektsår | Type |
 | ---- | -------------------------------------------------------- | -------- | -----|
 | inntektsaar | | 2021 | Inntektsår |
 | fremfoerbartSkattefradrag | | 2021 | BeløpSomHeltall |
 
-### Skatt
+## Skatt
 
 | Felt | Beskrivelse | Type |
 | ---- | -------------------------------------------------------- | ----- |
@@ -385,12 +390,12 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 | kommunefordeltSkatt.grunnlag | grunnlag for kommunefordelt skatt | Heltall |
 | kommunefordeltSkatt.beloep | kommunefordelt skatt | BeløpSomHeltall |
 
-### Informasjonsmodell - skjema (Versjon 2)
+## Informasjonsmodell - skjema
 
 [![BeregnetSkattv2](../../static/download/BeregnetSkatt_v2.png)](../../static/download/BeregnetSkatt_v2.png)
   
 </TabItem>
-<TabItem headerText="Test" itemKey="itemKey-5">
+<TabItem headerText="Test" itemKey="itemKey-6">
 
 ## Tenor testdatasøk
 Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Beregnet skatt".
