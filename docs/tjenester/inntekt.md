@@ -31,8 +31,17 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-api/) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+ 
+Det finnes pt. to ulike URL'er til tjenesten. Url'en som skal benyttes er den som ligger i Open API spesifikasjonen.
+
+Gammel URL kan også benyttes, men vil etter hver utfases: 
+```
+GET https://<env>/api/innrapportert/inntektsmottaker/<rettighetspakke>/<personidentifikator>/oppgave/inntekt?fraOgMed=<YYYY-MM>[&tilOgMed=<YYYY-MM>]
+``` 
 
 ## Rettighetspakker
+
+Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhetens *rettighetspakke* avgjør hvilke inntekter som filtreres vekk før data utleveres. Inntekter som ikke skal utleveres for en rettighetspakke fjernes i sin helhet.
 
 | Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|
@@ -43,7 +52,7 @@ I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av paramete
 | kommuneBoligsosialeFormaal | Hjemmel |
 | laanekassen | Hjemmel |
 | ldir | Hjemmel |
-| otp | Hjemmel |
+| otp | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
 | pensjonskasse | Hjemmel |
 | saernamsmann | Hjemmel |
 | spkBoliglaan | Hjemmel |
@@ -57,9 +66,9 @@ For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md).
 |--------| ------ |-------|
 | 4804_210607 | Samtykke for `sbl` | Sanert tjenestekode: 4804_170223 |
 
-For denne tjenesten er det enkelte parametre som må følge med:
+For denne tjenesten er det enkelte parametre som må følge med ved bruk av samtykke:
  
-| parameter | forklaring | eksempelverdi |
+| Parameter | Forklaring | Eksempelverdi |
 |---|---|---|
 | 4804_210607_fraOgMed | Parameter for Inntekt | 2018-03 |
 | 4804_210607_tilOgMed | Parameter for Inntekt | 2018-06 |
@@ -94,21 +103,15 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <s
 ## Eksempel på respons fra tjenesten
 
 Under er eksempler på respons fra inntektstjenesten.
-
 Data kommer som en liste med OppgaveInntektsmottaker (oppgaver som gjelder en inntektsmottaker).
  
-Hver OppgaveInntektsmottaker har
-
+Hver OppgaveInntektsmottaker har:
  * litt informasjon om oppgaven
    - kalendermåned
    - inntektsmottaker
    - opplysningspliktig
    - virksomhet (underenhet til opplysnigspliktig)
- * en liste med inntekter.  NB! Hvordan denne listen representeres vil for JSON avvike fra strukturen som er beskrevet i XSD.  For json-se eksempel nedenfor.
-
-### Suksess (HTTP status 200)
-
-Dersom kallet lykkes får man HTTP status 200 og data i JSON eller XML format. Dersom man ikke spesifiserer ønsket format får man JSON.
+ * en liste med inntekter.  NB! Hvordan denne listen representeres vil for JSON avvike fra strukturen som er beskrevet i XSD. For json-se eksempel nedenfor.
 
 #### JSON
 
@@ -257,29 +260,14 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
- [informasjonsmodell](https://data.norge.no/informationmodels/c0837391-9c16-393b-b53b-ea0a27eb62a1) i Felles datakatalog.
+[Informasjonsmodell](https://data.norge.no/informationmodels/c0837391-9c16-393b-b53b-ea0a27eb62a1) i Felles datakatalog.
  
- Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swaggerhub, er det open api spesifikasjonen som er mest oppdatert.
+Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
  
- ## Rettighetspakker
-
-Hvilke data en virksomhet får bestemmes av rettighetspakken, se [Rettighetspakker](../om/rettighetspakker.md).
-
-| Rettighetspakke | Beskrivelse | Regler for bruk |
-|--------|--------| --------- |
-| sbl | Samtykkebasert Lånesøknad | |
-| otp | Obligatorisk tjenestepensjon |Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |   
-
-Organisasjoner med hjemmel bes ta kontakt med Skatteetaten for å finne ut hvilken rettighetspakke som er aktuell for din organisasjon og hvilke felter den aktuelle rettighetspakken returnerer.
-
-
 ## Beskrivelse
 
 > Elementet *&lt;beskrivelse&gt;* klassifiserer den enkelte inntekt
-
-Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhetens *Rettighetspakke* avgjør hvilke inntekter som filtreres vekk før data utleveres. Inntekter som ikke skal utleveres for en Rettighetspakke fjernes i sin helhet.
-
-For rettighetspakke otp er inntekter som blir utdelt fra andre enn opplysningspliktige man har søkt på markert med X*
+For rettighetspakke `otp` er inntekter som blir utdelt fra andre enn opplysningspliktige man har søkt på markert med X*
 
 ### &lt;loennsinntekt&gt; &lt;beskrivelse&gt;
 
@@ -366,7 +354,6 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |yrkebilTjenestligbehovKilometer|2016-01||||
 |yrkebilTjenestligbehovListepris|2016-01||||
 
-
 ### &lt;ytelseFraOffentlige&gt; &lt;beskrivelse&gt;
 
 Oversikt over hvilke *&lt;beskrivelse&gt;* koder som brukes for *&lt;ytelseFraOffentlige&gt;*. 
@@ -389,7 +376,6 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |ufoereytelseEtteroppgjoer|2016-01||X||
 |underholdsbidragTilBarn|2013-01|2017-01|X||
 |venteloenn|2013-01||X||
-
 
 ### &lt;pensjonEllerTrygd&gt; &lt;beskrivelse&gt;
 
@@ -433,7 +419,6 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |ufoereytelseEtteroppgjoerFraAndreEnnFolketrygden|2015-01||X|X*|
 |underholdsbidragTilTidligereEktefelle|2013-01|2020-01|X||
 
-
 ### &lt;naeringsinntekt&gt; &lt;beskrivelse&gt;
 
 Oversikt over hvilke *&lt;beskrivelse&gt;* koder som brukes for *&lt;pensjonEllerTrygd&gt;*. 
@@ -452,11 +437,9 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |vederlag|2013-01||X|
 |vederlagDagmammaIEgetHjem|2014-01||X|
 
-
 ## Element med tekstkoder
 
-Det henvises generelt til xsd for den enkelte Rettighetspakke for hvilke verdier som kan utleveres i element. I dette avsnittet dokumenteres kun element som inneholder tekstkoder definert av skatteetaten
-
+Det henvises generelt til xsd for den enkelte rettighetspakke for hvilke verdier som kan utleveres i element. I dette avsnittet dokumenteres kun element som inneholder tekstkoder definert av Skatteetaten.
 
 ### &lt;land&gt;
 
@@ -469,7 +452,6 @@ Landkoder oppgis i [ISO 3166 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_a
 |kontantytelse|||X|X|
 |naturalytelse|||X|X|
 |utgiftsgodtgjoerelse|||X|X|
-
 
 ### &lt;skatteOgAvgiftsRegel&gt;
 
@@ -484,7 +466,6 @@ Landkoder oppgis i [ISO 3166 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_a
 |skattefriOrganisasjon|2016-01|||X|
 ||||ingen verdi (tom streng) er lov i dette feltet| 
 
-
 ### &lt;Forskuddstrekk&gt; &lt;beskrivelse&gt;
 
 |verdi| gyldig fra og med | gyldig til og med | kommentar | sbl |
@@ -495,7 +476,6 @@ Landkoder oppgis i [ISO 3166 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_a
 |svalbard||||X|
 |barnepensjon||||X|
 ||||ingen verdi (tom streng) er lov i dette feltet|| 
-
 
 ### &lt;Fradrag&gt; &lt;beskrivelse&gt;
 
@@ -510,11 +490,9 @@ Landkoder oppgis i [ISO 3166 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_a
 |premieTilPensjonsordningerJanMayenOgBilandene|||X|
 |premieTilUtenlandskePensjonsordninger|||X|
  
-
 ## Element i utvidet format med tekstkoder
 
-Det henvises generelt til xsd for den enkelte Rettighetspakke for hvilke verdier som kan utleveres i elementer. I dette avsnittet dokumenteres element som kun utleveres med Rettighetsett Utvidet, og som i tillegg inneholder tekstkoder definert av skatteetaten
-
+Det henvises generelt til xsd for den enkelte rettighetspakke for hvilke verdier som kan utleveres i elementer. I dette avsnittet dokumenteres element som kun utleveres med Rettighetsett Utvidet, og som i tillegg inneholder tekstkoder definert av Skatteetaten
 
 ### &lt;tilleggsinformasjon&gt; &lt;inntjeningsforhold&gt;
 
@@ -528,7 +506,6 @@ Det henvises generelt til xsd for den enkelte Rettighetspakke for hvilke verdier
 |skattefriArbeidsinntektBarnUnderTrettenAar|||X|
 |statsansattUtlandet|||X|
 |utenlandskeSjoefolkSomIkkeErSkattepliktig|||X|
-
 
 ### &lt;tilleggsinformasjon&gt; &lt;reiseKostOgLosji&gt; &lt;persontype&gt; 
 
