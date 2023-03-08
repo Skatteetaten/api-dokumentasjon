@@ -131,7 +131,7 @@ Definerer objektet som kan ligge i listen pensjonsgivendeInntekt i [rotobjektet]
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata for denne tjenesten er søkbare i Tenor-adapter “Beregnet skatt”.
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Beregnet skatt".
     
 </TabItem>
 </Tabs>
