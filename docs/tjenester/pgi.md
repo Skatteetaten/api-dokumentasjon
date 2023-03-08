@@ -98,7 +98,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata er søkbare i Tenor-adapter "Beregnet skatt".
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Beregnet skatt".
   
 </TabItem>
 </Tabs>
