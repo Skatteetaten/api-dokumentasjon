@@ -124,7 +124,7 @@ Definerer objektet som kan ligge i listen kontoDto i [rotobjektet](#rotobjekt)
 ## Informasjonsmodell - skjema
 
 ### Oversikt
-[![Oversikt](../../static/download/aktivkontoekstern/aktivkonto-ekstern.png)](/download/aktivkontoekstern/aktivkonto-ekstern.png)
+[![Oversikt](../../static/download/aktivkontoekstern/aktivkonto-ekstern.png)](../../download/aktivkontoekstern/aktivkonto-ekstern.png)
 
 ### XML skjema
 [aktivkonto_valgtutbetalingskonto_v1.xsd](../../static/download/aktivkontoekstern/aktivkonto_valgtutbetalingskonto_v1.xsd)
