@@ -148,7 +148,7 @@ Tjenesten tilbyr følgende endepunkt med forskjellige modeller:
 
 ## Tenor testdatasøk
 
-Testdata er søkbare i Tenor-adapter "Tjenestepensjonsavtale" både for personer og virksomheter.  
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søkene for "Tjenestepensjonsavtale" både for personer og virksomheter.
   
 ## Testdata
 
