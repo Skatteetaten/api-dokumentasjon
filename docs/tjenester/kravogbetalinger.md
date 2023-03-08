@@ -296,7 +296,8 @@ Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endep
 I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være med å pilotere løsningene.
   
 ## Tenor testdatasøk
-Det finnes pt. ikke Tenor-adapter for denne tjenesten, og testdata er derfor listet her.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
+Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ## Testdata
 Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
@@ -309,7 +310,6 @@ Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatte
 | 314961900 | |
 | 314055403 | |
 
-Egenskaper ved enhetene kan søkes frem i [TENOR testdatasøk](https://skatteetaten.github.io/datasamarbeid-api-dokumentasjon/data_testdatasok.html).
   
 </TabItem>
 </Tabs>
