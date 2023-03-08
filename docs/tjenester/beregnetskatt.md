@@ -205,7 +205,7 @@ I listen under vises navn på de ulike feltene tjenesten leverer. Ta kontakt med
 
 ### Informasjonsmodell - skjema (Versjon 1)
 
-[![BeregnetSkattv1](../../static/BeregnetSkatt_v1.png)](../../static//BeregnetSkatt_v1.png)
+[![BeregnetSkattv1](../../static/download/BeregnetSkatt_v1.png)](../../static/download/BeregnetSkatt_v1.png)
 
 ## Versjon 2
   
@@ -387,7 +387,7 @@ Beregnet skatt per skatteoppgjørstype (fastland eller Svalbard) eller kildeskat
 
 ### Informasjonsmodell - skjema (Versjon 2)
 
-[![BeregnetSkattv2](../../static/BeregnetSkatt_v2.png)](../../static/BeregnetSkatt_v2.png)
+[![BeregnetSkattv2](../../static/download/BeregnetSkatt_v2.png)](../../static/download/BeregnetSkatt_v2.png)
   
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
