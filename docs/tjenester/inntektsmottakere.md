@@ -143,7 +143,7 @@ Det utleveres personidentifikator for inntektsmottakere som er rapportert av opp
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata er søkbare i Tenor-adapteren "Inntekt A-ordningen" og denne kan også kombineres med Arbeidsforhold-adapter.
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Inntekt A-ordningen", og denne kan også med søk for "Arbeidsforhold".
 
 </TabItem>
 </Tabs>
