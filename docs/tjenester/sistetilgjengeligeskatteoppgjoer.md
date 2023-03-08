@@ -26,7 +26,9 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 
 ## Scope
-Man trenger ikke eget scope for denne tjenesten, siden den benytter samme scope som relaterte oppslagstjenester: `skatteetaten:summertskattegrunnlag` og `skatteetaten:spesifisertsummertskattegrunnlag`
+Man trenger ikke eget scope for denne tjenesten, siden den benytter samme scope som relaterte oppslagstjenester: 
+  * `skatteetaten:summertskattegrunnlag`
+  * `skatteetaten:spesifisertsummertskattegrunnlag`
 
 ## Delegering
 Tilgang til hendelseslister delegeres i Altinn når man delegerer oppslagstjenesten.
