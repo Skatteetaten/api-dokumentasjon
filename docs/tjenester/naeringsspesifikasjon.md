@@ -19,7 +19,6 @@ For generell informasjon om tjenestene se egne sider om:
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
-* [Versjonering](../om/versjoner.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:naeringsspesifikasjon`
@@ -28,6 +27,8 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:na
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Næringsspesifikasjon API - På vegne av`
 
 ## Teknisk spesifikasjon
+Næringsspesifikasjon API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har n egen versjon pr. inntektsår. For øyeblikket leverer applikasjonen næringsspesifikasjon for 2022.
+  
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api) ligger på SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
@@ -52,7 +53,7 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig maskinportentoken som legges ved som headerer i curl-kommandoen.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/naeringsspesifikasjon/v3/ssb/2021/12345678901?gjelderpaaTidspunkt=2021-08-08T12:12:12"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/naeringsspesifikasjon/v3/ssb/2022/12345678901?gjelderpaaTidspunkt=2022-08-08T12:12:12"
 ```
 
 ## JSON
@@ -205,7 +206,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 [Informasjonsmodell](https://data.norge.no/informationmodels/c45bfb1b-766e-386a-b560-c57eca638c1a) i Felles datakatalog.
 
-Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swaggerhub, er det open api spesifikasjonen som er mest oppdatert.
+Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
 
 Modellene nedenfor avviker litt fra modellen slik den benyttes i tjenesten.  Modellen har følgende avvik:
 * Part er erstattet med personidentifikator
