@@ -520,13 +520,13 @@ Det henvises generelt til xsd for den enkelte rettighetspakke for hvilke verdier
 ## Informasjonsmodell - skjema
 
 ### Oversikt
- ![Oversikt](../../static/download/inntektsmottaker/inntektsmottaker_oversikt.png)
+[![Oversikt](../../static/download/inntektsmottaker/inntektsmottaker_oversikt.png)](../../static/download/inntektsmottaker/inntektsmottaker_oversikt.png)
 
 ### Inntekt og inntektstyper
- ![Inntekt og inntektstyper](../../static/download/inntektsmottaker/InntektOgInntektstyper.png)
+[![Inntekt og inntektstyper](../../static/download/inntektsmottaker/InntektOgInntektstyper.png)](../../static/download/inntektsmottaker/inntektsmottaker_tilleggsinformasjon.png)
 
 ### Tilleggsinformasjon
- ![Tilleggsinformasjon](../../static/download/inntektsmottaker/inntektsmottaker_tilleggsinformasjon.png)
+[![Tilleggsinformasjon](../../static/download/inntektsmottaker/inntektsmottaker_tilleggsinformasjon.png)](../../static/download/inntektsmottaker/inntektsmottaker_tilleggsinformasjon.png)
  
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
