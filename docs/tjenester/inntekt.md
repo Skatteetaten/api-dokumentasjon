@@ -86,10 +86,10 @@ Alle data oppdateres månedlig, men kan bli korrigert i ettertid. Fristen for å
 
 ## Curl
 
-Her er et eksempel på en spørring med curl mot tjenesten. Du må legge sertifikat og nøkkel som parametre til curl-kommandoen.
+Her er et eksempel på en spørring med curl mot tjenesten.
 
 ```bash
-$ curl -v --cert virksomhet.cer --key virksomhet.key -H "AltinnSamtykke: <samtykke>" "https://api-at.sits.no/api/innrapportert/inntektsmottaker/sbl/12345678901/oppgave/inntekt?fraOgMed=2016-11&tilOgMed=2017-01"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <samtykke>" "https://api-at.sits.no/api/innrapportert/inntektsmottaker/sbl/12345678901/oppgave/inntekt?fraOgMed=2016-11&tilOgMed=2017-01"
 ```
 ## Eksempel på respons fra tjenesten
 
