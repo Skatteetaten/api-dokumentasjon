@@ -187,7 +187,8 @@ Skattemeldingtjenesten tilbyr et utvalg fra skattemeldingen tilpasset for deling
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata er søkbare i Tenor-adapter “Skattemelding”.  
+
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Skattemelding".
   
 </TabItem>
 </Tabs>
