@@ -173,17 +173,6 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
 [Informasjonsmodell](https://data.norge.no/informationmodels/eb60da4f-d6b2-3564-b3a5-e31e25da7538) i Felles datakatalog.
- 
-Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swaggerhub, er det open api spesifikasjonen som er mest oppdatert.
-  
-Skattemeldingtjenesten tilbyr et utvalg fra skattemeldingen tilpasset for deling.  
-
-## Årsversjoner
-
-| År | Informasjonsmodell |
-|-----------|--------|
-| 2018 | [Informasjonsmodell for skattemelding 2018](../informasjonsmodeller/skattemelding/skattemelding2018.md) |
-| 2019 | [Informasjonsmodell for skattemelding 2019](../informasjonsmodeller/skattemelding/skattemelding2019.md) |
   
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
