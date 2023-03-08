@@ -122,7 +122,7 @@ Definerer objektet som kan ligge i listen pensjonsgivendeInntekt i [rotobjektet]
 ## Informasjonsmodell - skjema
 
 ### Oversikt
-![Oversikt](../../static/download/pgi-folketrygden/pgi-folketrygden.png)
+[![Oversikt](../../static/download/pgi-folketrygden/pgi-folketrygden.png)](../../static/download/pgi-folketrygden/pgi-folketrygden.png)
 
 ### XML skjema
 [pensjonsgivendeinntektforfolketrygden_nav_overfoering_v1.xsd](../../static/download/pgi-folketrygden/pensjonsgivendeinntektforfolketrygden_nav_overfoering_v1.xsd) 
