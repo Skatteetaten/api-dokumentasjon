@@ -101,7 +101,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Det finnes pt. ikke Tenor-adapter for Mva-register – avgiftssubjekter med skattemeldingsplikt API, men man kan benytt hendelseslisten for å finne referanser man kan benytte for å teste oppslagstjenesten.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytt hendelseslisten for å finne referanser man kan benytte for å teste oppslagstjenesten.
   
 </TabItem>
 </Tabs>
