@@ -142,7 +142,8 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata for denne tjenesten er søkbare i Tenor-adapter ”Folkeregister”.
+ 
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Folkeregister". 
  
 </TabItem>
 </Tabs>
