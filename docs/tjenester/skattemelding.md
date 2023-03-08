@@ -40,7 +40,9 @@ I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av paramete
 | ssb |
   
 ## Støttetjenester
-For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste](./hendelser.md): `Skattemelding utkast hendelser API` og `Skattemelding fastsatt hendelser API`
+For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste](./hendelser.md): 
+  * `Skattemelding utkast hendelser API`
+  * `Skattemelding fastsatt hendelser API`
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/899c9a8d-0778-3472-9654-f6acd4e7f9ff) i Felles datakatalog.
