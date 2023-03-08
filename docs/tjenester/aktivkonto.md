@@ -1,5 +1,5 @@
 ---
-title: Aktiv konto
+title: Aktiv konto API
 slug: /aktivkonto
 folder: tjenester
 sidebar: mydoc_sidebar
