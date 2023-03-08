@@ -555,7 +555,7 @@ Det henvises generelt til xsd for den enkelte Rettighetspakke for hvilke verdier
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Testdata er søkbare i Tenor-adapteren "Inntekt A-ordningen"
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Inntekt A-ordningen".
  
 </TabItem>
 </Tabs>
