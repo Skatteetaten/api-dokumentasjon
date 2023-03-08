@@ -27,7 +27,7 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:na
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Næringsspesifikasjon API - På vegne av`
 
 ## Teknisk spesifikasjon
-Næringsspesifikasjon API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har n egen versjon pr. inntektsår. For øyeblikket leverer applikasjonen næringsspesifikasjon for 2022.
+Næringsspesifikasjon API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har nå egen versjon pr. inntektsår. For øyeblikket leverer tjenesten næringsspesifikasjon for 2022.
   
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api) ligger på SwaggerHub.
 
