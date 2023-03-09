@@ -54,103 +54,92 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 Her er et eksempel på et kall med curl mot tjenesten for å hente fastsatt skattemelding. Du må legge sertifikat og nøkkel som parametre til curl-kommandoen.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skattemeldingupersonlig/v1/fastsatt/ssb/2021/210962492"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skattemeldingupersonlig/v2/fastsatt/ssb/2022/210962492"
 ```
 
 ## JSON
 
 ```json
 {
-  "norskIdentifikator": "899613392",
-  "inntektsaar": "2021",
-  "inntektOgUnderskudd": {
-    "inntekt": {
-      "naeringsinntekt": 0
-    },
-    "id": "INNTEKT_OG_UNDERSKUDD",
-    "samletInntekt": {
-      "beloep": 0
-    }
+  "norskIdentifikator": "824889880",
+  "inntektsaar": "2022",
+  "spesifikasjonAvSkattefradragForKostnaderTilForskningOgUtvikling": {
+    "forskningOgUtviklingsprosjekt": [
+      {
+        "id": "1c9c453c-a54a-4193-8a0e-e491bda1d5a5",
+        "prosjektnummer": 1,
+        "prosjekttittel": "2",
+        "prosjektperiode": {
+          "start": "2022-04-27",
+          "slutt": "2022-11-03"
+        },
+        "prosjektstatus": {
+          "status": "8"
+        },
+        "prosjektkategori": "forskning",
+        "samledeKostnaderTidligereAar": 32432,
+        "skattefradragForKostnaderTilForskningOgUtvikling": {
+          "nettoSkattefradragFoerAvkortingMotAnnenOffentligStoette": 0,
+          "tilleggIBeregnetSkattPerProsjekt": 0
+        },
+        "annenOffentligStoette": {
+          "virksomhetskategori": "liten",
+          "harOmfattendeSpredningGjennomKonferanserPublikasjonerMv": false,
+          "samletBruttoOffentligStoetteIProsjektperioden": 0
+        },
+        "samledeKostnaderIHeleProsjektperioden": 32432,
+        "maksimalGodkjentOffentligStoetteSomAndelAvTotalkostnad": 70.0,
+        "vurderingAvOekonomiskeVanskeligheter": {
+          "varIOekonomiskeVanskeligheterPaaSoeknadstidspunktet": false
+        },
+        "maksimaltGodkjentBruttobeloepForOffentligStoette": 22702
+      },
+      {
+        "id": "22ceb123-0f28-4de8-8e5c-dc22c4511a99",
+        "prosjektnummer": 1,
+        "prosjekttittel": "Me",
+        "prosjektperiode": {
+          "start": "2022-09-28",
+          "slutt": "2022-12-08"
+        },
+        "prosjektstatus": {
+          "dato": "2023-02-09",
+          "status": "4"
+        },
+        "prosjektkategori": "forskning",
+        "samledeKostnaderTidligereAar": 0,
+        "samletBruttoSkattefradragFraTidligereAar": 0,
+        "kostnadIInntektsaaret": {
+          "kostnad": 50000,
+          "heravPersonalkostnad": 677,
+          "antallEgneTimer": 776
+        },
+        "skattefradragForKostnaderTilForskningOgUtvikling": {
+          "nettoSkattefradragFoerAvkortingMotAnnenOffentligStoette": 9500,
+          "skattefradragPerProsjekt": 9500
+        },
+        "erSamarbeidsprosjektMellomFlereVirksomheter": false,
+        "annenOffentligStoette": {
+          "virksomhetskategori": "liten",
+          "harOmfattendeSpredningGjennomKonferanserPublikasjonerMv": false,
+          "offentligStoetteSomRedusertArbeidsgiveravgift": 677,
+          "samletBruttoOffentligStoetteIProsjektperioden": 677
+        },
+        "samledeKostnaderIHeleProsjektperioden": 50000,
+        "maksimalGodkjentOffentligStoetteSomAndelAvTotalkostnad": 70.0,
+        "vurderingAvOekonomiskeVanskeligheter": {
+          "varIOekonomiskeVanskeligheterPaaSoeknadstidspunktet": false,
+          "grunnlagsdokumentasjon": "aarsregnskap"
+        },
+        "maksimaltGodkjentBruttobeloepForOffentligStoette": 35000
+      }
+    ],
+    "samletTotalkostnad": 50000,
+    "samletSkattefradrag": 9500
   },
-  "formueOgGjeld": {
-    "samletVerdiFoerEventuellVerdsettingsrabatt": {
-      "beloep": 1361742
-    },
-    "samletVerdiBakAksjeneISelskapet": {
-      "beloep": 1361742
-    },
-    "fasteEiendommer": {
-      "fastEiendomSomFormuesobjekt": [
-        {
-          "id": "29e8d7ba-3728-44c7-9ca4-a51f2e39efdf",
-          "eiendomstype": "naeringseiendom",
-          "andelAvFormuesverdi": 100.0,
-          "internEiendomsidentifikator": "29e8d7ba-3728-44c7-9ca4-a51f2e39efdffastEiendom",
-          "formuesverdiForFormuesandel": {
-            "beloep": 748958
-          },
-          "verdiFoerVerdsettingsrabattForFormuesandel": 1361742,
-          "formuesspesifikasjonForUtleidNaeringseiendom": {
-            "formuesverdiForNaeringseiendom": {
-              "beloep": 748958
-            },
-            "beregnetUtleieverdiForNaeringseiendom": {
-              "beloep": 1361742
-            },
-            "grunnlagForBeregnetUtleieverdiForNaeringseiendom": {
-              "bruttoUtleieinntekt": {
-                "beloep": 200001.0
-              },
-              "aarligUtleieinntektIAaretFoerInntektsaar": {
-                "beloep": 20503.0
-              },
-              "aarligUtleieinntektToAarFoerInntektsaar": {
-                "beloep": 30000.0
-              }
-            },
-            "areal": 2000,
-            "naeringseiendomstype": "butikkEllerKjoepesenter",
-            "antallMaanederUtleid": 10,
-            "oevrigTilVisningAvUtleidNaeringseiendom": {
-              "aarligUtleieinntekt": 240001,
-              "stipulertUtleieinntekt": 240001,
-              "gjennomsnittligUtleieinntekt": 96835
-            }
-          }
-        }
-      ],
-      "fastEiendom": [
-        {
-          "id": "29e8d7ba-3728-44c7-9ca4-a51f2e39efdffastEiendom",
-          "eierandel": 100.0,
-          "internEiendomsidentifikator": "29e8d7ba-3728-44c7-9ca4-a51f2e39efdffastEiendom",
-          "adresseopplysninger": {
-            "poststed": {
-              "poststedsnavn": "LINESØYA",
-              "postnummer": "7836"
-            },
-            "vegadresse": [
-              {
-                "adressenavn": "Gamle Nadderudvei",
-                "adressenummer": {
-                  "husnummer": "55"
-                }
-              }
-            ]
-          },
-          "eksternEiendomsidentifikator": {
-            "kommunenummer": "3026",
-            "sergMatrikkelnummer": {
-              "gaardsnummer": 43,
-              "bruksnummer": 5417
-            }
-          }
-        }
-      ]
-    }
-  },
-  "opprettetDato": "2022-04-29T08:27:39.88+02:00",
-  "skjermet": false
+  "skjermet": false,
+  "registreringstidspunkt": "2023-02-28T17:05:58.823951Z",
+  "opprettetDato": "2023-02-28T17:05:58.259609725+01:00"
 }
 ```
 
