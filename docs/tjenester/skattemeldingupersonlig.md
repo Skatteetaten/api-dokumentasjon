@@ -19,7 +19,6 @@ For generell informasjon om tjenestene se egne sider om:
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
-* [Versjonering](../om/versjoner.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattemeldingupersonlig`
@@ -28,6 +27,8 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:sk
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Skattemelding upersonlig API - På vegne av`
 
 ## Teknisk spesifikasjon
+Skattemelding upersonlig API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har en egen versjon pr. inntektsår. For øyeblikket leverer applikasjonen skattemelding for 2022.
+  
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-upersonlig-api) ligger i SwaggerHub.
 
 I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
