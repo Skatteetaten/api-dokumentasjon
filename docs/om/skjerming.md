@@ -9,7 +9,7 @@ keywords: [Skjerming, kode 6, kode 7, kode 4]
 last_updated: Des 8, 2022
 hide_table_of_contents: true
 ---
-<summary>Noen skattytere har krav på skjerming, og vi kan ikke fortelle hvor de er.</summary>
+<summary>Noen skattytere har krav på skjerming, som betyr at vi ikke kan utlevere informasjon som kan si noe om hvor de befinner seg.</summary>
 
 ## Skattepliktige med skjermingsbehov
 
@@ -31,9 +31,9 @@ Når vi har skjermet data legger vi også til et felt som sier at data har blitt
 
 Hvis geolokaliserende informasjon har blitt skjermet i responsen vil det typisk mangle enkelte detaljer og referanser, men summer og tall vil være riktige.
 
-## Tilpassing av data for virksomheter
+## Tilpasning av data for virksomheter
 
-Personopplysningsloven, Skatteforvaltningsloven og andre lover og forskrifter regulerer hvilke data Skatteetaten kan utlevere. Utifra vurdering av behov og evt hjemmel vil virksomheter ofte bare få tilgang til deler av et datasett.
+Personopplysningsloven, Skatteforvaltningsloven og andre lover og forskrifter regulerer hvilke data Skatteetaten kan utlevere. Utifra vurdering av behov og evt. hjemmel vil virksomheter ofte bare få tilgang til deler av et datasett.
 
 Forskjeller i hva som utleveres er gjerne begrunnet med: 
 
