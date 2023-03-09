@@ -63,6 +63,22 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        blog: {
+          path: "nyheter-og-driftsvarsler",
+          routeBasePath: "nyheter-og-driftsvarsler",
+          blogTitle: "nyheter-og-driftsvarsler",
+          blogSidebarCount: 0,
+          readingTime: () => undefined,
+          postsPerPage: 25,
+          feedOptions: {
+            type: "atom",
+            createFeedItems: async (params) => {
+              const { blogPosts, defaultCreateFeedItems, ...rest } = params;
+
+              return defaultCreateFeedItems({ blogPosts, ...rest });
+            },
+          },
+        },
       }),
     ],
   ],

@@ -50,7 +50,7 @@ Hvis man kaller delingstjenestene fra bak en utgående brannmur må man lage åp
 | Produksjon | api.skatteetaten.no | 159.216.17.168 | 443|
 
 Vi forsøker å holde IP statisk, men kan ikke love at det aldri vil komme endringer.
-Hvis vi må gjøre endringer vil dette bli varslet som en [nyhet](../maintenance/feed/index.md)
+Hvis vi må gjøre endringer vil dette bli varslet som en [nyhet](/nyheter-og-driftsvarsler/).
 
 ### Subnett
 
