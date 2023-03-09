@@ -1,9 +1,7 @@
 ---
 title:  "Inntektsmottaker API er oppdatert i produksjon"
 categories: nyhet
-permalink: /inntektsmottaker-api-oppdatert-19012022
 tags: [news]
-date: 2022-01-19 14:20:00 +0100
 ---
 Inntektsmottaker API er oppdatert i produksjon, og støtter nå nye lønnsbeskrivelser som gjelder fra januar 2022.
 

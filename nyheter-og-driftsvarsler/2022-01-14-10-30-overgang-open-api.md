@@ -1,9 +1,7 @@
 ---
 title:  "Overgang til Open API spesifikasjon på delingstjenester fra Skatteetaten"
 categories: nyhet
-permalink: /overgang-open-api-spec-14012022
 tags: [news]
-date: 2022-01-14 10:25:00 +0100
 ---
 ## Bakgrunn
 For å møte det stadig økende behovet for nye delingstjenester jobber Skatteetaten nå med et generelt løft av delingsområdet. Målet er mer bærekraftig og effektiv forvaltning, mer robuste tekniske løsninger og forbedret brukeropplevelse for konsumentene.

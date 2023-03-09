@@ -1,9 +1,7 @@
 ---
 title:  "Testdata for 2022 for Inntektsmottaker API"
 categories: nyhet
-permalink: /testdata-inntektsmottaker-17012022
 tags: [news]
-date: 2022-01-17 10:23:00 +0100
 ---
 Skatteetaten støtter nå test av Inntektsmottaker API for 2022 i [nytt testmiljø](../../test/testmiljoe.md). Eksempler på testdata ligger under, inkl. testdata for nye lønnsbeskrivelser, men vi oppfordrer til å benytte [Tenor testdatasøk](../../test/tenor.md) for å finne testdata.
 

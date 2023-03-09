@@ -1,9 +1,7 @@
 ---
 title:  "Oppdaterte delings- og bruksvilkår for Skatteetatens delingstjenester"
 categories: nyhet
-permalink: /oppdaterte-vilkar-06052022
 tags: [news]
-date: 2022-05-06 11:10:00 +0200
 ---
 
 Oppdaterte delings- og bruksvilkår vil snarlig bli publisert på skatteetaten.no. Nye Generelle vilkår for deling (delingsvilkår) vil bli publisert på https://www.skatteetaten.no/deling/tilgang/delingsvilkar/ og nye Bruksvilkår for Skatteetatens API-er vil bli publisert på https://www.skatteetaten.no/deling/tilgang/delingstjenester/bruksvilkar-for-delingstjenester/.

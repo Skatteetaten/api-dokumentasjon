@@ -1,9 +1,7 @@
 ---
 title:  "Hasteendring i kveld"
 categories: nyhet
-permalink: /hastedendring-08042022
 tags: [news]
-date: 2022-04-08 19:50:00 +0100
 ---
 Det kan bli nedetid på tjenester fra Skatteetaten som deler opplysninger fra utkast og fastsatt skattemelding i kommende helg som følge av en hasteendring.
 

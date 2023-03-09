@@ -1,9 +1,7 @@
 ---
 title:  "Forenklet forvaltning av redirect-url'er for SBL"
 categories: nyhet
-permalink: /forenklet-forvaltning-redirecturl-13012022
 tags: [news]
-date: 2022-01-13 13:25:00 +0100
 ---
 
 Skatteetaten, Altinn og BITS har en tid jobbet for å forenkle forvaltning av redirect-url'er for SBL-tjenestene, og følgende endring ble gjort gjeldene fra 12. januar: 

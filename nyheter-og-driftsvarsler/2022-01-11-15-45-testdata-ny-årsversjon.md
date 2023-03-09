@@ -1,9 +1,7 @@
 ---
 title:  "Testdata for nye årsversjoner i nytt testmiljø"
 categories: nyhet
-permalink: /testdata-nye-aarsversjoner-11012022
 tags: [news]
-date: 2022-01-11 15:45:00 +0100
 ---
 Vi minner om at Skatteetaten har byttet testmiljø for virksomheter som tester Skatteetatens delingstjenester.
 

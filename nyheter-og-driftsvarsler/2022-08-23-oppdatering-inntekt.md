@@ -1,9 +1,7 @@
 ---
 title:  " Inntekt API og Inntektsmottakere API oppdateres tirsdag 23. august"
 categories: nyhet
-permalink: /oppdatering-inntekt-23082022
 tags: [news]
-date: 2022-08-19 09:00:00 +0200
 ---
 
 Inntekt API (tidl. Inntektsmottaker API) og Inntektsmottakere API (gjelder kun OTP) vil snart bli tilgjengelige med Open API spesifikasjon. I den forbindelse har vi også gjort forbedring i koden for å effektivisere forvaltning av tjenestene. 

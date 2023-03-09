@@ -1,9 +1,7 @@
 ---
 title:  "Spesifisering av endring av XML for Spesifisert summert skattegrunnlag API ved overgang til OpenAPI spesifikasjon"
 categories: nyhet
-permalink: /overgang-openapi-spesifikasjon-31032022
 tags: [news]
-date: 2022-03-31 15:45:00 +0100
 ---
 Tidligere har vi varslet endring av XML for Spesifisert summert skattegrunnlag API ved overgang til [OpenAPI spesifikasjon](./2022-02-18-12-00-endring-xml.md).
 
