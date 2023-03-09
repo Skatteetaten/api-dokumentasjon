@@ -44,16 +44,6 @@ Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egne
  
  </InfoMessageBar>
 
-## Headereksempel
-
-| header | forklaring | eksempelverdi |
-| ------ | ---------- | ------------- |
-| AltinnSamtykke | Base64 encoded JWT samtykketoken fra Altinn | eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkthUGxpMFJUdVVUcl9yUXJWSmhzQkNXQS0yayJ9.eyJTZXJ2aWNlQ29kZXMiOiI0NjI4LDEiLCJBdXRob3JpemF0aW9uQ29kZSI6IjE1MzM0ZTcxLTVhMzEtNDE0Ny05MjA4LTNkYTFlZDYwNTY0OSIsIk9mZmVyZWRCeSI6IjA1MDg4MDAwMTEyIiwiQ292ZXJlZEJ5IjoiOTEwNTE0NDU4IiwiRGVsZWdhdGVkRGF0ZSI6IjE2LjAyLjIwMTcgMTc6MTc6MDYiLCJWYWxpZFRvRGF0ZSI6IjAxLjAxLjIwMTggMjM6NTk6NTkiLCJpc3MiOiJhbHRpbm4ubm8iLCJleHAiOjE0ODgzMDQzMDcsIm5iZiI6MTQ4ODMwNDI3N30.signatur_fjernet |
-
-Samtykketoken er base64-encodet og signert når det hentes fra Altinn sin datatjeneste. 
-
-Samtykketoken er et JWT token og det finnes gode online verktøy for å lese tokens, f.eks. [jwt.io](https://jwt.io)
-
 ## Tjenester med støtte for samtykke
 
 Følgende api'er hos Skatteetaten støtter utlevering gjennom samtykke eller fullmakt. Detaljer om parameterne som er nødvendig for å få utstedt samtykker eller fullmakt er beskrevet i dokumentasjonen for hvert enkelt api.
