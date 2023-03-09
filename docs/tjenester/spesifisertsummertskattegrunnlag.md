@@ -56,7 +56,7 @@ GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{rettighets
 | spkBoliglaan | oppgjoer | Hjemmel |
   
 ## Samtykke
-Tjenesten kan kreve [samtykke](../om/samtykke.md).
+Tjenesten kan kreve [samtykke](../om/samtykke.md). Datakonsumenter med samtykke har kun lov til å spørre om spesifisert summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
 | Tjenestekode | Formål | Kommentar |
 |---|---|---|
@@ -64,7 +64,8 @@ Tjenesten kan kreve [samtykke](../om/samtykke.md).
   
 For denne tjenesten er det en  parameter som må følge med:
  
-| parameter | forklaring | eksempelverdi |
+| Parameter | Forklaring | Eksempelverdi |
+|---|---|---|
 | 4628_210607_inntektsaar | Parameter for Skattegrunnlag | 2017 |
   
 ## Støttetjenester
