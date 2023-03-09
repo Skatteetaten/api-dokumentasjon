@@ -33,7 +33,7 @@ For enkelte søkeadaptere vises pt. ikke kildedata. Det kan se ut som det er noe
 ## Foreløpige begrensninger i testdata i nytt testmiljø
 
 * De mest brukte dataetypene er søkbare i Tenor gjennom ulike Tenor-adaptere. Dette er dokumentert pr. tjeneste.
-* Enkelte testdata kan ikke søkes opp gjennom Tenor, og det ligger da dokumentert i egne tabeller for gjeldene tjeneste.
+* Enkelte testdata kan ikke søkes opp gjennom Tenor, og det ligger da dokumentert i egne tabeller for gjeldende tjeneste.
 * Skatteoppgjør for personer med adressebeskyttelse strengt fortrolig er ikke søkbare i Tenor, se egen [testmiljø-siden](./testmiljoe.md).
 * Enkelte eldre testdata for inntekt- og skatteoppgjørstjenestene er ikke søkbare i Tenor, og ligger listet på [testmiljø-siden](./testmiljoe.md).
 * Skatteoppgjør for personer med adressebeskyttelse strengt fortrolig er ikke søkbare i Tenor, se egen [testmiljø-siden](./testmiljoe.md).
