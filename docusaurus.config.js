@@ -70,6 +70,14 @@ const config = {
           blogSidebarCount: 0,
           readingTime: () => undefined,
           postsPerPage: 25,
+          feedOptions: {
+            type: "atom",
+            createFeedItems: async (params) => {
+              const { blogPosts, defaultCreateFeedItems, ...rest } = params;
+
+              return defaultCreateFeedItems({ blogPosts, ...rest });
+            },
+          },
         },
       }),
     ],
