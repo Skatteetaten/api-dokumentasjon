@@ -54,7 +54,7 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 Her er et eksempel på et kall med curl mot tjenesten. Du må legge sertifikat og nøkkel som parametre til curl-kommandoen.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skatteplikt/distribusjon/2017/05086900124"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skatteplikt/v2/ssb/2021/05086900124"
 ```
 
 ## JSON
@@ -62,7 +62,7 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
 ```json
 {
     "alderIInntektsaar": 56,
-    "inntektsaar": "2019",
+    "inntektsaar": "2021",
     "personidentifikator": "23117323456",
     "saerskiltSkatteplikt": [
         "skattepliktEtterPetroleumsskatteloven"
@@ -81,7 +81,7 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 ```xml
 <skatteplikt xmlns="urn:no:skatteetaten:datasamarbeid:skatteplikt:v1">
   <personidentifikator>13819699571</personidentifikator>
-  <inntektsaar>2020</inntektsaar>
+  <inntektsaar>2021</inntektsaar>
   <skjermet>false</skjermet>
   <skattested>5401</skattested>
   <skattepliktTilNorge>global</skattepliktTilNorge>
