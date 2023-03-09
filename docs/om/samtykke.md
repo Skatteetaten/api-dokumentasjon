@@ -11,8 +11,6 @@ hide_table_of_contents: true
 ---
 <summary> Skatteetaten tilbyr samtykkebasert datauthenting basert på Altinn sin løsning for digitalt samtykke.</summary>
 
-## Samtykke
-
 ![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)
 
 ### Få tilgang
