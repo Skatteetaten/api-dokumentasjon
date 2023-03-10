@@ -45,7 +45,7 @@ Dersom `Accept`-header er satt til `application/xml` vil en eventuell feilmeldin
 </feil>
 ```
 
-Ved feilrapportering er spesielt `korrelasjonsid` nyttig dersom den er tilstede, men rapporter gjerne hele feilmeldingen. For øyeblikket vil ikke alle applikasjoner ha feltene `applikasjon` og `korrelasjonsid`.
+Ved feilrapportering er spesielt `korrelasjonsid` nyttig, men rapporter gjerne hele feilmeldingen for å forenkle feilsøking.
 
 ### Felles feilkoder
 
@@ -65,7 +65,7 @@ Applikasjonene har noen feilkoder som er felles. De fleste av disse (alle som ha
 
 ## Andre generelle feil
 
-I noen tilfeller, for eksempel dersom forespørselen når en tjeneste, vil ikke feilmeldingen ha formatet over. I tabellen under har vi listet opp noen vanlige feilsituasjoner der dette kan oppstå.
+I noen tilfeller, for eksempel dersom forespørselen ikke når frem til tjenesten, vil ikke feilmeldingen ha formatet over. I tabellen under har vi listet opp noen vanlige feilsituasjoner der dette kan oppstå.
 
 | Feil | Tolkning |
 |-------|--------|
