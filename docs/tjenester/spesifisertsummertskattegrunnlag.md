@@ -375,6 +375,7 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 | 2019 |  [Summerte skattegrunnlag og spesifikasjoner for 2019](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2019.md) |
 | 2020 |  [Summerte skattegrunnlag og spesifikasjoner for 2020](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2020.md) |
 | 2021 |  [Summerte skattegrunnlag og spesifikasjoner for 2021](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2021.md) |
+| 2022 |  [Summerte skattegrunnlag og spesifikasjoner for 2022](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2022.md) |
 
 ## Informasjonsmodell - skjema
 
