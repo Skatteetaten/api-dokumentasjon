@@ -13,12 +13,12 @@ hide_table_of_contents: true
 
 ## Test av tjenester med samtykke
 
-Flere av skatteetatens tjenester krever samtykke for å kunne utlevere data til eksterne virksomheter:
+Flere av Skatteetatens tjenester krever samtykke for å kunne utlevere data til eksterne virksomheter:
 
-- SBL-tjenester krever samtykke fra skatteyter.
+- SBL-tjenestene og Krav og betalinger API krever samtykke fra skatteyter.
 - Ebevis-tjenester krever samtykke fra virksomhet.
 
-For å teste disse tjenestene har virksomheter tidligere måttet logge inn i Altinn og sette samtykke for personer og enheter før test av APIene. Dette manuelle steget kan nå unngås ved å ta i bruk Altinn sin Samtykketoken-generator.
+For å teste disse tjenestene har virksomheter tidligere måttet logge inn i Altinn og sette samtykke for personer og enheter før test av API'ene. Dette manuelle steget kan nå unngås ved å ta i bruk Altinn sin Samtykketoken-generator.
 
 ## Samtykketoken-generator
 
@@ -35,4 +35,4 @@ For å ta i bruk løsningen må virksomheten som skal teste få tilgang til et s
 
 ## Manuell test av samtykke
 
-Digdir har bekreftet at TT02 har lest inn syntetisk Folkeregister, og i kombinasjon med TestID i ID-porten vil du kunne logge inn og gi samtykke med hvilken som helst test-person på nivå 4.
+Digdir har bekreftet at Altinns TT02 miljø har lest inn syntetisk Folkeregister, og i kombinasjon med TestID i ID-porten vil du kunne logge inn og gi samtykke med hvilken som helst test-person på nivå 4.
