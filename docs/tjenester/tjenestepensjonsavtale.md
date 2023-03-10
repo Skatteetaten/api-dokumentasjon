@@ -119,7 +119,7 @@ $ curl -v -H "Content-Type: application/json" -H "Authorization: Bearer {maskinp
 ```bash
 $ curl -v -H "Content-Type: application/json" -H "Authorization: Bearer {maskinporten_token}" -X DELETE -d '{"avtalereferanse" : "referanse til avtale","opplysningspliktig" : {"norskIdentifikator" : "999999999"}}' "https://api-test.sits.no/api/tjenestepensjonsavtale/v1/{rettighetspakke}/avtaleforhold"
 ```
-### Dokumentformat:
+### Dokumentformat
 
 [TjenestepensjonsavtaleAvtaleforholdSlettV1.xsd](../../static/download/TjenestepensjonsavtaleAvtaleforholdSlettV1.xsd)
 
