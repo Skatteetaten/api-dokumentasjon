@@ -80,34 +80,46 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-For 2015 og 2016 er Svalbard- og fastlandsinformasjon summert sammen. Fra og med 2017 er Svalbard-data skilt ut i svalbardSkjoennsfastsatt og svalbardGrunnlag.
-
 ## JSON
-
-Her er et eksempel på respons for inntektsår 2021 i JSON uten oppgitt stadie.
+  
+Her er et eksempel på respons for inntektsår 2022 i JSON uten oppgitt stadie.
 
 ```json
 {
-  "personidentifikator": "21839199217",
-  "inntektsaar": "2021",
+  "personidentifikator": "06888996506",
+  "inntektsaar": "2022",
   "skjermet": false,
   "grunnlag": [
     {
-      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
-      "beloep": 762732,
+      "tekniskNavn": "tapOgAnnenKostnadFraVirtuellEiendel",
+      "beloep": 5000,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "formuesverdiForVirtuellValuta",
+      "beloep": 4000000,
+      "kategori": [
+        "formue"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvAnnetFinansprodukt",
+      "beloep": 20000,
       "kategori": [
         "inntekt"
       ]
     },
     {
-      "tekniskNavn": "minstefradragIInntekt",
-      "beloep": 106750,
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygdenEksklusiveEktefelletillegg",
+      "beloep": 250000,
       "kategori": [
-        "inntektsfradrag"
+        "inntekt"
       ]
     }
   ],
-  "skatteoppgjoersdato": "2022-02-10"
+  "skatteoppgjoersdato": "2023-01-31"
 }
 ```
 
@@ -186,6 +198,8 @@ Eksempel på respons for inntektsår 2020 med oppgitt stadie 'oppgjoer' i JSON.
 
 Flere eksempler på responser:
 
+[SummertSkattegrunnlag2021.json](../../static/download/summertSkattegrunnlag2021.json)  
+
 [SummertSkattegrunnlag2020.json](../../static/download/summertSkattegrunnlag2020.json)
 
 [SummertSkattegrunnlag2017.json](../../static/download/summertSkattegrunnlag2017.json)
@@ -215,6 +229,10 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 </summertSkattegrunnlag>
 ```
 
+## Tilleggsinformasjon
+
+* For 2015 og 2016 er Svalbard- og fastlandsinformasjon summert sammen. Fra og med 2017 er Svalbard-data skilt ut i svalbardSkjoennsfastsatt og svalbardGrunnlag.
+  
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
@@ -252,6 +270,7 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 | 2019 | [Informasjonsmodell for summert skattegrunnlag 2019](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2019.md) |
 | 2020 | [Informasjonsmodell for summert skattegrunnlag 2020](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2020.md) |
 | 2021 | [Informasjonsmodell for summert skattegrunnlag 2021](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2021.md) |
+| 2022 | [Informasjonsmodell for summert skattegrunnlag 2022](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2022.md) |
 
 ## Informasjonsmodell - skjema
 
