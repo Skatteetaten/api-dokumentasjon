@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 Alle Skatteetatens delingstjenester benytter Maskinporten for autentisering av virksomheter for maskin-til-maskin grensesnitt. Autentisering basert på kun virksomhetsertifikat støttes ikke lenger.
 
-Digitaliseringsdirektoratet har beskrevet hvordan API-sikring med maskinporten gjøres. Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. For å komme i gang med testing må det gjøres noen forberedelser hos virksomheten.
+Digitaliseringsdirektoratet har beskrevet hvordan API-sikring med Maskinporten gjøres. Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. For å komme i gang med testing må det gjøres noen forberedelser hos virksomheten.
 
 ### Ta kontakt med Digitaliseringsdirektoratet for å få tilgang til Maskinporten
 Bestill tilknytning til Maskinporten via [Digdir samarbeidsportal](https://docs.digdir.no/maskinporten_overordnet)
