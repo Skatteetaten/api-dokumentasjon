@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<avtaleforholdGyldighet xmlns="urn:no:skatteetaten:datasamarbeid:tjenestepensjonsavtale:avtaleforholdgyldighet:v1">
+  <gyldig>false</gyldig>
+  <maanederUtenGyldigAvtaleforhold>
+    <maaned>2019-05</maaned>
+    <maaned>2019-06</maaned>
+    <maaned>2020-03</maaned>
+  </maanederUtenGyldigAvtaleforhold>
+</avtaleforholdGyldighet>
