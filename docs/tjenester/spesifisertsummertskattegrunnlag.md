@@ -399,7 +399,8 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 ### Formue og inntekt i selskap med deltakerfastsetting 
 ![FormueOgInntektISelskapMedDeltakerfastsetting](../../static/download/spesifisertSkattegrunnlag/FormueOgInntektISelskapMedDeltakerfastsetting.png)
   
-Tilleggsinformasjon:
+## Tilleggsinformasjon
+  
 * I 2018 komm spesifikasjonene til spesifisert summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. For
 en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018_spesifikasjoner.md)
 * For 2015 og 2016 er Svalbard- og fastlandsinformasjon summert sammen. Fra og med 2017 er Svalbard-data skilt ut i
