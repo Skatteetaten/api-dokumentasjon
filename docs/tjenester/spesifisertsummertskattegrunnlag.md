@@ -380,25 +380,25 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 ## Informasjonsmodell - skjema
 
 ### Oversikt
-![Oversikt](../../static/download/spesifisertSkattegrunnlag/Oversikt.png)
+[![Oversikt](../../static/download/spesifisertSkattegrunnlag/Oversikt.png)](../../static/download/spesifisertSkattegrunnlag/Oversikt.png)
 
 ### Eiendeler og faste eiendommer
-![EiendelerOgFasteEiendommer](../../static/download/spesifisertSkattegrunnlag/EiendelerOgFasteEiendommer.png)
+[![EiendelerOgFasteEiendommer](../../static/download/spesifisertSkattegrunnlag/EiendelerOgFasteEiendommer.png)](../../static/download/spesifisertSkattegrunnlag/EiendelerOgFasteEiendommer.png)
 
 ### Bank, lån og forsikring
-![BankLånOgForsikring](../../static/download/spesifisertSkattegrunnlag/BankLånOgForsikring.png)
+[![BankLånOgForsikring](../../static/download/spesifisertSkattegrunnlag/BankLånOgForsikring.png)](../../static/download/spesifisertSkattegrunnlag/BankLånOgForsikring.png)
 
 ### Arbeid, trygd og pensjon 
-![ArbeidTrygdOgPensjon](../../static/download/spesifisertSkattegrunnlag/ArbeidTrygdOgPensjon.png)
+[![ArbeidTrygdOgPensjon](../../static/download/spesifisertSkattegrunnlag/ArbeidTrygdOgPensjon.png)](../../static/download/spesifisertSkattegrunnlag/ArbeidTrygdOgPensjon.png)
 
 ### Finans 
-![Finans](../../static/download/spesifisertSkattegrunnlag/Finans.png)
+[![Finans](../../static/download/spesifisertSkattegrunnlag/Finans.png)](../../static/download/spesifisertSkattegrunnlag/Finans.png)
 
 ### Næring 
-![Næring](../../static/download/spesifisertSkattegrunnlag/Næring.png)
+[![Næring](../../static/download/spesifisertSkattegrunnlag/Næring.png)](../../static/download/spesifisertSkattegrunnlag/Næring.png)
 
 ### Formue og inntekt i selskap med deltakerfastsetting 
-![FormueOgInntektISelskapMedDeltakerfastsetting](../../static/download/spesifisertSkattegrunnlag/FormueOgInntektISelskapMedDeltakerfastsetting.png)
+[![FormueOgInntektISelskapMedDeltakerfastsetting](../../static/download/spesifisertSkattegrunnlag/FormueOgInntektISelskapMedDeltakerfastsetting.png)](../../static/download/spesifisertSkattegrunnlag/FormueOgInntektISelskapMedDeltakerfastsetting.png)
   
 ## Tilleggsinformasjon
   
