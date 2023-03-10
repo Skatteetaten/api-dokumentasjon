@@ -274,7 +274,7 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 
 ## Informasjonsmodell - skjema
 
-![SummertSkattegrunnlag](../../static/download/SummertSkattegrunnlag.png)
+[![SummertSkattegrunnlag](../../static/download/SummertSkattegrunnlag.png)](../../static/download/SummertSkattegrunnlag.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
