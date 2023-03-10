@@ -11,13 +11,13 @@ hide_table_of_contents: true
 ---
 <summary> Skatteetaten tilbyr samtykkebasert datauthenting basert på Altinn sin løsning for digitalt samtykke.</summary>
 
-![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)
+[![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)](../../static/img/samtykke.png)
 
-### Få tilgang
+## Få tilgang
 Før du som konsument kan benytte Skatteetaten API'er som krever samtykke eller fullmakt må du få tilgang til Altinn's samtykkeløsning. Altinn har beskrevet det som skal til for å [komme i gang med samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/komme-i-gang). Skatteetaten er her datakilden og har på forhånd opprettet tjenestekoder og tjenesteutgavekoder for api'ene. Nærmere informasjon om dette finner du i api-dokumentasjonen. Merk at Skatteetaten ikke benytter tjenesteeierstyrt rettighetsregister.
 
-### Be om samtykke
-Når du har fått tilgang til Altinn's Samtykkeløsning og API'et til Skatteetaten kan det [bes om samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/be-om-samtykke). Skatteetaten støtter kun *Forhåndsregistrerte samtykkeforespørsler* og det er heller ikke mulig å overstyre de forhåndsdefinerte tekstene. *Request Message* skal derfor ikke benyttes i forespørselen. 
+## Be om samtykke
+Når du har fått tilgang til Altinn's samtykkeløsning og API'et til Skatteetaten kan det [bes om samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/be-om-samtykke). Skatteetaten støtter kun *Forhåndsregistrerte samtykkeforespørsler* og det er heller ikke mulig å overstyre de forhåndsdefinerte tekstene. *Request Message* skal derfor ikke benyttes i forespørselen. 
 
 Den overordnetete flyten for samtykkedialogen blir da som følger:
 1. Bruker logger seg på nettløsningen for å f.eks. søke om lån eller se sine Krav og betalinger. Konsumenter må dermed ha et samtykke eller fullmakt for å innhente opplysninger på vegne av brukeren.
@@ -49,6 +49,7 @@ Følgende api'er hos Skatteetaten støtter utlevering gjennom samtykke eller ful
 Samtykke fra skatteyter:
   - [Inntekt API](../tjenester/inntekt.md)
   - [Spesifisert summert skattegrunnlag API](../tjenester/spesifisertsummertskattegrunnlag.md)
+  - [Krav og betalinger API](../tjenester/kravogbetalinger.md)
   
 Samtykke fra virksomhet
   - [Arbeidsgiveravgift API](../tjenester/arbeidsgiveravgift.md)
