@@ -6,10 +6,15 @@ import Link from "@docusaurus/Link";
 import Ingress from "../../../nyheter-og-driftsvarsler/_varsler-ingress.md";
 import HvordanAbonnere from "../../../nyheter-og-driftsvarsler/_varsler-hvordan-abonnere.md";
 
+import styles from "./BlogPostItems.module.scss";
+
 const columns = [
   {
     name: "Dato",
     fieldName: "date",
+    formatFunction: (content) => (
+      <div className={styles["dato-container"]}>{content}</div>
+    ),
   },
   {
     name: "Tittel",
