@@ -80,18 +80,9 @@ Virksomheter med samtykke har kun lov til å spørre om summert skattegrunnlag f
 ## Datakatalog
  
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/8cc670c2-fa13-3f39-ade8-ca21b6ed06e0) i Felles datakatalog.
-
-## Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018
-
-I 2018 komm spesifikasjonene til spesifisert summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. For
-en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018_spesifikasjoner.md)
   
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
-
-* For 2015 og 2016 er Svalbard- og fastlandsinformasjon summert sammen. Fra og med 2017 er Svalbard-data skilt ut i
-  svalbardSkjoennsfastsatt og svalbardGrunnlag.
-* Fra og med 2018 er feltene skjoennsfastsatt og svalbardSkjoennsfastsatt fjernet.
 
 ## Curl
 Her er et eksempel på en spørring med curl mot tjenesten. Du må legge sertifikat og nøkkel som parametre til
@@ -103,110 +94,147 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <s
 
 ## JSON
 
-Her er et eksempel på en respons for inntektsår 2021 uten oppgitt stadie i JSON. Det er lenket til flere eksempler på responser nedenfor.
+Her er et eksempel på en respons for inntektsår 2022 uten oppgitt stadie i JSON. Det er lenket til flere eksempler på
+responser nedenfor.
 
 ```json
 {
-  "personidentifikator":"30921548296",
-  "inntektsaar":"2021",
-  "grunnlag":[
+  "personidentifikator": "12879397780",
+  "inntektsaar": "2022",
+  "grunnlag": [
     {
-      "tekniskNavn":"samledeOpptjenteRenterIInnenlandskeBanker",
-      "beloep":9251,
-      "kategori":"inntekt"
-    },
-    {
-      "tekniskNavn":"samletPensjonFraFolketrygden",
-      "beloep":1056108,
-      "kategori":"inntekt"
-    },
-    {
-      "tekniskNavn":"gjeldIInnenlandskeBanker",
-      "beloep":479949,
-      "kategori":"formuesfradrag"
-    },
-    {
-      "tekniskNavn":"samletInnskuddIInnenlandskeBanker",
-      "beloep":462570,
-      "kategori":"formue"
-    },
-    {
-      "tekniskNavn":"sumGjeldsreduksjon",
-      "beloep":72434,
-      "kategori":"formuesfradrag"
-    },
-    {
-      "tekniskNavn":"utbytteFraVerdipapirfond",
-      "beloep":5,
-      "spesifisering":[
+      "tekniskNavn": "verdiFoerVerdsettingsrabattForAksjeOgAksjefondIFondskonto",
+      "beloep": 30000,
+      "spesifisering": [
         {
-          "type":"Verdipapirfond",
-          "fondetsNavn":"Aksjefondet RST",
-          "isinnummer":"NO5107125899",
-          "antallAndeler":110.759,
-          "skattepliktigUtbytte":5,
-          "skattepliktigGevinstVedRealisasjonAvAndelIAksjedel":20708,
-          "oppgavegiversOrganisasjonsnummer":"212717622",
-          "oppgavegiversNavn":"DEDIKERT SAMARBEIDSVILLIG TIGER AS",
-          "verdiFoerVerdsettingsrabattForAndelIAksjedel":233418
+          "type": "Fondskonto",
+          "forsikringsselskapetsNavn": "ACSW",
+          "kontonummer": "17",
+          "verdiFoerVerdsettingsrabattForAksjeOgAksjefond": 30000,
+          "formuesverdiForKontanterMv": 12000
         }
       ],
-      "kategori":"inntekt"
+      "kategori": "formue"
     },
     {
-      "tekniskNavn":"bruttoformue",
-      "beloep":590950,
-      "kategori":"-"
-    },
-    {
-      "tekniskNavn":"samledePaaloepteRenterPaaGjeldIInnenlandskeBanker",
-      "beloep":14398,
-      "kategori":"inntektsfradrag"
-    },
-    {
-      "tekniskNavn":"samletGjeld",
-      "beloep":479949,
-      "kategori":"-"
-    },
-    {
-      "tekniskNavn":"verdiFoerVerdsettingsrabattForAndelIAksjedelIVerdipapirfond",
-      "beloep":233418,
-      "spesifisering":[
+      "tekniskNavn": "formuesverdiForSkogeiendom",
+      "beloep": 17888,
+      "spesifisering": [
         {
-          "type":"Verdipapirfond",
-          "fondetsNavn":"Aksjefondet RST",
-          "isinnummer":"NO5107125899",
-          "antallAndeler":110.759,
-          "skattepliktigUtbytte":5,
-          "skattepliktigGevinstVedRealisasjonAvAndelIAksjedel":20708,
-          "oppgavegiversOrganisasjonsnummer":"212717622",
-          "oppgavegiversNavn":"DEDIKERT SAMARBEIDSVILLIG TIGER AS",
-          "verdiFoerVerdsettingsrabattForAndelIAksjedel":233418
+          "type": "Eiendom",
+          "bruksnummer": "23",
+          "gaardsnummer": "5",
+          "kommunenummer": "3813",
+          "formuesverdiForFormuesandel": 17888
         }
       ],
-      "kategori":"formue"
+      "kategori": "formue"
     },
     {
-      "tekniskNavn":"gevinstVedRealisasjonAvAndelIAksjedelIVerdipapirfond",
-      "beloep":20708,
-      "spesifisering":[
+      "tekniskNavn": "innskudd",
+      "beloep": 4000000,
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "nettoformue",
+      "beloep": 4863814,
+      "kategori": "-"
+    },
+    {
+      "tekniskNavn": "bruttoformue",
+      "beloep": 5197888,
+      "kategori": "-"
+    },
+    {
+      "tekniskNavn": "samletFormuesverdiForOevrigFormue",
+      "beloep": 140000,
+      "spesifisering": [
         {
-          "type":"Verdipapirfond",
-          "fondetsNavn":"Aksjefondet RST",
-          "isinnummer":"NO5107125899",
-          "antallAndeler":110.759,
-          "skattepliktigUtbytte":5,
-          "skattepliktigGevinstVedRealisasjonAvAndelIAksjedel":20708,
-          "oppgavegiversOrganisasjonsnummer":"212717622",
-          "oppgavegiversNavn":"DEDIKERT SAMARBEIDSVILLIG TIGER AS",
-          "verdiFoerVerdsettingsrabattForAndelIAksjedel":233418
+          "type": "AndreBeloepKnyttetTilBoligOgEiendeler",
+          "formuesverdiForAnnenFormue": 140000,
+          "beskrivelseForAnnenFormue": "Opsjoner"
         }
       ],
-      "kategori":"inntekt"
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "verdsettingsrabattForAksjeOgAksjefondIFondskonto",
+      "beloep": 7500,
+      "kategori": "verdsettingsrabattSomGirGjeldsreduksjon"
+    },
+    {
+      "tekniskNavn": "investeringIOppstartsselskap",
+      "beloep": 670000,
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "tapOgAnnenKostnadFraVirtuellEiendel",
+      "beloep": 20400,
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "formuesverdiForVirtuellValuta",
+      "beloep": 56000,
+      "spesifisering": [
+        {
+          "type": "VirtuellEiendel",
+          "formuesverdiForVirtuellEiendel": 56000,
+          "gjelderFlereVirtuelleEiendeler": true
+        }
+      ],
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "gjeldsfradragForKapitalisertFesteavgift",
+      "beloep": 66000,
+      "spesifisering": [
+        {
+          "type": "KapitalisertFesteavgift",
+          "verdiFoerVerdsettingsrabattForKapitalisertFesteavgift": 66000,
+          "gjeldsfradragForKapitalisertFesteavgift": 66000
+        }
+      ],
+      "kategori": "formuesfradrag"
+    },
+    {
+      "tekniskNavn": "oppjustertTilleggTilGevinstVedRealisasjonAvOgUttakFraAksjedelIFondskonto",
+      "beloep": 1560,
+      "kategori": "oppjusteringAvEierinntekter"
+    },
+    {
+      "tekniskNavn": "formuesverdiForKontanterMvIFondskonto",
+      "beloep": 12000,
+      "spesifisering": [
+        {
+          "type": "Fondskonto",
+          "forsikringsselskapetsNavn": "ACSW",
+          "kontonummer": "17",
+          "verdiFoerVerdsettingsrabattForAksjeOgAksjefond": 30000,
+          "formuesverdiForKontanterMv": 12000
+        }
+      ],
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "formuesverdiForAnnetFinansprodukt",
+      "beloep": 900000,
+      "spesifisering": [
+        {
+          "type": "AnnetFinansprodukt",
+          "finansproduktetsNavn": "Hakke peiling",
+          "kontofoerersNavn": "Auket",
+          "kontonummer": "77",
+          "finansprodukttype": "contractForDifference",
+          "formuesverdiForAnnetFinansprodukt": 900000
+        }
+      ],
+      "kategori": "formue"
     }
   ],
-  "skjermet":false,
-  "skatteoppgjoersdato":"2022-02-10"
+  "skjermet": false,
+  "skatteoppgjoersdato": "2023-02-03",
+  "stadie": "oppgjoer",
+  "registreringstidpunkt": "2023-02-03T12:53:05Z"
 }
 ```
 
@@ -288,6 +316,87 @@ Eksempel på respons for inntektsår 2018 med oppgitt stadie 'oppgjoer' i JSON.
   "registreringstidpunkt": "2019-03-01T16:11:12.985"
 }
 ```
+
+Eksempel på respons for inntektsår 2018 med oppgitt stadie 'oppgjoer' i JSON.
+
+```json
+{
+  "personidentifikator": "12345678901",
+  "inntektsaar": "2018",
+  "grunnlag": [
+    {
+      "tekniskNavn": "samletFormuesverdiForFastEiendomIUtlandet",
+      "beloep": 260000,
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "samledePaaloepteRenter",
+      "beloep": 25000,
+      "spesifisering": [
+        {
+          "type": "Konto",
+          "kontonummer": "12345678903",
+          "bankensNavn": "MinEnesteBank",
+          "organisasjonsnummer": "123456789",
+          "gjeld": 165000,
+          "paaloepteRenter": 2500
+        },
+        {
+          "type": "SkyldigRestskatt",
+          "betalteForsinkelsesrenterForSamletSkyldigRestskatt": 5000,
+          "samletSkyldigRestskatt": 200000
+        }
+      ],
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "kapitalinntektFraSkogbruk",
+      "beloep": 15000,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 350000,
+      "spesifisering": [
+        {
+          "type": "LoennOgTilsvarendeYtelser",
+          "arbeidsgiversNavn": "Matre Og Inne",
+          "organisasjonsnummer": "123456789",
+          "beloep": 350000
+        }
+      ],
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "utgifterTilPassOgStellAvHjemmevaerendeBarn",
+      "beloep": 50000,
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "formuesverdiForPrimaerbolig",
+      "beloep": 780000,
+      "spesifisering": [
+        {
+          "type": "Eiendom",
+          "bruksnummer": "55",
+          "gaardsnummer": "39",
+          "kommunenummer": "0020",
+          "formuesverdi": 780000,
+          "beregnetMarkedsverdiForBolig": 5200000,
+          "eierandel": 50
+        }
+      ],
+      "kategori": "formue"
+    }
+  ],
+  "skjermet": false,
+  "skatteoppgjoersdato": "2019-03-01",
+  "stadie": "oppgjoer",
+  "registreringstidpunkt": "2019-03-01T16:11:12.985"
+}
+```
+[SpesifisertSummertSkattegrunnlag2021.json](../../static/download/spesifisertSummertSkattegrunnlag2021.json)
+
 [SpesifisertSummertSkattegrunnlag2020.json](../../static/download/spesifisertSummertSkattegrunnlag2020.json)
 
 [SpesifisertSummertSkattegrunnlag2018_ordinær.json](../../static/download/spesifisertSummertSkattegrunnlag2018_ordinaer.json)
@@ -367,6 +476,13 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 
 ### Formue og inntekt i selskap med deltakerfastsetting 
 ![FormueOgInntektISelskapMedDeltakerfastsetting](../../static/download/spesifisertSkattegrunnlag/FormueOgInntektISelskapMedDeltakerfastsetting.png)
+  
+Tilleggsinformasjon:
+* I 2018 komm spesifikasjonene til spesifisert summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. For
+en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018_spesifikasjoner.md)
+* For 2015 og 2016 er Svalbard- og fastlandsinformasjon summert sammen. Fra og med 2017 er Svalbard-data skilt ut i
+  svalbardSkjoennsfastsatt og svalbardGrunnlag.
+* Fra og med 2018 er feltene skjoennsfastsatt og svalbardSkjoennsfastsatt fjernet.
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
