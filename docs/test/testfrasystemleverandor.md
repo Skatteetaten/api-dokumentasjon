@@ -30,22 +30,22 @@ Digdir har en nærmere beskrivelse av hvordan delegere, se [Digdir sin side om d
 Skattetaten vil i dialog med Altinn sørge for at virksomhetene blir lest inn i Altinn TT02 slik at det er mulig å gjennomføre delegeringen. Når det er gjort vil vi gi tilbakemelding om hvilket fødselsnummer som kan benyttes for innlogging i TT02.
 
 For å delegere i test trengs følgende:
-- Virksomheten med rettigheter til tjenesten som skal testes må være tilgjengelig i TT02.
-- Virksomheten må ha knyttet til seg en syntetisk person som det er mulig å logge inn i TT02 med.
-- Systemleverandøren som skal få delegert rettigheter for test må være tilgjengelig i TT02.
-- Virksomheten med rettigheter må så delegere rettigheter til systemleverandøren i TT02.
+1. Virksomheten med rettigheter til tjenesten som skal testes må være tilgjengelig i TT02.
+2. Virksomheten må ha knyttet til seg en syntetisk person som det er mulig å logge inn i TT02 med.
+3. Systemleverandøren som skal få delegert rettigheter for test må være tilgjengelig i TT02.
+4. Virksomheten med rettigheter må så delegere rettigheter til systemleverandøren i TT02.
 
 Altinns testmiljø TT02 er et testmiljø med hovedsaklig syntetiske testdata, og innlesing av ekte virksomheter gjøres kun ved behov. Vær oppmerksom på at det da leses inn produksjonsdata om virksomheten i et testmiljø.
 
 Ved behov for test fra systemleverandør [kontakt Skatteetaten](https://www.skatteetaten.no/deling/kontakt/) med informasjon om følgende:
-- Systemleverandørs organisasjonsnummer
--	Systemleverandørs organisasjonsnavn
--	Systemleverandørs kontaktpersons e-postadresse (som er tilknyttet testen)
--	Systemleverandørs kontaktpersons mobiltelefonnummer (som er tilknyttet testen)
--	Virksomheten som har tilgang sitt organisasjonsnummer
--	Virksomheten som har tilgang sitt organisasjonsnavn
--	Virksomheten som har tilgang sin kontaktpersons e-postadresse (som er tilknyttet testen)
--	Virksomheten som har tilgang sin kontaktpersons mobiltelefonnummer (som er tilknyttet testen)
+* Systemleverandørs organisasjonsnummer
+*	Systemleverandørs organisasjonsnavn
+*	Systemleverandørs kontaktpersons e-postadresse (som er tilknyttet testen)
+*	Systemleverandørs kontaktpersons mobiltelefonnummer (som er tilknyttet testen)
+*	Virksomheten som har tilgang sitt organisasjonsnummer
+*	Virksomheten som har tilgang sitt organisasjonsnavn
+*	Virksomheten som har tilgang sin kontaktpersons e-postadresse (som er tilknyttet testen)
+*	Virksomheten som har tilgang sin kontaktpersons mobiltelefonnummer (som er tilknyttet testen)
 
 Samme informasjon må oppgis både for virksomheten med tilgang og systemleverandøren, siden begge virksomhetene må leses inn i TT02 for at det skal være mulig å gjennomføre en delegering i testmiljøet. En systemleverandør som leverer til flere virksomheter, trenger ikke melde inn alle virksomhetene for test, kun den som skal utføre delegeringen i test.
 
