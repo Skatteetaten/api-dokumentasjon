@@ -11,24 +11,36 @@ hide_table_of_contents: true
 ---
 <summary>Testdata i Skatteetaens testmiljø for eksterne virksomheter.</summary>
 
+## Testmiljø
+
+Skatteetaten har to testmiljø for eksterne virksomheter som tester tjenester fra Skatteetaten: 
+* ´api-test.sits.no` benyttes for test av tjenester som leser data fra Skattetaten, f.eks. delingstjenester.
+* ´api-sbstest.sits.no` benyttes for test av innsending av data til Skatteetaten, f.eks. testinnsending av grunnlagsdata, testinnsending av skattemelding og mva-melding.
+
+I dokumentasjonen av tjenestene, f.eks. i Open API spesifikasjonen, oppgis hvilken url som skal benyttes for test av de ulike tjenestene.
+Denne siden dokumenterer i hovedsak hva som gjelder for miljøet ´api-test.sits.no`.
+
 ## Test Norge
-Skatteetatens testmiljø for eksterne virksomheter som skal teste delingstjenester inneholder:
+Skatteetatens testmiljø for eksterne virksomheter inneholder Test-Norge:
 
-- Testpersoner fra syntetisk Folkeregister
-- Testorganisasjoner fra syntetisk Enhetsregister
-- Syntetiske skattedata er produsert på den syntetiske testbefolkningen, både skatteoppgjør og skattemeldinger, med tilhørende skatteplikt, inntekter og andre grunnlagsdata. 
+* Testpersoner fra syntetisk Folkeregister, obs. +80 på måneden
+* Testvirksomheter fra syntetisk Enhetsregister, obs. organisasjonsnumrene starter på 2 og 3
 
-Obs. Altinn testdatasettene er ikke lengre tilgjengelige i det testmiljøet (api-test). 
+### api-test.sits.no
 
-Formålet med testdataene er å understøtte integrasjonstest Skatteetaten og eksterne virksomheter.
-Fokus for integrasjonstesten er på grønne løp, og dataene er ikke ment å representere noen uttømmende funksjonell bredde.
-For funksjonell testing forventes det at den enkelte virksomhet selv tilrettelegger egne syntetiske testdata, og mocker/simulerer de eksterne tjenestene.
+Obs. Altinn testdatasettene er ikke lengre tilgjengelige i dette eksterne testmiljøet. 
+
+Miljøet inneholder også syntetiske skattedata, både skatteoppgjør og skattemeldinger, med tilhørende skatteplikt, inntekter og andre grunnlagsdata.
+
+Formålet med testdataene er å understøtte integrasjonstest mellom Skatteetaten og eksterne virksomheter. Fokus for integrasjonstesten er på grønne løp, og dataene er ikke ment å representere noen uttømmende funksjonell bredde. For funksjonell testing forventes det at den enkelte virksomhet selv tilrettelegger egne syntetiske testdata, og mocker/simulerer de eksterne tjenestene.
 
 ## Testdata som ikke er søkbare i Tenor-testdatasøk
 
-### Skatteoppgjør 2021 for personer med strengt fortrolig adressegradering
+Enkelte testdata er ikke mulig å søke opp gjennom [Tenor testdatasøk](./tenor.md).
 
-Det er pt. ikke mulig å søke etter skatteoppgjør for personer med adressegradering "Strengt fortrolig" i Tenor. Noen eksempler er derfor listet her:
+### Skatteoppgjør for personer med strengt fortrolig adressegradering
+
+Det er pt. ikke mulig å søke i Tenor etter skatteoppgjør for personer med adressegradering "Strengt fortrolig". Noen eksempler er derfor listet her:
 
 | Fødselsnummer | Adressebeskyttelse |
 |---| --- |
@@ -38,10 +50,12 @@ Det er pt. ikke mulig å søke etter skatteoppgjør for personer med adressegrad
 | 09817397848 | Strengt fortrolig |
 | 24887198515 | Strengt fortrolig |
 
-Skatteoppgjør for 2021 for personer uten adressebeskyttelse kan finnes med Tenor-adaptere for skatteoppgjør ("Summert skattegrunnlag" eller "Beregnet skatt").
-Skatteoppgjør for 2021 for personer med adressebeskyttelse "Fortrolig" kan finnes ved å kombinere Tenor-adapter for skattegjør med Tenor-adapter for Folkeregisteret og feltet Adressebeskyttelse.
+* Skatteoppgjør for personer uten adressebeskyttelse kan finnes i Tenor med søkene for "Summert skattegrunnlag" eller "Beregnet skatt".
+* Skatteoppgjør for personer med adressebeskyttelse "Fortrolig" kan finnes ved å kombinere Tenor søkene for "Summert skattegrunnlag" eller "Beregnet skatt" med søket for "Folkeregisteret" og feltet "Adressebeskyttelse".
 
 ### Historiske testdata for inntekt og skatteoppgjør
+
+Det er pt. ikke mulig å søke i Tenor etter testdata langt tilbake i tid, enkelte testdata er derfor listet her:
 
 | Personidentifikator | Inntektsdata | Skatteoppgjør/skattegrunnlag | Kommentar |
 |---|---|---|---|
