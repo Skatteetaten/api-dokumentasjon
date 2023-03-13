@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 Virksomheter kan ha ulikt rettslig grunnlag for behandling og utlevering av opplysninger. Skatteetaten etablerer rettighetspakker basert på en juridisk vurdering av behandlingsgrunnlaget. Rettighetspakken styrer:
 
- * [Skjerming](.(skjerming.md), regler for skjerming av enkeltopplysninger eller hele datasettet basert på personens skjermingsbehov og virksomhetens rettigheter.   
+ * [Skjerming](./skjerming.md), regler for skjerming av enkeltopplysninger eller hele datasettet basert på personens skjermingsbehov og virksomhetens rettigheter.   
  * Filtrering, dvs hvilke opplysninger i datasettet som utleveres til den enkelte virksomhet. Se informasjonsmodell for hvert datasett for informasjon om hvilke opplysninger som kan utleveres.
  
 ## Filtrering
