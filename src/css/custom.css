@@ -39,3 +39,8 @@
 .theme-doc-sidebar-menu a {
   text-decoration-line: unset;
 }
+
+.theme-code-block code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
