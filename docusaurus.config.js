@@ -72,6 +72,8 @@ const config = {
           postsPerPage: 25,
           feedOptions: {
             type: "atom",
+            title: "Skatteetaten - API varsel",
+            description: "Nyheter og driftsvarsler for Skatteetatens API’er",
             createFeedItems: async (params) => {
               const { blogPosts, defaultCreateFeedItems, ...rest } = params;
 
