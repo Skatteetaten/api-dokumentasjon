@@ -242,42 +242,17 @@ Modellene nedenfor avviker litt fra modellen slik den benyttes i tjenesten.  Mod
 Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
 
 ## Testdata
-Følgende testdata er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
+Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
 
 | Type skattepliktig | Fødselsnummer | Inntektsår |
 |---|---|---|
-| Personlig | 05923048059 | 2020 |
-| Personlig | 07873349713 | 2020 |
-| Personlig | 13819699571 | 2020 |
-| Personlig | 14917297003 | 2020 |
-| Personlig | 19865698073 | 2020 |
-| Personlig | 20848399796 | 2020 |
-| Personlig | 22840197615 | 2020 |
-| Personlig | 26825798845 | 2020 |
-| Personlig | 27820298344 | 2020 |
-| Personlig | 28927196982 | 2020 |
-| Personlig | 31858698440 | 2020 |
-| Personlig | 06880149405 | 2021 |
-| Personlig | 12910149871 | 2021 |
-| Personlig | 14901848344 | 2021 |
-| Personlig | 16881749762 | 2021 |
-| Personlig | 23845599750 | 2021 |
-| Personlig | 24861048884 | 2021 |
-| Personlig | 26851349366 | 2021 |
-| Personlig | 27898899360 | 2021 |
-| Personlig | 28861349758 | 2021 |
-| Personlig | 29840849692 | 2021 |
-| Upersonlig | 210962492  | 2021 |
-| Upersonlig | 310423076  | 2021 |
-| Upersonlig | 310962074  | 2021 |
-| Upersonlig | 311768778  | 2021 |
-| Upersonlig | 312282933  | 2021 |
-| Upersonlig | 312547678  | 2021 |
-| Upersonlig | 312737639  | 2021 |
-| Upersonlig | 313269906  | 2021 |
-| Upersonlig | 313864138  | 2021 |
-| Upersonlig | 314093798  | 2021 |
-| Upersonlig | 314247914  | 2021 |
+| Personlig | 07810099598 | 2022 |
+| Personlig | 14839699914 | 2022 |
+| Personlig | 17869096687 | 2022 |
+| Personlig | 24875599174 | 2022 |
+| Personlig | 29896399711 | 2022 |
+
+Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
 </TabItem>
 </Tabs>
