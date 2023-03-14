@@ -4,7 +4,7 @@ slug: /summertskattegrunnlag2022
 folder: informasjonsmodeller/summertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API]
+tags: [Skatteoppgjør, Informasjonsmodell]
 keywords: [informasjonsmodell]
 last_updated: Mar 10, 2023
 hide_table_of_contents: true
