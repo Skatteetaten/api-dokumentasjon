@@ -4,8 +4,8 @@ slug: /tenor
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API data]
-keywords: [testdata, tenor]
+tags: [Test, Testdata, Tenor]
+keywords: [Test, Testdata, Tenor]
 last_updated: Aug 16, 2021
 hide_table_of_contents: true
 ---
