@@ -281,7 +281,7 @@ Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endep
 
 ### Krav
 
-[![krav](../../static/download/Informasjonsmodell_Kravogbetalinger_krav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.png)
+[![krav](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.png)
 
 ### Innbetalinger
 
