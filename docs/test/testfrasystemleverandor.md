@@ -4,9 +4,9 @@ slug: /testfrasystemleverandor
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API data]
-keywords: [test]
-last_updated: Des 6, 2022
+tags: [Test, Delegering]
+keywords: [Test, Delegering]
+last_updated: Mar 14, 2023
 hide_table_of_contents: true
 ---
 <summary>Test fra systemleverandør krever delegering i Test.</summary>
