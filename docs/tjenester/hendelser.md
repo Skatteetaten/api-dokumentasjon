@@ -4,7 +4,7 @@ slug: /hendelser
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API]
+tags: [API, Støttetjeneste, Hendelser]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Des 1, 2022
 hide_table_of_contents: true
