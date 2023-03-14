@@ -4,7 +4,7 @@ slug: /restanser
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API, Seriøsitet, MVA]
+tags: [API, Serioesitet, MVA]
 keywords: [restanser, skatteyter]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
