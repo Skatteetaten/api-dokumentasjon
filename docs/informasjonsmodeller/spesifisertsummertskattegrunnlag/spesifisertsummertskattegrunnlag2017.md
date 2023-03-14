@@ -4,7 +4,7 @@ slug: /spesifisertsummertskattegrunnlag2017
 folder: informasjonsmodeller/spesifisertsummertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API reference]
+tags: [Skatteoppgjør, Informasjonsmodell]
 keywords: [informasjonsmodell]
 last_updated: May 14, 2017
 hide_table_of_contents: true
