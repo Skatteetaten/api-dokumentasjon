@@ -67,9 +67,9 @@ const config = {
           path: "nyheter-og-driftsvarsler",
           routeBasePath: "nyheter-og-driftsvarsler",
           blogTitle: "nyheter-og-driftsvarsler",
-          blogSidebarCount: 0,
-          readingTime: () => undefined,
+          blogSidebarCount: 25,
           postsPerPage: 25,
+          readingTime: () => undefined,
           feedOptions: {
             type: "atom",
             title: "Skatteetaten - API varsel",
