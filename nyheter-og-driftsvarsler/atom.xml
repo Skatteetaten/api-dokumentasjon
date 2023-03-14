@@ -34,10 +34,7 @@ Testdata er tilrettelagt og vi oppfordrer til å benytte&nbsp;Tenor testdatasøk
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/01/20/14-55-inntekt-2023"/>
         <updated>2023-01-20T14:55:00.000Z</updated>
         <summary type="html"><![CDATA[Ref. varsel om Årsrevisjon Inntekt API 2023 så er Inntekt API nå oppdatert i både Test og Produksjon for inntektsår 2023.]]></summary>
-        <content type="html"><![CDATA[<p>Ref. varsel om <!-- --> så er Inntekt API nå oppdatert i både Test og Produksjon for inntektsår 2023.
-Nye felter er ikke ennå søkbare i Tenor, men følgende identifikatorer har data:
-Nye lønnsbeskrivelser: 22900049246, 11840049681, 21811849224, 16822349505, 15869699761
-alderspensjonSkjermingstillegg: 29845699605, 27835698934, 13915698713, 08875696980, 15815699103</p>]]></content>
+        <content type="html"><![CDATA[<p>Ref. varsel om <!-- --> så er Inntekt API nå oppdatert i både Test og Produksjon for inntektsår 2023.</p><p>Nye felter er ikke ennå søkbare i Tenor, men følgende identifikatorer har data: </p><ul><li>Nye lønnsbeskrivelser: 22900049246, 11840049681, 21811849224, 16822349505, 15869699761</li><li>alderspensjonSkjermingstillegg: 29845699605, 27835698934, 13915698713, 08875696980, 15815699103</li></ul>]]></content>
         <category label="nyhet" term="nyhet"/>
         <category label="inntekt" term="inntekt"/>
     </entry>
