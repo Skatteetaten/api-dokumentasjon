@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2023-01-20T14:55:00.000Z</updated>
+    <updated>2023-03-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Tjenester som støtter nytt Maskinporten-domene i test]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/03/07/nytt-domene</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/03/07/nytt-domene"/>
+        <updated>2023-03-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Ref. info fra Digdir om ny systemarkitektur og nytt domene (test.maskinporten.no).]]></summary>
+        <content type="html"><![CDATA[<p>Ref. info fra Digdir om ny systemarkitektur og nytt domene (test.maskinporten.no).</p><p>Skatteetaten er i gang med å tilrettelegge for at det skal være mulig å teste med både test og ver2 for Skatteetatens tjenester, og for enkelte tjenester er dette nå på plass:</p><ul><li>Beregnet skatt API</li><li>Inntekt API</li><li>Inntektsmottakere API</li><li>Mva-melding API</li><li>Mva-register - avgiftssubjekter med skattemeldingsplikt API</li><li>Næringsspesifikasjon API</li><li>Skattemelding API</li><li>Skattemelding upersonlig API</li><li>Spesifisert summert skattegrunnlag API</li><li>Summert skattegrunnlag API</li><li>Tilgjengeligdata API</li><li>Tjenestepensjonsavtale API</li><li>Trukket kildeskatt på lønn API&nbsp;</li></ul><p>Vi fortsetter med de resterende tjenestene, og vil ta de løpende fremover.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+        <category label="maskinporten" term="maskinporten"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Inntekt API med støtte for inntektsår 2023 er i Test og Produksjon]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/01/20/14-55-inntekt-2023</id>
@@ -18,6 +28,7 @@ Nye felter er ikke ennå søkbare i Tenor, men følgende identifikatorer har dat
 Nye lønnsbeskrivelser: 22900049246, 11840049681, 21811849224, 16822349505, 15869699761
 alderspensjonSkjermingstillegg: 29845699605, 27835698934, 13915698713, 08875696980, 15815699103</p>]]></content>
         <category label="nyhet" term="nyhet"/>
+        <category label="inntekt" term="inntekt"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Årsrevisjon Inntekt API 2023]]></title>
