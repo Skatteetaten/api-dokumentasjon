@@ -4,7 +4,7 @@ slug: /oppdragutenlandskevirksomheter
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API, Serioesitet]
+tags: [API, Seriøsitet]
 keywords: [oppdrag, virksomheter, utenlandske]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
