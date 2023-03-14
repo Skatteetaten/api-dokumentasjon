@@ -1,7 +1,7 @@
 ---
 title:  "Årsrevisjon Inntekt API 2023"
 permalink: aarsrevisjon-inntekt-19122022.html
-tags: [news]
+tags: [nyhet, inntekt]
 date: 2022-12-19 15:00:00 +0200
 ---
 Følgende endringer i A-ordningen for inntektsår 2022 og 2023 vil påvirke konsumentene av Inntekt API. 
