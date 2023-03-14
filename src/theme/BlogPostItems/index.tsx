@@ -2,6 +2,8 @@ import React from "react";
 import BlogPostItem from "@theme/BlogPostItem";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import Link from "@docusaurus/Link";
+import Head from "@docusaurus/Head";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 import Ingress from "../../../nyheter-og-driftsvarsler/_varsler-ingress.md";
 import HvordanAbonnere from "../../../nyheter-og-driftsvarsler/_varsler-hvordan-abonnere.md";
@@ -30,6 +32,8 @@ export default function BlogPostItems({
   items,
   component: BlogPostItemComponent = BlogPostItem,
 }) {
+  const context = useDocusaurusContext();
+
   const data = items.map((varsel) => ({
     date: varsel.content.metadata.formattedDate,
     title: (
@@ -40,8 +44,16 @@ export default function BlogPostItems({
     description: varsel.content.metadata.description,
   }));
 
+  const configTitleString = context.siteConfig.title
+    ? ` - ${context.siteConfig.title}`
+    : "";
+  const title = `Nyheter og driftsvarsler${configTitleString}`;
+
   return (
     <>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <h1>Nyheter og driftsvarsler</h1>
       <h2>Abonnere på nyheter og driftsvarsler</h2>
       <Ingress />
