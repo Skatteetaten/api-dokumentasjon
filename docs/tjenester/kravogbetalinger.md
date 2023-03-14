@@ -277,19 +277,19 @@ Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endep
 
 ### Åpne krav
 
-[![åpnekrav](../../static/download/Informasjonsmodell_Kravogbetalinger_aapnekrav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_aapnekrav.png)
+[![åpnekrav](../../static/download/Informasjonsmodell_Kravogbetalinger_Aapnekrav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Aapnekrav.png)
 
 ### Krav
 
-[![krav](../../static/download/Informasjonsmodell_Kravogbetalinger_krav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_krav.png)
+[![krav](../../static/download/Informasjonsmodell_Kravogbetalinger_krav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.png)
 
 ### Innbetalinger
 
-[![innbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_innbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_innbetalinger.png)
+[![innbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_Innbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Innbetalinger.png)
 
 ### Utbetalinger
 
-[![utbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_utbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_utbetalinger.png)
+[![utbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_Utbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Utbetalinger.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
