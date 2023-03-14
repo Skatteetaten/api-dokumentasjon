@@ -25,8 +25,8 @@
         <summary type="html"><![CDATA[Skatteoppgjørstjenestene er nå klare for ekstern test for inntektsår 2022.]]></summary>
         <content type="html"><![CDATA[<p>Skatteoppgjørstjenestene er nå klare for ekstern test for inntektsår 2022.</p><p>Det gjelder følgene tjenester: </p><ul><li>Avregning API</li><li>Beregnet Skatt API</li><li>Pensjonsgivende inntekt API</li><li>Tilgjengeligdata API, Skatteplikt API</li><li>Summert skattegrunnlag API</li><li>Spesifisert summert skattegrunnlag API</li></ul><p>Endelig kodeliste for Summert skattegrunnlag og Spesifisert summert skattegrunnlag er ikke implementert i Test pt., men blir tilgjengelig i starten av mars.
 Testdata er tilrettelagt og vi oppfordrer til å benytte&nbsp;Tenor testdatasøk&nbsp;for å finne relevante testdata.</p><p>Første skatteoppgjør for 2022 vil være tilgjengelig i Produksjon fra 25. mars.</p>]]></content>
-        <category label="nyhet" term="nyhet"/>
-        <category label="skatteoppgjør" term="skatteoppgjør"/>
+        <category label="Nyhet" term="Nyhet"/>
+        <category label="Skatteoppgjør" term="Skatteoppgjør"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Inntekt API med støtte for inntektsår 2023 er i Test og Produksjon]]></title>
