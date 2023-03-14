@@ -56,3 +56,5 @@ Samtykke fra virksomhet
   - [Mva meldingsopplysning API](../tjenester/mva_meldingsopplysning.md)
   - [Oppdrag utenlanske virksomheter API](../tjenester/oppdragutenlandskevirksomheter.md)
   - [Restanser API](../tjenester/restanser.md)
+
+Se egen dokumentasjon for [hvordan teste med samtykke](../test/testavsamtykke.md).
