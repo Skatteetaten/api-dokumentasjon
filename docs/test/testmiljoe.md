@@ -4,8 +4,8 @@ slug: /testmiljo
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API data]
-keywords: [testdata]
+tags: [Test, Testmiljø, Testdata]
+keywords: [Test, Testmiljø, Testdata]
 last_updated: Des 1, 2022
 hide_table_of_contents: true
 ---
