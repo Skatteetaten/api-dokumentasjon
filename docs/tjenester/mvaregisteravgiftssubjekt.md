@@ -4,8 +4,8 @@ slug: /mvaregisteravgiftssubjekt
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API]
-keywords: [selvangivelse, skattemelding, SummertSkattegrunnlag, inntekt, formue]
+tags: [API, MVA]
+keywords: [mva]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
