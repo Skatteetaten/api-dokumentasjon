@@ -4,7 +4,7 @@ slug: /mva_meldingsopplysning
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API, Serioesitet, MVA]
+tags: [API, Seriøsitet, MVA]
 keywords: [mva, meldingsopplysning]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
