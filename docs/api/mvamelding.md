@@ -1,7 +1,7 @@
 ---
 title: Mva-melding API
-slug: /mvamelding
-folder: tjenester
+slug: /api/mvamelding
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, MVA]
