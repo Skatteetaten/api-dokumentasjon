@@ -1,6 +1,6 @@
 ---
 title: Tilleggsskatt API
-slug: /tilleggsskatt
+slug: /api/tilleggsskatt
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
