@@ -1,7 +1,7 @@
 ---
 title: Hendelser
 slug: /api/hendelser
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Støttetjeneste, Hendelser]
