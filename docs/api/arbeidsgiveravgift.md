@@ -1,7 +1,7 @@
 ---
 title: Arbeidsgiveravgift API
-slug: /arbeidsgiveravgift
-folder: tjenester
+slug: /api/arbeidsgiveravgift
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
