@@ -1,7 +1,7 @@
 ---
 title: Beregnet skatt API
-slug: /beregnetskatt
-folder: tjenester
+slug: /api/beregnetskatt
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør]
