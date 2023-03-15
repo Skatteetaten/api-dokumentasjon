@@ -1,6 +1,6 @@
 ---
 title: Tjenestepensjonsavtale API
-slug: /tjenestepensjonsavtale
+slug: /api/tjenestepensjonsavtale
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
