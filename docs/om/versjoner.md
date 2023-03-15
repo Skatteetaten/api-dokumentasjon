@@ -1,6 +1,6 @@
 ---
 title: Versjoner
-slug: /versjoner
+slug: /om/versjoner
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
