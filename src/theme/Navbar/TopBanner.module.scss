@@ -17,8 +17,13 @@
   }
 }
 
+.bannerImgContainer {
+  display: flex;
+  align-items: center;
+}
+
 .bannerImg {
-  height: 55px;
+  height: 75px;
 
   img {
     height: 100%;
@@ -37,5 +42,23 @@
     padding-left: 32px;
     flex-grow: 3;
     text-align: left;
+  }
+}
+
+.nav {
+  > * {
+    margin-right: 2.5rem;
+  }
+
+  font-size: 1rem;
+
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  a:hover {
+    padding-bottom: 3px;
+    border-bottom: 4px solid #6f2c3f;
   }
 }

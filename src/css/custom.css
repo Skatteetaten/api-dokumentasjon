@@ -44,3 +44,7 @@
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
+
+.theme-doc-sidebar-container {
+  margin-top: 0.8rem !important;
+}

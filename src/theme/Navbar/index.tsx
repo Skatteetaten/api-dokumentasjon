@@ -58,7 +58,7 @@ export default function Navbar(): JSX.Element {
                   )}
                 </TopStripe>
               }
-              title={"Skatteetatens delingstjenester"}
+              title={"Skatteetatens API'er"}
             />
           </div>
         );

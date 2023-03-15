@@ -2,6 +2,7 @@ import React from "react";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./TopBanner.module.scss";
+import Link from "@docusaurus/Link";
 
 interface Props {
   topStripe: React.ReactNode;
@@ -31,6 +32,12 @@ const ExternalHeaderContent = ({ ...props }) => {
               {props.homeText}
             </ActionButton>
             <h1>{props.title}</h1>
+            <nav className={styles.nav}>
+              <Link to="/">Dokumentasjon</Link>
+              <Link to="/nyheter-og-driftsvarsler">
+                Nyheter og driftsvarsler
+              </Link>
+            </nav>
           </>
         );
       }}
@@ -44,7 +51,7 @@ export function TopBanner(props: Props): JSX.Element {
     <header>
       {topStripe}
       <div className={styles.bannerContent}>
-        <div>
+        <div className={styles.bannerImgContainer}>
           <div className={styles.bannerImg}>
             {logoLink ? (
               <a href={logoLink}>
