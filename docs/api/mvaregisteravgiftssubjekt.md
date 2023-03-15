@@ -1,7 +1,7 @@
 ---
 title: Mva-register – avgiftssubjekter med skattemeldingsplikt API
-slug: /mvaregisteravgiftssubjekt
-folder: tjenester
+slug: /api/mvaregisteravgiftssubjekt
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, MVA]
