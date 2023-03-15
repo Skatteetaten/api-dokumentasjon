@@ -1,6 +1,6 @@
 ---
 title: Trukket kildeskatt på lønn API
-slug: /trukketkildeskattpaaloenn
+slug: /api/trukketkildeskattpaaloenn
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
