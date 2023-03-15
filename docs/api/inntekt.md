@@ -1,6 +1,6 @@
 ---
 title: Inntekt API
-slug: /inntekt
+slug: /api/inntekt
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
