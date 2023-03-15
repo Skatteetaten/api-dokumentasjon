@@ -1,7 +1,7 @@
 ---
 title: Tilleggsskatt API
 slug: /api/tilleggsskatt
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skattemelding, Tilleggsskatt]
