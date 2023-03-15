@@ -1,6 +1,6 @@
 ---
 title: Feil
-slug: /feil
+slug: /om/feil
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
