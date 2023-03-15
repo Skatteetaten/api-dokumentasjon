@@ -1,6 +1,6 @@
 ---
 title: Test av samtykkebasert datauthenting
-slug: /testavsamtykke
+slug: /test/testavsamtykke
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
