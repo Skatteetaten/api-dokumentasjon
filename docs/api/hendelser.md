@@ -1,6 +1,6 @@
 ---
 title: Hendelser
-slug: /hendelser
+slug: /api/hendelser
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
