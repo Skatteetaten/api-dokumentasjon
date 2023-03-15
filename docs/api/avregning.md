@@ -1,7 +1,7 @@
 ---
 title: Avregning API
-slug: /avregning
-folder: tjenester
+slug: /api/avregning
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør]
