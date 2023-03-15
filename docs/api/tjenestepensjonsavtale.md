@@ -1,7 +1,7 @@
 ---
 title: Tjenestepensjonsavtale API
 slug: /api/tjenestepensjonsavtale
-folder: tjenester
+folder: folder
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Inntekt, Tjenestepensjonsavtale]
