@@ -1,7 +1,7 @@
 ---
 title: Krav og betalinger API
-slug: /kravogbetalinger
-folder: tjenester
+slug: /api/kravogbetalinger
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Innkreving]
