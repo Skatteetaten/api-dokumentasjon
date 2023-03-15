@@ -1,7 +1,7 @@
 ---
 title: Aktiv konto API
 slug: /api/aktivkonto
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Aktiv konto]
