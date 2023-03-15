@@ -1,6 +1,6 @@
 ---
 title: Bruk av tjenestene
-slug: /bruk
+slug: /om/bruk
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
