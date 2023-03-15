@@ -1,7 +1,7 @@
 ---
 title: Pensjonsgivende inntekt API
-slug: /pgi
-folder: tjenester
+slug: /api/pgi
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør]
