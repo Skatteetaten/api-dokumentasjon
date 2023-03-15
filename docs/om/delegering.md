@@ -1,6 +1,6 @@
 ---
 title: Delegere rettigheter i Altinn
-slug: /delegering
+slug: /om/delegering
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
