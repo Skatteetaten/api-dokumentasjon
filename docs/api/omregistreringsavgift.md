@@ -1,7 +1,7 @@
 ---
 title: Omregistreringsavgift API
-slug: /omregistreringsavgift
-folder: tjenester
+slug: /api/omregistreringsavgift
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Omregistreringsavgift, Kjøretøy]
