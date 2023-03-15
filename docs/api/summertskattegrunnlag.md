@@ -1,7 +1,7 @@
 ---
 title: Summert skattegrunnlag API
 slug: /api/summertskattegrunnlag
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør]
