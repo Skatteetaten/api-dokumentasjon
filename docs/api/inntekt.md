@@ -1,7 +1,7 @@
 ---
 title: Inntekt API
 slug: /api/inntekt
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Inntekt, Inntektsmottaker]
