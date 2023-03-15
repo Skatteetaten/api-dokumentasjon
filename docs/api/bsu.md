@@ -1,7 +1,7 @@
 ---
 title: Boligsparing for ungdom API
-slug: /bsu
-folder: tjenester
+slug: /api/bsu
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, BSU]
