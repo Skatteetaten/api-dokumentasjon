@@ -1,7 +1,7 @@
 ---
 title: Skattemelding upersonlig API
-slug: /skattemeldingupersonlig
-folder: tjenester
+slug: /api/skattemeldingupersonlig
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skattemelding]
