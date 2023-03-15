@@ -1,7 +1,7 @@
 ---
 title: Restanser API
-slug: /restanser
-folder: tjenester
+slug: /api/restanser
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet, MVA]
