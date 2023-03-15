@@ -1,7 +1,7 @@
 ---
 title: Skatteplikt API
-slug: /skatteplikt
-folder: tjenester
+slug: /api/skatteplikt
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør]
