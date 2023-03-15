@@ -1,6 +1,6 @@
 ---
 title: Oppdrag utenlandske virksomheter API
-slug: /oppdragutenlandskevirksomheter
+slug: /api/oppdragutenlandskevirksomheter
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
