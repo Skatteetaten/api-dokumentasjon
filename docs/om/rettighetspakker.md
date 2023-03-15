@@ -1,6 +1,6 @@
 ---
 title: Rettighetspakker
-slug: /rettighetspakker
+slug: /om/rettighetspakker
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
