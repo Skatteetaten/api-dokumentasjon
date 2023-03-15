@@ -1,7 +1,7 @@
 ---
 title: Næringsspesifikasjon API
-slug: /naeringsspesifikasjon
-folder: tjenester
+slug: /api/naeringsspesifikasjon
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Næringsspesifikasjon, Skattemelding]
