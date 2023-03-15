@@ -1,7 +1,7 @@
 ---
 title: Skattemelding API
-slug: /skattemelding
-folder: tjenester
+slug: /api/skattemelding
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skattemelding]
