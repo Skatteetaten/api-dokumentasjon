@@ -1,7 +1,7 @@
 ---
 title: Mva meldingsoppslysning API
-slug: /mva_meldingsopplysning
-folder: tjenester
+slug: /api/mva_meldingsopplysning
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet, MVA]
