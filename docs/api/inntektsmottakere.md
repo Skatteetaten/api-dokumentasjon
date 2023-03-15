@@ -1,7 +1,7 @@
 ---
 title: Inntektsmottakere API
 slug: /api/inntektsmottakere
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Inntekt, Inntektsmottaker, Inntektsmottakere]
