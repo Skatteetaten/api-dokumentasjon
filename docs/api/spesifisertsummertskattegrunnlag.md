@@ -1,7 +1,7 @@
 ---
 title: Spesifisert summert skattegrunnlag API
-slug: /spesifisertsummertskattegrunnlag
-folder: tjenester
+slug: /api/spesifisertsummertskattegrunnlag
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør]
