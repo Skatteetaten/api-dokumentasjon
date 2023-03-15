@@ -1,6 +1,6 @@
 ---
 title: Test fra systemleverandør
-slug: /testfrasystemleverandor
+slug: /test/testfrasystemleverandor
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
