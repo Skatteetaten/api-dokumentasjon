@@ -1,7 +1,7 @@
 ---
 title: Oppdrag utenlandske virksomheter API
 slug: /api/oppdragutenlandskevirksomheter
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
