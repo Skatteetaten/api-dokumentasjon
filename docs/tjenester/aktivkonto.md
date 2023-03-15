@@ -1,6 +1,6 @@
 ---
 title: Aktiv konto API
-slug: /aktivkonto
+slug: /api/aktivkonto
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
