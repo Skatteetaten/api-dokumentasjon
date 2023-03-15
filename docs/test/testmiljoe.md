@@ -1,6 +1,6 @@
 ---
 title: Testmiljø og testdata
-slug: /testmiljo
+slug: /test/testmiljo
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
