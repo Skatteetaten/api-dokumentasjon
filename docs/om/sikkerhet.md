@@ -1,6 +1,6 @@
 ---
 title: Sikkerhet
-slug: /sikkerhet
+slug: /om/sikkerhet
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
