@@ -1,7 +1,7 @@
 ---
 title: Siste tilgjengelige skatteoppgjør API
-slug: /sistetilgjengeligeskatteoppgjoer
-folder: tjenester
+slug: /api/sistetilgjengeligeskatteoppgjoer
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør, Støttetjeneste]
