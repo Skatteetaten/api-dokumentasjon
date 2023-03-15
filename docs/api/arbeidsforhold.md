@@ -1,7 +1,7 @@
 ---
 title: Arbeidsforhold API
-slug: /arbeidsforhold
-folder: tjenester
+slug: /api/arbeidsforhold
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
