@@ -1,6 +1,6 @@
 ---
 title: Samtykke
-slug: /samtykke
+slug: /om/samtykke
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
