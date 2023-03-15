@@ -1,7 +1,7 @@
 ---
 title: Pensjonsgivende inntekt for folketrygden API
-slug: /pgi_folketrygden
-folder: tjenester
+slug: /api/pgi_folketrygden
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør]
