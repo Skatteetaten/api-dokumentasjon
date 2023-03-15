@@ -1,7 +1,7 @@
 ---
 title: Skattepliktig API
-slug: /skattepliktig
-folder: tjenester
+slug: /api/skattepliktig
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skattepliktig]
