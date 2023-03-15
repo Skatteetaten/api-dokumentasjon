@@ -1,6 +1,6 @@
 ---
 title: Skjerming av data
-slug: /skjerming
+slug: /om/skjerming
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
