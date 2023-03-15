@@ -1,6 +1,6 @@
 ---
 title: Tenor testdatasøk
-slug: /tenor
+slug: /test/tenor
 folder: test
 sidebar: mydoc_sidebar
 datatable: true
