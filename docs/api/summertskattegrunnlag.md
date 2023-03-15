@@ -1,6 +1,6 @@
 ---
 title: Summert skattegrunnlag API
-slug: /summertskattegrunnlag
+slug: /api/summertskattegrunnlag
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
