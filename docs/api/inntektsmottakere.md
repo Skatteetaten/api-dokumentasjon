@@ -1,6 +1,6 @@
 ---
 title: Inntektsmottakere API
-slug: /inntektsmottakere
+slug: /api/inntektsmottakere
 folder: tjenester
 sidebar: mydoc_sidebar
 datatable: true
