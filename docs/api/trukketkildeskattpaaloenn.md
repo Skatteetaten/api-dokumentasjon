@@ -1,7 +1,7 @@
 ---
 title: Trukket kildeskatt på lønn API
 slug: /api/trukketkildeskattpaaloenn
-folder: tjenester
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør, Trukket kildeskatt på lønn]
