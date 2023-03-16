@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Informasjonsmodell for avtaleforhold tilknyttet tjenestepensjonsavtale.</summary>
 
-Oversikt over verdier som sendes inn gjennom endepunktet avtaleforhold i [Tjenestepensjonsavtale API](../../tjenester/tjenestepensjonsavtale.md) for å oppdatere eller endre avtaleforhold.
+Oversikt over verdier som sendes inn gjennom endepunktet avtaleforhold i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md) for å oppdatere eller endre avtaleforhold.
 
 # Om Rettighetspakker
 
