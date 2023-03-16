@@ -1,7 +1,6 @@
 import React from "react";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import useBaseUrl from "@docusaurus/useBaseUrl";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./TopBanner.module.scss";
 import Link from "@docusaurus/Link";
 
@@ -16,24 +15,10 @@ interface Props {
 }
 
 const ExternalHeaderContent = ({ ...props }) => {
-  const context = useDocusaurusContext();
-
-  const isLinkAcive = (linkPath: string) => {
-    const pathWithoutBaseUrl = globalThis.location.pathname.replace(
-      context.siteConfig.baseUrl,
-      ""
-    );
-
-    if (pathWithoutBaseUrl === "" || pathWithoutBaseUrl === "/") {
-      return linkPath === "/";
-    }
-
-    return linkPath.includes(pathWithoutBaseUrl);
-  };
-
   if (props.children) {
     return props.children;
   }
+
   return (
     <BrowserOnly>
       {() => {
@@ -54,7 +39,10 @@ const ExternalHeaderContent = ({ ...props }) => {
               <Link
                 to="/"
                 className={cls({
-                  [styles["active-nav"]]: isLinkAcive("/"),
+                  [styles["active-nav"]]:
+                    !globalThis.location.pathname.includes(
+                      "nyheter-og-driftsvarsler"
+                    ),
                 })}
               >
                 Dokumentasjon
@@ -62,8 +50,8 @@ const ExternalHeaderContent = ({ ...props }) => {
               <Link
                 to="/nyheter-og-driftsvarsler"
                 className={cls({
-                  [styles["active-nav"]]: isLinkAcive(
-                    "/nyheter-og-driftsvarsler"
+                  [styles["active-nav"]]: globalThis.location.pathname.includes(
+                    "nyheter-og-driftsvarsler"
                   ),
                 })}
               >
