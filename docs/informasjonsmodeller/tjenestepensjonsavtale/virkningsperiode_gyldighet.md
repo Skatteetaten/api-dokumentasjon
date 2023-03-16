@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Informasjonsmodell for virkningsperiodens gyldighet for tjenestepensjonsavtale.</summary>
 
-Oversikt over verdier som returneres i data fra endepunktet virkningsperiode/gyldighet i [Tjenestepensjonsavtale API](../../tjenester/tjenestepensjonsavtale.md).
+Oversikt over verdier som returneres i data fra endepunktet virkningsperiode/gyldighet i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md).
 
 # Om Rettighetspakker
 
