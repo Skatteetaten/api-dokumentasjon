@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 import { Table } from '@skatteetaten/frontend-components/Table';
 
-Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](../../tjenester/spesifisertsummertskattegrunnlag.md) tjenesten for 2016.
+Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](../../api/spesifisertsummertskattegrunnlag.md) tjenesten for 2016.
 
 ## Kategorisering og lovlige verdier for tekniskNavn for 2016
 
