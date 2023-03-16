@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Informasjonsmodell for å slette avtaleforhold tilknyttet tjenestepensjonsavtale.</summary>
 
-Oversikt over verdier som sendes inn gjennom endepunktet slette avtaleforhold i [Tjenestepensjonsavtale API](../../tjenester/tjenestepensjonsavtale.md).
+Oversikt over verdier som sendes inn gjennom endepunktet slette avtaleforhold i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md).
 
 # Om Rettighetspakker
 
