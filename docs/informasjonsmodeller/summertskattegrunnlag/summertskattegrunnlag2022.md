@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2022.</summary>
 
-Oversikt over mulige verdier i data fra [summert skattegrunnlag](reference_summertskattegrunnlag) tjenesten for 2022.
+Oversikt over mulige verdier i data fra [summert skattegrunnlag](./api/summertskattegrunnlag.md) tjenesten for 2022.
 
 ## Summerte skattegrunnlag for 2022
 
