@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i spesifisert summert skattegrunnlag for 2022.</summary>
 
-Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](reference_spesifisertsummertskattegrunnlag) tjenesten for 2022.
+Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](./api/spesifisertsummertskattegrunnlag.md) tjenesten for 2022.
 
 ## Spesifikasjon for spesifisert summert skattegrunnlag 2022
 
