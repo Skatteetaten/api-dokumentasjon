@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018.</summary>
 
-Oversikt over mulige spesifikasjonertyper i data fra [spesifisert summert skattegrunnlag](../../tjenester/spesifisertsummertskattegrunnlag.md) for 2018.
+Oversikt over mulige spesifikasjonertyper i data fra [spesifisert summert skattegrunnlag](../../api/spesifisertsummertskattegrunnlag.md) for 2018.
 
 ## Om Spesifikasjoner
 
