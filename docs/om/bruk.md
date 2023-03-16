@@ -22,7 +22,7 @@ Skatteetaten deler informasjon med eksterne virksomheter gjennom gjenbrukbare op
 ## Hendelser
 Skatteetaten varsler om endringer i data gjennom bruk av hendelseslister. En hendelse er et varsel om at det er kommet nye data, slettede data eller endrede data. Hendelser er “tynne”, dvs at de ikke inneholder selve dataene. Hendelsen inneholder kun et sekvensnummer, personidentifikator og perioden det har skjedd en hendelse for.
 
-Noen virksomheter benytter hendelseslistene for å følge med på endringer i data de allerede har hentet gjennom oppslagstjenesten, mens andre ønsker å følge med på nye data for et stort antall (eller alle) personer eller virksomheter. For å støtte disse bruksmønstrene publiserer vi hendelser per datatjeneste, som gir løpende varslinger om at opplysninger knyttet til en person eller virksomhet er endret. Se egen dokumentasjon for [de ulike hendelsene](../tjenester/hendelser.md).
+Noen virksomheter benytter hendelseslistene for å følge med på endringer i data de allerede har hentet gjennom oppslagstjenesten, mens andre ønsker å følge med på nye data for et stort antall (eller alle) personer eller virksomheter. For å støtte disse bruksmønstrene publiserer vi hendelser per datatjeneste, som gir løpende varslinger om at opplysninger knyttet til en person eller virksomhet er endret. Se egen dokumentasjon for [de ulike hendelsene](../api/hendelser.md).
 
 Der det finnes hendelseslister, skal disse benyttes og data kun hentes på nytt når det er lagt ut en hendelse i hendelseslisten. Vi ønsker ikke at det gjøres periodiske oppslag for å sjekke om det er endringer i data.
 
