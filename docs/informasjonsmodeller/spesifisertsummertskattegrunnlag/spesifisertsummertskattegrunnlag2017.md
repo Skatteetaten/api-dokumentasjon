@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Lovlige verdier for tekniskNavn, kategorisering og post i oppgjør tilgjengelig i spesifisert summert skattegrunnlag for 2017.</summary>
 
-Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](../../tjenester/spesifisertsummertskattegrunnlag.md) tjenesten for 2017.
+Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](../../api/spesifisertsummertskattegrunnlag.md) tjenesten for 2017.
 
 ## Lovlige verdier for tekniskNavn, kategorisering og post i oppgjør
 
