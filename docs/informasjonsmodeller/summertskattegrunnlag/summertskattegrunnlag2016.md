@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Kategorisering og lovlige verdier for tekniskNavn for summert skattegrunnlag for 2016.</summary>
 
-Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../tjenester/summertskattegrunnlag.md) tjenesten for 2016.
+Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2016.
 
 ## Kategorisering og lovlige verdier for tekniskNavn
 
