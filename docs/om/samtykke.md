@@ -47,14 +47,14 @@ Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egne
 Følgende api'er hos Skatteetaten støtter utlevering gjennom samtykke eller fullmakt. Detaljer om parameterne som er nødvendig for å få utstedt samtykker eller fullmakt er beskrevet i dokumentasjonen for hvert enkelt api.
 
 Samtykke fra skatteyter:
-  - [Inntekt API](../tjenester/inntekt.md)
-  - [Spesifisert summert skattegrunnlag API](../tjenester/spesifisertsummertskattegrunnlag.md)
-  - [Krav og betalinger API](../tjenester/kravogbetalinger.md)
+  - [Inntekt API](../api/inntekt.md)
+  - [Spesifisert summert skattegrunnlag API](../api/spesifisertsummertskattegrunnlag.md)
+  - [Krav og betalinger API](../api/kravogbetalinger.md)
   
 Samtykke fra virksomhet
-  - [Arbeidsgiveravgift API](../tjenester/arbeidsgiveravgift.md)
-  - [Mva meldingsopplysning API](../tjenester/mva_meldingsopplysning.md)
-  - [Oppdrag utenlanske virksomheter API](../tjenester/oppdragutenlandskevirksomheter.md)
-  - [Restanser API](../tjenester/restanser.md)
+  - [Arbeidsgiveravgift API](../api/arbeidsgiveravgift.md)
+  - [Mva meldingsopplysning API](../api/mva_meldingsopplysning.md)
+  - [Oppdrag utenlanske virksomheter API](../api/oppdragutenlandskevirksomheter.md)
+  - [Restanser API](../api/restanser.md)
 
 Se egen dokumentasjon for [hvordan teste med samtykke](../test/testavsamtykke.md).
