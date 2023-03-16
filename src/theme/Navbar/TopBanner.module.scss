@@ -55,10 +55,16 @@
   a {
     text-decoration: none;
     color: unset;
+    transition: border-bottom 0.2s;
   }
 
   a:hover {
     padding-bottom: 3px;
     border-bottom: 4px solid #6f2c3f;
   }
+}
+
+.active-nav {
+  padding-bottom: 3px;
+  border-bottom: 4px solid #6f2c3f;
 }
