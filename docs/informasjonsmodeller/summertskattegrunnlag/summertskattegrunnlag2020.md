@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2020.</summary>
 
-Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../tjenester/summertskattegrunnlag.md) tjenesten for 2020.
+Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2020.
 
 ## Summerte skattegrunnlag for 2020
 Tabellen nedenfor er ikke endelig.
