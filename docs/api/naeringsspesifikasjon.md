@@ -244,7 +244,7 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og tes
 ## Testdata
 Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
 
-| Type skattepliktig | Fødselsnummer | Inntektsår |
+| Type skattepliktig | Identifikator | Inntektsår |
 |---|---|---|
 | Personlig | 02914499103 | 2022 | 
 | Personlig | 07810099598 | 2022 |
@@ -252,6 +252,11 @@ Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Ska
 | Personlig | 10835098228 | 2022 |
 | Personlig | 14839699914 | 2022 |
 | Personlig | 29896399711 | 2022 |
+| Upersonlig | 310962805 | 2022 |
+| Upersonlig | 313422348 | 2022 |
+| Upersonlig | 311051431 | 2022 |
+| Upersonlig | 310799262 | 2022 |
+| Upersonlig | 311772236 | 2022 |
  
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
