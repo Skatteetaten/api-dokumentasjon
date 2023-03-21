@@ -520,7 +520,7 @@ Det henvises generelt til xsd for den enkelte rettighetspakke for hvilke verdier
 ## Informasjonsmodell - skjema
 
 ### Oversikt
-[![Oversikt](../../static/download/inntektsmottaker/inntektsmottaker_oversikt.png)](../../static/download/inntektsmottaker/Informasjonsmodell_Inntektsmottaker_Oversikt.png)
+[![Oversikt](../../static/download/inntektsmottaker/Informasjonsmodell_Inntektsmottaker_Oversikt.png)](../../static/download/inntektsmottaker/Informasjonsmodell_Inntektsmottaker_Oversikt.png)
 
 ### Inntekt og inntektstyper
 [![Inntekt og inntektstyper](../../static/download/inntektsmottaker/InntektOgInntektstyper.png)](../../static/download/inntektsmottaker/inntektsmottaker_tilleggsinformasjon.png)
