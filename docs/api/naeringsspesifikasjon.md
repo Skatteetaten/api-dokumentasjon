@@ -246,12 +246,13 @@ Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Ska
 
 | Type skattepliktig | Fødselsnummer | Inntektsår |
 |---|---|---|
+| Personlig | 02914499103 | 2022 | 
 | Personlig | 07810099598 | 2022 |
+| Personlig | 09928798752 | 2022 |
+| Personlig | 10835098228 | 2022 |
 | Personlig | 14839699914 | 2022 |
-| Personlig | 17869096687 | 2022 |
-| Personlig | 24875599174 | 2022 |
 | Personlig | 29896399711 | 2022 |
-
+ 
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
 </TabItem>
