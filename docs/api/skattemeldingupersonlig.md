@@ -176,20 +176,23 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og tes
 
 ## Testdata
 
+Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
+
 | Fødselsnummer | Inntektsår |
 |---|---|
 | 210962492  | 2021 |
-| 310423076  | 2021 |
 | 310962074  | 2021 |
-| 311768778  | 2021 |
-| 312282933  | 2021 |
 | 312547678  | 2021 |
-| 312737639  | 2021 |
 | 313269906  | 2021 |
-| 313864138  | 2021 |
-| 314093798  | 2021 |
 | 314247914  | 2021 |
-
+| 310322881  | 2022 |
+| 314238478  | 2022 |
+| 314024621  | 2022 |
+| 313739007  | 2022 |
+| 311772236  | 2022 |
+  
+Ytterligere testdata kan man benytte hendelseslisten for å finne.
+  
 </TabItem>
 </Tabs>
 
