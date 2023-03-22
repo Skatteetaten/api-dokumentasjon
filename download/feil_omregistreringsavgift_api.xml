@@ -1,5 +1,0 @@
-<feil xmlns="urn:no:skatteetaten:datasamarbeid:feil:v1">
-   <kode>OMREGSAVGIFT-003</kode>
-   <melding>Feil datoformat, dato må oppgis som YYYY-MM-DD eller YYYYMMDD.</melding>
-   <korrelasjonsid>df496591-dabc-42b8-84e2-163ad19302e6</korrelasjonsid>
-</feil>
