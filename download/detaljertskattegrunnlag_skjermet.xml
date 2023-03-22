@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<detaljertSkattegrunnlag xmlns="urn:no:skatteetaten:datasamarbeid:detaljertskattegrunnlag:v1">
-  <personidentifikator>11223344556</personidentifikator>
-  <inntektsaar>2016</inntektsaar>
-  <skjermet>true</skjermet>
-</detaljertSkattegrunnlag>
