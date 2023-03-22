@@ -1,5 +1,0 @@
-<feil xmlns="urn:no:skatteetaten:datasamarbeid:feil:v1">
-   <kode>OTP-003</kode>
-   <melding>Obligatorisk parameter 'pensjonsinnretning' mangler.</melding>
-   <korrelasjonsid>a9de0f31-ced5-4bb2-8175-f8002daf2ff2</korrelasjonsid>
-</feil>
