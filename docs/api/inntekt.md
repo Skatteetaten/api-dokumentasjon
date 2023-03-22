@@ -115,8 +115,6 @@ Hver OppgaveInntektsmottaker har:
 
 #### JSON
 
-Spesifikasjon av return for tjenesten: [Inntektsmottaker.json](../../static/download/Inntektsmottaker.json)
-
 ```json
 {
     "oppgaveInntektsmottaker": [
