@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<avregning xmlns="urn:no:skatteetaten:datasamarbeid:avregning:v1">
-  <personidentifikator>12345678910</personidentifikator>
-  <inntektsaar>2019</inntektsaar>
-  <skjermet>true</skjermet>
-</avregning>
