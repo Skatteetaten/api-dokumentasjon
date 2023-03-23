@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<feil xmlns="urn:no:skatteetaten:datasamarbeid:feil:v1">
-  <kode>SKATTEPLIKTIG-008</kode>
-  <melding>Fant ingen informasjon på oppgitt personidentifikator</melding>
-  <korrelasjonsid>002bb53a-dd1f-466d-8331-25799b58e328</korrelasjonsid>
-</feil>
