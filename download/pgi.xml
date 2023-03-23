@@ -1,8 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<pensjonsgivendeInntekter xmlns="urn:no:skatteetaten:datasamarbeid:pensjonsgivendeinntekt:v1">
-    <personidentifikator>17055401993</personidentifikator>
-    <inntektsaar>2015</inntektsaar>
-    <pensjonsgivendeInntekt>100000</pensjonsgivendeInntekt>
-    <pensjonsgivendeInntektFastland>50000</pensjonsgivendeInntektFastland>
-    <pensjonsgivendeInntektSvalbard>50000</pensjonsgivendeInntektSvalbard>
-</pensjonsgivendeInntekter>
