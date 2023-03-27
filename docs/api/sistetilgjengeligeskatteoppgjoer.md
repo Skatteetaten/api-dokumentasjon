@@ -34,9 +34,9 @@ Man trenger ikke eget scope for denne tjenesten, siden den benytter samme scope 
 Tilgang til hendelseslister delegeres i Altinn når man delegerer oppslagstjenesten.
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/tilgjengelig-data-api) ligger på SwaggerHub.
+[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/tilgjengelig-data-api) ligger på SwaggerHub.
 
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
