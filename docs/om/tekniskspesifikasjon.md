@@ -22,4 +22,4 @@ Dette vil også være en forbedring for brukeropplevelse for konsumentene, som k
 
 Når tjenestene er utviklet basert på Open API, kan vi eksponere dette ut til konsumentene, og vi benytter SwaggerHub for å publisere Open API spesifikasjonene.
 
-Lenke til de ulike delingstjenestenes Open API spesifikasjoner ligger i dokumentasjonen for hver enkelt delingstjeneste, men [en samlet oversikt kan også finnes også](https://app.swaggerhub.com/organizations/Skatteetaten_Deling)
+Lenke til de ulike delingstjenestenes Open API spesifikasjoner ligger i dokumentasjonen for hver enkelt delingstjeneste, men [på Swaggerhub finnes også en oversikt over alle Skatteetatens api'er](https://app.swaggerhub.com/organizations/Skatteetaten_Deling).
