@@ -58,6 +58,8 @@ Open API spesifikasjon av hendelseslistene er på SwaggerHub:
 * [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-upersonlig-hendelser-api)
 * [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-utkast-hendelser-api)
 * [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/tilleggsskatt-hendelser-api)
+  
+I [Open API spesifikasjonene](../om/tekniskspesifikasjon.md) ligger URL'er til tjenestene, beskrivelsen av parameterene, endepunkter osv.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
