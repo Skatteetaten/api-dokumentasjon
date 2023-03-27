@@ -30,7 +30,7 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 ## Teknisk spesifikasjon
 [Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsforhold-api) ligger på SwaggerHub. 
 
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
 ## Datakatalog
  
