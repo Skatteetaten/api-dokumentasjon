@@ -28,9 +28,9 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 ## Teknisk spesifikasjon
 Skattemelding API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har en egen versjon pr. inntektsår. For øyeblikket leverer tjenesten skattemelding for 2022.
   
-[Open API spesifikasjon](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-api) ligger på SwaggerHub.
+[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-api) ligger på SwaggerHub.
 
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
 
 ## Rettighetspakker
   
