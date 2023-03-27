@@ -28,11 +28,11 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:be
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Beregnet skatt API - På vegne av`
 
 ## Teknisk spesifikasjon
-Det finnes for tiden 2 versjoner av denne tjenesten, og ulike rettighetspakker er støttet i ulike versjoner. Open API spesifikasjonene ligger på Swaggerhub.
+Det finnes for tiden 2 versjoner av denne tjenesten, og ulike rettighetspakker er støttet i ulike versjoner. Open API spesifikasjonene for tjenesten ligger på Swaggerhub.
 * [Versjon 1](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api/1.0.0)
 * [Versjon 2](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api)
 
-I Open API spesifikasjonen ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
   
 ## Rettighetspakker
 
