@@ -54,8 +54,6 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør uperson
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse]() i Felles datakatalog.
-
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
