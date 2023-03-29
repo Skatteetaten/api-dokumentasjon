@@ -82,8 +82,6 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell]() i Felles datakatalog.
-
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
