@@ -309,7 +309,7 @@ Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatte
 | 311851381 | |
 | 314961900 | |
 | 314055403 | |
-
+| 212201782 | |
   
 </TabItem>
 </Tabs>
