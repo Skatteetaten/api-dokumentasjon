@@ -9,7 +9,7 @@ keywords: [kravogbetalinger, krav og betalinger, innkreving]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part.</summary>
+<summary>Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part. Denne tjenesten er for tiden kun i beta-versjon, se mer informasjon på Skatteetatens [beta-Github](https://skatteetaten.github.io/beta-apier/kravogbetalinger). </summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
