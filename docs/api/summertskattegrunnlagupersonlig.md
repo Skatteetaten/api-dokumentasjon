@@ -86,8 +86,22 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
 
-Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Summert skattegrunnlag".
+## Testdata
+
+Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
+
+| Fødselsnummer | Inntektsår |
+|---|---|
+| 210962492  | 2021 |
+| 310962074  | 2021 |
+| 314247914  | 2021 |
+| 310322881  | 2022 |
+| 313739007  | 2022 |
+| 311772236  | 2022 |
+  
+Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
 </TabItem>
 </Tabs>
