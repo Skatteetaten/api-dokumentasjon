@@ -9,7 +9,7 @@ keywords: [Skatteplikt, inntekt, formue]
 last_updated: Mar 31, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer en oppsummering av formue, gjeld, inntekt og fradrag for en virksomhet.</summary>
+<summary>Tjenesten leverer informasjon om type skatteplikt og grunnlag for vurdering av skatteplikten for en virksomhet.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
