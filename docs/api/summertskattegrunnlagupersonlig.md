@@ -96,10 +96,7 @@ Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Ska
 |---|---|
 | 210962492  | 2021 |
 | 310962074  | 2021 |
-| 314247914  | 2021 |
-| 310322881  | 2022 |
-| 313739007  | 2022 |
-| 311772236  | 2022 |
+| 312282933  | 2021 |
   
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
