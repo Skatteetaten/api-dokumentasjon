@@ -68,16 +68,16 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 | Feilkode | HTTP Statuskode | Feilområde                                                                        |
 |----------|-----------------|-----------------------------------------------------------------------------------|
-| BSU-001  | 500             | Uventet feil på tjenesten.                                                        |
-| BSU-002  | 500             | Uventet feil i et bakenforliggende system.                                        |
-| BSU-003  | 404             | Ukjent url benyttet.                                                              |
-| BSU-004  | 401             | Feil i forbindelse med autentisering.                                             |
-| BSU-005  | 403             | Feil i forbindelse med autorisering.                                              |
-| BSU-006  | 400             | Feil i forbindelse med validering av inputdata.                                   |
-| BSU-007  | 404             | Ikke treff på oppgitt organisasjonsnummer.                                        |
-| BSU-008  | 404             | Ingen summert skattegrunnlag funnet på oppgitt organisasjonsnummer og inntektsår. |
-| BSU-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                        |
-| BSU-010  | 410             | Skattegrunnlag finnes ikke lenger.                                                |
+| BUP-001  | 500             | Uventet feil på tjenesten.                                                        |
+| BUP-002  | 500             | Uventet feil i et bakenforliggende system.                                        |
+| BUP-003  | 404             | Ukjent url benyttet.                                                              |
+| BUP-004  | 401             | Feil i forbindelse med autentisering.                                             |
+| BUP-005  | 403             | Feil i forbindelse med autorisering.                                              |
+| BUP-006  | 400             | Feil i forbindelse med validering av inputdata.                                   |
+| BUP-007  | 404             | Ikke treff på oppgitt organisasjonsnummer.                                        |
+| BUP-008  | 404             | Ingen beregnet skatt funnet på oppgitt organisasjonsnummer og inntektsår. |
+| BUP-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                        |
+| BUP-010  | 410             | Beregnet skatt finnes ikke lenger.                                                |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
