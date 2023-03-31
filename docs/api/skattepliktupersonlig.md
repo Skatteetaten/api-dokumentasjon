@@ -68,16 +68,16 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 | Feilkode | HTTP Statuskode | Feilområde                                                                        |
 |----------|-----------------|-----------------------------------------------------------------------------------|
-| SSU-001  | 500             | Uventet feil på tjenesten.                                                        |
-| SSU-002  | 500             | Uventet feil i et bakenforliggende system.                                        |
-| SSU-003  | 404             | Ukjent url benyttet.                                                              |
-| SSU-004  | 401             | Feil i forbindelse med autentisering.                                             |
-| SSU-005  | 403             | Feil i forbindelse med autorisering.                                              |
-| SSU-006  | 400             | Feil i forbindelse med validering av inputdata.                                   |
-| SSU-007  | 404             | Ikke treff på oppgitt organisasjonsnummer.                                        |
-| SSU-008  | 404             | Ingen summert skattegrunnlag funnet på oppgitt organisasjonsnummer og inntektsår. |
-| SSU-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                        |
-| SSU-010  | 410             | Skattegrunnlag finnes ikke lenger.                                                |
+| SUP-001  | 500             | Uventet feil på tjenesten.                                                        |
+| SUP-002  | 500             | Uventet feil i et bakenforliggende system.                                        |
+| SUP-003  | 404             | Ukjent url benyttet.                                                              |
+| SUP-004  | 401             | Feil i forbindelse med autentisering.                                             |
+| SUP-005  | 403             | Feil i forbindelse med autorisering.                                              |
+| SUP-006  | 400             | Feil i forbindelse med validering av inputdata.                                   |
+| SUP-007  | 404             | Ikke treff på oppgitt organisasjonsnummer.                                        |
+| SUP-008  | 404             | Ingen skatteplikt funnet på oppgitt organisasjonsnummer og inntektsår. |
+| SUP-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                        |
+| SUP-010  | 410             | Skatteplikt finnes ikke lenger.                                                |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
