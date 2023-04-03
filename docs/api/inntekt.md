@@ -412,6 +412,7 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |rentefordelLaan|2013-01||||
 |slitertillegg|2019-01||X||
 |supplerendeStoenadTilPersonKortBotidNorge|2013-01||X||
+|supplerendeStoenadTilUfoerFlyktning| | |X| |
 |ufoerepensjon|2013-01||X||
 |ufoerepensjonFraAndreEnnFolketrygden|2013-01||X|X*|
 |ufoereytelseEtteroppgjoerFraAndreEnnFolketrygden|2015-01||X|X*|
@@ -427,6 +428,7 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |annet|2013-01|2018-01|X|
 |dagpengerTilFisker|2013-01||X|
 |dagpengerVedArbeidsloeshet|2013-01||X|
+|kompensasjonForTaptPersoninntekt| | |X| 
 |lottKunTrygdeavgift|2016-01||X|
 |sykepenger|2013-01||X|
 |sykepengerTilDagmamma|2013-01||X|
