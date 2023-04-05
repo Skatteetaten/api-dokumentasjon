@@ -33,7 +33,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Skatteberegningsgrun
 
 ## Teknisk spesifikasjon
 
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/Skatteberegningsgrunnlag-upersonlig-api)
+[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteberegningsgrunnlag-upersonlig-api/)
 ligger på SwaggerHub.
 
 I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene,
