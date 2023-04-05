@@ -37,6 +37,7 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 | Næringsspesifikasjon hendelser API| skatteetaten:naeringsspesifikasjon |
 | Skattepliktig hendelser API | skatteetaten:skattepliktig |
 | Skatteoppgjør hendelser API | skatteetaten:spesifisertsummertskattegrunnlag, skatteetaten:summertskattegrunnlag, skatteetaten:beregnetskatt, skatteetaten:avregning, skatteetaten:skatteplikt, skatteetaten:pensjonsgivendeinntekt |
+| Skatteoppgjør upersonlig hendelser API | skatteetaten:beregnetskattupersonlig, skatteetaten:skatteberegningsgrunnlagupersonlig, skatteetaten:summertskattegrunnlagupersonlig, skatteetaten:skattepliktupersonlig |
 | Skattemelding fastsatt hendelser API | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag |
 | Skattemelding upersonlig hendelser API | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag |
 | Skattemelding utkast hendelser API | skatteetaten:skattemelding |
@@ -53,7 +54,8 @@ Open API spesifikasjon av hendelseslistene er på SwaggerHub:
 * [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-register-avgiftssubjekter-hendelser-api/)
 * [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-hendelser-api)
 * [Skattepliktig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattepliktig-hendelser-api)
-* [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteoppgjor-hendelser_api)
+* [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteoppgjor-hendelser-api)
+* [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteoppgjor-upersonlig-hendelser-api)  
 * [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-fastsatt-hendelser-api)
 * [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-upersonlig-hendelser-api)
 * [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-utkast-hendelser-api)
