@@ -37,6 +37,8 @@ Tjenesten har 4 endepunkter:
   * __Krav__: Hent alle krav innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle krav innen et gitt tidsrom på maks ett år.
   * __Innbetalinger__: Hent alle innbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle innbetalinger innen et gitt tidsrom på maks ett år.
   * __Utbetalinger__: Ikke tilgjengelig for bruk og vil komme senere. Detaljer rundt implementasjonen kan endres.
+  
+Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
  
 ## Rettighetspakker
 For denne tjenesten finns følgende rettighetspakker
@@ -300,16 +302,17 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og tes
 Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ## Testdata
-Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
+Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne.
+Vær oppmerksom på at det er et levende testdatasett som kan endre seg i løpet av testperioden. Ta kontakt dersom du har behov for ytterligere testdata.
 
-| Organisasjonsnummer | Egenskaper ved testdataene|
-|---|---|
-| 310478717 | |
-| 313367002 | |
-| 311851381 | |
-| 314961900 | |
-| 314055403 | |
-| 212201782 | |
+| Organisasjonsnummer | 
+|---|
+| 310478717 |
+| 313367002 |
+| 311851381 |
+| 314961900 |
+| 314055403 |
+| 212201782 |
   
 </TabItem>
 </Tabs>
