@@ -38,7 +38,7 @@ Tjenesten har 4 endepunkter:
   * __Innbetalinger__: Hent alle innbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle innbetalinger innen et gitt tidsrom på maks ett år.
   * __Utbetalinger__: Ikke tilgjengelig for bruk og vil komme senere. Detaljer rundt implementasjonen kan endres.
   
-Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
  
 ## Rettighetspakker
 For denne tjenesten finns følgende rettighetspakker
