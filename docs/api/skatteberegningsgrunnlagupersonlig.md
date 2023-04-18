@@ -94,9 +94,8 @@ Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Ska
 
 | Organisasjonsnummer | Inntektsår |
 |---|---|
-| 210962492  | 2021 |
-| 310962074  | 2021 |
-| 312282933  | 2021 |
+| 310322881  | 2021 |
+| 310962805  | 2021 |
   
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
