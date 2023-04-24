@@ -57,8 +57,8 @@ GET https://{env}/api/formueinntekt/summertskattegrunnlag/{rettighetspakke}/{inn
 | husbanken | oppgjoer | 
 | kommuneBoligsosialeFormaal | oppgjoer | Benytt ny url med stadie |
 | kommuneForeldrebetaling | oppgjoer og utkast | Benytt ny url med stadie |
-| kommunePersonligassistanse | oppgjoer og utkast | Benytt ny url med stadie |
-| kommuneLangtidsoppholdInstitusjon | oppgjoer og utkast | Benytt ny url med stadie |
+| kommunePersonligassistanse | oppgjoer | Benytt ny url med stadie |
+| kommuneLangtidsoppholdInstitusjon | oppgjoer | Benytt ny url med stadie |
 | laanekassen | oppgjoer | 
 | ldir | oppgjoer | 
 | nav | oppgjoer | 
