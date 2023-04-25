@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2023-04-18T00:00:00.000Z</updated>
+    <updated>2023-04-25T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Flere tjenester støtter nytt Maskinporten-domene i test]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/04/25/nytt-domene</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/04/25/nytt-domene"/>
+        <updated>2023-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Ref. tidligere info fra Digdir om ny systemarkitektur og nytt domene (test.maskinporten.no).]]></summary>
+        <content type="html"><![CDATA[<p>Ref. tidligere info fra Digdir om ny systemarkitektur og nytt domene (test.maskinporten.no).</p><p>Vi jobber med å tilrettelegge for at det skal være mulig å teste med både test og ver2 for Skatteetatens tjenester, og for de aller fleste tjenester er dette nå på plass.
+Følgende er tilrettelagt for test fra begge Maskinporten-domene den siste tiden:</p><ul><li>Arbeidsforhold API</li><li>Arbeidgiveravgift API</li><li>Avregning API</li><li>Boligsparing for ungdom API</li><li>Inntekt hendelser</li><li>Mva meldingsopplysning API</li><li>Næringsspesifikasjon hendelser</li><li>Omregistreringsavgift API</li><li>Oppdrag utenlandske virksomheter API</li><li>Pensjonsgivende inntekt API</li><li>Restanser API</li><li>Skattemelding fastsatt hendelser</li><li>Skattemelding upersonlig hendelser</li><li>Skattemelding utkast hendelser</li><li>Skatteoppgjør hendelser</li><li>Skatteplikt API</li><li>Skattepliktig API</li><li>Skattepliktig hendelser</li><li>Tilleggsskatt API</li><li>Tilleggsskatt hendelser</li></ul><p>Flere tjenester ble listet i et <!-- -->.
+Av Skattedelingstjenestene er det kun Aktiv konto API og Pensjonsgivende inntekt for folketrygden API som gjenstår pt.</p>]]></content>
+        <category label="Nyhet" term="Nyhet"/>
+        <category label="Maskinporten" term="Maskinporten"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Planlagt nedetid 20.April]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/04/18/Planlagt-nedetid</id>
