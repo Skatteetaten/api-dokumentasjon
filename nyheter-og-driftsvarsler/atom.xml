@@ -8,6 +8,15 @@
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
     <entry>
+        <title type="html"><![CDATA[Planlagt nedetid 27.April]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/04/25/Vedlikehold</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/04/25/Vedlikehold"/>
+        <updated>2023-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Det er behov for å utføre nødvendig vedlikehold torsdag 27.april fra kl. 18.00 til kl. 19.00. Jobben vil medføre nedetid.]]></summary>
+        <content type="html"><![CDATA[<p>Det er behov for å utføre nødvendig vedlikehold torsdag 27.april fra kl. 18.00 til kl. 19.00. Jobben vil medføre nedetid.</p>]]></content>
+        <category label="Nyhet" term="Nyhet"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Flere tjenester støtter nytt Maskinporten-domene i test]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/04/25/nytt-domene</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/04/25/nytt-domene"/>
