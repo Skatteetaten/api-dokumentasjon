@@ -9,7 +9,7 @@ keywords: [Skatteberegningsgrunnlag, inntekt, formue]
 last_updated: Mar 31, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer ... for en virksomhet.</summary>
+<summary>Tjenesten leverer opplysninger som fremkommer i skatteberegningsgrunnlaget for en virksomhet.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
