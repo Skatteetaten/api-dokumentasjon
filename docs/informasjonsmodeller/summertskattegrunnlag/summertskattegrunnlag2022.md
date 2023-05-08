@@ -312,37 +312,37 @@ Tabellen nedenfor er ikke endelig.
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d96-ff95-11e8-a756-005056823b15">verdsettingsrabattForKapitalisertFesteavgift</a></td><td>verdsettingsrabattSomGirGjeldsreduksjon</td><td>Verdsettingsrabatt av kapitalisert festeavgift</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d97-ff95-11e8-a756-005056823b15">verdsettingsrabattForRettigheterKnyttetTilSkogUtmark</a></td><td>verdsettingsrabattSomGirGjeldsreduksjon</td><td>Verdsettingsrabatt knyttet til skog</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d98-ff95-11e8-a756-005056823b15">verdsettingsrabattForSkipFiskeOgFangstfartoey</a></td><td>verdsettingsrabattSomGirGjeldsreduksjon</td><td>Verdsettingsrabatt på skip og fartøy</td></tr>
-<tr><td>andreFradragsberettigedeKostnader</td><td>inntektsfradrag</td><td></td></tr>
-<tr><td>annenSkattepliktigKapitalinntektFraVirtuellValuta</td><td>inntekt</td><td></td></tr>
-<tr><td>dagpengerForNaeringsdrivendeOgFisker</td><td>inntekt</td><td></td></tr>
-<tr><td>fradragsberettigetTapVedRealisasjonAvFastEiendomIUtlandet</td><td>inntektsfradrag</td><td></td></tr>
-<tr><td>gevinstVedRealisasjonAvAksjeOgVerdipapirfondAksjedel</td><td>inntekt</td><td></td></tr>
-<tr><td>gevinstVedRealisasjonAvFastEiendomMvIUtlandet</td><td>inntekt</td><td></td></tr>
-<tr><td>gevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel</td><td>inntekt</td><td></td></tr>
-<tr><td>naeringsinntektFraKompensasjonsytelseUtbetaltAvNavInnenFiskeOgFangst</td><td>-</td><td></td></tr>
-<tr><td>oppjustertTilleggTilAndelIFellesTilleggIAlminneligInntektFraSDFInnenAnnenNaering</td><td>oppjusteringAvEierinntekter</td><td></td></tr>
-<tr><td>oppjustertTilleggTilAndelIFellesTilleggIAlminneligInntektFraSDFInnenBarnepassIBarnepasserensHjem</td><td>oppjusteringAvEierinntekter</td><td></td></tr>
-<tr><td>oppjustertTilleggTilGevinstVedRealisasjonAvAksjeOgVerdipapirfondAksjedel</td><td>oppjusteringAvEierinntekter</td><td></td></tr>
-<tr><td>oppjustertTilleggTilGevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel</td><td>oppjusteringAvEierinntekter</td><td></td></tr>
-<tr><td>personinntektFraKompensasjonsytelseUtbetaltAvNavInnenFiskeOgFangst</td><td>inntekt</td><td></td></tr>
-<tr><td>renteinntektAvObligasjonVerdipapirfondRentedelMv</td><td>inntekt</td><td></td></tr>
-<tr><td>samledeAndrePaaloepteRenter</td><td>inntektsfradrag</td><td></td></tr>
-<tr><td>samledeOpptjenteRenterIUtenlandskeBanker</td><td>inntekt</td><td></td></tr>
-<tr><td>samledeUfoererenterOgLivrenter</td><td>inntekt</td><td></td></tr>
-<tr><td>samletAnnenPensjonUtenTrekkplikt</td><td>inntekt</td><td></td></tr>
-<tr><td>samletBarnepensjonOgLivrente</td><td>inntekt</td><td></td></tr>
-<tr><td>samletBarnepensjonOgLivrenteTilBarn</td><td>inntekt</td><td></td></tr>
-<tr><td>samletFormuesverdiAvPrivatUtestaaendeFordring</td><td>formue</td><td></td></tr>
-<tr><td>samletFormuesverdiForSekundaerbolig</td><td>formue</td><td></td></tr>
-<tr><td>samletFradragsberettigetKostnadTilknyttetArbeidMv</td><td>inntektsfradrag</td><td></td></tr>
-<tr><td>samletFradragsberettigetUnderskuddVedUtleieAvFastEiendom</td><td>inntektsfradrag</td><td></td></tr>
-<tr><td>samletGjenkjoepsverdiForLivsforsikring</td><td>formue</td><td></td></tr>
-<tr><td>samletInnskuddIInnenlandskeBanker</td><td>formue</td><td></td></tr>
-<tr><td>samletInntektSomGirRettTilSaerskiltFradragForSjoefolk</td><td>inntekt</td><td></td></tr>
-<tr><td>samletLoennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt</td><td>inntekt</td><td></td></tr>
-<tr><td>samletMerkostnadVedArbeidsoppholdUtenforHjem</td><td>inntektsfradrag</td><td></td></tr>
-<tr><td>samletPensjonFraFolketrygden</td><td>inntekt</td><td></td></tr>
-<tr><td>samletSkattepliktigOverskuddFraUtleieAvFastEiendom</td><td>inntekt</td><td></td></tr>
-<tr><td>skattepliktigEtterloennOgEtterpensjon</td><td>inntekt</td><td></td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325cd4-ff95-11e8-a756-005056823b15">andreFradragsberettigedeKostnader</a></td><td>inntektsfradrag</td><td>Andre fradrag</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/f214b8cc-885b-174d-98c0-20b08826c44e">annenSkattepliktigKapitalinntektFraVirtuellValuta</a></td><td>inntekt</td><td>Annen skattepliktig kapitalinntekt fra virtuelle eiendeler / kryptovaluta</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325cd9-ff95-11e8-a756-005056823b15">dagpengerForNaeringsdrivendeOgFisker</a></td><td>inntekt</td><td>Dagpenger for næringsdrivende herunder fiskere</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d72-ff95-11e8-a756-005056823b15">fradragsberettigetTapVedRealisasjonAvFastEiendomIUtlandet</a></td><td>inntektsfradrag</td><td>Tap ved salg eller annen realisasjon av fast eiendom i utlandet</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/1e3330b4-6837-11e6-a7ce-fac03dffe1d7">gevinstVedRealisasjonAvAksjeOgVerdipapirfondAksjedel</a></td><td>inntekt</td><td>Gevinst ved salg av aksjer og verdipapirfond aksjedel</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325ce9-ff95-11e8-a756-005056823b15">gevinstVedRealisasjonAvFastEiendomMvIUtlandet</a></td><td>inntekt</td><td>Gevinst ved salg av fast eiendom i utlandet</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325cea-ff95-11e8-a756-005056823b15">gevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel</a></td><td>inntekt</td><td>Gevinst ved salg av verdipapirfond aksjedel kombifond</td></tr>
+<tr><td>naeringsinntektFraKompensasjonsytelseUtbetaltAvNavInnenFiskeOgFangst</td><td>-</td><td>Næringsinntekt av kompensasjon fra NAV - fiske og fangst</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325cfc-ff95-11e8-a756-005056823b15">oppjustertTilleggTilAndelIFellesTilleggIAlminneligInntektFraSDFInnenAnnenNaering</a></td><td>oppjusteringAvEierinntekter</td><td>Oppjustering av tillegg i alminnelig inntekt fra selskap med deltakerfastsetting</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325cfd-ff95-11e8-a756-005056823b15">oppjustertTilleggTilAndelIFellesTilleggIAlminneligInntektFraSDFInnenBarnepassIBarnepasserensHjem</a></td><td>oppjusteringAvEierinntekter</td><td>Oppjustering av tillegg i alminnelig inntekt fra selskap med deltakerfastsetting innen fiske eller familiebarnehage</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d04-ff95-11e8-a756-005056823b15">oppjustertTilleggTilGevinstVedRealisasjonAvAksjeOgVerdipapirfondAksjedel</a></td><td>oppjusteringAvEierinntekter</td><td>Oppjustering av gevinst ved salg av aksjer og verdipapirfond aksjedel</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d02-ff95-11e8-a756-005056823b15">oppjustertTilleggTilGevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel</a></td><td>oppjusteringAvEierinntekter</td><td>Oppjustering av gevinst ved salg av verdipapirfond aksjedel kombifond</td></tr>
+<tr><td>personinntektFraKompensasjonsytelseUtbetaltAvNavInnenFiskeOgFangst</td><td>inntekt</td><td>Personinntekt av kompensasjon fra NAV - fiske og fangst</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/1e3330a8-6837-11e6-a7ce-fac03dffe1d7">renteinntektAvObligasjonVerdipapirfondRentedelMv</a></td><td>inntekt</td><td>Renteinntekter fra verdipapirfond rentedel, obligasjoner/sertifikater</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325cd5-ff95-11e8-a756-005056823b15">samledeAndrePaaloepteRenter</a></td><td>inntektsfradrag</td><td>Renter av annen gjeld</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d1f-ff95-11e8-a756-005056823b15">samledeOpptjenteRenterIUtenlandskeBanker</a></td><td>inntekt</td><td>Renter på bankinnskudd i utenlandsk bank</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d23-ff95-11e8-a756-005056823b15">samledeUfoererenterOgLivrenter</a></td><td>inntekt</td><td>Uførerenter og livrenter i og utenfor arbeidsforhold</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d28-ff95-11e8-a756-005056823b15">samletAnnenPensjonUtenTrekkplikt</a></td><td>inntekt</td><td>Andre pensjoner uten skattetrekk</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d2d-ff95-11e8-a756-005056823b15">samletBarnepensjonOgLivrente</a></td><td>inntekt</td><td>Barnepensjon og livrente</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d2e-ff95-11e8-a756-005056823b15">samletBarnepensjonOgLivrenteTilBarn</a></td><td>inntekt</td><td>Barnepensjon og livrente til dine barn som er 16 år eller yngre</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d36-ff95-11e8-a756-005056823b15">samletFormuesverdiAvPrivatUtestaaendeFordring</a></td><td>formue</td><td>Lån til selskap</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d37-ff95-11e8-a756-005056823b15">samletFormuesverdiForSekundaerbolig</a></td><td>formue</td><td>Sekundærbolig</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d39-ff95-11e8-a756-005056823b15">samletFradragsberettigetKostnadTilknyttetArbeidMv</a></td><td>inntektsfradrag</td><td>Faktiske kostnader</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d3a-ff95-11e8-a756-005056823b15">samletFradragsberettigetUnderskuddVedUtleieAvFastEiendom</a></td><td>inntektsfradrag</td><td>Underskudd ved utleie</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d3e-ff95-11e8-a756-005056823b15">samletGjenkjoepsverdiForLivsforsikring</a></td><td>formue</td><td>Gjenkjøpsverdi av forsikringsavtale</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d40-ff95-11e8-a756-005056823b15">samletInnskuddIInnenlandskeBanker</a></td><td>formue</td><td>Bankinnskudd</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d41-ff95-11e8-a756-005056823b15">samletInntektSomGirRettTilSaerskiltFradragForSjoefolk</a></td><td>inntekt</td><td>Lønn til sjøfolk</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d43-ff95-11e8-a756-005056823b15">samletLoennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d44-ff95-11e8-a756-005056823b15">samletMerkostnadVedArbeidsoppholdUtenforHjem</a></td><td>inntektsfradrag</td><td>Merkostnader ved arbeidsopphold utenfor hjemmet</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/cf247ff6-dfe5-11e7-9101-005056821322">samletPensjonFraFolketrygden</a></td><td>inntekt</td><td>Alderspensjon fra folketrygden</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d53-ff95-11e8-a756-005056823b15">samletSkattepliktigOverskuddFraUtleieAvFastEiendom</a></td><td>inntekt</td><td>Utleie av fast eiendom</td></tr>
+<tr><td>skattepliktigEtterloennOgEtterpensjon</td><td>inntekt</td><td>Skattepliktig etterlønn og etterpensjon</td></tr>
   </tbody>
 </table>
