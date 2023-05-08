@@ -32,7 +32,7 @@ For SBL, betyr S at feltet utleveres med spesifikasjoner, og X at det utleveres 
     </tr>
   </thead>
   <tbody>
-
+<tr><td><a href="https://data.skatteetaten.no/begrep/367f2cd6-a9e1-11e8-8514-005056821322">aaretsFremfoerbareNegativPersoninntekt</a></td><td></td><td>Ubenyttet negativ personinntekt i enkeltpersonforetak til fremføring</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf247ff6-dfe5-11e7-9101-005056821322">alderspensjonFraFolketrygden</a></td><td>inntekt</td><td>Alderspensjon fra folketrygden</td><td>KollektivPensjonsordning</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/46f4d75e-4c6c-11e8-bb3e-005056821322">alderspensjonFraIPAOgIPS</a></td><td>inntekt</td><td>Alderspensjon fra individuell pensjonsordning (IPS/IPA)</td><td>KollektivPensjonsordning</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cc89e443-940f-11e9-a790-005056823b15">alminneligInntektFoerSaerfradrag</a></td><td>-</td><td>Alminnelig inntekt før særfradrag</td><td></td><td></td></tr>
@@ -147,6 +147,7 @@ For SBL, betyr S at feltet utleveres med spesifikasjoner, og X at det utleveres 
 <tr><td><a href="https://data.skatteetaten.no/begrep/b57408d8-d96a-11e6-8d9b-005056821322">livrenterUtenforArbeidsforhold</a></td><td>inntekt</td><td>Livrenter utenfor arbeidsforhold</td><td>Livsforsikring</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d43-ff95-11e8-a756-005056823b15">loennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer, uten trygdeavgift</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/367f2ca4-a9e1-11e8-8514-005056821322">loennsinntektMedTrygdeavgiftspliktOmfattetAvLoennstrekkordningen</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer - Svalbard</td><td></td><td>X</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325cf9-ff95-11e8-a756-005056823b15">loennsinntektPaaSvalbardOver12G</a></td><td>inntekt</td><td>Lønnsinntekt på Svalbard over 12G</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325cfa-ff95-11e8-a756-005056823b15">loennsinntektTilBarn</a></td><td>inntekt</td><td>Lønn til barn som er 12 år eller yngre</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/367f2ca5-a9e1-11e8-8514-005056821322">loennsinntektUtenTrygdeavgiftspliktOmfattetAvLoennstrekkordningen</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer - Svalbard</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/367f2ca7-a9e1-11e8-8514-005056821322">minstefradragIBarnepensjon</a></td><td>inntektsfradrag</td><td>Minstefradrag i egen barnepensjon</td><td></td><td></td></tr>
@@ -185,12 +186,14 @@ For SBL, betyr S at feltet utleveres med spesifikasjoner, og X at det utleveres 
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d10-ff95-11e8-a756-005056823b15">opptjenteRenterFraPrivatUtestaaendeFordring</a></td><td>inntekt</td><td>Renteinntekter fra lån til selskap</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/7a5fd2c1-b2b3-b749-8298-a90daf1d47a2">opptjenteRenterFraUtestaaendeFordring</a></td><td>inntekt</td><td>Renteinntekter fra andre krav/fordringer</td><td>Fordring</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d11-ff95-11e8-a756-005056823b15">overgangsstoenadTilEnsligForelder</a></td><td>inntekt</td><td>Overgangsstønad til enslig forsørger</td><td></td><td>X</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/cc89e449-940f-11e9-a790-005056823b15">overskuddAvEnkeltpersonforetakInnenAnnenNaeringUtenTrygdeavgiftsplikt</a></td><td>inntekt</td><td>Overskudd av enkeltpersonforetak innen annen næring uten trygdeavgiftsplikt</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d13-ff95-11e8-a756-005056823b15">overskuddAvEnkeltpersonforetakInnenJordbrukGartneriPelsdyrMv</a></td><td>inntekt</td><td>Overskudd fra jordbruk, gartneri og pelsdyrnæring</td><td>Naeringsopplysninger</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d14-ff95-11e8-a756-005056823b15">overskuddAvEnkeltpersonforetakInnenReindrift</a></td><td>inntekt</td><td>Overskudd fra reindrift</td><td>Naeringsopplysninger</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d15-ff95-11e8-a756-005056823b15">overskuddAvEnkeltpersonforetakInnenSkiferproduksjon</a></td><td>inntekt</td><td>Overskudd fra skiferproduksjon</td><td>Naeringsopplysninger</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d16-ff95-11e8-a756-005056823b15">overskuddAvEnkeltpersonforetakInnenSkogbruk</a></td><td>inntekt</td><td>Overskudd fra skogbruk</td><td>Naeringsopplysninger</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6d121445-ff64-6e41-85d8-f8a3fd9d67db">overskuddAvSDF</a></td><td>inntekt</td><td>Andel av overskudd fra selskap med deltakerfastsetting</td><td>DeltakersAndelAvFormueOgInntekt</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/8ea2df61-7662-11e6-a74e-7e18b36b3fd9">overskuddAvUtgiftsgodtgjoerelseVedSmusstillegg</a></td><td>inntekt</td><td>Smusstillegg</td><td></td><td>X</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/cc89e44a-940f-11e9-a790-005056823b15">overskuddFraNaeringsinntekt</a></td><td>inntekt</td><td></td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d1c-ff95-11e8-a756-005056823b15">paaloepteRenterFraAnnenGjeld</a></td><td>inntektsfradrag</td><td>Renter av annen gjeld</td><td>PrivatGjeldsforholdUtenforVirksomhet</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/0fd0c436-4b24-704b-a0ea-e73a18a2a12a">paaloepteRenterFraInkassoselskap</a></td><td>inntektsfradrag</td><td>Rentekostnader til inkassoselskap</td><td>AnnenKapitalkostnad</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d64-ff95-11e8-a756-005056823b15">pensjonFraUtlandetSkattefriINorge</a></td><td>inntekt</td><td>Skattefri pensjon fra utlandet</td><td></td><td>X</td></tr>
@@ -258,6 +261,7 @@ For SBL, betyr S at feltet utleveres med spesifikasjoner, og X at det utleveres 
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d63-ff95-11e8-a756-005056823b15">skattefriLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer, med trygdeavgift</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/1e3330b1-6837-11e6-a7ce-fac03dffe1d7">skattepliktigAvkastningEllerKundeutbytte</a></td><td>inntekt</td><td>Skattepliktig avkastning kundeutbytte mv.</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/633c97eb-8c44-184e-ba4e-9356097a690a">skjermingstilleggTilAlderspensjon</a></td><td>inntekt</td><td>Skjermingstillegg til alderspensjon</td><td></td><td>X</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/1e3330db-6837-11e6-a7ce-fac03dffe1d7">skjermingsfradrag</a></td><td>inntekt</td><td>Benyttet skjermingsfradrag</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf248012-dfe5-11e7-9101-005056821322">skyldigRestskatt</a></td><td>formuesfradrag</td><td>Skyldig restskatt</td><td>SkyldigRestskatt</td><td>S</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf248013-dfe5-11e7-9101-005056821322">skyldigUnderholdsbidrag</a></td><td>formuesfradrag</td><td>Skyldig underholdsbidrag</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/a86dbf37-34ea-f449-93b5-bc281290e3ba">slitertillegg</a></td><td>inntekt</td><td>Slitertillegg</td><td></td><td>X</td></tr>
@@ -266,6 +270,8 @@ For SBL, betyr S at feltet utleveres med spesifikasjoner, og X at det utleveres 
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d6a-ff95-11e8-a756-005056823b15">sumFradragIAlminneligInntekt</a></td><td>-</td><td>Sum fradrag</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d6b-ff95-11e8-a756-005056823b15">sumGjeldsreduksjon</a></td><td>formuesfradrag</td><td>Reduksjon av gjeld på grunn av verdsettingsrabatt</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d6c-ff95-11e8-a756-005056823b15">sumInntekterIAlminneligInntektFoerFordelingsfradrag</a></td><td>-</td><td>Sum inntekter</td><td></td><td></td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/367f2ccb-a9e1-11e8-8514-005056821322">sumMinstefradrag</a></td><td>inntektsfradrag</td><td>Sum minstefradrag</td><td></td><td></td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/cc89e450-940f-11e9-a790-005056823b15">sumVerdsettingsrabatt</a></td><td>formue</td><td>Sum verdsettingsrabatt</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf248016-dfe5-11e7-9101-005056821322">supplerendeStoenad</a></td><td>inntekt</td><td>Supplerende stønad til personer med kort botid i Norge</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/7d304930-ae58-d945-a064-aec59a7952b7">supplerendeStoenadTilUfoerFlyktning</a></td><td>inntekt</td><td>Supplerende stønad til uføre flyktninger</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/c77124bf-f7d3-7846-942b-47011d4ef9d1">tapOgAnnenKostnadFraVirtuellEiendel</a></td><td>inntektsfradrag</td><td>Tap ved salg og annen kostnad av virtuelle eiendeler / kryptovaluta</td><td></td><td>X</td></tr>
@@ -349,6 +355,7 @@ For SBL, betyr S at feltet utleveres med spesifikasjoner, og X at det utleveres 
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d43-ff95-11e8-a756-005056823b15">samletLoennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d44-ff95-11e8-a756-005056823b15">samletMerkostnadVedArbeidsoppholdUtenforHjem</a></td><td>inntektsfradrag</td><td>Merkostnader ved arbeidsopphold utenfor hjemmet</td><td></td><td>X</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf247ff6-dfe5-11e7-9101-005056821322">samletPensjonFraFolketrygden</a></td><td>inntekt</td><td>Alderspensjon fra folketrygden</td><td></td><td>X</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d4b-ff95-11e8-a756-005056823b15">samletPensjonsinnbetalingTilIndividuellPensjonsordning</a></td><td>inntektsfradrag</td><td>Innbetaling til individuell pensjonsordning (IPS)</td><td></td><td></td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d53-ff95-11e8-a756-005056823b15">samletSkattepliktigOverskuddFraUtleieAvFastEiendom</a></td><td>inntekt</td><td>Utleie av fast eiendom</td><td></td><td>X</td></tr>
 <tr><td>skattepliktigEtterloennOgEtterpensjon</td><td>inntekt</td><td>Skattepliktig etterlønn og etterpensjon</td><td></td><td>X</td></tr>
   </tbody>
