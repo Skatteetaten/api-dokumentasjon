@@ -37,9 +37,10 @@ I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tj
 | Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|
 | ebevis | Krever samtykke |
+| arbeidstilsynet | Hjemmel |
  
 ## Samtykke
-Tjenesten krever [samtykke](../om/samtykke.md).
+For enkelte rettighetspakker krever tjenesten [samtykke](../om/samtykke.md).
 
 | Tjenestekode | Formål |
 |--------| ------ |
