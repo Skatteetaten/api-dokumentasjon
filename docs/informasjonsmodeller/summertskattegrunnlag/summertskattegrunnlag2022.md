@@ -187,7 +187,7 @@ Tabellen nedenfor er ikke endelig.
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d16-ff95-11e8-a756-005056823b15">overskuddAvEnkeltpersonforetakInnenSkogbruk</a></td><td>inntekt</td><td>Overskudd fra skogbruk</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6d121445-ff64-6e41-85d8-f8a3fd9d67db">overskuddAvSDF</a></td><td>inntekt</td><td>Andel av overskudd fra selskap med deltakerfastsetting</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/8ea2df61-7662-11e6-a74e-7e18b36b3fd9">overskuddAvUtgiftsgodtgjoerelseVedSmusstillegg</a></td><td>inntekt</td><td>Smusstillegg</td></tr>
-<tr><td><a href="https://data.skatteetaten.no/begrep/cc89e44a-940f-11e9-a790-005056823b15">overskuddFraNaeringsinntekt</a></td><td>inntekt</td><td></td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/cc89e44a-940f-11e9-a790-005056823b15">overskuddFraNaeringsinntekt</a></td><td>inntekt</td><td>Overskudd fra næringsinntekt</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d1c-ff95-11e8-a756-005056823b15">paaloepteRenterFraAnnenGjeld</a></td><td>inntektsfradrag</td><td>Renter av annen gjeld</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/0fd0c436-4b24-704b-a0ea-e73a18a2a12a">paaloepteRenterFraInkassoselskap</a></td><td>inntektsfradrag</td><td>Rentekostnader til inkassoselskap</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d64-ff95-11e8-a756-005056823b15">pensjonFraUtlandetSkattefriINorge</a></td><td>inntekt</td><td>Skattefri pensjon fra utlandet</td></tr>
