@@ -8,7 +8,7 @@
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[Vedlikehold]]></title>
+        <title type="html"><![CDATA[Planlagt nedetid]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/05/25/Driftsvarsel</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/05/25/Driftsvarsel"/>
         <updated>2023-05-25T00:00:00.000Z</updated>
