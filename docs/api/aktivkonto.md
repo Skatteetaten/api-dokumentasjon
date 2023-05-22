@@ -28,21 +28,12 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:ak
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Aktiv konto API - På vegne av`
 
 ## Teknisk spesifikasjon
-  
-URL har følgede oppbygging:
 
-```bash
-POST https://<env>/api/aktivkonto/ekstern/<versjon>/tin
-```
-Versjoner
-- `<v1>`: Støtter virksomhetssertifikat
-- `<v2>`: Støtter Maskinporten
-- `<v3>`: Støtter Maskinporten og returnerer feilresponser som følger datasamarbeids feilkode-standard
+[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/aktivkonto-api)
+ligger på SwaggerHub.
 
-Tjenesten krever innsending av JSON-objekt med følgende format:
-```bash
-{ "tin": "<personidentifikator>" }
-```
+I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene,
+endepunkter osv.
 
 </TabItem>
 
@@ -53,26 +44,23 @@ Tjenesten krever innsending av JSON-objekt med følgende format:
 Her er et eksempel på en spørring med curl mot tjenesten. Du må generere et gyldig [Maskinporten](../om/sikkerhet.md)-token og legge til i header.
 
 ```bash
-curl -i -X POST 'https://api-test.sits.no/api/aktivkonto/ekstern/v3/tin' -H "Authorization: Bearer <maskinporten token>" -H "Content-Type: application/json"  -d '{"tin": "<personidentifikator>"}'
+curl -v -H "Authorization: Bearer <maskinporten token>" -H "Content-Type: application/json" "https://api-test.sits.no/api/aktivkonto/v3/28707299217"
 ```
 
 ## JSON
 
 ```json
 {
-  "tin":"17816994780",
-  "kontoDto": {
-    "kontonummer":"32432567604",
-    "kontotype":"innskuddskontoINOK",
-    "skattekontoegnethet":"brukskonto",
-    "bicEllerSwift":null,
-    "bankkode":null,
-    "bankNavn":"Bank1",
-    "bankLandkode":null,
-    "iban":null,
-    "valuta":null,
-    "erUtbetalingskort":false,
-    "valgtDato":"2020-03-23"
+  "personidentifikator": "28707299217",
+  "konto": {
+    "kontotype": "innskuddskontoIValuta",
+    "skattekontoegnethet": "brukskonto",
+    "bicEllerSwift": "DOGBPLUZEXP",
+    "bankNavn": "Doggerbanken",
+    "bankLandkode": "PL",
+    "iban": "PL0828538647323163",
+    "erUtbetalingskort": false,
+    "valgtDato": "2022-11-01"
   }
 }
 ```
@@ -81,13 +69,19 @@ curl -i -X POST 'https://api-test.sits.no/api/aktivkonto/ekstern/v3/tin' -H "Aut
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. 
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
 
-| HTTP status | Feilkode | Feilmelding |
-|-------------|----------|-------------|
-| 400         | AKE-001 | Tin mangler |
-| 404         | AKE-002 | Fant ikke partsnummer for oppgitt tin |
-| 500         | AKE-003 | Feil oppstod under oppslag av aktiv konto |
+| Feilkode | HTTP Statuskode | Feilområde                                                 |
+|----------|-----------------|------------------------------------------------------------|
+| AKE-001  | 500             | Uventet feil på tjenesten.                                 |
+| AKE-002  | 500             | Uventet feil i et bakenforliggende system.                 |
+| AKE-003  | 404             | Ukjent url benyttet.                                       |
+| AKE-004  | 401             | Feil i forbindelse med autentisering.                      |
+| AKE-005  | 403             | Feil i forbindelse med autorisering.                       |
+| AKE-006  | 400             | Feil i forbindelse med validering av inputdata.            |
+| AKE-007  | 404             | Ingen treff på oppgitt fødselsnummer.                      |
+| AKE-008  | 404             | Fant ingen aktiv konto for oppgitt fødselsnummer.          |
+| AKE-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |  
   
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
@@ -98,14 +92,12 @@ Tjenesten returnerer data på JSON-formatet. JSON-objektet er basert på et XML-
 
 Rotobjektet vil alltid returneres ved en positiv repons.
 
-| Navn på felt | JSON-type | Beskrivelse                                                |
-|--------------|-----------|------------------------------------------------------------|
-| tin          | String | Gjeldende personidentifikator for personen det ble søkt på |
-| kontoDto     | Array | Oversikt over [objekter av kontoDto](#objekt-i-kontoDto)   |
+| Navn på felt     | JSON-type | Beskrivelse                                               |
+|------------------|-----------|-----------------------------------------------------------|
+| personidentifikator | String    | Gjeldende personidentifikator for personen det ble søkt på |
+| konto            | Object    | Aktiv [konto](#Konto)                                     |
 
-## Objekt i kontoDto
-
-Definerer objektet som kan ligge i listen kontoDto i [rotobjektet](#rotobjekt)
+## Konto
 
 | Navn på felt | JSON-type | Beskrivelse                                                                                           |
 | -------------|-----------|-------------------------------------------------------------------------------------------------------|
