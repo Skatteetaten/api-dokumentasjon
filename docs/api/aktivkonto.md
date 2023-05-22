@@ -35,6 +35,8 @@ ligger på SwaggerHub.
 I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene,
 endepunkter osv.
 
+## Datakatalog
+
 </TabItem>
 
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
