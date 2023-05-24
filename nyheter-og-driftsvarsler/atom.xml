@@ -8,13 +8,13 @@
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[Planlagt nedetid]]></title>
+        <title type="html"><![CDATA[Planlagt nedetid på Aktiv konto API]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/05/25/Driftsvarsel</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/05/25/Driftsvarsel"/>
         <updated>2023-05-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[25. mai kl 18.00 - 19.00 skal det gjennomføres oppgradering av databasene til Aktiv konto,]]></summary>
-        <content type="html"><![CDATA[<ol start="25"><li>mai kl 18.00 - 19.00 skal det gjennomføres oppgradering av databasene til Aktiv konto,
-det vil medføre nedetid i Aktiv konto API og tjenesten vil være utilgjengelige i dette tidsrommet.</li></ol>]]></content>
+        <summary type="html"><![CDATA[OBS: Oppgraderingen er utsatt til 3. eller 4. juni.]]></summary>
+        <content type="html"><![CDATA[<p>OBS: Oppgraderingen er utsatt til 3. eller 4. juni. </p><p><del>25. mai kl 18.00 - 19.00</del> skal det gjennomføres oppgradering av databasene til Aktiv konto,
+det vil medføre nedetid i Aktiv konto API og tjenesten vil være utilgjengelige i dette tidsrommet.</p>]]></content>
         <category label="Nyhet" term="Nyhet"/>
     </entry>
     <entry>
