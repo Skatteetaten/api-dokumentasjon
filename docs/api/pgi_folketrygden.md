@@ -90,6 +90,9 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | 400 | PGIF-007 | Inntektsår har ikke gyldig format |
 | 400 | PGIF-008 | Personidentifikator har ikke gyldig format |
 | 404 | PGIF-009 | Fant ingen person for gitt identifikator |
+| 403 | PGIF-010 | Feil i forbindelse med autorisering |
+| 406 | PGIF-011 | Feil tilknyttet dataformat. Kun json støttet. | 
+
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
