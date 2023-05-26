@@ -117,24 +117,35 @@ Følgende personer har tilleggsskatt:
 |---|---|---|
 | 11891047306 | 2020 | Fødselsnummer |
 | 14881648394 | 2020 | Fødselsnummer |
+| 01820099997 | 2020 | Hatt D-nummer |
 | 07891448702 | 2021 | Fødselsnummer |
 | 16834899217 | 2021 | Fødselsnummer |
 | 18881248448 | 2021 | Fødselsnummer |
 | 64824401150 | 2021 | D-nummer |
-| 47896100285 | 2021 | D-nummer |
-| 01820099997 | 2020 | Hatt D-nummer |
 | 14865998989 | 2021 | Fortrolig |
 | 28893949951 | 2021 | Streng fortrolig |
-
+| 13905499313 | 2022 | Fødselsnummer |
+| 15852048104 | 2022 | Fødselsnummer |
+| 08845198927 | 2022 | Fødselsnummer |
+| 57836101938 | 2022 | D-nummer |
+| 19925398694 | 2022 | Fortrolig |
+| 19872347995 | 2022 | Streng fortrolig |  
+| 10852149448 | 2022 | Kommunenummer 2312, Sokkel utland |
+  
+Ytterligere testdata kan man benytte hendelseslisten for å finne.
+  
 Kun organisasjoner som er AS kan ha tilleggsskatt. Følgende enheter har skatteplikt:
 
-| Organisasjonsnummer | Organisasjonsform | Inntektsår |
-|---|---|---|
-| 210201602 | AS | 2020 |
-| 213997572 | AS | 2020 |
-| 312676281 | AS | 2021 |
-| 313527603 | AS | 2021 |
-| 314259203 | AS | 2021 |
+| Organisasjonsnummer | Inntektsår |
+|---|---|
+| 210201602 | 2020 |
+| 213997572 | 2020 |
+| 312676281 | 2021 |
+| 313527603 | 2021 |
+| 314259203 | 2021 |
+| 312677660 | 2022 |
+| 313739007 | 2022 |
+| 310799262 | 2022 |
   
 </TabItem>
 </Tabs>
