@@ -28,17 +28,11 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:pe
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Pensjonsgivende inntekt for folketrygden API - På vegne av`
 
 ## Teknisk spesifikasjon
-
-URL har følgede oppbygging:
-
-```bash
-GET https://<env>/api/formueinntekt/pensjonsgivendeinntektforfolketrygden/<inntektsaar>/<personidentifikator>
-```
-
-* `<env>`: Miljø-spesifikk adresse
-* `<inntektsaar>`: Inntektsåret man spør om informasjon for, i formatet YYYY. Tjenesten støtter inntektsår 2017 og utover.
-* `<personidentifikator>`: Hvilket fødselsnummer eller D-nummer man spør om informasjon for.
-
+[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsforhold-api) ligger på SwaggerHub. 
+Tjenesten støtter inntektsår 2017 og utover.
+    
+I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+    
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
@@ -47,7 +41,7 @@ GET https://<env>/api/formueinntekt/pensjonsgivendeinntektforfolketrygden/<innte
 Her er et eksempel på en spørring med curl mot tjenesten. Du må generere et gyldig [Maskinporten](../om/sikkerhet.md)-token og legge til i header.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-at.sits.no/api/formueinntekt/pensjonsgivendeinntektforfolketrygden/2019/02116049964"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/pensjonsgivendeinntektforfolketrygden/2022/08819797596"
 ```
 
 ## JSON
