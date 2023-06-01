@@ -272,85 +272,85 @@ For rettighetspakke `otp` er inntekter som blir utdelt fra andre enn opplysnings
 Oversikt over hvilke *&lt;beskrivelse&gt;* koder som brukes for *&lt;loennsinntekt&gt;*. 
 Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk.
 
-|verdi| gyldig fra og med | gyldig til | sbl | otp |
-|--------|--------|--------|--------|-------|
-|administrativForpleining|2013-01|2016-01|||
-|aksjerGrunnfondsbevisTilUnderkurs|2013-01|||X|
-|annet|2013-01||X|X|
-|arbeidsoppholdKost|2013-01|||X|
-|arbeidsoppholdLosji|2013-01|||X|
-|bedriftsbarnehageplass|2013-01|2019-01|X||
-|beregnetSkatt|2013-01||X|X|
-|besoeksreiserHjemmetAnnet|2013-01||||
-|besoeksreiserHjemmetKilometergodtgjoerelseBil|2013-01|||X|
-|besoeksreiserHjemmetKost|2013-01||||
-|betaltUtenlandskSkatt|2017-01||X||
-|bil|2013-01||X|X|
-|bolig|2013-01||X|X|
-|bonus|2013-01||X|X|
-|bonusFraForsvaret|2014-01||X||
-|elektroniskKommunikasjon|2013-01|||X|
-|fastBilgodtgjoerelse|2013-01||X|X|
-|fastloenn|2013-01||X|X|
-|fastTillegg|2013-01||X|X|
-|feriepenger|2013-01||X|X|
-|flyttegodtgjoerelse|2013-01||||
-|fondForIdrettsutoevere|2013-01||X||
-|friTransport|2013-01||||
-|godtgjoerelseSaeravtaleUtland|2013-01||X|||
-|helligdagstillegg|2013-01||X|X|
-|honorarAkkordProsentProvisjon|2018-01||X|X|
-|hyretillegg|2013-01||X|X|
-|ikkeSkattepliktigLoennFraUtenlandskDiplomKonsulStasjon|2014-01||X||
-|innbetalingTilUtenlandskPensjonsordning|2016-01||||
-|kapitalInntekt|2014-01||X||
-|kilometergodtgjoerelseAndreFremkomstmidler|2013-01||||
-|kilometergodtgjoerelseBil|2013-01|||X|
-|kilometergodtgjoerelseElBil|2013-01|2019-01|||
-|kilometergodtgjoerelsePassasjertillegg|2013-01||||
-|kommunalOmsorgsloennOgFosterhjemsgodtgjoerelse|2013-01||X||
-|kompensasjonstilleggBolig|2013-01||X||
-|kostbesparelseIHjemmet|2013-01||||
-|kostDager|2013-01|||X|
-|kostDoegn|2013-01|||X|
-|loennEtterDoedsfall|2014-01|||X|
-|loennForBarnepassIBarnetsHjem|2014-01||X||
-|loennTilPrivatpersonerForArbeidIHjemmet|2014-01||X||
-|loennTilVergeFraFylkesmannen|2016-01||X||
-|loennUtbetaltAvVeldedigEllerAllmennyttigInstitusjonEllerOrganisasjon|2014-01||X|X|
-|loennUtenlandskArtist|2014-01||X||
-|losji|2013-01|||X|
-|losjiEgenBrakkeCampingvogn|2014-01||||
-|opsjoner|2013-01||X|X|
-|overtidsgodtgjoerelse|2013-01||X|X|
-|overtidsmat|2013-01|2019-01|||
-|reiseAnnet|2013-01|||X|
-|reiseKost|2013-01|||X|
-|reiseKostMedOvernattingPaaHotell|2014-01||||
-|reiseKostMedOvernattingPaaHotellBeordringUtover28Doegn|2013-01||||
-|reiseKostMedOvernattingPaaHybelBrakkePrivat|2014-01||||
-|reiseKostMedOvernattingPaaPensjonat|2014-01||||
-|reiseKostMedOvernattingTilLangtransportsjaafoerForKjoeringIUtlandet|2014-01||||
-|reiseKostUtenOvernatting|2013-01||||
-|reiseLosji|2013-01|||X|
-|reiseNattillegg|2013-01||||
-|rentefordelLaan|2013-01|||X|
-|skattefriErstatning|2013-01||X||
-|skattefrieUtbetalinger|2014-01||||
-|skattepliktigDelForsikringer|2013-01|||X|
-|skattepliktigPersonalrabatt|2019-01||X|X|
-|sluttvederlag|2013-01||X|X|
-|smusstillegg|2013-01|||X|
-|stipend|2013-01||X|X|
-|styrehonorarOgGodtgjoerelseVerv|2013-01||X||
-|tilskuddBarnehageplass|2013-01|2019-01|X||
-|timeloenn|2013-01||X|X|
-|tips|2019-01||X|X|
-|trekkILoennForFerie|2016-01||X|X|
-|uregelmessigeTilleggKnyttetTilArbeidetTid|2013-01||X|X|
-|uregelmessigeTilleggKnyttetTilIkkeArbeidetTid|2013-01||X|X|
-|yrkebilTjenestligbehovKilometer|2016-01||||
-|yrkebilTjenestligbehovListepris|2016-01||||
+|verdi| beskrivelse | gyldig fra og med | gyldig til | sbl | otp |
+|--------|--------|---------|--------|--------|-------|
+|administrativForpleining| Utgått |2013-01|2016-01|||
+|aksjerGrunnfondsbevisTilUnderkurs| Innrapporterte opplysninger om ansattes fordel ved kjøp av aksjer eller grunnfondsbevis til underkurs. Fordelen utgjør som hovedregel differansen mellom salgsverdien for aksjen på ervervstidspunktet og det den ansatte eventuelt har betalt for aksjen. Fordel ved kjøp av aksjer til underkurs er skattepliktig fullt ut. Ytelsen er alltid oppgitt som trekkpliktig.| 2013-01|||X|
+|annet| Innrapporterte kontante ytelser som ikke naturlig hører hjemme under noen av de andre lønnsytelsene. Det gjelder for eksempel dekning av kostnader til utdanning for inntektsmottakere der vilkårene for skattefritak ikke er tilstede. Unntaket er dersom kostnaden dekkes som naturalytelse. Det gjelder også dekning av kostnader til overtidsmat, flytting og privatutgifter hvor arbeidsgiver for eksempel refunderer kostnader mot bilag. Ytelsen her oppgis alltid som trekkpliktig.|2013-01||X|X|
+|arbeidsoppholdKost|Utgiftsgodtgjørelse til kost for utenlandsk pendler. Godgjørelsen ikke trekkpliktig.| 2013-01|||X|
+|arbeidsoppholdLosji|Utgiftsgodtgjørelse for losji til utenlandsk pendler. Godgjørelsen er ikke trekkpliktig| 2013-01|||X|
+|bedriftsbarnehageplass| Utgått |2013-01|2019-01|X||
+|beregnetSkatt| Innrapporterte opplysninger om arbeidstakere med nettolønnsordning. Det vil si beregnet skatt for arbeid utført i Norge eller i utlandet. Beregnet skatt er differansen mellom oppgrossingsgrunnlag (Sum kontantytelser, trekkpliktige naturalytelser, trekkpliktige utgiftsgodtgjørelser og betalt utenlandsk skatt hvis det inngår i oppgrossingen) og oppgrosset beløp (Sum utbetalte nettoytelser, betalt utenlandsk skatt hvis det inngår i oppgrossingen og beregnet skatt). Ytelsen oppgis alltid som trekkpliktig. |2013-01||X|X|
+|besoeksreiserHjemmetAnnet|Innrapportere opplysninger om dekning av billetter til arbeidstakere som er pendleres (norsk eller utenlandsk) besøksreiser til hjemmet. Dekningen av billetter (godtgjørelsen) kan være både trekkpliktig og ikke trekkpliktig avhengig av om det er en norsk eller utenlandsk pendler.|2013-01||||
+|besoeksreiserHjemmetKilometergodtgjoerelseBil|Innrapporterte opplysninger om trekkfri bilgodtgjørelse som er utbetalt til dekning av reiseutgifter til besøk i hjemmet i Norge eller utlandet for pendler. Bilgodtgjørelsen er trekkpliktig dersom det gjelder besøksreise til hjemmet for utlending med opphold i Norge.|2013-01|||X|
+|besoeksreiserHjemmetKost|Trekkfri kostgodtgjørelse for besøksreiser til hjemmet for arbeidstaker med fri kost på arbeidsstedet|2013-01||||
+|betaltUtenlandskSkatt|Nettolønnsordning, betalt utenlandsk skatt for arbeid utført i utlandet|2017-01||X||
+|bil|Innrapporterte opplysinger om fordel ved privat disponering av arbeidsgivers bil. Ytelsen oppgis som naturalytelse og er alltid trekkpliktig. (standardregel). Fri bil utenfor standardregelen gjelder fordel ved privat bruk av arbeidsgivers bil som det er av en spesiell type. For eksempel lastebiler md tillatt totalvekt på 7500 kg eller mer og busser med 15 passasjerplasser. Fordelen oppgis som en naturalytelse og alltid trekkplitkig. Dersom det også er tilleggsinformasjon om annen fri bil vil det si fordel ved privat disponering av arbeidsgivers bil i de tilfellene hvor listeprisen klart ikke står i forhold til fordelen ved den private bruk. Dette er en unntaksregel og skal bare brukes når avviket er betydelig.|2013-01||X|X|
+|bolig|Innrapporterte opplysninger om fordelen når arbeidsgiver stiller bolig helt eller delvis til fri disposisjon til arbeidstaker i Norge eller utlandet. Ytelsen oppgis som en naturalytelse og er alltid trekkpliktig. Dersom fordelen gjelder helt eller delvis fri bolig til norsk eller utenlandsk pendler er ytelsen ikke trekkpliktig. Gjelder fordel ved helt eller delvis fri bolig til norsk og utenlandsk pendler.|2013-01|||X|X|
+|bonus|Bonus er vanligvis en ekstra utbetaling som inntektsmottaker får, og kjennetegnes ved at den utbetales med ujevne mellomrom eller noen få ganger i løpet av et år. Bonusytelsene skal stamme fra egen arbeidsinnsats, eller bonus som helt eller delvis skyldes andre faktorer. Honorarer, akkordlønn, prosentlønn og provisjonslønn regnes ikke som bonus. Bonus oppgis i bruttobeløp og oppgis alltid som trekkpliktig, men det trenger ikke være gjort forskuddstrekk av det hvis trekkbeløpet er under minstegrensene for forskuddstrekk.|2013-01|||X|X|
+|bonusFraForsvaret|Gjelder bonus ved åremåls tilsetting i Forsvaret. Bonusen utbetales i én sum ved tjenestens slutt og skattlegges etter særskilte regler. Ytelsen oppgis som som trekkpliktig, men det trenger ikke være gjort forskuddstrekk av det hvis trekkbeløpet er under minstegrensene for forskuddstrekk|2014-01||X||
+|elektroniskKommunikasjon|Elektronisk kommunikasjon innrapporteres som naturalytelse eller utgiftsgodtgjørelse. Fordelen oppgis som naturalytelse hvis arbeidsgiver står som abonnement, mens hvis inntektsmottaker står som abonnent oppgis det som utgiftsgodtgjørelse. Ytelsen oppgis alltid som trekkpliktig.|2013-01|||X|
+|fastBilgodtgjoerelse|Fast bilgodtgjørelse er bilgodtgjørelse for yrkes- og tjenestekjøring som blir utbetalt med et fast beløp til dekning av løpende utgifter. Ytelsen oppgis som utgiftsgodtgjørelse og oppgis alltid som trekkpliktig.|2013-01||X|X|
+|fastloenn|Innrapporterte opplysning om lønn som er utbetalt månedlig, ukentlig eller har annen fast utbetaling. Fastlønn oppgis som bruttobeløp og oppgis som trekkpliktig.|2013-01||X|X|
+|fastTillegg|Innrapporterte opplysninger om faste tillegg som kommer regelmessig ved hver lønnsutbetaling. Faste tillegg er knyttet til personlige egenskaper, evner eller ansvar. Faste tillegg gjelder når det utbetales på faste tidspunkt og beløpet er en fast størrelse. Dette gjelder for eksempel: b-tillegg, stabiliseringstillegg, selektivt tillegg for sykepleiere, tillegg for ansvarsvakter, fagansvar og lederansvar, kvalifikasjons-/kompetansetillegg. Dette gjelder ikke: skift-, turnus- og vakttillegg, offshoretillegg|2013-01||X|X|
+|feriepenger|Innrapporterte opplysninger om kontante ytelser for ferie, uavhengig av hvordan feriepengene beregnes. Det gjelder samlede feriepenger uavhengig av om beregningen er basert på prosentsats eller som et ferie tillegg til ordinær fastlønn. Feriepenger oppgis alltid som trekkpliktig i a-meldingen selv om det ikke foretas forskuddstrekk|2013-01||X|X|
+|flyttegodtgjoerelse|Innrapporterte opplysninger om utbetalt flyttegodtgjørelse etter statens regulativ, og kompenasjonstillegg til dekning av kost og losji i forbindelse med flytting til nytt arbeidssted. Flyttegodgjørelse er ikke trekkpliktig|2013-01||||
+|fondForIdrettsutoevere|Innrapportete opplysninger om innbetaling til godkjente fond for idrettsutøvere, eller utbetaling fra fondet. Midler som settes inn på fondet vil være økonomiske bidrag av enhver art som skriver seg fra: reklame, premiepenger, sponsorvirksomhet, annen økonomisk støtte eller godtgjørelse. Det oppgis bruttobeløp som betales inn til fondet, og det er ikke trekkpliktig da det oppstår i forbindelse med utbetaling fra fondet. Ved utbetaling fra fond til idrettsutøveren oppgis denne utbetalingen og oppgis som trekkpliktig. Ordningen gjelder ikke for: utøvere av lagidrett, for eksempel fotballspillere.|2013-01||X||
+|friTransport|Innrapporterte opplysnigner om antall dager arbeidsgiveren har besørget transport mellom bolig og fast arbeidssted (arbeidsreiser) med transportmiddel som eies eller leies av arbeidsgiveren. Det oppgis 0 i beløp og den er ikke trekkpliktig.|2013-01|||||
+|godtgjoerelseSaeravtaleUtland|Innrapporterte opplysninger om godtgjørelse etter særavtale om tillegg, godtgjørelse og ytelser i utenrikstjenesten og andre lignende avtaler i den utstrekning godtgjørelsen er skattefri. Godtgjørelse som utbetales til norske tjenestemenn i utlandet, er skattefri etter skatteloven. Ytelsen er ikke trekkpliktig|2013-01||X|||
+|helligdagstillegg|Innrapporterte opplysninger om tillegg til ordinær lønn eller annen kontant godtgjørelse for arbeid som er utført på helligdag. Ytelesn oppgis alltid som trekkpliktig|2013-01||X|X|
+|honorarAkkordProsentProvisjon|Honorar er en godtgjørelsesform som ofte brukes av frie yrker som forfattere, fotografer og kunstnere. Det vil si at mottaker av honorar ikke er fast ansatt, med alminnelige faste lønnsvilkår. Honorar er en betaling for et utført oppdrag. Akkordlønn er der en arbeidstakers lønn blir beregnet i forhold til resultatet på arbeidet som utføres. En inntektsmottaker med akkordlønn innebærer som regel at den ansatte har en garantert minstelønn per time eller måned. Prosentlønn er en type avlønning som tar utgangspunkt i omsetningen. De som utfører arbeid (arbeidstakerne) får en forhåndsbestemt andel av omsetningen. Provisjonslønn er en variabel godtgjørelse basert på arbeidstakerens arbeidsprestasjoner i en viss periode. Dette er en individuelt tilpasset lønn som reguleres i arbeidstagerens arbeidsavtale. Det mest vanlige er at provisjonen er et tillegg til den ansattes faste lønn, men det er heller ikke uvanlig at arbeidstakeren bare har en provisjonslønn som kun består av prosentvis beregnet godtgjørelse for utførelse av oppdrag. Akkord er en avtalt godtgjørelse per produsert enhet eller tjeneste, slik vil lønnen variere i takt med hvor mye som er produsert. Akkorden knyttes gjerne til krav om kvalitet og tid og benyttes i mange næringer bla bygg og anlegg, industri, transport med flere|2018-01||X|X|
+|hyretillegg|Innrapporterte opplysninger om hyretillegg som er utbetalt for perioden sjøfolk er hjemme. Av praktiske og administrative grunner blir hyretillegget som regel utbetalt som et fast beløp per måned uavhengig av om det samsvarer med faktisk friperiode i hver enkelt måned. Tidligere skattefritak for hyretillegg inntil en gitt beløpsgrense ble opphevet fra 2018, og er nå skattepliktig og trekkpliktig fra første krone|2013-01||X|X|
+|ikkeSkattepliktigLoennFraUtenlandskDiplomKonsulStasjon|Innrapporterte opplysninger om utbetalt lønn mv. fra utenlandsk diplomatisk eller konsulær stasjon til ansatte som ikke er norske borgere, eller som ikke er fast bosatte i Norge. Ytelsen er ikke trekkpliktig|2014-01||X||
+|innbetalingTilUtenlandskPensjonsordning|Innrapportert tilskudd betalt av arbeidsgiver til utenlandsk pensjonsordning etter skatteloven. Slike tilskudd regnes ikke som skattepliktig inntekt for arbeidstakeren. Til forskjell fra arbeidsgivers tilskudd til norske pensjonsordninger, skal tilskuddet til utenlandske pensjonsordninger spesifiseres og rapporteres på hver enkelt arbeidstaker. Arbeidsgiver må også gi opplysninger om i hvilket land pensjonsordningen hører til. Ytelsen kan både være trekkpliktig og ikke|2016-01||||
+|kapitalInntekt|Innrapporterte opplysninger om inntekter som bare skal behandles som kapitalinntekt. Dette gjelder for eksempel: renter av for sent utbetalt lønn, pensjon og feriepenger, tilbakebetaling av tidligere innbetalt pensjonsavgift til Pensjonstrygden for sjømenn. Ytelsen er ikke trekkpliktig|2014-01||X||
+|kilometergodtgjoerelseAndreFremkomstmidler|Innrapportert opplysning om trekkfri bilgodgjørelse for yrkes- eller tjenestekjøring. Det kan være ulike typer lønn eller ytelser som er oppgitt. Eksempler på når man har fylt ut andre fremkomstmidler er: tilhengertillegg (herunder godtgjørelse for varebils lasterom), godtgjørelse for kjøring på skogs- og anleggsveier, godtgjørelse for bruk av egen motorbåt, godtgjørelse for bruk av egen snøscooter, motorsykkel og moped|2013-01||||
+|kilometergodtgjoerelseBil|Innrapportert trekkpliktig bilgodtgjørelse (utgiftsgodtgjørelse) for yrkes- eller tjenestekjøring|2013-01|||X|
+|kilometergodtgjoerelseElBil|Utgått|2013-01|2019-01|||
+|kilometergodtgjoerelsePassasjertillegg|Innrapportert opplysning om trekkfri bilgodgjørelse for yrkes- eller tjenestekjøring. Det kan være ulike typer lønn eller ytelser som er oppgitt. Navn på passasjer må oppgis når man oppgir passasjertillegg.|2013-01||||
+|kommunalOmsorgsloennOgFosterhjemsgodtgjoerelse|Innrapportert opplysning om kommunal omsorgsstønad som gjelder stønad til privatpersoner, for eksempel ektefelle eller andre pårørende, som tar seg av særlig tyngende omsorgsarbeid på privat basis. Fosterhjemsgodtgjørelse er to ulike betalinger, mens denne gjelder arbeidsgodgjørelse er skattepliktig. Utgiftsdekning som er skattefri og skal dekke kost, klær og fritidsaktiviteter oppgis på utgiftsgodtgjørelse, annet. Ytelsen oppgis som trekkpliktig|2013-01||X||
+|kompensasjonstilleggBolig|Innrapporterte opplysninger om fordel ved helt eller delvis fri tjenestebolig for statsansatte i utlandet. Ytelsen oppgis som en kontantytelse og er alltid trekkpliktig|2013-01||X||
+|kostbesparelseIHjemmet|Kostbesparelse er et beregnet tillegg i inntekten som skal representere innsparinger av kost i hjemmet fordi arbeidstakeren får kosten dekket av arbeidsgiveren. Ytelsen er som hovedregel trekkpliktig|2013-01||||
+|kostDager|Arbeidstakerens fordel ved fri kost, fordelen kan oppgis både trekkpliktig og ikke. Antall dager oppgis som tilleggsinformasjon. Beløpet beregnes etter satser for kost og losji|2013-01|||X|
+|kostDoegn|Arbeidstakers fordel ved helt eller delvis fri kost og fritt losji i arbeidsforhold. Antall døgn oppgis som tilleggsinformasjon. Beløpet beregnes etter satser for kost og losji|2013-01|||X|
+|loennEtterDoedsfall|Innrapportert lønn, bonus, feriepenger og andre ytelser som avdøde hadde opptjent før dødsfallet, men som vedkommende ikke hadde faktisk eller rettslig krav på å få utbetalt før dødsfallet. Inntekten er opptjent før, men utbetalt etter dødsdato. Inntekten er skattepliktig for dødsboet, enearving eller gjenlevende ektefelle/samboer i uskifte som alminnelig inntekt (kapitalinntekt) og skal oppgis på avdøde som lønn etter dødsfall. Ytelsen er ikke trekkpliktig|2014-01|||X|
+|loennForBarnepassIBarnetsHjem|Innrapportert lønn og andre godtgjørelser til dagmamma eller praktikant/au pair som passer barn i barnets hjem, når en privatperson er arbeidsgiver. Godtgjørelser for privat barnepass utført i barnets hjem gjelder når: barnet ikke har fylt 12 år før utgangen av inntektsåret eller barnet har særskilt behov for omsorg og pleie, gjelder også for barn over 12 år.|2014-01||X||
+|loennTilPrivatpersonerForArbeidIHjemmet|Innrapportert lønn og andre godtgjørelser for arbeid i oppdragsgivers hjem. Gjelder bare private arbeidsgivere, og skal bare brukes for utbetalinger opplysningspliktig er unntatt plikt til å betale arbeidsgiveravgift av. Gjelder også for utbetalinger til verge, når utbetalingen skjer fra den vergetrengende|2014-01||X||
+|loennTilVergeFraFylkesmannen|Innrapporterte opplyninger om utbetalinger fra statsforvalteren til verge eller representant som godtgjøres etter vergemålsloven eller utlendingsloven. All godtgjørelse kan være oppgitt, selv om inntekten ikke er skattepliktig for mottakeren. Ytelsen oppgis alltid som trekkpliktig|2016-01||X||
+|loennUtbetaltAvVeldedigEllerAllmennyttigInstitusjonEllerOrganisasjon|loennUtbetaltAvVeldedigEllerAllmennyttigInstitusjonEllerOrganisasjon|2014-01||X|X|
+|loennUtenlandskArtist|Gjelder honorarer, lønn eller andre ytelser til utenlandske artister som omfattes av artistskatteloven og blir skattemessig bosatt i Norge.|2014-01||X||
+|losji|Gjelder fordel ved helt eller delvis fri kost og fritt losji i arbeidsforhold. Ytelsen oppgis som trekkpliktig.|2013-01|||X|
+|losjiEgenBrakkeCampingvogn|Innrapportert utbetalt godtgjørelse til losji til arbeidstaker under arbeidsopphold utenfor hjemmet som benytter egen brakke eller campingvogn. Ytelsen er ikke trekkpliktig.|2014-01||||
+|opsjoner|Innrapportert opplysning om når ansatte får en fordel ved innløsning eller salg av opsjoner og fordelen er en kontantytelse, eller en naturalytelse for eksempel aksjer. Ytelsen oppgis alltid som trekkpliktig.|2013-01||X|X|
+|overtidsgodtgjoerelse|Innrapportert kontantvederlag som kompensasjon for overtid, det vil si arbeid utover alminnelig arbeidstid etter arbeidsmiljøloven. Ytelsen oppgis alltid som trekkpliktig|2013-01||X|X|
+|overtidsmat|Utgått|2013-01|2019-01|||
+|reiseAnnet|Annen utgiftsgodtgjørelse til reiser. Ytelsen oppgis alltid som trekkpliktig.|2013-01|||X|
+|reiseKost|Innrapportert utbetalt trekkpliktig godtgjørelse til dekning av kost på tjenestereiser/yrkesreiser og ved pendleropphold. Ytelsen oppgis som trekkpliktig.|2013-01|||X|
+|reiseKostMedOvernattingPaaHotell|Innrapportert trekkfri godtgjørelse til kost på reise med overnatting på hotell. Ved pendleropphold er det en forutsetning for trekkfritak at det ikke er kokemuligheter på oppholdsstedet|2014-01||||
+|reiseKostMedOvernattingPaaHotellBeordringUtover28Doegn|Innrapportert utbetalt trekkfri kostgodtgjørelse når: arbeidsoppholdet på samme sted har hatt en varighet på over 28 døgn, og arbeidstaker har bodd på hotell. Gjelder godtgjørelse utbetalt fra og med det 29. døgnet|2013-01||||
+|reiseKostMedOvernattingPaaHybelBrakkePrivat|Innrapportert godtgjørelse til kost på tjenestereise/yrkesreise når arbeidstakeren har overnattet på hybel, brakke eller privat, med kokemuligheter. Ytelsen er ikke trekkpliktig|2014-01||||
+|reiseKostMedOvernattingPaaPensjonat|Innrapportert utbetalt trekkfri kostgodtgjørelse når arbeidstaker har overnattet på pensjonat. Ytelsen er ikke trekkpliktig.|2014-01||||
+|reiseKostMedOvernattingTilLangtransportsjaafoerForKjoeringIUtlandet|Innrapportert utbetalt kostgodtgjørelse til ansatte langtransportsjåfører og deres hjelpemannskaper på kjøreoppdrag der fraværet fra hjemmet er minimum ett døgn. Antall døgn oppgis som tilleggsinformasjon og ytelsen er ikke trekkpliktig.|2014-01||||
+|reiseKostUtenOvernatting|Innrapportert trekkfri godtgjørelse til kost på tjenestereise uten overnatting. Rett til trekkfri dekning av kostutgifter forutsetter at inntektsmottaker har merkostnader.|2013-01||||
+|reiseLosji|Innrapportert godtgjørelse som overstiger faktisk dokumenterte losjiutgifter. Den delen av godtgjørelsen som dekker dokumenterte losjiutgifter, skal oppgis ikke.|2013-01|||X|
+|reiseNattillegg|Innrapportert trekkfri ulegitimert nattillegg på innenlandsreiser. Det er flere legitimasjonskrav som må framgå på en reiseregning.|2013-01||||
+|rentefordelLaan|Innrapportert fordel ved lån som arbeidsgiver gir til arbeidstaker med rente som er lavere enn normrentesatsen. Fordelen er differansen mellom normrenten og lånerenten (hvis lånerenten er lavere).|2013-01|||X|
+|skattefriErstatning|Innrapportert beløp som er utbetalt som skattefri erstatning for tort og svie i forbindelse med opphør av arbeidsforhold. Ytelsen er ikke trekkpliktig.|2013-01||X||
+|skattefrieUtbetalinger|Innrapporterte andre skattefrie utgiftsgodgjørelser. Ytelsen er ikke trekkpliktig.|2014-01||||
+|skattepliktigDelForsikringer|Innrapportert skattepliktig fordel ved forsikringspremier betalt av arbeidsgiver. Dette gjelder for eksempel: skattepliktig premie til ulykkesforsikring, gruppelivsforsikringspremie, personavbruddsforsikringspremie, livrentepremie (både individuell og kollektiv livrentepremie), innbetaling/premie til individuell pensjonsspareavtale/pensjonsforsikringsavtale (gammel IPS), premie til «loss of license»-forsikring for den del av premien som dekker skattepliktig syke- og ulykkesforsikring. Det gjelder ikke: Yrkesskadeforsikringspremie som dekker arbeidsgivers normale erstatningsansvar. Ytelsen oppgis som trekkpliktig|2013-01|||X|
+|skattepliktigPersonalrabatt|Innrapporterte opplysnigner om skattepliktig personalrabatt på varer og tjenester fra arbeidsgiver som overstiger beløpsgrensen på 8 000 kroner per år. Også personalrabatter som ikke oppfyller vilkårene for å være skattefrie oppgis her. Skattepliktige rabatter, bonuspoeng og andre ytelser fra arbeidsgivers forretningspartnere og andre tredjeparter skal også oppgis. Personalforsikringer er ikke omfattet, mens personalrabatt for persontransport er omfattet fra 1.1.21. Opplysningen rapporters som naturalytelse og er alltid trekkpliktig.|2019-01||X|X|
+|sluttvederlag|Innrapportert kontantvederlag som er økonomisk kompensasjon til arbeidstakere som ufrivillig mister jobben ved avskjed, oppsigelse eller avtale med arbeidsgiver. Dette gjelder også lønn som utbetales etter at den ansatte har sluttet. Sluttvederlag anses som lønn og kan utbetales både løpende eller som et engangsbeløp. Ytelsen oppgis alltid som trekkpliktig.|2013-01||X|X|
+|smusstillegg|Innrapportert totalt smusstillegg. Smusstillegg er et ulempetillegg som ytes i en del tilfeller som kompensasjon for merkostnader til arbeidstøy samtidig som det skal være et visst vederlag for ubekvemt arbeid. Ytelsen oppgis som trekkpliktig.|2013-01|||X|
+|stipend|Innrapportert stipend. Ytelsen kan både være trekkpliktig og ikke ut i fra visse vilkår.|2013-01||X|X|
+|styrehonorarOgGodtgjoerelseVerv|Innrapportert styrehonorar og godtgjørelser i forbindelse med verv. Ytelsen oppgis som trekkpliktig.|2013-01||X||
+|tilskuddBarnehageplass|Utgått|2013-01|2019-01|X||
+|timeloenn|Innrapportert opplysning om timelønn for ansatte som har avtalt timelønnssats, og spesifiser antall timer som ligger til grunn for timelønnen. Det samme gjelder for overtidsgodtgjørelse, mens overtid ikke skal oppgis som en del av timelønnen. For honorarer, akkord, prosent eller provisjonslønn skal det brukes egen inntektsbeskrivelse. Ytelsen oppgis alltid som trekkpliktig.|2013-01||X|X|
+|tips|Innrapporterte opplysninger om tips som den ansatte har mottatt fra arbeidsgiveren, og tips som er mottatt direkte fra kunder. Det har ingen betydning hvordan tips utbetales eller gjøres opp, eller hvordan den ansatte avlønnes. Arbeidsgiver må holde oversikt over hvor mye tips som tilfaller de ansatte og fordelingen dem imellom. Ytelsen oppgis som trekkpliktig.|2019-01||X|X|
+|trekkILoennForFerie|Innrapporterte opplysninger om trekk i lønn for ferie når det avregnes av alle feriepenger samlet i en måned og foretar trekk i lønn. Det er bruttobeløpet som oppgis, men beløpet i trekk i lønn for ferie er negativt og skal bare brukes i kombinasjon med positivt beløp i fastlønn. Ytelsen skal alltid oppgis som trekkpliktig|2016-01||X|X|
+|uregelmessigeTilleggKnyttetTilArbeidetTid|Innrapporterte opplysninger om uregelmessige tillegg knyttet til stillingen eller yrket, arbeidsmengde, arbeidstid eller arbeidssted, og som ikke gis regelmessig. Ytelsen skal alltid oppgis som trekkpliktig.|2013-01||X|X|
+|uregelmessigeTilleggKnyttetTilIkkeArbeidetTid|Innrapporterte opplysninger om tillegg som gis for perioder som ikke er betinget av at man er tilstede på arbeidsplassen eller ikke arbeider. Eksempler er: vakttillegg, beredskapstillegg, utkallingstillegg, hjemmevaktstillegg. Ytelsen oppgis alltid som trekkpliktig.|2013-01||X|X|
+|yrkebilTjenestligbehovKilometer|Fordel ved privat bruk av yrkesbil som skal verdsettes individuelt etter kilometersats for privat bruk. Opplysningen rapporteres som naturalytelse og er alltid trekkpliktig.|2016-01||||
+|yrkebilTjenestligbehovListepris|Fordel ved privat bruk av yrkesbil som skal verdsettes etter sjablongmetode basert på listepris med bunnfradrag. Opplysningen rapporteres som natualytelse og er alltid trekkpliktig.|2016-01||||
 
 ### &lt;ytelseFraOffentlige&gt; &lt;beskrivelse&gt;
 
