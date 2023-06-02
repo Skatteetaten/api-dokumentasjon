@@ -39,6 +39,8 @@ I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tj
 | Navn på rettighetspakke | Egenskaper ved rettighetspakke |
 |---|---|
 | distribusjon | Støttes kun i versjon 1 |
+| finans | Støttes kun i versjon 2 |
+| forsikring | Støttes kun i versjon 2 |
 | husbanken | Støttes kun i versjon 1 |
 | kommuneLangtidsoppholdInstitusjon | Støttes kun i versjon 2 |
 | kredittopplysning | Støttes kun i versjon 2 |
