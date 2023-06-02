@@ -60,7 +60,8 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## JSON (Versjon 2)
-```{
+```json
+  {
   "personidentifikator": "25036412871",
   "inntektsaar": 2022,
   "skjermet": false,
