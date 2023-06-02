@@ -380,43 +380,43 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 Oversikt over hvilke *&lt;beskrivelse&gt;* koder som brukes for *&lt;pensjonEllerTrygd&gt;*. 
 Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk.
 
-|verdi| gyldig fra og med | gyldig til | sbl | otp |
-|--------|--------|--------|--------|-------|
-|alderspensjon|2013-01||X||
-|annet|2013-01||X||
-|avtalefestetPensjon|2013-01||X||
-|barnepensjon|2013-01||X||
-|barnepensjonFraAndreEnnFolketrygden|2013-01||X||
-|bil|2013-01||X||
-|bolig|2013-01||X||
-|ektefelletillegg|2013-01||X||
-|elektroniskKommunikasjon|2013-01||||
-|engangsutbetalingInnskuddspensjon|2015-01||X||
-|etterlattepensjon|2013-01||X||
-|etterloenn|2017-01||||
-|etterloennOgEtterpensjon|2013-01||X||
-|foederaad|2013-01||||
-|introduksjonsstoenad|2013-01||X||
-|ipaEllerIpsBarnepensjon|2015-01||X||
-|ipaEllerIpsEngangsutbetaling|2015-01||X||
-|ipaEllerIpsPeriodiskeYtelser|2015-01||X||
-|ipaEllerIpsUfoerepensjon|2015-01||X|X*|
-|krigspensjon|2013-01||X||
-|kvalifiseringstoenad|2013-01||X||
-|nyAvtalefestetPensjonPrivatSektor|2013-01||X||
-|nyeLivrenterIArbeidsforholdOgLivrenterFortsettelsesforsikringer|2013-01||X||
-|overgangsstoenadTilEnsligMorEllerFarSomBegynteAaLoepe31Mars2014EllerTidligere|2014-01|2019-01|X||
-|overgangsstoenadTilGjenlevendeEktefelle|2014-01||X||
-|pensjonIDoedsmaaneden|2013-01||||
-|pensjonOgLivrenterIArbeidsforhold|2013-01||X||
-|rentefordelLaan|2013-01||||
-|slitertillegg|2019-01||X||
-|supplerendeStoenadTilPersonKortBotidNorge|2013-01||X||
-|supplerendeStoenadTilUfoerFlyktning| | |X| |
-|ufoerepensjon|2013-01||X||
-|ufoerepensjonFraAndreEnnFolketrygden|2013-01||X|X*|
-|ufoereytelseEtteroppgjoerFraAndreEnnFolketrygden|2015-01||X|X*|
-|underholdsbidragTilTidligereEktefelle|2013-01|2020-01|X||
+|verdi| beskrivelse |gyldig fra og med | gyldig til | sbl | otp |
+|--------|----------|--------|--------|--------|-------|
+|alderspensjon|Innrapportere opplysninger fra NAV om utbetalt alderspensjon fra folketrygden. Ytelsen oppgis  med bruttobeløp og er en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X||
+|annet|Innrapporterte kontante ytelser som ikke naturlig hører hjemme under noen av de andre lønnsytelsene. Det gjelder for eksempel dekning av kostnader til utdanning for inntektsmottakere der vilkårene for skattefritak ikke er tilstede. Unntaket er dersom kostnaden dekkes som naturalytelse. Det gjelder også dekning av kostnader til overtidsmat, flytting og privatutgifter hvor arbeidsgiver for eksempel refunderer kostnader mot bilag. Ytelsen her oppgis alltid som trekkpliktig|2013-01||X||
+|avtalefestetPensjon|Innrapporterte opplysninger om ordinær avtalefestet pensjon. Ordinær avtalefestet pensjon er avtalefestet pensjon i offentlig sektor og avtalefestet pensjon i privat sektor som begynte å løpe før 1. januar 2011. Det siste året med ordinære utbetalinger av avtalefestet pensjon i privat sektor var 2015. Beløpet oppgis i brutto, som en kontantytelse og er alltid trekkpliktig. Pensjonsgrad oppgis som en tilleggsopplysning. Og eventuelt periode ved etterbetaling |2013-01||X||
+|barnepensjon|Innrapporterte opplysninger fra NAV om barnepensjon fra folketrygden. Barnepensjonen oppgis på barnet, og formålet er å sikre inntekt til barn når en eller begge av foreldrene er døde. Barnepensjonen oppgis i bruttobeløp som en kontantytelse og er ikke trekkpliktig.|2013-01||X||
+|barnepensjonFraAndreEnnFolketrygden|Innrapporterte opplysninger om barnepensjon fra andre enn folketrygden, både i og utenfor arbeidsforhold. Formålet med barnepensjon er å sikre inntekt til barn når en eller begge foreldrene er døde. Barnepensjonen oppgis alltid på barnet og den kalendermåneden  beløpet er utbetalt. Barnepensjonen oppgis med bruttobeløp og er en kontantytelse og er som hovedregel trekkpliktig, selv om man ikke foretar trekk |2013-01||X||
+|bil|Innrapporterte opplysninger om naturalytelser (bil) i pensjonsforhold. Det er den skattepliktige fordelen som oppgis og oppgis alltid som trekkpliktig|2013-01||X||
+|bolig|Innrapporterte opplysninger om naturalytelser (bolig) i pensjonsforhold. Det er den skattepliktige fordelen som oppgis og oppgis alltid som trekkpliktig.|2013-01||X||
+|ektefelletillegg|Innrapporterte opplysninger om skattepliktig ektefelletillegg. Ektefelletillegg er et forsørgertillegg fra NAV eller private pensjonsordninger hvis inntektsmottakeren oppfyller kravene til dette. Skattefritt ektefelletillegg oppgis ikke i a-meldingen fra 1.januar 2017 da det rapporteres i ordningen skattefrie utbetalinger fra offentlige myndigheter. Ektefelletillegg som utbetales til mottaker av alderspensjon og AFP i både offentlig og privat sektor er skattefritt for de som allerede var mottakere av ektefelletillegget 31. desember 2010.|2013-01||X||
+|elektroniskKommunikasjon|Innrapporterte opplysninger om naturalytelser (elektronisk kommunikasjon) i pensjonsforhold. Det er den skattepliktige fordelen som oppgis og oppgis alltid som trekkpliktig.|2013-01||||
+|engangsutbetalingInnskuddspensjon|Innrapportert opplysning om engangsutbetaling etter lov om innskuddspensjon. Ytelsen oppgis med bruttobeløp og kontantytelse og oppgis alltid som trekkpliktig.|2015-01||X||
+|etterlattepensjon|Innrapporterte opplysninger fra NAV om pensjon til gjenlevende ektefelle. Ytelesn oppgis med bruttobeløp og kontantytelse og oppgis alltid som trekkpliktig. Grunnpensjon og tilleggspensjon oppgis som tilleggsinformasjon.|2013-01||X||
+|etterloenn|Innrapporterte opplysninger om lønn som er utbetalt etter en persons dødsfall, og som var opptjent før dødsfallet. Beløp under 1,5 ganger grunnbeløpet er skattefrie. Lønn som er opptjent før dødsdato, men utbetalt etter dødsdato rapporteres som lønn etter dødsfall, mens det fra 1.januar 2017 ikke rapportes skattefri etterpensjon i a-meldingen. Yteslsen oppgis med bruttobeløp og kontantytelse og er ikke trekkpliktig.|2017-01||||
+|etterloennOgEtterpensjon|Innrapporterte opplysninger om lønn og pensjon som er utbetalt etter en persons dødsfall, og som ikke var opptjent før dødsfallet. Innrapporteringen gjelder all skattepliktig lønn og pensjon som er opptjent etter, og blir utbetalt etter en persons dødsfall. Gjelder lønn utbetalt etter dødsdato og pensjon utbetalt etter dødsmåned. Lønn som er opptjent før dødsdato, men utbetalt etter dødsdato rapporters som lønn etter dødsfall (for eksempel feriepenger, bonus). Pensjon som er opptjent før dødsmåneden, men utbetalt etter dødsmåneden rapporteres som kapitalinntekt. Skatteplikt inntreffer når beløpet overstiger 1 ½ ganger grunnbeløpet i folketrygden. Ytelsen oppgis med bruttobeløp og kontantytelse og oppgis alltid som trekkpliktig.|2013-01||X||
+|foederaad|Innrapporterte opplysninger om naturalytelser i føderåd (kår) i pensjonsforhold. Med føderåd (kår) menes at den som selger en slik eiendom betinger seg rett til visse naturalier for resten av sin levetid som deler av betalingen. Føderåd kan bestå av kontanter, fri bolig, kost mv. Føderåd skal bare oppgis én gang i året. Beløpet oppgis som bruttobeløp og naturalytelse og er ikke trekkpliktig.|2013-01||||
+|introduksjonsstoenad|Innrapporterte opplysninger om introduksjonsstønad etter integreringsloven til nyankomne innvandrere. Introduksjonsordningen gjelder for nylig ankomne innvandrere mellom 18 og 55 år med flyktningbakgrunn. Ytelsen oppgis med bruttobeløp og kontantytelse, og oppgis alltid som trekkpliktig.|2013-01||X||
+|ipaEllerIpsBarnepensjon|Innrapporterte opplysninger om utbetaling av barnepensjon etter lov om individuell pensjonsordning (IPS) og etter pensjonsavtale etter skatteloven (IPA). Barnepensjonen oppgis på barnet. Ytelsen oppgis med bruttobeløp og kontantytelse og oppgis alltid som trekkpliktig. Dersom det er en etterbetaling oppgis også perioden for etterbetalingen.|2015-01||X||
+|ipaEllerIpsEngangsutbetaling|Innrapporterte opplysninger om engangsutbetalinger etter lov om individuelle pensjonsordning (IPS) og etter pensjonsavtale etter skatteloven (IPA). Ytelsen oppgis med bruttobeløp og kontantytelse og oppgis alltid som trekkpliktig.|2015-01||X||
+|ipaEllerIpsPeriodiskeYtelser|Innrapporterte opplysninger om løpende pensjonsytelser etter lov om individuell pensjonsordning (IPS) og etter pensjonsavtale etter skatteloven (IPA).Ytelsen oppgis som en kontantytelse og er alltid trekkpliktig. Utbetalingene gjelder: løpende pensjonsytelser etter lov om individuell pensjonsordning (gammel IPS), løpende pensjonsytelser etter pensjonsavtale etter skatteloven (IPA), alderspensjon, etterlattepensjon og livsarvingspensjon. Unntaket er ordning fra november 2017 om individuell sparing til pensjon som rapporteres i egen grunnlagsdataordning - individuelle pensjonsordninger.|2015-01||X||
+|ipaEllerIpsUfoerepensjon|Innrapportere opplysninger om uføreytelser etter lov om individuell pensjonsordning (IPS) og etter pensjonsavtale etter skatteloven (IPA). Ytelsen oppgis med bruttobeløp og kontantytelse og oppgis alltid som trekkpliktig.|2015-01||X|X*|
+|krigspensjon|Innrapporterte opplysninger fra NAV om utbetalt krigspensjon etter lov om krigspensjonering for militærpersoner. Ytelsen oppgis med bruttobeløp som en kontantytelse og oppgis alltid som trekkpliktig.|2013-01||X||
+|kvalifiseringstoenad|Innrapporterte opplysninger om kvalifiseringsstønad etter lov om sosiale tjenester i arbeids- og velferdsforvaltningen. Det gjelder også standardisert barentillegg til mottaker av kvalifiseringsstønad. Beløpet oppgis som bruttobeløp og kontantytelse, og oppgis alltid som trekkpliktig.|2013-01||X||
+|nyAvtalefestetPensjonPrivatSektor|Innrapporterte opplysninger om ny avtalefestet pensjon i privat sektor. Ny avtalefestet pensjon i privat sektor er avtalefestet pensjon som begynte å løpe 1. januar 2011 eller senere. Ytelsen oppgis med bruttobeløp, som en kontantytelse og oppgis alltid som trekkpliktig.|2013-01||X||
+|nyeLivrenterIArbeidsforholdOgLivrenterFortsettelsesforsikringer|Innrapporterte opplysninger om utbetaliger fra kollektive livrenter i arbeidsforhold tegnet fra og med 1. januar 2007 og utbetalinger fra livrenter tegnet som fortsettelsesforsikring. Beløpet oppgis som den skattepliktige utbetalingen fra livrenten som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X||
+|overgangsstoenadTilEnsligMorEllerFarSomBegynteAaLoepe31Mars2014EllerTidligere|Innrapporterte opplysninger fra NAV om etterbetalt overgangsstønad til enslig mor eller far som begynte å løpe fra 31.mars 2014 eller tidligere. Beskrivelsen gjelder bare etterbetalinger av overgangsstønad som ble innvilget frem til 31. mars 2014. Overgangsstønaden kunne løpe i maksimalt 3 år og det er ikke lengre nye utbetalinger på denne beskrivelsen. Kun etterbetalinger for tidligere perioder. Beløpet oppgis som bruttobeløp og er en kontantytelse og oppgis alltid som trekkpliktig.|2014-01|2019-01|X||
+|overgangsstoenadTilGjenlevendeEktefelle|Innrapporterte opplysnigner fra NAV om overgangsstønad til gjenlevende ektefelle mv. etter folketrygdloven, og overgangsstønad eller pensjon til tidligere familiepleier. Beløpet oppgis som bruttobeløp, som en kontantytelse og oppgis alltid som trekkpliktig.|2014-01||X||
+|pensjonIDoedsmaaneden|Innrapportere opplysninger om pensjon utbetalt i dødsmåneden. Fra og med 2015 er det ikke lenger krav om å oppgi pensjon i dødsmåneden med en egen beskrivelse i a-meldingen. Pensjon i dødsmåneden oppgis med samme beskrivelse som brukes for de aktuelle pensjonsytelsene i månedene før dødsmåneden. Skattefrihet for pensjon i dødsmåneden blir ivaretatt av Skatteetaten under fastsettingen av skatten.|2013-01||||
+|pensjonOgLivrenterIArbeidsforhold|Innrapporterte opplysninger om pensjon i og utenfor arbeidsforhold og livrenter i arbeidsforhold, fra andre enn folketrygden. Ytelsen oppgis med bruttobeløp, som en kontantytelse og oppgis alltid som trekkpliktig.|2013-01||X||
+|rentefordelLaan|Innrapporterte opplysninger om naturalytelser (rentefordel lån) i pensjonsforhold. Det er den skattepliktige fordelen som oppgis og oppgis alltid som trekkpliktig.|2013-01||||
+|slitertillegg|Innrapporterte opplysninger om slitertillegg. Slitertillegg er en ekstra pensjonsytelse til de som starter uttak av AFP ved 62, 63 eller 64 år og som ikke har arbeidsinntekt ved siden av. Det er et vilkår for å få slitertillegget at søker har fått innvilget AFP i privat sektor. Sliterordningen gjelder fra 1. januar 2019. Ytelsen oppgis i bruttobeløp som en kontantytelse og oppgis alltid som trekkpliktig.|2019-01||X||
+|supplerendeStoenadTilPersonKortBotidNorge|Innrapporterte opplysninger fra NAV om supplerende stønad til personer med kort botid i Norge som har fylt 67 år. Stønaden garanterer en samlet inntekt som svarer til folketrygdens minste pensjonsnivå for alderspensjonister. Beløpet oppgis som brutto, som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X||
+|supplerendeStoenadTilUfoerFlyktning|Innrapporterte opplysninger fra NAV om supplerende stønad til ufør flyktning etter lov om supplerende stønad. Stønaden gjelder inntektsmottakere med kort botid i Norge som er uføre flyktninger. Stønaden garanterer en samlet inntekt som svarer til folketrygdens minste årlige ytelse for uføretrygd. Ytelsen opgis i bruttobeløp, som en kontantytelse og oppgis alltid som trekkpliktig.| | |X| |
+|ufoerepensjon|Innrapporterte opplysninger fra NAV om etterbetalinger som gjelder uførepensjon til og med 2014, etter folketrygdloven kapittel 12 (slik den lød før 1. januar 2015). Etterbetaling fra og med 1. januar 2015. Dersom uføretrygden er etterbetalt fra med 1.januar 2015 skilles det om det er en etterbetaling eller et etteroppgjør. Etterbetaling oppgis som en uføretrygd med tidsrommet utbetalingen gjelder, mens etteroppgjør oppgis som etteroppgjør uføretrygd fra folketrygden. Ytelsen oppgis i bruttobeløp, som en kontantytelse og er alltid trekkpliktig.|2013-01||X||
+|ufoerepensjonFraAndreEnnFolketrygden|Innrapporterte opplysninger om uførepensjon (uføreytelser) fra andre enn folketrygden. Det gjelder uføreytelser fra offentlige tjenestepensjonsordninger, uføreytelser fra tjenestepensjonsordninger i privat sektor og kollektive livrenteavtaler inngått før 2007. Beløpet opphis i brutto, som en kontantytelse og opphis alltid som trekkpliktig.|2013-01||X|X*|
+|ufoereytelseEtteroppgjoerFraAndreEnnFolketrygden|Innrapporterte opplysninger om etteroppgjør av uføreytelser fra andre enn folketrygden og fra en gammel IPA eller IPS. Ytelsen oppgis som en kontantytelse og er alltid trekkpliktig|2015-01||X|X*|
+|underholdsbidragTilTidligereEktefelle|Utgått|2013-01|2020-01|X||
 
 ### &lt;naeringsinntekt&gt; &lt;beskrivelse&gt;
 
