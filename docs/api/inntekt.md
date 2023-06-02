@@ -357,23 +357,23 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 Oversikt over hvilke *&lt;beskrivelse&gt;* koder som brukes for *&lt;ytelseFraOffentlige&gt;*. 
 Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk.
 
-|verdi| gyldig fra og med | gyldig til | sbl | otp |
-|--------|--------|--------|--------|-------|
-|arbeidsavklaringspenger|2013-01||X|X*|
-|dagpengerTilFiskerSomBareHarHyre|2013-01||X||
-|dagpengerVedArbeidsloeshet|2013-01||X||
-|ektefelletilleggUfoeretrygd|2015-01||X||
-|foreldrepenger|2013-01||X||
-|overgangsstoenadTilEnsligMorEllerFarSomBegynteAaLoepe1April2014EllerSenere|2014-01||X||
-|skattefrieTilleggsstoenader|2013-01|2016-01|X||
-|skattefriStoenadTilBarnetilsyn|2013-01|2016-01|X||
-|svangerskapspenger|2013-01||X|X*|
-|sykepenger|2013-01||X|X*|
-|sykepengerTilFiskerSomBareHarHyre|2013-01||X|X*|
-|ufoeretrygd|2015-01||X|X*|
-|ufoereytelseEtteroppgjoer|2016-01||X||
-|underholdsbidragTilBarn|2013-01|2017-01|X||
-|venteloenn|2013-01||X||
+|verdi| beskrivelse| gyldig fra og med | gyldig til | sbl | otp |
+|--------|--------|--------|--------|--------|-------|
+|arbeidsavklaringspenger|Innrapportere opplysninger fra NAV om utbetalte arbeidsavklaringspenger. Ytelsen oppgis som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X|X*|
+|dagpengerTilFiskerSomBareHarHyre|Innrapporterte opplynsinger fra Garantikassen for fiskere om utbetalte dagpenger til fisker og fangstmann som bare har hyre. Ytelsen oppgis som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X||
+|dagpengerVedArbeidsloeshet|Innrapporterte opplysninger fra NAV om utbetalte dagpenger etter folketrygdloven til personer som har tjent opp rettigheter til ytelsen som arbeidstaker, frilanser eller vernepliktig. Ytelsen oppgis som en kontantytelse og oppgis alltid som trekkpliktig.|2013-01||X||
+|ektefelletilleggUfoeretrygd|Innrapporterte opplysninger fra NAV om utbetalt ektefelletillegg uføretrygd som løper fra 1.1.2015. Ektefelletillegget falt bort fra 2015, men løper ut den perioden det er innvilget for, maksimalt 10 år etter 1.januar 2015. Ytelsen oppgis som en kontantytelse og oppgis alltid som trekkpliktig|2015-01||X||
+|foreldrepenger|Innrapporterte opplysninger fra NAV om utbetalte foreldre- eller adopsjonspenger etter folketrygdloven, til personer som har tjent opp rettigheter til ytelsen som arbeidstaker, frilanser eller mottatt dagpenger som arbeidsledig. Ytelsen oppgis som kontantytelse og oppgis alltid som trekkpliktig |2013-01||X||
+|overgangsstoenadTilEnsligMorEllerFarSomBegynteAaLoepe1April2014EllerSenere|Innrapporterte opplysninger om etterbetalt overgangsstønad til enslig mor eller far som begynte å løpe 31.mars 2014 eller senere. NAV er den eneste som rapporterer dette og ytelsen oppgis alltid som en kontantytelse og oppgis alltid som trekkpliktig|2014-01||X||
+|skattefrieTilleggsstoenader|Utgått|2013-01|2016-01|X||
+|skattefriStoenadTilBarnetilsyn|Utgått|2013-01|2016-01|X||
+|svangerskapspenger|Innrapporterte opplysninger om svangerskapspenger utbetalt av NAV. Ytelsen oppgis som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X|X*|
+|sykepenger|Innrapporterte opplysninger om sykepenger fra folketrygden fra NAV. Opplæringspenger, pleiepenger og omsorgspenger oppgis også her. Ytelesen oppgis som en kontatytelse og oppgis alltid som trekkpliktig|2013-01||X|X*|
+|sykepengerTilFiskerSomBareHarHyre|Innrapporterte opplysninger om sykepenger til fisker som bare har hyre fra NAV. Ytelsen oppgis som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X|X*|
+|ufoeretrygd|Innrapporterte opplysninger om uføretrygd fra folketrygden fra NAV. Etterbetaling av uføretrygd rapporteres også her, med mindre det er en del av et lovbestemt etteroppgjør. Ytelsen oppgis alltid som en kontantytelse og er oppgis alltid som trekkpliktig.|2015-01||X|X*|
+|ufoereytelseEtteroppgjoer|Innrapporterte opplysninger om etteroppgjør fra folketrygden fra NAV.Inntektsmottaker skal opplyse folketrygden om forventet inntekt og om endringer i inntekten. Hvis inntektsmottakeren har fått utbetalt for lite eller for mye i uføretrygd som følge av at det er lagt til grunn uriktige opplysninger om inntekt, skal NAV foreta et etteroppgjør. Etteroppgjøret skjer etter at skatteoppgjøret for det aktuelle året foreligger. Hvis inntektsmottakeren ikke har uføretrygd hele året, brukes den pensjonsgivende inntekten i perioden med uføretrygd |2016-01||X||
+|underholdsbidragTilBarn|Utgått|2013-01|2017-01|X||
+|venteloenn|Innrapporterte opplysninger om ventelønn fra NAV. Ytelsen oppgis som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X||
 
 ### &lt;pensjonEllerTrygd&gt; &lt;beskrivelse&gt;
 
