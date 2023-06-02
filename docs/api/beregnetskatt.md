@@ -59,6 +59,107 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
+## JSON (Versjon 2)
+```{
+  "personidentifikator": "25036412871",
+  "inntektsaar": 2022,
+  "skjermet": false,
+  "beregnetSkattFastland": {
+    "skatteklasse": "1",
+    "beregnetSkatt": 120148,
+    "beregnetSkattFoerSkattefradrag": 120148,
+    "skatteregnskapskommune": "3816",
+    "anvendtStandardfradrag": false,
+    "skattOgAvgift": {
+      "formuesskattTilStat": {
+        "grunnlag": 5200000,
+        "beloep": 8750
+      },
+      "inntektsskattTilKommune": {
+        "kommunefordeltSkatt": [
+          {
+            "kommune": "3816",
+            "grunnlag": 305050,
+            "beloep": 27025
+          }
+        ],
+        "grunnlag": 305050,
+        "beloep": 27025
+      },
+      "inntektsskattTilFylkeskommune": {
+        "kommunefordeltSkatt": [
+          {
+            "kommune": "3816",
+            "grunnlag": 305050,
+            "beloep": 5923
+          }
+        ],
+        "grunnlag": 305050,
+        "beloep": 5923
+      },
+      "inntektsskattTilKommuneOgFylkeskommune": {
+        "grunnlag": 305050,
+        "beloep": 32948
+      },
+      "formuesskattTilKommune": {
+        "kommunefordeltSkatt": [
+          {
+            "kommune": "3816",
+            "grunnlag": 5200000,
+            "beloep": 24500
+          }
+        ],
+        "grunnlag": 5200000,
+        "beloep": 24500
+      },
+      "fellesskatt": {
+        "grunnlag": 305050,
+        "beloep": 21348
+      },
+      "trinnskatt": {
+        "grunnlag": 350000,
+        "beloep": 4602
+      },
+      "trygdeavgiftAvLoennsinntekt": {
+        "grunnlag": 350000,
+        "beloep": 28000
+      },
+      "sumTrygdeavgift": {
+        "grunnlag": 350000,
+        "beloep": 28000
+      }
+    },
+    "oevrigeResultaterAvBeregning": {
+      "alminneligInntektFoerSaerfradrag": 355050,
+      "anvendtSaerfradrag": 50000,
+      "pensjonsgivendeInntekt": 350000,
+      "samletGrunnlagForInntektsskattTilKommuneOgFylkeskommuneStatsskattOgFellesskatt": 305050,
+      "alminneligInntektFoerFordelingsfradrag": [
+        {
+          "beloep": 355050
+        }
+      ],
+      "oevrigFormue": [
+        {
+          "beloep": 350000
+        }
+      ]
+    },
+    "informasjonTilSkattelister": {
+      "nettoinntekt": 355050,
+      "nettoformue": 5200000,
+      "beregnetSkatt": 120148,
+      "kommune": [
+        "3816"
+      ]
+    }
+  },
+  "skatteoppgjoersdato": "2022-09-27",
+  "anvendtTolvdelForTrinnskatt": 12,
+  "anvendtTolvdelVedArbeidsoppholdINorge": 12
+}
+```
+
 ## JSON (Versjon 1)
   
 ### Fastland og Svalbard
