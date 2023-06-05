@@ -423,19 +423,19 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 Oversikt over hvilke *&lt;beskrivelse&gt;* koder som brukes for *&lt;pensjonEllerTrygd&gt;*. 
 Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk.
 
-|verdi| gyldig fra og med | gyldig til | sbl |
-|--------|--------|--------|--------|
-|annet|2013-01|2018-01|X|
-|dagpengerTilFisker|2013-01||X|
-|dagpengerVedArbeidsloeshet|2013-01||X|
-|kompensasjonForTaptPersoninntekt| | |X| 
-|lottKunTrygdeavgift|2016-01||X|
-|sykepenger|2013-01||X|
-|sykepengerTilDagmamma|2013-01||X|
-|sykepengerTilFisker|2013-01||X|
-|sykepengerTilJordOgSkogbrukere|2013-01||X|
-|vederlag|2013-01||X|
-|vederlagDagmammaIEgetHjem|2014-01||X|
+|verdi|beskrivelse|gyldig fra og med | gyldig til | sbl |
+|--------|----------|--------|--------|--------|
+|annet|Innrapporterte kontante ytelser som ikke naturlig hører hjemme under noen av de andre lønnsytelsene. Det gjelder for eksempel dekning av kostnader til utdanning for inntektsmottakere der vilkårene for skattefritak ikke er tilstede. Unntaket er dersom kostnaden dekkes som naturalytelse. Det gjelder også dekning av kostnader til overtidsmat, flytting og privatutgifter hvor arbeidsgiver for eksempel refunderer kostnader mot bilag. Ytelsen her oppgis alltid som trekkpliktig.|2013-01|2018-01|X|
+|dagpengerTilFisker|Innrapporterte opplysninger om dagpenger som utbetales til fisker eller fangsmann som erstatter næringsinntekt fra garantikassen for fiskere. Ytelsen oppgis med bruttobeløp som en kontantytelse og er alltid trcekkpliktig|2013-01||X|
+|dagpengerVedArbeidsloeshet|Innrapporterte opplysninger fra NAV om utbetaling av dagpenger som skal erstatte næringsinntekt. Dersom dagpengene er utbetaling til personer som har tjent opp rettigheter til ytelsen som arbeidstaker, frilanser eller vernepliktig er ytelsen trekkpliktig, mens hvis utbetalingen gjelder selvstendig næringsdrivende er det ikke trekkpliktig. Ytelsen oppgis som en kontantytelse og det er bruttobeløp som oppgis|2013-01||X|
+|kompensasjonForTaptPersoninntekt|Innrapporterte opplysninger fra NAV om kompensasjon for tapt personinntekt til selvstendig næringsdrivende etter midlertidig lov om kompensasjonsytelse for selvstendignæringsdrivende og frilansere som har mistet inntekt som følge av utbrudd av covid-19. Ytelsen oppgis som en kontantyteles, i bruttobeløp og er ikke trekkpliktig. Merk at tapt personinntekt for frilanser oppgis som andre lønnsytelser| | |X| 
+|lottKunTrygdeavgift|Innrapporterte opplysninger om lott eller part i fiske og fangst til fiskere, både månedlig forskudd på lott og avregning i forbindelse med lottoppgjør. Innrapporteringen gjelder bare hvis fiskeren har lottinntekt, er bosatt i annen EØS-stat og jobber ombord på norkse fartøy og ikke er skattepliktig til Norge for lottinntekten. Fiskere er som hovedregel pliktig medlem av folketrygden og Skatteetaten skal fastsette pensjonsgivende inntekt og trygdeavgift. Ytelsen oppgis i brutto og rapporteres som hovedregel som trekkpliktig|2016-01||X|
+|sykepenger|Innrapporterte opplysninger fra NAV om utbetalte sykepenger fra folketrygden til for eksempel selvstendig næringsdrivende. Ytelsen oppgis i bruttobeløp, som en kontantytelse og er ikke trekkpliktig|2013-01||X|
+|sykepengerTilDagmamma|>Innrapporterte opplysninger fra NAV om utbetalte sykepenger for privat barnepass utført i dagmammaens hjem når barnet ikke har fylt 12 år før utgangen av inntektsåret, eller er eldre og har særlig behov for omsorg og pleie. Ytelsen oppgis i bruttobeløp, som en kontantytelse og er ikke trekkpliktig|2013-01||X|
+|sykepengerTilFisker|Innrapporterte opplysninger fra NAV om utbetalte sykepenger til fisker eller fangstmann. Ytelsen oppgis i bruttobeløp, som en kontantytelse og oppgis alltid som trekkpliktig|2013-01||X|
+|sykepengerTilJordOgSkogbrukere|Innrapporterte opplysninger om utbetalte sykepenger, foreldrepenger og svangerskapspenger til jord- og/eller skogbruker som erstatter næringsinntekt. Ytelsen oppgis i bruttobeløp, som en kontantytelse og er ikke trekkpliktig.|2013-01||X|
+|vederlag||2013-01||X|
+|vederlagDagmammaIEgetHjem|Innrapporterte opplysninger om utbetaling av godtgjørelse til dagmamma som passer barnet i dagmammaens hjem. Ytelsen oppgis enten som en kontantytelse eller som en utgiftsgodgjørelse i bruttobeløp og er ikke trekkpliktig|2014-01||X|
 
 ## Element med tekstkoder
 
