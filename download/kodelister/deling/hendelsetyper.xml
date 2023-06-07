@@ -17,7 +17,7 @@
         </beskrivelse>
     </kode>
     <kode>
-        <tekniskNavn>indentitetsendring</tekniskNavn>
+        <tekniskNavn>identitetsendring</tekniskNavn>
         <beskrivelse>
             <spraakTekst>
                 <tekst>Informasjon knyttet til hendelsen kan være berørt av en identitetsendring.</tekst>
