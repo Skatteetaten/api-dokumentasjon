@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2023-06-12T00:00:00.000Z</updated>
+    <updated>2023-06-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Utgår - Varsel om vedlikehold torsdag 15. juni 2023 ]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/06/15/ varslet vedlikehold ferdig</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/06/15/ varslet vedlikehold ferdig"/>
+        <updated>2023-06-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tidligere varslet vedlikehold er allerede er utført, og  det ikke blir noe nedetid i kveld torsdag 15.juni 2023.]]></summary>
+        <content type="html"><![CDATA[<p>Tidligere varslet vedlikehold er allerede er utført, og  det ikke blir noe nedetid i kveld torsdag 15.juni 2023.
+Dette gjelder for konsumenter som benytter Skattemelding-api eller som gjør oppslag på utkast- eller fastsatt-stadiet i Summert skattegrunnlag-api eller Spesifisert summert skattegrunnlag-api.</p>]]></content>
+        <category label="Vedlikehold" term="Vedlikehold"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Varsel om vedlikehold torsdag 15. juni 2023]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/06/12/Vedlikehold</id>

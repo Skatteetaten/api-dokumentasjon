@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[6709],{2121:e=>{e.exports=JSON.parse('{"label":"Vedlikehold","permalink":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags/vedlikehold","allTagsPath":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags","count":2}')}}]);
