@@ -15,7 +15,4 @@ Det er mulig for systemleverandører (og andre) å opptre på vegne av andre vir
 
 Digdir har en nærmere beskrivelse av hvordan dette gjøres. Se [Digdir sine side for hvordan bruke maskinporten som leverandør](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument#bruke-delegering-som-leverand%C3%B8r). Selve kallene mot Skatteetaten vil skje på vanlig måte men tokenet vil inneholde informasjon både om konsument og systemleverandør.
 
-[//]: <iframe src="https://player.vimeo.com/video/533856189?h=d4a5afc5d8" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-[//]: <p><a href="https://vimeo.com/533856189">Hvordan delegere rettighet til leverand&oslash;r</a> from <a href="https://vimeo.com/digdir">Digitaliseringsdirektoratet</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
 For at systemleverandører skal kunne teste tjenestene, må det [delegeres rettigheter til tjenestene også i Test](../test/testfrasystemleverandor.md).
