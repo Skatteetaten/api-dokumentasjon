@@ -52,7 +52,7 @@ For denne tjenesten finns følgende rettighetspakker
 | regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter |
 
 ## Samtykke
-For rettighetspakkene `finans` og `regnskapssystem` kreves [samtykke](../om/samtykke.md) for denne tjenesten.
+For rettighetspakkene `finans` og `regnskapssystem` kreves [samtykke](../om/samtykke.md) for dette api'et.
 
 | Endepunkt | Tjenestekode |
 |--------| ------ |
