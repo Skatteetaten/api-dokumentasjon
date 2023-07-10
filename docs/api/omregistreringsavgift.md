@@ -20,17 +20,16 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:omregistreringsavgift`
 
 ## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Omregistreringsavgift API - På vegne av`
+Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Omregistreringsavgift API - På vegne av`
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/omregistreringsavgift-api/1.0.0) ligger på SwaggerHub.
-
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/omregistreringsavgift-api/1.0.0) på SwaggerHub.
 
 ## Rettighetspakker 
 
@@ -39,7 +38,6 @@ I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tj
 | fnf |
 
 ## Datakatalog
- 
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/fce309db-daed-3a5e-bb24-040629d05628) i Felles datakatalog.
 
 </TabItem>
