@@ -30,8 +30,8 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 
 ## Teknisk spesifikasjon
 Det finnes for tiden 2 versjoner av denne tjenesten, og ulike rettighetspakker er støttet i ulike versjoner. Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene på Swaggerhub.
-* [Versjon 1](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api/1.0.0)
-* [Versjon 2](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api)
+* [Beregnet skatt API - versjon 1](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api/1.0.0)
+* [Beregnet skatt API - versjon 2](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-api)
   
 ## Rettighetspakker
 
