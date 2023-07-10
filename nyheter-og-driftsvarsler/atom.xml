@@ -15,7 +15,9 @@
         <summary type="html"><![CDATA[Tidligere varslet vedlikehold er allerede er utført, og  det ikke blir noe nedetid i kveld torsdag 15.juni 2023.]]></summary>
         <content type="html"><![CDATA[<p>Tidligere varslet vedlikehold er allerede er utført, og  det ikke blir noe nedetid i kveld torsdag 15.juni 2023.
 Dette gjelder for konsumenter som benytter Skattemelding-api eller som gjør oppslag på utkast- eller fastsatt-stadiet i Summert skattegrunnlag-api eller Spesifisert summert skattegrunnlag-api.</p>]]></content>
-        <category label="Vedlikehold" term="Vedlikehold"/>
+        <category label="Drift" term="Drift"/>
+        <category label="Skattemelding" term="Skattemelding"/>
+        <category label="Skatteoppgjør" term="Skatteoppgjør"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Varsel om vedlikehold torsdag 15. juni 2023]]></title>
@@ -24,7 +26,9 @@ Dette gjelder for konsumenter som benytter Skattemelding-api eller som gjør opp
         <updated>2023-06-12T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Det utføres nødvendig vedlikehold torsdag 15.juni som medfører nedetid fra kl. 18.00 til kl. 19.00 for konsumenter som benytter Skattemelding-api eller som gjør oppslag på utkast- eller fastsatt-stadiet i Summert skattegrunnlag-api eller Spesifisert summert skattegrunnlag-api.]]></summary>
         <content type="html"><![CDATA[<p>Det utføres nødvendig vedlikehold torsdag 15.juni som medfører nedetid fra kl. 18.00 til kl. 19.00 for konsumenter som benytter Skattemelding-api eller som gjør oppslag på utkast- eller fastsatt-stadiet i Summert skattegrunnlag-api eller Spesifisert summert skattegrunnlag-api.</p>]]></content>
-        <category label="Vedlikehold" term="Vedlikehold"/>
+        <category label="Drift" term="Drift"/>
+        <category label="Skattemelding" term="Skattemelding"/>
+        <category label="Skatteoppgjør" term="Skatteoppgjør"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Planlagt nedetid på Aktiv konto API]]></title>
