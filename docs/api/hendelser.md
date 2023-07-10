@@ -49,7 +49,7 @@ Delegering i Altinn gjøres pr. scope, så tilgang til hendelseslisterer er hån
   
 ## Teknisk spesifikasjon
   
-Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til hendelseslistene på SwaggerHub:
+Url’er til api'ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til hendelseslistene på SwaggerHub:
 
 * [Inntekt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntektsmottaker-hendelser_api)
 * [Mva-melding hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-melding-hendelser-api)
