@@ -1,7 +1,7 @@
 ---
 title:  "Tjenester som støtter nytt Maskinporten-domene i test"
 permalink: Tjenester som støtter nytt Maskinporten-domene i test-070323.html
-tags: [Nyhet, Maskinporten]
+tags: [Nyhet, Maskinporten, Test]
 ---
 
 Ref. info fra Digdir om ny systemarkitektur og nytt domene (test.maskinporten.no).
