@@ -61,7 +61,7 @@ det vil medføre nedetid i Aktiv konto API og tjenesten vil være utilgjengelige
         <updated>2023-04-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Det er behov for å utføre nødvendig vedlikehold torsdag 27.april fra kl. 18.00 til kl. 19.00. Jobben vil medføre nedetid.]]></summary>
         <content type="html"><![CDATA[<p>Det er behov for å utføre nødvendig vedlikehold torsdag 27.april fra kl. 18.00 til kl. 19.00. Jobben vil medføre nedetid.</p>]]></content>
-        <category label="Nyhet" term="Nyhet"/>
+        <category label="Drift" term="Drift"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Flere tjenester støtter nytt Maskinporten-domene i test]]></title>
@@ -82,7 +82,7 @@ Av Skattedelingstjenestene er det kun Aktiv konto API og Pensjonsgivende inntekt
         <updated>2023-04-18T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Det er behov for å utføre nødvendig vedlikehold i produksjonsmiljøet, torsdag 20. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.]]></summary>
         <content type="html"><![CDATA[<p>Det er behov for å utføre nødvendig vedlikehold i produksjonsmiljøet, torsdag 20. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.</p>]]></content>
-        <category label="Nyhet" term="Nyhet"/>
+        <category label="Drift" term="Drift"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Planlagt nedetid torsdag 13.april kl 18.00 til kl 19.00]]></title>
@@ -91,7 +91,7 @@ Av Skattedelingstjenestene er det kun Aktiv konto API og Pensjonsgivende inntekt
         <updated>2023-04-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Det er behov for å utføre nødvendig vedlikehold torsdag 13. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.]]></summary>
         <content type="html"><![CDATA[<p>Det er behov for å utføre nødvendig vedlikehold torsdag 13. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.</p>]]></content>
-        <category label="Nyhet" term="Nyhet"/>
+        <category label="Drift" term="Drift"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Tjenester som støtter nytt Maskinporten-domene i test]]></title>
