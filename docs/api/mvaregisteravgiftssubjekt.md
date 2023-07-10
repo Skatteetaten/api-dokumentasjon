@@ -20,18 +20,17 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvaregisteravgiftssubjekt`
 
 ## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva-register – avgiftssubjekter med skattemeldingsplikt API - På vegne av`
+Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva-register – avgiftssubjekter med skattemeldingsplikt API - På vegne av`
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-register-avgiftssubjekter-med-skattemeldingsplikt-api/) ligger på SwaggerHub.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-register-avgiftssubjekter-med-skattemeldingsplikt-api/) på SwaggerHub.
 
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
-  
 ## Rettighetspakker
   
 | Navn på rettighetspakke |	
@@ -39,11 +38,9 @@ I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tj
 | ssb |
 
 ## Støttetjenester
-  
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API`
 
 ## Datakatalog
- 
 [Datatjenestebeskrivelse] i Felles datakatalog.
 
 </TabItem>
