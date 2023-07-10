@@ -1,6 +1,6 @@
 ---
 title:  "Planlagt nedetid på Aktiv konto API"
-tags: [Nyhet]
+tags: [Drift, Aktiv konto]
 ---
 OBS: Oppgraderingen er utsatt til 3. eller 4. juni. 
 
