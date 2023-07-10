@@ -46,6 +46,7 @@ Dersom `Accept`-header er satt til `application/xml` vil en eventuell feilmeldin
 ```
 
 Ved feilrapportering er spesielt `korrelasjonsid` nyttig, men rapporter gjerne hele feilmeldingen for å forenkle feilsøking.
+Korrelasjonsid skal være unik pr. kall, og ikke gjenbrukes på tvers av kall mot Skatteetaten, selv om de er del av samme løsning hos konsumenten.
 
 ### Felles feilkoder
 
