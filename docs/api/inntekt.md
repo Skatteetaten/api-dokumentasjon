@@ -20,6 +20,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:inntekt`
@@ -28,10 +29,8 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:in
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
  
 ## Teknisk spesifikasjon
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-api/) ligger på SwaggerHub.
+Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-api/) på SwaggerHub.
 
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
- 
 Det finnes pt. to ulike URL'er til tjenesten. Url'en som skal benyttes er den som ligger i Open API spesifikasjonen.
 
 Gammel URL kan også benyttes, men vil etter hver utfases: 
@@ -40,7 +39,6 @@ GET https://<env>/api/innrapportert/inntektsmottaker/<rettighetspakke>/<personid
 ``` 
 
 ## Rettighetspakker
-
 Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhetens *rettighetspakke* avgjør hvilke inntekter som filtreres vekk før data utleveres. Inntekter som ikke skal utleveres for en rettighetspakke fjernes i sin helhet.
 
 | Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
@@ -77,7 +75,6 @@ For denne tjenesten er det enkelte parametre som må følge med ved bruk av samt
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Inntekt hendelser API`
 
 ## Datakatalog
- 
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/5f96b872-b5be-3681-9e84-bb4a5a74d049) i Felles datakatalog.
  
 ## Datostyrt spørreperiode
