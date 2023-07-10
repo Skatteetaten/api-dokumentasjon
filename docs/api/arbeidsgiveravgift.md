@@ -29,7 +29,7 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:ar
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Arbeidsgiveravgift API - På vegne av`
 
 ## Teknisk spesifikasjon
-Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsgiveravgift-api) på SwaggerHub.
+Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsgiveravgift-api) på SwaggerHub.
 
  ## Rettighetspakker
 
