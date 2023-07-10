@@ -20,20 +20,18 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:inntektsmottakere`
 
 ## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntektsmottakere API - På vegne av`
+Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntektsmottakere API - På vegne av`
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntektsmottakere-api) av API'et på SwaggerHub.
-
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntektsmottakere-api) på SwaggerHub.
 
 ## Rettighetspakker
- 
 Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
  
 | Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
@@ -41,7 +39,6 @@ Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetsp
 | otp | Perioden det spørres på må være innenfor avtaleperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
 
 ## Datakatalog
- 
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/463966c2-0a35-3845-b2a4-9446d36526e4) i Felles datakatalog.
 
 </TabItem>
