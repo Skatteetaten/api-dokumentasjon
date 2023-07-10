@@ -24,19 +24,21 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
-Man trenger ikke eget scope for denne tjenesten, siden den benytter samme scope som relaterte oppslagstjenester: 
+Man trenger ikke eget scope for dette api'et, siden den benytter samme scope som relaterte oppslagstjenester: 
   * `skatteetaten:summertskattegrunnlag`
   * `skatteetaten:spesifisertsummertskattegrunnlag`
 
 ## Delegering
-Tilgang til hendelseslister delegeres i Altinn når man delegerer oppslagstjenesten.
+Tilgang til denne støttetjenester delegeres i Altinn når man delegerer oppslagstjenesten.
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/tilgjengelig-data-api) ligger på SwaggerHub.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/tilgjengelig-data-api) på SwaggerHub.
 
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+## Datakatalog
+Dette api'et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
