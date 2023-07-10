@@ -20,17 +20,16 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:spesifisertsummertskattegrunnlag`
 
 ## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Spesifisert summert skattegrunnlag API API - På vegne av`
+Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Spesifisert summert skattegrunnlag API API - På vegne av`
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/spesifisert-summert-skattegrunnlag-api) ligger på SwaggerHub.
-
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/spesifisert-summert-skattegrunnlag-api) på SwaggerHub.
   
 Det tilbys to endepunkter for uthenting av spesifisert summert skattegrunnlag, hvor URL har litt ulik oppbygging.
   
@@ -56,7 +55,7 @@ GET https://{env}/api/formueinntekt/spesifisertsummertskattegrunnlag/{rettighets
 | spkBoliglaan | oppgjoer | Hjemmel |
   
 ## Samtykke
-Tjenesten kan kreve [samtykke](../om/samtykke.md). Datakonsumenter med samtykke har kun lov til å spørre om spesifisert summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
+Api'et kan kreve [samtykke](../om/samtykke.md). Datakonsumenter med samtykke har kun lov til å spørre om spesifisert summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
 | Tjenestekode | Formål | Kommentar |
 |---|---|---|
@@ -74,11 +73,9 @@ For denne tjenesten er det en  parameter som må følge med:
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
 
 ### Siste tilgjengelige skatteoppgjør
-
 Virksomheter med samtykke har kun lov til å spørre om summert skattegrunnlag for seneste tilgjengelige *inntektsaar*. [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md) kan brukes uten samtykke til å sjekke hva som er seneste tilgjengelige inntektsaar for en skattepliktig.
   
 ## Datakatalog
- 
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/8cc670c2-fa13-3f39-ade8-ca21b6ed06e0) i Felles datakatalog.
   
 </TabItem>
