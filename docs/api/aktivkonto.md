@@ -20,6 +20,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:aktivkonto`
@@ -29,11 +30,7 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 
 ## Teknisk spesifikasjon
 
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/aktivkonto-api)
-ligger på SwaggerHub.
-
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene,
-endepunkter osv.
+Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/aktivkonto-api) på SwaggerHub.
 
 ## Datakatalog
 
