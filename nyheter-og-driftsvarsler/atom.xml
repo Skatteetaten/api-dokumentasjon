@@ -91,7 +91,7 @@ Av Skattedelingstjenestene er det kun Aktiv konto API og Pensjonsgivende inntekt
         <updated>2023-04-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Det er behov for å utføre nødvendig vedlikehold torsdag 13. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.]]></summary>
         <content type="html"><![CDATA[<p>Det er behov for å utføre nødvendig vedlikehold torsdag 13. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.</p>]]></content>
-        <category label="Drift" term="Drift"/>
+        <category label="Nyhet" term="Nyhet"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Tjenester som støtter nytt Maskinporten-domene i test]]></title>
