@@ -17,6 +17,8 @@ For å møte det stadig økende behovet for nye delingstjenester og ha mer effek
 
 Dette vil også være en forbedring for brukeropplevelse for konsumentene, som kan benytte Open API spesifikasjonene for å få automatisert opprettelse av tjenester mot Skatteetaten.
 
+I Open API spesifikasjonen ligger url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons.
+
 
 ## SwaggerHub
 
