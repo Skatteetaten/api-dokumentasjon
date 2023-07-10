@@ -1,6 +1,6 @@
 ---
 title: Mva-meldingen
-slug: /anvendelsesomraader/mva-melding
+slug: /anvendelsesomraader/mvamelding
 folder: anvendelsesomraader
 sidebar: mydoc_sidebar
 datatable: true
