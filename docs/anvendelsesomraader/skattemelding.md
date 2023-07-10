@@ -15,7 +15,7 @@ hide_table_of_contents: true
 De siste årene har Sirius-prosjektet i Skatteetaten modernisert skattemeldingen, og dokumentasjon knyttet til dette ligger foreløpig på [en egen Github-side](https://github.com/Skatteetaten/skattemeldingen).
 Der kan man finne kode og spesifikasjoner til partnere/leverandører av sluttbrukersystemleverandører for årsoppgjør/skattemeldingen.
 
-## API'er for Mva-meldingen
+## API'er for Skattemeldingen
 I tillegg til api'ene knyttet til innsending av skattemeldingen, er det laget noen klassiske delingstjenester for SSB:
 * [Skattemelding API](../api/skattemelding.md)
 * [Skattemelding upersonlig API](../api/skattemeldingupersonlig.md)
