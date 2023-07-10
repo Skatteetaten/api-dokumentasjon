@@ -26,12 +26,12 @@ For generell informasjon om tjenestene se egne sider om:
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:inntekt`
 
 ## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
+Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
  
 ## Teknisk spesifikasjon
-Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-api/) på SwaggerHub.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-api/) på SwaggerHub.
 
-Det finnes pt. to ulike URL'er til tjenesten. Url'en som skal benyttes er den som ligger i Open API spesifikasjonen.
+Det finnes pt. to ulike URL'er til api'et. Url'en som skal benyttes er den som ligger i Open API spesifikasjonen.
 
 Gammel URL kan også benyttes, men vil etter hver utfases: 
 ```
