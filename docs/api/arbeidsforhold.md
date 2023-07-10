@@ -20,6 +20,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:arbeidsforhold`
@@ -28,13 +29,10 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:ar
 Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Arbeidsforhold API - På vegne av`
 
 ## Teknisk spesifikasjon
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsforhold-api) ligger på SwaggerHub. 
-
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsforhold-api) på SwaggerHub. 
 
 ## Datakatalog
- 
-[Datatjenestebeskrivelse](https://data.norge.no/dataservices/1012bfb1-c17b-3f1b-a03a-74ccc7543a05) i Felles datakatalog.
+ [Datatjenestebeskrivelse](https://data.norge.no/dataservices/1012bfb1-c17b-3f1b-a03a-74ccc7543a05) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
