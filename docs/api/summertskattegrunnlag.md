@@ -260,6 +260,12 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 
 ## Årsversjoner
 
+<Tabs>
+<TabItem headerText="2022"> Test 2022 </TabItem>
+<TabItem headerText="2021"> Test 2021 </TabItem>
+<TabItem headerText="2020"> Test 2020 </TabItem>
+</Tabs>
+
 | År | Informasjonsmodell |
 |-----------|--------|
 | 2016 | [Informasjonsmodell for summert skattegrunnlag 2016](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2016.md) |
