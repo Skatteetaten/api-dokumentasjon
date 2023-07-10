@@ -24,6 +24,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
   
 ## Scope
 
@@ -48,7 +49,8 @@ Delegering i Altinn gjøres pr. scope, så tilgang til hendelseslisterer er hån
   
 ## Teknisk spesifikasjon
   
-Open API spesifikasjon av hendelseslistene er på SwaggerHub:
+Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til hendelseslistene på SwaggerHub:
+
 * [Inntekt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntektsmottaker-hendelser_api)
 * [Mva-melding hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-melding-hendelser-api)
 * [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-register-avgiftssubjekter-hendelser-api/)
@@ -60,8 +62,6 @@ Open API spesifikasjon av hendelseslistene er på SwaggerHub:
 * [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-upersonlig-hendelser-api)
 * [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-utkast-hendelser-api)
 * [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/tilleggsskatt-hendelser-api)
-  
-I [Open API spesifikasjonene](../om/tekniskspesifikasjon.md) ligger URL'er til tjenestene, beskrivelsen av parameterene, endepunkter osv.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
