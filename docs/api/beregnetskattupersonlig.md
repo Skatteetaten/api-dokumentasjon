@@ -31,7 +31,7 @@ Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør be
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Beregnet skatt upersonlig API - På vegne av`
 
 ## Teknisk spesifikasjon
-Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-upersonlig-api)
+Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/beregnet-skatt-upersonlig-api)
 på SwaggerHub.
 
 ## Rettighetspakker
