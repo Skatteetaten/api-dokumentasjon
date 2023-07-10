@@ -19,19 +19,18 @@ For generell informasjon om tjenestene se egne sider om:
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:naeringsspesifikasjon`
 
 ## Delegering
-Tilgang til denne tjenesten kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Næringsspesifikasjon API - På vegne av`
+Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Næringsspesifikasjon API - På vegne av`
 
 ## Teknisk spesifikasjon
 Næringsspesifikasjon API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har en egen versjon pr. inntektsår. For øyeblikket leverer tjenesten næringsspesifikasjon for 2022.
   
-[Open API spesifikasjonen for tjenesten](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api) ligger på SwaggerHub.
-
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-api) på SwaggerHub.
 
 ## Rettighetspakker
   
@@ -43,7 +42,6 @@ I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tj
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Næringsspesifikasjon hendelser API`
  
 ## Datakatalog
-
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/6ed9209d-c7c0-376f-a4b5-b4ce7cc1933b) i Felles datakatalog.
 
 </TabItem>
