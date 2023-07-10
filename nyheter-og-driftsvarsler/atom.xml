@@ -91,7 +91,7 @@ Av Skattedelingstjenestene er det kun Aktiv konto API og Pensjonsgivende inntekt
         <updated>2023-04-11T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Det er behov for å utføre nødvendig vedlikehold torsdag 13. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.]]></summary>
         <content type="html"><![CDATA[<p>Det er behov for å utføre nødvendig vedlikehold torsdag 13. april fra kl. 18.00 til kl. 19.00. Jobben vil medfører nedetid.</p>]]></content>
-        <category label="Nyhet" term="Nyhet"/>
+        <category label="Drift" term="Drift"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Tjenester som støtter nytt Maskinporten-domene i test]]></title>
@@ -102,6 +102,7 @@ Av Skattedelingstjenestene er det kun Aktiv konto API og Pensjonsgivende inntekt
         <content type="html"><![CDATA[<p>Ref. info fra Digdir om ny systemarkitektur og nytt domene (test.maskinporten.no).</p><p>Skatteetaten er i gang med å tilrettelegge for at det skal være mulig å teste med både test og ver2 for Skatteetatens tjenester, og for enkelte tjenester er dette nå på plass:</p><ul><li>Beregnet skatt API</li><li>Inntekt API</li><li>Inntektsmottakere API</li><li>Mva-melding API</li><li>Mva-register - avgiftssubjekter med skattemeldingsplikt API</li><li>Næringsspesifikasjon API</li><li>Skattemelding API</li><li>Skattemelding upersonlig API</li><li>Spesifisert summert skattegrunnlag API</li><li>Summert skattegrunnlag API</li><li>Tilgjengeligdata API</li><li>Tjenestepensjonsavtale API</li><li>Trukket kildeskatt på lønn API&nbsp;</li></ul><p>Vi fortsetter med de resterende tjenestene, og vil ta de løpende fremover.</p>]]></content>
         <category label="Nyhet" term="Nyhet"/>
         <category label="Maskinporten" term="Maskinporten"/>
+        <category label="Test" term="Test"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Støtte for inntektsår 2022 for skatteoppgjørstjenestene]]></title>
