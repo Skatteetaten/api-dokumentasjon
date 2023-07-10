@@ -1,6 +1,6 @@
 ---
 title:  "Utgår - Varsel om vedlikehold torsdag 15. juni 2023 "
-tags: [Vedlikehold]
+tags: [Drift, Skattemelding, Skatteoppgjør]
 ---
  
 Tidligere varslet vedlikehold er allerede er utført, og  det ikke blir noe nedetid i kveld torsdag 15.juni 2023.
