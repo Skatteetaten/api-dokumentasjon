@@ -52,7 +52,7 @@ det vil medføre nedetid i Aktiv konto API og tjenesten vil være utilgjengelige
         <updated>2023-04-26T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Fra lørdag 29.april kl 0900 til kl 0930 vil tjenestene våre kunne bli ustabile pga vedlikehold.]]></summary>
         <content type="html"><![CDATA[<p>Fra lørdag 29.april kl 0900 til kl 0930 vil tjenestene våre kunne bli ustabile pga vedlikehold.</p>]]></content>
-        <category label="Nyhet" term="Nyhet"/>
+        <category label="Drift" term="Drift"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Planlagt nedetid 27.April]]></title>
