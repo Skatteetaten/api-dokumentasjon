@@ -31,10 +31,8 @@ Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Teknisk spesifikasjon
 Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/boligsparing-for-ungdom-api) på SwaggerHub.
 
-I [Open API spesifikasjonen](../om/tekniskspesifikasjon.md) ligger URL'er til tjenesten, beskrivelsen av parameterene, endepunkter osv.
- 
 ## Datakatalog
- [Datatjenestebeskrivelse](https://data.norge.no/dataservices/37b70e5e-b862-3c66-a5f1-4dca6ee30afb) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/dataservices/37b70e5e-b862-3c66-a5f1-4dca6ee30afb) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
