@@ -33,7 +33,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "nb",
-    locales: ["nb"],
+    locales: ["nb", "en"],
   },
 
   themes: [
@@ -88,7 +88,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: {},
+      navbar: {
+        items: [
+          {
+            type: "localeDropdown",
+            position: "left",
+          },
+        ],
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
