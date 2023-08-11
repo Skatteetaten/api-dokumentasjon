@@ -88,14 +88,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      navbar: {
-        items: [
-          {
-            type: "localeDropdown",
-            position: "left",
-          },
-        ],
-      },
+      navbar: {},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

@@ -6,17 +6,36 @@ import { TopBanner } from "./TopBanner";
 import SearchBar from "../../../docusaurus-search-local-plugin/client/theme/SearchBar";
 import NavbarSearch from "@theme/Navbar/Search";
 import styles from "./TopBanner.module.scss";
-import { useActiveDocContext } from "@docusaurus/plugin-content-docs/client";
+import LanguagePicker, {
+  LanguageEnum,
+} from "@site/src/components/LanguagePicker";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 function useNavbarItems() {
   return useThemeConfig().navbar.items;
 }
 
 export default function Navbar(): JSX.Element {
-  const context = useActiveDocContext();
+  const {
+    i18n: { currentLocale, locales },
+  } = useDocusaurusContext();
   const items = useNavbarItems();
-  const t = useThemeConfig();
   const searchBarItem = items.find((item) => item.type === "search");
+
+  const selectedLanguage =
+    LanguageEnum[
+      Object.keys(LanguageEnum)[
+        Object.values(LanguageEnum).indexOf(currentLocale as LanguageEnum)
+      ] as keyof typeof LanguageEnum
+    ];
+  const selectableLanguages = locales.map(
+    (locale) =>
+      LanguageEnum[
+        Object.keys(LanguageEnum)[
+          Object.values(LanguageEnum).indexOf(locale as LanguageEnum)
+        ] as keyof typeof LanguageEnum
+      ]
+  );
 
   return (
     <BrowserOnly>
@@ -51,6 +70,11 @@ export default function Navbar(): JSX.Element {
                       å forstørre eller - for å forminske.
                     </div>
                   </TopStripeMenu>
+                  <LanguagePicker
+                    selectedLanguage={selectedLanguage}
+                    selectableLanguages={selectableLanguages}
+                    showOnMobile
+                  />
                   {!searchBarItem && (
                     <NavbarSearch>
                       <SearchBar />
