@@ -126,5 +126,17 @@
   "sidebar.docs.doc.Folketrygden": {
     "message": "Folketrygden",
     "description": "The label for the doc item Folketrygden in sidebar docs, linking to the doc datareference/data_pgi_folketrygden"
+  },
+  "sidebar.docs.category.Om": {
+    "message": "Om",
+    "description": "The label for category Om in sidebar docs"
+  },
+  "sidebar.docs.category.API'er": {
+    "message": "API'er",
+    "description": "The label for category API'er in sidebar docs"
+  },
+  "sidebar.docs.category.Anvendelsesområder": {
+    "message": "Anvendelsesområder",
+    "description": "The label for category Anvendelsesområder in sidebar docs"
   }
 }
