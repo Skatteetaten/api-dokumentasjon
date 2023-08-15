@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Om": {
+    "message": "Om",
+    "description": "The label for category Om in sidebar docs"
+  },
+  "sidebar.docs.category.API'er": {
+    "message": "API'er",
+    "description": "The label for category API'er in sidebar docs"
+  },
+  "sidebar.docs.category.Anvendelsesområder": {
+    "message": "Anvendelsesområder",
+    "description": "The label for category Anvendelsesområder in sidebar docs"
+  },
+  "sidebar.docs.category.Test": {
+    "message": "Test",
+    "description": "The label for category Test in sidebar docs"
+  }
+}

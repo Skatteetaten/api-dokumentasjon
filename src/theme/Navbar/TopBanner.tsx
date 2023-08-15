@@ -5,6 +5,7 @@ import styles from "./TopBanner.module.scss";
 import Link from "@docusaurus/Link";
 
 import cls from "classnames";
+import Translate from "@docusaurus/Translate";
 
 interface Props {
   topStripe: React.ReactNode;
@@ -45,7 +46,7 @@ const ExternalHeaderContent = ({ ...props }) => {
                     ),
                 })}
               >
-                Dokumentasjon
+                <Translate>Dokumentasjon</Translate>
               </Link>
               <Link
                 to="/nyheter-og-driftsvarsler"
@@ -55,7 +56,7 @@ const ExternalHeaderContent = ({ ...props }) => {
                   ),
                 })}
               >
-                Nyheter og driftsvarsler
+                <Translate>Nyheter og driftsvarsler</Translate>
               </Link>
             </nav>
           </>

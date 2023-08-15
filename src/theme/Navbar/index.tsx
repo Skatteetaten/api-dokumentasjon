@@ -10,6 +10,7 @@ import LanguagePicker, {
   LanguageEnum,
 } from "@site/src/components/LanguagePicker";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Translate, { translate } from "@docusaurus/Translate";
 
 function useNavbarItems() {
   return useThemeConfig().navbar.items;
@@ -50,24 +51,26 @@ export default function Navbar(): JSX.Element {
           <div className={`${styles.navigation} navbar`}>
             <TopBanner
               logoLink="https://www.skatteetaten.no/"
-              homeText="Tilbake Til Deling"
+              homeText={translate({ message: "Tilbake Til Deling" })}
               homeUrl="https://www.skatteetaten.no/deling"
               topStripe={
                 <TopStripe>
                   <Link
                     path={"https://www.skatteetaten.no/kontakt/"}
-                    text={"Kontakt oss"}
+                    text={<Translate>Kontakt oss</Translate>}
                     placement="before"
                   />
                   <TopStripeMenu
                     closeMenuAriaLabel="Lukk endre skriftstørrelse"
-                    title={"Endre skriftstørrelse"}
+                    title={<Translate>Endre skriftstørrelse</Translate>}
                     showOnMobile={false}
                     contentIsMenu={false}
                   >
                     <div style={{ fontSize: "24px", marginTop: "8px" }}>
-                      Hold Ctrl-tasten nede (Cmd-tasten på Mac). Trykk på + for
-                      å forstørre eller - for å forminske.
+                      <Translate>
+                        Hold Ctrl-tasten nede (Cmd-tasten på Mac). Trykk på +
+                        for å forstørre eller - for å forminske.
+                      </Translate>
                     </div>
                   </TopStripeMenu>
                   <LanguagePicker
@@ -82,7 +85,9 @@ export default function Navbar(): JSX.Element {
                   )}
                 </TopStripe>
               }
-              title={"Skatteetatens API'er"}
+              title={translate({
+                message: "Skatteetatens API'er",
+              })}
             />
           </div>
         );
