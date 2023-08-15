@@ -315,6 +315,48 @@
     "message": "Go back to Sharing"
   },
   "Skatteetatens API'er": {
-    "message": "Skatteetaten's APIs"
+    "message": "The Norwegian Tax Administration's APIs"
+  },
+  "Tilgjengelighetserklæring": {
+    "message": "Declaration of availability"
+  },
+  "Jobbe i Skatteetaten": {
+    "message": "Career"
+  },
+  "Om oss": {
+    "message": "About us"
+  },
+  "Analyse og rapporter": {
+    "message": "Analysis and reports"
+  },
+  "Forskning": {
+    "message": "Research"
+  },
+  "Om Skatteetaten": {
+    "message": "About the Norwegian Tax Administration"
+  },
+  "Følg oss": {
+    "message": "Follow us"
+  },
+  "Du kan kontakte oss i sosiale medier.": {
+    "message": "You can contact us via social media."
+  },
+  "Se alle Skatteetatens kontoer": {
+    "message": "See all social media accounts"
+  },
+  "Kom i kontakt med oss": {
+    "message": "Contact us"
+  },
+  "Vi hjelper deg om det er noe du lurer på, enten det gjelder faglige spørsmål, teknisk brukerstøtte eller driftsmeldinger.": {
+    "message": "We help you with your questions, whether they are related to tax, technical or operational support."
+  },
+  "Presse": {
+    "message": "Press"
+  },
+  "Pressemeldinger, pressekontakter og annen informasjon for journalister.": {
+    "message": "Press releases, press contacts and other information for journalists."
+  },
+  "Se vårt presserom": {
+    "message": "See our Press room"
   }
 }
