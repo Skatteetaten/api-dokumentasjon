@@ -358,5 +358,11 @@
   },
   "Se vårt presserom": {
     "message": "See our Press room"
+  },
+  "Abonnere på nyheter og driftsvarsler": {
+    "message": "Subscribing to news and operational alerts"
+  },
+  "Hvordan abonnere på varsler": {
+    "message": "How to subscribe to alerts"
   }
 }
