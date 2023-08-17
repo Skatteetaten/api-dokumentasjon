@@ -1,0 +1,53 @@
+{
+  "personidentifikator": "12345678910",
+  "inntektsaar": "2020",
+  "grunnlag": [
+    {
+      "tekniskNavn": "slitertillegg",
+      "beloep": 110000,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 275000,
+      "spesifisering": [
+        {
+          "type": "LoennOgTilsvarendeYtelser",
+          "arbeidsgiversNavn": "BYGLANDSFJORD OG VÅGÅ REVISJON",
+          "organisasjonsnummer": "810933992",
+          "beloep": 275000
+        }
+      ],
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "verdiFoerVerdsettingsrabattForAksje",
+      "beloep": 2192667,
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "bruttoformue",
+      "beloep": 1425234,
+      "kategori": "-"
+    },
+    {
+      "tekniskNavn": "utbytteFraAksje",
+      "beloep": 49027,
+      "spesifisering": [
+        {
+          "type": "AksjeIAksjonaerregisteret",
+          "organisasjonsnavn": "FOO 69619 AS",
+          "organisasjonsnummer": "915800824",
+          "aksjeklasse": "ordinaer",
+          "isinnummer": "NO1293131072",
+          "antallAksjer": 159,
+          "skattepliktigUtbytte": 49027,
+          "verdiFoerVerdsettingsrabattForAksje": 848897
+        }
+      ],
+      "kategori": "inntekt"
+    }
+  ],
+  "skjermet": false,
+  "skatteoppgjoersdato": "2021-02-10"
+}

@@ -1,0 +1,86 @@
+{
+  "personidentifikator": "12345678901",
+  "inntektsaar": "2018",
+  "grunnlag": [
+    {
+      "tekniskNavn": "samletInnskuddIInnenlandskeBanker",
+      "beloep": 4500000,
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "samledeOpptjenteRenterIInnenlandskeBanker",
+      "beloep": 3000,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "formuesverdiForPrimaerbolig",
+      "beloep": 350000,
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "formuesverdiForKjoeretoey",
+      "beloep": 50000,
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 90000,
+      "spesifisering": [
+        {
+          "type": "Generisk",
+          "kildenavn": "Arbeidsgivers navn er ikke oppgitt",
+          "kildebeskrivelse": "Arbeidsgivers navn",
+          "beloep": 25914
+        },
+        {
+          "type": "Generisk",
+          "kildenavn": "Stadlandet Og Venabygd",
+          "kildebeskrivelse": "Arbeidsgivers navn",
+          "beloep": 30000
+        },
+        {
+          "type": "Generisk",
+          "kildenavn": "Arbeidsgivers navn er ikke oppgitt",
+          "kildebeskrivelse": "Arbeidsgivers navn",
+          "beloep": 1997
+        },
+        {
+          "type": "Generisk",
+          "kildenavn": "Arbeidsgivers navn er ikke oppgitt",
+          "kildebeskrivelse": "Arbeidsgivers navn",
+          "beloep": 1260
+        },
+        {
+          "type": "Generisk",
+          "kildenavn": "Stadlandet Og Venabygd",
+          "kildebeskrivelse": "Arbeidsgivers navn",
+          "beloep": 50000
+        },
+        {
+          "type": "Generisk",
+          "kildenavn": "Hvittingfoss Og Todalen",
+          "kildebeskrivelse": "Arbeidsgivers navn",
+          "beloep": 222346
+        }
+      ],
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "etterlattepensjonFraFolketrygden",
+      "beloep": 35000,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonMedTrekkpliktEksklusiveEktefelletillegg",
+      "beloep": 220000,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "fradragsberettigetTapVedRealisasjonAvFastEiendom",
+      "beloep": 25000,
+      "kategori": "inntektsfradrag"
+    }
+  ],
+  "skjermet": false,
+  "skatteoppgjoersdato": "2019-03-01"
+}

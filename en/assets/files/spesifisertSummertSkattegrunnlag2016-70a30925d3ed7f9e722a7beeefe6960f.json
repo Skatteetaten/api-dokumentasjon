@@ -1,0 +1,148 @@
+{
+  "personidentifikator": "12345678910",
+  "inntektsaar": "2016",
+  "grunnlag": [
+    {
+      "tekniskNavn": "samletPensjonFraEOeSStatSomTilsvarerNorskAlderspensjonEllerAvtalefestetPensjon",
+      "beloep": 489730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletAnnenTrekkpliktigPensjon",
+      "beloep": 859460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletTrekkpliktigUtgiftsgodtgjoerelse",
+      "beloep": 29730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygden",
+      "beloep": 609460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddFraUtleieAvFastEiendom",
+      "beloep": 279730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem",
+      "beloep": 229730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletOverskuddPaaUtgiftsgodtgjoerelse",
+      "beloep": 569460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletAlderspensjonFraFolketrygden",
+      "beloep": 139730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletUnderskuddINaeringsvirksomhet",
+      "beloep": 529460,
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "samletAnnenPensjonMedTrekkfritak",
+      "beloep": 599460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenJordbrukReindriftSkiferproduksjonOgAnnenNaering",
+      "beloep": 1099460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletTrekkpliktigLoennsinntektUtenTrydgeavgiftsplikt",
+      "beloep": 289730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektKunMedTrygdeavgiftsplikt",
+      "beloep": 539730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvDeltakerlignetSelskapInnenFiskeEllerFamiliebarnehage",
+      "beloep": 429730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletOvergangsstoenadTilEnsligOgEtterlatt",
+      "beloep": 399730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletBarnepensjonOgLivrente",
+      "beloep": 189460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigOverskuddFraUtleieAvFastEiendomIUtlandet",
+      "beloep": 59730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletInntektSomGirRettTilSaerskiltFradragForSjoefolk",
+      "beloep": 509730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletRenteinntektPaaLaanTilSelskapSomSkalEkstrabeskattes",
+      "beloep": 89730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenFiskeOgFangst",
+      "beloep": 159730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletAnnenRenteinntekt",
+      "beloep": 579730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletAnnenInntekt",
+      "beloep": 629460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletSkattefriPensjonFraUtlandet",
+      "beloep": 339730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletLoennsinntekt",
+      "beloep": 2448380,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem",
+      "beloep": 389730,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering",
+      "beloep": 759460,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samletFremfoerbartUnderskuddFraTidligereAar",
+      "beloep": 609460,
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "samletSkattepliktigUtbyttePaaAksjerRegistrertIVerdipapirsentralen",
+      "beloep": 129730,
+      "kategori": "inntekt"
+    }
+  ],
+  "skjermet": false,
+  "skjoennsfastsatt": false
+}

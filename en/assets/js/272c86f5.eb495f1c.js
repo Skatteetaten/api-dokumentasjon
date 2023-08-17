@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[3479],{1033:e=>{e.exports=JSON.parse('{"label":"Skattemelding","permalink":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags/skattemelding","allTagsPath":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags","count":2}')}}]);
