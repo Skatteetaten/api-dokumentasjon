@@ -34,6 +34,7 @@ const config = {
   i18n: {
     defaultLocale: "nb",
     locales: ["nb", "en"],
+    path: "oversettelser",
   },
 
   themes: [
