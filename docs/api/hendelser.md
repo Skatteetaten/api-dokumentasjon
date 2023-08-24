@@ -56,7 +56,7 @@ Url’er til api'ene, beskrivelsen av parameterne, endepunkter og respons ligger
 * [Mva-melding hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-melding-hendelser-api)
 * [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-register-avgiftssubjekter-hendelser-api/)
 * [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-hendelser-api)
-* [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/pgi-folketrygden-hendelser-api/)
+* [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
 * [Skattepliktig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattepliktig-hendelser-api)
 * [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteoppgjor-hendelser-api)
 * [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteoppgjor-upersonlig-hendelser-api)  
