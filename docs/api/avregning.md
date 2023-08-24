@@ -36,6 +36,7 @@ Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger 
 | Navn på rettighetspakke |
 |---|
 | distribusjon |
+| norgesbank |
 | ssb |
   
 ## Støttetjenester
