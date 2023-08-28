@@ -15,8 +15,6 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 
 ## Summerte skattegrunnlag for 2022
 
-Tabellen nedenfor er ikke endelig.
-
 <table class="display">
   <thead>
     <tr> 
