@@ -2236,25 +2236,25 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endepunktene.
 
-[![Informasjonsmodell](../../static/download/Informasjonsmodell_Kravogbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger.jpg)
+[![Informasjonsmodell](../../static/download/Informasjonsmodell_Kravogbetalinger.jpg)](../../static/download/Informasjonsmodell_Kravogbetalinger.jpg)
 
 ## Modell pr endepunkt
 
 ### Åpne krav
 
-[![åpnekrav](../../static/download/Informasjonsmodell_Kravogbetalinger_Aapnekrav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Aapnekrav.jpg)
+[![åpnekrav](../../static/download/Informasjonsmodell_Kravogbetalinger_Aapnekrav.jpg)](../../static/download/Informasjonsmodell_Kravogbetalinger_Aapnekrav.jpg)
 
 ### Krav
 
-[![krav](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.jpg)
+[![krav](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.jpg)](../../static/download/Informasjonsmodell_Kravogbetalinger_Krav.jpg)
 
 ### Innbetalinger
 
-[![innbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_Innbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Innbetalinger.jpg)
+[![innbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_Innbetalinger.jpg)](../../static/download/Informasjonsmodell_Kravogbetalinger_Innbetalinger.jpg)
 
 ### Utbetalinger
 
-[![utbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_Utbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger_Utbetalinger.jpg)
+[![utbetalinger](../../static/download/Informasjonsmodell_Kravogbetalinger_Utbetalinger.jpg)](../../static/download/Informasjonsmodell_Kravogbetalinger_Utbetalinger.jpg)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
