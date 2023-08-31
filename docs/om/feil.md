@@ -75,5 +75,4 @@ I noen tilfeller, for eksempel dersom forespørselen ikke når frem til tjeneste
 
 ## Melde feil
 
-Kontakt oss gjennom vårt [verktøy for brukerstøtte](https://www.skatteetaten.no/deling/kontakt/) hvis du opplever vedvarende feil med tjenestene våre.
-Applikasjon og korrelasjonsid fra feilmelding må inkluderes i henvendelser.
+[Kontakt oss](/../kontaktoss.md) hvis du opplever vedvarende feil med tjenestene våre.
