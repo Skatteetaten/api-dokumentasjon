@@ -75,4 +75,4 @@ I noen tilfeller, for eksempel dersom forespørselen ikke når frem til tjeneste
 
 ## Melde feil
 
-[Kontakt oss](/../kontaktoss.md) hvis du opplever vedvarende feil med tjenestene våre.
+[Kontakt oss](../kontaktoss.md) hvis du opplever vedvarende feil med tjenestene våre.
