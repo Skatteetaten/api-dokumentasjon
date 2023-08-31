@@ -1,12 +1,12 @@
 ---
-slug: /
+title: Kontakt oss
+slug: kontaktoss
 folder: 
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API]
 keywords: [API, dokumentasjon]
 last_updated: Aug 31, 2023
-title: Kontakt oss
 summary: "Kontakt oss om Skatteetatens delingstjenester"
 hide_table_of_contents: true
 ---
