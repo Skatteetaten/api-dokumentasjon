@@ -22,13 +22,18 @@ Kontakt oss gjennom vårt [verktøy for brukerstøtte](https://www.skatteetaten.
 
 ## Slack
 
-For enkelte områder benytter vi [Slack](https://skatteetaten.slack.com) for dialog mellom Skatteetaten og eksterne utviklere og testere i forbindelse med etablering og pilotering av Skatteetatens eksterne tjenester.
+For enkelte områder benytter vi [Slack](https://skatteetaten.slack.com) for dialog mellom utviklere, det er mest aktuelt i forbindelse med etablering og pilotering av Skatteetatens eksterne tjenester.
 Slack erstatter ikke Skatteetatens brukerstøtteløsning eller andre saksbehandlingsløsninger, men er et tillegg på enkelte områder. Dersom det er aktuelt for et område, vil de aktuelle konsumentene få beskjed om det.
 
-Slack brukes til  kort og ikke-sensitiv informasjon mellom utviklere. IKKE del:
-* Person- eller forretningsopplysninger: navn, adresse, telefonnummer, e-post og fødselsnummer
-* Intern informasjon: IP-adresser, hostnames
-* Filer eller programvare
+Slack skal kun brukes for korte og ikke-sensitive spørsmål knytte til utvikling og test. 
 
-Dersom det mot formodning likevel deles sensitiv informasjon i løsningen, vil moderatorer fra Skatteetaten uten varsel slette sensitiv informasjon og konsumenten vil kunne nektes tilgang til løsningen.
+Informasjon som ikke skal deles via Slack er:
+* Sensitive data som passord, personnummer, kontonummer o.l.
+* Person- eller forretningsopplysninger som navn, adresse, telefonnummer, e-post og fødselsnummer tilhørende tredjeparter.
+* Intern informasjon som IP-adresser, hostnames o.l.
+* Filer eller programvare som kan være skadelig eller forstyrre drift av nettverk, tjenere eller annen infrastruktur.
+
+Henvendelser som ikke tilfredsstiller kravene til sikkerhet/sensitive data, må sendes inn gjennom brukerstøtteløsningen. 
+
+Skatteetaten vil uten forvarsel slette sensitiv informasjon som deles i Slack, og konsumenten som ikke overholder kravene vil kunne nektes tilgang til Slack.
 
