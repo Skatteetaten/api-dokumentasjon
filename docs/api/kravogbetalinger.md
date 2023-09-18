@@ -61,21 +61,18 @@ Se også [eksempler](kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
 
 For denne tjenesten finns følgende rettighetspakker
 
-| Navn på rettighetspakke | Formål med rettighetspakke                                                    | Egenskaper ved rettighetspakke                                                                                                                 |
-|-------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| finans                  | Banker og finansforetak som skal vise krav og betalinger i nettbank           | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter                                                             |
+| Navn på rettighetspakke | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
+|-------------------------|----------------------------|--------------------------------|
+| finans                  | Banker og finansforetak som skal vise krav og betalinger i nettbank | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
+| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter |
 
 ## Samtykke
 
 For rettighetspakkene `finans` og `regnskapssystem` kreves [samtykke](../om/samtykke.md) for dette api'et.
 
-| Endepunkt                          | Tjenestekode |
+| Tjenestekode | Formål |
 |------------------------------------|--------------|
-| Krav og betalinger - Aapne krav    | 5928_202301  |
-| Krav og betalinger - Krav          | 5929_202301  |
-| Krav og betalinger - Innbetalinger | 5930_202301  |
-| Krav og betalinger - Utbetalinger  | 5931_202301  |
+| 5928_202301 | Kreves for rettighetspakken `finans` |
 
 ## Datakatalog
 
@@ -195,7 +192,6 @@ behov for ytterligere testdata.
 
 | Organisasjonsnummer | 
 |---------------------|
-| 310478717           |
 | 313367002           |
 | 311851381           |
 | 314961900           |
