@@ -86,36 +86,491 @@ Siden dette er en beta-tjeneste, er den pt. ikke publisert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/871978433/aapnekrav
+https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
 ```
 
 ### Eksempel på respons
 
-Oppdaterte eksempler kommer.
+```json
+{
+  "partIdentifikator": "212201782",
+  "skjermet": false,
+  "aapentKravMedGjenstaaendeBeloep": [
+    {
+      "partIdentifikator": "212201782",
+      "kravidentifikator": "krav-1234",
+      "kravtype": "RESTSKATT",
+      "opprinneligBeloep": 10000.0,
+      "gjenstaaendeBeloep": 10000.0,
+      "kravforfall": [
+        {
+          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+          "forfallsdato": "2023-02-21",
+          "opprinneligBeloep": 10000.0,
+          "gjenstaaendeBeloep": 10000.0,
+          "betalingsinformasjon": {
+            "konto": {
+              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
+              "kontonummer": "63450624804",
+              "iban": "NO42 6345 06 24804",
+              "swiftBIC": "NDEANOKK"
+            }
+          },
+          "plassertInnbetaling": [
+            {
+              "innbetalingsIdentifikator": "inn-12345",
+              "plassertBeloep": -1000.0,
+              "plassertDato": "2023-02-05",
+              "innbetalingsdato": "2023-01-30",
+              "innbetaltBeloep": 0.0,
+              "innbetaltFra": {
+                "konto": {}
+              },
+              "innbetalingstype": "Bankoverføring"
+            }
+          ],
+          "plassertMotkrav": [
+            {
+              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+              "plassertBeloep": -1000.0,
+              "kravtype": "RESTSKATT",
+              "plassertDato": "2023-02-05",
+              "kravbeskrivelse": {
+                "spraakTekst": [
+                  {
+                    "tekst": "Restskatt",
+                    "spraak": "nb"
+                  }
+                ]
+              },
+              "forfallsdato": "2023-01-30",
+              "kravperiode": {
+                "periodeBeskrivelse": {
+                  "spraakTekst": [
+                    {
+                      "tekst": "2023/02",
+                      "spraak": "nb"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "stipulerteRenter": 200.0,
+      "kravbeskrivelse": {
+        "spraakTekst": [
+          {
+            "tekst": "Restskatt",
+            "spraak": "nb"
+          }
+        ]
+      },
+      "kravperiode": {
+        "periodeBeskrivelse": {
+          "spraakTekst": [
+            {
+              "tekst": "2023/02",
+              "spraak": "nb"
+            }
+          ]
+        }
+      },
+      "opprettelsesdatoForKrav": "2023-01-30",
+      "kravgruppe": "Skatt",
+      "fastsettingsmaate": "blank"
+    },
+    {
+      "partIdentifikator": "04827896468",
+      "kravidentifikator": "krav-1234",
+      "kravtype": "RESTSKATT",
+      "opprinneligBeloep": 10000.0,
+      "gjenstaaendeBeloep": 10000.0,
+      "kravforfall": [
+        {
+          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+          "forfallsdato": "2023-02-21",
+          "opprinneligBeloep": 10000.0,
+          "gjenstaaendeBeloep": 10000.0,
+          "betalingsinformasjon": {
+            "konto": {
+              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
+              "kontonummer": "63450624804",
+              "iban": "NO42 6345 06 24804",
+              "swiftBIC": "NDEANOKK"
+            }
+          },
+          "plassertInnbetaling": [
+            {
+              "innbetalingsIdentifikator": "inn-12345",
+              "plassertBeloep": -1000.0,
+              "plassertDato": "2023-02-05",
+              "innbetalingsdato": "2023-01-30",
+              "innbetaltBeloep": 0.0,
+              "innbetaltFra": {
+                "konto": {}
+              },
+              "innbetalingstype": "Bankoverføring"
+            }
+          ],
+          "plassertMotkrav": [
+            {
+              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+              "plassertBeloep": -1000.0,
+              "kravtype": "RESTSKATT",
+              "plassertDato": "2023-02-05",
+              "kravbeskrivelse": {
+                "spraakTekst": [
+                  {
+                    "tekst": "Restskatt",
+                    "spraak": "nb"
+                  }
+                ]
+              },
+              "forfallsdato": "2023-01-30",
+              "kravperiode": {
+                "periodeBeskrivelse": {
+                  "spraakTekst": [
+                    {
+                      "tekst": "2023/02",
+                      "spraak": "nb"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "stipulerteRenter": 200.0,
+      "kravbeskrivelse": {
+        "spraakTekst": [
+          {
+            "tekst": "Restskatt",
+            "spraak": "nb"
+          }
+        ]
+      },
+      "kravperiode": {
+        "periodeBeskrivelse": {
+          "spraakTekst": [
+            {
+              "tekst": "2023/02",
+              "spraak": "nb"
+            }
+          ]
+        }
+      },
+      "opprettelsesdatoForKrav": "2023-01-30",
+      "kravgruppe": "Skatt",
+      "fastsettingsmaate": "blank"
+    }
+  ],
+  "innbetalingMedUplassertBeloep": [
+    {
+      "partIdentifikator": "212201782",
+      "innbetalingsidentifikator": "inn-1234",
+      "innbetalingsdato": "2023-03-01",
+      "innbetaltBeloep": 1000.0,
+      "uplassertBeloep": 0.0,
+      "mottakersKontonummer": {
+        "kontonummer": "98766543210"
+      },
+      "innbetaltFra": {
+        "konto": {
+          "kontoeiersNavn": "LYSTIG KLAM KATT TUSJ",
+          "kontonummer": "******43210"
+        }
+      },
+      "innbetalingstype": "bankoverføring"
+    },
+    {
+      "partIdentifikator": "04827896468",
+      "innbetalingsidentifikator": "inn-1234",
+      "innbetalingsdato": "2023-03-01",
+      "innbetaltBeloep": 1000.0,
+      "uplassertBeloep": 0.0,
+      "mottakersKontonummer": {
+        "kontonummer": "98766543210"
+      },
+      "innbetaltFra": {
+        "konto": {
+          "kontoeiersNavn": "LYSTIG KLAM KATT TUSJ",
+          "kontonummer": "******43210"
+        }
+      },
+      "innbetalingstype": "bankoverføring"
+    }
+  ],
+  "totalOversikt": {
+    "sumStipulerteRenter": 400.0,
+    "sumForfalteKrav": 20000.0,
+    "sumIkkeForfalteKrav": 0.0,
+    "sumUplasserteInnbetalinger": 0.0,
+    "saldo": 20400.0
+  },
+  "oversiktPerKravgruppe": [
+    {
+      "kravgruppe": "Skatt",
+      "sumStipulerteRenter": 400.0,
+      "sumForfalteKrav": 20000.0,
+      "sumIkkeForfalteKrav": 0.0,
+      "saldo": 20400.0
+    }
+  ]
+}
+```
 
 ## Krav
 
 ### Eksempel på request URL
 
 ```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/871978433/krav?fraOgMed=2022-01-01&tilOgMed=2022-12-31
+https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/krav?fraOgMed=2023-01-01&tilOgMed=2023-09-01
 ```
 
 ### Eksempel på respons
 
-Oppdatert eksempelrespons kommer.
+```json
+{
+  "partIdentifikator": "212201782",
+  "periode": {
+    "fraOgMed": "2023-01-01",
+    "tilOgMed": "2023-09-01"
+  },
+  "skjermet": false,
+  "krav": [
+    {
+      "partIdentifikator": "212201782",
+      "kravidentifikator": "krav-1234",
+      "kravtype": "RESTSKATT",
+      "opprinneligBeloep": 10000.0,
+      "gjenstaaendeBeloep": 10000.0,
+      "kravforfall": [
+        {
+          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+          "forfallsdato": "2023-02-21",
+          "opprinneligBeloep": 10000.0,
+          "gjenstaaendeBeloep": 10000.0,
+          "betalingsinformasjon": {
+            "konto": {
+              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
+              "kontonummer": "63450624804",
+              "iban": "NO42 6345 06 24804",
+              "swiftBIC": "NDEANOKK"
+            }
+          },
+          "plassertInnbetaling": [
+            {
+              "innbetalingsIdentifikator": "inn-12345",
+              "plassertBeloep": -1000.0,
+              "plassertDato": "2023-02-05",
+              "innbetalingsdato": "2023-01-30",
+              "innbetaltBeloep": 0.0,
+              "innbetaltFra": {
+                "konto": {}
+              },
+              "innbetalingstype": "Bankoverføring"
+            }
+          ],
+          "plassertMotkrav": [
+            {
+              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+              "plassertBeloep": -1000.0,
+              "kravtype": "RESTSKATT",
+              "plassertDato": "2023-02-05",
+              "kravbeskrivelse": {
+                "spraakTekst": [
+                  {
+                    "tekst": "Restskatt",
+                    "spraak": "nb"
+                  }
+                ]
+              },
+              "forfallsdato": "2023-01-30",
+              "kravperiode": {
+                "periodeBeskrivelse": {
+                  "spraakTekst": [
+                    {
+                      "tekst": "2023/02",
+                      "spraak": "nb"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "stipulerteRenter": 200.0,
+      "kravbeskrivelse": {
+        "spraakTekst": [
+          {
+            "tekst": "Restskatt",
+            "spraak": "nb"
+          }
+        ]
+      },
+      "kravperiode": {
+        "periodeBeskrivelse": {
+          "spraakTekst": [
+            {
+              "tekst": "2023/02",
+              "spraak": "nb"
+            }
+          ]
+        }
+      },
+      "opprettelsesdatoForKrav": "2023-01-30",
+      "kravgruppe": "Skatt",
+      "fastsettingsmaate": "blank"
+    },
+    {
+      "partIdentifikator": "04827896468",
+      "kravidentifikator": "krav-1234",
+      "kravtype": "RESTSKATT",
+      "opprinneligBeloep": 10000.0,
+      "gjenstaaendeBeloep": 10000.0,
+      "kravforfall": [
+        {
+          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+          "forfallsdato": "2023-02-21",
+          "opprinneligBeloep": 10000.0,
+          "gjenstaaendeBeloep": 10000.0,
+          "betalingsinformasjon": {
+            "konto": {
+              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
+              "kontonummer": "63450624804",
+              "iban": "NO42 6345 06 24804",
+              "swiftBIC": "NDEANOKK"
+            }
+          },
+          "plassertInnbetaling": [
+            {
+              "innbetalingsIdentifikator": "inn-12345",
+              "plassertBeloep": -1000.0,
+              "plassertDato": "2023-02-05",
+              "innbetalingsdato": "2023-01-30",
+              "innbetaltBeloep": 0.0,
+              "innbetaltFra": {
+                "konto": {}
+              },
+              "innbetalingstype": "Bankoverføring"
+            }
+          ],
+          "plassertMotkrav": [
+            {
+              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
+              "plassertBeloep": -1000.0,
+              "kravtype": "RESTSKATT",
+              "plassertDato": "2023-02-05",
+              "kravbeskrivelse": {
+                "spraakTekst": [
+                  {
+                    "tekst": "Restskatt",
+                    "spraak": "nb"
+                  }
+                ]
+              },
+              "forfallsdato": "2023-01-30",
+              "kravperiode": {
+                "periodeBeskrivelse": {
+                  "spraakTekst": [
+                    {
+                      "tekst": "2023/02",
+                      "spraak": "nb"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "stipulerteRenter": 200.0,
+      "kravbeskrivelse": {
+        "spraakTekst": [
+          {
+            "tekst": "Restskatt",
+            "spraak": "nb"
+          }
+        ]
+      },
+      "kravperiode": {
+        "periodeBeskrivelse": {
+          "spraakTekst": [
+            {
+              "tekst": "2023/02",
+              "spraak": "nb"
+            }
+          ]
+        }
+      },
+      "opprettelsesdatoForKrav": "2023-01-30",
+      "kravgruppe": "Skatt",
+      "fastsettingsmaate": "blank"
+    }
+  ]
+}
+```
 
 ## Innbetalinger
 
 ### Eksempel på request URL
 
 ```
-GET https://{env}/api/innkreving/kravogbetalinger/v1/finans/871978433/innbetalinger?fraOgMed=2022-01-01&tilOgMed=2022-12-31
+GET https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/innbetalinger?fraOgMed=2023-01-01&tilOgMed=2023-09-01
 ```
 
 ### Eksempel på respons
 
-Oppdatert eksempelrespons kommer.
+```json
+{
+  "partIdentifikator": "212201782",
+  "periode": {
+    "fraOgMed": "2023-01-01",
+    "tilOgMed": "2023-09-01"
+  },
+  "skjermet": false,
+  "innbetaling": [
+    {
+      "partIdentifikator": "212201782",
+      "innbetalingsidentifikator": "inn-1234",
+      "innbetalingsdato": "2023-03-01",
+      "innbetaltBeloep": 1000.0,
+      "uplassertBeloep": 0.0,
+      "mottakersKontonummer": {
+        "kontonummer": "98766543210"
+      },
+      "innbetaltFra": {
+        "konto": {
+          "kontoeiersNavn": "LYSTIG KLAM KATT TUSJ",
+          "kontonummer": "******43210"
+        }
+      },
+      "innbetalingstype": "bankoverføring"
+    },
+    {
+      "partIdentifikator": "04827896468",
+      "innbetalingsidentifikator": "inn-1234",
+      "innbetalingsdato": "2023-03-01",
+      "innbetaltBeloep": 1000.0,
+      "uplassertBeloep": 0.0,
+      "mottakersKontonummer": {
+        "kontonummer": "98766543210"
+      },
+      "innbetaltFra": {
+        "konto": {
+          "kontoeiersNavn": "LYSTIG KLAM KATT TUSJ",
+          "kontonummer": "******43210"
+        }
+      },
+      "innbetalingstype": "bankoverføring"
+    }
+  ]
+}
+```
 
 ## Utbetalinger
 
