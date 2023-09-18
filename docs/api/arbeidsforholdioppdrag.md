@@ -1,12 +1,12 @@
 ---
-title: Arbeidsforhold API
-slug: /api/arbeidsforhold
+title: Arbeidsforhold i oppdrag API
+slug: /api/arbeidsforholdioppdrag
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
-keywords: [arbeidsforhold]
-last_updated: Mar 6, 2023
+keywords: [arbeidsforholdioppdrag]
+last_updated: Sep 18, 2023
 hide_table_of_contents: true
 ---
 <summary> Tjenesten leverer informasjon om hvorvidt det foreligger et aktivt arbeidsforhold mellom angitt arbeidstaker og angitt arbeidsgiver.</summary>
@@ -29,7 +29,7 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:ar
 Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Arbeidsforhold API - På vegne av`
 
 ## Teknisk spesifikasjon
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsforhold-api) på SwaggerHub. 
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsforholdioppdrag-api) på SwaggerHub. 
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/1012bfb1-c17b-3f1b-a03a-74ccc7543a05) i Felles datakatalog.
