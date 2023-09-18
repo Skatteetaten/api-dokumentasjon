@@ -15,7 +15,7 @@ const sidebars = {
     {
       "API'er": [
         "api/aktivkonto",
-        "api/arbeidsforhold",
+        "api/arbeidsforholdioppdrag",
         "api/arbeidsgiveravgift",
         "api/avregning",
         "api/beregnetskatt",
