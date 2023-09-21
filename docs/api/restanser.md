@@ -114,7 +114,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
  
  Obs. Hvis denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
 
- [![restanser v2](../../static/download/Informasjonsmodell_RestanserV2.png)](../../static/download/Informasjonsmodell_RestanserV2.png)
+ [![RestanserV2](../../static/download/Informasjonsmodell_RestanserV2.PNG)](../../static/download/Informasjonsmodell_RestanserV2.PNG)
  
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
