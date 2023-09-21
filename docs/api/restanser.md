@@ -53,38 +53,49 @@ Tjenesten krever [samtykke](../om/samtykke.md).
 
 ## Curl
 
-Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig maskinportentoken og altinn samtykketoken som legges ved som headerer i curl-kommandoen.
+Her er et eksempel på en spørring med curl mot tjenesten med rettighetspakke dibk. Du må ha et gyldig maskinportentoken som legges ved som header i curl-kommandoen. For enkelte rettighetspakker kreves i tillegg altinn samtykketoken som header.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <samtykke_token>" "https://api-test.sits.no/api/innkreving/restanser/v2/ebevis/974761076"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/innkreving/restanser/v2/dibk/310111643"
 ```
 
 ## JSON
 
 ```json
 {
-    "levert": "2020-09-21T08:47:34.174294",
-    "forespurteOrganisasjon": "974761076",
-    "restanser": {
-        "arbeidsgiveravgift": {
-            "forfaltOgUbetalt": 30550
-        },
-        "forskuddstrekk": {
-            "forfaltOgUbetalt": 884715
-        },
-        "forskuddsskatt": {
-            "forfaltOgUbetalt": 5029271
-        },
-        "restskatt": {
-            "forfaltOgUbetalt": 1235
-        },
-        "gebyr": {
-            "forfaltOgUbetalt": 654321
-        },
-        "merverdiavgift": {
-            "forfaltOgUbetalt": 0
-        }
+  "restanser": {
+    "restskatt": {
+      "forfaltOgUbetaltRenter": 0,
+      "forfaltOgUbetaltKrav": 0,
+      "forfaltOgUbetalt": 0
+    },
+    "forskuddstrekk": {
+      "forfaltOgUbetaltRenter": 58552,
+      "forfaltOgUbetaltKrav": 75155,
+      "forfaltOgUbetalt": 133707
+    },
+    "merverdiavgift": {
+      "forfaltOgUbetaltKrav": 1000,
+      "forfaltOgUbetalt": 1000
+    },
+    "arbeidsgiveravgift": {
+      "forfaltOgUbetaltRenter": 30071,
+      "forfaltOgUbetaltKrav": 39956,
+      "forfaltOgUbetalt": 70027
+    },
+    "gebyr": {
+      "forfaltOgUbetaltRenter": 3000,
+      "forfaltOgUbetaltKrav": 26579,
+      "forfaltOgUbetalt": 29579
+    },
+    "forskuddsskatt": {
+      "forfaltOgUbetaltRenter": 0,
+      "forfaltOgUbetaltKrav": 0,
+      "forfaltOgUbetalt": 0
     }
+  },
+  "levert": "2023-09-21T10:47:13.291069732",
+  "forespurteOrganisasjon": "310111643"
 }
 ```
 
