@@ -112,6 +112,10 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
  [Informasjonsmodell](https://data.norge.no/informationmodels/a38edde5-9c88-3bda-afb9-174a1aa94077) i Felles datakatalog.
  
+ Obs. Hvis denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
+
+ [![restanser v2](../../static/download/Informasjonsmodell_RestanserV2.png)](../../static/download/Informasjonsmodell_RestanserV2.png)
+ 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
