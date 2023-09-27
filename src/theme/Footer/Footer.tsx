@@ -6,7 +6,7 @@ import { translate } from "@docusaurus/Translate";
 export function Footer(): JSX.Element {
   const linksAbout = [
     {
-      path: "#",
+      path: "https://uustatus.no/nb/erklaringer/publisert/1db8195e-6e45-45b4-8209-c5abccf480f1",
       text: translate({ message: "Tilgjengelighetserklæring" }),
     },
     {
