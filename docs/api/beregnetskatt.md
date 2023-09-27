@@ -45,7 +45,7 @@ Det finnes for tiden 2 versjoner av dette api'et, og ulike rettighetspakker er s
 | kredittopplysning | Støttes kun i versjon 2 |
 | laanekassen | Støttes kun i versjon 1 |
 | nav | Støttes kun i versjon 1 |
-| norgesbank | Støttes kun i versjon 1 |
+| norgesbank | Støttes i både versjon 1 og 2 |
 | pensjonskasse | Støttes kun i versjon 1 |
 | ssb | Støttes kun i versjon 2 |
 
