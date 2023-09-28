@@ -14,6 +14,8 @@ const sidebars = {
     },
     {
       "API'er": [
+        "api/aksjebeholdning",
+        "api/aksjonaerivirksomhet",
         "api/aktivkonto",
         "api/arbeidsforholdioppdrag",
         "api/arbeidsgiveravgift",
@@ -21,6 +23,7 @@ const sidebars = {
         "api/beregnetskatt",
         "api/beregnetskattupersonlig",
         "api/bsu",
+        "api/formuesgrunnlageiendomsskatt",
         "api/hendelser",
         "api/inntekt",
         "api/inntektsmottakere",
