@@ -61,6 +61,98 @@ Dette api'et er pt. ikke dokumentert i felles datakatalog.
 
 ## JSON
 
+```json
+{
+  "skattleggingsperiode": 2020,
+  "eiendomsidentifikator": {
+    "skatteetatensEiendomsidentifikator": "1",
+    "eksternIdentifikator": "921782775543322"
+  },
+  "formuesopplysninger": {
+    "formuestype": "selveidBolig",
+    "spesifikasjonForBolig": {
+      "boligegenskaper": {
+        "primaerromareal": 97,
+        "boligtype": "enebolig",
+        "byggeaar": "2019"
+      },
+      "beliggenhetskode": "1",
+      "beregnetMarkedsverdi": 3494213,
+      "beregningstype": "maskinellBeregning",
+      "grunnlagForBeregnetMarkedsverdi": {
+        "boligverdi": 3494213
+      }
+    }
+  },
+  "adresseopplysninger": [
+    {
+      "poststed": {
+        "poststedsnavn": "ARENDAL",
+        "postnummer": "4825"
+      },
+      "grunnkrets": {
+        "grunnkretsnavn": "Pusnes-Roligheten",
+        "grunnkretsnummer": "2101"
+      },
+      "vegadresse": {
+        "adressekode": "1",
+        "adressenavn": "Grubeveien",
+        "adressenummer": {
+          "husnummer": 47
+        }
+      },
+      "opplysningenesOpphav": "SKATTLEGGINGSPERIODE_3112"
+    },
+    {
+      "poststed": {
+        "poststedsnavn": "ARENDAL",
+        "postnummer": "4825"
+      },
+      "grunnkrets": {
+        "grunnkretsnavn": "Pusnes-Roligheten",
+        "grunnkretsnummer": "2101"
+      },
+      "vegadresse": {
+        "adressekode": "1",
+        "adressenavn": "Grubeveien",
+        "adressenummer": {
+          "husnummer": 47
+        }
+      },
+      "opplysningenesOpphav": "OPPDATERT_MATRIKKEL"
+    }
+  ],
+  "eiendomsopplysninger": [
+    {
+      "matrikkelnummer": {
+        "kommunenummer": "4203",
+        "gaardsnummer": 433,
+        "bruksnummer": 89,
+        "festenummer": 0,
+        "seksjonsnummer": 0
+      },
+      "kommunenummer": "4203",
+      "bruksnavn": "Lorem Ipsum",
+      "etablertDato": "2023-09-12",
+      "opplysningenesOpphav": "SKATTLEGGINGSPERIODE_3112"
+    },
+    {
+      "matrikkelnummer": {
+        "kommunenummer": "4203",
+        "gaardsnummer": 433,
+        "bruksnummer": 89,
+        "festenummer": 0,
+        "seksjonsnummer": 0
+      },
+      "kommunenummer": "4203",
+      "bruksnavn": "Lorem Ipsum",
+      "etablertDato": "2023-09-12",
+      "opplysningenesOpphav": "OPPDATERT_MATRIKKEL"
+    }
+  ]
+}
+```
+
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
