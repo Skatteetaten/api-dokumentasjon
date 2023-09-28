@@ -223,6 +223,8 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+  
+[![Aksjonær i virksomhet API](../../static/download/Informasjonsmodell_Aksjonærivirksomhet.png)](../../static/download/Informasjonsmodell_Aksjonærivirksomhet.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
