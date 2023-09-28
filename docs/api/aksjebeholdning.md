@@ -128,6 +128,8 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
+[![Aksjebeholdning](../../static/download/Informasjonsmodell_Aksjebeholdning.png)](../../static/download/Informasjonsmodell_Aksjebeholdning.png)
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
