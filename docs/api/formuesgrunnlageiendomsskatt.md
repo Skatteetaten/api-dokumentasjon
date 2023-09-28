@@ -188,6 +188,7 @@ Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Ska
 | Eksternidentifikator | Periode | Kommunenummer |
 |----------------------|---------|---------------|
 | 921782775543322      | 2020    | 4203          | 
+| 921782775543321      | 2020    | 4203          | 
 
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
