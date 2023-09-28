@@ -36,7 +36,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Formuesgrunnlag for 
 ## Teknisk spesifikasjon
 
 Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/formuesgrunnlag-eiendomsskatt-api)
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/formuesgrunnlag-for-eiendomsskatt-api)
 på SwaggerHub.
 
 ## Rettighetspakker
