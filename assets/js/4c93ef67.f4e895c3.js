@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[1025],{3581:e=>{e.exports=JSON.parse('{"permalink":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags/drift","page":1,"postsPerPage":25,"totalPages":1,"totalCount":12,"blogDescription":"Blog","blogTitle":"nyheter-og-driftsvarsler"}')}}]);
