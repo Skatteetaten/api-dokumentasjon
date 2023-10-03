@@ -36,7 +36,8 @@ Tjenesten støtter inntektsår 2017 og utover.
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Pensjonsgivende inntekt for folketrygden hendelser API`
 
 ## Datakatalog
-Dette api'et er pt. ikke dokumentert i Felles datakatalog.
+
+[Datatjenestebeskrivelse](https://data.norge.no/dataservices/70d7fb70-20e0-3c8e-a05c-0432b182ef3f) i Felles datakatalog.
     
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
