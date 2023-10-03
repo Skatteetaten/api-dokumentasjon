@@ -47,7 +47,7 @@ på SwaggerHub.
 
 ## Datakatalog
 
-Dette api'et er pt. ikke dokumentert i felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/dataservices/029700be-dc37-3b5d-8fcc-93f8e885cc84) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
