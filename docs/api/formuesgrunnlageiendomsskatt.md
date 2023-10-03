@@ -181,18 +181,23 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytt hendelseslisten for å finne referanser man kan benytte for å teste oppslagstjenesten.
 
 ## Testdata
 
-Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne:
+For å teste hendelseslisten kan du benytte følgende kommunenummer:
+
+| Kommunenummer |
+| ------------- |
+| 4203          |
+
+Under har vi listet enkelte testdata som er tilgjengelige for å teste oppslagstjenesten:
 
 | Eksternidentifikator | Periode | Kommunenummer |
 |----------------------|---------|---------------|
 | 921782775543322      | 2020    | 4203          | 
 | 921782775543321      | 2020    | 4203          | 
 
-Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
 </TabItem>
 </Tabs>
