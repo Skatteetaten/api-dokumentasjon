@@ -54,7 +54,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesgrunnlag for ei
 
 ## Datakatalog
 
-Dette api'et er pt. ikke dokumentert i felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/dataservices/7fc0232d-cc1a-3333-b54f-5d435b7b4c9d) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
