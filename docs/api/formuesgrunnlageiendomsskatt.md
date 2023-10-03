@@ -174,6 +174,8 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
+[![Formuesgrunnlag for eiendomsskatt](../../static/download/Informasjonsmodell_Formuesgrunnlageiendomsskatt.png)](../../static/download/Informasjonsmodell_Formuesgrunnlageiendomsskatt)
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
