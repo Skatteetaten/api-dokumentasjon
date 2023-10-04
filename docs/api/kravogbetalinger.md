@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Innkreving ]
 keywords: [ kravogbetalinger, krav og betalinger, innkreving ]
-last_updated: Aug 28, 2023
+last_updated: Oct 04, 2023
 hide_table_of_contents: true
 ---
 
@@ -582,7 +582,153 @@ GET https://{env}/api/innkreving/kravogbetalinger/v1/finans/871978433/utbetaling
 
 ### Eksempel på respons
 
-Oppdatert eksempelrespons kommer.
+```json
+{
+  "partIdentifikator": "312438623",
+  "periode": {
+    "fraOgMed": "2023-01-01",
+    "tilOgMed": "2023-09-01"
+  },
+  "skjermet": false,
+  "utbetaling": [
+    {
+      "partIdentifikator": "312438623",
+      "utbetalingsidentifikator": "147654",
+      "utbetaltdato": "2023-08-21",
+      "utbetaltBeloep": 62374.0,
+      "betaltTil": {
+        "meldingSendtTilMottaker": "Tilgode skatt 2023",
+        "konto": {
+          "kontoeiersNavn": "OVERFØLSOM GLAD TIGER AS",
+          "kontonummer": "627xxxxxx"
+        },
+        "valutakode": "NOK"
+      },
+      "grunnlagForUtbetaling": {
+        "kreditKrav": [
+          {
+            "kravforfallidentifikator": "6412123",
+            "opprinneligBeloep": -62374.0,
+            "gjenstaaendeBeloep": 0.0,
+            "utbetaltBeloep": 62374.0,
+            "kravbeskrivelse": {
+              "spraakTekst": [
+                {
+                  "tekst": "Tibakebetaling restskatt - 2023",
+                  "spraak": "nb"
+                }
+              ]
+            },
+            "kravtype": "RESTERENDE_SKT_TILB",
+            "kravperiode": {
+              "periodeBeskrivelse": {
+                "spraakTekst": [
+                  {
+                    "tekst": "Inntektstår",
+                    "spraak": "nb"
+                  }
+                ]
+              },
+              "aar": "2023"
+            }
+          }
+        ]
+      },
+      "utbetalingstatus": "bekreftet"
+    },
+    {
+      "partIdentifikator": "312438623",
+      "utbetalingsidentifikator": "147654",
+      "utbetaltdato": "2023-08-21",
+      "utbetaltBeloep": 62374.0,
+      "betaltTil": {
+        "meldingSendtTilMottaker": "Tilgode skatt 2023",
+        "konto": {
+          "kontoeiersNavn": "OVERFØLSOM GLAD TIGER AS",
+          "kontonummer": "627xxxxxx"
+        },
+        "valutakode": "NOK"
+      },
+      "grunnlagForUtbetaling": {
+        "kreditKrav": [
+          {
+            "kravforfallidentifikator": "6412123",
+            "opprinneligBeloep": -62374.0,
+            "gjenstaaendeBeloep": 0.0,
+            "utbetaltBeloep": 62374.0,
+            "kravbeskrivelse": {
+              "spraakTekst": [
+                {
+                  "tekst": "Tibakebetaling restskatt - 2023",
+                  "spraak": "nb"
+                }
+              ]
+            },
+            "kravtype": "RESTERENDE_SKT_TILB",
+            "kravperiode": {
+              "periodeBeskrivelse": {
+                "spraakTekst": [
+                  {
+                    "tekst": "Inntektstår",
+                    "spraak": "nb"
+                  }
+                ]
+              },
+              "aar": "2023"
+            }
+          }
+        ]
+      },
+      "utbetalingstatus": "bekreftet"
+    },
+    {
+      "partIdentifikator": "312438623",
+      "utbetalingsidentifikator": "147654",
+      "utbetaltdato": "2023-08-21",
+      "utbetaltBeloep": 62374.0,
+      "betaltTil": {
+        "meldingSendtTilMottaker": "Tilgode skatt 2023",
+        "konto": {
+          "kontoeiersNavn": "OVERFØLSOM GLAD TIGER AS",
+          "kontonummer": "627xxxxxx"
+        },
+        "valutakode": "NOK"
+      },
+      "grunnlagForUtbetaling": {
+        "kreditKrav": [
+          {
+            "kravforfallidentifikator": "6412123",
+            "opprinneligBeloep": -62374.0,
+            "gjenstaaendeBeloep": 0.0,
+            "utbetaltBeloep": 62374.0,
+            "kravbeskrivelse": {
+              "spraakTekst": [
+                {
+                  "tekst": "Tibakebetaling restskatt - 2023",
+                  "spraak": "nb"
+                }
+              ]
+            },
+            "kravtype": "RESTERENDE_SKT_TILB",
+            "kravperiode": {
+              "periodeBeskrivelse": {
+                "spraakTekst": [
+                  {
+                    "tekst": "Inntektstår",
+                    "spraak": "nb"
+                  }
+                ]
+              },
+              "aar": "2023"
+            }
+          }
+        ]
+      },
+      "utbetalingstatus": "bekreftet"
+    }
+  ]
+}
+```
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
