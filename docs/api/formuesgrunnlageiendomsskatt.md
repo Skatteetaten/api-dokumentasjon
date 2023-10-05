@@ -189,8 +189,18 @@ For å teste hendelseslisten kan du benytte følgende kommunenummer:
 
 | Kommunenummer |
 | ------------- |
+| 1834 |
+| 3003 |
+| 3029 |
+| 3045 |
+| 3418 |
+| 3423 |
+| 3447 |
 | 4203 |
+| 4602 |
+| 4626 |
 | 5001 |
+| 5401 |
 
 Under har vi listet enkelte testdata som er tilgjengelige for å teste oppslagstjenesten:
 
