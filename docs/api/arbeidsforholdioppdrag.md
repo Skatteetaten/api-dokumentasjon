@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
 keywords: [arbeidsforholdioppdrag]
-last_updated: Sep 18, 2023
+last_updated: Oct 05, 2023
 hide_table_of_contents: true
 ---
 <summary> Tjenesten leverer informasjon om hvorvidt det foreligger et aktivt arbeidsforhold mellom angitt arbeidstaker og angitt arbeidsgiver.</summary>
@@ -48,7 +48,21 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
 
 ```json
 {
-  "svar": {"aktiv":"JA"}
+  "aktiv": "JA",
+  "arbeidsforhold": [
+    {
+      "startdato": "2023-10-04",
+      "sluttdato": "2023-10-11"
+    },
+    {
+      "startdato": "2023-10-17",
+      "sluttdato": "2023-10-20"
+    },
+    {
+      "startdato": "2023-10-31",
+      "sluttdato": "2023-11-03"
+    }
+  ]
 }
 ```
 
@@ -62,9 +76,21 @@ $ curl -v -H "Accept: application/xml" -H "Authorization: Bearer <maskinporten_t
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
-<svar>
-    <aktiv>JA</aktiv>
-</svar>
+<arbeidsforhold>
+  <aktiv>JA</aktiv>
+  <arbeidsforhold>
+    <startdato>2023-10-04</startdato>
+    <sluttdato>2023-10-11</sluttdato>
+  </arbeidsforhold>
+  <arbeidsforhold>
+    <startdato>2023-10-17</startdato>
+    <sluttdato>2023-10-20</sluttdato>
+  </arbeidsforhold>
+  <arbeidsforhold>
+    <startdato>2023-10-31</startdato>
+    <sluttdato>2023-11-03</sluttdato>
+  </arbeidsforhold>
+</arbeidsforhold>
 ```
   
 </TabItem>
