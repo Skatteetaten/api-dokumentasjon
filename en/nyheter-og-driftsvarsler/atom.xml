@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2023-10-03T00:00:00.000Z</updated>
+    <updated>2023-10-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Sanering av inntektsår 2016 på enkelte skatteoppgjørtjenester]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/10/09/sanering-2016</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/10/09/sanering-2016"/>
+        <updated>2023-10-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Skatteetaten fjerner støtte for inntektsår 2016 i enkelte tjenester som deler skatteoppgjørsdata. Det gjelder rettighetspakker for følgende api'er:]]></summary>
+        <content type="html"><![CDATA[<p>Skatteetaten fjerner støtte for inntektsår 2016 i enkelte tjenester som deler skatteoppgjørsdata. Det gjelder rettighetspakker for følgende api'er:</p><ul><li>Beregnet skatt API V1</li><li>Pensjonsgivende inntekt API</li><li>Spesifisert summert skattegrunnlag API</li><li>Summert skattegrunnlag API</li></ul>]]></content>
+        <category label="Nyhet" term="Nyhet"/>
+        <category label="Skatteoppgjør" term="Skatteoppgjør"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Driftsvarsel 03.10.2023]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/10/03/driftsvarsel</id>
