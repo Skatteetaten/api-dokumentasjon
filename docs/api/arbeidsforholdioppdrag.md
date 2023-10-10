@@ -41,7 +41,7 @@ SwaggerHub.
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse](https://data.norge.no/dataservices/1012bfb1-c17b-3f1b-a03a-74ccc7543a05) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/dataservices/aaa9d596-52d5-3d73-9f36-51b9a2e662be) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
