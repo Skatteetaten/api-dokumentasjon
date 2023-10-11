@@ -60,7 +60,7 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
 ```json
 {
   "aktiv": "JA",
-  "arbeidsforhold": [
+  "perioder": [
     {
       "startdato": "2023-10-04",
       "sluttdato": "2023-10-11"
@@ -79,30 +79,7 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
 
 ## XML
 
-Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Accept` satt til `application/xml`:
-
-```bash
-$ curl -v -H "Accept: application/xml" -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/arbeidsforhold/v1/arbeidsgiver/877353192/arbeidstaker/09099617966/aktiv"
-```
-
-```xml
-<?xml version='1.0' encoding='UTF-8'?>
-<arbeidsforhold>
-  <aktiv>JA</aktiv>
-  <arbeidsforhold>
-    <startdato>2023-10-04</startdato>
-    <sluttdato>2023-10-11</sluttdato>
-  </arbeidsforhold>
-  <arbeidsforhold>
-    <startdato>2023-10-17</startdato>
-    <sluttdato>2023-10-20</sluttdato>
-  </arbeidsforhold>
-  <arbeidsforhold>
-    <startdato>2023-10-31</startdato>
-    <sluttdato>2023-11-03</sluttdato>
-  </arbeidsforhold>
-</arbeidsforhold>
-```
+Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Accept` satt til `application/xml`.
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
