@@ -1,5 +1,5 @@
 ---
-title: Mva meldingsoppslysning API
+title: Mva meldingsopplysning API
 slug: /api/mva_meldingsopplysning
 folder: api
 sidebar: mydoc_sidebar
