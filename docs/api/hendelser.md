@@ -75,14 +75,7 @@ hendelseslistene på SwaggerHub:
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## Hendelsesliste suksess (HTTP status 200) for Inntekstmottaker hendelser
-
-Her er et par eksempler på spørring med curl mot tjenesten. Du må legge sertifikat og nøkkel som parametre til
-curl-kommandoen.
-
-```bash
-$ curl -v --cert virksomhet.cer --key virksomhet.key "https://api-at.sits.no/api/innrapportert/inntektsmottaker/hendelser/?fraSekvensnummer=1&antall=5"
-```
+## Hendelsesliste suksess (HTTP status 200) for Inntekt hendelser
 
 ### JSON
 
@@ -92,37 +85,31 @@ $ curl -v --cert virksomhet.cer --key virksomhet.key "https://api-at.sits.no/api
     {
       "sekvensnummer": 1,
       "identifikator": "09048000875",
-      "gjelderPeriode": "2018"
+      "gjelderPeriode": "2023-01"
     },
     {
       "sekvensnummer": 12,
       "identifikator": "20125001158",
-      "gjelderPeriode": "2018"
+      "gjelderPeriode": "2023-02"
     },
     {
       "sekvensnummer": 23,
       "identifikator": "02043700564",
-      "gjelderPeriode": "2018"
+      "gjelderPeriode": "2023-10"
     },
     {
       "sekvensnummer": 34,
       "identifikator": "17014200150",
-      "gjelderPeriode": "2018"
+      "gjelderPeriode": "2023-12"
     },
     {
       "sekvensnummer": 45,
       "identifikator": "17055401993",
-      "gjelderPeriode": "2018"
+      "gjelderPeriode": "2023-12"
     }
   ]
 }
 ```
-
-### XML
-
-[hendelser.xsd](../../static/download/hendelser.xsd)
-
-[hendelser.xml (eksempel)](../../static/download/hendelser.xml)
 
 ## Hendelsesliste suksess (HTTP status 200) for Skattemelding fastsatt hendelser
 
@@ -278,10 +265,6 @@ $ curl -v --cert virksomhet.cer --key virksomhet.key "https://api-at.sits.no/api
 [hendelser.xml (eksempel)](../../static/download/hendelser_skattemelding_fastsatt.xml)
 
 ### Første sekvensnummer fra dato suksess (HTTP status 200)
-
-```bash
-$ curl -v --cert virksomhet.cer --key virksomhet.key "https://api-at.sits.no/api/innrapportert/inntektsmottaker/hendelser/start?dato=2017-08-01"
-```
 
 ```json
 {
