@@ -79,6 +79,8 @@ hendelseslistene på SwaggerHub:
 
 ### JSON
 
+NB! For inntekt så leveres det foreløpig ikke informasjon i type-feltet. 
+
 ```json
 {
   "hendelser": [
