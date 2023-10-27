@@ -20,7 +20,9 @@ Bruk av Skatteetatens delingstjenester forutsetter følgende:
 Skatteetaten deler informasjon med eksterne virksomheter gjennom gjenbrukbare oppslagstjenester for definerte datasett. Minimeringsprinsippet iveretas gjennom at Skatteetaten filtrerer resultatsettet iht. virksomhetens behov ("Rettighetspakke").   
 
 ## Hendelser
-Skatteetaten varsler om endringer i data gjennom bruk av hendelseslister. En hendelse er et varsel om at det er kommet nye data, slettede data eller endrede data. Hendelser er “tynne”, dvs at de ikke inneholder selve dataene. Hendelsen inneholder kun et sekvensnummer, personidentifikator og perioden det har skjedd en hendelse for.
+Skatteetaten varsler om endringer i data gjennom bruk av hendelseslister. En hendelse er et varsel om at det er kommet nye data, slettede data eller endrede data. Hendelser er “tynne”, dvs at de ikke inneholder selve dataene. Hendelsen inneholder kun et sekvensnummer, personidentifikator og perioden det har skjedd en hendelse for. 
+
+Hendelseslistene er felles og benyttes på tvers av rettighetspakker, og enkelte benyttes også på tvers av tjenester, så det kan komme hendelser i hendelseslista som ikke gir utslag for alle rettighetspakker. Man kan derfor ikke forvente at alle hendelser er relevante endringer for sin bruk.
 
 Noen virksomheter benytter hendelseslistene for å følge med på endringer i data de allerede har hentet gjennom oppslagstjenesten, mens andre ønsker å følge med på nye data for et stort antall (eller alle) personer eller virksomheter. For å støtte disse bruksmønstrene publiserer vi hendelser per datatjeneste, som gir løpende varslinger om at opplysninger knyttet til en person eller virksomhet er endret. Se egen dokumentasjon for [de ulike hendelsene](../api/hendelser.md).
 
