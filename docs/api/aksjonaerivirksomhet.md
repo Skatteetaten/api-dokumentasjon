@@ -36,7 +36,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Aksjonær i virksomh
 ## Teknisk spesifikasjon
 
 Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/aksjonaer-i-virksomhet-api)
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/aksjonaer-i-virksomhet-api)
 på SwaggerHub.
 
 ## Rettighetspakker
