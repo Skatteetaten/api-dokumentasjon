@@ -42,7 +42,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger A
 ## Teknisk spesifikasjon
 
 Url’er til tjenesten, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/krav-og-betalinger-api) på SwaggerHub.
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/krav-og-betalinger-api) på SwaggerHub.
 
 API'et har 4 endepunkter:
 
