@@ -36,7 +36,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Arbeidsforhold API -
 ## Teknisk spesifikasjon
 
 Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/arbeidsforhold-i-oppdrag-api) på
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-i-oppdrag-api) på
 SwaggerHub.
 
 ## Datakatalog
