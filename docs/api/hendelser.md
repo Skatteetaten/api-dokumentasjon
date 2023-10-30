@@ -58,19 +58,19 @@ Delegering i Altinn gjøres pr. scope, så tilgang til hendelseslisterer er hån
 Url’er til api'ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til
 hendelseslistene på SwaggerHub:
 
-* [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/formuesgrunnlag-for-endomsskatt-hendelser-api)
-* [Inntekt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/inntekt-hendelser-api)
-* [Mva-melding hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-melding-hendelser-api)
-* [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/mva-register-avgiftssubjekter-hendelser-api/)
-* [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/naeringsspesifikasjon-hendelser-api)
-* [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
-* [Skattepliktig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattepliktig-hendelser-api)
-* [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteoppgjor-hendelser-api)
-* [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skatteoppgjor-upersonlig-hendelser-api)
-* [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-fastsatt-hendelser-api)
-* [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-upersonlig-hendelser-api)
-* [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-utkast-hendelser-api)
-* [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/Skatteetaten_Deling/tilleggsskatt-hendelser-api)
+* [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
+* [Inntekt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/inntekt-hendelser-api)
+* [Mva-melding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-melding-hendelser-api)
+* [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-register-avgiftssubjekter-hendelser-api/)
+* [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-hendelser-api)
+* [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
+* [Skattepliktig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattepliktig-hendelser-api)
+* [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-hendelser-api)
+* [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-upersonlig-hendelser-api)
+* [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-fastsatt-hendelser-api)
+* [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-hendelser-api)
+* [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
+* [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
