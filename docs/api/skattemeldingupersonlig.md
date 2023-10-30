@@ -30,7 +30,7 @@ Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Teknisk spesifikasjon
 Skattemelding upersonlig API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har en egen versjon pr. inntektsår. For øyeblikket leverer api'et skattemeldinger for 2022.
   
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/Skatteetaten_Deling/skattemelding-upersonlig-api) i SwaggerHub.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-api) i SwaggerHub.
 
 ## Rettighetspakker
   
