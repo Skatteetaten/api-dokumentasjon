@@ -113,9 +113,8 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten.
 
 ## Testdata
 
-Tjenesten har for nå kun enkle mockdata, med en statisk mocket respons. For å kunne teste tjenesten er det nok å benytte
-et syntetisk organisasjonsnummer som har et samtykke. Syntetiske organisasjonsnumre finner du
-i [Tenor](../test/tenor.md).
+Tjenesten har for nå kun enkle mockdata, med en statisk mocket respons. For å kunne teste tjenesten kan du benytte et
+tilfeldig organisasjonsnummer og fødselsnummer.
 
 </TabItem>
 </Tabs>
