@@ -12,7 +12,7 @@ hide_table_of_contents: true
 <summary>Varsler om Skatteetatens eksterne api'er</summary>
 
 Vi legger ut nyheter om endringer i tekniske løsninger og i dokumentasjon eller hendelser i driften av våre eksterne api'er på en egen side: [Nyheter og driftsvarsler](/nyheter-og-driftsvarsler)
-Nyheter og driftsvarsler tagges slik at det skal være mulig for konsumenter og se om det er relevant.
+Nyheter og driftsvarsler tagges slik at det skal være mulig for konsumenter og se om det er relevant. Se egen [oversikt over varsler for ulike tagger](/nyheter-og-driftsvarsler/tags).
 
 Varsler som av andre årsaker bør kommuniseres direkte, vil bli sendt på varslingsadresse man har oppgitt i forbindelse med avtaleinngåelse. Konsumenter plikter å sikre at Skatteetaten til enhver tid har gyldig adresse for disse varslene.
 
