@@ -1,3 +1,4 @@
-Vi legger ut varsel om endringer i dokumentasjon, tekniske løsninger og hendelser som nyheter på denne siden.
+Vi legger ut nyheter om endringer i tekniske løsninger og i dokumentasjon eller hendelser i driften av våre eksterne api'er på denne siden.
 
-Varsler som av andre årsaker bør kommuniseres direkte, vil bli sendt på varslingsadresse man har oppgitt i forbindelse med avtaleinngåelse. Konsumenter plikter å sikre at Skatteetaten til enhver tid har gyldig adresse for disse varslene.
+Informasjon om [hvordan abonnere](../om/varsler) og [oversikt over tags](tags) på egne sider.
+
