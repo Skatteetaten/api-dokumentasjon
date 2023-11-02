@@ -14,7 +14,7 @@ Vi hjelper deg om det er noe du lurer på, enten det gjelder faglige spørsmål,
 
 ## Varsler
 
-Vi legger ut nyheter og driftsvarsler på [en egen siden](/nyheter-og-driftsvarsler).
+Se [mer info om varsler](/om/varsler) på egen side.
 
 ## Brukerstøtteverktøy
 
