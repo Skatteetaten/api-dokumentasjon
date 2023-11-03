@@ -72,9 +72,6 @@ export default function BlogPostItems({
         <Translate>Nyheter og driftsvarsler</Translate>
       </h1>
       {ingress}
-      <h2>
-        <Translate>Nyheter og driftsvarsler</Translate>
-      </h2>
 
       <BrowserOnly>
         {() => {
