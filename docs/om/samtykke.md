@@ -49,9 +49,9 @@ Følgende api'er hos Skatteetaten støtter utlevering gjennom samtykke eller ful
 Samtykke fra skatteyter:
   - [Inntekt API](../api/inntekt.md)
   - [Spesifisert summert skattegrunnlag API](../api/spesifisertsummertskattegrunnlag.md)
-  - [Krav og betalinger API](../api/kravogbetalinger.md)
-  
+    
 Samtykke fra virksomhet
+  - [Krav og betalinger API](../api/kravogbetalinger.md)
   - [Arbeidsgiveravgift API](../api/arbeidsgiveravgift.md)
   - [Mva meldingsopplysning API](../api/mva_meldingsopplysning.md)
   - [Oppdrag utenlanske virksomheter API](../api/oppdragutenlandskevirksomheter.md)
