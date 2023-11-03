@@ -72,6 +72,22 @@ hendelseslistene på SwaggerHub:
 * [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
 * [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
 
+## Hendelsestyper
+
+De vanligste hendelsestypene er ny, endret og slettet, men det støttes ikke nødvendigvis i alle hendelseslistene. Her er noen eksempler:
+
+__Nye data:__ Summert skattegrunnlag er klart for en skattepliktig for et inntektsår:
+* __Hendelseslisten for skatteoppgjør__ vil inneholde en hendelse for den skattepliktige og inntektsåret. 
+* __Summert skattegrunnlag API__ returnerer data hvis man spør på inntektsår og skattepliktig fra hendelsen
+
+__Endrede data:__ En arbeidsgiver rapporterer at en skattepliktig har fått etterbetalt inntekt for en måned. Fra før finnes det data for den skattepliktige for denne måneden.
+* __Hendelseslisten for inntekt__ vil inneholde en hendelse for den skattepliktige og den gitte måneden. 
+* __Inntekt API__ returnerer oppdaterte inntektsdata for den skattepliktige og den gitte måneden.
+
+__Slettede data:__ Et fagsystem i skatteetaten sletter data for en skattepliktig (skjer sjelden, men kan skje ifm feilrettinger eller andre spesielle omstendigheter)
+* __Hendelseslisten for datasettet__ vil inneholde en hendelse for datasettet og perioden. 
+* __Datasett API__ returnerer HTTP statuskode 410 og en feilmelding som indikerer at data ikke finnes lenger når man spør på skattepliktig og angitt periode.
+
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
