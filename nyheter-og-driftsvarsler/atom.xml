@@ -2,11 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2023-11-02T10:20:00.000Z</updated>
+    <updated>2023-11-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Vi har driftsproblemer på en rekke av Skatteetatens systemer - 08.11.2023]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/11/08/Driftsvarsel</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/11/08/Driftsvarsel"/>
+        <updated>2023-11-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Vi har driftsproblemer på en rekke systemer.  Saken har høyeste prioritert, og det jobbes med å få dette løst.]]></summary>
+        <content type="html"><![CDATA[<p>Vi har driftsproblemer på en rekke systemer.  Saken har høyeste prioritert, og det jobbes med å få dette løst.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Nedetid på Tjenestepensjonsavtale API 07.11.2023 kl. 9]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/11/03/nedetid-tjenestepensjonsavtale</id>
