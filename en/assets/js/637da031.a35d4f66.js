@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[2255],{7314:e=>{e.exports=JSON.parse('{"label":"Inntekt","permalink":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags/inntekt","allTagsPath":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags","count":2}')}}]);
