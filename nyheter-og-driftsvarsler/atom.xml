@@ -18,6 +18,16 @@
         <category label="Restanser" term="Restanser"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Driftsvarsel 13.11.2023]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/11/13/normal-drift</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/11/13/normal-drift"/>
+        <updated>2023-11-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Det er nå normal drift på Skatteetatens løsninger som påvirker Restanser API.]]></summary>
+        <content type="html"><![CDATA[<p>Det er nå normal drift på Skatteetatens løsninger som påvirker Restanser API.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+        <category label="Restanser" term="Restanser"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Overgang til versjon 2 av Beregnet skatt API]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/11/09/beregnetskatt-v2</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2023/11/09/beregnetskatt-v2"/>
