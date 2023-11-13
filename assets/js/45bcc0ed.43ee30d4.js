@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[3836],{73164:e=>{e.exports=JSON.parse('{"label":"Restanser","permalink":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags/restanser","allTagsPath":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags","count":1}')}}]);
