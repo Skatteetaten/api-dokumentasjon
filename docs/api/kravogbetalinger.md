@@ -64,7 +64,7 @@ For denne tjenesten finns følgende rettighetspakker
 | Navn på rettighetspakke | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
 |-------------------------|----------------------------|--------------------------------|
 | finans                  | Banker og finansforetak som skal vise krav og betalinger i nettbank | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter |
+| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Gir tilgang til alle 4 endepunkter med oppslag for virksomheter |
 
 ## Samtykke
 
