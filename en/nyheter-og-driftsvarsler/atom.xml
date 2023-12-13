@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2023-11-28T12:15:00.000Z</updated>
+    <updated>2023-12-13T11:10:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Nedetid i Restanser API og Krav og betalinger API]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/12/13/driftsvarsel</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/12/13/driftsvarsel"/>
+        <updated>2023-12-13T11:10:00.000Z</updated>
+        <summary type="html"><![CDATA[Som følge av den lovpålagte kommune- og fylkessplittingen vil det i perioden fra og med søndag 31.12.23 til og med fredag 05.01.24]]></summary>
+        <content type="html"><![CDATA[<p>Som følge av den lovpålagte kommune- og fylkessplittingen vil det i perioden fra og med søndag 31.12.23 til og med fredag 05.01.24
+ikke bli gjort oppdateringer av opplysninger om skatterestanser. Dette berører Restanser API og Krav og betalinger API.
+De samme tjenestene vil i løpet av perioden være nede i ca. et døgn, mest sannsynlig i perioden onsdag 03.01.24 – fredag 05.01.24.
+Vi beklager ulempene dette medfører.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Det skal nå være normal drift på Skatteetatens tjenester]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/11/28/normal-drift</id>
