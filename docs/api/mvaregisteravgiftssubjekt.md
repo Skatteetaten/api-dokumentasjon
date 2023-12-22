@@ -41,7 +41,7 @@ Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger 
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API`
 
 ## Datakatalog
-[Datatjenestebeskrivelse] i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/dataservices/45c47f49-9117-3dbe-84a3-06c64abf3bb3) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
