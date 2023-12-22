@@ -35,7 +35,7 @@ Man trenger ikke eget scope for dette api'et, siden den benytter samme scope som
 Tilgang til denne støttetjenester delegeres i Altinn når man delegerer oppslagstjenesten.
 
 ## Teknisk spesifikasjon
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/tilgjengelig-data-api) på SwaggerHub.
+Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/siste-tilgjengelige-skatteoppgjoer/) på SwaggerHub.
 
 ## Datakatalog
 Dette api'et er pt. ikke dokumentert i Felles datakatalog.
