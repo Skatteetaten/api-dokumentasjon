@@ -45,7 +45,6 @@ api'et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API sp
 
 | Navn på rettighetspakke           | Egenskaper ved rettighetspakke |
 |-----------------------------------|--------------------------------|
-| distribusjon                      | Støttes kun i versjon 1        |
 | finans                            | Støttes kun i versjon 2        |
 | forsikring                        | Støttes kun i versjon 2        |
 | husbanken                         | Støttes i versjon 1 og 2       |
