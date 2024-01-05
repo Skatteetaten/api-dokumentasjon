@@ -42,7 +42,6 @@ const sidebars = {
         "api/skattemeldingupersonlig",
         "api/skatteplikt",
         "api/skattepliktupersonlig",
-        "api/skattepliktig",
         "api/spesifisertsummertskattegrunnlag",
         "api/summertskattegrunnlag",
         "api/summertskattegrunnlagupersonlig",
