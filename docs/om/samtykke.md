@@ -42,7 +42,8 @@ Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egne
  
  </InfoMessageBar>
 
-Fjerne samtykke
+## Fjerne samtykke
+
 En bruker kan også [fjerne et samtykke](https://info.altinn.no/hjelp/profil/samtykke/), og dette gjøres på brukerens profil i Altinn. 
 
 
