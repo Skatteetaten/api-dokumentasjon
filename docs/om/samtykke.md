@@ -42,6 +42,10 @@ Samtykkedialogen kan ikke innpakkes i en iFrame eller annen branding som er egne
  
  </InfoMessageBar>
 
+Fjerne samtykke
+En bruker kan også [fjerne et samtykke](https://info.altinn.no/hjelp/profil/samtykke/), og dette gjøres på brukerens profil i Altinn. 
+
+
 ## Tjenester med støtte for samtykke
 
 Følgende api'er hos Skatteetaten støtter utlevering gjennom samtykke eller fullmakt. Detaljer om parameterne som er nødvendig for å få utstedt samtykker eller fullmakt er beskrevet i dokumentasjonen for hvert enkelt api.
