@@ -51,7 +51,6 @@ GET https://{env}/api/formueinntekt/summertskattegrunnlag/{rettighetspakke}/{inn
  
 | Navn på rettighetspakke |	Stadie | Kommentarer |
 |---|---|
-| distribusjon | oppgjoer | 
 | frirettshjelp | oppgjoer | 
 | husbanken | oppgjoer | 
 | kommuneBoligsosialeFormaal | oppgjoer | Benytt ny url med stadie |
