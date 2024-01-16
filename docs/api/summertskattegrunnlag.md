@@ -280,5 +280,12 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Summert skattegrunnlag".
   
 </TabItem>
+<TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
+
+## 2023
+  
+Her kommer spesifikasjon av årsrevisjon for inntektsår 2023 for api'et
+  
+</TabItem>
 </Tabs>
 
