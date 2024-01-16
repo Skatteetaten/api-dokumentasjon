@@ -587,14 +587,17 @@ Feriepenger på ytelser skal innrapporteres på egne inntektsbeskrivelser. Sykep
 | feriepengerForeldrepenger | foreldrepenger | x | |
 | omstillingsstoenad | overgangsstoenadTilGjenlevendeEktefelle (pensjonEllerTrygd) | x | |
 | feriepengerSvangerskapspenger | svangerskapspenger | x | x |
-| pleiepenger	| sykepenger | x | x |
-| feriepengerOpplaeringspenger | sykepenger |	x	| x |
-| opplaeringspenger | sykepenger | x | x |
-| omsorgspenger | sykepenger | x | x |
-| feriepengerSykepenger | sykepenger | x | x |
-| feriepengerPleiepenger | sykepenger | x | x |
 | feriepengerOmsorgspenger | sykepenger | x | x |
+| feriepengerOpplaeringspenger | sykepenger |	x	| x |
+| feriepengerPleiepenger | sykepenger | x | x |
+| feriepengerSykepenger | sykepenger | x | x |
+| pleiepenger	| sykepenger | x | x |
+| omsorgspenger | sykepenger | x | x |
+| opplaeringspenger | sykepenger | x | x |
 | feriepengerSykepengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
+| pleiepengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
+| omsorgspengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
+| opplaeringspengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
 
 ## Pensjon eller trygd
 
@@ -613,25 +616,25 @@ Sykepenger splittes og innrapporteres hver for seg i egne inntektsbeskrivelser.
 | Nye Naeringsinntektbeskrivelse | Har inngått i | SBL | OTP |
 | --- | --- | --- | --- |
 | foreldrepenger | sykepenger | x | |
-| svangerskapspenger | sykepenger | x | |
-| pleiepenger | sykepenger | x | |
-| opplaeringspenger | sykepenger | x | |
 | omsorgspenger | sykepenger | x | |
+| opplaeringspenger | sykepenger | x | |
+| pleiepenger | sykepenger | x | |
+| svangerskapspenger | sykepenger | x | |
 | foreldrepengerTilDagmamma | sykepengerTilDagmamma | x | |
-| svangerskapspengerTilDagmamma | sykepengerTilDagmamma | x | |
-| pleiepengerTilDagmamma | sykepengerTilDagmamma | x | |
-| opplaeringspengerTilDagmamma | sykepengerTilDagmamma | x	| |
 | omsorgspengerTilDagmamma | sykepengerTilDagmamma | x | |
+| opplaeringspengerTilDagmamma | sykepengerTilDagmamma | x	| |
+| pleiepengerTilDagmamma | sykepengerTilDagmamma | x | |
+| svangerskapspengerTilDagmamma | sykepengerTilDagmamma | x | |
 | foreldrepengerTilFisker | sykepengerTilFisker | x | |
-| svangerskapspengerTilFisker | sykepengerTilFisker | x | | 
 | pleiepengerTilFisker | sykepengerTilFisker | x | |
-| opplaeringspengerTilFisker | sykepengerTilFisker | x | |
 | omsorgspengerTilFisker | sykepengerTilFisker | x | |
+| opplaeringspengerTilFisker | sykepengerTilFisker | x | |
+| svangerskapspengerTilFisker | sykepengerTilFisker | x | | 
 | foreldrepengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-| svangerskapspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-| pleiepengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-| opplaeringspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
 | omsorgspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
+| opplaeringspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
+| pleiepengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
+| svangerskapspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
 
 Skatteetaten tar direkte kontakt med øvrige virksomheter som er berørt for detaljert oversikt over endring i rettighetspakker.
 </TabItem>
