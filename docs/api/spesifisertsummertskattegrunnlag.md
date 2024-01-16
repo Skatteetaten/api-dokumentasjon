@@ -413,6 +413,13 @@ en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for sp
 Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Spesifisert summert skattegrunnlag".
   
 </TabItem>
+<TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
+
+## 2023
+  
+Her kommer spesifikasjon av årsrevisjon for inntektsår 2023 for api'et
+  
+</TabItem>
 </Tabs>
 
 
