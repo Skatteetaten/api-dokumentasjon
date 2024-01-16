@@ -566,7 +566,7 @@ definert av Skatteetaten
 Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Inntekt A-ordningen".
 
 </TabItem>
-<TabItem headerText="Årsrevisjon" itemKey="itemKey-5">
+<TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
 Som følge av endring i innrapportering fra NAV til A-ordningen fra 2024 vil det tilkomme flere nye inntektsbeskrivelser i Inntekt API fra 2024.
 
