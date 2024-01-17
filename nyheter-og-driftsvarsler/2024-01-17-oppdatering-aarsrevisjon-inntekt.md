@@ -11,4 +11,4 @@ Vi har [tidligere varslet](2023-12-15-aarsrevisjon-inntekt-2024.md) om endringer
 | opplaeringspengerTilFiskerSomBareHarHyre |	sykepengerTilFiskerSomBareHarHyre	| X	| X |
 | omsorgspengerTilFiskerSomBareHarHyre |	sykepengerTilFiskerSomBareHarHyre	| X	| X |
 
-[Dokumentasjon av årsrevisjon av Inntekt API](../docs/api/inntekt?tab=Årsrevisjon) er oppdatert.
+[Dokumentasjon av årsrevisjon av Inntekt API](../api-dokumentasjon/api/inntekt?tab=Årsrevisjon) er oppdatert.
