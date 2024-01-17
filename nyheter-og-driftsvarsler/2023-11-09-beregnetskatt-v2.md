@@ -9,4 +9,5 @@ Beregnet skatt v1 saneres senest 15. mars 2024.
 
 Skatteetaten vil ta kontakt med de virksomhetene som berøres for å sette opp rettighetspakke etter ny informasjonsmodell.
 
-[Dokumentasjon av Beregnet skatt API](../docs/api/beregnetskatt)
+[Dokumentasjon av Beregnet skatt API](https://skatteetaten.github.io/api-dokumentasjon/api/beregnetskatt)
+
