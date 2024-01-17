@@ -11,4 +11,6 @@ Vi har [tidligere varslet](https://skatteetaten.github.io/api-dokumentasjon/nyhe
 | opplaeringspengerTilFiskerSomBareHarHyre |	sykepengerTilFiskerSomBareHarHyre	| X	| X |
 | omsorgspengerTilFiskerSomBareHarHyre |	sykepengerTilFiskerSomBareHarHyre	| X	| X |
 
-[Dokumentasjon av årsrevisjon av Inntekt API](../docs/api/inntekt?tab=Årsrevisjon) er oppdatert.
+[Dokumentasjon av årsrevisjon av Inntekt API](https://skatteetaten.github.io/api-dokumentasjon/api/inntekt?tab=Årsrevisjon) er oppdatert.
+
+
