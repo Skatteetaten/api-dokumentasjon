@@ -13,10 +13,7 @@
         <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/01/17/oppdatering-aarsrevisjon-inntekt"/>
         <updated>2024-01-17T08:40:00.000Z</updated>
         <summary type="html"><![CDATA[Vi har tidligere varslet om endringer i Inntekt API fra 2024, og det har nå kommet noen flere endringer:]]></summary>
-        <content type="html"><![CDATA[<p>Vi har <!-- --> om endringer i Inntekt API fra 2024, og det har nå kommet noen flere endringer:</p><p>| Ny YtelseFraOffentligeBeskrivelse |	Har inngått i |	SBL |	OTP |
-| pleiepengerTilFiskerSomBareHarHyre |	sykepengerTilFiskerSomBareHarHyre |	X	| X |
-| opplaeringspengerTilFiskerSomBareHarHyre |	sykepengerTilFiskerSomBareHarHyre	| X	| X |
-| omsorgspengerTilFiskerSomBareHarHyre |	sykepengerTilFiskerSomBareHarHyre	| X	| X |</p><p> er oppdatert.</p>]]></content>
+        <content type="html"><![CDATA[<p>Vi har <!-- --> om endringer i Inntekt API fra 2024, og det har nå kommet noen flere endringer:</p><table><thead><tr><th>Ny YtelseFraOffentligeBeskrivelse</th><th>Har inngått i</th><th>SBL</th><th>OTP</th></tr></thead><tbody><tr><td>pleiepengerTilFiskerSomBareHarHyre</td><td>sykepengerTilFiskerSomBareHarHyre</td><td>X</td><td>X</td></tr><tr><td>opplaeringspengerTilFiskerSomBareHarHyre</td><td>sykepengerTilFiskerSomBareHarHyre</td><td>X</td><td>X</td></tr><tr><td>omsorgspengerTilFiskerSomBareHarHyre</td><td>sykepengerTilFiskerSomBareHarHyre</td><td>X</td><td>X</td></tr></tbody></table><p> er oppdatert.</p>]]></content>
         <category label="nyhet" term="nyhet"/>
         <category label="inntekt" term="inntekt"/>
     </entry>
