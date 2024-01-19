@@ -37,6 +37,11 @@ Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger 
 |---|
 | ssb |
 
+## Støttetjenester
+
+For å følge med på endringer tilbyr vi
+en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
+
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/06542c2f-0e62-34ba-87d9-b95e61f1de09) i Felles datakatalog.
 
