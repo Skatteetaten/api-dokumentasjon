@@ -1,0 +1,68 @@
+---
+title:  "Inntekt API med støtte for inntektsår 2024 er i Test og Produksjon"
+tags: [nyhet, inntekt]
+date: 2024-01-17T15:30:00
+---
+Ref. tidligere varsel om årsrevisjon av Inntekt API for 2024, så er api'et nå oppdatert i både Test og Produksjon.
+
+Se detaljer i [dokumentasjon av årsrevisjon av Inntekt API](https://skatteetaten.github.io/api-dokumentasjon/api/inntekt?tab=Årsrevisjon).
+
+Nye felter er ikke ennå søkbare i Tenor, men følgende identifikatorer har data for januar 2024.
+
+## Ytelser fra offentlige
+
+| Fødseslnummer |	Inntektstype |
+|---------------|--------------|
+| 20907396194 | pleiepenger |
+| 10867997933	| opplaeringspenger |
+| 11887799417	| omsorgspenger |
+| 08818095288	| omstillingsstoenad |
+| 19859499352	| feriepengerForeldrepenger |
+| 29848597749	| ferietilleggDagpengerVedArbeidsloeshet |
+| 31928896792	| ferietilleggDagpengerTilFiskerSomBareHarHyre |
+| 20828696379	| feriepengerSykepenger |
+| 27836498769	| feriepengerSykepengerTilFiskerSomBareHarHyre |
+| 09908798268	| feriepengerSvangerskapspenger |
+| 10908599654	| feriepengerPleiepenger |
+| 24878997111	| feriepengerOpplaeringspenger |
+| 05887196925	| feriepengerOmsorgspenger |
+| 14887597724	| omstillingsstoenad + etterbetaling for 2023-11-01 til 2023-12-31 |
+
+## Pensjon eller trygd
+
+| Fødseslnummer |	Inntektstype |
+|---------------|--------------|
+| 09841898122	| barnepensjonFra2024 (uten etterbetaling) |
+| 07870799807	| barnepensjonFraAndreEnnFolketrygdenFra2024 (uten etterbetaling) |
+| 58851175391	| ipaEllerIpsBarnepensjonFra2024 (uten etterbetaling) |
+| 20911297826	| barnepensjonFra2024 + barnepensjon med etterbetaling for okt-des 2023 |
+| 17841099990	| barnepensjonFraAndreEnnFolketrygdenFra2024 + barnepensjonFraAndreEnnFolketrygden med etterbetaling for okt-des 2023 |
+| 24841399826	| ipaEllerIpsBarnepensjonFra2024 + ipaEllerIpsBarnepensjon med etterbetaling for okt-des 2023 |
+| 20861298117	| barnepensjonFra2024 + barnepensjonFraAndreEnnFolketrygdenFra2024 + ipaEllerIpsBarnepensjonFra2024 |
+
+## Næring
+
+| Fødseslnummer |	Inntektstype |
+|---------------|--------------|
+| 17840199045	| svangerskapspengerTilFisker |
+| 24887499019	| pleiepenger |
+| 16867498242	| pleiepengerTilDagmamma |
+| 01868399097	| pleiepengerTilJordOgSkogbrukere |
+| 10816298631	| pleiepengerTilFisker |
+| 27847098460	| opplaeringspenger |
+| 70868700589	| opplaeringspengerTilDagmamma |
+| 09829597583	| opplaeringspengerTilJordOgSkogbrukere |
+| 27828799490	| svangerskapspengerTilJordOgSkogbrukere |
+| 31876398845	| opplaeringspengerTilFisker |
+| 16817898851	| omsorgspenger |
+| 24818097456	| omsorgspengerTilJordOgSkogbrukere |
+| 19877498169	| omsorgspengerTilFisker |
+| 03819299284	| svangerskapspengerTilDagmamma |
+| 07929297096	| svangerskapspenger |
+| 31838198719	| foreldrepengerTilFisker |
+| 22839199256	| foreldrepengerTilJordOgSkogbrukere |
+| 07898796846	| omsorgspengerTilDagmamma |
+| 29888999602	| foreldrepengerTilDagmamma |
+| 19909298000	| foreledrepenger |
+
+
