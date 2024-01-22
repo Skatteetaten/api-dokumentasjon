@@ -282,9 +282,56 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 </TabItem>
 <TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
-## 2023
-  
-Her kommer spesifikasjon av årsrevisjon for inntektsår 2023 for api'et
+## Nye/endrede summerte skattegrunnlag fra 2023
+
+| Teknisk navn | Endring |
+|--------------|---------|
+| alminneligInntektFraEnkeltpersonforetakPaaSvalbard | Nytt fra 2023, inngikk tidligere i samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering |
+| alminneligInntektFraSelskapMedDeltakerfastsettingPaaSvalbard | Nytt fra 2023 |
+| fradragsberettighetTapVedSvindel | Nytt fra 2023 |
+| samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering | Endring i innhold: alminneligInntektFraEnkeltpersonforetakPaaSvalbard er skilt ut som eget teknisk navn	|
+| godtgjoerelseEtterSaeravtaleIUtenrikstjenesten | Nytt fra 2023 |
+| skattepliktigTilfeldigInntektFraSpillLotteriMv | Nytt fra 2023 |
+
+
+## Summerte skattegrunnlag som utgår fra 2023
+
+| Teknisk navn | Endring |
+|--------------|---------|
+| andreFradragsberettigedeKostnader | Utgått |
+| annenSkattepliktigKapitalinntektFraVirtuellValuta | Utgått |
+| dagpengerForNaeringsdrivendeOgFisker | Utgått |
+| fradragsberettigetTapVedRealisasjonAvFastEiendomIUtlandet | Utgått |
+| gevinstVedRealisasjonAvAksjeOgVerdipapirfondAksjedel | Utgått |
+| gevinstVedRealisasjonAvFastEiendomMvIUtlandet | Utgått |
+| gevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel | Utgått |
+| loennsinntektPaaSvalbardOver12G | Utgått |
+| naeringsinntektFraKompensasjonsytelseUtbetaltAvNavInnenFiskeOgFangst | Utgått |
+| oppjustertTilleggTilAndelIFellesTilleggIAlminneligInntektFraSDFInnenAnnenNaering | Utgått |
+| oppjustertTilleggTilAndelIFellesTilleggIAlminneligInntektFraSDFInnenBarnepassIBarnepasserensHjem | Utgått |
+| oppjustertTilleggTilGevinstVedRealisasjonAvAksjeOgVerdipapirfondAksjedel | Utgått |
+| oppjustertTilleggTilGevinstVedRealisasjonAvVerdipapirfondsandelIKombifondKnyttetTilAksjedel | Utgått |
+| overskuddFraNaeringsinntekt | Utgått, grunnlagForSkattPaaNaeringsoverskuddSvalbard kan brukes i stedet |
+| personinntektFraKompensasjonsytelseUtbetaltAvNavInnenFiskeOgFangst | Utgått |
+| renteinntektAvObligasjonVerdipapirfondRentedelMv | Utgått |
+| samledeAndrePaaloepteRenter | Utgått |
+| samledeOpptjenteRenterIUtenlandskeBanker | Utgått |
+| samledeUfoererenterOgLivrenter | Utgått |
+| samletAnnenPensjonUtenTrekkplikt | Utgått |
+| samletBarnepensjonOgLivrenteTilBarn | Utgått |
+| samletFormuesverdiAvPrivatUtestaaendeFordring | Utgått |
+| samletFormuesverdiForSekundaerbolig | Utgått |
+| samletFradragsberettigetKostnadTilknyttetArbeidMv | Utgått |
+| samletFradragsberettigetUnderskuddVedUtleieAvFastEiendom | Utgått |
+| samletGjenkjoepsverdiForLivsforsikring | Utgått |
+| samletInnskuddIInnenlandskeBanker | Utgått |
+| samletInntektSomGirRettTilSaerskiltFradragForSjoefolk | Utgått |
+| samletLoennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt | Utgått |
+| samletMerkostnadVedArbeidsoppholdUtenforHjem | Utgått |
+| samletPensjonFraFolketrygden | Utgått |
+| samletPensjonsinnbetalingTilIndividuellPensjonsordning | Utgått |
+| samletSkattepliktigOverskuddFraUtleieAvFastEiendom | Utgått |
+| skattepliktigEtterloennOgEtterpensjon | Utgått |
   
 </TabItem>
 </Tabs>
