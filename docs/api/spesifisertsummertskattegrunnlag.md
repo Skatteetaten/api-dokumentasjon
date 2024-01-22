@@ -415,9 +415,7 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Sp
 </TabItem>
 <TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
-## 2023
-
-### Nye/endrede summerte skattegrunnlag
+## Nye/endrede summerte skattegrunnlag fra 2023
 
 | Teknisk navn | Endring | SBL |
 |--------------|---------|-----|
@@ -428,8 +426,7 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Sp
 | godtgjoerelseEtterSaeravtaleIUtenrikstjenesten | Nytt fra 2023 | |
 | skattepliktigTilfeldigInntektFraSpillLotteriMv | Nytt fra 2023 | |
 
-
-### Summerte skattegrunnlag som utgår
+## Summerte skattegrunnlag som utgår fra 2023
 
 | Teknisk navn | Endring | SBL |
 |--------------|---------|-----|
