@@ -12,7 +12,7 @@ Eksisterende felter videreføres fratrukken den delen av innholdet som er utskil
 
 Frist for innrapportering for januar er 5. februar, og nye inntektsbeskrivelser vil da være tilgjengelig.
 
-## Ytelser fra offentlige
+### Ytelser fra offentlige
 
 Feriepenger på ytelser skal innrapporteres på egne inntektsbeskrivelser. Sykepenger splittes og innrapporteres hver for seg i egne inntektsbeskrivelser.
 
@@ -32,7 +32,7 @@ Feriepenger på ytelser skal innrapporteres på egne inntektsbeskrivelser. Sykep
 | feriepengerOmsorgspenger | sykepenger | x | x |
 | feriepengerSykepengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
 
-## Pensjon eller trygd
+### Pensjon eller trygd
 
 Barnepensjons skattlegges fra 2024 som kapitalinntekt, og innrapporteres heretter på nye inntektsbeskrivelser. Etterbetaling av barnepensjon innrapporteres på eksisterende inntektsbeskrivelser.
 
@@ -42,7 +42,7 @@ Barnepensjons skattlegges fra 2024 som kapitalinntekt, og innrapporteres herette
 | barnepensjonFraAndreEnnFolketrygdenFra2024 | barnepensjonFraAndreEnnFolketrygden | x | |
 | ipaEllerIpsBarnepensjonFra2024 | ipaEllerIpsBarnepensjon | x | |
 
-## Næring
+### Næring
 
 Sykepenger splittes og innrapporteres hver for seg i egne inntektsbeskrivelser.
 
