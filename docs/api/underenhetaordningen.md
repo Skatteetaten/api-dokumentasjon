@@ -55,7 +55,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesgrunnlag for ei
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse]() Tjenesten er ikke oppført i felles datakatalog.
+Tjenesten er ikke oppført i felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
