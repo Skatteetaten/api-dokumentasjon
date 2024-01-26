@@ -83,40 +83,89 @@ Her er et eksempel på respons for inntektsår 2022 i JSON uten oppgitt stadie.
 
 ```json
 {
-  "personidentifikator": "06888996506",
-  "inntektsaar": "2022",
+  "personidentifikator": "20076716073",
+  "inntektsaar": "2023",
   "skjermet": false,
   "grunnlag": [
     {
-      "tekniskNavn": "tapOgAnnenKostnadFraVirtuellEiendel",
-      "beloep": 5000,
-      "kategori": [
-        "inntektsfradrag"
-      ]
-    },
-    {
-      "tekniskNavn": "formuesverdiForVirtuellValuta",
-      "beloep": 4000000,
+      "tekniskNavn": "formuesverdiForKjoeretoey",
+      "beloep": 0,
       "kategori": [
         "formue"
       ]
     },
     {
-      "tekniskNavn": "gevinstVedRealisasjonAvAnnetFinansprodukt",
-      "beloep": 20000,
+      "tekniskNavn": "formuesverdiForPrimaerbolig",
+      "beloep": 544978,
+      "kategori": [
+        "formue"
+      ]
+    },
+    {
+      "tekniskNavn": "gjeldIInnenlandskeBanker",
+      "beloep": 183457,
+      "kategori": [
+        "formuesfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "pensjonsinnbetaling",
+      "beloep": 3935,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygdenEksklusiveEktefelletillegg",
+      "beloep": 126362,
       "kategori": [
         "inntekt"
       ]
     },
     {
-      "tekniskNavn": "samletUfoeretrygdFraFolketrygdenEksklusiveEktefelletillegg",
-      "beloep": 250000,
+      "tekniskNavn": "samledePaaloepteRenterPaaGjeldIInnenlandskeBanker",
+      "beloep": 13101,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "samletGjeld",
+      "beloep": 183457,
+      "kategori": [
+        "-"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoereytelseFraAndreEnnFolketrygden",
+      "beloep": 28218,
       "kategori": [
         "inntekt"
       ]
+    },
+    {
+      "tekniskNavn": "innskudd",
+      "beloep": 7,
+      "kategori": [
+        "formue"
+      ]
+    },
+    {
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 213151,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "bruttoformue",
+      "beloep": 544985,
+      "kategori": [
+        "-"
+      ]
     }
   ],
-  "skatteoppgjoersdato": "2023-01-31"
+  "skatteoppgjoersdato": "2023-09-28"
 }
 ```
 
@@ -195,6 +244,8 @@ Eksempel på respons for inntektsår 2020 med oppgitt stadie 'oppgjoer' i JSON.
 
 Flere eksempler på responser:
 
+[SummertSkattegrunnlag2022.json](../../static/download/summertSkattegrunnlag2022.json)  
+
 [SummertSkattegrunnlag2021.json](../../static/download/summertSkattegrunnlag2021.json)  
 
 [SummertSkattegrunnlag2020.json](../../static/download/summertSkattegrunnlag2020.json)
@@ -259,8 +310,8 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 
 ## Årsversjoner
 
-| År | Informasjonsmodell |
-|-----------|--------|
+| År   | Informasjonsmodell                                                                                                               |
+|------|----------------------------------------------------------------------------------------------------------------------------------|
 | 2016 | [Informasjonsmodell for summert skattegrunnlag 2016](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2016.md) |
 | 2017 | [Informasjonsmodell for summert skattegrunnlag 2017](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2017.md) |
 | 2018 | [Informasjonsmodell for summert skattegrunnlag 2018](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2018.md) |
@@ -268,6 +319,7 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 | 2020 | [Informasjonsmodell for summert skattegrunnlag 2020](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2020.md) |
 | 2021 | [Informasjonsmodell for summert skattegrunnlag 2021](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2021.md) |
 | 2022 | [Informasjonsmodell for summert skattegrunnlag 2022](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2022.md) |
+| 2023 | [Informasjonsmodell for summert skattegrunnlag 2023](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2023.md) |
 
 ## Informasjonsmodell - skjema
 [![SummertSkattegrunnlag](../../static/download/SummertSkattegrunnlag.png)](../../static/download/SummertSkattegrunnlag.png)
