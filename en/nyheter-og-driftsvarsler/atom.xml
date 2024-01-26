@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-01-22T15:30:00.000Z</updated>
+    <updated>2024-01-26T12:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Oppdatert Open API spesifikasjon for Spesifisert summert skattegrunnlag API]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/01/26/oas-spesifisert</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/01/26/oas-spesifisert"/>
+        <updated>2024-01-26T12:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Skatteetaten jobber med tilpasninger i skatteoppgjørstjenestene i forbindelse med inntektsår 2023, og nå er Open APi spesifikasjon for Spesifisert summert skattegrunnlag API oppdatert på Swaggerhub.]]></summary>
+        <content type="html"><![CDATA[<p>Skatteetaten jobber med tilpasninger i skatteoppgjørstjenestene i forbindelse med inntektsår 2023, og nå er <!-- --> oppdatert på Swaggerhub. </p><p>Det er kun utvidelser som støtter endringer for å dele opplysninger som er nye for 2023, og endringene skal ikke bryte med eksisterende versjon.</p><p>Se detaljer i <!-- -->.</p><p>Det vil komme nytt varsel når api'et er oppdatert i test og produksjon.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+        <category label="skatteoppgjør" term="skatteoppgjør"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Inntekt API med støtte for inntektsår 2024 er i Test og Produksjon]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/01/22/inntekt-2024</id>
