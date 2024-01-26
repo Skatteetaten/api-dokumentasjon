@@ -1,0 +1,36 @@
+{
+  "personidentifikator": "06888996506",
+  "inntektsaar": "2022",
+  "skjermet": false,
+  "grunnlag": [
+    {
+      "tekniskNavn": "tapOgAnnenKostnadFraVirtuellEiendel",
+      "beloep": 5000,
+      "kategori": [
+        "inntektsfradrag"
+      ]
+    },
+    {
+      "tekniskNavn": "formuesverdiForVirtuellValuta",
+      "beloep": 4000000,
+      "kategori": [
+        "formue"
+      ]
+    },
+    {
+      "tekniskNavn": "gevinstVedRealisasjonAvAnnetFinansprodukt",
+      "beloep": 20000,
+      "kategori": [
+        "inntekt"
+      ]
+    },
+    {
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygdenEksklusiveEktefelletillegg",
+      "beloep": 250000,
+      "kategori": [
+        "inntekt"
+      ]
+    }
+  ],
+  "skatteoppgjoersdato": "2023-01-31"
+}
