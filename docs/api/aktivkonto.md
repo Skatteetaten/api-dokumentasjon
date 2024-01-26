@@ -9,7 +9,7 @@ keywords: [aktiv konto]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer informasjon om valgt konto for utbetalinger fra det offentlige for en person eller virksomhet.</summary>
+<summary>Tjenesten leverer informasjon om valgt konto for utbetalinger av beløp til gode fra Skatteetaten.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
