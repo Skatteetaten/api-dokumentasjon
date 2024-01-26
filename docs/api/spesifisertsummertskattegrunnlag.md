@@ -91,147 +91,177 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <s
 
 ## JSON
 
-Her er et eksempel på en respons for inntektsår 2022 uten oppgitt stadie i JSON. Det er lenket til flere eksempler på
+Her er et eksempel på en respons for inntektsår 2023 uten oppgitt stadie i JSON. Det er lenket til flere eksempler på
 responser nedenfor.
 
 ```json
 {
-  "personidentifikator": "12879397780",
-  "inntektsaar": "2022",
+  "personidentifikator": "20076716073",
+  "inntektsaar": "2023",
   "grunnlag": [
     {
-      "tekniskNavn": "verdiFoerVerdsettingsrabattForAksjeOgAksjefondIFondskonto",
-      "beloep": 30000,
+      "tekniskNavn": "formuesverdiForKjoeretoey",
+      "beloep": 0,
       "spesifisering": [
         {
-          "type": "Fondskonto",
-          "forsikringsselskapetsNavn": "ACSW",
-          "kontonummer": "17",
-          "verdiFoerVerdsettingsrabattForAksjeOgAksjefond": 30000,
-          "formuesverdiForKontanterMv": 12000
+          "type": "Kjoeretoey",
+          "registreringsnummer": "BT49298",
+          "fabrikatnavn": "VOLKSWAGEN",
+          "aarForFoerstegangsregistrering": "2018",
+          "formuesverdi": 0
         }
       ],
       "kategori": "formue"
     },
     {
-      "tekniskNavn": "formuesverdiForSkogeiendom",
-      "beloep": 17888,
+      "tekniskNavn": "formuesverdiForPrimaerbolig",
+      "beloep": 544978,
       "spesifisering": [
         {
           "type": "Eiendom",
-          "bruksnummer": "23",
-          "gaardsnummer": "5",
-          "kommunenummer": "3813",
-          "formuesverdiForFormuesandel": 17888
+          "bruksnummer": "302",
+          "gaardsnummer": "253",
+          "kommunenummer": "4634",
+          "festenummer": "0",
+          "seksjonsnummer": "0",
+          "formuesverdi": 1089956,
+          "beregnetMarkedsverdiForBolig": 4359823,
+          "eierandel": 50.0,
+          "andelAvFormuesverdi": 50.0,
+          "poststedsnavn": "MJÅVATN",
+          "postnummer": "5158",
+          "gateadresse": "Sydveien",
+          "husnummer": "48",
+          "formuesverdiForFormuesandel": 544978
         }
       ],
       "kategori": "formue"
     },
     {
-      "tekniskNavn": "innskudd",
-      "beloep": 4000000,
-      "kategori": "formue"
-    },
-    {
-      "tekniskNavn": "nettoformue",
-      "beloep": 4863814,
-      "kategori": "-"
-    },
-    {
-      "tekniskNavn": "bruttoformue",
-      "beloep": 5197888,
-      "kategori": "-"
-    },
-    {
-      "tekniskNavn": "samletFormuesverdiForOevrigFormue",
-      "beloep": 140000,
+      "tekniskNavn": "gjeldIInnenlandskeBanker",
+      "beloep": 183457,
       "spesifisering": [
         {
-          "type": "AndreBeloepKnyttetTilBoligOgEiendeler",
-          "formuesverdiForAnnenFormue": 140000,
-          "beskrivelseForAnnenFormue": "Opsjoner"
-        }
-      ],
-      "kategori": "formue"
-    },
-    {
-      "tekniskNavn": "verdsettingsrabattForAksjeOgAksjefondIFondskonto",
-      "beloep": 7500,
-      "kategori": "verdsettingsrabattSomGirGjeldsreduksjon"
-    },
-    {
-      "tekniskNavn": "investeringIOppstartsselskap",
-      "beloep": 670000,
-      "kategori": "inntektsfradrag"
-    },
-    {
-      "tekniskNavn": "tapOgAnnenKostnadFraVirtuellEiendel",
-      "beloep": 20400,
-      "kategori": "inntektsfradrag"
-    },
-    {
-      "tekniskNavn": "formuesverdiForVirtuellValuta",
-      "beloep": 56000,
-      "spesifisering": [
-        {
-          "type": "VirtuellEiendel",
-          "formuesverdiForVirtuellEiendel": 56000,
-          "gjelderFlereVirtuelleEiendeler": true
-        }
-      ],
-      "kategori": "formue"
-    },
-    {
-      "tekniskNavn": "gjeldsfradragForKapitalisertFesteavgift",
-      "beloep": 66000,
-      "spesifisering": [
-        {
-          "type": "KapitalisertFesteavgift",
-          "verdiFoerVerdsettingsrabattForKapitalisertFesteavgift": 66000,
-          "gjeldsfradragForKapitalisertFesteavgift": 66000
+          "type": "Konto",
+          "kontonummer": "553663",
+          "bankensNavn": "TRØTTE TAKTFULLE ØSTLENDINGER AS",
+          "organisasjonsnummer": "872068279",
+          "gjeld": 183457,
+          "paaloepteRenter": 13101,
+          "prosentandelAvGjeldOgPaaloepteRenter": 100.0,
+          "andelAvGjeld": 183457,
+          "andelAvPaaloepteRenter": 13101
         }
       ],
       "kategori": "formuesfradrag"
     },
     {
-      "tekniskNavn": "oppjustertTilleggTilGevinstVedRealisasjonAvOgUttakFraAksjedelIFondskonto",
-      "beloep": 1560,
-      "kategori": "oppjusteringAvEierinntekter"
+      "tekniskNavn": "pensjonsinnbetaling",
+      "beloep": 3935,
+      "kategori": "inntektsfradrag"
     },
     {
-      "tekniskNavn": "formuesverdiForKontanterMvIFondskonto",
-      "beloep": 12000,
+      "tekniskNavn": "samletUfoeretrygdFraFolketrygdenEksklusiveEktefelletillegg",
+      "beloep": 126362,
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "samledePaaloepteRenterPaaGjeldIInnenlandskeBanker",
+      "beloep": 13101,
       "spesifisering": [
         {
-          "type": "Fondskonto",
-          "forsikringsselskapetsNavn": "ACSW",
-          "kontonummer": "17",
-          "verdiFoerVerdsettingsrabattForAksjeOgAksjefond": 30000,
-          "formuesverdiForKontanterMv": 12000
+          "type": "Konto",
+          "kontonummer": "553663",
+          "bankensNavn": "TRØTTE TAKTFULLE ØSTLENDINGER AS",
+          "organisasjonsnummer": "872068279",
+          "gjeld": 183457,
+          "paaloepteRenter": 13101,
+          "prosentandelAvGjeldOgPaaloepteRenter": 100.0,
+          "andelAvGjeld": 183457,
+          "andelAvPaaloepteRenter": 13101
+        }
+      ],
+      "kategori": "inntektsfradrag"
+    },
+    {
+      "tekniskNavn": "samletGjeld",
+      "beloep": 183457,
+      "kategori": "-"
+    },
+    {
+      "tekniskNavn": "samletUfoereytelseFraAndreEnnFolketrygden",
+      "beloep": 28218,
+      "spesifisering": [
+        {
+          "type": "KollektivPensjonsordning",
+          "pensjonsutbetalersNavn": "KUNNSKAPSRIKE DAGLIGDAGSE SÅPEBOBLER GFS",
+          "organisasjonsnummer": "881518996",
+          "pensjonsinntektPerSkattleggingsperiode": 25461
+        },
+        {
+          "type": "KollektivPensjonsordning",
+          "pensjonsutbetalersNavn": "KUNNSKAPSRIKE DAGLIGDAGSE SÅPEBOBLER GFS",
+          "organisasjonsnummer": "881518996",
+          "pensjonsinntektPerSkattleggingsperiode": 98
+        },
+        {
+          "type": "KollektivPensjonsordning",
+          "pensjonsutbetalersNavn": "KUNNSKAPSRIKE DAGLIGDAGSE SÅPEBOBLER GFS",
+          "organisasjonsnummer": "881518996",
+          "pensjonsinntektPerSkattleggingsperiode": 2659
+        }
+      ],
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "innskudd",
+      "beloep": 7,
+      "spesifisering": [
+        {
+          "type": "Konto",
+          "kontonummer": "5221173390",
+          "bankensNavn": "TOMME PENE FUGLEKIKKERE ASA",
+          "organisasjonsnummer": "843986005",
+          "innskudd": 7
         }
       ],
       "kategori": "formue"
     },
     {
-      "tekniskNavn": "formuesverdiForAnnetFinansprodukt",
-      "beloep": 900000,
+      "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
+      "beloep": 213151,
       "spesifisering": [
         {
-          "type": "AnnetFinansprodukt",
-          "finansproduktetsNavn": "Hakke peiling",
-          "kontofoerersNavn": "Auket",
-          "kontonummer": "77",
-          "finansprodukttype": "contractForDifference",
-          "formuesverdiForAnnetFinansprodukt": 900000
+          "type": "LoennOgTilsvarendeYtelser",
+          "arbeidsgiversNavn": "KALDE FINE KJØKKENINNREDNINGER ORGL KALDE FINE KJØKKENINNREDNINGER ORGL",
+          "organisasjonsnummer": "809075370",
+          "beloep": 211
+        },
+        {
+          "type": "LoennOgTilsvarendeYtelser",
+          "arbeidsgiversNavn": "VITTIGE BLIDE ORD AS",
+          "organisasjonsnummer": "811660906",
+          "beloep": 608
+        },
+        {
+          "type": "LoennOgTilsvarendeYtelser",
+          "arbeidsgiversNavn": "VITTIGE BLIDE ORD AS",
+          "organisasjonsnummer": "811660906",
+          "beloep": 212332
         }
       ],
-      "kategori": "formue"
+      "kategori": "inntekt"
+    },
+    {
+      "tekniskNavn": "bruttoformue",
+      "beloep": 544985,
+      "kategori": "-"
     }
   ],
   "skjermet": false,
-  "skatteoppgjoersdato": "2023-02-03",
+  "skatteoppgjoersdato": "2023-09-28",
   "stadie": "oppgjoer",
-  "registreringstidpunkt": "2023-02-03T12:53:05Z"
+  "registreringstidpunkt": "2023-10-23T08:03:41.687Z"
 }
 ```
 
@@ -314,6 +344,8 @@ Eksempel på respons for inntektsår 2018 med oppgitt stadie 'oppgjoer' i JSON.
 }
 ```
 
+[SpesifisertSummertSkattegrunnlag2022.json](../../static/download/spesifisertSummertSkattegrunnlag2022.json)
+
 [SpesifisertSummertSkattegrunnlag2021.json](../../static/download/spesifisertSummertSkattegrunnlag2021.json)
 
 [SpesifisertSummertSkattegrunnlag2020.json](../../static/download/spesifisertSummertSkattegrunnlag2020.json)
@@ -364,15 +396,16 @@ Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swa
 
 ## Årsversjoner
 
-| År | Kodeliste og spesifikasjoner |
-|-----------|--------|
-| 2016 |  [Summerte skattegrunnlag og spesifikasjoner for 2016](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2016.md) |
-| 2017 |  [Summerte skattegrunnlag og spesifikasjoner for 2017](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2017.md) |
-| 2018 |  [Summerte skattegrunnlag og spesifikasjoner for 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018.md) |
-| 2019 |  [Summerte skattegrunnlag og spesifikasjoner for 2019](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2019.md) |
-| 2020 |  [Summerte skattegrunnlag og spesifikasjoner for 2020](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2020.md) |
-| 2021 |  [Summerte skattegrunnlag og spesifikasjoner for 2021](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2021.md) |
-| 2022 |  [Summerte skattegrunnlag og spesifikasjoner for 2022](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2022.md) |
+| År   | Kodeliste og spesifikasjoner                                                                                                                            |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2016 | [Summerte skattegrunnlag og spesifikasjoner for 2016](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2016.md) |
+| 2017 | [Summerte skattegrunnlag og spesifikasjoner for 2017](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2017.md) |
+| 2018 | [Summerte skattegrunnlag og spesifikasjoner for 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018.md) |
+| 2019 | [Summerte skattegrunnlag og spesifikasjoner for 2019](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2019.md) |
+| 2020 | [Summerte skattegrunnlag og spesifikasjoner for 2020](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2020.md) |
+| 2021 | [Summerte skattegrunnlag og spesifikasjoner for 2021](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2021.md) |
+| 2022 | [Summerte skattegrunnlag og spesifikasjoner for 2022](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2022.md) |
+| 2023 | [Summerte skattegrunnlag og spesifikasjoner for 2023](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2023.md) |
 
 ## Informasjonsmodell - skjema
 
