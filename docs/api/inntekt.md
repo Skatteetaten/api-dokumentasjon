@@ -399,6 +399,7 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |feriepengerSykepenger|2024-01||X|X|
 |feriepengerSykepengerTilFiskerSomBareHarHyre|2024-01||X|X|
 |ferietilleggDagpengerTilFiskerSomBareHarHyre|2024-01||X|X|
+|ferietilleggDagpengerVedArbeidsloeshet|2024-01||X|X|
 |foreldrepenger|2013-01||X||
 |omsorgspenger|2024-01||X|X|
 |omsorgspengerTilFiskerSomBareHarHyre|2024-01||X|X|
