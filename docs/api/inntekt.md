@@ -626,6 +626,16 @@ Eksisterende felter videreføres fratrukken den delen av innholdet som er utskil
 
 Frist for innrapportering for januar er 5. februar, og nye inntektsbeskrivelser vil da være tilgjengelig.
 
+## Tidsplan
+| Dato | Aktivitet |
+|------|-----------|
+| 21.11.2023 | Tidsplan for årsrevisjon 2024 distribuert |
+| 15.12.2023 | Informasjon om nye lønnsbeskrivelser fra 2024 |
+| 17.01.2024 | Oppdatert informasjon om nye lønnsbeskrivelser fra 2024 |
+| 22.01.2024 | Støtte for nye lønnsbeskrivelser i test og prod |
+| 05-10.2.2024 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
+
+
 ## Ytelser fra offentlige
 
 Feriepenger på ytelser skal innrapporteres på egne inntektsbeskrivelser. Sykepenger splittes og innrapporteres hver for seg i egne inntektsbeskrivelser.
