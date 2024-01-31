@@ -455,7 +455,6 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Sp
 | 21.11.2023 | Tidsplan for årsrevisjon for 2023 distribuert |
 | 15.12.2023 | Første versjon av endringer i kodeliste for inntektsår 2023 |
 | 16.01.2024 | Oppdatert versjon av endringer i kodeliste for inntektsår 2023 |
-| 25.01.2024 | Teknisk møte |
 | 26.01.2024 | Open API spesifikasjon oppdatert på Swaggerhub |
 | Medio februar | Endelig versjon av kodeliste for inntektsår 2023 |
 | 22.02.2024 | Støtte for inntektsår 2023 i test for alle stadier |
