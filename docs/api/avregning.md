@@ -133,7 +133,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 [Informasjonsmodell](https://data.norge.no/informationmodels/fb77ea64-f7c6-3993-8511-1bd2ce8ad259) i Felles datakatalog.
 
-Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swaggerhub, er det open api spesifikasjonen
+Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen
 som er mest oppdatert.
 
 I listen under vises navn på de ulike feltene tjenesten leverer. Ta kontakt med Skatteetaten for å finne ut hvilken
