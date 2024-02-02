@@ -22,7 +22,7 @@ For å teste disse tjenestene har virksomheter tidligere måttet logge inn i Alt
 
 ## Samtykketoken-generator
 
-Altinn har tilgjengeliggjort en løsning som kan generere samtykketoken, slik at man kan teste Skatteetatens API'er uten å måtte logge inn i Altinn først.
+Altinn har tilgjengeliggjort en løsning som kan generere samtykketoken, slik at man kan teste Skatteetatens API-er uten å måtte logge inn i Altinn først.
 
 Løsningen er en enkel webapp som krever Maskinporten-autentisering. Denne kan en kalles med de parameterne som en ønsker for samtykketokenet, f.eks. tjenestekoder, inntektsår, samt offeredby/coveredby/handledby.
 
