@@ -9,7 +9,7 @@ keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Aug 11, 2023
 hide_table_of_contents: true
 ---
-<summary>Api'er knyttet til Innkrevingsområdet</summary>
+<summary>API-er knyttet til Innkrevingsområdet</summary>
 
 ## Fremtidens innkreving
 Skatteetaten er i gang med arbeidet for å transformere statlig innkreving, og Fremtidens innkreving er for tiden det største digitaliseringsprogrammet i Norge. Les mer på [skatteetaten.no](https://www.skatteetaten.no/fremtidensinnkreving/).
