@@ -18,7 +18,7 @@ Flere av Skatteetatens tjenester krever samtykke for å kunne utlevere data til 
 - SBL-tjenestene og Krav og betalinger API krever samtykke fra skatteyter.
 - Ebevis-tjenester krever samtykke fra virksomhet.
 
-For å teste disse tjenestene har virksomheter tidligere måttet logge inn i Altinn og sette samtykke for personer og enheter før test av API'ene. Dette manuelle steget kan nå unngås ved å ta i bruk Altinn sin Samtykketoken-generator.
+For å teste disse tjenestene har virksomheter tidligere måttet logge inn i Altinn og sette samtykke for personer og enheter før test av API-ene. Dette manuelle steget kan nå unngås ved å ta i bruk Altinn sin Samtykketoken-generator.
 
 ## Samtykketoken-generator
 
