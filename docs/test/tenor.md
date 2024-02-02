@@ -28,7 +28,7 @@ Skatteetaten vil tilrettelegge søkeadaptere for sine datatyper i Tenor. Informa
 ## Kildedata
 I Tenor er det en tab for "Kildedata", dette er en representasjon av feltene i testdataene, men viser ikke responsen slik de er i de eksterne tjenestene. Open API spesifikasjonen (evt. Github) må benyttes for dokumentasjon av de relevante tjenestene.
 
-For enkelte søke vises pt. ikke kildedata. Det kan se ut som det er noe feil med med testdataene, men det er kun en begrensning i søkene. Ved oppslag gjennom API'ene vil dere kunne hente og se nærmere på testdataene.
+For enkelte søke vises pt. ikke kildedata. Det kan se ut som det er noe feil med med testdataene, men det er kun en begrensning i søkene. Ved oppslag gjennom API-ene vil dere kunne hente og se nærmere på testdataene.
 
 ## Foreløpige begrensninger i testdata i nytt testmiljø
 
