@@ -44,7 +44,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger A
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/krav-og-betalinger-api) på SwaggerHub.
 
-API'et har 4 endepunkter:
+API-et har 4 endepunkter:
 
 * __Åpne krav__: Hent oversikt over åpne krav og uplasserte innbetalinger. Gjør oppslag mot reskontrosystemene på åpne
   krav og uplasserte innbetalinger og oppgir de samlet med en summert oversikt
