@@ -32,7 +32,7 @@ Den overordnetete flyten for samtykkedialogen blir da som følger:
 
 6. Konsument [henter et Samtykketoken](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token) fra Altinn ved bruk av *Authorization Code*. Samtykketokenet har vanligvis utløpstid på 30 sekunder, men kan innhentes på nytt med samme *AuthorizationCode* så lenge samtykket fortsatt er gyldig.
 
-7. Konsument sender med samtykketokenet i forespørslene til api'et gjennom å sette en HTTP-headerverdi: `AltinnSamtykke: <samtykketoken>`. Forespørselen må også inneholde et [Maskinporten-token](./sikkerhet.md).
+7. Konsument sender med samtykketokenet i forespørslene til API-et gjennom å sette en HTTP-headerverdi: `AltinnSamtykke: <samtykketoken>`. Forespørselen må også inneholde et [Maskinporten-token](./sikkerhet.md).
 
 8. Skatteetaten sjekker Maskinporten- og Samtykketoken og utleverer dataene.
  
