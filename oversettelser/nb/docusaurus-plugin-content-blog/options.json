@@ -4,7 +4,7 @@
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "Nyheter og driftsvarsler for Skatteetatens API’er",
+    "message": "Nyheter og driftsvarsler for Skatteetatens API-er",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
