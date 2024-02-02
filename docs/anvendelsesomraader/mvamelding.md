@@ -9,7 +9,7 @@ keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: July 10, 2023
 hide_table_of_contents: true
 ---
-<summary>Api'er knyttet til Mva-meldingen</summary>
+<summary>API-er knyttet til Mva-meldingen</summary>
 
 ## MEMO-prosjektet
 De siste årene har MEMO-prosjektet i Skatteetaten modernisert Mva-området. MEMO-prosjektet har utviklet ny skattemelding for merverdiavgift (mva-meldingen). Målet med MEMO-prosjektet var å oppnå bedre etterlevelse, likere konkurransevilkår, forenkling for næringslivet og en mer effektiv forvaltning. Noe forenkling følger direkte av endringene i mva-meldingen. Vi får færre feilkilder, enklere tilbakebetaling, og det blir enklere å oppfylle opplysningsplikten.
