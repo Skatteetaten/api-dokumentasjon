@@ -86,7 +86,7 @@ export default function Navbar(): JSX.Element {
                 </TopStripe>
               }
               title={translate({
-                message: "Skatteetatens API'er",
+                message: "Skatteetatens API-er",
               })}
             />
           </div>
