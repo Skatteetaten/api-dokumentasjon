@@ -27,7 +27,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
-Man trenger ikke eget scope for dette api'et, siden den benytter samme scope som relaterte oppslagstjenester: 
+Man trenger ikke eget scope for dette aAPI-et, siden den benytter samme scope som relaterte oppslagstjenester: 
   * `skatteetaten:summertskattegrunnlag`
   * `skatteetaten:spesifisertsummertskattegrunnlag`
 
@@ -35,10 +35,10 @@ Man trenger ikke eget scope for dette api'et, siden den benytter samme scope som
 Tilgang til denne støttetjenester delegeres i Altinn når man delegerer oppslagstjenesten.
 
 ## Teknisk spesifikasjon
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/siste-tilgjengelige-skatteoppgjoer/) på SwaggerHub.
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/siste-tilgjengelige-skatteoppgjoer/) på SwaggerHub.
 
 ## Datakatalog
-Dette api'et er pt. ikke dokumentert i Felles datakatalog.
+Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
