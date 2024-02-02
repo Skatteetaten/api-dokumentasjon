@@ -30,12 +30,12 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:in
 
 ## Delegering
 
-Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
 
 ## Teknisk spesifikasjon
 
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/inntekt-api/) på SwaggerHub.
 
 Det finnes pt. to ulike URL'er til api'et. Url'en som skal benyttes er den som ligger i Open API spesifikasjonen.
@@ -282,7 +282,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 [Informasjonsmodell](https://data.norge.no/informationmodels/c0837391-9c16-393b-b53b-ea0a27eb62a1) i Felles datakatalog.
 
-Obs. Hvis modellene på denne siden avviker fra open api spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen
+Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen
 som er mest oppdatert.
 
 ## Beskrivelse
