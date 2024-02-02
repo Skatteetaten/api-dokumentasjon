@@ -54,7 +54,7 @@ Delegering i Altinn gjøres pr. scope, så tilgang til hendelseslisterer er hån
 
 ## Teknisk spesifikasjon
 
-Url’er til api'ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til
+URL-er til API-ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til
 hendelseslistene på SwaggerHub:
 
 * [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
