@@ -22,7 +22,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
   
-Summert skattegrunnlag API vil endres når skattereglene endres, altså årlig. Hvilke felt som er tilgjengelig vil kunne variere etter skattereglene som gjelder for det gitte skatteåret det spørres om data om. Dette vil ikke føre til ny versjon av API'et med mindre annen semantikk endres.
+Summert skattegrunnlag API vil endres når skattereglene endres, altså årlig. Hvilke felt som er tilgjengelig vil kunne variere etter skattereglene som gjelder for det gitte skatteåret det spørres om data om. Dette vil ikke føre til ny versjon av API-et med mindre annen semantikk endres.
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:summertskattegrunnlag`
