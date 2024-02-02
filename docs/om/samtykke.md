@@ -49,7 +49,7 @@ En bruker kan også [fjerne et samtykke](https://info.altinn.no/hjelp/profil/sam
 
 ## Tjenester med støtte for samtykke
 
-Følgende API-er hos Skatteetaten støtter utlevering gjennom samtykke eller fullmakt. Detaljer om parameterne som er nødvendig for å få utstedt samtykker eller fullmakt er beskrevet i dokumentasjonen for hvert enkelt api.
+Følgende API-er hos Skatteetaten støtter utlevering gjennom samtykke eller fullmakt for enkelte rettighetspakker. Detaljer om parameterne som er nødvendig for å få utstedt samtykker eller fullmakt er beskrevet i dokumentasjonen for hvert enkelt api.
 
 Samtykke fra skatteyter:
   - [Inntekt API](../api/inntekt.md)
