@@ -13,7 +13,7 @@ const sidebars = {
       ],
     },
     {
-      "API'er": [
+      "API-er": [
         "api/aksjebeholdning",
         "api/aksjonaerivirksomhet",
         "api/aktivkonto",
