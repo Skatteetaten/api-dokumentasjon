@@ -28,7 +28,7 @@ Den overordnetete flyten for samtykkedialogen blir da som følger:
  
 4. Brukeren blir presentert for samtykkesiden som inneholder en beskrivelse av hva det skal gis samtykke til. Det er Skatteetaten som har definert dette innholdet.
 
-5. Brukeren gir samtykke og sendes tilbake til konsumentens nettsider på *Redirect URL'en* som ble oppgitt.
+5. Brukeren gir samtykke og sendes tilbake til konsumentens nettsider på *Redirect URL-en* som ble oppgitt.
 
 6. Konsument [henter et Samtykketoken](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/hente-token) fra Altinn ved bruk av *Authorization Code*. Samtykketokenet har vanligvis utløpstid på 30 sekunder, men kan innhentes på nytt med samme *AuthorizationCode* så lenge samtykket fortsatt er gyldig.
 
