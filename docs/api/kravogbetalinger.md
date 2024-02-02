@@ -68,7 +68,7 @@ For denne tjenesten finns følgende rettighetspakker
 
 ## Samtykke
 
-For rettighetspakkene `finans` og `regnskapssystem` kreves [samtykke](../om/samtykke.md) for dette api'et.
+For rettighetspakkene `finans` og `regnskapssystem` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
 | Tjenestekode | Formål |
 |------------------------------------|--------------|
