@@ -26,10 +26,10 @@ For generell informasjon om tjenestene se egne sider om:
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:boligsparingforungdom`
 
 ## Delegering
-Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Boligsparing for ungdom API - På vegne av`
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Boligsparing for ungdom API - På vegne av`
 
 ## Teknisk spesifikasjon
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/boligsparing-for-ungdom-api) på SwaggerHub.
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/boligsparing-for-ungdom-api) på SwaggerHub.
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/37b70e5e-b862-3c66-a5f1-4dca6ee30afb) i Felles datakatalog.
@@ -88,7 +88,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-et finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
 
 ## Testdata
 Følgende testdata er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
