@@ -15,7 +15,7 @@ Skatteetatens tjenester er designet for å kunne støtte flere versjoner samtidi
 Tekniske dataformat endrer seg sjelden, og når det skjer følges denne strategien for versjonering. 
 
 ## Versjonering av API-er
-Skatteetaten etterstreber at tjenestene skal være stabile, og responsen skal til være i overenstemmelse med kontrakten for en bestemt versjon av API’et. Skatteetatens tjenester er designet for å kunne støtte flere versjoner samtidig. I praksis vil det være maksimalt to versjoner tilgjengelig samtidig, slik at virksomhetene har rimelig tid til å gå over til ny versjon. Merk at støtte for gamle versjoner etter hvert vil tas vekk.
+Skatteetaten etterstreber at tjenestene skal være stabile, og responsen skal til være i overenstemmelse med kontrakten for en bestemt versjon av API-et. Skatteetatens tjenester er designet for å kunne støtte flere versjoner samtidig. I praksis vil det være maksimalt to versjoner tilgjengelig samtidig, slik at virksomhetene har rimelig tid til å gå over til ny versjon. Merk at støtte for gamle versjoner etter hvert vil tas vekk.
 
 ## Bakoverkompatible endringer
 Nye felt, endring av rekkefølge i respons eller nye valgfrie felt i input vil normalt ikke føre til at det etableres en ny versjon og vil ikke nødvendigvis varsles på forhånd. Det forventes at virksomheter bygger tolerant kode som tåler slike endringer. Av denne grunn anbefaler vi ikke å validere responsen mot XSDen, siden dette kan gi valideringsfeil ved ikke-varslede endringer.
