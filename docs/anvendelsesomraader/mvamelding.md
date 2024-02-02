@@ -22,7 +22,7 @@ Dokumentasjonen for moderniseringen av Mva-området ligger foreløpig på [en eg
 
 ## API-er for Mva-meldingen
 
-Følgende api'er er laget i forbindelse med innsending av Mva-meldingen:
+Følgende API-er er laget i forbindelse med innsending av Mva-meldingen:
 * [MVA Melding Validering API](https://skatteetaten.github.io/mva-meldingen/documentation/api/)
 * [MVA Melding Innsendings API](https://skatteetaten.github.io/mva-meldingen/documentation/api/)
 
@@ -30,5 +30,5 @@ Det er også laget noen klassiske delingstjenester for SSB:
 * [Mva-melding API](../api/mvamelding.md)
 * [Mva-register – avgiftssubjekter med skattemeldingsplikt API](../api/mvaregisteravgiftssubjekt.md)
 
-I tillegg finnes et api for mva-melding og informasjon fra reskontro:
+I tillegg finnes et api for Mva-melding og informasjon fra reskontro:
 * [Mva meldingsopplysning API](../api/mva_meldingsopplysning.md)
