@@ -14,7 +14,7 @@ hide_table_of_contents: true
 Skatteetatens tjenester er designet for å kunne støtte flere versjoner samtidig, men i praksis er det maksimalt to samtidige versjoner.
 Tekniske dataformat endrer seg sjelden, og når det skjer følges denne strategien for versjonering. 
 
-## Versjonering av API'er
+## Versjonering av API-er
 Skatteetaten etterstreber at tjenestene skal være stabile, og responsen skal til være i overenstemmelse med kontrakten for en bestemt versjon av API’et. Skatteetatens tjenester er designet for å kunne støtte flere versjoner samtidig. I praksis vil det være maksimalt to versjoner tilgjengelig samtidig, slik at virksomhetene har rimelig tid til å gå over til ny versjon. Merk at støtte for gamle versjoner etter hvert vil tas vekk.
 
 ## Bakoverkompatible endringer
