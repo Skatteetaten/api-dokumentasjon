@@ -26,7 +26,7 @@ Så snart korrekt tjeneste og rettighetspakke for virksomheten er avklart, vil S
 ### Klargjøring fra Virksomheten
 Når virksomheten har fått beskjed at tilgangen (scopet) er opprettet i Maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data. Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via [ID-porten sitt API for selvbetjening av integrasjoner](https://docs.digdir.no/oidc_api_admin_maskinporten) eller via et brukergrensesnitt i samarbeidsportalen. All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke skatteetatatens api'er.
 
-### Bruke Skatteetatens api'er med token fra Maskinporten
+### Bruke Skatteetatens API-er med token fra Maskinporten
 All kommunikasjon mellom virksomheten, Maskinporten og Skatteetaten gjøres over HTTPS (TLS). Bruk av REST-api'er hos Maskinporten er sikret med "server-to-server oauth2", se mer informasjon om dette her: [Digidr oauth2](https://docs.digdir.no/oidc_auth_server-to-server-oauth2).
 
 **Overordnet gjøres følgende:**
