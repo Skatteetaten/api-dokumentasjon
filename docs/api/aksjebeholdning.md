@@ -35,7 +35,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Aksjebeholdning API 
 
 ## Teknisk spesifikasjon
 
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger
+Url-er til api-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/aksjebeholdning-api)
 på SwaggerHub.
 
