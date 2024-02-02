@@ -20,7 +20,7 @@ Ny mva-melding vil også gi nye muligheter for veiledning og dialog gjennom for 
 
 Dokumentasjonen for moderniseringen av Mva-området ligger foreløpig på [en egen Github-side](https://skatteetaten.github.io/mva-meldingen/), men innholdet vil fremover flyttes hit.
 
-## API'er for Mva-meldingen
+## API-er for Mva-meldingen
 
 Følgende api'er er laget i forbindelse med innsending av Mva-meldingen:
 * [MVA Melding Validering API](https://skatteetaten.github.io/mva-meldingen/documentation/api/)
