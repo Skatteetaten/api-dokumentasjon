@@ -38,7 +38,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På ve
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/inntekt-api/) på SwaggerHub.
 
-Det finnes pt. to ulike URL'er til api'et. Url'en som skal benyttes er den som ligger i Open API spesifikasjonen.
+Det finnes pt. to ulike URL-er til API-et. URL-en som skal benyttes er den som ligger i Open API spesifikasjonen.
 
 Gammel URL kan også benyttes, men vil etter hver utfases:
 
