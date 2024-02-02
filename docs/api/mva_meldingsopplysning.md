@@ -26,10 +26,10 @@ For generell informasjon om tjenestene se egne sider om:
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvameldingsopplysning`
 
 ## Delegering
-Tilgang til dette api'et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva meldingsopplysning API - På vegne av`
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva meldingsopplysning API - På vegne av`
 
 ## Teknisk spesifikasjon
-Url’er til api'et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/mva-meldingsopplysning-api) på SwaggerHub.
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/mva-meldingsopplysning-api) på SwaggerHub.
  
 ## Rettighetspakker
 
@@ -53,7 +53,7 @@ Tjenesten kan kreve [samtykke](../om/samtykke.md).
 
 ## Curl
 
-Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig maskinportentoken og altinn samtykketoken som legges ved som headerer i curl-kommandoen.
+Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig Maskinporten-token og altinn samtykketoken som legges ved som headerer i curl-kommandoen.
 
 ```bash
 $ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <samtykke_token>" "https://api-test.sits.no/api/mvamelding/v1/ebevis/974761076"
