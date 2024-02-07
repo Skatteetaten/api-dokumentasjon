@@ -273,7 +273,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | IM-005   | 403             | Feil i forbindelse med autorisering.                                         |
 | IM-006   | 400             | Feil i forbindelse med validering av inputdata.                              |
 | IM-007   | 404             | Ikke treff på oppgitt personidentifikator.                                   |
-| IM-008   | 404             | Fant ingen inntektsopplysninger for angitt personidentifikator og tidspunkt. |
+| IM-008   | 404             | Feil i forbindelse med at de ikke finnes inntektsopplysninger for angitt personidentifikator og tidspunkt, kan f.eks. være fordi informasjonen er slettet. |
 | IM-009   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                   |
 | IM-010   | 403             | Feil i forbindelse med samtykke.                                             |
 
