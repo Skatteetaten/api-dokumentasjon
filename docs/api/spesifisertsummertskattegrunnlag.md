@@ -465,12 +465,12 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Sp
 
 | Teknisk navn | Endring | SBL |
 |--------------|---------|-----|
-| alminneligInntektFraEnkeltpersonforetakPaaSvalbard | Nytt fra 2023, inngikk tidligere i samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering | |
-| alminneligInntektFraSelskapMedDeltakerfastsettingPaaSvalbard | Nytt fra 2023 | |
-| fradragsberettighetTapVedSvindel | Nytt fra 2023 | |
+| alminneligInntektFraEnkeltpersonforetakPaaSvalbard | Nytt fra 2023, inngikk tidligere i samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering | X |
+| alminneligInntektFraSelskapMedDeltakerfastsettingPaaSvalbard | Nytt fra 2023 | X |
+| fradragsberettighetTapVedSvindel | Nytt fra 2023 | X |
 | samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering | Endring i innhold: alminneligInntektFraEnkeltpersonforetakPaaSvalbard er skilt ut som eget teknisk navn	| X |
-| godtgjoerelseEtterSaeravtaleIUtenrikstjenesten | Nytt fra 2023 | |
-| skattepliktigTilfeldigInntektFraSpillLotteriMv | Nytt fra 2023 | |
+| godtgjoerelseEtterSaeravtaleIUtenrikstjenesten | Nytt fra 2023 | X |
+| skattepliktigTilfeldigInntektFraSpillLotteriMv | Nytt fra 2023 | X |
 
 ## Summerte skattegrunnlag som utgår fra 2023
 
