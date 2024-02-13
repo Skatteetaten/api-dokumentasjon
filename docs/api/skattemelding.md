@@ -4,45 +4,55 @@ slug: /api/skattemelding
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API, Skattemelding]
-keywords: [skattemelding]
-last_updated: Mar 6, 2023
+tags: [ API, Skattemelding ]
+keywords: [ skattemelding ]
+last_updated: Feb 13, 2024
 hide_table_of_contents: true
 ---
+
 <summary>Tjenesten leverer informasjon som fremkommer i skattemelding for en person.</summary>
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 For generell informasjon om tjenestene se egne sider om:
+
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md) 
+* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
+
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattemelding`
 
 ## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Skattemelding API - På vegne av`
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Skattemelding API - På vegne av`
 
 ## Teknisk spesifikasjon
-Skattemelding API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har en egen versjon pr. inntektsår. For øyeblikket leverer API-et skattemelding for 2022.
-  
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api) på SwaggerHub.
+
+Skattemelding API v4 leverer skattemelding for inntektsårene 2022 og 2023.
+
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api) på SwaggerHub.
 
 ## Rettighetspakker
-  
+
 | Navn på rettighetspakke |	
-|---|
-| ssb |
+|-------------------------|
+| ssb                     |
   
 ## Støttetjenester
-For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste](./hendelser.md): 
-  * `Skattemelding utkast hendelser API`
-  * `Skattemelding fastsatt hendelser API`
+
+For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste](./hendelser.md):
+
+* `Skattemelding utkast hendelser API`
+* `Skattemelding fastsatt hendelser API`
 
 ## Datakatalog
+
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/899c9a8d-0778-3472-9654-f6acd4e7f9ff) i Felles datakatalog.
 
 </TabItem>
@@ -50,48 +60,31 @@ For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste
 
 ## Curl
 
-Her er et eksempel på et kall med curl mot tjenesten for å hente fastsatt skattemelding. Du må legge sertifikat og nøkkel som parametre til curl-kommandoen.
+Her er et eksempel på et kall med curl mot tjenesten for å hente fastsatt skattemelding. Du må legge sertifikat og
+nøkkel som parametre til curl-kommandoen.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skattemelding/fastsatt/ssb/2018/05086900124"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skattemelding/v4/fastsatt/ssb/2023/13859798769"
 ```
 
 ## JSON
 
 ```json
 {
-  "skjermet": false,
-  "registreringstidspunkt": "2022-02-10T14:47:12.249+01:00",
-  "personidentifikator": "16922048030",
-  "inntektsaar": "2021",
+  "personidentifikator": "13859798769",
+  "inntektsaar": "2023",
   "bankLaanOgForsikring": {
-    "forsikring": {
-      "livsforsikring": [
-        {
-          "id": "72540f62c52341999c5340327baa4568f521aee1",
-          "livsforsikringsselskapetsNavn": "DY PSINDIG UFRUKTBAR LEOPARD ASA",
-          "livsforsikringsselskapetsOrganisasjonsnummer": "310091995",
-          "forsikringsnummer": "762724741",
-          "avkastningAvKapitalforsikringsavtale": {
-            "beloep": 139013.0
-          },
-          "gjenkjoepsverdiAvKapitalforsikringsavtale": {
-            "beloep": 8109780.0
-          }
-        }
-      ]
-    },
     "konto": [
       {
-        "id": "8e0e4f87a91c40e660720bdc313bd83efdaf354e",
-        "bankensNavn": "UNGT SOSIAL ISBJØRN SA",
-        "organisasjonsnummer": "313032604",
-        "kontonummer": "96702145306",
+        "id": "a706f6c010e10915d59e7d16e28f133d47e3dbba",
+        "bankensNavn": "FLEKSIBEL SIVILISERT GIRAFF SPAREBANK",
+        "organisasjonsnummer": "310338648",
+        "kontonummer": "94112618672",
         "innskudd": {
-          "beloep": 121471.0
+          "beloep": 567429
         },
         "opptjenteRenter": {
-          "beloep": 2429.0
+          "beloep": 11349
         }
       }
     ]
@@ -100,33 +93,25 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
     "loennOgTilsvarendeYtelser": {
       "arbeidsgiver": [
         {
-          "id": "e83af408065bad1e2cd32afc114c837deee9486a",
-          "navn": "PRESIS TYPISK TIGER AS",
+          "id": "d862e16492226c2f0289a82c4d54da12a46cb59a",
+          "navn": "REALISTISK AKTIV KATT REGNSKOG",
           "samledeYtelserFraArbeidsgiverPerBehandlingsart": [
             {
-              "id": "4109138e9208ce98add8b1eb78f8ed9419a47899",
+              "id": "a3d4027985f6e3f0ec25f7adb303cec38bacf6d5",
               "beloep": {
-                "beloep": 52260.0
+                "beloep": 820368
               },
               "behandlingsart": "LONN"
             },
             {
-              "id": "278a1b82176fb19892c271994dc148bd27419f2d",
+              "id": "317646c6689e924628a5d5c093a64cf3b5170842",
               "beloep": {
-                "beloep": 6000.0
+                "beloep": 118464
               },
-              "behandlingsart": "EL_KOMMUNIKASJON"
+              "behandlingsart": "FRIBIL"
             }
           ],
-          "organisasjonsnummer": "313994678"
-        }
-      ],
-      "avkortetFordelVedElektroniskKommunikasjon": [
-        {
-          "id": "61b00ee66af66f5b824a64828b771c12da1a7c88",
-          "beloep": {
-            "beloep": 4392
-          }
+          "organisasjonsnummer": "313077160"
         }
       ]
     },
@@ -135,24 +120,28 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
         "id": "MINSTEFRADRAG_OG_KOSTNADER_KNYTTET_TIL_ARBEID_OG_ANNEN_INNTEKT",
         "minstefradragIInntekt": {
           "fradragsberettigetBeloep": {
-            "beloep": 31800
+            "beloep": 104450
           },
           "beloepUtenHensynTilValgtPrioritertFradragstype": {
-            "beloep": 31800
+            "beloep": 104450
           }
         }
       }
     ]
   },
-  "opprettetDato": "2022-02-10T13:47:11.993+01:00"
+  "skjermet": false,
+  "opprettetDato": "2024-02-13T08:36:54.619+01:00",
+  "registreringstidspunkt": "2024-02-13T09:36:54.619+01:00"
 }
 ```
+
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
+variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
 | Feilkode | HTTP Statuskode | Feilområde                                                              |
 |----------|-----------------|-------------------------------------------------------------------------|
@@ -164,20 +153,20 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | SM-006   | 400             | Feil i forbindelse med validering av inputdata.                         |
 | SM-007   | 404             | Ingen skattemelding funnet på oppgitt gitt inntektsår og identifikator. |
 | SM-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.              |
-| SM-009   | 404             | Ingen person funnet med oppgitt identifikator.                    |
-| SM-010   | 410             | Skattemeldingen finnes ikke lenger.                    |
+| SM-009   | 404             | Ingen person funnet med oppgitt identifikator.                          |
+| SM-010   | 410             | Skattemeldingen finnes ikke lenger.                                     |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
 [Informasjonsmodell](https://data.norge.no/informationmodels/eb60da4f-d6b2-3564-b3a5-e31e25da7538) i Felles datakatalog.
-  
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
 
 Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Skattemelding".
-  
+
 </TabItem>
 </Tabs>
