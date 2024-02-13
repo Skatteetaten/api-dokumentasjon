@@ -253,25 +253,8 @@ Modellene nedenfor avviker litt fra modellen slik den benyttes i tjenesten. Mode
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytt hendelseslisten for å finne referanser man kan benytte for å teste oppslagstjenesten.
 
-## Testdata
-
-Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne:
-
-| Type skattepliktig | Identifikator | Inntektsår |
-|--------------------|---------------|------------|
-| Personlig          | 19875297549   | 2023       | 
-| Personlig          | 24889198571   | 2023       |
-| Personlig          | 09928798752   | 2022       |
-| Personlig          | 10835098228   | 2022       |
-| Upersonlig         | 310962805     | 2022       |
-| Upersonlig         | 313422348     | 2022       |
-| Upersonlig         | 311051431     | 2022       |
-| Upersonlig         | 310799262     | 2022       |
-| Upersonlig         | 311772236     | 2022       |
-
-Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
 </TabItem>
 </Tabs>
