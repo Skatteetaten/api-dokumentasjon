@@ -81,11 +81,12 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 | Feilkode | HTTP Statuskode | Feilområde |
 |----------|-----------------|-------|
-| TD-001   | 500 | Uventet feil på tjenesten.  |
-| TD-002   | 401 | Feil i forbindelse med autentisering.  |
-| TD-003   | 400 | Feil i forbindelse med validering av inputdata. |
-| TD-004   | 404 | Fant ikke tilgjengeligdata for angitt personidentifikator og ressursidentifikator.  |
-| TD-005   | 406 | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
+| TD-001   | 500             | Uventet feil på tjenesten.  |
+| TD-002   | 401             | Feil i forbindelse med autentisering.  |
+| TD-003   | 400             | Feil i forbindelse med validering av inputdata. |
+| TD-004   | 404             | Fant ikke tilgjengeligdata for angitt personidentifikator og ressursidentifikator.  |
+| TD-005   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
+| TD-006   | 404             | Ukjent url benyttet. |
   
 </TabItem>
 </Tabs>
