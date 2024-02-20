@@ -27,6 +27,8 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 <tr><td><a href="https://data.skatteetaten.no/begrep/367f2cd6-a9e1-11e8-8514-005056821322">aaretsFremfoerbareNegativPersoninntekt</a></td><td></td><td>Ubenyttet negativ personinntekt i enkeltpersonforetak til fremføring</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf247ff6-dfe5-11e7-9101-005056821322">alderspensjonFraFolketrygden</a></td><td>inntekt</td><td>Alderspensjon fra folketrygden</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/46f4d75e-4c6c-11e8-bb3e-005056821322">alderspensjonFraIPAOgIPS</a></td><td>inntekt</td><td>Alderspensjon fra individuell pensjonsordning (IPS/IPA)</td></tr>
+<tr><td>alminneligInntektFraEnkeltpersonforetakPaaSvalbard</td><td>inntekt</td><td>Næringsinntekt fra Svalbard</td></tr>
+<tr><td>alminneligInntektFraSelskapMedDeltakerfastsettingPaaSvalbard</td><td>inntekt</td><td>Arbeidsgodtgjørelse fra selskap med deltakerfastsetting</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cc89e443-940f-11e9-a790-005056823b15">alminneligInntektFoerSaerfradrag</a></td><td>-</td><td>Alminnelig inntekt før særfradrag</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/e90050c4-a913-0242-a0ac-18bd30faf86d">andelAvFellesgjeldISDF</a></td><td>formuesfradrag</td><td>Andel av netto gjeld i selskap med deltakerfastsetting</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/94008f7e-6b03-f14a-ba52-75914037dc98">andelAvUnderskuddFraTidligereAarVedDriftAvVaaningshusSomAnvendesIAaret</a></td><td>inntektsfradrag</td><td>Underskudd fra tidligere års drift av våningshus</td></tr>
@@ -64,7 +66,7 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 <tr><td><a href="https://data.skatteetaten.no/begrep/b69e5520-4386-fb48-9a7a-f6ceae3cbadc">formuesverdiForFormuesobjekterINaeringIkkeOmfattetAvVerdsettingsrabatt</a></td><td>formue</td><td>Annen formue fra næringsvirksomhet</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d34-ff95-11e8-a756-005056823b15">formuesverdiForFritidsbaatMedSalgsverdiOverSalgsverdigrense</a></td><td>formue</td><td>Fritidsbåt med salgsverdi kr 50 000 eller høyere</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/e90e5f7e-093d-fa4f-af8d-45e365f0a607">formuesverdiForGaardsbruk</a></td><td>formue</td><td>Gårdsbruk</td></tr>
-<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d35-ff95-11e8-a756-005056823b15">formuesverdiForInnboLoesoereOgFritidsbaatUnderSalgsverdigrense</a></td><td>formue</td><td>Formue: Innbo, løsøre og fritidsbåter med gjenanskaffelsesverdi under kr 50 000</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/6c325d35-ff95-11e8-a756-005056823b15">formuesverdiForInnboLoesoereOgFritidsbaatUnderSalgsverdigrense</a></td><td>formue</td><td>Innbo, løsøre og fritidsbåter med gjenanskaffelsesverdi under kr 50 000</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325cdd-ff95-11e8-a756-005056823b15">formuesverdiForKjoeretoey</a></td><td>formue</td><td>Kjøretøy</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325cde-ff95-11e8-a756-005056823b15">formuesverdiForKontanterIAksjesparekonto</a></td><td>formue</td><td>Aksjesparekonto - kontantdel</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/dafaccce-a044-b041-ac08-16eb7ca52fcc">formuesverdiForKontanterMvIFondskonto</a></td><td>formue</td><td>Fondskonto - kontant/rentedel</td></tr>
@@ -91,6 +93,7 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 <tr><td><a href="https://data.skatteetaten.no/begrep/d028d605-8c6f-0e45-bba3-02a1120c776b">fradragForVergegodtgjoerelse</a></td><td>inntektsfradrag</td><td>Vergegodtgjørelse</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/b57408b4-d96a-11e6-8d9b-005056821322">fradragsberettigetTapPaaKapitalforsikringsavtale</a></td><td>inntektsfradrag</td><td>Tap av kapitalforsikring</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf248020-dfe5-11e7-9101-005056821322">fradragsberettigetTapVedRealisasjonAvFastEiendom</a></td><td>inntektsfradrag</td><td>Tap ved salg av eiendom</td></tr>
+<tr><td>fradragsberettigetTapVedSvindel</td><td>inntektsfradrag</td><td>Fradragsberettiget tap ved svindel</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/367f2c98-a9e1-11e8-8514-005056821322">fremfoerbartUnderskuddIEnkeltpersonforetak</a></td><td>-</td><td>Underskudd i enkeltpersonforetak til framføring senere år</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6ceb1879-21fd-db4f-8e15-af2d35c9cb33">gevinstOgAnnenInntektFraVirtuellEiendel</a></td><td>inntekt</td><td>Gevinst ved salg og annen inntekt av virtuelle eiendeler / kryptovaluta</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/8ea2df37-7662-11e6-a74e-7e18b36b3fd9">gevinstValutalaan</a></td><td>inntekt</td><td>Gevinst ved kursendring på valutalån</td></tr>
@@ -102,7 +105,7 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 <tr><td><a href="https://data.skatteetaten.no/begrep/9c33fd51-2964-11e6-b2bc-96405985e0fa">gevinstVedRealisasjonAvFastEiendomMv</a></td><td>inntekt</td><td>Gevinst ved salg av eiendom</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d52-ff95-11e8-a756-005056823b15">gevinstVedRealisasjonAvObligasjonerSertifikaterMv</a></td><td>inntekt</td><td>Gevinst ved salg av obligasjoner</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/a6ecf8e2-32da-ca45-a6a9-9b851b3baaba">gevinstVedRealisasjonAvOgUttakFraAksjedelIFondskonto</a></td><td>inntekt</td><td>Gevinst ved uttak fra fondskonto – aksjedel</td></tr>
-<tr><td><a href="https://data.skatteetaten.no/begrep/e6e78dd5-82c6-d94f-877e-b407681c3059">gevinstVedRealisasjonAvOgUttakFraRentedelIFondskonto</a></td><td>inntekt</td><td>Gevinst ved uttak fra fondskonto – aksjedel</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/e6e78dd5-82c6-d94f-877e-b407681c3059">gevinstVedRealisasjonAvOgUttakFraRentedelIFondskonto</a></td><td>inntekt</td><td>Gevinst ved uttak fra fondskonto – rentedel</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325ce7-ff95-11e8-a756-005056823b15">gevinstVedSalgAvAndelINOKUS</a></td><td>inntekt</td><td>Gevinst ved salg av andeler i NOKUS-selskap</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325ce8-ff95-11e8-a756-005056823b15">gevinstVedSalgAvAndelISDF</a></td><td>inntekt</td><td>Gevinst ved salg mv. av andel i selskap med deltakerfastsetting</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325cec-ff95-11e8-a756-005056823b15">gjeldIInnenlandskeBanker</a></td><td>formuesfradrag</td><td>Gjeld til kredittinstitusjoner</td></tr>
@@ -235,6 +238,7 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d45-ff95-11e8-a756-005056823b15">samletOverskuddAvEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem</a></td><td>inntekt</td><td>Overskudd fra barnepass i barnepasserens hjem</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d46-ff95-11e8-a756-005056823b15">samletOverskuddAvEnkeltpersonforetakInnenFiskeOgFangst</a></td><td>inntekt</td><td>Overskudd fra fiske og fangst</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d49-ff95-11e8-a756-005056823b15">samletOverskuddPaaUtgiftsgodtgjoerelse</a></td><td>inntekt</td><td>Overskudd fra utgiftsgodtgjørelse</td></tr>
+<tr><td>godtgjoerelseEtterSaeravtaleIUtenrikstjenesten</td><td>inntekt</td><td>Godtgjørelse etter særavtale i utenrikstjenesten</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d4c-ff95-11e8-a756-005056823b15">samletPersoninntektFraEnkeltpersonforetakInnenFamiliebarnehageEllerDagmammaIEgetHjem</a></td><td>inntekt</td><td>Personinntekt fra barnepass</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d4d-ff95-11e8-a756-005056823b15">samletPersoninntektFraEnkeltpersonforetakInnenFiskeOgFangst</a></td><td>inntekt</td><td>Personinntekt fra fiske og fangst</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d4e-ff95-11e8-a756-005056823b15">samletPersoninntektFraEnkeltpersonforetakInnenJordbrukReindriftSkiferproduksjonOgAnnenNaering</a></td><td>inntekt</td><td>Personinntekt fra jordbruk, reindrift, skiferproduksjon og annen næring</td></tr>
@@ -246,6 +250,7 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d60-ff95-11e8-a756-005056823b15">samletUnderskuddINaeringsvirksomhet</a></td><td>inntektsfradrag</td><td>Underskudd i næringsvirksomhet</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d63-ff95-11e8-a756-005056823b15">skattefriLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer, med trygdeavgift</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/1e3330b1-6837-11e6-a7ce-fac03dffe1d7">skattepliktigAvkastningEllerKundeutbytte</a></td><td>inntekt</td><td>Skattepliktig avkastning kundeutbytte mv.</td></tr>
+<tr><td>skattepliktigTilfeldigInntektFraSpillLotteriMv</td><td>inntekt</td><td>Netto skattepliktig inntekt fra spill</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/633c97eb-8c44-184e-ba4e-9356097a690a">skjermingstilleggTilAlderspensjon</a></td><td>inntekt</td><td>Skjermingstillegg til alderspensjon</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/1e3330db-6837-11e6-a7ce-fac03dffe1d7">skjermingsfradrag</a></td><td>inntekt</td><td>Benyttet skjermingsfradrag</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/cf248012-dfe5-11e7-9101-005056821322">skyldigRestskatt</a></td><td>formuesfradrag</td><td>Skyldig restskatt</td></tr>
