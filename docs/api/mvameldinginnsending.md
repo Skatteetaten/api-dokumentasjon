@@ -1,6 +1,6 @@
 ---
-title: Underenhet fra A-ordningen API
-slug: /api/underenhetaordningen
+title: Mva-melding innsending API
+slug: /api/mvameldinginnsending
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
