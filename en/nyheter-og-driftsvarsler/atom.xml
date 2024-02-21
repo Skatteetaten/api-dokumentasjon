@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-02-15T08:15:00.000Z</updated>
+    <updated>2024-02-21T12:35:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Støtte for inntektsår 2023 for skatteoppgjørstjenestene]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/02/21/skatteoppgjoer-2023</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/02/21/skatteoppgjoer-2023"/>
+        <updated>2024-02-21T12:35:00.000Z</updated>
+        <summary type="html"><![CDATA[Skatteoppgjørstjenestene er nå klare for test for inntektsår 2023.]]></summary>
+        <content type="html"><![CDATA[<p>Skatteoppgjørstjenestene er nå klare for test for inntektsår 2023.</p><p>Det gjelder følgene tjenester:</p><ul><li>Avregning API</li><li>Beregnet Skatt API</li><li>Pensjonsgivende inntekt API</li><li>Pensjonsgivende inntekt for folketrygden API</li><li>Siste tilgjengelige skatteoppgjør API (tidl. Tilgjengeligdata API)</li><li>Skatteplikt API</li><li>Summert skattegrunnlag API</li><li>Spesifisert summert skattegrunnlag API</li></ul><p>Testdata er tilrettelagt og vi oppfordrer til å benytte Tenor testdatasøk for å finne relevante testdata.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+        <category label="skatteoppgjør" term="skatteoppgjør"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Skatteetaten fjerner støtte for Maskinporten-token fra VER2]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/02/15/ver2</id>
