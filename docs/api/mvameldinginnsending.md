@@ -33,7 +33,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
 
 ## Datakatalog
-Tjenesten er ligger pt. ikke dokumentert i Felles datakatalog.
+Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
