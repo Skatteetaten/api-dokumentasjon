@@ -43,7 +43,7 @@ på SwaggerHub.
 
 | Navn på rettighetspakke |	
 |-------------------------|
-| kommune                 |
+| kommuneEiendomsskatt    |
 
 ## Støttetjenester
 
