@@ -17,6 +17,15 @@
         <category label="Drift" term="Drift"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[kravogbetalinger-api i normal drift - 28.02.2024]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/02/28/normal-drift</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/02/28/normal-drift"/>
+        <updated>2024-02-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[kravogbetalinger-api er i normal drift etter en stopp fra kl.1206.]]></summary>
+        <content type="html"><![CDATA[<p>kravogbetalinger-api er i normal drift etter en stopp fra kl.12:00 - kl.13:06.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Ustabile tjenester fredag 23.februar kl 14.40 til kl 15.45]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/02/23/Driftsvarsel</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/02/23/Driftsvarsel"/>
