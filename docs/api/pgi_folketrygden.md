@@ -4,47 +4,70 @@ slug: /api/pgi_folketrygden
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API, Skatteoppgjør]
-keywords: [pgi, folketrygden, skatteberegning, inntekt, formue]
+tags: [ API, Skatteoppgjør ]
+keywords: [ pgi, folketrygden, skatteberegning, inntekt, formue ]
 last_updated: Feb 29, 2024
 hide_table_of_contents: true
 ---
+
 <summary>Tjenesten leverer informasjon om grunnlag for pensjonsopptjening i folketrygden.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 For generell informasjon om tjenestene se egne sider om:
+
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md) 
+* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
+
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:pensjonsgivendeinntektforfolketrygden`
 
 ## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Pensjonsgivende inntekt for folketrygden API - På vegne av`
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Pensjonsgivende inntekt for folketrygden API - På vegne av`
 
 ## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivendeinntekt-for-folketrygden-api) på SwaggerHub. 
+
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivendeinntekt-for-folketrygden-api)
+på SwaggerHub.
 Tjenesten støtter inntektsår 2017 og utover.
 
+## Rettighetspakker
+
+| Navn på rettighetspakke |	
+|-------------------------|
+| navUfoeretrygd          |
+| navForeldrepenger       |
+| navPleieOgOmsorgspenger |
+| navBil                  |
+| navSykepenger           |
+| navPensjonopptjening    |
+| navEnsligForsoerger     |
+
 ## Støttetjenester
-For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Pensjonsgivende inntekt for folketrygden hendelser API`
+
+For å følge med på endringer tilbyr vi
+en [støttetjeneste for hendelsesliste](./hendelser.md): `Pensjonsgivende inntekt for folketrygden hendelser API`
 
 ## Datakatalog
 
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/70d7fb70-20e0-3c8e-a05c-0432b182ef3f) i Felles datakatalog.
-    
+
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## Curl
 
-Her er et eksempel på en spørring med curl mot tjenesten. Du må generere et gyldig [Maskinporten](../om/sikkerhet.md)-token og legge til i header.
+Her er et eksempel på en spørring med curl mot tjenesten. Du må generere et gyldig [Maskinporten](../om/sikkerhet.md)
+-token og legge til i header.
 
 ```bash
 $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/pensjonsgivendeinntektforfolketrygden/2022/08819797596"
@@ -54,45 +77,46 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
 
 ```json
 {
-    "norskPersonidentifikator": "02116049964",
-    "inntektsaar": 2019,
-    "pensjonsgivendeInntekt": [
-        {
-            "skatteordning": "FASTLAND",
-            "datoForFastsetting": "2020-09-27",
-            "pensjonsgivendeInntektAvLoennsinntekt": 698219,
-            "pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel": null,
-            "pensjonsgivendeInntektAvNaeringsinntekt": 150000,
-            "pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage": 85000
-        },
-        {
-            "skatteordning": "SVALBARD",
-            "datoForFastsetting": "2020-09-27",
-            "pensjonsgivendeInntektAvLoennsinntekt": 492160,
-            "pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel": null,
-            "pensjonsgivendeInntektAvNaeringsinntekt": 2530000,
-            "pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage": null
-        }
-    ]
+  "norskPersonidentifikator": "02116049964",
+  "inntektsaar": 2019,
+  "pensjonsgivendeInntekt": [
+    {
+      "skatteordning": "FASTLAND",
+      "datoForFastsetting": "2020-09-27",
+      "pensjonsgivendeInntektAvLoennsinntekt": 698219,
+      "pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel": null,
+      "pensjonsgivendeInntektAvNaeringsinntekt": 150000,
+      "pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage": 85000
+    },
+    {
+      "skatteordning": "SVALBARD",
+      "datoForFastsetting": "2020-09-27",
+      "pensjonsgivendeInntektAvLoennsinntekt": 492160,
+      "pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel": null,
+      "pensjonsgivendeInntektAvNaeringsinntekt": 2530000,
+      "pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage": null
+    }
+  ]
 }
 ```
+
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
+variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
-| HTTP status | Feilkode | Feilmelding |
-|-------------|----------|-------------|
-| 400 | PGIF-005 | Det forespurte inntektsåret er ikke støttet |
-| 404 | PGIF-006 | Fant ikke PGI for gitt inntektsår og identifikator |
-| 400 | PGIF-007 | Inntektsår har ikke gyldig format |
-| 400 | PGIF-008 | Personidentifikator har ikke gyldig format |
-| 404 | PGIF-009 | Fant ingen person for gitt identifikator |
-| 403 | PGIF-010 | Feil i forbindelse med autorisering |
-| 406 | PGIF-011 | Feil tilknyttet dataformat. Kun json støttet. | 
-
+| HTTP status | Feilkode | Feilmelding                                        |
+|-------------|----------|----------------------------------------------------|
+| 400         | PGIF-005 | Det forespurte inntektsåret er ikke støttet        |
+| 404         | PGIF-006 | Fant ikke PGI for gitt inntektsår og identifikator |
+| 400         | PGIF-007 | Inntektsår har ikke gyldig format                  |
+| 400         | PGIF-008 | Personidentifikator har ikke gyldig format         |
+| 404         | PGIF-009 | Fant ingen person for gitt identifikator           |
+| 403         | PGIF-010 | Feil i forbindelse med autorisering                |
+| 406         | PGIF-011 | Feil tilknyttet dataformat. Kun json støttet.      | 
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
@@ -103,39 +127,42 @@ JSON-objektet er basert på et XML-dokument med et tilknyttet skjema.
 
 Rotobjektet vil alltid returneres ved en positiv repons.
 
-| Navn på felt | JSON-type | Beskrivelse |
-| -------------|-----------|---------------------------------------------------------------|
-| personidentifikator | String | Gjeldende personidentifikator for personen det ble søkt på|
-| inntektsaar | Number | Inntektsåret det ble søkt på|
-| pensjonsgivendeInntekt | Array | En liste med [objekter av pensjonsgivende inntekt](#objekt-i-pensjonsgivendeinntekt-listen) |
+| Navn på felt           | JSON-type | Beskrivelse                                                                                 |
+|------------------------|-----------|---------------------------------------------------------------------------------------------|
+| personidentifikator    | String    | Gjeldende personidentifikator for personen det ble søkt på                                  |
+| inntektsaar            | Number    | Inntektsåret det ble søkt på                                                                |
+| pensjonsgivendeInntekt | Array     | En liste med [objekter av pensjonsgivende inntekt](#objekt-i-pensjonsgivendeinntekt-listen) |
 
 ## Objekt i pensjonsgivendeInntekt-listen
 
 Definerer objektet som kan ligge i listen pensjonsgivendeInntekt i [rotobjektet](#rotobjekt)
 
-| Navn på felt | JSON-type | Beskrivelse |
-| -------------|-----------|----------------------------------------------------------------------------------------------------|
-| skatteordning | String | Skatteordningen det leveres data for. Gyldige verdier er: [FASTLAND, SVALBARD, KILDESKATT_PAA_LOENN] |
-| datoForFastsetting | String | Dato for fastsetting. Gyldig format [YYYY-MM-DD] (ISO 8601 datoformat) |
-| pensjonsgivendeInntektAvLoennsinntekt | Number | Pensjonsgivende lønnsinntekt |
-| pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel | Number | Pensjonsgivende lønnsinntekt, bare pensjonsdel |
-| pensjonsgivendeInntektAvNaeringsinntekt | Number | Pensjonsgivende inntekt av næringsinntekt |
-| pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage | Number | Pensjonsgivende inntekt av næringsinntekt fra fiske, fangst eller familiebarnehage |
+| Navn på felt                                                               | JSON-type | Beskrivelse                                                                                          |
+|----------------------------------------------------------------------------|-----------|------------------------------------------------------------------------------------------------------|
+| skatteordning                                                              | String    | Skatteordningen det leveres data for. Gyldige verdier er: [FASTLAND, SVALBARD, KILDESKATT_PAA_LOENN] |
+| datoForFastsetting                                                         | String    | Dato for fastsetting. Gyldig format [YYYY-MM-DD] (ISO 8601 datoformat)                               |
+| pensjonsgivendeInntektAvLoennsinntekt                                      | Number    | Pensjonsgivende lønnsinntekt                                                                         |
+| pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel                       | Number    | Pensjonsgivende lønnsinntekt, bare pensjonsdel                                                       |
+| pensjonsgivendeInntektAvNaeringsinntekt                                    | Number    | Pensjonsgivende inntekt av næringsinntekt                                                            |
+| pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage | Number    | Pensjonsgivende inntekt av næringsinntekt fra fiske, fangst eller familiebarnehage                   |
 
 ## Informasjonsmodell - skjema
 
 ### Oversikt
+
 [![Oversikt](../../static/download/pgi-folketrygden/pgi-folketrygden.png)](../../static/download/pgi-folketrygden/pgi-folketrygden.png)
 
 ### XML skjema
-[pensjonsgivendeinntektforfolketrygden_nav_overfoering_v1.xsd](../../static/download/pgi-folketrygden/pensjonsgivendeinntektforfolketrygden_nav_overfoering_v1.xsd) 
- 
+
+[pensjonsgivendeinntektforfolketrygden_nav_overfoering_v1.xsd](../../static/download/pgi-folketrygden/pensjonsgivendeinntektforfolketrygden_nav_overfoering_v1.xsd)
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
+
 Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Beregnet skatt".
-    
+
 </TabItem>
 </Tabs>
 
