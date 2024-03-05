@@ -5,7 +5,7 @@ folder: om
 sidebar: mydoc_sidebar
 datatable: true
 tags: [varsler,drift,nyhet]
-keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
+keywords: [varsel,drift,nyhet]
 last_updated: Nov 02, 2023
 hide_table_of_contents: true
 ---
