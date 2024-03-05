@@ -5,7 +5,7 @@ folder: om
 sidebar: mydoc_sidebar
 datatable: true
 tags: [Feilhåndtering]
-keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
+keywords: [feilhåndtering, feilmeldinger feilkoder, http]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
 ---
