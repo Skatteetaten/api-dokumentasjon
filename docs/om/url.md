@@ -1,6 +1,6 @@
 ---
-title: URL-er
-slug: /om/urler
+title: URL
+slug: /om/url
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
