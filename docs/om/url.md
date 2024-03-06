@@ -53,7 +53,7 @@ Det kan være at enkelte virksomheter må endre sine brannmurregler. IP-range vi
 | Næringsspesifikasjon hendelser	| :white_check_mark: | https://naeringsspesifikasjonhendelser.api.skatteetaten-test.no/v1 <br /> https://naeringsspesifikasjonhendelser.api.skatteetaten.no/v1 | Trailing slash er fjernet |
 | Omregistreringsavgift API	| :white_check_mark: | https://omregistreringsavgift.api.skatteetaten-test.no/v1 <br /> https://omregistreringsavgift.api.skatteetaten.no/v1 |  |
 | Oppdrag utenlandske virksomheter API	| :white_check_mark: | https://oppdragutenlandskevirksomheter.api.skatteetaten-test.no/v1 <br /> https://oppdragutenlandskevirksomheter.api.skatteetaten.no/v1 | |
-| Pensjonsgivende inntekt API	| :white_check_mark: | https://pgi.api.skatteetaten-test.no/v1 <br> https://pgi.api.skatteetaten.no/v1 | |
+| Pensjonsgivende inntekt API	| :white_check_mark: | https://pgi.api.skatteetaten-test.no/v1 <br /> https://pgi.api.skatteetaten.no/v1 | |
 | Pensjonsgivende inntekt for folketrygden API	| :white_check_mark: | https://pgiforfolketrygden.api.skatteetaten-test.no/v1 <br /> https://pgiforfolketrygden.api.skatteetaten.no/v1 | |
 | Pensjonsgivende inntekt for folketrygden hendelser	| :white_check_mark: | https://pgiforfolketrygdenhendelser.api.skatteetaten-test.no/v1 <br /> https://pgiforfolketrygdenhendelser.api.skatteetaten.no/v1 | Trailing slash er fjernet |
 | Restanser API	| :white_check_mark: | https://restanser.api.skatteetaten-test.no/v2	<br /> https://restanser.api.skatteetaten.no/v2 | |
