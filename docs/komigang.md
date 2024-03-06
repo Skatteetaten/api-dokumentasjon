@@ -13,6 +13,8 @@ hide_table_of_contents: true
 
 Skatteetaten tilbyr en rekke standardiserte maskin-til-maskin-tjenester som kan benyttes av norske offentlige eller private virksomheter som har behov for  tilgang til opplysninger fra Skatteetaten. Dokumentasjon av disse delingstjenestene er samlet på denne nettsiden. Vi jobber fortløpende med å tilgjengeliggjøre flere delingstjenester.
 
+Informasjon om tjenester og løsninger som er under utvikling eller pilot ligger på [Beta-siden](https://skatteetaten.github.io/beta-apier/).
+
 ## Om Skatteetatens delingstjenester
 
 På dette området kan du finne informasjon om alt du trenger å vite om Skatteetatens delingstjenester:
