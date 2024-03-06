@@ -108,15 +108,17 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
 variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
-| HTTP status | Feilkode | Feilmelding                                        |
-|-------------|----------|----------------------------------------------------|
-| 400         | PGIF-005 | Det forespurte inntektsåret er ikke støttet        |
-| 404         | PGIF-006 | Fant ikke PGI for gitt inntektsår og identifikator |
-| 400         | PGIF-007 | Inntektsår har ikke gyldig format                  |
-| 400         | PGIF-008 | Personidentifikator har ikke gyldig format         |
-| 404         | PGIF-009 | Fant ingen person for gitt identifikator           |
-| 403         | PGIF-010 | Feil i forbindelse med autorisering                |
-| 406         | PGIF-011 | Feil tilknyttet dataformat. Kun json støttet.      | 
+| HTTP status | Feilkode | Feilmelding                                                                        |
+|-------------|----------|------------------------------------------------------------------------------------|
+| PGIF-001    | 500      | Uventet feil på tjenesten.                                                         |
+| PGIF-002    | 500      | Uventet feil i et bakenforliggende system.                                         |
+| PGIF-003    | 404      | Ukjent url benyttet.                                                               |
+| PGIF-004    | 401      | Feil i forbindelse med autentisering.                                              |
+| PGIF-005    | 403      | Feil i forbindelse med autorisering.                                               |
+| PGIF-006    | 400      | Feil i forbindelse med validering av inputdata.                                    |
+| PGIF-007    | 404      | Ikke treff på oppgitt personidentifikator.                                         |
+| PGIF-008    | 404      | Ingen pensjonsgivende inntekt funnet på oppgitt personidentifikator og inntektsår. |
+| PGIF-009    | 406      | Feil tilknyttet dataformat. Kun json eller xml er støttet.                         |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
