@@ -28,8 +28,8 @@ Det kan være at enkelte virksomheter må endre sine brannmurregler. IP-range vi
 :no_entry: : API-et er ikke klart med ny URL enda 
 :white_check_mark: : API-et er klart med ny URL i Test og Prod 
 
-| API |	Status | Test | Produksjon | Kommentar | 
-| --- | ------ | ---- | -----------| --------- |
+| API |	Status | URL-er | Kommentar | 
+| --- | ------ | ------ | --------- |
 | Aksjebeholdning API	| :no_entry: | Test: https://aksjebeholdning.api.skatteetaten-test.no/v1 <br> Prod: https://aksjebeholdning.api.skatteetaten.no/v1 | |
 | Aksjonær i virksomhet API	| :no_entry: | https://aksjonaerivirksomhet.api.skatteetaten-test.no/v1 <br> https://aksjonaerivirksomhet.api.skatteetaten.no/v1 | |
 | Aktiv konto API	| :white_check_mark:| https://aktivkonto.api.skatteetaten-test.no/v3 <br> https://aktivkonto.api.skatteetaten.no/v3 | |
