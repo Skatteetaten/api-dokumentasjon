@@ -1,5 +1,5 @@
 ---
-title: URL
+title: URL-er
 slug: /om/url
 folder: om
 sidebar: mydoc_sidebar
@@ -68,8 +68,8 @@ Det kan være at enkelte virksomheter må endre sine brannmurregler. IP-range vi
 | Skatteoppgjør upersonlig hendelser	| :white_check_mark: | Test: https://skatteoppgjoerupersonlighendelser.api.skatteetaten-test.no/v1 <br /> Prod: https://skatteoppgjoerupersonlighendelser.api.skatteetaten.no/v1 | Etterfølgende skråstrek i URL er fjernet |
 | Skatteplikt API	| :white_check_mark: | Test: https://skatteplikt.api.skatteetaten-test.no/v2 <br /> Prod: https://skatteplikt.api.skatteetaten.no/v2 | |
 | Skatteplikt upersonlig API	| :white_check_mark: | Test: https://skattepliktupersonlig.api.skatteetaten-test.no/v1 <br /> Prod: https://skattepliktupersonlig.api.skatteetaten.no/v1 | |
-| Spesifisert summert skattegrunnlag API	| :no_entry: |  | Tjenesten slås sammen med Summert skattegrunnlag API |
-| Summert skattegrunnlag API	| :no_entry: |  | Endepunkt uten stadie saneres. Tjenesten slås sammen med Spesifisert summert skattegrunnlag API |
+| Spesifisert summert skattegrunnlag API	| :no_entry: |  | |
+| Summert skattegrunnlag API	| :no_entry: |  | Endepunkt uten stadie saneres. |
 | Summert skattegrunnlag upersonlig API	| :white_check_mark: | Test: https://summertskattegrunnlagupersonlig.api.skatteetaten-test.no/v1 <br /> Prod: https://summertskattegrunnlagupersonlig.api.skatteetaten.no/v1 | |
 | Tilleggsskatt API	| :white_check_mark: | Test: https://tilleggsskatt.api.skatteetaten-test.no/v1 <br /> Prod: https://tilleggsskatt.api.skatteetaten.no/v1 | |
 | Tilleggsskatt hendelser	| :white_check_mark: | Test: https://tilleggsskatthendelser.api.skatteetaten-test.no/v1 <br /> Prod: https://tilleggsskatthendelser.api.skatteetaten.no/v1 | Etterfølgende skråstrek i URL er fjernet |
