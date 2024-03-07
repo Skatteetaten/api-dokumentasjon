@@ -47,7 +47,6 @@ Tjenesten støtter inntektsår 2017 og utover.
 | navUfoeretrygd          |
 | navForeldrepenger       |
 | navPleieOgOmsorgspenger |
-| navBil                  |
 | navSykepenger           |
 | navPensjonopptjening    |
 | navEnsligForsoerger     |
@@ -122,6 +121,7 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+
 
 JSON-objektet er basert på et XML-dokument med et tilknyttet skjema.
 
