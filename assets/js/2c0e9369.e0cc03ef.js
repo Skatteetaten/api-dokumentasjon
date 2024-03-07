@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[3104],{9894:a=>{a.exports=JSON.parse('{"label":"URL","permalink":"/api-dokumentasjon/tags/url","allTagsPath":"/api-dokumentasjon/tags","count":1,"items":[{"id":"om/url","title":"URL","description":"URL-er til Skatteetatens API-er","permalink":"/api-dokumentasjon/om/url"}]}')}}]);
