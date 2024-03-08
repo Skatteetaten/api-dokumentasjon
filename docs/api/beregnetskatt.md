@@ -35,7 +35,8 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Beregnet skatt API -
 
 ## Teknisk spesifikasjon
 
-Det finnes for tiden 2 versjoner av dette API-et, og ulike rettighetspakker er støttet i ulike versjoner. URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene på Swaggerhub.
+Det finnes for tiden 2 versjoner av dette API-et, og ulike rettighetspakker er støttet i ulike versjoner. URL-er til
+API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene på Swaggerhub.
 
 * [Beregnet skatt API - versjon 1](https://app.swaggerhub.com/apis/skatteetaten/beregnet-skatt-api/1.0.0)
 * [Beregnet skatt API - versjon 2](https://app.swaggerhub.com/apis/skatteetaten/beregnet-skatt-api)
@@ -53,7 +54,7 @@ Det finnes for tiden 2 versjoner av dette API-et, og ulike rettighetspakker er s
 | ldirReindriftstilskudd            | Støttes kun i versjon 2        |
 | nav                               | Støttes kun i versjon 1        |
 | norgesbank                        | Støttes kun i versjon 2        |
-| pensjonskasse                     | Støttes kun i versjon 1        |
+| pensjonskasse                     | Støttes i versjon 1 og 2       |
 | ssb                               | Støttes kun i versjon 2        |
 
 ## Støttetjenester
@@ -252,7 +253,8 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
+variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
 | Feilkode | HTTP Statuskode | Feilområde                                                               |
 |----------|-----------------|--------------------------------------------------------------------------|
