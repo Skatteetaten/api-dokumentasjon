@@ -47,7 +47,7 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 | Skattemelding upersonlig hendelser API                                | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag                                                                                        |
 | Skattemelding utkast hendelser API                                    | skatteetaten:skattemelding                                                                                                                                                                           |
 | Tilleggsskatt hendelser API                                           | skatteetaten:tilleggsskatt                                                                                                                                                                           |
-| Underenhet fra a-ordningen hendelser API                              | skatteetaten:underenhetaordningen                                                                                                                                                                        |
+| Underenhet fra A-ordningen hendelser API                              | skatteetaten:underenhetaordningen                                                                                                                                                                        |
 
 
 ## Delegering
@@ -71,7 +71,7 @@ hendelseslistene på SwaggerHub:
 * [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-hendelser-api)
 * [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
 * [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
-* [underenhet fra a-ordningen hendelser API](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
+* [Underenhet fra A-ordningen hendelser API](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
 
 ## Hendelsestyper
 
