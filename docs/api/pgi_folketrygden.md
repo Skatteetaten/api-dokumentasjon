@@ -37,8 +37,9 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Pensjonsgivende innt
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivendeinntekt-for-folketrygden-api)
-på SwaggerHub.
-Tjenesten støtter inntektsår 2017 og utover.
+på SwaggerHub. 
+
+Tjenesten støtter inntektsår 2017 og utover, men det kan også komme endringer for inntektsår fra og med 1967 til og med 1992.
 
 ## Rettighetspakker
 
