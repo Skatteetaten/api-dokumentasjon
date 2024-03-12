@@ -37,7 +37,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Underenhet fra A-ord
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-aordningen-api)
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
 på SwaggerHub.
 
 ## Rettighetspakker
@@ -51,11 +51,11 @@ på SwaggerHub.
 ### Hendelser
 
 For å følge med på endringer tilbyr vi
-en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesgrunnlag for eiendomsskatt hendelser API`
+en [støttetjeneste for hendelsesliste](./hendelser.md): `Underenhet fra a-ordningen hendelser API`
 
 ## Datakatalog
 
-Tjenesten er ikke oppført i felles datakatalog.
+Tjenesten er pt. ikke oppført i felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
@@ -88,6 +88,13 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
+## Oppslagstjeneste
+
+[![Informasjonsmodell](../../static/download/informasjonsmodell_underenhetaordningen.png)](../../static/download/informasjonsmodell_underenhetaordningen.png)
+
+## Hendelsesliste
+
+[![Informasjonsmodell](../../static/download/informasjonsmodell_underenhetaordningen_hendelser.png)](../../static/download/informasjonsmodell_underenhetaordningen_hendelser.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
@@ -96,14 +103,6 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytt hendelseslisten for å finne
 referanser man kan benytte for å teste oppslagstjenesten.
-
-## Testdata
-
-Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne:
-
-| Identifikator | Periode             |
-|---------------|---------------------|
-| 311169254     | 2023-11 til 2023-12 |
 
 </TabItem>
 </Tabs>
