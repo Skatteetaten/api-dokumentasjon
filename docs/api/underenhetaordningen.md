@@ -63,7 +63,117 @@ Tjenesten er ikke oppført i felles datakatalog.
 ## JSON
 
 ```json
-
+{
+  "norskIdentifikator": "314928660",
+  "periodeOgOpplysningspliktig": [
+    {
+      "kalendermaaned": "2023-11",
+      "opplysningspliktig": "310138363",
+      "arbeidsgiveravgift": {
+        "loennOgGodtgjoerelse": [
+          {
+            "beregningskodeForArbeidsgiveravgift": "generelleNaeringer",
+            "sone": "1",
+            "avgiftsgrunnlagBeloep": 335082.0,
+            "prosentsatsForAvgiftsberegning": 14.1
+          }
+        ]
+      },
+      "inntektsmottaker": [
+        {
+          "norskIdentifikator": "01852649662"
+        },
+        {
+          "norskIdentifikator": "04861949937"
+        },
+        {
+          "norskIdentifikator": "11891849879"
+        },
+        {
+          "norskIdentifikator": "07891249807"
+        },
+        {
+          "norskIdentifikator": "06878899138"
+        },
+        {
+          "norskIdentifikator": "06820849572"
+        },
+        {
+          "norskIdentifikator": "07820949018"
+        },
+        {
+          "norskIdentifikator": "27892548531"
+        },
+        {
+          "norskIdentifikator": "11882248684"
+        },
+        {
+          "norskIdentifikator": "17921449070"
+        },
+        {
+          "norskIdentifikator": "13900949949"
+        },
+        {
+          "norskIdentifikator": "03871448433"
+        }
+      ],
+      "oppsummeringstidspunkt": "2023-12-13T12:14:32.333"
+    },
+    {
+      "kalendermaaned": "2023-12",
+      "opplysningspliktig": "310138363",
+      "arbeidsgiveravgift": {
+        "loennOgGodtgjoerelse": [
+          {
+            "beregningskodeForArbeidsgiveravgift": "generelleNaeringer",
+            "sone": "1",
+            "avgiftsgrunnlagBeloep": 335082.0,
+            "prosentsatsForAvgiftsberegning": 14.1
+          }
+        ]
+      },
+      "inntektsmottaker": [
+        {
+          "norskIdentifikator": "03871448433"
+        },
+        {
+          "norskIdentifikator": "06878899138"
+        },
+        {
+          "norskIdentifikator": "04861949937"
+        },
+        {
+          "norskIdentifikator": "11891849879"
+        },
+        {
+          "norskIdentifikator": "27892548531"
+        },
+        {
+          "norskIdentifikator": "07820949018"
+        },
+        {
+          "norskIdentifikator": "11882248684"
+        },
+        {
+          "norskIdentifikator": "01852649662"
+        },
+        {
+          "norskIdentifikator": "07891249807"
+        },
+        {
+          "norskIdentifikator": "13900949949"
+        },
+        {
+          "norskIdentifikator": "17921449070"
+        },
+        {
+          "norskIdentifikator": "06820849572"
+        }
+      ],
+      "oppsummeringstidspunkt": "2023-12-13T12:14:32.659"
+    }
+  ]
+}
 ```
 
 </TabItem>
