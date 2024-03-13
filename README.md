@@ -1,5 +1,5 @@
 # api-dokumentasjon
-Vi jobber med å samle Skatteetatens api-dokumentasjon på en felles Github.
+Vi jobber med å samle Skatteetatens api-dokumentasjon på en felles nettside.
 
 ### Endre dokumentasjon
 Nettsiden lages basert på strukturen under [/docs](./docs) mappen på main-branch. Gjør endringer her for å endre informasjonen på nettsiden. Tjeneste-dokumenter må i tillegg legges inn i [sidebars.js](./sidebars.js) for at de skal vises.
