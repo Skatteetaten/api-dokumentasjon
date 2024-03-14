@@ -18,6 +18,15 @@ Feil rettet: ca. 16:00</p>]]></content>
         <category label="Drift" term="Drift"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Mange nye URL-er til eksterne API-er er klare i Test og Produksjon]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/03/14/ny-url</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/03/14/ny-url"/>
+        <updated>2024-03-14T09:35:00.000Z</updated>
+        <summary type="html"><![CDATA[Skatteetaten har behov for å endre oppbyggingen av URL-er til eksterne API-er, ref. tidligere varsel, og alle eksterne konsumenter må derfor ta i bruk nye URL-er til API-ene våre.]]></summary>
+        <content type="html"><![CDATA[<p>Skatteetaten har behov for å endre oppbyggingen av URL-er til eksterne API-er, ref. <!-- -->, og alle eksterne konsumenter må derfor ta i bruk nye URL-er til API-ene våre.</p><p>De fleste API-ene er nå klare med nye URL-er i Test og Prod, og vi oppfordrer til å skifte så snart som mulig. <!-- --> ligger dokumentert på en egen side. Denne oversikten vil vi holde oppdatert ettersom enda flere API-er blir klare, og vi vil varsle på nytt når vi har satt en frist for overgangen.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Ustabilitet i folkeregistertjenesten]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/03/13/Driftsvarsel</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/03/13/Driftsvarsel"/>
