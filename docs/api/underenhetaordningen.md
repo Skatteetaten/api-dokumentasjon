@@ -37,7 +37,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Underenhet fra A-ord
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-api)
 på SwaggerHub.
 
 ## Rettighetspakker
