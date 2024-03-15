@@ -189,7 +189,7 @@ Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summe
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d1c-ff95-11e8-a756-005056823b15">paaloepteRenterFraAnnenGjeld</a></td><td>inntektsfradrag</td><td>Renter av annen gjeld</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/0fd0c436-4b24-704b-a0ea-e73a18a2a12a">paaloepteRenterFraInkassoselskap</a></td><td>inntektsfradrag</td><td>Rentekostnader til inkassoselskap</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d64-ff95-11e8-a756-005056823b15">pensjonFraUtlandetSkattefriINorge</a></td><td>inntekt</td><td>Skattefri pensjon fra utlandet</td></tr>
-<tr><td><a href="https://data.skatteetaten.no/begrep/064f092d-81f1-6e4f-a115-1e88a58cdb89">pensjonFraUtlandetSkattepliktigINorge</a></td><td>inntekt</td><td>Annen pensjon fra utlandet</td></tr>
+<tr><td><a href="https://data.skatteetaten.no/begrep/cc89e44b-940f-11e9-a790-005056823b15">pensjonFraUtlandetSkattepliktigINorge</a></td><td>inntekt</td><td>Annen pensjon fra utlandet</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/20b2e1d5-9fe1-11e5-a9f8-e4115b280940">pensjonsinnbetaling</a></td><td>inntektsfradrag</td><td>Premie til pensjonsordning</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/649cbce5-ad07-11e8-8ffd-005056821322">pensjonsinntektFritattForSkattEtterSkatteavtale</a></td><td>inntekt</td><td>Pensjon/trygd fritatt for kildeskatt etter skatteavtale</td></tr>
 <tr><td><a href="https://data.skatteetaten.no/begrep/6c325d17-ff95-11e8-a756-005056823b15">pensjonsinntektIEOESTilsvarendeAlderspensjonEllerAFP</a></td><td>inntekt</td><td>Pensjon fra annen EØS-stat som tilsvarer alderspensjon og AFP i Norge</td></tr>
