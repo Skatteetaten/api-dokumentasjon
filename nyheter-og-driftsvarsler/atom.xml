@@ -2,11 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-03-14T12:55:00.000Z</updated>
+    <updated>2024-03-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Problemer med test-API]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/03/15/driftsvarsel</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/03/15/driftsvarsel"/>
+        <updated>2024-03-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Vi har for tiden problemer med flere API i test. Det jobbes med problemløsing.]]></summary>
+        <content type="html"><![CDATA[<p>Vi har for tiden problemer med flere API i test. Det jobbes med problemløsing.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Ustabilitet i folkeregistertjenesten - LØST]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/03/14/Driftsvarsel</id>
