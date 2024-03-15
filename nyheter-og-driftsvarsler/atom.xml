@@ -17,6 +17,15 @@
         <category label="Drift" term="Drift"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Problemer med test-API LØST]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/03/15/driftvarsel</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/03/15/driftvarsel"/>
+        <updated>2024-03-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Problemet med test APIer er nå løst, tilbake til normal drift]]></summary>
+        <content type="html"><![CDATA[<p>Problemet med test APIer er nå løst, tilbake til normal drift</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Ustabilitet i folkeregistertjenesten - LØST]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/03/14/Driftsvarsel</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/03/14/Driftsvarsel"/>
