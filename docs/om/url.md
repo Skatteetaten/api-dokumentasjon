@@ -32,8 +32,8 @@ Det kan være at enkelte virksomheter må endre sine brannmurregler. IP-range vi
 
 | API |	Status | URL-er | Kommentar | 
 | --- | ------ | ------ | --------- |
-| [Aksjebeholdning API](https://app.swaggerhub.com/apis/skatteetaten/aksjebeholdning-api)	| :no_entry: | Test: https://aksjebeholdning.api.skatteetaten-test.no/v1 <br /> Prod: https://aksjebeholdning.api.skatteetaten.no/v1 | |
-| [Aksjonær i virksomhet API](https://app.swaggerhub.com/apis/skatteetaten/aksjonaer-i-virksomhet-api)	| :no_entry: | Test: https://aksjonaerivirksomhet.api.skatteetaten-test.no/v1 <br /> Prod: https://aksjonaerivirksomhet.api.skatteetaten.no/v1 | |
+| [Aksjebeholdning API](https://app.swaggerhub.com/apis/skatteetaten/aksjebeholdning-api)	| :white_check_mark: | Test: https://aksjebeholdning.api.skatteetaten-test.no/v1 <br /> Prod: https://aksjebeholdning.api.skatteetaten.no/v1 | |
+| [Aksjonær i virksomhet API](https://app.swaggerhub.com/apis/skatteetaten/aksjonaer-i-virksomhet-api)	| :white_check_mark: | Test: https://aksjonaerivirksomhet.api.skatteetaten-test.no/v1 <br /> Prod: https://aksjonaerivirksomhet.api.skatteetaten.no/v1 | |
 | [Aktiv konto API](https://app.swaggerhub.com/apis/skatteetaten/aktiv-konto-api)	| :white_check_mark:| Test: https://aktivkonto.api.skatteetaten-test.no/v3 <br /> Prod: https://aktivkonto.api.skatteetaten.no/v3 | |
 | [Arbeidsforhold i oppdrag API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-i-oppdrag-api)	| :white_check_mark: | Test: https://arbeidsforholdioppdrag.api.skatteetaten-test.no/v1 <br /> Prod: https://arbeidsforholdioppdrag.api.skatteetaten.no/v1 | |
 | [Arbeidsgiveravgift API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsgiveravgift-api)	| :white_check_mark: | Test: https://arbeidsgiveravgift.api.skatteetaten-test.no/v1 <br /> Prod: https://arbeidsgiveravgift.api.skatteetaten.no/v1 | |
