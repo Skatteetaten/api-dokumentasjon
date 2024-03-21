@@ -791,7 +791,7 @@ Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatte
 Vær oppmerksom på at det er et levende testdatasett som kan endre seg i løpet av testperioden. Ta kontakt dersom du har
 behov for ytterligere testdata.
 
-Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle test-virksomheter, selv om de i Prod pt. kun skal kunne slå opp data for egen virksomhet.  
+Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testvirksomheter, selv om de i pilotperioden kun kan gjøre oppslag for egen virksomhet i Prod.
 
 | Organisasjonsnummer | 
 |---------------------|
