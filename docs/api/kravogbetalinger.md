@@ -64,7 +64,7 @@ For denne tjenesten finns følgende rettighetspakker
 | Navn på rettighetspakke | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
 |-------------------------|----------------------------|--------------------------------|
 | finans                  | Banker og finansforetak som skal vise krav og betalinger i nettbank | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Gir tilgang til alle 4 endepunkter med oppslag for virksomheter. Krever ikke samtykke. |
+| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Gir tilgang til alle 4 endepunkter med oppslag for egen virksomhet. Krever ikke samtykke. |
 
 ## Samtykke
 
@@ -790,6 +790,8 @@ Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne.
 Vær oppmerksom på at det er et levende testdatasett som kan endre seg i løpet av testperioden. Ta kontakt dersom du har
 behov for ytterligere testdata.
+
+Obs. regnskapssystemer som tester vil i Test kunne slå opp på alle virksomheter, selv om de i Prod pt. kun skal kunne slå opp data for egen virksomhet.  
 
 | Organisasjonsnummer | 
 |---------------------|
