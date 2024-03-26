@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <summary>API-er knyttet til Mva-meldingen</summary>
 
-## MEMO-prosjektet
+## MVA-moderniseringen
 De siste årene har MEMO-prosjektet i Skatteetaten modernisert Mva-området. MEMO-prosjektet har utviklet ny skattemelding for merverdiavgift (mva-meldingen). Målet med MEMO-prosjektet var å oppnå bedre etterlevelse, likere konkurransevilkår, forenkling for næringslivet og en mer effektiv forvaltning. Noe forenkling følger direkte av endringene i mva-meldingen. Vi får færre feilkilder, enklere tilbakebetaling, og det blir enklere å oppfylle opplysningsplikten.
 
 Ny mva-melding vil også gi nye muligheter for veiledning og dialog gjennom for eksempel validering før innsending og påminnelse om arbeidsoppgaver ved hjelp av arbeidsliste. I tillegg ønsker man å tilby økt grad av oppslag og innsyn for å oppå effektivisering og trygghet gjennom digital avstemming. Ny melding gir også bedre samspill mellom regnskapssystemene og Altinn/Skatteetaten, for eksempel gjennom automatisk kvittering til regnskapssystem.
