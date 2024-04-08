@@ -522,6 +522,15 @@ Av Skattedelingstjenestene er det kun Aktiv konto API og Pensjonsgivende inntekt
         <category label="Drift" term="Drift"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Testmiljø: Planlagt vedlikehold]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/04/08/Planlagt-nedetid</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/04/08/Planlagt-nedetid"/>
+        <updated>2023-04-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Det er behov for å utføre nødvendig vedlikehold i testmiljøet, mandag 8. april fra kl. 15:45. Jobben vil medfører nedetid.]]></summary>
+        <content type="html"><![CDATA[<p>Det er behov for å utføre nødvendig vedlikehold i testmiljøet, mandag 8. april fra kl. 15:45. Jobben vil medfører nedetid.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Tjenester som støtter nytt Maskinporten-domene i test]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/03/07/nytt-domene</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/03/07/nytt-domene"/>
