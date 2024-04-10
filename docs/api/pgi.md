@@ -9,7 +9,7 @@ keywords: [pgi, skatteberegning, inntekt, formue]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer skattemyndighetenes beregning av pensjonsgivende inntekt (PGI) for en person.</summary>
+<summary>Tjenesten leverer informasjon om grunnlag for pensjonsopptjening for pensjonsinnretningene.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
