@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[9845],{70131:a=>{a.exports=JSON.parse('{"label":"mva-melding","permalink":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags/mva-melding","allTagsPath":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags","count":1}')}}]);

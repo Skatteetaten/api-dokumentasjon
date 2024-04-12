@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[4676],{80420:e=>{e.exports=JSON.parse('{"label":"nyhet","permalink":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags/nyhet","allTagsPath":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags","count":18}')}}]);
