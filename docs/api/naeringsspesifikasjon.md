@@ -63,7 +63,7 @@ Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig 
 headerer i curl-kommandoen.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/naeringsspesifikasjon/v4/ssb/2023/19875297549?gjelderpaaTidspunkt=2024-02-01T12:00:00"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/naeringsspesifikasjon/v4/ssb/2023/19875297549?gjelderPaaTidspunkt=2024-02-01T12:00:00"
 ```
 
 ## JSON
