@@ -185,22 +185,37 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men ma
 
 ## Testdata
 
+Testdata for tjenesten er nullstilt og populert på nytt,  spesielt flere eiendommer for 0301 og 4601.
+
 For å teste hendelseslisten kan du benytte følgende kommunenummer:
 
 | Kommunenummer |
 | ------------- |
-| 1834 |
-| 3003 |
-| 3029 |
-| 3045 |
-| 3418 |
-| 3423 |
-| 3447 |
+| 0301 |
+| 1114 |
+| 1505 |
+| 1525 |
+| 1804 |
+| 2100 |
+| 3101 |
+| 3103 |
+| 3105 |
+| 3107 |
+| 3205 |
+| 3405 |
+| 3431 |
+| 4012 |
 | 4203 |
-| 4602 |
-| 4626 |
+| 4213 |
+| 4214 |
+| 4601 |
+| 4949 |
 | 5001 |
-| 5401 |
+| 5007 |
+| 5053 |
+| 5605 |
+| 5628 |
+
 
 Under har vi listet enkelte testdata som er tilgjengelige for å teste oppslagstjenesten:
 
