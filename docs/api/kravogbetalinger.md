@@ -74,7 +74,7 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 
 ## Datakatalog
 
-Siden dette er en beta-tjeneste, er den pt. ikke publisert i Felles datakatalog.
+[Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/662907037321ef0080ea8cbe) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
