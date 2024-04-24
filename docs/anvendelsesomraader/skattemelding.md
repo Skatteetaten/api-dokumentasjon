@@ -5,7 +5,6 @@ folder: anvendelsesomraader
 sidebar: mydoc_sidebar
 datatable: true
 tags: [Skattemelding]
-keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: July 10, 2023
 hide_table_of_contents: true
 ---
