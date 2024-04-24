@@ -27,6 +27,7 @@ const sidebars = {
         "api/hendelser",
         "api/inntekt",
         "api/inntektsmottakere",
+        "api/kravogbetalinger",
         "api/mva_meldingsopplysning",
         "api/mvamelding",
         "api/mvaregisteravgiftssubjekt",
