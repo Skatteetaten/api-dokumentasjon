@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ---
 <summary>Dokumentasjon om Krav og betalinger</summary>
 
-Krav og betalinger er en tjeneste Skatteetaten tilbyr regnskapssystemer og banker hvor vi via et API tilgjengeliggjør alle krav Skatteetaten har til den næringsdrivende. Formålet er at regnskapssystemer og banker kan utvikle og tilgjengeliggjøre en oversikt i sine flater som vil gi den næringsdrivende en bedre oversikt over sine nåværende og fremtidige krav og dermed enklere kan håndtere og følge opp disse.
+Krav og betalinger er en tjeneste Skatteetaten tilbyr regnskapssystemer og banker hvor vi via [Krav og betalinger API](../api/kravogbetalinger.md)) tilgjengeliggjør alle krav Skatteetaten har til den næringsdrivende. Formålet er at regnskapssystemer og banker kan utvikle og tilgjengeliggjøre en oversikt i sine flater som vil gi den næringsdrivende en bedre oversikt over sine nåværende og fremtidige krav og dermed enklere kan håndtere og følge opp disse.
 
 Målgruppen er i første omgang enkeltpersonsforetak og små og mellomstore AS med og uten regnskapsfører.
 
