@@ -6,15 +6,13 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Innkreving ]
 keywords: [ kravogbetalinger, krav og betalinger, innkreving ]
-last_updated: Oct 04, 2023
+last_updated: Apr 24, 2024
 hide_table_of_contents: true
 ---
 
 <summary>
 
-Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part. Denne tjenesten er for tiden kun
-i beta-versjon, se mer informasjon på
-Skatteetatens [beta-Github](https://skatteetaten.github.io/beta-apier/kravogbetalinger).
+Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part. 
 
 </summary>
 
@@ -63,8 +61,8 @@ For denne tjenesten finns følgende rettighetspakker
 
 | Navn på rettighetspakke | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
 |-------------------------|----------------------------|--------------------------------|
-| finans                  | Banker og finansforetak som skal vise krav og betalinger i nettbank | Krever samtykke og gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Gir tilgang til alle 4 endepunkter med oppslag for egen virksomhet. Krever ikke samtykke. |
+| finans                  | Banker og finansforetak som skal vise krav og betalinger i nettbank | Finans-rettighetspakken krever bruk av Altinn-samtykke, og den gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
+| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye Systembruker-løsningen fra Digdir for virksomhet, og gir tilgang til alle 4 endepunkter. Det kommer mer informasjon om Systembruker etter hvert. I pilotfasen vil systemleverandører kun få tilgang til egne data. |
 
 ## Samtykke
 
