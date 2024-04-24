@@ -68,9 +68,9 @@ For denne tjenesten finns følgende rettighetspakker
 
 For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
-| Tjenestekode | Formål |
-|------------------------------------|--------------|
-| 5928_202301 | Kreves for rettighetspakken `finans` |
+| ServiceCode | ServiceEditionCode | Formål |
+|-------------|--------------------|--------|
+| 5928        | 202301             | Kreves for rettighetspakken `finans` |
 
 ## Datakatalog
 
