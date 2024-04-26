@@ -95,14 +95,13 @@ Følgende testdata er tilgjengelige for denne tjenesten i Skatteetatens testmilj
 
 | Fødselsnummer | Inntektsår |
 |---|---|
-| 01899699552	| 2020, 2021 og 2022 | 
-| 21839199217	| 2020, 2021 og 2022 |
-| 01840098245	| 2020, 2021 og 2022 |
-| 06889197542	| 2020, 2021 og 2022 |
-| 01898999749	| 2020, 2021 og 2022 |
+| 01899699552	| 2020, 2021, 2022 og 2023 | 
+| 21839199217	| 2020, 2021, 2022 og 2023 |
+| 01840098245	| 2020, 2021, 2022 og 2023 |
+| 06889197542	| 2020, 2021, 2022 og 2023 |
+| 01898999749	| 2020, 2021, 2022 og 2023 |
 
-Disse har også skattemeldinger og skatteoppgjør for 2020 og 2021.
-Skattemeldinger og skatteoppgjør for 2022 opprettes senere.
+Disse har også skattemeldinger og skatteoppgjør for 2020, 2021 og 2022. Skattemeldinger og skatteoppgjør for 2023 snart.
   
 </TabItem>
 </Tabs>
