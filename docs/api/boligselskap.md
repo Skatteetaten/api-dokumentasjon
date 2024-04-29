@@ -1,5 +1,5 @@
 ---
-title: Boliselskap API
+title: Boligselskap API
 slug: /api/boliselskap
 folder: api
 sidebar: mydoc_sidebar
@@ -10,7 +10,7 @@ last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten brukes til innsending av Boligsameie.</summary>
+<summary>Tjenesten brukes til innsending av Boligselskap.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -24,10 +24,10 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:bolisameie`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:boliselskap`
 
 ## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Bolisameie API - På vegne av`
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Boligselskap API - På vegne av`
 
 ## Teknisk spesifikasjon
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
