@@ -71,8 +71,8 @@ Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det
 | GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
 | GLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
 | GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1030               | Accept-header må være av type application/json | APIet har kun støtte for json responser og accept header må stemme med det                                                  |
-| GLD_1047               | Content type må være application/json          | APIet har kun støtte for json i request body og content-type header må stemme med det                                       |
+| GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
+| GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
   
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
