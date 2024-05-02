@@ -68,7 +68,7 @@ Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | GLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denn URLen                                                                          |
+| GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
 | GLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
 | GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
 | GLD_1030               | Accept-header må være av type application/json | APIet har kun støtte for json responser og accept header må stemme med det                                                  |
