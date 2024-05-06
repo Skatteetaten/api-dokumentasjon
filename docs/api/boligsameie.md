@@ -4,8 +4,8 @@ slug: /api/boligsameie
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, Boligsameie]
-keywords: [grunnlagsdata]
+tags: [ API, Boligsameie ]
+keywords: [ grunnlagsdata ]
 last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
@@ -16,6 +16,7 @@ hide_table_of_contents: true
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 For generell informasjon om tjenestene se egne sider om:
+
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Rettighetspakker](../om/rettighetspakker.md)
@@ -24,32 +25,38 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
+
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:boligsameie`
 
 ## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. 
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
 Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Boligsameie API - På vegne av`
 
 ## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på 
+
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 SwaggerHub
 
-API-et for boligsameie har bare ett endepunkt: 
-* __POST innsending__: Mottar tredjepartsopplysninger for boligsameier. Ett kall mot API-et er en rapportering for et 
-boligsameie gitt av en oppgavegiver og som gjelder et inntektsår. 
+API-et for boligsameie har bare ett endepunkt:
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](boligsameie?tab=Feilkoder) for 
+* __POST innsending__: Mottar tredjepartsopplysninger for boligsameier. Ett kall mot API-et er en rapportering for et
+  boligsameie gitt av en oppgavegiver og som gjelder et inntektsår.
+
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](boligsameie?tab=Feilkoder) for
 relaterte feilmeldinger.
 
 Se også [eksempler](boligsameie?tab=Eksempler) for de ulike endepunktene.
 
-### Parameter: idempotencyKey 
-idempotencyKey parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en 
-tilsvarende ny idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den 
-samme repsponsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt 
+### Parameter: idempotencyKey
+
+idempotencyKey parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en
+tilsvarende ny idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den
+samme repsponsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt
 kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
 
 ## Datakatalog
+
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
@@ -65,7 +72,7 @@ Legg inn eksempel
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
-  
+
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
@@ -78,9 +85,10 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | GLD_021  | 404             | Finner ikke forespurt ressurs                |
 | GLD_022  | 405             | HTTP-metode ikke støttet                     |
 
-Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere. 
+Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
-Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi feltene.
+Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi
+feltene.
 
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -90,16 +98,27 @@ Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det
 | GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
 | GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
 | GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
-  
+
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Her kan du legge inn skjermbilde av informasjonsmodell. 
+Her kan du legge inn skjermbilde av informasjonsmodell.
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Her kan du legge inn tekst om test av tjenesten. 
-  
+I første omgang er test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
+med å pilotere løsningene.
+
+### Tenor testdatasøk
+
+Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for
+denne tjenesten. Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
+
+### Testdata
+
+Det finnes foreløpig ingen testdata for denne tjenesten. Denne siden oppdateres fortløpende ettersom testdata blir
+tilgjengelig.
+
 </TabItem>
 </Tabs>
