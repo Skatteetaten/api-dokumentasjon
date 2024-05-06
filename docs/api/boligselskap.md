@@ -47,18 +47,32 @@ Legg inn eksempel
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
-  
-| Feilkode | HTTP Statuskode | Feilområde                                                 |
-|----------|-----------------|------------------------------------------------------------|
-| MVA-001  | 500             | Uventet feil på tjenesten.                                 |
-| MVA-002  | 500             | Uventet feil i et bakenforliggende system.                 |
-| MVA-003  | 404             | Ukjent url benyttet.                                       |
-| MVA-004  | 401             | Feil i forbindelse med autentisering.                      |
-| MVA-005  | 403             | Feil i forbindelse med autorisering.                       |
-| MVA-006  | 400             | Feil i forbindelse med validering av inputdata.            |
-| MVA-007  | 404             | Ingen mva-melding funnet på oppgitt referanse.             |
-| MVA-008  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
+
+| Feilkode | HTTP Statuskode | Feilområde                                   |
+|----------|-----------------|----------------------------------------------|
+| GLD_005  | 403             | Feil i forbindelse med autorisering          |
+| GLD_006  | 400             | Feil i request                               |
+| GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
+| GLD_010  | 400             | Feil i forbindelse med validering av payload |
+| GLD_011  | 400             | Feil i metadata                              |
+| GLD_017  | 500             | Uspesifisert systemfeil                      |
+| GLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
+| GLD_021  | 404             | Finner ikke forespurt ressurs                |
+| GLD_022  | 405             | HTTP-metode ikke støttet                     |
+
+Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
+Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
+Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi feltene.
+
+| Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
+|------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| GLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
+| GLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
+| GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
+| GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
+| GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
   
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
