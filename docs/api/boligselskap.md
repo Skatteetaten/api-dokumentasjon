@@ -77,7 +77,54 @@ Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Her kan du legge inn skjermbilde av informasjonsmodell. 
+![informasjonsmodell](../../static/download/Informasjonsmodell_Boligselskap.png)
+
+| Eier                            | Element                              | Dokumentasjon                                                                                          |
+|---------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Boenhet                         | aksjeboenhetsnummer                  | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                          |
+| Boenhet                         | andelsnummer                         | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                          |
+| Boenhet                         | bolignummer                          | ???                                                                                                    |
+| Boenhet                         | gatenavnOgHusnummer                  | Navn på gate og husnummer for boenheten                                                                |
+| Boenhet                         | kommunenummer                        | Nummer på kommunen boenheten tilhører                                                                  |
+| Eierandel                       | eierandelNevner                      | Nevner i eierandelsbrøken                                                                              |
+| Eierandel                       | eierandelTeller                      | Teller i eierandelsbrøken                                                                              |
+| Leveranse                       | boligselskapFormål                   | ???                                                                                                    |
+| Leveranse                       | inntektsår                           | Inntektsåret leveransen gjelder                                                                        |
+| Leveranse                       | kildesystem                          | System brukt for å levere oppgaven                                                                     |
+| Leveranse                       | leveransetype                        | ???                                                                                                    |
+| Leveranse                       | oppgave                              | Oppgave som leveres                                                                                    |
+| Leveranse                       | oppgavegiver                         | ??? Organisasjon som leverer oppgave på vegne av oppgaveeier                                           |
+| Leveranse                       | oppgavegiversLeveranseReferanse      | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten |
+| Leveranse                       | oppgaveoppsummering                  | Oppsummering med totalsummer for innleverte oppgaver                                                   |
+| Leveranse                       | sletteoppgave                        | Oppgave for sletting av tidligere innrapporterte oppgaver                                              |
+| Melding                         | leveranse                            | ??? Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                           |
+| OppgaveBoligselskap             | andelFormue                          | Oppgaveeiers andel av felles formue i boligselskap                                                     |
+| OppgaveBoligselskap             | andelFradragsberettigedeKostnader    | Oppgaveeiers andel av fradragsberettigede kostnader i boligselskapet                                   |
+| OppgaveBoligselskap             | andelGjeld                           | Oppgaveeiers andel av gjeld i boligselskapet                                                           |
+| OppgaveBoligselskap             | andelLikningsverdiBoenhet            | Oppgaveeiers andel av likninsverdi av boenheten                                                        |
+| OppgaveBoligselskap             | andelSkattepliktigeInntekter         | Oppgaveeiers andel av skattepliktige inntekter i boligselskapet                                        |
+| OppgaveBoligselskap             | boenhet                              | Boenheten oppgaven gjelder                                                                             |
+| OppgaveBoligselskap             | boligselskapsFormål                  | ???                                                                                                    |
+| OppgaveBoligselskap             | bruksoverlatt                        | ???                                                                                                    |
+| OppgaveBoligselskap             | eierandel                            | Oppgaveeiers eierandel i boenheten                                                                     |
+| OppgaveBoligselskap             | eiertid                              | Oppgaveeiers tid som eier av boenheten                                                                 |
+| OppgaveBoligselskap             | oppgaveeier                          | Eier av oppgaven                                                                                       |
+| Oppgaveeier                     | fødselsnummer                        | Fødselsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                  |
+| Oppgaveeier                     | navn                                 | Navn på oppgaveeier                                                                                    |
+| Oppgaveeier                     | organisasjonsnummer                  | Organisasjonsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer            |
+| Oppgavegiver                    | kontaktinformasjon                   | Kontaktinformasjon for oppgavegiver                                                                    |
+| Oppgavegiver                    | organisasjonsnavn                    | Navn på oppgavegiver                                                                                   |
+| Oppgavegiver                    | organisasjonsnummer                  | Organisasjonsnummer på oppgavegiver                                                                    |
+| OppgaveoppsummeringBoligselskap | antallOppgaver                       | Totalt antall oppgaver i leveransens oppgaver                                                          |
+| OppgaveoppsummeringBoligselskap | sumAndelFormue                       | Sum av andelFormue i leveransens oppgaver                                                              |
+| OppgaveoppsummeringBoligselskap | sumAndelFradragsberettigedeKostnader | Sum av andelFradragsberettigedeKostnader i leveransens oppgaver                                        |
+| OppgaveoppsummeringBoligselskap | sumAndelGjeld                        | Sum av andelGjeld i leveransens oppgaver                                                               |
+| OppgaveoppsummeringBoligselskap | sumAndelLikningsverdiBoenhet         | Sum av andelLikningsverdiBoenhet i leveransens oppgaver                                                |
+| OppgaveoppsummeringBoligselskap | sumAndelSkattepliktigeInntekter      | Sum av andelSkattepliktigeInntekter i leveransens oppgaver                                             |
+| SletteoppgaveBoligselskap       | aksjeboenhetsnummer                  | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                          |
+| SletteoppgaveBoligselskap       | andelsnummer                         | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                          |
+| SletteoppgaveBoligselskap       | oppgaveeier                          | Eier av sletteoppgaven                                                                                 |
+
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
