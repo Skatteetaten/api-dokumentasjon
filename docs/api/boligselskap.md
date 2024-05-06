@@ -61,7 +61,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | GLD_021  | 404             | Finner ikke forespurt ressurs                |
 | GLD_022  | 405             | HTTP-metode ikke støttet                     |
 
-Feilresponsene kan også innholde en feilspesifiseringskode som presiserer feilen ytterligere.
+Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
 Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi feltene.
 
