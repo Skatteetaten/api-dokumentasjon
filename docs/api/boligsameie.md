@@ -77,9 +77,9 @@ https://{env}/api/boligsameie/v1/{inntektsår}/innsending
 ```
 {
   "leveranse": {
+    "oppgavegiversLeveranseReferanse": "Leveranse-1",
     "leveransetype": "ordinaer",
     "oppgavegiver": {
-      "oppgavegiversLeveranseReferanse": "Leveranse-1",
       "organisasjonsnummer": "819897522",
       "organisasjonsnavn": "SPENNENDE MENINGSFULLE GÅRDER ESEK",
       "kontaktinformasjon": {
@@ -617,7 +617,18 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Her kan du legge inn tekst om test av tjenesten.
+I første omgang er test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
+med å pilotere løsningene.
+
+### Tenor testdatasøk
+
+Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for
+denne tjenesten. Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
+
+### Testdata
+
+Det finnes foreløpig ingen testdata for denne tjenesten. Denne siden oppdateres fortløpende ettersom testdata blir
+tilgjengelig.
 
 </TabItem>
 </Tabs>
