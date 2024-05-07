@@ -59,6 +59,7 @@ GET https://{env}/api/formueinntekt/summertskattegrunnlag/{rettighetspakke}/{inn
 | kommuneLangtidsoppholdInstitusjon | oppgjoer | Benytt ny url med stadie |
 | laanekassen | oppgjoer | 
 | ldir | oppgjoer | 
+| ldirReindriftstilskudd | oppgjoer | 
 | nav | oppgjoer | 
 | ssb | oppgjoer | Benytt ny url med stadie |
 | udi | oppgjoer | 
