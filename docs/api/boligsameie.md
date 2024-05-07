@@ -24,13 +24,30 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:bolisameie`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:boligsameie`
 
 ## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Bolisameie API - På vegne av`
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. 
+Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Boligsameie API - På vegne av`
 
 ## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på 
+SwaggerHub
+
+API-et for boligsameie har bare ett endepunkt: 
+* __POST innsending__: Mottar tredjepartsopplysninger for boligsameier. Ett kall mot API-et er en rapportering for et 
+boligsameie gitt av en oppgavegiver og som gjelder et inntektsår. 
+
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](boligsameie?tab=Feilkoder) for 
+relaterte feilmeldinger.
+
+Se også [eksempler](boligsameie?tab=Eksempler) for de ulike endepunktene.
+
+### Parameter: idempotencyKey 
+idempotencyKey parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en 
+tilsvarende ny idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den 
+samme repsponsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt 
+kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
 
 ## Datakatalog
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
