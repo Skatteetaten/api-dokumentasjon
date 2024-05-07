@@ -62,8 +62,518 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
+## Innsending
+
+### Eksempel på request URL
+
 ```
-Legg inn eksempel
+https://{env}/api/boligsameie/v1/{inntektsår}/innsending
+```
+
+### JSON
+
+#### Eksempel på innsending
+
+```
+{
+  "leveranse": {
+    "oppgavegiversLeveranseReferanse": "Leveranse-1",
+    "leveransetype": "ordinaer",
+    "oppgavegiver": {
+      "organisasjonsnummer": "819897522",
+      "organisasjonsnavn": "SPENNENDE MENINGSFULLE GÅRDER ESEK",
+      "kontaktinformasjon": {
+        "navn": "Realt Testutvikling",
+        "telefonnummer": "00000000",
+        "varselEpostadresse": "anonym.varsel@skatteetaten.no",
+        "varselSmsMobilnummer": "12345678"
+      }
+    },
+    "oppgaveoppsummering": {
+      "antallOppgaver": 23,
+      "sumAndelSkattepliktigeInntekter": 0,
+      "sumAndelFradragsberettigedeKostnader": 11777,
+      "sumAndelFormue": 62240,
+      "sumAndelGjeld": 145075
+    },
+    "inntektsaar": 2023,
+    "kildesystem": "SBS-1",
+    "sletteoppgave": [],
+    "oppgave": [
+      {
+        "oppgaveeier": {
+          "organisasjonsnummer": "800877830",
+          "navn": "NØYTRALE FORURENSEDE SPISESTEDER AS"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 11
+        },
+        "andelSkattepliktigeInntekter": 1766,
+        "andelFradragsberettigedeKostnader": 1766,
+        "andelFormue": 9336,
+        "andelGjeld": 21761
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "17045802256",
+          "navn": "ALLA STIE"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 30
+        },
+        "andelSkattepliktigeInntekter": 483,
+        "andelFradragsberettigedeKostnader": 483,
+        "andelFormue": 2552,
+        "andelGjeld": 5948
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "06096215671",
+          "navn": "IHOR EVJE"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3012"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 74
+        },
+        "andelSkattepliktigeInntekter": 443,
+        "andelFradragsberettigedeKostnader": 443,
+        "andelFormue": 0,
+        "andelGjeld": 0
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "03056904602",
+          "navn": "HANS ANDERS CZERWINSKI"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 17
+        },
+        "andelSkattepliktigeInntekter": 377,
+        "andelFradragsberettigedeKostnader": 377,
+        "andelFormue": 1992,
+        "andelGjeld": 4642
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "15065700589",
+          "navn": "VALDAS SØRVIK GLØRSTAD"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 49
+        },
+        "andelSkattepliktigeInntekter": 495,
+        "andelFradragsberettigedeKostnader": 495,
+        "andelFormue": 2614,
+        "andelGjeld": 6093
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "28097317803",
+          "navn": "MAY BENTE KLINGENBERG GRONGSTAD"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 93
+        },
+        "andelSkattepliktigeInntekter": 377,
+        "andelFradragsberettigedeKostnader": 377,
+        "andelFormue": 1992,
+        "andelGjeld": 4642
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "23113402067",
+          "navn": "ROGER ANDRE HALLING"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 86
+        },
+        "andelSkattepliktigeInntekter": 589,
+        "andelFradragsberettigedeKostnader": 589,
+        "andelFormue": 3112,
+        "andelGjeld": 7254
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "28095102613",
+          "navn": "STYRK KLEPPA"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 23
+        },
+        "andelSkattepliktigeInntekter": 824,
+        "andelFradragsberettigedeKostnader": 824,
+        "andelFormue": 4357,
+        "andelGjeld": 10155
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "31085909676",
+          "navn": "AIVIS VAGLE"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 43
+        },
+        "andelSkattepliktigeInntekter": 436,
+        "andelFradragsberettigedeKostnader": 436,
+        "andelFormue": 2303,
+        "andelGjeld": 5368
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "09128506265",
+          "navn": "MIROSLAW STANISLAW JENSVOLL"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 67
+        },
+        "andelSkattepliktigeInntekter": 495,
+        "andelFradragsberettigedeKostnader": 495,
+        "andelFormue": 2614,
+        "andelGjeld": 6093
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "22128126639",
+          "navn": "ARNE EMIL GRØTTA"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 5
+        },
+        "andelSkattepliktigeInntekter": 389,
+        "andelFradragsberettigedeKostnader": 389,
+        "andelFormue": 2054,
+        "andelGjeld": 4787
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "31035117388",
+          "navn": "SEBASTIAN NORLI"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 87
+        },
+        "andelSkattepliktigeInntekter": 412,
+        "andelFradragsberettigedeKostnader": 412,
+        "andelFormue": 2178,
+        "andelGjeld": 5078
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "09085926443",
+          "navn": "LIV HEIDI OSBORNE"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 42
+        },
+        "andelSkattepliktigeInntekter": 377,
+        "andelFradragsberettigedeKostnader": 377,
+        "andelFormue": 1992,
+        "andelGjeld": 4642
+      },
+      {
+        "oppgaveeier": {
+          "organisasjonsnummer": "804266801",
+          "navn": "SENDREKTIGE BRILJANTE FANS AS"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 61
+        },
+        "andelSkattepliktigeInntekter": 353,
+        "andelFradragsberettigedeKostnader": 353,
+        "andelFormue": 1867,
+        "andelGjeld": 4352
+      },
+      {
+        "oppgaveeier": {
+          "organisasjonsnummer": "805518731",
+          "navn": "ROSA FLOTTE MUS AS"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 80
+        },
+        "andelSkattepliktigeInntekter": 441,
+        "andelFradragsberettigedeKostnader": 441,
+        "andelFormue": 2116,
+        "andelGjeld": 4933
+      },
+      {
+        "oppgaveeier": {
+          "organisasjonsnummer": "805518731",
+          "navn": "ROSA FLOTTE MUS AS"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 99
+        },
+        "andelSkattepliktigeInntekter": 989,
+        "andelFradragsberettigedeKostnader": 989,
+        "andelFormue": 5228,
+        "andelGjeld": 12186
+      },
+      {
+        "oppgaveeier": {
+          "organisasjonsnummer": "805518731",
+          "navn": "ROSA FLOTTE MUS AS"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 36
+        },
+        "andelSkattepliktigeInntekter": 683,
+        "andelFradragsberettigedeKostnader": 683,
+        "andelFormue": 3610,
+        "andelGjeld": 8414
+      },
+      {
+        "oppgaveeier": {
+          "organisasjonsnummer": "810382392",
+          "navn": "KONSERVATIVE GLADE KVINNER AS"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 55
+        },
+        "andelSkattepliktigeInntekter": 283,
+        "andelFradragsberettigedeKostnader": 283,
+        "andelFormue": 1494,
+        "andelGjeld": 3482
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "19116312894",
+          "navn": "SYLWESTER LARSEN"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 92
+        },
+        "andelSkattepliktigeInntekter": 824,
+        "andelFradragsberettigedeKostnader": 824,
+        "andelFormue": 4357,
+        "andelGjeld": 10155
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "14078907968",
+          "navn": "KJELL VIDAR KÅSA JANKOWSKA"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 24
+        },
+        "andelSkattepliktigeInntekter": 353,
+        "andelFradragsberettigedeKostnader": 353,
+        "andelFormue": 1867,
+        "andelGjeld": 4352
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "11107627822",
+          "navn": "KNUT ERIK GJELLESTAD"
+        },
+        "eiertid": {
+          "start": "0101",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 68
+        },
+        "andelSkattepliktigeInntekter": 389,
+        "andelFradragsberettigedeKostnader": 389,
+        "andelFormue": 2054,
+        "andelGjeld": 4787
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "07020069796",
+          "navn": "PER KRISTIAN FORFANG"
+        },
+        "eiertid": {
+          "start": "3012",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 74
+        },
+        "andelSkattepliktigeInntekter": 0,
+        "andelFradragsberettigedeKostnader": 0,
+        "andelFormue": 1276,
+        "andelGjeld": 2974
+      },
+      {
+        "oppgaveeier": {
+          "foedselsnummer": "12060253798",
+          "navn": "ÅSE MARIT HALVORSRUD"
+        },
+        "eiertid": {
+          "start": "3012",
+          "slutt": "3112"
+        },
+        "matrikkelnummer": {
+          "kommunenummer": "1554",
+          "bruksnummer": 227,
+          "gaardsnummer": 91,
+          "seksjonsnummer": 74
+        },
+        "andelSkattepliktigeInntekter": 0,
+        "andelFradragsberettigedeKostnader": 0,
+        "andelFormue": 1276,
+        "andelGjeld": 2974
+      }
+    ]
+  }
+}
+```
+
+#### Eksempel på respons
+
+```
+{
+  "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
+  "dialogelementId": "018f521e-5488-79e3-8817-48e94cb75455",
+  "oppgavegiversLeveranseReferanse": "leveranse-1",
+  "antallOppgaver": 23
+}
 ```
 
 </TabItem>
