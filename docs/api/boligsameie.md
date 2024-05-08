@@ -630,7 +630,7 @@ feltene.
 | OppgaveBoligsameie             | andelGjeld                           | Oppgaveeiers andel av gjeld i boligselsameiet                                                                                                   |
 | OppgaveBoligsameie             | andelSkattepliktigeInntekter         | Oppgaveeiers andel av skattepliktige inntekter i boligsameiet                                                                                   |
 | OppgaveBoligsameie             | eiertid                              | Oppgaveeiers tid som eier av boenheten                                                                                                          |
-| OppgaveBoligsameie             | matrikkelnummer                      | Boenhetens Matrikkelnummer                                                                                                                      |
+| OppgaveBoligsameie             | matrikkelnummer                      | Boenhetens matrikkelnummer                                                                                                                      |
 | OppgaveBoligsameie             | oppgaveeier                          | Eier av oppgaven                                                                                                                                |
 | Oppgaveeier                    | fødselsnummer                        | Fødselsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                           |
 | Oppgaveeier                    | navn                                 | Navn på oppgaveeier                                                                                                                             |
@@ -645,7 +645,7 @@ feltene.
 | SletteoppgaveBoligsameie       | matrikkelnummer                      | Boenhetens matrikkelnummer                                                                                                                      |
 | SletteoppgaveBoligsameie       | oppgaveeier                          | Eier av sletteoppgaven                                                                                                                          |
 | Matrikkelnummer                | bruksnummer                          | Del av matrikkelnummeret som sammen med kommunenummer, gårdsnummer og seksjonsnummer unikt identifiserer en eierseksjon                         |
-| Matrikkelnummer                | festenummer                          | Festenumemr tilhørende eierseksjonen dersom eiendommen er festet                                                                                |
+| Matrikkelnummer                | festenummer                          | Festenummer tilhørende eierseksjonen dersom eiendommen er festet                                                                                |
 | Matrikkelnummer                | gårdsnummer                          | Del av matrikkelnummeret som sammen med kommunenummer, bruksnummer og seksjonsnummer unikt identifiserer en eierseksjon                         |
 | Matrikkelnummer                | kommunenummer                        | Boenhetens kommunenummer                                                                                                                        |
 | Matrikkelnummer                | seksjonsnummer                       | Del av matrikkelnummeret som sammen med kommunenummer, gårdsnummer og bruksnummer unikt identifiserer en eierseksjon                            | 
