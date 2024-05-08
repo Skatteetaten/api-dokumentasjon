@@ -612,9 +612,45 @@ feltene.
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Her kan du legge inn skjermbilde av informasjonsmodell.
+![boligsameie](../../static/download/Informasjonsmodell_Boligsameie.png)
 
+| Eier                           | Element                              | Dokumentasjon                                                                                                                                   |
+|--------------------------------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Leveranse                      | inntektsår                           | Inntektsåret leveransen gjelder                                                                                                                 |
+| Leveranse                      | kildesystem                          | System brukt for å levere oppgaven                                                                                                              |
+| Leveranse                      | leveransetype                        | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
+| Leveranse                      | oppgave                              | Oppgave som leveres                                                                                                                             |
+| Leveranse                      | oppgavegiver                         | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
+| Leveranse                      | oppgavegiversLeveranseReferanse      | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
+| Leveranse                      | oppgaveoppsummering                  | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
+| Leveranse                      | sletteoppgave                        | Oppgave for sletting av tidligere innrapporterte oppgaver                                                                                       |
+| Melding                        | leveranse                            | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
+| OppgaveBoligsameie             | andelFormue                          | Oppgaveeiers andel av felles formue i boligsameiet                                                                                              |
+| OppgaveBoligsameie             | andelFradragsberettigedeKostnader    | Oppgaveeiers andel av fradragsberettigede kostnader i boligsameiet                                                                              |
+| OppgaveBoligsameie             | andelGjeld                           | Oppgaveeiers andel av gjeld i boligselsameiet                                                                                                   |
+| OppgaveBoligsameie             | andelSkattepliktigeInntekter         | Oppgaveeiers andel av skattepliktige inntekter i boligsameiet                                                                                   |
+| OppgaveBoligsameie             | eiertid                              | Oppgaveeiers tid som eier av boenheten                                                                                                          |
+| OppgaveBoligsameie             | matrikkelnummer                      | Boenhetens matrikkelnummer                                                                                                                      |
+| OppgaveBoligsameie             | oppgaveeier                          | Eier av oppgaven                                                                                                                                |
+| Oppgaveeier                    | fødselsnummer                        | Fødselsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                           |
+| Oppgaveeier                    | navn                                 | Navn på oppgaveeier                                                                                                                             |
+| Oppgaveeier                    | organisasjonsnummer                  | Organisasjonsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                     |
+| Oppgavegiver                   | organisasjonsnavn                    | Navn på oppgavegiver                                                                                                                            |
+| Oppgavegiver                   | organisasjonsnummer                  | Organisasjonsnummer på oppgavegiver                                                                                                             |
+| OppgaveoppsummeringBoligsameie | antallOppgaver                       | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
+| OppgaveoppsummeringBoligsameie | sumAndelFormue                       | Sum av andelFormue i leveransens oppgaver                                                                                                       |
+| OppgaveoppsummeringBoligsameie | sumAndelFradragsberettigedeKostnader | Sum av andelFradragsberettigedeKostnader i leveransens oppgaver                                                                                 |
+| OppgaveoppsummeringBoligsameie | sumAndelGjeld                        | Sum av andelGjeld i leveransens oppgaver                                                                                                        |
+| OppgaveoppsummeringBoligsameie | sumAndelSkattepliktigeInntekter      | Sum av andelSkattepliktigeInntekter i leveransens oppgaver                                                                                      |
+| SletteoppgaveBoligsameie       | matrikkelnummer                      | Boenhetens matrikkelnummer                                                                                                                      |
+| SletteoppgaveBoligsameie       | oppgaveeier                          | Eier av sletteoppgaven                                                                                                                          |
+| Matrikkelnummer                | bruksnummer                          | Del av matrikkelnummeret som sammen med kommunenummer, gårdsnummer og seksjonsnummer unikt identifiserer en eierseksjon                         |
+| Matrikkelnummer                | festenummer                          | Festenummer tilhørende eierseksjonen dersom eiendommen er festet                                                                                |
+| Matrikkelnummer                | gårdsnummer                          | Del av matrikkelnummeret som sammen med kommunenummer, bruksnummer og seksjonsnummer unikt identifiserer en eierseksjon                         |
+| Matrikkelnummer                | kommunenummer                        | Boenhetens kommunenummer                                                                                                                        |
+| Matrikkelnummer                | seksjonsnummer                       | Del av matrikkelnummeret som sammen med kommunenummer, gårdsnummer og bruksnummer unikt identifiserer en eierseksjon                            | 
 </TabItem>
+
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 I første omgang er test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
