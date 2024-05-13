@@ -101,7 +101,7 @@ Følgende testdata er tilgjengelige for denne tjenesten i Skatteetatens testmilj
 | 06889197542	| 2020, 2021, 2022 og 2023 |
 | 01898999749	| 2020, 2021, 2022 og 2023 |
 
-Disse har også skattemeldinger og skatteoppgjør for 2020, 2021 og 2022. Skattemeldinger og skatteoppgjør for 2023 kommer snart.
+Disse har også skattemeldinger og skatteoppgjør for 2020, 2021, 2022 og 2023.
   
 </TabItem>
 </Tabs>
