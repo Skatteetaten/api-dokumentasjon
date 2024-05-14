@@ -4,8 +4,8 @@ slug: /api/boligselskap
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, Boligselskap]
-keywords: [grunnlagsdata]
+tags: [ API, Boligselskap ]
+keywords: [ grunnlagsdata ]
 last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
@@ -16,6 +16,7 @@ hide_table_of_contents: true
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 For generell informasjon om tjenestene se egne sider om:
+
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Rettighetspakker](../om/rettighetspakker.md)
@@ -24,22 +25,151 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
+
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:boligselskap`
 
 ## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Boligselskap API - På vegne av`
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. 
 
 ## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
+
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+SwaggerHub
+
+API-et for boligselskap har bare ett endepunkt:
+
+* __POST innsending__: Mottar tredjepartsopplysninger for boligselskaper. Ett kall mot API-et er en rapportering for et
+  boligselskap gitt av en oppgavegiver og som gjelder et inntektsår.
+
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](boligselskap?tab=Feilkoder) for
+relaterte feilmeldinger.
+
+Se også [eksempler](boligselskap?tab=Eksempler) for de ulike endepunktene.
+
+### Parameter: idempotencyKey
+
+idempotencyKey parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en
+tilsvarende ny idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den
+samme repsponsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt
+kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
 
 ## Datakatalog
+
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
+## Innsending
+
+### Eksempel på request URL
+
 ```
-Legg inn eksempel
+https://{env}/api/boligselskap/v1/{inntektsår}/innsending
+```
+
+### JSON
+
+#### Eksempel på innsending
+
+```
+{
+  "leveranse": [
+    {
+      "oppgavegiversLeveranseReferanse": "Leveranse-1",
+      "inntektsaar": 2023,
+      "oppgavegiver": {
+        "organisasjonsnummer": "932061899",
+        "organisasjonsnavn": "SMÅ VERDIFULLE VALUTAER AS",
+        "kontaktinformasjon": {
+          "navn": "Realt Testutvikling",
+          "telefonnummer": "00000000",
+          "varselEpostadresse": "anonym.varsel@skatteetaten.no",
+          "varselSmsMobilnummer": "00000000"
+        }
+      },
+      "oppgaveoppsummering": {
+        "antallOppgaver": 2,
+        "sumAndelLikningsverdiBoenhet": 70000,
+        "sumAndelSkattepliktigeInntekter": 2500,
+        "sumAndelFradragsberettigedeKostnader": 0,
+        "sumAndelFormue": 1500,
+        "sumAndelGjeld": 39500
+      },
+      "leveransetype": "ordinaer",
+      "kildesystem": "SBS-1",
+      "oppgave": [
+        {
+          "oppgaveeier": {
+            "foedselsnummer": "00000000000",
+            "navn": "LJILJANA BORLAUG"
+          },
+          "eiertid": {
+            "start": "0101",
+            "slutt": "3112"
+          },
+          "eierandel": {
+            "eierandelTeller": 2,
+            "eierandelNevner": 10
+          },
+          "boenhet": {
+            "aksjeboenhetsnummer": 11,
+            "kommunenummer": "0301",
+            "bolignummer": "U1111",
+            "gatenavnOgHusnummer": "Øvre Sveig 799 Å"
+          },
+          "bruksoverlatt": false,
+          "andelLikningsverdiBoenhet": 20000,
+          "andelSkattepliktigeInntekter": 1000,
+          "andelFradragsberettigedeKostnader": 1500,
+          "andelFormue": 135183,
+          "andelGjeld": 6500,
+          "boligselskapsFormaal": "bolig"
+        },
+        {
+          "oppgaveeier": {
+            "foedselsnummer": "00000000000",
+            "navn": "ODD TORE JOSEPH"
+          },
+          "eiertid": {
+            "start": "0101",
+            "slutt": "3112"
+          },
+          "eierandel": {
+            "eierandelTeller": 8,
+            "eierandelNevner": 10
+          },
+          "boenhet": {
+            "aksjeboenhetsnummer": 11,
+            "kommunenummer": "0301",
+            "bolignummer": "U1111",
+            "gatenavnOgHusnummer": "Øvre Sveig 799 Å"
+          },
+          "bruksoverlatt": false,
+          "andelLikningsverdiBoenhet": 50000,
+          "andelSkattepliktigeInntekter": 1500,
+          "andelFradragsberettigedeKostnader": 0,
+          "andelFormue": 540731,
+          "andelGjeld": 33000,
+          "boligselskapsFormaal": "bolig"
+        }
+      ],
+      "sletteoppgave": []
+    }
+  ]
+}
+```
+
+#### Eksempel på respons
+
+```
+{
+  "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
+  "dialogelementId": "018f5297-fde1-7301-af34-df1bc3fff6b5",
+  "oppgavegiversLeveranseReferanse": "leveranse-1",
+  "antallOppgaver": 11
+}
 ```
 
 </TabItem>
@@ -63,7 +193,8 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
-Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi feltene.
+Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi
+feltene.
 
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -73,7 +204,7 @@ Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det
 | GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
 | GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
 | GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
-  
+
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
@@ -125,11 +256,21 @@ Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det
 | SletteoppgaveBoligselskap       | andelsnummer                         | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                                                                                                                                                                                                        |
 | SletteoppgaveBoligselskap       | oppgaveeier                          | Eier av sletteoppgaven                                                                                                                                                                                                                                                               |
 
-
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Her kan du legge inn tekst om test av tjenesten. 
-  
+I første omgang er test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
+med å pilotere løsningene.
+
+### Tenor testdatasøk
+
+Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for
+denne tjenesten. Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
+
+### Testdata
+
+Det finnes foreløpig ingen testdata for denne tjenesten. Denne siden oppdateres fortløpende ettersom testdata blir
+tilgjengelig.
+
 </TabItem>
 </Tabs>
