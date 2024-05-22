@@ -546,6 +546,15 @@ det vil medføre nedetid i Aktiv konto API og tjenesten vil være utilgjengelige
         <category label="Aktiv konto" term="Aktiv konto"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Driftsproblemer løst]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer-løst</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer-løst"/>
+        <updated>2023-05-22T12:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Feilen er rettet og systemene er oppe igjen]]></summary>
+        <content type="html"><![CDATA[<p>Feilen er rettet og systemene er oppe igjen</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Vedlikehold]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/05/08/driftsvarsel</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2023/05/08/driftsvarsel"/>
