@@ -2,11 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-05-22T08:56:00.000Z</updated>
+    <updated>2024-05-22T12:30:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Driftsproblemer løst]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer-løst</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer-løst"/>
+        <updated>2024-05-22T12:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Feilen er rettet og systemene er oppe igjen]]></summary>
+        <content type="html"><![CDATA[<p>Feilen er rettet og systemene er oppe igjen</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Driftsvarsel]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer</id>
@@ -544,15 +553,6 @@ Dette gjelder for konsumenter som benytter Skattemelding-api eller som gjør opp
 det vil medføre nedetid i Aktiv konto API og tjenesten vil være utilgjengelige i dette tidsrommet.</p>]]></content>
         <category label="Drift" term="Drift"/>
         <category label="Aktiv konto" term="Aktiv konto"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Driftsproblemer løst]]></title>
-        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer-løst</id>
-        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer-løst"/>
-        <updated>2023-05-22T12:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Feilen er rettet og systemene er oppe igjen]]></summary>
-        <content type="html"><![CDATA[<p>Feilen er rettet og systemene er oppe igjen</p>]]></content>
-        <category label="Drift" term="Drift"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Vedlikehold]]></title>
