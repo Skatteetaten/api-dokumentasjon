@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-05-27T00:00:00.000Z</updated>
+    <updated>2024-05-27T12:50:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Varsel om driftshendelser flyttes til Skatteetaten statusside]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/27/ny-statusside</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/27/ny-statusside"/>
+        <updated>2024-05-27T12:50:00.000Z</updated>
+        <summary type="html"><![CDATA[Fra i dag 27. mai vil vi legge ut driftsvarsler for Skatteetatens delingstjenester på Skatteetatens statusside. Frem til 1. september vil vi legge ut driftsvarsler både på statussiden og i RSS-feed på Github. Fra og med 1. september vil Skatteetatens statusside være eneste kanal for driftsvarsler.]]></summary>
+        <content type="html"><![CDATA[<p>Fra i dag 27. mai vil vi legge ut driftsvarsler for Skatteetatens delingstjenester på <!-- -->. Frem til 1. september vil vi legge ut driftsvarsler både på statussiden og i RSS-feed på Github. Fra og med 1. september vil Skatteetatens statusside være eneste kanal for driftsvarsler.</p><p>Bruksvilkår for Skatteetatens delingstjenester vil endres som følge av overgangen til Skatteetatens statusside. Endringene består i at Skatteetatens varslingskanal for driftsvarsler endres fra Github til Skatteetatens statusside. I tillegg vil skrivefeil mv. rettes. Revidert versjon av bruksvilkårene vil bli publisert minst én måned før ikrafttredelse.</p><p>RSS-feed på Github vil bestå også etter 1. september, men vil ikke lengre inneholde driftsvarsler for Skatteetatens delingstjenester. Den vil fremdeles inneholde nyheter og varsler om planlagte endringer for Skatteetatens delingstjenester og varsler for innsending av MVA-melding.&nbsp;</p><p>Vi anbefaler at du allerede i dag går til <!-- --> for å starte ditt abonnement på varsler.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+        <category label="status" term="status"/>
+        <category label="drift" term="drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[kravogbetalinger-api ustabilitet i tjenesten]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/27/driftsvarsel</id>
