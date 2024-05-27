@@ -1,7 +1,7 @@
 ---
 title: "Varsel om driftshendelser flyttes til Skatteetaten statusside"
 tags: [nyhet, status, drift]
-date: 2024-05-27T12:40:00
+date: 2024-04-27T12:45:00
 ---
 Fra i dag 27. mai vil vi legge ut driftsvarsler for Skatteetatens delingstjenester på [Skatteetatens statusside](https://status.skatteetaten.no/). Frem til 1. september vil vi legge ut driftsvarsler både på statussiden og i RSS-feed på Github. Fra og med 1. september vil Skatteetatens statusside være eneste kanal for driftsvarsler.
 
