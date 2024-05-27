@@ -2,11 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-05-22T12:30:00.000Z</updated>
+    <updated>2024-05-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[kravogbetalinger-api ustabilitet i tjenesten]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/27/driftsvarsel</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/27/driftsvarsel"/>
+        <updated>2024-05-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Vi har for tiden ustabil drift på kravogbetalinger-api. Det jobbes med problemløsing.]]></summary>
+        <content type="html"><![CDATA[<p>Vi har for tiden ustabil drift på kravogbetalinger-api. Det jobbes med problemløsing.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Driftsproblemer løst]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer-løst</id>
