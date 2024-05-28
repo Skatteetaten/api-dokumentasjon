@@ -286,7 +286,27 @@ som er mest oppdatert.
 
 ## Informasjonsmodell - skjema
 
-[![SummertSkattegrunnlag](../../static/download/SummertSkattegrunnlag.png)](../../static/download/SummertSkattegrunnlag.png)
+### Oversikt
+[![SummertSkattegrunnlag](../../static/download/Informasjonsmodell_Summertskattegrunnlag_SummertSkattegrunnlag.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_SummertSkattegrunnlag.png)
+
+### Eiendeler og faste eiendommer
+[![EiendelerOgFasteEiendommer](../../static/download/Informasjonsmodell_Summertskattegrunnlag_EiendelerOgFasteEiendommer.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_/EiendelerOgFasteEiendommer.png)
+
+### Bank, lån og forsikring
+[![BankLånOgForsikring](../../static/download/Informasjonsmodell_Summertskattegrunnlag_BankLaanOgForsikring.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_BankLaanOgForsikring.png)
+
+### Arbeid, trygd og pensjon 
+[![ArbeidTrygdOgPensjon](../../static/download/Informasjonsmodell_Summertskattegrunnlag_ArbeidTrygdOgPensjon.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_ArbeidTrygdOgPensjon.png)
+
+### Finans 
+[![Finans](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Finans.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Finans.png)
+
+### Næring 
+[![Næring](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Naering.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Naering.png)
+
+### Formue og inntekt i selskap med deltakerfastsetting 
+[![FormueOgInntektISelskapMedDeltakerfastsetting](../../static/download/Informasjonsmodell_Summertskattegrunnlag_FormueOgInntektISelskapMedDeltakerfastsetting.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_FormueOgInntektISelskapMedDeltakerfastsetting.png)
+
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
