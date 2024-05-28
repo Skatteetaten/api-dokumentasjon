@@ -19,14 +19,13 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:boligselskap`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapportering/boligselskap`
 
 ## Delegering
 
@@ -66,7 +65,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://{env}/api/boligselskap/v1/{inntektsår}/innsending
+https://boligselskap.tredjepartsopplysning.api.{env}.no/v1/{inntektsår}/innsending
 ```
 
 ### JSON

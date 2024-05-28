@@ -19,14 +19,13 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:boligsameie`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapportering/boligsameie`
 
 ## Delegering
 
@@ -66,7 +65,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://{env}/api/boligsameie/v1/{inntektsår}/innsending
+https://boligsameie.tredjepartsopplysning.api.{env}.no/v1/{inntektsår}/innsending
 ```
 
 ### JSON
