@@ -82,15 +82,15 @@ Versjon 2 av API-et kan kreve [samtykke](../om/samtykke.md). Datakonsumenter med
 summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med
 støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
-| Tjenestekode | Formål                           | Kommentar                   |
-|--------------|----------------------------------|-----------------------------|
-| 4628_210607  | Kreves for rettighetspakke `sbl` | Sanert tjenestekode: 4628_1 |
+| Tjenestekode | Formål                           |
+|--------------|----------------------------------|
+| 4628_210607  | Kreves for rettighetspakke `sbl` |           
 
 For denne tjenesten er det en parameter som må følge med:
 
-| Parameter               | Forklaring                   | Eksempelverdi |
-|-------------------------|------------------------------|---------------|
-| 4628_210607_inntektsaar | Parameter for Skattegrunnlag | 2022          |
+| Parameter               | Forklaring                                 | Eksempelverdi |
+|-------------------------|--------------------------------------------|---------------|
+| 4628_210607_inntektsaar | Parameter for skattegrunnlagets inntektsår | 2022          |
 
 ## Støttetjenester
 
