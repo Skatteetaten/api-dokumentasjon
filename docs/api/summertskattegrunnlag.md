@@ -262,7 +262,8 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 | SSG-007  | 404             | Ikke treff på oppgitt personidentifikator.                                        |
 | SSG-008  | 404             | Ingen summert skattegrunnlag funnet på oppgitt personidentifikator og inntektsår. |
 | SSG-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                        |
-| SSG-010  | 410             | Skattegrunnlag finnes ikke lenger.                                                |
+| SSG-010  | 403             | Feil i forbindelse med samtykketoken.                                             |
+| SSG-011  | 410             | Skattegrunnlag finnes ikke lenger.                                                |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
@@ -287,24 +288,31 @@ som er mest oppdatert.
 ## Informasjonsmodell - skjema
 
 ### Oversikt
+
 [![SummertSkattegrunnlag](../../static/download/Informasjonsmodell_Summertskattegrunnlag_SummertSkattegrunnlag.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_SummertSkattegrunnlag.png)
 
 ### Eiendeler og faste eiendommer
+
 [![EiendelerOgFasteEiendommer](../../static/download/Informasjonsmodell_Summertskattegrunnlag_EiendelerOgFasteEiendommer.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_/EiendelerOgFasteEiendommer.png)
 
 ### Bank, lån og forsikring
+
 [![BankLånOgForsikring](../../static/download/Informasjonsmodell_Summertskattegrunnlag_BankLaanOgForsikring.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_BankLaanOgForsikring.png)
 
-### Arbeid, trygd og pensjon 
+### Arbeid, trygd og pensjon
+
 [![ArbeidTrygdOgPensjon](../../static/download/Informasjonsmodell_Summertskattegrunnlag_ArbeidTrygdOgPensjon.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_ArbeidTrygdOgPensjon.png)
 
-### Finans 
+### Finans
+
 [![Finans](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Finans.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Finans.png)
 
-### Næring 
+### Næring
+
 [![Næring](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Naering.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_Naering.png)
 
-### Formue og inntekt i selskap med deltakerfastsetting 
+### Formue og inntekt i selskap med deltakerfastsetting
+
 [![FormueOgInntektISelskapMedDeltakerfastsetting](../../static/download/Informasjonsmodell_Summertskattegrunnlag_FormueOgInntektISelskapMedDeltakerfastsetting.png)](../../static/download/Informasjonsmodell_Summertskattegrunnlag_FormueOgInntektISelskapMedDeltakerfastsetting.png)
 
 
