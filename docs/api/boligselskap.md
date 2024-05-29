@@ -10,7 +10,7 @@ last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten brukes til innsending av Boligselskap.</summary>
+<summary>Tjeneste for innrapportering av tredjepartsopplysninger for boligselskap.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -65,7 +65,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://boligselskap.tredjepartsopplysning.api.{env}.no/v1/{inntektsår}/innsending
+https://boligselskap.innrapportering.api.{env}.no/v1/{inntektsår}/innsending
 ```
 
 ### JSON
@@ -79,8 +79,7 @@ https://boligselskap.tredjepartsopplysning.api.{env}.no/v1/{inntektsår}/innsend
       "oppgavegiversLeveranseReferanse": "Leveranse-1",
       "inntektsaar": 2023,
       "oppgavegiver": {
-        "organisasjonsnummer": "932061899",
-        "organisasjonsnavn": "SMÅ VERDIFULLE VALUTAER AS",
+        "organisasjonsnummer": "932061899",     
         "kontaktinformasjon": {
           "navn": "Realt Testutvikling",
           "telefonnummer": "00000000",
@@ -243,7 +242,6 @@ feltene.
 | Oppgaveeier                     | navn                                 | Navn på oppgaveeier                                                                                                                                                                                                                                                                  |
 | Oppgaveeier                     | organisasjonsnummer                  | Organisasjonsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                                                                                                                                                          |
 | Oppgavegiver                    | kontaktinformasjon                   | Kontaktinformasjon for oppgavegiver                                                                                                                                                                                                                                                  |
-| Oppgavegiver                    | organisasjonsnavn                    | Navn på oppgavegiver                                                                                                                                                                                                                                                                 |
 | Oppgavegiver                    | organisasjonsnummer                  | Organisasjonsnummer på oppgavegiver                                                                                                                                                                                                                                                  |
 | OppgaveoppsummeringBoligselskap | antallOppgaver                       | Totalt antall oppgaver i leveransens oppgaver                                                                                                                                                                                                                                        |
 | OppgaveoppsummeringBoligselskap | sumAndelFormue                       | Sum av andelFormue i leveransens oppgaver                                                                                                                                                                                                                                            |

@@ -10,7 +10,7 @@ last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten brukes til innsending av Boligsameie.</summary>
+<summary>Tjeneste for innrapportering av tredjepartsopplysninger for boligsameie.</summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -65,7 +65,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://boligsameie.tredjepartsopplysning.api.{env}.no/v1/{inntektsår}/innsending
+https://boligsameie.innrapportering.api.{env}.no/v1/{inntektsår}/innsending
 ```
 
 ### JSON
@@ -78,8 +78,7 @@ https://boligsameie.tredjepartsopplysning.api.{env}.no/v1/{inntektsår}/innsendi
     "oppgavegiversLeveranseReferanse": "Leveranse-1",
     "leveransetype": "ordinaer",
     "oppgavegiver": {
-      "organisasjonsnummer": "819897522",
-      "organisasjonsnavn": "SPENNENDE MENINGSFULLE GÅRDER ESEK",
+      "organisasjonsnummer": "819897522",      
       "kontaktinformasjon": {
         "navn": "Realt Testutvikling",
         "telefonnummer": "00000000",
@@ -213,7 +212,7 @@ feltene.
 | Oppgaveeier                    | fødselsnummer                        | Fødselsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                           |
 | Oppgaveeier                    | navn                                 | Navn på oppgaveeier                                                                                                                             |
 | Oppgaveeier                    | organisasjonsnummer                  | Organisasjonsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                     |
-| Oppgavegiver                   | organisasjonsnavn                    | Navn på oppgavegiver                                                                                                                            |
+| Oppgavegiver                   | kontaktinformasjon                   | Kontaktinformasjon for oppgavegiver                                                                                                             |
 | Oppgavegiver                   | organisasjonsnummer                  | Organisasjonsnummer på oppgavegiver                                                                                                             |
 | OppgaveoppsummeringBoligsameie | antallOppgaver                       | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
 | OppgaveoppsummeringBoligsameie | sumAndelFormue                       | Sum av andelFormue i leveransens oppgaver                                                                                                       |
