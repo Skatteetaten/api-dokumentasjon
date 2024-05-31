@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-05-28T07:50:00.000Z</updated>
+    <updated>2024-05-31T10:05:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Varsel om sanering av gamle URL-er, Spesifisert summert skattegrunnlag API og Summert skattegrunnlag API V1]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering"/>
+        <updated>2024-05-31T10:05:00.000Z</updated>
+        <summary type="html"><![CDATA[Alle Skatteetatens API-er nå tilgjengelig på ny URL i både Test og Prod og de gamle URL-ene vil saneres 17. oktober 2024.]]></summary>
+        <content type="html"><![CDATA[<p>Alle Skatteetatens API-er nå tilgjengelig på <!-- --> og de gamle URL-ene vil saneres 17. oktober 2024. </p><p>Summert skattegrunnlag API V2 er også tilgjengelig i Test og Prod, og <!-- -->. Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API saneres også 17. oktober 2024, og konsumentene må ha tatt i bruk ny tjeneste på ny URL innen den tid.</p><p>Vi anbefaler at endringene testes først. For konsumenter som ikke har testet på en stund, så minner vi om å bruke TEST for token mot Maskinporten, ikke VER2.</p><p> på vanlig måte dersom du har spørsmål til endringen. Konsumenter som er omfattet av et segmentsamarbeid bes kontakte egen segmentansvarlig.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+        <category label="summertskattegrunnlag" term="summertskattegrunnlag"/>
+        <category label="url" term="url"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Sammenslåing av Summert skattegrunnlag API og Spesifisert summert skattegrunnlag API]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/28/summertskattegrunnlag-v2</id>
