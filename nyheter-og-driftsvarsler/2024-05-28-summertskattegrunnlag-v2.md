@@ -1,6 +1,6 @@
 ---
 title: "Sammenslåing av Summert skattegrunnlag API og Spesifisert summert skattegrunnlag API"
-tags: [nyhet, skatteoppgjør, skattegrunnlag]
+tags: [nyhet, skatteoppgjør, skattegrunnlag, summertskattegrunnlag]
 date: 2024-05-28T07:50:00
 ---
 
