@@ -15,6 +15,8 @@
         <summary type="html"><![CDATA[Alle Skatteetatens API-er nå tilgjengelig på ny URL i både Test og Prod og de gamle URL-ene vil saneres 17. oktober 2024.]]></summary>
         <content type="html"><![CDATA[<p>Alle Skatteetatens API-er nå tilgjengelig på <!-- --> og de gamle URL-ene vil saneres 17. oktober 2024. </p><p>Summert skattegrunnlag API V2 er også tilgjengelig i Test og Prod, og <!-- -->. Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API saneres også 17. oktober 2024, og konsumentene må ha tatt i bruk ny tjeneste på ny URL innen den tid.</p><p>Vi anbefaler at endringene testes først. For konsumenter som ikke har testet på en stund, så minner vi om å bruke TEST for token mot Maskinporten, ikke VER2.</p><p> på vanlig måte dersom du har spørsmål til endringen. Konsumenter som er omfattet av et segmentsamarbeid bes kontakte egen segmentansvarlig.</p>]]></content>
         <category label="nyhet" term="nyhet"/>
+        <category label="skatteoppgjør" term="skatteoppgjør"/>
+        <category label="skattegrunnlag" term="skattegrunnlag"/>
         <category label="summertskattegrunnlag" term="summertskattegrunnlag"/>
         <category label="url" term="url"/>
     </entry>

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[2841],{17497:a=>{a.exports=JSON.parse('{"label":"skattegrunnlag","permalink":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags/skattegrunnlag","allTagsPath":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags","count":1}')}}]);
