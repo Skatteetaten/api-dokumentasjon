@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[9297],{85001:a=>{a.exports=JSON.parse('{"label":"summertskattegrunnlag","permalink":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags/summertskattegrunnlag","allTagsPath":"/api-dokumentasjon/nyheter-og-driftsvarsler/tags","count":1}')}}]);

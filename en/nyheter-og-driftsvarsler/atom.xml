@@ -29,6 +29,7 @@
         <category label="nyhet" term="nyhet"/>
         <category label="skatteoppgjør" term="skatteoppgjør"/>
         <category label="skattegrunnlag" term="skattegrunnlag"/>
+        <category label="summertskattegrunnlag" term="summertskattegrunnlag"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Varsel om driftshendelser flyttes til Skatteetaten statusside]]></title>
