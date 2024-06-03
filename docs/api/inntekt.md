@@ -52,22 +52,23 @@ Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhet
 inntekter som filtreres vekk før data utleveres. Inntekter som ikke skal utleveres for en rettighetspakke fjernes i sin
 helhet.
 
-| Navn på rettighetspakke    | Egenskaper ved rettighetspakke                                                                                                                                           |
-|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| afp                        | Hjemmel                                                                                                                                                                  |
-| digisos                    | Hjemmel                                                                                                                                                                  |
-| gff                        | Hjemmel                                                                                                                                                                  |
-| husbanken                  | Hjemmel                                                                                                                                                                  |
-| kommuneBoligsosialeFormaal | Hjemmel                                                                                                                                                                  |
-| laanekassen                | Hjemmel                                                                                                                                                                  |
-| ldir                       | Hjemmel                                                                                                                                                                  |
-| ldirReindriftstilskudd     | Hjemmel                                                                                                                                                                  |
-| otp                        | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
-| pensjonskasse              | Hjemmel                                                                                                                                                                  |
-| saernamsmann               | Hjemmel                                                                                                                                                                  |
-| spkBoliglaan               | Hjemmel                                                                                                                                                                  |
-| sbl                        | Krever samtykke                                                                                                                                                          |
-| udi                        | Hjemmel                                                                                                                                                                  |
+| Navn på rettighetspakke               | Egenskaper ved rettighetspakke                                                                                                                                           |
+|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| afp                                   | Hjemmel                                                                                                                                                                  |
+| digisos                               | Hjemmel                                                                                                                                                                  |
+| gff                                   | Hjemmel                                                                                                                                                                  |
+| husbanken                             | Hjemmel                                                                                                                                                                  |
+| kommuneBoligsosialeFormaal            | Hjemmel                                                                                                                                                                  |
+| laanekassen                           | Hjemmel                                                                                                                                                                  |
+| ldir                                  | Hjemmel                                                                                                                                                                  |
+| ldirReindriftstilskudd                | Hjemmel                                                                                                                                                                  |
+| otp                                   | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
+| pensjonskasse                         | Hjemmel                                                                                                                                                                  |
+| saernamsmann                          | Hjemmel                                                                                                                                                                  |
+| spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
+| sbl                                   | Krever samtykke                                                                                                                                                          |
+| udi                                   | Hjemmel                                                                                                                                                                  |
+| fiskeridirektoratetKontrollmanntall   | Hjemmel                                                                                                                                                                  |
 
 ## Samtykke
 
