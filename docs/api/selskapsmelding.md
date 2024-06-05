@@ -38,8 +38,8 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-api/) på SwaggerHub.
 
 ## Datakatalog
+[Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/66602478f92ddf67bf17460d) i Felles datakatalog.
 
-Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
