@@ -41,6 +41,7 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 | Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API | skatteetaten:mvaregisteravgiftssubjekt                                                                                                                                                               |
 | Næringsspesifikasjon hendelser API                                    | skatteetaten:naeringsspesifikasjon                                                                                                                                                                   |
 | Pensjonsgivende inntekt for folketrygden hendelser API                | skatteetaten:pensjonsgivendeinntektforfolketrygden                                                                                                                                                   |
+| Selskapsmelding hendelser API                                           | skatteetaten:selskapsmelding                                                                                                                         
 | Skatteoppgjør hendelser API                                           | skatteetaten:spesifisertsummertskattegrunnlag, skatteetaten:summertskattegrunnlag, skatteetaten:beregnetskatt, skatteetaten:avregning, skatteetaten:skatteplikt, skatteetaten:pensjonsgivendeinntekt, skatteetaten:trukketkildeskattpaaloenn |
 | Skatteoppgjør upersonlig hendelser API                                | skatteetaten:beregnetskattupersonlig, skatteetaten:skatteberegningsgrunnlagupersonlig, skatteetaten:summertskattegrunnlagupersonlig, skatteetaten:skattepliktupersonlig                              |
 | Skattemelding fastsatt hendelser API                                  | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag                                                                                        |
@@ -65,6 +66,7 @@ hendelseslistene på SwaggerHub:
 * [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-register-avgiftssubjekter-hendelser-api/)
 * [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-hendelser-api)
 * [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
+* [Selskapsmelding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-hendelser-api)
 * [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-hendelser-api)
 * [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-upersonlig-hendelser-api)
 * [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-fastsatt-hendelser-api)
