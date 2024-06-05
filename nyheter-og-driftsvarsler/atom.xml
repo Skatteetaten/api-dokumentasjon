@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-05-31T10:05:00.000Z</updated>
+    <updated>2024-06-05T11:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Planlagt vedlikehold på testmiljøene 08.06.2024]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/06/05/Testmiljø-vedlikehold</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/06/05/Testmiljø-vedlikehold"/>
+        <updated>2024-06-05T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Det skal utføres nødvendig vedlikehold på testmiljøene fra lørdag 8.juni kl. 09.00 til søndag 9.juni kl. 16.00]]></summary>
+        <content type="html"><![CDATA[<p>Det skal utføres nødvendig vedlikehold på testmiljøene fra lørdag 8.juni kl. 09.00 til søndag 9.juni kl. 16.00
+Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Varsel om sanering av gamle URL-er, Spesifisert summert skattegrunnlag API og Summert skattegrunnlag API V1]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering</id>
