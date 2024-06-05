@@ -18,6 +18,17 @@ Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
         <category label="Drift" term="Drift"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Vedlikehold i nettverk 11. juni 2024 i perioden fra kl 22:00 til 00:00]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/06/05/vedlikehold</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/06/05/vedlikehold"/>
+        <updated>2024-06-05T10:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Det utføres endringer i nettverk 11. juni i perioden fra kl 2200. Det kan oppleves ustabilitet ved kall mot API.]]></summary>
+        <content type="html"><![CDATA[<p>Det utføres endringer i nettverk 11. juni i perioden fra kl 22:00 til 00:00. Det kan oppleves ustabilitet ved kall mot API.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+        <category label="driftsvarsel" term="driftsvarsel"/>
+        <category label="drift" term="drift"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Varsel om sanering av gamle URL-er, Spesifisert summert skattegrunnlag API og Summert skattegrunnlag API V1]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/31/sanering</id>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/31/sanering"/>
