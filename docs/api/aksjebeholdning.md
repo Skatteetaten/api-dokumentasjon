@@ -41,9 +41,10 @@ på SwaggerHub.
 
 ## Rettighetspakker
 
-| Navn på rettighetspakke |	
-|-------------------------|
-| offentligmedhjemmel     |
+| Navn på rettighetspakke             |	
+|-------------------------------------|
+| offentligmedhjemmel                 |
+| fiskeridirektoratetkontrollmanntall |
 
 ## Datakatalog
 
