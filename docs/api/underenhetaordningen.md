@@ -45,6 +45,7 @@ på SwaggerHub.
 | Navn på rettighetspakke |	
 |-------------------------|
 | nav                     |
+| ssb                     |
 
 ## Støttetjenester
 
