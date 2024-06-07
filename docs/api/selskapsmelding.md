@@ -37,9 +37,21 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Selskapsmelding API 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-api/) på SwaggerHub.
 
+## Rettighetspakker
+
+| Navn på rettighetspakke |	
+|-------------------------|
+| ssb                     |
+
+## Støttetjenester
+
+### Hendelser
+
+For å følge med på endringer tilbyr vi
+en [støttetjeneste for hendelsesliste](./hendelser.md): `Selskapsmelding hendelser API`
+
 ## Datakatalog
 [Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/66602478f92ddf67bf17460d) i Felles datakatalog.
-
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
