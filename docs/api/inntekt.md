@@ -63,11 +63,13 @@ helhet.
 | laanekassen                           | Hjemmel                                                                                                                                                                  |
 | ldir                                  | Hjemmel                                                                                                                                                                  |
 | ldirReindriftstilskudd                | Hjemmel                                                                                                                                                                  |
+| nav                                   | Hjemmel                                                                                                                                                                  |
 | otp                                   | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
 | pensjonskasse                         | Hjemmel                                                                                                                                                                  |
 | saernamsmann                          | Hjemmel                                                                                                                                                                  |
 | spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
 | sbl                                   | Krever samtykke                                                                                                                                                          |
+| ssb                                   | Hjemmel                                                                                                                                                                  |
 | udi                                   | Hjemmel                                                                                                                                                                  |
 
 ## Samtykke
