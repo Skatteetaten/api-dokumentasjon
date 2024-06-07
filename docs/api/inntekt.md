@@ -56,6 +56,7 @@ helhet.
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | afp                                   | Hjemmel                                                                                                                                                                  |
 | digisos                               | Hjemmel                                                                                                                                                                  |
+| fiskeridirektoratetkontrollmanntall   | Hjemmel                                                                                                                                                                  |
 | gff                                   | Hjemmel                                                                                                                                                                  |
 | husbanken                             | Hjemmel                                                                                                                                                                  |
 | kommuneBoligsosialeFormaal            | Hjemmel                                                                                                                                                                  |
@@ -68,7 +69,6 @@ helhet.
 | spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
 | sbl                                   | Krever samtykke                                                                                                                                                          |
 | udi                                   | Hjemmel                                                                                                                                                                  |
-| fiskeridirektoratetKontrollmanntall   | Hjemmel                                                                                                                                                                  |
 
 ## Samtykke
 
