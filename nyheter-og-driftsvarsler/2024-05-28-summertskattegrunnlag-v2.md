@@ -21,7 +21,7 @@ Vi anbefaler at endringen testes først. For konsumenter som ikke har testet på
 - Feltet "registreringstidpunkt" har byttet navn til "ajourholdstidspunkt".
 - Modellen utvides med nye felter som gjøres tilgjengelig for konsumenter som har behandlingsgrunnlag for disse opplysningene: andelSkattefritt, andelOverfoertFraBarn, skjønnsfastsatt, svalbardSkjønnsfastsatt
 - Inntektsår 2016 er ikke lengre støttet.
-- {stadie} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}
+- \{stadie\} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}
 
 **For konsumenter som i dag benytter Spesifisert summert skattegrunnlag API**
 
@@ -30,7 +30,7 @@ Vi anbefaler at endringen testes først. For konsumenter som ikke har testet på
 - Scopet skatteetaten:spesifisertsummertskattegrunnlag kan fremdeles benyttes, men man kan også ta i bruk skatteetaten:summertskattegrunnlag.
 - Feltet "registreringstidpunkt" har byttet navn til "ajourholdstidspunkt".
 - Modellen utvides med nye felter som gjøres tilgjengelig for konsumenter som har behandlingsgrunnlag for disse opplysningene: andelSkattefritt, andelOverfoertFraBarn
-- {stadie} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}
+- \{stadie\} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}
  
 **Sanering av eksisterende tjenester**
 

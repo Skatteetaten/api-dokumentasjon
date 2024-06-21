@@ -48,7 +48,7 @@ API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API sp
 * [Summert skattegrunnlag API - versjon 1](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api/1.0.1)
 * [Summert skattegrunnlag API - versjon 2](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api/2.0.0)
 
-I versjon 2 er {stadie} en obligatorisk del av URL, og konsumenter som hittil ikke har oppgitt stadie skal benytte
+I versjon 2 er \{stadie\} en obligatorisk del av URL, og konsumenter som hittil ikke har oppgitt stadie skal benytte
 stadie "oppgjoer".
 
 ## Rettighetspakker
