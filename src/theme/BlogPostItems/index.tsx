@@ -4,6 +4,7 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 import Link from "@docusaurus/Link";
 import Head from "@docusaurus/Head";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { useDateTimeFormat } from "@docusaurus/theme-common/internal";
 
 import Ingress from "../../../nyheter-og-driftsvarsler/_varsler-ingress.md";
 import IngressEN from "../../../nyheter-og-driftsvarsler/_varsler-ingress-en.md";
@@ -46,8 +47,17 @@ export default function BlogPostItems({
 
   const { ingress } = hentTekster(context.i18n.currentLocale);
 
+  const dateTimeFormat = useDateTimeFormat({
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+
+  const formatDate = (date: string) => dateTimeFormat.format(new Date(date));
+
   const data = items.map((varsel) => ({
-    date: varsel.content.metadata.formattedDate,
+    date: formatDate(varsel.content.metadata.date),
     title: (
       <Link to={varsel.content.metadata.permalink}>
         {varsel.content.metadata.frontMatter.title}
