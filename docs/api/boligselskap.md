@@ -265,6 +265,18 @@ feltene.
 I første omgang er test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
 med å pilotere løsningene.
 
+### Testmiljøer
+
+Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/boligselskap-api/0.0.1).
+
+Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
+* DialogPorten
+* Autentisering - Maskinporten
+* Autorisering - systembruker
+* Altinn innboks
+
+Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skatteetaten og Digdir.
+
 ### Tenor testdatasøk
 
 Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for 
@@ -273,7 +285,6 @@ denne tjenesten. Men egenskaper ved enhetene som har testdata kan søkes frem i 
 ### Testdata
 
 Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette.
-
 Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
 
 Det finnes foreløpig ingen testdata for denne tjenesten. Denne siden oppdateres fortløpende ettersom testdata blir
