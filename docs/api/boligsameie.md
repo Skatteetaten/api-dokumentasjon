@@ -19,22 +19,30 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
+* [Systemtilgang](../om/systemtilgang.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapportering/boligsameie`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringboligsameie`
 
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
 
+## Systemtilgang
+
+Bruk av API-et krever systemtilgang, som er ny funksjonalitet i Maskinporten levert av Digdir. 
+Informasjon vedr. dette finnes [her](../om/systemtilgang.md). 
+
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-SwaggerHub
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/boligsameie-api/0.0.1)
+
+Oppbygning av URL-er og åpninger i en evt. brannmur er beskrevet her [URL-er](../om/url.md)
 
 API-et for boligsameie har bare ett endepunkt:
 
@@ -50,7 +58,7 @@ Se også [eksempler](boligsameie?tab=Eksempler) for de ulike endepunktene.
 
 idempotencyKey parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en
 tilsvarende ny idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den
-samme repsponsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt
+samme responsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt
 kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
 
 ## Datakatalog
@@ -65,7 +73,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://boligsameie.innrapportering.api.{env}.no/v1/{inntektsår}/innsending
+https://innrapporteringboligsameie.api.{env}.no/v1/{inntektsaar}
 ```
 
 ### JSON
@@ -235,10 +243,14 @@ med å pilotere løsningene.
 
 ### Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for
+Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for 
 denne tjenesten. Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ### Testdata
+
+Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette.
+
+Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
 
 Det finnes foreløpig ingen testdata for denne tjenesten. Denne siden oppdateres fortløpende ettersom testdata blir
 tilgjengelig.

@@ -22,6 +22,8 @@ const sidebars = {
         "api/avregning",
         "api/beregnetskatt",
         "api/beregnetskattupersonlig",
+        "api/boligsameie",
+        "api/boligselskap",
         "api/bsu",
         "api/formuesgrunnlageiendomsskatt",
         "api/hendelser",
