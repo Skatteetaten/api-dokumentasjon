@@ -22,21 +22,21 @@
     "@mdx-js/react": "3.0.1",
     "@skatteetaten/frontend-components": "10.0.0",
     "cheerio": "1.0.0-rc.12",
-    "classnames": "2.3.2",
+    "classnames": "2.5.1",
     "clsx": "1.2.1",
     "docusaurus-plugin-sass": "0.2.5",
     "lunr": "2.3.9",
-    "lunr-languages": "1.12.0",
+    "lunr-languages": "1.14.0",
     "prism-react-renderer": "2.3.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "sass": "1.65.1"
+    "sass": "1.77.6"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.4.0",
     "@docusaurus/tsconfig": "3.4.0",
-    "@types/cheerio": "0.22.31",
-    "@types/lunr": "2.3.4",
+    "@types/cheerio": "0.22.35",
+    "@types/lunr": "2.3.7",
     "typescript": "5.5.2"
   },
   "browserslist": {
