@@ -42,6 +42,7 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatte
 
 | Navn på rettighetspakke |	
 |-------------------------|
+| ldirTotalregnskap       |
 | ssb                     |
   
 ## Støttetjenester
