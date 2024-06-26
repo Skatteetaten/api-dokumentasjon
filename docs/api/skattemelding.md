@@ -11,6 +11,7 @@ hide_table_of_contents: true
 ---
 
 <summary>Tjenesten leverer informasjon som fremkommer i skattemelding for en person.</summary>
+
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
@@ -28,15 +29,13 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:sk
 
 ## Delegering
 
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Skattemelding API - På vegne av`
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Skattemelding API - På vegne av`
 
 ## Teknisk spesifikasjon
 
 Skattemelding API v4 leverer skattemelding for inntektsårene 2022 og 2023.
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api) på SwaggerHub.
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api) på SwaggerHub.
 
 ## Rettighetspakker
 
@@ -61,8 +60,7 @@ For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste
 
 ## Curl
 
-Her er et eksempel på et kall med curl mot tjenesten for å hente fastsatt skattemelding. Du må legge sertifikat og
-nøkkel som parametre til curl-kommandoen.
+Her er et eksempel på et kall med curl mot tjenesten for å hente fastsatt skattemelding. Du må legge sertifikat og nøkkel som parametre til curl-kommandoen.
 
 ```bash
 $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skattemelding/v4/fastsatt/ssb/2023/13859798769"
@@ -141,21 +139,20 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
-variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
 | Feilkode | HTTP Statuskode | Feilområde                                                              |
 |----------|-----------------|-------------------------------------------------------------------------|
-| SM-001   | 500             | Uventet feil på tjenesten.                                              |
-| SM-002   | 500             | Uventet feil i et bakenforliggende system.                              |
-| SM-003   | 404             | Ukjent url benyttet.                                                    |
-| SM-004   | 401             | Feil i forbindelse med autentisering.                                   |
-| SM-005   | 403             | Feil i forbindelse med autorisering.                                    |
-| SM-006   | 400             | Feil i forbindelse med validering av inputdata.                         |
-| SM-007   | 404             | Ingen skattemelding funnet på oppgitt gitt inntektsår og identifikator. |
-| SM-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.              |
-| SM-009   | 404             | Ingen person funnet med oppgitt identifikator.                          |
-| SM-010   | 410             | Skattemeldingen finnes ikke lenger.                                     |
+| SM-001   | 500             | Uventet feil på tjenesten                                               |
+| SM-002   | 500             | Uventet feil i et bakenforliggende system                               |
+| SM-003   | 404             | Ukjent url benyttet                                                     |
+| SM-004   | 401             | Feil i forbindelse med autentisering                                    |
+| SM-005   | 403             | Feil i forbindelse med autorisering                                     |
+| SM-006   | 400             | Feil i forbindelse med validering av inputdata                          |
+| SM-007   | 404             | Ingen skattemelding funnet på oppgitt gitt inntektsår og identifikator  |
+| SM-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet               |
+| SM-009   | 404             | Ingen person funnet med oppgitt identifikator                           |
+| SM-010   | 410             | Skattemeldingen finnes ikke lenger                                      |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
