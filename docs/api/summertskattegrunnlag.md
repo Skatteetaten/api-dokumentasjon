@@ -65,6 +65,7 @@ stadie "oppgjoer".
 | kommuneLangtidsoppholdInstitusjon | oppgjoer                     | Støttes i både V1 og V2           |
 | laanekassen                       | oppgjoer                     | Støttes i både V1 og V2           |
 | ldir                              | oppgjoer                     | Støttes i både V1 og V2           |
+| ldirTotalregnskap                 | oppgjoer                     | Støttes kun i V2                  |
 | ldirReindriftstilskudd            | oppgjoer                     | Støttes i både V1 og V2           |
 | nav                               | oppgjoer                     | Støttes i både V1 og V2           | 
 | navSupplerendeStoenad             | oppgjoer og utkast           | Støttes kun i V2                  |
