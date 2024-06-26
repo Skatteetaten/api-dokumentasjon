@@ -9,7 +9,7 @@ keywords: [mva]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer fastsatte mva-meldinger. Fastsatt betyr at skattemeldingen er myndighetsfastsatt, manuelt innlevert, eller automatisk innlevert ved utløp av innleveringsfrist.</summary>
+<Summary>Tjenesten leverer fastsatte mva-meldinger. Fastsatt betyr at skattemeldingen er myndighetsfastsatt, manuelt innlevert, eller automatisk innlevert ved utløp av innleveringsfrist.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

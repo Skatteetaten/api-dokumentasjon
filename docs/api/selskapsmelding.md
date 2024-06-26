@@ -9,7 +9,7 @@ last_updated: May 29, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten leverer informasjon om selskapsmelding for selskaper med deltakerfastsetting.</summary>
+<Summary>Tjenesten leverer informasjon om selskapsmelding for selskaper med deltakerfastsetting.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

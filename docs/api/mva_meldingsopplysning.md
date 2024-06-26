@@ -9,7 +9,7 @@ keywords: [mva, meldingsopplysning]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer status på mva-melding og informasjon fra reskontro for en virksomhet for de siste tre terminene.</summary>
+<Summary>Tjenesten leverer status på mva-melding og informasjon fra reskontro for en virksomhet for de siste tre terminene.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

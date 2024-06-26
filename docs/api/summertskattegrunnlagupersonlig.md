@@ -9,7 +9,7 @@ keywords: [SummertSkattegrunnlag, inntekt, formue]
 last_updated: Mar 29, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer en oppsummering av formue, gjeld, inntekt og fradrag for en virksomhet.</summary>
+<Summary>Tjenesten leverer en oppsummering av formue, gjeld, inntekt og fradrag for en virksomhet.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

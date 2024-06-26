@@ -9,7 +9,7 @@ keywords: [mva]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer infomasjon fra mva-register om avgiftssubjekter med skatteplikt.</summary>
+<Summary>Tjenesten leverer infomasjon fra mva-register om avgiftssubjekter med skatteplikt.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

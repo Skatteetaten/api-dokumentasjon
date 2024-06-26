@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i spesifisert summert skattegrunnlag for 2018.</summary>
+<Summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i spesifisert summert skattegrunnlag for 2018.</Summary>
 
 Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](../../api/spesifisertsummertskattegrunnlag.md) tjenesten for 2018.
 

@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<summary>Informasjonsmodell for virkningsperiodens gyldighet for tjenestepensjonsavtale.</summary>
+<Summary>Informasjonsmodell for virkningsperiodens gyldighet for tjenestepensjonsavtale.</Summary>
 
 Oversikt over verdier som returneres i data fra endepunktet virkningsperiode/gyldighet i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md).
 

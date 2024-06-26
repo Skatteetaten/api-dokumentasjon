@@ -10,7 +10,7 @@ last_updated: Jan 26, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2023.</summary>
+<Summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2023.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2023.
 

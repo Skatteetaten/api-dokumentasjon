@@ -10,7 +10,7 @@ last_updated: Nov 17, 2023
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten leverer informasjon om inntekt, fradrag, formue, gjeld og beregnet skatt.</summary>
+<Summary>Tjenesten leverer informasjon om inntekt, fradrag, formue, gjeld og beregnet skatt.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

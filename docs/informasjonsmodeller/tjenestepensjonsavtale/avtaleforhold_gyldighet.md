@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<summary>Informasjonsmodell for gyldig avtaleforhold for tjenestepensjonsavtale.</summary>
+<Summary>Informasjonsmodell for gyldig avtaleforhold for tjenestepensjonsavtale.</Summary>
 
 Oversikt over verdier som returneres i data fra endepunktet avtaleforhold/gyldighet i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md).
 

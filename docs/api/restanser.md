@@ -9,7 +9,7 @@ keywords: [restanser, skatteyter]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer informasjon om forfalte og ubetalte skatter og avgifter for en virksomhet.</summary>
+<Summary>Tjenesten leverer informasjon om forfalte og ubetalte skatter og avgifter for en virksomhet.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

@@ -9,7 +9,7 @@ keywords: [ SummertSkattegrunnlag, inntekt, formue]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer opplysninger om trukket kildeskatt på lønn for personer i kildeskatt på lønn ordningen.</summary>
+<Summary>Tjenesten leverer opplysninger om trukket kildeskatt på lønn for personer i kildeskatt på lønn ordningen.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

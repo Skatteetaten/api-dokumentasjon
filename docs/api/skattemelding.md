@@ -10,7 +10,7 @@ last_updated: Feb 13, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten leverer informasjon som fremkommer i skattemelding for en person.</summary>
+<Summary>Tjenesten leverer informasjon som fremkommer i skattemelding for en person.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

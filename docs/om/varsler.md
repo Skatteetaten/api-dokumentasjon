@@ -9,7 +9,7 @@ keywords: [varsel,drift,nyhet]
 last_updated: Nov 02, 2023
 hide_table_of_contents: true
 ---
-<summary>Varsler om Skatteetatens eksterne API-er</summary>
+<Summary>Varsler om Skatteetatens eksterne API-er</Summary>
 
 Vi legger ut nyheter om endringer i tekniske løsninger og i dokumentasjon eller hendelser i driften av våre eksterne API-er på en egen side: [Nyheter og driftsvarsler](/nyheter-og-driftsvarsler)
 Nyheter og driftsvarsler tagges slik at det skal være mulig for konsumenter og se om det er relevant. Se egen [oversikt over varsler for ulike tagger](/nyheter-og-driftsvarsler/tags).

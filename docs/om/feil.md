@@ -9,7 +9,7 @@ keywords: [feilhåndtering, feilmeldinger feilkoder, http]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
 ---
-<summary>Feilhåndtering i Skatteetatens delingstjenester.</summary>
+<Summary>Feilhåndtering i Skatteetatens delingstjenester.</Summary>
 
 ## HTTP statuskoder
 

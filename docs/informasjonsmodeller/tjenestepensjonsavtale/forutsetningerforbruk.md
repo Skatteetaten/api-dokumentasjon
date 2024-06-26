@@ -9,7 +9,7 @@ keywords: [Tjenestepensjonsavtale, avtaleforhold, virkningsperiode, OTP]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<summary>Forutsetninger for deling av liste med inntektsmottakere og opplysninger om inntekt i OTP-sammenheng.</summary>
+<Summary>Forutsetninger for deling av liste med inntektsmottakere og opplysninger om inntekt i OTP-sammenheng.</Summary>
 
 ## Forutsetninger for utlevering
 

@@ -16,7 +16,7 @@ import { TabItem } from "@skatteetaten/frontend-components/Tabs/TabItem";
 export default {
   // Re-use the default mapping
   ...MDXComponents,
-  summary: Summary,
+  Summary: Summary,
   Tabs,
   TabItem,
   InfoMessageBar,

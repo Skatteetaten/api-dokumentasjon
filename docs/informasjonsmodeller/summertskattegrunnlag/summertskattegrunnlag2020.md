@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2020.</summary>
+<Summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2020.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2020.
 

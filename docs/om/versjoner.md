@@ -9,7 +9,7 @@ keywords: [API,versjoner]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
 ---
-<summary>Skatteetatens strategi for versjonering.</summary>
+<Summary>Skatteetatens strategi for versjonering.</Summary>
 
 Skatteetatens tjenester er designet for å kunne støtte flere versjoner samtidig, men i praksis er det maksimalt to samtidige versjoner.
 Tekniske dataformat endrer seg sjelden, og når det skjer følges denne strategien for versjonering. 

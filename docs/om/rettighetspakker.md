@@ -9,7 +9,7 @@ last_updated: Feb 23, 2017
 keywords: [a-ordning, oppgave, arbeidsgiver, lønn, inntektsmottaker]
 hide_table_of_contents: true
 ---
-<summary>Her finner du sentrale prinsipper knyttet til hvordan Skatteetaten styrer hvilke opplysninger som utleveres.</summary>
+<Summary>Her finner du sentrale prinsipper knyttet til hvordan Skatteetaten styrer hvilke opplysninger som utleveres.</Summary>
 
 ## Rettighetspakker
 

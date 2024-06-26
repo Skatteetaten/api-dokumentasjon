@@ -9,7 +9,7 @@ keywords: [omregistreringsavgift]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer omregistreringsavgiften for kjøretøy spesifisert av kjennemerke og eventuelt omregistreringsdato.</summary>
+<Summary>Tjenesten leverer omregistreringsavgiften for kjøretøy spesifisert av kjennemerke og eventuelt omregistreringsdato.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

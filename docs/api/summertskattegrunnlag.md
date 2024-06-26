@@ -10,7 +10,7 @@ last_updated: May 24, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke opplysninger fra skattemeldingen som ligger til grunn.</summary>
+<Summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke opplysninger fra skattemeldingen som ligger til grunn.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

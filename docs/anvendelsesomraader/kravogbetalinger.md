@@ -8,7 +8,7 @@ tags: [Innkreving, Krav og betalinger]
 last_updated: Apr 24, 2024
 hide_table_of_contents: true
 ---
-<summary>Dokumentasjon om Krav og betalinger</summary>
+<Summary>Dokumentasjon om Krav og betalinger</Summary>
 
 Krav og betalinger er en tjeneste Skatteetaten tilbyr regnskapssystemer og banker hvor vi via [Krav og betalinger API](../api/kravogbetalinger.md)) tilgjengeliggjør alle krav Skatteetaten har til den næringsdrivende. Formålet er at regnskapssystemer og banker kan utvikle og tilgjengeliggjøre en oversikt i sine flater som vil gi den næringsdrivende en bedre oversikt over sine nåværende og fremtidige krav og dermed enklere kan håndtere og følge opp disse.
 

@@ -10,7 +10,7 @@ last_updated: Oct 05, 2023
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten leverer informasjon om hvorvidt det foreligger, og ev. perioden for, et arbeidsforhold og mellom angitt oppdragsgiver og en angitt arbeidstaker.</summary>
+<Summary>Tjenesten leverer informasjon om hvorvidt det foreligger, og ev. perioden for, et arbeidsforhold og mellom angitt oppdragsgiver og en angitt arbeidstaker.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

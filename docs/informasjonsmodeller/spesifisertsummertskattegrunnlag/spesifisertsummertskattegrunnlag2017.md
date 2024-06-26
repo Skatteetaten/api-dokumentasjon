@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: May 14, 2017
 hide_table_of_contents: true
 ---
-<summary>Lovlige verdier for tekniskNavn, kategorisering og post i oppgjør tilgjengelig i spesifisert summert skattegrunnlag for 2017.</summary>
+<Summary>Lovlige verdier for tekniskNavn, kategorisering og post i oppgjør tilgjengelig i spesifisert summert skattegrunnlag for 2017.</Summary>
 
 Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](../../api/spesifisertsummertskattegrunnlag.md) tjenesten for 2017.
 

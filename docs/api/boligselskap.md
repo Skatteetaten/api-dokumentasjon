@@ -10,7 +10,7 @@ last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjeneste for innrapportering av tredjepartsopplysninger for boligselskap.</summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for boligselskap.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

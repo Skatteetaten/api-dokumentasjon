@@ -10,7 +10,7 @@ last_updated: Feb 29, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten leverer informasjon om grunnlag for pensjonsopptjening i folketrygden.</summary>
+<Summary>Tjenesten leverer informasjon om grunnlag for pensjonsopptjening i folketrygden.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

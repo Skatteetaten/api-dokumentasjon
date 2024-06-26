@@ -9,7 +9,7 @@ keywords: [security,sikkerhet]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
 ---
-<summary>Informasjon om nødvendige sikkerhetsmekanismer, autentisering og autorisasjon.</summary>
+<Summary>Informasjon om nødvendige sikkerhetsmekanismer, autentisering og autorisasjon.</Summary>
 
 ## Maskinporten
 

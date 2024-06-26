@@ -10,7 +10,7 @@ last_updated: Sep 26, 2023
 hide_table_of_contents: true
 ---
 
-<summary>Tjenestene leverer løpende varslinger om personer/virksomheter med nye eller endrede opplysninger tilgjengelig.</summary>
+<Summary>Tjenestene leverer løpende varslinger om personer/virksomheter med nye eller endrede opplysninger tilgjengelig.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

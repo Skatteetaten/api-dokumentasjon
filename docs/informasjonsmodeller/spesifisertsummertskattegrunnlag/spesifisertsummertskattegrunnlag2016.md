@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<summary>Kategorisering og lovlige verdier for tekniskNavn tilgjengelig i spesifisert summert skattegrunnlag for 2016.</summary>
+<Summary>Kategorisering og lovlige verdier for tekniskNavn tilgjengelig i spesifisert summert skattegrunnlag for 2016.</Summary>
 
 import { Table } from '@skatteetaten/frontend-components/Table';
 

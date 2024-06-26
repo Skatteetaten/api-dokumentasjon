@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<summary>Informasjonsmodell for avtaleforhold tilknyttet tjenestepensjonsavtale.</summary>
+<Summary>Informasjonsmodell for avtaleforhold tilknyttet tjenestepensjonsavtale.</Summary>
 
 Oversikt over verdier som sendes inn gjennom endepunktet avtaleforhold i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md) for å oppdatere eller endre avtaleforhold.
 

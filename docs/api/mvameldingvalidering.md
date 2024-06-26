@@ -10,7 +10,7 @@ last_updated: Feb 21, 2024
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten brukes til validering av innsendt  Mva-melding.</summary>
+<Summary>Tjenesten brukes til validering av innsendt  Mva-melding.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

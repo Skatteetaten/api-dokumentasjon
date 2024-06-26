@@ -9,7 +9,7 @@ keywords: [pgi, skatteberegning, inntekt, formue]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer informasjon om grunnlag for pensjonsopptjening for pensjonsinnretningene.</summary>
+<Summary>Tjenesten leverer informasjon om grunnlag for pensjonsopptjening for pensjonsinnretningene.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

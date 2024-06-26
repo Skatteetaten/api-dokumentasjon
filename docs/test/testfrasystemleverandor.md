@@ -9,7 +9,7 @@ keywords: [Test, Delegering]
 last_updated: Mar 14, 2023
 hide_table_of_contents: true
 ---
-<summary>Test fra systemleverandør krever delegering i Test.</summary>
+<Summary>Test fra systemleverandør krever delegering i Test.</Summary>
 
 ## Maskinporten
 

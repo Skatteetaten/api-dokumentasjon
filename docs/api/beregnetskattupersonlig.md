@@ -9,7 +9,7 @@ keywords: [beregnetskatt, inntekt, formue]
 last_updated: Mar 31, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjenesten leverer informasjon om inntekt, fradrag, formue, gjeld og beregnet skatt for en virksomhet.</summary>
+<Summary>Tjenesten leverer informasjon om inntekt, fradrag, formue, gjeld og beregnet skatt for en virksomhet.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

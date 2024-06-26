@@ -10,7 +10,7 @@ last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
 
-<summary>Tjenesten leverer informasjon om forskuddstrekk og restskatt eller beløp til gode i skatteoppgjøret.</summary>
+<Summary>Tjenesten leverer informasjon om forskuddstrekk og restskatt eller beløp til gode i skatteoppgjøret.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

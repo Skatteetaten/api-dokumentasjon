@@ -9,7 +9,7 @@ keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Nov 24, 2022
 hide_table_of_contents: true
 ---
-<summary> Skatteetaten tilbyr samtykkebasert datauthenting basert på Altinn sin løsning for digitalt samtykke.</summary>
+<Summary> Skatteetaten tilbyr samtykkebasert datauthenting basert på Altinn sin løsning for digitalt samtykke.</Summary>
 
 [![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)](../../static/img/samtykke.png)
 

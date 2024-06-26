@@ -9,7 +9,7 @@ keywords: [Skjerming, kode 6, kode 7, kode 4]
 last_updated: Des 8, 2022
 hide_table_of_contents: true
 ---
-<summary>Noen personer har krav på skjerming, som betyr at Skatteetaten ikke kan utlevere informasjon som kan si noe om hvor de befinner seg.</summary>
+<Summary>Noen personer har krav på skjerming, som betyr at Skatteetaten ikke kan utlevere informasjon som kan si noe om hvor de befinner seg.</Summary>
 
 ## Skattepliktige med skjermingsbehov
 

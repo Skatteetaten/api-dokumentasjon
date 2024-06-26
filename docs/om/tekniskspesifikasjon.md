@@ -9,7 +9,7 @@ keywords: [API, dokumentasjon]
 last_updated: Mar 27, 2023
 hide_table_of_contents: true
 ---
-<summary>Skatteetaten benytter Open API spesifikasjon og Swaggerhub for teknisk spesifikasjon av API-er.</summary>
+<Summary>Skatteetaten benytter Open API spesifikasjon og Swaggerhub for teknisk spesifikasjon av API-er.</Summary>
 
 ## Open API spesifikasjon
 

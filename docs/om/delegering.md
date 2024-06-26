@@ -9,7 +9,7 @@ keywords: [security, maskinporten, delegering]
 last_updated: Des 1, 2022
 hide_table_of_contents: true
 ---
-<summary>Du kan delegere rettigheter til en systemleverandør (eller andre) i Altinn. Her følger en beskrivelse av hvordan dette utføres.</summary>
+<Summary>Du kan delegere rettigheter til en systemleverandør (eller andre) i Altinn. Her følger en beskrivelse av hvordan dette utføres.</Summary>
 
 Det er mulig for systemleverandører (og andre) å opptre på vegne av andre virksomheter ved oppkobling mot Skatteetaten for de API-ene. Din virksomhet må delegere rettighet til tjenesten til systemleverandøren i Altinn. Navn på rettighet i Altinn for delegering ligger i beskrivelsen av hver enkelt tjeneste.
 

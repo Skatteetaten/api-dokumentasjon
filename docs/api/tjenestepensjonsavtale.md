@@ -9,7 +9,7 @@ keywords: [tjenestepensjonsavtale]
 last_updated: Mar 6, 2023
 hide_table_of_contents: true
 ---
-<summary>Tjeneste hvor pensjonsinnretninger kan registrere, oppdatere og slette opplysninger om pensjonsavtaleforhold. Tjenesten kan også levere informasjon om det foreligger gyldig avtaleforhold mellom arbeidsgiver og pensjonsinnretning.</summary>
+<Summary>Tjeneste hvor pensjonsinnretninger kan registrere, oppdatere og slette opplysninger om pensjonsavtaleforhold. Tjenesten kan også levere informasjon om det foreligger gyldig avtaleforhold mellom arbeidsgiver og pensjonsinnretning.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>

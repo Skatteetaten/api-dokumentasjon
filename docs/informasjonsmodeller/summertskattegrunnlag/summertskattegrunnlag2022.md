@@ -9,7 +9,7 @@ keywords: [informasjonsmodell]
 last_updated: Mar 10, 2023
 hide_table_of_contents: true
 ---
-<summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2022.</summary>
+<Summary>Summerte skattegrunnlag tilgjengelig i summert skattegrunnlag for 2022.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2022.
 

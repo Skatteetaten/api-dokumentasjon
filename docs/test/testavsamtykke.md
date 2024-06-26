@@ -9,7 +9,7 @@ keywords: [test, samtykke]
 last_updated: Mar 14, 2023
 hide_table_of_contents: true
 ---
-<summary>Samtykketoken-generator for automatisert generering av samtykketoken.</summary>
+<Summary>Samtykketoken-generator for automatisert generering av samtykketoken.</Summary>
 
 ## Test av tjenester med samtykke
 

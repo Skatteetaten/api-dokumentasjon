@@ -9,7 +9,7 @@ keywords: [API, dokumentasjon]
 last_updated: Des 1, 2022
 hide_table_of_contents: true
 ---
-<summary>Overordnet om Skatteetatens tjenester.</summary>
+<Summary>Overordnet om Skatteetatens tjenester.</Summary>
 
 Bruk av Skatteetatens delingstjenester forutsetter følgende:
 * Bruk av [Maskinporten](sikkerhet.md).
