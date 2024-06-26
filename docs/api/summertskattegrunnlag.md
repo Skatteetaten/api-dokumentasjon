@@ -55,7 +55,7 @@ stadie "oppgjoer".
 
 | Navn på rettighetspakke           | 	Stadie                     | Kommentarer                       |
 |-----------------------------------|------------------------------|-----------------------------------|
-| fiskeridirektoratetKontrollmanntall | oppgjoer                   | Støttes kun i V2                  |
+| fiskeridirektoratetkontrollmanntall | oppgjoer                   | Støttes kun i V2                  |
 | frirettshjelp                     | oppgjoer                     | Støttes i både V1 og V2           |
 | husbanken                         | oppgjoer                     | Støttes kun i V1                  |
 | husbankenLaanTilskudd             | oppgjoer                     | Støttes kun i V2                  |
