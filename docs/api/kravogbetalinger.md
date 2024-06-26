@@ -10,11 +10,7 @@ last_updated: Apr 24, 2024
 hide_table_of_contents: true
 ---
 
-<summary>
-
-Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part. 
-
-</summary>
+<Summary>Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
