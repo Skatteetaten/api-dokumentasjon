@@ -43,6 +43,7 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/naerin
 
 | Navn på rettighetspakke |	
 |-------------------------|
+| ldirTotalregnskap       |
 | ssb                     |
 
 ## Støttetjeneste
