@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[9479],{70494:a=>{a.exports=JSON.parse('{"label":"Aktiv konto","permalink":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags/aktiv-konto","allTagsPath":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags","count":1}')}}]);

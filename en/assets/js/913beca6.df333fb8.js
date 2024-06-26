@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkapi_dokumentasjon=self.webpackChunkapi_dokumentasjon||[]).push([[2973],{61262:e=>{e.exports=JSON.parse('{"label":"Beregnet skatt","permalink":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags/beregnet-skatt","allTagsPath":"/api-dokumentasjon/en/nyheter-og-driftsvarsler/tags","count":1}')}}]);
