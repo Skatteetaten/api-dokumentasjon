@@ -48,10 +48,10 @@ API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API sp
 | finans                            | Støttes kun i versjon 2        |
 | forsikring                        | Støttes kun i versjon 2        |
 | husbanken                         | Støttes i versjon 1 og 2       |
-| kommuneLangtidsoppholdInstitusjon | Støttes kun i versjon 2        |
+| kommunelangtidsoppholdinstitusjon | Støttes kun i versjon 2        |
 | kredittopplysning                 | Støttes kun i versjon 2        |
 | laanekassen                       | Støttes i versjon 1 og 2       |
-| ldirReindriftstilskudd            | Støttes kun i versjon 2        |
+| ldirreindriftstilskudd            | Støttes kun i versjon 2        |
 | nav                               | Støttes kun i versjon 1        |
 | norgesbank                        | Støttes kun i versjon 2        |
 | pensjonskasse                     | Støttes i versjon 1 og 2       |
