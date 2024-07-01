@@ -53,7 +53,7 @@ For å følge med på endringer tilbyr vi
 en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesobjekt fast eiendom hendelser API`
 
 ## Datakatalog
-Datatjenestebeskrivelse kommer i Felles datakatalog.
+Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
@@ -87,7 +87,7 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Informasjonsmodell kommer i Felles datakatalog.
+[![Formuesobjekt fast eiendom API](../../static/download/Informasjonsmodell_FormuesobjektFastEiendomOppslag.png)](../../static/download/Informasjonsmodell_FormuesobjektFastEiendomOppslag.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
