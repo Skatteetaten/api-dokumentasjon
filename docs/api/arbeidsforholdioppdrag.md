@@ -39,6 +39,13 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-i-oppdrag-api) på
 SwaggerHub.
 
+## Rettighetspakker
+
+| Navn på rettighetspakke             |
+|-------------------------------------|
+| arbeidstilsynetHmsKort              |
+
+
 ## Datakatalog
 
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/aaa9d596-52d5-3d73-9f36-51b9a2e662be) i Felles datakatalog.
@@ -52,7 +59,7 @@ Her er et eksempel på en spørring med curl mot tjenesten. Du må legge sertifi
 curl-kommandoen.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/arbeidsforhold/v1/arbeidsgiver/877353192/arbeidstaker/09099617966/aktiv"'
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://arbeidsforholdioppdrag.api.skatteetaten-test.no/v1/arbeidstilsynetHmsKort/arbeidsgiver/877353192/arbeidstaker/09099617966/aktiv"'
 ```
 
 ## JSON
@@ -77,9 +84,6 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits
 }
 ```
 
-## XML
-
-Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Accept` satt til `application/xml`.
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
