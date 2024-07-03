@@ -33,10 +33,10 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 ## Rettighetspakker
  
-| Navn på rettighetspakke |	
-|---|
-| nav |
-| otp |
+| Navn på rettighetspakke |	Kommentar |
+|---| --- |
+| nav | Kun tilgang til GET-endepunktene |
+| otp | Kun tilgang til POST/DELETE-endepunktene |
  
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/8018e29d-f608-31b6-965e-00c290386612) i Felles datakatalog.
