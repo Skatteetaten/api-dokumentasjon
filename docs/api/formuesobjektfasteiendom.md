@@ -53,6 +53,7 @@ For å følge med på endringer tilbyr vi
 en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesobjekt fast eiendom hendelser API`
 
 ## Datakatalog
+
 Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 
 </TabItem>
@@ -61,7 +62,65 @@ Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 ## JSON
 
 ```json
-
+{
+  "identifikator": {
+    "skatteetatensEiendomsidentifikator": 3
+  },
+  "hendelsesidentifikator": "90f0f007-dd5d-4415-abe2-09bc82db294f",
+  "rettighetshaverMangler": false,
+  "eiendomsopplysninger": {
+    "matrikkelnummer": {
+      "kommunenummer": "4214",
+      "gaardsnummer": 64,
+      "bruksnummer": 23,
+      "festenummer": 0,
+      "seksjonsnummer": 0
+    },
+    "bygning": [
+      {
+        "bygningsnummer": "4",
+        "bruksenheter": [
+          {
+            "bruksenhetsnummer": "4",
+            "matrikkelUnikIdentifikator": 235596792
+          }
+        ]
+      }
+    ]
+  },
+  "formuesopplysninger": {
+    "formuestype": "selveidBolig"
+  },
+  "eieropplysninger": [
+    {
+      "personidentifikator": {
+        "ukjentRettighetshaver": false
+      },
+      "erTinglyst": false,
+      "eierforhold": {
+        "eierandel": {
+          "teller": 1,
+          "nevner": 2
+        },
+        "eiernivaa": "eiendomsrett"
+      }
+    },
+    {
+      "personidentifikator": {
+        "foedselsnummer": "21865898093",
+        "ukjentRettighetshaver": false
+      },
+      "erTinglyst": false,
+      "eierforhold": {
+        "eierandel": {
+          "teller": 1,
+          "nevner": 2
+        },
+        "eiernivaa": "eiendomsrett"
+      }
+    }
+  ]
+}
 
 ```
 
