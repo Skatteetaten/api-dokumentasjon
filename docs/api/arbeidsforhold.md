@@ -55,7 +55,76 @@ Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 ## JSON
 
 ```json
-
+{
+  "inntektsmottakerOgArbeidsgiver": [
+    {
+      "kalendermaaned": "2023-01",
+      "aggregatId": 85,
+      "norskIdentifikator": "12916399977",
+      "opplysningspliktig": "310525723",
+      "underenhet": "215165132",
+      "kildesystem": "testdatagenerator-rst-ekstern-deling",
+      "arbeidsforhold": [
+        {
+          "typeArbeidsforhold": "ordinaertArbeidsforhold",
+          "arbeidsforholdId": "e2ea2885-7ea6-49bd-8196-1032ef934a71",
+          "startdato": "2023-01-01",
+          "antallTimerPerUkeSomEnFullStillingTilsvarer": 37.5,
+          "yrke": "1142114",
+          "arbeidstidsordning": "ikkeSkift",
+          "stillingsprosent": 100.0,
+          "sisteLoennsendringsdato": "2023-01-01",
+          "sisteDatoForStillingsprosentendring": "2023-01-01",
+          "formForAnsettelse": "fast"
+        }
+      ]
+    },
+    {
+      "kalendermaaned": "2023-02",
+      "aggregatId": 86,
+      "norskIdentifikator": "12916399977",
+      "opplysningspliktig": "310525723",
+      "underenhet": "215165132",
+      "kildesystem": "testdatagenerator-rst-ekstern-deling",
+      "arbeidsforhold": [
+        {
+          "typeArbeidsforhold": "ordinaertArbeidsforhold",
+          "arbeidsforholdId": "e2ea2885-7ea6-49bd-8196-1032ef934a71",
+          "startdato": "2023-01-01",
+          "antallTimerPerUkeSomEnFullStillingTilsvarer": 37.5,
+          "yrke": "1142114",
+          "arbeidstidsordning": "ikkeSkift",
+          "stillingsprosent": 100.0,
+          "sisteLoennsendringsdato": "2023-01-01",
+          "sisteDatoForStillingsprosentendring": "2023-01-01",
+          "formForAnsettelse": "fast"
+        }
+      ]
+    },
+    {
+      "kalendermaaned": "2023-03",
+      "aggregatId": 115,
+      "norskIdentifikator": "12916399977",
+      "opplysningspliktig": "310525723",
+      "underenhet": "215165132",
+      "kildesystem": "testdatagenerator-rst-ekstern-deling",
+      "arbeidsforhold": [
+        {
+          "typeArbeidsforhold": "ordinaertArbeidsforhold",
+          "arbeidsforholdId": "e2ea2885-7ea6-49bd-8196-1032ef934a71",
+          "startdato": "2023-01-01",
+          "antallTimerPerUkeSomEnFullStillingTilsvarer": 37.5,
+          "yrke": "1142114",
+          "arbeidstidsordning": "ikkeSkift",
+          "stillingsprosent": 100.0,
+          "sisteLoennsendringsdato": "2023-01-01",
+          "sisteDatoForStillingsprosentendring": "2023-01-01",
+          "formForAnsettelse": "fast"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 </TabItem>
