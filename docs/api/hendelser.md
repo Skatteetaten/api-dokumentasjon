@@ -6,11 +6,12 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Støttetjeneste, Hendelser ]
 keywords: [ datatables, tables, grids, markdown, multimarkdown, jquery plugins ]
-last_updated: Sep 26, 2023
+last_updated: Jul 04, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenestene leverer løpende varslinger om personer/virksomheter med nye eller endrede opplysninger tilgjengelig.</Summary>
+<Summary>Tjenestene leverer løpende varslinger om personer/virksomheter med nye eller endrede opplysninger
+tilgjengelig.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -35,6 +36,7 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 
 | Hendelsesliste                                                        | Scope                                                                                                                                                                                                                                        |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Arbeidsforhold hendelser API                                          | skatteetaten:arbeidsforhold                                                                                                                                                                                                                  |
 | Formuesgrunnlag for eiendomsskatt hendelser API                       | skatteetaten:formuesgrunnlageiendomsskatt                                                                                                                                                                                                    |
 | Formuesobjekt fast eiendom hendelser API                              | skatteetaten:formuesobjektfasteiendom                                                                                                                                                                                                        |
 | Inntekt hendelser API                                                 | skatteetaten:inntekt                                                                                                                                                                                                                         |
@@ -60,6 +62,7 @@ Delegering i Altinn gjøres pr. scope, så tilgang til hendelseslisterer er hån
 URL-er til API-ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til
 hendelseslistene på SwaggerHub:
 
+* [Arbeidsforhold hendelser API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-hendelser-api)
 * [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
 * [Formuesobjekt fast eiendom hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesobjekt-fast-eiendom-hendelser-api)
 * [Inntekt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/inntekt-hendelser-api)
@@ -78,19 +81,26 @@ hendelseslistene på SwaggerHub:
 
 ## Hendelsestyper
 
-De vanligste hendelsestypene er ny, endret og slettet, men det støttes ikke nødvendigvis i alle hendelseslistene. Her er noen eksempler:
+De vanligste hendelsestypene er ny, endret og slettet, men det støttes ikke nødvendigvis i alle hendelseslistene. Her er
+noen eksempler:
 
 __Nye data:__ Summert skattegrunnlag er klart for en skattepliktig for et inntektsår:
-* __Hendelseslisten for skatteoppgjør__ vil inneholde en hendelse for den skattepliktige og inntektsåret. 
+
+* __Hendelseslisten for skatteoppgjør__ vil inneholde en hendelse for den skattepliktige og inntektsåret.
 * __Summert skattegrunnlag API__ returnerer data hvis man spør på inntektsår og skattepliktig fra hendelsen
 
-__Endrede data:__ En arbeidsgiver rapporterer at en skattepliktig har fått etterbetalt inntekt for en måned. Fra før finnes det data for den skattepliktige for denne måneden.
-* __Hendelseslisten for inntekt__ vil inneholde en hendelse for den skattepliktige og den gitte måneden. 
+__Endrede data:__ En arbeidsgiver rapporterer at en skattepliktig har fått etterbetalt inntekt for en måned. Fra før
+finnes det data for den skattepliktige for denne måneden.
+
+* __Hendelseslisten for inntekt__ vil inneholde en hendelse for den skattepliktige og den gitte måneden.
 * __Inntekt API__ returnerer oppdaterte inntektsdata for den skattepliktige og den gitte måneden.
 
-__Slettede data:__ Et fagsystem i skatteetaten sletter data for en skattepliktig (skjer sjelden, men kan skje ifm feilrettinger eller andre spesielle omstendigheter)
-* __Hendelseslisten for datasettet__ vil inneholde en hendelse for datasettet og perioden. 
-* __Datasett API__ returnerer HTTP statuskode 410 og en feilmelding som indikerer at data ikke finnes lenger når man spør på skattepliktig og angitt periode.
+__Slettede data:__ Et fagsystem i skatteetaten sletter data for en skattepliktig (skjer sjelden, men kan skje ifm
+feilrettinger eller andre spesielle omstendigheter)
+
+* __Hendelseslisten for datasettet__ vil inneholde en hendelse for datasettet og perioden.
+* __Datasett API__ returnerer HTTP statuskode 410 og en feilmelding som indikerer at data ikke finnes lenger når man
+  spør på skattepliktig og angitt periode.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
@@ -99,7 +109,7 @@ __Slettede data:__ Et fagsystem i skatteetaten sletter data for en skattepliktig
 
 ### JSON
 
-NB! For inntekt så leveres det foreløpig ikke informasjon i type-feltet. 
+NB! For inntekt så leveres det foreløpig ikke informasjon i type-feltet.
 
 ```json
 {
@@ -299,7 +309,8 @@ $ curl -v --cert virksomhet.cer --key virksomhet.key "https://api-at.sits.no/api
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
+variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
 | Feilkode | HTTP Statuskode | Feilområde                                                 |
 |----------|-----------------|------------------------------------------------------------|
@@ -310,10 +321,13 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | FA-005   | 404             | Ingen hendelser funnet for oppgitt input.                  |
 | FA-006   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
 
-Obs. oversikten over gjelder ikke for 
-[Formuesgrunnlag for eiendomsskatt hendelser API](./formuesgrunnlageiendomsskatt.md?tab=Feilkoder), 
-[Mva-melding hendelser API](./mvamelding.md?tab=Feilkoder) og 
+Obs. oversikten over gjelder ikke for
+[Arbeidsforhold hendelser API](./arbeidsforhold.md?tab=Feilkoder)
+[Formuesgrunnlag for eiendomsskatt hendelser API](./formuesgrunnlageiendomsskatt.md?tab=Feilkoder),
+[Formuesobjekt fast eiendom hendelser API](./formuesobjektfasteiendom.md?tab=Feilkoder),
+[Mva-melding hendelser API](./mvamelding.md?tab=Feilkoder) og
 [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](./mvaregisteravgiftssubjekt.md?tab=Feilkoder)
+[Underenhet fra A-ordningen hendelser API](./underenhetaordningen.md?tab=Feilkoder)
 hvor hendelseslisten er knyttet tettere sammen med oppslagstjenesten, se derfor feilkoder for tjenesten.
 
 
