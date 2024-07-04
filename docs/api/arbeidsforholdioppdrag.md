@@ -92,16 +92,16 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
 variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
-| Feilkode           | HTTP Statuskode | Feilområde                                                                  |
-|--------------------|-----------------|-----------------------------------------------------------------------------|
-| ARBEIDSFORHOLD-001 | 500             | Uventet feil på tjenesten.                                                  |
-| ARBEIDSFORHOLD-002 | 500             | Uventet feil i et bakenforliggende system.                                  |
-| ARBEIDSFORHOLD-003 | 404             | Ukjent url benyttet.                                                        |
-| ARBEIDSFORHOLD-004 | 401             | Feil i forbindelse med autentisering.                                       |
-| ARBEIDSFORHOLD-005 | 403             | Feil i forbindelse med autorisering.                                        |
-| ARBEIDSFORHOLD-006 | 400             | Feil i forbindelse med validering av inputdata.                             |
-| ARBEIDSFORHOLD-007 | 404             | Fant ikke aktivt arbeidsforhold mellom angitt arbeidstaker og arbeidsgiver. |
-| ARBEIDSFORHOLD-008 | 406             | Feil tilknyttet dataformat.                                                 |  
+| Feilkode           | HTTP Statuskode | Feilområde                                                            |
+|--------------------|-----------------|-----------------------------------------------------------------------|
+| ARBEIDSFORHOLD-001 | 500             | Uventet feil på tjenesten.                                            |
+| ARBEIDSFORHOLD-002 | 500             | Uventet feil i et bakenforliggende system.                            |
+| ARBEIDSFORHOLD-003 | 404             | Ukjent url benyttet.                                                  |
+| ARBEIDSFORHOLD-004 | 401             | Feil i forbindelse med autentisering.                                 |
+| ARBEIDSFORHOLD-005 | 403             | Feil i forbindelse med autorisering.                                  |
+| ARBEIDSFORHOLD-006 | 400             | Feil i forbindelse med validering av inputdata.                       |
+| ARBEIDSFORHOLD-007 | 404             | Fant ikke  arbeidsforhold mellom angitt arbeidstaker og arbeidsgiver. |
+| ARBEIDSFORHOLD-008 | 406             | Feil tilknyttet dataformat.                                           |  
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
