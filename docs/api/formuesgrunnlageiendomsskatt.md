@@ -181,7 +181,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytt hendelseslisten for å finne referanser man kan benytte for å teste oppslagstjenesten.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytte hendelseslisten for å finne referanser man kan benytte for å teste oppslagstjenesten.
 
 ## Testdata
 

@@ -92,7 +92,7 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytt hendelseslisten for å finne
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytte hendelseslisten for å finne
 testdata man kan benytte for å teste oppslagstjenesten.
 
 </TabItem>
