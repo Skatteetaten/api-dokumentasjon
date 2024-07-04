@@ -6,11 +6,12 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Seriøsitet ]
 keywords: [ arbeidsforholdioppdrag ]
-last_updated: Oct 05, 2023
+last_updated: Jul 04, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten leverer informasjon om hvorvidt det foreligger, og ev. perioden for, et arbeidsforhold og mellom angitt oppdragsgiver og en angitt arbeidstaker.</Summary>
+<Summary>Tjenesten leverer informasjon om hvorvidt det foreligger, og ev. perioden for, et arbeidsforhold og mellom
+angitt oppdragsgiver og en angitt arbeidstaker.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -41,10 +42,9 @@ SwaggerHub.
 
 ## Rettighetspakker
 
-| Navn på rettighetspakke             |
-|-------------------------------------|
-| arbeidstilsynetHmsKort              |
-
+| Navn på rettighetspakke |
+|-------------------------|
+| arbeidstilsynetHmsKort  |
 
 ## Datakatalog
 
@@ -84,13 +84,13 @@ $ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://arbeidsforhol
 }
 ```
 
-
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
+variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
 | Feilkode           | HTTP Statuskode | Feilområde                                                                  |
 |--------------------|-----------------|-----------------------------------------------------------------------------|
@@ -101,7 +101,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | ARBEIDSFORHOLD-005 | 403             | Feil i forbindelse med autorisering.                                        |
 | ARBEIDSFORHOLD-006 | 400             | Feil i forbindelse med validering av inputdata.                             |
 | ARBEIDSFORHOLD-007 | 404             | Fant ikke aktivt arbeidsforhold mellom angitt arbeidstaker og arbeidsgiver. |
-| ARBEIDSFORHOLD-008 | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                  |  
+| ARBEIDSFORHOLD-008 | 406             | Feil tilknyttet dataformat.                                                 |  
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
