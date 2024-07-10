@@ -95,6 +95,7 @@ https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
           "varselSmsMobilnummer": "00000000"
         }
       },
+      "boligselskapFormaal": "bolig",
       "oppgaveoppsummering": {
         "antallOppgaver": 2,
         "sumAndelLikningsverdiBoenhet": 70000,
@@ -130,8 +131,7 @@ https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
           "andelSkattepliktigeInntekter": 1000,
           "andelFradragsberettigedeKostnader": 1500,
           "andelFormue": 135183,
-          "andelGjeld": 6500,
-          "boligselskapsFormaal": "bolig"
+          "andelGjeld": 6500
         },
         {
           "oppgaveeier": {
@@ -157,8 +157,7 @@ https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
           "andelSkattepliktigeInntekter": 1500,
           "andelFradragsberettigedeKostnader": 0,
           "andelFormue": 540731,
-          "andelGjeld": 33000,
-          "boligselskapsFormaal": "bolig"
+          "andelGjeld": 33000
         }
       ],
       "sletteoppgave": []
