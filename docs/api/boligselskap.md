@@ -95,7 +95,7 @@ https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
           "varselSmsMobilnummer": "00000000"
         }
       },
-      "boligselskapsFormaal": "bolig",
+      "boligselskapFormaal": "bolig",
       "oppgaveoppsummering": {
         "antallOppgaver": 2,
         "sumAndelLikningsverdiBoenhet": 70000,
