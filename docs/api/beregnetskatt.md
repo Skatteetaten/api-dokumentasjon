@@ -167,6 +167,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
     }
   },
   "skatteoppgjoersdato": "2022-09-27",
+  "ajourholdstidspunkt": "2022-09-27T10:30:19.819Z",
   "anvendtTolvdelForTrinnskatt": 12,
   "anvendtTolvdelVedArbeidsoppholdINorge": 12
 }
