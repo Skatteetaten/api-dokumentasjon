@@ -196,7 +196,9 @@ Her er et eksempel på respons for inntektsår 2023 for V2 av tjenesten.
           "opptjenteRenter": 19667
         }
       ],
-      "kategori": "formue"
+      "kategori": "formue",
+      "andelSkattefritt": 2000,
+      "andelOverfoertFraBarn": 3000
     },
     {
       "tekniskNavn": "forvaltningskostnadKnyttetTilAksjesparekonto",
