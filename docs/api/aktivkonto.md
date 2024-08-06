@@ -31,6 +31,12 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Teknisk spesifikasjon
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/aktivkonto-api) på SwaggerHub.
 
+## Rettighetspakker
+
+| Navn på rettighetspakke |
+|-------------------------|
+| navUtbetalingskonto     |
+
 ## Datakatalog
 
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/e6f947c9-2ca0-31de-81d5-175067550a01) i Felles datakatalog.
