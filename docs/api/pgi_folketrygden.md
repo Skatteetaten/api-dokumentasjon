@@ -70,31 +70,20 @@ Her er et eksempel på en spørring med curl mot tjenesten. Du må generere et g
 -token og legge til i header.
 
 ```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/pensjonsgivendeinntektforfolketrygden/2022/08819797596"
+$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://pgiforfolketrygden.api.skatteetaten-test.no/v1/navPensjonopptjening/2023/28837598585"
 ```
 
 ## JSON
 
 ```json
 {
-  "norskPersonidentifikator": "02116049964",
-  "inntektsaar": 2019,
+  "norskPersonidentifikator": "28837598585",
+  "inntektsaar": 2023,
   "pensjonsgivendeInntekt": [
     {
+      "datoForFastsetting": "2024-02-15",
       "skatteordning": "FASTLAND",
-      "datoForFastsetting": "2020-09-27",
-      "pensjonsgivendeInntektAvLoennsinntekt": 698219,
-      "pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel": null,
-      "pensjonsgivendeInntektAvNaeringsinntekt": 150000,
-      "pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage": 85000
-    },
-    {
-      "skatteordning": "SVALBARD",
-      "datoForFastsetting": "2020-09-27",
-      "pensjonsgivendeInntektAvLoennsinntekt": 492160,
-      "pensjonsgivendeInntektAvLoennsinntektBarePensjonsdel": null,
-      "pensjonsgivendeInntektAvNaeringsinntekt": 2530000,
-      "pensjonsgivendeInntektAvNaeringsinntektFraFiskeFangstEllerFamiliebarnehage": null
+      "pensjonsgivendeInntektAvLoennsinntekt": 67225
     }
   ]
 }
