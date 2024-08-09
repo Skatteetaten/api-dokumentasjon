@@ -45,14 +45,6 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten. Du må generere et gyldig [Maskinporten](../om/sikkerhet.md)-token og legge til i header.
-
-```bash
-curl -v -H "Authorization: Bearer <maskinporten token>" -H "Content-Type: application/json" "https://api-test.sits.no/api/aktivkonto/v3/28707299217"
-```
-
 ## JSON
 
 ```json

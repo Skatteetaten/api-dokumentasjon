@@ -54,16 +54,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/0411748d-0f94-3bce-b981-fd2b3930b6b2) i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
-
-## Curl
-
-Her er et eksempel på et kall med curl mot tjenesten. Du må legge sertifikat og nøkkel som parametre til
-curl-kommandoen.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skatteplikt/v2/ssb/2021/05086900124"
-```
+<TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## JSON
 

@@ -58,15 +58,6 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Næringsspesifikasjon 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig maskinportentoken som legges ved som
-headerer i curl-kommandoen.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/naeringsspesifikasjon/v4/ssb/2023/19875297549?gjelderPaaTidspunkt=2024-02-01T12:00:00"
-```
-
 ## JSON
 
 Eksempel på en gyldig respons for inntektsår 2023 (V4):

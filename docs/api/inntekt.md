@@ -115,14 +115,6 @@ den 5. i måneden etter at rapporteringspliktige forhold inntraff. Statistikk vi
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <samtykke>" "https://api-at.sits.no/api/innrapportert/inntektsmottaker/sbl/12345678901/oppgave/inntekt?fraOgMed=2016-11&tilOgMed=2017-01"
-```
-
 ## Eksempel på respons fra tjenesten
 
 Under er eksempler på respons fra inntektstjenesten.

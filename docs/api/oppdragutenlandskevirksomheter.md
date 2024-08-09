@@ -49,15 +49,7 @@ For enkelte rettighetspakker krever tjenesten [samtykke](../om/samtykke.md).
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/3f6f9089-163d-3fe0-86d2-691900806514) i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
-
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig maskinportentoken og altinn samtykketoken som legges ved som headerer i curl-kommandoen.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <samtykke_token>" "https://api-test.sits.no/api/innrapportert/inntektsmottaker/sbl/12345678901/oppgave/inntekt?fraOgMed=2016-11&tilOgMed=2017-01"
-```
+<TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## JSON
 

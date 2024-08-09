@@ -56,15 +56,7 @@ For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/899c9a8d-0778-3472-9654-f6acd4e7f9ff) i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
-
-## Curl
-
-Her er et eksempel på et kall med curl mot tjenesten for å hente fastsatt skattemelding. Du må legge sertifikat og nøkkel som parametre til curl-kommandoen.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/formueinntekt/skattemelding/v4/fastsatt/ssb/2023/13859798769"
-```
+<TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## JSON
 

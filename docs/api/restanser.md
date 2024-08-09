@@ -49,15 +49,7 @@ Tjenesten krever [samtykke](../om/samtykke.md).
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/0682ff1e-05b9-3031-8add-780f28853571) i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
-
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten med rettighetspakke dibk. Du må ha et gyldig maskinportentoken som legges ved som header i curl-kommandoen. For enkelte rettighetspakker kreves i tillegg altinn samtykketoken som header.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-test.sits.no/api/innkreving/restanser/v2/dibk/310111643"
-```
+<TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## JSON
 

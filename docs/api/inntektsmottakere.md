@@ -42,15 +42,7 @@ Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetsp
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/463966c2-0a35-3845-b2a4-9446d36526e4) i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
-
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig maskinportentoken som legges ved som headerer i curl-kommandoen.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://api-at.sits.no/api/innrapportert/opplysningspliktig/v1/otp/999999999/inntektsmottakere"
-```
+<TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## JSON
 

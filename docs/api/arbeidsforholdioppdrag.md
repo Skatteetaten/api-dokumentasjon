@@ -53,15 +53,6 @@ SwaggerHub.
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten. Du må legge sertifikat og nøkkel som parametre til
-curl-kommandoen.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://arbeidsforholdioppdrag.api.skatteetaten-test.no/v1/arbeidstilsynetHmsKort/arbeidsgiver/877353192/arbeidstaker/09099617966/aktiv"'
-```
-
 ## JSON
 
 ```json

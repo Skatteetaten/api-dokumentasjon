@@ -51,13 +51,6 @@ Tjenesten kan kreve [samtykke](../om/samtykke.md).
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten. Du må ha et gyldig Maskinporten-token og altinn samtykketoken som legges ved som headerer i curl-kommandoen.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" -H "AltinnSamtykke: <samtykke_token>" "https://api-test.sits.no/api/mvamelding/v1/ebevis/974761076"
-```
 ## JSON
 
 ```json

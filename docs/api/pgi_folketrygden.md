@@ -64,15 +64,6 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Pensjonsgivende inntek
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## Curl
-
-Her er et eksempel på en spørring med curl mot tjenesten. Du må generere et gyldig [Maskinporten](../om/sikkerhet.md)
--token og legge til i header.
-
-```bash
-$ curl -v -H "Authorization: Bearer <maskinporten_token>" "https://pgiforfolketrygden.api.skatteetaten-test.no/v1/navPensjonopptjening/2023/28837598585"
-```
-
 ## JSON
 
 ```json
