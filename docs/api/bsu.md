@@ -31,6 +31,12 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Teknisk spesifikasjon
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/boligsparing-for-ungdom-api) på SwaggerHub.
 
+## Rettighetspakker
+
+| Navn på rettighetspakke |	
+|-------------------------|
+| laanekassenLaanStipend  |
+
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/37b70e5e-b862-3c66-a5f1-4dca6ee30afb) i Felles datakatalog.
 
