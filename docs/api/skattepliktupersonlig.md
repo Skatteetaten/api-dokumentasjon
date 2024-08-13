@@ -50,6 +50,24 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
 ## JSON
+```json
+{
+  "organisasjonsnummer": "311165933",
+  "inntektsaar": 2023,
+  "harSkattepliktTilNorge": true,
+  "harSkattepliktTilSvalbard": false,
+  "erFritattForFormuesskatt": false,
+  "erOmfattetAvSaerreglerForKraftforetak": false,
+  "erOmfattetAvPetroleumsskatteloven": false,
+  "erOmfattetAvRederiskatteordningen": false,
+  "erOmfattetAvFinansskattPaaLoennOgOverskudd": false,
+  "skatteregnskapskommune": [
+    "4215"
+  ],
+  "ajourholdstidspunkt": "2024-04-10T10:05:23Z"
+}
+```
+
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
