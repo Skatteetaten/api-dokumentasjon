@@ -2,11 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-08-15T10:15:00.000Z</updated>
+    <updated>2024-08-15T12:05:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Driftsproblemer løst]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/08/15/Driftsproblemer-løst</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/08/15/Driftsproblemer-løst"/>
+        <updated>2024-08-15T12:05:00.000Z</updated>
+        <summary type="html"><![CDATA[Driftsproblemene vi har hatt, er løst.]]></summary>
+        <content type="html"><![CDATA[<p>Driftsproblemene vi har hatt, er løst.</p>]]></content>
+        <category label="Drift" term="Drift"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Driftsproblemer]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/08/15/Driftproblemer</id>
@@ -224,15 +233,5 @@ Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
         <summary type="html"><![CDATA[Det er for tiden problemer med tjenestene våre. Feilsøking pågår.]]></summary>
         <content type="html"><![CDATA[<p>Det er for tiden problemer med tjenestene våre. Feilsøking pågår.</p>
 <p>Feil Oppsto ca kl 10:30</p>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Driftsmelding - Driftsproblemer 23.04.2024 er løst]]></title>
-        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/04/23/oppdatert-driftsstatus</id>
-        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/04/23/oppdatert-driftsstatus"/>
-        <updated>2024-04-23T11:15:00.000Z</updated>
-        <summary type="html"><![CDATA[Problemet ble løst kl. 10:45]]></summary>
-        <content type="html"><![CDATA[<p>Problemet ble løst kl. 10:45
-Feil Oppsto: 09:00</p>]]></content>
-        <category label="Drift" term="Drift"/>
     </entry>
 </feed>
