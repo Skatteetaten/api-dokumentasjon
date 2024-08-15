@@ -56,7 +56,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Underenhet fra a-ordni
 
 ## Datakatalog
 
-Tjenesten er pt. ikke oppført i felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/da596432-a1ed-3763-b2c2-ffb1ffbbf20c) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
