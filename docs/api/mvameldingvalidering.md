@@ -57,16 +57,16 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
   
-| Feilkode | HTTP Statuskode | Feilområde                                                 |
-|----------|-----------------|------------------------------------------------------------|
-| MVA-001  | 500             | Uventet feil på tjenesten.                                 |
-| MVA-002  | 500             | Uventet feil i et bakenforliggende system.                 |
-| MVA-003  | 404             | Ukjent url benyttet.                                       |
-| MVA-004  | 401             | Feil i forbindelse med autentisering.                      |
-| MVA-005  | 403             | Feil i forbindelse med autorisering.                       |
-| MVA-006  | 400             | Feil i forbindelse med validering av inputdata.            |
-| MVA-007  | 404             | Ingen mva-melding funnet på oppgitt referanse.             |
-| MVA-008  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
+| HTTP Statuskode | Feilområde                                                 |
+|-----------------|------------------------------------------------------------|
+| 500             | Uventet feil på tjenesten.                                 |
+| 500             | Uventet feil i et bakenforliggende system.                 |
+| 404             | Ukjent url benyttet.                                       |
+| 401             | Feil i forbindelse med autentisering.                      |
+| 403             | Feil i forbindelse med autorisering.                       |
+| 400             | Feil i forbindelse med validering av inputdata.            |
+| 404             | Ingen mva-melding funnet på oppgitt referanse.             |
+| 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
   
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
