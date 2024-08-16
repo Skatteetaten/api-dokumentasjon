@@ -29,6 +29,10 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mv
 ## Delegering
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva-melding innsending API - På vegne av`
 
+## Sikkerhet
+For mva-meldinginnsending er det Altinn token som brukes:
+https://docs.altinn.studio//nb/api/authentication/id-porten/#veksling-av-access-token-til-altinn-token
+
 ## Teknisk spesifikasjon
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
 
