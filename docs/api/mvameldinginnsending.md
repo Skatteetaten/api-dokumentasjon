@@ -31,6 +31,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 
 ## Sikkerhet
 For mva-meldinginnsending er det Altinn token som brukes:
+
 https://docs.altinn.studio//nb/api/authentication/id-porten/#veksling-av-access-token-til-altinn-token
 
 ## Teknisk spesifikasjon
