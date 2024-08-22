@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API varsel</title>
-    <updated>2024-08-15T12:05:00.000Z</updated>
+    <updated>2024-08-22T09:10:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Påminnelse om bytte av URL-er]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/08/22/paaminnelse-sanering</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/08/22/paaminnelse-sanering"/>
+        <updated>2024-08-22T09:10:00.000Z</updated>
+        <summary type="html"><![CDATA[Vi vil minne om at Skatteetatens delings-API-er nå er tilgjengelige på nye URL-er i både Test og Prod, og de gamle URL-ene vil saneres 17. oktober 2024.]]></summary>
+        <content type="html"><![CDATA[<p>Vi vil minne om at Skatteetatens delings-API-er nå er tilgjengelige på nye URL-er i både Test og Prod, og de gamle URL-ene vil saneres 17. oktober 2024.
+Se liste over URL-er: <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer">https://skatteetaten.github.io/api-dokumentasjon/om/url</a></p>
+<p>Vær oppmerksom på at det nå er nødvendig å oppgi rettighetspakke for enkelte API-er som før ikke hadde krav om dette.
+Konsumenter av Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API, må også være over på Summert skattegrunnlag API V2 innen samme frist.</p>
+<p>Se tidligere varsel: <a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering" target="_blank" rel="noopener noreferrer">https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering</a></p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Driftsproblemer løst]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/08/15/Driftsproblemer-løst</id>
@@ -224,14 +237,5 @@ Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
         <content type="html"><![CDATA[<p>Problemene med vår tjenester er nå løst.</p>
 <p>Problemene startet ca kl.10:30 og løst ca kl.11:30</p>]]></content>
         <category label="Drift" term="Drift"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Driftsmelding - Driftsproblemer 08.05.2024]]></title>
-        <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/08/Driftsproblemer</id>
-        <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/08/Driftsproblemer"/>
-        <updated>2024-05-08T11:10:00.000Z</updated>
-        <summary type="html"><![CDATA[Det er for tiden problemer med tjenestene våre. Feilsøking pågår.]]></summary>
-        <content type="html"><![CDATA[<p>Det er for tiden problemer med tjenestene våre. Feilsøking pågår.</p>
-<p>Feil Oppsto ca kl 10:30</p>]]></content>
     </entry>
 </feed>
