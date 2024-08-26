@@ -10,9 +10,9 @@ hide_table_of_contents: true
 ---
 <Summary>URL-er til Skatteetatens API-er</Summary>
 
-Skatteetaten etablerer en løsning for API management og API gateway for de eksterne API-ene.
+Skatteetaten etablerer en løsning for API management og API gateway for skatt- og inntekt API-ene. I den forbindelse har vi behov for å endre oppbyggingen av URL-ene våre. 
 
-I den forbindelse har vi behov for å endre oppbyggingen av URL-ene våre, og alle eksterne konsumenter av skatt- og inntektstjenester må derfor ta i bruk nye URL-er til API-ene våre. Alle API-ene  våre er tilgjenglige med nye URL-er i Test og Produksjon (detaljert oversikt under), og Open API spesifikasjonene (OAS) på [Swaggerhub](https://app.swaggerhub.com/organizations/skatteetaten) er oppdatert. Nye URL-er er i en periode være tilgjengelig i parallell med gamle URL-er. **De gamle URL-ene saneres 17. oktober 2024, men vi oppfordrer til å skifte til nye URL-er så snart som mulig.**
+Eksterne konsumenter må derfor ta i bruk nye URL-er til skatt- og inntekt API-ene. Alle API-ene er tilgjenglige med nye URL-er i Test og Produksjon (detaljert oversikt under), og Open API spesifikasjonene (OAS) på [Swaggerhub](https://app.swaggerhub.com/organizations/skatteetaten) er oppdatert. Nye URL-er er i en periode være tilgjengelig i parallell med gamle URL-er. **De gamle URL-ene saneres 17. oktober 2024, men vi oppfordrer til å skifte til nye URL-er så snart som mulig.**
 
 Vi oppfordrer til å teste overgangen mot vårt testmiljø først.
 
