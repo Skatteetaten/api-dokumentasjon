@@ -27,9 +27,6 @@ Det kan være at enkelte virksomheter må endre sine brannmurregler. IP-range vi
 
 ## Status og ny URL pr. API
 
-:no_entry: : API-et er ikke klart med ny URL enda <br />
-:white_check_mark: : API-et er klart med ny URL i Test og Prod 
-
 | API |	Status | URL-er | Kommentar | 
 | --- | ------ | ------ | --------- |
 | [Aksjebeholdning API](https://app.swaggerhub.com/apis/skatteetaten/aksjebeholdning-api)	| :white_check_mark: | Test: https://aksjebeholdning.api.skatteetaten-test.no/v1 <br /> Prod: https://aksjebeholdning.api.skatteetaten.no/v1 | |
