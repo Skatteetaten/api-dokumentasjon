@@ -69,6 +69,8 @@ stadie "oppgjoer".
 | ldirTotalregnskap                 | oppgjoer                     | Støttes kun i V2                  |
 | ldirReindriftstilskudd            | oppgjoer                     | Støttes i både V1 og V2           |
 | nav                               | oppgjoer                     | Støttes i både V1 og V2           | 
+| navbidrag                         | oppgjoer                     | Støttes kun i V2                  | 
+| navufoeretrygd                    | oppgjoer                     | Støttes kun i V2                  | 
 | navSupplerendeStoenad             | oppgjoer og utkast           | Støttes kun i V2                  |
 | norgesbank                        | oppgjoer og utkast           | Støttes kun i V2                  |
 | saernamsmann                      | oppgjoer                     | Støttes kun i V2                  |
