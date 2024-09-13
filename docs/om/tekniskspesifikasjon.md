@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 ## Open API spesifikasjon
 
-For å møte det stadig økende behovet for nye delingstjenester og ha mer effektiv forvaltning av delingstjenester, har Skatteetaten migrert alle delingstjenestene over på Open API spesifikasjon (tidligere XSD). Da kan vi automatisere utviklingsprosessen mer slik at funksjonell spesifikasjon, teknisk løsning og dokumentasjon alltid skal være i synk. Basert på prinsippet om "kontrakt først" kan vi også autogenerere kode for delingstjenestene.
+For å møte det stadig økende behovet for nye tjenester og ha mer effektiv forvaltning av tjenester, har Skatteetaten migrert alle tjenestene over på Open API spesifikasjon (tidligere XSD). Da kan vi automatisere utviklingsprosessen mer slik at funksjonell spesifikasjon, teknisk løsning og dokumentasjon alltid skal være i synk. Basert på prinsippet om "kontrakt først" kan vi også autogenerere kode for delingstjenestene.
 
 Dette vil også være en forbedring for brukeropplevelse for konsumentene, som kan benytte Open API spesifikasjonene for å få automatisert opprettelse av tjenester mot Skatteetaten.
 
@@ -24,6 +24,6 @@ I Open API spesifikasjonen ligger URL-er til tjenesten, beskrivelsen av paramete
 
 Når tjenestene er utviklet basert på Open API, kan vi eksponere dette ut til konsumentene, og vi benytter SwaggerHub for å publisere Open API spesifikasjonene.
 
-Lenke til de ulike delingstjenestenes Open API spesifikasjoner ligger i dokumentasjonen for hver enkelt delingstjeneste, men på Swaggerhub finnes også en [oversikt over alle Skatteetatens API-er](https://app.swaggerhub.com/organizations/skatteetaten).
+Lenke til de ulike tjenestenes Open API spesifikasjoner ligger i dokumentasjonen for hver enkelt tjeneste, men på Swaggerhub finnes også en [oversikt over alle Skatteetatens API-er](https://app.swaggerhub.com/organizations/skatteetaten).
 
 Implementasjonene må ta hensyn til at det ikke kommer verdier for ikke-obligatoriske felter for alle enkelttilfeller.
