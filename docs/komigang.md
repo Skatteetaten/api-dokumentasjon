@@ -7,17 +7,17 @@ tags: [API]
 keywords: [API, dokumentasjon]
 last_updated: Des 1, 2022
 title: Kom i gang
-summary: "Kom i gang med Skatteetatens delingstjenester"
+summary: "Kom i gang med Skatteetatens eksterne API"
 hide_table_of_contents: true
 ---
 
-Skatteetaten tilbyr en rekke standardiserte maskin-til-maskin-tjenester som kan benyttes av norske offentlige eller private virksomheter som har behov for  tilgang til opplysninger fra Skatteetaten. Dokumentasjon av disse delingstjenestene er samlet på denne nettsiden. Vi jobber fortløpende med å tilgjengeliggjøre flere delingstjenester.
+Skatteetaten tilbyr en rekke standardiserte maskin-til-maskin-tjenester som kan benyttes av norske offentlige eller private virksomheter som har behov for tilgang til opplysninger fra Skatteetaten. Dokumentasjon av disse tjenestene er samlet på denne nettsiden. Vi jobber fortløpende med å tilgjengeliggjøre flere tjenester.
 
 Informasjon om tjenester og løsninger som er under utvikling eller pilot ligger på [Beta-siden](https://skatteetaten.github.io/beta-apier/).
 
-## Om Skatteetatens delingstjenester
+## Om Skatteetatens eksterne tjenester
 
-På dette området kan du finne informasjon om alt du trenger å vite om Skatteetatens delingstjenester:
+På dette området kan du finne informasjon om alt du trenger å vite om Skatteetatens tjenester:
 * [Bruk av tjenestene](./om/bruk.md)
 * [Versjonering](./om/versjoner.md)
 * [Sikkerhet inkl. Maskinporten](./om/sikkerhet.md)
