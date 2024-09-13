@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 ## Maskinporten
 
-Alle Skatteetatens delingstjenester benytter [Maskinporten fra Digdir](https://samarbeid.digdir.no/maskinporten/maskinporten/25) for autentisering av virksomheter for maskin-til-maskin grensesnitt. Autentisering basert på kun virksomhetsertifikat støttes ikke lenger.
+Alle Skatteetatens eksterne tjenester benytter [Maskinporten fra Digdir](https://samarbeid.digdir.no/maskinporten/maskinporten/25) for autentisering av virksomheter for maskin-til-maskin grensesnitt. Autentisering basert på kun virksomhetsertifikat støttes ikke lenger.
 
 Digitaliseringsdirektoratet har beskrevet hvordan API-sikring med Maskinporten gjøres. Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. For å komme i gang med testing må det gjøres noen forberedelser hos virksomheten.
 
@@ -40,7 +40,7 @@ Se egen side for informasjon om [hvordan opptre på vegne av en annen virksomhet
 
 ## Brannmur
 
-Hvis man kaller delingstjenestene fra bak en utgående brannmur må man lage åpninger i brannmuren sin.
+Hvis man kaller tjenestene fra bak en utgående brannmur må man lage åpninger i brannmuren sin.
 
 ### Adresser det må åpnes for
 
