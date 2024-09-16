@@ -35,7 +35,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Skatteetaten-registr
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatteetatenregistrertselskap-api/) på SwaggerHub.
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatteetaten-registrert-selskap-api/) på SwaggerHub.
 
 ## Rettighetspakker
 
@@ -131,18 +131,17 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
 variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
-| Feilkode | HTTP Statuskode | Feilområde                                                           |
-|----------|-----------------|----------------------------------------------------------------------|
-| SME-001  | 500             | Uventet feil på tjenesten.                                           |
-| SME-002  | 500             | Uventet feil i et bakenforliggende system.                           |
-| SME-003  | 404             | Ukjent url benyttet.                                                 |
-| SME-004  | 401             | Feil i forbindelse med autentisering.                                |
-| SME-005  | 403             | Feil i forbindelse med autorisering.                                 |
-| SME-006  | 400             | Feil i forbindelse med validering av inputdata.                      |
-| SME-007  | 404             | Ikke treff på oppgitt identifikator.                                 |
-| SME-008  | 404             | Ingen selskapsmelding funnet på oppgitt identifikator og inntektsår. |
-| SME-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.           |
-| SME-010  | 406             | Selskapsmelding finnes ikke lenger.                                  |
+| Feilkode | HTTP Statuskode | Feilområde                                                                         |
+|----------|-----------------|------------------------------------------------------------------------------------|
+| SRS-001  | 500             | Uventet feil på tjenesten.                                                         |
+| SRS-002  | 500             | Uventet feil i et bakenforliggende system.                                         |
+| SRS-003  | 404             | Ukjent url benyttet.                                                               |
+| SRS-004  | 401             | Feil i forbindelse med autentisering.                                              |
+| SRS-005  | 403             | Feil i forbindelse med autorisering.                                               |
+| SRS-006  | 400             | Feil i forbindelse med validering av inputdata.                                    |
+| SRS-007  | 404             | Fant ikke opplysninger om skatteetaten-registrert selskap på angitt identifikator. |
+| SRS-008  | 404             | Ingen treff på oppgitt identifikator.                                              |
+| SRS-009  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                         |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
