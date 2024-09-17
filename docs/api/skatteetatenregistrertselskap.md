@@ -117,8 +117,15 @@ Informasjonsmodell kommer i Felles datakatalog.
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, så testdata er derfor oppgitt her. Det kan testes med identifikator 090090003.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, så testdata er derfor listet her.
 
+Det kan gjøres oppslag på følgende identifikatorer:
+
+| Identifikator |
+|---------------|
+| 090090003 |
+| 090090011 |
+| 090090038 |
 
 
 </TabItem>
