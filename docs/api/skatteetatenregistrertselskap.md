@@ -60,65 +60,31 @@ Datatjenestebeskrivelse kommer i Felles datakatalog.
 
 ```json
 {
-  "norskIdentifikator": "313696146",
-  "inntektsaar": "2023",
-  "inntektOgUnderskudd": {
-    "samletInntekt": 154857,
-    "inntektOgInntektsfradrag": {
-      "naeringsinntekt": 154857
+  "identifikator": "090090003",
+  "selskapetsNavn": "Soli Drapert Feltseng",
+  "virksomhetsrelasjon": [
+    {
+      "ajourholdstidspunkt": "2024-09-11T16:08:18.45733161+02:00",
+      "gyldighetstidspunkt": "2024-09-11T16:08:18.45733161+02:00",
+      "relasjonstype": "styretsLeder",
+      "relatertIdentifikator": {
+        "identifikatortype": "taxIdentificationNumber",
+        "verdi": "29880297226",
+        "landkode": "NO"
+      }
     }
-  },
-  "spesifikasjonAvForholdRelevanteForBeskatningAvDeltakere": {
-    "aksjeIAksjonaerregisteret": [
-      {
-        "id": "9b403511-d3d7-458d-96f2-4fb0fa6f7081",
-        "selskapetsNavn": "Denne gaten 755 AS",
-        "selskapetsOrganisasjonsnummer": "312445484",
-        "landkode": "NO",
-        "aksjeklasse": "ordinaer",
-        "isinnummer": "NO5553437509",
-        "antallAksjer": 212
-      }
-    ]
-  },
-  "eierforhold": {
-    "deltaker": [
-      {
-        "deltakerensOrganisasjonsnummer": "310044237",
-        "id": "48bacc24-bad0-4a97-9ecf-c3444ed2cf6e",
-        "deltakerensNavn": "UVANLIG TROFAST TIGER AS",
-        "selskapsandelIProsent": 23.83,
-        "grunnlagForDeltakersAndelAvInntekt": {
-          "andelAvSamletInntekt": 36902
-        },
-        "deltakersAndelAvInntekt": {
-          "alminneligInntekt": 36902,
-          "utdelingMv": {
-            "uegentligInnskudd": 8118,
-            "skattPaaDeltakersAndelAvSelskapetsOverskudd": 8118
-          }
-        }
-      },
-      {
-        "deltakerensOrganisasjonsnummer": "310034479",
-        "id": "a3924b5a-0fe8-4bc1-a316-d5ecf9448c98",
-        "deltakerensNavn": "VOKSENDE AKTIV TIGER AS",
-        "selskapsandelIProsent": 76.17,
-        "grunnlagForDeltakersAndelAvInntekt": {
-          "andelAvSamletInntekt": 117955
-        },
-        "deltakersAndelAvInntekt": {
-          "alminneligInntekt": 117955,
-          "utdelingMv": {
-            "uegentligInnskudd": 25950,
-            "skattPaaDeltakersAndelAvSelskapetsOverskudd": 25950
-          }
-        }
-      }
-    ]
-  },
-  "ajourholdstidspunkt": "2024-02-20T08:42:48.479Z",
-  "opprettetDato": "2024-02-20T09:42:37.740023476+01:00"
+  ],
+  "stiftelsesdato": "2024-08-05",
+  "postadresse": {
+    "ajourholdstidspunkt": "2024-09-11T16:08:18.45733161+02:00",
+    "norskAdresse": {
+      "adressetekst": [
+        "Øvre Kleivegate 14"
+      ],
+      "postnummer": "4005",
+      "poststedsnavn": "STAVANGER"
+    }
+  }
 }
 
 ```
