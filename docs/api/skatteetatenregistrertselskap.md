@@ -9,7 +9,7 @@ last_updated: Jun 7, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten leverer informasjon om ....</Summary>
+<Summary>Tjenesten leverer informasjon om Skatteetaten-registrerte selskap, som er selskap med plikter ovenfor Skatteetaten uten å være registreringspliktige til Enhetsregisteret.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
