@@ -151,8 +151,9 @@ Informasjonsmodell kommer i Felles datakatalog.
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytte hendelseslisten for å finne
-testdata man kan benytte for å teste oppslagstjenesten.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, så testdata er derfor oppgitt her. Det kan testes med identifikator 090090003.
+
+
 
 </TabItem>
 </Tabs>
