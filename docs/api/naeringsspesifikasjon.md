@@ -173,7 +173,8 @@ Eksempel på en gyldig respons for inntektsår 2023 (V4):
   },
   "skalBekreftesAvRevisor": false,
   "skjermet": false,
-  "opprettetDato": "2024-01-29T12:09:07.614+01:00"
+  "opprettetDato": "2024-01-29T12:09:07.614+01:00",
+  "ajourholdstidspunkt": "2024-01-29T12:09:07.614+01:00"
 }
 ```
 
