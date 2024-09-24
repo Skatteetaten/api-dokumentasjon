@@ -7,7 +7,7 @@ datatable: true
 tags: [API]
 keywords: [API, dokumentasjon]
 last_updated: Sept 24, 2024
-summary: "Kontakt oss om Skatteetatens delingstjenester"
+summary: "Kontakt oss om Skatteetatens API-er"
 hide_table_of_contents: true
 ---
 Vi hjelper deg om det er noe du lurer på, enten det gjelder faglige spørsmål, teknisk brukerstøtte eller driftsmeldinger.
