@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "Nyheter og driftsvarsler - API dokumentasjon",
+    "message": "Nyheter - API dokumentasjon",
     "description": "The title for the blog used in SEO"
   },
   "description": {
-    "message": "Nyheter og driftsvarsler for Skatteetatens API-er",
+    "message": "Nyheter for Skatteetatens API-er",
     "description": "The description for the blog used in SEO"
   },
   "sidebar.title": {
-    "message": "Nylige varsler",
+    "message": "Nylige",
     "description": "The label for the left sidebar"
   }
 }

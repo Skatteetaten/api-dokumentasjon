@@ -308,8 +308,8 @@
   "Dokumentasjon": {
     "message": "Documentation"
   },
-  "Nyheter og driftsvarsler": {
-    "message": "News and operational alerts"
+  "Nyheter": {
+    "message": "News"
   },
   "Skatteetatens API-er": {
     "message": "The Norwegian Tax Administration's APIs"
@@ -355,11 +355,5 @@
   },
   "Se vårt presserom": {
     "message": "See our Press room"
-  },
-  "Abonnere på nyheter og driftsvarsler": {
-    "message": "Subscribing to news and operational alerts"
-  },
-  "Hvordan abonnere på varsler": {
-    "message": "How to subscribe to alerts"
   }
 }

@@ -56,7 +56,7 @@ const ExternalHeaderContent = ({ ...props }) => {
                   ),
                 })}
               >
-                <Translate>Nyheter og driftsvarsler</Translate>
+                <Translate>Nyheter</Translate>
               </Link>
             </nav>
           </>

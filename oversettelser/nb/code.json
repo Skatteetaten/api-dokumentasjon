@@ -56,11 +56,11 @@
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Nyere varsler",
+    "message": "Nyere",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Eldre varsler",
+    "message": "Eldre",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
@@ -68,11 +68,11 @@
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Nyere varsel",
+    "message": "Nyere",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Eldre varsel",
+    "message": "Eldre",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
@@ -308,8 +308,8 @@
   "Dokumentasjon": {
     "message": "Dokumentasjon"
   },
-  "Nyheter og driftsvarsler": {
-    "message": "Nyheter og driftsvarsler"
+  "Nyheter": {
+    "message": "Nyheter"
   },
   "Skatteetatens API-er": {
     "message": "Skatteetatens API-er"
@@ -355,11 +355,5 @@
   },
   "Se vårt presserom": {
     "message": "Se vårt presserom"
-  },
-  "Abonnere på nyheter og driftsvarsler": {
-    "message": "Abonnere på nyheter og driftsvarsler"
-  },
-  "Hvordan abonnere på varsler": {
-    "message": "Hvordan abonnere på varsler"
   }
 }

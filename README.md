@@ -7,19 +7,21 @@ Nettsiden lages basert på strukturen under [/docs](./docs) mappen på main-bran
 ### Dokumentasjon under utarbeidelse
 Hvis dokumentasjon er under utarbeidelse eller api'et er i en beta-versjon og ikke skal være synlig i sidemenyen, kan man la være å legge det inn i listen over tjeneste-dokumenter i [sidebars.js](./sidebars.js). Dokumentet vil da ikke dukke opp i sidemenyen.
 
-### Publisere varsel
-For å publisere et varsel, opprett en fil under [nyheter-og-driftsvarsler](./nyheter-og-driftsvarsler).
+### Publisere nyhet
+For å publisere en nyhet, opprett en fil under [nyheter-og-driftsvarsler](./nyheter-og-driftsvarsler).
 Filnavnet burde inneholde dato samt kort beskrivelse, f.eks. `2022-02-25-13-05-problemer-med-tjenestene.md`.
 Innholdet i fila burde være på formen:
 ```md
 ---
-title:  "Legg inn tittel på varsel her"
+title:  "Legg inn tittel på nyhet her"
 tags: [news]
 ---
-Legg inn varseltekst her.
+Legg inn nyhetstekst her.
 ```
 
-Nettsiden oppretter en ATOM-feed for varslene. `tags` i varselfila mappes til [category](https://validator.w3.org/feed/docs/atom.html#category) i feeden.
+Nettsiden oppretter en ATOM-feed for nyhetene. `tags` i nyhetsfila mappes til [category](https://validator.w3.org/feed/docs/atom.html#category) i feeden.
+
+Driftsvarsler for API'ene ble lagt ut her før, men skal nå legges ut på status.skatteetaten.no. Derfor inneholder mappenavnet og adressen til feeden "driftsvarsler". Navnet beholdes for bakoverkompatibilitet.
 
 ### Deploy
 Nettsiden bygges og deployes automatisk ved commit til main-branch.

@@ -24,7 +24,7 @@ Vi legger ut nyheter om endringer i tekniske løsninger og i dokumentasjon på G
 
 Nyhetene tagges slik at det skal være mulig for konsumenter og se om det er relevant. Se egen [oversikt over varsler for ulike tagger](/nyheter-og-driftsvarsler/tags).
 
-## Hvordan abonnere på varsler på Github
+## Hvordan abonnere på nyheter på Github
 Vi publiserer en ATOM feed for nyheter på Github.
 
 - For å følge med på feeden i en nettleser må man installere en plugin/extension. Det finnes et stort utvalg, søk på ‘atom feed reader’ eller lignende.

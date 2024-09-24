@@ -68,14 +68,14 @@ const config = {
         blog: {
           path: "nyheter-og-driftsvarsler",
           routeBasePath: "nyheter-og-driftsvarsler",
-          blogTitle: "nyheter-og-driftsvarsler",
+          blogTitle: "nyheter",
           blogSidebarCount: 25,
           postsPerPage: 25,
           readingTime: () => undefined,
           feedOptions: {
             type: "atom",
-            title: "Skatteetaten - API varsel",
-            description: "Nyheter og driftsvarsler for Skatteetatens API’er",
+            title: "Skatteetaten - API nyheter",
+            description: "Nyheter for Skatteetatens API’er",
             createFeedItems: async (params) => {
               const { blogPosts, defaultCreateFeedItems, ...rest } = params;
 

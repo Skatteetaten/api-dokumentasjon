@@ -56,21 +56,21 @@ export default function BlogPostItems({
 
   const formatDate = (date: string) => dateTimeFormat.format(new Date(date));
 
-  const data = items.map((varsel) => ({
-    date: formatDate(varsel.content.metadata.date),
+  const data = items.map((nyhet) => ({
+    date: formatDate(nyhet.content.metadata.date),
     title: (
-      <Link to={varsel.content.metadata.permalink}>
-        {varsel.content.metadata.frontMatter.title}
+      <Link to={nyhet.content.metadata.permalink}>
+        {nyhet.content.metadata.frontMatter.title}
       </Link>
     ),
-    description: varsel.content.metadata.description,
+    description: nyhet.content.metadata.description,
   }));
 
   const configTitleString = context.siteConfig.title
     ? ` - ${context.siteConfig.title}`
     : "";
   const title = `${translate({
-    message: "Nyheter og driftsvarsler",
+    message: "Nyheter",
   })}${configTitleString}`;
 
   return (
@@ -79,7 +79,7 @@ export default function BlogPostItems({
         <title>{title}</title>
       </Head>
       <h1>
-        <Translate>Nyheter og driftsvarsler</Translate>
+        <Translate>Nyheter</Translate>
       </h1>
       {ingress}
 
@@ -92,7 +92,7 @@ export default function BlogPostItems({
             <Table
               data={data}
               columns={columns}
-              caption={translate({ message: "Nyheter og driftsvarsler" })}
+              caption={translate({ message: "Nyheter" })}
               hideCaption
             />
           );
