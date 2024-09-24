@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API]
 keywords: [API, dokumentasjon]
-last_updated: Aug 31, 2023
+last_updated: Sept 24, 2024
 summary: "Kontakt oss om Skatteetatens delingstjenester"
 hide_table_of_contents: true
 ---
@@ -14,11 +14,11 @@ Vi hjelper deg om det er noe du lurer på, enten det gjelder faglige spørsmål,
 
 ## Varsler
 
-Se [mer info om varsler](/om/varsler) på egen side.
+Se [mer info om varsling](/om/varsler) på egen side.
 
 ## Brukerstøtteverktøy
 
-Kontakt oss gjennom vårt [verktøy for brukerstøtte](https://www.skatteetaten.no/deling/kontakt/) hvis du opplever vedvarende feil med tjenestene våre. Applikasjon og korrelasjonsid fra feilmelding må inkluderes i henvendelser.
+For henvendelser om API-er for deling av skatte- og inntekt eller MVA, kontakt oss gjennom vårt [verktøy for brukerstøtte](https://www.skatteetaten.no/deling/kontakt/). API og korrelasjonsid fra feilmelding må inkluderes i henvendelser for å kunne undersøke effektivt.
 
 ## Slack
 
