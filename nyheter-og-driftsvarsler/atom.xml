@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler</id>
-    <title>Skatteetaten - API varsel</title>
+    <title>Skatteetaten - API nyheter</title>
     <updated>2024-09-11T06:40:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler"/>
-    <subtitle>Nyheter og driftsvarsler for Skatteetatens API’er</subtitle>
+    <subtitle>Nyheter for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/img/favicon.png</icon>
     <entry>
         <title type="html"><![CDATA[Påminnelse om at driftsvarsler er flyttet til Skatteetatens statusside]]></title>
