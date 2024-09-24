@@ -51,8 +51,8 @@ export default function Navbar(): JSX.Element {
           <div className={`${styles.navigation} navbar`}>
             <TopBanner
               logoLink="https://www.skatteetaten.no/"
-              homeText={translate({ message: "Tilbake Til Deling" })}
-              homeUrl="https://www.skatteetaten.no/deling"
+              homeText="skatteetaten.no"
+              homeUrl="https://www.skatteetaten.no"
               topStripe={
                 <TopStripe>
                   <Link
