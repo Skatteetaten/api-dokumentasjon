@@ -268,4 +268,9 @@ Det finnes foreløpig ingen testdata for denne tjenesten. Denne siden oppdateres
 tilgjengelig.
 
 </TabItem>
+<TabItem headerText="Kontakt oss" itemKey="itemKey-6">
+Har du spørsmål til Skatteetaten om Innrapportering boligsameie API, kan du sende oss e-post: <altinnreetablering@skatteetaten.no>
+Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
+  
+</TabItem>
 </Tabs>
