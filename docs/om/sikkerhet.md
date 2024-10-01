@@ -44,13 +44,24 @@ Hvis man kaller tjenestene fra bak en utgående brannmur må man lage åpninger 
 
 ### Adresser det må åpnes for
 
+Vi forsøker å holde IP statisk, men kan ikke love at det aldri vil komme endringer.
+Hvis vi må gjøre endringer vil dette bli varslet som en [nyhet](/nyheter-og-driftsvarsler/).
+
+#### Nye URL-er
+Det kan være at enkelte virksomheter må åpne i brannmurreglene sine. IP-range vil være:
+
+| Miljø | Host | IP | Port | 
+|---|---|---|---|
+| Test | *.api.skatteetaten-test.no | 20.100.51.138 / 2a13:6200:1065:13d:f5:52a2:e633:8625 |
+| Prod | *.api.skatteetaten.no | 51.13.21.170 / 2a13:6201:1066:c63:f5:fc5f:3c74:30c0 |
+
+#### Gamle URL-er
 | Miljø | Host | IP | Port | 
 |---|---|---|---|
 | Test | api-test.sits.no | 159.216.17.148 | 443|
 | Produksjon | api.skatteetaten.no | 159.216.17.168 | 443|
 
-Vi forsøker å holde IP statisk, men kan ikke love at det aldri vil komme endringer.
-Hvis vi må gjøre endringer vil dette bli varslet som en [nyhet](/nyheter-og-driftsvarsler/).
+Gamle URL-er vil saneres 17. oktober.
 
 ### Subnett
 
