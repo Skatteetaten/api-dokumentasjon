@@ -91,8 +91,7 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 
   ## Valideringsregler
 
-<Tabs underline={true}>
-<TabItem headerText="Alminnelig- og Primærnæring" itemKey="itemKey-1" default>
+
 
 Valideringsreglene er under utvikling og nye valideringsregler vil bli lagt til fortløpende.
 
@@ -170,15 +169,7 @@ Følgende tekniske regler er også spesifisert som validerer xsd format og kodel
 Følgende praktiske regler er også definert for å hindre feilaktige innsendinger til det nye systemet:
 * Innsending og validering tjeneste er ikke tilgjengelig før 01.01.2022 for ordinær (aliminnelig eller primærnæring) mva-meldinger (R000)
 * Innsending og validering av ordinær (alminnelig eller primærnæring) mva-meldinger fra før 2022 er ikke tilgjengelig (R077)
-  </TabItem>
 
-<TabItem headerText="Omvendtavgiftsplikt melding" itemKey="itemKey-2" default>
-Komp validering tekst...   
-</TabItem>
-<TabItem headerText="Kompensasjonsmelding" itemKey="itemKey-3" default>
-Komp validering tekst...
- </TabItem>
-</Tabs>
 
 </TabItem>
 
