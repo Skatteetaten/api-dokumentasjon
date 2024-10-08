@@ -110,6 +110,15 @@ Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 
 
 
+
+
+</TabItem>
+
+</Tabs>
+
+
+<Tabs underline={true}>
+<TabItem headerText="Alminnelig- og primærnæring" itemKey="itemKey-1" default>
 Følgende valideringsregler er foreløpig definert for ordinær (alminnelig og primærnæring) mva-meldinger:
 
 * Merknad til beløp med motsatt fortegn som gjelder grunnlag og utgående avgift mangler (R020)
@@ -171,23 +180,73 @@ Følgende tekniske regler er også spesifisert som validerer xsd format og kodel
 Følgende praktiske regler er også definert for å hindre feilaktige innsendinger til det nye systemet:
 * Innsending og validering tjeneste er ikke tilgjengelig før 01.01.2022 for ordinær (aliminnelig eller primærnæring) mva-meldinger (R000)
 * Innsending og validering av ordinær (alminnelig eller primærnæring) mva-meldinger fra før 2022 er ikke tilgjengelig (R077)
-
-
 </TabItem>
 
-</Tabs>
+<TabItem headerText="Omvendt avgiftsplikt" itemKey="itemKey-2" default>
+Følgende valideringsregler er foreløpig definert for mva-meldinger for omvendt avgiftsplikt:
 
+Terminlengde må være 3-månedlig (R106)
+Merknad til beløp med motsatt fortegn som gjelder grunnlag og utgående avgift mangler (R108)
+Spesifikasjonslinjer skal ha en gyldig mva-kode i mva-meldinger for omvendt avgiftsplikt (R113)
+Det må sendes inn spesifikasjonslinjer når det er oppgitt beløp i 'fastsatt merverdiavgift' feltet (R107)
+Utgående mva. skal føres med grunnlag og sats (R109)
+Det skal ikke føres beløp både for koden og tilhørende spesifikasjon (R112)
+Spesifikasjonslinje som gjelder tilbakeføring av inngående mva., tap på krav og uttak kan ikke sendes inn på mva-meldinger for omvendt avgiftsplikt (R110)
+Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett kan kun sendes inn på mva-kode 86, 88 og 91 (R111)
+Innsendte koder stemmer ikke med beløpet oppgitt i 'fastsatt merverdiavgift' felt (R119)
+'fastsatt merverdiavgift' beløpet skal ikke være kr 0 (R118)
+Summert grunnlag må være over kr 2 000 (R117)
+Det finnes en aktiv plikt i mva-registeret for deler av perioden mva-meldingen for omvendt avgiftsplikt gjelder for (R123)
+Koden må inneholde spesifikasjon 'Kjøp med kompensasjonsrett (R124)
+Meldingen kan ikke sendes inn før terminen har utløpt. (R120)
+Følgende tekniske regler er også spesifisert som validerer xsd format og kodelister verdier:
 
-<Tabs underline={true}>
-<TabItem headerText="Alm næring" itemKey="itemKey-1" default>
-Test alm næring
+Mva-meldingen skal være på gyldig format (R001)
+Spesifikasjonslinjer skal bare bruke kjente mva-koder (R002)
+Spesifikasjonslinjer skal bare bruke gyldige satser (R003)
+Spesifikasjonslinjer skal bare bruke kjente spesifikasjoner (R069)
+Spesifikasjonslinjer skal bare bruke kjente merknader på utvalgt merknad felt (R070)
+Mva-meldingen skal bare bruke en kjent merknad på utvalgt merknad felt (R071)
+Følgende praktiske regler er også definert for å hindre feilaktige innsendinger til det nye systemet:
+
+Innsending og validering tjeneste er ikke tilgjengelig før 01.02.2023 for mva-meldinger for omvendt avgiftsplikt (R105)
+Innsending og validering av mva-melding for omvendt avgiftsplikt fra før 2023 er ikke tilgjengelig (R103)
 </TabItem>
-<TabItem headerText="komp" itemKey="itemKey-2" default>
-Test alm næring
-</TabItem>
-<TabItem headerText="komp" itemKey="itemKey-3" default>
-Test alm næring
-</TabItem>
 
 
+<TabItem headerText="Kompensasjonsmelding" itemKey="itemKey-3" default>
+
+Følgende valideringsregler er foreløpig definert for krav om kompensasjon mva-meldinger:
+
+Mva-meldingen kan ikke sendes inn før terminen har utløpt (R089)
+Terminlengde må være 2-månedlig (R095)
+Merknad til beløp med motsatt fortegn som gjelder fradragsført inngående avgift mangler (R086)
+Spesifikasjonslinjer skal ha en gyldig mva-kode i krav om kompensasjon mva-meldinger (R088)
+Kodelinjer skal føres med grunnlag og sats (R093)
+Det må sendes inn spesifikasjonslinjer når det er oppgitt beløp i 'fastsatt merverdiavgift' feltet (R100)
+Virksomheter som er registrert som et kommunalt foretak kan ikke sende inn mva-meldingen (R094)
+Mva-meldingen må sendes inn før innleveringsfristen for terminen (R096)
+Endring av krav om kompensasjon innsendt etter innleveringsfristen kan ikke være mer til gode enn det som allerede er sendt inn (R097)
+Første krav om kompensasjon for terminen kan ikke være 0 kroner (R098)
+Første krav om kompensasjon til utbetalig for året må være på minst 20 000 kroner (R099)
+Koder 81 og 83 kan kun brukes av registrerte virksomheter (R101)
+Spesifikasjonslinje som gjelder justering kan kun sendes inn på mva-kode 1, 14 eller 81 (R087)
+Spesifikasjonslinje som gjelder tap på krav, uttak eller tilbakeføring av inngående mva. er ugyldig (R091)
+Virksomheter som er registrert som et fylkeskommunalt foretak kan ikke sende inn mva-meldingen (R128)
+Virksomheter som er registrert som et organisasjonsledd kan ikke sende inn mva-meldingen (R129)
+Virksomheter som er registrert som en underenhet får avvikende skattemelding (R130)
+Følgende tekniske regler er også spesifisert som validerer xsd format og kodelister verdier:
+
+Mva-meldingen skal være på gyldig format (R001)
+Spesifikasjonslinjer skal bare bruke kjente mva-koder (R002)
+Spesifikasjonslinjer skal bare bruke gyldige satser (R003)
+Spesifikasjonslinjer skal bare bruke kjente spesifikasjoner (R069)
+Spesifikasjonslinjer skal bare bruke kjente merknader på utvalgt merknad felt (R070)
+Mva-meldingen skal bare bruke en kjent merknad på utvalgt merknad felt (R071)
+Følgende praktiske regler er også definert for å hindre feilaktige innsendinger til det nye systemet:
+
+Innsending og validering tjeneste er ikke tilgjengelig før 01.01.2023 for krav om kompensasjon mva-meldinger (R090)
+Innsending og validering av krav om kompensasjon mva-meldinger fra før 2023 er ikke tilgjengelig (R092)
+
+</TabItem>
 </Tabs>
