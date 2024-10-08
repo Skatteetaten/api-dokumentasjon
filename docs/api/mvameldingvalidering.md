@@ -179,8 +179,15 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 
 
 <Tabs underline={true}>
-<TabItem headerText="Undermeny valideringsregler" itemKey="itemKey-1" default>
-
+<TabItem headerText="Alm næring" itemKey="itemKey-1" default>
+Test alm næring
+</TabItem>
+<TabItem headerText="komp" itemKey="itemKey-2" default>
+Test alm næring
+</TabItem>
+<TabItem headerText="komp" itemKey="itemKey-3" default>
+Test alm næring
 </TabItem>
 
-</Tabs
+
+</Tabs>
