@@ -109,14 +109,6 @@ Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 * Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget (R122)
 
 
-
-
-
-</TabItem>
-
-</Tabs>
-
-
 <Tabs underline={true}>
 <TabItem headerText="Alminnelig- og primærnæring" itemKey="itemKey-1" default>
 Følgende valideringsregler er foreløpig definert for ordinær (alminnelig og primærnæring) mva-meldinger:
@@ -254,3 +246,6 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 
 </TabItem>
 </Tabs>
+</TabItem>
+</Tabs>
+
