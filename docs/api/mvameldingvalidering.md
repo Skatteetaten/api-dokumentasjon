@@ -91,8 +91,6 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 
   ## Valideringsregler
 
-
-
 Valideringsreglene er under utvikling og nye valideringsregler vil bli lagt til fortløpende.
 
 Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
@@ -170,7 +168,7 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 * Innsending og validering tjeneste er ikke tilgjengelig før 01.01.2022 for ordinær (aliminnelig eller primærnæring) mva-meldinger (R000)
 * Innsending og validering av ordinær (alminnelig eller primærnæring) mva-meldinger fra før 2022 er ikke tilgjengelig (R077)
 
-
+Test
 </TabItem>
 
 </Tabs>
