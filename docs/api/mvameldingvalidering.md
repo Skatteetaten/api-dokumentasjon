@@ -44,14 +44,8 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-```
-Legg inn eksempel
-```
-
-</TabItem>
-<TabItem headerText="Feilkoder" itemKey="itemKey-3">
+<TabItem headerText="Feilkoder" itemKey="itemKey-2">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
@@ -69,12 +63,12 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
   
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+<TabItem headerText="Informasjonsmodell" itemKey="itemKey-3">
 
 Her kan du legge inn skjermbilde av informasjonsmodell. 
 
 </TabItem>
-<TabItem headerText="Test" itemKey="itemKey-5">
+<TabItem headerText="Test" itemKey="itemKey-4">
 
 ## Url'er til testmiljøet
 
@@ -87,7 +81,7 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 | Altinn tokenveksling |	https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten |
   
 </TabItem>
-<TabItem headerText="Valideringsregler" itemKey="itemKey-6">
+<TabItem headerText="Valideringsregler" itemKey="itemKey-5">
 
   ## Valideringsregler
 
@@ -246,6 +240,11 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 
 </TabItem>
 </Tabs>
+</TabItem>
+<TabItem headerText="Eksempler" itemKey="itemKey-6"> 
+
+Her skal vi legge inn detaljer eksempler på Valideringsregler fra den gamle API siden: https://skatteetaten.github.io/mva-meldingen/mvameldingen/forretningsregler/
+
 </TabItem>
 </Tabs>
 
