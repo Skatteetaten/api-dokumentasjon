@@ -94,6 +94,7 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 Valideringsreglene er under utvikling og nye valideringsregler vil bli lagt til fortløpende.
 
 Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
+
 * Summen av merverdiavgift for hver avgiftslinje er ikke lik feltet fastsattMerverdiavgift (R018)
 * Beregnet avgift i avgiftslinje er ulik produktet av grunnlag og sats (R019)
 * Meldingen må være en ordinær (aliminnelig eller primærnæring) melding, krav om kompensasjon eller omvendt avgiftsplikt mva-melding (R104)
@@ -107,7 +108,10 @@ Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 * Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett må ha med grunnlag og sats (R116)
 * Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget (R122)
 
+
+
 Følgende valideringsregler er foreløpig definert for ordinær (alminnelig og primærnæring) mva-meldinger:
+
 * Merknad til beløp med motsatt fortegn som gjelder grunnlag og utgående avgift mangler (R020)
 * Merknad til beløp med motsatt fortegn som gjelder fradragsført inngående avgift mangler (R021)
 * Fradragsført inngående avgift som gjelder varer kjøpt fra utlandet med fradragsrett, skal være mindre enn eller lik utgående avgift (kode 81) (R023)
@@ -168,7 +172,15 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 * Innsending og validering tjeneste er ikke tilgjengelig før 01.01.2022 for ordinær (aliminnelig eller primærnæring) mva-meldinger (R000)
 * Innsending og validering av ordinær (alminnelig eller primærnæring) mva-meldinger fra før 2022 er ikke tilgjengelig (R077)
 
-Test
+
 </TabItem>
 
 </Tabs>
+
+
+<Tabs underline={true}>
+<TabItem headerText="Undermeny valideringsregler" itemKey="itemKey-1" default>
+
+</TabItem>
+
+</Tabs
