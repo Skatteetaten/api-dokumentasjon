@@ -68,6 +68,8 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
+# XSD for mva-meldingen
+
 ## XSD for mva-meldingen versjon 1.0
 Mva-meldingen sendes inn i XML-format. Den må være i henhold til strukturen dokumentert i XSD for mva-melding.
 Versjon 1.0 av denne XSD'en ligger her: no.skatteetaten.fastsetting.avgift.mva.skattemeldingformerverdiavgift.v1.0.xsd
@@ -76,8 +78,33 @@ Grafisk fremstilling av xsd og kodelister for [![mva-meldingen:](../../static/im
 SAF-T standarden inneholder også kodene 0 (Ingen merverdiavgiftsbehandling (anskaffelser)), 7 (Ingen merverdiavgiftsbehandling (inntekter)), 20 (Kostnad ved innførsel av varer, ingen merverdiavgiftsbehandling)
 , 21 (Kostnader ved innførsel av varer, alminnelig sats) og 22 (Kostnader ved innførsel av varer, redusert sats, middels). Disse skal ikke rapporteres i mva-meldingen.
 
-## Kompensasjon i alminnelig mva-melding
+### Kompensasjon i alminnelig mva-melding
 Fra 01.01.2023 er spesifikasjonen «Kjøp med kompensasjonsrett» lagt til på 5 koder i mva-melding, i tillegg til de eksisterende spesifikasjonene. De berørte kodene med ny spesifikasjon er 81, 83, 86, 88 og 91. Felles for disse kodene er at innførsel av varer og tjenester (pluss innenlands kjøp av klimakvoter og gull) utløser utgående innførselsmerverdiavgift og at en har enten kompensasjonsrett for inngående mva eller direkte fradragsrett for inngående mva. Virksomheter som bruker disse kodene i ordinær mva-melding kan kreve kompensasjon ved å levere kompensasjonsmelding i tillegg.
+
+## Eksempler på mva-meldinger
+Eksempler på ny mva-melding i excel (Excel fil må inn)
+Tilsvarende eksempler på mva-meldinger i XML-format https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding
+
+## Feltbeskrivelse for mva-melding
+
+### MvaMelding
+
+| Felt | Beskrivelse                                                           |
+|-----------------|------------------------------------------------------------|
+| meldingskategori  | Beskrivelse: type skjema som sendes inn. Formål: å sikre at brukeren dekker sin plikt for egenfastsetting. |
+| merknad             | Beskrivelse: informasjon om innholdet i mva-meldingen. Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig. |
+
+### Skattepliktig
+
+| Felt | Beskrivelse                                                           |
+|-----------------|------------------------------------------------------------|
+| organisasjonsnummer | Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting. Formål: ivareta den skattepliktiges rettigheter og plikter. |
+
+### Innsending 
+| Felt | Beskrivelse                                                           |
+|-----------------|------------------------------------------------------------|
+| regnskapssystemrefereanse	| 	Beskrivelse: Skattepliktiges unike referanse for innsending. Formål: Sikre at skattepliktig og skattekontoret refererer til samme melding. |
+| system             | Beskrivelse: Navn og evt versjon for regnskapssystem. Formål: Å kunne følge opp systematiske feil med systemleverandør i stedet for å følge opp hver enkelt skattepliktig. |
 
 
 
