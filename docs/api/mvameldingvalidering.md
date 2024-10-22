@@ -251,7 +251,7 @@ Reglene er utformet slik at de både er dokumentasjon av reglene for meldingen o
 # UGYLDIG SKATTEMELDING MVA
 MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
 ```json
-{
+"Det må fylles ut merknad som forklarer hvorfor det er benyttet motsatt fortegn for grunnlag og utgående merverdiavgift."{
             valideringsregel {
                 ((meldingskategori er alminnelig) eller (meldingskategori er primærnæring)) såSkal {
                     kodene(3, 6, 31, 32, 33, 51, 52, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92)
