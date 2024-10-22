@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ beregnetskatt, skatteberegning, inntekt, formue ]
-last_updated: Nov 17, 2023
+last_updated: Oct 22, 2024
 hide_table_of_contents: true
 ---
 
@@ -35,27 +35,24 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Beregnet skatt API -
 
 ## Teknisk spesifikasjon
 
-Det finnes for tiden 2 versjoner av dette API-et, og ulike rettighetspakker er støttet i ulike versjoner. URL-er til
-API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene på Swaggerhub.
-
-* [Beregnet skatt API - versjon 1](https://app.swaggerhub.com/apis/skatteetaten/beregnet-skatt-api/1.0.0)
-* [Beregnet skatt API - versjon 2](https://app.swaggerhub.com/apis/skatteetaten/beregnet-skatt-api)
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/beregnet-skatt-api) på SwaggerHub.
 
 ## Rettighetspakker
 
-| Navn på rettighetspakke           | Egenskaper ved rettighetspakke |
-|-----------------------------------|--------------------------------|
-| finans                            | Støttes kun i versjon 2        |
-| forsikring                        | Støttes kun i versjon 2        |
-| husbanken                         | Støttes i versjon 1 og 2       |
-| kommunelangtidsoppholdinstitusjon | Støttes kun i versjon 2        |
-| kredittopplysning                 | Støttes kun i versjon 2        |
-| laanekassen                       | Støttes i versjon 1 og 2       |
-| ldirreindriftstilskudd            | Støttes kun i versjon 2        |
-| nav                               | Støttes kun i versjon 1        |
-| norgesbank                        | Støttes kun i versjon 2        |
-| pensjonskasse                     | Støttes i versjon 1 og 2       |
-| ssb                               | Støttes kun i versjon 2        |
+| Navn på rettighetspakke           |
+|-----------------------------------|
+| finans                            |
+| forsikring                        |
+| husbanken                         |
+| kommuneLangtidsoppholdInstitusjon |
+| kommunePraktiskBistand            |
+| kredittopplysning                 |
+| laanekassen                       |
+| ldirreindriftstilskudd            |
+| norgesbank                        |
+| pensjonskasse                     |
+| ssb                               |
 
 ## Støttetjenester
 
@@ -69,7 +66,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
 
-## JSON (Versjon 2)
+## JSON
 
 ```json
   {
