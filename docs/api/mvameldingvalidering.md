@@ -245,8 +245,11 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 
 ## Eksempel på valideringsreglene
 
-# UGYLDIG_SKATTEMELDING
-# MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
+Validering av mva-meldingen er implementert med et sett av regler som kjøres maskinelt for å sjekke gyldigheten av meldingen. 
+Reglene er utformet slik at de både er dokumentasjon av reglene for meldingen og kjørbare maskinelt.
+
+# UGYLDIG SKATTEMELDING MVA
+MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
 ```json
 {
             valideringsregel {
@@ -267,9 +270,25 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 ```
 )
 
+# AVVIKENDE SKATTEMELDING MVA
 
+
+MVA_MELDINGSINNHOLD_SUM_MVA_FEIL_SUMMERING_AV_AVGIFTLINJER(
+```json
+        "Summen av merverdiavgift for alle kodelinjene er ikke lik beløpet som er oppgitt som fastsatt merverdiavgift." {
+            valideringsregel {
+                mvaSpesifikasjonslinje.summenAv { linje ->
+                    linje.merverdiavgift
+                } skalVære skattegrunnlagOgBeregnetSkatt.fastsattMerverdiavgift
+            }
+            alvorlighetsgrad { AVVIKENDE_SKATTEMELDING }
+            kategori { MELDINGSINNHOLD }
+            regelnummer { R018 }
+        }
+```    
+)
 
 
 </TabItem>
 </Tabs>
-```
+
