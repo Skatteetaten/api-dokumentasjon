@@ -246,11 +246,9 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 ## Eksempel på valideringsreglene
 
 # UGYLDIG_SKATTEMELDING
-
+# MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
 ```json
- MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
-        "Det må fylles ut merknad som forklarer hvorfor det er benyttet motsatt fortegn for grunnlag og utgående merverdiavgift."
-        {
+{
             valideringsregel {
                 ((meldingskategori er alminnelig) eller (meldingskategori er primærnæring)) såSkal {
                     kodene(3, 6, 31, 32, 33, 51, 52, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92)
@@ -265,22 +263,10 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
             kategori { MELDINGSINNHOLD }
             regelnummer { R020 }
         }
-    ) 
+    
 ```
-# AVVIKENDE_SKATTEMELDING
+)
 
-```json
-MVA_MELDINGSINNHOLD_SUM_MVA_FEIL_SUMMERING_AV_AVGIFTLINJER(
-        "Summen av merverdiavgift for alle kodelinjene er ikke lik beløpet som er oppgitt som fastsatt merverdiavgift." {
-            valideringsregel {
-                mvaSpesifikasjonslinje.summenAv { linje ->
-                    linje.merverdiavgift
-                } skalVære skattegrunnlagOgBeregnetSkatt.fastsattMerverdiavgift
-            }
-            alvorlighetsgrad { AVVIKENDE_SKATTEMELDING }
-            kategori { MELDINGSINNHOLD }
-            regelnummer { R018 }
-        }
 
 
 
