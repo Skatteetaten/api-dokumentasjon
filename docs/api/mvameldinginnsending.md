@@ -168,16 +168,24 @@ Eksempler på ny mva-melding i excel
 
 Tilsvarende eksempler på mva-meldinger i XML-format
 
-MVAMelding
-
+### MVAMelding
 | Felt |	Beskrivelse |
 |---|---|
 | meldingskategori | Beskrivelse: type skjema som sendes inn  Formål: å sikre at brukeren dekker sin plikt for egenfastsetting |
 | merknad | Beskrivelse: informasjon om innholdet i mva-meldingen  Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
-```
-Legg inn eksempel
-```
+
+### Skattepliktig
+| Felt |	Beskrivelse |
+|---|---|
+| organisasjonsnummer | Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting  Formål: ivareta den skattepliktiges rettigheter og plikter |
+
+
+### Innsending
+| Felt |	Beskrivelse |
+|---|---|
+| regnskapssystemrefereanse |Beskrivelse: Skattepliktiges unike referanse for innsending  Formål: Sikre at skattepliktig og skattekontoret refererer til samme melding. |
+| system | Beskrivelse: Navn og evt versjon for regnskapssystem  Formål: Å kunne følge opp systematiske feil med systemleverandør i stedet for å følge opp hver enkelt skattepliktig. |
 
 </TabItem>
 
