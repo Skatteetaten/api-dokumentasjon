@@ -243,12 +243,12 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-6"> 
 
-# Eksempel på valideringsreglene
+## Eksempel på valideringsreglene
 
 Validering av mva-meldingen er implementert med et sett av regler som kjøres maskinelt for å sjekke gyldigheten av meldingen. 
 Reglene er utformet slik at de både er dokumentasjon av reglene for meldingen og kjørbare maskinelt.
 
-## UGYLDIG SKATTEMELDING MVA
+### UGYLDIG SKATTEMELDING MVA
 
 ```
 MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
@@ -271,7 +271,7 @@ MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
 ```
 
 
-## AVVIKENDE SKATTEMELDING MVA
+### AVVIKENDE SKATTEMELDING MVA
 
 ```
 MVA_MELDINGSINNHOLD_SUM_MVA_FEIL_SUMMERING_AV_AVGIFTLINJER(
