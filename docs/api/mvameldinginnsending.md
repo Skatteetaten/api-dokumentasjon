@@ -108,7 +108,7 @@ Tilsvarende eksempler på mva-meldinger i XML-format https://github.com/Skatteet
 
 Eksempler på ny mva-melding i excel
 
-Tilsvarende eksempler på mva-meldinger i XML-format
+Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding).
 
 ## Feltbeskrivelse for mva-melding
  
