@@ -75,18 +75,6 @@ SAF-T standarden inneholder også kodene 0 (Ingen merverdiavgiftsbehandling (ans
 ### Kompensasjon i alminnelig mva-melding
 Fra 01.01.2023 er spesifikasjonen «Kjøp med kompensasjonsrett» lagt til på 5 koder i mva-melding, i tillegg til de eksisterende spesifikasjonene. De berørte kodene med ny spesifikasjon er 81, 83, 86, 88 og 91. Felles for disse kodene er at innførsel av varer og tjenester (pluss innenlands kjøp av klimakvoter og gull) utløser utgående innførselsmerverdiavgift og at en har enten kompensasjonsrett for inngående mva eller direkte fradragsrett for inngående mva. Virksomheter som bruker disse kodene i ordinær mva-melding kan kreve kompensasjon ved å levere kompensasjonsmelding i tillegg.
 
-### Eksempler på mva-meldinger
-Eksempler på ny mva-melding i excel (Excel fil må inn)
-Tilsvarende eksempler på mva-meldinger i XML-format https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding
-
-### Feltbeskrivelse for mva-melding
-
-
-
-
-
-
-
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-4">
@@ -143,11 +131,30 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | merverdiavgift | Fastsatt merverdiavgift | Å vise beregnet mva pr linje |
 | merknad | Informasjon om innholdet i mvaKode |  Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
+<br>
 
-\
-\
+## Feltbeskrivelse for MvaMeldingInnsending
+| Felt |	Beskrivelse | Formål |
+|:------|:--------------|:--------|
+| - | - | - |
+| <b>MvaMeldingInnsending</b> | | |
+| meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
+| innsendingstype | En mva-melding av meldingskategori alminnelig og primær vil alltid være komplett. | Feltet beholdes for på et senere tidspunkt kunne åpne for at revisor kommenterer/ skriver merknad på de mva-meldingene (f. eks. merverdiavgift kompensasjon) som skal godkjennes av revisor før innsending. |
+| instansstatus | Dette feltet kommer vi til å fjerne da vi får denne informasjonen fra hendelser på instansen. Dette skal gjøres ved at det settes til valgfritt i en overgang og fases ut ved en passende anledning.  |  |
+| opprettetAv | Dette feltet skal inneholde navn på innlogget bruker | Innholdet i denne vises i Altinn. |
+| opprettingstidspunkt | Dette feltet kommer vi til å fjerne da vi får denne informasjonen fra instansen. Dette skal gjøres ved at det settes til valgfritt i en overgang og fases ut ved en passende anledning. |  |
+| <b>Identifikator (Enten organisasjonsnummer eller foedselsnummer)</b> | | |
+| - | - | - |
+| organisasjonsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting  | Ivareta den skattepliktiges rettigheter og plikter |
+| foedselsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting |  Ivareta den skattepliktiges rettigheter og plikter |
+| <b>Skattleggingsperiode</b> | | |
+| - | - | - |
+| periode | Den perioden egenfastsettingen gjelder for. Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden  | Sikre samsvar mellom bokføring og egenfastsetting |
+| aar | Det året egenfastsettingen gjelder for | Sikre samsvar mellom bokføring og egenfastsetting |
 
-### Kodelister
+<br>
+
+## Kodelister
 
 | Gruppe og kode                                    | Beskrivelse av kode, fradrag og spesifikasjon                                             |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------- |
