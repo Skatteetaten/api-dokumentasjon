@@ -41,14 +41,8 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-```
-Legg inn eksempel
-```
-
-</TabItem>
-<TabItem headerText="Feilkoder" itemKey="itemKey-3">
+<TabItem headerText="Feilkoder" itemKey="itemKey-2">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
@@ -66,11 +60,11 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
   
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+<TabItem headerText="Informasjonsmodell" itemKey="itemKey-3">
 
-# XSD for mva-meldingen
+## XSD for mva-meldingen
 
-## XSD for mva-meldingen versjon 1.0
+### XSD for mva-meldingen versjon 1.0
 Mva-meldingen sendes inn i XML-format. Den må være i henhold til strukturen dokumentert i XSD for mva-melding.
 Versjon 1.0 av denne XSD'en ligger her: no.skatteetaten.fastsetting.avgift.mva.skattemeldingformerverdiavgift.v1.0.xsd
 Grafisk fremstilling av xsd og kodelister for [![mva-meldingen:](../../static/img/SkattemeldingForMerverdiavgift2020.png)](../../static/img/SkattemeldingForMerverdiavgift2020.png) 
@@ -81,14 +75,14 @@ SAF-T standarden inneholder også kodene 0 (Ingen merverdiavgiftsbehandling (ans
 ### Kompensasjon i alminnelig mva-melding
 Fra 01.01.2023 er spesifikasjonen «Kjøp med kompensasjonsrett» lagt til på 5 koder i mva-melding, i tillegg til de eksisterende spesifikasjonene. De berørte kodene med ny spesifikasjon er 81, 83, 86, 88 og 91. Felles for disse kodene er at innførsel av varer og tjenester (pluss innenlands kjøp av klimakvoter og gull) utløser utgående innførselsmerverdiavgift og at en har enten kompensasjonsrett for inngående mva eller direkte fradragsrett for inngående mva. Virksomheter som bruker disse kodene i ordinær mva-melding kan kreve kompensasjon ved å levere kompensasjonsmelding i tillegg.
 
-## Eksempler på mva-meldinger
+### Eksempler på mva-meldinger
 Eksempler på ny mva-melding i excel (Excel fil må inn)
 Tilsvarende eksempler på mva-meldinger i XML-format https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding
 
-## Feltbeskrivelse for mva-melding
+### Feltbeskrivelse for mva-melding
 
 
-## Kodelister
+### Kodelister
 
 | Gruppe og kode                                    | Beskrivelse av kode, fradrag og spesifikasjon                                             |
 | ------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -152,7 +146,7 @@ Tilsvarende eksempler på mva-meldinger i XML-format https://github.com/Skatteet
 
 
 </TabItem>
-<TabItem headerText="Test" itemKey="itemKey-5">
+<TabItem headerText="Test" itemKey="itemKey-4">
 
 ## Url'er til testmiljøet
 
@@ -165,4 +159,26 @@ Tilsvarende eksempler på mva-meldinger i XML-format https://github.com/Skatteet
 | Altinn tokenveksling |	https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten |
   
 </TabItem>
+
+<TabItem headerText="Eksempler" itemKey="itemKey-5"> 
+
+## Eksempler på mva-meldinger
+
+Eksempler på ny mva-melding i excel
+
+Tilsvarende eksempler på mva-meldinger i XML-format
+
+MVAMelding
+
+| Felt |	Beskrivelse |
+|---|---|
+| meldingskategori | Beskrivelse: type skjema som sendes inn  Formål: å sikre at brukeren dekker sin plikt for egenfastsetting |
+| merknad | Beskrivelse: informasjon om innholdet i mva-meldingen  Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
+
+```
+Legg inn eksempel
+```
+
+</TabItem>
+
 </Tabs>
