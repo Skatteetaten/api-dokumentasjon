@@ -155,8 +155,7 @@ Tilsvarende eksempler på mva-meldinger i XML-format https://github.com/Skatteet
 | Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider  |
 | Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/  |
 | Instans API |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances  |
-| ID-porten integrasjon |	https://test.idporten.no/.well-known/openid-configuration  |
-| Altinn tokenveksling |	https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten |
+
   
 </TabItem>
 
@@ -169,23 +168,48 @@ Eksempler på ny mva-melding i excel
 Tilsvarende eksempler på mva-meldinger i XML-format
 
 ### MVAMelding
-| Felt |	Beskrivelse |
-|---|---|
-| meldingskategori | Beskrivelse: type skjema som sendes inn  Formål: å sikre at brukeren dekker sin plikt for egenfastsetting |
-| merknad | Beskrivelse: informasjon om innholdet i mva-meldingen  Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
+| Felt |	Beskrivelse | Formål |
+|:------|:--------------|:--------|
+| meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
+| merknad | Informasjon om innholdet i mva-meldingen  | Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
 
 ### Skattepliktig
-| Felt |	Beskrivelse |
-|---|---|
-| organisasjonsnummer | Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting  Formål: ivareta den skattepliktiges rettigheter og plikter |
+| Felt |	Beskrivelse | Formål |
+|:------|:--------------|:--------|
+| organisasjonsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting  | Ivareta den skattepliktiges rettigheter og plikter |
 
 
 ### Innsending
-| Felt |	Beskrivelse |
-|---|---|
-| regnskapssystemrefereanse |Beskrivelse: Skattepliktiges unike referanse for innsending  Formål: Sikre at skattepliktig og skattekontoret refererer til samme melding. |
-| system | Beskrivelse: Navn og evt versjon for regnskapssystem  Formål: Å kunne følge opp systematiske feil med systemleverandør i stedet for å følge opp hver enkelt skattepliktig. |
+| Felt |	Beskrivelse | Formål |
+|:------|:--------------|:--------|
+| regnskapssystemrefereanse | Skattepliktiges unike referanse for innsending |  Sikre at skattepliktig og skattekontoret refererer til samme melding |
+| system | Navn og evt versjon for regnskapssystem |  Å kunne følge opp systematiske feil med systemleverandør i stedet for å følge opp hver enkelt skattepliktig |
+
+### Betalingsinformasjon
+| Felt |	Beskrivelse | Formål |
+|:------|:--------------|:--------|
+| KID | Mottakerens identifikasjon av en betaling | Å kunne betale til de bankkontoene som krever KID |
+| - | - | - |
+
+### Skattegrunnlag og beregnet skatt
+| Felt |	Beskrivelse | Formål |
+|:------|:--------------|:--------|
+| skattleggingsperiode | Den perioden egenfastsettingen gjelder for. Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. |  Sikre samsvar mellom bokføring og egenfastsetting |
+| fastsattMerverdiavgift | Sum å betale/sum til gode |  Å sikre at riktig beløp blir betalt |
+
+
+### MvaSpesifikasjonslinje
+| Felt |	Beskrivelse | Formål |
+|:------|:--------------|:--------|
+| mvaKode | Klassifikasjon av inngående og utgående mva ihht til norsk SAF-T standard  | Formidling av hvilke mva-vurderinger som er utført |
+| spesifikasjon | Detaljering av noen mva-forhold som ikke inngår i norsk SAF-T standard |  Formidling av hvilke mva-vurderinger som er utført |
+| mvaKodeRegnskapssystem | intern mva-kode i regnskapssystemet. Det kan være flere interne mva-koder for en mvaKode og evt spesifikasjon. I det tilfellet vil det bli flere rader i mva-meldingen pr mvaKode og spesifikasjon; en pr kombinasjon av mva-kode, spesifikasjon og mvaKodeRegnskapssystem. |  To hensyn Brukerne: gjenkjennelig i forhold til det de ser i regnskapet. Systemleverandørene skal slippe å legge om mva-koder i systemene |
+| grunnlag | Det beløpet det er regnet utgående mva av. Feltet skal ikke fylles ut for inngående mva | Grunnlag for kontroll ifra Skatteetaten |
+| sats | Den mva-satsen som er benyttet ved beregning av utgående mva. Feltet skal ikke fylles ut for inngående mva |  Å sikre at bare gyldige satser benyttes ved fakturering |
+| merverdiavgift | Fastsatt merverdiavgift | Å vise beregnet mva pr linje |
+| merknad | Informasjon om innholdet i mvaKode |  Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
+
 
 </TabItem>
 
