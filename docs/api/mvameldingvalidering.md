@@ -74,7 +74,7 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 
 | Tjeneste |	Url |
 |----------|-------|
-| Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider  |
+| Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider |
 
   
 </TabItem>
