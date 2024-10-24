@@ -75,10 +75,7 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 | Tjeneste |	Url |
 |----------|-------|
 | Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider  |
-| Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/  |
-| Instans API |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances  |
-| ID-porten integrasjon |	https://test.idporten.no/.well-known/openid-configuration  |
-| Altinn tokenveksling |	https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten |
+
   
 </TabItem>
 <TabItem headerText="Valideringsregler" itemKey="itemKey-5">
