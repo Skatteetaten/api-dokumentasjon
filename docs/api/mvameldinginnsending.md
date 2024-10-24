@@ -131,7 +131,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | merverdiavgift | Fastsatt merverdiavgift | Å vise beregnet mva pr linje |
 | merknad | Informasjon om innholdet i mvaKode |  Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
-<br>
+
 
 ## Feltbeskrivelse for MvaMeldingInnsending
 | Felt |	Beskrivelse | Formål |
@@ -152,7 +152,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | periode | Den perioden egenfastsettingen gjelder for. Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden  | Sikre samsvar mellom bokføring og egenfastsetting |
 | aar | Det året egenfastsettingen gjelder for | Sikre samsvar mellom bokføring og egenfastsetting |
 
-<br>
+
 
 ## Kodelister
 
