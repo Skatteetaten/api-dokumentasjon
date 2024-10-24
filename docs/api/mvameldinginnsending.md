@@ -101,7 +101,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ## Feltbeskrivelse for mva-melding
 
- ### MVAMelding
+### MVAMelding
 | Felt |	Beskrivelse | Formål |
 |:------|:--------------|:--------|
 | meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
