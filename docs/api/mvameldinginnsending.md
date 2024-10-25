@@ -106,7 +106,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 ### MvaMelding
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>meldingskategori</td><td>Beskrivelse: type skjema som sendes inn <br>
 	Formål: å sikre at brukeren dekker sin plikt for egenfastsetting
 	</td>
@@ -120,7 +120,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 ### Skattepliktig
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>organisasjonsnummer</td><td>Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting <br>
   Formål: ivareta den skattepliktiges rettigheter og plikter
 	</td>
@@ -130,7 +130,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 ### Innsending
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>regnskapssystemrefereanse</td><td>Beskrivelse: Skattepliktiges unike referanse for innsending <br>
   Formål: Sikre at skattepliktig og skattekontoret refererer til samme melding.
 	</td>
@@ -146,7 +146,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 Kid oppgis bare dersom det er tilgodebeløp.
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>KID</td><td>Beskrivelse: Mottakerens identifikasjon av en betaling <br>
   Formål: Å kunne betale til de bankkontoene som krever KID
   </td>
@@ -155,7 +155,7 @@ Kid oppgis bare dersom det er tilgodebeløp.
 ### Skattegrunnlag og beregnet skatt
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>skattleggingsperiode</td><td>Beskrivelse: den perioden egenfastsettingen gjelder for <br>
   Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. <br>    
   Formål: sikre samsvar mellom bokføring og egenfastsetting
@@ -170,7 +170,7 @@ Kid oppgis bare dersom det er tilgodebeløp.
 ### MvaSpesifikasjonslinje
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>mvaKode</td><td>Beskrivelse: Klassifikasjon av inngående og utgående mva ihht til norsk SAF-T standard<br>
   Formål: formidling av hvilke mva-vurderinger som er utført
 	</td>
@@ -211,7 +211,7 @@ Feltet skal ikke fylles ut for inngående mva. <br>
 ### MvaMeldingInnsending
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>meldingskategori</td>
     <td>
         Beskrivelse: type skjema som sendes inn <br>
@@ -247,7 +247,7 @@ Feltet skal ikke fylles ut for inngående mva. <br>
 ### Identifikator (Enten organisasjonsnummer eller foedselsnummer)
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr>
     <td>organisasjonsnummer</td>
     <td>
@@ -267,7 +267,7 @@ Feltet skal ikke fylles ut for inngående mva. <br>
 ### Skattleggingsperiode
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr>
     <td>periode</td>
     <td>
@@ -288,7 +288,7 @@ Feltet skal ikke fylles ut for inngående mva. <br>
 ### Vedlegg
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr>
     <td>vedleggstype</td>
     <td>
@@ -321,7 +321,7 @@ Feltet skal ikke fylles ut for inngående mva. <br>
 ### Vedleggsfil
 
 <table align=center>
-  <tr><th style="width:25%" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
+  <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr>
     <td>filnavn</td>
     <td>
