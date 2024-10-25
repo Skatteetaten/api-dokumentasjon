@@ -246,6 +246,47 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 Validering av mva-meldingen er implementert med et sett av regler som kjøres maskinelt for å sjekke gyldigheten av meldingen. 
 Reglene er utformet slik at de både er dokumentasjon av reglene for meldingen og kjørbare maskinelt.
 
+### UGYLDIG SKATTEMELDING MVA
+
+```kotlin
+MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
+"Det må fylles ut merknad som forklarer hvorfor det er benyttet motsatt fortegn for grunnlag og utgående merverdiavgift."{
+            valideringsregel {
+                ((meldingskategori er alminnelig) eller (meldingskategori er primærnæring)) såSkal {
+                    kodene(3, 6, 31, 32, 33, 51, 52, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91, 92)
+                        .hvor { linje -> linje.grunnlag erMindreEnn 0.0 }
+                        .skal { linje ->
+                            (linje.merknad?.beskrivelse har innhold) eller
+                                (linje.merknad?.utvalgtMerknad har innhold)
+                        }
+                }
+            }
+            alvorlighetsgrad { UGYLDIG_SKATTEMELDING }
+            kategori { MELDINGSINNHOLD }
+            regelnummer { R020 }
+        }
+    )
+```
+
+
+### AVVIKENDE SKATTEMELDING MVA
+
+```kotlin
+MVA_MELDINGSINNHOLD_SUM_MVA_FEIL_SUMMERING_AV_AVGIFTLINJER(
+"Summen av merverdiavgift for alle kodelinjene er ikke lik beløpet som er oppgitt som fastsatt merverdiavgift."        
+ { 
+            valideringsregel {
+                mvaSpesifikasjonslinje.summenAv { linje ->
+                    linje.merverdiavgift
+                } skalVære skattegrunnlagOgBeregnetSkatt.fastsattMerverdiavgift
+            }
+            alvorlighetsgrad { AVVIKENDE_SKATTEMELDING }
+            kategori { MELDINGSINNHOLD }
+            regelnummer { R018 }
+        }
+    
+)
+```
 
 
 
