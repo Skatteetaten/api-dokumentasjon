@@ -106,14 +106,12 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
 | merknad | Informasjon om innholdet i mva-meldingen  | Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
-<br/>
 
 ### Skattepliktig
 | Felt |	Beskrivelse | Formål |
 |:------|:--------------|:--------|
 | organisasjonsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting  | Ivareta den skattepliktiges rettigheter og plikter |
 
-<br>
 
 ### Innsending
 | Felt |	Beskrivelse | Formål |
