@@ -101,17 +101,15 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ## Feltbeskrivelse for mva-melding
 
-## Feltbeskrivelse for mva-melding
-
 ### MvaMelding
 
 <table align="center">
   <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
-  <tr><td>meldingskategori</td><td>Beskrivelse: type skjema som sendes inn <br>
+  <tr><td>meldingskategori</td><td>Beskrivelse: type skjema som sendes inn <br/>
 	Formål: å sikre at brukeren dekker sin plikt for egenfastsetting
 	</td>
   </tr>
-    <tr><td>merknad</td><td>Beskrivelse: informasjon om innholdet i mva-meldingen <br>
+    <tr><td>merknad</td><td>Beskrivelse: informasjon om innholdet i mva-meldingen <br/>
 	Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig
 	</td>
   </tr>
@@ -121,7 +119,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 <table align="center">
   <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
-  <tr><td>organisasjonsnummer</td><td>Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting <br>
+  <tr><td>organisasjonsnummer</td><td>Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting <br/>
   Formål: ivareta den skattepliktiges rettigheter og plikter
 	</td>
   </tr>	
@@ -131,11 +129,11 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 <table align="center">
   <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
-  <tr><td>regnskapssystemrefereanse</td><td>Beskrivelse: Skattepliktiges unike referanse for innsending <br>
+  <tr><td>regnskapssystemrefereanse</td><td>Beskrivelse: Skattepliktiges unike referanse for innsending <br/>
   Formål: Sikre at skattepliktig og skattekontoret refererer til samme melding.
 	</td>
   </tr>
-    <tr><td>system</td><td>Beskrivelse: Navn og evt versjon for regnskapssystem <br>
+    <tr><td>system</td><td>Beskrivelse: Navn og evt versjon for regnskapssystem <br/>
 	Formål: Å kunne følge opp systematiske feil med systemleverandør i stedet for å følge opp hver enkelt skattepliktig.
 	</td>
   </tr>
@@ -147,7 +145,7 @@ Kid oppgis bare dersom det er tilgodebeløp.
 
 <table align="center">
   <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
-  <tr><td>KID</td><td>Beskrivelse: Mottakerens identifikasjon av en betaling <br>
+  <tr><td>KID</td><td>Beskrivelse: Mottakerens identifikasjon av en betaling <br/>
   Formål: Å kunne betale til de bankkontoene som krever KID
   </td>
 </table>
@@ -156,12 +154,12 @@ Kid oppgis bare dersom det er tilgodebeløp.
 
 <table align="center">
   <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
-  <tr><td>skattleggingsperiode</td><td>Beskrivelse: den perioden egenfastsettingen gjelder for <br>
-  Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. <br>    
+  <tr><td>skattleggingsperiode</td><td>Beskrivelse: den perioden egenfastsettingen gjelder for <br/>
+  Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. <br/>    
   Formål: sikre samsvar mellom bokføring og egenfastsetting
 	</td>
   </tr>
-    <tr><td>fastsattMerverdiavgift</td><td>Beskrivelse: sum å betale/sum til gode <br>
+    <tr><td>fastsattMerverdiavgift</td><td>Beskrivelse: sum å betale/sum til gode <br/>
 	Formål: å sikre at riktig beløp blir betalt
 	</td>
   </tr>
@@ -171,35 +169,35 @@ Kid oppgis bare dersom det er tilgodebeløp.
 
 <table align="center">
   <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
-  <tr><td>mvaKode</td><td>Beskrivelse: Klassifikasjon av inngående og utgående mva ihht til norsk SAF-T standard<br>
+  <tr><td>mvaKode</td><td>Beskrivelse: Klassifikasjon av inngående og utgående mva ihht til norsk SAF-T standard<br/>
   Formål: formidling av hvilke mva-vurderinger som er utført
 	</td>
   </tr>
-  <tr><td>spesifikasjon</td><td>Beskrivelse: detaljering av noen mva-forhold som ikke inngår i norsk SAF-T standard<br>
+  <tr><td>spesifikasjon</td><td>Beskrivelse: detaljering av noen mva-forhold som ikke inngår i norsk SAF-T standard<br/>
 	Formål: formidling av hvilke mva-vurderinger som er utført
 	</td>
   </tr> 
-  <tr><td>mvaKodeRegnskapssystem</td><td>Beskrivelse: intern mva-kode i regnskapssystemet. Det kan være flere interne mva-koder for en mvaKode og evt spesifikasjon. I det tilfellet vil det bli flere rader i mva-meldingen pr mvaKode og spesifikasjon; en pr kombinasjon av mva-kode, spesifikasjon og mvaKodeRegnskapssystem.<br>
-  Formål: To hensyn <br>
-Brukerne: gjenkjennelig i forhold til det de ser i regnskapet. <br>
+  <tr><td>mvaKodeRegnskapssystem</td><td>Beskrivelse: intern mva-kode i regnskapssystemet. Det kan være flere interne mva-koder for en mvaKode og evt spesifikasjon. I det tilfellet vil det bli flere rader i mva-meldingen pr mvaKode og spesifikasjon; en pr kombinasjon av mva-kode, spesifikasjon og mvaKodeRegnskapssystem.<br/>
+  Formål: To hensyn <br/>
+Brukerne: gjenkjennelig i forhold til det de ser i regnskapet. <br/>
 Systemleverandørene skal slippe å legge om mva-koder i systemene
 	</td>
   </tr>
   <tr><td>grunnlag</td><td>Beskrivelse: det beløpet det er regnet utgående mva av.
-Feltet skal ikke fylles ut for inngående mva. <br>
+Feltet skal ikke fylles ut for inngående mva. <br/>
 Formål: Grunnlag for kontroll ifra Skatteetaten
 	</td>
   </tr>
   <tr><td>sats</td><td>Beskrivelse: Den mva-satsen som er benyttet ved beregning av utgående mva.
-Feltet skal ikke fylles ut for inngående mva. <br>
+Feltet skal ikke fylles ut for inngående mva. <br/>
 	Formål: Å sikre at bare gyldige satser benyttes ved fakturering
 	</td>
   </tr>
-  <tr><td>merverdiavgift</td><td>Beskrivelse: fastsatt merverdiavgift <br>
+  <tr><td>merverdiavgift</td><td>Beskrivelse: fastsatt merverdiavgift <br/>
 	Formål: å vise beregnet mva pr linje
       </td>
   </tr>  
-  <tr><td>merknad</td><td>Beskrivelse: informasjon om innholdet i mvaKode <br>
+  <tr><td>merknad</td><td>Beskrivelse: informasjon om innholdet i mvaKode <br/>
 	Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig
 	</td>
   </tr>
@@ -214,13 +212,13 @@ Feltet skal ikke fylles ut for inngående mva. <br>
   <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
   <tr><td>meldingskategori</td>
     <td>
-        Beskrivelse: type skjema som sendes inn <br>
+        Beskrivelse: type skjema som sendes inn <br/>
         Formål: å sikre at brukeren dekker sin plikt for egenfastsetting
 	</td>
   </tr>
   <tr><td>innsendingstype</td>
     <td>
-        Beskrivelse: En mva-melding av meldingskategori alminnelig og primær vil alltid være <strong>komplett</strong>. <br>
+        Beskrivelse: En mva-melding av meldingskategori alminnelig og primær vil alltid være <strong>komplett</strong>. <br/>
         Formål: Feltet beholdes for på et senere tidspunkt kunne åpne for at revisor kommenterer/ skriver merknad på de mva-meldingene (f. eks. merverdiavgift kompensasjon) som skal godkjennes av revisor før innsending.
 	</td>
   </tr>
@@ -231,7 +229,7 @@ Feltet skal ikke fylles ut for inngående mva. <br>
   </tr>
   <tr><td>opprettetAv</td>
     <td>
-        Beskrivelse: Dette feltet skal inneholde navn på innlogget bruker. <br>
+        Beskrivelse: Dette feltet skal inneholde navn på innlogget bruker. <br/>
         Formål: Innholdet i denne vises i Altinn.
 	</td>
   </tr>
@@ -251,13 +249,13 @@ Feltet skal ikke fylles ut for inngående mva. <br>
   <tr>
     <td>organisasjonsnummer</td>
     <td>
-        Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting <br>
+        Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting <br/>
         Formål: ivareta den skattepliktiges rettigheter og plikter
 	</td>
   </tr>
   <tr><td>foedselsnummer</td>
     <td>
-        Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting <br>
+        Beskrivelse: unik identifikator for den skattepliktige som foretar egenfastsetting <br/>
         Formål: ivareta den skattepliktiges rettigheter og plikter
 	</td>
   </tr>
@@ -271,14 +269,14 @@ Feltet skal ikke fylles ut for inngående mva. <br>
   <tr>
     <td>periode</td>
     <td>
-        Beskrivelse: den perioden egenfastsettingen gjelder for <br>
-		Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. <br>   
+        Beskrivelse: den perioden egenfastsettingen gjelder for <br/>
+		Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. <br/>   
         Formål: sikre samsvar mellom bokføring og egenfastsetting
 	</td>
   </tr>
   <tr><td>aar</td>
     <td>
-        Beskrivelse: det året egenfastsettingen gjelder for <br>
+        Beskrivelse: det året egenfastsettingen gjelder for <br/>
         Formål: sikre samsvar mellom bokføring og egenfastsetting
 	</td>
   </tr>
@@ -294,18 +292,18 @@ Feltet skal ikke fylles ut for inngående mva. <br>
     <td>
         Beskrivelse: Type vedlegg som blir lastet opp på instansen i Altinn. 
         Hvor en kan enten bruke <strong>mva-melding</strong> for selve mva-meldingen, 
-        eller <strong>binaerVedlegg</strong> for generelle vedlegg. <br>
+        eller <strong>binaerVedlegg</strong> for generelle vedlegg. <br/>
 	</td>
   </tr>
   <tr><td>kildegruppe</td>
     <td>
         Beskrivelse: Hvilken gruppe innsendingen kommer fra. 
-        Valgmuligheter: <strong>etat</strong>, <strong>sluttbrukersystem</strong>, <strong>sluttbruker</strong> <br>
+        Valgmuligheter: <strong>etat</strong>, <strong>sluttbrukersystem</strong>, <strong>sluttbruker</strong> <br/>
 	</td>
   </tr>
   <tr><td>opprettetAv</td>
     <td>
-        Beskrivelse: Dette feltet skal inneholde navn på innlogget bruker  <br>
+        Beskrivelse: Dette feltet skal inneholde navn på innlogget bruker  <br/>
         Formål: Innholdet i denne vises i Altinn
 	</td>
   </tr>
@@ -316,7 +314,7 @@ Feltet skal ikke fylles ut for inngående mva. <br>
 	</td>
   </tr>
 </table>
-<br>
+<br/>
 
 ### Vedleggsfil
 
@@ -325,17 +323,17 @@ Feltet skal ikke fylles ut for inngående mva. <br>
   <tr>
     <td>filnavn</td>
     <td>
-        Beskrivelse: navnet på filen som er lagt med som vedlegg <br>
+        Beskrivelse: navnet på filen som er lagt med som vedlegg <br/>
 	</td>
   </tr>
   <tr><td>filekstensjon</td>
     <td>
-        Beskrivelse: ekstensjonen til filen som er lagt med som vedlegg <br>
+        Beskrivelse: ekstensjonen til filen som er lagt med som vedlegg <br/>
 	</td>
   </tr>
   <tr><td>filinnhold</td>
     <td>
-        Beskrivelse: Gir en beskrivelse av innholdet i vedleggsfilen <br>
+        Beskrivelse: Gir en beskrivelse av innholdet i vedleggsfilen <br/>
 	</td>
   </tr>
 </table>
