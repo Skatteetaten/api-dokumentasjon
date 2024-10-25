@@ -105,7 +105,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ### MvaMelding
 
-<table align=center>
+<table align="center">
   <tr><th style="width:25" align=left>Felt</th><th align=left>Beskrivelse</th></tr>
   <tr><td>meldingskategori</td><td>Beskrivelse: type skjema som sendes inn <br>
 	Formål: å sikre at brukeren dekker sin plikt for egenfastsetting
