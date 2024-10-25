@@ -75,6 +75,8 @@ Her kan du legge inn skjermbilde av informasjonsmodell.
 | Tjeneste |	Url |
 |----------|-------|
 | Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider |
+| Innsending | https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/ |
+| Instans API | https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances |
 
   
 </TabItem>
@@ -247,7 +249,7 @@ Reglene er utformet slik at de både er dokumentasjon av reglene for meldingen o
 
 ### UGYLDIG SKATTEMELDING MVA
 
-```
+```kotlin
 MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
 "Det må fylles ut merknad som forklarer hvorfor det er benyttet motsatt fortegn for grunnlag og utgående merverdiavgift."{
             valideringsregel {
@@ -270,7 +272,7 @@ MVA_MELDINGSINNHOLD_UTGÅENDE_MOTSATT_FORTEGN_MERKNAD_TIL_MVA_KODEN_MANGLER(
 
 ### AVVIKENDE SKATTEMELDING MVA
 
-```
+```kotlin
 MVA_MELDINGSINNHOLD_SUM_MVA_FEIL_SUMMERING_AV_AVGIFTLINJER(
 "Summen av merverdiavgift for alle kodelinjene er ikke lik beløpet som er oppgitt som fastsatt merverdiavgift."        
  { 
