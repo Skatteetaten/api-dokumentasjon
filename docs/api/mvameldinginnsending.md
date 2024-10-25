@@ -161,7 +161,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | <b>Vedlegg</b> | | |
 | - | - | - |
 | vedleggstype | Type vedlegg som blir lastet opp på instansen i Altinn. Hvor en kan enten bruke mva-melding for selve mva-meldingen, eller binaerVedlegg for generelle vedlegg.  | |
-| kildegruppe | Hvilken gruppe innsendingen kommer fra. Valgmuligheter: <b>etat<b/>, <b>sluttbrukersystem</b>, <b>sluttbruker</b> |  |
+| kildegruppe | Hvilken gruppe innsendingen kommer fra. Valgmuligheter: <b>etat</b>, <b>sluttbrukersystem</b>, <b>sluttbruker</b> |  |
 | opprettetAv |  Dette feltet skal inneholde navn på innlogget bruker  | Innholdet i denne vises i Altinn |
 | opprettingstidspunkt | Dette feltet kommer vi til å fjerne da vi får denne informasjonen fra instansen. Dette skal gjøres ved at det settes til valgfritt i en overgang og fases ut ved en passende anledning. |  |
 | <b>Vedleggsfil</b> | | |
