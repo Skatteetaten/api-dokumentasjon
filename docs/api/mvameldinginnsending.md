@@ -48,11 +48,39 @@ I API-beskrivelsen brukes mva-melding som en samlebetegnelse på de ulike meldin
 
 ### Prosess innsending og validering
 Innsending av Mva Melding gjøres mot Skatteetatens Altinn3 Instans API for Innsending. Detaljert beskrivelse av Altinn3's Instans-API finnes her 
-[Altinn Studio Instans API](https://docs.altinn.studio/api/apps/instances/).
+[Altinn Studio Instans API](https://docs.altinn.studio/api/apps/instances/). Inngående kjennskap til dette API'et er ikke nødvendig da denne dokumentasjonen dekker behovet for Mva Melding Innsending.
+
+Det anbefales å benytte [swagger dokumentasjonen](https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/swagger/index.html) sammen med denne API-beskrivelsen.
+
+I tillegg finnes det et Python script som kan benyttes til manuell testing under [Test](https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/swagger/index.html)
+
+Prosessen gjennomføres med en sekvens av kall mot Instans-API´et og beskrives i detalj under sekvensdiagrammet og er som følger:
+
+1. Autentisering
+    * Veksle ID-porten token til Altinn-token
+2. Validering mot Skatteetaten
+3. Utfylling mot Altinn3-App
+
+    * Opprett instans mot Altinn3-App
+    * Last opp MvaMeldingInnsending mot Altinn3-App
+    * Last opp mva-melding mot Altinn3-App
+    * Last opp vedlegg mot Altinn3-App
+4. Fullfør utfylling mot Altinn3-App
+5. Fullfør innsending mot Altinn3-App
+6. Hent tilbakemelding mot Altinn3-App
+
+Instans API'et til Mva Melding Innsending er tilgjengelig på denne URLen:
+```
+instansApiUrl = "https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances"
+```
+I følgende sekvensdiagram vil applikasjonsUrl'en være skjult, så hvis det er skrevet ``` POST: /intances/ ``` så er det implisitt ``` POST: instansApiUrl ```
+
 
 
 ## Datakatalog
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
+
+
 
 </TabItem>
 
