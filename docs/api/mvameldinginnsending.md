@@ -75,7 +75,7 @@ instansApiUrl = "https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2
 ```
 I følgende sekvensdiagram vil applikasjonsUrl'en være skjult, så hvis det er skrevet ``` POST: /intances/ ``` så er det implisitt ``` POST: instansApiUrl ```
 
-
+![](../../static/img/Mva-Melding-Innsending-Sekvensdiagram.png)
 
 ## Datakatalog
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
