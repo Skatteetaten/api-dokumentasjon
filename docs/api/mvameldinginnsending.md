@@ -37,6 +37,20 @@ https://docs.altinn.studio//nb/api/authentication/id-porten/#veksling-av-access-
 ## Teknisk spesifikasjon
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
 
+### Introduksjon
+
+API'ene fungerer for følgende kategorier skattemeldinger for merverdiavgift: Ordinær mva-melding (RF-0002/0004), mva-melding for omvendt avgiftsplikt (RF-0005) og Skattemelding for merverdiavgiftskompensasjon (RF-0009). Når disse meldingene skal sendes til Skatteetaten fra et sluttbrukersystem (SBS) burde disse APIene brukes:
+
+1. Skatteetatens MVA-Melding validerings API
+2. Skatteetatens Altinn3 MVA-Melding-Innsending's API
+
+I API-beskrivelsen brukes mva-melding som en samlebetegnelse på de ulike meldingstypene. API'ene beskrives under.
+
+### Prosess innsending og validering
+Innsending av Mva Melding gjøres mot Skatteetatens Altinn3 Instans API for Innsending. Detaljert beskrivelse av Altinn3's Instans-API finnes her 
+[Altinn Studio Instans API](https://docs.altinn.studio/api/apps/instances/).
+
+
 ## Datakatalog
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
