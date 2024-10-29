@@ -77,6 +77,19 @@ I følgende sekvensdiagram vil applikasjonsUrl'en være skjult, så hvis det er 
 
 ![](../../static/img/Mva-Melding-Innsending-Sekvensdiagram.png)
 
+
+### Autentisering
+Veksle ID-porten token til Altinn-token
+For å veksle ID-porten-tokenet må man gjøre følgende kall:
+```JSON
+GET `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`
+HEADERS:
+    "Authorization": "Bearer " + "{IDPortenToken}"
+       "content-type": "application/json"
+```
+
+
+
 ## Datakatalog
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
@@ -144,7 +157,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ### MVAMelding
 | Felt |	Beskrivelse | Formål |
-|:------|:--------------|:--------|
+|------|:--------------|:--------|
 | meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
 | merknad | Informasjon om innholdet i mva-meldingen  | Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
