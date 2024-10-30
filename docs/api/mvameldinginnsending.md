@@ -80,12 +80,7 @@ I følgende sekvensdiagram vil applikasjonsUrl'en være skjult, så hvis det er 
 
 ### Valider skattemelding
 
-```xml
-<?xml version='1.0' encoding='UTF-8'?>
-<mvaMeldingDto xmlns="no:skatteetaten:fastsetting:avgift:mva:skattemeldingformerverdiavgift:v1.0">
-
-</mvaMeldingDto>
-```
+https://skatteetaten.github.io/api-dokumentasjon/api/mvameldingvalidering?tab=Om+tjenesten
 
 ### Opprett Instans
 
