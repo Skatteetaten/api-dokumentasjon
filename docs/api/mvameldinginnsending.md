@@ -78,21 +78,56 @@ I følgende sekvensdiagram vil applikasjonsUrl'en være skjult, så hvis det er 
 ![](../../static/img/Mva-Melding-Innsending-Sekvensdiagram.png)
 
 
-### Autentisering
-Veksle ID-porten token til Altinn-token
-For å veksle ID-porten-tokenet må man gjøre følgende kall:
-```JSON
-GET `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`
-HEADERS:
-    "Authorization": "Bearer " + "{IDPortenToken}"
-       "content-type": "application/json"
+### Valider skattemelding
+
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<mvaMeldingDto xmlns="no:skatteetaten:fastsetting:avgift:mva:skattemeldingformerverdiavgift:v1.0">
+
+</mvaMeldingDto>
 ```
 
+### Opprett Instans
 
+```JSON
+POST {applikasjonsUrl}/instances/
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "application/json"
+CONTENT/BODY:
+    {
+        "instanceOwner": {
+            "organisationNumber": "{organisasjonsnummer}"
+            }
+    }
+```
 
-## Datakatalog
-Dette API-et er pt. ikke dokumentert i Felles datakatalog.
+### Last Opp MvaMeldingInnsending
 
+```
+PUT {mvaMeldingInnsendingsUrl}
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "application/xml"
+```
+
+```XML
+Content:
+<?xml version="1.0" encoding="UTF-8"?>
+<mvaMeldingInnsending>
+    ...
+</mvaMeldingInnsending>
+```
+
+### Last opp MvaMelding
+
+### Last Opp Vedlegg
+
+### Fullfør utfylling
+
+### Fullfør MvaMeldingInnsending
+
+### Hent tilbakemelding
 
 
 </TabItem>
