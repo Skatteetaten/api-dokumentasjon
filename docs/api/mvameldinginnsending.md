@@ -226,7 +226,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ### MVAMelding
 | Felt |	Beskrivelse | Formål |
-|------|:--------------|:--------|
+|------------------|:---------------------------------|:---------------------------------------------------------|
 | meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
 | merknad | Informasjon om innholdet i mva-meldingen  | Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
@@ -234,14 +234,14 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ### Skattepliktig
 | Felt |	Beskrivelse | Formål |
-|:------|:--------------|:--------|
+|:--------------------|:-----------------------------------------------------------------------|:---------------------------------------------------|
 | organisasjonsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting  | Ivareta den skattepliktiges rettigheter og plikter |
 
 <br />
 
 ### Innsending
 | Felt |	Beskrivelse | Formål |
-|:------|:--------------|:--------|
+|:--------------------------|:-----------------------------------------------|:-----------------------------------------------------------------------------------|
 | regnskapssystemrefereanse | Skattepliktiges unike referanse for innsending |  Sikre at skattepliktig og skattekontoret refererer til samme melding |
 | system | Navn og evt versjon for regnskapssystem |  Å kunne følge opp systematiske feil med systemleverandør i stedet for å følge opp hver enkelt skattepliktig |
 
@@ -256,7 +256,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ### Skattegrunnlag og beregnet skatt
 | Felt |	Beskrivelse | Formål |
-|:------|:--------------|:--------|
+|:-----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------|
 | skattleggingsperiode | Den perioden egenfastsettingen gjelder for. Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. |  Sikre samsvar mellom bokføring og egenfastsetting |
 | fastsattMerverdiavgift | Sum å betale/sum til gode |  Å sikre at riktig beløp blir betalt |
 
@@ -264,7 +264,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ### MvaSpesifikasjonslinje
 | Felt |	Beskrivelse | Formål |
-|:------|:--------------|:--------|
+|:-----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
 | mvaKode | Klassifikasjon av inngående og utgående mva ihht til norsk SAF-T standard  | Formidling av hvilke mva-vurderinger som er utført |
 | spesifikasjon | Detaljering av noen mva-forhold som ikke inngår i norsk SAF-T standard |  Formidling av hvilke mva-vurderinger som er utført |
 | mvaKodeRegnskapssystem | intern mva-kode i regnskapssystemet. Det kan være flere interne mva-koder for en mvaKode og evt spesifikasjon. I det tilfellet vil det bli flere rader i mva-meldingen pr mvaKode og spesifikasjon; en pr kombinasjon av mva-kode, spesifikasjon og mvaKodeRegnskapssystem. |  To hensyn Brukerne: gjenkjennelig i forhold til det de ser i regnskapet. Systemleverandørene skal slippe å legge om mva-koder i systemene |
@@ -276,30 +276,47 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 <br />
 
 ## Feltbeskrivelse for MvaMeldingInnsending
+
+### MvaMeldingInnsending 
 | Felt |	Beskrivelse | Formål |
-|:------|:--------------|:--------|
-| <b>MvaMeldingInnsending</b> | | |
+|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------|
 | meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
 | innsendingstype | En mva-melding av meldingskategori alminnelig og primær vil alltid være komplett. | Feltet beholdes for på et senere tidspunkt kunne åpne for at revisor kommenterer/ skriver merknad på de mva-meldingene (f. eks. merverdiavgift kompensasjon) som skal godkjennes av revisor før innsending. |
 | instansstatus | Dette feltet kommer vi til å fjerne da vi får denne informasjonen fra hendelser på instansen. Dette skal gjøres ved at det settes til valgfritt i en overgang og fases ut ved en passende anledning.  |  |
 | opprettetAv | Dette feltet skal inneholde navn på innlogget bruker | Innholdet i denne vises i Altinn. |
 | opprettingstidspunkt | Dette feltet kommer vi til å fjerne da vi får denne informasjonen fra instansen. Dette skal gjøres ved at det settes til valgfritt i en overgang og fases ut ved en passende anledning. |  |
-| <b>Identifikator (Enten organisasjonsnummer eller foedselsnummer)</b> | | |
-| - | - | - |
+
+<br />
+
+### Identifikator (Enten organisasjonsnummer eller foedselsnummer)
+| Felt |	Beskrivelse | Formål |
+|:--------------------|:-----------------------------------------------------------------------|:---------------------------------------------------|
 | organisasjonsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting  | Ivareta den skattepliktiges rettigheter og plikter |
 | foedselsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting |  Ivareta den skattepliktiges rettigheter og plikter |
-| <b>Skattleggingsperiode</b> | | |
-| - | - | - |
+
+<br />
+
+### Skattleggingsperiode
+| Felt |	Beskrivelse | Formål |
+|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------|
 | periode | Den perioden egenfastsettingen gjelder for. Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden  | Sikre samsvar mellom bokføring og egenfastsetting |
 | aar | Det året egenfastsettingen gjelder for | Sikre samsvar mellom bokføring og egenfastsetting |
-| <b>Vedlegg</b> | | |
-| - | - | - |
-| vedleggstype | Type vedlegg som blir lastet opp på instansen i Altinn. Hvor en kan enten bruke mva-melding for selve mva-meldingen, eller binaerVedlegg for generelle vedlegg.  | |
+
+<br />
+
+### Vedlegg
+| Felt |	Beskrivelse | Formål |
+|:---------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------|
+| vedleggstype | Type vedlegg som blir lastet opp på instansen i Altinn. Hvor en kan enten bruke mva-melding for selve mva-meldingen, eller binaerVedlegg for generelle vedlegg.  |  |
 | kildegruppe | Hvilken gruppe innsendingen kommer fra. Valgmuligheter: <b>etat</b>, <b>sluttbrukersystem</b>, <b>sluttbruker</b> |  |
 | opprettetAv |  Dette feltet skal inneholde navn på innlogget bruker  | Innholdet i denne vises i Altinn |
 | opprettingstidspunkt | Dette feltet kommer vi til å fjerne da vi får denne informasjonen fra instansen. Dette skal gjøres ved at det settes til valgfritt i en overgang og fases ut ved en passende anledning. |  |
-| <b>Vedleggsfil</b> | | |
-| - | - | - |
+
+<br />
+
+### Vedleggsfil
+| Felt |	Beskrivelse | Formål |
+|:--------------|:-----------------------------------------------------------|--|
 | filnavn | Navnet på filen som er lagt med som vedlegg  |  |
 | filekstensjon | Ekstensjonen til filen som er lagt med som vedlegg |  |
 | filinnhold | Gir en beskrivelse av innholdet i vedleggsfilen |  |
