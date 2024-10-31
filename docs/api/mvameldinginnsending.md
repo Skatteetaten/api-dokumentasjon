@@ -230,12 +230,14 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | meldingskategori | Type skjema som sendes inn | Å sikre at brukeren dekker sin plikt for egenfastsetting |
 | merknad | Informasjon om innholdet i mva-meldingen  | Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
+<br />
 
 ### Skattepliktig
 | Felt |	Beskrivelse | Formål |
 |:------|:--------------|:--------|
 | organisasjonsnummer | Unik identifikator for den skattepliktige som foretar egenfastsetting  | Ivareta den skattepliktiges rettigheter og plikter |
 
+<br />
 
 ### Innsending
 | Felt |	Beskrivelse | Formål |
@@ -243,16 +245,22 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | regnskapssystemrefereanse | Skattepliktiges unike referanse for innsending |  Sikre at skattepliktig og skattekontoret refererer til samme melding |
 | system | Navn og evt versjon for regnskapssystem |  Å kunne følge opp systematiske feil med systemleverandør i stedet for å følge opp hver enkelt skattepliktig |
 
+<br />
+
 ### Betalingsinformasjon
 | Felt |	Beskrivelse | Formål |
 |:----|:------------------------------------------|:--------------------------------------------------|
 | KID | Mottakerens identifikasjon av en betaling | Å kunne betale til de bankkontoene som krever KID |
+
+<br />
 
 ### Skattegrunnlag og beregnet skatt
 | Felt |	Beskrivelse | Formål |
 |:------|:--------------|:--------|
 | skattleggingsperiode | Den perioden egenfastsettingen gjelder for. Periode angis i henhold til kodeverket for Skattleggingsperiode. SkattleggingsperiodeUke følger kalenderens ukenummerering, eksempelvis løper uke 1 i 2022 fra 3. til 9. januar. I SkattleggingsperiodeHalvmåndelig løper første halvdel fra 1. til 15. i måneden og andre halvdel løper fra 16. til siste i måneden. |  Sikre samsvar mellom bokføring og egenfastsetting |
 | fastsattMerverdiavgift | Sum å betale/sum til gode |  Å sikre at riktig beløp blir betalt |
+
+<br />
 
 ### MvaSpesifikasjonslinje
 | Felt |	Beskrivelse | Formål |
@@ -265,7 +273,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | merverdiavgift | Fastsatt merverdiavgift | Å vise beregnet mva pr linje |
 | merknad | Informasjon om innholdet i mvaKode |  Å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig |
 
-
+<br />
 
 ## Feltbeskrivelse for MvaMeldingInnsending
 | Felt |	Beskrivelse | Formål |
@@ -296,7 +304,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | filekstensjon | Ekstensjonen til filen som er lagt med som vedlegg |  |
 | filinnhold | Gir en beskrivelse av innholdet i vedleggsfilen |  |
 
-
+<br />
 
 ## Kodelister
 
@@ -357,6 +365,8 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | Spesifikasjonslinje til kode 91                   | Kjøp med kompensasjonsrett				                                |
 | 92                                                | Kjøp av klimakvoter og gull uten fradragsrett (høy sats)                                  |
 
+
+<br />
 
 En oversikt over kodelistene finnes i [Oversikten over kodelister](https://github.com/Skatteetaten/mva-meldingen/blob/master/docs/informasjonsmodell_filer/kodelister/)
 
