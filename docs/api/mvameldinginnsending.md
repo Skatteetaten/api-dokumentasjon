@@ -218,7 +218,11 @@ Eksempler på ny mva-melding i [excel](../../static/download/Testtilfeller_mva_m
 
 Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding).
 
+<br />
+
 ## Feltbeskrivelse for mva-melding
+
+<br />
 
 ### MVAMelding
 | Felt |	Beskrivelse | Formål |
@@ -241,7 +245,7 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 
 ### Betalingsinformasjon
 | Felt |	Beskrivelse | Formål |
-|:------|:--------------|:--------|
+|:----|:------------------------------------------|:--------------------------------------------------|
 | KID | Mottakerens identifikasjon av en betaling | Å kunne betale til de bankkontoene som krever KID |
 
 ### Skattegrunnlag og beregnet skatt
