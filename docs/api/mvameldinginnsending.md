@@ -26,16 +26,12 @@ For generell informasjon om tjenestene se egne sider om:
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvameldinginnsending`
 
-## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva-melding innsending API - På vegne av`
-
 ## Sikkerhet
 For mva-meldinginnsending er det Altinn token som brukes:
 
 https://docs.altinn.studio//nb/api/authentication/id-porten/#veksling-av-access-token-til-altinn-token
 
 ## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
 
 ### Introduksjon
 
@@ -116,11 +112,50 @@ Content:
 
 ### Last opp MvaMelding
 
+```JSON
+POST {instansUrl}/data?datatype=mvamelding
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "text/xml"
+    "Content-Disposition": "attachment; filename=mvaMelding.xml"
+```
+```XML
+Content:
+<?xml version="1.0" encoding="UTF-8"?>
+<mvaMeldingDto xmlns="no:skatteetaten:fastsetting:avgift:mva:skattemeldingformerverdiavgift:v1.0">
+    ...
+</mvaMeldingDto>
+```
 ### Last Opp Vedlegg
+
+```JSON
+POST {instansUrl}/data?datatype=binaerVedlegg
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "application/pdf"
+    "Content-Disposition": "attachment; filename=merknaderTilMvaMeldingen.pdf"
+Content:
+{pdf-vedlegg i binærformat}
+```
 
 ### Fullfør utfylling
 
+```JSON
+PUT {instansUrl}/process/next
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "application/json"
+```
+
+
 ### Fullfør MvaMeldingInnsending
+
+```JSON
+PUT {instansUrl}/process/next
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "application/json"
+```
 
 ### Hent tilbakemelding
 
