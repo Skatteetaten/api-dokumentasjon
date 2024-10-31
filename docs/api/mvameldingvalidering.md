@@ -26,22 +26,12 @@ For generell informasjon om tjenestene se egne sider om:
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvameldingvalidering`
 
-## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva-melding innsending API - På vegne av`
-
 ## Sikkerhet
 For mva-meldingvalidering er det ID-porten token som gjelder:
 
 https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94
 
 https://docs.digdir.no/docs/idporten/oidc/oidc_protocol_id_token.html
-
-
-## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons...
-
-## Datakatalog
-Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 </TabItem>
 
@@ -63,11 +53,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet. |
   
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-3">
 
-Her kan du legge inn skjermbilde av informasjonsmodell. 
-
-</TabItem>
 <TabItem headerText="Test" itemKey="itemKey-4">
 
 ## Url'er til testmiljøet
