@@ -228,13 +228,13 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 ### MvaMelding
 
 <table align="center">
-  <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th></tr>
-  <tr><td>meldingskategori</td><td>Beskrivelse: type skjema som sendes inn <br />
-	Formål: å sikre at brukeren dekker sin plikt for egenfastsetting
+  <tr><th style="width:25%" align="left">Felt</th><th align="left">Beskrivelse</th><th align="left">Formål</th></tr>
+  <tr><td>meldingskategori</td><td>Beskrivelse: type skjema som sendes inn </td> <br />
+	<td>Formål: å sikre at brukeren dekker sin plikt for egenfastsetting
 	</td>
   </tr>
-    <tr><td>merknad</td><td>Beskrivelse: informasjon om innholdet i mva-meldingen <br />
-	Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig
+    <tr color=><td>merknad</td><td>Beskrivelse: informasjon om innholdet i mva-meldingen </td> <br />
+	<td>Formål: å sikre at skattepliktig kan forklare egen rettsanvendelse der det er nødvendig
 	</td>
   </tr>
 </table>
