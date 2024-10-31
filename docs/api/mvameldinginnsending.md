@@ -214,7 +214,7 @@ Fra 01.01.2023 er spesifikasjonen «Kjøp med kompensasjonsrett» lagt til på 5
 
 ## Eksempler på mva-meldinger
 
-Eksempler på ny mva-melding i [excel](../../static/download/Testtilfeller_mva_melding.xlsx.xlsx).
+Eksempler på ny mva-melding i [excel](../../static/download/Testtilfeller_mva_melding.xlsx).
 
 Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding).
 
