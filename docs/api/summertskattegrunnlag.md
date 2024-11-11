@@ -6,11 +6,12 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ skattegrunnlag, skatteoppgjør ]
-last_updated: May 24, 2024
+last_updated: Nov 11, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke opplysninger fra skattemeldingen som ligger til grunn.</Summary>
+<Summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke
+opplysninger fra skattemeldingen som ligger til grunn.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -32,7 +33,7 @@ versjon av API-et med mindre annen semantikk endres.
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:summertskattegrunnlag`
 
-I versjon 2 aksepterer vi også `skatteetaten:spesifisertsummertskattegrunnlag` for konsumenter som tidligere
+I versjon 2 aksepteres også `skatteetaten:spesifisertsummertskattegrunnlag` for konsumenter som tidligere
 benyttet [Spesifisert summert skattegrunnlag API](./spesifisertsummertskattegrunnlag.md).
 
 ## Delegering
@@ -42,43 +43,38 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Summert skattegrunnl
 
 ## Teknisk spesifikasjon
 
-Det finnes for tiden 2 versjoner av dette API-et, og ulike rettighetspakker er støttet i ulike versjoner. URL-er til
-API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene på Swaggerhub.
-
-* [Summert skattegrunnlag API - versjon 1](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api/1.0.1)
-* [Summert skattegrunnlag API - versjon 2](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api/2.0.0)
-
-I versjon 2 er \{stadie\} en obligatorisk del av URL, og konsumenter som hittil ikke har oppgitt stadie skal benytte
-stadie "oppgjoer".
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api) på SwaggerHub.
 
 ## Rettighetspakker
 
-| Navn på rettighetspakke           | 	Stadie                     | Kommentarer                       |
-|-----------------------------------|------------------------------|-----------------------------------|
-| fiskeridirektoratetkontrollmanntall | oppgjoer                   | Støttes kun i V2                  |
-| frirettshjelp                     | oppgjoer                     | Støttes i både V1 og V2           |
-| husbanken                         | oppgjoer                     | Støttes kun i V1                  |
-| husbankenLaanTilskudd             | oppgjoer                     | Støttes kun i V2                  |
-| husbankenBostoette                | oppgjoer                     | Støttes kun i V2                  |
-| kommuneBoligsosialeFormaal        | oppgjoer                     | Støttes i både V1 og V2           |
-| kommuneForeldrebetaling           | oppgjoer og utkast           | Støttes i både V1 og V2           |
-| kommunePersonligassistanse        | oppgjoer                     | Støttes i både V1 og V2           |
-| kommuneLangtidsoppholdInstitusjon | oppgjoer                     | Støttes i både V1 og V2           |
-| laanekassen                       | oppgjoer                     | Støttes i både V1 og V2           |
-| ldir                              | oppgjoer                     | Støttes i både V1 og V2           |
-| ldirTotalregnskap                 | oppgjoer                     | Støttes kun i V2                  |
-| ldirReindriftstilskudd            | oppgjoer                     | Støttes i både V1 og V2           |
-| nav                               | oppgjoer                     | Støttes i både V1 og V2           | 
-| navbidrag                         | oppgjoer                     | Støttes kun i V2                  | 
-| navufoeretrygd                    | oppgjoer                     | Støttes kun i V2                  | 
-| navSupplerendeStoenad             | oppgjoer og utkast           | Støttes kun i V2                  |
-| norgesbank                        | oppgjoer og utkast           | Støttes kun i V2                  |
-| saernamsmann                      | oppgjoer                     | Støttes kun i V2                  |
-| sbl                               | oppgjoer                     | Støttes kun i V2, krever samtykke |
-| sivilrett                         | oppgjoer, utkast og fastsatt | Støttes kun i V2                  |
-| spkBoliglaan                      | oppgjoer                     | Støttes kun i V2                  |
-| ssb                               | oppgjoer                     | Støttes i både V1 og V2           |
-| udi                               | oppgjoer                     | Støttes i både V1 og V2           |
+| Navn på rettighetspakke             | 	Stadie                      | Kommentarer     |
+|-------------------------------------|------------------------------|-----------------|
+| fiskeridirektoratetKontrollmanntall | oppgjoer                     |                 |
+| friRettshjelp                       | oppgjoer                     |                 |
+| husbankenBostoette                  | oppgjoer                     |                 |
+| husbankenLaanTilskudd               | oppgjoer                     |                 |
+| kommuneBoligsosialeFormaal          | oppgjoer                     |                 |
+| kommuneForeldrebetaling             | oppgjoer og utkast           |                 |
+| kommuneLangtidsoppholdInstitusjon   | oppgjoer                     |                 |
+| kommunePersonligassistanse          | oppgjoer                     |                 |
+| kommunePraktiskBistand              | oppgjoer                     |                 |
+| laanekassen                         | oppgjoer                     |                 |
+| ldir                                | oppgjoer                     |                 |
+| ldirReindriftstilskudd              | oppgjoer                     |                 |
+| ldirTotalregnskap                   | oppgjoer                     |                 |
+| nav                                 | oppgjoer                     |                 | 
+| navBidrag                           | oppgjoer                     |                 | 
+| navBilstoenad                       | oppgjoer                     |                 | 
+| navSupplerendeStoenad               | oppgjoer og utkast           |                 |
+| navUfoeretrygd                      | oppgjoer                     |                 | 
+| norgesbank                          | oppgjoer og utkast           |                 |
+| saernamsmann                        | oppgjoer                     |                 |
+| sbl                                 | oppgjoer                     | Krever samtykke |
+| sivilrett                           | oppgjoer, utkast og fastsatt |                 |
+| spkBoliglaan                        | oppgjoer                     |                 |
+| ssb                                 | oppgjoer                     |                 |
+| udi                                 | oppgjoer                     |                 |
 
 ## Samtykke
 
