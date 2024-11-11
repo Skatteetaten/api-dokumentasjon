@@ -16,7 +16,7 @@ hide_table_of_contents: true
 
 For data som er tilgjengelige på uforutsigbare tidspunkt tilbyr vi en tjeneste for å sjekke hvilke data som er tilgjengelig for en skattepliktig. Tilgjengeligdata API returnerer periode for “siste tilgjengelige data” for den skattepliktige. Tjenesten er spesielt nyttig for virksomheter som trenger samtykke for å hente ut data. Tilgjengeligdata Api brukes før samtykke innhentes, for å sikre at man ber om samtykke til seneste periode Skatteetaten har data for.
 
-Eksempler på slike data er Spesifisert summert skattegrunnlag API og Summert skattegrunnlag  API, hvor det kan variere med flere måneder når det kommer data for et nytt inntektsår (fordi forskjellige skattepliktige har forskjellige meldefrister, skattepliktig kan søke om utsettelser, etc).
+Eksempler på slike data er Summert skattegrunnlag API, hvor det kan variere med flere måneder når det kommer data for et nytt inntektsår (fordi forskjellige skattepliktige har forskjellige meldefrister, skattepliktig kan søke om utsettelser, etc).
   
 For generell informasjon om tjenestene se egne sider om:
 * [Bruk av tjenestene](../om/bruk.md)
