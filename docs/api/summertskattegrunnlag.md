@@ -243,7 +243,7 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 ## Tilleggsinformasjon
 
 * I 2018-2021 kom spesifikasjonene til summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. For
-  en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2018_spesifikasjoner)
+  en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2018_spesifikasjoner)
 * Fra og med 2018 er feltene skjoennsfastsatt og svalbardSkjoennsfastsatt fjernet.
 
 </TabItem>
@@ -280,13 +280,13 @@ som er mest oppdatert.
 
 | År   | Informasjonsmodell                                                                                                                                  |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2023 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2023](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2023) |
-| 2022 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2022](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2022) |
-| 2021 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2021](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2021) |
-| 2020 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2020](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2020) |
-| 2019 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2019](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2019) |
-| 2018 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2018) |
-| 2017 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2017](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2017) |
+| 2023 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2023](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2023) |
+| 2022 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2022](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2022) |
+| 2021 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2021](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2021) |
+| 2020 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2020](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2020) |
+| 2019 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2019](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2019) |
+| 2018 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2018](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2018) |
+| 2017 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2017](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2017) |
 
 ## Informasjonsmodell - skjema
 
