@@ -390,13 +390,13 @@ Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swa
 
 | År   | Kodeliste og spesifikasjoner                                                                                                                            |
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2017 | [Summerte skattegrunnlag og spesifikasjoner for 2017](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2017.md) |
-| 2018 | [Summerte skattegrunnlag og spesifikasjoner for 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018.md) |
-| 2019 | [Summerte skattegrunnlag og spesifikasjoner for 2019](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2019.md) |
-| 2020 | [Summerte skattegrunnlag og spesifikasjoner for 2020](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2020.md) |
-| 2021 | [Summerte skattegrunnlag og spesifikasjoner for 2021](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2021.md) |
-| 2022 | [Summerte skattegrunnlag og spesifikasjoner for 2022](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2022.md) |
-| 2023 | [Summerte skattegrunnlag og spesifikasjoner for 2023](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2023.md) |
+| 2017 | [Summerte skattegrunnlag og spesifikasjoner for 2017](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2017) |
+| 2018 | [Summerte skattegrunnlag og spesifikasjoner for 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2018) |
+| 2019 | [Summerte skattegrunnlag og spesifikasjoner for 2019](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2019) |
+| 2020 | [Summerte skattegrunnlag og spesifikasjoner for 2020](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2020) |
+| 2021 | [Summerte skattegrunnlag og spesifikasjoner for 2021](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2021) |
+| 2022 | [Summerte skattegrunnlag og spesifikasjoner for 2022](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2022) |
+| 2023 | [Summerte skattegrunnlag og spesifikasjoner for 2023](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2023) |
 
 ## Informasjonsmodell - skjema
 
@@ -424,7 +424,7 @@ Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swa
 ## Tilleggsinformasjon
   
 * I 2018 komm spesifikasjonene til spesifisert summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. For
-en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018_spesifikasjoner.md)
+en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/summertskattegrunnlag2018_spesifikasjoner)
 * For 2015 og 2016 er Svalbard- og fastlandsinformasjon summert sammen. Fra og med 2017 er Svalbard-data skilt ut i
   svalbardSkjoennsfastsatt og svalbardGrunnlag.
 * Fra og med 2018 er feltene skjoennsfastsatt og svalbardSkjoennsfastsatt fjernet.
