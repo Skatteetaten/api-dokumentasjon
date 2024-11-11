@@ -390,7 +390,6 @@ Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swa
 
 | År   | Kodeliste og spesifikasjoner                                                                                                                            |
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2016 | [Summerte skattegrunnlag og spesifikasjoner for 2016](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2016.md) |
 | 2017 | [Summerte skattegrunnlag og spesifikasjoner for 2017](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2017.md) |
 | 2018 | [Summerte skattegrunnlag og spesifikasjoner for 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018.md) |
 | 2019 | [Summerte skattegrunnlag og spesifikasjoner for 2019](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2019.md) |
