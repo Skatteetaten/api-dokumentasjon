@@ -1,7 +1,7 @@
 ---
 title: Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018
 slug: /spesifisertsummertskattegrunnlag2018_spesifikasjoner
-folder: informasjonsmodeller/spesifisertsummertskattegrunnlag
+folder: informasjonsmodeller/summertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
 tags: [Skatteoppgjør, Informasjonsmodell]

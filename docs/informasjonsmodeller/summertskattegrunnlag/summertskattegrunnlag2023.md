@@ -1,11 +1,11 @@
 ---
 title: Summerte skattegrunnlag og spesifikasjoner for 2023
-slug: /spesifisertsummertskattegrunnlag2023
-folder: informasjonsmodeller/spesifisertsummertskattegrunnlag
+slug: /summertskattegrunnlag2023
+folder: informasjonsmodeller/summertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Skatteoppgjør, Informasjonsmodell]
-keywords: [informasjonsmodell]
+tags: [ Skatteoppgjør, Informasjonsmodell ]
+keywords: [ informasjonsmodell ]
 last_updated: Jan 16, 2024
 hide_table_of_contents: true
 ---
