@@ -1,15 +1,17 @@
 ---
 title: Summerte skattegrunnlag og spesifikasjoner for 2017
-slug: /spesifisertsummertskattegrunnlag2017
+slug: /summertskattegrunnlag2017
 folder: informasjonsmodeller/summertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Skatteoppgjør, Informasjonsmodell]
-keywords: [informasjonsmodell]
+tags: [ Skatteoppgjør, Informasjonsmodell ]
+keywords: [ informasjonsmodell ]
 last_updated: May 14, 2017
 hide_table_of_contents: true
 ---
-<Summary>Lovlige verdier for tekniskNavn, kategorisering og post i oppgjør tilgjengelig i summert skattegrunnlag for 2017.</Summary>
+
+<Summary>Lovlige verdier for tekniskNavn, kategorisering og post i oppgjør tilgjengelig i summert skattegrunnlag for
+2017.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2017.
 

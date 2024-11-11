@@ -1,22 +1,23 @@
 ---
 title: Summerte skattegrunnlag og spesifikasjoner for 2019
-slug: /spesifisertsummertskattegrunnlag2019
+slug: /summertskattegrunnlag2019
 folder: informasjonsmodeller/summertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Skatteoppgjør, Informasjonsmodell]
-keywords: [informasjonsmodell]
+tags: [ Skatteoppgjør, Informasjonsmodell ]
+keywords: [ informasjonsmodell ]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
+
 <Summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i summert skattegrunnlag for 2019.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2019.
 
-
 ## Spesifikasjon for summert skattegrunnlag 2019
-I 2019 vil de forskjellige summerte skattegrunnlagene kunne få spesifikasjoner med forskjellige spesifiseringstyper for samme sum.  Mulige spesifiseringstyper er lagt til som en egen kolonne.
 
+I 2019 vil de forskjellige summerte skattegrunnlagene kunne få spesifikasjoner med forskjellige spesifiseringstyper for
+samme sum. Mulige spesifiseringstyper er lagt til som en egen kolonne.
 
 ## Summerte skattegrunnlag for 2019
 

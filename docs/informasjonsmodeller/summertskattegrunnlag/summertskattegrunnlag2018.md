@@ -1,26 +1,32 @@
 ---
 title: Summerte skattegrunnlag og spesifikasjoner for 2018
-slug: /spesifisertsummertskattegrunnlag2018
+slug: /summertskattegrunnlag2018
 folder: informasjonsmodeller/summertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Skatteoppgjør, Informasjonsmodell]
-keywords: [informasjonsmodell]
+tags: [ Skatteoppgjør, Informasjonsmodell ]
+keywords: [ informasjonsmodell ]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
+
 <Summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i summert skattegrunnlag for 2018.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2018.
 
 ## Spesifikasjon for summert skattegrunnlag 2018
-I 2018 kommer spesifikasjonene til summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. 
-For en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for summert skattegrunnlag 2018](./summertskattegrunnlag2018_spesifikasjoner)
+
+I 2018 kommer spesifikasjonene til summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot.
+For en detaljert beskrivelse av hva dette innebærer,
+se [Spesifikasjonstyper for summert skattegrunnlag 2018](./summertskattegrunnlag2018_spesifikasjoner)
 
 ### Avvik
-Følgende summerte skattegrunnlag vil kunne ha mangelfull liste med spesifikasjoner for skatteoppgjør produsert før 4. september:
-- samletAnnenPensjonMedTrekkpliktEksklusiveEktefelletillegg 
-- samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt 
+
+Følgende summerte skattegrunnlag vil kunne ha mangelfull liste med spesifikasjoner for skatteoppgjør produsert før 4.
+september:
+
+- samletAnnenPensjonMedTrekkpliktEksklusiveEktefelletillegg
+- samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt
 
 ## Summerte skattegrunnlag for 2018
 

@@ -1,21 +1,23 @@
 ---
 title: Summerte skattegrunnlag og spesifikasjoner for 2021
-slug: /spesifisertsummertskattegrunnlag2021
+slug: /summertskattegrunnlag2021
 folder: informasjonsmodeller/summertskattegrunnlag
 sidebar: mydoc_sidebar
 datatable: true
-tags: [Skatteoppgjør, Informasjonsmodell]
-keywords: [informasjonsmodell]
+tags: [ Skatteoppgjør, Informasjonsmodell ]
+keywords: [ informasjonsmodell ]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
+
 <Summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i summert skattegrunnlag for 2021.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2021.
 
 ## Spesifikasjon for summert skattegrunnlag 2021
-I 2021 vil de forskjellige summerte skattegrunnlagene kunne få spesifikasjoner med forskjellige spesifiseringstyper for samme sum.  Mulige spesifiseringstyper er lagt til som en egen kolonne.
 
+I 2021 vil de forskjellige summerte skattegrunnlagene kunne få spesifikasjoner med forskjellige spesifiseringstyper for
+samme sum. Mulige spesifiseringstyper er lagt til som en egen kolonne.
 
 ## Summerte skattegrunnlag for 2021
 
