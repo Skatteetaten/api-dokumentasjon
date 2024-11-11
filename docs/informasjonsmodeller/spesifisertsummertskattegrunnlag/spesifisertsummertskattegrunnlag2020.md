@@ -11,7 +11,7 @@ hide_table_of_contents: true
 ---
 <Summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i spesifisert summert skattegrunnlag for 2020.</Summary>
 
-Oversikt over mulige verdier i data fra [spesifisert summert skattegrunnlag](../../api/spesifisertsummertskattegrunnlag.md) tjenesten for 2020.
+Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2020.
 
 
 ## Spesifikasjon for spesifisert summert skattegrunnlag 2020

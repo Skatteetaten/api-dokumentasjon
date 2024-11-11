@@ -9,9 +9,9 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<Summary>Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018.</Summary>
+<Summary>Spesifikasjonstyper for summert skattegrunnlag 2018.</Summary>
 
-Oversikt over mulige spesifikasjonertyper i data fra [spesifisert summert skattegrunnlag](../../api/spesifisertsummertskattegrunnlag.md) for 2018.
+Oversikt over mulige spesifikasjonertyper i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) for 2018.
 
 ## Om Spesifikasjoner
 
