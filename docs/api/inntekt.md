@@ -38,14 +38,6 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På ve
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/inntekt-api/) på SwaggerHub.
 
-Det finnes pt. to ulike URL-er til API-et. URL-en som skal benyttes er den som ligger i Open API spesifikasjonen.
-
-Gammel URL kan også benyttes, men vil etter hver utfases:
-
-```
-GET https://<env>/api/innrapportert/inntektsmottaker/<rettighetspakke>/<personidentifikator>/oppgave/inntekt?fraOgMed=<YYYY-MM>[&tilOgMed=<YYYY-MM>]
-``` 
-
 ## Rettighetspakker
 
 Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhetens *rettighetspakke* avgjør hvilke
@@ -66,6 +58,8 @@ helhet.
 | nav                                   | Hjemmel                                                                                                                                                                  |
 | otp                                   | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
 | pensjonskasse                         | Hjemmel                                                                                                                                                                  |
+| pensjonskasseLivsvarigAfpAnnenInntekt | Hjemmel                                                                                                                                                                  |
+| •	pensjonskasseLivsvarigAfpAndreYtelser | Hjemmel                                                                                                                                                                |
 | saernamsmann                          | Hjemmel                                                                                                                                                                  |
 | spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
 | sbl                                   | Krever samtykke                                                                                                                                                          |
