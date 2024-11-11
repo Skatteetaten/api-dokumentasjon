@@ -13,9 +13,9 @@ hide_table_of_contents: true
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2018.
 
-## Spesifikasjon for spesifisert summert skattegrunnlag 2018
-I 2018 kommer spesifikasjonene til spesifisert summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. 
-For en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](./summertskattegrunnlag2018_spesifikasjoner)
+## Spesifikasjon for summert skattegrunnlag 2018
+I 2018 kommer spesifikasjonene til summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. 
+For en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for summert skattegrunnlag 2018](./summertskattegrunnlag2018_spesifikasjoner)
 
 ### Avvik
 Følgende summerte skattegrunnlag vil kunne ha mangelfull liste med spesifikasjoner for skatteoppgjør produsert før 4. september:

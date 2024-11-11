@@ -14,7 +14,7 @@ hide_table_of_contents: true
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2019.
 
 
-## Spesifikasjon for spesifisert summert skattegrunnlag 2019
+## Spesifikasjon for summert skattegrunnlag 2019
 I 2019 vil de forskjellige summerte skattegrunnlagene kunne få spesifikasjoner med forskjellige spesifiseringstyper for samme sum.  Mulige spesifiseringstyper er lagt til som en egen kolonne.
 
 

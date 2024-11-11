@@ -9,12 +9,12 @@ keywords: [informasjonsmodell]
 last_updated: Des 13, 2022
 hide_table_of_contents: true
 ---
-<Summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i spesifisert summert skattegrunnlag for 2020.</Summary>
+<Summary>Summerte skattegrunnlag og spesifikasjoner tilgjengelig i summert skattegrunnlag for 2020.</Summary>
 
 Oversikt over mulige verdier i data fra [summert skattegrunnlag](../../api/summertskattegrunnlag.md) tjenesten for 2020.
 
 
-## Spesifikasjon for spesifisert summert skattegrunnlag 2020
+## Spesifikasjon for summert skattegrunnlag 2020
 I 2020 vil de forskjellige summerte skattegrunnlagene kunne få spesifikasjoner med forskjellige spesifiseringstyper for samme sum.  Mulige spesifiseringstyper er lagt til som en egen kolonne.
 
 

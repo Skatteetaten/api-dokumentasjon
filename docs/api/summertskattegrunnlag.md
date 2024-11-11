@@ -243,7 +243,7 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 ## Tilleggsinformasjon
 
 * I 2018-2021 kom spesifikasjonene til summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. For
-  en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2018_spesifikasjoner)
+  en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for summert skattegrunnlag 2018](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2018_spesifikasjoner)
 * Fra og med 2018 er feltene skjoennsfastsatt og svalbardSkjoennsfastsatt fjernet.
 
 </TabItem>
