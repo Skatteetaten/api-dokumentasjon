@@ -34,7 +34,7 @@ versjon av API-et med mindre annen semantikk endres.
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:summertskattegrunnlag`
 
 I versjon 2 aksepteres også `skatteetaten:spesifisertsummertskattegrunnlag` for konsumenter som tidligere
-benyttet [Spesifisert summert skattegrunnlag API](./spesifisertsummertskattegrunnlag.md).
+benyttet Spesifisert summert skattegrunnlag API.
 
 ## Delegering
 
@@ -242,8 +242,9 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 
 ## Tilleggsinformasjon
 
-* For 2015 og 2016 er Svalbard- og fastlandsinformasjon summert sammen. Fra og med 2017 er Svalbard-data skilt ut i
-  svalbardSkjoennsfastsatt og svalbardGrunnlag.
+* I 2018-2021 kom spesifikasjonene til summert skattegrunnlag fra to forskjellige løyper: ordinær og pilot. For
+  en detaljert beskrivelse av hva dette innebærer, se [Spesifikasjonstyper for spesifisert summert skattegrunnlag 2018](../informasjonsmodeller/spesifisertsummertskattegrunnlag/spesifisertsummertskattegrunnlag2018_spesifikasjoner.md)
+* Fra og med 2018 er feltene skjoennsfastsatt og svalbardSkjoennsfastsatt fjernet.
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
