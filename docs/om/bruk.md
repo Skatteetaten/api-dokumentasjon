@@ -1,17 +1,17 @@
 ---
-title: Bruk av tjenestene
+title: Bruk av API-er for deling
 slug: /om/bruk
 folder: om
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API]
 keywords: [API, dokumentasjon]
-last_updated: Des 1, 2022
+last_updated: Nov 12, 2024
 hide_table_of_contents: true
 ---
-<Summary>Overordnet om Skatteetatens tjenester.</Summary>
+<Summary>Overordnet om Skatteetatens API-er for deling.</Summary>
 
-Bruk av Skatteetatens delingstjenester forutsetter følgende:
+Bruk av Skatteetatens API-er for deling forutsetter følgende:
 * Bruk av [Maskinporten](sikkerhet.md).
 * Virksomheten må få [tilgang](https://www.skatteetaten.no/deling/) til tjenesten.
 * Dersom virksomheten skal benytte en systemleverandør, må det [delegeres tilgang i Altinn](delegering.md).
