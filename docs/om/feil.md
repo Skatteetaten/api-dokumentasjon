@@ -15,7 +15,7 @@ hide_table_of_contents: true
 
 | HTTP kode | Beskrivelse |
 |-------|--------|
-| 200 OK | Henting av data gikk bra, og man får data i JSON eller XML format |
+| 200 OK | Henting av data gikk bra, og man får data i JSON (eller XML) format |
 | 400 Bad request | Feil i spørring. Applikasjonen vil gi en detaljert feilmelding på norsk for hva som er feil med spørring |
 | 401 Unauthorized | Autorisasjoner som trengs for å bruke tjenesten mangler |
 | 403 Forbidden | Ikke Autentisert |
