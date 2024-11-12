@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [varsler,drift,nyhet]
 keywords: [varsel,drift,nyhet]
-last_updated: Sept 24, 2024
+last_updated: Nov 12, 2024
 hide_table_of_contents: true
 ---
 <Summary>Varsler om Skatteetatens eksterne API-er</Summary>
@@ -14,7 +14,7 @@ hide_table_of_contents: true
 Varsler som av diverse årsaker bør kommuniseres direkte til en virksomhet, vil bli sendt på varslingsadresse man har oppgitt i forbindelse med avtaleinngåelse. Konsumenter plikter å sikre at Skatteetaten til enhver tid har gyldig adresse for disse varslene.
 
 ## Driftvarsler
-Skatteetatens har ny varslingskanal for driftsvarsler: [status.skatteetaten.no](https://status.skatteetaten.no/)
+Skatteetaten har en egen varslingskanal for driftsvarsler: [status.skatteetaten.no](https://status.skatteetaten.no/)
 
 Varsler for Skatteetatens delings-API-er for skatt- og inntekt er flyttet til statussiden, og vi anbefaler at alle konsumenter oppretter abonnement på driftsvarsler der.
 
