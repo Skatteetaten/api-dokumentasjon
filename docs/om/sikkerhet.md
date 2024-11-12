@@ -35,8 +35,11 @@ All kommunikasjon mellom virksomheten, Maskinporten og Skatteetaten gjøres over
 3. Skatteetaten validerer tokenet og at virksomheten har rett til den informasjonen de prøver å hente (tilgangskontroll).
 4. Hvis alt er OK returneres data iht. forespørselen.
 
-### Delegere rettigheter i Altinn ###
+### Delegere rettigheter i Altinn
 Se egen side for informasjon om [hvordan opptre på vegne av en annen virksomhet](./delegering.md).
+
+### Systemtilgang med systembruker
+Se egen side for informasjon om [systemtilgang for systembruker](./systemtilgang.md).
 
 ## Brannmur
 
