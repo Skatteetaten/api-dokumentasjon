@@ -6,14 +6,14 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [Sikkerhet,Maskinporten,Delegering]
 keywords: [security,sikkerhet]
-last_updated: Nov 24, 2022
+last_updated: Nov 12, 2024
 hide_table_of_contents: true
 ---
 <Summary>Informasjon om nødvendige sikkerhetsmekanismer, autentisering og autorisasjon.</Summary>
 
 ## Maskinporten
 
-Alle Skatteetatens eksterne tjenester benytter [Maskinporten fra Digdir](https://samarbeid.digdir.no/maskinporten/maskinporten/25) for autentisering av virksomheter for maskin-til-maskin grensesnitt. Autentisering basert på kun virksomhetsertifikat støttes ikke lenger.
+Alle Skatteetatens eksterne API-er benytter [Maskinporten fra Digdir](https://samarbeid.digdir.no/maskinporten/maskinporten/25) for autentisering av virksomheter for maskin-til-maskin grensesnitt. Autentisering basert på kun virksomhetsertifikat støttes ikke lenger.
 
 Digitaliseringsdirektoratet har beskrevet hvordan API-sikring med Maskinporten gjøres. Vi anbefaler alle virksomheter å sette seg godt inn i dette rammeverket. For å komme i gang med testing må det gjøres noen forberedelser hos virksomheten.
 
@@ -21,7 +21,7 @@ Digitaliseringsdirektoratet har beskrevet hvordan API-sikring med Maskinporten g
 Bestill tilknytning til Maskinporten via [Digdir samarbeidsportal](https://samarbeid.digdir.no/)
   
 ### Klargjøring fra Skatteetaten
-Så snart korrekt tjeneste og rettighetspakke for virksomheten er avklart, vil Skatteetaten melde inn virksomhetens organisasjonsnummer og tilgangen hos Digitaliseringsdirektoratet. 
+Så snart korrekt API og rettighetspakke for virksomheten er avklart, vil Skatteetaten melde inn virksomhetens organisasjonsnummer og tilgangen hos Digitaliseringsdirektoratet. 
 
 ### Klargjøring fra Virksomheten
 Når virksomheten har fått beskjed at tilgangen (scopet) er opprettet i Maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data. Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via [ID-porten sitt API for selvbetjening av integrasjoner](https://docs.digdir.no/oidc_api_admin_maskinporten) eller via et brukergrensesnitt i samarbeidsportalen. All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke skatteetatatens API-er.
@@ -45,7 +45,7 @@ Hvis man kaller tjenestene fra bak en utgående brannmur må man lage åpninger 
 ### Adresser det må åpnes for
 
 Vi forsøker å holde IP statisk, men kan ikke love at det aldri vil komme endringer.
-Hvis vi må gjøre endringer vil dette bli varslet som en [nyhet](/nyheter-og-driftsvarsler/).
+Hvis vi må gjøre endringer vil dette bli [varslet](./varsler.md).
 
 #### Nye URL-er
 Det kan være at enkelte virksomheter må åpne i brannmurreglene sine. IP-range vil være:
@@ -54,14 +54,6 @@ Det kan være at enkelte virksomheter må åpne i brannmurreglene sine. IP-range
 |---|---|---|
 | Test | *.api.skatteetaten-test.no | 20.100.51.138 / 2a13:6200:1065:13d:f5:52a2:e633:8625 |
 | Prod | *.api.skatteetaten.no | 51.13.21.170 / 2a13:6201:1066:c63:f5:fc5f:3c74:30c0 |
-
-#### Gamle URL-er
-| Miljø | Host | IP | Port | 
-|---|---|---|---|
-| Test | api-test.sits.no | 159.216.17.148 | 443|
-| Produksjon | api.skatteetaten.no | 159.216.17.168 | 443|
-
-Gamle URL-er vil saneres 17. oktober.
 
 ### Subnett
 
