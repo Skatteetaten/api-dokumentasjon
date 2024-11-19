@@ -59,7 +59,7 @@ helhet.
 | otp                                   | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
 | pensjonskasse                         | Hjemmel                                                                                                                                                                  |
 | pensjonskasseLivsvarigAfpAnnenInntekt | Hjemmel                                                                                                                                                                  |
-| •	pensjonskasseLivsvarigAfpAndreYtelser | Hjemmel                                                                                                                                                                |
+| pensjonskasseLivsvarigAfpAndreYtelser | Hjemmel                                                                                                                                                                |
 | saernamsmann                          | Hjemmel                                                                                                                                                                  |
 | spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
 | sbl                                   | Krever samtykke                                                                                                                                                          |
