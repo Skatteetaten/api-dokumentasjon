@@ -1,5 +1,5 @@
 ---
-title: "Påminnelse om at driftsvarsler er flyttet til Skatteetatens statusside"
+title: "Påminnelse om at driftsvarsler for MVA er flyttet til Skatteetatens statusside"
 tags: [nyhet]
 date: 2024-11-29T15:15:00
 ---
