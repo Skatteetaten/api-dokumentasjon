@@ -37,6 +37,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 |--------------------------------------|
 | maritimPensjonskassePensjonstillegg  |
 | pensjonskasseEtteroppgjoerUfoerAfp   |
+| pensjonskasseLivsvarigAfpAnnenInntekt |
   
 ## Støttetjenester
 For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendelser API`
