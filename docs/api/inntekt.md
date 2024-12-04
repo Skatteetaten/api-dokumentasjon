@@ -57,7 +57,7 @@ helhet.
 | ldirReindriftstilskudd                | Hjemmel                                                                                                                                                                  |
 | nav                                   | Hjemmel                                                                                                                                                                  |
 | otp                                   | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
-| pensjonskasse                         | Hjemmel                                                                                                                                                                  |
+| pensjonskasseEtteroppgjoerUfoerAfp    | Hjemmel                                                                                                                                                                  |
 | pensjonskasseLivsvarigAfpAnnenInntekt | Hjemmel                                                                                                                                                                  |
 | pensjonskasseLivsvarigAfpAndreYtelser | Hjemmel                                                                                                                                                                |
 | saernamsmann                          | Hjemmel                                                                                                                                                                  |
