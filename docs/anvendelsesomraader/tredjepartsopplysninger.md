@@ -19,4 +19,7 @@ Se også mer overdordnet informasjon på [skatteetaten.no](https://www.skatteeta
 Følgende API-er er tilgjengelige pr. nå: 
 * [Innrapportering Boligsameie API](../api/boligsameie.md)
 * [Innrapportering Boligselskap API](../api/boligselskap.md)
+* [Innrapportering BSU](../api/bsu.md)
+* [Innrapportering Pass og stell av barn API](../api/passogstell.md)
+* [Innrapportering Gaver til frivillige](../api/gavertilfrivillige.md)
 
