@@ -8,18 +8,18 @@ tags: [altinn, innrapportering, tredjepartsopplysninger, grunnlagsdata]
 last_updated: Sept 24, 2024
 hide_table_of_contents: true
 ---
-<Summary>Re-etablering av Altinn-tjenester</Summary>
+## Re-etablering av Altinn-tjenester
+Arbeidet med å forberede overgangen fra Altinn II til Altinn 3 pågår. I Skatteetaten har vi startet et større arbeid for å flytte våre skjema og rapporteringsløsninger fra Altinn til skatteetaten.no. Vi har tidligere gjort det samme med skattemeldingen og MVA-meldingen.
 
-## REALT-prosjektet
-Skatteetaten jobber nå med å re-etablere Altinn-tjenester på etatens egen plattform, og først ut er innrapportering av tredjepartsopplysninger for boligsameie og boligselskap. Her vil vi legge ut mer informasjon om det fremover. 
+Se mer informasjon om re-etableringen og vår testplan på [skatteetaten.no](https://www.skatteetaten.no/bedrift-og-organisasjon/reetableringaltinn/)
 
-Se også mer overdordnet informasjon på [skatteetaten.no](https://www.skatteetaten.no/bedrift-og-organisasjon/reetableringaltinn/)
+På denne siden vil vi legge ut teknisk informasjon pr tjeneste ettersom de blir klare for test.
 
-## API-er for REALT
+## Nye API-er for re-etablering av Altinn-tjenester
 Følgende API-er er tilgjengelige pr. nå: 
 * [Innrapportering Boligsameie API](../api/boligsameie.md)
 * [Innrapportering Boligselskap API](../api/boligselskap.md)
-* [Innrapportering BSU API](../api/bsu.md)
+* [Innrapportering BSU API](../api/innsending-bsu.md)
 * [Innrapportering Pass og stell av barn API](../api/passogstell.md)
 * [Innrapportering Gaver til frivillige API](../api/gavertilfrivillige.md)
 
