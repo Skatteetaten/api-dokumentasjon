@@ -607,85 +607,39 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "In
 </TabItem>
 <TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
-Som følge av endring i innrapportering fra NAV til A-ordningen fra 2024 vil det tilkomme flere nye inntektsbeskrivelser i Inntekt API fra 2024.
-
-NAV innrapporterer fra nyttår mer detaljert for flere ytelser. Blant annet skilles feriepenger ut i egne inntektsbeskrivelser for disse ytelsene, og det blir egen innrapportering for flere ytelser som tidligere har blitt innrapportert samlet som sykepenger. 
-
-Eksisterende felter videreføres fratrukken den delen av innholdet som er utskilt i egne felt. Vi legger derfor til grunn at rettighetspakker som allerede inneholder eksisterende felt utvides med nye felter i henhold til tabellene nedenfor.
-
-Frist for innrapportering for januar er 5. februar, og nye inntektsbeskrivelser vil da være tilgjengelig.
+Det er få endringer i forbindelse med årets revisjon i Inntekt API.
 
 ## Tidsplan
 
 | Dato | Aktivitet |
 |------|-----------|
-| 21.11.2023 | Tidsplan for årsrevisjon 2024 distribuert |
-| 15.12.2023 | Informasjon om nye lønnsbeskrivelser fra 2024 |
-| 17.01.2024 | Oppdatert informasjon om nye lønnsbeskrivelser fra 2024 |
-| 22.01.2024 | Støtte for nye lønnsbeskrivelser i test og prod |
-| 05-10.2.2024 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
+| 18.12.2024 | Tidsplan for årsrevisjon 2025 distribuert |
+| 18.12.2024 | Informasjon om nye lønnsbeskrivelser fra 2024 |
+| 23.01.2025 | Støtte for nye lønnsbeskrivelser i test og prod er senest tilgjengelig |
+| 05-10.2.2025 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
 
-## Ytelser fra offentlige
+## Ny inntektsbeskrivelse tilgjengelig
+| pensjonEllerTrygd	| SBL | OTP |
+| -----------------	| --- | --- |
+| barnepensjonFra2025 | x | |
 
-Feriepenger på ytelser skal innrapporteres på egne inntektsbeskrivelser. Sykepenger splittes og innrapporteres hver for seg i egne inntektsbeskrivelser.
+## Inntektsbeskrivelser utgår
+| loennsinntekt	| SBL | OTP |
+| -------------	| --- | --- |
+| bonusFraForsvaret | x	| |
 
-| Ny YtelseFraOffentligeBeskrivelse |	Har inngått i |	SBL |	OTP |
-| --- | --- | --- | --- |
-| ferietilleggDagpengerTilFiskerSomBareHarHyre | dagpengerTilFiskerSomBareHarHyre	| x	| |
-| ferietilleggDagpengerVedArbeidsloeshet | dagpengerVedArbeidsloeshet	| x	| |
-| feriepengerForeldrepenger | foreldrepenger | x | |
-| omstillingsstoenad | overgangsstoenadTilGjenlevendeEktefelle (pensjonEllerTrygd) | x | |
-| feriepengerSvangerskapspenger | svangerskapspenger | x | x |
-| feriepengerOmsorgspenger | sykepenger | x | x |
-| feriepengerOpplaeringspenger | sykepenger |	x	| x |
-| feriepengerPleiepenger | sykepenger | x | x |
-| feriepengerSykepenger | sykepenger | x | x |
-| pleiepenger	| sykepenger | x | x |
-| omsorgspenger | sykepenger | x | x |
-| opplaeringspenger | sykepenger | x | x |
-| feriepengerSykepengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
-| pleiepengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
-| omsorgspengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
-| opplaeringspengerTilFiskerSomBareHarHyre | sykepengerTilFiskerSomBareHarHyre | x | x |
+## Ny forskuddsbeskrivelse
+| forskuddstrekkbeskrivelse	| SBL | OTP |
+| -------------------------	| --- | --- |
+| frivillig | x	| |
 
-## Pensjon eller trygd
+## Felt som ikke lengre er obligatorisk
+Vi ser behov for å gjøre et felt frivillig, siden det ikke alltid vil inneholde verdi. Gjelder felt:
+* inntektsmottaker
 
-Barnepensjons skattlegges fra 2024 som kapitalinntekt, og innrapporteres heretter på nye inntektsbeskrivelser. Etterbetaling av barnepensjon innrapporteres på eksisterende inntektsbeskrivelser.
+SBL=samtykkebasert lånesøknad
+OTP=obligatorisk tjenestepensjon
 
-| Ny PensjonEllerTrygdBeskrivelse | Har inngått i | SBL | OTP |
-| --- | --- | --- | --- |
-| barnepensjonFra2024 | barnepensjon | x | |
-| barnepensjonFraAndreEnnFolketrygdenFra2024 | barnepensjonFraAndreEnnFolketrygden | x | |
-| ipaEllerIpsBarnepensjonFra2024 | ipaEllerIpsBarnepensjon | x | |
-
-## Næring
-
-Sykepenger splittes og innrapporteres hver for seg i egne inntektsbeskrivelser.
-
-| Nye Naeringsinntektbeskrivelse | Har inngått i | SBL | OTP |
-| --- | --- | --- | --- |
-| foreldrepenger | sykepenger | x | |
-| omsorgspenger | sykepenger | x | |
-| opplaeringspenger | sykepenger | x | |
-| pleiepenger | sykepenger | x | |
-| svangerskapspenger | sykepenger | x | |
-| foreldrepengerTilDagmamma | sykepengerTilDagmamma | x | |
-| omsorgspengerTilDagmamma | sykepengerTilDagmamma | x | |
-| opplaeringspengerTilDagmamma | sykepengerTilDagmamma | x	| |
-| pleiepengerTilDagmamma | sykepengerTilDagmamma | x | |
-| svangerskapspengerTilDagmamma | sykepengerTilDagmamma | x | |
-| foreldrepengerTilFisker | sykepengerTilFisker | x | |
-| pleiepengerTilFisker | sykepengerTilFisker | x | |
-| omsorgspengerTilFisker | sykepengerTilFisker | x | |
-| opplaeringspengerTilFisker | sykepengerTilFisker | x | |
-| svangerskapspengerTilFisker | sykepengerTilFisker | x | | 
-| foreldrepengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-| omsorgspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-| opplaeringspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-| pleiepengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-| svangerskapspengerTilJordOgSkogbrukere | sykepengerTilJordOgSkogbrukere | x | |
-
-Skatteetaten tar direkte kontakt med øvrige virksomheter som er berørt for detaljert oversikt over endring i rettighetspakker.
 </TabItem>
 
 </Tabs>
