@@ -1,6 +1,6 @@
 ---
-title: Bsu API
-slug: /api/innsending-bsu
+title: Innrapporering BSU API
+slug: /api/innrapportering-bsu
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
