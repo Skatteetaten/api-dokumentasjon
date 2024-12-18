@@ -1,6 +1,6 @@
 ---
-title: Boligselskap API
-slug: /api/boligselskap
+title: Innrapportering boligselskap API
+slug: /api/innrapportering-boligselskap
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
