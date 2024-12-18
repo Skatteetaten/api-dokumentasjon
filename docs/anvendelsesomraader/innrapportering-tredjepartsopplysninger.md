@@ -1,6 +1,6 @@
 ---
 title: Innrapportering av tredjepartsopplysninger
-slug: /anvendelsesomraader/innrapporteringtredjepartsopplysninger
+slug: /anvendelsesomraader/innrapportering-tredjepartsopplysninger
 folder: anvendelsesomraader
 sidebar: mydoc_sidebar
 datatable: true
@@ -17,9 +17,9 @@ På denne siden vil vi legge ut teknisk informasjon pr tjeneste ettersom de blir
 
 ## Nye API-er for re-etablering av Altinn-tjenester
 Følgende API-er er tilgjengelige pr. nå: 
-* [Innrapportering Boligsameie API](../api/boligsameie.md)
-* [Innrapportering Boligselskap API](../api/boligselskap.md)
-* [Innrapportering BSU API](../api/innsending-bsu.md)
-* [Innrapportering Pass og stell av barn API](../api/passogstell.md)
-* [Innrapportering Gaver til frivillige API](../api/gavertilfrivillige.md)
+* [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)
+* [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)
+* [Innrapportering BSU API](../api/innrapportering-bsu.md)
+* [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)
+* [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)
 
