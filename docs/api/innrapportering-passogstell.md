@@ -1,6 +1,6 @@
 ---
-title: Pass og stell API
-slug: /api/passogstell
+title: Innrapportering pass og stell API
+slug: /api/innrapportering-passogstell
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
