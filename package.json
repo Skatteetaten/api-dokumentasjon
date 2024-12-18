@@ -16,9 +16,9 @@
     "format": "npx prettier --write ."
   },
   "dependencies": {
-    "@docusaurus/core": "3.4.0",
-    "@docusaurus/plugin-client-redirects": "3.4.0",
-    "@docusaurus/preset-classic": "3.4.0",
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/plugin-client-redirects": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
     "@mdx-js/react": "3.0.1",
     "@skatteetaten/frontend-components": "10.0.0",
     "cheerio": "1.0.0-rc.12",
@@ -33,8 +33,8 @@
     "sass": "1.77.6"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.4.0",
-    "@docusaurus/tsconfig": "3.4.0",
+    "@docusaurus/module-type-aliases": "^3.6.3",
+    "@docusaurus/tsconfig": "^3.6.3",
     "@types/cheerio": "0.22.35",
     "@types/lunr": "2.3.7",
     "typescript": "5.5.2"
