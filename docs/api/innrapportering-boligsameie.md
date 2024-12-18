@@ -1,6 +1,6 @@
 ---
-title: Boligsameie API
-slug: /api/boligsameie
+title: Innrapportering boligsameie API
+slug: /api/innrapportering-boligsameie
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
