@@ -1,6 +1,6 @@
 ---
-title: Gaver til frivillige API
-slug: /api/gavertilfrivillige
+title: Innrapportering gaver til frivillige API
+slug: /api/innrapportering-gavertilfrivillige
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
