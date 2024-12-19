@@ -1,0 +1,3582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:brreg="http://www.brreg.no/or" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--title='RF-1086-U: Aksjonærregisteroppgaven - underskjema' lang='NOB'-->
+    <xs:element name="Skjema">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>RF-1086-U Aksjonærregisteroppgaven</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>For informasjon om utfylling, se rettledningen til RF-1086</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>RF-1086-U Aksjonærregisteroppgåva</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>For informasjon om utfylling, sjå rettleiing til RF-1086</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="SelskapsOgAksjonaropplysninger-grp-3987"/>
+                <xs:element minOccurs="0" ref="AntallAksjerUtbytteOgTilbakebetalingAvTidligereInnbetaltKapit-grp-3990"/>
+                <xs:element minOccurs="0" ref="Transaksjoner-grp-3992"/>
+                <xs:element minOccurs="0" ref="FondsemisjonSplittSkattefriFusjonFisjonSammenslaingDelingAv-grp-3994"/>
+                <xs:element minOccurs="0" ref="SalgArvGaveLikvidasjonPartiellLikvidasjonMv-grp-3995"/>
+                <xs:element minOccurs="0" ref="SpleisSkattefriFusjonOgSkattefriFisjon-grp-3996"/>
+                <xs:element minOccurs="0" ref="EndringerIAksjekapitalOgOverkurs-grp-3997"/>
+            </xs:sequence>
+            <xs:attribute fixed="923" name="skjemanummer" type="xs:integer" use="required"/>
+            <xs:attribute fixed="12146" name="spesifikasjonsnummer" type="xs:integer" use="required"/>
+            <xs:attribute fixed="RF-1086-U" name="blankettnummer" type="xs:string" use="optional"/>
+            <xs:attribute fixed="Aksjonærregisteroppgaven - underskjema" name="tittel" type="xs:string" use="optional"/>
+            <xs:attribute fixed="3983" name="gruppeid" type="xs:positiveInteger" use="optional"/>
+            <xs:attribute name="etatid" use="optional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="974761076">
+                            <xs:annotation>
+                                <xs:documentation>SKATTEETATEN</xs:documentation>
+                            </xs:annotation>
+                        </xs:enumeration>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:anyAttribute/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SelskapsOgAksjonaropplysninger-grp-3987">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>19 Selskaps- og aksjonæropplysninger</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Post 19 må fylles ut for hver aksjonær. Dette gjelder for aksjonærer  som eier aksjer ved utgangen av året og aksjonærer som har vært eier  i løpet av året.  </p>
+                    <p/>
+                    <p>Det er viktig at de antall aksjer som innrapporteres i post 20 på hver  enkelt aksjonær, stemmer med selskapets totale antall aksjer.  </p>
+                    <p>Samsvarer ikke disse opplysningene vil Aksjonærregisteroppgaven ikke  bli godkjent, og selskapet må levere ny oppgave.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>19 Selskaps- og aksjonæropplysningar</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Post 19 må fyllast ut for kvar aksjonær. Dette gjeld for aksjonærar  som eig aksjar ved utgangen av året, og aksjonærar som har vore eigar  i løpet av året.  </p>
+                    <p/>
+                    <p>Det er viktig at talet på aksjar som blir innrapportert i post 20 på  kvar enkelt aksjonær, stemmer med det totale talet på aksjar i  selskapet.  </p>
+                    <p>Samsvarer ikkje desse opplysningane, blir aksjonærregisteroppgåva  ikkje godkjend, og selskapet må levere ny oppgåve.</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="Selskapsidentifikasjon-grp-3986"/>
+                <xs:element minOccurs="0" ref="NorskUtenlandskAksjonar-grp-3988"/>
+            </xs:sequence>
+            <xs:attribute fixed="3987" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Selskapsidentifikasjon-grp-3986">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>Selskapsidentifikasjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Selskapet identifiseres gjennom organisasjonsnummeret. For å sikre  riktig likningsbehandling, må aksjeklasse oppgis.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>Selskapsidentifikasjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Selskapet identifiserast gjennom organisasjonsnummeret.  </p>
+                    <p>For å sikre riktig likningsbehandling må aksjeklasse førast opp.</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="EnhetOrganisasjonsnummer-datadef-18">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjeType-datadef-17659">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="EnhetISINNummer-datadef-17513">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Kun for VPS registrerte selskap</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>NOxxxxxxxxxx</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Kun for VPS registrerte selskap</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>NOxxxxxxxxxx</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feil format; skal være på formen NOxxxxxxxxxx</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="Inntektsar-datadef-692">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Inntektsår</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Inntektsår</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarregisteroppgaveUnderskjemaInnsendingsmate-datadef-34856">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Innsendingsmåte</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Innsendingsmåte</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="3986" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EnhetOrganisasjonsnummer-datadef-18">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Organisasjonsnummeret til enheten</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>Organisasjonsnummer til årsregnskapets eier</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">1</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="18" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Tekst99Modulus11-repformat-1">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">1</brreg:info>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                    <p>Ugyldig organisasjonsnummer</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                    <p>Ugyldig organisasjonsnummer</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="9"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjeType-datadef-17659">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Angi selskapets aksjetype</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">2</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="17659" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Tekst35-repformat-3">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">3</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="35"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="EnhetISINNummer-datadef-17513">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">3</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="17513" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Inntektsar-datadef-692">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">4</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Ar44-repformat-6">
+                    <xs:attribute fixed="692" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Ar44-repformat-6">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">6</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:gYear"/>
+    </xs:simpleType>
+    <xs:element name="AksjonarregisteroppgaveUnderskjemaInnsendingsmate-datadef-34856">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">5</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="34856" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NorskUtenlandskAksjonar-grp-3988">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>19 Aksjonærens navn, adresse, fødselsnummer, organisasjonsnummer,  utenlandsk aksjonær-ID og landkode</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Bare ètt av feltene for Aksjonæridentifikasjon skal fylles ut:  </p>
+                    <p>- Fysiske personer som er bosatt i Norge skal identifiseres ved  fødselsnummer. Utenlandske statsborgere som har fått tildelt  D-nummer, skal identifiseres ved dette nummeret.  </p>
+                    <p>- Juridiske personer hjemmehørende i Norge skal som hovedregel ha  organisasjonsnummer som aksjonæridentitet.  </p>
+                    <p>- Aksjonærer som har fått tildelt utenlandsk aksjonær-ID fra  Aksjonærregisteret, skal benytte denne.  </p>
+                    <p/>
+                    <p>Har aksjonæren verken fødselsnummer, D-nummer, eller utenlandsk  aksjonær-ID, identifiseres denne med navn og adresse, samt  landkode.  </p>
+                    <p>Slike aksjonærer vil få tildelt aksjonær-ID til bruk for senere års  innrapportering. Den vil ha formen UTLxxxxxxxxx.  </p>
+                    <p/>
+                    <p>Se rettledningen for ytterligere informasjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>19 Aksjonæren sitt namn, adresse, fødselsnummer, organisasjonsnummer,  utanlandsk aksjonær-ID og landkode</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Bare eit av feltane for Aksjonæridentifikasjon skal fyllast ut:  </p>
+                    <p>- Fysiske personar som er busette i Noreg, skal identifiserast ved  fødselsnummer. Utanlandske statsborgarar som har fått tildelt  D-nummer, skal identifiserast ved dette nummeret.  </p>
+                    <p>- Juridiske personar som høyrer heime i Noreg, skal som hovudregel  bruke organisasjonsnummer som aksjonæridentitet.  </p>
+                    <p>- Aksjonærar som har fått tildelt utanlandsk aksjonær-ID frå  Aksjonærregisteret, skal bruke denne.  </p>
+                    <p/>
+                    <p>Har aksjonæren verken fødselsnummer, D-nummer, eller utanlandsk  aksjonær-ID, skal han identifiserast med namn og adresse, og  landkode.  </p>
+                    <p>Slike aksjonærar får tildelt aksjonær-ID til bruk for seinare års  innrapportering. Han kjem til å ha forma UTLxxxxxxxxx.  </p>
+                    <p/>
+                    <p>Det er viktig å sjå til at samla aksjetal blir rapportert på  aksjonærar, kjende og ukjende, slik at alle aksjar er fordelte på  aksjonærar. Der dette sviktar, vil Aksjonærregisteroppgåva ikkje bli  godkjend i
+                        kvalitetskontrollane, og selskapet må levere ny  oppgåve.  </p>
+                    <p/>
+                    <p>Sjå rettleiinga for ytterligare informasjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjonarFodselsnummer-datadef-1156">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Aksjonæridentifikasjon</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>Fødsels-/D-nummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Aksjonæridentifikasjon</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>Fødsels-/D-nummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarOrganisasjonsnummer-datadef-7597">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Aksjonæridentifikasjon</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>Organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Aksjonæridentifikasjon</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>Organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarUtenlandskIdenifikasjonsnummer-datadef-26626">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Aksjonæridentifikasjon</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Aksjonærer som har fått tildelt utenlandsk aksjonær-ID fra  Aksjonærregisteret, skal benytte denne.  </p>
+                                <p>Den har formen UTLxxxxxxxxx.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>Utenlandsk aksjonær-ID</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                                <p>Feil format; skal være på formen UTLxxxxxxxxx</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Aksjonæridentifikasjon</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Aksjonærar som har fått tildelt utanlandsk aksjonær-ID frå  Aksjonærregisteret, skal bruke denne.  </p>
+                                <p>Han har forma UTLxxxxxxxxx.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>Utanlandsk aksjonær-ID</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feil format; skal være på forma UTLxxxxxxxxx</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarNavn-datadef-1153">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Navn</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Namn</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarPostnummer-datadef-7598">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Postnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Postnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarPoststed-datadef-7599">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Poststed</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Poststad</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarLandkode-datadef-17740">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Landkode</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Benyttes for utenlandske aksjonærer, og når aksjonærens f.nr. eller  org.nr. er ukjent.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Landkode</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Nyttast for utanlandske aksjonærar, og når aksjonæren sitt f.nr. eller  org.nr. er ukjent.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element maxOccurs="2" minOccurs="0" ref="Adresse-grp-7722"/>
+            </xs:sequence>
+            <xs:attribute fixed="3988" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarFodselsnummer-datadef-1156">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">6</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst1111Modulus11-repformat-18">
+                    <xs:attribute fixed="1156" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Tekst1111Modulus11-repformat-18">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">18</brreg:info>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                    <p>Ugyldig fødselsnummer</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                    <p>Ugyldig fødselsnummer</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="11"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjonarOrganisasjonsnummer-datadef-7597">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">7</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="7597" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarUtenlandskIdenifikasjonsnummer-datadef-26626">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">8</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst1212UTL099-repformat-548">
+                    <xs:attribute fixed="26626" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Tekst1212UTL099-repformat-548">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">548</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="12"/>
+            <xs:pattern value="UTL[0-9]{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjonarNavn-datadef-1153">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">9</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="1153" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarPostnummer-datadef-7598">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">12</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst15-repformat-61">
+                    <xs:attribute fixed="7598" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Tekst15-repformat-61">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">61</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="15"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjonarPoststed-datadef-7599">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">13</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="7599" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarLandkode-datadef-17740">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">10</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst22AZ2-repformat-810">
+                    <xs:attribute fixed="17740" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Tekst22AZ2-repformat-810">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">810</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="2"/>
+            <xs:pattern value="[A-Z]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="Adresse-grp-7722">
+        <xs:annotation/>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjonarAdresse-datadef-1154">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Adresse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Adresse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="7722" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarAdresse-datadef-1154">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">11</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="1154" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AntallAksjerUtbytteOgTilbakebetalingAvTidligereInnbetaltKapit-grp-3990">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>20-22 Antall aksjer, utbytte og tilbakebetaling av tidligere innbetalt  kapital</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>20-22 Talet på aksjar, utbytte og tilbakebetaling av tidligare  innbetalt kapital</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AntallAksjerPerAksjonar-grp-3989"/>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="UtdeltUtbyttePerAksjonar-grp-3991"/>
+                <xs:element minOccurs="0" ref="UtdeltUtbytteKildeskatt-grp-9347"/>
+                <xs:element minOccurs="0" ref="TilbakebetalingAvTidligereInnbetaltKapital-grp-7633"/>
+            </xs:sequence>
+            <xs:attribute fixed="3990" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AntallAksjerPerAksjonar-grp-3989">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>20 Antall aksjer per aksjonær</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Her føres opp antall aksjer aksjonæren eier ved inngangen av året og  ved utløpet av året.  </p>
+                    <p>Er tallet 0, skal dette også føres opp.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>20 Talet på aksjar per aksjonær</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Her fører ein opp talet på aksjar aksjonæren eig ved inngangen av året  og ved utløpet av året.  </p>
+                    <p>Er talet 0, skal dette også førast opp.</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjerAntallFjoraret-datadef-29168">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Antall 1. januar</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kor mange 1. januar</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarAksjerAntall-datadef-17741">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Antall 31. desember</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kor mange 31. desember</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="3989" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerAntallFjoraret-datadef-29168">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">14</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Heltall15091-repformat-813">
+                    <xs:attribute fixed="29168" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Heltall15091-repformat-813">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">813</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="15"/>
+            <xs:pattern value="[0-9]{1,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjonarAksjerAntall-datadef-17741">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">15</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Heltall15091-repformat-813">
+                    <xs:attribute fixed="17741" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="UtdeltUtbyttePerAksjonar-grp-3991">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>21 Utdelt utbytte til aksjonæren for denne aksjeklassen</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Før opp det totale utbyttet aksjonæren har fått ved den enkelte  utdeling, antall aksjer som ligger til grunn for utdelingen og  tidspunktet for beslutning om utbytte (lik tidspunktet for  generalforsamlingens vedtak. Se post
+                        8).  </p>
+                    <p/>
+                    <p>Tilbakebetaling av tidligere fondsemittert aksjekapital (som ikke er  innbetalt), skal behandles som utbytte, og beløpet som er  tilbakebetalt den enkelte aksjonær medtas her.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>Kildeskatt er kun relevant for aksjonærer hjemmehørende i utlandet.  </p>
+                    <p>(se post 8 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>21 Utdelt utbytte til aksjonæren for denne aksjeklassen</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Før opp det totale utbyttet aksjonæren har fått ved kvar enkelt  utdeling, talet på aksjar som ligg til grunn for utdelinga, og  tidspunktet for avgjerd om utbytte (lik tidspunktet for vedtaket i  generalforsamlinga. Sjå post
+                        8).  </p>
+                    <p/>
+                    <p/>
+                    <p>Tilbakebetalt av tidligare fondsemittert aksjekapital (som ikkje er  innbetalt), skal behandlast som utbytte, og beløpet  som er  tilbakebetalt til kvar enkelt aksjonær, skal takast med her.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>Kjeldeskatt er bare relevant for aksjonærar som høyrer heime i  utlandet.  </p>
+                    <p>(Sjå post 8 for opplysningar på selskapsnivå).</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="Aksjeutbytte-datadef-29169">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Utdelt utbytte</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>Totalt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Utdelt utbytte</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>Totalt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerUtbytteAntall-datadef-17742">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Antall aksjer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kor mange aksjar</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerUtbytteTidspunkt-datadef-17769">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven ikke  bli godkjent ved kontroll i Aksjonærregisteret. Oppgaver som viser  feil i
+                                    kontrollene, må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivarane, legg i så fall inn dato og det leggjast til  automatisk standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåver som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="Kildeskatt-datadef-17743">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Kildeskatt i kroner</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kjeldeskatt i kroner</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AutomatiskMotregningOnskerIkke-datadef-37159">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Ønsker ikke automatisk motregning</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Ønsker ikkje automatisk motrekning</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="3991" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Aksjeutbytte-datadef-29169">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">16</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst15-repformat-61">
+                    <xs:attribute fixed="29169" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerUtbytteAntall-datadef-17742">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">17</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst15-repformat-61">
+                    <xs:attribute fixed="17742" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerUtbytteTidspunkt-datadef-17769">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">18</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="17769" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="DatoTid-repformat-239">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">239</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:dateTime"/>
+    </xs:simpleType>
+    <xs:element name="Kildeskatt-datadef-17743">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">20</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Heltall15091-repformat-813">
+                    <xs:attribute fixed="17743" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AutomatiskMotregningOnskerIkke-datadef-37159">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">21</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="37159" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="UtdeltUtbytteKildeskatt-grp-9347">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>21 Utdelt utbytte kildeskatt</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>21 Utdelt utbytte kildeskatt</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="KildeskattLandkode-datadef-17744">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Kildeskatt land</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kjeldeskatt land</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="KildeskattProsent-datadef-2280">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Kildeskatt i %</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Kildeskatt  </p>
+                                <p>Her er den kildeskattesats som ligger til grunn for det landet som er  valgt i feltet Kildeskatt land (sktl. § 10 - 13). Stemmer ikke  prosentsatsen, må du selv føre opp riktig sats i feltet.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kjeldeskatt i %</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Kjeldeskatt  </p>
+                                <p>Her er den kjeldeskattesats som ligg til grunn for det landet som er  valt i feltet Kjeldeskatt land (sktl. § 10 - 13). Stemmer ikkje  prosentsatsen, må du sjølv føre opp riktig sats i feltet.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="9347" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="KildeskattLandkode-datadef-17744">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">22</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst22AZ2-repformat-810">
+                    <xs:attribute fixed="17744" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="KildeskattProsent-datadef-2280">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">19</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Heltall3Max100091-repformat-937">
+                    <xs:attribute fixed="2280" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Heltall3Max100091-repformat-937">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">937</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+            <xs:totalDigits value="3"/>
+            <xs:pattern value="[0-9]{1,}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="TilbakebetalingAvTidligereInnbetaltKapital-grp-7633">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>22 Tilbakebetaling av tidligere innbetalt kapital</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>22 Tilbakebetaling av tidligare innbetalt kapital</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="TilbakebetalingAvTidligereInnbetaltKapital-grp-7865"/>
+            </xs:sequence>
+            <xs:attribute fixed="7633" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TilbakebetalingAvTidligereInnbetaltKapital-grp-7865">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>22 Tilbakebetaling av tidligere innbetalt kapital</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Gjelder når selskapet har konvertert tidligere innbetalt  aksjekapital/overkurs til annen egenkapital og betaler ut  selskapsrettslig utbytte.  </p>
+                    <p/>
+                    <p>Feltet må fylles ut for aksjonærer som skattemessig har anledning til  å klassifisere utdelingen som tidligere innbetalt kapital. Beløpet  vil da redusere aksjenes inngangsverdi.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>22 Tilbakebetaling av tidligare innbetalt kapital</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Gjelder når selskapet har konvertert tidligare innbetalt  aksjekapital/overkurs til annen eigenkapital og betaler ut  selskapsrettslig utbytte.  </p>
+                    <p/>
+                    <p>Feltet må fyllast ut for aksjonærar som skattemessig har anledning til  å klassifisere utdelinga som tidligare innbetalt kapital. Beløpet vil  da redusere aksjanes inngangsverdi.</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="KapitalTidligereInnbetaltTilbakebetaling-datadef-30396">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Beløp</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Beløp</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="KapitalTidligereInnbetaltTilbakebetaltHendelsestype-datadef-36658">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Hendelsestype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Hendelsestype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="KapitalTidligereInnbetaltTilbakebetalingDato-datadef-30397">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="7865" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="KapitalTidligereInnbetaltTilbakebetaling-datadef-30396">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">23</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="30396" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Desimal1502DesimalerPositiv-repformat-1130">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">1130</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15"/>
+            <xs:pattern value="[0-9]{1,}(\.[0-9]{1,2}){0,1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="KapitalTidligereInnbetaltTilbakebetaltHendelsestype-datadef-36658">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">24</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst15-repformat-61">
+                    <xs:attribute fixed="36658" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="KapitalTidligereInnbetaltTilbakebetalingDato-datadef-30397">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">25</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="30397" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Transaksjoner-grp-3992">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>23 Kjøp, arv uten kontinuitet, gave uten kontinuitet, avgiftsfri  arv/gave med kontinuitet, avgiftspliktig arv/gave med kontinuitet,  gavesalg, stiftelse, nyemisjon, nyemisjon ved konvertering av  fordring, nyemisjon ved
+                        konsernintern overføring, skattepliktig  fusjon/fisjon, overføring med skattemessig kontinuitet eller  omdannelse til aksjeselskap.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>23 Kjøp, arv utan kontinuitet, gåve utan kontinuitet, avgiftsfri  arv/gåve med kontinuitet, avgiftspliktig arv/gåve med kontinuitet,  gåvesal, stifting, nyemisjon, nyemisjon ved konvertering av fordring,  nyemisjon ved
+                        konsernintern overføring, skattepliktig fusjon/fisjon,  overføring med skattemessig kontinuitet eller omdanning til  aksjeselskap.</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="KjopArvGaveStiftelseNyemisjonMv-grp-3993"/>
+            </xs:sequence>
+            <xs:attribute fixed="3992" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="KjopArvGaveStiftelseNyemisjonMv-grp-3993">
+        <xs:annotation/>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="AntallAksjerITilgang-grp-3998"/>
+            </xs:sequence>
+            <xs:attribute fixed="3993" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AntallAksjerITilgang-grp-3998">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>23 Aksjer i tilgang (anskaffelse)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Gi opplysninger om nye aksjer aksjonæren har anskaffet i selskapet i  løpet av inntektsåret.  </p>
+                    <p/>
+                    <p>Opplys hva slags transaksjonstype som er årsak til anskaffelsen.  </p>
+                    <p/>
+                    <p>Se rettledningen for mer informasjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>(se post 9 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>23 Aksjar i tilgang (anskaffing)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Gi opplysningar om aksjar aksjonæren har skaffa seg i selskapet i  løpet av inntektsåret.  </p>
+                    <p/>
+                    <p>Gi opp i feltet Transaksjonstype kva slags hending som er årsak til  anskaffinga.  </p>
+                    <p/>
+                    <p>Sjå rettleiinga for informasjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>(sjå post 9 for opplysningar på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjerKjopAntall-datadef-12153">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Antall aksjer i tilgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kor mange aksjar i tilgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjeErvervType-datadef-17745">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerErvervsdato-datadef-17746">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven ikke  bli godkjent ved kontroll i Aksjonærregisteret. Oppgaver som viser  feil i
+                                    kontrollene, må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåver som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjeAnskaffelsesverdi-datadef-17636">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Total anskaffelsesverdi</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Total anskaffingsverdi</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarTidligereFodselsnummer-datadef-26530">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Avgivers fødselsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Gjevars/arvelatars fødselsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarTidligereOrganisasjonsnummer-datadef-26531">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Avgivers organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Gjevars organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="3998" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerKjopAntall-datadef-12153">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">26</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="PosHeltall15-repformat-237">
+                    <xs:attribute fixed="12153" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="PosHeltall15-repformat-237">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">237</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:positiveInteger">
+            <xs:totalDigits value="15"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjeErvervType-datadef-17745">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">27</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="17745" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerErvervsdato-datadef-17746">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">28</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="17746" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjeAnskaffelsesverdi-datadef-17636">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Anskaffelsesverdi pr. aksje</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">29</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositivNegativ-repformat-948">
+                    <xs:attribute fixed="17636" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Desimal1502DesimalerPositivNegativ-repformat-948">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">948</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15"/>
+            <xs:pattern value="-{0,1}[0-9]{1,}(\.[0-9]{1,2}){0,1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjonarTidligereFodselsnummer-datadef-26530">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">30</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst1111Modulus11-repformat-18">
+                    <xs:attribute fixed="26530" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarTidligereOrganisasjonsnummer-datadef-26531">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">31</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="26531" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="FondsemisjonSplittSkattefriFusjonFisjonSammenslaingDelingAv-grp-3994">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>24 Fondsemisjon, splitt, skattefri fusjon/fisjon og  sammenslåing/deling av aksjeklasse</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>24 Fondsemisjon, splitt, skattefri fusjon/fisjon og samanslåing/deling  av aksjeklasse</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="AntallAksjerITilgangIfmOmfordeling-grp-3999"/>
+            </xs:sequence>
+            <xs:attribute fixed="3994" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AntallAksjerITilgangIfmOmfordeling-grp-3999">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>24 Aksjer i tilgang ved omfordeling</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Opplys om utstedte aksjer i selskapet grunnet  omfordelingstilfeller.  </p>
+                    <p/>
+                    <p>Oppgi hva slags transaksjonstype som er årsak til at aksjene er  slettet.  </p>
+                    <p/>
+                    <p>Oppgi hvor mange aksjer som anskaffes og tidspunktet for anskaffelsen.    </p>
+                    <p>Ved skattefri fusjon/fisjon oppgis overdragende selskaps  organisasjonsnummer, aksjeklasse og overdragende selskaps pålydende  per aksje.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>(se post 10 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>24 Aksjar i tilgang i samband med omfordeling</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Opplys om utskrivne aksjar i selskapet grunna omfordelingstilfelle.  </p>
+                    <p/>
+                    <p>Gi opp i feltet Transaksjonstype kva slags hending som er årsak til at  aksjane er sletta.  </p>
+                    <p/>
+                    <p>Gi opp kor mange aksjar som er anskaffa, og tidspunktet for  anskaffinga.  </p>
+                    <p/>
+                    <p>Ved skattefri fusjon/fisjon gir du opp overdragande selskaps  organisasjonsnummer, aksjeklasse og overdragande selskaps pålydande  per aksje.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>(sjå post 10 for opplysningar på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjerTilgangFondsemisjonMvAntall-datadef-17748">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Antall aksjer i tilgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Talet på aksjar i tilgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerTilgangFondsemisjonMvType-datadef-17749">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerTilgangFondsemisjonMvTidspunkt-datadef-17750">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven ikke  bli godkjent ved kontroll i Aksjonærregisteret. Oppgaver som viser  feil i
+                                    kontrollene, må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåver som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="EnhetOverdragendeFondsemisjonMvOrganisasjonsnummer-datadef-17683">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overdragende selskaps org.nr.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overdragande selskaps org.nr.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerNyutstedteFondsemisjonMvISIN-datadef-17684">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overdragende selskaps ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overdragande selskaps ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feil format; skal være på formen NOxxxxxxxxxx</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerNyutstedteFondsemisjonMvAksjetype-datadef-19905">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overdragende selskaps aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overdragande selskaps aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerFondsemisjonPalydende-datadef-23968">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="EN" brreg:teksttype="FEIL">
+                                <p>Enter number with six fraction digits</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overdragende selskaps pålydende per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                                <p>Feltet krever seks desimaler</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overdragande selskaps pålydande per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feltet krev seks desimalar</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="3999" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerTilgangFondsemisjonMvAntall-datadef-17748">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">32</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="PosHeltall15-repformat-237">
+                    <xs:attribute fixed="17748" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerTilgangFondsemisjonMvType-datadef-17749">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">33</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="17749" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerTilgangFondsemisjonMvTidspunkt-datadef-17750">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">34</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="17750" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EnhetOverdragendeFondsemisjonMvOrganisasjonsnummer-datadef-17683">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Organisasjonsnummer til det overdragende selskap i forbindelse med fondsemisjon, splitt, skattefri fusjon og skattefri fisjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">35</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="17683" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerNyutstedteFondsemisjonMvISIN-datadef-17684">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Angivelse av ISIN i forbindelse med fondsemisjon, splitt, skattefri fusjon og skattefri fisjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">36</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst12NO0910-repformat-200">
+                    <xs:attribute fixed="17684" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="Tekst12NO0910-repformat-200">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">200</brreg:info>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                    <p>Feil format; skal være på formen NOxxxxxxxxxx</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="12"/>
+            <xs:pattern value="NO[0-9]{10}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="AksjerNyutstedteFondsemisjonMvAksjetype-datadef-19905">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Angivelse av aksjetype i forbindelse med fondsemisjon, splitt, skattefri fusjon og skattefri fisjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">37</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="19905" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerFondsemisjonPalydende-datadef-23968">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">38</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="BelopDesimal1506DesimalerPositiv-repformat-547">
+                    <xs:attribute fixed="23968" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="BelopDesimal1506DesimalerPositiv-repformat-547">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="id">547</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15"/>
+            <xs:pattern value="[0-9]{1,11}(\.[0-9]{1,6}){0,1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="SalgArvGaveLikvidasjonPartiellLikvidasjonMv-grp-3995">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>25 Salg, arv uten skattemessig kontinuitet, gave uten skattemessig  kontinuitet, avgiftsfri arv/gave med skattemessig kontinuitet,  avgiftspliktig arv/gave med skattemessig kontinuitet, gavesalg,  likvidasjon, partiell
+                        likvidasjon, skattepliktig fusjon/fisjon,  skattepliktig innløsning ved skattefri fisjon/fusjon, avgang egne  fusjon/fisjon, konsernintern overføring, sletting av egne  (selskapets) aksjer og overføring med skattemessig kontinuitet</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>25 Sal, arv utan kontinuitet, gåve utan kontinuitet, avgiftsfri  arv/gåve med kontinuitet, avgiftspliktig arv/gåve med kontinuitet,  gåvesal, likvidasjon, partiell likvidasjon, skattepliktig  fusjon/fisjon, skattepliktig
+                        innløysing  ved skattefri fisjon/fusjon,  avgang eigne fusjon/fisjon, konsernintern overføring, sletting av  eigne (selskapet sine) aksjar og overføring med skattemessig  kontinuitet.</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="AksjerIAvgang-grp-4002"/>
+            </xs:sequence>
+            <xs:attribute fixed="3995" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerIAvgang-grp-4002">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>25 Aksjer i avgang</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Gi opplysninger om aksjer som aksjonæren har realisert, overført til  andre, eller som er slettet i inntektsåret (gjelder også for  selskapsaksjonærer som faller inn under fritaksmetoden).  </p>
+                    <p/>
+                    <p>Oppgi i feltet Transaksjonstype hva slags hendelse som er årsak til  slettingen eller realisasjonen.  </p>
+                    <p/>
+                    <p>Oppgi hvor mange aksjer som er blitt realisert og tidspunkt for  realisasjonen.  </p>
+                    <p>Kjenner selskapet aksjonærens realisasjonsvederlag, kan denne  eventuelt oppgis for hele aksjeposten.  </p>
+                    <p/>
+                    <p>Arv/gave  </p>
+                    <p>Se rettledningen for mer informasjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>(se post 11 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>25 Aksjar i avgang</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Gi opplysningar om aksjar som aksjonæren har realisert, overført til  andre, eller som er sletta i inntektsåret (gjeld også for  selskapsaksjonærar som fell inn under fritaksmetoden).  </p>
+                    <p/>
+                    <p>Gi opp i feltet Transaksjonstype kva slags hending som er årsak til  slettinga eller realisasjonen.  </p>
+                    <p/>
+                    <p>Gi opp kor mange aksjar som er realiserte, og kva tid det skjedde.  </p>
+                    <p>Kjenner selskapet realisasjonsvederlaget til aksjonæren, kan det  eventuelt givast opp for heile aksjeposten.  </p>
+                    <p/>
+                    <p>Arv/gåve  </p>
+                    <p>Sjå rettleiinga for meir informasjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>(sjå post 11 for opplysningar på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjerArvMvOmsattAntall-datadef-17752">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Antall aksjer i avgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Kor mange aksjar i avgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerArvMvOmsattType-datadef-17753">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerArvMvOmsattTidspunkt-datadef-17754">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven ikke  bli godkjent ved kontroll i Aksjonærregisteret. Oppgaver som viser  feil i
+                                    kontrollene, må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåver som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerArvMvOmsatt-datadef-17755">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Totalt vederlag/ Utbetalt av innbetalt kapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Samla vederlag/ Utbetalt av innbetalt kapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarOvertakendeFodselsnummer-datadef-26532">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Mottakers fødselsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Mottakars fødselsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjonarOvertakendeOrganisasjonsnummer-datadef-26533">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Mottakers organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Mottakars organisasjonsnummer</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="4002" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerArvMvOmsattAntall-datadef-17752">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">39</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="PosHeltall15-repformat-237">
+                    <xs:attribute fixed="17752" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerArvMvOmsattType-datadef-17753">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">40</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="17753" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerArvMvOmsattTidspunkt-datadef-17754">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">41</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="17754" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerArvMvOmsatt-datadef-17755">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">42</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="17755" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarOvertakendeFodselsnummer-datadef-26532">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">43</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst1111Modulus11-repformat-18">
+                    <xs:attribute fixed="26532" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjonarOvertakendeOrganisasjonsnummer-datadef-26533">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">44</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="26533" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SpleisSkattefriFusjonOgSkattefriFisjon-grp-3996">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>26 Spleis, skattefri fusjon, skattefri fisjon og sammenslåing/deling  av aksjeklasse</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>26 Spleis, skattefri fusjon, skattefri fisjon og samanslåing/deling av  aksjeklasse</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="AntallAksjerIAvgangVedOmfordeling-grp-4003"/>
+            </xs:sequence>
+            <xs:attribute fixed="3996" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AntallAksjerIAvgangVedOmfordeling-grp-4003">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>26 Aksjer i avgang ved omfordeling</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Opplys om slettede aksjer i selskapet i løpet av inntektsåret grunnet  omfordelingstilfeller.  </p>
+                    <p>Det skal spesifiseres hva slags transaksjonstype som er årsak til  utstedelsen.  </p>
+                    <p/>
+                    <p>Oppgi hva slags transaksjonstype som er årsak til at aksjene er  slettet.  </p>
+                    <p/>
+                    <p>Oppgi hvor mange aksjer som blir slettet og tidspunkt for slettingen.    </p>
+                    <p/>
+                    <p>Ved skattefri fusjon/fisjon oppgis overtakende selskaps  organisasjonsnummer, aksjeklasse og vederlagsaksjenes pålydende.  </p>
+                    <p/>
+                    <p>Se rettledningen for mer informasjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>(se post 12 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>26 Aksjar i avgang i samband med omfordeling</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Opplys om sletta aksjar i selskapet i løpet av inntektsåret grunna  omfordelingstilfeller.  </p>
+                    <p/>
+                    <p>Gi opp kva slags transaksjonstype som er årsak til at aksjane er  sletta.  </p>
+                    <p/>
+                    <p>Det skal spesifiserast kva slags transaksjonstype som er årsak til  utskrivinga.  </p>
+                    <p/>
+                    <p>Spesifiser kor mange aksjar som blir sletta, og tidspunkt for  slettinga. Ved skattefri fusjon/fisjon gir ein opp  organisasjonsnummeret til det overtakande selskapet, aksjeklasse og  pålydande verdi av vederlagsaksjane.  </p>
+                    <p/>
+                    <p>Sjå rettleiinga for meir informasjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>(sjå post 12 for opplysningar på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjerSpleisMvAvgangAntall-datadef-24007">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Antall aksjer i avgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tal på aksjar i avgang</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerSpleisMvType-datadef-17758">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerSpleisMvTidspunkt-datadef-17759">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven ikke  bli godkjent ved kontroll i Aksjonærregisteret. Oppgaver som viser  feil i
+                                    kontrollene, må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåver som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="EnhetOvertakendeFisjonOrganisasjonsnummer-datadef-17699">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overtakende selskaps (evt. morselskaps) org.nr.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overtakande selskaps (evt. morselskaps) org.nr.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerSpleisMvOvetakendeISIN-datadef-17700">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overtakende selskaps ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overtakande selskaps ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feil format; skal være på formen NOxxxxxxxxxx</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerSpleisMvOvertakendeAksjetype-datadef-19906">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overtakende selskaps aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overtakande selskaps aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerSpleisMvPalydende-datadef-23969">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="EN" brreg:teksttype="FEIL">
+                                <p>Enter number with six fraction digits</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overtakende selskaps pålydende per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                                <p>Feltet krever seks desimaler</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overtakande selskaps pålydande per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feltet krev seks desimalar</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="4003" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerSpleisMvAvgangAntall-datadef-24007">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">45</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="24007" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerSpleisMvType-datadef-17758">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">46</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="17758" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerSpleisMvTidspunkt-datadef-17759">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">47</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="17759" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EnhetOvertakendeFisjonOrganisasjonsnummer-datadef-17699">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Overtakende selskaps organisasjonsnummer i forbindelse med fisjon og sletting av aksjer</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">48</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="17699" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerSpleisMvOvetakendeISIN-datadef-17700">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Opplysninger om det ovetakende selskaps ISIN ved sletting av aksjer i forbindelse med spleis, skattefri funsjon og skattefri fisjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">49</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst12NO0910-repformat-200">
+                    <xs:attribute fixed="17700" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerSpleisMvOvertakendeAksjetype-datadef-19906">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Opplysninger om det ovetakende selskaps aksjetype ved sletting av aksjer i forbindelse med spleis, skattefri funsjon og skattefri fisjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">50</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="19906" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerSpleisMvPalydende-datadef-23969">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">51</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="BelopDesimal1506DesimalerPositiv-repformat-547">
+                    <xs:attribute fixed="23969" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EndringerIAksjekapitalOgOverkurs-grp-3997">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>27-29 Endringer i aksjekapital og overkurs - utbetalinger og  innbetalinger</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>27-29 Endringar i aksjekapital og overkurs - utbetalingar og  innbetalingar</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="TilbakebetaltInnbetaltOgFondsemittertAKVedReduksjonAvPalydende-grp-4000"/>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="TilbakebetaltTidligereInnbetaltOverkursForAksjen-grp-4001"/>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="ForhoyelseAvInnbetaltAksjekapitalVedOkning-grp-4987"/>
+                <xs:element minOccurs="0" ref="ReduksjonInnbetaltAksjekapital-grp-9857"/>
+            </xs:sequence>
+            <xs:attribute fixed="3997" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TilbakebetaltInnbetaltOgFondsemittertAKVedReduksjonAvPalydende-grp-4000">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>27 Tilbakebetalt innbetalt aksjekapital (totalt beløp) og utbetalt  fondsemittert aksjekapital ved reduksjon av pålydende per aksje</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Opplys om tilbakebetalt/utbetalt beløp til aksjonæren ved nedsettelse  av aksjekapitalen i selskapet ved reduksjon av pålydende per aksje.  Oppgi på aksjonærnivå om nedsettelsen gjelder innbetalt eller  fondsemittert
+                        aksjekapital. Oppgi reduksjon av pålydende per aksje og  tidspunktet for nedsettelsen. Selskapet kan ikke benytte innbetalt  aksjekapital som utbetaling til aksjonærene før all fondsemittert  aksjekapital er utbetalt
+                        (tilbakebetaling av innbetalt aksjekapital  vil automatisk redusere aksjens inngangsverdi).  </p>
+                    <p/>
+                    <p>Tilbakebetaling av fondsemittert kapital anses skatterettslig som  utbytte og beløpet skal derfor også føres i post 21.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>(se post 17 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>27 Tilbakebetalt innbetalt aksjekapital (totalt beløp) og utbetalt  fondsemittert aksjekapital ved reduksjon av pålydande per aksje</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Opplys om tilbakebetalt/utbetalt beløp til aksjonæren ved nedsetjing  av aksjekapitalen i selskapet ved reduksjon av pålydande per aksje.  Spesifiser på aksjonærnivå om nedsetjinga gjeld innbetalt eller  fondsemittert
+                        aksjekapital. Gi opp reduksjon av pålydande per aksje  og tidspunktet for nedsetjinga. Selskapet kan ikkje bruke innbetalt  aksjekapital som utbetaling til aksjonærane før all fondsemittert  aksjekapital er utbetalt
+                        (tilbakebetaling av innbetalt aksjekapital  vil automatisk redusere inngangsverdien på aksjen).  </p>
+                    <p/>
+                    <p>Tilbakebetaling av fondsemittert kapital blir skatterettsleg rekna som  utbytte, og beløpet skal derfor også førast i post 21.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>(sjå post 17 for opplysningar på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjekapitalNedsettelseTilbakebetalt-datadef-17761">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Nedsettelse av innbetalt aksjekapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Nedsetjing av innbetalt aksjekapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjePalydendeRedusert-datadef-23970">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="EN" brreg:teksttype="FEIL">
+                                <p>Enter number with six fraction digits</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Reduksjon av pålydende per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                                <p>Feltet krever seks desimaler</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Reduksjon av pålydande per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feltet krev seks desimalar</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjeTilbakebetaltTidspunkt-datadef-17763">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven feile  på kontroller i Aksjonærregisteret. Oppgaver som viser feil i  kontrollene,
+                                    må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser.  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåver som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar.  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjekapitalNedsettelse-datadef-17764">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Nedsettelse av fondsemittert aksjekapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Nedsetjing av fondsemittert aksjekapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="4000" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjekapitalNedsettelseTilbakebetalt-datadef-17761">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">52</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="17761" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjePalydendeRedusert-datadef-23970">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">54</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="BelopDesimal1506DesimalerPositiv-repformat-547">
+                    <xs:attribute fixed="23970" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjeTilbakebetaltTidspunkt-datadef-17763">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">55</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="17763" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjekapitalNedsettelse-datadef-17764">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">53</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="17764" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TilbakebetaltTidligereInnbetaltOverkursForAksjen-grp-4001">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>28 Tilbakebetalt tidligere innbetalt overkurs for aksjene</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Opplys om nedsettelse av innbetalt overkurs med tilbakebetaling til  aksjonæren. Oppgi det totale beløpet aksjonærene får utbetalt per  tilbakebetaling, samt tidspunkt for tilbakebetalingen.  (Tilbakebetaling av innbetalt
+                        overkurs vil automatisk redusere  aksjens inngangsverdi.)  </p>
+                    <p>Tilbakebetaling av overkurs som ikke er innbetalt, skal behandles som  utbytte og oppgis i post 21.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>(se post 13 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>28 Tilbakebetalt tidlegare innbetalt overkurs for aksjane</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Opplys om nedsetjing av innbetalt overkurs med tilbakebetaling til  aksjonæren. Gi opp det totale beløpet kvar enkelt aksjonær får  utbetalt per tilbakebetaling, og tidspunkt for tilbakebetalinga.  (Tilbakebetaling av innbetalt
+                        overkurs vil automatisk redusere  aksjens inngangsverdi.)  </p>
+                    <p/>
+                    <p>Tilbakebetaling av overkurs som ikkje er innbetalt, skal behandlast  som utbytte og givast opp i post 21.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>(sjå post 13 for opplysningar på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="OverkursTilbakebetalt-datadef-17765">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Nedsettelse av innbetalt overkurs</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Nedsetjing av innbetalt overkurs</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="OverkursTilbakebetaltTidspunkt-datadef-17766">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i så fall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven feile  på kontroller i Aksjonærregisteret. Oppgaver som viser feil i  kontrollene,
+                                    må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser.  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåver som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar.  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.  </p>
+                                <p/>
+                                <p>Sjå rettleiinga for meir informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="4001" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="OverkursTilbakebetalt-datadef-17765">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">56</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="17765" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="OverkursTilbakebetaltTidspunkt-datadef-17766">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">57</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="17766" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ForhoyelseAvInnbetaltAksjekapitalVedOkning-grp-4987">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>29 Aksjonærens andel av økningen av aksjekapital og overkurs ifm  økning av pålydende ved nyemisjon, fisjon og fusjon. (Se post 15)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                    <p>Forhøyelse av kapital på aksjekapital og overkurs ved nyemisjon,  fisjon og fusjon.  </p>
+                    <p/>
+                    <p>Under Transaksjonstype skal det oppgis hva slags transaksjon som er  årsak til forhøyelsen av aksjekapitalen.  </p>
+                    <p/>
+                    <p>Videre oppgis økning av pålydende per aksje og tidspunktet for  kapitaløkningen.  </p>
+                    <p/>
+                    <p>Ved økning av overkurs, oppgis aksjonærens andel av forhøyelsen.  </p>
+                    <p/>
+                    <p>Ved skattefri fisjon/fusjon oppgis i tillegg overdragende selskaps  org. nr. og aksjeklasse.  </p>
+                    <p/>
+                    <p>Aksjenes inngangsverdi anses forhøyet med de innbetalte beløp.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                    <p>(se post 15 for opplysninger på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                    <p>29 Aksjonærens del av auken av aksjekapital og overkurs i samband med  auke av pålydande ved nyemisjon, fisjon og fusjon. (Sjå post 15)</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                    <p>Forhøging av kapital på aksjekapital og overkurs ved nyemisjon, fisjon  og fusjon.  </p>
+                    <p/>
+                    <p>Under Transaksjonstype skal det givast opp kva slags transaksjon som  er årsak til forhøginga av aksjekapitalen.  </p>
+                    <p/>
+                    <p>Gi vidare opp auke av pålydande per aksje og tidspunktet for  kapitalauken.  </p>
+                    <p/>
+                    <p>Ved auke av overkurs, gi opp aksjonærens del av forhøginga.  </p>
+                    <p/>
+                    <p>Ved skattefri fisjon/fusjon gir du i tillegg opp organisasjonsnummeret  og aksjeklassen til overdragande selskap.  </p>
+                    <p/>
+                    <p>Inngangsverdien til aksjane blir rekna for å vere forhøgd med dei  innbetalte beløpa.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                    <p>(sjå post 15 for opplysningar på selskapsnivå)</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjekapitalNyemisjonForhoyelseAksjonar-datadef-22073">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Forhøyelse av aksjekapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Forhøging av aksjekapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjeOverkursForhoyelseAksjonar-datadef-22076">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Forhøyelse av overkurs</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Forhøging av overkurs</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjeNyemisjonPalydendeForhoyelseAksjonar-datadef-23971">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="EN" brreg:teksttype="FEIL">
+                                <p>Enter number with six fraction digits</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Økning av pålydende per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="FEIL">
+                                <p>Feltet krever seks desimaler</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Auke av pålydande per aksje</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="FEIL">
+                                <p>Feltet krev seks desimalar</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjekapitalNyemisjonForhoyelsePalydendeTransaksjonstype-datadef-28267">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjeNyemisjonTidspunktAksjonar-datadef-22075">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HJELP">
+                                <p>Her skal det legges inn et tidspunkt med format DD.MM.ÅÅÅÅ tt:mm:ss.  Klokkeslett er obligatorisk hvis hendelser, transaksjoner og  utbyttebetalinger har skjedd på samme dag. Dette har betydning for
+                                    oppgaveproduksjonen. Klokkeslett er ikke relevant for alle  oppgavegivere, legg i såfall inn dato og det tilføyes automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig samme tidspunkt på aksjonærnivå  som på selskapsnivå for samme hendelse. Ved avvik vil oppgaven feile  på kontroller i Aksjonærregisteret. Oppgaver som viser feil i  kontrollene,
+                                    må leveres på nytt.  </p>
+                                <p/>
+                                <p>Virkningstidspunkt for selskapshendelser  </p>
+                                <p>De fleste selskapshendelser (kapitalendringer og  omfordelingstilfeller) anses gjennomført ved registrering av  hendelsen i Foretaksregisteret.  </p>
+                                <p/>
+                                <p>Se rettledningen for mer informasjon.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HJELP">
+                                <p>Her skal det leggjast inn eit tidspunkt med formatet DD.MM.ÅÅÅÅ  tt:mm:ss. Klokkeslett er obligatorisk om hendingar, transaksjonar og  utbyttebetalingar har skjedd på same dag. Dette har betyding for
+                                    oppgåveproduksjonen. Klokkeslett er ikkje relevant for alle  oppgåvegivare, legg i så fall inn dato og det leggjast til automatisk  standardklokkeslett 12:00:00.  </p>
+                                <p/>
+                                <p>Det er nødvendig å fylle ut nøyaktig same tidspunkt på aksjonærnivå  som på selskapsnivå for same hending. Ved avvik vil oppgåva ikkje bli  godkjent ved kontrollar i aksjonærregisteret. Oppgåve som viser feil  i
+                                    kontrollane, må leverast på nytt.  </p>
+                                <p/>
+                                <p>Verknadstidspunkt for selskapshendingar  </p>
+                                <p>Dei fleste selskapshendingar (kapitalendringar og  omfordelingstilfelle) blir rekna for å vere gjennomførte når hendinga  blir registrert i Føretaksregisteret.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="HINT">
+                                <p>(DD.MM.ÅÅÅÅ tt:mm:ss)</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="EnhetOverdragendeNyemisjonMvOrganisasjonsnummerAksjonar-datadef-28216">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overdragende selskaps org.nr.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overdragande selskaps org.nr.</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerNyutstedteNyemisjonMvISINAksjonar-datadef-28217">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overdragende selskaps ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overdragande selskaps ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerNyutstedteNyemisjonMvAksjetypeAksjonar-datadef-28218">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overdragende selskaps aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NON" brreg:teksttype="LEDE">
+                                <p>Overdragande selskaps aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="4987" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjekapitalNyemisjonForhoyelseAksjonar-datadef-22073">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Forhøyelse av aksjekapital i forbindelse med nyemisjon. Aksjonæropplysning.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">58</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="22073" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjeOverkursForhoyelseAksjonar-datadef-22076">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Forhøyelse av overkurs i forbindelse med nyemisjon. Aksjonæropplysning</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">59</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="22076" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjeNyemisjonPalydendeForhoyelseAksjonar-datadef-23971">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Økning av pålydende pr aksje i forbndelse med nyemisjon. Aksjonæropplysning.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">60</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="BelopDesimal1506DesimalerPositiv-repformat-547">
+                    <xs:attribute fixed="23971" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjekapitalNyemisjonForhoyelsePalydendeTransaksjonstype-datadef-28267">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">61</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="28267" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjeNyemisjonTidspunktAksjonar-datadef-22075">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Tidspunkt for forhøyelse av aksjekapitalen ved økning av pålydende pr aksje i forbindelse med nyemisjon. Aksjonæropplysning.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">62</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="22075" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EnhetOverdragendeNyemisjonMvOrganisasjonsnummerAksjonar-datadef-28216">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Organisasjonsnummer til det overdragende selskap i forbindelse med nyemisjon, fisjon og fusjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">63</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="28216" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerNyutstedteNyemisjonMvISINAksjonar-datadef-28217">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Angivelse av ISIN i forbindelse med nyemisjon, fusjon og fisjon.</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">64</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst12NO0910-repformat-200">
+                    <xs:attribute fixed="28217" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerNyutstedteNyemisjonMvAksjetypeAksjonar-datadef-28218">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="DEF">
+                    <p>Angivelse av aksjetype i forbindelse med nyemisjon, fisjon og fusjon</p>
+                </brreg:tekst>
+            </xs:documentation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">65</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="28218" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ReduksjonInnbetaltAksjekapital-grp-9857">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                    <p>30 Reduksjon av innbetalt aksjekapital</p>
+                </brreg:tekst>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="AksjekapitalReduksjon-datadef-37826">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Reduksjon av aksjekapital</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjekapitalReduksjonTransaksjonstype-datadef-37827">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Transaksjonstype</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjekapitalReduksjonTidspunkt-datadef-37828">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Tidspunkt</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="EnhetOverdragendeKapitalreduksjonOrganisasjonsnummer-datadef-37829">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Overtakende selskaps org.nr</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerReduksjonISIN-datadef-37830">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>ISIN</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element minOccurs="0" ref="AksjerReduksjonAksjeklasse-datadef-37831">
+                    <xs:annotation>
+                        <xs:documentation>
+                            <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
+                                <p>Aksjeklasse</p>
+                            </brreg:tekst>
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute fixed="9857" name="gruppeid" type="xs:positiveInteger" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjekapitalReduksjon-datadef-37826">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">66</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Desimal1502DesimalerPositiv-repformat-1130">
+                    <xs:attribute fixed="37826" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjekapitalReduksjonTransaksjonstype-datadef-37827">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">67</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="37827" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjekapitalReduksjonTidspunkt-datadef-37828">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">68</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="DatoTid-repformat-239">
+                    <xs:attribute fixed="37828" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="EnhetOverdragendeKapitalreduksjonOrganisasjonsnummer-datadef-37829">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">69</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst99Modulus11-repformat-1">
+                    <xs:attribute fixed="37829" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerReduksjonISIN-datadef-37830">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">70</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst12NO0910-repformat-200">
+                    <xs:attribute fixed="37830" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AksjerReduksjonAksjeklasse-datadef-37831">
+        <xs:annotation>
+            <xs:documentation>
+                <brreg:info brreg:type="plassering">71</brreg:info>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="Tekst35-repformat-3">
+                    <xs:attribute fixed="37831" name="orid" type="xs:positiveInteger" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

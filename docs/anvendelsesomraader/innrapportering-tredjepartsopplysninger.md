@@ -17,9 +17,10 @@ På denne siden vil vi legge ut teknisk informasjon pr tjeneste ettersom de blir
 
 ## Nye API-er for re-etablering av Altinn-tjenester
 Følgende API-er er tilgjengelige pr. nå: 
-* [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)
-* [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)
-* [Innrapportering BSU API](../api/innrapportering-bsu.md)
-* [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)
-* [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)
+* [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md)
+* [Innrapportering boligsameie API (RF-1140)](../api/innrapportering-boligsameie.md)
+* [Innrapportering boligselskap API (RF-1139](../api/innrapportering-boligselskap.md)
+* [Innrapportering BSU API (RF-1360)](../api/innrapportering-bsu.md)
+* [Innrapportering pass og stell av barn API (RF-1241)](../api/innrapportering-passogstell.md)
+* [Innrapportering gaver til frivillige API (RF-1310)](../api/innrapportering-gavertilfrivillige.md)
 

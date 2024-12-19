@@ -1,5 +1,5 @@
 ---
-title: Innrapportering gaver til frivillige API
+title: Innrapportering gaver til frivillige API (RF-1310)
 slug: /api/innrapportering-gavertilfrivillige
 folder: api
 sidebar: mydoc_sidebar
@@ -40,7 +40,7 @@ Informasjon vedr. dette finnes [her](../om/systemtilgang.md).
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/gavertilfrivillige-api/0.0.1) TODO: oppdater
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-gavertilfrivillige-api/0.0.1)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
@@ -215,7 +215,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/gavertilfrivillige-api/0.0.1). 
+Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-gavertilfrivillige-api/0.0.1). 
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten

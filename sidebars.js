@@ -57,6 +57,7 @@ const sidebars = {
     },
     {
       "API-er for innrapportering": [
+        "api/innrapportering-aksjonaerregisteroppgave",
         "api/innrapportering-boligsameie",
         "api/innrapportering-boligselskap",
         "api/innrapportering-bsu",
