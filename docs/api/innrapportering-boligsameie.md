@@ -1,5 +1,5 @@
 ---
-title: Innrapportering boligsameie API
+title: Innrapportering boligsameie API (RF-1140)
 slug: /api/innrapportering-boligsameie
 folder: api
 sidebar: mydoc_sidebar

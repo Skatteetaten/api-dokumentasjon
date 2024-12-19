@@ -1,5 +1,5 @@
 ---
-title: Innrapportering boligselskap API
+title: Innrapportering boligselskap API (RF-1139)
 slug: /api/innrapportering-boligselskap
 folder: api
 sidebar: mydoc_sidebar

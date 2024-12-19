@@ -1,5 +1,5 @@
 ---
-title: Innrapportering BSU API
+title: Innrapportering BSU API (RF-1360)
 slug: /api/innrapportering-bsu
 folder: api
 sidebar: mydoc_sidebar

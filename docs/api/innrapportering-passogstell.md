@@ -1,5 +1,5 @@
 ---
-title: Innrapportering pass og stell API
+title: Innrapportering pass og stell API (RF-1241)
 slug: /api/innrapportering-passogstell
 folder: api
 sidebar: mydoc_sidebar
