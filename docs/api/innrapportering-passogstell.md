@@ -40,7 +40,7 @@ Informasjon vedr. dette finnes [her](../om/systemtilgang.md).
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/passogstell-api/0.0.1) TODO: oppdater
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-passogstell-api/0.0.1)
 
 Oppbygning av URL-er og åpninger i en evt. brannmur er beskrevet her [URL-er](../om/url.md)
 
