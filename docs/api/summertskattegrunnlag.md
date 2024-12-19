@@ -336,8 +336,8 @@ Det er få endringer i forbindelse med årets revisjon i Summert skattegrunnlag 
 
 | Dato          | Aktivitet                                                                |
 |---------------|--------------------------------------------------------------------------|
-| 18.12.2023    | Tidsplan for årsrevisjon for 2024 distribuert                            |
-| 18.12.2023    | Første versjon av endringer i kodeliste for inntektsår 2024              |
+| 18.12.2024    | Tidsplan for årsrevisjon for 2024 distribuert                            |
+| 18.12.2024    | Første versjon av endringer i kodeliste for inntektsår 2024              |
 | Medio januar  | Oppdatert versjon av endringer i kodeliste for inntektsår 2024           |
 | Medio februar | Endelig versjon av kodeliste for inntektsår 2024                         |
 | Medio februar | Støtte for inntektsår 2024 i test for alle stadier                       |
