@@ -10,7 +10,7 @@ last_updated: Dec 19, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av aksjonaerregisteroppgaven.</Summary>
+<Summary>Tjeneste for innrapportering av aksjonærregisteroppgaven.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -43,15 +43,17 @@ Informasjon vedr. dette finnes [her](../om/systemtilgang.md).
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aksjonaerregister-api/0.0.1)
 
-Oppbygning av URL-er og åpninger i en evt. brannmur er beskrevet her [SIKKERHET](../om/sikkerhet.md)
+Oppbygning av URL-er og åpninger i en evt. brannmur er beskrevet her [Brannmur](../om/sikkerhet#brannmur)
 
 API-et for innsending av aksjonaerregisteroppgaven har bare fem endepunkter:
 
-* __POST hovedskjema__: Mottar hovedskjema for aksjonaerregisteroppgaven
-* __POST underskjema__: Mottar underskjema for aksjonaerregisteroppgaven
+* __POST hovedskjema__: Mottar hovedskjema for aksjonærregisteroppgaven
+* __POST underskjema__: Mottar underskjema for aksjonærregisteroppgaven
 * __POST bekreft__: Bekrefter at alle underskjemaer er innsendt og oppgaven er klar til videre behandling
-* __GET dokumenter__: 
-* __GET dokumenter__:
+* __GET dokumenter__: Henter ut flere dokumenter fra en forsendelse 
+  * Dette endepunktet anbefales brukt om man ønsker å hente ut alle innsendte hoved/underskjemaer. Endepunktet kan levere opp til 50 skjemaer pr kall og hovedskjemaet vil alltid være første skjema på første page.
+* __GET dokument__: Henter ut et enkelt dokument fra en forsendelse
+  * Dette endepunktet anbefales brukt om man skal hente ut enkeltdokumenter som f.eks tilbakemeldinger. 
 
 Innsendt data på hovedskjema endepunktet valideres etter følgende xsd: [hovedskjema](../../static/download/aksjonaerregisteroppgaveHovedskjema.xsd)
 
@@ -80,7 +82,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 #### Hovedskjema url:
 ```
-https://innrapporteringbsu.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/1086H
+https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/1086H
 ```
 
 #### Hovedskjema XML
@@ -184,7 +186,7 @@ https://innrapporteringbsu.api.skatteetaten-test.no/api/aksjonaerregister/1086/v
 
 #### Underskjema url
 ```
-https://innrapporteringbsu.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/{{ar-hovedskjemaid}}/1086U
+https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/{{hovedskjemaid}}/1086U
 ```
 
 #### Underskjema XML
@@ -257,7 +259,7 @@ Endepunktet gir ingen data tilbake ved vellykket kall. Kun 200 OK som statuskode
 
 #### Bekreft url
 ```
-https://innrapporteringbsu.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/{{hovedskjemaid}}/bekreft?antall_underskjema={{antall-innsendte-underskjema}}
+https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/{{hovedskjemaid}}/bekreft?antall_underskjema={{antall-innsendte-underskjema}}
 ```
 
 #### Eksempel på respons fra bekreft endepunkt
@@ -280,6 +282,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
+| GLD_004  | 401             | Feil i forbindelse med autentisering         |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
@@ -289,20 +292,31 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | GLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
 | GLD_021  | 404             | Finner ikke forespurt ressurs                |
 | GLD_022  | 405             | HTTP-metode ikke støttet                     |
+| GLD_023  | 500             | Uventet feil i et bakenforliggende system.   |
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
 Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi
 feltene.
 
-| Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
-|------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| GLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
-| GLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
-| GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
-| GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| Feilspesifiseringskode | Feilområde                                                                         | Årsak                                                                                                                       |
+|------------------------|------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| GLD_1007               | Mangler Token                                                                      | Det er ikke lagt ved noen authorization header med token på request                                                         |
+| GLD_1008               | Ugyldig token                                                                      | Token oppgitt i authorization header er ugyldig                                                                             |
+| GLD_1015               | Ikke autorisert for å levere på denne dialogen                                     | Organisasjonen som leverer har ikke rettighet til å levere for denne oppgavegiveren                                         |
+| GLD_1016               | Det finnes ikke et hovedskjema med denne IDen for denne innsendingen               | Oppgitt hovedskjemaid finnes ikke, eller gjelder ikke for denne oppgavegiver og inntektsår                                  |
+| GLD_1018               | Oppgitt antall underskjemaer stemmer ikke med antall underskjemaer på innsendingen | Antallet underskjemaer oppgitt i parameter er ikke likt som antall underskjemaer sendt inn på hovedskjemaet                 |
+| GLD_1022               | Feil i parametre                                                                   | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| GLD_1023               | Finner ingen ressurs for denne urlen                                               | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
+| GLD_1026               | En innsending må ha minimum ett underskjema                                 | Man kan ikke bekrefte en innsending som ikke har noen innsendte underskjemaer                                               |
+| GLD_1027               | Inntektsår er ikke støttet                                                         | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
+| GLD_1028               | Header mangler                                                                     | Påkrevd header er ikke med i requesten                                                                                      |
+| GLD_1029               | Innsendingen er allerede bekreftet                                            | Denne feilmeldingen gis om man forsøker å sende inn underskjema på en innsending som er bekreftet                           |
+| GLD_1030               | Accept-header må være av type application/json                                     | Accept header er feil. APIet har kun støtte for json i response                                                             |
+| GLD_1047               | Content type må være application/json                                              | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen                       | Det finnes ikke noe dokument med gitt id på angitt forsendelse                                                              |
+| GLD_1052               | Inntektsår i path og i innsending er ulike                                         | Inntektsår i innsending i JSON body og inntektsår i path må være like                                                       |
+| GLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere             |                                                                                                                             |
 
 </TabItem>
 
@@ -317,7 +331,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/aksjonaerregister-api/0.0.1).
+Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aksjonaerregister-api/0.0.1).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * DialogPorten
