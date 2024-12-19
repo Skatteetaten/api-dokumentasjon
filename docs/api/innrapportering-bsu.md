@@ -40,7 +40,7 @@ Informasjon vedr. dette finnes [her](../om/systemtilgang.md).
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://https://app.swaggerhub.com/apis/skatteetaten/innrapportering-bsu-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-bsu-api/0.0.1)
 
 Oppbygning av URL-er og åpninger i en evt. brannmur er beskrevet her [URL-er](../om/url.md)
 
@@ -318,7 +318,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/bsu-api/0.0.1). 
+Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-bsu-api/0.0.1). 
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten
