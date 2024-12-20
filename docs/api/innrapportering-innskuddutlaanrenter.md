@@ -42,7 +42,7 @@ Informasjon vedr. dette finnes [her](../om/systemtilgang.md).
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-innskuddutlaanrenter-api/0.0.1)
 
-Nødvendige åpninger i en evt. brannmur er beskrevet [URL-er](../om/sikkerhet.md)
+Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
 API-et for innrapportering av innskudd, utlån og renter har to endepunkter:
 
