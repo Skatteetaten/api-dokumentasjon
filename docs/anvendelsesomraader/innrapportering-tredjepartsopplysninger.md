@@ -22,4 +22,5 @@ Følgende API-er er tilgjengelige pr. nå:
 * [Innrapportering BSU API](../api/innrapportering-bsu.md)
 * [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)
 * [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)
+* [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)
 
