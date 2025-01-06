@@ -87,7 +87,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
     "oppgavegiver": {
-      "organisasjonsnummer": "987654321",
+      "organisasjonsnummer": "310218480",
       "kontaktinformasjon": {
         "navn": "Kari Kontakt",
         "telefonnummer": "80080000",
@@ -95,91 +95,104 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "43999123"
       }
     },
-    "inntektsaar": "2023",
+    "inntektsaar": 2023,
     "oppgavegiversLeveranseReferanse": "2013_1",
     "leveransetype": "ordinaer",
     "presentasjonsnavn": "presentasjonsnavn",
     "oppgave": [
       {
         "oppgaveeier": {
-          "foedselsnummer": "25044552222",
-          "fornavn": "Ola",
-          "etternavn": "Nordmann",
+          "oppgaveeierPerson": {
+            "foedselsnummer": "25044552222",
+            "fornavn": "Ola",
+            "etternavn": "Nordmann"
+          },
           "sektorkode": "8500"
         },
         "kontonummer": "20130000100",
         "skattekontoEgnethet": "1",
-        "innskudd": "50569",
+        "innskudd": 50569,
         "renter": {
-          "opptjenteRenter": "221"
+          "opptjenteRenter": 221
         },
         "kontotype": "innskuddskontoINok"
       },
       {
         "oppgaveeier": {
-          "organisasjonsnummer": "987012345",
-          "organisasjonsnavn": "Kontoeier AS"
+          "oppgaveeierOrganisasjon": {
+            "organisasjonsnummer": "987012345",
+            "organisasjonsnavn": "Kontoeier AS"
+          }
         },
         "kontonummer": "201300002000",
         "skattekontoEgnethet": "0",
-        "utlaan": "0",
-        "innskudd": "5000",
+        "utlaan": 0,
+        "innskudd": 5000,
         "renter": {
-          "opptjenteRenter": "200",
-          "paaloepteRenter": "0"
+          "opptjenteRenter": 200,
+          "paaloepteRenter": 0
         },
         "kontotype": "laanekontoINok"
       },
       {
         "oppgaveeier": {
-          "organisasjonsnummer": "000000000",
-          "organisasjonsnavn": "Forreningen",
+          "oppgaveeierOrganisasjon": {
+            "organisasjonsnummer": "000000000",
+            "organisasjonsnavn": "Forreningen"
+          },
           "alternativIdentifikator": "InterntKundennummer123456",
           "sektorkode": "7000"
         },
         "kontonummer": "201300003000",
-        "innskudd": "4500",
+        "innskudd": 4500,
         "renter": {
-          "opptjenteRenter": "3"
+          "opptjenteRenter": 3
         },
         "kontotype": "innskuddskontoINok",
         "disponent": [
           {
-            "foedselsnummer": "17046594876",
-            "fornavn": "Jens",
-            "etternavn": "Hansen"
+            "disponentPerson": {
+              "foedselsnummer": "17046594876",
+              "fornavn": "Jens",
+              "etternavn": "Hansen"
+            }
           }
         ]
       },
       {
         "oppgaveeier": {
-          "foedselsnummer": "12056700000",
-          "fornavn": "Jonas",
-          "mellomnavn": "August",
-          "etternavn": "Svensson",
+          "oppgaveeierPerson": {
+            "foedselsnummer": "12056700000",
+            "fornavn": "Jonas",
+            "mellomnavn": "August",
+            "etternavn": "Svensson"
+          },
           "adresse": {
             "landkode": "SE",
             "adresseStrukturert": {
               "adressenavn": "Hasselgatan 27",
               "postkode": "61433",
-              "byEllerStedsnavn": "Söderköping"
+              "byEllerStedsnavn": "Söderköping",
+              "adresseTekstForUtskrift": "Utskrift"
             }
           },
           "sektorkode": "9000"
         },
         "kontonummer": "20130000400",
-        "utlaan": "1000",
-        "innskudd": "45687",
+        "utlaan": 1000,
+        "innskudd": 45687,
         "renter": {
-          "opptjenteRenter": "3",
-          "paaloepteRenter": "50"
+          "opptjenteRenter": 3,
+          "paaloepteRenter": 50
         },
         "kontotype": "laanekontoINok"
       },
       {
         "oppgaveeier": {
-          "organisasjonsnummer": "000000000",
-          "organisasjonsnavn": "Garfield Street Auto Ltd",
+          "oppgaveeierOrganisasjon": {
+            "organisasjonsnummer": "000000000",
+            "organisasjonsnavn": "Garfield Street Auto Ltd"
+          },
           "internasjonalIdentifikator": {
             "identifikator": "900-70-0000",
             "identifikatortype": "TIN",
@@ -190,34 +203,35 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
             "adresseStrukturert": {
               "postboks": "POB 65502",
               "postkode": "85728",
-              "byEllerStedsnavn": "TUCSON AZ"
+              "byEllerStedsnavn": "TUCSON AZ",
+              "adresseTekstForUtskrift": "Utskrift"
             }
           },
           "sektorkode": "9000"
         },
         "kontonummer": "00501300005000",
-        "utlaan": "0",
-        "innskudd": "50000000",
+        "utlaan": 0,
+        "innskudd": 50000000,
         "renter": {
-          "opptjenteRenter": "150000",
-          "paaloepteRenter": "0"
+          "opptjenteRenter": 150000,
+          "paaloepteRenter": 0
         },
         "kontotype": "innskuddskontoIUtenlandskValuta",
         "valutakode": "USD",
-        "innskuddIAnnenValuta": "6250000",
-        "renteinntektIAnnenValuta": "18750"
+        "innskuddIAnnenValuta": 6250000,
+        "renteinntektIAnnenValuta": 18750
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": "5",
-      "sumInnskudd": "50105756",
-      "sumUtlaan": "1000",
-      "sumOpptjenteRenter": "150427",
-      "sumPaaloepteRenter": "50",
-      "sumBetalteMisligholdteRenter": "0",
-      "sumTilbakebetalteMisligholdteRenter": "0",
-      "sumSkattepliktigGevinst": "0",
-      "sumFradragsberettigetTap": "0"
+      "antallOppgaver": 5,
+      "sumInnskudd": 50105756,
+      "sumUtlaan": 1000,
+      "sumOpptjenteRenter": 150427,
+      "sumPaaloepteRenter": 50,
+      "sumBetalteMisligholdteRenter": 0,
+      "sumTilbakebetalteMisligholdteRenter": 0,
+      "sumSkattepliktigGevinst": 0,
+      "sumFradragsberettigetTap": 0
     }
   }
 }
