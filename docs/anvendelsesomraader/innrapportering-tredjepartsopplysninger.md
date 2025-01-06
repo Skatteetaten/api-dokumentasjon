@@ -30,4 +30,5 @@ Følgende API-er er tilgjengelige pr. nå:
 * [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)
 * [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)
 * [Innrapportering innskudd_utlaan_renter API](../api/innrapportering-innskuddutlaanrenter.md)
+* [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)
 
