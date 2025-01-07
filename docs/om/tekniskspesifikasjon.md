@@ -13,7 +13,7 @@ hide_table_of_contents: true
 
 ## Open API spesifikasjon
 
-For å møte det stadig økende behovet for nye tjenester og ha mer effektiv forvaltning av tjenester, har Skatteetaten migrert alle API-ene over på Open API spesifikasjon (tidligere XSD). Da kan vi automatisere utviklingsprosessen mer slik at funksjonell spesifikasjon, teknisk løsning og dokumentasjon alltid skal være i synk. Basert på prinsippet om "kontrakt først" kan vi også autogenerere kode for API-ene.
+For å møte det stadig økende behovet for nye tjenester og ha mer effektiv forvaltning av tjenester, har Skatteetaten migrert de fleste API-ene over på Open API spesifikasjon (tidligere XSD). Da kan vi automatisere utviklingsprosessen mer slik at funksjonell spesifikasjon, teknisk løsning og dokumentasjon alltid skal være i synk. Basert på prinsippet om "kontrakt først" kan vi også autogenerere kode for API-ene.
 
 Dette vil også være en forbedring for brukeropplevelse for konsumentene, som kan benytte Open API spesifikasjonene for å få automatisert opprettelse av tjenester mot Skatteetaten.
 

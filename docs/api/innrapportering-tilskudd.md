@@ -1,16 +1,16 @@
 ---
-title: Innrapportering gaver til frivillige API (RF-1310)
-slug: /api/innrapportering-gavertilfrivillige
+title: Innrapportering tilskudd til vitenskapelig forskning eller yrkesopplæring API
+slug: /api/innrapportering-tilskudd
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, gaver, frivillige, frivillighet, tro, livssyn ]
+tags: [ API, tilskudd, vitenskapelig, forskning, yrkesopplæring ]
 keywords: [ grunnlagsdata ]
-last_updated: Dec 12, 2024
+last_updated: Dec 20, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for gaver til visse frivillige organisasjoner og enkelte tros og livssynssamfunn.</Summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for tilskudd til vitenskapelig forskning eller yrkesopplæring</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -26,7 +26,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringgaverfrivilligeorganisasjoner`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringtilskuddforskningyrkesopplaering`
 
 ## Delegering
 
@@ -40,20 +40,20 @@ Informasjon vedr. dette finnes [her](../om/systemtilgang.md).
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-gavertilfrivillige-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1) TODO: oppdater
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for innrapportering av gaver til frivillige har to endepunkter
+API-et for innrapportering av tilskudd til vitenskapelig forskning eller yrkesopplæring har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for gaver til frivillige. Ett kall mot API-et er en rapportering for en
+* __POST innsending__: Mottar tredjepartsopplysninger for tilskudd til vitenskapelig forskning eller yrkesopplæring. Ett kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](gavertilfrivillige?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](tilskudd?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](gavertilfrivillige?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](tilskudd?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
@@ -74,7 +74,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://innrapporteringgavertilfrivillige.api.{env}.no/v1/{inntektsaar}
+https://innrapporteringtilskudd.api.{env}.no/v1/{inntektsaar}
 ```
 
 ### JSON
@@ -90,7 +90,7 @@ https://innrapporteringgavertilfrivillige.api.{env}.no/v1/{inntektsaar}
       "kontaktinformasjon": {
         "navn": "Kari Kontakt",
         "telefonnummer": "80080000",
-        "varselEpostadresse": "kontakt@frivilligorganisasjon.no",
+        "varselEpostadresse": "kontakt@epost.no",
         "varselSmsMobilnummer": "80080000"
       }
     },
@@ -185,7 +185,7 @@ feltene.
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-![gavertilfrivillige](../../static/download/Informasjonsmodell_Gavertilfrivillige.png)
+![tilskudd](../../static/download/Informasjonsmodell_TilskuddForskning.png)
 
 | Eier                | Element                         | Dokumentasjon                                                                                                                                   |
 |---------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -197,8 +197,8 @@ feltene.
 | Leveranse           | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
 | Leveranse           | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
 | Melding             | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| OppgaveGave         | beloep                          | Sum beløp som er gitt som gave                                                                                                                  |
-| OppgaveGave         | oppgaveeier                     | Person eller organisasjon som har gitt gave til frivillig organisasjon eller trossamfunn                                                        |
+| OppgaveTilskudd     | beloep                          | Sum beløp som er gitt som tilskudd                                                                                                              |
+| OppgaveTilskudd     | oppgaveeier                     | Person eller organisasjon som har gitt tilskudd til vitenskapelig forskning eller yrkesopplæring                                                 |
 | Oppgaveeier         | fødselsnummer                   | Oppgaveeiers fødselsnummer eller d-nummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                 |
 | Oppgaveeier         | organisasjonsnummer             | Oppgaveeiers organisasjonsnummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                          |
 | Oppgaveeier         | navn                            | Navn på oppgaveeier                                                                                                                             |
@@ -215,7 +215,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-gavertilfrivillige-api/0.0.1). 
+Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1). 
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten
@@ -241,7 +241,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om Gaver til frivillige API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om Tilskudd til vitenskapelig forskning eller yrkesopplæring API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
   
 </TabItem>
