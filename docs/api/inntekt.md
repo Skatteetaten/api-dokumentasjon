@@ -633,12 +633,29 @@ Det er få endringer i forbindelse med årets revisjon i Inntekt API.
 | -------------------------	| --- | --- |
 | frivillig | x	| |
 
-## Felt som ikke lengre er obligatorisk
-Vi ser behov for å gjøre et felt frivillig, siden det ikke alltid vil inneholde verdi. Gjelder felt:
-* inntektsmottaker
-
-SBL=samtykkebasert lånesøknad
+SBL=samtykkebasert lånesøknad  
 OTP=obligatorisk tjenestepensjon
+
+
+## Felt som ikke lengre er obligatorisk
+Vi ser behov for å gjøre et felt frivillig, siden det ikke alltid vil inneholde verdi. Gjelder følgende felter:
+
+Tilhørende OppgaveInntektsmottaker:
+- Inntektsmottaker
+- Kalendermaaned
+
+Tilhørende Inntekt (OppgaveInntektsmottaker.Inntekt):
+- Beloep
+- Fordel
+ 
+Tilhørende Livrente:
+- totaltUtbetaltBeloep
+
+Tilhørende UtenlandskArtist
+- inntektsaar
+- oppgrossingsgrunnlag
+- trukketArtistskatt
+
 
 </TabItem>
 
