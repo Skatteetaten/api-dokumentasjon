@@ -608,6 +608,7 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "In
 <TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
 Det er få endringer i forbindelse med årets revisjon i Inntekt API.
+[Open API spesifikasjonen på Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/inntekt-api) er oppdatert med endringene.
 
 ## Tidsplan
 
