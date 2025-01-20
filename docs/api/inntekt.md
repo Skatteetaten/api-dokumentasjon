@@ -616,7 +616,7 @@ Det er få endringer i forbindelse med årets revisjon i Inntekt API.
 |------|-----------|
 | 18.12.2024 | Tidsplan for årsrevisjon 2025 distribuert |
 | 18.12.2024 | Informasjon om nye lønnsbeskrivelser fra 2024 |
-| Medio januar | Støtte for nye lønnsbeskrivelser i test og prod |
+| 20.01.2025 | Støtte for nye lønnsbeskrivelser i test og prod |
 | 05-10.2.2025 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
 
 ## Ny inntektsbeskrivelse tilgjengelig
