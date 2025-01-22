@@ -34,25 +34,25 @@ For generell informasjon om tjenestene se egne sider om:
 
 Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som relaterte oppslagstjenester:
 
-| Hendelsesliste                                                        | Scope                       |
-|-----------------------------------------------------------------------|-----------------------------|
-| Arbeidsforhold hendelser API                                          | skatteetaten:arbeidsforhold |
-| Formuesgrunnlag for eiendomsskatt hendelser API                       | skatteetaten:formuesgrunnlageiendomsskatt |
-| Formuesobjekt fast eiendom hendelser API                              | skatteetaten:formuesobjektfasteiendom |
-| Inntekt hendelser API                                                 | skatteetaten:inntekt |
-| Mva-melding hendelser API                                             | skatteetaten:mvamelding |
-| Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API | skatteetaten:mvaregisteravgiftssubjekt |
-| Næringsspesifikasjon hendelser API                                    | skatteetaten:naeringsspesifikasjon |
-| Pensjonsgivende inntekt for folketrygden hendelser API                | skatteetaten:pensjonsgivendeinntektforfolketrygden |
-| Selskapsmelding hendelser API                                         | skatteetaten:selskapsmelding |
-| Skatteetaten-registrert selskap hendelser API                         | skatteetaten:skatteetatenregistrertselskap |
-| Skatteoppgjør hendelser API                                           | skatteetaten:spesifisertsummertskattegrunnlag, skatteetaten:summertskattegrunnlag, skatteetaten:beregnetskatt, skatteetaten:avregning, skatteetaten:skatteplikt, skatteetaten:pensjonsgivendeinntekt, skatteetaten:trukketkildeskattpaaloenn |
-| Skatteoppgjør upersonlig hendelser API                                | skatteetaten:beregnetskattupersonlig, skatteetaten:skatteberegningsgrunnlagupersonlig, skatteetaten:summertskattegrunnlagupersonlig, skatteetaten:skattepliktupersonlig |
-| Skattemelding fastsatt hendelser API                                  | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag |
-| Skattemelding upersonlig hendelser API                                | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag |
-| Skattemelding utkast hendelser API                                    | skatteetaten:skattemelding |
-| Tilleggsskatt hendelser API                                           | skatteetaten:tilleggsskatt |
-| Underenhet fra A-ordningen hendelser API                              | skatteetaten:underenhetaordningen |
+| Hendelsesliste                                                        | Scope                                                                                                                                                                                                |
+|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Arbeidsforhold hendelser API                                          | skatteetaten:arbeidsforhold                                                                                                                                                                          |
+| Formuesgrunnlag for eiendomsskatt hendelser API                       | skatteetaten:formuesgrunnlageiendomsskatt                                                                                                                                                            |
+| Formuesobjekt fast eiendom hendelser API                              | skatteetaten:formuesobjektfasteiendom                                                                                                                                                                |
+| Inntekt hendelser API                                                 | skatteetaten:inntekt                                                                                                                                                                                 |
+| Mva-melding hendelser API                                             | skatteetaten:mvamelding                                                                                                                                                                              |
+| Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API | skatteetaten:mvaregisteravgiftssubjekt                                                                                                                                                               |
+| Næringsspesifikasjon hendelser API                                    | skatteetaten:naeringsspesifikasjon                                                                                                                                                                   |
+| Pensjonsgivende inntekt for folketrygden hendelser API                | skatteetaten:pensjonsgivendeinntektforfolketrygden                                                                                                                                                   |
+| Selskapsmelding hendelser API                                         | skatteetaten:selskapsmelding                                                                                                                                                                         |
+| Skatteetaten-registrert selskap hendelser API                         | skatteetaten:skatteetatenregistrertselskap                                                                                                                                                           |
+| Skatteoppgjør hendelser API                                           | skatteetaten:spesifisertsummertskattegrunnlag, skatteetaten:summertskattegrunnlag, skatteetaten:beregnetskatt, skatteetaten:avregning, skatteetaten:skatteplikt, skatteetaten:pensjonsgivendeinntekt |
+| Skatteoppgjør upersonlig hendelser API                                | skatteetaten:beregnetskattupersonlig, skatteetaten:skatteberegningsgrunnlagupersonlig, skatteetaten:summertskattegrunnlagupersonlig, skatteetaten:skattepliktupersonlig                              |
+| Skattemelding fastsatt hendelser API                                  | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag                                                                                        |
+| Skattemelding upersonlig hendelser API                                | skatteetaten:skattemelding, skatteetaten:summertskattegrunnlag, skatteetaten:spesifisertsummertskattegrunnlag                                                                                        |
+| Skattemelding utkast hendelser API                                    | skatteetaten:skattemelding                                                                                                                                                                           |
+| Tilleggsskatt hendelser API                                           | skatteetaten:tilleggsskatt                                                                                                                                                                           |
+| Underenhet fra A-ordningen hendelser API                              | skatteetaten:underenhetaordningen                                                                                                                                                                    |
 
 ## Delegering
 

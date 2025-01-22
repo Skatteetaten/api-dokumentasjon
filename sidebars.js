@@ -51,7 +51,6 @@ const sidebars = {
         "api/summertskattegrunnlagupersonlig",
         "api/tilleggsskatt",
         "api/tjenestepensjonsavtale",
-        "api/trukketkildeskattpaaloenn",
         "api/underenhetaordningen",
       ],
     },
