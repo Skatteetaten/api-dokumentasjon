@@ -10,7 +10,8 @@ last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av tredjepartsopplysninger om betalinger til selvstendig næringsdrivende</Summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger om betalinger til selvstendig næringsdrivende (
+RF-1321)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
