@@ -23,6 +23,7 @@ På denne siden vil vi legge ut teknisk informasjon pr tjeneste ettersom de blir
 ## Nye API-er for re-etablering av Altinn-tjenester
 
 Følgende API-er er tilgjengelige pr. nå:
+
 * [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md)
 * [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)
 * [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)
@@ -31,4 +32,5 @@ Følgende API-er er tilgjengelige pr. nå:
 * [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)
 * [Innrapportering innskudd_utlaan_renter API](../api/innrapportering-innskuddutlaanrenter.md)
 * [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)
+* [Innrapportering betalinger_naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)
 
