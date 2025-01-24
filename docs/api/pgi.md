@@ -53,7 +53,7 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 ```json
 {
   "personidentifikator": "12345678901",
-  "inntektsaar": "2020",
+  "inntektsaar": "2024",
   "pensjonsgivendeInntekt": 100000,
   "pensjonsgivendeInntektFastland": 50000,
   "pensjonsgivendeInntektSvalbard": 50000
@@ -67,7 +67,7 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 ```xml
 <pensjonsgivendeInntekter xmlns="urn:no:skatteetaten:datasamarbeid:pensjonsgivendeinntekt:v1">
    <personidentifikator>12345678901</personidentifikator>
-   <inntektsaar>2020</inntektsaar>
+   <inntektsaar>2024</inntektsaar>
    <pensjonsgivendeInntekt>100000</pensjonsgivendeInntekt>
    <pensjonsgivendeInntektFastland>50000</pensjonsgivendeInntektFastland>
    <pensjonsgivendeInntektSvalbard>50000</pensjonsgivendeInntektSvalbard>
