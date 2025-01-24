@@ -70,20 +70,27 @@ periode med data for en skattepliktig.
 
 ```json
 {
-  "personidentifikator": "12345678910",
-  "inntektsaar": "2020",
+  "personidentifikator": "20463518646",
+  "inntektsaar": "2024",
   "skjermet": false,
-  "skatteoppgjoersdato": "2021-02-04",
+  "skatteoppgjoersdato": "2024-12-02",
   "fastland": {
-    "restskatt": 2300,
-    "avregnetForskuddstrekk": 90000,
-    "beloepTilgode": 9271429
+    "restskatt": 0,
+    "forhaandsfastsatt": true,
+    "skatteregnskapskommune": "5526",
+    "beregnetSkatt": 0,
+    "aaBetale": 0
   },
   "svalbard": {
-    "restskatt": 500,
-    "avregnetForskuddstrekk": 7000,
-    "beloepTilgode": 1529
-  }
+    "beloepTilgode": 60894,
+    "forhaandsfastsatt": false,
+    "skatteregnskapskommune": "2100",
+    "beregnetSkatt": 0,
+    "avregnetForskuddsskatt": 60000,
+    "overskytende": 60000,
+    "rentegodtgjoerelse": 894
+  },
+  "ajourholdstidspunkt": "2024-11-28T08:35:16.337Z"
 }
 ```
 
@@ -92,22 +99,29 @@ periode med data for en skattepliktig.
 Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Accept` satt til `application/xml`
 
 ```xml
-
+<?xml version='1.0' encoding='UTF-8'?>
 <avregning xmlns="urn:no:skatteetaten:datasamarbeid:avregning:v2">
-  <personidentifikator>12345678910</personidentifikator>
-  <inntektsaar>2020</inntektsaar>
+  <personidentifikator>20463518646</personidentifikator>
+  <inntektsaar>2024</inntektsaar>
   <skjermet>false</skjermet>
-  <skatteoppgjoersdato>2021-02-04</skatteoppgjoersdato>
+  <skatteoppgjoersdato>2024-12-02</skatteoppgjoersdato>
   <fastland>
-    <restskatt>2300</restskatt>
-    <avregnetForskuddstrekk>90000</avregnetForskuddstrekk>
-    <beloepTilgode>9271429</beloepTilgode>
+    <restskatt>0</restskatt>
+    <forhaandsfastsatt>true</forhaandsfastsatt>
+    <skatteregnskapskommune>5526</skatteregnskapskommune>
+    <beregnetSkatt>0</beregnetSkatt>
+    <aaBetale>0</aaBetale>
   </fastland>
   <svalbard>
-    <restskatt>500</restskatt>
-    <avregnetForskuddstrekk>7000</avregnetForskuddstrekk>
-    <beloepTilgode>1529</beloepTilgode>
+    <beloepTilgode>60894</beloepTilgode>
+    <forhaandsfastsatt>false</forhaandsfastsatt>
+    <skatteregnskapskommune>2100</skatteregnskapskommune>
+    <beregnetSkatt>0</beregnetSkatt>
+    <avregnetForskuddsskatt>60000</avregnetForskuddsskatt>
+    <overskytende>60000</overskytende>
+    <rentegodtgjoerelse>894</rentegodtgjoerelse>
   </svalbard>
+  <ajourholdstidspunkt>2024-11-28T08:35:16.337Z</ajourholdstidspunkt>
 </avregning>
 ```
 
