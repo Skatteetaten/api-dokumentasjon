@@ -70,103 +70,104 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
 
 ```json
   {
-  "personidentifikator": "12345678910",
-  "inntektsaar": 2022,
+  "personidentifikator": "08457590416",
+  "inntektsaar": 2024,
   "skjermet": false,
   "beregnetSkattFastland": {
     "skatteklasse": "1",
-    "beregnetSkatt": 120148,
-    "beregnetSkattFoerSkattefradrag": 120148,
-    "skatteregnskapskommune": "3816",
+    "beregnetSkatt": 199651,
+    "beregnetSkattFoerSkattefradrag": 199651,
+    "skatteregnskapskommune": "0301",
     "anvendtStandardfradrag": false,
     "skattOgAvgift": {
       "formuesskattTilStat": {
-        "grunnlag": 5200000,
-        "beloep": 8750
+        "grunnlag": 3542369,
+        "beloep": 5527
       },
       "inntektsskattTilKommune": {
         "kommunefordeltSkatt": [
           {
-            "kommune": "3816",
-            "grunnlag": 305050,
-            "beloep": 27025
+            "kommune": "0301",
+            "grunnlag": 582675,
+            "beloep": 54140
           }
         ],
-        "grunnlag": 305050,
-        "beloep": 27025
+        "grunnlag": 582675,
+        "beloep": 54140
       },
       "inntektsskattTilFylkeskommune": {
         "kommunefordeltSkatt": [
           {
-            "kommune": "3816",
-            "grunnlag": 305050,
-            "beloep": 5923
+            "kommune": "0301",
+            "grunnlag": 582675,
+            "beloep": 11619
           }
         ],
-        "grunnlag": 305050,
-        "beloep": 5923
+        "grunnlag": 582675,
+        "beloep": 11619
       },
       "inntektsskattTilKommuneOgFylkeskommune": {
-        "grunnlag": 305050,
-        "beloep": 32948
+        "grunnlag": 582675,
+        "beloep": 65759
       },
       "formuesskattTilKommune": {
         "kommunefordeltSkatt": [
           {
-            "kommune": "3816",
-            "grunnlag": 5200000,
-            "beloep": 24500
+            "kommune": "0301",
+            "grunnlag": 3542369,
+            "beloep": 12897
           }
         ],
-        "grunnlag": 5200000,
-        "beloep": 24500
+        "grunnlag": 3542369,
+        "beloep": 12897
       },
       "fellesskatt": {
-        "grunnlag": 305050,
-        "beloep": 21348
+        "grunnlag": 582675,
+        "beloep": 43015
       },
       "trinnskatt": {
-        "grunnlag": 350000,
-        "beloep": 4602
+        "grunnlag": 687125,
+        "beloep": 18857
       },
       "trygdeavgiftAvLoennsinntekt": {
-        "grunnlag": 350000,
-        "beloep": 28000
+        "grunnlag": 687125,
+        "beloep": 53596
       },
       "sumTrygdeavgift": {
-        "grunnlag": 350000,
-        "beloep": 28000
+        "grunnlag": 687125,
+        "beloep": 53596
       }
     },
     "oevrigeResultaterAvBeregning": {
-      "alminneligInntektFoerSaerfradrag": 355050,
-      "anvendtSaerfradrag": 50000,
-      "pensjonsgivendeInntekt": 350000,
-      "samletGrunnlagForInntektsskattTilKommuneOgFylkeskommuneStatsskattOgFellesskatt": 305050,
+      "alminneligInntektFoerSaerfradrag": 582675,
+      "pensjonsgivendeInntekt": 687125,
+      "samletGrunnlagForInntektsskattTilKommuneOgFylkeskommuneStatsskattOgFellesskatt": 582675,
       "alminneligInntektFoerFordelingsfradrag": [
         {
-          "beloep": 355050
+          "beloep": 582675,
+          "kommunenummer": "0301"
         }
       ],
       "oevrigFormue": [
         {
-          "beloep": 350000
+          "beloep": 3542369,
+          "kommunenummer": "0301"
         }
       ]
     },
     "informasjonTilSkattelister": {
-      "nettoinntekt": 355050,
-      "nettoformue": 5200000,
-      "beregnetSkatt": 120148,
+      "nettoinntekt": 582675,
+      "nettoformue": 3542369,
+      "beregnetSkatt": 199651,
       "kommune": [
-        "3816"
+        "0301"
       ]
     }
   },
-  "skatteoppgjoersdato": "2022-09-27",
-  "ajourholdstidspunkt": "2022-09-27T10:30:19.819Z",
+  "skatteoppgjoersdato": "2025-01-21",
   "anvendtTolvdelForTrinnskatt": 12,
-  "anvendtTolvdelVedArbeidsoppholdINorge": 12
+  "anvendtTolvdelVedArbeidsoppholdINorge": 12,
+  "ajourholdstidspunkt": "2025-01-27T07:18:00.528Z"
 }
 ```
 
