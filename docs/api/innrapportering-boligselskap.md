@@ -1,5 +1,5 @@
 ---
-title: Innrapportering boligselskap API (RF-1139)
+title: Innrapportering boligselskap API
 slug: /api/innrapportering-boligselskap
 folder: api
 sidebar: mydoc_sidebar
@@ -10,7 +10,7 @@ last_updated: Apr 29, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for boligselskap.</Summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for boligselskap (RF-1139)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -267,7 +267,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-Skatteetaten benytter ETM2 som testmiljø. For spesifikke URL'er, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/boligselskap-api/0.0.1).
+For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/boligselskap-api/0.0.1).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * DialogPorten
