@@ -506,11 +506,11 @@ Landkoder oppgis i [ISO 3166 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_a
  
 ### &lt;fordel&gt;
 
-|verdi| gyldig fra og med | gyldig til og med | sbl| otp |
-|--------|--------|--------|------|
-|kontantytelse|||X|X|
-|naturalytelse|||X|X|
-|utgiftsgodtgjoerelse|||X|X|
+| verdi | gyldig fra og med | gyldig til og med | sbl | otp |
+|--------|--------|--------|------|---|
+| kontantytelse | | | X | X |
+| naturalytelse | | | X | X |
+| utgiftsgodtgjoerelse | | | X | X |
 
 
 ### &lt;skatteOgAvgiftsRegel&gt;
