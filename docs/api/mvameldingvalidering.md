@@ -23,6 +23,14 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
+## Hvordan ta i bruk
+
+Valideringstjenesten er tilgjengelig på denne URLen:
+```
+POST "https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider"
+```
+Hvor innhold (http body) er mva-meldingen som xml, og med `Content-Type: application/xml` i header.
+
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvameldingvalidering`
 
@@ -32,6 +40,7 @@ For mva-meldingvalidering er det ID-porten token som gjelder:
 https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94
 
 https://docs.digdir.no/docs/idporten/oidc/oidc_protocol_id_token.html
+
 
 </TabItem>
 
