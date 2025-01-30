@@ -162,12 +162,12 @@ HEADERS:
 Med en gang mva-meldingen har blitt sendt helt inn er betalingsinformasjonen tilgjengelig for nedlastning fra altinn instansen.
 
 ```JSON
-GET {instansUrl}/{instanceGuid}
+GET {instansUrl}/data/{instanceGuid}
 HEADERS:
     "Authorization": "Bearer " + "{altinnToken}"
     "content-type": "application/json"
 ```
-Hvor {instanceGuid} er UUIDen til data elementet med dataType=betalingsinformasjon.
+Hvor `{instanceGuid}` er UUIDen til data elementet med dataType=betalingsinformasjon.
 
 
 ### Hent tilbakemelding
@@ -175,12 +175,12 @@ Når en melding er sendt inn vil instansen ha `process.currentTask.name = "Tilba
 Når den er ferdig behandlet av Skatteetaten vil den være `process.currentTask = null`, og en fil med `dataType = kvittering` lastet opp.
 
 ```JSON
-GET {instansUrl}/{instanceGuid}
+GET {instansUrl}/data/{instanceGuid}
 HEADERS:
     "Authorization": "Bearer " + "{altinnToken}"
     "content-type": "application/json"
 ```
-Hvor {instanceGuid} er UUIDen til data elementet med `dataType = kvittering` eller `dataType = valideringsresultat`.
+Hvor `{instanceGuid}` er UUIDen til data elementet med `dataType = kvittering` eller `dataType = valideringsresultat`.
 
 </TabItem>
 
