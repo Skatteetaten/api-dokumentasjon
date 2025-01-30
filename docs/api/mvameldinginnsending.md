@@ -24,7 +24,9 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvameldinginnsending`
+Følgende scope skal benyttes ved autentisering i ID-Porten: `skatteetaten:mvameldinginnsending`
+Altinn krever også at man har et Altinn scope ved kall mot altinn3-appen, de aktuelle vil være `altinn:instances.read` og `altinn:instances.write` for sluttbrukersystem.
+https://docs.altinn.studio/nb/authentication/what-do-you-get/id-porten/
 
 ## Sikkerhet
 For mva-meldinginnsending er det Altinn token som brukes:
@@ -48,8 +50,6 @@ Innsending av Mva Melding gjøres mot Skatteetatens Altinn3 Instans API for Inns
 
 Det anbefales å benytte [swagger dokumentasjonen](https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/swagger/index.html) sammen med denne API-beskrivelsen.
 
-I tillegg finnes det et Python script som kan benyttes til manuell testing under [Test](https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/swagger/index.html)
-
 Prosessen gjennomføres med en sekvens av kall mot Instans-API´et og beskrives i detalj under sekvensdiagrammet og er som følger:
 
 1. Autentisering
@@ -63,11 +63,12 @@ Prosessen gjennomføres med en sekvens av kall mot Instans-API´et og beskrives 
     * Last opp vedlegg mot Altinn3-App
 4. Fullfør utfylling mot Altinn3-App
 5. Fullfør innsending mot Altinn3-App
-6. Hent tilbakemelding mot Altinn3-App
+6. Hent betalingsinformasjon mot Altinn3-App
+7. Hent tilbakemelding mot Altinn3-App
 
 Instans API'et til Mva Melding Innsending er tilgjengelig på denne URLen:
 ```
-instansApiUrl = "https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances"
+instansApiUrl = "https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances"
 ```
 I følgende sekvensdiagram vil applikasjonsUrl'en være skjult, så hvis det er skrevet ``` POST: /intances/ ``` så er det implisitt ``` POST: instansApiUrl ```
 
@@ -157,8 +158,29 @@ HEADERS:
     "content-type": "application/json"
 ```
 
-### Hent tilbakemelding
+### Hent betalingsinformasjon
+Med en gang mva-meldingen har blitt sendt helt inn er betalingsinformasjonen tilgjengelig for nedlastning fra altinn instansen.
 
+```JSON
+GET {instansUrl}/{instanceGuid}
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "application/json"
+```
+Hvor {instanceGuid} er UUIDen til data elementet med dataType=betalingsinformasjon.
+
+
+### Hent tilbakemelding
+Når en melding er sendt inn vil instansen ha `process.currentTask.name = "Tilbakemelding"`. 
+Når den er ferdig behandlet av Skatteetaten vil den være `process.currentTask = null`, og en fil med `dataType = kvittering` lastet opp.
+
+```JSON
+GET {instansUrl}/{instanceGuid}
+HEADERS:
+    "Authorization": "Bearer " + "{altinnToken}"
+    "content-type": "application/json"
+```
+Hvor {instanceGuid} er UUIDen til data elementet med `dataType = kvittering` eller `dataType = valideringsresultat`.
 
 </TabItem>
 
