@@ -60,16 +60,18 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
 
 ```json
 {
-  "alderIInntektsaar": 56,
-  "inntektsaar": "2021",
-  "personidentifikator": "23117323456",
-  "saerskiltSkatteplikt": [
-    "skattepliktEtterPetroleumsskatteloven"
-  ],
-  "skattepliktTilNorge": "global",
-  "skattepliktTilSvalbard": "begrenset",
-  "skattested": "1234",
-  "skjermet": false
+  "personidentifikator": "08457590416",
+  "inntektsaar": 2024,
+  "skjermet": false,
+  "skattested": "0301",
+  "skattestedITiltakssone": false,
+  "personligSkattesubjekt": {
+    "skattepliktTilNorge": "global",
+    "tolvdelVedArbeidsoppholdINorge": 12,
+    "tolvdelForTrinnskatt": 12,
+    "alderIInntektsaar": 49
+  },
+  "ajourholdstidspunkt": "2025-01-27T07:18:00.528Z"
 }
 ```
 
