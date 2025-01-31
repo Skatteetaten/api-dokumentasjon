@@ -21,7 +21,6 @@ For generell informasjon om tjenestene se egne sider om:
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
-* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Hvordan ta i bruk
 
