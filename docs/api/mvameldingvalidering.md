@@ -4,13 +4,13 @@ slug: /api/mvameldingvalidering
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, Mva-melding validering, Mva-melding]
+tags: [API, Mva-melding validering, Mva-melding]
 keywords: [mva]
 last_updated: Feb 21, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten brukes til validering av innsendt  Mva-melding.</Summary>
+<Summary>Tjenesten brukes til validering av innsendt Mva-melding.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -40,7 +40,6 @@ https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94
 
 https://docs.digdir.no/docs/idporten/oidc/oidc_protocol_id_token.html
 
-
 </TabItem>
 
 <TabItem headerText="Feilkoder" itemKey="itemKey-2">
@@ -69,7 +68,6 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Tjeneste |	Url |
 |----------|-------|
 | Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider |
-
 
   
 </TabItem>
@@ -281,8 +279,6 @@ MVA_MELDINGSINNHOLD_SUM_MVA_FEIL_SUMMERING_AV_AVGIFTLINJER(
     
 )
 ```
-
-
 
 </TabItem>
 </Tabs>
