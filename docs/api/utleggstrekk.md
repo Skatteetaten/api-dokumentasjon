@@ -4,7 +4,7 @@ slug: /api/utleggstrekk
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, utleggstrekk, a-ordningen]
+tags: [API,utleggstrekk,a-ordningen]
 last_updated: Feb 03, 2025
 hide_table_of_contents: true
 ---
