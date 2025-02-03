@@ -25,7 +25,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:opplysningspliktigd`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:opplysningspliktig`
 
 ## Delegering
 
