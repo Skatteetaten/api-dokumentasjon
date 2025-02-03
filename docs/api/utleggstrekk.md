@@ -9,7 +9,7 @@ last_updated: Feb 03, 2025
 hide_table_of_contents: true
 ---
 
-<Summary><TODO: Legg inn beskrivelse></Summary>
+<Summary>TODO: Legg inn beskrivelse</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -59,7 +59,8 @@ Datatjenestebeskrivelse kommer i Felles datakatalog.
 
 ## JSON
 
-<TODO: må oppdateres>
+TODO: Må oppdateres
+
 ```json
 {
   "inntektsmottakerOgArbeidsgiver": [
@@ -82,7 +83,7 @@ Datatjenestebeskrivelse kommer i Felles datakatalog.
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
-<TODO: må oppdateres>
+TODO: Må oppdateres
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
