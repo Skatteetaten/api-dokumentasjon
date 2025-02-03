@@ -4,7 +4,7 @@ slug: /api/opplysningspliktig
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, opplysningspliktig, a-ordningen]
+tags: [API,opplysningspliktig,a-ordningen]
 last_updated: Feb 03, 2025
 hide_table_of_contents: true
 ---
@@ -60,6 +60,7 @@ Datatjenestebeskrivelse kommer i Felles datakatalog.
 ## JSON
 
 TODO: Må oppdateres
+
 ```json
 {
   "inntektsmottakerOgArbeidsgiver": [
