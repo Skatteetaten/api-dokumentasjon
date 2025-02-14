@@ -68,13 +68,12 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Pensjonsgivende inntek
 
 ```json
 {
-  "norskPersonidentifikator": "28837598585",
-  "inntektsaar": 2023,
+  "norskPersonidentifikator": "06489127944",
+  "inntektsaar": 2024,
   "pensjonsgivendeInntekt": [
     {
-      "datoForFastsetting": "2024-02-15",
-      "skatteordning": "FASTLAND",
-      "pensjonsgivendeInntektAvLoennsinntekt": 67225
+      "datoForFastsetting": "2025-02-05",
+      "skatteordning": "FASTLAND"
     }
   ]
 }
