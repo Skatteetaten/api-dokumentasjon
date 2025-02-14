@@ -1,5 +1,5 @@
 ---
-title: Innrapportering aksjonaerregisteroppgave API
+title: Innrapportering aksjonærregisteroppgave API
 slug: /api/innrapportering-aksjonaerregisteroppgave
 folder: api
 sidebar: mydoc_sidebar
