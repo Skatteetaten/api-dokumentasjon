@@ -340,7 +340,7 @@ Det er få endringer i forbindelse med årets revisjon i Summert skattegrunnlag 
 | 18.12.2024    | Første versjon av endringer i kodeliste for inntektsår 2024              |
 | Medio januar  | Oppdatert versjon av endringer i kodeliste for inntektsår 2024           |
 | Medio februar | Endelig versjon av kodeliste for inntektsår 2024                         |
-| Medio februar | Støtte for inntektsår 2024 i test for alle stadier                       |
+| 14.02.2025 | Støtte for inntektsår 2024 i test for alle stadier                       |
 | 12.03.2025    | Første utkast for inntektsår 2024 tilgjengelig i delingstjenesten        |
 | 22.03.2025    | Første skatteoppgjør for inntektsår 2024 tilgjengelig i delingstjenesten |
 
