@@ -346,13 +346,20 @@ Det er få endringer i forbindelse med årets revisjon i Summert skattegrunnlag 
 
 ## Nye summerte skattegrunnlag fra 2024
 
-| Teknisk navn | Kategori |
-|--------------|---------|
-| gjeldFraInkassoselskap | formuesfradrag |
-| minstefradragILivrenteTilBarn | inntektsfradrag |
-| omstillingsstoenad | inntekt |
-| skattepliktigInntektVedSalgAvOverskuddsstroem | inntekt	|
-| saerskiltFradragIBarnepensjon | inntektsfradrag |
+| Teknisk navn | Kategori | SBL |
+|--------------|---------|---|
+| gjeldFraInkassoselskap | formuesfradrag | x |
+| minstefradragILivrenteTilBarn | inntektsfradrag | |
+| latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | inntekt | x |
+| latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | inntektsfradrag | x |
+| latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntekt | x |
+| latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntekt | x |
+| latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntekt | x |
+| latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x |
+| latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x |
+| latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x |
+| omstillingsstoenad | inntekt | x |
+| skattepliktigInntektVedSalgAvOverskuddsstroem | inntekt	| x |
 
 ## Summerte skattegrunnlag som utgår fra 2024
 
