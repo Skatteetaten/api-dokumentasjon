@@ -37,6 +37,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang, som er ny funksjonalitet i Maskinporten levert av Digdir. 
 Informasjon vedr. dette finnes [her](../om/systemtilgang.md). 
 
+For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
+```JSON
+"Rights": [
+    {
+      "Resource": [
+        {
+          "value": "ske-innrapportering-pass-stell-barn",
+          "id": "urn:altinn:resource"
+        }
+      ]
+    }
+  ]
+```
+
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
