@@ -12,7 +12,10 @@ hide_table_of_contents: true
 
 ## Innrapportering av A-ordningen
 
-Dokumentasjon for innrapportering av A-meldingen dokumenteres i dag på [Altinn digital](https://www.altinndigital.no/produkter/altinn-api-for-datasystem/tjenesteoversikt/a-meldingen/)                                                      
+Dokumentasjon for innrapportering av A-meldingen dokumenteres i dag på [Altinn digital](https://www.altinndigital.no/produkter/altinn-api-for-datasystem/tjenesteoversikt/a-meldingen/)                                          
+## Re-etablering av Altinn-tjenester
+
+Arbeidet med å forberede overgangen fra Altinn II til Altinn 3 pågår. I Skatteetaten har vi startet et større arbeid for å flytte våre skjema og rapporteringsløsninger fra Altinn til API'er direkte mot Skatteetaten. Dette vil også gjelde dagens A-melding - innsending fra system (A02). Se mer informasjon om re-etableringen og testplan på [skatteetaten.no](https://www.skatteetaten.no/bedrift-og-organisasjon/reetableringaltinn/).
   
 ## Deling fra A-ordningen med eieretatene
 
