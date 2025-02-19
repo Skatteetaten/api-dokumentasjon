@@ -4,7 +4,7 @@ slug: /api/skattekorttilarbeidsgiver
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API,Skattekort,Arbeidgiver]
+tags: [API,Skattekort,Arbeidgiver,Forskudd]
 keywords: [skattekort]
 last_updated: Feb 19, 2025
 hide_table_of_contents: true
