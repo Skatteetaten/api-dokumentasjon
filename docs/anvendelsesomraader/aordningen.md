@@ -14,7 +14,7 @@ hide_table_of_contents: true
 
 Dokumentasjon for innrapportering av A-meldingen dokumenteres i dag på [Altinn digital](https://www.altinndigital.no/produkter/altinn-api-for-datasystem/tjenesteoversikt/a-meldingen/)                                                      
   
-## Modernisering av deling fra A-ordningen
+## Deling fra A-ordningen med eieretatene
 
 Det pågår modernisering av deling av data fra A-ordningen fra Skatteetaten til de andre eieretatene, NAV og SSB.
 Fremover vil deling med eieretatene skje gjennom API-ene:
