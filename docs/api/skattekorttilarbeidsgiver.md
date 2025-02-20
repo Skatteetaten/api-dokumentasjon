@@ -90,7 +90,7 @@ Legg inn informasjon om f.eks. hvordan finne testdata med Tenor.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om dette SKattekort til arbeidsgiver API, kan du sende oss e-post: [TODO](mailto:TODO)  
+Har du spørsmål til Skatteetaten om dette SKattekort til arbeidsgiver API, kan du sende oss e-post: forskudd@skatteetaten.no  
   
 </TabItem>
 </Tabs>
