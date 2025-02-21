@@ -353,13 +353,13 @@ Det er få endringer i forbindelse med årets revisjon i Summert skattegrunnlag 
 | omstillingsstoenad | inntekt | x | som fra før har etterlattepensjonFraFolketrygden |
 | skattepliktigInntektVedSalgAvOverskuddsstroem | inntekt	| x | 	som fra før har nettoinntektVedUtleieAvFastEiendomMv |
 | latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting|
-| latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
-| latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
-| latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetalingAvSkatt | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
 | latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetalingAvSkatt | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
 
 
 ## Summerte skattegrunnlag som utgår fra 2024
