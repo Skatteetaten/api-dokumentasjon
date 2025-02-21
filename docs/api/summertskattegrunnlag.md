@@ -346,20 +346,21 @@ Det er få endringer i forbindelse med årets revisjon i Summert skattegrunnlag 
 
 ## Nye summerte skattegrunnlag fra 2024
 
-| Teknisk navn | Kategori | SBL |
-|--------------|---------|---|
-| gjeldFraInkassoselskap | formuesfradrag | x |
-| minstefradragILivrenteTilBarn | inntektsfradrag | |
-| latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | inntekt | x |
-| latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | inntektsfradrag | x |
-| latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntekt | x |
-| latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntekt | x |
-| latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntekt | x |
-| latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x |
-| latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x |
-| latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x |
-| omstillingsstoenad | inntekt | x |
-| skattepliktigInntektVedSalgAvOverskuddsstroem | inntekt	| x |
+| Teknisk navn | Kategori | SBL | Blir tilgjengelig i rettighetspakker |
+|--------------|---------|---|---|
+| gjeldFraInkassoselskap | formuesfradrag | x | som fra før har gjeldIInnenlandskeBanker |
+| minstefradragILivrenteTilBarn | inntektsfradrag | | som fra før har minstefradragIBarnepensjon |
+| omstillingsstoenad | inntekt | x | som fra før har etterlattepensjonFraFolketrygden |
+| skattepliktigInntektVedSalgAvOverskuddsstroem | inntekt	| x | 	som fra før har nettoinntektVedUtleieAvFastEiendomMv |
+| latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting|
+| latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+
 
 ## Summerte skattegrunnlag som utgår fra 2024
 
