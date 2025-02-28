@@ -48,3 +48,7 @@
 .theme-doc-sidebar-container {
   margin-top: 0.8rem !important;
 }
+
+.hidden {
+  display: none !important;
+}
