@@ -145,18 +145,18 @@ I 2024 vil de forskjellige summerte skattegrunnlagene kunne få spesifikasjoner 
 <tr><td><a href="https://https://data.skatteetaten.no/web/datakatalog/begrep/c1a3afdd-7452-5a4b-95f2-f3cfe79c4e6b">latentEllerRealisertTapPaaAnnetFinansproduktMvVedUtflytting</a></td><td>inntektsfradrag</td><td>Latent eller realisert tap på verdipapirer eller opsjoner i arbeidsforhold ved utflytting</td><td></td><td></td></tr>
 <tr><td>latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting</td><td>inntekt</td><td></td><td></td><td></td></tr>
 <tr><td>latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
-<tr><td>latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling</td><td>inntekt</td><td></td><td></td><td></td></tr>
-<tr><td>latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetaling</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
-<tr><td>latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling</td><td>inntekt</td><td></td><td></td><td></td></tr>
-<tr><td>latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetaling</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
-<tr><td>latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling</td><td>inntekt</td><td></td><td></td><td></td></tr>
-<tr><td>latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetaling</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
-<tr><td>latentGevinstPaaAksjeAndelMvVedUtflyttingMedUtsattBetaling</td><td>inntekt</td><td></td><td></td><td></td></tr>
-<tr><td>latentTapPaaAksjeAndelMvVedUtflyttingMedUtsattBetaling</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
-<tr><td>latentGevinstPaaAnnetFinansproduktMvVedUtflyttingMedUtsattBetaling</td><td>inntekt</td><td></td><td></td><td></td></tr>
-<tr><td>latentTapPaaAnnetFinansproduktMvVedUtflyttingMedUtsattBetaling</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
-<tr><td>latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingMedUtsattBetaling</td><td>inntekt</td><td></td><td></td><td></td></tr>
-<tr><td>latentTapPaaOpsjonIArbeidsforholdVedUtflyttingMedUtsattBetaling</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
+<tr><td>latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt</td><td>inntekt</td><td></td><td></td><td></td></tr>
+<tr><td>latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
+<tr><td>latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetalingAvSkatt</td><td>inntekt</td><td></td><td></td><td></td></tr>
+<tr><td>latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetalingAvSkatt</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
+<tr><td>latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetalingAvSkatt</td><td>inntekt</td><td></td><td></td><td></td></tr>
+<tr><td>latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetalingAvSkatt</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
+<tr><td>latentGevinstPaaAksjeAndelMvVedUtflyttingMedUtsattBetalingAvSkatt</td><td>inntekt</td><td></td><td></td><td></td></tr>
+<tr><td>latentTapPaaAksjeAndelMvVedUtflyttingMedUtsattBetalingAvSkatt</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
+<tr><td>latentGevinstPaaAnnetFinansproduktMvVedUtflyttingMedUtsattBetalingAvSkatt</td><td>inntekt</td><td></td><td></td><td></td></tr>
+<tr><td>latentTapPaaAnnetFinansproduktMvVedUtflyttingMedUtsattBetalingAvSkatt</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
+<tr><td>latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingMedUtsattBetalingAvSkatt</td><td>inntekt</td><td></td><td></td><td></td></tr>
+<tr><td>latentTapPaaOpsjonIArbeidsforholdVedUtflyttingMedUtsattBetalingAvSkatt</td><td>inntektsfradrag</td><td></td><td></td><td></td></tr>
 <tr><td><a href="https://https://data.skatteetaten.no/web/datakatalog/begrep/46f4d74e-4c6c-11e8-bb3e-005056821322">livrenterIArbeidsforhold</a></td><td>inntekt</td><td>Livrenter i arbeidsforhold og fortsettelsesforsikringer</td><td></td><td></td></tr>
 <tr><td><a href="https://https://data.skatteetaten.no/web/datakatalog/begrep/b57408d8-d96a-11e6-8d9b-005056821322">livrenterUtenforArbeidsforhold</a></td><td>inntekt</td><td>Terminutbetaling fra livrente</td><td>Livsforsikring</td><td></td></tr>
 <tr><td><a href="https://https://data.skatteetaten.no/web/datakatalog/begrep/6c325d43-ff95-11e8-a756-005056823b15">loennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt</a></td><td>inntekt</td><td>Lønn og naturalytelser med mer, uten trygdeavgift</td><td></td><td></td></tr>
