@@ -3,6 +3,7 @@ title: Systembruker
 slug: /om/systembruker
 folder: om
 sidebar: mydoc_sidebar
+sidebar_class_name: hidden #
 datatable: true
 tags: [Systembruker,Systemtilgang,Sikkerhet]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
@@ -57,6 +58,7 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
     "allowedRedirectUrls": []
 }
 ```
+
 5.	*Kunden må gi systemet tilgang:* Du kan nå be kunden om å opprette en systemtilgang gjennom å opprette en [tilgangsforespørsel](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#sende-forespørsel-om-opprettelse-av-systembruker-til-virksomhet)
 
 Eksempel på registrering:
@@ -78,6 +80,7 @@ Eksempel på registrering:
   "redirectUrl": "https://skatteetaten.no/sbs"
 }
 ```
+
 6.	*Maskinporten autentisering:* Når systemet har gitt tilgang kan du få utstedt et Maskinporten token med systembruker gjennom klienten som ble opprettet i punkt 3. Token må inneholde Skatteetatens scope og systembrukerinformasjon. 
 
 7.	*Bruke Skatteetatens API:* Tilslutt kan du kalle Skatteeatens API med tokenet fra punkt 6. i `Authorization`-headeren.
