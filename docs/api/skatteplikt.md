@@ -98,7 +98,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/38123fc0-a4f1-36ee-8908-b6007f053860) i Felles datakatalog.
+[![Skatteplikt](../../static/download/Informasjonsmodell_Skatteplikt.png)](../../static/download/Informasjonsmodell_Skatteplikt.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
