@@ -4,8 +4,8 @@ slug: /api/opplysningspliktig
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [API,opplysningspliktig,a-ordningen]
-last_updated: Feb 03, 2025
+tags: [API, opplysningspliktig, a-ordningen]
+last_updated: Mar 05, 2025
 hide_table_of_contents: true
 ---
 
@@ -16,12 +16,12 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
-* [Feilhåndtering](../om/feil.md)
-* [Versjonering](../om/versjoner.md)
-* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
+- [Bruk av tjenestene](../om/bruk.md)
+- [Sikkerhetsmekansimer](../om/sikkerhet.md)
+- [Rettighetspakker](../om/rettighetspakker.md)
+- [Feilhåndtering](../om/feil.md)
+- [Versjonering](../om/versjoner.md)
+- [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 
@@ -40,8 +40,8 @@ SwaggerHub.
 
 ## Rettighetspakker
 
-| Navn på rettighetspakke |	
-|-------------------------|
+| Navn på rettighetspakke |
+| ----------------------- |
 | ssb                     |
 
 ## Støttetjenester
@@ -55,35 +55,37 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 Datatjenestebeskrivelse kommer i Felles datakatalog.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
+<TabItem headerText="Eksempler" itemKey="itemKey-2">
 
 ## JSON
 
-TODO: Må oppdateres
-
 ```json
 {
-  "inntektsmottakerOgArbeidsgiver": [
+  "norskIdentifikator": "311117815",
+  "periodeOgOpplysningspliktigInformasjon": [
     {
-      "kalendermaaned": "2023-08",
-      "aggregatId": 2,
-      "norskIdentifikator": "01916499716",
-      "opplysningspliktig": "314086945",
-      "underenhet": "315608589",
-      "kildesystem": "testdatagenerator-rst-ekstern-deling",
-      "opptjeningsgrunnlag": [
-        {}
-      ]
+      "kalendermaaned": "2024-08",
+      "ajourholdstidspunkt": "2024-08-16T08:39:44.466",
+      "betalingsinformasjon": {
+        "sumArbeidsgiveravgift": 4213,
+        "sumFinansskattLoenn": 6096,
+        "sumUtleggstrekk": 1421,
+        "sumForskuddstrekk": 26411
+      },
+      "betalingsinformasjonForForenkletOrdning": [],
+      "pensjonsinnretning": [
+        {
+          "identifikator": "487247384"
+        }
+      ],
+      "avvik": []
     }
   ]
 }
-
 ```
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
-
-TODO: Må oppdateres
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
@@ -91,16 +93,16 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
 | Feilkode | HTTP Statuskode | Feilområde                                                                    |
-|----------|-----------------|-------------------------------------------------------------------------------|
-| OAF-001  | 500             | Uventet feil på tjenesten.                                                    |
-| OAF-002  | 500             | Uventet feil i et bakenforliggende system.                                    |
-| OAF-003  | 404             | Ukjent url benyttet.                                                          |
-| OAF-004  | 401             | Feil i forbindelse med autentisering.                                         |
-| OAF-005  | 403             | Feil i forbindelse med autorisering.                                          |
-| OAF-006  | 400             | Feil i forbindelse med validering av inputdata.                               |
-| OAF-007  | 404             | Fant ikke opplysninger om arbeidsforhold for angitt identifikator og periode. |
-| OAF-008  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                    |
-| OAF-009  | 406             | Opplysninger om arbeidsforhold er slettet for periode.                        |
+| -------- | --------------- | ----------------------------------------------------------------------------- |
+| OPP-001  | 500             | Uventet feil på tjenesten.                                                    |
+| OPP-002  | 500             | Uventet feil i et bakenforliggende system.                                    |
+| OPP-003  | 404             | Ukjent url benyttet.                                                          |
+| OPP-004  | 401             | Feil i forbindelse med autentisering.                                         |
+| OPP-005  | 403             | Feil i forbindelse med autorisering.                                          |
+| OPP-006  | 400             | Feil i forbindelse med validering av inputdata.                               |
+| OPP-007  | 404             | Fant ikke opplysninger om arbeidsforhold for angitt identifikator og periode. |
+| OPP-008  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                    |
+| OPP-009  | 406             | Opplysninger om arbeidsforhold er slettet for periode.                        |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
