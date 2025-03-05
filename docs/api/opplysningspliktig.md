@@ -107,7 +107,13 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Informasjonsmodell kommer i Felles datakatalog.
+## Oppslagstjeneste
+
+[![Informasjonsmodell](../../static/download/Informasjonsmodell_Opplysningspliktig.png)](../../static/download/Informasjonsmodell_Opplysningspliktig.png)
+
+## Hendelsesliste
+
+[![Informasjonsmodell](../../static/download/Informasjonsmodell_Opplysningspliktig_hendelser.png)](../../static/download/Informasjonsmodell_Opplysningspliktig_hendelser.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
