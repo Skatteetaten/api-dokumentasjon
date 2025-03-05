@@ -14,6 +14,8 @@ hide_table_of_contents: true
 
 På denne siden sammenfattes stegene som må til for å komme i gang med systembruker. 
 
+## Steg for steg
+
 1.	**Maskinporten onboarding:** For å bruke både Skatteetatens og Digdirs API trenger du tilgang til Maskinporten for autentiseringen. Det gjøres gjennom å kontakte Digdir og følge deres [onboardingsprosess](https://onboarding.maskinporten.no/). OBS! Det kan være at du ikke har tilgang til å bruke denne løsningen og at du derfor må etterspørre denne i din virksomhet.
 
 2.	**API-tilganger**: Så trenger du tilgang til API (scopes) både hos Skatteetaten og Digdir: 
@@ -115,7 +117,7 @@ Eksempel på et slikt token (dekodet vha. [jwt.io](https://jwt.io/) ) - *Token s
 ```
 
 7.	**Bruke Skatteetatens API:** Når dette er gjort kan du kalle Skatteeatens API med tokenet fra punkt 6. i `Authorization`-headeren. Merk at et Maskinporten kan gjenbrukes over utløpstiden (som oftest 2 min), 
- 
-Nyttige adresser i denne prosessen:
+
+## Nyttige ressurser i denne prosessen:
 * [Digdirs service desk](https://samarbeid.digdir.no/digital-postkasse/kontakt-oss/83): - for feilmeldinger knyttet til Maskinporten,IdPorten mm.
 * [Altinn service desk](https://altinn.studio/contact): - sprøsmål og feilmeldinger knyttet til Altinn autorisasjon, Dialogporten,Systemregister m.m.
