@@ -35,7 +35,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Opplysningspliktig A
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/opplysningspliktigd-api/) på
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/opplysningspliktig-api/) på
 SwaggerHub.
 
 ## Rettighetspakker
