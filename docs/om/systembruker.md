@@ -26,9 +26,9 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
       -	`altinn:authentication/systemuser.request.write`
   	   - `digdir:dialogporten`
 
-3.	**Maskinporten klient:** Når du har fått tilgang til scopene må det lages en Maskinporten-klient (også kjent som *Integrasjon* i Digdirs beskrivelser) – du kan opprette dennne enten i Digdirs [Samarbeidsportal](https://sjolvbetjening.test.samarbeid.digdir.no/auth/login), [Forenklet onboarding](https://onboarding.maskinporten.no/)(se punkt 1) eller ved bruk av API. Maskinporten-klienten du har satt opp, må få tildelt scopene ovenfor og kan deretter benyttes for å få utstedt token/autentiseringsbevis.
+3.	**Maskinporten klient:** Når du har fått tilgang til scopene må det lages en Maskinporten-klient (også kjent som *Integrasjon* i Digdirs beskrivelser) – du kan opprette dennne enten i Digdirs [Samarbeidsportal](https://sjolvbetjening.test.samarbeid.digdir.no/auth/login), [Forenklet onboarding](https://onboarding.maskinporten.no/) (se punkt 1) eller ved bruk av API. Maskinporten-klienten du har satt opp, må få tildelt scopene ovenfor og kan deretter benyttes for å få utstedt token/autentiseringsbevis.
 
-4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via API (se lenke). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (rights), som skal oppgis er beskrevet i API-dokumentasjon hos Skatteetaten.
+4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via [API](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#registrere-system). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (rights), som skal oppgis er beskrevet i API-dokumentasjon hos Skatteetaten.
 
     Eksempel på registrering:
 ```json
