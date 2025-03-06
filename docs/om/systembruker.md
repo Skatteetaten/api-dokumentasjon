@@ -119,5 +119,5 @@ Eksempel på et slikt token (dekodet vha. [jwt.io](https://jwt.io/) ) - *Token s
 7.	**Bruke Skatteetatens API:** Når dette er gjort, kan du kalle Skatteeatens API med tokenet fra punkt 6. i `Authorization`-headeren. Merk at et Maskinporten kan gjenbrukes over utløpstiden (som oftest 2 min), 
 
 ## Nyttige ressurser i denne prosessen:
-* [Digdirs service desk](https://samarbeid.digdir.no/digital-postkasse/kontakt-oss/83): - for feilmeldinger knyttet til Maskinporten,IdPorten mm.
-* [Altinn service desk](https://altinn.studio/contact): - spørsmål og feilmeldinger knyttet til Altinn autorisasjon, Dialogporten, Systemregister m.m.
+* [Digdirs service desk](https://samarbeid.digdir.no/digital-postkasse/kontakt-oss/83): - for spørsmål og feilmeldinger knyttet til Maskinporten, IdPorten m.m.
+* [Altinn service desk](https://altinn.studio/contact): - for spørsmål og feilmeldinger knyttet til Altinn autorisasjon, Dialogporten, Systemregister m.m.
