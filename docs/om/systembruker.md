@@ -83,7 +83,7 @@ Eksempel på registrering:
 }
 ```
 
-- 6.	**Maskinporten autentisering:** Når kunden har opprettet en systemtilgang til deg som systemleverandør, kan du kan du få utstedt et [Maskinporten-token](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument) med systembruker gjennom klienten som ble opprettet i punkt 3. Token må inneholde Skatteetatens scope og systembrukerinformasjon.
+6.	**Maskinporten autentisering:** Når kunden har opprettet en systemtilgang til deg som systemleverandør, kan du kan du få utstedt et [Maskinporten-token](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument) med systembruker gjennom klienten som ble opprettet i punkt 3. Token må inneholde Skatteetatens scope og systembrukerinformasjon.
 
 Eksempel på et slikt token (dekodet vha. [jwt.io](https://jwt.io/) ) - *Token skal sendes i sin enkodete form - utpakket her for lesbarhet.*
 ```json
