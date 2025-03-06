@@ -19,7 +19,7 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
 1.	**Maskinporten onboarding:** For å bruke både Skatteetatens og Digdirs API trenger du tilgang til Maskinporten for autentiseringen. Det gjøres gjennom å kontakte Digdir og følge deres [onboardingsprosess](https://onboarding.maskinporten.no/). OBS! Det kan være at du ikke har tilgang til å bruke denne løsningen og at du derfor må etterspørre denne i din virksomhet.
 
 2.	**API-tilganger**: Så trenger du tilgang til API (scopes) både hos Skatteetaten og Digdir: 
-  * Skatteetaten må gi tilgang til vårt API f.eks. Krav og betalinger eller Innrapportering Boligselskap, og du kan skaffe deg tilgang [her](../om.md). Du finner informasjon om scope det skal bes tilgang til i dokumentasjonen for det enkelte API.
+  * Skatteetaten må gi tilgang til vårt API f.eks. Krav og betalinger eller Innrapportering Boligselskap, og du kan skaffe deg tilgang [her](../komigang.md). Du finner informasjon om scope det skal bes tilgang til i dokumentasjonen for det enkelte API.
   *	Digdir(inkl Altinn) må gi tilgang til sine API. Det må bestilles av dem (Lenke). Sørg for å bestille følgende tilganger:
       -	`altinn:authentication/systemregister.write`
       -	`altinn:authentication/systemuser.request.read`
