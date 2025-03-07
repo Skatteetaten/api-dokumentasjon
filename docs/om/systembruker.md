@@ -8,7 +8,6 @@ datatable: true
 tags: [Systembruker,Systemtilgang,Sikkerhet]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Feb 28, 2025
-hide_table_of_contents: false
 ---
 <Summary> Bruk av systembruker for Sluttbrukersystemer.</Summary>
 
@@ -121,3 +120,4 @@ Eksempel på et slikt token (dekodet vha. [jwt.io](https://jwt.io/) ) - *Token s
 ## Nyttige ressurser i denne prosessen:
 * [Digdirs service desk](https://samarbeid.digdir.no/digital-postkasse/kontakt-oss/83): - for spørsmål og feilmeldinger knyttet til Maskinporten, IdPorten m.m.
 * [Altinn service desk](https://altinn.studio/contact): - for spørsmål og feilmeldinger knyttet til Altinn autorisasjon, Dialogporten, Systemregister m.m.
+* [Systembruker for virksomheter](https://docs.altinn.studio/authentication/systemauthentication/) - overordnet beskrivelse av Systembruker
