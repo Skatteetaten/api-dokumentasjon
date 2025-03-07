@@ -3,11 +3,11 @@ title: Systembruker
 slug: /om/systembruker
 folder: om
 sidebar: mydoc_sidebar
-sidebar_class_name: hidden #
 datatable: true
 tags: [Systembruker,Systemtilgang,Sikkerhet]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Feb 28, 2025
+hide_table_of_contents: true
 ---
 <Summary> Bruk av systembruker for Sluttbrukersystemer.</Summary>
 
