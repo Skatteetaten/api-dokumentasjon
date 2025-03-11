@@ -63,10 +63,10 @@ API-et for boligsameie har bare ett endepunkt:
 * __POST innsending__: Mottar tredjepartsopplysninger for boligsameier. Ett kall mot API-et er en rapportering for et
   boligsameie gitt av en oppgavegiver og som gjelder et inntektsår.
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](boligsameie?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligsameie?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](boligsameie?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-boligsameie?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 

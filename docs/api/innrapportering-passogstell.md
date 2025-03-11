@@ -64,10 +64,10 @@ API-et for innrapportering av pass og stell av barn har to endepunkter
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](passogstell?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-passogstell?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](passogstell?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-passogstell?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 

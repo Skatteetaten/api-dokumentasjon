@@ -64,10 +64,10 @@ API-et for innrapportering av tilskudd til vitenskapelig forskning eller yrkesop
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](tilskudd?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-tilskudd?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](tilskudd?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-tilskudd?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
