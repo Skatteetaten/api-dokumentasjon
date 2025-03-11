@@ -44,6 +44,7 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/arbeid
 | Navn på rettighetspakke |
 |-------------------------|
 | nav                     |
+| ssb                     |
 
 ## Datakatalog
 
