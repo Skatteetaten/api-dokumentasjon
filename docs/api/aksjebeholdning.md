@@ -43,8 +43,11 @@ på SwaggerHub.
 
 | Navn på rettighetspakke             |	
 |-------------------------------------|
-| offentligmedhjemmel                 |
+| finanstilsynetkontroll |
 | fiskeridirektoratetkontrollmanntall |
+| fiskeridirektoratetkontroll |
+| kredittopplysning |
+| offentligmedhjemmel |
 
 ## Datakatalog
 
