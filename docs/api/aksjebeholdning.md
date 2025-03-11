@@ -44,8 +44,8 @@ på SwaggerHub.
 | Navn på rettighetspakke             |	
 |-------------------------------------|
 | finanstilsynetkontroll |
-| fiskeridirektoratetkontrollmanntall |
 | fiskeridirektoratetkontroll |
+| fiskeridirektoratetkontrollmanntall |
 | kredittopplysning |
 | offentligmedhjemmel |
 
