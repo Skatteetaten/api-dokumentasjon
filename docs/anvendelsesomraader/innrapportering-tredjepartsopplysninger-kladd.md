@@ -3,6 +3,7 @@ title: Innrapportering av tredjepartsopplysninger
 slug: /anvendelsesomraader/innrapportering-tredjepartsopplysninger
 folder: anvendelsesomraader
 sidebar: mydoc_sidebar
+sidebar_class_name: hidden
 datatable: true
 tags: [ altinn, innrapportering, tredjepartsopplysninger, grunnlagsdata ]
 last_updated: Sept 24, 2024
