@@ -35,9 +35,8 @@ Her er en oversikt over stegene som må til for å kunne ta i bruk nye tjenester
 4. **Integrasjon mot testmiljø:** Følg dokumentasjonen for den enkelte tjenesten for å sette opp integrasjonen mot vårt testmiljø. Her vil du finne teknisk spesifikasjon og link til **Swaggerhub** hvor du finner mer detaljert informasjon om api'et.
    Vårt testmiljø krever utelukkende syntetiske data, se mer informasjon under test-fanen for den enkelte tjenesten.
 
-5. **Test:** Vi oppfordrer til å verifisere alle deler av integrajonen i test i god til før man benytter tjenestene i produksjon.
+5. **Test:** Vi oppfordrer til å verifisere alle deler av integrasjonen i test i god til før man benytter tjenestene i produksjon.
 
-6. **Integrasjon mot produksjon:** TODO HVA TRENGER MAN HER. AVTALER ETC?
 
 ## Nye API-er for re-etablering av Altinn-tjenester
 
