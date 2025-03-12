@@ -4,7 +4,7 @@ slug: /api/innrapportering-skattefrieutbetalinger
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, skattefrieutbetalinger, vitenskapelig, forskning, yrkesopplæring ]
+tags: [ API, skattefrieutbetalinger, skattegrunnlag,  tredjepartsopplysninger, arbeidogvelferd]
 keywords: [ grunnlagsdata ]
 last_updated: Mar 03, 2025
 hide_table_of_contents: true
