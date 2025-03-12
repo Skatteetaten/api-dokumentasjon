@@ -64,10 +64,10 @@ API-et for innrapportering av BSU har to endepunkter
   person gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innsending-bsu?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-bsu?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](innsending-bsu?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-bsu?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
