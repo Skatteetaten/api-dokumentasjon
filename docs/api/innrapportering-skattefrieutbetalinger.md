@@ -63,10 +63,10 @@ API-et for innrapportering av skattefrie utbetalinger fra offentlige myndigheter
 * __POST innsending__: Mottar tredjepartsopplysninger for skattefrie utbetalinger. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](skattefrieutbetalinger?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-skattefrieutbetalinger?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](skattefrieutbetalinger?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-skattefrieutbetalinger?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
@@ -192,7 +192,6 @@ feltene.
 
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-### Informasjonsmodell
 ![skattefrieUtbetalinger](../../static/download/Informasjonsmodell_Skattefrie_Utbetalinger.png)
 </TabItem>
 
