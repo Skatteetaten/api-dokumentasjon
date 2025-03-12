@@ -1,6 +1,6 @@
 ---
-title: Innrapportering av tredjepartsopplysninger
-slug: /anvendelsesomraader/innrapportering-tredjepartsopplysninger
+title: Innrapportering av tredjepartsopplysninger kladd
+slug: /anvendelsesomraader/innrapportering-tredjepartsopplysninger-kladd
 folder: anvendelsesomraader
 sidebar: mydoc_sidebar
 sidebar_class_name: hidden
