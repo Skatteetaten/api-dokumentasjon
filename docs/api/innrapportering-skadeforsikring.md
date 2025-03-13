@@ -64,10 +64,10 @@ API-et for innrapportering for skadeforsikring har to endepunkter
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](skadeforsikring?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-skadeforsikring?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](skadeforsikring?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-skadeforsikring?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
@@ -214,7 +214,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skadeforsikring-api/1.0.0). 
+For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skadeforsikring-api/0.0.1). 
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten
