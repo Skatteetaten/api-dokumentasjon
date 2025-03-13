@@ -154,20 +154,20 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
 
-| Feilkode | HTTP Statuskode | Feilområde                                   |
-|----------|-----------------|----------------------------------------------|
-| GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | Feil i forbindelse med autentisesring        |
-| GLD_005  | 403             | Feil i forbindelse med autorisering          |
-| GLD_006  | 400             | Feil i request                               |
-| GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
-| GLD_010  | 400             | Feil i forbindelse med validering av payload |
-| GLD_011  | 400             | Feil i metadata                              |
-| GLD_017  | 500             | Uspesifisert systemfeil                      |
-| GLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
-| GLD_021  | 404             | Finner ikke forespurt ressurs                |
-| GLD_022  | 405             | HTTP-metode ikke støttet                     |
-| GLD_023  | 500             | Uventet feil i et bakenforliggende system    |
+| Feilkode | HTTP Statuskode | Feilområde                                  |
+|----------|-----------------|---------------------------------------------|
+| GLD_001  | 500             | Uventet feil på tjenesten                   |
+| GLD_004  | 401             | Feil i forbindelse med autentisering        |
+| GLD_005  | 403             | Feil i forbindelse med autorisering         |
+| GLD_006  | 400             | Feil i request                              |
+| GLD_008  | 400             | Strukturell feil i tilknyttet dataformat    |
+| GLD_010  | 400             | Feil i forbindelse med validering av payload|
+| GLD_011  | 400             | Feil i metadata                             |
+| GLD_017  | 500             | Uspesifisert systemfeil                     |
+| GLD_019  | 409             | Idempotensnøkkel er benyttet tidligere      |
+| GLD_021  | 404             | Finner ikke forespurt ressurs               |
+| GLD_022  | 405             | HTTP-metode ikke støttet                    |
+| GLD_023  | 500             | Uventet feil i et bakenforliggende system   |
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
