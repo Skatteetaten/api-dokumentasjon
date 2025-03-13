@@ -10,7 +10,7 @@ last_updated: Mar 4, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for skadeforsikring (RF-1310)</Summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger om skadeforsikring (RF-1310)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -60,7 +60,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
 API-et for innrapportering for skadeforsikring har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for skadeforsikring. Ett kall mot API-et er en rapportering for en
+* __POST innsending__: Mottar tredjepartsopplysninger om skadeforsikring. Et kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
@@ -169,7 +169,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | feil i forbindelse med autentisesring        |
+| GLD_004  | 401             | Feil i forbindelse med autentisesring        |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
