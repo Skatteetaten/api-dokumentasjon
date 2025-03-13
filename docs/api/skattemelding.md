@@ -33,7 +33,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 
 ## Teknisk spesifikasjon
 
-Skattemelding API v4 leverer skattemelding for inntektsårene 2022 og 2023.
+Skattemelding API v5 leverer skattemelding for inntektsåret 2024.
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api) på SwaggerHub.
 
@@ -62,20 +62,42 @@ For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste
 
 ```json
 {
-  "personidentifikator": "13859798769",
-  "inntektsaar": "2023",
+  "skjermet": false,
+  "norskPersonidentifikator": "21830199869",
+  "registreringstidspunkt": "2025-02-25T15:17:56.014+01:00",
+  "inntektsaar": "2024",
   "bankLaanOgForsikring": {
     "konto": [
       {
-        "id": "a706f6c010e10915d59e7d16e28f133d47e3dbba",
-        "bankensNavn": "FLEKSIBEL SIVILISERT GIRAFF SPAREBANK",
-        "organisasjonsnummer": "310338648",
-        "kontonummer": "94112618672",
+        "id": "91595767b658108fdacd92169daae7f874e3c757",
+        "bankensNavn": "JUSTERBAR HÅNDFAST ISBJØRN SA",
+        "organisasjonsnummer": "312871262",
+        "kontonummer": "44133176397",
+        "prosentandelAvGjeldInnskuddOgRente": 100.0,
         "innskudd": {
-          "beloep": 567429
+          "beloep": 156650.0
+        },
+        "andelAvInnskudd": {
+          "beloep": 156650
         },
         "opptjenteRenter": {
-          "beloep": 11349
+          "beloep": 3133.0
+        },
+        "andelAvOpptjenteRenter": {
+          "beloep": 3133
+        },
+        "gjeld": {
+          "beloep": 684091.0
+        },
+        "andelAvGjeld": {
+          "beloep": 684091
+        },
+        "paaloepteRenter": {
+          "fradragsberettigetBeloep": 20523.0,
+          "beloepUtenHensynTilValgtPrioritertFradragstype": 20523.0
+        },
+        "andelAvPaaloepteRenter": {
+          "beloep": 20523
         }
       }
     ]
@@ -84,45 +106,57 @@ For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste
     "loennOgTilsvarendeYtelser": {
       "arbeidsgiver": [
         {
-          "id": "d862e16492226c2f0289a82c4d54da12a46cb59a",
-          "navn": "REALISTISK AKTIV KATT REGNSKOG",
+          "id": "159237314ca88c061d99c1c4dea175c667911c81",
+          "navn": "EKSEMPLARISK REAL TIGER AS",
           "samledeYtelserFraArbeidsgiverPerBehandlingsart": [
             {
-              "id": "a3d4027985f6e3f0ec25f7adb303cec38bacf6d5",
+              "id": "558c49882d9320242d5b35a46606ff7bd837cd28",
               "beloep": {
-                "beloep": 820368
+                "beloep": 1004947.0
               },
               "behandlingsart": "LONN"
-            },
-            {
-              "id": "317646c6689e924628a5d5c093a64cf3b5170842",
-              "beloep": {
-                "beloep": 118464
-              },
-              "behandlingsart": "FRIBIL"
             }
           ],
-          "organisasjonsnummer": "313077160"
+          "organisasjonsnummer": "310495670"
         }
       ]
+    },
+    "fagforeningskontingent": {
+      "samletBetaltFagforeningskontingentPerSkattleggingsperiode": {
+        "beloep": 4392.0
+      },
+      "inntektsfradragForFagforeningskontingent": {
+        "fradragsberettigetBeloep": 4392.0,
+        "beloepUtenHensynTilValgtPrioritertFradragstype": 4392.0
+      }
     },
     "minstefradragOgKostnader": [
       {
         "id": "MINSTEFRADRAG_OG_KOSTNADER_KNYTTET_TIL_ARBEID_OG_ANNEN_INNTEKT",
         "minstefradragIInntekt": {
-          "fradragsberettigetBeloep": {
-            "beloep": 104450
-          },
-          "beloepUtenHensynTilValgtPrioritertFradragstype": {
-            "beloep": 104450
-          }
+          "fradragsberettigetBeloep": 104450.0,
+          "beloepUtenHensynTilValgtPrioritertFradragstype": 104450.0
         }
       }
     ]
   },
-  "skjermet": false,
-  "opprettetDato": "2024-02-13T08:36:54.619+01:00",
-  "registreringstidspunkt": "2024-02-13T09:36:54.619+01:00"
+  "finans": {
+    "verdipapirfond": [
+      {
+        "id": "f0791bea8cfd62bb1abbe9425bb535a9eb621beb",
+        "fondetsNavn": "Aksjefondet RST",
+        "isinnummer": "NO9190983755",
+        "antallAndeler": 110.759,
+        "verdiFoerVerdsettingsrabattForAndelIAksjedel": {
+          "beloep": 223449.0
+        },
+        "oppgavegiversOrganisasjonsnummer": "310863394",
+        "oppgavegiversNavn": "PRATSOM FANTASILØS STRUTS T.U.W"
+      }
+    ]
+  },
+  "opprettetDato": "2025-02-25T14:17:55.948036683+01:00",
+  "ajourholdstidspunkt": "2025-02-25T14:17:56.014116Z"
 }
 ```
 

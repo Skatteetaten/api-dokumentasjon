@@ -35,6 +35,7 @@ const sidebars = {
         "api/naeringsspesifikasjon",
         "api/omregistreringsavgift",
         "api/oppdragutenlandskevirksomheter",
+        "api/opplysningspliktig",
         "api/opptjeningsgrunnlagarbeidsforhold",
         "api/pgi",
         "api/pgi_folketrygden",

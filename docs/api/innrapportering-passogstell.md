@@ -19,7 +19,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Systemtilgang](../om/systemtilgang.md)
+* [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
@@ -32,10 +32,10 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:in
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
 
-## Systemtilgang
+## Systemtilgang med systembruker
 
-Bruk av API-et krever systemtilgang, som er ny funksjonalitet i Maskinporten levert av Digdir. 
-Informasjon vedr. dette finnes [her](../om/systemtilgang.md). 
+Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. 
+Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
 For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
 ```JSON
@@ -64,10 +64,10 @@ API-et for innrapportering av pass og stell av barn har to endepunkter
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](passogstell?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-passogstell?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](passogstell?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-passogstell?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 

@@ -39,7 +39,7 @@ All kommunikasjon mellom virksomheten, Maskinporten og Skatteetaten gjøres over
 Se egen side for informasjon om [hvordan opptre på vegne av en annen virksomhet](./delegering.md).
 
 ### Systemtilgang med systembruker
-Se egen side for informasjon om [systemtilgang for systembruker](./systemtilgang.md).
+Se egen side for informasjon om [systemtilgang for systembruker](./systembruker.md).
 
 ## Brannmur
 

@@ -19,7 +19,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Systemtilgang](../om/systemtilgang.md)
+* [Systembruker](../om/systembrukerg.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
@@ -32,10 +32,10 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:in
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
 
-## Systemtilgang
+## Systemtilgang med systembruker
 
-Bruk av API-et krever systemtilgang, som er ny funksjonalitet i Maskinporten levert av Digdir. 
-Informasjon vedr. dette finnes [her](../om/systemtilgang.md). 
+Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. 
+Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
 For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
 ```JSON
@@ -63,10 +63,10 @@ API-et for boligsameie har bare ett endepunkt:
 * __POST innsending__: Mottar tredjepartsopplysninger for boligsameier. Ett kall mot API-et er en rapportering for et
   boligsameie gitt av en oppgavegiver og som gjelder et inntektsår.
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](boligsameie?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligsameie?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](boligsameie?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-boligsameie?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 

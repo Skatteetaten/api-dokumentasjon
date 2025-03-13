@@ -43,7 +43,6 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/avregn
 | Navn på rettighetspakke |
 |-------------------------|
 | kommunelangtidsoppholdinstitusjon |
-| kommunelangtidsoppholdsykehjem |
 | norgesbank              |
 | ssb                     |
 

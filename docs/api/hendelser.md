@@ -4,8 +4,8 @@ slug: /api/hendelser
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, Støttetjeneste, Hendelser ]
-keywords: [ datatables, tables, grids, markdown, multimarkdown, jquery plugins ]
+tags: [API, Støttetjeneste, Hendelser]
+keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
 last_updated: Jul 04, 2024
 hide_table_of_contents: true
 ---
@@ -23,19 +23,19 @@ Hendelseslistene navigeres vha. sekvensnummer og er paginert.
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
-* [Feilhåndtering](../om/feil.md)
-* [Versjonering](../om/versjoner.md)
-* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
+- [Bruk av tjenestene](../om/bruk.md)
+- [Sikkerhetsmekansimer](../om/sikkerhet.md)
+- [Rettighetspakker](../om/rettighetspakker.md)
+- [Feilhåndtering](../om/feil.md)
+- [Versjonering](../om/versjoner.md)
+- [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Scope
 
 Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som relaterte oppslagstjenester:
 
 | Hendelsesliste                                                        | Scope                                                                                                                                                                                                |
-|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Arbeidsforhold hendelser API                                          | skatteetaten:arbeidsforhold                                                                                                                                                                          |
 | Formuesgrunnlag for eiendomsskatt hendelser API                       | skatteetaten:formuesgrunnlageiendomsskatt                                                                                                                                                            |
 | Formuesobjekt fast eiendom hendelser API                              | skatteetaten:formuesobjektfasteiendom                                                                                                                                                                |
@@ -43,6 +43,7 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 | Mva-melding hendelser API                                             | skatteetaten:mvamelding                                                                                                                                                                              |
 | Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API | skatteetaten:mvaregisteravgiftssubjekt                                                                                                                                                               |
 | Næringsspesifikasjon hendelser API                                    | skatteetaten:naeringsspesifikasjon                                                                                                                                                                   |
+| Opplysningspliktig hendelser API                                      | skatteetaten:opplysningspliktig                                                                                                                                                                      |
 | Pensjonsgivende inntekt for folketrygden hendelser API                | skatteetaten:pensjonsgivendeinntektforfolketrygden                                                                                                                                                   |
 | Selskapsmelding hendelser API                                         | skatteetaten:selskapsmelding                                                                                                                                                                         |
 | Skatteetaten-registrert selskap hendelser API                         | skatteetaten:skatteetatenregistrertselskap                                                                                                                                                           |
@@ -63,45 +64,46 @@ Delegering i Altinn gjøres pr. scope, så tilgang til hendelseslisterer er hån
 URL-er til API-ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til
 hendelseslistene på SwaggerHub:
 
-* [Arbeidsforhold hendelser API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-hendelser-api)
-* [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
-* [Formuesobjekt fast eiendom hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesobjekt-fast-eiendom-hendelser-api)
-* [Inntekt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/inntekt-hendelser-api)
-* [Mva-melding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-melding-hendelser-api)
-* [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-register-avgiftssubjekter-hendelser-api/)
-* [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-hendelser-api)
-* [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
-* [Selskapsmelding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-hendelser-api)
-* [Skatteetaten-registrert selskap hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteetaten-registrert-selskap-hendelser-api)
-* [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-hendelser-api)
-* [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-upersonlig-hendelser-api)
-* [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-fastsatt-hendelser-api)
-* [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-hendelser-api)
-* [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
-* [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
-* [Underenhet fra A-ordningen hendelser API](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
+- [Arbeidsforhold hendelser API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-hendelser-api)
+- [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
+- [Formuesobjekt fast eiendom hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesobjekt-fast-eiendom-hendelser-api)
+- [Inntekt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/inntekt-hendelser-api)
+- [Mva-melding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-melding-hendelser-api)
+- [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-register-avgiftssubjekter-hendelser-api/)
+- [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-hendelser-api)
+- [Opplysningspliktig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/opplysningspliktig-hendelser-api)
+- [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
+- [Selskapsmelding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-hendelser-api)
+- [Skatteetaten-registrert selskap hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteetaten-registrert-selskap-hendelser-api)
+- [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-hendelser-api)
+- [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-upersonlig-hendelser-api)
+- [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-fastsatt-hendelser-api)
+- [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-hendelser-api)
+- [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
+- [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
+- [Underenhet fra A-ordningen hendelser API](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
 
 ## Hendelsestyper
 
 De vanligste hendelsestypene er ny, endret og slettet, men det støttes ikke nødvendigvis i alle hendelseslistene. Her er
 noen eksempler:
 
-__Nye data:__ Summert skattegrunnlag er klart for en skattepliktig for et inntektsår:
+**Nye data:** Summert skattegrunnlag er klart for en skattepliktig for et inntektsår:
 
-* __Hendelseslisten for skatteoppgjør__ vil inneholde en hendelse for den skattepliktige og inntektsåret.
-* __Summert skattegrunnlag API__ returnerer data hvis man spør på inntektsår og skattepliktig fra hendelsen
+- **Hendelseslisten for skatteoppgjør** vil inneholde en hendelse for den skattepliktige og inntektsåret.
+- **Summert skattegrunnlag API** returnerer data hvis man spør på inntektsår og skattepliktig fra hendelsen
 
-__Endrede data:__ En arbeidsgiver rapporterer at en skattepliktig har fått etterbetalt inntekt for en måned. Fra før
+**Endrede data:** En arbeidsgiver rapporterer at en skattepliktig har fått etterbetalt inntekt for en måned. Fra før
 finnes det data for den skattepliktige for denne måneden.
 
-* __Hendelseslisten for inntekt__ vil inneholde en hendelse for den skattepliktige og den gitte måneden.
-* __Inntekt API__ returnerer oppdaterte inntektsdata for den skattepliktige og den gitte måneden.
+- **Hendelseslisten for inntekt** vil inneholde en hendelse for den skattepliktige og den gitte måneden.
+- **Inntekt API** returnerer oppdaterte inntektsdata for den skattepliktige og den gitte måneden.
 
-__Slettede data:__ Et fagsystem i skatteetaten sletter data for en skattepliktig (skjer sjelden, men kan skje ifm
+**Slettede data:** Et fagsystem i skatteetaten sletter data for en skattepliktig (skjer sjelden, men kan skje ifm
 feilrettinger eller andre spesielle omstendigheter)
 
-* __Hendelseslisten for datasettet__ vil inneholde en hendelse for datasettet og perioden.
-* __Datasett API__ returnerer HTTP statuskode 410 og en feilmelding som indikerer at data ikke finnes lenger når man
+- **Hendelseslisten for datasettet** vil inneholde en hendelse for datasettet og perioden.
+- **Datasett API** returnerer HTTP statuskode 410 og en feilmelding som indikerer at data ikke finnes lenger når man
   spør på skattepliktig og angitt periode.
 
 </TabItem>
@@ -315,7 +317,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
 | Feilkode | HTTP Statuskode | Feilområde                                                 |
-|----------|-----------------|------------------------------------------------------------|
+| -------- | --------------- | ---------------------------------------------------------- |
 | FA-001   | 500             | Uventet feil på tjenesten.                                 |
 | FA-002   | 404             | Ukjent url benyttet.                                       |
 | FA-003   | 401             | Feil i forbindelse med autentisering.                      |
@@ -332,7 +334,5 @@ Obs. oversikten over gjelder ikke for
 [Underenhet fra A-ordningen hendelser API](./underenhetaordningen.md?tab=Feilkoder)
 hvor hendelseslisten er knyttet tettere sammen med oppslagstjenesten, se derfor feilkoder for tjenesten.
 
-
 </TabItem>
 </Tabs>
-
