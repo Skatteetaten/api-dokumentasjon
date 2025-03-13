@@ -63,10 +63,10 @@ API-et for innrapportering av tredjepartsopplysninger for drosjetjenester til of
 * __POST innsending__: Innsending av tredjepartsopplysninger for drosjesentraler til offentlige myndigheter. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission (forsendelse) i Dialogporten
 
-API-et validerer mottatte data mot JSON-schema beskrevet på SwaggerHub. Se [feilkoder](drosjetjenester?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON-schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-drosjetjenester?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](drosjetjenester?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-drosjetjenester?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
