@@ -166,7 +166,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne tjeneste
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | Feil i forbindelse med autentisesring        |
+| GLD_004  | 401             | Feil i forbindelse med autentisering         |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
@@ -203,30 +203,6 @@ angitt verdi-feltene.
 
 ![Informasjonsmodell Drosjesentraler](../../static/download/Informasjonsmodell_Drosjesentraler.png)
 
-| Eier                      | Element                         | Dokumentasjon                                                                                                                                   |
-|---------------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Melding                   | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| Leveranse                 | inntektsaar                     | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse                 | kildesystem                     | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse                 | leveransetype                   | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse                 | oppgave                         | Oppgave som leveres                                                                                                                             |
-| Leveranse                 | oppgavegiver                    | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse                 | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse                 | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| OppgaveDrosje             | kilometerBesatt                 | Besatte kilometer. Verdien oppgis i hele kilometer                                                                                              |
-| OppgaveDrosje             | kilometerKjørt                  | Kjørte kilometer. Verdien oppgis i hele kilometer                                                                                               |                                                                                            
-| OppgaveDrosje             | kontantomsetningEksMva          | Kontantomsetning eksklusive mva. Beløpet oppgis i hele kroner                                                                                   |                                                                                   
-| OppgaveDrosje             | kredittomsetningEksMva          | Kredittomsetning eksklusive mva. Beløpet oppgis i hele kroner                                                                                   |                                                                                 
-| OppgaveDrosje             | løyvenummer                     | Drosjeløyve                                                                                                                                     |
-| Oppgaveeier               | organisasjonsnummer             | Oppgaveeiers organisasjonsnummer                                                                                                                |
-| Oppgaveeier               | navn                            | Navn på oppgaveeier                                                                                                                             |
-| Oppgavegiver              | kontaktinformasjon              | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver              | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| OppgaveoppsummeringDrosje | antallOppgaver                  | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| OppgaveoppsummeringDrosje | sumKilometerBesatt              | Sum av alle kilometerBesatt-verdiene i oppgavene til en leveranse                                                                               |
-| OppgaveoppsummeringDrosje | sumKilometerKjørt               | Sum av alle kilometerKjørt-verdiene i oppgavene til en leveranse                                                                                |
-| OppgaveoppsummeringDrosje | sumKontantomsetningEksMva       | Sum av alle kontantomsetningEksMva-verdiene i oppgavene til en leveranse                                                                        |
-| OppgaveoppsummeringDrosje | sumKredittomsetningEksMva       | Sum av alle kredittomsetningEksMva-verdiene i oppgavene til en leveranse                                                                        |
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">
@@ -236,7 +212,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skattefrie-utbetalinger-api/0.0.1).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-drosjetjenester-api/0.0.1).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * DialogPorten
@@ -262,7 +238,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Har du spørsmål til Skatteetaten om Skattefrie utbetalinger fra offentlige myndigheter API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om Innrapportering Drosjetjenester API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
 
 </TabItem>
