@@ -51,6 +51,7 @@ Tjenesten støtter inntektsår 2017 og utover, men det kan også komme endringer
 | navpleieogomsorgspenger |
 | navsykepenger           |
 | navufoeretrygd          |
+| navtrygdeavgift         |
 
 ## Støttetjenester
 
