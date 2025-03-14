@@ -43,6 +43,8 @@ Informasjon om tjenestenivå, varsling, endrignshåndtering, fast vedlikehold me
 Det går arbeid med utvikling av nye API-er for innrapportering. Har du spørsmål om tilgang til disse, send en e-post til [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og bare gjelder  i perioden API-ene er i utvikling og test fra Altinn II til Altinn 3.
 
+Ønsker du å ta i bruk Skatteetatens tjenester for innrapportering, se [her](./anvendelsesomraader/innrapportering-tredjepartsopplysninger.md) for mer informasjon. 
+
 
 
 
