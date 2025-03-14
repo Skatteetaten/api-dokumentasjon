@@ -63,6 +63,7 @@ const sidebars = {
         "api/innrapportering-boligselskap",
         "api/innrapportering-bsu",
         "api/innrapportering-innskuddutlaanrenter",
+        "api/innrapportering-internasjonalrapportering",
         "api/innrapportering-gavertilfrivillige",
         "api/innrapportering-passogstell",
         "api/innrapportering-tilskudd",
