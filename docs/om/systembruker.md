@@ -27,7 +27,7 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
 
 3.	**Maskinporten klient:** Når du har fått tilgang til scopene, må det lages en Maskinporten-klient (også kjent som *Integrasjon* i Digdirs beskrivelser) – du kan opprette denne enten i Digdirs [Samarbeidsportal](https://sjolvbetjening.test.samarbeid.digdir.no/auth/login), [Forenklet onboarding](https://onboarding.maskinporten.no/) (se punkt 1) eller ved bruk av API. Maskinporten-klienten du har satt opp, må få tildelt scopene ovenfor og kan deretter benyttes for å få utstedt token/autentiseringsbevis.
 
-4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via [API](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#registrere-system). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (rights), som skal oppgis, er beskrevet i API-dokumentasjon hos Skatteetaten. Husk at Maskinporten-token må [innveksles](https://onboarding.maskinporten.no/) (authentication/exchange).
+4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via [API](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#registrere-system). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (rights), som skal oppgis, er beskrevet i API-dokumentasjon hos Skatteetaten. 
 
     Eksempel på registrering:
 ```json
@@ -60,7 +60,7 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
 }
 ```
 
-5.	**Kunden må gi systemet tilgang:** Du kan nå be kunden om å opprette en systemtilgang gjennom å lage en [tilgangsforespørsel](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#sende-forespørsel-om-opprettelse-av-systembruker-til-virksomhet). Du kan se skjermbilde av hvordan dette ser ut for kunden nederst på siden. Her må også tokenet innveksles til Altinn-token slik som ovenfor.
+5.	**Kunden må gi systemet tilgang:** Du kan nå be kunden om å opprette en systemtilgang gjennom å lage en [tilgangsforespørsel](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#sende-forespørsel-om-opprettelse-av-systembruker-til-virksomhet). Du kan se skjermbilde av hvordan dette ser ut for kunden nederst på siden. 
 
 Eksempel på registrering:
 ```json
