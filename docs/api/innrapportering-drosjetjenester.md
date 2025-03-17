@@ -10,7 +10,7 @@ last_updated: Mar 10, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for drosjetjenester (RF-1301)</Summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger om drosjetjenester (RF-1301)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -58,9 +58,9 @@ URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Ope
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for innrapportering av tredjepartsopplysninger for drosjetjenester til offentlige myndigheter har to endepunkter:
+API-et for innrapportering av tredjepartsopplysninger om drosjetjenester til offentlige myndigheter har to endepunkter:
 
-* __POST innsending__: Innsending av tredjepartsopplysninger for drosjesentraler til offentlige myndigheter. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
+* __POST innsending__: Innsending av tredjepartsopplysninger om drosjesentraler til offentlige myndigheter. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission (forsendelse) i Dialogporten
 
 API-et validerer mottatte data mot JSON-schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-drosjetjenester?tab=Feilkoder) for
