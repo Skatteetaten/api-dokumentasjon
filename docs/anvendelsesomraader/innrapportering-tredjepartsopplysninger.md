@@ -46,6 +46,7 @@ Følgende API-er er tilgjengelige i test pr. nå:
 * [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)
 * [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)
 * [Innrapportering BSU API](../api/innrapportering-bsu.md)
+* [Innrapportering godgjoering_til opphaver til aandsverk API](../api/innrapportering-aandsverk.md)
 * [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)
 * [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)
 * [Innrapportering innskudd_utlaan_renter API](../api/innrapportering-innskuddutlaanrenter.md)
