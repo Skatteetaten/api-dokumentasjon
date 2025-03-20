@@ -51,5 +51,5 @@ Følgende API-er er tilgjengelige i test pr. nå:
 * [Innrapportering innskudd_utlaan_renter API](../api/innrapportering-innskuddutlaanrenter.md)
 * [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)
 * [Innrapportering betalinger_naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)
+* [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)
 * [Innrapportering skattefrie_utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)
-
