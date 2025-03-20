@@ -65,7 +65,7 @@ API-et for innrapportering av godtgjøring til opphaver til åndsverk har to end
 
 * __POST innsending__: Innsending av tredjepartsopplysninger for godtgjøring til opphaver til åndsverk. Ett kall mot API-et er
   en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission i Dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](aandsverk?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -144,7 +144,7 @@ https://innrapporteringaandsverk.api.{env}.no/v1/{inntektsaar}
         },
         "utbetaltGodtgjoerelseInnenNaeringsvirksomhet": "10000",
         "utbetaltGodtgjoerelseUtenforNaeringsvirksomhet": "5000"
-      },
+      }
     ],
     "oppgaveoppsummering": {
       "antallOppgaver": "2",
@@ -176,7 +176,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | feil i forbindelse med autentisesring        |
+| GLD_004  | 401             | Feil i forbindelse med autentisesring        |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
@@ -203,7 +203,7 @@ feltene.
 | GLD_1027               | Inntektsår er ikke støttet                                                                  | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
 | GLD_1028               | Header mangler                                                                              | Påkrevd header er ikke med i requesten                                                                                      |
 | GLD_1030               | Accept-header må være av type application/json                                              | Accept header er feil. API-et har kun støtte for JSON i respons                                                             |
-| GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen                                | Det finnes ikke noe dokument med gitt id på angitt forsendelse                                                              |
+| GLD_1050               | Finner ikke et dokument med denne ID-en på denne forsendelsen                               | Det finnes ikke noe dokument med gitt id på angitt forsendelse                                                              |
 | GLD_1052               | Inntektsår i path og i innsending er ulike                                                  | Inntektsår i innsending i JSON body og inntektsår i path må være like                                                       |
 | GLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere                      |                                                                                                                             |
 | GLD_1054               | Det finnes ingen dialog for denne kombinasjonen av inntektsår, organisjonsnummer og ordning |
@@ -225,9 +225,9 @@ med å pilotere løsningene.
 For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aandsverk-api/0.0.1).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
-* DialogPorten
+* Dialogporten
 * Autentisering - Maskinporten
-* Autorisering - systembruker
+* Autorisering - Systembruker
 * Altinn innboks
 
 Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skatteetaten og Digdir.
@@ -248,7 +248,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Har du spørsmål til Skatteetaten om innrapportering aandsverk API, kan du sende oss
+Har du spørsmål til Skatteetaten om innrapportering av godtgjøring til opphaver til åndsverk API, kan du sende oss
 e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra
 Altinn II til Altinn 3.
