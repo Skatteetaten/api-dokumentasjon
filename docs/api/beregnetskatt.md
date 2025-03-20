@@ -46,12 +46,12 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/beregn
 | forsikring                        |
 | husbanken                         |
 | kommuneLangtidsoppholdInstitusjon |
-| kommunePraktiskBistand            |
 | kredittopplysning                 |
 | laanekassen                       |
 | ldirreindriftstilskudd            |
 | norgesbank                        |
 | pensjonskasse                     |
+| pensjonskasseEtteroppgjoerUfoerAfp |
 | ssb                               |
 
 ## Støttetjenester

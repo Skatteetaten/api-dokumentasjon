@@ -50,15 +50,17 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 
 ```json
 {
-  "personidentifikator":"07891448702",
-  "inntektsaar":"2021",
-  "skjermet":false,
+  "personidentifikator": "29458540754",
+  "inntektsaar": "2024",
+  "skjermet": false,
   "vedtakOmTilleggsskatt": [
-      {
-        "skattekommune":"4621",
-        "tilleggsskattFraUriktigeOpplysninger":50004.0,
-        "vedtaksdatoForTilleggsskatt":"2022-06-01"
-      }
+    {
+      "skattekommune": "0301",
+      "tilleggsskattFraUriktigeOpplysninger": 0.0,
+      "skjerpetTilleggsskattFraUriktigeOpplysninger": 0.0,
+      "fradragForTvangsmulkt": 0.0,
+      "vedtaksdatoForTilleggsskatt": "2025-03-07"
+    }
   ]
 }
 ```
@@ -70,14 +72,17 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <tilleggsskatt xmlns="urn:no:skatteetaten:datasamarbeid:tilleggsskatt:v1">
-  <personidentifikator>07891448702</personidentifikator>
-  <inntektsaar>2021</inntektsaar>
+  <personidentifikator>29458540754</personidentifikator>
+  <inntektsaar>2024</inntektsaar>
   <skjermet>false</skjermet>
   <vedtakOmTilleggsskatt>
-    <skattekommune>4621</skattekommune>
-    <tilleggsskattFraUriktigeOpplysninger>50004.0</tilleggsskattFraUriktigeOpplysninger>
-    <vedtaksdatoForTilleggsskatt>2022-06-01</vedtaksdatoForTilleggsskatt>
-  </vedtakOmTilleggsskatt></tilleggsskatt>
+    <skattekommune>0301</skattekommune>
+    <tilleggsskattFraUriktigeOpplysninger>0.0</tilleggsskattFraUriktigeOpplysninger>
+    <skjerpetTilleggsskattFraUriktigeOpplysninger>0.0</skjerpetTilleggsskattFraUriktigeOpplysninger>
+    <fradragForTvangsmulkt>0.0</fradragForTvangsmulkt>
+    <vedtaksdatoForTilleggsskatt>2025-03-07</vedtaksdatoForTilleggsskatt>
+  </vedtakOmTilleggsskatt>
+</tilleggsskatt>
 ```
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">

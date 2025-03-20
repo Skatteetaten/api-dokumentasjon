@@ -67,6 +67,7 @@ const sidebars = {
         "api/innrapportering-passogstell",
         "api/innrapportering-skadeforsikring",
         "api/innrapportering-tilskudd",
+        "api/innrapportering-skattefrieutbetalinger",
         "api/mvameldinginnsending",
         "api/mvameldingvalidering",
       ],

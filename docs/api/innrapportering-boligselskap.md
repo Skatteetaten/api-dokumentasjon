@@ -63,10 +63,10 @@ API-et for boligselskap har bare ett endepunkt:
 * __POST innsending__: Mottar tredjepartsopplysninger for boligselskaper. Ett kall mot API-et er en rapportering for et
   boligselskap gitt av en oppgavegiver og som gjelder et inntektsår.
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](boligselskap?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligselskap?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](boligselskap?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-boligselskap?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 

@@ -296,22 +296,6 @@ https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
       },
       "innbetalingstype": "bankoverføring"
     }
-  ],
-  "totalOversikt": {
-    "sumStipulerteRenter": 400.0,
-    "sumForfalteKrav": 20000.0,
-    "sumIkkeForfalteKrav": 0.0,
-    "sumUplasserteInnbetalinger": 0.0,
-    "saldo": 20400.0
-  },
-  "oversiktPerKravgruppe": [
-    {
-      "kravgruppe": "Skatt",
-      "sumStipulerteRenter": 400.0,
-      "sumForfalteKrav": 20000.0,
-      "sumIkkeForfalteKrav": 0.0,
-      "saldo": 20400.0
-    }
   ]
 }
 ```

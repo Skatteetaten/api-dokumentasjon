@@ -35,8 +35,8 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 | Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|
-| ebevis | Krever samtykke |
 | arbeidstilsynet | Hjemmel |
+| ebevis | Krever samtykke |
  
 ## Samtykke
 For enkelte rettighetspakker krever tjenesten [samtykke](../om/samtykke.md).

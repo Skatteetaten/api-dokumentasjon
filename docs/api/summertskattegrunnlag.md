@@ -50,29 +50,31 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/summer
 
 | Navn på rettighetspakke             | 	Stadie                      | Kommentarer     |
 |-------------------------------------|------------------------------|-----------------|
-| fiskeridirektoratetKontrollmanntall | oppgjoer                     |                 |
-| friRettshjelp                       | oppgjoer                     |                 |
-| husbankenBostoette                  | oppgjoer                     |                 |
-| husbankenLaanTilskudd               | oppgjoer                     |                 |
-| kommuneBoligsosialeFormaal          | oppgjoer                     |                 |
-| kommuneForeldrebetaling             | oppgjoer og utkast           |                 |
-| kommuneLangtidsoppholdInstitusjon   | oppgjoer                     |                 |
-| kommunePersonligassistanse          | oppgjoer                     |                 |
-| kommunePraktiskBistand              | oppgjoer                     |                 |
+| fiskeridirektoratetkontrollmanntall | oppgjoer                     |                 |
+| fiskeridirektoratetmanntall         | oppgjoer                     |                 |
+| frirettshjelp                       | oppgjoer                     |                 |
+| husbankenbostoette                  | oppgjoer                     |                 |
+| husbankenlaantilskudd               | oppgjoer                     |                 |
+| kommuneboligsosialeformaal          | oppgjoer                     |                 |
+| kommuneforeldrebetaling             | oppgjoer og utkast           |                 |
+| kommunelangtidsoppholdinstitusjon   | oppgjoer                     |                 |
+| kommunepersonligassistanse          | oppgjoer                     |                 |
+| kommunepraktiskbistand              | oppgjoer                     |                 |
 | laanekassen                         | oppgjoer                     |                 |
 | ldir                                | oppgjoer                     |                 |
-| ldirReindriftstilskudd              | oppgjoer                     |                 |
-| ldirTotalregnskap                   | oppgjoer                     |                 |
+| ldirreindriftstilskudd              | oppgjoer                     |                 |
+| ldirtotalregnskap                   | oppgjoer                     |                 |
 | nav                                 | oppgjoer                     |                 | 
-| navBidrag                           | oppgjoer                     |                 | 
-| navBilstoenad                       | oppgjoer                     |                 | 
-| navSupplerendeStoenad               | oppgjoer og utkast           |                 |
-| navUfoeretrygd                      | oppgjoer                     |                 | 
+| navbidrag                           | oppgjoer                     |                 | 
+| navbilstoenad                       | oppgjoer                     |                 | 
+| navgravferdstoenad                  | oppgjoer                     |                 | 
+| navsupplerendestoenad               | oppgjoer og utkast           |                 |
+| navufoeretrygd                      | oppgjoer                     |                 | 
 | norgesbank                          | oppgjoer og utkast           |                 |
 | saernamsmann                        | oppgjoer                     |                 |
 | sbl                                 | oppgjoer                     | Krever samtykke |
 | sivilrett                           | oppgjoer, utkast og fastsatt |                 |
-| spkBoliglaan                        | oppgjoer                     |                 |
+| spkboliglaan                        | oppgjoer                     |                 |
 | ssb                                 | oppgjoer                     |                 |
 | udi                                 | oppgjoer                     |                 |
 
