@@ -52,4 +52,5 @@ Følgende API-er er tilgjengelige i test pr. nå:
 * [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)
 * [Innrapportering betalinger_naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)
 * [Innrapportering skattefrie_utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)
+* [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)
 
