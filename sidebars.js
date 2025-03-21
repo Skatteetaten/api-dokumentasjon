@@ -64,6 +64,7 @@ const sidebars = {
         "api/innrapportering-bsu",
         "api/innrapportering-innskuddutlaanrenter",
         "api/innrapportering-gavertilfrivillige",
+        "api/innrapportering-aandsverk",
         "api/innrapportering-passogstell",
         "api/innrapportering-tilskudd",
         "api/innrapportering-skattefrieutbetalinger",
