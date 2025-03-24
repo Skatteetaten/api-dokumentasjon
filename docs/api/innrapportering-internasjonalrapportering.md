@@ -78,10 +78,10 @@ Se også [eksempler](innrapportering-internasjonalrapportering?tab=Eksempler) fo
 
 ### Parameter: idempotencyKey
 
-idempotencyKey-parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en ny
-idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den
-samme responsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt
-kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
+"idempotencyKey"-parameteren er påkrevet. Innholdet skal være en unik "UUID". Hvert nye kall til API-et skal ha en
+tilsvarende ny "idempotencyKey". Flere etterfølgende "POST" kall med samme request-body og samme idempotencyKey vil gi
+den samme responsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man
+trygt kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
 
 ## Datakatalog
 
