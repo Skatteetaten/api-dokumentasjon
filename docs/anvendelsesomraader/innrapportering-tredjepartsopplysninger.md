@@ -40,16 +40,18 @@ Her er en oversikt over stegene som må til for å kunne ta i bruk nye tjenester
 
 ## Nye API-er for re-etablering av Altinn-tjenester
 
-Følgende API-er er tilgjengelige i test pr. nå:
+Følgende API-er er tilgjengelige pr. nå:
 
-* [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md)
-* [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)
-* [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)
-* [Innrapportering BSU API](../api/innrapportering-bsu.md)
-* [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)
-* [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)
-* [Innrapportering innskudd_utlaan_renter API](../api/innrapportering-innskuddutlaanrenter.md)
-* [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)
-* [Innrapportering betalinger_naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)
-* [Innrapportering skattefrie_utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)
+| API                                                                                                          | Test | Produksjon |
+|--------------------------------------------------------------------------------------------------------------|------|------------|
+| [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md) |:white_check_mark:|            |
+| [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)                                     |:white_check_mark:|            |
+| [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                   |:white_check_mark:|            |
+| [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                     |:white_check_mark:|            |
+| [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                           |:white_check_mark:|            |
+| [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                     |:white_check_mark:|            |
+| [Innrapportering innskudd_utlaan_renter API](../api/innrapportering-innskuddutlaanrenter.md)                 |:white_check_mark:|            |
+| [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                           |:white_check_mark:|            |
+| [Innrapportering betalinger_naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)      |:white_check_mark:|            |
+| [Innrapportering skattefrie_utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)              |:white_check_mark:|            |
 
