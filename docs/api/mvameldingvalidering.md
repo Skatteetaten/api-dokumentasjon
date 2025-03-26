@@ -141,6 +141,8 @@ Følgende valideringsregler er foreløpig definert for ordinær (alminnelig og p
 * Beløpet på koden og spesifikasjonslinje som gjelder kjøp med kompensasjonsrett skal ikke være like (R115)
 * Merverdiavgiften kan ikke være beregnet til 0 når det er oppgitt grunnlag for avgift. (R127)
 * Virksomheten er ikke registrert i Enhetsregisteret og kan ikke sende inn mva-melding. (R131)
+* Leveringsfristen for denne terminen utløp for mer enn tre år siden. Vi vil derfor behandle mva-meldingen som en anmodning om endring. (R132)
+* Utløpsdatoen for terminen er mer enn fem år tilbake og må behandles som søknad om anmodning om endring i henhold til sktfvl § 9-4 annet ledd. (R133)
 
 Følgende regler gjelder for alle meldingskategorier som ikke er eHandel:
 * Virksomheten har organisasjonsform UDEF (R126)
