@@ -48,6 +48,7 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)                                     | :white_check_mark: |            |
 | [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                   | :white_check_mark: |            |
 | [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                     | :white_check_mark: |            |
+| [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)             | :white_check_mark: |            |
 | [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                           | :white_check_mark: |            |
 | [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                     | :white_check_mark: |            |
 | [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                 | :white_check_mark: |            |
