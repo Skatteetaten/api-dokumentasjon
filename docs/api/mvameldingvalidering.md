@@ -94,6 +94,7 @@ Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 | R116  | Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett må ha med grunnlag og sats                                              |
 | R122  | Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget                                                                    |
 
+</br>
 
 <Tabs underline={true}>
 <TabItem headerText="Alminnelig- og primærnæring" itemKey="itemKey-1" default>
