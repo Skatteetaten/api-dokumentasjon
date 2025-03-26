@@ -216,31 +216,6 @@ SAF-T standarden inneholder også kodene 0 (Ingen merverdiavgiftsbehandling (ans
 ### Kompensasjon i alminnelig mva-melding
 Fra 01.01.2023 er spesifikasjonen «Kjøp med kompensasjonsrett» lagt til på 5 koder i mva-melding, i tillegg til de eksisterende spesifikasjonene. De berørte kodene med ny spesifikasjon er 81, 83, 86, 88 og 91. Felles for disse kodene er at innførsel av varer og tjenester (pluss innenlands kjøp av klimakvoter og gull) utløser utgående innførselsmerverdiavgift og at en har enten kompensasjonsrett for inngående mva eller direkte fradragsrett for inngående mva. Virksomheter som bruker disse kodene i ordinær mva-melding kan kreve kompensasjon ved å levere kompensasjonsmelding i tillegg.
 
-
-</TabItem>
-<TabItem headerText="Test" itemKey="itemKey-4">
-
-## Url'er til testmiljøet
-
-| Tjeneste |	Url |
-|----------|-------|
-| Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider  |
-| Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/  |
-| Instans API |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances  |
-
-  
-</TabItem>
-
-<TabItem headerText="Eksempler" itemKey="itemKey-5"> 
-
-## Eksempler på mva-meldinger
-
-Eksempler på ny mva-melding i [excel](../../static/download/Testtilfeller_mva_melding.xlsx).
-
-Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding).
-
-<br />
-
 ## Feltbeskrivelse for mva-melding
 
 <br />
@@ -406,7 +381,28 @@ Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatte
 | 92                                                | Kjøp av klimakvoter og gull uten fradragsrett (høy sats)                                  |
 
 
-<br />
+
+</TabItem>
+<TabItem headerText="Test" itemKey="itemKey-4">
+
+## Url'er til testmiljøet
+
+| Tjeneste |	Url |
+|----------|-------|
+| Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider  |
+| Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/  |
+| Instans API |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances  |
+
+  
+</TabItem>
+
+<TabItem headerText="Eksempler" itemKey="itemKey-5"> 
+
+## Eksempler på mva-meldinger
+
+Eksempler på ny mva-melding i [excel](../../static/download/Testtilfeller_mva_melding.xlsx).
+
+Tilsvarende eksempler på mva-meldinger i [XML-format](https://github.com/Skatteetaten/mva-meldingen/tree/master/docs/informasjonsmodell_filer/example_files/melding).
 
 En oversikt over kodelistene finnes i [Oversikten over kodelister](https://github.com/Skatteetaten/mva-meldingen/blob/master/docs/informasjonsmodell_filer/kodelister/)
 
