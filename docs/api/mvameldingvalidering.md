@@ -79,20 +79,20 @@ Valideringsreglene er under utvikling og nye valideringsregler vil bli lagt til 
 
 Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 
-| Regel |	Beskrivelse |
-|----------|-------|
-| R018 | Summen av merverdiavgift for hver avgiftslinje er ikke lik feltet fastsattMerverdiavgift |
-| R019 | Beregnet avgift i avgiftslinje er ulik produktet av grunnlag og sats |
-| R074 | Merknader må være gyldig for brukt mva-kode (vanlig fortegn) |
-| R075 | Merknader må være gyldig for brukt mva-kode (motsatt fortegn) |
-| R076 | Merknader må være gyldig for brukt mva-kode (linje med spesifikasjon) |
-| R078 | Spesifikasjonslinje som gjelder tilbakeføring av inngående mva. gitt i mva §9-6 og §9-7 må sendes med en merknad |
-| R079 | KID-nummeret må være gyldig |
-| R082 | Innsendte beløp skal ikke inneholde desimaler |
-| R085 | Beløp på grunnlag feltet må være under en maks verdi |
-| R104 | Meldingen må være en ordinær (aliminnelig eller primærnæring) melding, krav om kompensasjon eller omvendt avgiftsplikt mva-melding |
-| R116 | Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett må ha med grunnlag og sats |
-| R122 | Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget |
+| Regel |	Beskrivelse                                                                                                                        |
+|-------|------------------------------------------------------------------------------------------------------------------------------------|
+| R018  | Summen av merverdiavgift for hver avgiftslinje er ikke lik feltet fastsattMerverdiavgift                                           |
+| R019  | Beregnet avgift i avgiftslinje er ulik produktet av grunnlag og sats                                                               |
+| R074  | Merknader må være gyldig for brukt mva-kode (vanlig fortegn)                                                                       |
+| R075  | Merknader må være gyldig for brukt mva-kode (motsatt fortegn)                                                                      |
+| R076  | Merknader må være gyldig for brukt mva-kode (linje med spesifikasjon)                                                              |
+| R078  | Spesifikasjonslinje som gjelder tilbakeføring av inngående mva. gitt i mva §9-6 og §9-7 må sendes med en merknad                   |
+| R079  | KID-nummeret må være gyldig                                                                                                        |
+| R082  | Innsendte beløp skal ikke inneholde desimaler                                                                                      |
+| R085  | Beløp på grunnlag feltet må være under en maks verdi                                                                               |
+| R104  | Meldingen må være en ordinær (aliminnelig eller primærnæring) melding, krav om kompensasjon eller omvendt avgiftsplikt mva-melding |
+| R116  | Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett må ha med grunnlag og sats                                              |
+| R122  | Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget                                                                    |
 
 
 <Tabs underline={true}>
