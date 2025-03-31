@@ -53,7 +53,7 @@ For å kunne benytte dette api'et med systemtilgang må man gi følgende rettigh
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/Amelding-mottak-API)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
