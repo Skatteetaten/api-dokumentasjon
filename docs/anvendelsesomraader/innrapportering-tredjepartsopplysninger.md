@@ -54,5 +54,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                 | :white_check_mark: |            |
 | [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                           | :white_check_mark: |            |
 | [Innrapportering betalinger naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)      | :white_check_mark: |            |
+| [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                             | :white_check_mark: |            |
 | [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)              | :white_check_mark: |            |
 
