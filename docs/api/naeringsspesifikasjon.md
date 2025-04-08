@@ -197,6 +197,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | NS-008   | 404             | Fant ikke naeringsspesifikasjon for gitt identifikator og inntektsaar. |
 | NS-009   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.             |
 | NS-010   | 410             | Naeringsspesifikasjon er ikke lenger tilgjenglig.                      |
+| NS-011   | 422             | Naeringsspesifikasjon er på format som ikke støttes.                   |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
