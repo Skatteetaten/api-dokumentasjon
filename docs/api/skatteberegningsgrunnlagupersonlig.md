@@ -90,9 +90,13 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og tes
 Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
 
 | Organisasjonsnummer | Inntektsår |
-|---|---|
-| 310322881  | 2021 |
-| 310962805  | 2021 |
+|---|------------|
+| 310322881  | 2021       |
+| 310962805  | 2021       |
+| 310013390  | 2023       |
+| 312679671  | 2023       |
+| 313375447  | 2024       |
+| 314207351  | 2024       |
   
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
 
