@@ -153,15 +153,16 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                                              |
 |----------|-----------------|-------------------------------------------------------------------------|
 | SMU-001  | 500             | Uventet feil på tjenesten.                                              |
-| SMU-002   | 500             | Uventet feil i et bakenforliggende system.                              |
-| SMU-003   | 404             | Ukjent url benyttet.                                                    |
-| SMU-004   | 401             | Feil i forbindelse med autentisering.                                   |
-| SMU-005   | 403             | Feil i forbindelse med autorisering.                                    |
-| SMU-006   | 400             | Feil i forbindelse med validering av inputdata.                         |
-| SMU-007   | 404             | Ingen skattemelding funnet på oppgitt gitt inntektsår og identifikator. |
-| SMU-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.              |
-| SMU-009   | 404             | Ingen organisasjon funnet med oppgitt identifikator.                    |
-| SMU-010   | 410             | Skattemeldingen finnes ikke lenger.                                     |
+| SMU-002  | 500             | Uventet feil i et bakenforliggende system.                              |
+| SMU-003  | 404             | Ukjent url benyttet.                                                    |
+| SMU-004  | 401             | Feil i forbindelse med autentisering.                                   |
+| SMU-005  | 403             | Feil i forbindelse med autorisering.                                    |
+| SMU-006  | 400             | Feil i forbindelse med validering av inputdata.                         |
+| SMU-007  | 404             | Ingen skattemelding funnet på oppgitt gitt inntektsår og identifikator. |
+| SMU-008  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.              |
+| SMU-009  | 404             | Ingen organisasjon funnet med oppgitt identifikator.                    |
+| SMU-010  | 410             | Skattemeldingen finnes ikke lenger.                                     |
+| SMU-011  | 422             | Skattemeldingen er på format som ikke støttes.                          |
   
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
