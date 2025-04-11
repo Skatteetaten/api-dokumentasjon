@@ -10,7 +10,7 @@ last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>English text.</Summary>
+<Summary>English summary for Trekkpålegg API.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
