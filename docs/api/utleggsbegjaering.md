@@ -10,7 +10,7 @@ last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste som tilbyr oversikt av krav, innbetalinger og utbetalinger tilhørende en part.</Summary>
+<Summary>TODO: Legg inn kort beskrivelse av API-et.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
