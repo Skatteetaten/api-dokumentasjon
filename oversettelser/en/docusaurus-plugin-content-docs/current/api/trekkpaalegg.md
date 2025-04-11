@@ -484,9 +484,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endepunktene.
-
-[![Informasjonsmodell](../../static/download/Informasjonsmodell_Kravogbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger.png)
+Bilde av informasjonsmodell.
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
