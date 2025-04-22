@@ -49,7 +49,7 @@ API-et har 4 endepunkter:
 * __Utbetalinger__: Hent alle utbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle
   utbetalinger innen et gitt tidsrom på maks ett år.
 
-Se også [eksempler](kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
 
 ## Rettighetspakker
 
