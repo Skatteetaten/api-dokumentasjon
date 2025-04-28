@@ -29,7 +29,7 @@ For generell informasjon om tjenester fra Skatteetaten se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:trekkpålegg`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:trekkpaalegg`
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app) på SwaggerHub.
 
