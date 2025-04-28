@@ -5,7 +5,7 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Innkreving]
-keywords: [trekkpålegg, innkreving]
+keywords: [trekkpaalegg, innkreving]
 last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
