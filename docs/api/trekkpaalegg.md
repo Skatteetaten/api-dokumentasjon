@@ -54,7 +54,7 @@ Alle URL-er er relative til
 
 Metode	HTTP request	Beskrivelse
 hent alle gjeldende	GET /api/trekkpaalegg/v1	Hent alle gjeldende trekkpålegg for den trekkpliktige
-hent versjon	GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}	Hent en spesifikk versjon av et trekkpålegg.
+hent versjon	GET /api/trekkpaalegg/v1/trekkid/trekkversjon	Hent en spesifikk versjon av et trekkpålegg.
 Hent alle gjeldende
 GET /api/trekkpaalegg/v1
 
@@ -74,7 +74,7 @@ HTTP request headere
 Content-Type: Ikke definert
 Accept: application/json, */*
 Hent versjon
-GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}
+GET /api/trekkpaalegg/v1/trekkid/trekkversjon
 
 Returnerer den angitte versjonen av et trekkpålegg
 
