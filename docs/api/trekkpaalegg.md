@@ -21,6 +21,8 @@ sluttbrukersystemer) til arbeidsgivere. Slike systemer kalles i det videre slutt
 Det skal etableres et nytt grensesnitt for å formidle trekkpålegg fra Skatteetaten til arbeidsgivere med ansatte som
 skal ha utleggstrekk i lønn.
 
+Funker dette da?
+
 Grensesnittet vil på sikt erstatte det eksisterende grensesnittet for trekkformidling, men i første omgang vil det nye
 grensesnittet komme i tillegg til det eksisterende grensesnittet. Grensesnittet vil først tilbys i et testmiljø,
 deretter i piloter og til slutt i full produksjon.
