@@ -56,6 +56,56 @@ Hovedtrekkene i det nye grensesnittet er:
 * Tokenet får SBS ved å koble seg opp mot Maskinporten med et gitt "scope".
 * Trekkpålegget leveres i formatet JSON.
 
+Skatteetaten tilbyr API for å hente trekkpålegg.
+
+Open API spesifikasjonen er tilgjengelig her :
+
+swaggerhub
+Trekkpålegg API
+Alle URIer er relative til
+
+https://api-test.sits.no (test)
+--- (prod)
+Metode	HTTP request	Beskrivelse
+hent alle gjeldende	GET /api/trekkpaalegg/v1	Hent alle gjeldende trekkpålegg for den trekkpliktige
+hent versjon	GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}	Hent en spesifikk versjon av et trekkpålegg.
+Hent alle gjeldende
+GET /api/trekkpaalegg/v1
+
+Returnerer siste versjon av samtlige trekkpålegg for en trekkpliktig. Dersom en trekkpliktig har svært mange trekkpålegg (flere tusen) så bør man benytte fraSekvensnummer og maksAntall for begrense returen til kun å inneholde trekkpålegg som er endret siden forrige spørring. Dersom antall returnerte trekkpålegg er lik maksAntall så må det gjøres en ny spørring med fraSekvensnummer lik det største sekvensnummeret i siste retur inntil man har fått returnert samtlige endrede trekkpålegg.
+
+Parametre
+Navn	Type	Beskrivelse	Notater
+fraSekvensnummer	String	Begrenser returnerte trekkpålegg til bare inneholde nyere enn angitt sekvensnummer. 0 eller større. Oppgis sammen med maksAntall. Mest relevant for trekkpliktige med svært mange trekkpålegg	[default til null]
+maksAntall	String	Angir maks antall trekkpålegg som skal returneres. 1 eller større. Skal bare brukes sammen med fraSekvensnummer. Mest relevant for trekkpliktige med svært mange trekkpålegg	[default til null]
+Retur type
+Liste av Trekkpaalegg
+
+Autorisasjon
+Se Tilgang
+
+HTTP request headere
+Content-Type: Ikke definert
+Accept: application/json, */*
+Hent versjon
+GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}
+
+Returnerer den angitte versjonen av et trekkpålegg
+
+Parametre
+Navn	Type	Beskrivelse	Notater
+trekkid	String	Id til trekkpålegget	[default til null]
+trekkversjon	String	Versjonen til det angitte trekkpålegg	[default til null]
+Retur type
+Trekkpaalegg
+
+Autorisasjon
+Se Tilgang
+
+HTTP request headere
+Content-Type: Ikke definert
+Accept: application/json, */*
+
 ## Datakatalog
 
 Dette API-et finnes foreløpig ikke i Felles datakatalog.
