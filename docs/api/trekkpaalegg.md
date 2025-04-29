@@ -17,7 +17,7 @@ trekkpliktige/arbeidsgivere.</Summary>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 Målgruppen for siden er utviklere og IT-arkitekter hos systemleverandører som leverer lønns- og personalsystemer (eller
-sluttbrukersystemer) til arbeidsgivere. Slike systemer kalles i det videre sluttbrukersystemer og forkortes SBS.
+sluttbrukersystemer) til arbeidsgivere. Slike systemer kalles i det videre sluttbrukersystemer og forkortes SBS. 
 Det skal etableres et nytt grensesnitt for å formidle trekkpålegg fra Skatteetaten til arbeidsgivere med ansatte som
 skal ha utleggstrekk i lønn.
 
