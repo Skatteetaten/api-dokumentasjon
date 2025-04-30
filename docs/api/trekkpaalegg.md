@@ -24,6 +24,8 @@ skal ha utleggstrekk i lønn.
 Grensesnittet vil på sikt erstatte det eksisterende grensesnittet for trekkformidling, men i første omgang vil det nye
 grensesnittet komme i tillegg til det eksisterende grensesnittet. Grensesnittet vil først tilbys i et testmiljø,
 deretter i piloter og til slutt i full produksjon.
+Figuren under viser arkitekturen:
+(../../static/download/trekkpalegg_oversikt.png)](../../static/download/trekkpalegg_oversikt.png)
 
 For generell informasjon om tjenester fra Skatteetaten se egne sider om:
 
