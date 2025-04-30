@@ -21,8 +21,6 @@ sluttbrukersystemer) til arbeidsgivere. Slike systemer kalles i det videre slutt
 Det skal etableres et nytt grensesnitt for å formidle trekkpålegg fra Skatteetaten til arbeidsgivere med ansatte som
 skal ha utleggstrekk i lønn.
 
-Funker dette da?
-
 Grensesnittet vil på sikt erstatte det eksisterende grensesnittet for trekkformidling, men i første omgang vil det nye
 grensesnittet komme i tillegg til det eksisterende grensesnittet. Grensesnittet vil først tilbys i et testmiljø,
 deretter i piloter og til slutt i full produksjon.
@@ -70,7 +68,7 @@ https://api-test.sits.no (test)
 --- (prod)
 Metode	HTTP request	Beskrivelse
 hent alle gjeldende	GET /api/trekkpaalegg/v1	Hent alle gjeldende trekkpålegg for den trekkpliktige
-hent versjon	GET /api/trekkpaalegg/v1/trekkid/trekkversjon	Hent en spesifikk versjon av et trekkpålegg.
+hent versjon	GET /api/trekkpaalegg/v1/:trekkid/:trekkversjon	Hent en spesifikk versjon av et trekkpålegg.
 Hent alle gjeldende
 GET /api/trekkpaalegg/v1
 
@@ -139,9 +137,9 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endepunktene.
+Her ser du hele informasjonsmodellen Trekkpålegg API med alle 4 endepunktene.
 
-[![Informasjonsmodell](../../static/download/Informasjonsmodell_Kravogbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger.png)
+[![Informasjonsmodell](../../static/download/informasjonsmodell-trekkpalegg.png)](../../static/download/informasjonsmodell-trekkpalegg.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
@@ -151,8 +149,7 @@ med å pilotere løsningene.
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
-Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
+Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ## Testdata
 
