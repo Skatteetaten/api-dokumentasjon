@@ -109,7 +109,7 @@ til å sjekke hva som er seneste tilgjengelige inntektsaar for en skattepliktig.
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse](https://data.norge.no/dataservices/dc560f2e-e5dd-3d8e-9383-eeb0b3085fce) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/8cc670c2-fa13-3f39-ade8-ca21b6ed06e0) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
