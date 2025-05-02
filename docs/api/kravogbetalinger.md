@@ -70,7 +70,7 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/662907037321ef0080ea8cbe) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/67dc3f08-a152-3f0e-a533-b092c026f23b) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
