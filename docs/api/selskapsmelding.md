@@ -51,7 +51,7 @@ For å følge med på endringer tilbyr vi
 en [støttetjeneste for hendelsesliste](./hendelser.md): `Selskapsmelding hendelser API`
 
 ## Datakatalog
-[Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/66602478f92ddf67bf17460d) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/8b267168-b593-3a8f-98af-1aab1d11192d) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
