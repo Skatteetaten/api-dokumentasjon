@@ -123,7 +123,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
-[![Informasjonsmodell](../../static/download/Informasjonsmodell-utleggsbegj%C3%A6ring.png)](../../static/download/Informasjonsmodell-utleggsbegj%C3%A6ring.png)
+[![Informasjonsmodell](../../static/download/Informasjonsmodell-utleggsbegjaering.png)](../../static/download/Informasjonsmodell-utleggsbegjaering.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
