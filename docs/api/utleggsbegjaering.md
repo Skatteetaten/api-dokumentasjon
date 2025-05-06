@@ -128,29 +128,28 @@ Her ser du hele informasjonsmodellen for Utleggsbegjæring
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
+## Testing
+### Krav til testgjennomføring
+Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres på at validerings- og innsendingstjenestene fungerer som forventet. Prosjektet bistår med feilsøk, evt. Feilretting og ved behov oppfølging av saker som er sendt inn i testmiljøet.
+
+### Testmiljø og testdata
+Systemleverandørene må ha testmiljøer som kun består av syntetiske data Det skal brukes testdata fra ‘Syntetisk Norge’ og disse hentes ut med Tenor Testdatasøk i de meldingene som sendes inn. Vedlegg skal også kun inneholde syntetiske testdata. Her finnes en bruksveiledning for Tenor Testdatasøk. Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten.
+
+Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på Informasjonsmodeller.
+
+Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
+
+URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v1
+
 I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
 med å pilotere løsningene.
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
-Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ## Testdata
 
-Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne.
-Vær oppmerksom på at det er et levende testdatasett som kan endre seg i løpet av testperioden. Ta kontakt dersom du har
-behov for ytterligere testdata.
 
-Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testvirksomheter, selv om de i pilotperioden kun kan gjøre oppslag for egen virksomhet i Prod.
-
-| Organisasjonsnummer | 
-|---------------------|
-| 313367002           |
-| 311851381           |
-| 314961900           |
-| 314055403           |
-| 212201782           |
 
 </TabItem>
 </Tabs>
