@@ -10,7 +10,17 @@ last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>TODO Legg inn kort beskrivelse av API-et.</Summary>
+<Summary>## Om tjenesten
+Utleggsbegjæring er en tjeneste for å sende utleggsbegjæringer til namsmannen gjennom Skatteetatens systemløsninger.
+
+Målgruppen er dagens inkassosystemer, kommunene og andre systemleverandører.
+
+Dersom du ønsker å ta i bruk utleggsbegjæring og prøving i ditt system eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.</Summary>
+
+Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og prøving av utleggsbegjæringer. Merk at figuren er en illustrasjon av måbildet, og det er ikke alle tjenestene i figuren som er implementert ennå. Det vil også i fremtiden kunne legges til nye tjenester som ikke er angitt i figuren.
+
+[![Informasjonsmodell](../../static/download/Utleggsbegjaering_oversikt.png)](../../static/download/Utleggsbegjaering_oversikt.png)
+
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
