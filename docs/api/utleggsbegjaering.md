@@ -59,7 +59,6 @@ Dette API-et finnes foreløpig ikke i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
 ```
 
 ### Eksempel på respons
