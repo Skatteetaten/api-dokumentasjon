@@ -104,7 +104,7 @@ Den valgte organisasjonen i Tenor (som representerer en test-inkassovirksomhet) 
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig. 
 
 | Feilkode | HTTP Statuskode | Feilområde                                                     |
 |----------|-----------------|----------------------------------------------------------------|
