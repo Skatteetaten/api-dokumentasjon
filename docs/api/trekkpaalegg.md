@@ -10,9 +10,7 @@ last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
 
-<Summary> 
-Denne siden beskriver et nytt grensesnitt mellom IT-systemene til Skatteetaten og
-trekkpliktige/arbeidsgivere.</Summary>
+<Summary> Denne siden beskriver et nytt grensesnitt mellom IT-systemene til Skatteetaten og trekkpliktige/arbeidsgivere.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -61,9 +59,8 @@ Hovedtrekkene i det nye grensesnittet er:
 ## API Spesifikasjon
 Skatteetaten tilbyr API for å hente trekkpålegg.
 
-Open API spesifikasjonen er tilgjengelig her :
+Open API spesifikasjonen er tilgjengelig her: swaggerhub
 
-swaggerhub
 ### Trekkpålegg API
 Alle URIer er relative til
 
@@ -71,7 +68,7 @@ https://api-test.sits.no (test)
 --- (prod)
 Metode	HTTP request	Beskrivelse
 hent alle gjeldende	GET /api/trekkpaalegg/v1	Hent alle gjeldende trekkpålegg for den trekkpliktige
-hent versjon	GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}	Hent en spesifikk versjon av et trekkpålegg.
+hent versjon	GET /api/trekkpaalegg/v1/trekkid/trekkversjon	Hent en spesifikk versjon av et trekkpålegg.
 
 ### Hent alle gjeldende
 GET /api/trekkpaalegg/v1
@@ -94,7 +91,7 @@ Content-Type: Ikke definert
 Accept: application/json, */*
 
 ### Hent versjon
-GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}
+GET /api/trekkpaalegg/v1/trekkid/trekkversjon
 Returnerer den angitte versjonen av et trekkpålegg
 
 ### Parametre
