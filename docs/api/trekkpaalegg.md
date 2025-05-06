@@ -24,7 +24,14 @@ Grensesnittet vil på sikt erstatte det eksisterende grensesnittet for trekkform
 grensesnittet komme i tillegg til det eksisterende grensesnittet. Grensesnittet vil først tilbys i et testmiljø,
 deretter i piloter og til slutt i full produksjon.
 Figuren under viser arkitekturen: [![Arkitektur](../../static/download/trekkpalegg_oversikt.png)](../../static/download/trekkpalegg_oversikt.png)
+### Beskrivelse:
+Skatteetaten etablerer en ny utleggstrekksak og oppretter en JSON-melding om dette i utleggstrekk-API
 
+Send informasjon om nytt trekkpålegg til arbeidsgiver via Dialogporten
+Arbeidsgiver henter trekkpålegg fra Skatteetaten.
+2a SBS henter et systembrukertoken fra Maskinporten
+2b SBS utfører kall (get) mot trekkpålegg-API for å hente trekkpålegg
+Trekkpliktig arbeidsgiver kan også hente de samme trekkpåleggene fra Altinn-innboksen i Digdirs Felles arbeidsflate. En slik løsning vil videreføres også i fremtiden.
 For generell informasjon om tjenester fra Skatteetaten se egne sider om:
 
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
