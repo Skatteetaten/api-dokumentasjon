@@ -121,9 +121,9 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Her ser du hele informasjonsmodellen for Krav og betalinger API med alle 4 endepunktene.
+Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
-[![Informasjonsmodell](../../static/download/Informasjonsmodell_Kravogbetalinger.png)](../../static/download/Informasjonsmodell_Kravogbetalinger.png)
+[![Informasjonsmodell](../../static/download/Informasjonsmodell-utleggsbegj%C3%A6ring.png)](../../static/download/Informasjonsmodell-utleggsbegj%C3%A6ring.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
