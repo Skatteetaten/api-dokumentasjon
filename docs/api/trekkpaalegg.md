@@ -86,28 +86,29 @@ maksAntall	String	Angir maks antall trekkpålegg som skal returneres. 1 eller st
 ### Retur type
 Liste av Trekkpaalegg https://skatteetaten.github.io/beta-apier/trekkpaalegg/feltbeskrivelser/Models/Trekkpaalegg
 
-Autorisasjon
-Se Tilgang
+### Autorisasjon
+Se Tilgang https://skatteetaten.github.io/beta-apier/trekkpaalegg/tilgang 
 
-HTTP request headere
+### HTTP request headere
 Content-Type: Ikke definert
 Accept: application/json, */*
-Hent versjon
-GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}
 
+### Hent versjon
+GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}
 Returnerer den angitte versjonen av et trekkpålegg
 
-Parametre
+### Parametre
 Navn	Type	Beskrivelse	Notater
 trekkid	String	Id til trekkpålegget	[default til null]
 trekkversjon	String	Versjonen til det angitte trekkpålegg	[default til null]
-Retur type
+
+### Retur type
 Trekkpaalegg
 
-Autorisasjon
+### Autorisasjon
 Se Tilgang
 
-HTTP request headere
+### HTTP request headere
 Content-Type: Ikke definert
 Accept: application/json, */*
 
