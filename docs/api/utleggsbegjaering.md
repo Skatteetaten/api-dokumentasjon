@@ -31,6 +31,16 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
+### Altinn Dialogporten
+Når det gjelder Altinn Dialogporten, er bruk av denne ikke en del av Piloten våren 2025. Videre er leverandører hverken i Pilot eller i full produksjon påkrevet å å integrere med Dialogporten. Det vil være tilstrekkelig å kun benytte API-endepunktene. Gjennom Dialogporten vil vi imidlertid tilby en tjeneste for hendelsesvarsler (events) som angir når det er kommet nye meldinger fra Skatteeetaten, eksempelvis at det er bedt om retting av en tidligere innsendt utleggsbegjæring. Dersom man velger å ikke bruke varslingstjenesten, må man se etter nye meldinger ved jevnlig å gjøre spørringer mot etatens API (polling).
+
+### Oppfølging og støtte
+I testfasen vil vi tilby støtte til de eksterne leverandørene gjennom utvikling og test.
+
+Mer informasjon kommer her.
+
+I mellomtiden – ta kontakt med fremtidensinnkreving@skatteetaten.no.
+
 ## Scope
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`
