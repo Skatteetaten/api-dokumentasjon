@@ -109,6 +109,30 @@ Accept: application/json, */*
 
 ## Datakatalog
 
+
+## Tilgang til tjenesten
+Tilgang styres via Maskinporten.
+
+For å få utstedt token av Maskinporten må lønnssystemet gjennom sitt virksomhetssertifikat angi hvilket organisasjonsnummer de representerer. Dette organisasjonsnummeret må være godkjent av Skatteetaten.
+
+For å benytte tjenestene for trekkpålegg skal følgende scope angis ved autentisering i Maskinporten: skatteetaten:trekkpaalegg
+
+API-et støtter to varianter av autentisering via Maskinporten. Disse er beskrevet under
+
+Alternativ 1 - Systemleverandør er trekkpliktig
+Dersom systemleverandør kun skal motta trekkpålegg for sin egen organisasjon, kan man benytte klassisk autentisering via Maskinporten. Mer informasjon om dette finnes her.
+
+Alternativ 2 - Systembruker
+Dersom systemleverandør ønsker å tilby funksjonalitet der en annen organisasjon (kunde av systemleverandøren) skal benytte systemet til å motta trekkpålegg, skal Altinn sin nye funksjonalitet for ‘systembruker’ benyttes. Mer informasjon om dette finnes i Altinn Systembruker for SBS og Systembruker roadmap.
+
+Systemleverandør må for å støtte systembruker registrere seg i Maskinporten og Altinn test environment.
+
+Testoppsett
+Test uten bruk av systembruker (alternativ 1)
+Valgfrie organisasjoner fra Tenor kan benyttes som trekkpliktig.
+
+Test der systembruker benyttes (alternativ 2)
+Valgfrie organisasjoner fra Tenor kan benyttes som trekkpliktig. Den valgte organisasjonen i Tenor (som representerer en trekkpliktig) må godkjenne at dens fagsystem kan benytte tilgangsressursen/tjenesten «Informasjon om trekkpålegg» på vegne av virksomheten. Det opprettes da en «systembruker» som er koblingen mellom bruker, system, leverandør og API.
 Dette API-et finnes foreløpig ikke i Felles datakatalog.
 
 </TabItem>
@@ -144,6 +168,8 @@ Her ser du hele informasjonsmodellen Trekkpålegg API med alle 4 endepunktene.
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
+
+## Test
 
 Krav til testgjennomføring
 Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres på at det kan hentes meldinger via gitt endepunkt beskrevet av skatteetaten. Se API spesifikasjon.
