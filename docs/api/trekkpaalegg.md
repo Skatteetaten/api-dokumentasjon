@@ -119,19 +119,19 @@ For å benytte tjenestene for trekkpålegg skal følgende scope angis ved autent
 
 API-et støtter to varianter av autentisering via Maskinporten. Disse er beskrevet under
 
-Alternativ 1 - Systemleverandør er trekkpliktig
+### Alternativ 1 - Systemleverandør er trekkpliktig
 Dersom systemleverandør kun skal motta trekkpålegg for sin egen organisasjon, kan man benytte klassisk autentisering via Maskinporten. Mer informasjon om dette finnes her.
 
-Alternativ 2 - Systembruker
+### Alternativ 2 - Systembruker
 Dersom systemleverandør ønsker å tilby funksjonalitet der en annen organisasjon (kunde av systemleverandøren) skal benytte systemet til å motta trekkpålegg, skal Altinn sin nye funksjonalitet for ‘systembruker’ benyttes. Mer informasjon om dette finnes i Altinn Systembruker for SBS og Systembruker roadmap.
 
 Systemleverandør må for å støtte systembruker registrere seg i Maskinporten og Altinn test environment.
 
-Testoppsett
-Test uten bruk av systembruker (alternativ 1)
+### Testoppsett
+### Test uten bruk av systembruker (alternativ 1)
 Valgfrie organisasjoner fra Tenor kan benyttes som trekkpliktig.
 
-Test der systembruker benyttes (alternativ 2)
+### Test der systembruker benyttes (alternativ 2)
 Valgfrie organisasjoner fra Tenor kan benyttes som trekkpliktig. Den valgte organisasjonen i Tenor (som representerer en trekkpliktig) må godkjenne at dens fagsystem kan benytte tilgangsressursen/tjenesten «Informasjon om trekkpålegg» på vegne av virksomheten. Det opprettes da en «systembruker» som er koblingen mellom bruker, system, leverandør og API.
 Dette API-et finnes foreløpig ikke i Felles datakatalog.
 
@@ -171,12 +171,12 @@ Her ser du hele informasjonsmodellen Trekkpålegg API med alle 4 endepunktene.
 
 ## Test
 
-Krav til testgjennomføring
+### Krav til testgjennomføring
 Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres på at det kan hentes meldinger via gitt endepunkt beskrevet av skatteetaten. Se API spesifikasjon.
 
 Prosjektet bistår med feilsøk og evt. feilretting av vår løsning.
 
-Oppsummering av test og oppstart i produksjon
+### Oppsummering av test og oppstart i produksjon
 Systemleverandørene skal etter avsluttet testperiode og i forkant av produksjon oppsummere testen. Oppsummeringen skal vise hva som er testet, samt status etter gjennomført test inkludert oversikt over feil og mangler. Systemleverandørene skal på skatteetatens forespørsel fremlegge dokumentasjon på hvordan integrasjon er testet.
 
 Testmiljø
