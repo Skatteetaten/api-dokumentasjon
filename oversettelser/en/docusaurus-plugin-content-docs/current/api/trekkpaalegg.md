@@ -17,11 +17,11 @@ hide_table_of_contents: true
 
 English test. For generell informasjon om tjenestene se egne sider om:
 
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Systembruker](../om/systembruker.md)
-* [Feilhåndtering](../om/feil.md)
-* [Versjonering](../om/versjoner.md)
-* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
+* [Sikkerhetsmekansimer](../../../../../docs/om/sikkerhet.md)
+* [Systembruker](../../../../../docs/om/systembruker.md)
+* [Feilhåndtering](../../../../../docs/om/feil.md)
+* [Versjonering](../../../../../docs/om/versjoner.md)
+* [Teknisk spesifikasjon](../../../../../docs/om/tekniskspesifikasjon.md)
 
 ## Scope
 
