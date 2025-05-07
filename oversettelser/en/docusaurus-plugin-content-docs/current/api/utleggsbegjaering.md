@@ -12,10 +12,18 @@ hide_table_of_contents: true
 
 <Summary>English summary for Utleggsbegjaering API.</Summary>
 
+
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
+Målgruppen er dagens inkassosystemer, kommunene og andre systemleverandører.
+Dersom du ønsker å ta i bruk utleggsbegjæring og prøving i ditt system eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.
 
-English test. For generell informasjon om tjenestene se egne sider om:
+Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og prøving av utleggsbegjæringer. Merk at figuren er en illustrasjon av måbildet, og det er ikke alle tjenestene i figuren som er implementert ennå. Det vil også i fremtiden kunne legges til nye tjenester som ikke er angitt i figuren.
+
+[![Informasjonsmodell](../../static/download/Utleggsbegjaering_oversikt.png)](../../static/download/Utleggsbegjaering_oversikt.png)
+
+
+For generell informasjon om tjenestene se egne sider om:
 
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
@@ -23,23 +31,59 @@ English test. For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
+### Altinn Dialogporten
+Når det gjelder Altinn Dialogporten, er bruk av denne ikke en del av Piloten våren 2025. Videre er leverandører hverken i Pilot eller i full produksjon påkrevet å å integrere med Dialogporten. Det vil være tilstrekkelig å kun benytte API-endepunktene. Gjennom Dialogporten vil vi imidlertid tilby en tjeneste for hendelsesvarsler (events) som angir når det er kommet nye meldinger fra Skatteeetaten, eksempelvis at det er bedt om retting av en tidligere innsendt utleggsbegjæring. Dersom man velger å ikke bruke varslingstjenesten, må man se etter nye meldinger ved jevnlig å gjøre spørringer mot etatens API (polling).
+
+### Oppfølging og støtte
+I testfasen vil vi tilby støtte til de eksterne leverandørene gjennom utvikling og test.
+
+Mer informasjon kommer her.
+
+I mellomtiden – ta kontakt med fremtidensinnkreving@skatteetaten.no.
+
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:trekkpålegg`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`
 
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Trekkpålegg API - På vegne av`
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæring API - På vegne av`
 
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app) på SwaggerHub.
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
 
 ## Datakatalog
 
 Dette API-et finnes foreløpig ikke i Felles datakatalog.
+
+## Tilgang til tjenesten
+For å få tilgang til tjenesten må leverandøren ha underskrevet en pilotavtale med Skatteetaten.
+
+Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten. For å få utstedt token av Maskinporten må inkasso-systemet gjennom sitt virksomhetssertifikat angi hvilket organisasjonsnummer de representerer. Dette organisasjonsnummeret må være godkjent av Skatteetaten.
+
+For å benytte tjenestene for innsending av begjæring skal følgende scope angis ved autentisering i Maskinporten: skatteetaten:utleggsbegjaering
+
+API-et støtter to varianter av autentisering via Maskinporten. Disse er beskrevet under
+
+### Alternativ 1 - Systemleverandør er innsender
+Dersom systemleverandør kun skal sende inn utleggsbegjæringer på vegne av sin egen organisasjon, kan man benytte klassisk autentisering via Maskinporten. Mer informasjon om dette finnes her.
+
+### Alternativ 2 - Systembruker
+Dersom systemleverandør ønsker å tilby funksjonalitet der en annen organisasjon (kunde av systemleverandøren) skal benytte systemet til å sende inn utleggsbegjæringer, skal Altinn sin nye funksjonalitet for ‘systembruker’ benyttes. Mer informasjon om dette finnes i Altinn Systembruker for SBS og Systembruker roadmap.
+
+Systemleverandør må for å støtte systembruker registrere seg i Maskinporten og Altinn test environment.
+
+### Testoppsett
+Bruk valgfrie organisasjoner fra Tenor som innsender av utleggsbegjæring.
+
+### Test der systemleverandør er innsender (alternativ 1)
+Når systemleverandør er innsender kan vilkårlige organisasjoner i Tenor benyttes som innsender.
+
+### Test der systembruker benyttes (alternativ 2)
+Den valgte organisasjonen i Tenor (som representerer en test-inkassovirksomhet) må godkjenne at dens fagsystem kan benytte tilgangsressursen/tjenesten «Innsending og oppfølging av utleggsbegjæring» på vegne av virksomheten. Det opprettes da en «systembruker» som er koblingen mellom bruker, system, leverandør og API.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
@@ -49,425 +93,18 @@ Dette API-et finnes foreløpig ikke i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
 ```
 
 ### Eksempel på respons
 
-```json
-{
-  "partIdentifikator": "212201782",
-  "skjermet": false,
-  "aapentKravMedGjenstaaendeBeloep": [
-    {
-      "partIdentifikator": "212201782",
-      "kravidentifikator": "krav-1234",
-      "kravtype": "RESTSKATT",
-      "opprinneligBeloep": 10000.0,
-      "gjenstaaendeBeloep": 10000.0,
-      "kravforfall": [
-        {
-          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-          "forfallsdato": "2023-02-21",
-          "opprinneligBeloep": 10000.0,
-          "gjenstaaendeBeloep": 10000.0,
-          "betalingsinformasjon": {
-            "konto": {
-              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
-              "kontonummer": "63450624804",
-              "iban": "NO42 6345 06 24804",
-              "swiftBIC": "NDEANOKK"
-            }
-          },
-          "plassertInnbetaling": [
-            {
-              "innbetalingsIdentifikator": "inn-12345",
-              "plassertBeloep": -1000.0,
-              "plassertDato": "2023-02-05",
-              "innbetalingsdato": "2023-01-30",
-              "innbetaltBeloep": 0.0,
-              "innbetaltFra": {
-                "konto": {}
-              },
-              "innbetalingstype": "Bankoverføring"
-            }
-          ],
-          "plassertMotkrav": [
-            {
-              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-              "plassertBeloep": -1000.0,
-              "kravtype": "RESTSKATT",
-              "plassertDato": "2023-02-05",
-              "kravbeskrivelse": {
-                "spraakTekst": [
-                  {
-                    "tekst": "Restskatt",
-                    "spraak": "nb"
-                  }
-                ]
-              },
-              "forfallsdato": "2023-01-30",
-              "kravperiode": {
-                "periodeBeskrivelse": {
-                  "spraakTekst": [
-                    {
-                      "tekst": "2023/02",
-                      "spraak": "nb"
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "stipulerteRenter": 200.0,
-      "kravbeskrivelse": {
-        "spraakTekst": [
-          {
-            "tekst": "Restskatt",
-            "spraak": "nb"
-          }
-        ]
-      },
-      "kravperiode": {
-        "periodeBeskrivelse": {
-          "spraakTekst": [
-            {
-              "tekst": "2023/02",
-              "spraak": "nb"
-            }
-          ]
-        }
-      },
-      "opprettelsesdatoForKrav": "2023-01-30",
-      "kravgruppe": "Skatt",
-      "fastsettingsmaate": "blank"
-    },
-    {
-      "partIdentifikator": "04827896468",
-      "kravidentifikator": "krav-1234",
-      "kravtype": "RESTSKATT",
-      "opprinneligBeloep": 10000.0,
-      "gjenstaaendeBeloep": 10000.0,
-      "kravforfall": [
-        {
-          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-          "forfallsdato": "2023-02-21",
-          "opprinneligBeloep": 10000.0,
-          "gjenstaaendeBeloep": 10000.0,
-          "betalingsinformasjon": {
-            "konto": {
-              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
-              "kontonummer": "63450624804",
-              "iban": "NO42 6345 06 24804",
-              "swiftBIC": "NDEANOKK"
-            }
-          },
-          "plassertInnbetaling": [
-            {
-              "innbetalingsIdentifikator": "inn-12345",
-              "plassertBeloep": -1000.0,
-              "plassertDato": "2023-02-05",
-              "innbetalingsdato": "2023-01-30",
-              "innbetaltBeloep": 0.0,
-              "innbetaltFra": {
-                "konto": {}
-              },
-              "innbetalingstype": "Bankoverføring"
-            }
-          ],
-          "plassertMotkrav": [
-            {
-              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-              "plassertBeloep": -1000.0,
-              "kravtype": "RESTSKATT",
-              "plassertDato": "2023-02-05",
-              "kravbeskrivelse": {
-                "spraakTekst": [
-                  {
-                    "tekst": "Restskatt",
-                    "spraak": "nb"
-                  }
-                ]
-              },
-              "forfallsdato": "2023-01-30",
-              "kravperiode": {
-                "periodeBeskrivelse": {
-                  "spraakTekst": [
-                    {
-                      "tekst": "2023/02",
-                      "spraak": "nb"
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "stipulerteRenter": 200.0,
-      "kravbeskrivelse": {
-        "spraakTekst": [
-          {
-            "tekst": "Restskatt",
-            "spraak": "nb"
-          }
-        ]
-      },
-      "kravperiode": {
-        "periodeBeskrivelse": {
-          "spraakTekst": [
-            {
-              "tekst": "2023/02",
-              "spraak": "nb"
-            }
-          ]
-        }
-      },
-      "opprettelsesdatoForKrav": "2023-01-30",
-      "kravgruppe": "Skatt",
-      "fastsettingsmaate": "blank"
-    }
-  ],
-  "innbetalingMedUplassertBeloep": [
-    {
-      "partIdentifikator": "212201782",
-      "innbetalingsidentifikator": "inn-1234",
-      "innbetalingsdato": "2023-03-01",
-      "innbetaltBeloep": 1000.0,
-      "uplassertBeloep": 0.0,
-      "mottakersKontonummer": {
-        "kontonummer": "98766543210"
-      },
-      "innbetaltFra": {
-        "konto": {
-          "kontoeiersNavn": "LYSTIG KLAM KATT TUSJ",
-          "kontonummer": "******43210"
-        }
-      },
-      "innbetalingstype": "bankoverføring"
-    },
-    {
-      "partIdentifikator": "04827896468",
-      "innbetalingsidentifikator": "inn-1234",
-      "innbetalingsdato": "2023-03-01",
-      "innbetaltBeloep": 1000.0,
-      "uplassertBeloep": 0.0,
-      "mottakersKontonummer": {
-        "kontonummer": "98766543210"
-      },
-      "innbetaltFra": {
-        "konto": {
-          "kontoeiersNavn": "LYSTIG KLAM KATT TUSJ",
-          "kontonummer": "******43210"
-        }
-      },
-      "innbetalingstype": "bankoverføring"
-    }
-  ]
-}
-```
 
-## Krav
-
-### Eksempel på request URL
-
-```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/krav?fraOgMed=2023-01-01&tilOgMed=2023-09-01
-```
-
-### Eksempel på respons
-
-```json
-{
-  "partIdentifikator": "212201782",
-  "periode": {
-    "fraOgMed": "2023-01-01",
-    "tilOgMed": "2023-09-01"
-  },
-  "skjermet": false,
-  "krav": [
-    {
-      "partIdentifikator": "212201782",
-      "kravidentifikator": "krav-1234",
-      "kravtype": "RESTSKATT",
-      "opprinneligBeloep": 10000.0,
-      "gjenstaaendeBeloep": 10000.0,
-      "kravforfall": [
-        {
-          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-          "forfallsdato": "2023-02-21",
-          "opprinneligBeloep": 10000.0,
-          "gjenstaaendeBeloep": 10000.0,
-          "betalingsinformasjon": {
-            "konto": {
-              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
-              "kontonummer": "63450624804",
-              "iban": "NO42 6345 06 24804",
-              "swiftBIC": "NDEANOKK"
-            }
-          },
-          "plassertInnbetaling": [
-            {
-              "innbetalingsIdentifikator": "inn-12345",
-              "plassertBeloep": -1000.0,
-              "plassertDato": "2023-02-05",
-              "innbetalingsdato": "2023-01-30",
-              "innbetaltBeloep": 0.0,
-              "innbetaltFra": {
-                "konto": {}
-              },
-              "innbetalingstype": "Bankoverføring"
-            }
-          ],
-          "plassertMotkrav": [
-            {
-              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-              "plassertBeloep": -1000.0,
-              "kravtype": "RESTSKATT",
-              "plassertDato": "2023-02-05",
-              "kravbeskrivelse": {
-                "spraakTekst": [
-                  {
-                    "tekst": "Restskatt",
-                    "spraak": "nb"
-                  }
-                ]
-              },
-              "forfallsdato": "2023-01-30",
-              "kravperiode": {
-                "periodeBeskrivelse": {
-                  "spraakTekst": [
-                    {
-                      "tekst": "2023/02",
-                      "spraak": "nb"
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "stipulerteRenter": 200.0,
-      "kravbeskrivelse": {
-        "spraakTekst": [
-          {
-            "tekst": "Restskatt",
-            "spraak": "nb"
-          }
-        ]
-      },
-      "kravperiode": {
-        "periodeBeskrivelse": {
-          "spraakTekst": [
-            {
-              "tekst": "2023/02",
-              "spraak": "nb"
-            }
-          ]
-        }
-      },
-      "opprettelsesdatoForKrav": "2023-01-30",
-      "kravgruppe": "Skatt",
-      "fastsettingsmaate": "blank"
-    },
-    {
-      "partIdentifikator": "04827896468",
-      "kravidentifikator": "krav-1234",
-      "kravtype": "RESTSKATT",
-      "opprinneligBeloep": 10000.0,
-      "gjenstaaendeBeloep": 10000.0,
-      "kravforfall": [
-        {
-          "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-          "forfallsdato": "2023-02-21",
-          "opprinneligBeloep": 10000.0,
-          "gjenstaaendeBeloep": 10000.0,
-          "betalingsinformasjon": {
-            "konto": {
-              "bankinformasjon": "Nordea Bank Norge ASA, Postboks 1166 Sentrum, 0107 Oslo, Norge",
-              "kontonummer": "63450624804",
-              "iban": "NO42 6345 06 24804",
-              "swiftBIC": "NDEANOKK"
-            }
-          },
-          "plassertInnbetaling": [
-            {
-              "innbetalingsIdentifikator": "inn-12345",
-              "plassertBeloep": -1000.0,
-              "plassertDato": "2023-02-05",
-              "innbetalingsdato": "2023-01-30",
-              "innbetaltBeloep": 0.0,
-              "innbetaltFra": {
-                "konto": {}
-              },
-              "innbetalingstype": "Bankoverføring"
-            }
-          ],
-          "plassertMotkrav": [
-            {
-              "kravforfallsIdentifikator": "93d29b06-6cbd-4999-bd23-b0a13c47da51",
-              "plassertBeloep": -1000.0,
-              "kravtype": "RESTSKATT",
-              "plassertDato": "2023-02-05",
-              "kravbeskrivelse": {
-                "spraakTekst": [
-                  {
-                    "tekst": "Restskatt",
-                    "spraak": "nb"
-                  }
-                ]
-              },
-              "forfallsdato": "2023-01-30",
-              "kravperiode": {
-                "periodeBeskrivelse": {
-                  "spraakTekst": [
-                    {
-                      "tekst": "2023/02",
-                      "spraak": "nb"
-                    }
-                  ]
-                }
-              }
-            }
-          ]
-        }
-      ],
-      "stipulerteRenter": 200.0,
-      "kravbeskrivelse": {
-        "spraakTekst": [
-          {
-            "tekst": "Restskatt",
-            "spraak": "nb"
-          }
-        ]
-      },
-      "kravperiode": {
-        "periodeBeskrivelse": {
-          "spraakTekst": [
-            {
-              "tekst": "2023/02",
-              "spraak": "nb"
-            }
-          ]
-        }
-      },
-      "opprettelsesdatoForKrav": "2023-01-30",
-      "kravgruppe": "Skatt",
-      "fastsettingsmaate": "blank"
-    }
-  ]
-}
-```
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig. 
 
 | Feilkode | HTTP Statuskode | Feilområde                                                     |
 |----------|-----------------|----------------------------------------------------------------|
@@ -483,34 +120,36 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
-Bilde av informasjonsmodell.
+
+Her ser du hele informasjonsmodellen for Utleggsbegjæring
+
+[![Informasjonsmodell](../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../static/download/informasjonsmodell-utleggsbegjaering.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
+
+## Testing
+### Krav til testgjennomføring
+Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres på at validerings- og innsendingstjenestene fungerer som forventet. Prosjektet bistår med feilsøk, evt. Feilretting og ved behov oppfølging av saker som er sendt inn i testmiljøet.
+
+### Testmiljø og testdata
+Systemleverandørene må ha testmiljøer som kun består av syntetiske data Det skal brukes testdata fra ‘Syntetisk Norge’ og disse hentes ut med Tenor Testdatasøk i de meldingene som sendes inn. Vedlegg skal også kun inneholde syntetiske testdata. Her finnes en bruksveiledning for Tenor Testdatasøk. Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten.
+
+Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på Informasjonsmodeller.
+
+Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
+
+URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v1
 
 I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
 med å pilotere løsningene.
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
-Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ## Testdata
 
-Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne.
-Vær oppmerksom på at det er et levende testdatasett som kan endre seg i løpet av testperioden. Ta kontakt dersom du har
-behov for ytterligere testdata.
 
-Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testvirksomheter, selv om de i pilotperioden kun kan gjøre oppslag for egen virksomhet i Prod.
-
-| Organisasjonsnummer | 
-|---------------------|
-| 313367002           |
-| 311851381           |
-| 314961900           |
-| 314055403           |
-| 212201782           |
 
 </TabItem>
 </Tabs>
