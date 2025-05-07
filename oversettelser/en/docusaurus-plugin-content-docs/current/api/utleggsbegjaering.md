@@ -20,16 +20,16 @@ Dersom du ønsker å ta i bruk utleggsbegjæring og prøving i ditt system eller
 
 Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og prøving av utleggsbegjæringer. Merk at figuren er en illustrasjon av måbildet, og det er ikke alle tjenestene i figuren som er implementert ennå. Det vil også i fremtiden kunne legges til nye tjenester som ikke er angitt i figuren.
 
-[![Informasjonsmodell](../../static/download/Utleggsbegjaering_oversikt.png)](../../static/download/Utleggsbegjaering_oversikt.png)
+[![Informasjonsmodell](../../../../../static/download/Utleggsbegjaering_oversikt.png)](../../../../static/download/Utleggsbegjaering_oversikt.png)
 
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Systembruker](../om/systembruker.md)
-* [Feilhåndtering](../om/feil.md)
-* [Versjonering](../om/versjoner.md)
-* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
+* [Sikkerhetsmekansimer](../../../../../docs/om/sikkerhet.md)
+* [Systembruker](../../../../../docs/om/systembruker.md)
+* [Feilhåndtering](../../../../../docs/om/feil.md)
+* [Versjonering](../../../../../docs/om/versjoner.md)
+* [Teknisk spesifikasjon](../../../../../docs/om/tekniskspesifikasjon.md)
 
 ### Altinn Dialogporten
 Når det gjelder Altinn Dialogporten, er bruk av denne ikke en del av Piloten våren 2025. Videre er leverandører hverken i Pilot eller i full produksjon påkrevet å å integrere med Dialogporten. Det vil være tilstrekkelig å kun benytte API-endepunktene. Gjennom Dialogporten vil vi imidlertid tilby en tjeneste for hendelsesvarsler (events) som angir når det er kommet nye meldinger fra Skatteeetaten, eksempelvis at det er bedt om retting av en tidligere innsendt utleggsbegjæring. Dersom man velger å ikke bruke varslingstjenesten, må man se etter nye meldinger ved jevnlig å gjøre spørringer mot etatens API (polling).
@@ -102,7 +102,7 @@ Den valgte organisasjonen i Tenor (som representerer en test-inkassovirksomhet) 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
-Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
+Se egen side for generell info om [feilhåndtering i tjenestene](../../../docs/om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig. 
 
@@ -123,7 +123,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
-[![Informasjonsmodell](../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../static/download/informasjonsmodell-utleggsbegjaering.png)
+[![Informasjonsmodell](../../../../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../../../static/download/informasjonsmodell-utleggsbegjaering.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
