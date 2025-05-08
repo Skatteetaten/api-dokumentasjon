@@ -74,7 +74,7 @@ Dersom systemleverandør kun skal sende inn utleggsbegjæringer på vegne av sin
 ### Alternativ 2 - Systembruker
 Dersom systemleverandør ønsker å tilby funksjonalitet der en annen organisasjon (kunde av systemleverandøren) skal benytte systemet til å sende inn utleggsbegjæringer, skal Altinn sin nye funksjonalitet for ‘systembruker’ benyttes. Mer informasjon om dette finnes i Altinn Systembruker for SBS og Systembruker roadmap.
 
-Systemleverandør må for å støtte systembruker registrere seg i Maskinporten og Altinn test environment.
+Systemleverandør må for å støtte systembruker registrere seg i Maskinporten og Altinn test environment. [Les mer om Systembruker her] (https://skatteetaten.github.io/api-dokumentasjon/om/systembruker)
 
 ### Testoppsett
 Bruk valgfrie organisasjoner fra Tenor som innsender av utleggsbegjæring.
