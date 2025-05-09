@@ -125,6 +125,23 @@ Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
 [![Informasjonsmodell](../../../../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../../../static/download/informasjonsmodell-utleggsbegjaering.png)
 
+| Vilkårnavn                   | Gjelder kun ved endring | Tittel                 |Beskrivelse                |Avvikstekst
+|------------------------------|-------------------------|------------------------|---------------------------|---------------------|
+| DUPLIKAT_INNSENDING          | Nei                     |Duplikat                |Duplikat innsending        |
+| KB-002                       | 500                     |                        |
+| KB-003                       | 404                     |                                        |
+| KB-004                       | 401                     |                           |
+| KB-005                       | 403                     | Feil i forbindelse med samtykketoken.                          |
+| KB-006                       | 400                     | Feil i forbindelse med validering av inputdata.                |
+| KB-007                       | 404                     | Fant ingen krav/betalinger på angitt identifikator og periode. |
+| KB-008                       | 406                     | Feil tilknyttet dataformat. Kun json eller xml er støttet.     |
+| KB-009                       | 404                     | Ingen treff på oppgitt identifikator.                          |
+
+
+
+
+
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
