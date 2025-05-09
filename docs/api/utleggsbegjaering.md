@@ -125,6 +125,18 @@ Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
 [![Informasjonsmodell](../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../static/download/informasjonsmodell-utleggsbegjaering.png)
 
+| Feilkode | HTTP Statuskode | Feilområde                                                     |
+|----------|-----------------|----------------------------------------------------------------|
+| KB-001   | 500             | Uventet feil på  <br> tjenesten.                                     |
+| KB-002   | 500             | Uventet feil i et bakenforliggende system.                     |
+| KB-003   | 404             | Ukjent url benyttet.                                           |
+| KB-004   | 401             | Feil i forbindelse med autentisering.                          |
+| KB-005   | 403             | Feil i forbindelse med samtykketoken.                          |
+| KB-006   | 400             | Feil i forbindelse med validering av inputdata.                |
+| KB-007   | 404             | Fant ingen krav/betalinger på angitt identifikator og periode. |
+| KB-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.     |
+| KB-009   | 404             | Ingen treff på oppgitt identifikator.                          |
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
