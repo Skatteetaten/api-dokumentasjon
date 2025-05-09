@@ -125,10 +125,10 @@ Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
 [![Informasjonsmodell](../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../static/download/informasjonsmodell-utleggsbegjaering.png)
 
-| Feilkode | HTTP Statuskode | Feilområde                                                     |
-|----------|-----------------|----------------------------------------------------------------|
-| KB-001   | 500             | Uventet feil på  <br> tjenesten.                                     |
-| KB-002   | 500             | Uventet feil i et bakenforliggende system.                     |
+| Feilkode | HTTP Statuskode | Feilområde                                                     |    Nytt felt               |        
+|----------|-----------------|----------------------------------------------------------------|-------------------|     
+| KB-001   | 500             | Uventet feil på  <br> tjenesten.                               |                   |
+| KB-002   | 500             | Uventet feil i et bakenforliggende system.                     |                   |
 | KB-003   | 404             | Ukjent url benyttet.                                           |
 | KB-004   | 401             | Feil i forbindelse med autentisering.                          |
 | KB-005   | 403             | Feil i forbindelse med samtykketoken.                          |
