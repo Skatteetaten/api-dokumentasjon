@@ -125,6 +125,9 @@ Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
 [![Informasjonsmodell](../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../static/download/informasjonsmodell-utleggsbegjaering.png)
 
+# Oversikt over valderingsfeil
+Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan inntreffe ved innsendng eller endring av en utleggsbegjæring.
+
 | Vilkårnavn | Gjelder kun endringer | Tittel | Beskrivelse | Avvikstekst |
 | :--- | :--- | :--- | :--- | :--- |
 | DUPLIKAT_INNSENDING | Nei | Duplikat | Duplikat innsending | Sak med begjæringsdato %begjæringsdato og referanse %innsenderReferanse er allerede sendt inn |
