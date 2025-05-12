@@ -181,17 +181,6 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | VEDLEGG_SKAL_VAERE_TILGJENGELIG | Nei | Vedlegg referert til i begjæringen er ikke tilgjengelig og kan ikke benyttes | Alle vedlegg knyttet til begjæringen skal være tilgjengelig | En av følgende:<br/>- Vedlegg '%s' med id '%s' finnes ikke.<br/>- Vedlegg '%s' er slettet.<br/>- Vedlegg '%s' er kassert.<br/>- Vedlegg '%s' inneholder virus. |
 | VEDLEGG_SKAL_VAERE_VIRUSSJEKKET_VALIDERT_OG_KONVERTERT | Nei | Vedlegg referert til i begjæringen er ikke klar til å kunne benyttes enda | Alle vedlegg knyttet til begjæringen skal være virussjekket, validert og konvertert | En av følgende:<br/>- Vedlegg '%s' er ikke virussjekket.<br/>- Vedlegg '%s' er ikke konvertert til gyldig pdf.<br/>- Vedlegg '%s' er ikke validert. |
 
-| Feilkode | HTTP Statuskode | Feilområde                                                     |    Nytt felt               |        
-|----------|-----------------|----------------------------------------------------------------|-------------------|     
-| KB-001   | 500             | Uventet feil på  <br> tjenesten.                               |                   |
-| KB-002   | 500             | Uventet feil i et bakenforliggende system.                     |                   |
-| KB-003   | 404             | Ukjent url benyttet.                                           |
-| KB-004   | 401             | Feil i forbindelse med autentisering.                          |
-| KB-005   | 403             | Feil i forbindelse med samtykketoken.                          |
-| KB-006   | 400             | Feil i forbindelse med validering av inputdata.                |
-| KB-007   | 404             | Fant ingen krav/betalinger på angitt identifikator og periode. |
-| KB-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.     |
-| KB-009   | 404             | Ingen treff på oppgitt identifikator.                          |
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
