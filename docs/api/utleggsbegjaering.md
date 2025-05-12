@@ -10,7 +10,7 @@ last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>## Om tjenesten
+<Summary>Om tjenesten
 Utleggsbegjæring er en tjeneste for å sende utleggsbegjæringer til namsmannen gjennom Skatteetatens systemløsninger.</Summary>
 
 <Tabs underline={true}>
