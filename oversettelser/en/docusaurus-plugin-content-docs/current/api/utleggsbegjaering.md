@@ -29,6 +29,7 @@ hide_table_of_contents: true
 | KB-008         | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.         |
 | KB-009         | 404             | Ingen treff på oppgitt identifikator.                              |
 
+</TabItem>
 
 <TabItem headerText="About the service" itemKey="itemKey-1" default>
 The target audience includes current debt collection systems, municipalities, and other system providers.
