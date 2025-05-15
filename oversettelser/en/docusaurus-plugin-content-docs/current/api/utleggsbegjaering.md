@@ -19,11 +19,7 @@ hide_table_of_contents: true
 
 | Norwegian term          | English translation      | Description                                                    |
 |-------------------------|---------------------------|----------------------------------------------------------------|
-| Dialogporten            | The dialogue gateway      | Dialogporten is a national message distribution service in Norway that allows public agencies to send digital messages and notifications to individuals and organizations. It functions as a standardized interface for delivering messages across platforms like:
-•	Altinn
-•	Digital post to citizens
-•	Digital post to businesses
-                                         |
+| Dialogporten            | The dialogue gateway      | Dialogporten is a national message distribution service in Norway that allows public agencies to send digital messages and notifications to individuals and organizations. It functions as a standardized interface for delivering messages across platforms like Altinn, Digital post to citizens, Digital post to businesses                                         |
 | Maskinporten            | Machine-tomachine <br> gateway | Uventet feil i et bakenforliggende system.                  |
 | Namsmann                | Enforcement officer       | Ukjent url benyttet.                                               |
 | Organisasjonsnummer     | Organisation number       | Feil i forbindelse med autentisering.                              |
