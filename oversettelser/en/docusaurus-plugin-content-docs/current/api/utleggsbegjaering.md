@@ -17,17 +17,24 @@ hide_table_of_contents: true
 </TabItem>
 <TabItem headerText="Syllabus" itemKey="itemKey-2"> 
 
-| Norwegian term | English translation | Description                                                    |
-|----------------------|--------------------------|----------------------------------------------------------------|
-| Dialogporten         | The dialogue gateway            | Uventet feil på tjenesten.                                         |
-| Maskinporten         | Machine-tomachine <br> gateway      | Uventet feil i et bakenforliggende system.                         |
-| Namsmann             | Enforcement officer             | Ukjent url benyttet.                                               |
-| Organisasjonsnummer  | Organisation number    | Feil i forbindelse med autentisering.                              |
-| Systembruker         | System user             | Feil i forbindelse med samtykketoken.                              |
-| KB-006         | 400             | Feil i forbindelse med validering av inputdata.                    |
-| KB-007         | 404             | Fant ingen krav/betalinger på angitt identifikator og periode.     |
-| KB-008         | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.         |
-| KB-009         | 404             | Ingen treff på oppgitt identifikator.                              |
+| Norwegian term          | English translation      | Description                                                    |
+|-------------------------|---------------------------|----------------------------------------------------------------|
+| Dialogporten            | The dialogue gateway      | Dialogporten is a national message distribution service in Norway that allows public agencies to send digital messages and notifications to individuals and organizations. It functions as a standardized interface for delivering messages across platforms like:
+•	Altinn
+•	Digital post to citizens
+•	Digital post to businesses
+                                         |
+| Maskinporten            | Machine-tomachine <br> gateway | Uventet feil i et bakenforliggende system.                  |
+| Namsmann                | Enforcement officer       | Ukjent url benyttet.                                               |
+| Organisasjonsnummer     | Organisation number       | Feil i forbindelse med autentisering.                              |
+| Systembruker            | System user               | Feil i forbindelse med samtykketoken.                              |
+| SBS                     | End user system           | Feil i forbindelse med validering av inputdata.                    |
+| Syntetisk Norge/ Tenor  | Synthetic Norway          | Fant ingen krav/betalinger på angitt identifikator og periode.     |
+| Tvangsgrunnlag          | Base for execution        | Feil tilknyttet dataformat. Kun json eller xml er støttet.         |
+| Trekkpålegg             | Witholding order          | Ingen treff på oppgitt identifikator.                              |
+| Trekkpliktig            | Subject to witholding     |
+| Trekkmelding            | Garnishment message       | 
+| Utleggsbegjæring        | Request for Enforcement <br> Proceedings |
 
 </TabItem>
 
@@ -104,7 +111,7 @@ The selected organization in Tenor (representing a test debt collection company)
 A Systembruker is then created, linking the user, system, provider, and API.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
+<TabItem headerText="Examples" itemKey="itemKey-2"> 
 
 ## Åpne krav
 
@@ -118,7 +125,7 @@ A Systembruker is then created, linking the user, system, provider, and API.
 
 
 </TabItem>
-<TabItem headerText="Feilkoder" itemKey="itemKey-3">
+<TabItem headerText="Error codes" itemKey="itemKey-3">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../../../docs/om/feil.md).
 
