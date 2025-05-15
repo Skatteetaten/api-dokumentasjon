@@ -12,6 +12,20 @@ hide_table_of_contents: true
 
 <Summary>English summary for Utleggsbegjaering API.</Summary>
 
+</TabItem>
+<TabItem headerText="Syllabus" itemKey="itemKey-2"> 
+
+| Norwegian term | English translation | Description                                                    |
+|----------------|---------------------|----------------------------------------------------------------|
+| Dialogporten   | The dialogue <br> gateway            | Uventet feil på tjenesten.                                         |
+| Maskinporten   | 500             | Uventet feil i et bakenforliggende system.                         |
+| Namsmann       | 404             | Ukjent url benyttet.                                               |
+| KB-004         | 401             | Feil i forbindelse med autentisering.                              |
+| KB-005         | 403             | Feil i forbindelse med samtykketoken.                              |
+| KB-006         | 400             | Feil i forbindelse med validering av inputdata.                    |
+| KB-007         | 404             | Fant ingen krav/betalinger på angitt identifikator og periode.     |
+| KB-008         | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.         |
+| KB-009         | 404             | Ingen treff på oppgitt identifikator.                              |
 
 <Tabs underline={true}>
 <TabItem headerText="About the service" itemKey="itemKey-1" default>
