@@ -13,6 +13,7 @@ hide_table_of_contents: true
 <Summary>English summary for Utleggsbegjaering API.</Summary>
 
 <Tabs underline={true}>
+
 </TabItem>
 <TabItem headerText="Syllabus" itemKey="itemKey-2"> 
 
