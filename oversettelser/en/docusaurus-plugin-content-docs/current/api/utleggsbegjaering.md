@@ -12,13 +12,14 @@ hide_table_of_contents: true
 
 <Summary>English summary for Utleggsbegjaering API.</Summary>
 
+<Tabs underline={true}>
 </TabItem>
 <TabItem headerText="Syllabus" itemKey="itemKey-2"> 
 
 | Norwegian term | English translation | Description                                                    |
 |----------------|---------------------|----------------------------------------------------------------|
 | Dialogporten   | The dialogue <br> gateway            | Uventet feil på tjenesten.                                         |
-| Maskinporten   | 500             | Uventet feil i et bakenforliggende system.                         |
+| Maskinporten   | Machine-tomachine <br> gateway      | Uventet feil i et bakenforliggende system.                         |
 | Namsmann       | 404             | Ukjent url benyttet.                                               |
 | KB-004         | 401             | Feil i forbindelse med autentisering.                              |
 | KB-005         | 403             | Feil i forbindelse med samtykketoken.                              |
@@ -27,7 +28,7 @@ hide_table_of_contents: true
 | KB-008         | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.         |
 | KB-009         | 404             | Ingen treff på oppgitt identifikator.                              |
 
-<Tabs underline={true}>
+
 <TabItem headerText="About the service" itemKey="itemKey-1" default>
 The target audience includes current debt collection systems, municipalities, and other system providers.
 If you wish to integrate the Utleggsbegjæring and prøving service into your system, or if you have any related questions, please contact: fremtidensinnkreving@skatteetaten.no.
