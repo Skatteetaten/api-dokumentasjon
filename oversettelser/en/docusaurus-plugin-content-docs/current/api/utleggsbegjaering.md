@@ -23,14 +23,15 @@ hide_table_of_contents: true
 | Maskinporten            | Machine-to-machine <br> gateway | Maskinporten is a secure authentication and authorization mechanism used in Norway for system-to-system (machine-to-machine) communication between public and private sector systems. It issues tokens (OAuth 2.0) that allow systems to authenticate and access APIs on behalf of an organization, without involving a human user.        |
 | Namsmann                | Enforcement officer       | A public authority responsible for carrying out enforcement of claims, such as collecting unpaid debts or executing court orders. This can include wage garnishment, seizure of assets, evictions and enforcement of judgments|
 | Organisasjonsnummer     | Organisation number       | Nine-digit, information-free number that uniquely identifies entities in the Central Coordinating Register for Legal Entities (Enhetsregisteret)                          |
-| Systembruker            | System user               | Feil i forbindelse med samtykketoken.                              |
-| SBS                     | End user system           | Feil i forbindelse med validering av inputdata.                    |
-| Syntetisk Norge/ Tenor  | Synthetic Norway          | Fant ingen krav/betalinger på angitt identifikator og periode.     |
-| Tvangsgrunnlag          | Base for execution        | Feil tilknyttet dataformat. Kun json eller xml er støttet.         |
-| Trekkpålegg             | Witholding order          | Ingen treff på oppgitt identifikator.                              |
-| Trekkpliktig            | Subject to witholding     |
-| Trekkmelding            | Garnishment message       | 
-| Utleggsbegjæring        | Request for Enforcement <br> Proceedings |
+| Systembruker            | System user               | System User is a concept for API authentication. The system user is linked to the chosen system/system provider and assigned the necessary rights                   |
+| SBS                     | End user system           | A software solution used directly by organizations to manage specific business processes.                   |
+| Syntetisk Norge/ Tenor  | Synthetic Norway          | A test data framework used in Norway for developing and testing digital solutions—especially those that interact with public sector systems—without using real personal data. Including a collection of synthetic (fake but realistic) people and organizations, national ID numbers, names, addresses, company info, etc.designed to mimic real-world scenarios while ensuring compliance with privacy regulations (e.g., GDPR) |
+| Tvangsgrunnlag          | Base for execution        | Judgment, legal provision, promissory note, or other basis that allows a claim to be enforced        |
+| Trekkpålegg             | Witholding order          | A formal order issued by a public authority requiring an employer or other payer to withhold a portion of an individual's income—typically wages or benefits—and transfer it to cover unpaid debts                            |
+| Trekkpliktig            | Subject to witholding     | An employer or entity that is legally obligated to withhold funds from an individual's salary and transfer it to the relevant authority (e.g., the Tax Administration). |
+| Trekkmelding            | Garnishment message       | A trekkmelding is a digital message or data package that contains information about a wage garnishment order or similar withholding instruction. It is typically sent from the Norwegian Tax Administration to employers or their systems (SBS – end-user systems) |
+| Utleggsbegjæring        | Request for Enforcement <br> Proceedings | A formal request submitted to the namsmann (Enforcement Officer) to collect a debt by legal means, such as wage garnishment, seizure of assets and freezing of bank accounts |
+
 
 </TabItem>
 
