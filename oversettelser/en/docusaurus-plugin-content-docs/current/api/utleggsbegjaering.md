@@ -14,16 +14,17 @@ hide_table_of_contents: true
 
 
 <Tabs underline={true}>
-<TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
-Målgruppen er dagens inkassosystemer, kommunene og andre systemleverandører.
-Dersom du ønsker å ta i bruk utleggsbegjæring og prøving i ditt system eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.
+<TabItem headerText="About the service" itemKey="itemKey-1" default>
+The target audience includes current debt collection systems, municipalities, and other system providers.
+If you wish to integrate the Utleggsbegjæring and prøving service into your system, or if you have any related questions, please contact: fremtidensinnkreving@skatteetaten.no.
 
-Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og prøving av utleggsbegjæringer. Merk at figuren er en illustrasjon av måbildet, og det er ikke alle tjenestene i figuren som er implementert ennå. Det vil også i fremtiden kunne legges til nye tjenester som ikke er angitt i figuren.
+The diagram below illustrates the overall services the Norwegian Tax Administration will offer for the receipt and assessment of Utleggsbegjæring. Please note that the diagram represents a target state, and not all services shown have been implemented yet. Additional services not included in the diagram may also be introduced in the future
+
 
 [![Informasjonsmodell](../../../../../static/download/Utleggsbegjaering_oversikt.png)](../../../../static/download/Utleggsbegjaering_oversikt.png)
 
 
-For generell informasjon om tjenestene se egne sider om:
+For information about the services see:
 
 * [Sikkerhetsmekansimer](../../../../../docs/om/sikkerhet.md)
 * [Systembruker](../../../../../docs/om/systembruker.md)
@@ -32,18 +33,19 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../../../../../docs/om/tekniskspesifikasjon.md)
 
 ### Altinn Dialogporten
-Når det gjelder Altinn Dialogporten, er bruk av denne ikke en del av Piloten våren 2025. Videre er leverandører hverken i Pilot eller i full produksjon påkrevet å å integrere med Dialogporten. Det vil være tilstrekkelig å kun benytte API-endepunktene. Gjennom Dialogporten vil vi imidlertid tilby en tjeneste for hendelsesvarsler (events) som angir når det er kommet nye meldinger fra Skatteeetaten, eksempelvis at det er bedt om retting av en tidligere innsendt utleggsbegjæring. Dersom man velger å ikke bruke varslingstjenesten, må man se etter nye meldinger ved jevnlig å gjøre spørringer mot etatens API (polling).
+suppliers are not required to integrate with Dialogporten, either during the pilot phase or in full production. It will be sufficient to use only the API endpoints.
+However, through Dialogporten, we will offer an event notification service that alerts users when new messages from the Norwegian Tax Administration are available—such as requests to correct a previously submitted enforcement request.
+If you choose not to use the notification service, you must regularly check for new messages by polling the agency’s API.
 
-### Oppfølging og støtte
-I testfasen vil vi tilby støtte til de eksterne leverandørene gjennom utvikling og test.
+### Follow up and support
+During the testing phase, we will provide support to system providers throughout development and testing.
+More information will be made available here.
 
-Mer informasjon kommer her.
-
-I mellomtiden – ta kontakt med fremtidensinnkreving@skatteetaten.no.
+In the meantime, please contact: fremtidensinnkreving@skatteetaten.no.
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`
+The following scope is to be used when authenticating in Maskinporten: `skatteetaten:utleggsbegjaering`
 
 ## Delegering
 
@@ -59,31 +61,30 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utlegg
 
 Dette API-et finnes foreløpig ikke i Felles datakatalog.
 
-## Tilgang til tjenesten
-For å få tilgang til tjenesten må leverandøren ha underskrevet en pilotavtale med Skatteetaten.
+## Access to the service
+Connection to the Tax Administration's test environment is done via Maskinporten. To obtain a token from Maskinporten, the debt collection system must use its enterprise certificate to specify which Organisasjonsnummer it represents. This organisasjonsnummer  must be approved by the Tax Administration.
 
-Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten. For å få utstedt token av Maskinporten må inkasso-systemet gjennom sitt virksomhetssertifikat angi hvilket organisasjonsnummer de representerer. Dette organisasjonsnummeret må være godkjent av Skatteetaten.
+To use the services for submitting Utleggsbegjæring, the following scope must be specified during authentication with Maskinporten: skatteetaten:utleggsbegjaering
+The API supports two authentication methods via Maskinporten, as described below
 
-For å benytte tjenestene for innsending av begjæring skal følgende scope angis ved autentisering i Maskinporten: skatteetaten:utleggsbegjaering
+### Option 1 – System Provider as Submitter
+If the system provider only submits utleggsbegjæring on behalf of their own organization, classic authentication via Maskinporten can be used. More information is available here.
 
-API-et støtter to varianter av autentisering via Maskinporten. Disse er beskrevet under
+### Option 2 – Systembruker
+If the system provider wants to offer functionality where another organization (a customer of the system provider) uses the system to submit utleggsbegjæringer, Altinn's new functionality for Systembruker must be used. More information can be found in Altinn System User for SBS and the System User Roadmap.
+In order to use Systembruker functionality, the system provider must register in Maskinporten and the Altinn test environment.
 
-### Alternativ 1 - Systemleverandør er innsender
-Dersom systemleverandør kun skal sende inn utleggsbegjæringer på vegne av sin egen organisasjon, kan man benytte klassisk autentisering via Maskinporten. Mer informasjon om dette finnes her.
+[Read about Systembruker here](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker)
 
-### Alternativ 2 - Systembruker
-Dersom systemleverandør ønsker å tilby funksjonalitet der en annen organisasjon (kunde av systemleverandøren) skal benytte systemet til å sende inn utleggsbegjæringer, skal Altinn sin nye funksjonalitet for ‘systembruker’ benyttes. Mer informasjon om dette finnes i Altinn Systembruker for SBS og Systembruker roadmap.
+### Test setup
+Use any fictional organizations from Tenor as the submitter of the utleggsbegjæring.
 
-Systemleverandør må for å støtte systembruker registrere seg i Maskinporten og Altinn test environment. [Les mer om Systembruker her](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker)
+### Option 1 - Testing with System Provider as Submitter
+When the system provider is the submitter, any fictional organizations in Tenor can be used.
 
-### Testoppsett
-Bruk valgfrie organisasjoner fra Tenor som innsender av utleggsbegjæring.
-
-### Test der systemleverandør er innsender (alternativ 1)
-Når systemleverandør er innsender kan vilkårlige organisasjoner i Tenor benyttes som innsender.
-
-### Test der systembruker benyttes (alternativ 2)
-Den valgte organisasjonen i Tenor (som representerer en test-inkassovirksomhet) må godkjenne at dens fagsystem kan benytte tilgangsressursen/tjenesten «Innsending og oppfølging av utleggsbegjæring» på vegne av virksomheten. Det opprettes da en «systembruker» som er koblingen mellom bruker, system, leverandør og API.
+### Option 2 - Testing with System User
+The selected organization in Tenor (representing a test debt collection company) must approve that its business system is allowed to use the resource/service "Submission and follow-up of enforcement requests" on behalf of the company.
+A Systembruker is then created, linking the user, system, provider, and API.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
@@ -146,25 +147,16 @@ Her ser du hele informasjonsmodellen for Utleggsbegjæring
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Testing
-### Krav til testgjennomføring
-Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres på at validerings- og innsendingstjenestene fungerer som forventet. Prosjektet bistår med feilsøk, evt. Feilretting og ved behov oppfølging av saker som er sendt inn i testmiljøet.
+### Requirements for trial run
+System providers are responsible for conducting their own testing. The focus should be on ensuring that the validation and submission services function as expected. The project team will assist with troubleshooting, error correction (if needed), and follow-up on cases submitted to the test environment.
 
-### Testmiljø og testdata
-Systemleverandørene må ha testmiljøer som kun består av syntetiske data Det skal brukes testdata fra ‘Syntetisk Norge’ og disse hentes ut med Tenor Testdatasøk i de meldingene som sendes inn. Vedlegg skal også kun inneholde syntetiske testdata. Her finnes en bruksveiledning for Tenor Testdatasøk. Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten.
+### Test Environment and Test Data
+System providers must use test environments that contain only synthetic data. Test data from Syntetisk Norge must be used and retrieved using Tenor Test Data Search for the messages submitted. Attachments must also contain only synthetic test data. A user guide for Tenor Test Data Search is available. Connection to the Tax Administration's test environment is established via Maskinporten.
+An example of an enforcement request that follows the information model is provided under Information Models.
 
-Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på Informasjonsmodeller.
+The Tax Administration’s test environment is generally available 24/7, but technical support or environment restarts cannot be expected outside normal business hours (08:00–15:45 on weekdays). The environment may also be unavailable during evenings and weekends due to maintenance.
 
-Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
-
-URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v1
-
-I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
-med å pilotere løsningene.
-
-## Tenor testdatasøk
-
-
-## Testdata
+The URL for the test environment is: https://api-test.sits.no/api/utleggsbegjaering/v1
 
 
 
