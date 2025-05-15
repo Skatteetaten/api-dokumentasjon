@@ -106,7 +106,7 @@ https://innrapporteringskattefrieutbetalinger.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2024",
+    "inntektsaar": 2024,
     "utbetalingsmaaned": 4,
     "oppgavegiversLeveranseReferanse": "Unik ekstern referanse ID",
     "leveransetype": "ordinaer",
