@@ -86,18 +86,6 @@ The selected organization in Tenor (representing a test debt collection company)
 A Systembruker is then created, linking the user, system, provider, and API.
 
 </TabItem>
-<TabItem headerText="Examples" itemKey="itemKey-2"> 
-
-## Åpne krav
-
-### Eksempel på request URL
-
-```
-```
-
-### Eksempel på respons
-
-</TabItem>
 <TabItem headerText="Syllabus" itemKey="itemKey-2"> 
 
 | Norwegian term          | English translation      | Description                                                    |
@@ -116,7 +104,19 @@ A Systembruker is then created, linking the user, system, provider, and API.
 | Utleggsbegjæring        | Request for Enforcement Proceedings | A formal request submitted to the namsmann (Enforcement Officer) to collect a debt by legal means, such as wage garnishment, seizure of assets and freezing of bank accounts. |
 
 </TabItem>
-<TabItem headerText="Error codes" itemKey="itemKey-3">
+<TabItem headerText="Examples" itemKey="itemKey-3"> 
+
+## Åpne krav
+
+### Eksempel på request URL
+
+```
+```
+
+### Eksempel på respons
+
+</TabItem>
+<TabItem headerText="Error codes" itemKey="itemKey-4">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../../../docs/om/feil.md).
 
@@ -135,7 +135,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | KB-009   | 404             | Ingen treff på oppgitt identifikator.                          |
 
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+<TabItem headerText="Informasjonsmodell" itemKey="itemKey-5">
 
 Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
@@ -155,7 +155,7 @@ Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
 
 </TabItem>
-<TabItem headerText="Test" itemKey="itemKey-5">
+<TabItem headerText="Test" itemKey="itemKey-6">
 
 ## Testing
 ### Requirements for trial run
