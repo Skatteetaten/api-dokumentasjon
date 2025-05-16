@@ -57,4 +57,5 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                             | :white_check_mark: |            |
 | [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)              | :white_check_mark: |            |
 | [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)        | :white_check_mark: |            |
+| [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                             | :white_check_mark: |            |
 
