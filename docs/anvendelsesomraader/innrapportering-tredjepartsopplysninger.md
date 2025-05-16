@@ -5,7 +5,7 @@ folder: anvendelsesomraader
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ altinn, innrapportering, tredjepartsopplysninger, grunnlagsdata ]
-last_updated: Sept 24, 2024
+last_updated: Mai 16, 2025
 hide_table_of_contents: true
 ---
 

@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, verdipapirfond,  tredjepartsopplysninger ]
 keywords: [ grunnlagsdata ]
-last_updated: Mar 03, 2025
+last_updated: Mai 16, 2025
 hide_table_of_contents: true
 ---
 
