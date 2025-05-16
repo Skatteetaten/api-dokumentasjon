@@ -51,7 +51,8 @@ For å følge med på endringer tilbyr vi
 en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteetaten-registrert selskap hendelser API`
 
 ## Datakatalog
-Datatjenestebeskrivelse kommer i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/77af33eb-45fb-3c25-88b2-5fbf3e0ca752) i Felles datakatalog.
+
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 

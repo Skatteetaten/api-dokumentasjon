@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -64,10 +63,10 @@ API-et for innrapportering av tilskudd til vitenskapelig forskning eller yrkesop
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](tilskudd?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-tilskudd?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](tilskudd?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-tilskudd?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
@@ -164,7 +163,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | feil i forbindelse med autentisesring        |
+| GLD_004  | 401             | Feil i forbindelse med autentisering         |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |

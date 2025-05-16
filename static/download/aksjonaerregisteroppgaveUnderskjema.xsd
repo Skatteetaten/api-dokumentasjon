@@ -35,7 +35,7 @@
                 <xs:element minOccurs="0" ref="EndringerIAksjekapitalOgOverkurs-grp-3997"/>
             </xs:sequence>
             <xs:attribute fixed="923" name="skjemanummer" type="xs:integer" use="required"/>
-            <xs:attribute fixed="12146" name="spesifikasjonsnummer" type="xs:integer" use="required"/>
+            <xs:attribute fixed="12232" name="spesifikasjonsnummer" type="xs:integer" use="required"/>
             <xs:attribute fixed="RF-1086-U" name="blankettnummer" type="xs:string" use="optional"/>
             <xs:attribute fixed="Aksjonærregisteroppgaven - underskjema" name="tittel" type="xs:string" use="optional"/>
             <xs:attribute fixed="3983" name="gruppeid" type="xs:positiveInteger" use="optional"/>
@@ -2703,7 +2703,7 @@
                 <xs:element maxOccurs="9999" minOccurs="0" ref="TilbakebetaltInnbetaltOgFondsemittertAKVedReduksjonAvPalydende-grp-4000"/>
                 <xs:element maxOccurs="9999" minOccurs="0" ref="TilbakebetaltTidligereInnbetaltOverkursForAksjen-grp-4001"/>
                 <xs:element maxOccurs="9999" minOccurs="0" ref="ForhoyelseAvInnbetaltAksjekapitalVedOkning-grp-4987"/>
-                <xs:element minOccurs="0" ref="ReduksjonInnbetaltAksjekapital-grp-9857"/>
+                <xs:element maxOccurs="9999" minOccurs="0" ref="ReduksjonInnbetaltAksjekapital-grp-9857"/>
             </xs:sequence>
             <xs:attribute fixed="3997" name="gruppeid" type="xs:positiveInteger" use="required"/>
         </xs:complexType>

@@ -44,10 +44,11 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/arbeid
 | Navn på rettighetspakke |
 |-------------------------|
 | nav                     |
+| ssb                     |
 
 ## Datakatalog
 
-Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/b1bbd381-423f-3752-9a94-0f72cf372df7) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">

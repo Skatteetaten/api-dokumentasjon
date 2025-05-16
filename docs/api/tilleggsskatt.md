@@ -50,15 +50,17 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 
 ```json
 {
-  "personidentifikator":"07891448702",
-  "inntektsaar":"2021",
-  "skjermet":false,
+  "personidentifikator": "29458540754",
+  "inntektsaar": "2024",
+  "skjermet": false,
   "vedtakOmTilleggsskatt": [
-      {
-        "skattekommune":"4621",
-        "tilleggsskattFraUriktigeOpplysninger":50004.0,
-        "vedtaksdatoForTilleggsskatt":"2022-06-01"
-      }
+    {
+      "skattekommune": "0301",
+      "tilleggsskattFraUriktigeOpplysninger": 0.0,
+      "skjerpetTilleggsskattFraUriktigeOpplysninger": 0.0,
+      "fradragForTvangsmulkt": 0.0,
+      "vedtaksdatoForTilleggsskatt": "2025-03-07"
+    }
   ]
 }
 ```
@@ -70,14 +72,17 @@ Dersom man ønsker XML i stedet for JSON kan dette spesifiseres med header `Acce
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <tilleggsskatt xmlns="urn:no:skatteetaten:datasamarbeid:tilleggsskatt:v1">
-  <personidentifikator>07891448702</personidentifikator>
-  <inntektsaar>2021</inntektsaar>
+  <personidentifikator>29458540754</personidentifikator>
+  <inntektsaar>2024</inntektsaar>
   <skjermet>false</skjermet>
   <vedtakOmTilleggsskatt>
-    <skattekommune>4621</skattekommune>
-    <tilleggsskattFraUriktigeOpplysninger>50004.0</tilleggsskattFraUriktigeOpplysninger>
-    <vedtaksdatoForTilleggsskatt>2022-06-01</vedtaksdatoForTilleggsskatt>
-  </vedtakOmTilleggsskatt></tilleggsskatt>
+    <skattekommune>0301</skattekommune>
+    <tilleggsskattFraUriktigeOpplysninger>0.0</tilleggsskattFraUriktigeOpplysninger>
+    <skjerpetTilleggsskattFraUriktigeOpplysninger>0.0</skjerpetTilleggsskattFraUriktigeOpplysninger>
+    <fradragForTvangsmulkt>0.0</fradragForTvangsmulkt>
+    <vedtaksdatoForTilleggsskatt>2025-03-07</vedtaksdatoForTilleggsskatt>
+  </vedtakOmTilleggsskatt>
+</tilleggsskatt>
 ```
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
@@ -107,44 +112,10 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ## Tenor testdatasøk
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
-
-## Testdata
-Følgende personer har tilleggsskatt:
-
-| Fødselsnummer | Inntektsår | Kommentar |
-|---|---|---|
-| 11891047306 | 2020 | Fødselsnummer |
-| 14881648394 | 2020 | Fødselsnummer |
-| 01820099997 | 2020 | Hatt D-nummer |
-| 07891448702 | 2021 | Fødselsnummer |
-| 16834899217 | 2021 | Fødselsnummer |
-| 18881248448 | 2021 | Fødselsnummer |
-| 64824401150 | 2021 | D-nummer |
-| 14865998989 | 2021 | Fortrolig |
-| 28893949951 | 2021 | Streng fortrolig |
-| 13905499313 | 2022 | Fødselsnummer |
-| 15852048104 | 2022 | Fødselsnummer |
-| 08845198927 | 2022 | Fødselsnummer |
-| 57836101938 | 2022 | D-nummer |
-| 19925398694 | 2022 | Fortrolig |
-| 19872347995 | 2022 | Streng fortrolig |  
-| 10852149448 | 2022 | Kommunenummer 2312, Sokkel utland |
-  
+Testdata for denne tjenesten for personlige skatteytere kan finnes i [Tenor](../test/tenor.md) med søket for "Tilleggsskatt".
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
   
-Kun organisasjoner som er AS kan ha tilleggsskatt. Følgende enheter har skatteplikt:
-
-| Organisasjonsnummer | Inntektsår |
-|---|---|
-| 210201602 | 2020 |
-| 213997572 | 2020 |
-| 312676281 | 2021 |
-| 313527603 | 2021 |
-| 314259203 | 2021 |
-| 312677660 | 2022 |
-| 313739007 | 2022 |
-| 310799262 | 2022 |
+Obs. Kun organisasjoner som er AS kan ha tilleggsskatt.
   
 </TabItem>
 </Tabs>

@@ -49,7 +49,7 @@ API-et har 4 endepunkter:
 * __Utbetalinger__: Hent alle utbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle
   utbetalinger innen et gitt tidsrom på maks ett år.
 
-Se også [eksempler](kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
 
 ## Rettighetspakker
 
@@ -70,7 +70,7 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/662907037321ef0080ea8cbe) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/67dc3f08-a152-3f0e-a533-b092c026f23b) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
@@ -295,22 +295,6 @@ https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
         }
       },
       "innbetalingstype": "bankoverføring"
-    }
-  ],
-  "totalOversikt": {
-    "sumStipulerteRenter": 400.0,
-    "sumForfalteKrav": 20000.0,
-    "sumIkkeForfalteKrav": 0.0,
-    "sumUplasserteInnbetalinger": 0.0,
-    "saldo": 20400.0
-  },
-  "oversiktPerKravgruppe": [
-    {
-      "kravgruppe": "Skatt",
-      "sumStipulerteRenter": 400.0,
-      "sumForfalteKrav": 20000.0,
-      "sumIkkeForfalteKrav": 0.0,
-      "saldo": 20400.0
     }
   ]
 }

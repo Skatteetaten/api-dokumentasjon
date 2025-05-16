@@ -16,7 +16,6 @@ hide_table_of_contents: true
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 For generell informasjon om tjenestene se egne sider om:
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -79,68 +78,77 @@ Valideringsreglene er under utvikling og nye valideringsregler vil bli lagt til 
 
 Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 
-* Summen av merverdiavgift for hver avgiftslinje er ikke lik feltet fastsattMerverdiavgift (R018)
-* Beregnet avgift i avgiftslinje er ulik produktet av grunnlag og sats (R019)
-* Meldingen må være en ordinær (aliminnelig eller primærnæring) melding, krav om kompensasjon eller omvendt avgiftsplikt mva-melding (R104)
-* Spesifikasjonslinje som gjelder tilbakeføring av inngående mva. gitt i mva §9-6 og §9-7 må sendes med en merknad (R078)
-* KID-nummeret må være gyldig (R079)
-* Innsendte beløp skal ikke inneholde desimaler (R082)
-* Beløp på grunnlag feltet må være under en maks verdi (R085)
-* Merknader må være gyldig for brukt mva-kode (vanlig fortegn) (R074)
-* Merknader må være gyldig for brukt mva-kode (motsatt fortegn) (R075)
-* Merknader må være gyldig for brukt mva-kode (linje med spesifikasjon) (R076)
-* Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett må ha med grunnlag og sats (R116)
-* Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget (R122)
+| Regel |	Beskrivelse                                                                                                                        |
+|-------|------------------------------------------------------------------------------------------------------------------------------------|
+| R018  | Summen av merverdiavgift for hver avgiftslinje er ikke lik feltet fastsattMerverdiavgift                                           |
+| R019  | Beregnet avgift i avgiftslinje er ulik produktet av grunnlag og sats                                                               |
+| R074  | Merknader må være gyldig for brukt mva-kode (vanlig fortegn)                                                                       |
+| R075  | Merknader må være gyldig for brukt mva-kode (motsatt fortegn)                                                                      |
+| R076  | Merknader må være gyldig for brukt mva-kode (linje med spesifikasjon)                                                              |
+| R078  | Spesifikasjonslinje som gjelder tilbakeføring av inngående mva. gitt i mva §9-6 og §9-7 må sendes med en merknad                   |
+| R079  | KID-nummeret må være gyldig                                                                                                        |
+| R082  | Innsendte beløp skal ikke inneholde desimaler                                                                                      |
+| R085  | Beløp på grunnlag feltet må være under en maks verdi                                                                               |
+| R104  | Meldingen må være en ordinær (aliminnelig eller primærnæring) melding, krav om kompensasjon eller omvendt avgiftsplikt mva-melding |
+| R116  | Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett må ha med grunnlag og sats                                              |
+| R122  | Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget                                                                    |
 
 
 <Tabs underline={true}>
 <TabItem headerText="Alminnelig- og primærnæring" itemKey="itemKey-1" default>
 Følgende valideringsregler er foreløpig definert for ordinær (alminnelig og primærnæring) mva-meldinger:
 
-* Merknad til beløp med motsatt fortegn som gjelder grunnlag og utgående avgift mangler (R020)
-* Merknad til beløp med motsatt fortegn som gjelder fradragsført inngående avgift mangler (R021)
-* Fradragsført inngående avgift som gjelder varer kjøpt fra utlandet med fradragsrett, skal være mindre enn eller lik utgående avgift (kode 81) (R023)
-* Fradragsført inngående avgift som gjelder varer kjøpt fra utlandet med fradragsrett, skal være mindre enn eller lik utgående avgift (kode 83) (R024)
-* Fradragsført inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett skal være mindre enn eller lik utgående avgift (kode 86) (R025)
-* Fradragsført inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett skal være mindre enn eller lik utgående avgift (kode 88) (R026)
-* Fradragsført inngående avgift som gjelder kjøp av klimakvoter og gull med fradragsrett, skal være mindre enn eller lik utgående avgift (R027)
-* Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder kjøp av varer fra utlandet med fradragsrett (kode 81) (R028)
-* Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder kjøp av varer fra utlandet med fradragsrett (kode 83) (R029)
-* Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett (kode 86) (R030)
-* Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett (kode 88) (R031)
-* Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder kjøp av klimakvoter og gull med fradragsrett (R032)
-* Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift ved kjøp av varer fra utlandet med fradragsrett (kode 81) (R033)
-* Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift ved kjøp av varer fra utlandet med fradragsrett (kode 83) (R034)
-* Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift for tjenester kjøpt fra utlandet med fradragsrett (kode 86) (R035)
-* Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift for tjenester kjøpt fra utlandet med fradragsrett (kode 88) (R036)
-* Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift ved kjøp av klimakvoter og gull med fradragsrett (R037)
-* Avgiftspliktig omsetning skal være under en million for alminnelig næring plikter med årlig skattleggingsperiode (R052)
-* Spesifikasjonslinjer skal ha en gyldig mva-kode i mva-meldinger som gjelder en alminnelig næring plikt (R053)
-* Spesifikasjonslinjer skal ha en gyldig mva-kode i mva-meldinger som gjelder en primærnæring plikt (R054)
-* Inngående mva. skal føres uten grunnlag og sats (R065, R081)
-* Utgående mva. skal føres med grunnlag og sats (R066, R081)
-* Fradrag for inngående avgift skal normalt ikke føres på en plikt som gjelder engangsregistrering (R083)
-* Det må sendes inn spesifikasjonslinjer når det er oppgitt beløp i 'fastsatt merverdiavgift' feltet (R084)
-* Spesifikasjonslinje som gjelder tap på krav kan kun sendes inn på mva-kode 1, 11, 12 eller 13 (R038)
-* Spesifikasjonslinje som gjelder uttak kan kun sendes inn på mva-kode 3, 5, 31 eller 33 (R039)
-* Spesifikasjonslinje som gjelder justering kan kun sendes inn på mva-kode 1 eller 81 (R040)
-* Spesifikasjonslinje som gjelder tilbakeføring av inngående mva. gitt i mva §9-6 og §9-7 kan kun sendes inn på mva-kode 1 eller 81 (R041)
-* Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett kan kun sendes inn på mva-kode 81, 83, 86, 88 eller 91 (R114)
-* Oppgitt meldingskategori skal stemme med opplysningene i mva-registeret (alminnelig) (R047)
-* Oppgitt meldingskategori skal stemme med opplysningene i mva-registeret (primær) (R048)
-* Oppgitt skattleggingsperiodetype skal stemme med opplysningene i mva-registeret (alminnelig) (R049)
-* Oppgitt skattleggingsperiodetype skal stemme med opplysningene i mva-registeret (primær) (R050)
-* Oppgitt skattleggingsperioden skal stemme med opplysningene i mva-registeret (alminnelig) (R072)
-* Oppgitt skattleggingsperioden skal stemme med opplysningene i mva-registeret (primær) (R073)
-* Mva-meldingen skal ikke sendes inn før gjeldende skattleggingsperiode er ferdig (alminnelig) (R059)
-* Mva-meldingen skal ikke sendes inn før gjeldende skattleggingsperiode er ferdig (primær) (R060)
-* Rapporterende enhet i en fellesregistrering skal ha mva-plikt (R051)
-* Mva-meldinger for tidligere terminer skulle vært levert (R061)
-* Mva-meldinger for tidligere terminer skulle vært levert og derfor vil avgift til gode for denne terminen ikke bli utbetalt (R062)
-* Kontonummer må være registrert for meldinger som kunne føre til en utbetaling (R080)
+| Regel      |	Beskrivelse                                                                                                                                             |
+|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| R020       | Merknad til beløp med motsatt fortegn som gjelder grunnlag og utgående avgift mangler                                                                    |
+| R021       | Merknad til beløp med motsatt fortegn som gjelder fradragsført inngående avgift mangler                                                                  |
+| R023       | Fradragsført inngående avgift som gjelder varer kjøpt fra utlandet med fradragsrett, skal være mindre enn eller lik utgående avgift (kode 81)            |
+| R024       |  Fradragsført inngående avgift som gjelder varer kjøpt fra utlandet med fradragsrett, skal være mindre enn eller lik utgående avgift (kode 83)           |
+| R025       |  Fradragsført inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett skal være mindre enn eller lik utgående avgift (kode 86)        |
+| R026       |  Fradragsført inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett skal være mindre enn eller lik utgående avgift (kode 88)        |
+| R027       |  Fradragsført inngående avgift som gjelder kjøp av klimakvoter og gull med fradragsrett, skal være mindre enn eller lik utgående avgift                  |
+| R028       |  Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder kjøp av varer fra utlandet med fradragsrett (kode 81)    |
+| R029       |  Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder kjøp av varer fra utlandet med fradragsrett (kode 83)    |
+| R030       |  Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett (kode 86)  |
+| R031       |  Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder tjenester kjøpt fra utlandet med fradragsrett (kode 88)  |
+| R032       |  Utgående avgift skal være beregnet dersom det er ført fradrag for inngående avgift som gjelder kjøp av klimakvoter og gull med fradragsrett             |
+| R033       |  Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift ved kjøp av varer fra utlandet med fradragsrett (kode 81)            |
+| R034       |  Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift ved kjøp av varer fra utlandet med fradragsrett (kode 83)            |
+| R035       |  Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift for tjenester kjøpt fra utlandet med fradragsrett (kode 86)          |
+| R036       |  Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift for tjenester kjøpt fra utlandet med fradragsrett (kode 88)          |
+| R037       |  Det skal være fradragsført inngående avgift dersom det er beregnet utgående avgift ved kjøp av klimakvoter og gull med fradragsrett                     |
+| R038       |  Spesifikasjonslinje som gjelder tap på krav kan kun sendes inn på mva-kode 1, 11, 12 eller 13                                                           |
+| R039       |  Spesifikasjonslinje som gjelder uttak kan kun sendes inn på mva-kode 3, 5, 31 eller 3                                                                   |
+| R040       |  Spesifikasjonslinje som gjelder justering kan kun sendes inn på mva-kode 1 eller 81                                                                     |
+| R041       |  Spesifikasjonslinje som gjelder tilbakeføring av inngående mva. gitt i mva §9-6 og §9-7 kan kun sendes inn på mva-kode 1 eller 81                       |
+| R047       |  Oppgitt meldingskategori skal stemme med opplysningene i mva-registeret (alminnelig)                                                                    |
+| R048       |  Oppgitt meldingskategori skal stemme med opplysningene i mva-registeret (primær                                                                         |
+| R049       |  Oppgitt skattleggingsperiodetype skal stemme med opplysningene i mva-registeret (alminnelig)                                                            |
+| R050       |  Oppgitt skattleggingsperiodetype skal stemme med opplysningene i mva-registeret (primær)                                                                |
+| R051       |  Rapporterende enhet i en fellesregistrering skal ha mva-plikt                                                                                           |
+| R052       |  Avgiftspliktig omsetning skal være under en million for alminnelig næring plikter med årlig skattleggingsperiode                                        |
+| R053       |  Spesifikasjonslinjer skal ha en gyldig mva-kode i mva-meldinger som gjelder en alminnelig næring plikt                                                  |
+| R054       |  Spesifikasjonslinjer skal ha en gyldig mva-kode i mva-meldinger som gjelder en primærnæring plikt                                                       |
+| R059       |  Mva-meldingen skal ikke sendes inn før gjeldende skattleggingsperiode er ferdig (alminnelig)                                                            |
+| R060       |  Mva-meldingen skal ikke sendes inn før gjeldende skattleggingsperiode er ferdig (primær)                                                                |
+| R061       |  Mva-meldinger for tidligere terminer skulle vært levert                                                                                                 |
+| R062       |  Mva-meldinger for tidligere terminer skulle vært levert og derfor vil avgift til gode for denne terminen ikke bli utbetalt                              |
+| R065, R081 |  Inngående mva. skal føres uten grunnlag og sats                                                                                                         |
+| R066, R081 |  Utgående mva. skal føres med grunnlag og sats                                                                                                           |
+| R072       |  Oppgitt skattleggingsperioden skal stemme med opplysningene i mva-registeret (alminnelig)                                                               |
+| R073       |  Oppgitt skattleggingsperioden skal stemme med opplysningene i mva-registeret (primær)                                                                   |
+| R080       |  Kontonummer må være registrert for meldinger som kunne føre til en utbetaling                                                                           |
+| R083       |  Fradrag for inngående avgift skal normalt ikke føres på en plikt som gjelder engangsregistrering                                                        |
+| R084       |  Det må sendes inn spesifikasjonslinjer når det er oppgitt beløp i 'fastsatt merverdiavgift' feltet                                                      |
+
+
+
+* Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett kan kun sendes inn på mva-kode 81, 83, 86, 88 eller 91 (R114) 
 * Beløpet på koden og spesifikasjonslinje som gjelder kjøp med kompensasjonsrett skal ikke være like (R115)
 * Merverdiavgiften kan ikke være beregnet til 0 når det er oppgitt grunnlag for avgift. (R127)
 * Virksomheten er ikke registrert i Enhetsregisteret og kan ikke sende inn mva-melding. (R131)
+* Leveringsfristen for denne terminen utløp for mer enn tre år siden. Vi vil derfor behandle mva-meldingen som en anmodning om endring. (R132)
+* Utløpsdatoen for terminen er mer enn fem år tilbake og må behandles som søknad om anmodning om endring i henhold til sktfvl § 9-4 annet ledd. (R133)
 
 Følgende regler gjelder for alle meldingskategorier som ikke er eHandel:
 * Virksomheten har organisasjonsform UDEF (R126)

@@ -15,7 +15,7 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
 
 ## Steg for steg
 
-1.	**Maskinporten onboarding:** For å bruke både Skatteetatens og Digdirs API trenger du tilgang til Maskinporten for autentiseringen. Det gjøres gjennom å kontakte Digdir og følge deres [onboardingsprosess](https://onboarding.maskinporten.no/). OBS! Det kan være at du ikke har rettigheter til å bruke denne løsningen og at du derfor må etterspørre tilgangen i din virksomhet. Fremgangsmåten for dette er beskrevet nederst på siden som er lenka ovenfor.
+1.	**Maskinporten onboarding:** For å bruke både Skatteetatens og Digdirs API trenger du tilgang til Maskinporten for autentiseringen. Digdir har laget en side som beskriver hva som må til for å [komme i gang i test](https://samarbeid.digdir.no/altinn/kom-i-gang-i-testmiljoet-tt02/2868).
 
 2.	**API-tilganger**: Så trenger du tilgang til API (scopes) både hos Skatteetaten og Digdir: 
   * Skatteetaten må gi tilgang til vårt API f.eks. Krav og betalinger eller Innrapportering Boligselskap, og du kan skaffe deg tilgang [her](../komigang.md). Du finner informasjon om scope det skal bes om tilgang til i dokumentasjonen for det enkelte API.
@@ -25,9 +25,9 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
       -	`altinn:authentication/systemuser.request.write`
   	   - `digdir:dialogporten`
 
-3.	**Maskinporten klient:** Når du har fått tilgang til scopene må det lages en Maskinporten-klient (også kjent som *Integrasjon* i Digdirs beskrivelser) – du kan opprette dennne enten i Digdirs [Samarbeidsportal](https://sjolvbetjening.test.samarbeid.digdir.no/auth/login), [Forenklet onboarding](https://onboarding.maskinporten.no/) (se punkt 1) eller ved bruk av API. Maskinporten-klienten du har satt opp, må få tildelt scopene ovenfor og kan deretter benyttes for å få utstedt token/autentiseringsbevis.
+3.	**Maskinporten klient:** Når du har fått tilgang til scopene, må det lages en Maskinporten-klient (også kjent som *Integrasjon* i Digdirs beskrivelser) – du kan opprette denne enten i Digdirs [Samarbeidsportal](https://sjolvbetjening.test.samarbeid.digdir.no/auth/login), [Forenklet onboarding](https://onboarding.maskinporten.no/) (se punkt 1) eller ved bruk av API. Maskinporten-klienten du har satt opp, må få tildelt scopene ovenfor og kan deretter benyttes for å få utstedt token/autentiseringsbevis.
 
-4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via [API](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#registrere-system). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (rights), som skal oppgis er beskrevet i API-dokumentasjon hos Skatteetaten.
+4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via [API](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#registrere-system). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (rights), som skal oppgis, er beskrevet i API-dokumentasjon hos Skatteetaten. 
 
     Eksempel på registrering:
 ```json
@@ -60,7 +60,7 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
 }
 ```
 
-5.	**Kunden må gi systemet tilgang:** Du kan nå be kunden om å opprette en systemtilgang gjennom å lage en [tilgangsforespørsel](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#sende-forespørsel-om-opprettelse-av-systembruker-til-virksomhet). Du kan se hvordan dette ser ut for kunden nederst på denne siden.
+5.	**Kunden må gi systemet tilgang:** Du kan nå be kunden om å opprette en systemtilgang gjennom å lage en [tilgangsforespørsel](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#sende-forespørsel-om-opprettelse-av-systembruker-til-virksomhet). Du kan se skjermbilde av hvordan dette ser ut for kunden nederst på siden. 
 
 Eksempel på registrering:
 ```json

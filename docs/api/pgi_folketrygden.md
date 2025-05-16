@@ -45,12 +45,13 @@ Tjenesten støtter inntektsår 2017 og utover, men det kan også komme endringer
 
 | Navn på rettighetspakke |	
 |-------------------------|
-| navUfoeretrygd          |
-| navForeldrepenger       |
-| navPleieOgOmsorgspenger |
-| navSykepenger           |
-| navPensjonopptjening    |
-| navEnsligForsoerger     |
+| navensligforsoerger     |
+| navforeldrepenger       |
+| navpensjonopptjening    |
+| navpleieogomsorgspenger |
+| navsykepenger           |
+| navufoeretrygd          |
+| navtrygdeavgift         |
 
 ## Støttetjenester
 

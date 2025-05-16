@@ -49,6 +49,7 @@ helhet.
 | afp                                   | Hjemmel                                                                                                                                                                  |
 | digisos                               | Hjemmel                                                                                                                                                                  |
 | fiskeridirektoratetkontrollmanntall   | Hjemmel                                                                                                                                                                  |
+| fiskeridirektoratetmanntall           | Hjemmel                                                                                                                                                                  |
 | gff                                   | Hjemmel                                                                                                                                                                  |
 | husbanken                             | Hjemmel                                                                                                                                                                  |
 | kommuneBoligsosialeFormaal            | Hjemmel                                                                                                                                                                  |
@@ -57,12 +58,12 @@ helhet.
 | ldirReindriftstilskudd                | Hjemmel                                                                                                                                                                  |
 | nav                                   | Hjemmel                                                                                                                                                                  |
 | otp                                   | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
-| pensjonskasseEtteroppgjoerUfoerAfp    | Hjemmel                                                                                                                                                                  |
-| pensjonskasseLivsvarigAfpAnnenInntekt | Hjemmel                                                                                                                                                                  |
-| pensjonskasseLivsvarigAfpAndreYtelser | Hjemmel                                                                                                                                                                |
+| pensjonskasseetteroppgjoerufoerafp    | Hjemmel                                                                                                                                                                  |
+| pensjonskasseLivsvarigafpanneninntekt | Hjemmel                                                                                                                                                                  |
+| pensjonskasseLivsvarigafpandreytelser | Hjemmel                                                                                                                                                                |
 | saernamsmann                          | Hjemmel                                                                                                                                                                  |
-| spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
 | sbl                                   | Krever samtykke                                                                                                                                                          |
+| spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
 | ssb                                   | Hjemmel                                                                                                                                                                  |
 | udi                                   | Hjemmel                                                                                                                                                                  |
 

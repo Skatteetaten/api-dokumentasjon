@@ -8,7 +8,7 @@ tags: [Mva-melding]
 last_updated: July 10, 2023
 hide_table_of_contents: true
 ---
-<Summary>API-er knyttet til Mva-meldingen</Summary>
+<Summary>API-er knyttet til Mva-meldingen (English version) </Summary>
 
 ## MVA-moderniseringen
 I 2022 ble mva-meldingen modernisert. Ny mva-melding gir nå bedre etterlevelse, likere konkurransevilkår, forenkling for næringslivet og en mer effektiv forvaltning. Noe forenkling følger direkte av endringene i mva-meldingen. Vi får færre feilkilder, enklere tilbakebetaling, og det blir enklere å oppfylle opplysningsplikten. 

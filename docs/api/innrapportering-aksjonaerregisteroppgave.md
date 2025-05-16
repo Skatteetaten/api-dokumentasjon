@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -207,7 +206,7 @@ https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aks
 
 ```
 <Skjema
-        skjemanummer="923" spesifikasjonsnummer="12146"
+        skjemanummer="923" spesifikasjonsnummer="12232"
         blankettnummer="RF-1086-U" tittel="Aksjonærregisteroppgaven - underskjema" gruppeid="3983" etatid="974761076">
     <SelskapsOgAksjonaropplysninger-grp-3987 gruppeid="3987">
         <Selskapsidentifikasjon-grp-3986 gruppeid="3986">
