@@ -70,6 +70,7 @@ const sidebars = {
         "api/innrapportering-skadeforsikring",
         "api/innrapportering-tilskudd",
         "api/innrapportering-skattefrieutbetalinger",
+        "api/innrapportering-verdipapirfond",
         "api/innrapportering-aandsverk",
         "api/mvameldinginnsending",
         "api/mvameldingvalidering",
