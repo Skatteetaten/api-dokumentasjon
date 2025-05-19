@@ -1,16 +1,16 @@
 ---
-title: Innrapportering skattefrie utbetalinger fra offentlige myndigheter API
-slug: /api/innrapportering-skattefrieutbetalinger
+title: Innrapportering individuelle pensjonsordninger API
+slug: /api/innrapportering-individuellepensjonsordninger
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, skattefrieutbetalinger,  tredjepartsopplysninger]
+tags: [ API, individuellepensjonsordninger,  tredjepartsopplysninger]
 keywords: [ grunnlagsdata ]
-last_updated: Mar 03, 2025
+last_updated: Mai 19, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av skattefrie utbetalinger fra offentlige myndigheter (RF-1319)</Summary>
+<Summary>Tjeneste for innrapportering av individuelle pensjonsordninger (RF-1301)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -25,7 +25,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringskattefrieutbetalinger`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringindividuellepensjonsordninger`
 
 ## Delegering
 
@@ -42,7 +42,7 @@ For å kunne benytte dette api-et med systemtilgang må man gi følgende rettigh
     {
       "Resource": [
         {
-          "value": "ske-innrapportering-skattefrie-utbetalinger",
+          "value": "ske-innrapportering-individuelle-pensjonsordninger",
           "id": "urn:altinn:resource"
         }
       ]
@@ -53,19 +53,19 @@ For å kunne benytte dette api-et med systemtilgang må man gi følgende rettigh
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelse av parametere, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skattefrie-utbetalinger-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-individuelle-pensjonsordninger-api/0.0.1)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for innrapportering av skattefrie utbetalinger fra offentlige myndigheter har to endepunkter
+API-et for innrapportering av individuelle pensjonsordninger har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for skattefrie utbetalinger. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
+* __POST innsending__: Mottar tredjepartsopplysninger for individuelle pensjonsordninger. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-skattefrieutbetalinger?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-individuellepensjonsordninger?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](innrapportering-skattefrieutbetalinger?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-individuellepensjonsordninger?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
@@ -86,7 +86,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request URL
 
 ```
-https://innrapporteringskattefrieutbetalinger.api.{env}.no/v1/{inntektsaar}
+https://innrapporteringindividuellepensjonsordninger.api.{env}.no/v1/{inntektsaar}
 ```
 
 ### JSON
@@ -96,40 +96,46 @@ https://innrapporteringskattefrieutbetalinger.api.{env}.no/v1/{inntektsaar}
 ```
 {
   "leveranse": {
-    "kildesystem": "kildesystem",
+    "kildesystem": "SystemX",
+    "inntektsaar": 2024,
+    "oppgavegiversLeveranseReferanse": "REF123456",
+    "leveransetype": "ordinaer",
     "oppgavegiver": {
-      "organisasjonsnummer": "311131788",
+      "organisasjonsnummer": "313613216",
       "kontaktinformasjon": {
-        "navn": "Kari Kontakt",
-        "telefonnummer": "80080000",
-        "varselEpostadresse": "kontakt@offentlig.no",
-        "varselSmsMobilnummer": "80080000"
+        "navn": "Kontakt Navn",
+        "telefonnummer": "12345678",
+        "varselEpostadresse": "kontakt@eksempel.no",
+        "varselSmsMobilnummer": "98765432"
       }
     },
-    "inntektsaar": 2024,
-    "utbetalingsmaaned": 4,
-    "oppgavegiversLeveranseReferanse": "Unik ekstern referanse ID",
-    "leveransetype": "ordinaer",
     "oppgave": [
       {
+        "avtalenummer": "AVT123",
+        "pensjonsavtaletype": "pensjonsspareavtale",
+        "innbetaltBeloep": 50000,
         "oppgaveeier": {
-          "foedselsnummer": "01234567890"
+          "foedselsnummer": "12345678901",
+          "navn": "Ola Nordmann"
         },
-        "ytelsestype": "barnetrygd",
-        "utbetalt": 5700
-      },
-      {
-        "oppgaveeier": {
-          "foedselsnummer": "12345678901"
+        "muligTilleggForsikringsavtale": {
+          "innestaaendePaaPremiefond": 10000,
+          "returAvPremie": 500
         },
-        "ytelsestype": "kontantstoette",
-        "utbetalt": 4300
+        "utbetaling": [
+          {
+            "utbetaltBeloep": 20000,
+            "utbetalingstype": "Alderspensjon"
+          }
+        ]
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": 2,
-      "sumUtbetalt": 10000,
-      "sumTilbakebetalt": 0
+      "antallOppgaver": 1,
+      "sumInnbetaltBeloep": 50000,
+      "sumUtbetaltBeloep": 20000,
+      "sumInnestaaendePaaPremiefond": 10000,
+      "sumReturAvPremie": 500
     }
   }
 }
@@ -141,8 +147,8 @@ https://innrapporteringskattefrieutbetalinger.api.{env}.no/v1/{inntektsaar}
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
-    "oppgavegiversLeveranseReferanse": "EksternReferanse_2013_1",
-    "antallOppgaver": 2
+    "oppgavegiversLeveranseReferanse": "EksternReferanse_2024_1",
+    "antallOppgaver": 1
 }
 ```
 
@@ -191,7 +197,7 @@ feltene.
 
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-![skattefrieUtbetalinger](../../static/download/Informasjonsmodell_Skattefrie_Utbetalinger.png)
+![individuellepensjonsordninger](../../static/download/Informasjonsmodell_Individuelle_Pensjonsordninger.png)
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">
@@ -201,7 +207,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skattefrie-utbetalinger-api/0.0.1). 
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-individuelle-pensjonsordninger-api/0.0.1). 
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten
@@ -227,7 +233,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om skattefrie utbetalinger fra offentlige myndigheter API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om individuelle pensjonsordninger API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
   
 </TabItem>

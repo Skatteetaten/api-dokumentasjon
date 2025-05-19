@@ -1,5 +1,5 @@
 ---
-title: Innrapportering Drosjetjenester API
+title: Innrapportering drosjetjenester API
 slug: /api/innrapportering-drosjetjenester
 folder: api
 sidebar: mydoc_sidebar
