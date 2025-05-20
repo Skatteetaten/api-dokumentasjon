@@ -42,20 +42,26 @@ Her er en oversikt over stegene som må til for å kunne ta i bruk nye tjenester
 
 Følgende API-er er tilgjengelige pr. nå:
 
-| API                                                                                                          | Test               | Produksjon |
-|--------------------------------------------------------------------------------------------------------------|--------------------|------------|
-| [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md) | :white_check_mark: |            |
-| [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)                                     | :white_check_mark: |            |
-| [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                   | :white_check_mark: |            |
-| [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                     | :white_check_mark: |            |
-| [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)             | :white_check_mark: |            |
-| [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                           | :white_check_mark: |            |
-| [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                     | :white_check_mark: |            |
-| [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                 | :white_check_mark: |            |
-| [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                           | :white_check_mark: |            |
-| [Innrapportering betalinger naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)      | :white_check_mark: |            |
-| [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                             | :white_check_mark: |            |
-| [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)              | :white_check_mark: |            |
-| [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)        | :white_check_mark: |            |
-| [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                             | :white_check_mark: |            |
+| API                                                                                                          | Test                   | Produksjon |
+|--------------------------------------------------------------------------------------------------------------|------------------------|------------|
+| [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md) | :white_check_mark:     |            |
+| [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)                                     | :white_check_mark:     |            |
+| [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                   | :white_check_mark:     |            |
+| [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                     | :white_check_mark:     |            |
+| [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)             | :white_check_mark:     |            |
+| [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                           | :white_check_mark:     |            |
+| [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                     | :white_check_mark:     |            |
+| [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                 | :white_check_mark:     |            |
+| [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                           | :white_check_mark:     |            |
+| [Innrapportering betalinger naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)      | :white_check_mark:     |            |
+| [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                             | :white_check_mark:     |            |
+| [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)              | :white_check_mark:     |            |
+| [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)        | :white_check_mark:     |            |
+| [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                             | :white_check_mark:     |            |
+| Innrapportering Verdipapirfond                                                                               | Kommer i løpet av mai  |            |
+| Innrapportering Individuelle pensjonsordninger                                                               | Kommer i løpet av mai  |            |
+| Innrapportering Livsforsikringer                                                                             | Kommer i løpet av juni |            |
+| Innrapportering Aksjesparekonto                                                                              | Kommer i løpet av juni |            |
+| Innrapportering Finansprodukter                                                                              | Kommer i løpet av juni |            |
+| Innrapportering Overskuddsstrøm                                                                              | Kommer i løpet av juni |            |
 
