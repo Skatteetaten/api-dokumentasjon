@@ -62,9 +62,7 @@ All URIs are relative to:
 |--------------------|------------------|-----------------------------------------------------------------|
 | Get all active           | GET /api/trekkpaalegg/v1                              | Retrieve all current trekkpålegg for the liable party|
 | Get version             | GET /api/trekkpaalegg/v1/trekkid/trekkversjon      | Retrieve a specific version of a trekkpålegg         |         
-		
-		
-		
+			
 
 ## Data catalog
 
