@@ -96,9 +96,9 @@ This API is currently not in the common data catalog
 
 
 ### Example of request URL
-
+'''
 https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
-
+'''
 ### Example of respons
 
 ### Example of request URL
