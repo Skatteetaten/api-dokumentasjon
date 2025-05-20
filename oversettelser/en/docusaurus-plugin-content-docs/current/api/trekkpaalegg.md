@@ -61,7 +61,7 @@ All URIs are relative to:
 | Method             | HTTP Request     | Description                                                     |
 |--------------------|------------------|-----------------------------------------------------------------|
 | Get all active           | GET /api/trekkpaalegg/v1                              | Retrieve all current trekkpålegg for the liable party|
-| Get version             | GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}      | Retrieve a specific version of a trekkpålegg         |         
+| Get version             | GET /api/trekkpaalegg/v1/trekkid/{trekkversjon}      | Retrieve a specific version of a trekkpålegg         |         
 		
 		
 		
