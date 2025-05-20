@@ -97,29 +97,24 @@ This API is currently not in the common data catalog
 
 ### Example of request URL
 
-```
 https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
-```
 
 ### Example of respons
 
 ### Example of request URL
 
-```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/krav?fraOgMed=2023-01-01&tilOgMed=2023-09-01
-```
 
 ### Example of respons
 
 </TabItem>
 <TabItem headerText="Error codes" itemKey="itemKey-4">
 
-Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
+See separat page (Norwegian) for general information concerning [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
+## Error codes
+The table below shows an overview of specific error codes that may be produced. The error message may vary even if the same error code is returned. This is done in order to provide as precise a description as possible.
 
-
-| Errorcode          | HTTP Status code | Error description                                               |
+| Error code          | HTTP Status code | Error description                                               |
 |--------------------|------------------|-----------------------------------------------------------------|
 | KB-001             | 500               | Unexpected error on the service                                |
 | KB-002             | 500               | Unexpected error in an associated system                       |
@@ -133,7 +128,6 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 </TabItem>
 <TabItem headerText="Information model" itemKey="itemKey-5">
-
 
 Bilde av informasjonsmodell.
 
