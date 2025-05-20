@@ -106,7 +106,6 @@ A Systembruker is then created, linking the user, system, provider, and API.
 </TabItem>
 <TabItem headerText="Examples" itemKey="itemKey-3"> 
 
-## Åpne krav
 
 ### Eksempel på request URL
 
@@ -140,9 +139,6 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
 [![Informasjonsmodell](../../../../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../../../static/download/informasjonsmodell-utleggsbegjaering.png)
-
-
-
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-6">
