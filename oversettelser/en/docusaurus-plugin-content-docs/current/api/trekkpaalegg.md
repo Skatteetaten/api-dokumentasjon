@@ -40,7 +40,7 @@ For general informastion about the services; see pages (Norwegian) for:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:trekkpaalegg`
+The following scope is to be used when authenticating in Maskinporten: `skatteetaten:trekkpaalegg`
 
 ## Delegation
 
@@ -52,9 +52,25 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Trekkpålegg API - P
 The Norwegian Tax Administration provides an API to retrieve withholding orders.
 The Open API specification is available here: [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app) on SwaggerHub.
 
+
+## Trekkpålegg API
+All URIs are relative to:
+•	https://api-test.sits.no (test)
+•	--- (production)
+
+| Method             | HTTP Request     | Description                                                     |
+|--------------------|------------------|-----------------------------------------------------------------|
+| Get all active           | GET /api/trekkpaalegg/v1                              | Retrieve all current trekkpålegg for the liable party|
+| Get version             | GET /api/trekkpaalegg/v1/{trekkid}/{trekkversjon}      | Retrieve a specific version of a trekkpålegg         |         
+		
+		
+		
+
 ## Data catalog
 
 This API is currently not in the common data catalog
+
+
 
 </TabItem>
 <TabItem headerText="Syllabus" itemKey="itemKey-2"> 
@@ -76,30 +92,27 @@ This API is currently not in the common data catalog
 
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-3"> 
+<TabItem headerText="Examples" itemKey="itemKey-3"> 
 
-## Åpne krav
 
-### Eksempel på request URL
+### Example of request URL
 
 ```
 https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
 ```
 
-### Eksempel på respons
+### Example of respons
 
-## Krav
-
-### Eksempel på request URL
+### Example of request URL
 
 ```
 https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/krav?fraOgMed=2023-01-01&tilOgMed=2023-09-01
 ```
 
-### Eksempel på respons
+### Example of respons
 
 </TabItem>
-<TabItem headerText="Feilkoder" itemKey="itemKey-4">
+<TabItem headerText="Error codes" itemKey="itemKey-4">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
