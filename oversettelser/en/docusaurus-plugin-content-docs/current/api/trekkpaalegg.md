@@ -15,7 +15,22 @@ hide_table_of_contents: true
 <Tabs underline={true}>
 <TabItem headerText="About the service" itemKey="itemKey-1" default>
 
-English test. For generell informasjon om tjenestene se egne sider om:
+This page describes a new interface between the IT systems of the Norwegian Tax Administration and liable parties/employers.
+The target audience is developers and IT architects at system providers who deliver payroll and HR systems (or end-user systems) to employers. These systems are hereafter referred to as End-User Systems, abbreviated as SBS.
+
+A new interface will be established to transmit withholding orders from the Tax Administration to employers with employees who are subject to wage garnishment.
+This new interface will eventually replace the existing interface for withholding communication, but initially, it will be introduced alongside the current one. The new interface will first be available in a test environment, then in pilot projects, and finally in full production.
+
+## Key features of the new interface
+•	The interface is a machine-to-machine interface that transmits withholding orders from the Tax Administration to employers using SBS systems.
+•	It follows a RESTful design and provides an API.
+•	SBS systems must poll the interface to check for new withholding orders.
+•	Eventually, a separate interface will be available, allowing SBS systems to receive notifications (events) when the Tax Administration issues a new withholding order to an employer.
+•	SBS must present a token in the interface that contains the organization number of the liable employer.
+•	The token is obtained by connecting to Maskinporten with a specified scope.
+•	Withholding orders are delivered in JSON format.
+
+For general informastion about the services; see pages (Norwegian) for:
 
 * [Sikkerhetsmekansimer](../../../../../docs/om/sikkerhet.md)
 * [Systembruker](../../../../../docs/om/systembruker.md)
@@ -27,19 +42,19 @@ English test. For generell informasjon om tjenestene se egne sider om:
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:trekkpaalegg`
 
-## Delegering
+## Delegation
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Trekkpålegg API - På vegne av`
 
-## Teknisk spesifikasjon
+## Technical specification
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app) på SwaggerHub.
+The Norwegian Tax Administration provides an API to retrieve withholding orders.
+The Open API specification is available here: [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app) on SwaggerHub.
 
-## Datakatalog
+## Data catalog
 
-Dette API-et finnes foreløpig ikke i Felles datakatalog.
+This API is currently not in the common data catalog
 
 </TabItem>
 <TabItem headerText="Syllabus" itemKey="itemKey-2"> 
