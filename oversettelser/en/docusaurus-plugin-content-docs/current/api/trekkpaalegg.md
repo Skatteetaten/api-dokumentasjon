@@ -76,10 +76,10 @@ To use the services for Trekkpålegg, the following scope must be specified duri
 skatteetaten:trekkpaalegg
 The API supports two types of authentication via Maskinporten, as described below:
 
-Option 1 – System Provider is the Liable Party
+### Option 1 – System Provider is the Liable Party
 If the system provider is only receiving withholding orders for its own organization, traditional authentication via Maskinporten can be used. More information is available [here].
 
-Option 2 – System User
+### Option 2 – System User
 If the system provider wants to offer functionality where another organization (a customer of the provider) uses the system to receive Trekkpålegg, Altinn’s new “system user” functionality must be used.
 More information is available in Altinn System User for SBS and the System User Roadmap.
 To support system user functionality, the provider must register in Maskinporten and the Altinn test environment.
