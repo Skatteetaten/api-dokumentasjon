@@ -68,7 +68,23 @@ All URIs are relative to:
 
 This API is currently not in the common data catalog
 
+## Access to the Service
 
+Access is managed through Maskinporten.
+To obtain a token from Maskinporten, the payroll system must use its enterprise certificate to specify which organization number it represents. This organization number must be approved by the Norwegian Tax Administration.
+To use the services for Trekkpålegg, the following scope must be specified during authentication with Maskinporten:
+skatteetaten:trekkpaalegg
+The API supports two types of authentication via Maskinporten, as described below:
+
+Option 1 – System Provider is the Liable Party
+If the system provider is only receiving withholding orders for its own organization, traditional authentication via Maskinporten can be used. More information is available [here].
+
+Option 2 – System User
+If the system provider wants to offer functionality where another organization (a customer of the provider) uses the system to receive Trekkpålegg, Altinn’s new “system user” functionality must be used.
+More information is available in Altinn System User for SBS and the System User Roadmap.
+To support system user functionality, the provider must register in Maskinporten and the Altinn test environment.
+
+[Read about Systembruker here](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker)
 
 </TabItem>
 <TabItem headerText="Syllabus" itemKey="itemKey-2"> 
