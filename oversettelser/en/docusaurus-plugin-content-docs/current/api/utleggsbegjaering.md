@@ -31,8 +31,8 @@ For information about the services see:
 * [Versjonering](../../../../../docs/om/versjoner.md)
 * [Teknisk spesifikasjon](../../../../../docs/om/tekniskspesifikasjon.md)
 
-### Altinn Dialogporten
-suppliers are not required to integrate with Dialogporten, either during the pilot phase or in full production. It will be sufficient to use only the API endpoints.
+### Altinn Dialogue gateway
+Suppliers are not required to integrate with Dialogporten, either during the pilot phase or in full production. It will be sufficient to use only the API endpoints.
 However, through Dialogporten, we will offer an event notification service that alerts users when new messages from the Norwegian Tax Administration are available—such as requests to correct a previously submitted enforcement request.
 If you choose not to use the notification service, you must regularly check for new messages by polling the agency’s API.
 
@@ -46,19 +46,19 @@ In the meantime, please contact: fremtidensinnkreving@skatteetaten.no.
 
 The following scope is to be used when authenticating in Maskinporten: `skatteetaten:utleggsbegjaering`
 
-## Delegering
+## Delegation
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæring API - På vegne av`
 
-## Teknisk spesifikasjon
+## Technical specification
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
 
-## Datakatalog
+## Data catalogue
 
-Dette API-et finnes foreløpig ikke i Felles datakatalog.
+This API is currently not available in the data catalogue
  
 ## Access to the service
 Connection to the Tax Administration's test environment is done via Maskinporten. To obtain a token from Maskinporten, the debt collection system must use its enterprise certificate to specify which Organisasjonsnummer it represents. This organisasjonsnummer  must be approved by the Tax Administration.
@@ -135,7 +135,7 @@ The table below shows an overview of specific error codes that may be produced. 
 | DUPLIKAT_INNSENDING| Duplikat          | Duplicate submittal                                            |
 
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-5">
+<TabItem headerText="Information modell" itemKey="itemKey-5">
 
 Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
