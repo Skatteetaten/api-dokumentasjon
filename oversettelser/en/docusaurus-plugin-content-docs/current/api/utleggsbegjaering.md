@@ -107,12 +107,12 @@ A Systembruker is then created, linking the user, system, provider, and API.
 <TabItem headerText="Examples" itemKey="itemKey-3"> 
 
 
-### Eksempel på request URL
+### Example of request URL
 
 ```
 ```
 
-### Eksempel på respons
+### Example of respons
 
 </TabItem>
 <TabItem headerText="Error codes" itemKey="itemKey-4">
@@ -137,7 +137,7 @@ The table below shows an overview of specific error codes that may be produced. 
 </TabItem>
 <TabItem headerText="Information modell" itemKey="itemKey-5">
 
-Her ser du hele informasjonsmodellen for Utleggsbegjæring
+Thi is the entire information modell Utleggsbegjæring
 
 [![Informasjonsmodell](../../../../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../../../static/download/informasjonsmodell-utleggsbegjaering.png)
 
