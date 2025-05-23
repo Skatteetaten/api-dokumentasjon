@@ -111,9 +111,9 @@ To support system user functionality, the provider must register in Maskinporten
 
 ### Example of request URL
 
-'''
-https://env/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
-'''
+```
+https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
+```
 
 ### Example of respons
 
