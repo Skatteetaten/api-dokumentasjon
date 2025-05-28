@@ -31,8 +31,8 @@ For information about the services see:
 * [Versjonering](../../../../../docs/om/versjoner.md)
 * [Teknisk spesifikasjon](../../../../../docs/om/tekniskspesifikasjon.md)
 
-### Altinn Dialogporten
-suppliers are not required to integrate with Dialogporten, either during the pilot phase or in full production. It will be sufficient to use only the API endpoints.
+### Altinn Dialogue gateway
+Suppliers are not required to integrate with Dialogporten, either during the pilot phase or in full production. It will be sufficient to use only the API endpoints.
 However, through Dialogporten, we will offer an event notification service that alerts users when new messages from the Norwegian Tax Administration are available—such as requests to correct a previously submitted enforcement request.
 If you choose not to use the notification service, you must regularly check for new messages by polling the agency’s API.
 
@@ -46,20 +46,20 @@ In the meantime, please contact: fremtidensinnkreving@skatteetaten.no.
 
 The following scope is to be used when authenticating in Maskinporten: `skatteetaten:utleggsbegjaering`
 
-## Delegering
+## Delegation
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæring API - På vegne av`
 
-## Teknisk spesifikasjon
+## Technical specification
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
 
-## Datakatalog
+## Data catalogue
 
-Dette API-et finnes foreløpig ikke i Felles datakatalog.
-
+This API is currently not available in the data catalogue
+ 
 ## Access to the service
 Connection to the Tax Administration's test environment is done via Maskinporten. To obtain a token from Maskinporten, the debt collection system must use its enterprise certificate to specify which Organisasjonsnummer it represents. This organisasjonsnummer  must be approved by the Tax Administration.
 
@@ -106,53 +106,40 @@ A Systembruker is then created, linking the user, system, provider, and API.
 </TabItem>
 <TabItem headerText="Examples" itemKey="itemKey-3"> 
 
-## Åpne krav
 
-### Eksempel på request URL
+### Example of request URL
 
 ```
 ```
 
-### Eksempel på respons
+### Example of respons
 
 </TabItem>
 <TabItem headerText="Error codes" itemKey="itemKey-4">
 
-Se egen side for generell info om [feilhåndtering i tjenestene](../../../docs/om/feil.md).
+See separat page (Norwegian) for general information concerning [feilhåndtering i tjenestene](../om/feil.md).
 
-Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig. 
+## Error codes
+The table below shows an overview of specific error codes that may be produced. The error message may vary even if the same error code is returned. This is done in order to provide as precise a description as possible.
 
-| Feilkode | HTTP Statuskode | Feilområde                                                     |
-|----------|-----------------|----------------------------------------------------------------|
-| KB-001   | 500             | Uventet feil på tjenesten.                                     |
-| KB-002   | 500             | Uventet feil i et bakenforliggende system.                     |
-| KB-003   | 404             | Ukjent url benyttet.                                           |
-| KB-004   | 401             | Feil i forbindelse med autentisering.                          |
-| KB-005   | 403             | Feil i forbindelse med samtykketoken.                          |
-| KB-006   | 400             | Feil i forbindelse med validering av inputdata.                |
-| KB-007   | 404             | Fant ingen krav/betalinger på angitt identifikator og periode. |
-| KB-008   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.     |
-| KB-009   | 404             | Ingen treff på oppgitt identifikator.                          |
+| Errorcode          | HTTP Status code | Error description                                               |
+|--------------------|------------------|-----------------------------------------------------------------|
+| KB-001             | 500               | Unexpected error on the service                                |
+| KB-002             | 500               | Unexpected error in an associated system                       |
+| KB-003             | 404               | Unknown URL used                                               |
+| KB-004             | 401               | Authentification error                                         |
+| KB-005             | 403               | Error in connection with approval token                        |
+| KB-006             | 400               | Error in connection with validation of input data              |
+| KB-008             | 406               | Error in connection with data format. Only json eller xml is supported     |
+| KB-009             | 404               | Unknown identifier                                             |
+| DUPLIKAT_INNSENDING| Duplikat          | Duplicate submittal                                            |
 
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-5">
+<TabItem headerText="Information modell" itemKey="itemKey-5">
 
-Her ser du hele informasjonsmodellen for Utleggsbegjæring
+Thi is the entire information modell Utleggsbegjæring
 
 [![Informasjonsmodell](../../../../../static/download/informasjonsmodell-utleggsbegjaering.png)](../../../../static/download/informasjonsmodell-utleggsbegjaering.png)
-
-| Vilkårnavn                   | Gjelder kun ved endring | Tittel                 |Beskrivelse                |Avvikstekst
-|------------------------------|-------------------------|------------------------|---------------------------|---------------------|
-| DUPLIKAT_INNSENDING          | Nei                     |Duplikat                |Duplikat innsending        |
-| KB-002                       | 500                     |                        |
-| KB-003                       | 404                     |                                        |
-| KB-004                       | 401                     |                           |
-| KB-005                       | 403                     | Feil i forbindelse med samtykketoken.                          |
-| KB-006                       | 400                     | Feil i forbindelse med validering av inputdata.                |
-| KB-007                       | 404                     | Fant ingen krav/betalinger på angitt identifikator og periode. |
-| KB-008                       | 406                     | Feil tilknyttet dataformat. Kun json eller xml er støttet.     |
-| KB-009                       | 404                     | Ingen treff på oppgitt identifikator.                          |
-
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-6">
