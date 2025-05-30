@@ -36,22 +36,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
 Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
-For å kunne benytte dette api-et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i
-systemregisteret:
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
 
-```JSON
-{
-  "rights": [
+```json
+"accessPackages": [
     {
-      "resource": [
-        {
-          "value": "ske-innrapportering-verdipapirfond",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
-}
+]
 ```
 
 ## Teknisk spesifikasjon
