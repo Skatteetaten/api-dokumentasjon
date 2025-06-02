@@ -2,11 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler</id>
     <title>Skatteetaten - API nyheter</title>
-    <updated>2024-11-29T15:15:00.000Z</updated>
+    <updated>2025-02-06T08:15:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler"/>
     <subtitle>Nyheter for Skatteetatens API’er</subtitle>
     <icon>https://skatteetaten.github.io/api-dokumentasjon/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[MVA med i ny fellesside for sluttbrukersystemer]]></title>
+        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2025/06/02/info-fellesside-mva</id>
+        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2025/06/02/info-fellesside-mva"/>
+        <updated>2025-02-06T08:15:00.000Z</updated>
+        <summary type="html"><![CDATA[Den 16.mai ble Fellesside sluttbrukersystemer lansert. Her finnes generell informasjon for deg som lager tjenester og systemer for sluttbrukere,]]></summary>
+        <content type="html"><![CDATA[<p>Den 16.mai ble <a href="https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/" target="_blank" rel="noopener noreferrer">Fellesside sluttbrukersystemer</a> lansert. Her finnes generell informasjon for deg som lager tjenester og systemer for sluttbrukere,
+og som har integrasjon mot Skatteetatens eksterne tjenester og API. Vi har derfor samlet linker til alle eksterne MVA-tjenester som API dokumentasjon, driftstatus og brukerstøtteverktøy der.</p>]]></content>
+        <category label="nyhet" term="nyhet"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Driftsvarsler for MVA er flyttet til Skatteetatens statusside]]></title>
         <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/11/29/paaminnelse-driftsvarsler</id>
@@ -228,15 +238,6 @@ Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
         <updated>2024-05-22T12:30:00.000Z</updated>
         <summary type="html"><![CDATA[Feilen er rettet og systemene er oppe igjen]]></summary>
         <content type="html"><![CDATA[<p>Feilen er rettet og systemene er oppe igjen</p>]]></content>
-        <category label="Drift" term="Drift"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Driftsvarsel]]></title>
-        <id>https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer</id>
-        <link href="https://skatteetaten.github.io/api-dokumentasjon/en/nyheter-og-driftsvarsler/2024/05/22/Driftsproblemer"/>
-        <updated>2024-05-22T08:56:00.000Z</updated>
-        <summary type="html"><![CDATA[Vi har for tiden driftsproblemer. Feilsøking pågår.]]></summary>
-        <content type="html"><![CDATA[<p>Vi har for tiden driftsproblemer. Feilsøking pågår.</p>]]></content>
         <category label="Drift" term="Drift"/>
     </entry>
 </feed>
