@@ -384,6 +384,17 @@ Fra 01.01.2023 er spesifikasjonen «Kjøp med kompensasjonsrett» lagt til på 5
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-4">
 
+## Krav til testgjennomføring
+Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres på at validerings- og innsendingstjenestene fungerer som forventet. 
+Ved å melde en sak i [SSV løsningen](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) kan man få hjelp til feilsøk og oppfølging av saker som er sendt inn i testmiljøet.
+
+## Testmiljø og testdata
+Systemleverandørene må ha testmiljøer som kun består av syntetiske data.
+Oppkobling mot testmiljøet skjer via ID-porten og i forbindelse med test kan Skatteetatens ID-porten-integrasjon benyttes. Det anbefales å bestille egen integrasjon mot ID-porten så tidlig som mulig da dette er en delvis manuell og tidkrevende prosess.
+
+Systemutviklere skal bruke testbrukere fra Tenor Testdatasøk. Dette er syntetisk testbruker som også skal brukes for pålogging i ID-porten og Altinn. Det vil kun være disse testbrukeren som kan benyttes for å få testet. Testbrukere som ligger tilgjengelig på Digdir sine sider vil ikke kunne brukes. 
+[Her finnes en bruksveiledning for Tenor Testdatasøk.](https://github.com/Skatteetaten/mva-meldingen/blob/master/docs/mvameldingen/test/Bruksveiledning_Tenor.pdf)
+
 ## Url'er til testmiljøet
 
 | Tjeneste |	Url |
