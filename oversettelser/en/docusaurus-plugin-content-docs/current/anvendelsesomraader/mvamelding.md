@@ -8,26 +8,29 @@ tags: [Mva-melding]
 last_updated: July 10, 2023
 hide_table_of_contents: true
 ---
-<Summary>API-er knyttet til Mva-meldingen (English version) </Summary>
+<Summary>APIs Related to the VAT Return (English version) </Summary>
 
-## MVA-moderniseringen
-I 2022 ble mva-meldingen modernisert. Ny mva-melding gir nå bedre etterlevelse, likere konkurransevilkår, forenkling for næringslivet og en mer effektiv forvaltning. Noe forenkling følger direkte av endringene i mva-meldingen. Vi får færre feilkilder, enklere tilbakebetaling, og det blir enklere å oppfylle opplysningsplikten. 
+## VAT Modernization
+In 2022, the VAT return was modernized. The new VAT return now provides better compliance, more equal competition conditions, simplification for businesses, and more efficient administration.
+Some simplifications are a direct result of the changes in the VAT return. There are fewer sources of error, easier refunds, and it becomes simpler to fulfill the reporting obligations.
 
-Den gir også muligheter for veiledning og dialog gjennom for eksempel validering før innsending og påminnelse om arbeidsoppgaver ved hjelp av arbeidsliste. I tillegg ønsker man å tilby økt grad av oppslag og innsyn for å oppå effektivisering og trygghet gjennom digital avstemming. Ny melding gir også bedre samspill mellom regnskapssystemene og Altinn/Skatteetaten, for eksempel gjennom automatisk kvittering til regnskapssystem.
+It also enables guidance and dialogue through, for example, validation before submission and reminders of tasks via a task list.
+In addition, there is a desire to offer increased access to lookups and insights to achieve efficiency and confidence through digital reconciliation.
+The new return also improves interaction between accounting systems and Altinn/The Norwegian Tax Administration, for example through automatic receipts sent to the accounting system.
 
-Ønsker du mer informasjon om mva-området kan du lese mer på [skatteetaten.no/nymva](https://www.skatteetaten.no/bedrift-og-organisasjon/avgifter/mva/).
+If you want more information about the VAT area, you can read more at: [skatteetaten.no/nymva](https://www.skatteetaten.no/bedrift-og-organisasjon/avgifter/mva/).
 
-## API-er for Mva-meldingen
+## APIs for the VAT Return
 
-Følgende API-er er laget i forbindelse med innsending av Mva-meldingen:
-* [MVA Melding Validering API](https://skatteetaten.github.io/api-dokumentasjon/api/mvameldingvalidering)
-* [MVA Melding Innsendings API](https://skatteetaten.github.io/api-dokumentasjon/api/mvameldinginnsending)
+The following APIs have been developed in connection with the submission of the VAT return:
+* [VAT Return Validation API](https://skatteetaten.github.io/api-dokumentasjon/api/mvameldingvalidering)
+* [VAT Return Submission API](https://skatteetaten.github.io/api-dokumentasjon/api/mvameldinginnsending)
 
-Det er også laget noen klassiske delingstjenester for SSB:
-* [Mva-melding API](../api/mvamelding.md)
-* [Mva-register – avgiftssubjekter med skattemeldingsplikt API](../api/mvaregisteravgiftssubjekt.md)
+Some classic sharing services have also been developed for Statistics Norway (SSB):
+* [VAT Return API](../api/mvamelding.md)
+* [VAT Register – Taxable Entities with Reporting Obligations API](../api/mvaregisteravgiftssubjekt.md)
 
-I tillegg finnes et api for Mva-melding og informasjon fra reskontro:
-* [Mva meldingsopplysning API](../api/mva_meldingsopplysning.md)
+Additionally, there is an API for VAT return and information from the sub-ledger:
+* [VAT Return Information API](../api/mva_meldingsopplysning.md)
 
-Alle disse kan nås via sidemenyen og valg API for deling eller API for innrapportering
+All of these can be accessed via the side menu under the options “API for Sharing” or “API for Reporting.”
