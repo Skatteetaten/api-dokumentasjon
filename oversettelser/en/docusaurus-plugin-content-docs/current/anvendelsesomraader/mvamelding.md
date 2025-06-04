@@ -1,5 +1,5 @@
 ---
-title: Mva-meldingen
+title: VAT return
 slug: /anvendelsesomraader/mvamelding
 folder: anvendelsesomraader
 sidebar: mydoc_sidebar
@@ -33,4 +33,4 @@ Some classic sharing services have also been developed for Statistics Norway (SS
 Additionally, there is an API for VAT return and information from the sub-ledger:
 * [VAT Return Information API](../api/mva_meldingsopplysning.md)
 
-All of these can be accessed via the side menu under the options “API for Sharing” or “API for Reporting.”
+
