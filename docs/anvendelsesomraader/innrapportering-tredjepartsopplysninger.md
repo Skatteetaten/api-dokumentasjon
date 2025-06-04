@@ -5,7 +5,7 @@ folder: anvendelsesomraader
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ altinn, innrapportering, tredjepartsopplysninger, grunnlagsdata ]
-last_updated: Mai 16, 2025
+last_updated: Juni 04, 2024
 hide_table_of_contents: true
 ---
 
@@ -60,6 +60,7 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                             | :white_check_mark:     |            |
 | [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                     | :white_check_mark:     |            |
 | [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)             | :white_check_mark:     |            |
+| [Innrapportering individuelle_pensjonsordninger API](../api/innrapportering-individuellepensjonsordninger.md) | :white_check_mark: |            |
 | [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                 | :white_check_mark:     |            |
 | [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)        | :white_check_mark:     |            |
 | [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                           | :white_check_mark:     |            |
@@ -67,7 +68,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)              | :white_check_mark:     |            |
 | [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                           | :white_check_mark:     |            |
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                               | :white_check_mark:     |            |
-| Innrapportering Individuelle pensjonsordninger                                                               | Kommer i løpet av mai  |            |
 | Innrapportering Livsforsikringer                                                                             | Kommer i løpet av juni |            |
 | Innrapportering Aksjesparekonto                                                                              | Kommer i løpet av juni |            |
 | Innrapportering Finansprodukter                                                                              | Kommer i løpet av juni |            |
