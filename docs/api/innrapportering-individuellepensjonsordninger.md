@@ -38,16 +38,17 @@ Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
 For å kunne benytte dette api-et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
 ```JSON
-"Rights": [
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-individuelle-pensjonsordninger",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
