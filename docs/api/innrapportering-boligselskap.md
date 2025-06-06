@@ -62,10 +62,11 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for boligselskap har bare ett endepunkt:
+API-et for innrapportering av boligselskap har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for boligselskaper. Ett kall mot API-et er en rapportering for et
-  boligselskap gitt av en oppgavegiver og som gjelder et inntektsår.
+* __POST innsending__: Mottar tredjepartsopplysninger for boligselskap. Ett kall mot API-et er en rapportering for en
+  person gitt av en oppgavegiver og som gjelder et inntektsår.
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligselskap?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -189,9 +190,15 @@ https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
 ```
 {
   "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
-  "dialogelementId": "018f5297-fde1-7301-af34-df1bc3fff6b5",
-  "oppgavegiversLeveranseReferanse": "leveranse-1",
-  "antallOppgaver": 11
+  "forsendelseId": "018f5297-fde1-7301-af34-df1bc3fff6b5",
+  "leveranseformaal": [
+    {
+      "boligselskapFormaal": "fritidsboligNorge",
+      "oppgavegiversLeveranseReferanse": "string",
+      "antallSletteoppgaver": 5,
+      "antallOppgaver": 10
+    }
+  ]
 }
 ```
 

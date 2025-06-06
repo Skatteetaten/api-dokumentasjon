@@ -64,7 +64,7 @@ API-et for innrapportering for skadeforsikring har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger om skadeforsikring. Et kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-skadeforsikring?tab=Feilkoder) for
 relaterte feilmeldinger.

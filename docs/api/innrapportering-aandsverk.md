@@ -64,7 +64,7 @@ API-et for innrapportering av godtgjøring til opphaver til åndsverk har to end
 
 * __POST innsending__: Innsending av tredjepartsopplysninger for godtgjøring til opphaver til åndsverk. Ett kall mot API-et er
   en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission i Dialogporten
+* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i Dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](aandsverk?tab=Feilkoder) for
 relaterte feilmeldinger.

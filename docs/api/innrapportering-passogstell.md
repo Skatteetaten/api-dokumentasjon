@@ -63,7 +63,7 @@ API-et for innrapportering av pass og stell av barn har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for pass og stell. Ett kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-passogstell?tab=Feilkoder) for
 relaterte feilmeldinger.
