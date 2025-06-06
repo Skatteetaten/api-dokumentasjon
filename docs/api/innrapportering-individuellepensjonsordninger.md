@@ -38,7 +38,7 @@ Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
 Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
 
-```JSON
+```json
 "accessPackages": [
     {
         "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
