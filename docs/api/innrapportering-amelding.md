@@ -42,7 +42,7 @@ For å kunne benytte dette api'et med systemtilgang må man gi følgende rettigh
     {
       "Resource": [
         {
-          "value": "ske-innrapportering-boligselskap",
+          "value": "ske-innrapportering-amelding",
           "id": "urn:altinn:resource"
         }
       ]
