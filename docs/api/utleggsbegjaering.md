@@ -104,7 +104,8 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
               "adresseFrittFormatInnland": {
                 "kommunenummer": "4601",
                 "postnummer": "5231",
-                "adressetekst": "Nattlandsåsen 2"
+                "adressetekst": "Nattlandsåsen 2",
+                "poststedsnavn": "Oslo"
               }
             }
           }
@@ -119,7 +120,45 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
           "virksomhetstype": "inkassovirksomhet"
         }
       },
-      "saksoekerReferanse": "saksoekerReferanse"
+      "saksoekerReferanse": "saksoekerReferanse",
+      "saksoekerKontaktinformasjon": {
+        "epostAdresse": "epost@yahoo.com",
+        "telefonnummer": "99563564"
+      },
+      "prosessfullmektig": {
+        "prosessfullmektig": {
+          "adresse": [
+            {
+              "adressetype": "bopelsadresse",
+              "adresseInnland": {
+                "adresseFrittFormatInnland": {
+                  "kommunenummer": "0301",
+                  "postnummer": "1333",
+                  "adressetekst": "Bergendal 66",
+                  "poststedsnavn": "Bergen"
+                }
+              }
+            }
+          ],
+          "virksomhet": {
+            "navn": "UTROLIG ESTETISK TIGER AS",
+            "identifikator": {
+              "identifikatortype": "taxIdentificationNumber",
+              "verdi": "312597772",
+              "landkode": "NO"
+            },
+            "virksomhetstype": "inkassovirksomhet"
+          }
+        },
+        "bevillingshaver": {
+          "navn": {
+            "fornavn": "Anna",
+            "etternavn": "Norman",
+            "mellomnavn": "Isaksen"
+          },
+          "inkassobevillingshaverNummer": "123212132"
+        }
+      }
     }
   ],
   "saksoekt": [
@@ -139,8 +178,8 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
         ],
         "person": {
           "personnavn": {
-            "fornavn": "LYSEGUL",
-            "etternavn": "HENSIKT"
+            "fornavn": "HENSIKT",
+            "etternavn": "LYSEGUL"
           },
           "foedselsdato": "2006-09-16",
           "identifikator": {
@@ -149,25 +188,59 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
             "landkode": "NO"
           }
         }
-      }
+      },
+      "prosessfullmektig": {
+        "prosessfullmektig": {
+          "adresse": [
+            {
+              "adressetype": "bopelsadresse",
+              "adresseInnland": {
+                "adresseFrittFormatInnland": {
+                  "kommunenummer": "0301",
+                  "postnummer": "1333",
+                  "adressetekst": "Hardalsv. 12",
+                  "poststedsnavn": "Bergen"
+                }
+              }
+            }
+          ],
+          "virksomhet": {
+            "navn": "OPPBLÅST UNDERDANIG TIGER AS",
+            "identifikator": {
+              "identifikatortype": "taxIdentificationNumber",
+              "verdi": "312759667",
+              "landkode": "NO"
+            },
+            "virksomhetstype": "inkassovirksomhet"
+          }
+        },
+        "bevillingshaver": {
+          "navn": {
+            "fornavn": "Per",
+            "etternavn": "Sand"
+          },
+          "inkassobevillingshaverNummer": "2345678951"
+        }
+      },
+      "saksoektReferanse": "saksoektReferanse"
     }
   ],
-  "underskrift": "bevilgningsNavn_ikke finnes i PDF",
+  "underskrift": "Anna Norman",
   "tvangsfullbyrdelsestype": "utlegg",
-  "begjaeringsdato": "2025-01-10",
+  "begjaeringsdato": "2024-02-02",
   "begjaeringensTvangsgrunnlag": [
     {
       "innsendersKravreferanse": [
         "00890772001",
         "RentekravPåHovedkrav_00890772001_1",
-        "UtenrettsligKostnaderPåHovedkrav_00890772001"
+        "UtenrettsligKostnaderAvHovedkrav_00890772001"
       ],
       "eksternSaksreferanse": "Saksnr: 106109935",
       "tvangsgrunnlagsdato": "2024-07-02",
       "tvangsgrunnlag": {
         "type": "tvangsgrunnlag",
         "filnavn": "tvangsgrunnlag",
-        "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+        "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
       },
       "betegnelseAvTvangsgrunnlag": "Kredittkort",
       "varsel": [
@@ -177,7 +250,7 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
           "tvangskraftgrunnlag": {
             "type": "tvangskraftgrunnlag",
             "filnavn": "tvangskraftgrunnlag",
-            "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
           }
         }
       ],
@@ -191,7 +264,7 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
             "landkode": "NO"
           }
         ],
-        "referanseSak": "IKKE I BRUK FØR 2030",
+        "referanseSak": "saksreferanse",
         "kreditor": [
           {
             "identifikatortype": "taxIdentificationNumber",
@@ -204,18 +277,30 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
           "krevesFravaersdom": true,
           "forsendelsesmaate": {
             "forsendelsesmaate": "altinn",
-            "alternativElektroniskKanalForMeddelelse": {
+            "AlternativElektroniskKanalForMeddelelse": {
               "kanalForMeddelelse": "kanalForMeddelelse",
               "akseptKanalvalg": {
                 "type": "annet",
                 "filnavn": "akseptKanalvalg",
-                "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+                "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
               }
             }
           },
-          "faktiskeForholdForKravet": "Kredittkort",
-          "paastand": "ikke pdf",
-          "kanBehandlesIForliksraadet": false
+          "faktiskeForholdForKravet": "Gjelder ubetalt kredittkort",
+          "paastand": "Klagemotparten dømmes til å betale bla bla bla.",
+          "kanBehandlesIForliksraadet": true,
+          "avsender": {
+            "identifikatortype": "taxIdentificationNumber",
+            "verdi": "312597772",
+            "landkode": "NO"
+          },
+          "mottakeradresse": {
+            "adressetekst": [
+              "Torshovsvei 56"
+            ],
+            "poststedsnavn": "Oslo",
+            "postnummer": "0351"
+          }
         }
       }
     }
@@ -226,16 +311,46 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
       "kravforfall": {
         "forfallsdato": "2024-06-15"
       },
+      "tilleggsfristForeldelse": [
+        {
+          "grunnlag": "uvitenhet",
+          "begrunnelse": "Søkt i Folkregisteret/1881. Ikke funnet ny adresse. Se vedlagte skjermdump",
+          "dato": "2022-04-21"
+        },
+        {
+          "grunnlag": "lovmessigeHindringer",
+          "begrunnelse": "lovmessige hindringer",
+          "dato": "2022-04-21"
+        }
+      ],
+      "sisteFristavbrytendeTiltak": "siste fristavbrytende tiltak",
       "kravreferanse": "00890772001",
       "opprinneligBeloep": {
         "beloep": 12469.14,
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 12469.14,
+        "beloep": 11000.14,
         "valuta": "NOK"
       },
+      "innbetaling": [
+        {
+          "bokfoertDato": "2025-06-03",
+          "beloep": {
+            "beloep": 469,
+            "valuta": "NOK"
+          }
+        },
+        {
+          "bokfoertDato": "2025-06-10",
+          "beloep": {
+            "beloep": 1000,
+            "valuta": "NOK"
+          }
+        }
+      ],
       "prioritetDekningsloven": "b",
+      "prioritetISak": "1",
       "kravdetaljer": "Hovedkrav",
       "kravbeskrivelse": "kravbeskrivelse",
       "betalingsoppfordring": [
@@ -244,13 +359,13 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
           "betalingsoppfordring": {
             "type": "betalingsoppfordring",
             "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
           },
           "brevdato": "2024-07-02"
         }
       ],
       "renteOpplysning": {
-        "avtaltRentesats": 21.99
+        "forsinkelsesrente": true
       }
     },
     {
@@ -263,10 +378,11 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 232.24,
+        "beloep": 132.24,
         "valuta": "NOK"
       },
       "prioritetDekningsloven": "b",
+      "prioritetISak": "1",
       "kravdetaljer": "Rentekrav",
       "kravbeskrivelse": "Renter på hovedkrav",
       "betalingsoppfordring": [
@@ -275,9 +391,25 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
           "betalingsoppfordring": {
             "type": "betalingsoppfordring",
             "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
           },
           "brevdato": "2024-07-02"
+        }
+      ],
+      "innbetaling": [
+        {
+          "bokfoertDato": "2025-06-03",
+          "beloep": {
+            "beloep": 50,
+            "valuta": "NOK"
+          }
+        },
+        {
+          "bokfoertDato": "2025-06-10",
+          "beloep": {
+            "beloep": 50,
+            "valuta": "NOK"
+          }
         }
       ],
       "relatertKrav": [
@@ -294,7 +426,7 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
       "kravforfall": {
         "forfallsdato": "2024-06-15"
       },
-      "kravreferanse": "UtenrettsligKostnaderPåHovedkrav_00890772001",
+      "kravreferanse": "UtenrettsligKostnaderAvHovedkrav_00890772001",
       "opprinneligBeloep": {
         "beloep": 1400,
         "valuta": "NOK"
@@ -304,6 +436,7 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
         "valuta": "NOK"
       },
       "prioritetDekningsloven": "b",
+      "prioritetISak": "3",
       "kravdetaljer": "UtenrettsligeKostnader",
       "kravbeskrivelse": "UtenrettsligeKostnader på hovedkrav",
       "betalingsoppfordring": [
@@ -312,30 +445,44 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
           "betalingsoppfordring": {
             "type": "betalingsoppfordring",
             "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
           },
           "brevdato": "2024-07-02"
         }
       ],
       "relatertKrav": [
         "00890772001"
-      ],
-      "renteOpplysning": {
-        "avtaltRentesats": 21.99
-      }
+      ]
     }
   ],
   "betalingsinformasjon": {
     "norskKonto": {
+      "bankkode": "NordeaBankKode",
+      "bankNavn": "Nordea Bank",
+      "landkodeBank": "NO",
+      "kontovaluta": "NOK",
+      "iban": "NO5969930570044",
+      "bic": "NDEANOKK",
       "kontonummer": "69930570044",
       "kidnummer": "2509937609"
     }
   },
-  "saksreferanse": "saksreferanse",
-  "berOmInnkallingTilMoete": false,
-  "innsenderReferanse": "InnsenderRef123",
+  "vedlegg": [
+    {
+      "type": "tvangsgrunnlag",
+      "filnavn": "tvangsgrunnlag",
+      "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
+    },
+    {
+      "type": "tvangskraftgrunnlag",
+      "filnavn": "tvangskraftgrunnlag",
+      "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
+    }
+  ],
+  "saksreferanse": "saksref. 123456",
+  "innsenderReferanse": "InnsenderRef124",
   "valgtNamsmannsdistrikt": {
-    "namsmannsdistrikt": "Namsfogden i Øst",
+    "namsmannsdistrikt": "Namsfogden i Oslo, Asker og Bærum",
     "begrunnelse": "begrunnelse"
   },
   "innsender": {
@@ -347,7 +494,7 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
             "adresseFrittFormatInnland": {
               "kommunenummer": "0301",
               "postnummer": "1333",
-              "adressetekst": "string",
+              "adressetekst": "Hallagerstrand 54",
               "poststedsnavn": "Bergen"
             }
           }
@@ -372,34 +519,42 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
               "adresseFrittFormatInnland": {
                 "kommunenummer": "0301",
                 "postnummer": "1333",
-                "adressetekst": "string",
+                "adressetekst": "Ryensvei 55",
                 "poststedsnavn": "Bergen"
               }
             }
           }
         ],
-        "person": {
-          "personnavn": {
-            "fornavn": "Elisabeth",
-            "etternavn": "Lippestad"
-          },
-          "foedselsdato": "1978-08-29",
+        "virksomhet": {
+          "navn": "Inkassobyrå AS",
           "identifikator": {
             "identifikatortype": "taxIdentificationNumber",
-            "verdi": "03057738971",
+            "verdi": "312597772",
             "landkode": "NO"
-          }
+          },
+          "virksomhetstype": "inkassovirksomhet"
         }
       },
       "bevillingshaver": {
         "navn": {
-          "fornavn": "Elisabeth",
-          "etternavn": "Lippestad"
+          "fornavn": "Anna",
+          "etternavn": "Norman"
         },
         "inkassobevillingshaverNummer": "123212132"
       }
+    },
+    "saksbehandler": "Ola Erikksen",
+    "saksbehandlersKontaktinformasjon": {
+      "epostAdresse": "saksbehandler@epost.com",
+      "telefonnummer": "96673775"
     }
-  }
+  },
+  "berOmInnkallingTilMoeteMedBegrunnelse": "Ja",
+  "berOmUnnlattForeleggelseMedBegrunnelse": "Nei",
+  "spesiellUtleggsgjenstand": [
+    "utleggspant",
+    "utleggstrekk"
+  ]
 }
 ```
 
@@ -1099,8 +1254,8 @@ Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
       },
       "bevillingshaver": {
         "navn": {
-          "fornavn": "Elisabeth",
-          "etternavn": "Lippestad"
+          "fornavn": "Anna",
+          "etternavn": "Norman"
         },
         "inkassobevillingshaverNummer": "123212132"
       }
