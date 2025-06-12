@@ -55,7 +55,7 @@ Dette API-et krever at systemet og dets systembrukere har tilgang til én eller 
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1) TODO: oppdater
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tilskudd-api/0.0.1)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
@@ -230,7 +230,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1). 
+For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tilskudd-api/0.0.1). 
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten
