@@ -10,8 +10,7 @@ last_updated: Dec 20, 2024
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for tilskudd til vitenskapelig forskning eller
-yrkesopplæring (RF-1309)</Summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger for tilskudd til vitenskapelig forskning eller yrkesopplæring (RF-1309)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -26,8 +25,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten:
-`skatteetaten:innrapporteringtilskuddforskningyrkesopplaering`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringtilskuddforskningyrkesopplaering`
 
 ## Delegering
 
@@ -35,43 +33,39 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 
 ## Systemtilgang med systembruker
 
-Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
-Informasjon vedr. dette finnes [her](../om/systembruker.md).
+Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. 
+Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i
-systemregisteret:
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
 
-```JSON
-{
-  "Rights": [
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-tilskudd-forskning-yrkesopplaering",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
-}
+]
 ```
 
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tilskudd-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1) TODO: oppdater
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
 API-et for innrapportering av tilskudd til vitenskapelig forskning eller yrkesopplæring har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for tilskudd til vitenskapelig forskning eller yrkesopplæring. Ett
-  kall mot API-et er en rapportering for en
+* __POST innsending__: Mottar tredjepartsopplysninger for tilskudd til vitenskapelig forskning eller yrkesopplæring. Ett kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
 
-API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.
-Se [feilkoder](innrapportering-tilskudd?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-tilskudd?tab=Feilkoder) for
 relaterte feilmeldinger.
 
 Se også [eksempler](innrapportering-tilskudd?tab=Eksempler) for de ulike endepunktene.
@@ -219,7 +213,7 @@ feltene.
 | Leveranse           | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
 | Melding             | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
 | OppgaveTilskudd     | beloep                          | Sum beløp som er gitt som tilskudd                                                                                                              |
-| OppgaveTilskudd     | oppgaveeier                     | Person eller organisasjon som har gitt tilskudd til vitenskapelig forskning eller yrkesopplæring                                                |
+| OppgaveTilskudd     | oppgaveeier                     | Person eller organisasjon som har gitt tilskudd til vitenskapelig forskning eller yrkesopplæring                                                 |
 | Oppgaveeier         | fødselsnummer                   | Oppgaveeiers fødselsnummer eller d-nummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                 |
 | Oppgaveeier         | organisasjonsnummer             | Oppgaveeiers organisasjonsnummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                          |
 | Oppgaveeier         | navn                            | Navn på oppgaveeier                                                                                                                             |
@@ -227,7 +221,6 @@ feltene.
 | Oppgavegiver        | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
 | Oppgaveoppsummering | antallOppgaver                  | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
 | Oppgaveoppsummering | sumBeloep                       | Sum av alle beløp i oppgavene til en leveranse                                                                                                  |
-
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">
@@ -237,21 +230,19 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-For spesifikke URL'er til testmiljø hos Skatteetaten,
-se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1).
+For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1). 
 
-Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
-
+Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten
 * Autentisering - Maskinporten
 * Autorisering - systembruker
-* Altinn innboks
+* Altinn innboks 
 
-Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skatteetaten og Digdir.
+Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skatteetaten og Digdir. 
 
 ### Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for
+Det finnes pt. ikke søk i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md) for 
 denne tjenesten. Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ### Testdata
@@ -264,11 +255,9 @@ tilgjengelig.
 
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
-
-Har du spørsmål til Skatteetaten om Tilskudd til vitenskapelig forskning eller yrkesopplæring API, kan du sende oss
-e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
-Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra
-Altinn II til Altinn 3.
-
+  
+Har du spørsmål til Skatteetaten om Tilskudd til vitenskapelig forskning eller yrkesopplæring API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
+  
 </TabItem>
 </Tabs>
