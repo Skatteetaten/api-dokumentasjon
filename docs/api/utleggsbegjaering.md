@@ -335,14 +335,14 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
       },
       "innbetaling": [
         {
-          "bokfoertDato": "2025-06-03",
+          "bokfoertDato": "2024-06-03",
           "beloep": {
             "beloep": 469,
             "valuta": "NOK"
           }
         },
         {
-          "bokfoertDato": "2025-06-10",
+          "bokfoertDato": "2024-06-10",
           "beloep": {
             "beloep": 1000,
             "valuta": "NOK"
@@ -398,14 +398,14 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
       ],
       "innbetaling": [
         {
-          "bokfoertDato": "2025-06-03",
+          "bokfoertDato": "2024-06-03",
           "beloep": {
             "beloep": 50,
             "valuta": "NOK"
           }
         },
         {
-          "bokfoertDato": "2025-06-10",
+          "bokfoertDato": "2024-06-10",
           "beloep": {
             "beloep": 50,
             "valuta": "NOK"
