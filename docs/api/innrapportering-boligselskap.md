@@ -62,7 +62,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for innrapportering av boligselskap har to endepunkter
+API-et for innrapportering av tredjepartsopplysninger for boligselskap har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for boligselskap. Ett kall mot API-et er en rapportering for en
   person gitt av en oppgavegiver og som gjelder et inntektsår.
