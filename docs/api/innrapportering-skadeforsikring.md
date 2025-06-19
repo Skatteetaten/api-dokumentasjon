@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -35,7 +34,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Systemtilgang
 
 Bruk av API-et krever systemtilgang, som er ny funksjonalitet i Maskinporten levert av Digdir. 
-Informasjon vedr. dette finnes [her](../om/systemtilgang.md). 
+Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
 Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
 
