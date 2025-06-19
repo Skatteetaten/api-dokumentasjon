@@ -62,10 +62,11 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for boligsameie har bare ett endepunkt:
+API-et for innrapportering av tredjepartsopplysninger for boligsameie har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for boligsameier. Ett kall mot API-et er en rapportering for et
-  boligsameie gitt av en oppgavegiver og som gjelder et inntektsår.
+* __POST innsending__: Mottar tredjepartsopplysninger for boligsameie. Ett kall mot API-et er en rapportering for en
+  person gitt av en oppgavegiver og som gjelder et inntektsår.
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligsameie?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -173,7 +174,7 @@ https://innrapporteringboligsameie.api.{env}.no/v1/{inntektsaar}
 ```
 {
   "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
-  "dialogelementId": "018f521e-5488-79e3-8817-48e94cb75455",
+  "forsendelseId": "018f521e-5488-79e3-8817-48e94cb75455",
   "oppgavegiversLeveranseReferanse": "leveranse-1",
   "antallOppgaver": 23
 }

@@ -63,7 +63,7 @@ API-et for innrapportering av verdipapirfond har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger om verdipapirfond. Et kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.
 Se [feilkoder](innrapportering-verdipapirfond?tab=Feilkoder) for

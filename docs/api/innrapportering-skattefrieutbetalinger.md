@@ -62,7 +62,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 API-et for innrapportering av skattefrie utbetalinger fra offentlige myndigheter har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for skattefrie utbetalinger. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-skattefrieutbetalinger?tab=Feilkoder) for
 relaterte feilmeldinger.

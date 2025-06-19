@@ -19,7 +19,6 @@ Tjeneste for innrapportering av tredjepartsopplysninger om internasjonal rapport
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -66,7 +65,7 @@ API-et for internasjonal rapportering har to endepunkter:
 
 * __POST innsending__: Mottar tredjepartsopplysninger om internasjonal rapportering. Et kall mot API-et sender inn
   internasjonal rapportering for én oppgavegiver på et gitt inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i Dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i Dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.
 Se [feilkoder](innrapportering-internasjonalrapportering?tab=Feilkoder)

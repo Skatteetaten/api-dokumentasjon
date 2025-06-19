@@ -65,7 +65,7 @@ API-et for innrapportering av innskudd, utlån og renter har to endepunkter:
 
 * __POST innsending__: Mottar tredjepartsopplysninger om betalinger til selvstendig næringsdrivende. Et kall mot API-et
   sender inn rapportering om betalinger til selvstendig næringsdrivende for én oppgavegiver på et gitt inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.
 Se [feilkoder](innrapportering-betalingernaeringsdrivende?tab=Feilkoder)
