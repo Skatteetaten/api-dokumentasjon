@@ -12,7 +12,7 @@ hide_table_of_contents: true
 <Summary> Bruk av systembruker for Sluttbrukersystemer.</Summary>
 
 På denne siden sammenfattes stegene som må til for å komme i gang med systembruker. 
-Se også veiledning[ på skatteetaten.no](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/).
+Se også [veiledning på skatteetaten.no](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/).
 
 ## Steg for steg
 
