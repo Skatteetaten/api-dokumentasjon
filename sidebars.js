@@ -58,6 +58,7 @@ const sidebars = {
     },
     {
       "API-er for innrapportering": [
+        "api/innrapportering-aksjesparekonto",
         "api/innrapportering-aksjonaerregisteroppgave",
         "api/innrapportering-betalingernaeringsdrivende",
         "api/innrapportering-boligsameie",
@@ -68,6 +69,7 @@ const sidebars = {
         "api/innrapportering-individuellepensjonsordninger",
         "api/innrapportering-innskuddutlaanrenter",
         "api/innrapportering-internasjonalrapportering",
+        "api/innrapportering-livsforsikring",
         "api/innrapportering-passogstell",
         "api/innrapportering-skadeforsikring",
         "api/innrapportering-skattefrieutbetalinger",
