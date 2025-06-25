@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, aksjesparekonto]
 keywords: [ grunnlagsdata ]
-last_updated: Mar 10, 2025
+last_updated: Jun 25, 2025
 hide_table_of_contents: true
 ---
 
