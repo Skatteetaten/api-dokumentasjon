@@ -1353,5 +1353,69 @@ med å pilotere løsningene.
 Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/)
 
 </TabItem>
+<TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-6">
+
+## Sjekkliste for Inkassosystemleverandører
+
+Integrasjon med Skatteetatens API for utleggsbegjæring 
+
+### 1. Forberedelser og avtaler 
+
+  * Avklar roller og ansvar internt (teknisk kontakt, prosjektansvarlig, etc.)  
+  * Sett deg inn i gjeldende informasjon for digital innsending av utleggsbegjæring  
+    * [Github](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering?tab=Om+tjenesten)
+    * [Skatteettaten.no](https://www.skatteetaten.no/om-skatteetaten/fremtidens-innkreving/systemleverandorer/inkassosystem/)
+    * [Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.0.4)
+    * [Nettside for oppkobling](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
+
+### 2. Tilgang og autentisering 
+
+* Skaff virksomhetssertifikat (PKI) 6 
+* Registrer systemet i [Maskinporten](https://docs.digdir.no/docs/Maskinporten/maskinporten_overordnet)
+* [Be Skatteetaten om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d) til Slack og test-scope: ```skatteetaten:utleggsbegjaering```. Oppgi virksomhetens organisasjonsnummer (ikke syntetisk). 
+* Sett opp [Systembruker](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/#testplan-for-systemleverandorer) dersom dere utvikler systemer for andre  
+* Test uthenting av token med korrekt org.nr. via Maskinporten  
+
+### 3. Testmiljø og testdata 
+
+* Sett opp testmiljø med **kun** syntetiske data  
+* Hent testdata fra [Syntetisk Norge](https://www.digdir.no/tenor/syntetisk-norge/3910) via [Tenor testdatasøk](https://tenor.test.norge.no/)
+* Bruk kun syntetiske data i vedlegg og meldinger  
+* Koble til Skatteetatens testmiljø: ```https://api-test.sits.no```
+
+### 4. Implementasjon og integrasjon 
+
+* Følg [API-spesifikasjonen på SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.0.4)
+* Sørg for robust feilhåndtering og validering  
+* Implementer evt. polling eller event-varsling via [Dialogporten](https://docs.digdir.no/docs/dialogporten/) (valgfritt)  
+
+### 5. Testing og verifisering 
+
+  * Gjennomfør testing inkludert: 
+    * Test full flyt: innsending, feilhåndtering og validering  
+    * Verifiser at dere mottar korrekt respons fra API  
+    * Loggfør testresultater og oppsummer testforløpet  
+    * Dokumenter integrasjon og test  
+* Send oppsummering til Skatteetaten ved forespørsel. **Du får ikke tilgang til produksjonsmiljø før dette er gjennomført**
+
+### 6. Overgang til produksjon 
+
+  * [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:utleggsbegjaering```
+    * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur 
+  * Motta og verifiser tilgang til produksjons-scope i Maskinporten  
+  * Bytt miljø i integrasjonen til produksjon  
+  * Utfør teknisk verifikasjon i produksjon  
+  * Klargjør supportrutiner for håndtering av reelle saker  
+
+### 7. Oppfølging 
+
+  * Abonner på oppdateringer fra Skatteetaten (f.eks. endringer i API eller informasjonsmodell) og følg med på informasjonsmøter mm 
+    * Følg med på Skatteetatens Statusside 
+    * Kontaktskjema for datadeling 
+  * Gi tilbakemeldinger eller innspill ved behov
+
+</TabItem>
+
+
 </Tabs>
 
