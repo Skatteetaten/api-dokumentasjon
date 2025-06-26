@@ -1411,7 +1411,7 @@ Integrasjon med Skatteetatens API for utleggsbegjæring
 
   * Abonner på oppdateringer fra Skatteetaten (f.eks. endringer i API eller informasjonsmodell) og følg med på informasjonsmøter mm 
     * Følg med på [Skatteetatens Statusside](https://status.skatteetaten.no/)
-    * [Kontaktskjema for datadeling]([https://status.skatteetaten.no/](https://www.skatteetaten.no/deling/kontakt)
+    * [Kontaktskjema for datadeling](https://www.skatteetaten.no/deling/kontakt)
   * Gi tilbakemeldinger eller innspill ved behov
 
 </TabItem>
