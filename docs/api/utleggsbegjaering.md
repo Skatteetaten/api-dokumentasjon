@@ -43,7 +43,7 @@ I mellomtiden – ta kontakt med fremtidensinnkreving@skatteetaten.no.
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`. Forespørselen må også inneholde ressurs-id `ske-utleggsbegjaering` som beskrevet her for produksjon: https://docs.altinn.studio/api/authentication/systemuserapi/systemuserrequest/external/#create-a-standard-system-user-request
 
 ## Delegering
 
