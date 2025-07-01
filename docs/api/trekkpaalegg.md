@@ -265,4 +265,69 @@ Tilgang til scope i test bestilles ved å sende en mail med ditt organisasjonsnu
 | 2 | Få tilgang på testdata | Når integrasjonen er testet tar du kontakt med oss via mail fremtidensinnkreving@skatteetaten.no og oppgir det org.nummeret dere har klargjort. Vi vil legge tilgjengelig testdata til dere for dette organisasjonsnummeret. | Dere vil kunne få testdata på flere parter på samme org.nummer eller dere oppretter flere org.nummer som dere ønsker å hente fra.      |
 
 </TabItem>
+
+<TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-6">
+
+## Sjekkliste for Inkassosystemleverandører
+
+Integrasjon med Skatteetatens API for utleggsbegjæring 
+
+### 1. Forberedelser og avtaler 
+
+  * Avklar roller og ansvar internt (teknisk kontakt, prosjektansvarlig, etc.)  
+  * Sett deg inn i gjeldende informasjon for digital innsending av utleggsbegjæring  
+    * [Github](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering?tab=Om+tjenesten)
+    * [Skatteettaten.no](https://www.skatteetaten.no/om-skatteetaten/fremtidens-innkreving/systemleverandorer/lonns--og-personalsystem/)
+    * [Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app/1.4)
+    * [Nettside for oppkobling](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
+
+### 2. Tilgang og autentisering 
+
+* Skaff virksomhetssertifikat (PKI) 6 
+* Registrer systemet i [Maskinporten](https://docs.digdir.no/docs/Maskinporten/maskinporten_overordnet)
+* [Be Skatteetaten om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d) til test-scope: ```skatteetaten:trekkpaalegg```. Oppgi virksomhetens organisasjonsnummer (ikke syntetisk).
+* Hent testdata fra [Syntetisk Norge](https://www.digdir.no/tenor/syntetisk-norge/3910) via [Tenor testdatasøk](https://tenor.test.norge.no/)
+* Velg syntetiske virksomheter og syntetiske personer og [be om at Skatteetaten oppretter trekkpålegg i test](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d)
+* Sett opp [Systembruker](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/#testplan-for-systemleverandorer) dersom dere utvikler systemer for andre  
+* Test uthenting av token med korrekt org.nr. via Maskinporten  
+
+### 3. Testmiljø og testdata 
+
+* Sett opp testmiljø med **kun** syntetiske data  
+* Bruk kun syntetiske data i vedlegg og meldinger  
+* Koble til Skatteetatens testmiljø: ```https://api-test.sits.no```
+
+### 4. Implementasjon og integrasjon 
+
+* Følg [API-spesifikasjonen på SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app/1.4)
+* Sørg for robust feilhåndtering og validering  
+* Implementer evt. polling eller event-varsling via [Dialogporten](https://docs.digdir.no/docs/dialogporten/) (valgfritt)  
+
+### 5. Testing og verifisering 
+
+  * Gjennomfør testing inkludert: 
+    * Test full flyt: mottak, feilhåndtering og validering  
+    * Verifiser at dere mottar korrekt respons fra API  
+    * Loggfør testresultater og oppsummer testforløpet  
+    * Dokumenter integrasjon og test  
+* Send oppsummering til Skatteetaten ved forespørsel. **Du får ikke tilgang til produksjonsmiljø før dette er gjennomført**
+
+### 6. Overgang til produksjon 
+
+  * [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:trekkpåålegg```
+    * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur 
+  * Motta og verifiser tilgang til produksjons-scope i Maskinporten  
+  * Bytt miljø i integrasjonen til produksjon  
+  * Utfør teknisk verifikasjon i produksjon  
+  * Klargjør supportrutiner for håndtering av reelle saker  
+
+### 7. Oppfølging 
+
+  * Abonner på oppdateringer fra Skatteetaten (f.eks. endringer i API eller informasjonsmodell) og følg med på informasjonsmøter mm 
+    * Følg med på [Skatteetatens Statusside](https://status.skatteetaten.no/)
+    * [Kontaktskjema for datadeling](https://www.skatteetaten.no/deling/kontakt)
+  * Gi tilbakemeldinger eller innspill ved behov
+
+</TabItem>
+
 </Tabs>
