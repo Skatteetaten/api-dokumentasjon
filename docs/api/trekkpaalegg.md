@@ -42,7 +42,9 @@ For generell informasjon om tjenester fra Skatteetaten se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:trekkpaalegg`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:trekkpaalegg`.
+
+Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-informasjon-om-trekkpaalegg` som beskrevet her for produksjon: https://docs.altinn.studio/api/authentication/systemuserapi/systemuserrequest/external/#create-a-standard-system-user-request
 
 ## Teknisk spesifikasjon
 
