@@ -168,4 +168,70 @@ Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testv
 
 
 </TabItem>
+
+<TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-6">
+
+## Checklist 
+
+Integration between the Norwegian Tax Administration and liable parties/employersthe trekkpaalegg API
+
+### 1. Preparations 
+
+  * Define internal roles and responsibilities (technical contact, project lead etc.)  
+  * Read up on the available information for trekkpaalegg:  
+    * [Github](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering?tab=Om+tjenesten)
+    * [Skatteettaten.no](https://www.skatteetaten.no/om-skatteetaten/fremtidens-innkreving/systemleverandorer/lonns--og-personalsystem/)
+    * [Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app/1.4)
+    * [Nettside for oppkobling](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
+
+### 2. Access and authorization  
+
+* Procure an enterprise digital certificate (PKI) 6 
+* Register your system with [Maskinporten](https://docs.digdir.no/docs/Maskinporten/maskinporten_overordnet)
+* [Request access](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d) to test-scope: ```skatteetaten:trekkpaalegg```. Submit the organisation number for your entity, 9 digits.
+* Retrieve test data from [Syntetisk Norge](https://www.digdir.no/tenor/syntetisk-norge/3910) by [Tenor test data search](https://tenor.test.norge.no/)
+* Submit test entities and parties ("people") to the tax authority along with a [request to establish trekkpaalegg](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d)
+* Set up [System user](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/#testplan-for-systemleverandorer) if you are developing the system on behalf of someone else  
+* Test retrival of token with the correct org.nr. through Maskinporten  
+
+### 3. Test environment and test data 
+
+* Establish a test environment with **exclusively** syntethic data  
+* Use only synthetic data in appendixes and messages  
+* Connect to the tax authorities test environment: ```https://api-test.sits.no```
+
+### 4. Implementation and integration 
+
+* Follow [API-specification on SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app/1.4)
+* Ensure robust error handling and validation  
+* Concider implementing polling or notifications through [Dialogporten](https://docs.digdir.no/docs/dialogporten/) (optional)  
+
+### 5. Testing and verification 
+
+  * Carry out testing including: 
+    * Test the entire process: receiving, error handling and validation  
+    * Verify that you are receiving the correct responms from the API  
+    * Log the testresults and summarize the testing  
+    * Document integration and testing  
+* Send the summary to the tax authority upon request **You will not be granted access to the production environment unntill testing is completed**
+
+### 6. Production 
+
+  * [Request access](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) to production scope: ```skatteetaten:trekkpaalegg```
+    * Sign the agreemnet for terms and conditions that is being sent in return 
+  * Receive and verify access to production scope in Maskinporten  
+  * Switch environment to production  
+  * Perform technical verification in the production environment  
+  * Prepare processes for handling issues in production  
+
+### 7. Follow up 
+
+  * Subscribe to updates from the tax authority such as changes in scope and attend information meetings 
+    * [Tax authority RSS feeds](https://www.skatteetaten.no/rss/)
+    * [Tax authority services status page](https://status.skatteetaten.no/)
+    * [Contact form for data sharing](https://www.skatteetaten.no/deling/kontakt)
+  * Please feel free to give feedback if need be
+
+</TabItem>
+
 </Tabs>
