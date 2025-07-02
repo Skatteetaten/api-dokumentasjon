@@ -26,6 +26,8 @@ Oversikt over verdier som returneres i data fra endepunktet virkningsperiode/gyl
 | -------------- | ----------------------------------------------|
 | måned        | Måned som er utenfor gyldig virkningsperiode for avtaler | 
 
+## Figur
+
 ![virkningsperiode gyldighet](../../../static/download/tjenestepensjonsavtale/virkningsperiodeGyldighet.png)
 
 
