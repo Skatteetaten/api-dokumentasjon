@@ -169,11 +169,11 @@ Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testv
 
 </TabItem>
 
-<TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-6">
+<TabItem headerText="Checklist" itemKey="itemKey-6">
 
 ## Checklist 
 
-Integration between the Norwegian Tax Administration and liable parties/employersthe trekkpaalegg API
+Integration between the Norwegian Tax Administration and liable parties/employers for the trekkpaalegg API
 
 ### 1. Preparations 
 
