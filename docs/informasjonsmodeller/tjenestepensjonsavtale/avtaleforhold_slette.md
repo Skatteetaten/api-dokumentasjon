@@ -13,17 +13,6 @@ hide_table_of_contents: true
 
 Oversikt over verdier som sendes inn gjennom endepunktet slette avtaleforhold i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md).
 
-# Om Rettighetspakker
-
-Rettighetspakker benyttes til å styre hvem som har lov til å slette denne informasjonen, se [Rettighetspakker](../../om/rettighetspakker.md).
-
-Rettighetspakker som kan benyttes ved sletting:
-
-| Rettighetspakke | Beskrivelse |
-|--------|--------|
-| otp | Obligatorisk tjenestepensjon |
-
-
 # Avtaleforhold
 
 | Felt | Beskrivelse |
@@ -37,8 +26,7 @@ Rettighetspakker som kan benyttes ved sletting:
 | ---- | ------------------------------------------------------ |
 | norskIdentifikator | Opplysningspliktiges organisasjonsnummer |
 
-
-
+## Figur
 ![slett avtaleforhold](../../../static/download/tjenestepensjonsavtale/slettAvtaleforhold.png)
 
 
