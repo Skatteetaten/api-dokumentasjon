@@ -169,7 +169,7 @@ Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testv
 
 </TabItem>
 
-<TabItem headerText="Checklist" itemKey="itemKey-6">
+<TabItem headerText="Checklist" itemKey="itemKey-7">
 
 ## Checklist 
 
