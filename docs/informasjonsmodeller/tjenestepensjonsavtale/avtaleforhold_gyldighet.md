@@ -13,16 +13,6 @@ hide_table_of_contents: true
 
 Oversikt over verdier som returneres i data fra endepunktet avtaleforhold/gyldighet i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md).
 
-# Om Rettighetspakker
-
-Rettighetspakker benyttes til å styre hvem som har tilgang til denne informasjonen, se [Rettighetspakker](../../om/rettighetspakker.md).
-
-Rettighetspakker som kan benyttes:
-
-| Rettighetspakke | Beskrivelse |
-| -------- | -------- |
-| NAV  | NAV |
-
 # AvtaleforholdGyldighet
 
 | Navn på felt | Beskrivelse |
@@ -36,6 +26,7 @@ Rettighetspakker som kan benyttes:
 | -------------- | ----------------------------------------------|
 | måned        | Måned som ikke har et gyldig avtaleforhold | 
 
+## Figur
 ![avtaleforhold gyldighet](../../../static/download/tjenestepensjonsavtale/avtaleforholdGyldighet.png)
 
 
