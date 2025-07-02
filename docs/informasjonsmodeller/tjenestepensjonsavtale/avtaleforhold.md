@@ -13,16 +13,6 @@ hide_table_of_contents: true
 
 Oversikt over verdier som sendes inn gjennom endepunktet avtaleforhold i [Tjenestepensjonsavtale API](../../api/tjenestepensjonsavtale.md) for å oppdatere eller endre avtaleforhold.
 
-# Om Rettighetspakker
-
-Rettighetspakker benyttes til å styre hvem som har lov til å oppdatere denne informasjonen, se [Rettighetspakker](../../om/rettighetspakker.md).
-
-Rettighetspakker som kan benyttes ved oppdatering:
-
-| Rettighetspakke | Beskrivelse |
-|--------|--------|
-| otp | Obligatorisk tjenestepensjon |
-
 # Avtaleforhold
 
 | Felt | Beskrivelse |
@@ -37,6 +27,7 @@ Rettighetspakker som kan benyttes ved oppdatering:
 | Felt | Beskrivelse |
 | ---- | ------------------------------------------------------ |
 | norskIdentifikator | Opplysningspliktiges organisasjonsnummer |
- 
+
+## Figur 
 ![avtaleforhold](../../../static/download/tjenestepensjonsavtale/avtaleforhold.png)
 
