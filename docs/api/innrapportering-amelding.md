@@ -33,10 +33,8 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 
 ## Systemtilgang med systembruker
 
-Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester]([https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api/](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
+Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
-// Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
-// Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
 For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
 ```JSON
@@ -112,8 +110,11 @@ feltene.
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-![informasjonsmodell](../../static/download/Informasjonsmodell_Boligselskap.png)
-                                                                                                                                                                                                                                                          |
+Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.pdf)
+
+![informasjonsmodell](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.png)
+
+                                                                                                                                                                                                                                                         |
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
