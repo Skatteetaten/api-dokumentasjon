@@ -150,21 +150,17 @@ Bilde av informasjonsmodell.
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-6">
 
-I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
-med å pilotere løsningene.
+## Testing
+### Requirements for trial run
+System providers are responsible for conducting their own testing. The focus should be on ensuring that the validation and submission services function as expected. The project team will assist with troubleshooting, error correction (if needed), and follow-up on cases submitted to the test environment.
 
-## Tenor testdatasøk
+### Test Environment and Test Data
+System providers must use test environments that contain only synthetic data. Test data from Syntetisk Norge must be used and retrieved using Tenor Test Data Search for the messages submitted. Attachments must also contain only synthetic test data. A user guide for Tenor Test Data Search is available. Connection to the Tax Administration's test environment is established via Maskinporten.
+An example of a witholding order that follows the information model is provided under Information Models.
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
-Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
+The Tax Administration’s test environment is generally available 24/7, but technical support or environment restarts cannot be expected outside normal business hours (08:00–15:45 on weekdays). The environment may also be unavailable during evenings and weekends due to maintenance.
 
-## Testdata
-
-Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne.
-Vær oppmerksom på at det er et levende testdatasett som kan endre seg i løpet av testperioden. Ta kontakt dersom du har
-behov for ytterligere testdata.
-
-Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testvirksomheter, selv om de i pilotperioden kun kan gjøre oppslag for egen virksomhet i Prod.
+The URL for the test environment is: https://api-test.sits.no/api/trekkpaalegg/v1
 
 
 </TabItem>
