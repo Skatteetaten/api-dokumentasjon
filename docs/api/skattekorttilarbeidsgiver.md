@@ -16,9 +16,10 @@ hide_table_of_contents: true
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 For generell informasjon om tjenestene se egne sider om:
+
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Systembruker](../om/systembruker.md)
+* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
