@@ -70,10 +70,10 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                | :white_check_mark:     | Planlagt i Q3 |
 | [Innrapportering livsforsikringer API](../api/innrapportering-livsforsikring.md)                              | :white_check_mark:     | Planlagt i Q3 |
 | [Innrapportering aksjesparekonto API](../api/innrapportering-aksjesparekonto.md)                              | :white_check_mark:     | Planlagt i Q3 |
-| Innrapportering finansprodukter                                                                               | Kommer i løpet av juli | Planlagt i Q3 |
 | Innrapportering overskuddsstrøm API                                                                           | Kommer i løpet av juli | Planlagt i Q3 |
 | Innrapportering skattepliktig kundeutbytte                                                                    | Kommer i løpet av juli | Planlagt i Q3 |
 | Innrapportering fondskonto                                                                                    | Kommer i løpet av juli | Planlagt i Q3 |
+| Innrapportering finansprodukter                                                                               | Planlagt i Q3          | Planlagt i Q3 |
 | Innrapportering verdipapirfond historikk                                                                      | Planlagt i Q3          | Planlagt i Q3 |
 | Innrapportering fagforeningskontingent                                                                        | Planlagt i Q3          | Planlagt i Q3 |
 | Innrapportering underholdsbidrag                                                                              | Planlagt i Q3          | Planlagt i Q3 |
