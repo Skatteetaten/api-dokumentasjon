@@ -17,13 +17,22 @@ export const Tabs = ({ children, tabName }: Props): JSX.Element => {
 
   const getSelectedKey = (searchParam: string | null) => {
     if (children.constructor == Array) {
-      const tab = children?.find((c) => c.props.headerText === searchParam);
-      return tab ? tab.props.itemKey : undefined;
+      if (!searchParam) {
+        // Hvis ingen search param oppgis, returner key til første tab
+        return children[0]?.props?.itemKey ?? undefined;
+      }
+
+      const match = children?.find((c) => c.props.headerText === searchParam);
+      return match
+        ? match.props.itemKey
+        : // Hvis ingen match, returner key til første tab
+          children[0]?.props?.itemKey ?? undefined;
     }
-    return children.props.headerText === searchParam
-      ? children.props.itemKey
-      : undefined;
+
+    // Hvis children ikke er en array, returner key til den eneste taben
+    return children?.props?.itemKey ?? undefined;
   };
+
   const searchParams = new URLSearchParams(location.search);
   const searchParam = tabName
     ? searchParams.get(tabName)
