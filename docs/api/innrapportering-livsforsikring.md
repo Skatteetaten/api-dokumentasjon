@@ -249,6 +249,7 @@ https://innrapporteringlivsforsikring.api.{env}.no/v1/{inntektsaar}
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
     "oppgavegiversLeveranseReferanse": "LS2015_1",
+    "antallSletteoppgaver": 1,
     "antallOppgaver": 3
 }
 ```

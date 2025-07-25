@@ -96,7 +96,7 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -109,7 +109,7 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2023",
+    "inntektsaar": 2023,
     "oppgavegiversLeveransereferanse": "EksternReferanse_2013_1",
     "leveransetype": "ordinaer",
     "oppgave": [
@@ -118,19 +118,19 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
           "foedselsnummer": "12345678910",
           "navn": "Ola Nordmann"
         },
-        "paaloeptBeloep": "7500"
+        "paaloeptBeloep": 7500
       },
       {
         "oppgaveeier": {
           "foedselsnummer": "12345678910",
           "navn": "Kari Normann"
         },
-        "paaloeptBeloep": "2500"
+        "paaloeptBeloep": 2500
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": "2",
-      "sumBeloep": "10000"
+      "antallOppgaver": 2,
+      "sumBeloep": 10000
     }
   }
 }
@@ -139,7 +139,7 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
@@ -196,24 +196,6 @@ feltene.
 
 ![passogstell](../../static/download/Informasjonsmodell_Passogstell.png)
 
-| Eier                     | Element                         | Dokumentasjon                                                                                                                                   |
-|--------------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Leveranse                | inntektsaar                     | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse                | kildesystem                     | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse                | leveransetype                   | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse                | oppgave                         | Oppgave som leveres                                                                                                                             |
-| Leveranse                | oppgavegiver                    | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse                | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse                | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Melding                  | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| OppgaveBarnepass         | paaloeptBeloep                  | Sum beløp som er fakturert enforesatt/forsørger fra barnepassvirksomhet(er) iløpet av inntektsåret                                              |
-| OppgaveBarnepass         | oppgaveeier                     | Forsørger som har betalt for pass og stell av barn                                                                                              |
-| Oppgaveeier              | fødselsnummer                   | Oppgaveeiers (forsørgers) fødselsnummer eller d-nummer.                                                                                         |
-| Oppgaveeier              | navn                            | Navn på oppgaveeier                                                                                                                             |
-| Oppgavegiver             | kontaktinformasjon              | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver             | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| Oppgaveoppsummering      | antallOppgaver                  | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| Oppgaveoppsummering      | sumBeloep                       | Sum av alle påløpte beløp i oppgavene til en leveranse                                                                                          |
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">

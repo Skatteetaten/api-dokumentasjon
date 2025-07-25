@@ -110,7 +110,7 @@ https://innrapporteringaandsverk.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2024",
+    "inntektsaar": 2024,
     "oppgavegiversLeveranseReferanse": "EksternReferanse_2024_1",
     "leveransetype": "ordinaer",
     "oppgave": [
@@ -121,8 +121,8 @@ https://innrapporteringaandsverk.api.{env}.no/v1/{inntektsaar}
             "navn": "Salve Akademisk"
           }
         },
-        "utbetaltGodtgjoerelseInnenNaeringsvirksomhet": "7500",
-        "utbetaltGodtgjoerelseUtenforNaeringsvirksomhet": "1000"
+        "utbetaltGodtgjoerelseInnenNaeringsvirksomhet": 7500,
+        "utbetaltGodtgjoerelseUtenforNaeringsvirksomhet": 1000
       },
       {
         "oppgaveeier": {
@@ -131,24 +131,24 @@ https://innrapporteringaandsverk.api.{env}.no/v1/{inntektsaar}
             "navn": "Internasjonal Fjernkontroll"
           }
         },
-        "utbetaltGodtgjoerelseInnenNaeringsvirksomhet": "10000",
-        "utbetaltGodtgjoerelseUtenforNaeringsvirksomhet": "5000"
+        "utbetaltGodtgjoerelseInnenNaeringsvirksomhet": 10000,
+        "utbetaltGodtgjoerelseUtenforNaeringsvirksomhet": 5000
       },
       {
         "oppgaveeier": {
           "organisasjon": {
-            "organisasjonsnummer": "310646180",
+            "organisasjonsnummer": 310646180,
             "organisasjonsnavn": "SALT UNYTTIG TIGER AS"
           }
         },
-        "utbetaltGodtgjoerelseInnenNaeringsvirksomhet": "10000",
-        "utbetaltGodtgjoerelseUtenforNaeringsvirksomhet": "5000"
+        "utbetaltGodtgjoerelseInnenNaeringsvirksomhet": 10000,
+        "utbetaltGodtgjoerelseUtenforNaeringsvirksomhet": 5000
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": "2",
-      "sumUtbetaltGodtgjoerelseInnenNaeringsvirksomhet": "17500",
-      "sumUtbetaltGodtgjoerelseUtenforNaeringsvirksomhet": "6000"
+      "antallOppgaver": 2,
+      "sumUtbetaltGodtgjoerelseInnenNaeringsvirksomhet": 17500,
+      "sumUtbetaltGodtgjoerelseUtenforNaeringsvirksomhet": 6000
     }
   }
 }
@@ -156,11 +156,12 @@ https://innrapporteringaandsverk.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
     "oppgavegiversLeveranseReferanse": "EksternReferanse_2024_1",
+    "antallSletteoppgaver": 0,
     "antallOppgaver": 2
 }
 ```

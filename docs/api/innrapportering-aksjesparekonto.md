@@ -209,6 +209,7 @@ https://innrapporteringaksjesparekonto.api.{env}.no/v1/{inntektsaar}
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
     "oppgavegiversLeveranseReferanse": "EksternLeveranseRef12345",
+    "antallSletteoppgaver": 0,
     "antallOppgaver": 2
 }
 ```
