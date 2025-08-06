@@ -19,7 +19,7 @@ Informasjon om tjenester og løsninger som er under utvikling eller pilot ligger
 
 På dette området kan du finne informasjon som gjelder på tvers av Skatteetatens API-er, f.eks. dokumentasjon om:
 * [Sikkerhet inkl. Maskinporten](./om/sikkerhet.md)
-* [Systembruker](../om/systembruker.md)
+* [Systembruker](./om/systembruker.md)
 * [Delegering](./om/delegering.md)
 * [Rettighetspakker](./om/rettighetspakker.md) 
 
