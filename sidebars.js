@@ -70,6 +70,7 @@ const sidebars = {
         "api/innrapportering-innskuddutlaanrenter",
         "api/innrapportering-internasjonalrapportering",
         "api/innrapportering-livsforsikring",
+        "api/innrapportering-overskuddsstroem",
         "api/innrapportering-passogstell",
         "api/innrapportering-skadeforsikring",
         "api/innrapportering-skattefrieutbetalinger",

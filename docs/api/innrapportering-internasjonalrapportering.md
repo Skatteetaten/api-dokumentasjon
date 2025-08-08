@@ -99,7 +99,7 @@ https://innrapporteringinternasjonalrapportering.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -120,7 +120,7 @@ https://innrapporteringinternasjonalrapportering.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2024",
+    "inntektsaar": 2024,
     "leveransetype": "ordinaer",
     "oppgave": [
       {
@@ -163,24 +163,24 @@ https://innrapporteringinternasjonalrapportering.api.{env}.no/v1/{inntektsaar}
         },
         "summerteVerdier": {
           "sumFormuesverdi": {
-            "beloepINOK": 540000.0
+            "beloepINOK": "540000.0"
           },
           "sumUtbytte": {
-            "beloepINOK": 4000.0
+            "beloepINOK": "4000.0"
           },
           "sumRenteinntekt": {
-            "beloepINOK": 450.0
+            "beloepINOK": "450.0"
           }
         }
       }
     ],
     "oppgaveoppsummering": {
       "antallOppgaver": 3,
-      "sumAvSumFormuesverdi": 840000.0,
-      "sumAvSumUtbytte": 14000.0,
-      "sumAvSumRenteinntekt": 45450.0,
-      "sumAvSumAnnenInntektEllerUtbetaling": 35000.0,
-      "sumAvSumSalgsvederlag": 45000.0
+      "sumAvSumFormuesverdi": "840000.0",
+      "sumAvSumUtbytte": "14000.0",
+      "sumAvSumRenteinntekt": "45450.0",
+      "sumAvSumAnnenInntektEllerUtbetaling": "35000.0",
+      "sumAvSumSalgsvederlag": "45000.0"
     }
   }
 }
@@ -188,18 +188,19 @@ https://innrapporteringinternasjonalrapportering.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
   "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
   "forsendelseId": "018f521e-5488-79e3-8817-48e94cb75455",
   "oppgavegiversLeveranseReferanse": "leveranse-1",
+  "antallSletteoppgaver": 2,
   "antallOppgaver": 23
 }
 ```
 
 #### Eksempel på sletteoppgave
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -220,15 +221,15 @@ https://innrapporteringinternasjonalrapportering.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2024",
+    "inntektsaar": 2024,
     "leveransetype": "ordinaer",
     "oppgaveoppsummering": {
       "antallOppgaver": 0,
-      "sumAvSumFormuesverdi": 0.0,
-      "sumAvSumUtbytte": 0.0,
-      "sumAvSumRenteinntekt": 0.0,
-      "sumAvSumAnnenInntektEllerUtbetaling": 0.0,
-      "sumAvSumSalgsvederlag": 0.0
+      "sumAvSumFormuesverdi": "0.0",
+      "sumAvSumUtbytte": "0.0",
+      "sumAvSumRenteinntekt": "0.0",
+      "sumAvSumAnnenInntektEllerUtbetaling": "0.0",
+      "sumAvSumSalgsvederlag": "0.0"
     },
     "sletteoppgave": [
       {

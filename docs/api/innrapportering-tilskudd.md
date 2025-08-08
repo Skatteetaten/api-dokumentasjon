@@ -55,7 +55,7 @@ Dette API-et krever at systemet og dets systembrukere har tilgang til én eller 
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1) TODO: oppdater
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tilskudd-api/0.0.1)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
@@ -96,7 +96,7 @@ https://innrapporteringtilskudd.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -109,7 +109,7 @@ https://innrapporteringtilskudd.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2024",
+    "inntektsaar": 2024,
     "oppgavegiversLeveranseReferanse": "EksternReferanse_2013_1",
     "leveransetype": "ordinaer",
     "oppgave": [
@@ -118,26 +118,26 @@ https://innrapporteringtilskudd.api.{env}.no/v1/{inntektsaar}
           "foedselsnummer": "02020222222",
           "navn": "Truls Gavmild"
         },
-        "beloep": "2000"
+        "beloep": 2000
       },
       {
         "oppgaveeier": {
           "foedselsnummer": "03027833333",
           "navn": "Lise Generous"
         },
-        "beloep": "4000"
+        "beloep": 4000
       },
       {
         "oppgaveeier": {
           "organisasjonsnummer": "987654321",
           "navn": "Norsk altruistisk selskap AS"
         },
-        "beloep": "4000"
+        "beloep": 4000
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": "3",
-      "sumBeloep": "10000"
+      "antallOppgaver": 3,
+      "sumBeloep": 10000
     }
   }
 }
@@ -146,7 +146,7 @@ https://innrapporteringtilskudd.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
@@ -202,25 +202,6 @@ feltene.
 
 ![tilskudd](../../static/download/Informasjonsmodell_TilskuddForskning.png)
 
-| Eier                | Element                         | Dokumentasjon                                                                                                                                   |
-|---------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Leveranse           | inntektsaar                     | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse           | kildesystem                     | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse           | leveransetype                   | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse           | oppgave                         | Oppgave som leveres                                                                                                                             |
-| Leveranse           | oppgavegiver                    | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse           | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse           | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Melding             | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| OppgaveTilskudd     | beloep                          | Sum beløp som er gitt som tilskudd                                                                                                              |
-| OppgaveTilskudd     | oppgaveeier                     | Person eller organisasjon som har gitt tilskudd til vitenskapelig forskning eller yrkesopplæring                                                 |
-| Oppgaveeier         | fødselsnummer                   | Oppgaveeiers fødselsnummer eller d-nummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                 |
-| Oppgaveeier         | organisasjonsnummer             | Oppgaveeiers organisasjonsnummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                          |
-| Oppgaveeier         | navn                            | Navn på oppgaveeier                                                                                                                             |
-| Oppgavegiver        | kontaktinformasjon              | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver        | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| Oppgaveoppsummering | antallOppgaver                  | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| Oppgaveoppsummering | sumBeloep                       | Sum av alle beløp i oppgavene til en leveranse                                                                                                  |
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">
@@ -230,7 +211,7 @@ med å pilotere løsningene.
 
 ### Testmiljøer
 
-For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/tilskudd-api/0.0.1). 
+For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tilskudd-api/0.0.1). 
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys: 
 * DialogPorten
