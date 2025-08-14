@@ -90,6 +90,7 @@ A Systembruker is then created, linking the user, system, provider, and API.
 
 | Norwegian term          | English translation      | Description                                                    |
 |-------------------------|---------------------------|----------------------------------------------------------------|
+| Betjeningskartet        | Routing map               | Betjeningskartet is an API that allows the debt collection agency to ascertain if a Utleggsbegjæring should be sent according to the old or new rules |
 | Dialogporten            | The dialogue gateway      | Dialogporten is a national message distribution service in Norway that allows public agencies to send digital messages and notifications to individuals and organizations. It functions as a standardized interface for delivering messages across platforms like Altinn, Digital post to citizens, Digital post to businesses. |
 | Maskinporten            | Machine-to-machine gateway | Maskinporten is a secure authentication and authorization mechanism used in Norway for system-to-system (machine-to-machine) communication between public and private sector systems. It issues tokens (OAuth 2.0) that allow systems to authenticate and access APIs on behalf of an organization, without involving a human user.|
 | Namsmann                | Enforcement officer       | A public authority responsible for carrying out enforcement of claims, such as collecting unpaid debts or executing court orders. This can include wage garnishment, seizure of assets, evictions and enforcement of judgments. |
