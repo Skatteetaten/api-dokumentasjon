@@ -268,9 +268,9 @@ Tilgang til scope i test bestilles ved å sende en mail med ditt organisasjonsnu
 
 </TabItem>
 
-<TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-6">
+<TabItem headerText="Sjekkliste for lønns- og personalsystemleverandører" itemKey="itemKey-6">
 
-## Sjekkliste for Lønns- og personalsystemleverandører
+## Sjekkliste for lønns- og personalsystemleverandører
 
 Integrasjon med Skatteetatens API for trekkpålegg 
 
