@@ -1,5 +1,5 @@
 ---
-title: Utleggsbegjæring API
+title: ELAN - Utleggsbegjæring API
 slug: /api/utleggsbegjaering
 folder: api
 sidebar: mydoc_sidebar
@@ -10,17 +10,16 @@ last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Om tjenesten
-Utleggsbegjæring er en tjeneste for å sende utleggsbegjæringer til namsmannen gjennom Skatteetatens systemløsninger.</Summary>
+<Summary>ELAN (Utleggsbegjæring API) er en tjeneste for å sende utleggsbegjæringer til namsmannen gjennom Skatteetatens systemløsninger.</Summary>
 
 <Tabs underline={true}>
-<TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
+<TabItem headerText="Om tjenesten" itemKey="itemKey-Om" default>
 Målgruppen er dagens inkassosystemer, kommunene og andre systemleverandører.
-Dersom du ønsker å ta i bruk utleggsbegjæring og prøving i ditt system eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.
+Dersom du ønsker å ta i bruk ELAN og prøving i ditt system eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.
 
 Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og prøving av utleggsbegjæringer. Merk at figuren er en illustrasjon av måbildet, og det er ikke alle tjenestene i figuren som er implementert ennå. Det vil også i fremtiden kunne legges til nye tjenester som ikke er angitt i figuren.
 
-![Informasjonsmodell](../../static/download/utleggsbegjaering/Utleggsbegjaering_oversikt.png)
+![Oversiktsfigur](../../static/download/utleggsbegjaering/Utleggsbegjaering_oversikt.png)
 
 
 For generell informasjon om tjenestene se egne sider om:
@@ -88,7 +87,31 @@ Når systemleverandør er innsender kan vilkårlige organisasjoner i Tenor benyt
 Den valgte organisasjonen i Tenor (som representerer en test-inkassovirksomhet) må godkjenne at dens fagsystem kan benytte tilgangsressursen/tjenesten «Innsending og oppfølging av utleggsbegjæring» på vegne av virksomheten. Det opprettes da en «systembruker» som er koblingen mellom bruker, system, leverandør og API.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
+<TabItem headerText="Overgangsperioden" itemKey="itemKey-Overgangsperioden">
+
+## Innføring av ny innkrevingslov
+I en overgangsperiode (fra 1.1.2026 til 31.12.2026) skal namsmannen gradvis behandle nye utleggssaker mot skyldnere etter den nye innkrevingsloven og endringer i tvangsfullbyrdelsesloven.
+Myndighetene har derfor mulighet til å avgrense hvilke skyldnere som skal behandles etter nytt regelverk for utlegg ut fra gitte, forhåndsbestemte parametre. Dette bestemmes konkret i forskrift.
+
+Gjennom overgangsperioden legges det opp til en gradvis endring av parametrene slik at stadig flere skyldnere vil falle inn under kriterier for å bli behandlet etter nytt regelverk. Forskriften endres senest 14 dager før endringen trer i kraft.
+Parametrene er fastsatt i delegeringsvedtaket [Delegering av kongens myndighet etter innkrevingsloven § 40 andre og tredje ledd til Finansdepartementet](https://lovdata.no/dokument/DEL/forskrift/2025-06-10-968).
+
+## Overgangsperiode for utleggsbegjæring
+
+I overgangsperioden skal digitale utleggsbegjæringer for skyldnere som er omfattet av den nye innkrevingsloven sendes inn via ny løsning (ELAN), mens utleggsbegjæringer for skyldnere som ikke er omfattet av den nye innkrevingsloven skal sendes inn som før via eksisterende løsning (ELSA). Dersom en utleggsbegjæring angår flere skyldnere, må alle disse være på samme regelverk, hvis ikke må begjæringen splittes.
+
+## Betjeningskartet
+
+For å avgjøre hvorvidt en skyldner er omfattet av ny eller gammel innkrevingslov, kan innkassosystemet benytte en API-tjeneste kalt "Betjeningskartet". Her kan man slå opp gjeldende regelverk for en eller flere skyldnere på identifikator (fødselsnummer). Tjenesten skal kalles rett i forkant av innsending av en ny utleggsbegjæring gjennom API, slik at innsendingen gjøres til riktig system (ELSA eller ELAN). URL-er til betjeningskart API-et, beskrivelsen av parameterne, endepunkter og respons ligger
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
+
+![Betjeningskartet](../../static/download/utleggsbegjaering/Betjeningskartet.png)
+
+Dersom man sender en utleggsbegjæring til feil system, vil systemet returnere en feilmelding om dette og avvise innsendingen. For ELAN vil det gis en 422-feilkode med feilmeldingen "SAKSOEKT_GAMMELT_REGELVERK".
+
+</TabItem>
+<TabItem headerText="Eksempler" itemKey="itemKey-Eksempler"> 
+
 
 ## Enkelt eksempel på utleggsbegjæring
 
@@ -1267,7 +1290,7 @@ Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
 ```
 
 </TabItem>
-<TabItem headerText="Feilkoder" itemKey="itemKey-3">
+<TabItem headerText="Feilkoder" itemKey="itemKey-Feilkoder">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
@@ -1326,14 +1349,14 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | VEDLEGG_SKAL_VAERE_VIRUSSJEKKET_VALIDERT_OG_KONVERTERT | Nei | Vedlegg referert til i begjæringen er ikke klar til å kunne benyttes enda | Alle vedlegg knyttet til begjæringen skal være virussjekket, validert og konvertert | En av følgende:<br/>- Vedlegg '%s' er ikke virussjekket.<br/>- Vedlegg '%s' er ikke konvertert til gyldig pdf.<br/>- Vedlegg '%s' er ikke validert. |
 
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+<TabItem headerText="Informasjonsmodell" itemKey="itemKey-Informasjonsmodell">
 
 Her ser du hele informasjonsmodellen for Utleggsbegjæring
 
 ![Informasjonsmodell](../../static/download/utleggsbegjaering/informasjonsmodell-utleggsbegjaering.png)
 
 </TabItem>
-<TabItem headerText="Test" itemKey="itemKey-5">
+<TabItem headerText="Test" itemKey="itemKey-Test">
 
 ## Testing
 ### Krav til testgjennomføring
@@ -1355,7 +1378,7 @@ med å pilotere løsningene.
 Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/)
 
 </TabItem>
-<TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-6">
+<TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-Sjekkliste">
 
 ## Sjekkliste for Inkassosystemleverandører
 
