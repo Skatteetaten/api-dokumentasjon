@@ -59,7 +59,6 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/summer
 | kommuneforeldrebetaling             | oppgjoer og utkast           |                 |
 | kommunelangtidsoppholdinstitusjon   | oppgjoer                     |                 |
 | kommunepersonligassistanse          | oppgjoer                     |                 |
-| kommunepraktiskbistand              | oppgjoer                     |                 |
 | laanekassen                         | oppgjoer                     |                 |
 | ldir                                | oppgjoer                     |                 |
 | ldirreindriftstilskudd              | oppgjoer                     |                 |
