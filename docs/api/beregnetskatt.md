@@ -50,7 +50,6 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/beregn
 | laanekassen                       |
 | ldirreindriftstilskudd            |
 | norgesbank                        |
-| pensjonskasse                     |
 | pensjonskasseEtteroppgjoerUfoerAfp |
 | ssb                               |
 
