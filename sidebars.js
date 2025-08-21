@@ -59,6 +59,7 @@ const sidebars = {
     },
     {
       "API-er for innrapportering": [
+        { id: 'api/innrapportering-amelding', label: "A-melding", type: 'doc' },
         { id: 'api/innrapportering-aksjesparekonto', label: "Aksjesparekonto", type: 'doc' },
         { id: 'api/innrapportering-aksjonaerregisteroppgave', label: "Aksjonærregisteroppgave", type: 'doc' },
         { id: 'api/innrapportering-betalingernaeringsdrivende', label: "Betalinger til selvstendig næringsdrivende", type: 'doc' },
