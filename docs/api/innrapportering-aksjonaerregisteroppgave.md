@@ -96,7 +96,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 #### Hovedskjema url:
 ```
-https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/1086H
+https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/v1/2023/1086H
 ```
 
 #### Hovedskjema XML
@@ -200,7 +200,7 @@ https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aks
 
 #### Underskjema url
 ```
-https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/{{hovedskjemaid}}/1086U
+https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/v1/2023/{{hovedskjemaid}}/1086U
 ```
 
 #### Underskjema XML
@@ -273,7 +273,7 @@ Endepunktet gir ingen data tilbake ved vellykket kall. Kun 200 OK som statuskode
 
 #### Bekreft url
 ```
-https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/1086/v1/2023/{{hovedskjemaid}}/bekreft?antall_underskjema={{antall-innsendte-underskjema}}
+https://innrapporteringaksjonaerregisteroppgave.api.skatteetaten-test.no/api/aksjonaerregister/v1/2023/{{hovedskjemaid}}/bekreft?antall_underskjema={{antall-innsendte-underskjema}}
 ```
 
 #### Eksempel på respons fra bekreft endepunkt
