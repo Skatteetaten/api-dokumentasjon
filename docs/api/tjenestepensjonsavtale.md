@@ -1,7 +1,7 @@
 ---
 title: Tjenestepensjonsavtale API
 slug: /api/tjenestepensjonsavtale
-folder: folder
+folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Inntekt, Tjenestepensjonsavtale]
@@ -35,8 +35,8 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
  
 | Navn på rettighetspakke |	Kommentar |
 |---| --- |
-| nav | Kun tilgang til GET-endepunktene |
-| otp | Kun tilgang til POST/DELETE-endepunktene |
+| nav | Kun tilgang til endepunktene for å sjekke gyldighet for virkningsperiode og avtalteforhold|
+| otp | Kun tilgang til å opprette, endre og slette avtaleforhold |
  
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/8018e29d-f608-31b6-965e-00c290386612) i Felles datakatalog.
@@ -146,16 +146,91 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/c73e4045-9121-39df-adcc-e44161969434) i Felles datakatalog.
- 
 Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert. 
 
-Tjenesten tilbyr følgende endepunkt med forskjellige modeller:
+Tjenesten tilbyr følgende endepunkt med forskjellige modeller.
 
-* [Opprette eller endre avtaleforhold](../informasjonsmodeller/tjenestepensjonsavtale/avtaleforhold.md) <br /> 
-* [Slette avtaleforhold](../informasjonsmodeller/tjenestepensjonsavtale/avtaleforhold_slette.md) <br /> 
-* [Sjekk om gyldig avtaleforhold finnes for periode](../informasjonsmodeller/tjenestepensjonsavtale/avtaleforhold_gyldighet.md) <br /> 
-* [Sjekk om gyldig virkningsperioden for et avtaleforholdet finnes for periode](../informasjonsmodeller/tjenestepensjonsavtale/virkningsperiode_gyldighet.md) <br />   
+## Opprette eller endre avtaleforhold
+Informasjonsmodell for avtaleforhold tilknyttet tjenestepensjonsavtale, og oversikt over verdier som sendes inn gjennom endepunktet for å opprette avtaleforhold.
+
+### Avtaleforhold
+
+| Felt | Beskrivelse |
+| ---- | -------------------------------------------------------- |
+| avtalereferanse | Pensjonsinnretningens egen referanse til avtalen |
+| fraOgMed | Start årstall og måned for avtaleinngåelse angitt i nummer, må oppgis som YYYY-MM |
+| tilOgMed | Slutt årstall og måned for opphør av avtale angitt i nummer, må oppgis som YYYY-MM |
+| opplysningspliktig | Den opplysningspliktige som avtaleforholdet er med  |
+ 
+### Opplysingsingspliktig
+
+| Felt | Beskrivelse |
+| ---- | ------------------------------------------------------ |
+| norskIdentifikator | Opplysningspliktiges organisasjonsnummer |
+
+### Figur 
+![avtaleforhold](../../static/download/tjenestepensjonsavtale/avtaleforhold.png)
+
+## Slette avtaleforhold
+
+Informasjonsmodell for å slette avtaleforhold tilknyttet tjenestepensjonsavtale, og oversikt over verdier som sendes inn gjennom endepunktet for å slette avtaleforhold.
+
+### Avtaleforhold
+
+| Felt | Beskrivelse |
+| ---- | -------------------------------------------------------- |
+| avtalereferanse | Pensjonsinnretningens egen referanse til avtalen |
+| opplysningspliktig | Den opplysningspliktige som avtaleforholdet er med  |
+
+### Opplysingsingspliktig
+
+| Felt | Beskrivelse |
+| ---- | ------------------------------------------------------ |
+| norskIdentifikator | Opplysningspliktiges organisasjonsnummer |
+
+### Figur
+![slett avtaleforhold](../../static/download/tjenestepensjonsavtale/slettAvtaleforhold.png)
+
+## Sjekk om gyldig avtaleforhold finnes for periode
+
+Informasjonsmodell for gyldig avtaleforhold for tjenestepensjonsavtale og oversikt over verdier som returneres i data fra endepunktet avtaleforhold/gyldighet.
+
+### AvtaleforholdGyldighet
+
+| Navn på felt | Beskrivelse |
+| -------------- | ---------------------------------------------- |
+|  gyldig | Boolsk felt som er sann/true dersom det finnes en eller flere gyldige avtaleforhold for hele perioden det blir spurt om. Se [Forutsetning for bruk](./forutsetningerforbruk.md) for ytterligere informasjon om avtaleforhold. |
+| måndederUtenGyldigAvtaleforhold | Liste med måneder som ikke har avtale.  Fylles kun ut når "gyldig" er usann/false |
+
+### MånederUtenGyldigAvtaleforhold
+
+| Navn på felt | Beskrivelse |
+| -------------- | ----------------------------------------------|
+| måned        | Måned som ikke har et gyldig avtaleforhold | 
+
+### Figur
+![avtaleforhold gyldighet](../../static/download/tjenestepensjonsavtale/avtaleforholdGyldighet.png)
+
+## Sjekk om gyldig virkningsperioden for et avtaleforholdet finnes for periode
+
+Informasjonsmodell for virkningsperiodens gyldighet for tjenestepensjonsavtale og oversikt over verdier som returneres i data fra endepunktet virkningsperiode/gyldighet.
+
+### VirkningsperiodeGyldighet
+
+| Navn på felt | Beskrivelse |
+| -------------- | ---------------------------------------------- |
+|  gyldig | Boolsk felt som er sann/true dersom det finnes en eller flere avtaleforhold med gyldig virkningsperiode for hele perioden det blir spurt om. Se [Forutsetning for bruk](./forutsetningerforbruk.md) for ytterligere informasjon om virkningsperiode.  |
+| måndederUtenforGyldigVirkningsperiode | Liste med måneder som ikke har avtale med gyldig virkningsperiode.  Fylles kun ut når "gyldig" er usann/false |
+
+### MånederUtenforGyldigVirkningsperiode
+
+| Navn på felt | Beskrivelse |
+| -------------- | ----------------------------------------------|
+| måned        | Måned som er utenfor gyldig virkningsperiode for avtaler | 
+
+### Figur
+
+![virkningsperiode gyldighet](../../static/download/tjenestepensjonsavtale/virkningsperiodeGyldighet.png)
   
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">

@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -37,18 +36,23 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. 
 Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-boligsameie",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:forretningsforer-eiendom"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -58,10 +62,11 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for boligsameie har bare ett endepunkt:
+API-et for innrapportering av tredjepartsopplysninger for boligsameie har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for boligsameier. Ett kall mot API-et er en rapportering for et
-  boligsameie gitt av en oppgavegiver og som gjelder et inntektsår.
+* __POST innsending__: Mottar tredjepartsopplysninger for boligsameie. Ett kall mot API-et er en rapportering for en
+  person gitt av en oppgavegiver og som gjelder et inntektsår.
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligsameie?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -94,7 +99,7 @@ https://innrapporteringboligsameie.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "oppgavegiversLeveranseReferanse": "Leveranse-1",
@@ -166,11 +171,12 @@ https://innrapporteringboligsameie.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
   "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
-  "dialogelementId": "018f521e-5488-79e3-8817-48e94cb75455",
+  "forsendelseId": "018f521e-5488-79e3-8817-48e94cb75455",
   "oppgavegiversLeveranseReferanse": "leveranse-1",
+  "antallSletteoppgaver": 2,
   "antallOppgaver": 23
 }
 ```
@@ -214,41 +220,6 @@ feltene.
 
 ![boligsameie](../../static/download/Informasjonsmodell_Boligsameie.png)
 
-| Eier                           | Element                              | Dokumentasjon                                                                                                                                   |
-|--------------------------------|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Leveranse                      | inntektsår                           | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse                      | kildesystem                          | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse                      | leveransetype                        | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse                      | oppgave                              | Oppgave som leveres                                                                                                                             |
-| Leveranse                      | oppgavegiver                         | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse                      | oppgavegiversLeveranseReferanse      | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse                      | oppgaveoppsummering                  | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Leveranse                      | sletteoppgave                        | Oppgave for sletting av tidligere innrapporterte oppgaver                                                                                       |
-| Melding                        | leveranse                            | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| OppgaveBoligsameie             | andelFormue                          | Oppgaveeiers andel av felles formue i boligsameiet                                                                                              |
-| OppgaveBoligsameie             | andelFradragsberettigedeKostnader    | Oppgaveeiers andel av fradragsberettigede kostnader i boligsameiet                                                                              |
-| OppgaveBoligsameie             | andelGjeld                           | Oppgaveeiers andel av gjeld i boligselsameiet                                                                                                   |
-| OppgaveBoligsameie             | andelSkattepliktigeInntekter         | Oppgaveeiers andel av skattepliktige inntekter i boligsameiet                                                                                   |
-| OppgaveBoligsameie             | eiertid                              | Oppgaveeiers tid som eier av boenheten                                                                                                          |
-| OppgaveBoligsameie             | matrikkelnummer                      | Boenhetens matrikkelnummer                                                                                                                      |
-| OppgaveBoligsameie             | oppgaveeier                          | Eier av oppgaven                                                                                                                                |
-| Oppgaveeier                    | fødselsnummer                        | Fødselsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                           |
-| Oppgaveeier                    | navn                                 | Navn på oppgaveeier                                                                                                                             |
-| Oppgaveeier                    | organisasjonsnummer                  | Organisasjonsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                     |
-| Oppgavegiver                   | kontaktinformasjon                   | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver                   | organisasjonsnummer                  | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| OppgaveoppsummeringBoligsameie | antallOppgaver                       | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| OppgaveoppsummeringBoligsameie | sumAndelFormue                       | Sum av andelFormue i leveransens oppgaver                                                                                                       |
-| OppgaveoppsummeringBoligsameie | sumAndelFradragsberettigedeKostnader | Sum av andelFradragsberettigedeKostnader i leveransens oppgaver                                                                                 |
-| OppgaveoppsummeringBoligsameie | sumAndelGjeld                        | Sum av andelGjeld i leveransens oppgaver                                                                                                        |
-| OppgaveoppsummeringBoligsameie | sumAndelSkattepliktigeInntekter      | Sum av andelSkattepliktigeInntekter i leveransens oppgaver                                                                                      |
-| SletteoppgaveBoligsameie       | matrikkelnummer                      | Boenhetens matrikkelnummer                                                                                                                      |
-| SletteoppgaveBoligsameie       | oppgaveeier                          | Eier av sletteoppgaven                                                                                                                          |
-| Matrikkelnummer                | bruksnummer                          | Del av matrikkelnummeret som sammen med kommunenummer, gårdsnummer og seksjonsnummer unikt identifiserer en eierseksjon                         |
-| Matrikkelnummer                | festenummer                          | Festenummer tilhørende eierseksjonen dersom eiendommen er festet                                                                                |
-| Matrikkelnummer                | gårdsnummer                          | Del av matrikkelnummeret som sammen med kommunenummer, bruksnummer og seksjonsnummer unikt identifiserer en eierseksjon                         |
-| Matrikkelnummer                | kommunenummer                        | Boenhetens kommunenummer                                                                                                                        |
-| Matrikkelnummer                | seksjonsnummer                       | Del av matrikkelnummeret som sammen med kommunenummer, gårdsnummer og bruksnummer unikt identifiserer en eierseksjon                            | 
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">

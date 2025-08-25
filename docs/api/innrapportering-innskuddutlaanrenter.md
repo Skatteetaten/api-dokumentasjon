@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -37,18 +36,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
 Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-innskudd-utlaan-renter",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -62,7 +63,7 @@ API-et for innrapportering av innskudd, utlån og renter har to endepunkter:
 
 * __POST innsending__: Mottar tredjepartsopplysninger om innskudd, utlån og renter. Et kall mot API-et sender inn
   rapportering av innskudd, utlån og renter for én oppgavegiver på et gitt inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.
 Se [feilkoder](innrapportering-innskuddutlaanrenter?tab=Feilkoder)
@@ -96,7 +97,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -116,7 +117,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
     "oppgave": [
       {
         "oppgaveeier": {
-          "oppgaveeierPerson": {
+          "person": {
             "foedselsnummer": "25044552222",
             "fornavn": "Ola",
             "etternavn": "Nordmann"
@@ -133,7 +134,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
       },
       {
         "oppgaveeier": {
-          "oppgaveeierOrganisasjon": {
+          "organisasjon": {
             "organisasjonsnummer": "987012345",
             "organisasjonsnavn": "Kontoeier AS"
           }
@@ -150,7 +151,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
       },
       {
         "oppgaveeier": {
-          "oppgaveeierOrganisasjon": {
+          "organisasjon": {
             "organisasjonsnummer": "000000000",
             "organisasjonsnavn": "Forreningen"
           },
@@ -165,7 +166,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
         "kontotype": "innskuddskontoINok",
         "disponent": [
           {
-            "disponentPerson": {
+            "person": {
               "foedselsnummer": "17046594876",
               "fornavn": "Jens",
               "etternavn": "Hansen"
@@ -175,7 +176,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
       },
       {
         "oppgaveeier": {
-          "oppgaveeierPerson": {
+          "person": {
             "foedselsnummer": "12056700000",
             "fornavn": "Jonas",
             "mellomnavn": "August",
@@ -203,7 +204,7 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
       },
       {
         "oppgaveeier": {
-          "oppgaveeierOrganisasjon": {
+          "organisasjon": {
             "organisasjonsnummer": "000000000",
             "organisasjonsnavn": "Garfield Street Auto Ltd"
           },
@@ -253,18 +254,19 @@ https://innrapporteringinnskuddutlaanrenter.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
   "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
   "forsendelseId": "018f521e-5488-79e3-8817-48e94cb75455",
   "oppgavegiversLeveranseReferanse": "leveranse-1",
+  "antallSletteoppgaver": 5,
   "antallOppgaver": 23
 }
 ```
 
 #### Eksempel på sletteoppgave
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -348,60 +350,6 @@ feltene.
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
 ![innskuddutlaanrenter](../../static/download/Informasjonsmodell_Innskuddutlaanrenter.png)
-
-| Eier                          | Element                             | Dokumentasjon                                                                                                                                   |
-|-------------------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Melding                       | leveranse                           | Selve leveransen. Merk at det kun er tillatt med én leveranse pr Melding                                                                        |
-| Leveranse                     | inntektsår                          | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse                     | kildesystem                         | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse                     | leveransetype                       | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse                     | oppgaveSaldoRente                   | Oppgave(r) som leveres                                                                                                                          |
-| Leveranse                     | sletteoppgaveSaldoRente             | Sletteoppgave(r) som leveres                                                                                                                    |
-| Leveranse                     | oppgavegiver                        | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse                     | oppgavegiversLeveranseReferanse     | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse                     | oppgaveoppsummeringSaldoRente       | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Leveranse                     | presentasjonsnavn                   | Erstatter oppgavegivers navn i skatteyters skattemelding. NB! Kan bare benyttes etter avtale med Skatteetaten                                   |
-| OppgaveSaldoRente             | kontonummer                         | Unikt identifiserende felt for en konto for en oppgaveeier                                                                                      |
-| OppgaveSaldoRente             | skattekontoEgnethet                 | Kun aktuelt for banker. Prioritering om kontoen kan brukes for utbetaling av overskytende skatt                                                 |
-| OppgaveSaldoRente             | utlån                               | Saldo på kontoen (i hele norske kroner) ved årsskiftet hvis kontoen gjelder utlån                                                               |
-| OppgaveSaldoRente             | innskudd                            | Saldo på kontoen (i hele norske kroner) ved årsskiftet hvis kontoen gjelder innskudd                                                            |
-| OppgaveSaldoRente             | renter                              | Opptjente renter (i hele norske kroner) ved årsskiftet hvis kontoen gjelder innskudd                                                            |
-| OppgaveSaldoRente             | kontotype                           | Informasjon om kontoen som rapporters er en innskudds-, eller lånekonto                                                                         |
-| OppgaveSaldoRente             | valutakode                          | Er en 3 sifret bokstavkode som identifiserer et lands offisielle myntenhet                                                                      |
-| OppgaveSaldoRente             | gevinstEllerTap                     | Informasjon om skattepliktig gevinst, eller fradragsberettiget tap                                                                              |
-| OppgaveSaldoRente             | innskuddIAnnenValuta                | Innskudd i original valuta (heltall)                                                                                                            |
-| OppgaveSaldoRente             | renteinntektIAnnenValuta            | Renteinntekter i original valuta (heltall)                                                                                                      |
-| OppgaveSaldoRente             | oppgaveeier                         | Person eller organisasjon oppgaven gjelder for                                                                                                  |
-| OppgaveSaldoRente             | disponent                           | Informasjon om disponenter av kontoen                                                                                                           |
-| OppgaveSaldoRente             | medlåntaker                         | Informasjon om medlåntakere                                                                                                                     |
-| OppgaveSaldoRente             | reellRettighetshaver                | En fysisk person som utøver kontroll over organisasjon som står som eier av kontoen                                                             |
-| SletteoppgaveSaldoRente       | oppgaveeierOrganisasjonsnummer      | Oppgaveeiers organisasjonsnummer                                                                                                                |
-| SletteoppgaveSaldoRente       | oppgaveeierFødselsnummer            | Oppgaveeiers fødselsnummer                                                                                                                      |
-| SletteoppgaveSaldoRente       | oppgaveeierAlternativIdentifikator  | Hvis oppgaveeier (kontoeier) ikke har fødselsnummer eller organisasjonsnummer, så skal oppgavegiver angi en unik verdi for kontoeier            |
-| SletteoppgaveSaldoRente       | kontonummer                         | Unikt identifiserende felt for en konto for en oppgaveeier                                                                                      |
-| Oppgavegiver                  | kontaktinformasjon                  | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver                  | organisasjonsnummer                 | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| Oppgaveeier                   | organisasjon                        | Fylles ut dersom oppgaveeier er en organisasjon                                                                                                 |
-| Oppgaveeier                   | person                              | Fylles ut dersom oppgaveeier er en person                                                                                                       |
-| Oppgaveeier                   | internasjonalIdentifikator          | Utenlands identifikatornummer brukt til å identifisere personer                                                                                 |
-| Oppgaveeier                   | adresse                             | Oppgaveeiers adresse                                                                                                                            |
-| Oppgaveeier                   | sektorkode                          | Sektorkoden for kontoeieren jfr. Statistisk sentralbyrå (SSB) sin standard                                                                      |
-| Oppgaveeier                   | alternativIdentifikator             | Hvis oppgaveeier (kontoeier) ikke har fødselsnummer, eller organisasjonsnummer så skal oppgavegiver angi en unik verdi for kontoeier            |
-| OppgaveoppsummeringSaldoRente | antallOppgaver                      | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| OppgaveoppsummeringSaldoRente | sumInnskudd                         | Summering av innskudd                                                                                                                           |
-| OppgaveoppsummeringSaldoRente | sumUtlån                            | Summering av utlån                                                                                                                              |
-| OppgaveoppsummeringSaldoRente | sumOpptjenteRenter                  | Summering av opptjente renter                                                                                                                   |
-| OppgaveoppsummeringSaldoRente | sumPåløpteRenter                    | Summering av påløpte renter                                                                                                                     |
-| OppgaveoppsummeringSaldoRente | sumBetalteMisligholdteRenter        | Summering av betalte misligholdte renter                                                                                                        |
-| OppgaveoppsummeringSaldoRente | sumTilbakebetalteMisligholdteRenter | Summering av tilbakebetalte misligholdte renter                                                                                                 |
-| OppgaveoppsummeringSaldoRente | sumSkattepliktigGevinst             | Summering av skattepliktig gevinst                                                                                                              |
-| OppgaveoppsummeringSaldoRente | sumFradragsberettigetTap            | Summering av fradragsberettiget tap                                                                                                             |
-| Disponent                     | organisasjon                        | Fylles ut dersom disponent er en organisasjon                                                                                                   |
-| Disponent                     | person                              | Fylles ut dersom disponent er en person                                                                                                         |
-| Medlåntaker                   | organisasjonsnummer                 | Medlåntakers organisasjonsnummer                                                                                                                |
-| Medlåntaker                   | fødselsnummer                       | Medlåntakers fødselsnummer                                                                                                                      |
-| ReellRettighetshaver          | organisasjon                        | Fylles ut dersom reell rettighetshaver er en organisasjon                                                                                       | 
-| ReellRettighetshaver          | person                              | Fylles ut dersom reell rettighetshaver er en person                                                                                             | 
 
 </TabItem>
 

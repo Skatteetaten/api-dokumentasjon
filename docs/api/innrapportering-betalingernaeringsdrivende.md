@@ -18,7 +18,6 @@ RF-1321)</Summary>
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -39,18 +38,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
 Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-betalinger-selvstendig-naeringsdrivende",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -64,7 +65,7 @@ API-et for innrapportering av innskudd, utlån og renter har to endepunkter:
 
 * __POST innsending__: Mottar tredjepartsopplysninger om betalinger til selvstendig næringsdrivende. Et kall mot API-et
   sender inn rapportering om betalinger til selvstendig næringsdrivende for én oppgavegiver på et gitt inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.
 Se [feilkoder](innrapportering-betalingernaeringsdrivende?tab=Feilkoder)
@@ -98,10 +99,10 @@ https://innrapporteringbetalingernaeringsdrivende.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
-    "inntektsaar": "2023",
+    "inntektsaar": 2023,
     "oppgavegiver": {
       "organisasjonsnummer": "212918172",
       "kontaktinformasjon": {
@@ -120,19 +121,19 @@ https://innrapporteringbetalingernaeringsdrivende.api.{env}.no/v1/{inntektsaar}
           "foedselsnummer": "12345678910",
           "navn": "Ola Nordmann"
         },
-        "betaltBeloep": "7500"
+        "betaltBeloep": 7500
       },
       {
         "oppgaveeier": {
           "organisasjonsnummer": "123456789",
           "navn": "Bedriften A/S"
         },
-        "betaltBeloep": "2500"
+        "betaltBeloep": 2500
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": "2",
-      "sumBetaltBeloep": "10000"
+      "antallOppgaver": 2,
+      "sumBetaltBeloep": 10000
     }
   }
 }
@@ -140,7 +141,7 @@ https://innrapporteringbetalingernaeringsdrivende.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
   "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
   "forsendelseId": "018f521e-5488-79e3-8817-48e94cb75455",
@@ -195,26 +196,6 @@ feltene.
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
 ![betalingernaeringsdrivende](../../static/download/Informasjonsmodell_Betalingernaeringsdrivende.png)
-
-| Eier                          | Element                         | Dokumentasjon                                                                                                                                   |
-|-------------------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Melding                       | leveranse                       | Selve leveransen. Merk at det kun er tillatt med én leveranse pr Melding                                                                        |
-| Leveranse                     | inntektsår                      | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse                     | kildesystem                     | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse                     | leveransetype                   | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse                     | oppgave                         | Oppgave(r) som leveres                                                                                                                          |
-| Leveranse                     | oppgavegiver                    | Tredjepart som rapporterer opplysninger til Skatteetaten                                                                                        |
-| Leveranse                     | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse                     | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Oppgavegiver                  | kontaktinformasjon              | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver                  | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| OppgaveBetalinger             | oppgaveeier                     | Person eller organisasjon oppgaven gjelder for                                                                                                  |
-| OppgaveBetalinger             | betaltBeloep                    | Betalt beløp til selvstendig næringsdrivende for inntektsåret                                                                                   |
-| Oppgaveeier                   | foedselsnummer                  | Ellevesifret identifikasjonsnummer for personer bosatt i Norge, der de seks første sifrene angir fødselsdato og de fem siste personnummer       |
-| Oppgaveeier                   | organisasjonsnummer             | Organisasjonsnummer til oppgaveeier                                                                                                             |
-| Oppgaveeier                   | navn                            | Oppgaveeiers navn                                                                                                                               |
-| OppgaveoppsummeringBetalinger | antallOppgaver                  | Antall oppgaver i leveransen                                                                                                                    |
-| OppgaveoppsummeringBetalinger | sumBetaltBeloep                 | Sum av feltet betaltBeloep for alle oppgavene i leveransen                                                                                      |
 
 </TabItem>
 

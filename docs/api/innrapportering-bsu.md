@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -37,18 +36,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. 
 Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-boligsparing-ungdom",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -62,7 +63,7 @@ API-et for innrapportering av BSU har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for BSU. Ett kall mot API-et er en rapportering for en
   person gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-bsu?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -95,7 +96,7 @@ https://innrapporteringbsu.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "inntektsaar": 2023,
@@ -220,7 +221,7 @@ https://innrapporteringbsu.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
@@ -239,7 +240,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | feil i forbindelse med autentisesring        |
+| GLD_004  | 401             | Feil i forbindelse med autentisering         |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
@@ -277,52 +278,6 @@ feltene.
 
 ![bsu](../../static/download/Informasjonsmodell_Bsu.png)
 
-| Eier                          | Element                         | Dokumentasjon                                                                                                                                   |
-|-------------------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avgangsmelding                | overfoertTilEktefelle           | Enten overfoertTilEktefelle, eller overfoertTilForvalter                                                                                        |
-| Avgangsmelding                | overfoertTilForvalter           | Enten overfoertTilEktefelle, eller overfoertTilForvalter                                                                                        |
-| BankTilBankKontaktinformasjon | kontaktnavn                     | Navn på kontaktperson for kontoen                                                                                                               |
-| BankTilBankKontaktinformasjon | telefonnummer                   | Telefonnumemr til kontaktperson for kontoen                                                                                                     |
-| BankTilBankKontaktinformasjon | epostadresse                    | Epostadresse til kontaktperson for kontoen                                                                                                      |
-| Leveranse                     | inntektsaar                     | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse                     | kildesystem                     | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse                     | leveransetype                   | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse                     | oppgave                         | Oppgave som leveres                                                                                                                             |
-| Leveranse                     | oppgavegiver                    | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse                     | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse                     | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Melding                       | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| Mottaksmelding                | mottattFraForvalter             | Enten mottattFraForvalter, eller mottattFraEktefelle                                                                                            |
-| Mottaksmelding                | mottattFraEktefelle             | Enten mottattFraForvalter, eller mottattFraEktefelle                                                                                            |
-| OppgaveBoligsparing           | kontonummer                     | Kontonummer for BSU kontoen                                                                                                                     |
-| OppgaveBoligsparing           | startdato                       | Startdato for BSU kontoen                                                                                                                       |
-| OppgaveBoligsparing           | aaretsSparebeloep               | Beløp spart for dette inntektsåret                                                                                                              |
-| OppgaveBoligsparing           | aaretsRenter                    | Renter påløpt for inntektsåret                                                                                                                  |
-| OppgaveBoligsparing           | bundetAkkumulertSparebeloep     | Samlet innbetalt sparebeløp på BSU konto                                                                                                        |
-| OppgaveBoligsparing           | bundetAkkumulertRenter          | Samlet akkumelerte renter på BSU konto                                                                                                          |
-| OppgaveBoligsparing           | saldo                           | Saldo på en BSU-konto utgjør samlet sparebeløp inklusivt totalt påløpte renter                                                                  |
-| OppgaveBoligsparing           | uttaksdatoBolig                 | Dato for uttak fra BSU konto                                                                                                                    |
-| OppgaveBoligsparing           | uttaksdatoBrudd                 | dato for brudd på kontrakt om BSU                                                                                                               |
-| OppgaveBoligsparing           | uttaksbeloepBolig               | Beløp for uttak fra BSU konto                                                                                                                   |
-| OppgaveBoligsparing           | konkursdato                     | Dato for konkurs. Fylles ut ved dekning av krav ved konkurs                                                                                     |
-| OppgaveBoligsparing           | sikkerhetsdato                  | Datoen kontoen ble stilt som sikkerhet                                                                                                          |
-| OppgaveBoligsparing           | oppgaveeier                     | Person oppgaven gjelder for                                                                                                                     |
-| OppgaveBoligsparing           | bankTilBankKontaktinformasjon   | Kontaktinformasjon for kontoen                                                                                                                  |
-| OppgaveBoligsparing           | avgangsmelding                  | Melding for overføring til ektefelle ved skilsmisse/separasjon eller død, eller overføring til forvalter typisk ved bytte av bank               |
-| OppgaveBoligsparing           | mottaksmelding                  | Melding for mottak fra ektefelle ved skilsmisse/separasjon eller død, eller overføring fra forvalter typisk ved bytte av bank                   |
-| OppgaveBoligsparing           | utleggsdato                     | Dato for utlegg fra BSU konto                                                                                                                   |
-| OppgaveBoligsparing           | utleggsbeloep                   | Beløp for utlegg fra BSU konto                                                                                                                  |
-| Oppgaveeier                   | fødselsnummer                   | Oppgaveeiers fødselsnummer eller d-nummer                                                                                                       |
-| Oppgaveeier                   | navn                            | Navn på oppgaveeier                                                                                                                             |
-| Oppgavegiver                  | kontaktinformasjon              | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver                  | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| Oppgaveoppsummering           | antallOppgaver                  | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| Oppgaveoppsummering           | sumAaretsSparebeloep            | Sum av alle aaretsSparebeloep i oppgavene til en leveranse                                                                                      |
-| Oppgaveoppsummering           | sumAaretsRenter                 | Sum av alle aaretsRenter i oppgavene til en leveranse                                                                                           |
-| Oppgaveoppsummering           | sumBundetAkkumulertSparebeloep  | Sum av alle bundetAkkumulertSparebeloep i oppgavene til en leveranse                                                                            |
-| Oppgaveoppsummering           | sumBundetAkkumulertRenter       | Sum av alle bundetAkkumulertRenter i oppgavene til en leveranse                                                                                 |
-| Oppgaveoppsummering           | sumSaldo                        | Sum av alle saldo i oppgavene til en leveranse                                                                                                  |
-| Oppgaveoppsummering           | sumUttaksbeloepBolig            | Sum av alle uttaksbeloepBolig i oppgavene til en leveranse                                                                                      |
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">

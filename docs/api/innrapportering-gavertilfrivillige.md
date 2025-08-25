@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -37,18 +36,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. 
 Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-gaver-frivillige-organisasjoner",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -62,7 +63,7 @@ API-et for innrapportering av gaver til frivillige har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for gaver til frivillige. Ett kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-gavertilfrivillige?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -95,7 +96,7 @@ https://innrapporteringgavertilfrivillige.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -108,7 +109,7 @@ https://innrapporteringgavertilfrivillige.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2024",
+    "inntektsaar": 2024,
     "oppgavegiversLeveranseReferanse": "EksternReferanse_2013_1",
     "leveransetype": "ordinaer",
     "oppgave": [
@@ -117,26 +118,26 @@ https://innrapporteringgavertilfrivillige.api.{env}.no/v1/{inntektsaar}
           "foedselsnummer": "02020222222",
           "navn": "Truls Gavmild"
         },
-        "beloep": "2000"
+        "beloep": 2000
       },
       {
         "oppgaveeier": {
           "foedselsnummer": "03027833333",
           "navn": "Lise Generous"
         },
-        "beloep": "4000"
+        "beloep": 4000
       },
       {
         "oppgaveeier": {
           "organisasjonsnummer": "987654321",
           "navn": "Norsk altruistisk selskap AS"
         },
-        "beloep": "4000"
+        "beloep": 4000
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": "3",
-      "sumBeloep": "10000"
+      "antallOppgaver": 3,
+      "sumBeloep": 10000
     }
   }
 }
@@ -145,7 +146,7 @@ https://innrapporteringgavertilfrivillige.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
@@ -164,7 +165,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | feil i forbindelse med autentisesring        |
+| GLD_004  | 401             | Feil i forbindelse med autentisering         |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
@@ -201,25 +202,6 @@ feltene.
 
 ![gavertilfrivillige](../../static/download/Informasjonsmodell_Gavertilfrivillige.png)
 
-| Eier                | Element                         | Dokumentasjon                                                                                                                                   |
-|---------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Leveranse           | inntektsaar                     | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse           | kildesystem                     | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse           | leveransetype                   | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse           | oppgave                         | Oppgave som leveres                                                                                                                             |
-| Leveranse           | oppgavegiver                    | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse           | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse           | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Melding             | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| OppgaveGave         | beloep                          | Sum beløp som er gitt som gave                                                                                                                  |
-| OppgaveGave         | oppgaveeier                     | Person eller organisasjon som har gitt gave til frivillig organisasjon eller trossamfunn                                                        |
-| Oppgaveeier         | fødselsnummer                   | Oppgaveeiers fødselsnummer eller d-nummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                 |
-| Oppgaveeier         | organisasjonsnummer             | Oppgaveeiers organisasjonsnummer. Oppgi enten fødselsnummer, eller organisasjonsnummer                                                          |
-| Oppgaveeier         | navn                            | Navn på oppgaveeier                                                                                                                             |
-| Oppgavegiver        | kontaktinformasjon              | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver        | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| Oppgaveoppsummering | antallOppgaver                  | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| Oppgaveoppsummering | sumBeloep                       | Sum av alle beløp i oppgavene til en leveranse                                                                                                  |
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">

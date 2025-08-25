@@ -11,23 +11,25 @@ hide_table_of_contents: true
 ---
 <Summary> Bruk av systembruker for Sluttbrukersystemer.</Summary>
 
-På denne siden sammenfattes stegene som må til for å komme i gang med systembruker. 
+Se detaljert veiledning på [skatteetaten.no](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/).
+På denne siden sammenfattes kortere stegene som må til for å komme i gang med systembruker. 
+
 
 ## Steg for steg
 
-1.	**Maskinporten onboarding:** For å bruke både Skatteetatens og Digdirs API trenger du tilgang til Maskinporten for autentiseringen. Det gjøres gjennom å kontakte Digdir og følge deres [onboardingsprosess](https://onboarding.maskinporten.no/). OBS! Det kan være at du ikke har rettigheter til å bruke denne løsningen og at du derfor må etterspørre tilgangen i din virksomhet. Fremgangsmåten for dette er beskrevet nederst på siden som er lenka ovenfor.
+1.	**Maskinporten onboarding:** For å bruke både Skatteetatens og Digdirs API trenger du tilgang til Maskinporten for autentiseringen. Digdir har laget en side som beskriver hva som må til for å [komme i gang i test](https://samarbeid.digdir.no/altinn/kom-i-gang-i-testmiljoet-tt02/2868).
 
 2.	**API-tilganger**: Så trenger du tilgang til API (scopes) både hos Skatteetaten og Digdir: 
   * Skatteetaten må gi tilgang til vårt API f.eks. Krav og betalinger eller Innrapportering Boligselskap, og du kan skaffe deg tilgang [her](../komigang.md). Du finner informasjon om scope det skal bes om tilgang til i dokumentasjonen for det enkelte API.
-  *	Digdir(inkl Altinn) må gi tilgang til sine API. Det må bestilles av [dem](https://altinn.studio/contact). Sørg for å bestille følgende tilganger:
+  *	Digdir (inkl. Altinn) må gi tilgang til sine API. Det må bestilles fra [Digdir](https://forms.office.com/Pages/ResponsePage.aspx?id=D1aOAK8I7EygVrNUR1A5kcdP2Xp78HZOttvolvmHfSJUOFFBMThaOTI1UlVEVU9VM0FaTVZLMzg0Vi4u). Sørg for å bestille følgende tilganger:
       -	`altinn:authentication/systemregister.write`
       -	`altinn:authentication/systemuser.request.read`
       -	`altinn:authentication/systemuser.request.write`
   	   - `digdir:dialogporten`
 
-3.	**Maskinporten klient:** Når du har fått tilgang til scopene, må det lages en Maskinporten-klient (også kjent som *Integrasjon* i Digdirs beskrivelser) – du kan opprette denne enten i Digdirs [Samarbeidsportal](https://sjolvbetjening.test.samarbeid.digdir.no/auth/login), [Forenklet onboarding](https://onboarding.maskinporten.no/) (se punkt 1) eller ved bruk av API. Maskinporten-klienten du har satt opp, må få tildelt scopene ovenfor og kan deretter benyttes for å få utstedt token/autentiseringsbevis.
+3.	**Maskinporten klient:** Når du har fått tilgang til scopene, må det lages en Maskinporten-klient (også kjent som *Integrasjon* i Digdirs beskrivelser) – du kan opprette denne enten i Digdirs [Samarbeidsportal](https://sjolvbetjening.test.samarbeid.digdir.no/auth/login). Maskinporten-klienten du har satt opp, må få tildelt scopene ovenfor og kan deretter benyttes for å få utstedt token/autentiseringsbevis.
 
-4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via [API](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#registrere-system). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (rights), som skal oppgis, er beskrevet i API-dokumentasjon hos Skatteetaten. 
+4.	**Registrere system i systemregisteret:** For å kunne benytte sluttbrukersystemet mot Skatteetatens API må det først registreres i Digdirs systemregister. Dette kan gjøres via [API](https://docs.altinn.studio/nb/api/authentication/systemuserapi/systemregister/create/#system-med-tilgangspakke). Systemet må knyttes til Maskinporten-klienten (client id) i punkt 3. Hvilke(n) systemtilgang(er), også kjent som tilgangspakke (accesspackage), som skal oppgis, er beskrevet i API-dokumentasjon hos Skatteetaten. 
 
     Eksempel på registrering:
 ```json
@@ -42,47 +44,43 @@ På denne siden sammenfattes stegene som må til for å komme i gang med systemb
     "description": {
         "nb": "En beskrivelse av systemet",
     },
-    "rights": [
+    "accessPackages": [
         {
-            "resource": [
-                {
-                    "id": "urn:altinn:resource",
-                    "value": "ske-innrapportering-boligselskap"
-                }
-            ]
+            "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+        },
+        {
+            "urn": "urn:altinn:accesspackage:skattegrunnlag"
         }
     ],
     "clientId": [
         "e6c868ef-d9d6-4847-ba25-409bbd040540" 
     ],
     "isVisible": true,
-    "allowedRedirectUrls": []
+    "allowedRedirectUrls": [
+        "https://skatteetaten.no/sbs"
+    ]
 }
 ```
 
-5.	**Kunden må gi systemet tilgang:** Du kan nå be kunden om å opprette en systemtilgang gjennom å lage en [tilgangsforespørsel](https://docs.altinn.studio/nb/authentication/guides/systemauthentication-for-systemproviders/#sende-forespørsel-om-opprettelse-av-systembruker-til-virksomhet). Du kan se skjermbilde av hvordan dette ser ut for kunden nederst på siden. 
+5.	**Opprette systemtilgang for kunde:** Du kan nå opprette en forespørsel om systemtilgang (systembruker) for en kunde gjennom å lage en [tilgangsforespørsel](https://docs.altinn.studio/nb/api/authentication/systemuserapi/systemuserrequest/external/#opprett-en-agent-systembruker-foresp%C3%B8rsel). Som svar på tilgangsforespørsel vil du motta en url for godkjenning som kunde må benytte i neste steg. Du kan se skjermbilde av hvordan dette ser ut for kunden nederst på siden. 
 
-Eksempel på registrering:
 ```json
 {
   "externalRef": "min_ref",
   "systemId": "974761076_skatt_demo_system",
   "partyOrgNo": "57623423",
-  "rights": [
-    {
-      "resource": [
-        {
-          "value": "ske-innrapportering-boligselskap",  
-          "id": "urn:altinn:resource"
-        }
-      ]
-    }
+  "accessPackages": [
+      {
+          "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+      }
   ],
   "redirectUrl": "https://skatteetaten.no/sbs"
 }
 ```
 
-6.	**Maskinporten autentisering:** Når kunden har opprettet en systemtilgang til deg som systemleverandør, kan du kan du få utstedt et [Maskinporten-token](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument) med systembruker gjennom klienten som ble opprettet i punkt 3. Token må inneholde Skatteetatens scope og systembrukerinformasjon.
+6. **Kunde godkjenner tilgangsforespørsel og knytter systemtilgangen til klienter:** Ansvarlig hos kunde må logge inn i portalen via url fra punkt 5. og [godkjenne](https://docs.altinn.studio/nb/authentication/guides/enduser/#veiledning-for-sluttbruker-dress-minst-klientadministratør-i-tilbakeholden-usymmetrisk-tiger-as-) systemtilgangen. Når systemtilgangen er godkjent kan kunde logge inn i Altinn-portalen og knytte klienter til systemtilgangen.  
+
+7. **Maskinporten autentisering:** Når kunden har opprettet en systemtilgang til deg som systemleverandør, kan du kan du få utstedt et [Maskinporten-token](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument) med systembruker gjennom klienten som ble opprettet i punkt 3. Token må inneholde Skatteetatens scope og systembrukerinformasjon.
 
 Eksempel på et slikt token (dekodet vha. [jwt.io](https://jwt.io/) ) - *Token skal sendes i sin enkodete form - utpakket her for lesbarhet.*
 ```json
@@ -115,7 +113,7 @@ Eksempel på et slikt token (dekodet vha. [jwt.io](https://jwt.io/) ) - *Token s
 }
 ```
 
-7.	**Bruke Skatteetatens API:** Når dette er gjort, kan du kalle Skatteeatens API med tokenet fra punkt 6. i `Authorization`-headeren. Merk at et Maskinporten kan gjenbrukes over utløpstiden (som oftest 2 min), 
+8. **Bruke Skatteetatens API:** Når dette er gjort, kan du kalle Skatteeatens API med tokenet fra punkt 6. i `Authorization`-headeren. Merk at et Maskinporten kan gjenbrukes over utløpstiden (som oftest 2 min), 
 
 ## Nyttige ressurser i denne prosessen:
 * [Digdirs service desk](https://samarbeid.digdir.no/digital-postkasse/kontakt-oss/83): - for spørsmål og feilmeldinger knyttet til Maskinporten, IdPorten m.m.

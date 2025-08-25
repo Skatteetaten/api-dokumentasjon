@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -37,18 +36,23 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
 Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-boligselskap",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:forretningsforer-eiendom"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -58,10 +62,11 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for boligselskap har bare ett endepunkt:
+API-et for innrapportering av tredjepartsopplysninger for boligselskap har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger for boligselskaper. Ett kall mot API-et er en rapportering for et
-  boligselskap gitt av en oppgavegiver og som gjelder et inntektsår.
+* __POST innsending__: Mottar tredjepartsopplysninger for boligselskap. Ett kall mot API-et er en rapportering for en
+  person gitt av en oppgavegiver og som gjelder et inntektsår.
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligselskap?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -94,7 +99,7 @@ https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": [
     {
@@ -182,12 +187,18 @@ https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
   "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
-  "dialogelementId": "018f5297-fde1-7301-af34-df1bc3fff6b5",
-  "oppgavegiversLeveranseReferanse": "leveranse-1",
-  "antallOppgaver": 11
+  "forsendelseId": "018f5297-fde1-7301-af34-df1bc3fff6b5",
+  "leveranseformaal": [
+    {
+      "boligselskapFormaal": "fritidsboligNorge",
+      "oppgavegiversLeveranseReferanse": "string",
+      "antallSletteoppgaver": 5,
+      "antallOppgaver": 10
+    }
+  ]
 }
 ```
 
@@ -227,51 +238,6 @@ feltene.
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
 ![informasjonsmodell](../../static/download/Informasjonsmodell_Boligselskap.png)
-
-| Eier                            | Element                              | Dokumentasjon                                                                                                                                                                                                                                                                        |
-|---------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Boenhet                         | aksjeboenhetsnummer                  | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                                                                                                                                                                                                        |
-| Boenhet                         | andelsnummer                         | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                                                                                                                                                                                                        |
-| Boenhet                         | bolignummer                          | En bokstav og fire siffer som entydig identifiserer den enkelte bruksenheten innenfor en adresserbar bygning eller bygningsdel                                                                                                                                                       |
-| Boenhet                         | gatenavnOgHusnummer                  | Navn på gate og husnummer for boenheten                                                                                                                                                                                                                                              |
-| Boenhet                         | kommunenummer                        | Nummer på kommunen boenheten tilhører                                                                                                                                                                                                                                                |
-| Eierandel                       | eierandelNevner                      | Nevner i eierandelsbrøken                                                                                                                                                                                                                                                            |
-| Eierandel                       | eierandelTeller                      | Teller i eierandelsbrøken                                                                                                                                                                                                                                                            |
-| Leveranse                       | boligselskapFormål                   | Boligselskapets formål. Denne må spesifiseres enten på leveransen, eller oppgaven. Dersom den blir satt i begge vil boligformålet for oppgaven være gjeldende. Verdien skal være en av "bolig", "fritidsbolig", "fritidsboligUtland eller "ikkeBolig" (Brukes f.eks. for garasjelag) |
-| Leveranse                       | inntektsår                           | Inntektsåret leveransen gjelder                                                                                                                                                                                                                                                      |
-| Leveranse                       | kildesystem                          | System brukt for å levere oppgaven                                                                                                                                                                                                                                                   |
-| Leveranse                       | leveransetype                        | type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere                                                                                                                                      |
-| Leveranse                       | oppgave                              | Oppgave som leveres                                                                                                                                                                                                                                                                  |
-| Leveranse                       | oppgavegiver                         | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                                                                                                                                                               |
-| Leveranse                       | oppgavegiversLeveranseReferanse      | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                                                                                                                                                               |
-| Leveranse                       | oppgaveoppsummering                  | Oppsummering med totalsummer for innleverte oppgaver                                                                                                                                                                                                                                 |
-| Leveranse                       | sletteoppgave                        | Oppgave for sletting av tidligere innrapporterte oppgaver                                                                                                                                                                                                                            |
-| Melding                         | leveranse                            | Selve leveransen. Alle leveranser på en melding må ha samme oppgavegiver                                                                                                                                                                                                             |
-| OppgaveBoligselskap             | andelFormue                          | Oppgaveeiers andel av felles formue i boligselskap                                                                                                                                                                                                                                   |
-| OppgaveBoligselskap             | andelFradragsberettigedeKostnader    | Oppgaveeiers andel av fradragsberettigede kostnader i boligselskapet                                                                                                                                                                                                                 |
-| OppgaveBoligselskap             | andelGjeld                           | Oppgaveeiers andel av gjeld i boligselskapet                                                                                                                                                                                                                                         |
-| OppgaveBoligselskap             | andelLikningsverdiBoenhet            | Oppgaveeiers andel av likninsverdi av boenheten                                                                                                                                                                                                                                      |
-| OppgaveBoligselskap             | andelSkattepliktigeInntekter         | Oppgaveeiers andel av skattepliktige inntekter i boligselskapet                                                                                                                                                                                                                      |
-| OppgaveBoligselskap             | boenhet                              | Boenheten oppgaven gjelder                                                                                                                                                                                                                                                           |
-| OppgaveBoligselskap             | boligselskapsFormål                  | Boligselskapets formål. Denne må spesifiseres enten på leveransen, eller oppgaven. Dersom den blir satt i begge vil boligformålet for oppgaven være gjeldende. Verdien skal være en av "bolig", "fritidsbolig", "fritidsboligUtland eller "ikkeBolig" (Brukes f.eks. for garasjelag)                   |
-| OppgaveBoligselskap             | bruksoverlatt                        | Framleid boenhet der boenheten er leid ut av andelshaver i halvparten eller mer av eiertiden det rapporteres for                                                                                                                                                                     |
-| OppgaveBoligselskap             | eierandel                            | Oppgaveeiers eierandel i boenheten                                                                                                                                                                                                                                                   |
-| OppgaveBoligselskap             | eiertid                              | Oppgaveeiers tid som eier av boenheten                                                                                                                                                                                                                                               |
-| OppgaveBoligselskap             | oppgaveeier                          | Eier av oppgaven                                                                                                                                                                                                                                                                     |
-| Oppgaveeier                     | fødselsnummer                        | Fødselsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                                                                                                                                                                |
-| Oppgaveeier                     | navn                                 | Navn på oppgaveeier                                                                                                                                                                                                                                                                  |
-| Oppgaveeier                     | organisasjonsnummer                  | Organisasjonsnummer på oppgaveeier. Eksklusiv enten fødselsnummer eller organisasjonsnummer                                                                                                                                                                                          |
-| Oppgavegiver                    | kontaktinformasjon                   | Kontaktinformasjon for oppgavegiver                                                                                                                                                                                                                                                  |
-| Oppgavegiver                    | organisasjonsnummer                  | Organisasjonsnummer på oppgavegiver                                                                                                                                                                                                                                                  |
-| OppgaveoppsummeringBoligselskap | antallOppgaver                       | Totalt antall oppgaver i leveransens oppgaver                                                                                                                                                                                                                                        |
-| OppgaveoppsummeringBoligselskap | sumAndelFormue                       | Sum av andelFormue i leveransens oppgaver                                                                                                                                                                                                                                            |
-| OppgaveoppsummeringBoligselskap | sumAndelFradragsberettigedeKostnader | Sum av andelFradragsberettigedeKostnader i leveransens oppgaver                                                                                                                                                                                                                      |
-| OppgaveoppsummeringBoligselskap | sumAndelGjeld                        | Sum av andelGjeld i leveransens oppgaver                                                                                                                                                                                                                                             |
-| OppgaveoppsummeringBoligselskap | sumAndelLikningsverdiBoenhet         | Sum av andelLikningsverdiBoenhet i leveransens oppgaver                                                                                                                                                                                                                              |
-| OppgaveoppsummeringBoligselskap | sumAndelSkattepliktigeInntekter      | Sum av andelSkattepliktigeInntekter i leveransens oppgaver                                                                                                                                                                                                                           |
-| SletteoppgaveBoligselskap       | aksjeboenhetsnummer                  | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                                                                                                                                                                                                        |
-| SletteoppgaveBoligselskap       | andelsnummer                         | Nummer for boenheten. Eksklusiv enten aksjeboenhetsnummer, eller andelsnummer                                                                                                                                                                                                        |
-| SletteoppgaveBoligselskap       | oppgaveeier                          | Eier av sletteoppgaven                                                                                                                                                                                                                                                               |
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">

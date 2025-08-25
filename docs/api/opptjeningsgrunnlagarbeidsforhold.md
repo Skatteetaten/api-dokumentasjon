@@ -54,7 +54,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Optjeningsgrunnlag arb
 
 ## Datakatalog
 
-Datatjenestebeskrivelse kommer i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/e6c30408-f2c8-3c62-a182-6d023aed8267) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 

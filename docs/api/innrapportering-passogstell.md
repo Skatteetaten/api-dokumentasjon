@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -37,18 +36,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. 
 Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-pass-stell-barn",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -62,7 +63,7 @@ API-et for innrapportering av pass og stell av barn har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for pass og stell. Ett kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-passogstell?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -95,7 +96,7 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "Kildesystemet v2.0.5",
@@ -108,7 +109,7 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2023",
+    "inntektsaar": 2023,
     "oppgavegiversLeveransereferanse": "EksternReferanse_2013_1",
     "leveransetype": "ordinaer",
     "oppgave": [
@@ -117,19 +118,19 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
           "foedselsnummer": "12345678910",
           "navn": "Ola Nordmann"
         },
-        "paaloeptBeloep": "7500"
+        "paaloeptBeloep": 7500
       },
       {
         "oppgaveeier": {
           "foedselsnummer": "12345678910",
           "navn": "Kari Normann"
         },
-        "paaloeptBeloep": "2500"
+        "paaloeptBeloep": 2500
       }
     ],
     "oppgaveoppsummering": {
-      "antallOppgaver": "2",
-      "sumBeloep": "10000"
+      "antallOppgaver": 2,
+      "sumBeloep": 10000
     }
   }
 }
@@ -138,7 +139,7 @@ https://innrapporteringpassogstell.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
@@ -157,7 +158,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | feil i forbindelse med autentisesring        |
+| GLD_004  | 401             | Feil i forbindelse med autentisering         |
 | GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
@@ -195,24 +196,6 @@ feltene.
 
 ![passogstell](../../static/download/Informasjonsmodell_Passogstell.png)
 
-| Eier                     | Element                         | Dokumentasjon                                                                                                                                   |
-|--------------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Leveranse                | inntektsaar                     | Inntektsåret leveransen gjelder                                                                                                                 |
-| Leveranse                | kildesystem                     | System brukt for å levere oppgaven                                                                                                              |
-| Leveranse                | leveransetype                   | Type av leveranse som angir om leveransen inneholder ordinære oppgaver eller om oppgavegiver angir at det ikke er noen oppgaver å innrapportere |
-| Leveranse                | oppgave                         | Oppgave som leveres                                                                                                                             |
-| Leveranse                | oppgavegiver                    | Tredjepart som rapporterer opplysning til Skatteetaten                                                                                          |
-| Leveranse                | oppgavegiversLeveranseReferanse | Frivillig referanse på innsendingen til bruk mot egne interne systemer og evt. support mot skattetaten                                          |
-| Leveranse                | oppgaveoppsummering             | Oppsummering med totalsummer for innleverte oppgaver                                                                                            |
-| Melding                  | leveranse                       | Selve leveransen. Merk at det kun er tillatt med en leveranse pr Melding                                                                        |
-| OppgaveBarnepass         | paaloeptBeloep                  | Sum beløp som er fakturert enforesatt/forsørger fra barnepassvirksomhet(er) iløpet av inntektsåret                                              |
-| OppgaveBarnepass         | oppgaveeier                     | Forsørger som har betalt for pass og stell av barn                                                                                              |
-| Oppgaveeier              | fødselsnummer                   | Oppgaveeiers (forsørgers) fødselsnummer eller d-nummer.                                                                                         |
-| Oppgaveeier              | navn                            | Navn på oppgaveeier                                                                                                                             |
-| Oppgavegiver             | kontaktinformasjon              | Kontaktinformasjon for oppgavegiver                                                                                                             |
-| Oppgavegiver             | organisasjonsnummer             | Organisasjonsnummer på oppgavegiver                                                                                                             |
-| Oppgaveoppsummering      | antallOppgaver                  | Totalt antall oppgaver i leveransens oppgaver                                                                                                   |
-| Oppgaveoppsummering      | sumBeloep                       | Sum av alle påløpte beløp i oppgavene til en leveranse                                                                                          |
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">

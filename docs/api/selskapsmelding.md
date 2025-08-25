@@ -5,7 +5,7 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, selskapsmelding ]
-last_updated: May 29, 2024
+last_updated: Apr 3, 2025
 hide_table_of_contents: true
 ---
 
@@ -51,7 +51,7 @@ For å følge med på endringer tilbyr vi
 en [støttetjeneste for hendelsesliste](./hendelser.md): `Selskapsmelding hendelser API`
 
 ## Datakatalog
-[Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/66602478f92ddf67bf17460d) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/8b267168-b593-3a8f-98af-1aab1d11192d) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
@@ -60,65 +60,80 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Selskapsmelding hendel
 
 ```json
 {
-  "norskIdentifikator": "313696146",
-  "inntektsaar": "2023",
+  "norskIdentifikator": "314283953",
+  "inntektsaar": "2024",
   "inntektOgUnderskudd": {
-    "samletInntekt": 154857,
+    "samletInntekt": 28120,
     "inntektOgInntektsfradrag": {
-      "naeringsinntekt": 154857
+      "naeringsinntekt": 28120
     }
-  },
-  "spesifikasjonAvForholdRelevanteForBeskatningAvDeltakere": {
-    "aksjeIAksjonaerregisteret": [
-      {
-        "id": "9b403511-d3d7-458d-96f2-4fb0fa6f7081",
-        "selskapetsNavn": "Denne gaten 755 AS",
-        "selskapetsOrganisasjonsnummer": "312445484",
-        "landkode": "NO",
-        "aksjeklasse": "ordinaer",
-        "isinnummer": "NO5553437509",
-        "antallAksjer": 212
-      }
-    ]
   },
   "eierforhold": {
     "deltaker": [
       {
-        "deltakerensOrganisasjonsnummer": "310044237",
-        "id": "48bacc24-bad0-4a97-9ecf-c3444ed2cf6e",
-        "deltakerensNavn": "UVANLIG TROFAST TIGER AS",
-        "selskapsandelIProsent": 23.83,
+        "deltakerensOrganisasjonsnummer": "313218503",
+        "id": "c69e624b-daa8-4767-aef9-83a12ea5498d",
+        "deltakerensNavn": "MUSIKALSK STANDHAFTIG TIGER AS",
+        "selskapsandelIProsent": 37.65,
         "grunnlagForDeltakersAndelAvInntekt": {
-          "andelAvSamletInntekt": 36902
+          "andelAvSamletInntekt": 10587
         },
         "deltakersAndelAvInntekt": {
-          "alminneligInntekt": 36902,
+          "alminneligInntekt": 10587,
           "utdelingMv": {
-            "uegentligInnskudd": 8118,
-            "skattPaaDeltakersAndelAvSelskapetsOverskudd": 8118
+            "uegentligInnskudd": 2329,
+            "skattPaaDeltakersAndelAvSelskapetsOverskudd": 2329
           }
-        }
+        },
+        "spesifikasjonAvSkattemessigInngangsverdiOgEgenkapitalkonto": {
+          "uegentligInnskudd": {
+            "inngangsverdi": 2329,
+            "innbetaltEgenkapital": 2329,
+            "opptjentEgenkapital": 2329
+          },
+          "utgaaendeVerdi": {
+            "inngangsverdi": 2329,
+            "innbetaltEgenkapital": 2329,
+            "opptjentEgenkapital": -2329
+          },
+          "samletEgenkapitalUtgaaendeVerdi": 0
+        },
+        "erOmfattetAvFinansskatt": false
       },
       {
-        "deltakerensOrganisasjonsnummer": "310034479",
-        "id": "a3924b5a-0fe8-4bc1-a316-d5ecf9448c98",
-        "deltakerensNavn": "VOKSENDE AKTIV TIGER AS",
-        "selskapsandelIProsent": 76.17,
+        "deltakerensOrganisasjonsnummer": "313951464",
+        "id": "d0e2b95c-6b2a-482d-a3f9-24d9e00faedd",
+        "deltakerensNavn": "UMAKE KONKRET TIGER AS",
+        "selskapsandelIProsent": 62.35,
         "grunnlagForDeltakersAndelAvInntekt": {
-          "andelAvSamletInntekt": 117955
+          "andelAvSamletInntekt": 17533
         },
         "deltakersAndelAvInntekt": {
-          "alminneligInntekt": 117955,
+          "alminneligInntekt": 17533,
           "utdelingMv": {
-            "uegentligInnskudd": 25950,
-            "skattPaaDeltakersAndelAvSelskapetsOverskudd": 25950
+            "uegentligInnskudd": 3857,
+            "skattPaaDeltakersAndelAvSelskapetsOverskudd": 3857
           }
-        }
+        },
+        "spesifikasjonAvSkattemessigInngangsverdiOgEgenkapitalkonto": {
+          "uegentligInnskudd": {
+            "inngangsverdi": 3857,
+            "innbetaltEgenkapital": 3857,
+            "opptjentEgenkapital": 3857
+          },
+          "utgaaendeVerdi": {
+            "inngangsverdi": 3857,
+            "innbetaltEgenkapital": 3857,
+            "opptjentEgenkapital": -3857
+          },
+          "samletEgenkapitalUtgaaendeVerdi": 0
+        },
+        "erOmfattetAvFinansskatt": false
       }
     ]
   },
-  "ajourholdstidspunkt": "2024-02-20T08:42:48.479Z",
-  "opprettetDato": "2024-02-20T09:42:37.740023476+01:00"
+  "opprettetDato": "2025-03-18T09:08:08.156231254+01:00",
+  "ajourholdstidspunkt": "2025-03-18T08:08:38.113Z"
 }
 
 ```

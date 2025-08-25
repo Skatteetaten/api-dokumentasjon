@@ -1,5 +1,5 @@
 ---
-title: Innrapportering Skattefrie utbetalinger fra offentlige myndigheter API
+title: Innrapportering skattefrie utbetalinger fra offentlige myndigheter API
 slug: /api/innrapportering-skattefrieutbetalinger
 folder: api
 sidebar: mydoc_sidebar
@@ -10,14 +10,13 @@ last_updated: Mar 03, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av Skattefrie utbetalinger fra offentlige myndigheter (RF-1319)</Summary>
+<Summary>Tjeneste for innrapportering av skattefrie utbetalinger fra offentlige myndigheter (RF-1319)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
@@ -37,18 +36,20 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
 Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
-For å kunne benytte dette api-et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
-```JSON
-"Rights": [
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
     {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-skattefrie-utbetalinger",
-          "id": "urn:altinn:resource"
-        }
-      ]
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
     }
-  ]
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -61,7 +62,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 API-et for innrapportering av skattefrie utbetalinger fra offentlige myndigheter har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for skattefrie utbetalinger. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en transmission i dialogporten
+* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-skattefrieutbetalinger?tab=Feilkoder) for
 relaterte feilmeldinger.
@@ -94,7 +95,7 @@ https://innrapporteringskattefrieutbetalinger.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på innsending
 
-```
+```json
 {
   "leveranse": {
     "kildesystem": "kildesystem",
@@ -107,7 +108,7 @@ https://innrapporteringskattefrieutbetalinger.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": "2024",
+    "inntektsaar": 2024,
     "utbetalingsmaaned": 4,
     "oppgavegiversLeveranseReferanse": "Unik ekstern referanse ID",
     "leveransetype": "ordinaer",
@@ -138,7 +139,7 @@ https://innrapporteringskattefrieutbetalinger.api.{env}.no/v1/{inntektsaar}
 
 #### Eksempel på respons
 
-```
+```json
 {
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
@@ -228,7 +229,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om Skattefrie utbetalinger fra offentlige myndigheter API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om skattefrie utbetalinger fra offentlige myndigheter API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
   
 </TabItem>

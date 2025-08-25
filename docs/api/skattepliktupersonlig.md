@@ -52,19 +52,24 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 ## JSON
 ```json
 {
-  "organisasjonsnummer": "311165933",
-  "inntektsaar": 2023,
+  "organisasjonsnummer": "310977101",
+  "inntektsaar": 2024,
   "harSkattepliktTilNorge": true,
   "harSkattepliktTilSvalbard": false,
-  "erFritattForFormuesskatt": false,
+  "erFritattForFormuesskatt": true,
   "erOmfattetAvSaerreglerForKraftforetak": false,
   "erOmfattetAvPetroleumsskatteloven": false,
   "erOmfattetAvRederiskatteordningen": false,
   "erOmfattetAvFinansskattPaaLoennOgOverskudd": false,
+  "erUnntattSkattepliktEtterSkatteavtale": false,
+  "harLeveringsfritak": false,
+  "skalViseAksjeopplysningerPaaSkatteoppgjoer": true,
   "skatteregnskapskommune": [
-    "4215"
+    "1149"
   ],
-  "ajourholdstidspunkt": "2024-04-10T10:05:23Z"
+  "ajourholdstidspunkt": "2025-03-20T13:13:23.121Z",
+  "erOmfattetAvSaerreglerForHavbruksvirksomhet": false,
+  "erOmfattetAvSaerreglerForLandbasertVindkraft": false
 }
 ```
 
@@ -103,10 +108,13 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og tes
 Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
 
 | Organisasjonsnummer | Inntektsår |
-|---|---|
-| 210962492  | 2021 |
-| 310962074  | 2021 |
-| 312282933  | 2021 |
+|---|------------|
+| 210962492  | 2021       |
+| 310962074  | 2021       |
+| 312282933  | 2021       |
+| 310387525  | 2023       |
+| 313129624  | 2024       |
+| 310030252  | 2024       |
   
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
 

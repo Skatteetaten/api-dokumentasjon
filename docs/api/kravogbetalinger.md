@@ -49,16 +49,17 @@ API-et har 4 endepunkter:
 * __Utbetalinger__: Hent alle utbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle
   utbetalinger innen et gitt tidsrom på maks ett år.
 
-Se også [eksempler](kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
 
 ## Rettighetspakker
 
 For denne tjenesten finns følgende rettighetspakker
 
 | Navn på rettighetspakke | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
-|-------------------------|----------------------------|--------------------------------|
-| finans                  | Banker og finansforetak som skal vise krav og betalinger i nettbank | Finans-rettighetspakken krever bruk av Altinn-samtykke, og den gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem         | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye [Systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter. Det kommer mer informasjon om Systembruker etter hvert. I pilotfasen vil systemleverandører kun få tilgang til egne data. |
+|---|---|---|
+| finans | Banker og finansforetak som skal vise krav og betalinger i nettbank | Finans-rettighetspakken krever bruk av Altinn-samtykke, og den gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
+| regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye [Systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter. Det kommer mer informasjon om Systembruker etter hvert. I pilotfasen vil systemleverandører kun få tilgang til egne data. |
+| lovfestetrevisjon | Hjemmelsbasert deling av data med revisorer| |
 
 ## Samtykke
 
@@ -70,7 +71,7 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse](https://dataservice-catalog.fellesdatakatalog.digdir.no/974761076/data-services/662907037321ef0080ea8cbe) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/data-services/67dc3f08-a152-3f0e-a533-b092c026f23b) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
@@ -295,22 +296,6 @@ https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
         }
       },
       "innbetalingstype": "bankoverføring"
-    }
-  ],
-  "totalOversikt": {
-    "sumStipulerteRenter": 400.0,
-    "sumForfalteKrav": 20000.0,
-    "sumIkkeForfalteKrav": 0.0,
-    "sumUplasserteInnbetalinger": 0.0,
-    "saldo": 20400.0
-  },
-  "oversiktPerKravgruppe": [
-    {
-      "kravgruppe": "Skatt",
-      "sumStipulerteRenter": 400.0,
-      "sumForfalteKrav": 20000.0,
-      "sumIkkeForfalteKrav": 0.0,
-      "saldo": 20400.0
     }
   ]
 }

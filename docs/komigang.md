@@ -19,6 +19,7 @@ Informasjon om tjenester og løsninger som er under utvikling eller pilot ligger
 
 På dette området kan du finne informasjon som gjelder på tvers av Skatteetatens API-er, f.eks. dokumentasjon om:
 * [Sikkerhet inkl. Maskinporten](./om/sikkerhet.md)
+* [Systembruker](./om/systembruker.md)
 * [Delegering](./om/delegering.md)
 * [Rettighetspakker](./om/rettighetspakker.md) 
 
@@ -26,7 +27,7 @@ På dette området kan du finne informasjon som gjelder på tvers av Skatteetate
 
 ### Tilgang til API-er for deling 
 
-For å få tilgang til API-ene må man ha et norsk organisasjonsnummer og virksomheten må søke Skatteetaten om tilgang. Før du søker om tilgang til Skatteetatens delingstjenester, er det viktig å avklare om din virksomhet har behandlingsgrunnlag for de aktuelle opplysningene. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/tilgang/).
+For å få tilgang til API-ene må man ha et norsk organisasjonsnummer og Skatteetaten må gi virksomheten tilgang til API-et. Før du søker om tilgang til Skatteetatens delingstjenester, er det viktig å avklare om din virksomhet har behandlingsgrunnlag for de aktuelle opplysningene. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/tilgang/).
 
 Hvis du allerede har fått innvilget søknad om tilgang, finner du teknisk informasjon om påkobling på disse sidene. Sentrale temaer er omhandlet under [Sikkerhet](./om/sikkerhet.md).
 
