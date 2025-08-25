@@ -100,7 +100,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 #### Hovedskjema url:
 ```
-https://api-test.sits.no/api/aksjonaerregister/1086/v1/2023/1086H
+https://api-test.sits.no/api/aksjonaerregister/v1/2023/1086H
 ```
 
 #### Hovedskjema XML
@@ -204,7 +204,7 @@ https://api-test.sits.no/api/aksjonaerregister/1086/v1/2023/1086H
 
 #### Underskjema url
 ```
-https://api-test.sits.no/api/aksjonaerregister/1086/v1/2023/{{hovedskjemaid}}/1086U
+https://api-test.sits.no/api/aksjonaerregister/v1/2023/{{hovedskjemaid}}/1086U
 ```
 
 #### Underskjema XML
@@ -277,7 +277,7 @@ Endepunktet gir ingen data tilbake ved vellykket kall. Kun 200 OK som statuskode
 
 #### Bekreft url
 ```
-https://api-test.sits.no/api/aksjonaerregister/1086/v1/2023/{{hovedskjemaid}}/bekreft?antall_underskjema={{antall-innsendte-underskjema}}
+https://api-test.sits.no/api/aksjonaerregister/v1/2023/{{hovedskjemaid}}/bekreft?antall_underskjema={{antall-innsendte-underskjema}}
 ```
 
 #### Eksempel på respons fra bekreft endepunkt
