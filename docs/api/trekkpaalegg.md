@@ -197,6 +197,668 @@ Dette API-et finnes foreløpig ikke i Felles datakatalog.
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
+## Eksempler på innhold ved kall på tjenesten
+Vær oppmerksom på at det til enhver tid vil være siste tilgjengelige versjon av et trekkpålegg som returneres ved kall på tjenesten.
+
+Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og en passende skyldners fødselsnummer i feltet `skyldner`. 
+
+### Nyopprettet trekkpålegg på ny skyldner - prosenttrekk
+* Prosenttrekk, 17 % av inntekten. Trekket skal løpe på ubestemt tid.
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10001",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-09T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/1",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 38,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-10",
+      "trekkprosent": {
+        "trekkprosent": 17.0
+      }
+    }
+  ]
+}
+```
+
+### Nyopprettet trekkpålegg på ny skyldner - beløpstrekk
+* Beløpstrekk, 5000 kr i måneden. Trekket skal løpe på ubestemt tid.
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10002",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-09T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/2",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 51,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-10",
+      "trekkbeloep": {
+        "trekkbeloep": 5000
+      }
+    }
+  ]
+}
+```
+
+### Oppdatert trekk
+* Prosenttrekk, 23 % av inntekten, opprettes og løper urørt i 3 md. I mellomtiden registrerer vi at skyldner har fått et barn, og livsoppholdsberegningen gjennomgås på nytt.
+* Trekket oppdateres, det skal nå trekkes 17 % av inntekten.
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10003",
+  "skyldner": "10108412345",
+  "opprettet": "2025-05-05T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/3",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 80,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-05-10",
+      "trekkprosent": {
+        "trekkprosent": 23.0
+      }
+    }
+  ]
+}
+```
+
+#### versjon 2
+
+```json
+{
+  "trekkid": "10003",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-08T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/3",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 2,
+  "sekvensnummer": 101,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-05-10",
+      "sluttdato": "2025-08-09",
+      "trekkprosent": {
+        "trekkprosent": 23.0
+      }
+    },
+    {
+      "startdato": "2025-08-10",
+      "trekkprosent": {
+        "trekkprosent": 17.0
+      }
+    }
+  ]
+}
+```
+### Avslutte trekk etter tre måneder.
+* Prosenttrekk 17 % én periode. Avsluttes.
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10004",
+  "skyldner": "10108412345",
+  "opprettet": "2025-06-01T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/4",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 142,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-06-10",
+      "trekkprosent": {
+        "trekkprosent": 17.0
+      }
+    }
+  ]
+}
+```
+
+#### versjon 2
+
+```json
+{
+  "trekkid": "10004",
+  "skyldner": "10108412345",
+  "opprettet": "2025-07-05T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/4",
+  "trekkstatus": "avsluttet",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 2,
+  "sekvensnummer": 159,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-06-10",
+      "sluttdato": "2025-09-12",
+      "trekkprosent": {
+        "trekkprosent": 17.0
+      }
+    }
+  ]
+}
+```
+
+### Avslutte trekk, men siste trekk blir annerledes pga restbeløp.
+* Prosenttrekk, 23 % av inntekten. Løper urørt i to måneder.
+* Endring pga siste betaling, beløpstrekk 4400 kr med sluttdato.
+* Trekket avsluttes. 
+
+#### versjon 1
+```json
+{
+  "trekkid": "10005",
+  "skyldner": "10108412345",
+  "opprettet": "2025-06-05T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/5",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 205,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-06-10",
+      "trekkprosent": {
+        "trekkprosent": 23.0
+      }
+    }
+  ]
+}
+```
+
+#### versjon 2
+```json
+{
+  "trekkid": "10005",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-09T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/5",
+  "trekkstatus": "avsluttet",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 2,
+  "sekvensnummer": 228,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-06-10",
+      "sluttdato": "2025-08-09",
+      "trekkprosent": {
+        "trekkprosent": 23.0
+      }
+    },
+    {
+      "startdato": "2025-08-10",
+      "sluttdato": "2025-08-31",
+      "trekkbeloep": {
+        "trekkbeloep": 4400
+      }
+    }
+  ]
+}
+```
+### Beløpstrekk med mange endringer pga skyldner klager
+* Oppstart trekk 28.08.2025: 8000
+ - Skyldner reagerer etter første trekk er gjennomført, og melder inn til oss at hen har utgifter til x og x. Saksbehandler godkjenner noen utgifter, men ber om mer dokumentasjon på de andre påståtte utgiftene.
+* Endring trekk 15.09.2025: 6000
+ - Skyldner dokumenterer påståtte utgifter.
+* Endring trekk 14.10.2025: 5000
+* Ingen endring trekk - åpen sluttdato
+* Ingen endring trekk - åpen sluttdato
+* Skyldner jobber masse overtid i desember og januar, Skatteetaten registrerer at det er skjedd en inntektsøkning.
+* Endring trekk 10.02.2026: 7000
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10006",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-26T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/6",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 271,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "trekkbeloep": {
+        "trekkbeloep": 8000
+      }
+    }
+  ]
+}
+```
+
+#### versjon 2
+
+```json
+{
+  "trekkid": "10006",
+  "skyldner": "10108412345",
+  "opprettet": "2025-09-12T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/6",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 2,
+  "sekvensnummer": 290,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "sluttdato": "2025-09-14",
+      "trekkbeloep": {
+        "trekkbeloep": 8000
+      }
+    },
+    {
+      "startdato": "2025-09-15",
+      "trekkbeloep": {
+        "trekkbeloep": 6000
+      }
+    }
+  ]
+}
+```
+
+#### versjon 3
+
+```json
+{
+  "trekkid": "10006",
+  "skyldner": "10108412345",
+  "opprettet": "2025-10-12T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/6",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 3,
+  "sekvensnummer": 301,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "sluttdato": "2025-09-14",
+      "trekkbeloep": {
+        "trekkbeloep": 8000
+      }
+    },
+    {
+      "startdato": "2025-09-15",
+      "sluttdato": "2025-10-13",
+      "trekkbeloep": {
+        "trekkbeloep": 6000
+      }
+    },
+    {
+      "startdato": "2025-10-14",
+      "trekkbeloep": {
+        "trekkbeloep": 5000
+      }
+    }
+  ]
+}
+```
+
+#### versjon 4
+
+```json
+{
+  "trekkid": "10006",
+  "skyldner": "10108412345",
+  "opprettet": "2026-02-09T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/6",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 4,
+  "sekvensnummer": 350,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "sluttdato": "2025-09-14",
+      "trekkbeloep": {
+        "trekkbeloep": 8000
+      }
+    },
+    {
+      "startdato": "2025-09-15",
+      "sluttdato": "2025-10-13",
+      "trekkbeloep": {
+        "trekkbeloep": 6000
+      }
+    },
+    {
+      "startdato": "2025-10-14",
+      "sluttdato": "2026-02-09",
+      "trekkbeloep": {
+        "trekkbeloep": 5000
+      }
+    },
+    {
+      "startdato": "2026-02-10",
+      "trekkbeloep": {
+        "trekkbeloep": 7000
+      }
+    }
+  ]
+}
+```
+### Midlertidig endring i trekk (pga. uforutsette utgifter hos skyldner)
+* Skyldner har et trekk som løper på 17 %.
+* På grunn av uforutsette utgifter får skyldner innvilget stans i trekk i to måneder.
+* Trekket fortsetter å løpe på 17 % etter stans-perioden.
+
+Sagt på en annen måte
+
+* Skyldner har løpende trekk 17 %
+* Endring i trekket 0 % (men ikke stans/avsluttet)
+* Endring i trekket 17 %
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10007",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-26T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/7",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 351,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "trekkprosent": {
+        "trekkprosent": 17.0
+      }
+    }
+  ]
+}
+```
+
+#### versjon 2
+
+```json
+{
+  "trekkid": "10007",
+  "skyldner": "10108412345",
+  "opprettet": "2025-10-09T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/7",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 2,
+  "sekvensnummer": 380,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "sluttdato": "2025-10-10",
+      "trekkprosent": {
+        "trekkprosent": 17.0
+      }
+    },
+    {
+      "startdato": "2025-10-11",
+      "sluttdato": "2025-12-10",
+      "trekkprosent": {
+        "trekkprosent": 0.0
+      }
+    },
+    {
+      "startdato": "2025-12-11",
+      "trekkprosent": {
+        "trekkprosent": 17.0
+      }
+    }
+  ]
+}
+```
+
+### Trekk mot skyldner avsluttes. Samme skyldner får så et nytt trekk hos samme arbeidsgiver.
+* Skyldner får et prosenttrekk i lønn på 32 %.
+* Skyldner oppdager at han har fått trekk når han får lønn, typisk den 15. i en måned, og gjør umiddelbart opp for seg.
+* Trekket avsluttes den 17. i samme md.
+* Samme skyldner går på samme blemme igjen, og det opprettes et nytt trekk på samme skyldner
+* Nytt trekk med prosenttrekk 33 %.
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10008",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-26T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/8",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 391,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "trekkprosent": {
+        "trekkprosent": 32.0
+      }
+    }
+  ]
+}
+```
+
+#### versjon 2
+
+```json
+{
+  "trekkid": "10008",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-16T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/8",
+  "trekkstatus": "avsluttet",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 2,
+  "sekvensnummer": 410,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-08-28",
+      "sluttdato": "2025-09-17",
+      "trekkprosent": {
+        "trekkprosent": 32.0
+      }
+    }
+  ]
+}
+```
+
+#### versjon 3
+
+```json
+{
+  "trekkid": "10009",
+  "skyldner": "10108412345",
+  "opprettet": "2025-09-30T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/9",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 430,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-10-01",
+      "trekkprosent": {
+        "trekkprosent": 33.0
+      }
+    }
+  ]
+}
+```
+
+### Trekket endres flere ganger innenfor en 10-dagersperiode, så det potensielt kan tulle det til for dem som har flere lønnsutbetalinger hver måned
+* 1.10. skyldner får beløpstrekk 3000 kr.
+* 7.10. skyldner får endring i beløpstrekk, 2000 kr - ingen sluttdato.
+
+#### versjon 1
+
+```json
+{
+  "trekkid": "10010",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-26T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/10",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 1,
+  "sekvensnummer": 551,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-10-01",
+      "trekkbeloep": {
+        "trekkbeloep": 3000
+      }
+    }
+  ]
+}
+```
+
+#### versjon 2
+
+```json
+{
+  "trekkid": "10010",
+  "skyldner": "10108412345",
+  "opprettet": "2025-10-05T15:00:00.00Z",
+  "saksnummer": "TREKK/2025/10",
+  "trekkstatus": "aktiv",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 2,
+  "sekvensnummer": 555,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-10-01",
+      "sluttdato": "2025-10-06",
+      "trekkbeloep": {
+        "trekkbeloep": 3000
+      }
+    },
+    {
+      "startdato": "2025-10-07",
+      "trekkbeloep": {
+        "trekkbeloep": 2000
+      }
+    }
+  ]
+}
+```
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
