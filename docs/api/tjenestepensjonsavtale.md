@@ -49,7 +49,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 ### Curl
 
 ```bash
-$ curl -v -H "Authorization: Bearer {maskinporten_token}" "https://api-test.sits.no/api/tjenestepensjonsavtale/v1/{rettighetspakke}/avtaleforhold/gyldighet?opplysningspliktig=987654321&pensjonsinnretning=123456789&fraOgMed=2020-01&tilOgMed=2020-06"
+$ curl -v -H "Authorization: Bearer {maskinporten_token}" "https://tjenestepensjonsavtale.api.skatteetaten-test.no/v1/{rettighetspakke}/avtaleforhold/gyldighet?opplysningspliktig=987654321&pensjonsinnretning=123456789&fraOgMed=2020-01&tilOgMed=2020-06"
 ```
 
 ### JSON
@@ -69,7 +69,7 @@ $ curl -v -H "Authorization: Bearer {maskinporten_token}" "https://api-test.sits
 For svar på XML format, sett header `Accept` til `application/xml`:
 
 ```bash
-$ curl -v -H "Accept: application/xml" -H "Authorization: Bearer {maskinporten_token}" "https://api-test.sits.no/api/tjenestepensjonsavtale/v1/{rettighetspakke}/avtaleforhold/gyldighet?opplysningspliktig=987654321&pensjonsinnretning=123456789&fraOgMed=2020-01&tilOgMed=2020-06"
+$ curl -v -H "Accept: application/xml" -H "Authorization: Bearer {maskinporten_token}" "https://tjenestepensjonsavtale.api.skatteetaten-test.no/v1/{rettighetspakke}/avtaleforhold/gyldighet?opplysningspliktig=987654321&pensjonsinnretning=123456789&fraOgMed=2020-01&tilOgMed=2020-06"
 ```
  
 [tjenestepensjonsavtaleAvtaleforholdGyldighet.xsd](../../static/download/tjenestepensjonsavtaleAvtaleforholdGyldighetV1.xsd)
@@ -82,7 +82,7 @@ $ curl -v -H "Accept: application/xml" -H "Authorization: Bearer {maskinporten_t
 ### Curl
 
 ```bash
-$ curl -v -H "Authorization: Bearer {maskinporten_token}" "https://api-test.sits.no/api/tjenestepensjonsavtale/v1/{rettighetspakke}/avtaleforhold/virkningsperiode/gyldighet?opplysningspliktig=987654321&pensjonsinnretning=123456789&fraOgMed=2020-01&tilOgMed=2020-06"
+$ curl -v -H "Authorization: Bearer {maskinporten_token}" "https://tjenestepensjonsavtale.api.skatteetaten-test.no/v1/{rettighetspakke}/avtaleforhold/virkningsperiode/gyldighet?opplysningspliktig=987654321&pensjonsinnretning=123456789&fraOgMed=2020-01&tilOgMed=2020-06"
 ```
 
 #### Eksempel på respons
@@ -104,7 +104,7 @@ $ curl -v -H "Authorization: Bearer {maskinporten_token}" "https://api-test.sits
 ### Curl
 
 ```bash
-$ curl -v -H "Content-Type: application/json" -H "Authorization: Bearer {maskinporten_token}" -X POST -d '{"avtalereferanse" : "referanse til avtale","fraOgMed" : "2020-01","opplysningspliktig" : {"norskIdentifikator" : "999999999"}}' "https://api-test.sits.no/api/tjenestepensjonsavtale/v1/{rettighetspakke}/avtaleforhold"
+$ curl -v -H "Content-Type: application/json" -H "Authorization: Bearer {maskinporten_token}" -X POST -d '{"avtalereferanse" : "referanse til avtale","fraOgMed" : "2020-01","opplysningspliktig" : {"norskIdentifikator" : "999999999"}}' "https://tjenestepensjonsavtale.api.skatteetaten-test.no/v1/{rettighetspakke}/avtaleforhold"
 ```
 ### Dokumentformat
 
@@ -117,7 +117,7 @@ $ curl -v -H "Content-Type: application/json" -H "Authorization: Bearer {maskinp
 ### Curl
   
 ```bash
-$ curl -v -H "Content-Type: application/json" -H "Authorization: Bearer {maskinporten_token}" -X DELETE -d '{"avtalereferanse" : "referanse til avtale","opplysningspliktig" : {"norskIdentifikator" : "999999999"}}' "https://api-test.sits.no/api/tjenestepensjonsavtale/v1/{rettighetspakke}/avtaleforhold"
+$ curl -v -H "Content-Type: application/json" -H "Authorization: Bearer {maskinporten_token}" -X DELETE -d '{"avtalereferanse" : "referanse til avtale","opplysningspliktig" : {"norskIdentifikator" : "999999999"}}' "https://tjenestepensjonsavtale.api.skatteetaten-test.no/v1/{rettighetspakke}/avtaleforhold"
 ```
 ### Dokumentformat
 
