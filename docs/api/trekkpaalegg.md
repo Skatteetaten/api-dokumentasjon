@@ -456,7 +456,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   ]
 }
 ```
-### Beløpstrekk med mange endringer pga skyldner klager
+### Beløpstrekk med mange endringer
 * Oppstart trekk 28.08.2025: 8000
 * Endring trekk 15.09.2025: 6000
 * Endring trekk 14.10.2025: 5000
@@ -789,7 +789,7 @@ Sagt på en annen måte
 }
 ```
 
-### Trekket endres flere ganger innenfor en 10-dagersperiode, så det potensielt kan tulle det til for dem som har flere lønnsutbetalinger hver måned
+### Trekket endres flere ganger innenfor en 10-dagersperiode
 * 1.10. skyldner får beløpstrekk 3000 kr.
 * 7.10. skyldner får endring i beløpstrekk, 2000 kr - ingen sluttdato.
 
