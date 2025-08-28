@@ -16,7 +16,7 @@ hide_table_of_contents: true
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 Målgruppen for siden er utviklere og IT-arkitekter hos systemleverandører som leverer lønns- og personalsystemer (eller
-sluttbrukersystemer) til arbeidsgivere. Slike systemer kalles i det videre sluttbrukersystemer og forkortes SBS. 
+sluttbrukersystemer) til arbeidsgivere. Slike systemer kalles i det videre sluttbrukersystemer og forkortes SBS.
 Det skal etableres et nytt grensesnitt for å formidle trekkpålegg fra Skatteetaten til arbeidsgivere med ansatte som
 skal ha utleggstrekk i lønn.
 
@@ -93,7 +93,7 @@ maksAntall	String	Angir maks antall trekkpålegg som skal returneres. 1 eller st
 Liste av Trekkpaalegg https://skatteetaten.github.io/beta-apier/trekkpaalegg/feltbeskrivelser/Models/Trekkpaalegg
 
 ### Autorisasjon
-Se Tilgang https://skatteetaten.github.io/beta-apier/trekkpaalegg/tilgang 
+Se Tilgang https://skatteetaten.github.io/beta-apier/trekkpaalegg/tilgang
 
 ### HTTP request headere
 Content-Type: Ikke definert
@@ -200,7 +200,7 @@ Dette API-et finnes foreløpig ikke i Felles datakatalog.
 ## Eksempler på innhold ved kall på tjenesten
 Vær oppmerksom på at det til enhver tid vil være siste tilgjengelige versjon av et trekkpålegg som returneres ved kall på tjenesten.
 
-Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og en passende skyldners fødselsnummer i feltet `skyldner`. 
+Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og en passende skyldners fødselsnummer i feltet `skyldner`.
 
 ### Nyopprettet trekkpålegg på ny skyldner - prosenttrekk
 * Prosenttrekk, 17 % av inntekten. Trekket skal løpe på ubestemt tid.
@@ -265,7 +265,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 ```
 
 ### Oppdatert trekk
-* Prosenttrekk, 23 % av inntekten, opprettes og løper urørt i 3 md. I mellomtiden registrerer vi at skyldner har fått et barn, og livsoppholdsberegningen gjennomgås på nytt.
+* Prosenttrekk, 23 % av inntekten, opprettes og løper urørt i 3 md. Pga av endringer i livssituasjon gjøres endringer i trekket.
 * Trekket oppdateres, det skal nå trekkes 17 % av inntekten.
 
 #### versjon 1
@@ -393,7 +393,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 ### Avslutte trekk, men siste trekk blir annerledes pga restbeløp.
 * Prosenttrekk, 23 % av inntekten. Løper urørt i to måneder.
 * Endring pga siste betaling, beløpstrekk 4400 kr med sluttdato.
-* Trekket avsluttes. 
+* Trekket avsluttes.
 
 #### versjon 1
 ```json
@@ -458,13 +458,9 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 ```
 ### Beløpstrekk med mange endringer pga skyldner klager
 * Oppstart trekk 28.08.2025: 8000
- - Skyldner reagerer etter første trekk er gjennomført, og melder inn til oss at hen har utgifter til x og x. Saksbehandler godkjenner noen utgifter, men ber om mer dokumentasjon på de andre påståtte utgiftene.
 * Endring trekk 15.09.2025: 6000
- - Skyldner dokumenterer påståtte utgifter.
 * Endring trekk 14.10.2025: 5000
 * Ingen endring trekk - åpen sluttdato
-* Ingen endring trekk - åpen sluttdato
-* Skyldner jobber masse overtid i desember og januar, Skatteetaten registrerer at det er skjedd en inntektsøkning.
 * Endring trekk 10.02.2026: 7000
 
 #### versjon 1
@@ -704,8 +700,8 @@ Sagt på en annen måte
 ### Trekk mot skyldner avsluttes. Samme skyldner får så et nytt trekk hos samme arbeidsgiver.
 * Skyldner får et prosenttrekk i lønn på 32 %.
 * Skyldner oppdager at han har fått trekk når han får lønn, typisk den 15. i en måned, og gjør umiddelbart opp for seg.
-* Trekket avsluttes den 17. i samme md.
-* Samme skyldner går på samme blemme igjen, og det opprettes et nytt trekk på samme skyldner
+* Trekket avsluttes den 17. i samme måned.
+* Det opprettes et nytt trekk på samme skyldner.
 * Nytt trekk med prosenttrekk 33 %.
 
 #### versjon 1
@@ -934,63 +930,63 @@ Tilgang til scope i test bestilles ved å sende en mail med ditt organisasjonsnu
 
 ## Sjekkliste for lønns- og personalsystemleverandører
 
-Integrasjon med Skatteetatens API for trekkpålegg 
+Integrasjon med Skatteetatens API for trekkpålegg
 
-### 1. Forberedelser og avtaler 
+### 1. Forberedelser og avtaler
 
-  * Avklar roller og ansvar internt (teknisk kontakt, prosjektansvarlig, etc.)  
-  * Sett deg inn i gjeldende informasjon for digital innsending av utleggsbegjæring  
+* Avklar roller og ansvar internt (teknisk kontakt, prosjektansvarlig, etc.)
+* Sett deg inn i gjeldende informasjon for digital innsending av utleggsbegjæring
     * [Github](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering?tab=Om+tjenesten)
     * [Skatteettaten.no](https://www.skatteetaten.no/om-skatteetaten/fremtidens-innkreving/systemleverandorer/lonns--og-personalsystem/)
     * [Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app/1.4)
     * [Nettside for oppkobling](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
-### 2. Tilgang og autentisering 
+### 2. Tilgang og autentisering
 
-* Skaff virksomhetssertifikat (PKI) 6 
+* Skaff virksomhetssertifikat (PKI) 6
 * Registrer systemet i [Maskinporten](https://docs.digdir.no/docs/Maskinporten/maskinporten_overordnet)
 * [Be Skatteetaten om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d) til test-scope: ```skatteetaten:trekkpaalegg```. Oppgi virksomhetens organisasjonsnummer (ikke syntetisk).
 * Hent testdata fra [Syntetisk Norge](https://www.digdir.no/tenor/syntetisk-norge/3910) via [Tenor testdatasøk](https://tenor.test.norge.no/)
 * Velg syntetiske virksomheter og syntetiske personer og [be om at Skatteetaten oppretter trekkpålegg i test](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d)
-* Sett opp [Systembruker](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/#testplan-for-systemleverandorer) dersom dere utvikler systemer for andre  
-* Test uthenting av token med korrekt org.nr. via Maskinporten  
+* Sett opp [Systembruker](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/#testplan-for-systemleverandorer) dersom dere utvikler systemer for andre
+* Test uthenting av token med korrekt org.nr. via Maskinporten
 
-### 3. Testmiljø og testdata 
+### 3. Testmiljø og testdata
 
-* Sett opp testmiljø med **kun** syntetiske data  
-* Bruk kun syntetiske data i vedlegg og meldinger  
+* Sett opp testmiljø med **kun** syntetiske data
+* Bruk kun syntetiske data i vedlegg og meldinger
 * Koble til Skatteetatens testmiljø: ```https://api-test.sits.no```
 
-### 4. Implementasjon og integrasjon 
+### 4. Implementasjon og integrasjon
 
 * Følg [API-spesifikasjonen på SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/trekkpaalegg-app/1.4)
-* Sørg for robust feilhåndtering og validering  
-* Implementer evt. polling eller event-varsling via [Dialogporten](https://docs.digdir.no/docs/dialogporten/) (valgfritt)  
+* Sørg for robust feilhåndtering og validering
+* Implementer evt. polling eller event-varsling via [Dialogporten](https://docs.digdir.no/docs/dialogporten/) (valgfritt)
 
-### 5. Testing og verifisering 
+### 5. Testing og verifisering
 
-  * Gjennomfør testing inkludert: 
-    * Test full flyt: mottak, feilhåndtering og validering  
-    * Verifiser at dere mottar korrekt respons fra API  
-    * Loggfør testresultater og oppsummer testforløpet  
-    * Dokumenter integrasjon og test  
+* Gjennomfør testing inkludert:
+    * Test full flyt: mottak, feilhåndtering og validering
+    * Verifiser at dere mottar korrekt respons fra API
+    * Loggfør testresultater og oppsummer testforløpet
+    * Dokumenter integrasjon og test
 * Send oppsummering til Skatteetaten ved forespørsel. **Du får ikke tilgang til produksjonsmiljø før dette er gjennomført**
 
-### 6. Overgang til produksjon 
+### 6. Overgang til produksjon
 
-  * [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:trekkpåålegg```
-    * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur 
-  * Motta og verifiser tilgang til produksjons-scope i Maskinporten  
-  * Bytt miljø i integrasjonen til produksjon  
-  * Utfør teknisk verifikasjon i produksjon  
-  * Klargjør supportrutiner for håndtering av reelle saker  
+* [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:trekkpåålegg```
+    * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur
+* Motta og verifiser tilgang til produksjons-scope i Maskinporten
+* Bytt miljø i integrasjonen til produksjon
+* Utfør teknisk verifikasjon i produksjon
+* Klargjør supportrutiner for håndtering av reelle saker
 
-### 7. Oppfølging 
+### 7. Oppfølging
 
-  * Abonner på oppdateringer fra Skatteetaten (f.eks. endringer i API eller informasjonsmodell) og følg med på informasjonsmøter mm 
+* Abonner på oppdateringer fra Skatteetaten (f.eks. endringer i API eller informasjonsmodell) og følg med på informasjonsmøter mm
     * Følg med på [Skatteetatens Statusside](https://status.skatteetaten.no/)
     * [Kontaktskjema for datadeling](https://www.skatteetaten.no/deling/kontakt)
-  * Gi tilbakemeldinger eller innspill ved behov
+* Gi tilbakemeldinger eller innspill ved behov
 
 </TabItem>
 
