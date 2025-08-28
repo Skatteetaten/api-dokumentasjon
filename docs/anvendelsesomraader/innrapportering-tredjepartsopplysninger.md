@@ -58,6 +58,7 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                    | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                      | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                              | :white_check_mark:       | Planlagt i Q3 |
+| [Innrapportering fagforeningskontingent API](../api/innrapportering-fagforeningskontingent.md)                | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                      | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering individuelle_pensjonsordninger API](../api/innrapportering-individuellepensjonsordninger.md) | :white_check_mark:       | Planlagt i Q3 |
@@ -75,7 +76,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | Innrapportering fondskonto                                                                                    | Kommer i løpet av august | Planlagt i Q3 |
 | Innrapportering finansprodukter                                                                               | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering verdipapirfond historikk                                                                      | Planlagt i Q3            | Planlagt i Q3 |
-| Innrapportering fagforeningskontingent                                                                        | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering underholdsbidrag                                                                              | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering tilskudd, erstatning mv. innen primærnæringene                                                | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - frukt, bær, poteter og grønnsaker (jord- og hagebruk)              | Planlagt i Q3            | Planlagt i Q3 |
