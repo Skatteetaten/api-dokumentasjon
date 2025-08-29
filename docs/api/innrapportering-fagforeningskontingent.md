@@ -1,12 +1,12 @@
 ---
-title: Innrapportering livsforsikring API
-slug: /api/innrapportering-livsforsikring
+title: Innrapportering fagforeningskontingent API
+slug: /api/innrapportering-fagforeningskontingent
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, livsforsikring ]
+tags: [ API, fagforeningskontingent ]
 keywords: [ grunnlagsdata ]
-last_updated: Jun 25, 2025
+last_updated: Aug 29, 2025
 hide_table_of_contents: true
 ---
 
@@ -55,21 +55,21 @@ Dette API-et krever at systemet og dets systembrukere har tilgang til én eller 
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Open API-spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-livsforsikring-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-fagforeningskontingent-api/0.0.1).
 
-Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
+Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md).
 
-API-et for innrapportering av tredjepartsopplysninger om livsforsikring til offentlige myndigheter har to endepunkter:
+API-et for innrapportering av tredjepartsopplysninger fagforeningskontingent har to endepunkter:
 
-* __POST innsending__: Innsending av tredjepartsopplysninger om livsforsikring til offentlige myndigheter. Et kall mot
+* __POST innsending__: Innsending av tredjepartsopplysninger fagforeningskontingent. Et kall mot
   API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
-* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i Dialogporten
+* __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i Dialogporten.
 
 API-et validerer mottatte data mot JSON-schema beskrevet på SwaggerHub.
-Se [feilkoder](innrapportering-livsforsikring?tab=Feilkoder) for
+Se [feilkoder](innrapportering-fagforeningskontingent?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](innrapportering-livsforsikring?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-fagforeningskontingent?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
@@ -236,7 +236,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Har du spørsmål til Skatteetaten om Innrapportering Livsforsikring API, kan du sende oss
+Har du spørsmål til Skatteetaten om Innrapportering Fagforeningskontingent API, kan du sende oss
 e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra
 Altinn II til Altinn 3.
