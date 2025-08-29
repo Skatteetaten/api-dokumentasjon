@@ -121,7 +121,7 @@ If an enforcement request involves multiple debtors, all debtors must fall under
 To determine whether a debtor is subject to the new or old legal framework, collection systems can use the API service “Betjeningskartet”. This API allows a lookup of the applicable framework for one or more debtors based on their personal identificationnumber (fødselsnummer). The service should be called immediately before submitting a new enforcement request via API, ensuring that the request is directed to the correct system (ELSA or ELAN).
 API endpoints, parameters, and response definitions are documented in the [Open API specifikaction](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) on SwaggerHub.
 
-![Information model](../../../../../static/download/utleggsbegjaering/informasjonsmodell-utleggsbegjaering.png)
+![Betjeningskartet](../../../../../static/download/utleggsbegjaering/Betjeningskartet.png)
 
 If an enforcement request is submitted to the wrong system, it will be rejected with an error message. For ELAN, the response will be an HTTP 422 error with the message:SAKSOEKT_GAMMELT_REGELVERK
 
