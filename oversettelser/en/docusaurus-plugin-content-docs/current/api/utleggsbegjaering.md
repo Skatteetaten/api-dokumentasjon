@@ -115,7 +115,7 @@ Throughout the transition period, these parameters will be gradually adjusted so
 
 ## Transitional period for enforcement requests
 During the transition period digital enforcement requests (utleggsbegjæringer) for debtors covered by the new Collection Act must be submitted via the new system ELAN. Enforcement requests for debtors not covered by the new Act must continue to be submitted through the existing system ELSA.
-If an enforcement request involves multiple debtors, all debtors must fall under the same legal framework. If that is not the case, the request must be split according to which framework applies to each debtor.
+If an enforcement request involves multiple debtors, all debtors must fall under the same legal framework. If that is not the case, the request must be submitted on paper.
 
 ## The "Betjeningskartet" service
 To determine whether a debtor is subject to the new or old legal framework, collection systems can use the API service “Betjeningskartet”. This API allows a lookup of the applicable framework for one or more debtors based on their personal identificationnumber (fødselsnummer). The service should be called immediately before submitting a new enforcement request via API, ensuring that the request is directed to the correct system (ELSA or ELAN).
