@@ -133,8 +133,8 @@ https://innrapporteringoverskuddstroem.api.{env}.no/v1/{inntektsaar}
                     },
                     "maalepunktID": "000000000000000001"
                 },
-                "bruttoSkattepliktigBeloep": "1000.00",
-                "negativtEnergiledd": "0.00",
+                "bruttoBeloep": "1000.00",
+                "vederlagNegativtEnergiledd": "0.00",
                 "stroemperiodeFraOgMed": "2025-06-01",
                 "stroemperiodeTilOgMed": "2025-12-31"
             },
@@ -159,15 +159,15 @@ https://innrapporteringoverskuddstroem.api.{env}.no/v1/{inntektsaar}
                     },
                     "maalepunktID": "000000000000000002"
                 },
-                "bruttoSkattepliktigBeloep": "500.00",
-                "negativtEnergiledd": "0.00",
+                "bruttoBeloep": "500.00",
+                "vederlagNegativtEnergiledd": "0.00",
                 "stroemperiodeFraOgMed": "2025-09-01",
                 "stroemperiodeTilOgMed": "2025-12-31"
             }
         ],
         "oppgaveOppsummering": {
-            "sumBruttoSkattepliktigBeloep": "1500.00",
-            "sumNegativtEnergiledd": "0.00",
+            "sumBruttoBeloep": "1500.00",
+            "sumVederlagNegativtEnergiledd": "0.00",
             "antallOppgaver": 2
         }
     }
