@@ -20,7 +20,7 @@ Bruksmønster vil bli likt som tidligere, det vil si ett API for å bestille ska
 Etter hvert vil det også bli mulig å lytte på endringer i dialogporten og hente svaret med ID derfra.
 
 ### Framdriftsplan
-Planen var å ha API-ene klare i testmiljøet første halvår 2025. Utviklingen er dessverre noe forsinket, og planen er nå at API-ene skal være klare i testmiljøet i løpet av august.  
+Planen var å ha API-ene klare i testmiljøet første halvår 2025. Utviklingen er dessverre noe forsinket. Sidene oppdateres når dette er klart.  
 I produksjon er planen å ha en versjon klar i løpet av oktober.  
 Den gamle løsningen via RF-1211 vil kunne benyttes i parallell med de nye API-ene. Dette vil gjelde både i test og produksjon.  
 Det er foreløpig ikke satt noen dato for sanering av RF-1211.
