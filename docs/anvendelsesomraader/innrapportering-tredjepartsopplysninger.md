@@ -67,6 +67,7 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                            | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)               | :white_check_mark:       | Planlagt i Q3 |
+| [Innrapportering skattepliktig kundeutbytte API](../api/innrapportering-skattepliktigkundeutbytte.md)         | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                            | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering livsforsikringer API](../api/innrapportering-livsforsikring.md)                              | :white_check_mark:       | Planlagt i Q3 |
