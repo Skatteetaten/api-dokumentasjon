@@ -75,8 +75,8 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering skattepliktig kundeutbytte API](../api/innrapportering-skattepliktigkundeutbytte.md)         | :white_check_mark:          | Planlagt i Q3 |
 | [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                            | :white_check_mark:          | Planlagt i Q3 |
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                | :white_check_mark:          | Planlagt i Q3 |
+| [Innrapportering verdipapirfondshistorikk](../api/innrapportering-verdipapirfondshistorikk.md)                | :white_check_mark:          | Planlagt i Q3 |
 | Innrapportering fondskonto                                                                                    | Kommer i løpet av september | Planlagt i Q3 |
-| Innrapportering verdipapirfond historikk                                                                      | Planlagt i Q3               | Planlagt i Q3 |
 | Innrapportering tilskudd, erstatning mv. innen primærnæringene                                                | Planlagt i Q3               | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - frukt, bær, poteter og grønnsaker (jord- og hagebruk)              | Planlagt i Q3               | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - korn                                                               | Planlagt i Q3               | Planlagt i Q3 |
