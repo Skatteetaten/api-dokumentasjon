@@ -44,7 +44,7 @@ Relevante API-er:
 
 [Mer informasjon om SBL hos BITS](https://www.bits.no/dsop-sbl/)
 
-[Mer informasjon om OSBL hos Skatteetaten](https://www.skatteetaten.no/presse/nyhetsrommet/enklere-a-soke-boliglan/))
+[Mer informasjon om OSBL hos Skatteetaten](https://www.skatteetaten.no/presse/nyhetsrommet/enklere-a-soke-boliglan/)
 
 ### Obligatorisk tjenestepensjon (OTP)
 
