@@ -42,7 +42,8 @@ Relevante API-er:
 * [Summert skattegrunnlag API](../api/summertskattegrunnlag.md)
 * [Siste tilgjengelige skatteoppgjør API](../api/sistetilgjengeligeskatteoppgjoer.md)
 
-[Mer informasjon om SBL hos BITS](https://www.bits.no/dsop-sbl/).
+[Mer informasjon om SBL hos BITS](https://www.bits.no/dsop-sbl/)
+
 [Mer informasjon om OSBL hos Skatteetaten](https://www.skatteetaten.no/presse/nyhetsrommet/enklere-a-soke-boliglan/))
 
 ### Obligatorisk tjenestepensjon (OTP)
@@ -55,12 +56,5 @@ Relevante API-er:
 * [Tjenestepensjonsavtale API](../api/tjenestepensjonsavtale.md)
 
 [Mer informasjon om OTP hos BITS](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjDsO32z7ePAxXoGxAIHcajDhoQFnoECB4QAQ&url=https%3A%2F%2Fdokumentasjon.dsop.no%2Fassets%2FIntroduksjon_til_Data_for_ajourhold_av_OTP_i_privat_sektor_V1.pdf&usg=AOvVaw2I3srqKufQmIfaRF8-IGLp&opi=89978449)
+
 [Mer informasjon om OTP hos Skatteetaten](https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/otp---obligatorisk-tjenestepensjon/)
-
-### Seriøsitet
-
-Skatteetaten har et sett API-er som deler seriøsitetsopplysninger via Digdir gjennom rettighetspakken "Ebevis".
-* [Arbeidsgiveravgift API](../api/arbeidsgiveravgift.md)
-* [Mva meldingsopplysning API](../api/mva_meldingsopplysning.md)
-* [Oppdrag utenlandske virksomheter API](../api/oppdragutenlandskevirksomheter.md)
-* [Restanser API](../api/restanser.md)
