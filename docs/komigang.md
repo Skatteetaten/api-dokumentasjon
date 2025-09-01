@@ -11,9 +11,7 @@ summary: "Kom i gang med Skatteetatens eksterne API-er"
 hide_table_of_contents: true
 ---
 
-Skatteetaten tilbyr en rekke standardiserte API-er som kan benyttes av norske offentlige eller private virksomheter som har behov for tilgang til opplysninger fra Skatteetaten. Dokumentasjon av disse API-ene er samlet på denne nettsiden. Vi jobber fortløpende med å tilgjengeliggjøre flere API-er.
-
-De konkrete API-ene er dokumentert på egne sider, og er i venstremenyen grupper under "API-er for deling" og "API-er for innrapportering".
+Skatteetaten tilbyr en rekke standardiserte API-er som kan benyttes av norske offentlige eller private virksomheter. Dokumentasjon av disse API-ene er samlet på denne nettsiden. Vi jobber fortløpende med å tilgjengeliggjøre flere API-er.
 
 Informasjon om tjenester og løsninger som er under utvikling eller pilot ligger på [Beta-siden](https://skatteetaten.github.io/beta-apier/).
 
@@ -23,29 +21,16 @@ På dette området kan du finne informasjon som gjelder på tvers av Skatteetate
 * [Delegering](./om/delegering.md)
 * [Rettighetspakker](./om/rettighetspakker.md) 
 
-## Kom i gang med deling
+## Anvendelsesområder
 
-### Tilgang til API-er for deling 
+De konkrete API-ene våre er dokumentert på egne sider pr. API, og er i venstremenyen grupper under "API-er for deling" og "API-er for innrapportering".
 
-For å få tilgang til API-ene må man ha et norsk organisasjonsnummer og Skatteetaten må gi virksomheten tilgang til API-et. Før du søker om tilgang til Skatteetatens delingstjenester, er det viktig å avklare om din virksomhet har behandlingsgrunnlag for de aktuelle opplysningene. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/tilgang/).
-
-Hvis du allerede har fått innvilget søknad om tilgang, finner du teknisk informasjon om påkobling på disse sidene. Sentrale temaer er omhandlet under [Sikkerhet](./om/sikkerhet.md).
-
-### Bruks- og delingsvilkår for deling
-
-For utlevering av opplysninger fra Skatteetatens delingstjenester gjelder følgende vilkår:
-* [Bruksvilkår for Skatteetatens delingstjenester](https://www.skatteetaten.no/deling/bruksvilkar-for-delingstjenester/)
-* [Delingsvilkår for Skatteetatens delingstjenester](https://www.skatteetaten.no/deling/delingsvilkar/)
-
-Informasjon om tjenestenivå, varsling, endrignshåndtering, fast vedlikehold med mer ligger dokumentert på disse sidene.
-
-## Kom i gang med innrapportering
-
-Det går arbeid med utvikling av nye API-er for innrapportering. Har du spørsmål om tilgang til disse, send en e-post til [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
-Vær oppmerksom på at epostadressen er midlertidig og bare gjelder  i perioden API-ene er i utvikling og test fra Altinn II til Altinn 3.
-
-Ønsker du å ta i bruk Skatteetatens tjenester for innrapportering, se [her](./anvendelsesomraader/innrapportering-tredjepartsopplysninger.md) for mer informasjon. 
-
-
-
+I tillegg har vi pakket inn API-ene under ulike anvendelsesområder hvor du kan finne informasjon som gjelder for ulike områder og på tvers av flere API-er:
+* [A-meldingen](./anvendelsesomraader/ameldingen.md)
+* [Deling fra Skatteetaten](./anvendelsesomraader/deling-skatteetaten.md)
+* [Innrapporering av tredjepartsopplysninger](./anvendelsesomraader/innrapportering-tredjepartsopplysninger.md)
+* [Krav og betalinger](./anvendelsesomraader/kravogbetalinger.md)
+* [Mva-meldingen](./anvendelsesomraader/mvamelding.md)
+* [Skattemeldingen](./anvendelsesomraader/skattemelding.md)
+* [Skattekort til arbeidsgiver](./anvendelsesomraader/skattekorttilarbeidsgiver.md)
 
