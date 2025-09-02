@@ -66,7 +66,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 | Tjeneste |	Url |
 |----------|-------|
-| Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider |
+| Validering | https://idporten-api-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider |
 
   
 </TabItem>
