@@ -55,8 +55,6 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 
 ## Støttetjenester
 
-### Hendelser
-
 For å følge med på endringer tilbyr vi
 en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesobjekt fast eiendom hendelser API`
 
