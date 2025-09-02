@@ -395,7 +395,7 @@ Oppkobling mot testmiljøet skjer via ID-porten og i forbindelse med test kan Sk
 Systemutviklere skal bruke testbrukere fra Tenor Testdatasøk. Dette er syntetisk testbruker som også skal brukes for pålogging i ID-porten og Altinn. Det vil kun være disse testbrukeren som kan benyttes for å få testet. Testbrukere som ligger tilgjengelig på Digdir sine sider vil ikke kunne brukes. 
 [Her finnes en bruksveiledning for Tenor Testdatasøk.](https://github.com/Skatteetaten/mva-meldingen/blob/master/docs/mvameldingen/test/Bruksveiledning_Tenor.pdf)
 
-## Url'er til testmiljøet (NB oppdatert med nytt miljø og url'er 02.09.2025)
+## Url'er til testmiljøet
 
 | Tjeneste |	Url |
 |----------|-------|
