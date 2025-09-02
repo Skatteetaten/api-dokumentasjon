@@ -17,7 +17,6 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 
