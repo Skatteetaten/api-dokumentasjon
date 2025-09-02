@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Støttetjeneste, Hendelser]
 keywords: [datatables, tables, grids, markdown, multimarkdown, jquery plugins]
-last_updated: Jul 04, 2024
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
