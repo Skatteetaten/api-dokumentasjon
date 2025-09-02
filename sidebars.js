@@ -75,6 +75,7 @@ const sidebars = {
         { id: 'api/innrapportering-livsforsikring', label: "Livsforsikring", type: 'doc' },
         { id: 'api/innrapportering-overskuddsstroem', label: "Overskuddstrøm", type: 'doc' },
         { id: 'api/innrapportering-passogstell', label: "Pass og stell", type: 'doc' },
+        { id: 'api/innrapportering-egg', label: "Primærnæring egg", type: 'doc' },
         { id: 'api/innrapportering-skadeforsikring', label: "Skadeforsikring", type: 'doc' },
         { id: 'api/innrapportering-skattefrieutbetalinger', label: "Skattefrie utbetalinger fra offentlige myndigheter", type: 'doc' },
         { id: 'api/innrapportering-tilskudd', label: "Tilskudd til vitenskapelig forskning eller yrkesopplæring", type: 'doc' },
