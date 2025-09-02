@@ -46,7 +46,7 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 | ebevis | Krever samtykke |
  
 ### Samtykke
-Tjenesten kan kreve [samtykke](../om/samtykke.md).
+For rettighetspakken `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
 | Tjenestekode | Formål |
 |--------| ------ |
