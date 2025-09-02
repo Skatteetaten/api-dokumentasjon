@@ -23,7 +23,7 @@ Informasjon om tjenester og løsninger som er under utvikling eller pilot ligger
 
 API-er fra Folkeregisteret er dokumentert på [en egen Github-side](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/om-tjenestene/).
 
-## Tilgang til Skatteetatenens API-er
+## Tilgang til API-er fra Skatteetaten
 
 For å kunne bruke Skatteetatens API-er må du ha fått tilgang til de konkrete API-ene. Prosessen for å få tilgang varierer mellom de ulike API-ene, og står beskrevet nærmere på det relevante anvendelsesområdet eller i API-dokumentasjonen. Noen krav gjelder uansett:
 * Virksomheten som skal ha tilgang må ha et norsk organisasjonsnummer
