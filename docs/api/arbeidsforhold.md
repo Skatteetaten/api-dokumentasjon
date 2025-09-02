@@ -51,6 +51,11 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 | nav                     |
 | ssb                     |
 
+## Støttetjenester
+
+For å følge med på endringer tilbyr vi
+en [støttetjeneste for hendelsesliste](./hendelser.md): `Arbeidsforhold hendelser API`
+
 ## Datakatalog
 
 [Datatjenestebeskrivelse](https://data.norge.no/data-services/b1bbd381-423f-3752-9a94-0f72cf372df7) i Felles datakatalog.
