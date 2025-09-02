@@ -65,7 +65,7 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 | regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye [Systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter. Det kommer mer informasjon om Systembruker etter hvert. I pilotfasen vil systemleverandører kun få tilgang til egne data. |
 | lovfestetrevisjon | Hjemmelsbasert deling av data med revisorer| |
 
-## Samtykke
+### Samtykke
 
 For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
