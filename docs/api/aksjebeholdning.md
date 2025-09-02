@@ -41,11 +41,11 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Aksjebeholdning API 
 
 ### Skatteetaten må gi tilgang
 
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker på API-et. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Rettighetspakker
 
-Virksomheter som har tilgang til API-et kan kalle API-et med følgende rettighetspakker:
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
 
 | Teknisk navn på rettighetspakke     |	
 |-------------------------------------|
