@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Inntekt, Inntektsmottaker ]
 keywords: [ inntekt, inntektsmottaker, oppgave, a-ordning, lønn, inntekt ]
-last_updated: Nov 22, 2023
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
@@ -24,48 +24,56 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
-## Scope
-
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:inntekt`
-
-## Delegering
-
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
-
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/inntekt-api/) på SwaggerHub.
 
-## Rettighetspakker
+## Tilgang
+
+### Scope
+
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:inntekt`
+
+### Delegering
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
+
+### Skatteetaten må gi tilgang
+
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
+### Rettighetspakker
 
 Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhetens *rettighetspakke* avgjør hvilke
 inntekter som filtreres vekk før data utleveres. Inntekter som ikke skal utleveres for en rettighetspakke fjernes i sin
 helhet.
 
-| Navn på rettighetspakke               | Egenskaper ved rettighetspakke                                                                                                                                           |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| afp                                   | Hjemmel                                                                                                                                                                  |
-| digisos                               | Hjemmel                                                                                                                                                                  |
-| fiskeridirektoratetkontrollmanntall   | Hjemmel                                                                                                                                                                  |
-| fiskeridirektoratetmanntall           | Hjemmel                                                                                                                                                                  |
-| gff                                   | Hjemmel                                                                                                                                                                  |
-| husbanken                             | Hjemmel                                                                                                                                                                  |
-| kommuneBoligsosialeFormaal            | Hjemmel                                                                                                                                                                  |
-| laanekassen                           | Hjemmel                                                                                                                                                                  |
-| ldir                                  | Hjemmel                                                                                                                                                                  |
-| ldirReindriftstilskudd                | Hjemmel                                                                                                                                                                  |
-| nav                                   | Hjemmel                                                                                                                                                                  |
-| otp                                   | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
-| pensjonskasseetteroppgjoerufoerafp    | Hjemmel                                                                                                                                                                  |
-| pensjonskasseLivsvarigafpanneninntekt | Hjemmel                                                                                                                                                                  |
-| pensjonskasseLivsvarigafpandreytelser | Hjemmel                                                                                                                                                                |
-| saernamsmann                          | Hjemmel                                                                                                                                                                  |
-| sbl                                   | Krever samtykke                                                                                                                                                          |
-| spkBoliglaan                          | Hjemmel                                                                                                                                                                  |
-| ssb                                   | Hjemmel                                                                                                                                                                  |
-| udi                                   | Hjemmel                                                                                                                                                                  |
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
+
+| Teknisk navn på rettighetspakker | Egenskaper ved rettighetspakker |
+|----------------------------------|--------------------------------|
+| afp | Hjemmel |
+| digisos | Hjemmel |
+| fiskeridirektoratetkontrollmanntall | Hjemmel|
+| fiskeridirektoratetmanntall | Hjemmel |
+| gff | Hjemmel |
+| husbanken | Hjemmel |
+| kommuneBoligsosialeFormaal | Hjemmel |
+| laanekassen | Hjemmel |
+| ldir | Hjemmel |
+| ldirReindriftstilskudd | Hjemmel |
+| nav | Hjemmel |
+| otp | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
+| pensjonskasseetteroppgjoerufoerafp | Hjemmel |
+| pensjonskasseLivsvarigafpanneninntekt | Hjemmel |
+| pensjonskasseLivsvarigafpandreytelser | Hjemmel |
+| saernamsmann | Hjemmel |
+| sbl | Krever samtykke |
+| spkBoliglaan | Hjemmel |
+| ssb | Hjemmel |
+| udi | Hjemmel |
 
 ## Samtykke
 
