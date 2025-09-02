@@ -73,6 +73,7 @@ const sidebars = {
         { id: 'api/innrapportering-innskuddutlaanrenter', label: "Innskudd, utlån og renter", type: 'doc' },
         { id: 'api/innrapportering-internasjonalrapportering', label: "Internasjonal rapportering (CRS/FATCA)", type: 'doc' },
         { id: 'api/innrapportering-livsforsikring', label: "Livsforsikring", type: 'doc' },
+        { id: 'api/innrapportering-melk', label: "Melk", type: 'doc' },
         { id: 'api/innrapportering-overskuddsstroem', label: "Overskuddstrøm", type: 'doc' },
         { id: 'api/innrapportering-passogstell', label: "Pass og stell", type: 'doc' },
         { id: 'api/innrapportering-skadeforsikring', label: "Skadeforsikring", type: 'doc' },
