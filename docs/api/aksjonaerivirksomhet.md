@@ -47,7 +47,7 @@ For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til e
 
 ### Rettighetspakker
 
-Virksomheter som har tilgang til API-et kan kalle API-et med følgende rettighetspakker:
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
 
 | Navn på rettighetspakke             |	
 |-------------------------------------|
