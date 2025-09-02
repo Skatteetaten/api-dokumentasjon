@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, arbeidsforhold ]
 keywords: [ arbeidsforhold ]
-last_updated: Jul 04, 2024
+last_updated: Sep 02, 2025
 hide_table_of_contents: true
 ---
 
