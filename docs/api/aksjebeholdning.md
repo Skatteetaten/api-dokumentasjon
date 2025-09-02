@@ -24,24 +24,30 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
-## Scope
+## Teknisk spesifikasjon
+
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen]https://app.swaggerhub.com/apis/skatteetaten/aksjebeholdning-api) på SwaggerHub.
+
+## Tilgang til API-et
+
+### Scope
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:aksjebeholdning`
 
-## Delegering
+### Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Aksjebeholdning API - På vegne av`
 
-## Teknisk spesifikasjon
+### Skatteetaten må gi tilgang
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/aksjebeholdning-api)
-på SwaggerHub.
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker på API-et. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
-## Rettighetspakker
+### Rettighetspakker
 
-| Navn på rettighetspakke             |	
+Virksomheter som har tilgang til API-et kan kalle API-et med følgende rettighetspakker:
+
+| Teknisk navn på rettighetspakke     |	
 |-------------------------------------|
 | finanstilsynetkontroll |
 | fiskeridirektoratetkontroll |
