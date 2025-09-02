@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, MVA]
 keywords: [mva]
-last_updated: Mar 6, 2023
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer infomasjon fra mva-register om avgiftssubjekter med skatteplikt.</Summary>
@@ -17,23 +17,30 @@ hide_table_of_contents: true
 For generell informasjon om tjenestene se egne sider om:
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
-## Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvaregisteravgiftssubjekt`
-
-## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva-register – avgiftssubjekter med skattemeldingsplikt API - På vegne av`
-
 ## Teknisk spesifikasjon
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/mva-register-avgiftssubjekter-med-skattemeldingsplikt-api/) på SwaggerHub.
 
-## Rettighetspakker
+## Tilgang
+
+### Scope
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvaregisteravgiftssubjekt`
+
+### Delegering
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Mva-register – avgiftssubjekter med skattemeldingsplikt API - På vegne av`
+
+### Skatteetaten må gi tilgang
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
+### Rettighetspakker
+Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
   
-| Navn på rettighetspakke |	
+| Teknisk navn på rettighetspakker |	
 |---|
 | ssb |
 
