@@ -30,7 +30,33 @@ For generell informasjon om tjenestene se egne sider om:
 - [Versjonering](../om/versjoner.md)
 - [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
-## Scope
+## Teknisk spesifikasjon
+
+URL-er til API-ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til
+hendelseslistene på SwaggerHub:
+
+- [Arbeidsforhold hendelser API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-hendelser-api)
+- [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
+- [Formuesobjekt fast eiendom hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesobjekt-fast-eiendom-hendelser-api)
+- [Inntekt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/inntekt-hendelser-api)
+- [Mva-melding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-melding-hendelser-api)
+- [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-register-avgiftssubjekter-hendelser-api/)
+- [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-hendelser-api)
+- [Opplysningspliktig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/opplysningspliktig-hendelser-api)
+- [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
+- [Selskapsmelding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-hendelser-api)
+- [Skatteetaten-registrert selskap hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteetaten-registrert-selskap-hendelser-api)
+- [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-hendelser-api)
+- [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-upersonlig-hendelser-api)
+- [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-fastsatt-hendelser-api)
+- [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-hendelser-api)
+- [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
+- [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
+- [Underenhet fra A-ordningen hendelser API](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
+
+## Tilgang
+
+### Scope
 
 Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som relaterte oppslagstjenester:
 
@@ -55,33 +81,13 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 | Tilleggsskatt hendelser API                                           | skatteetaten:tilleggsskatt                                                                                                                                                                           |
 | Underenhet fra A-ordningen hendelser API                              | skatteetaten:underenhetaordningen                                                                                                                                                                    |
 
-## Delegering
+### Delegering
 
 Delegering i Altinn gjøres pr. scope, så tilgang til hendelseslisterer er håndtert hvis oppslagstjenesten er delegert.
 
-## Teknisk spesifikasjon
+### Skatteetaten trenger ikke gi egen tilgang
 
-URL-er til API-ene, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonene til
-hendelseslistene på SwaggerHub:
-
-- [Arbeidsforhold hendelser API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-hendelser-api)
-- [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
-- [Formuesobjekt fast eiendom hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesobjekt-fast-eiendom-hendelser-api)
-- [Inntekt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/inntekt-hendelser-api)
-- [Mva-melding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-melding-hendelser-api)
-- [Mva-register – avgiftssubjekter med skattemeldingsplikt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/mva-register-avgiftssubjekter-hendelser-api/)
-- [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-hendelser-api)
-- [Opplysningspliktig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/opplysningspliktig-hendelser-api)
-- [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
-- [Selskapsmelding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-hendelser-api)
-- [Skatteetaten-registrert selskap hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteetaten-registrert-selskap-hendelser-api)
-- [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-hendelser-api)
-- [Skatteoppgjør upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-upersonlig-hendelser-api)
-- [Skattemelding fastsatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-fastsatt-hendelser-api)
-- [Skattemelding upersonlig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-hendelser-api)
-- [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
-- [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
-- [Underenhet fra A-ordningen hendelser API](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
+Det trengs ikke egen tilgang for hendelseslistene, de følger av tilgangen som er gitt til relaterte oppslagstjenester.
 
 ## Hendelsestyper
 
