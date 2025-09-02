@@ -77,7 +77,7 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 
 ### Samtykke
 
-For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et..
+For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
 | Tjenestekode | Formål             | Kommentar                        |
 |--------------|--------------------|----------------------------------|
