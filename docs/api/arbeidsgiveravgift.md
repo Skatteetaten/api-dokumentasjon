@@ -44,7 +44,7 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 |---|---|
 | ebevis | Krever samtykke |
  
-## Samtykke
+### Samtykke
 Tjenesten krever [samtykke](../om/samtykke.md).
 
 | Tjenestekode | Formål |
