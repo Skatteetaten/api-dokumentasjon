@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Skatteoppgjør, Støttetjeneste]
 keywords: [tilgjengeligdata, skattegrunnlag]
-last_updated: Mar 6, 2023
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer informasjon om siste inntektsår det foreligger skatteoppgjør på for en person.</Summary>
@@ -21,21 +21,25 @@ Eksempler på slike data er Summert skattegrunnlag API, hvor det kan variere med
 For generell informasjon om tjenestene se egne sider om:
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md) 
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
-## Scope
-Man trenger ikke eget scope for dette aAPI-et, siden den benytter samme scope som relaterte oppslagstjenester: 
+## Teknisk spesifikasjon
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/siste-tilgjengelige-skatteoppgjoer/) på SwaggerHub.
+
+## Tilgang
+
+### Scope
+Man trenger ikke eget scope for dette API-et, siden den benytter samme scope som relaterte oppslagstjenester: 
   * `skatteetaten:summertskattegrunnlag`
   * `skatteetaten:spesifisertsummertskattegrunnlag`
 
-## Delegering
+### Delegering
 Tilgang til denne støttetjenester delegeres i Altinn når man delegerer oppslagstjenesten.
 
-## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/siste-tilgjengelige-skatteoppgjoer/) på SwaggerHub.
+### Skatteetaten trenger ikke gi egen tilgang
+Det trengs ikke egen tilgang for denne støttetjenesten, siden den følger av tilgangen som er gitt til relaterte oppslagstjenester.
 
 ## Datakatalog
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
