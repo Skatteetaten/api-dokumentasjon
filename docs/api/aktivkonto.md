@@ -22,16 +22,24 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
-## Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:aktivkonto`
-
-## Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Aktiv konto API - På vegne av`
-
 ## Teknisk spesifikasjon
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/aktiv-konto-api) på SwaggerHub.
 
-## Rettighetspakker
+## Tilgang
+
+### Scope
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:aktivkonto`
+
+### Delegering
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: `Aktiv konto API - På vegne av`
+
+### Skatteetaten må gi tilgang
+
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
+### Rettighetspakker
+
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
 
 | Navn på rettighetspakke |
 |-------------------------|
