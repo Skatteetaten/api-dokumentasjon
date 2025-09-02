@@ -47,7 +47,7 @@ For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til e
 
 Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
 
-| Teknisk navn på rettighetspakke     |	
+| Teknisk navn på rettighetspakker    |	
 |-------------------------------------|
 | finanstilsynetkontroll |
 | fiskeridirektoratetkontroll |
