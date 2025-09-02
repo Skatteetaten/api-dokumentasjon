@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Aksjonærregister ]
 keywords: [ aksjonærregister, aksjer, aksjebeholdning ]
-last_updated: Sep 28, 2023
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
