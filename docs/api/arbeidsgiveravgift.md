@@ -41,7 +41,7 @@ For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til e
 
  Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
 
-| Navn på rettighetspakke |	Egenskaper ved rettighetspakke |
+| Teknisk navn på rettighetspakke |	Egenskaper ved rettighetspakke |
 |---|---|
 | ebevis | Krever samtykke |
  
