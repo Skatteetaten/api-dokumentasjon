@@ -206,9 +206,6 @@ feltene.
 
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-I første omgang er test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
-med å pilotere løsningene.
-
 ### Testmiljøer
 
 For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-gavertilfrivillige-api/0.0.1). 

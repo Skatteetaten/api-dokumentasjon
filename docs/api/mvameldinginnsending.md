@@ -399,9 +399,9 @@ Systemutviklere skal bruke testbrukere fra Tenor Testdatasøk. Dette er syntetis
 
 | Tjeneste |	Url |
 |----------|-------|
-| Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider  |
-| Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/  |
-| Instans API |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances  |
+| Portalen | https://skatt-test.sits.no/web/mva/ |
+| Validering | https://idporten-api-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider |
+| Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-test/  |
 
   
 </TabItem>

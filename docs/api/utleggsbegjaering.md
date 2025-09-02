@@ -1263,10 +1263,10 @@ Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
         ],
         "person": {
           "personnavn": {
-            "fornavn": "Elisabeth",
-            "etternavn": "Lippestad"
+            "fornavn": "Ola",
+            "etternavn": "Nordmann"
           },
-          "foedselsdato": "1978-08-29",
+          "foedselsdato": "1980-08-29",
           "identifikator": {
             "identifikatortype": "taxIdentificationNumber",
             "verdi": "03057738971",
