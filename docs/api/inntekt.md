@@ -75,7 +75,7 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 | ssb | Hjemmel |
 | udi | Hjemmel |
 
-## Samtykke
+### Samtykke
 
 For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md).
 
