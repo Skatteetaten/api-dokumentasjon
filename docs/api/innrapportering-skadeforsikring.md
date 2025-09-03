@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, skadeforsikring, skade, forsikring ]
 keywords: [ grunnlagsdata ]
-last_updated: Sep 3, 2025
+last_updated: Mar 4, 2025
 hide_table_of_contents: true
 ---
 
@@ -61,7 +61,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
 API-et for innrapportering for skadeforsikring har to endepunkter
 
-* __POST innsending__: Mottar tredjepartsopplysninger om egg. Et kall mot API-et er en rapportering for en
+* __POST innsending__: Mottar tredjepartsopplysninger om skadeforsikring. Et kall mot API-et er en rapportering for en
   organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
@@ -238,7 +238,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om egg API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om Skadeforsikring API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
   
 </TabItem>
