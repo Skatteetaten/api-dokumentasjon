@@ -98,46 +98,89 @@ https://innrapporteringfinansprodukter.api.{env}.no/v1/{inntektsaar}
 ```json
 {
   "leveranse": {
-    "kildesystem": "SystemX",
-    "inntektsaar": 2024,
-    "oppgavegiversLeveranseReferanse": "REF123456",
-    "leveransetype": "ordinaer",
+    "kildesystem": "Kildesystemet v2.0.5",
     "oppgavegiver": {
-      "organisasjonsnummer": "313613216",
+      "organisasjonsnummer": "987546231",
       "kontaktinformasjon": {
-        "navn": "Kontakt Navn",
-        "telefonnummer": "12345678",
-        "varselEpostadresse": "kontakt@eksempel.no",
-        "varselSmsMobilnummer": "98765432"
+        "navn": "Kari Kontaktperson",
+        "telefonnummer": "80080000",
+        "varselEpostadresse": "kari.kontaktperson@finansinstitusjon.no",
+        "varselSmsMobilnummer": "80080000"
       }
     },
+    "inntektsaar": 2024,
+    "oppgavegiversLeveranseReferanse": "EksternLeveranseRef12345",
+    "leveransetype": "ordinaer",
     "oppgave": [
       {
-        "avtalenummer": "AVT123",
-        "pensjonsavtaletype": "pensjonsspareavtale",
-        "innbetaltBeloep": 50000,
         "oppgaveeier": {
-          "foedselsnummer": "12345678901",
-          "navn": "Ola Nordmann"
-        },
-        "muligTilleggForsikringsavtale": {
-          "innestaaendePaaPremiefond": 10000,
-          "returAvPremie": 500
-        },
-        "utbetaling": [
-          {
-            "utbetaltBeloep": 20000,
-            "utbetalingstype": "Alderspensjon"
+          "person": {
+            "foedselsnummer": "00000000000",
+            "fornavn": "Scott",
+            "etternavn": "Tiger",
+            "foedselsdato": "1980-05-10"
+          },
+          "alternativIdentifikator": "4545454545",
+          "internasjonalIdentifikator": {
+            "identifikator": "454-54-5454",
+            "identifikatortype": "TIN",
+            "utstedtAvLand": "US"
+          },
+          "adresse": {
+            "landkode": "NO",
+            "adresseStrukturert": {
+              "byEllerStedsnavn": "Oslo"
+            }
           }
-        ]
+        },
+        "konto": {
+          "kontonummer": "NO0014437946",
+          "kontonummertype": "ISIN",
+          "finansprodukt": [
+            {
+              "finansprodukttype": "aksjer",
+              "finansproduktnavn": "aksjeverden",
+              "antall": "77",
+              "formuesverdi": {
+                "beloepINOK": "7700"
+              },
+              "gevinstEllerTap": {
+                "skattepliktigGevinst": "12"
+              },
+              "anvendtSkjerming": "8",
+              "salgsvederlag": {
+                "beloepINOK": "90"
+              }
+            },
+            {
+              "finansprodukttype": "aksjer",
+              "finansproduktnavn": "aksjeland",
+              "antall": "4",
+              "formuesverdi": {
+                "beloepINOK": "100"
+              },
+              "gevinstEllerTap": {
+                "fradragsberettigetTap": "90"
+              },
+              "salgsvederlag": {
+                "beloepINOK": "20"
+              }
+            }
+          ]
+        }
       }
     ],
     "oppgaveoppsummering": {
       "antallOppgaver": 1,
-      "sumInnbetaltBeloep": 50000,
-      "sumUtbetaltBeloep": 20000,
-      "sumInnestaaendePaaPremiefond": 10000,
-      "sumReturAvPremie": 500
+      "sumFormuesverdi": "7800",
+      "sumSkattepliktigUtbytte": "0",
+      "sumRenteinntekt": "0",
+      "sumAnnenInntektEllerUtbetaling": "0",
+      "sumGevinst": "12",
+      "sumTap": "90",
+      "sumAnvendtSkjerming": "8",
+      "sumUtdeltUtbytte": "0",
+      "sumSalgsvederlag": "40"
     }
   }
 }
