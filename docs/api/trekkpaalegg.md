@@ -883,6 +883,30 @@ Her ser du hele informasjonsmodellen Trekkpålegg API med alle 4 endepunktene.
 
 ![Informasjonsmodell](../../static/download/trekkpaalegg/informasjonsmodell-trekkpalegg.png)
 
+
+## Feltforklaringer
+| Navn         | Navn     | Type     | Beskrivelse     | Regler   |
+|------        |----------|----------|-----------------|--------  |
+| Navn         | Navn     | Type     | Beskrivelse     | Regler   |
+| trekkid      |          | String   | Id til et trekkpålegg. Trekkpålegg med samme id kan bli oppdatert. Da vil det få et nytt versjonsnummer. | Saksnummer   og kidnummer holdes uendret for samme trekkid. |
+| trekkversjon |          | Integer | Versjonen til et trekkpålegg med en ID. Inkrementeres med 1 for hver nye versjon, men beholder samme trekkID | Alltid stigende. |
+| sekvensnummer |         | Integer | Globalt løpenummer på tvers av alle trekkpålegg. Kan benyttes som et 'vannmerke' for å huske siste mottatte trekkpålegg. | Alltid stigende. |
+| opprettet     |         | Date | Dato for trekkversjon. En kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). |  Funksjonelt benyttes denne for å vite når endringen ble formidlet. |
+| saksnummer   |          | String     | Identifiserer saken hvor trekkpålegget ble besluttet. | Unikt per trekkversjon) |
+| trekkpliktig |          | String   | Orgnummeret til den trekkpliktige virksomheten |  |
+| skyldner |              | String   | Fødsels- eller d-nummer til ansatt/ytelsesmottaker som skal trekkes i lønn/ytelse. |  |
+| Trekkstatus  |          |          | Status på utleggstrekket. Når et trekkpålegg er avsluttet skal det ikke lenger trekkes i lønn/ytelse. | * Alltid status aktiv når sluttdato for siste trekkstørrelse for periode ikke er passert.<br>* Når sluttdato er satt frem i tid, vil status endres til avsluttet etter at sluttdato er passert (ved midnatt).<br>* Når sluttdato settes til i dag, vil status endres til avsluttet i samme trekkversjon som sluttdatoen blir publisert.
+| trekkstoerrelseForPeriode |        | List   | Liste over beløp eller prosent som skal trekkes. Den trekkpliktige må velge korrekt beløp eller prosent avhengig av utbetalingsdatoen for lønnen/ytelsen. | *Trekkpliktig skal trekke det som står i den perioden som gjelder lønnsutbetalingsdatoen. |
+|              | startdato | date    | gir verdier for år, måned og dag. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). Eksempel : 1998-12-21 eller 19981221. | 
+| betalingsinformasjon | Betalingsinformasjon | Informasjons som skal benyttes ved innbetaling. Inneholder KID-nummer, kontonummer og mottakers organisasjonsnummer | *Kan ikke settes eller endres bakover i tid eller i dag.<br>*Kan settes fremover i tid, tidligste mulighet er å sette den til i morgen.<br>*Kan ikke være lik sluttdato på forrige periode. |
+|              | sluttdato | date    | gir verdier for år, måned og dag. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). Eksempel : 1998-12-21 eller 19981221. | *Kan ikke settes eller endres bakover i tid.<br>*Kan settes til i dag enten fordi ny periode skal starte i morgen (da er trekkets status fortsatt "aktiv"). Eller fordi trekket skal avsluttes helt her og nå (da er status samtidig "avsluttet")<br>*Kan settes fremover i tid.<br>*Kan være lik startdato i samme periode |
+|              | trekkbeloep |        | Angi enten trekkbeløp eller trekkprosent | *Kan være 0.<br>*Hvis det er flere lønnsutbetalinger i samme måned, er det den trekkpliktiges ansvar å sørge for at hele beløpet i trekkpålegget blir trukket i løpet av måneden. Det må trekkes ved minst én av lønnsutbetalingene. |
+|              | trekkbeloep |        | Angi enten trekkbeløp eller trekkprosent | *Kan være 0.<br>*Trekkes av brutto inntekt.<br>*Trekkes ved hver lønnsutbetaling |
+| Betalingsinformasjon|     |        | Informasjons som skal benyttes ved innbetaling. Inneholder KID-nummer, kontonummer og mottakers organisasjonsnummer |        |
+|              | betalingsmottaker |    | Organisasjonsnummer til mottaker av betaling | Organisasjonsnummer til Innkrevingsmyndigheten, felles for alle trekkpålegg |
+|             | kidnummer |            | kidnummer for trekkpålegget | Unikt per trekkpålegg<br>*ny trekkID, men samme trekkpliktige og skyldner.<br>*samme trekkID, men ny trekkversjon = uendret kidnummer |
+|          | kontonummer |     | Kontonummer til mottaker av betaling. | Kontonummer til Innkrevingsmyndigheten, felles for alle trekkpålegg |
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
