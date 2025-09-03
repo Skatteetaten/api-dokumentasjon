@@ -75,7 +75,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering finansprodukter API](../api/innrapportering-finansprodukter.md)                              | :white_check_mark:       | Planlagt i Q3 |
 | Innrapportering skattepliktig kundeutbytte                                                                    | Kommer i løpet av august | Planlagt i Q3 |
 | Innrapportering fondskonto                                                                                    | Kommer i løpet av august | Planlagt i Q3 |
-
 | Innrapportering verdipapirfond historikk                                                                      | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering underholdsbidrag                                                                              | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering tilskudd, erstatning mv. innen primærnæringene                                                | Planlagt i Q3            | Planlagt i Q3 |
