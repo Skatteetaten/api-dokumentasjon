@@ -82,5 +82,5 @@ Følgende API-er er tilgjengelige pr. nå:
 | Innrapportering av kjøp fra primærnæring - korn                                                               | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - slakt                                                              | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - melk                                                               | Planlagt i Q3            | Planlagt i Q3 |
-| Innrapportering av kjøp fra primærnæring - egg                                                                | Planlagt i Q3            | Planlagt i Q3 |
+| [Innrapportering av kjøp fra primærnæring - egg](../api/innrapportering-egg.md)                               | :white_check_mark:       | Planlagt i Q3 |
 
