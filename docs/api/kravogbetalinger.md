@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Innkreving ]
 keywords: [ kravogbetalinger, krav og betalinger, innkreving ]
-last_updated: Apr 24, 2024
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
@@ -19,19 +19,9 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
-
-## Scope
-
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:kravogbetalinger`
-
-## Delegering
-
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger API - På vegne av`
 
 ## Teknisk spesifikasjon
 
@@ -51,17 +41,31 @@ API-et har 4 endepunkter:
 
 Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
 
-## Rettighetspakker
+## Tilgang
 
-For denne tjenesten finns følgende rettighetspakker
+### Scope
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:kravogbetalinger`
 
-| Navn på rettighetspakke | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
+### Delegering
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger API - På vegne av`
+
+### Skatteetaten må gi tilgang
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
+### Rettighetspakker
+Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
+
+| Teknisk navn på rettighetspakker | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
 |---|---|---|
 | finans | Banker og finansforetak som skal vise krav og betalinger i nettbank | Finans-rettighetspakken krever bruk av Altinn-samtykke, og den gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
 | regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye [Systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter. Det kommer mer informasjon om Systembruker etter hvert. I pilotfasen vil systemleverandører kun få tilgang til egne data. |
 | lovfestetrevisjon | Hjemmelsbasert deling av data med revisorer| |
 
-## Samtykke
+### Samtykke
 
 For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API-et.
 

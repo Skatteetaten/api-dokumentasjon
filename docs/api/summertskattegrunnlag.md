@@ -6,10 +6,9 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ skattegrunnlag, skatteoppgjør ]
-last_updated: Nov 11, 2024
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
-
 <Summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke
 opplysninger fra skattemeldingen som ligger til grunn.</Summary>
 
@@ -20,7 +19,6 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
@@ -29,26 +27,34 @@ Summert skattegrunnlag API vil endres når skattereglene endres, altså årlig. 
 variere etter skattereglene som gjelder for det gitte skatteåret det spørres om data om. Dette vil ikke føre til ny
 versjon av API-et med mindre annen semantikk endres.
 
-## Scope
-
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:summertskattegrunnlag`
-
-I versjon 2 aksepteres også `skatteetaten:spesifisertsummertskattegrunnlag` for konsumenter som tidligere
-benyttet Spesifisert summert skattegrunnlag API.
-
-## Delegering
-
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Summert skattegrunnlag API - På vegne av`
-
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api) på SwaggerHub.
 
-## Rettighetspakker
+## Tilgang
 
-| Navn på rettighetspakke             | 	Stadie                      | Kommentarer     |
+### Scope
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:summertskattegrunnlag`
+
+Vi aksepterer også `skatteetaten:spesifisertsummertskattegrunnlag` for konsumenter som tidligere
+benyttet Spesifisert summert skattegrunnlag API.
+
+### Delegering
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Summert skattegrunnlag API - På vegne av`
+
+Tidligere delegeringer av Spesifisert summert skattegrunnlag API vil fremdeles fungere.
+
+### Skatteetaten må gi tilgang
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
+### Rettighetspakker
+Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
+
+| Teknisk navn på rettighetspakker    | 	Stadie                     | Kommentarer     |
 |-------------------------------------|------------------------------|-----------------|
 | fiskeridirektoratetkontrollmanntall | oppgjoer                     |                 |
 | fiskeridirektoratetmanntall         | oppgjoer                     |                 |
@@ -77,10 +83,10 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/summer
 | ssb                                 | oppgjoer                     |                 |
 | udi                                 | oppgjoer                     |                 |
 
-## Samtykke
+### Samtykke
+For rettighetspakken `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
-Versjon 2 av API-et kan kreve [samtykke](../om/samtykke.md). Datakonsumenter med samtykke har kun lov til å spørre om
-summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med
+Datakonsumenter med samtykke har kun lov til å spørre om summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med
 støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
 | Tjenestekode | Formål                           |
