@@ -52,29 +52,30 @@ Følgende API-er er tilgjengelige pr. nå:
 
 | API                                                                                                           | Test                     | Produksjon    |
 |---------------------------------------------------------------------------------------------------------------|--------------------------|---------------|
+| [Innrapportering aksjesparekonto API](../api/innrapportering-aksjesparekonto.md)                              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md)  | :white_check_mark:       | Planlagt i Q3 |
+| [Innrapportering av kjøp fra primærnæring - egg](../api/innrapportering-egg.md)                               | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering betalinger naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)       | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)                                      | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                    | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                      | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering fagforeningskontingent API](../api/innrapportering-fagforeningskontingent.md)                | :white_check_mark:       | Planlagt i Q3 |
+| [Innrapportering finansprodukter API](../api/innrapportering-finansprodukter.md)                              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                      | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering individuelle_pensjonsordninger API](../api/innrapportering-individuellepensjonsordninger.md) | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                  | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)         | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                            | :white_check_mark:       | Planlagt i Q3 |
+| [Innrapportering livsforsikringer API](../api/innrapportering-livsforsikring.md)                              | :white_check_mark:       | Planlagt i Q3 |
+| [Innrapportering overskuddsstrøm API](../api/innrapportering-overskuddsstroem.md)                             | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)               | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                            | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                | :white_check_mark:       | Planlagt i Q3 |
-| [Innrapportering livsforsikringer API](../api/innrapportering-livsforsikring.md)                              | :white_check_mark:       | Planlagt i Q3 |
-| [Innrapportering aksjesparekonto API](../api/innrapportering-aksjesparekonto.md)                              | :white_check_mark:       | Planlagt i Q3 |
-| [Innrapportering overskuddsstrøm API](../api/innrapportering-overskuddsstroem.md)                             | :white_check_mark:       | Planlagt i Q3 |
-| [Innrapportering finansprodukter API](../api/innrapportering-finansprodukter.md)                              | :white_check_mark:       | Planlagt i Q3 |
-| Innrapportering skattepliktig kundeutbytte                                                                    | Kommer i løpet av august | Planlagt i Q3 |
 | Innrapportering fondskonto                                                                                    | Kommer i løpet av august | Planlagt i Q3 |
+| Innrapportering skattepliktig kundeutbytte                                                                    | Kommer i løpet av august | Planlagt i Q3 |
 | Innrapportering verdipapirfond historikk                                                                      | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering underholdsbidrag                                                                              | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering tilskudd, erstatning mv. innen primærnæringene                                                | Planlagt i Q3            | Planlagt i Q3 |
@@ -82,5 +83,4 @@ Følgende API-er er tilgjengelige pr. nå:
 | Innrapportering av kjøp fra primærnæring - korn                                                               | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - slakt                                                              | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - melk                                                               | Planlagt i Q3            | Planlagt i Q3 |
-| [Innrapportering av kjøp fra primærnæring - egg](../api/innrapportering-egg.md)                               | :white_check_mark:       | Planlagt i Q3 |
 
