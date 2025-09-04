@@ -4,7 +4,7 @@ slug: /api/innrapportering-egg
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, primærnæring, egg ]
+tags: [ API, primærnæring, primaernaering, egg ]
 keywords: [ grunnlagsdata ]
 last_updated: Sep 3, 2025
 hide_table_of_contents: true
