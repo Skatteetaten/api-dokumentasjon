@@ -78,6 +78,7 @@ const sidebars = {
         { id: 'api/innrapportering-passogstell', label: "Pass og stell", type: 'doc' },
         { id: 'api/innrapportering-skadeforsikring', label: "Skadeforsikring", type: 'doc' },
         { id: 'api/innrapportering-skattefrieutbetalinger', label: "Skattefrie utbetalinger fra offentlige myndigheter", type: 'doc' },
+        { id: 'api/innrapportering-skattepliktigkundeutbytte', label: "Skattepliktig kundeutbytte", type: 'doc' },
         { id: 'api/innrapportering-tilskudd', label: "Tilskudd til vitenskapelig forskning eller yrkesopplæring", type: 'doc' },
         { id: 'api/innrapportering-verdipapirfond', label: "Verdipapirfond", type: 'doc' },
         { id: 'api/innrapportering-aandsverk', label: "Godtgjøring til opphaver til åndsverk", type: 'doc' },
