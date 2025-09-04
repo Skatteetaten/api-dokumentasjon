@@ -62,8 +62,8 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 | Teknisk navn på rettighetspakker | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
 |---|---|---|
 | finans | Banker og finansforetak som skal vise krav og betalinger i nettbank | Finans-rettighetspakken krever bruk av Altinn-samtykke, og den gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye [Systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter. Det kommer mer informasjon om Systembruker etter hvert. I pilotfasen vil systemleverandører kun få tilgang til egne data. |
-| lovfestetrevisjon | Hjemmelsbasert deling av data med revisorer| |
+| regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye [Systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter for virksomheter. Det kommer mer informasjon om Systembruker etter hvert. I pilotfasen vil systemleverandører kun få tilgang til egne data. |
+| lovfestetrevisjon | Hjemmelsbasert deling av data med revisorer, gir tilgang til alle 4 endepunkter for virksomheter | |
 
 ### Samtykke
 
