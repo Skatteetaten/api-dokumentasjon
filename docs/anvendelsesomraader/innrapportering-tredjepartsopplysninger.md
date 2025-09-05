@@ -81,8 +81,8 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                                                      | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering tilskudd, erstatning mv. innen primærnæringene API](../api/innrapportering-tilskudd-prim.md)                           | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                                          | :white_check_mark:  | Planlagt i Q3 |
-| [Innrapportering verdipapirfondshistorikk](../api/innrapportering-verdipapirfondshistorikk.md)                                          | :white_check_mark:  | Planlagt i Q3 |
-| Innrapportering fondskonto                                                                                                              | Kommer veldig snart | Planlagt i Q3 |
-| Innrapportering av kjøp fra primærnæring - melk                                                                                         | Kommer veldig snart | Planlagt i Q3 |
+| [Innrapportering verdipapirfondshistorikk API](../api/innrapportering-verdipapirfondshistorikk.md)                                      | :white_check_mark:  | Planlagt i Q3 |
+| Innrapportering fondskonto API                                                                                                          | Kommer veldig snart | Planlagt i Q3 |
+| Innrapportering kjøp fra primærnæring - melk API                                                                                        | Kommer veldig snart | Planlagt i Q3 |
 
 
