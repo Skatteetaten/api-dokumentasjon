@@ -82,6 +82,7 @@ const sidebars = {
         { id: 'api/innrapportering-skattepliktigkundeutbytte', label: "Skattepliktig kundeutbytte", type: 'doc' },
         { id: 'api/innrapportering-tilskudd', label: "Tilskudd til vitenskapelig forskning eller yrkesopplæring", type: 'doc' },
         { id: 'api/innrapportering-verdipapirfond', label: "Verdipapirfond", type: 'doc' },
+        { id: 'api/innrapportering-verdipapirfondshistorikk', label: "Verdipapirfondshistorikk", type: 'doc' },
         { id: 'api/innrapportering-aandsverk', label: "Godtgjøring til opphaver til åndsverk", type: 'doc' },
         { id: 'api/mvameldinginnsending', label: "Mva-melding innsending", type: 'doc' },
         { id: 'api/mvameldingvalidering', label: "Mva-melding validering", type: 'doc' },
