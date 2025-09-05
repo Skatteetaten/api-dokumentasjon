@@ -868,11 +868,6 @@ med å pilotere løsningene.
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og testdata er derfor listet her.
-Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
-
-## Testdata
-
 Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Samlet reskontroinnsyn". Der kan du finne virksomheter i Test som har krav og innbetalinger.
 
 Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testvirksomheter, selv om de i pilotperioden kun kan gjøre oppslag for egen virksomhet i Prod.
