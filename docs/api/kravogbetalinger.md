@@ -873,19 +873,9 @@ Men egenskaper ved enhetene som har testdata kan søkes frem i Tenor.
 
 ## Testdata
 
-Følgende enkeltmannsforetak (ENK) er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne.
-Vær oppmerksom på at det er et levende testdatasett som kan endre seg i løpet av testperioden. Ta kontakt dersom du har
-behov for ytterligere testdata.
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Samlet reskontroinnsyn". Der kan du finne virksomheter i Test som har krav og innbetalinger.
 
 Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testvirksomheter, selv om de i pilotperioden kun kan gjøre oppslag for egen virksomhet i Prod.
-
-| Organisasjonsnummer | 
-|---------------------|
-| 313367002           |
-| 311851381           |
-| 314961900           |
-| 314055403           |
-| 212201782           |
 
 </TabItem>
 </Tabs>
