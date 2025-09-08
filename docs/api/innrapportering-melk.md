@@ -4,7 +4,7 @@ slug: /api/innrapportering-melk
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API , melk ]
+tags: [ API , primærnæring, primaernaering, melk ]
 keywords: [ grunnlagsdata ]
 last_updated: Aug 29, 2025
 hide_table_of_contents: true
