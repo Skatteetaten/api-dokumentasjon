@@ -82,7 +82,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Regneark med testpersoner med skattekort i testmiljøet : ![testpersoner](../../static/download/skattekort_ekstern_innsending_2025.xlsx).
+Regneark med testpersoner med skattekort i testmiljøet : [testpersoner](../../static/download/skattekort_ekstern_innsending_2025.xlsx).
 
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
