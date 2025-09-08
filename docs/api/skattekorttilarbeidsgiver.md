@@ -31,7 +31,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 ## Tilgang
 
 ### Scope
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:TODO`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:forskudd`
 
 ### Delegering
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk opp følgende tjeneste i Altinn for å delegere tilgangen: Legg inn tekst i Altinn
