@@ -114,22 +114,26 @@ https://innrapporteringmelk.api.{env}.no/v1/{inntektsaar}
     "inntektsaar": 2024,
     "oppgavegiversLeveranseReferanse": "REF_2013_1",
     "leveransetype": "ordinaer",
-    "oppgave": [
-      {
-        "oppgaveeier": {
-          "foedselsnummer": "19896398957",
-          "navn": "Ost Skamfull"
+    "oppgaver": {
+      "oppgave": [
+        {
+          "oppgaveeier": {
+            "foedselsnummer": "12345678910",
+            "navn": "Ola Nordmann"
+          },
+          "produkt": "melk",
+          "beloep": "7500"
         },
-        "betaltKontingent": 30000
-      },
-      {
-        "oppgaveeier": {
-          "foedselsnummer": "15879399022",
-          "navn": "Facinerende Kalkulator"
-        },
-        "betaltKontingent": 3000
-      }
-    ],
+        {
+          "oppgaveeier": {
+            "organisasjonsnummer": "123456789",
+            "navn": "Bedriften A/S"
+          },
+          "produkt": "melk",
+          "beloep": "2500"
+        }
+      ]
+    },
     "oppgaveoppsummering": {
       "antallOppgaver": 2,
       "sumBetaltKontingent": 33000
