@@ -79,12 +79,6 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | SP-009   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.           |    
 | SP-010   | 410             | Skattepliktsdokument finnes ikke lenger.                             |
 
-</TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
-
-Legg inn skjermbilde av informasjonsmodell hvis det er behov for det
- 
-</TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">
 
