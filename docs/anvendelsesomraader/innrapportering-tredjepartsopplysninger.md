@@ -64,7 +64,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering individuelle_pensjonsordninger API](../api/innrapportering-individuellepensjonsordninger.md) | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                  | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)         | :white_check_mark:       | Planlagt i Q3 |
-| [Innrapportering melk rapportering API](../api/innrapportering-melk.md)   | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                            | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                              | :white_check_mark:       | Planlagt i Q3 |
 | [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)               | :white_check_mark:       | Planlagt i Q3 |
@@ -82,5 +81,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | Innrapportering av kjøp fra primærnæring - frukt, bær, poteter og grønnsaker (jord- og hagebruk)              | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - korn                                                               | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - slakt                                                              | Planlagt i Q3            | Planlagt i Q3 |
+| Innrapportering av kjøp fra primærnæring - melk                                                               | Planlagt i Q3            | Planlagt i Q3 |
 | Innrapportering av kjøp fra primærnæring - egg                                                                | Planlagt i Q3            | Planlagt i Q3 |
 

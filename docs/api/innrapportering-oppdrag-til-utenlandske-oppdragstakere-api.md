@@ -1,6 +1,6 @@
 ---
-title: Innrapportering oppdragsregisteret oppdrag API
-slug: /api/innrapportering-oppdragsregisteret-oppdrag-api
+title: Innrapportering oppdrag til utenlandske oppdragstakere API
+slug: /api/innrapportering-oppdrag-til-utenlandske-oppdragstakere-api
 folder: api
 sidebar: mydoc_sidebar
 datatable: true

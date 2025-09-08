@@ -5,7 +5,7 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, formuesobjekt fast eiendom ]
-last_updated: Jul 01, 2024
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
@@ -19,19 +19,9 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
-
-## Scope
-
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:formuesobjektfasteiendom`
-
-## Delegering
-
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Formuesobjekt fast eiendom API - På vegne av`
 
 ## Teknisk spesifikasjon
 
@@ -39,15 +29,31 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/formuesobjekt-fast-eiendom-api/) på
 SwaggerHub.
 
-## Rettighetspakker
+## Tilgang
 
-| Navn på rettighetspakke    |	
+### Scope
+
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:formuesobjektfasteiendom`
+
+### Delegering
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Formuesobjekt fast eiendom API - På vegne av`
+
+### Skatteetaten må gi tilgang
+
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
+### Rettighetspakker
+Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
+
+| Teknisk navn på rettighetspakker |	
 |----------------------------|
 | kartverketEgenregistrering |
 
 ## Støttetjenester
-
-### Hendelser
 
 For å følge med på endringer tilbyr vi
 en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesobjekt fast eiendom hendelser API`
