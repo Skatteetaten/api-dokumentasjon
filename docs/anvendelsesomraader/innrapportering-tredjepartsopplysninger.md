@@ -70,6 +70,7 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering kjøp fra primærnæring - fisk API](../api/innrapportering-fisk.md)                                                      | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering kjøp fra primærnæring - frukt, bær, poteter og grønnsaker (jord- og hagebruk) API](../api/innrapportering-jordbruk.md) | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering kjøp fra primærnæring - korn API](../api/innrapportering-korn.md)                                                      | :white_check_mark:  | Planlagt i Q3 |
+| [Innrapportering kjøp fra primærnæring - melk API](../api/innrapportering-melk.md)                                                      | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering kjøp fra primærnæring - slakt API](../api/innrapportering-slakt.md)                                                    | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering kjøp fra primærnæring - toemmer API](../api/innrapportering-toemmer.md)                                                | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering livsforsikringer API](../api/innrapportering-livsforsikring.md)                                                        | :white_check_mark:  | Planlagt i Q3 |
@@ -83,6 +84,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                                          | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering verdipapirfondshistorikk API](../api/innrapportering-verdipapirfondshistorikk.md)                                      | :white_check_mark:  | Planlagt i Q3 |
 | Innrapportering fondskonto API                                                                                                          | Kommer veldig snart | Planlagt i Q3 |
-| Innrapportering kjøp fra primærnæring - melk API                                                                                        | Kommer veldig snart | Planlagt i Q3 |
+
 
 
