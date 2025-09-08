@@ -197,7 +197,7 @@ angitt verdi-feltene.
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-![Infomasjonsmodel melk](../../static/download/Informasjonsmodell_melk.png)
+![Infomasjonsmodel Melk](../../static/download/Informasjonsmodell_Melk.png)
 
 </TabItem>
 
