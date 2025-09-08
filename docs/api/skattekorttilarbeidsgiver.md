@@ -79,7 +79,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | SP-009   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.           |    
 | SP-010   | 410             | Skattepliktsdokument finnes ikke lenger.                             |
 
-
+</TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 Legg inn informasjon om f.eks. hvordan finne testdata med Tenor.
