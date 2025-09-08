@@ -61,6 +61,7 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                                                        | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering fagforeningskontingent API](../api/innrapportering-fagforeningskontingent.md)                                          | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering finansprodukter API](../api/innrapportering-finansprodukter.md)                                                        | :white_check_mark:  | Planlagt i Q3 |
+| [Innrapportering fondskonto API](../api/innrapportering-fondskonto.md)                                                                  | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                                                | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)                                        | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering individuelle_pensjonsordninger API](../api/innrapportering-individuellepensjonsordninger.md)                           | :white_check_mark:  | Planlagt i Q3 |
@@ -82,7 +83,6 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering tilskudd, erstatning mv. innen primærnæringene API](../api/innrapportering-tilskudd-prim.md)                           | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                                          | :white_check_mark:  | Planlagt i Q3 |
 | [Innrapportering verdipapirfondshistorikk API](../api/innrapportering-verdipapirfondshistorikk.md)                                      | :white_check_mark:  | Planlagt i Q3 |
-| Innrapportering fondskonto API                                                                                                          | Kommer veldig snart | Planlagt i Q3 |
 | Innrapportering kjøp fra primærnæring - melk API                                                                                        | Kommer veldig snart | Planlagt i Q3 |
 
 
