@@ -91,7 +91,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request-URL
 
 ```
-https://innrapporteringmelk.api.{env}.no/v1/{inntektsaar}
+https://innrapporteringprimaernaeringmelk.api.{env}.no/v1/{inntektsaar}
 ```
 
 ### JSON
