@@ -87,7 +87,7 @@ Regneark med testpersoner med skattekort i testmiljøet : [testpersoner](../../s
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om dette SKattekort til arbeidsgiver API, kan du sende oss e-post: forskudd@skatteetaten.no  
+Har du spørsmål til Skatteetaten om Skattekort til arbeidsgiver API, kan du sende oss e-post: forskudd@skatteetaten.no  
   
 </TabItem>
 </Tabs>
