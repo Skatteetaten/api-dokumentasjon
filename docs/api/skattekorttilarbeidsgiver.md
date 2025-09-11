@@ -85,6 +85,19 @@ Eksempel med 2 arbeidsgivere
   }
 }
 ```
+Forespørsel om endringer
+```
+{
+  "inntektsaar": "2025",
+  "bestillingstype": "HENT_KUN_ENDRING",
+  "kontaktinformasjon": {
+    "epostadresse": "john.smith@example.com",
+    "mobiltelefonummer": "+4794123456"
+  },
+  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING",
+}
+```
+
 
 ## Eksempel på respons
 #### skattekortTilArbeidsgiver/svar/
