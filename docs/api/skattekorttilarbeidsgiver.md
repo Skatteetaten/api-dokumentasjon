@@ -202,15 +202,14 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
 
-| HTTP Status | Feilkode | Beskrivelse                                                                  |
-|-------------|----------|------------------------------------------------------------------------------|
-| 200         |          | ok                                                                           |
-| 204         |          | Kun ved skattekortTilArbeidsgiverSvar. Angitt referanse ikke funnet          |
-| 400         | FOR-001  | Request payload validerer ikke                                               |
-| 400         | FOR-002  | Request payload parser ikke                                                  |
-| 400         | FOR-003  | Request parameter validerer ikke                                             |
-| 403         |          | Feil i forbindelse med autorisering.                                         |
-| 500         |          | Uventet feil i et bakenforliggende system                                    |
+| HTTP Status | Feilkode | Beskrivelse                             |
+|-------------|----------|-----------------------------------------|
+| 200         |          | ok                                      |
+| 204         |          | Angitt referanse ikke funnet            |
+| 400         | FOR-001  | Request payload validerer ikke          |
+| 400         | FOR-002  | Request payload parser ikke             |
+| 400         | FOR-003  | Request parameter validerer ikke        |
+| 403         |          | Feil i forbindelse med autentisering.   |
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
