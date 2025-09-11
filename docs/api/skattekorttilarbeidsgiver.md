@@ -45,8 +45,68 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 ## Eksempel på request URL
 
+### bestillSkattekort
+Eksempel med 2 arbeidsgivere 
 ```
-Legg inn eksempel
+{
+  "inntektsaar": "2025",
+  "bestillingstype": "HENT_ALLE_OPPGITTE",
+  "kontaktinformasjon": {
+    "epostadresse": "john.smith@example.com",
+    "mobiltelefonummer": "+4794123456"
+  },
+  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING",
+  "forespoerselOmSkattekortTilArbeidsgiver": {
+    "arbeidsgiver": [
+      {
+        "arbeidsgiveridentifikator": {
+          "organisasjonsnummer": "222121914"
+        },
+        "arbeidstakeridentifikator": [
+          "42059199203",
+          "55049199111",
+          "13820499748"
+        ]
+      }
+    ]
+  }
+}
+
+Eksempel med 2 arbeidsgivere 
+```
+{
+  "inntektsaar": "2025",
+  "bestillingstype": "HENT_ALLE_OPPGITTE",
+  "kontaktinformasjon": {
+    "epostadresse": "john.smith@example.com",
+    "mobiltelefonummer": "+4794123456"
+  },
+  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING",
+  "forespoerselOmSkattekortTilArbeidsgiver": {
+    "arbeidsgiver": [
+      {
+        "arbeidsgiveridentifikator": {
+          "organisasjonsnummer": "222121914"
+        },
+        "arbeidstakeridentifikator": [
+          "42059199203",
+          "55049199111",
+          "13820499748"
+        ]
+      },
+      {
+        "arbeidsgiveridentifikator": {
+          "organisasjonsnummer": "123456789"
+        },
+        "arbeidstakeridentifikator": [
+          "21908899455",
+          "13830197340",
+          "24880199664"
+        ]
+      }
+    ]
+  }
+}
 ```
 
 ## Eksempel på JSON respons
@@ -54,6 +114,7 @@ Legg inn eksempel
 ```
 Legg inn eksempel
 ```
+Vi støtter også xml i request/respone.
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
