@@ -44,7 +44,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
 ## Eksempel på request
-### bestillSkattekort
+#### bestillSkattekort
 Eksempel med 2 arbeidsgivere 
 ```
 {
@@ -83,10 +83,114 @@ Eksempel med 2 arbeidsgivere
 ```
 
 ## Eksempel på respons
-### skattekortTilArbeidsgiver/svar/
+#### skattekortTilArbeidsgiver/svar/
 
 ```
-Legg nn eksempel her
+{
+  "arbeidsgiver": [
+    {
+      "arbeidsgiveridentifikator": {
+        "organisasjonsnummer": "222121914"
+      },
+      "arbeidstaker": [
+        {
+          "arbeidstakeridentifikator": "13830197340",
+          "resultatForSkattekort": "skattekortopplysningerOK",
+          "skattekort": {
+            "utstedtDato": "2025-04-03",
+            "skattekortidentifikator": "543210",
+            "forskuddstrekk": [
+              {
+                "trekkode": "LOENN_FRA_HOVEDARBEIDSGIVER",
+                "frikort": {
+                  "frikortbeloep": "100000"
+                }
+              },
+              {
+                "trekkode": "LOENN_FRA_BIARBEIDSGIVER",
+                "frikort": {
+                  "frikortbeloep": "100000"
+                }
+              },
+              {
+                "trekkode": "LOENN_FRA_NAV",
+                "frikort": {
+                  "frikortbeloep": "100000"
+                }
+              }
+            ]
+          },
+          "inntektsaar": "2025"
+        },
+        {
+          "arbeidstakeridentifikator": "42059199203",
+          "resultatForSkattekort": "skattekortopplysningerOK",
+          "skattekort": {
+            "utstedtDato": "2024-12-07",
+            "skattekortidentifikator": "10771",
+            "forskuddstrekk": [
+              {
+                "trekkode": "LOENN_FRA_HOVEDARBEIDSGIVER",
+                "trekktabell": {
+                  "tabellnummer": "8010",
+                  "prosentsats": "41",
+                  "antallMaanederForTrekk": "10.5"
+                }
+              },
+              {
+                "trekkode": "LOENN_FRA_BIARBEIDSGIVER",
+                "trekkprosent": {
+                  "prosentsats": "34"
+                }
+              },
+              {
+                "trekkode": "LOENN_FRA_NAV",
+                "trekkprosent": {
+                  "prosentsats": "34"
+                }
+              }
+            ]
+          },
+          "inntektsaar": "2025"
+        },
+        {
+          "arbeidstakeridentifikator": "24880199664",
+          "resultatForSkattekort": "skattekortopplysningerOK",
+          "skattekort": {
+            "utstedtDato": "2025-01-24",
+            "skattekortidentifikator": "10799",
+            "forskuddstrekk": [
+              {
+                "trekkode": "PENSJON",
+                "trekkprosent": {
+                  "prosentsats": "25",
+                  "antallMaanederForTrekk": "12"
+                }
+              },
+              {
+                "trekkode": "PENSJON_FRA_NAV",
+                "trekkprosent": {
+                  "prosentsats": "25",
+                  "antallMaanederForTrekk": "12"
+                }
+              }
+            ]
+          },
+          "tilleggsopplysning": [
+            "kildeskattPaaPensjon",
+            "kildeskattPaaLoenn"
+          ],
+          "inntektsaar": "2025"
+        },
+        {
+          "arbeidstakeridentifikator": "10829996974",
+          "resultatForSkattekort": "ikkeSkattekort",
+          "inntektsaar": "2025"
+        }
+      ]
+    }
+  ]
+}
 ```
 
 Vi støtter også xml i request/respone.
