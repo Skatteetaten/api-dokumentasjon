@@ -44,7 +44,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
 ## Eksempel på request
-#### bestillSkattekort
+### bestillSkattekort
 Eksempel med 2 arbeidsgivere 
 ```
 {
@@ -83,8 +83,7 @@ Eksempel med 2 arbeidsgivere
 ```
 
 ## Eksempel på respons
-#### skattekortTilArbeidsgiver/svar/{bestillingsid}
-
+### skattekortTilArbeidsgiver/svar/{bestillingsid}
 
 ```
 Legg nn eksempel her
