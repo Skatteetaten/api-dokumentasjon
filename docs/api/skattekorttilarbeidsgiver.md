@@ -202,18 +202,15 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
 
-| Feilkode | HTTP Statuskode | Feilområde                                                           |
-|----------|-----------------|----------------------------------------------------------------------|
-| SP-001   | 500             | Uventet feil på tjenesten.                                           |
-| SP-002   | 500             | Uventet feil i et bakenforliggende system.                           |
-| SP-003   | 404             | Ukjent url benyttet.                                                 |
-| SP-004   | 401             | Feil i forbindelse med autentisering.                                |
-| SP-005   | 403             | Feil i forbindelse med autorisering.                                 |
-| SP-006   | 400             | Feil i forbindelse med validering av inputdata.                      |
-| SP-007   | 404             | Ikke treff på oppgitt personidentifikator.                           |
-| SP-008   | 404             | Fant ikke skattepliktsdokument for angitt personidentifikator og år. |
-| SP-009   | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.           |    
-| SP-010   | 410             | Skattepliktsdokument finnes ikke lenger.                             |
+| HTTP Status | Feilkode | Beskrivelse                                                                  |
+|-------------|----------|------------------------------------------------------------------------------|
+| 200         |          | ok                                                                           |
+| 204         |          | Kun ved skattekortTilArbeidsgiverSvar. Angitt referanse ikke funnet          |
+| 400         | FOR-001  | Request payload validerer ikke                                               |
+| 400         | FOR-002  | Request payload parser ikke                                                  |
+| 400         | FOR-003  | Request parameter validerer ikke                                             |
+| 403         |          | Feil i forbindelse med autorisering.                                         |
+| 500         |          | Uventet feil i et bakenforliggende system                                    |
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
