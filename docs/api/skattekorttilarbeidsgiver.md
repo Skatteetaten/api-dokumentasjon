@@ -67,32 +67,6 @@ Eksempel med 2 arbeidsgivere
           "55049199111",
           "13820499748"
         ]
-      }
-    ]
-  }
-}
-
-Eksempel med 2 arbeidsgivere 
-```
-{
-  "inntektsaar": "2025",
-  "bestillingstype": "HENT_ALLE_OPPGITTE",
-  "kontaktinformasjon": {
-    "epostadresse": "john.smith@example.com",
-    "mobiltelefonummer": "+4794123456"
-  },
-  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING",
-  "forespoerselOmSkattekortTilArbeidsgiver": {
-    "arbeidsgiver": [
-      {
-        "arbeidsgiveridentifikator": {
-          "organisasjonsnummer": "222121914"
-        },
-        "arbeidstakeridentifikator": [
-          "42059199203",
-          "55049199111",
-          "13820499748"
-        ]
       },
       {
         "arbeidsgiveridentifikator": {
