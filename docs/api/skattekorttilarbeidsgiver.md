@@ -83,7 +83,7 @@ Eksempel med 2 arbeidsgivere
 ```
 
 ## Eksempel på respons
-### skattekortTilArbeidsgiver/svar/{bestillingsid}
+### skattekortTilArbeidsgiver/svar/
 
 ```
 Legg nn eksempel her
