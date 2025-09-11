@@ -33,8 +33,10 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:forskudd`
 
-### Skatteetaten må gi tilgang
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang.
+Du må søke Skatteetaten om tilgang til dette scopet
+
+### Sikkerhetstoken
+Ved bruk av Maskinportentoken må dette inneholde en systembruker i systemuser_org under authorisation_details. TODO: lenke
 
 ## Datakatalog
 
