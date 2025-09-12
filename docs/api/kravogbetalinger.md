@@ -868,7 +868,7 @@ med å pilotere løsningene.
 
 ## Tenor testdatasøk
 
-Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Samlet reskontroinnsyn". Der kan du finne virksomheter og personer i Test som har krav og innbetalinger.
+Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Krav og betalinger". Der kan du gjøre reskontrooppslag og finne virksomheter og personer i Test som har krav og innbetalinger.
 
 Obs. regnskapssystemer som tester vil i Test kunne gjøre oppslag på alle testvirksomheter, selv om de i pilotperioden kun kan gjøre oppslag for egen virksomhet i Prod.
 

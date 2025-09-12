@@ -81,6 +81,7 @@ const sidebars = {
         { id: 'api/innrapportering-fisk', label: "Primærnæring fisk", type: 'doc' },
         { id: 'api/innrapportering-jordbruk', label: "Primærnæring frukt, bær, poteter og grønnsaker (jord- og hagebruk)", type: 'doc' },
         { id: 'api/innrapportering-korn', label: "Primærnæring korn", type: 'doc' },
+        { id: 'api/innrapportering-melk', label: "Primærnæring melk", type: 'doc' },
         { id: 'api/innrapportering-slakt', label: "Primærnæring slakt", type: 'doc' },
         { id: 'api/innrapportering-toemmer', label: "Primærnæring tømmer", type: 'doc' },
         { id: 'api/innrapportering-skadeforsikring', label: "Skadeforsikring", type: 'doc' },
