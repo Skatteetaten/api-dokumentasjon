@@ -109,14 +109,164 @@ https://innrapporteringfondskonto.api.{env}.no/v1/{inntektsaar}
         "varselSmsMobilnummer": "80080000"
       }
     },
-    "inntektsaar": 2024,
-    "oppgavegiversLeveranseReferanse": "EksternReferanse_2013_1",
-    "leveransetype": "ordinaer",
-    "oppgave": "<<<<<<<<<< TODO! >>>>>>>>>>",
-    "oppgaveoppsummering": "<<<<<<<<<< TODO! >>>>>>>>>>"
+    "inntektsaar" : 2024,
+    "oppgavegiversLeveranseReferanse" : "EksternReferanse_2013_1",
+    "leveransetype" : "ordinaer",
+    "oppgave" : [ {
+      "oppgaveeier" : {
+        "person" : {
+          "foedselsnummer" : "01234567890",
+          "bostedsland" : "NO",
+          "fornavn" : "Ole",
+          "mellomnavn" : "Grunnar",
+          "etternavn" : "Olsen",
+          "foedselsdato" : "1990-01-02"
+        },
+        "alternativIdentifikator" : "alternativ identifikator",
+        "adresse" : {
+          "adresseStrukturert" : {
+            "adressenavn" : "adressenavn",
+            "adressenummer" : "adressenummer",
+            "bygning" : "bygning",
+            "boenhet" : "boenhet",
+            "etasje" : "etasje",
+            "distriktsnavn" : "distriktsnavn",
+            "postboks" : "postboks",
+            "postkode" : "postkode",
+            "byEllerStedsnavn" : "byEllerStedsnavn",
+            "administrativEnhet" : "administrativEnhet",
+            "adresseTekstForUtskrift" : "adresseTekstForUtskrift"
+          },
+          "landkode" : "UK",
+          "adresseBrukstype" : "bosted"
+        },
+        "internasjonalIdentifikator" : {
+          "identifikator" : "Identifikator",
+          "identifikatortype" : "TIN",
+          "utstedtAvLand" : "ZZ"
+        }
+      },
+      "reellRettighetshaver" : [ ],
+      "fondskonto" : {
+        "kontonummer" : "12345678901",
+        "kontonummertype" : "IBAN",
+        "saldo" : "10.0",
+        "forsikringsandel" : "20.0",
+        "aksjeandel" : "30.0",
+        "skjermingsgrunnlag" : "40.0",
+        "ubenyttetSkjermingsfradragTilFremfoering" : "50",
+        "innskuttKapital" : "60.0",
+        "faktiskUttak" : "70.0",
+        "skattefrittUttak" : "80.0",
+        "anvendtSkjerming" : "90.0",
+        "returprovisjon" : "100",
+        "forvaltningskostnad" : "110",
+        "skattepliktigGevinstTapAksjedel" : "120.0",
+        "skattepliktigGevinstTapRentedel" : "130.0",
+        "formuesverdiKontantdel" : "140.0",
+        "formuesverdiAksjedel" : "150.0",
+        "spesifiktForAar" : {
+          "andelFraOgMed20221006" : {
+            "skattepliktigGevinstTapAksjedel" : "150.0"
+          }
+        }
+      },
+      "produkt" : [ {
+        "produkttype" : "Produkttype 1",
+        "navn" : "Navn",
+        "antall" : "100.0",
+        "formuesverdi" : "200.0",
+        "isin" : "ISIN12345678"
+      }, {
+        "produkttype" : "Produkttype 2",
+        "navn" : "Navn",
+        "antall" : "100.0",
+        "formuesverdi" : "200.0",
+        "isin" : "ISIN12345678"
+      } ],
+      "disponent" : [ {
+        "person" : {
+          "foedselsnummer" : "01234567890",
+          "fornavn" : "Ole",
+          "mellomnavn" : "Grunnar",
+          "etternavn" : "Olsen",
+          "foedselsdato" : "1990-01-02"
+        },
+        "internasjonalIdentifikator" : {
+          "identifikator" : "Identifikator",
+          "identifikatortype" : "TIN",
+          "utstedtAvLand" : "ZZ"
+        },
+        "adresse" : {
+          "adresseStrukturert" : {
+            "adressenavn" : "adressenavn",
+            "adressenummer" : "adressenummer",
+            "bygning" : "bygning",
+            "boenhet" : "boenhet",
+            "etasje" : "etasje",
+            "distriktsnavn" : "distriktsnavn",
+            "postboks" : "postboks",
+            "postkode" : "postkode",
+            "byEllerStedsnavn" : "byEllerStedsnavn",
+            "administrativEnhet" : "administrativEnhet",
+            "adresseTekstForUtskrift" : "adresseTekstForUtskrift"
+          },
+          "landkode" : "SE",
+          "adresseBrukstype" : "bosted"
+        }
+      }, {
+        "organisasjon" : {
+          "organisasjonsnummer" : "987654322",
+          "organisasjonsnavn" : "Bedrift AS"
+        },
+        "internasjonalIdentifikator" : {
+          "identifikator" : "Identifikator",
+          "identifikatortype" : "TIN",
+          "utstedtAvLand" : "ZZ"
+        },
+        "adresse" : {
+          "adresseStrukturert" : {
+            "adressenavn" : "adressenavn",
+            "adressenummer" : "adressenummer",
+            "bygning" : "bygning",
+            "boenhet" : "boenhet",
+            "etasje" : "etasje",
+            "distriktsnavn" : "distriktsnavn",
+            "postboks" : "postboks",
+            "postkode" : "postkode",
+            "byEllerStedsnavn" : "byEllerStedsnavn",
+            "administrativEnhet" : "administrativEnhet",
+            "adresseTekstForUtskrift" : "adresseTekstForUtskrift"
+          },
+          "landkode" : "SE",
+          "adresseBrukstype" : "bosted"
+        }
+      } ]
+    } ],
+    "sletteoppgave" : [ {
+      "oppgaveeierFoedselsnummer" : "01234567890",
+      "oppgaveeierAlternativIdentifikator" : "Ole Olsen",
+      "kontonummer" : "Kontonummer1"
+    }, {
+      "oppgaveeierFoedselsnummer" : "01234567891",
+      "oppgaveeierAlternativIdentifikator" : "Kari Nordmann",
+      "kontonummer" : "Kontonummer2"
+    } ],
+    "oppgaveoppsummering" : {
+      "antallOppgaver" : 1,
+      "sumFaktiskUttak" : "70.0",
+      "sumAnvendtSkjerming" : "90.0",
+      "sumSkattepliktigGevinstTapAksjedel" : "120.0",
+      "sumFormuesverdiKontantdel" : "140.0",
+      "sumSaldo" : "10.0",
+      "sumSkjermingsgrunnlag" : "40.0",
+      "sumInnskuttKapital" : "60.0",
+      "sumSkattefrittUttak" : "80.0",
+      "sumSkattepliktigGevinstTapRentedel" : "130.0",
+      "sumFormuesverdiAksjedel" : "150.0"
+    }
   }
 }
-
 ```
 
 #### Eksempel på respons
