@@ -232,6 +232,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 Regneark med testpersoner med skattekort i testmiljøet : [testpersoner](../../static/download/skattekort_ekstern_innsending_2025.xlsx).
+Skattekortene oppdateres hver dag kl. 0600. (Gjelder ikke Frikort med beløpsgrense)
 
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
