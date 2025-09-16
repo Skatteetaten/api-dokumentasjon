@@ -33,7 +33,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattekorttilarbeidsgiver`
 
-Du må søke Skatteetaten om tilgang til dette scopet.<br>
+Du må søke Skatteetaten om tilgang til dette scopet.<br/>
 Opplegget for hvordan søke tilgang er fortsatt ikke helt klart. Inntil videre kan du få tilgang til scopet ved å kontakte oss på mail (Se under *Kontakt oss*-fanen)
 
 ### Sikkerhetstoken
