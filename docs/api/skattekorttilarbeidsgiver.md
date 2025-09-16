@@ -223,9 +223,9 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 |-------------|----------|-----------------------------------------|
 | 200         |          | ok                                      |
 | 204         |          | Angitt referanse ikke funnet            |
-| 400         | FOR-001  | Request payload validerer ikke          |
-| 400         | FOR-002  | Request payload parser ikke             |
-| 400         | FOR-003  | Request parameter validerer ikke        |
+| 400         | FOR_001  | Request payload validerer ikke          |
+| 400         | FOR_002  | Request payload parser ikke             |
+| 400         | FOR_003  | Request parameter validerer ikke        |
 | 403         |          | Feil i forbindelse med autentisering.   |
 
 </TabItem>
