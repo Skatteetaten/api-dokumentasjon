@@ -218,12 +218,17 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
 
-| HTTP Status | Feilkode | Beskrivelse                             |
-|-------------|----------|-----------------------------------------|
-| 204         |          | Angitt referanse ikke funnet. Denne vil man få hvis man henter svar med en BR-referanse, og denne enten ikke er klar, eller ikke finnes |
-| 400         | FOR_001  | Request payload validerer ikke          |
-| 400         | FOR_002  | Request payload parser ikke             |
-| 400         | FOR_003  | Request parameter validerer ikke. Kun på henting av svar, og man ikke bruker en referanse på formen BR[0-9]+       |
+| HTTP Status | Feilkode | Beskrivelse                               |
+|-------------|----------|-------------------------------------------|
+| 204         |          | Angitt referanse ikke funnet. Denne vil man få hvis man henter svar med en BR-referanse, og denne enten ikke er klar, eller ikke finnes. |
+| 400         | FOR_001  | Request payload validerer ikke            |
+| 400         | FOR_002  | Request payload parser ikke               |
+| 400         | FOR_003  | Request parameter validerer ikke. Kun på henting av svar, og man ikke bruker en referanse på formen: BR[0-9]+ |
+
+</TabItem>
+<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+
+[Dokumentasjon på SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/bestilling-av_skattekort)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
