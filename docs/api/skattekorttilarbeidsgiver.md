@@ -34,6 +34,9 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:sk
 Du må søke Skatteetaten om tilgang til dette scopet.<br/>
 Opplegget for hvordan søke tilgang er fortsatt ikke helt klart. Inntil videre kan du få tilgang til scopet ved å kontakte oss på mail (Se under *Kontakt oss*-fanen)
 
+## Delegering
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
+
 ## Systemtilgang med systembruker
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. Informasjon vedr. dette finnes [her](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker).
 
