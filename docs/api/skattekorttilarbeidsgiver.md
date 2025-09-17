@@ -220,12 +220,10 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 | HTTP Status | Feilkode | Beskrivelse                             |
 |-------------|----------|-----------------------------------------|
-| 200         |          | ok                                      |
-| 204         |          | Angitt referanse ikke funnet            |
+| 204         |          | Angitt referanse ikke funnet. Denne vil man få hvis man henter svar med en BR-referanse, og denne enten ikke er klar, eller ikke finnes |
 | 400         | FOR_001  | Request payload validerer ikke          |
 | 400         | FOR_002  | Request payload parser ikke             |
-| 400         | FOR_003  | Request parameter validerer ikke        |
-| 403         |          | Feil i forbindelse med autentisering.   |
+| 400         | FOR_003  | Request parameter validerer ikke. Kun på henting av svar, og man ikke bruker en referanse på formen BR[0-9]+       |
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
