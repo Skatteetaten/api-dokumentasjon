@@ -28,15 +28,13 @@ For generell informasjon om tjenestene se egne sider om:
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/bestilling-av_skattekort)
 
-## Tilgang
-
-### Scope
+## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattekorttilarbeidsgiver`
 
 Du må søke Skatteetaten om tilgang til dette scopet.<br/>
 Opplegget for hvordan søke tilgang er fortsatt ikke helt klart. Inntil videre kan du få tilgang til scopet ved å kontakte oss på mail (Se under *Kontakt oss*-fanen)
 
-### Systemtilgang med systembruker
+## Systemtilgang med systembruker
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. Informasjon vedr. dette finnes [her](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker).
 
 Du finner mer informasjon om maskinporten-tokens og eksempler på dette i [Altinn](https://docs.altinn.studio/altinn-studio/guides/integration/sbs/setup/#6-fiken-can-authenticate-against-maskinporten-with-the-system-user)
