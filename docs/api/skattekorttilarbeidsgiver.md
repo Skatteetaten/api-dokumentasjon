@@ -36,10 +36,10 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:sk
 Du må søke Skatteetaten om tilgang til dette scopet.<br/>
 Opplegget for hvordan søke tilgang er fortsatt ikke helt klart. Inntil videre kan du få tilgang til scopet ved å kontakte oss på mail (Se under *Kontakt oss*-fanen)
 
-### Sikkerhetstoken
-Ved bruk av Maskinportentoken må dette inneholde en systembruker i `systemuser_org` under `authorisation_details`. 
+### Systemtilgang med systembruker
+Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. Informasjon vedr. dette finnes [her](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker).
 
-Du finner mer informasjon om dette i [Altinn](https://docs.altinn.studio/altinn-studio/guides/integration/sbs/setup/#6-fiken-can-authenticate-against-maskinporten-with-the-system-user)
+Du finner mer informasjon om maskinporten-tokens og eksempler på dette i [Altinn](https://docs.altinn.studio/altinn-studio/guides/integration/sbs/setup/#6-fiken-can-authenticate-against-maskinporten-with-the-system-user)
 
 ## Datakatalog
 
