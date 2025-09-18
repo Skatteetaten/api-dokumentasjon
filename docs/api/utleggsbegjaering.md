@@ -1366,10 +1366,16 @@ Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på I
 
 Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
 
-URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v1
+URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
 
 I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
 med å pilotere løsningene.
+
+### Tidligere versjoner
+Utleggsbegjæringen ble 22.09.2025 lansert i ny versjon 1.0. Forrige versjon (0.9) av utleggsbegjæring er i en overgangsperiode tilgjengelig på https://api-test.sits.no/api/utleggsbegjaering/v1
+
+Dokumentasjon av forrige versjon av utleggsbegjæring finnes her:
+ [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.9.2)
 
 ## Testdata
 Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/)
