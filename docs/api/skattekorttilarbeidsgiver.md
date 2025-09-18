@@ -32,7 +32,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattekorttilarbeidsgiver`
 
 Du må søke Skatteetaten om tilgang til dette scopet.<br/>
-Opplegget for hvordan søke tilgang er fortsatt ikke helt klart. Inntil videre kan du få tilgang til scopet ved å kontakte oss på mail (Se under *Kontakt oss*-fanen)
+Du kan få tilgang til scopet ved å kontakte oss (se under *Kontakt oss*-fanen)
 
 ## Delegering
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
