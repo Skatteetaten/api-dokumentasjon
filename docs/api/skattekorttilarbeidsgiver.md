@@ -231,7 +231,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Dokumentasjon på SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/bestilling-av_skattekort)
+[Dokumentasjon på SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/skattekort-til-arbeidsgiver/)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
