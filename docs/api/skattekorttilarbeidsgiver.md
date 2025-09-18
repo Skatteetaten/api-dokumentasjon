@@ -26,7 +26,7 @@ For generell informasjon om tjenestene se egne sider om:
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i OpenAPI spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/bestilling-av_skattekort)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/skattekort-til-arbeidsgiver/)
 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattekorttilarbeidsgiver`
