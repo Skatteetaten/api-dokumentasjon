@@ -90,10 +90,10 @@ fraSekvensnummer	String	Begrenser returnerte trekkpålegg til bare inneholde nye
 maksAntall	String	Angir maks antall trekkpålegg som skal returneres. 1 eller større. Skal bare brukes sammen med fraSekvensnummer. Mest relevant for trekkpliktige med svært mange trekkpålegg	[default til null]
 
 ### Retur type
-Liste av Trekkpaalegg https://skatteetaten.github.io/beta-apier/trekkpaalegg/feltbeskrivelser/Models/Trekkpaalegg
+Liste av Trekkpaalegg https://skatteetaten.github.io/api-dokumentasjon/api/trekkpaalegg?tab=Informasjonsmodell 
 
 ### Autorisasjon
-Se Tilgang https://skatteetaten.github.io/beta-apier/trekkpaalegg/tilgang
+Se Tilgang https://skatteetaten.github.io/api-dokumentasjon/api/trekkpaalegg?tab=Sjekkliste+for+l%C3%B8nns-+og+personalsystemleverand%C3%B8rer
 
 ### HTTP request headere
 Content-Type: Ikke definert
