@@ -18,14 +18,14 @@ hide_table_of_contents: true
 For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
+* [Sikkerhetsmekanismer](../om/sikkerhet.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Teknisk spesifikasjon
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i OpenAPI spesifikasjonen på
 [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/bestilling-av_skattekort)
 
 ## Scope
@@ -226,7 +226,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | 204         |          | Angitt referanse ikke funnet. Denne vil man få hvis man henter svar med en BR-referanse, og denne enten ikke er klar, eller ikke finnes. |
 | 400         | FOR_001  | Request payload validerer ikke            |
 | 400         | FOR_002  | Request payload parser ikke               |
-| 400         | FOR_003  | Request parameter validerer ikke. Kun på henting av svar, og man ikke bruker en referanse på formen: BR[0-9]+ |
+| 400         | FOR_003  | Request parameter validerer ikke. Oppstår kun ved henting av svar dersom man ikke bruker en referanse på formen: BR[0-9]+ |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
