@@ -107,22 +107,6 @@ For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk
 Dersom man sender en utleggsbegjæring til feil system, vil systemet returnere en feilmelding om dette og avvise innsendingen. For ELAN vil det gis en 422-feilkode med feilmeldingen "SAKSOEKT_GAMMELT_REGELVERK".
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-Eksempler"> 
-
-
-## Enkelt eksempel på utleggsbegjæring
-
-Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
-
-[utleggsbegjaering-enkel.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
-
-## Mer komplekst eksempel på utleggsbegjæring
-
-Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
-
-[utleggsbegjaering-kompleks.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
-
-</TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-Feilkoder">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
@@ -194,12 +178,127 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-Informasjonsmodell">
 
  <details>
-      <summary>Utleggsbegjæring</summary>
+      <summary>Utleggsbegjæring versjon 1.0</summary>
       <p>
 
-Her ser du hele informasjonsmodellen for Utleggsbegjæring
+## Forklaring til modellen
+Denne veilederen har til formål å veilede både funksjonelle og tekniske ressurser til å få en overordnet forståelse av elementene og sammenhengen mellom disse i ELAN løsningen.
+Hvert enkelt begrep forklares ikke her, det vil man finne i "documentation" elementet i Swagger(JSON).
+
+Modellen består av en «rotEntitet» som gjelder overordnet informasjon på tvers av begjæringen.
+
+I øvre halvdel har man informasjon om de formelle partene i begjæringen, saksøker, saksøkt og innsender. Disse partene kan ha/være en prosessfullmektig, dvs en representant for parten i aktuelle sak.
+
+I tillegg finner man noen generelle entiteter som gjelder hele begjæringen.
+
+Videre har man entiteten «Krav» som er kjerneinformasjon med detaljer om «pengekravet» med endringer, fra det ble etablert og frem til innsendingen av utleggsbegjæringen.
+
+I «BegjæringensTvangsgrunnlag» skal man legge inn detaljer om grunnlaget for Kravene i utleggsbegjæringen.
+
+### a) Rotnivå - Utleggsbegjæring
+RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen, som generelle vedlegg, underskrift med navn på ansvarlig for innsendingen.
+
+innsenderReferanse er innsenders unike referanse på saken, tilsvarende vil saksreferanse være namsmyndighetens unike identifikator for saken og som skal benyttes senere i prosessen ved kommunikasjon ved namsmyndigheten.
+
+I elementet tvangsfullbyrdelsestype må man angi om det er en ren utleggsbegjæring, eller kombinert forliksklage.
+
+Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
+
+![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a.png)
+
+### b) Parter i utleggsbegjæringen
+Innsender er den som sender inn utleggsbegjæringen. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
+
+Saksøker er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig som representerer seg i sak om tvangsfullbyrdelse(saksøkersProsessfullmektig). Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
+
+Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktes Prosessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+
+Prosessfullmektig(fullmakt/bevillingshaver/Advokat/avdvokatfullmektig) er tredjeperson med en generell(Bevillingshaver) eller spesifikk fullmakt(Fullmakt) til å opptre på vegne av en part. Dette må være en fysisk person.
+
+Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges. 
+
+![Parter](../../static/download/utleggsbegjaering/begjaering-b1.png)
+
+#### Datatyper:
+
+![Parter-datatyper](../../static/download/utleggsbegjaering/begjaering-b2.png)
+
+### c) Generelle elementer
+
+I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker hele utleggsbegjæringen, dette er
+* KreverRettsgebyrErstattet - Benyttes om du ønsker å angi at rettsgebyret som ilegges ved innsending, kreves erstattet av saksøkte.
+* Betalingsinformasjon - Informasjon om hvor, hvordan og til hvem innbetalingen skal gjøres, dersom det ender opp i samordnet trekk.
+* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting.
+
+![Generelle elementer](../../static/download/utleggsbegjaering/begjaering-c.png)
+
+### d) Kravinformasjon
+
+Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er Hovedkrav og Rentekrav.
+
+Eksempler på dette kan være «hovedkrav» som er det opprinnelige beløpet en person er skyldig. Se kodeliste for alle gyldige verdier https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826
+I mange tilfeller kan en «opprinnelig faktura» være et slik eksempel. Har man f. eks to fakturaer med ulikt forfall(«kravforfall»), er dette å anse som to krav.
+
+«InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav».
+
+Eksempler på dette kan være «kravdetaljer» slik som eksempelvis «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere fra «Rentekrav» til «Sakskostnader».
+
+I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
+
+Dersom man sender inn et krav med «kravdetaljer» = «Rentekrav», bør man legge ved hvilken «rentePeriode»(fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av(«renteGrunnlag»).  Dette fylles ut i «rentekrav» elementet.
+
+I tillegg bør man legge ved hvilken type og evnt. «avtaltRentesats» man har benyttet ved beregning(«rentesatsOgType»).
+
+Sender man inn et krav som det kreves renter for, må man fylle ut «rentebærendeKrav».
+
+Har det kommet innbetalinger på aktuelle krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
+
+Har man andre nedjusteringer på krav, skal dette angis i entiteten KravEndring.
+
+Har kravet byttet «eier», skal informasjon om dette fylles informeres via entiteten «transporterklæring» og vedlegges dokumentasjon.
+
+Dersom man vedlegger Transporterklæring på eksempelvis et Hovedkrav, trenger man ikke fylle ut posten for andre krav(kravdetaljer) som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav".
+
+![Kravinformasjon](../../static/download/utleggsbegjaering/begjaering-d.png)
+
+### e) BegjæringensTvangsgrunnlag
+
+Begjæringens Tvangsgrunnlag omfatter data om og i tvangsgrunnlag(ene) i begjæringen. Tvangsgrunnlaget brukes videre som kobling til krav(innsendersKravreferanse) og identifisere hvem som er parter på kravene.
+
+Som innsender har du mulighet å legge deres egen referanse (eksternSaksreferanse) på hvert begjæringensTvangsgrunnlag.
+
+Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUnnlatvarsel(OBS: Er ikke lov å fylle ut for SkriftligMeddelelse).
+
+![BegjæringensTvangsgrunnlag](../../static/download/utleggsbegjaering/begjaering-e.png)
+
+## Eksempler på testdata
+
+Eksempler på testdata for modell versjon 1.0 kommer snart.
+
+</p>
+</details>
+
+ <details>
+      <summary>Utleggsbegjæring versjon 0.9</summary>
+      <p>
+
+Her ser du den forrige informasjonsmodellen for Utleggsbegjæring (versjon 0.9).
 
 ![Informasjonsmodell](../../static/download/utleggsbegjaering/informasjonsmodell-utleggsbegjaering.png)
+
+## Eksempler på testdata
+
+### Enkelt eksempel på utleggsbegjæring
+
+Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
+
+[utleggsbegjaering-enkel.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
+
+### Mer komplekst eksempel på utleggsbegjæring
+
+Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
+
+[utleggsbegjaering-kompleks.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
 
 </p>
 </details>
