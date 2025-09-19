@@ -126,11 +126,6 @@ https://innrapporteringoverskuddstroem.api.{env}.no/v1/{inntektsaar}
                         },
                         "kommunenummer": "0001"
                     },
-                    "matrikkelnummer": {
-                        "kommunenummer": "0001",
-                        "gaardsnummer": 1,
-                        "bruksnummer": 1
-                    },
                     "maalepunktID": "000000000000000001"
                 },
                 "bruttoBeloep": "1000.00",
@@ -141,21 +136,12 @@ https://innrapporteringoverskuddstroem.api.{env}.no/v1/{inntektsaar}
             {
                 "oppgaveeier": {
                     "foedselsnummer": "00000000000",
-                    "vegadresse": {
-                        "adressenavn": "Apalveien",
-                        "adressenummer": {
-                            "husnummer": "111"
-                        },
-                        "poststed": {
-                            "poststedsnavn": "Andeby",
-                            "postnummer": "1313"
-                        },
-                        "kommunenummer": "0001"
-                    },
-                    "matrikkelnummer": {
-                        "kommunenummer": "0001",
-                        "gaardsnummer": 2,
-                        "bruksnummer": 2
+                    "matrikkeladresse": {
+                        "matrikkelnummer": {
+                            "kommunenummer": "0001",
+                            "gaardsnummer": 2,
+                            "bruksnummer": 2
+                        }
                     },
                     "maalepunktID": "000000000000000002"
                 },
