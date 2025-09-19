@@ -236,7 +236,7 @@ I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker h
 
 Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er Hovedkrav og Rentekrav.
 
-Eksempler på dette kan være «hovedkrav» som er det opprinnelige beløpet en person er skyldig. Se kodeliste for alle gyldige verdier https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826
+Eksempler på dette kan være «hovedkrav» som er det opprinnelige beløpet en person er skyldig. Se kodeliste for alle gyldige verdier: [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826).
 I mange tilfeller kan en «opprinnelig faktura» være et slik eksempel. Har man f. eks to fakturaer med ulikt forfall(«kravforfall»), er dette å anse som to krav.
 
 «InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav».
@@ -285,6 +285,9 @@ Eksempler på testdata for modell versjon 1.0 kommer snart.
 Her ser du den forrige informasjonsmodellen for Utleggsbegjæring (versjon 0.9).
 
 ![Informasjonsmodell](../../static/download/utleggsbegjaering/informasjonsmodell-utleggsbegjaering.png)
+
+Dokumentasjon av forrige versjon av utleggsbegjæring finnes her:
+[Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.9.2)
 
 ## Eksempler på testdata
 
@@ -348,9 +351,6 @@ med å pilotere løsningene.
 
 ### Tidligere versjoner
 Utleggsbegjæringen ble 22.09.2025 lansert i ny versjon 1.0. Forrige versjon (0.9) av utleggsbegjæring er i en overgangsperiode tilgjengelig på https://api-test.sits.no/api/utleggsbegjaering/v1
-
-Dokumentasjon av forrige versjon av utleggsbegjæring finnes her:
- [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.9.2)
 
 ### Bruk av tjenester i testmiljøet
 
