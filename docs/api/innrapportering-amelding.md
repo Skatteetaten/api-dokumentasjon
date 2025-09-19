@@ -74,6 +74,9 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ## Innsending
 Dokumentasjon finner du på [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api/)
 
+## Tilbakemelding
+Dokumentasjon finner du på [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
+
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
