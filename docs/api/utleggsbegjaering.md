@@ -181,6 +181,22 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
       <summary>Utleggsbegjæring versjon 1.0</summary>
       <p>
 
+## Endringslogg
+Oversikt over endringer som er gjort i versjon 1.0 av Utleggsbegjæringen:
+1. Fjernet saksøkerReferanse i Saksøker og saksøktReferanse i Saksøkt
+2. Endret kardinalitet på forpliktet og berettiget i Domsslutningsinformasjon fra 0..1 til 1..*
+3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsenderProsessfullmektig og saksøktesProsessfullmektig
+4. Fjernet domsreferanse i AlminneligTvangsgrunnlag
+5. Fjernet referanseSak i SærligTvangsgrunnlag
+6. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
+7. Endret navn på kravreferanse i Krav til innsendersKravreferanse
+8. Lagt inn nytt valgfritt element kravEndring i Krav
+9. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
+10. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
+11. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
+12. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
+13. Fjernet avsender i SkriftligMeddelelse
+
 ## Forklaring til modellen
 Denne veilederen har til formål å veilede både funksjonelle og tekniske ressurser til å få en overordnet forståelse av elementene og sammenhengen mellom disse i ELAN løsningen.
 Hvert enkelt begrep forklares ikke her, det vil man finne i "documentation" elementet i Swagger(JSON).
@@ -344,10 +360,14 @@ Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på I
 
 Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
 
-URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
-
 I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
 med å pilotere løsningene.
+
+### Utleggsbegjæring versjon 1.0
+
+URL til det nye testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
+
+NB! Dette nye miljøet lanseres første del av uke 39. Inntill da kan miljøet for versjon 0.9 benyttes.
 
 ### Tidligere versjoner
 Utleggsbegjæringen ble 22.09.2025 lansert i ny versjon 1.0. Forrige versjon (0.9) av utleggsbegjæring er i en overgangsperiode tilgjengelig på https://api-test.sits.no/api/utleggsbegjaering/v1
