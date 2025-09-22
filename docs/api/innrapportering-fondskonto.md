@@ -276,7 +276,8 @@ https://innrapporteringfondskonto.api.{env}.no/v1/{inntektsaar}
     "dialogId": "0193b5cd-cb85-7320-bd8c-6c78c88dc8af",
     "forsendelseId": "0193b5cd-cbce-7dbd-b188-1437db673767",
     "oppgavegiversLeveranseReferanse": "EksternReferanse_2013_1",
-    "antallOppgaver": 2
+    "antallOppgaver": 2,
+    "antallSletteoppgaver": 2
 }
 ```
 
