@@ -107,1186 +107,6 @@ For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk
 Dersom man sender en utleggsbegjæring til feil system, vil systemet returnere en feilmelding om dette og avvise innsendingen. For ELAN vil det gis en 422-feilkode med feilmeldingen "SAKSOEKT_GAMMELT_REGELVERK".
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-Eksempler"> 
-
-
-## Enkelt eksempel på utleggsbegjæring
-
-Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
-
-```json title="Enkelt eksempel på utleggsbegjæring"
-{
-  "saksoeker": [
-    {
-      "saksoeker": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "adresseFrittFormatInnland": {
-                "kommunenummer": "4601",
-                "postnummer": "5231",
-                "adressetekst": "Nattlandsåsen 2",
-                "poststedsnavn": "Oslo"
-              }
-            }
-          }
-        ],
-        "virksomhet": {
-          "navn": "UPERSONLIG FRISK TIGER AS",
-          "identifikator": {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "311758489",
-            "landkode": "NO"
-          },
-          "virksomhetstype": "inkassovirksomhet"
-        }
-      },
-      "saksoekerReferanse": "saksoekerReferanse",
-      "saksoekerKontaktinformasjon": {
-        "epostAdresse": "epost@yahoo.com",
-        "telefonnummer": "99563564"
-      },
-      "prosessfullmektig": {
-        "prosessfullmektig": {
-          "adresse": [
-            {
-              "adressetype": "bopelsadresse",
-              "adresseInnland": {
-                "adresseFrittFormatInnland": {
-                  "kommunenummer": "0301",
-                  "postnummer": "1333",
-                  "adressetekst": "Bergendal 66",
-                  "poststedsnavn": "Bergen"
-                }
-              }
-            }
-          ],
-          "virksomhet": {
-            "navn": "UTROLIG ESTETISK TIGER AS",
-            "identifikator": {
-              "identifikatortype": "taxIdentificationNumber",
-              "verdi": "312597772",
-              "landkode": "NO"
-            },
-            "virksomhetstype": "inkassovirksomhet"
-          }
-        },
-        "bevillingshaver": {
-          "navn": {
-            "fornavn": "Anna",
-            "etternavn": "Norman",
-            "mellomnavn": "Isaksen"
-          },
-          "inkassobevillingshaverNummer": "123212132"
-        }
-      }
-    }
-  ],
-  "saksoekt": [
-    {
-      "saksoekt": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "adresseFrittFormatInnland": {
-                "kommunenummer": "0301",
-                "postnummer": "0351",
-                "adressetekst": "Josefines gate 3D"
-              }
-            }
-          }
-        ],
-        "person": {
-          "personnavn": {
-            "fornavn": "HENSIKT",
-            "etternavn": "LYSEGUL"
-          },
-          "foedselsdato": "2006-09-16",
-          "identifikator": {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "44926701751",
-            "landkode": "NO"
-          }
-        }
-      },
-      "prosessfullmektig": {
-        "prosessfullmektig": {
-          "adresse": [
-            {
-              "adressetype": "bopelsadresse",
-              "adresseInnland": {
-                "adresseFrittFormatInnland": {
-                  "kommunenummer": "0301",
-                  "postnummer": "1333",
-                  "adressetekst": "Hardalsv. 12",
-                  "poststedsnavn": "Bergen"
-                }
-              }
-            }
-          ],
-          "virksomhet": {
-            "navn": "OPPBLÅST UNDERDANIG TIGER AS",
-            "identifikator": {
-              "identifikatortype": "taxIdentificationNumber",
-              "verdi": "312759667",
-              "landkode": "NO"
-            },
-            "virksomhetstype": "inkassovirksomhet"
-          }
-        },
-        "bevillingshaver": {
-          "navn": {
-            "fornavn": "Per",
-            "etternavn": "Sand"
-          },
-          "inkassobevillingshaverNummer": "2345678951"
-        }
-      },
-      "saksoektReferanse": "saksoektReferanse"
-    }
-  ],
-  "underskrift": "Anna Norman",
-  "tvangsfullbyrdelsestype": "utlegg",
-  "begjaeringsdato": "2024-02-02",
-  "begjaeringensTvangsgrunnlag": [
-    {
-      "innsendersKravreferanse": [
-        "00890772001",
-        "RentekravPåHovedkrav_00890772001_1",
-        "UtenrettsligKostnaderAvHovedkrav_00890772001"
-      ],
-      "eksternSaksreferanse": "Saksnr: 106109935",
-      "tvangsgrunnlagsdato": "2024-07-02",
-      "tvangsgrunnlag": {
-        "type": "tvangsgrunnlag",
-        "filnavn": "tvangsgrunnlag",
-        "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-      },
-      "betegnelseAvTvangsgrunnlag": "Kredittkort",
-      "varsel": [
-        {
-          "dato": "2022-04-21",
-          "type": "varselTvfbl418",
-          "tvangskraftgrunnlag": {
-            "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-          }
-        }
-      ],
-      "begrunnelseUnnlatVarsel": "ukjentOppholdsstedSakssøkt",
-      "saerligTvangsgrunnlag": {
-        "paalydendeBeloep": 14101.38,
-        "skyldner": [
-          {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "44926701751",
-            "landkode": "NO"
-          }
-        ],
-        "referanseSak": "saksreferanse",
-        "kreditor": [
-          {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "311758489",
-            "landkode": "NO"
-          }
-        ],
-        "skriftligMeddelelse": {
-          "kravetsGrunnlag": "Kredittkort",
-          "krevesFravaersdom": true,
-          "forsendelsesmaate": {
-            "forsendelsesmaate": "altinn",
-            "AlternativElektroniskKanalForMeddelelse": {
-              "kanalForMeddelelse": "kanalForMeddelelse",
-              "akseptKanalvalg": {
-                "type": "annet",
-                "filnavn": "akseptKanalvalg",
-                "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-              }
-            }
-          },
-          "faktiskeForholdForKravet": "Gjelder ubetalt kredittkort",
-          "paastand": "Klagemotparten dømmes til å betale bla bla bla.",
-          "kanBehandlesIForliksraadet": true,
-          "avsender": {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "312597772",
-            "landkode": "NO"
-          },
-          "mottakeradresse": {
-            "adressetekst": [
-              "Torshovsvei 56"
-            ],
-            "poststedsnavn": "Oslo",
-            "postnummer": "0351"
-          }
-        }
-      }
-    }
-  ],
-  "kreverRettsgebyrErstattet": true,
-  "kravTilInnkreving": [
-    {
-      "kravforfall": {
-        "forfallsdato": "2024-06-15"
-      },
-      "tilleggsfristForeldelse": [
-        {
-          "grunnlag": "uvitenhet",
-          "begrunnelse": "Søkt i Folkregisteret/1881. Ikke funnet ny adresse. Se vedlagte skjermdump",
-          "dato": "2022-04-21"
-        },
-        {
-          "grunnlag": "lovmessigeHindringer",
-          "begrunnelse": "lovmessige hindringer",
-          "dato": "2022-04-21"
-        }
-      ],
-      "sisteFristavbrytendeTiltak": "siste fristavbrytende tiltak",
-      "kravreferanse": "00890772001",
-      "opprinneligBeloep": {
-        "beloep": 12469.14,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 11000.14,
-        "valuta": "NOK"
-      },
-      "innbetaling": [
-        {
-          "bokfoertDato": "2024-06-03",
-          "beloep": {
-            "beloep": 469,
-            "valuta": "NOK"
-          }
-        },
-        {
-          "bokfoertDato": "2024-06-10",
-          "beloep": {
-            "beloep": 1000,
-            "valuta": "NOK"
-          }
-        }
-      ],
-      "prioritetDekningsloven": "b",
-      "prioritetISak": "1",
-      "kravdetaljer": "Hovedkrav",
-      "kravbeskrivelse": "kravbeskrivelse",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2024-07-16",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-          },
-          "brevdato": "2024-07-02"
-        }
-      ],
-      "renteOpplysning": {
-        "forsinkelsesrente": true
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2024-06-15"
-      },
-      "kravreferanse": "RentekravPåHovedkrav_00890772001_1",
-      "opprinneligBeloep": {
-        "beloep": 232.24,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 132.24,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "b",
-      "prioritetISak": "1",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2024-07-16",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-          },
-          "brevdato": "2024-07-02"
-        }
-      ],
-      "innbetaling": [
-        {
-          "bokfoertDato": "2024-06-03",
-          "beloep": {
-            "beloep": 50,
-            "valuta": "NOK"
-          }
-        },
-        {
-          "bokfoertDato": "2024-06-10",
-          "beloep": {
-            "beloep": 50,
-            "valuta": "NOK"
-          }
-        }
-      ],
-      "relatertKrav": [
-        "00890772001"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2024-06-02",
-          "sluttdato": "2024-07-02"
-        }
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2024-06-15"
-      },
-      "kravreferanse": "UtenrettsligKostnaderAvHovedkrav_00890772001",
-      "opprinneligBeloep": {
-        "beloep": 1400,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 1400,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "b",
-      "prioritetISak": "3",
-      "kravdetaljer": "UtenrettsligeKostnader",
-      "kravbeskrivelse": "UtenrettsligeKostnader på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2024-07-16",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-          },
-          "brevdato": "2024-07-02"
-        }
-      ],
-      "relatertKrav": [
-        "00890772001"
-      ]
-    }
-  ],
-  "betalingsinformasjon": {
-    "norskKonto": {
-      "bankkode": "NordeaBankKode",
-      "bankNavn": "Nordea Bank",
-      "landkodeBank": "NO",
-      "kontovaluta": "NOK",
-      "iban": "NO5969930570044",
-      "bic": "NDEANOKK",
-      "kontonummer": "69930570044",
-      "kidnummer": "2509937609"
-    }
-  },
-  "vedlegg": [
-    {
-      "type": "tvangsgrunnlag",
-      "filnavn": "tvangsgrunnlag",
-      "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-    },
-    {
-      "type": "tvangskraftgrunnlag",
-      "filnavn": "tvangskraftgrunnlag",
-      "uuid": "67a9a31d-312a-43e1-8261-e19afe8964b1"
-    }
-  ],
-  "saksreferanse": "saksref. 123456",
-  "innsenderReferanse": "InnsenderRef124",
-  "valgtNamsmannsdistrikt": {
-    "namsmannsdistrikt": "Namsfogden i Oslo, Asker og Bærum",
-    "begrunnelse": "begrunnelse"
-  },
-  "innsender": {
-    "innsender": {
-      "adresse": [
-        {
-          "adressetype": "bopelsadresse",
-          "adresseInnland": {
-            "adresseFrittFormatInnland": {
-              "kommunenummer": "0301",
-              "postnummer": "1333",
-              "adressetekst": "Hallagerstrand 54",
-              "poststedsnavn": "Bergen"
-            }
-          }
-        }
-      ],
-      "virksomhet": {
-        "navn": "Inkassobyrå AS",
-        "identifikator": {
-          "identifikatortype": "taxIdentificationNumber",
-          "verdi": "312597772",
-          "landkode": "NO"
-        },
-        "virksomhetstype": "inkassovirksomhet"
-      }
-    },
-    "prosessfullmektig": {
-      "prosessfullmektig": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "adresseFrittFormatInnland": {
-                "kommunenummer": "0301",
-                "postnummer": "1333",
-                "adressetekst": "Ryensvei 55",
-                "poststedsnavn": "Bergen"
-              }
-            }
-          }
-        ],
-        "virksomhet": {
-          "navn": "Inkassobyrå AS",
-          "identifikator": {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "312597772",
-            "landkode": "NO"
-          },
-          "virksomhetstype": "inkassovirksomhet"
-        }
-      },
-      "bevillingshaver": {
-        "navn": {
-          "fornavn": "Anna",
-          "etternavn": "Norman"
-        },
-        "inkassobevillingshaverNummer": "123212132"
-      }
-    },
-    "saksbehandler": "Ola Erikksen",
-    "saksbehandlersKontaktinformasjon": {
-      "epostAdresse": "saksbehandler@epost.com",
-      "telefonnummer": "96673775"
-    }
-  },
-  "berOmInnkallingTilMoeteMedBegrunnelse": "Ja",
-  "berOmUnnlattForeleggelseMedBegrunnelse": "Nei",
-  "spesiellUtleggsgjenstand": [
-    "utleggspant",
-    "utleggstrekk"
-  ]
-}
-```
-
-## Mer komplekst eksempel på utleggsbegjæring
-
-Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
-
-```json title="Mer komplekst eksempel på utleggsbegjæring"
-{
-  "saksoeker": [
-    {
-      "saksoeker": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "adresseFrittFormatInnland": {
-                "kommunenummer": "4601",
-                "postnummer": "5106",
-                "adressetekst": "Våganeset 40C"
-              }
-            }
-          }
-        ],
-        "virksomhet": {
-          "navn": "SMUL FLAT TIGER AS",
-          "identifikator": {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "313182495",
-            "landkode": "NO"
-          },
-          "virksomhetstype": "inkassovirksomhet"
-        }
-      },
-      "saksoekerReferanse": "saksoekerReferanse"
-    }
-  ],
-  "saksoekt": [
-    {
-      "saksoekt": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "adresseFrittFormatInnland": {
-                "kommunenummer": "4008",
-                "postnummer": "1103",
-                "adressetekst": "Kannikgata 32"
-              }
-            }
-          }
-        ],
-        "person": {
-          "personnavn": {
-            "fornavn": "Rimelig",
-            "etternavn": "Merr"
-          },
-          "foedselsdato": "1978-08-29",
-          "identifikator": {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "69887800189",
-            "landkode": "NO"
-          }
-        }
-      }
-    }
-  ],
-  "underskrift": "bevilgningsNavn_ikke finnes i PDF",
-  "tvangsfullbyrdelsestype": "utlegg",
-  "begjaeringsdato": "2025-01-12",
-  "begjaeringensTvangsgrunnlag": [
-    {
-      "innsendersKravreferanse": [
-        "101461397",
-        "RentekravPåHovedkrav_101461397_1",
-        "RentekravPåHovedkrav_101461397_2",
-        "UtenrettsligKostnaderPåHovedkrav_101461397",
-        "RentekravPåUtenrettsligeKostnader"
-      ],
-      "eksternSaksreferanse": "Saksnr: 150023021",
-      "tvangsgrunnlagsdato": "2022-04-21",
-      "tvangsgrunnlag": {
-        "type": "tvangsgrunnlag",
-        "filnavn": "tvangsgrunnlag",
-        "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-      },
-      "betegnelseAvTvangsgrunnlag": "Vegfinans E134 Buskerud AS",
-      "varsel": [
-        {
-          "dato": "2022-04-21",
-          "type": "varselTvfbl418",
-          "tvangskraftgrunnlag": {
-            "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          }
-        }
-      ],
-      "begrunnelseUnnlatVarsel": "ukjentOppholdsstedSakssøkt",
-      "saerligTvangsgrunnlag": {
-        "paalydendeBeloep": 535.79,
-        "skyldner": [
-          {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "69887800189",
-            "landkode": "NO"
-          }
-        ],
-        "referanseSak": "IKKE I BRUK FØR 2030",
-        "kreditor": [
-          {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "313182495",
-            "landkode": "NO"
-          }
-        ],
-        "skriftligMeddelelse": {
-          "kravetsGrunnlag": "Vegfinans E134 Buskerud AS",
-          "krevesFravaersdom": true,
-          "forsendelsesmaate": {
-            "forsendelsesmaate": "altinn",
-            "alternativElektroniskKanalForMeddelelse": {
-              "kanalForMeddelelse": "kanalForMeddelelse",
-              "akseptKanalvalg": {
-                "type": "annet",
-                "filnavn": "akseptKanalvalg",
-                "uuid": "cbdf604f-03df-4327-8188-d8fcfe72d533"
-              }
-            }
-          },
-          "faktiskeForholdForKravet": "Vegfinans E134 Buskerud AS",
-          "paastand": "ikke pdf",
-          "kanBehandlesIForliksraadet": false
-        }
-      }
-    },
-    {
-      "innsendersKravreferanse": [
-        "102486836_1",
-        "102486836_2",
-        "RentekravPåHovedkrav_102486836_1",
-        "RentekravPåHovedkrav_102486836_2",
-        "RentekravPåHovedkrav_102486836_3",
-        "UtenrettsligKostnaderPå_102486836",
-        "RentekravPåUtenrettsligeKostnader_1"
-      ],
-      "eksternSaksreferanse": "Saksnr: 20889222",
-      "tvangsgrunnlagsdato": "2022-08-18",
-      "tvangsgrunnlag": {
-        "type": "tvangsgrunnlag",
-        "filnavn": "tvangsgrunnlag",
-        "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-      },
-      "betegnelseAvTvangsgrunnlag": "Vegfinans Hallingporten AS",
-      "varsel": [
-        {
-          "dato": "2022-08-18",
-          "type": "varselTvfbl418",
-          "tvangskraftgrunnlag": {
-            "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          }
-        }
-      ],
-      "begrunnelseUnnlatVarsel": "ukjentOppholdsstedSakssøkt",
-      "saerligTvangsgrunnlag": {
-        "paalydendeBeloep": 578.65,
-        "skyldner": [
-          {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "69887800189",
-            "landkode": "NO"
-          }
-        ],
-        "referanseSak": "IKKE I BRUK FØR 2030",
-        "kreditor": [
-          {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "313182495",
-            "landkode": "NO"
-          }
-        ],
-        "skriftligMeddelelse": {
-          "kravetsGrunnlag": "Vegfinans E134 Buskerud AS",
-          "krevesFravaersdom": true,
-          "forsendelsesmaate": {
-            "forsendelsesmaate": "altinn",
-            "AlternativElektroniskKanalForMeddelelse": {
-              "kanalForMeddelelse": "kanalForMeddelelse",
-              "akseptKanalvalg": {
-                "type": "annet",
-                "filnavn": "akseptKanalvalg",
-                "uuid": "cbdf604f-03df-4327-8188-d8fcfe72d533"
-              }
-            }
-          },
-          "faktiskeForholdForKravet": "Vegfinans E134 Buskerud AS",
-          "paastand": "ikke pdf",
-          "kanBehandlesIForliksraadet": false
-        }
-      }
-    }
-  ],
-  "kreverRettsgebyrErstattet": true,
-  "kravTilInnkreving": [
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-07-08"
-      },
-      "kravreferanse": "101461397",
-      "opprinneligBeloep": {
-        "beloep": 76,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 76,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Hovedkrav",
-      "kravbeskrivelse": "kravbeskrivelse",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-04-21"
-        }
-      ],
-      "renteOpplysning": {
-        "forsinkelsesrente": true
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-07-08"
-      },
-      "kravreferanse": "RentekravPåHovedkrav_101461397_1",
-      "opprinneligBeloep": {
-        "beloep": 2.93,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 2.93,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-04-21"
-        }
-      ],
-      "relatertKrav": [
-        "101461397"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2021-07-09",
-          "sluttdato": "2021-12-31"
-        }
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-07-08"
-      },
-      "kravreferanse": "RentekravPåHovedkrav_101461397_2",
-      "opprinneligBeloep": {
-        "beloep": 1.96,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 1.96,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-04-21"
-        }
-      ],
-      "relatertKrav": [
-        "101461397"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2022-01-01",
-          "sluttdato": "2022-04-21"
-        }
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-07-08"
-      },
-      "kravreferanse": "UtenrettsligKostnaderPåHovedkrav_101461397",
-      "opprinneligBeloep": {
-        "beloep": 437.5,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 437.5,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "UtenrettsligeKostnader",
-      "kravbeskrivelse": "UtenrettsligKostnaderPå_102486836",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-04-21"
-        }
-      ],
-      "relatertKrav": [
-        "101461397"
-      ],
-      "renteOpplysning": {
-        "forsinkelsesrente": true
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-07-08"
-      },
-      "kravreferanse": "RentekravPåUtenrettsligeKostnader",
-      "opprinneligBeloep": {
-        "beloep": 17.4,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 17.4,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "kravbeskrivelse??",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-04-21"
-        }
-      ],
-      "relatertKrav": [
-        "UtenrettsligKostnaderPåHovedkrav_101461397"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2021-10-23",
-          "sluttdato": "2022-04-21"
-        }
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-12-07"
-      },
-      "kravreferanse": "102486836_1",
-      "opprinneligBeloep": {
-        "beloep": 78,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 78,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Hovedkrav",
-      "kravbeskrivelse": "Hovedkrav 1",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-08-18"
-        }
-      ],
-      "renteOpplysning": {
-        "forsinkelsesrente": true
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-12-07"
-      },
-      "kravreferanse": "102486836_2",
-      "opprinneligBeloep": {
-        "beloep": 38,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 38,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Hovedkrav",
-      "kravbeskrivelse": "Hovedkrav 1",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-08-18"
-        }
-      ],
-      "renteOpplysning": {
-        "forsinkelsesrente": true
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-12-07"
-      },
-      "kravreferanse": "RentekravPåHovedkrav_102486836_1",
-      "opprinneligBeloep": {
-        "beloep": 0.61,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 0.61,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-08-18"
-        }
-      ],
-      "relatertKrav": [
-        "102486836_1",
-        "102486836_2"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2021-12-18",
-          "sluttdato": "2021-12-31"
-        }
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-12-07"
-      },
-      "kravreferanse": "RentekravPåHovedkrav_102486836_2",
-      "opprinneligBeloep": {
-        "beloep": 4.89,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 4.89,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på hovedkrav 2",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-08-18"
-        }
-      ],
-      "relatertKrav": [
-        "102486836_1",
-        "102486836_2"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2022-01-01",
-          "sluttdato": "2022-06-30"
-        }
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-12-07"
-      },
-      "kravreferanse": "RentekravPåHovedkrav_102486836_3",
-      "opprinneligBeloep": {
-        "beloep": 1.44,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 1.44,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på hovedkrav 3",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-08-18"
-        }
-      ],
-      "relatertKrav": [
-        "102486836_1",
-        "102486836_2"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2022-07-01",
-          "sluttdato": "2022-08-18"
-        }
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-12-07"
-      },
-      "kravreferanse": "UtenrettsligKostnaderPå_102486836",
-      "opprinneligBeloep": {
-        "beloep": 437.5,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 437.5,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "UtenrettsligeKostnader",
-      "kravbeskrivelse": "UtenrettsligeKostnader på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-08-18"
-        }
-      ],
-      "relatertKrav": [
-        "102486836_1",
-        "102486836_2"
-      ],
-      "renteOpplysning": {
-        "forsinkelsesrente": true
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2021-12-07"
-      },
-      "kravreferanse": "RentekravPåUtenrettsligeKostnader_1",
-      "opprinneligBeloep": {
-        "beloep": 18.21,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 18.21,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på uttenrettslige kostnader",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2022-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "61e17f8d-9f24-4bd0-ad8b-d7908a1acc18"
-          },
-          "brevdato": "2022-08-18"
-        }
-      ],
-      "relatertKrav": [
-        "UtenrettsligKostnaderPå_102486836"
-      ],
-      "erRentekrav": {
-        "rentePeriode": {
-          "startdato": "2022-02-19",
-          "sluttdato": "2022-08-18"
-        }
-      }
-    }
-  ],
-  "betalingsinformasjon": {
-    "norskKonto": {
-      "kontonummer": "69930570044",
-      "kidnummer": "2509937609"
-    }
-  },
-  "saksreferanse": "saksreferanse",
-  "berOmInnkallingTilMoete": false,
-  "innsenderReferanse": "InnsenderRef123",
-  "valgtNamsmannsdistrikt": {
-    "namsmannsdistrikt": "Namsfogden i Øst",
-    "begrunnelse": "begrunnelse"
-  },
-  "innsender": {
-    "innsender": {
-      "adresse": [
-        {
-          "adressetype": "bopelsadresse",
-          "adresseInnland": {
-            "adresseFrittFormatInnland": {
-              "kommunenummer": "0301",
-              "postnummer": "1333",
-              "adressetekst": "string",
-              "poststedsnavn": "Bergen"
-            }
-          }
-        }
-      ],
-      "virksomhet": {
-        "navn": "Inkassobyrå AS",
-        "identifikator": {
-          "identifikatortype": "taxIdentificationNumber",
-          "verdi": "312597772",
-          "landkode": "NO"
-        },
-        "virksomhetstype": "inkassovirksomhet"
-      }
-    },
-    "prosessfullmektig": {
-      "prosessfullmektig": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "adresseFrittFormatInnland": {
-                "kommunenummer": "0301",
-                "postnummer": "1333",
-                "adressetekst": "string",
-                "poststedsnavn": "Bergen"
-              }
-            }
-          }
-        ],
-        "person": {
-          "personnavn": {
-            "fornavn": "Ola",
-            "etternavn": "Nordmann"
-          },
-          "foedselsdato": "1980-08-29",
-          "identifikator": {
-            "identifikatortype": "taxIdentificationNumber",
-            "verdi": "03057738971",
-            "landkode": "NO"
-          }
-        }
-      },
-      "bevillingshaver": {
-        "navn": {
-          "fornavn": "Anna",
-          "etternavn": "Norman"
-        },
-        "inkassobevillingshaverNummer": "123212132"
-      }
-    }
-  }
-}
-```
-
-</TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-Feilkoder">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
@@ -1298,6 +118,8 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | DUPLIKAT_INNSENDING | Nei | Duplikat | Duplikat innsending | Sak med begjæringsdato %begjæringsdato og referanse %innsenderReferanse er allerede sendt inn |
 | DUPLIKAT_SAKSOEKER | Nei | Duplikat saksøker | Det er ikke tillatt med duplikate saksøkere | Det er ikke tillatt med duplikate saksøkere |
 | DUPLIKAT_SAKSOEKT | Nei | Duplikat saksøkt | Det er ikke tillatt med duplikate saksøkte | Det er ikke tillatt med duplikate saksøkte |
+| GEBYR_ELLER_SAKSKOSTNAD_HAR_ET_RELATERTKRAV_SOM_IKKE_ER_HOVEDSTOL | Nei | Uriktig eller manglende relasjon til hovedstol | Gebyr eller sakskostnad kan kun relateres til hovedstol | Kravet kan kun relateres til et krav av typen hovedstol. |
+| HOVEDSTOL_SKAL_IKKE_HA_ET_RELATERT_KRAV | Nei | Hovedstol har et relatert krav | En hovedstol skal ikke ha en relatert krav | Hovedstol har et relatert krav |
 | INNSENDER_IKKE_IDENTIFISERBAR | Nei | Ukjent innsender | Begjæringen må angi en innsender som kan identifiseres | Innsender %innsender kan ikke identifiseres |
 | INNSENDER_IKKE_ORGANISASJON | Nei | Innsender er ikke en organisasjon | Innsender må være en organisasjon | Innsender %innsender er ikke en organisasjon |
 | INNSENDER_MANGLER | Nei | Mangler opplysninger om innsender | Begjæringen må inneholde opplysning om innsender | Begjæringen må inneholde opplysning om innsender |
@@ -1316,10 +138,17 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | PAASTAND_PAAKREVET | Nei | Påstand må fylles ut | Påstand om resultat klager krever ved evt. dom | Ved utlegg og forliksklage kombinert må påstand være utfylt |
 | PARAGRAF_4_18_VARSEL_PAAKREVET | Nei | § 4-18 Varsel må fylles ut | Feltet "Varsel" må fylles ut | For særlige tvangsgrunnlag må varsel etter tvangsfullbyrdelsesloven § 4-18 eller begrunnelse for manglende varsel være utfylt |
 | PARAGRAF_4_19_VARSEL_PAAKREVET | Nei | § 4-19 Varsel må fylles ut | Feltet "Varsel" må fylles ut | Varsel etter tvangsfullbyrdelsesloven § 4-19 eller begrunnelse for manglende varsel må være utfylt |
-| RELATERTE_KRAV_MÅ_FINNES | Nei | Relaterte krav på peke til krav i samme tvangsgrunnlag | Et relatert krav må finnes i samme tvangsgrunnlag | Relaterte krav må finnes i samme tvangsgrunnlag |
-| RELATERTE_KRAV_UGYLDIGE_KRAVREFERANSER | Nei | Relaterte krav peker på krav som ikke eksisterer | Kravreferanser må være gylidige | Krav med kravreferanse %hovedkravRef peker på relatert krav med kravreferanse %relatertKravRef som ikke eksisterer |
+| PRIORITET_MANGLER | Nei | Manglende angivelse av prioritet på kravet | Hvis prioritet er angitt, så må det angis på alle. | Hvis dere har angitt prioritet på en av kravspostene, må det også angis på de øvrige kravspostene |
+| PRIORITET_MANGLER_PÅ_RENTEOPPLYSNINGER | Nei | Prioritet angitt på ett krav men mangler på renter frem i tid | Må melde inn prioritet på renter som skal påløpe senere på alle kravlinjer som er rentebærende, når det er satt prioritet på minst et annet krav (ref. regel I7). Kravlinje for kravlinje.  | Hvis dere har angitt prioritet på en av kravspostene så må det også angis prioritet på fremtidige renteposter |
+| PRIORITET_MANGLER_PÅ_RETTSGEBYR | Nei | Manglende angivelse av prioritet på kravet | Gebyr: Må angi prioritet på rettsgebyret hvis saksøkte skal betale dette og det er satt prioritet på minst et annet krav (ref. regel I7) | Hvis dere har angitt prioritet på en av kravspostene så må det også angis for rettsgebyret |
+| RELATERTE_KRAV_KAN_IKKE_PEKE_PÅ_SEG_SELV | Nei | Relaterte krav kan ikke peke på seg selv | Relaterte krav kan ikke peke på seg selv | Relaterte krav kan ikke peke på seg selv |
+| RELATERTE_KRAV_MÅ_FINNES | Nei | Relaterte krav må peke til krav i samme tvangsgrunnlag | Et relatert krav må finnes i samme tvangsgrunnlag | Relaterte krav må finnes i samme tvangsgrunnlag |
+| RELATERTE_KRAV_UGYLDIGE_KRAVREFERANSER | Nei | Relaterte krav peker på krav som ikke eksisterer | Kravreferanser må være gyldige | Krav med kravreferanse %hovedkravRef peker på relatert krav med kravreferanse %relatertKravRef som ikke eksisterer |
+| RENTEKRAV_KAN_IKKE_HA_RENTEKRAV | Nei | Uriktig relasjon til rentekravet | Rentekrav kan ikke peke på annet rentekrav | Et rentekrav kan ikke være relatert til et annet rentekrav. Oppgi korrekt relasjon til et rentebærende krav. |
+| RENTE_MAA_HA_RELATERT_KRAV | Nei | Relasjon til rentebærende krav mangler | Relasjon til rentebærende krav mangler | Et rentekrav må ha et relatert krav slik at det relaterer seg til et annet krav som er rentebærende. |
 | SAKSOEKERS_INNENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse innenlands for saksøker | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøker %saksøker sin adresse innenlands må minimum inneholde adressetekst og postnummer |
 | SAKSOEKERS_UTENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse utland for saksøker | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøker %saksøker sin adresse utenlands må minimum inneholde poststed og landkode |
+| SAKSOEKT_GAMMELT_REGELVERK | Nei | Saksøkt på gammelt regelverk | Begjæringen angir saksøkt som må behandles etter gammelt regelverk | Saksøkt med identifikator %identifikator må behandles etter gammelt regelverk, og må sendes inn via ELSA |
 | SAKSØKTES_INNENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse innenlands for saksøkte | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøkte %saksøkt sin adresse innenlands må minimum inneholde adressetekst og postnummer |
 | SAKSØKTES_UTENLANDS_ADRESSE_UGYLDIG | Nei | Saksøktes utenlandsadresse er ugyldig | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøkte %saksøkt sin adresse utland må minimum inneholde poststed og landkode |
 | SAMME_SAKSOEKT_SOM_SAKSOEKER | Nei | Saksøker kan ikke være saksøkt | Saksøker kan ikke være saksøkt | Saksøker kan ikke være saksøkt |
@@ -1348,9 +177,172 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-Informasjonsmodell">
 
-Her ser du hele informasjonsmodellen for Utleggsbegjæring
+ <details>
+      <summary>Utleggsbegjæring versjon 1.0</summary>
+      <p>
+
+## Endringslogg
+Oversikt over endringer som er gjort i versjon 1.0 av Utleggsbegjæringen:
+1. Fjernet saksøkerReferanse i Saksøker og saksøktReferanse i Saksøkt
+2. Endret kardinalitet på forpliktet og berettiget i Domsslutningsinformasjon fra 0..1 til 1..*
+3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsenderProsessfullmektig og saksøktesProsessfullmektig
+4. Fjernet domsreferanse i AlminneligTvangsgrunnlag
+5. Fjernet referanseSak i SærligTvangsgrunnlag
+6. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
+7. Endret navn på kravreferanse i Krav til innsendersKravreferanse
+8. Lagt inn nytt valgfritt element kravEndring i Krav
+9. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
+10. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
+11. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
+12. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
+13. Fjernet avsender i SkriftligMeddelelse
+
+## Forklaring til modellen
+Denne veilederen har til formål å veilede både funksjonelle og tekniske ressurser til å få en overordnet forståelse av elementene og sammenhengen mellom disse i ELAN løsningen.
+Hvert enkelt begrep forklares ikke her, det vil man finne i "documentation" elementet i Swagger(JSON).
+
+Modellen består av en «rotEntitet» som gjelder overordnet informasjon på tvers av begjæringen.
+
+I øvre halvdel har man informasjon om de formelle partene i begjæringen, saksøker, saksøkt og innsender. Disse partene kan ha/være en prosessfullmektig, dvs en representant for parten i aktuelle sak.
+
+I tillegg finner man noen generelle entiteter som gjelder hele begjæringen.
+
+Videre har man entiteten «Krav» som er kjerneinformasjon med detaljer om «pengekravet» med endringer, fra det ble etablert og frem til innsendingen av utleggsbegjæringen.
+
+I «BegjæringensTvangsgrunnlag» skal man legge inn detaljer om grunnlaget for Kravene i utleggsbegjæringen.
+
+### a) Rotnivå - Utleggsbegjæring
+RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen, som generelle vedlegg, underskrift med navn på ansvarlig for innsendingen.
+
+innsenderReferanse er innsenders unike referanse på saken, tilsvarende vil saksreferanse være namsmyndighetens unike identifikator for saken og som skal benyttes senere i prosessen ved kommunikasjon ved namsmyndigheten.
+
+I elementet tvangsfullbyrdelsestype må man angi om det er en ren utleggsbegjæring, eller kombinert forliksklage.
+
+Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
+
+![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a.png)
+
+### b) Parter i utleggsbegjæringen
+Innsender er den som sender inn utleggsbegjæringen. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
+
+Saksøker er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig som representerer seg i sak om tvangsfullbyrdelse(saksøkersProsessfullmektig). Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
+
+Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktes Prosessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+
+Prosessfullmektig(fullmakt/bevillingshaver/Advokat/avdvokatfullmektig) er tredjeperson med en generell(Bevillingshaver) eller spesifikk fullmakt(Fullmakt) til å opptre på vegne av en part. Dette må være en fysisk person.
+
+Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges. 
+
+![Parter](../../static/download/utleggsbegjaering/begjaering-b1.png)
+
+#### Datatyper:
+
+![Parter-datatyper](../../static/download/utleggsbegjaering/begjaering-b2.png)
+
+### c) Generelle elementer
+
+I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker hele utleggsbegjæringen, dette er
+* KreverRettsgebyrErstattet - Benyttes om du ønsker å angi at rettsgebyret som ilegges ved innsending, kreves erstattet av saksøkte.
+* Betalingsinformasjon - Informasjon om hvor, hvordan og til hvem innbetalingen skal gjøres, dersom det ender opp i samordnet trekk.
+* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting.
+
+![Generelle elementer](../../static/download/utleggsbegjaering/begjaering-c.png)
+
+### d) Kravinformasjon
+
+Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er Hovedkrav og Rentekrav.
+
+Eksempler på dette kan være «hovedkrav» som er det opprinnelige beløpet en person er skyldig. Se kodeliste for alle gyldige verdier: [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826).
+I mange tilfeller kan en «opprinnelig faktura» være et slik eksempel. Har man f. eks to fakturaer med ulikt forfall(«kravforfall»), er dette å anse som to krav.
+
+«InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav».
+
+Eksempler på dette kan være «kravdetaljer» slik som eksempelvis «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere fra «Rentekrav» til «Sakskostnader».
+
+I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
+
+Dersom man sender inn et krav med «kravdetaljer» = «Rentekrav», bør man legge ved hvilken «rentePeriode»(fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av(«renteGrunnlag»).  Dette fylles ut i «rentekrav» elementet.
+
+I tillegg bør man legge ved hvilken type og evnt. «avtaltRentesats» man har benyttet ved beregning(«rentesatsOgType»).
+
+Sender man inn et krav som det kreves renter for, må man fylle ut «rentebærendeKrav».
+
+Har det kommet innbetalinger på aktuelle krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
+
+Har man andre nedjusteringer på krav, skal dette angis i entiteten KravEndring.
+
+Har kravet byttet «eier», skal informasjon om dette fylles informeres via entiteten «transporterklæring» og vedlegges dokumentasjon.
+
+Dersom man vedlegger Transporterklæring på eksempelvis et Hovedkrav, trenger man ikke fylle ut posten for andre krav(kravdetaljer) som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav".
+
+![Kravinformasjon](../../static/download/utleggsbegjaering/begjaering-d.png)
+
+### e) BegjæringensTvangsgrunnlag
+
+Begjæringens Tvangsgrunnlag omfatter data om og i tvangsgrunnlag(ene) i begjæringen. Tvangsgrunnlaget brukes videre som kobling til krav(innsendersKravreferanse) og identifisere hvem som er parter på kravene.
+
+Som innsender har du mulighet å legge deres egen referanse (eksternSaksreferanse) på hvert begjæringensTvangsgrunnlag.
+
+Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUnnlatvarsel(OBS: Er ikke lov å fylle ut for SkriftligMeddelelse).
+
+![BegjæringensTvangsgrunnlag](../../static/download/utleggsbegjaering/begjaering-e.png)
+
+## Eksempler på testdata
+
+Eksempler på testdata for modell versjon 1.0 kommer snart.
+
+</p>
+</details>
+
+ <details>
+      <summary>Utleggsbegjæring versjon 0.9</summary>
+      <p>
+
+Her ser du den forrige informasjonsmodellen for Utleggsbegjæring (versjon 0.9).
 
 ![Informasjonsmodell](../../static/download/utleggsbegjaering/informasjonsmodell-utleggsbegjaering.png)
+
+Dokumentasjon av forrige versjon av utleggsbegjæring finnes her:
+[Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.9.2)
+
+## Eksempler på testdata
+
+### Enkelt eksempel på utleggsbegjæring
+
+Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
+
+[utleggsbegjaering-enkel.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
+
+### Mer komplekst eksempel på utleggsbegjæring
+
+Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
+
+[utleggsbegjaering-kompleks.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
+
+</p>
+</details>
+
+ <details>
+      <summary>Innsyn i ett trekk</summary>
+<p>
+
+Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger om løpende utleggstrekk](https://lovdata.no/nav/forskrift/2025-07-09-1510) gir kreditor rett til å få innsyn i ett trekk. Forutsetningene for bruk av tjenesten er blant annet
+* Prosessfullmektig kan kun få svar på krav i saker som hen er prosessfullmektig for.
+* Kravene må være i et etablert og ikke avsluttet trekk.
+
+| Informasjonselement                                                                                                                                                       | Hvilken informasjon returneres                                                                                                                                                                                                                                                                                                                                                |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| a. summen av krav i trekket med bedre artsprioritet enn saksøkerens krav                                                                                                  | Summen av beløp og stipulerte renter på kravene i trekket som har bedre artsprioritet enn det aktuelle kravet (artsprioritet a er bedre enn b, b bedre enn c, osv.) eller bedre tidsprioritet                                                                                                                                                                                 |
+| b. summen av krav i trekket med lik artsprioritet som saksøkerens krav, samt kravenes samlede grunnlag for forholdsmessig fordeling etter dekningsloven § 2-8 tredje ledd | Summen av beløp og stipulerte renter på kravene i trekket som har samme artsprioritet som det aktuelle kravet. Kravets dividendegrunnlag i trekket (gjenstående beløp for forholdsmessig fordeling pluss påløpte renter for forholdsmessig fordeling) for kravet / de andre kravene sitt dividendegrunnlag                                                                    |
+| c. hvor mye av trekket som skal dekke uforfalte bidragskrav                                                                                                               | Besluttet løpende bidragskrav i trekk                                                                                                                                                                                                                                                                                                                                         |
+| d. datoen for sist gjennomførte trekk og hvilket beløp som ble trukket                                                                                                    | Mottatte og plasserte beløp i dag og 1 måned bakover i tid                                                                                                                                                                                                                                                                                                                    |
+| e. gjeldende beslutning om trekkets størrelse og hvem som er trekkpliktig                                                                                                 | Trekkpåleggene i dag og frem i tid – likt som i kreditors saksinnsyn                                                                                                                                                                                                                                                                                                          |
+
+![Informasjonsmodell-innsyn-trekk](../../static/download/utleggsbegjaering/informasjonsmodell-innsyn-i-ett-trekk.png)
+
+</p>
+</details>
+
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-Test">
@@ -1362,17 +354,29 @@ Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres p
 ### Testmiljø og testdata
 Systemleverandørene må ha testmiljøer som kun består av syntetiske data. Det skal brukes testdata fra ‘Syntetisk Norge’ og disse hentes ut med Tenor Testdatasøk i de meldingene som sendes inn. Vedlegg skal også kun inneholde syntetiske testdata. Her finnes en bruksveiledning for Tenor Testdatasøk. Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten.
 
+Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/)
+
 Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på Informasjonsmodeller.
 
 Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
 
-URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v1
-
 I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
 med å pilotere løsningene.
 
-## Testdata
-Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/)
+### Utleggsbegjæring versjon 1.0
+
+URL til det nye testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
+
+NB! Dette nye miljøet lanseres første del av uke 39. Inntill da kan miljøet for versjon 0.9 benyttes.
+
+### Tidligere versjoner
+Utleggsbegjæringen ble 22.09.2025 lansert i ny versjon 1.0. Forrige versjon (0.9) av utleggsbegjæring er i en overgangsperiode tilgjengelig på https://api-test.sits.no/api/utleggsbegjaering/v1
+
+### Bruk av tjenester i testmiljøet
+
+Innsendinger av vedlegg og utleggsbegjæringer i testmiljøet vil ikke bli videre behandlet av Skatttetaten.
+
+Tjenessten for Innsyn i trekk vil i testmiljøet gi syntetiske svar, og reponsen fra tjenesten baserer seg ikke på faktiske trekk. For å få et innsyn i trekk i testmiljøet må innsender ha sendt inn en utleggssak knyttet til aktuell saksøker og saksøkt.
 
 </TabItem>
 <TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-Sjekkliste">
