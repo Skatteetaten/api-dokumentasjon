@@ -105,6 +105,28 @@ A Systembruker is then created, linking the user, system, provider, and API.
 | Utleggsbegjæring        | Request for Enforcement Proceedings | A formal request submitted to the namsmann (Enforcement Officer) to collect a debt by legal means, such as wage garnishment, seizure of assets and freezing of bank accounts. |
 
 </TabItem>
+
+<TabItem headerText="Transitional period" itemKey="itemKey-Overgangsperioden">
+
+## Introduction of the new collection act
+During a transitional period (from January 1, 2026 to December 31, 2026), the Enforcement Officer (“namsmannen”) will gradually process new enforcement cases against debtors under the new Collection Act (innkrevingsloven) and the related amendments to the Enforcement Act (tvangsfullbyrdelsesloven).
+The authorities may define which debtors are subject to the new enforcement rules based on predefined criteria. These criteria are established in regulations.
+Throughout the transition period, these parameters will be gradually adjusted so that an increasing number of debtors fall under the scope of the new rules. Any change in the regulation will be published no later than 14 days before it takes effect. The parameters are set in the delegation decision: Delegation of the King’s authority under the Collection Act § 40 (2) and (3) to the Ministry of Finance. [Delegering av kongens myndighet etter innkrevingsloven § 40 andre og tredje ledd til Finansdepartementet](https://lovdata.no/dokument/DEL/forskrift/2025-06-10-968).
+
+## Transitional period for enforcement requests
+During the transition period digital enforcement requests (utleggsbegjæringer) for debtors covered by the new Collection Act must be submitted via the new system ELAN. Enforcement requests for debtors not covered by the new Act must continue to be submitted through the existing system ELSA.
+If an enforcement request involves multiple debtors, all debtors must fall under the same legal framework. If that is not the case, the request must be submitted on paper.
+
+## The "Betjeningskartet" service
+To determine whether a debtor is subject to the new or old legal framework, collection systems can use the API service “Betjeningskartet”. This API allows a lookup of the applicable framework for one or more debtors based on their personal identificationnumber (fødselsnummer). The service should be called immediately before submitting a new enforcement request via API, ensuring that the request is directed to the correct system (ELSA or ELAN).
+API endpoints, parameters, and response definitions are documented in the [Open API specifikaction](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) on SwaggerHub.
+
+![Betjeningskartet](../../../../../static/download/utleggsbegjaering/Betjeningskartet.png)
+
+If an enforcement request is submitted to the wrong system, it will be rejected with an error message. For ELAN, the response will be an HTTP 422 error with the message:SAKSOEKT_GAMMELT_REGELVERK
+
+</TabItem>
+
 <TabItem headerText="Examples" itemKey="itemKey-3"> 
 
 See the Norwegian page for examples of utleggsbegjæring in JSON format.

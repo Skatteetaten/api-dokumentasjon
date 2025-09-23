@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ pgi, folketrygden, skatteberegning, inntekt, formue ]
-last_updated: Feb 29, 2024
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
@@ -19,19 +19,9 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
-
-## Scope
-
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:pensjonsgivendeinntektforfolketrygden`
-
-## Delegering
-
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Pensjonsgivende inntekt for folketrygden API - På vegne av`
 
 ## Teknisk spesifikasjon
 
@@ -41,9 +31,26 @@ på SwaggerHub.
 
 Tjenesten støtter inntektsår 2017 og utover, men det kan også komme endringer for inntektsår fra og med 1967 til og med 1992.
 
-## Rettighetspakker
+## Tilgang
 
-| Navn på rettighetspakke |	
+### Scope
+
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:pensjonsgivendeinntektforfolketrygden`
+
+### Delegering
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Pensjonsgivende inntekt for folketrygden API - På vegne av`
+
+### Skatteetaten må gi tilgang
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
+### Rettighetspakker
+Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+
+Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
+
+| Teknisk navn på rettighetspakker |	
 |-------------------------|
 | navensligforsoerger     |
 | navforeldrepenger       |

@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Mva-melding innsending, Mva-melding]
 keywords: [mva]
-last_updated: Feb 21, 2024
+last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
@@ -17,15 +17,19 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
-* [Rettighetspakker](../om/rettighetspakker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 
-## Scope
+## Tilgang
+
+### Scope
 Følgende scope skal benyttes ved autentisering i ID-Porten: `skatteetaten:mvameldinginnsending`.
 
 Altinn krever også at man har et Altinn scope ved kall mot altinn3-appen, de aktuelle vil være `altinn:instances.read` og `altinn:instances.write` for sluttbrukersystem.
 https://docs.altinn.studio/nb/authentication/what-do-you-get/id-porten/
+
+### Skatteetaten må gi tilgang
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et.
 
 ## Sikkerhet
 For mva-meldinginnsending er det Altinn token som brukes:
@@ -399,9 +403,9 @@ Systemutviklere skal bruke testbrukere fra Tenor Testdatasøk. Dette er syntetis
 
 | Tjeneste |	Url |
 |----------|-------|
-| Validering | https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider  |
-| Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/  |
-| Instans API |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances  |
+| Portalen | https://skatt-test.sits.no/web/mva/ |
+| Validering | https://idporten-api-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider |
+| Innsending |	https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-test/  |
 
   
 </TabItem>
