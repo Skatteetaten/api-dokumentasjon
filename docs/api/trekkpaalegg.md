@@ -367,7 +367,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 {
   "trekkid": "10004",
   "skyldner": "10108412345",
-  "opprettet": "2025-07-05T15:00:00.00Z",
+  "opprettet": "2025-09-12T23:59:00.00Z",
   "saksnummer": "TREKK/2025/4",
   "trekkstatus": "avsluttet",
   "trekkpliktig": "123456789",
@@ -432,6 +432,39 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   "trekkstatus": "avsluttet",
   "trekkpliktig": "123456789",
   "trekkversjon": 2,
+  "sekvensnummer": 228,
+  "betalingsinformasjon": {
+    "kidnummer": "6487719756",
+    "kontonummer": "70213997155",
+    "betalingsmottaker": "971648199"
+  },
+  "trekkstoerrelseForPeriode": [
+    {
+      "startdato": "2025-06-10",
+      "sluttdato": "2025-08-09",
+      "trekkprosent": {
+        "trekkprosent": 23.0
+      }
+    },
+    {
+      "startdato": "2025-08-10",
+      "trekkbeloep": {
+        "trekkbeloep": 4400
+      }
+    }
+  ]
+}
+```
+### versjon 3
+```json
+{
+  "trekkid": "10005",
+  "skyldner": "10108412345",
+  "opprettet": "2025-08-31T23:59:00.00Z",
+  "saksnummer": "TREKK/2025/5",
+  "trekkstatus": "avsluttet",
+  "trekkpliktig": "123456789",
+  "trekkversjon": 3,
   "sekvensnummer": 228,
   "betalingsinformasjon": {
     "kidnummer": "6487719756",
@@ -738,7 +771,7 @@ Sagt på en annen måte
 {
   "trekkid": "10008",
   "skyldner": "10108412345",
-  "opprettet": "2025-08-16T15:00:00.00Z",
+  "opprettet": "2025-09-17T23:59:00.00Z",
   "saksnummer": "TREKK/2025/8",
   "trekkstatus": "avsluttet",
   "trekkpliktig": "123456789",
