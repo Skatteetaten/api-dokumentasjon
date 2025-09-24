@@ -773,7 +773,7 @@ Sagt på en annen måte
   "skyldner": "10108412345",
   "opprettet": "2025-09-17T23:59:00.00Z",
   "saksnummer": "TREKK/2025/8",
-  "trekkstatus": "avsluttet",
+  "trekkstatus": "aktiv",
   "trekkpliktig": "123456789",
   "trekkversjon": 2,
   "sekvensnummer": 410,
