@@ -69,6 +69,7 @@ const sidebars = {
         { id: 'api/innrapportering-drosjetjenester', label: "Drosjetjenester", type: 'doc' },
         { id: 'api/innrapportering-fagforeningskontingent', label: "Fagforeningskontingent", type: 'doc' },
         { id: 'api/innrapportering-finansprodukter', label: "Finansprodukter", type: 'doc' },
+        { id: 'api/innrapportering-fondskonto', label: "Fondskonto", type: 'doc' },
         { id: 'api/innrapportering-gavertilfrivillige', label: "Gaver til frivillige organisasjoner", type: 'doc' },
         { id: 'api/innrapportering-aandsverk', label: "Godtgjøring til opphaver til åndsverk", type: 'doc' },
         { id: 'api/innrapportering-individuellepensjonsordninger', label: "Individuelle pensjonsordninger", type: 'doc' },
