@@ -284,12 +284,12 @@
       "taxIdentificationNumber": "312597772"
     },
     "norskKonto": true,
+    "kidnummer": "2509937609",
     "kontoinformasjon": {
       "bankNavn": "Nordea Bank",
       "landkodeBank": "NO",
       "kontovaluta": "NOK",
-      "kontonummer": "69930570044",
-      "kidnummer": "2509937609"
+      "kontonummer": "69930570044"
     }
   },
   "vedlegg": [
