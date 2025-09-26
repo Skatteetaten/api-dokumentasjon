@@ -53,9 +53,9 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæri
 
 ## Teknisk spesifikasjon
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som Open API spesifikasjoner på SwaggerHub:
-[Utleggsbegjæring API](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app)
-[API for innsyn ifb Utlegg](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app)
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som spesifikasjoner på SwaggerHub:
+* [OpenAPI spesifikasjon for Utleggsbegjæring](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-api)
+* [OpenAPI spesifikasjon for innsyn ifm Utlegg](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-innsyn-api)
 
 ## Datakatalog
 
@@ -101,14 +101,12 @@ I overgangsperioden skal digitale utleggsbegjæringer for skyldnere som er omfat
 
 ## Betjeningskartet
 
-For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk, kan innkassosystemet benytte en API-tjeneste kalt "Betjeningskartet". Her kan man slå opp gjeldende regelverk for en eller flere skyldnere på identifikator (fødselsnummer). Tjenesten skal kalles rett i forkant av innsending av en ny utleggsbegjæring gjennom API, slik at innsendingen gjøres til riktig system (ELSA eller ELAN). URL-er til betjeningskart API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
+For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk, kan innkassosystemet benytte en API-tjeneste kalt "Betjeningskartet". Her kan man slå opp gjeldende regelverk for en eller flere skyldnere på identifikator (fødselsnummer). Tjenesten skal kalles rett i forkant av innsending av en ny utleggsbegjæring gjennom API, slik at innsendingen gjøres til riktig system (ELSA eller ELAN). URL-er til betjeningskart API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [OpenAPI spesifikasjonen for betjeningskartet](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-betjeningskartet-api) på SwaggerHub.
 
 ![Betjeningskartet](../../static/download/utleggsbegjaering/Betjeningskartet.png)
 
 Dersom man sender en utleggsbegjæring til feil system, vil systemet returnere en feilmelding om dette og avvise innsendingen. For ELAN vil det gis en 422-feilkode med feilmeldingen "SAKSOEKT_GAMMELT_REGELVERK".
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som Open API spesifikasjon på SwaggerHub:
-[Betjeningskartet API](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app)
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-Feilkoder">
@@ -237,11 +235,11 @@ Innsender er den som sender inn utleggsbegjæringen. Innsender kan også være e
 
 Saksøker er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig som representerer seg i sak om tvangsfullbyrdelse(saksøkersProsessfullmektig). Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
 
-Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktes Prosessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktesProsessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
 
 Prosessfullmektig(fullmakt/bevillingshaver/Advokat/avdvokatfullmektig) er tredjeperson med en generell(Bevillingshaver) eller spesifikk fullmakt(Fullmakt) til å opptre på vegne av en part. Dette må være en fysisk person.
 
-Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges. 
+Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges.
 
 ![Parter](../../static/download/utleggsbegjaering/begjaering-b1.png)
 
@@ -254,37 +252,31 @@ Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshav
 I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker hele utleggsbegjæringen, dette er
 * KreverRettsgebyrErstattet - Benyttes om du ønsker å angi at rettsgebyret som ilegges ved innsending, kreves erstattet av saksøkte.
 * Betalingsinformasjon - Informasjon om hvor, hvordan og til hvem innbetalingen skal gjøres, dersom det ender opp i samordnet trekk.
-* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting.
+* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som i kodelisten.
 
 ![Generelle elementer-1](../../static/download/utleggsbegjaering/begjaering-c1.png)
 ![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
 ### d) Kravinformasjon
 
-Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er Hovedkrav og Rentekrav.
+Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig, og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod.
+Se kodeliste for alle gyldige verdier [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826).
+En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
 
-Eksempler på dette kan være «hovedkrav» som er det opprinnelige beløpet en person er skyldig. Se kodeliste for alle gyldige verdier: [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826).
-I mange tilfeller kan en «opprinnelig faktura» være et slik eksempel. Har man f. eks to fakturaer med ulikt forfall(«kravforfall»), er dette å anse som to krav.
+«InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en Utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav» som for eksempel «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere «Rentekrav» til «Sakskostnader». I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
 
-«InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav».
-
-Eksempler på dette kan være «kravdetaljer» slik som eksempelvis «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere fra «Rentekrav» til «Sakskostnader».
-
-I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
-
-Dersom man sender inn et krav med «kravdetaljer» = «Rentekrav», bør man legge ved hvilken «rentePeriode»(fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av(«renteGrunnlag»).  Dette fylles ut i «rentekrav» elementet.
-
-I tillegg bør man legge ved hvilken type og evnt. «avtaltRentesats» man har benyttet ved beregning(«rentesatsOgType»).
+Dersom man sender inn et «Rentekrav», bør man legge ved hvilken «rentePeriode» (fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av i «renteGrunnlag».  Dette fylles ut i «rentekrav» elementet.
+I tillegg bør man angi om det er "beregnetMedForsinkelsesrente" eller evntuelt med en avtalt rentesats i «beregnetMedAvtaltRentesats».
 
 Sender man inn et krav som det kreves renter for, må man fylle ut «rentebærendeKrav».
 
 Har det kommet innbetalinger på aktuelle krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
 
-Har man andre nedjusteringer på krav, skal dette angis i entiteten KravEndring.
+Har man andre nedjusteringer på krav, skal dette angis i entiteten "kravEndring".
 
-Har kravet byttet «eier», skal informasjon om dette fylles informeres via entiteten «transporterklæring» og vedlegges dokumentasjon.
+Har kravet byttet eier skal informasjon om dette angis i entiteten «transporterklæring», og det må vedlegges dokumentasjon.
 
-Dersom man vedlegger Transporterklæring på eksempelvis et Hovedkrav, trenger man ikke fylle ut posten for andre krav(kravdetaljer) som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav".
+Dersom man angir "transporterklæring" på et Hovedkrav trenger man ikke fylle ut posten for andre krav(kravdetaljer) som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav".
 
 ![Kravinformasjon](../../static/download/utleggsbegjaering/begjaering-d.png)
 
