@@ -53,8 +53,9 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæri
 
 ## Teknisk spesifikasjon
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som Open API spesifikasjoner på SwaggerHub:
+[Utleggsbegjæring API](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app)
+[API for innsyn ifb Utlegg](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app)
 
 ## Datakatalog
 
@@ -105,6 +106,9 @@ For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk
 ![Betjeningskartet](../../static/download/utleggsbegjaering/Betjeningskartet.png)
 
 Dersom man sender en utleggsbegjæring til feil system, vil systemet returnere en feilmelding om dette og avvise innsendingen. For ELAN vil det gis en 422-feilkode med feilmeldingen "SAKSOEKT_GAMMELT_REGELVERK".
+
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som Open API spesifikasjon på SwaggerHub:
+[Betjeningskartet API](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app)
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-Feilkoder">
@@ -185,17 +189,19 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 Oversikt over endringer som er gjort i versjon 1.0 av Utleggsbegjæringen:
 1. Fjernet saksøkerReferanse i Saksøker og saksøktReferanse i Saksøkt
 2. Endret kardinalitet på forpliktet og berettiget i Domsslutningsinformasjon fra 0..1 til 1..*
-3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsenderProsessfullmektig og saksøktesProsessfullmektig
-4. Fjernet domsreferanse i AlminneligTvangsgrunnlag
-5. Fjernet referanseSak i SærligTvangsgrunnlag
-6. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
-7. Endret navn på kravreferanse i Krav til innsendersKravreferanse
-8. Lagt inn nytt valgfritt element kravEndring i Krav
-9. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
-10. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
-11. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
-12. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
-13. Fjernet avsender i SkriftligMeddelelse
+3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsendersProsessfullmektig og saksøktesProsessfullmektig
+4. Lagt inn kodeliste for namsmannsdistrikt
+5. Fjernet domsreferanse i AlminneligTvangsgrunnlag
+6. Fjernet referanseSak i SærligTvangsgrunnlag
+7. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
+8. Endret navn på kravreferanse i Krav til innsendersKravreferanse
+9. Lagt inn nytt valgfritt element kravEndring i Krav
+10. Endret innhold i Rentekrav og fjernet relasjon til Renteopplysninger
+11. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
+12. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
+13. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
+14. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
+15. Fjernet avsender i SkriftligMeddelelse
 
 ## Forklaring til modellen
 Denne veilederen har til formål å veilede både funksjonelle og tekniske ressurser til å få en overordnet forståelse av elementene og sammenhengen mellom disse i ELAN løsningen.
@@ -220,7 +226,11 @@ I elementet tvangsfullbyrdelsestype må man angi om det er en ren utleggsbegjær
 
 Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
 
-![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a.png)
+![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a1.png)
+
+#### Datatyper:
+
+![Rotnivå-datatyper](../../static/download/utleggsbegjaering/begjaering-a2.png)
 
 ### b) Parter i utleggsbegjæringen
 Innsender er den som sender inn utleggsbegjæringen. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
@@ -246,7 +256,8 @@ I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker h
 * Betalingsinformasjon - Informasjon om hvor, hvordan og til hvem innbetalingen skal gjøres, dersom det ender opp i samordnet trekk.
 * Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting.
 
-![Generelle elementer](../../static/download/utleggsbegjaering/begjaering-c.png)
+![Generelle elementer-1](../../static/download/utleggsbegjaering/begjaering-c1.png)
+![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
 ### d) Kravinformasjon
 
@@ -289,7 +300,9 @@ Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUn
 
 ## Eksempler på testdata
 
-Eksempler på testdata for modell versjon 1.0 kommer snart.
+Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
+
+[utleggsbegjaering-v1.json](../../static/download/utleggsbegjaering/begjaering-v1.json)
 
 </p>
 </details>
@@ -311,13 +324,13 @@ Dokumentasjon av forrige versjon av utleggsbegjæring finnes her:
 
 Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
 
-[utleggsbegjaering-enkel.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
+[utleggsbegjaering-enkel-v09.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
 
 ### Mer komplekst eksempel på utleggsbegjæring
 
 Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
 
-[utleggsbegjaering-kompleks.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
+[utleggsbegjaering-kompleks-v09.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
 
 </p>
 </details>
@@ -366,8 +379,6 @@ med å pilotere løsningene.
 ### Utleggsbegjæring versjon 1.0
 
 URL til det nye testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
-
-NB! Dette nye miljøet lanseres første del av uke 39. Inntill da kan miljøet for versjon 0.9 benyttes.
 
 ### Tidligere versjoner
 Utleggsbegjæringen ble 22.09.2025 lansert i ny versjon 1.0. Forrige versjon (0.9) av utleggsbegjæring er i en overgangsperiode tilgjengelig på https://api-test.sits.no/api/utleggsbegjaering/v1
