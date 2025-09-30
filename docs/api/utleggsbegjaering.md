@@ -188,18 +188,19 @@ Oversikt over endringer som er gjort i versjon 1.0 av Utleggsbegjæringen:
 1. Fjernet saksøkerReferanse i Saksøker og saksøktReferanse i Saksøkt
 2. Endret kardinalitet på forpliktet og berettiget i Domsslutningsinformasjon fra 0..1 til 1..*
 3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsendersProsessfullmektig og saksøktesProsessfullmektig
-4. Lagt inn kodeliste for namsmannsdistrikt
-5. Fjernet domsreferanse i AlminneligTvangsgrunnlag
-6. Fjernet referanseSak i SærligTvangsgrunnlag
-7. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
-8. Endret navn på kravreferanse i Krav til innsendersKravreferanse
-9. Lagt inn nytt valgfritt element kravEndring i Krav
-10. Endret innhold i Rentekrav og fjernet relasjon til Renteopplysninger
-11. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
-12. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
-13. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
-14. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
-15. Fjernet avsender i SkriftligMeddelelse
+4. Fjernet inkassobevillingshaverNummer i Bevillingshaver
+5. Lagt inn kodeliste for namsmannsdistrikt
+6. Fjernet domsreferanse i AlminneligTvangsgrunnlag
+7. Fjernet referanseSak i SærligTvangsgrunnlag
+8. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
+9. Endret navn på kravreferanse i Krav til innsendersKravreferanse
+10. Lagt inn nytt valgfritt element kravEndring i Krav
+11. Endret innhold i Rentekrav og fjernet relasjon til Renteopplysninger
+12. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
+13. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
+14. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
+15. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
+16. Fjernet avsender i SkriftligMeddelelse
 
 ## Forklaring til modellen
 Denne veilederen har til formål å veilede både funksjonelle og tekniske ressurser til å få en overordnet forståelse av elementene og sammenhengen mellom disse i ELAN løsningen.
@@ -228,7 +229,8 @@ Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
 
 #### Datatyper:
 
-![Rotnivå-datatyper](../../static/download/utleggsbegjaering/begjaering-a2.png)
+![Rotnivå-datatyper-vedlegg](../../static/download/utleggsbegjaering/begjaering-a2.png)
+![Rotnivå-datatyper-tvangsfullbyrdelsestype](../../static/download/utleggsbegjaering/begjaering-a3.png)
 
 ### b) Parter i utleggsbegjæringen
 Innsender er den som sender inn utleggsbegjæringen. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
