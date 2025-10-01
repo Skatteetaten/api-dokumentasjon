@@ -165,6 +165,28 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
 </p>
 </details>
 
+<details>
+      <summary>Oppslag samordnet trekk fra kommune 1.0</summary>
+     <p>
+
+## Forklaring til modellen
+Denne veilederen har til formål å veilede både funksjonelle og tekniske ressurser til å få en overordnet forståelse av elementene og sammenhengen mellom disse i ELAN løsningen.
+
+Modellen for oppslag av samordnet trekk er en modell skal støtte at kommunene kan gjøre oppslag om en gitt part har eller har hatt trekk på nytt regelverk.
+Dette for å kunne gradivis innføre flere skyldnere på nytt regelverk gjennom overgangsåret 2026.
+
+### Oppslag av samordnet trekk request
+Oppslag av samordnet trekk skjer ved å angi parten man ønsker å gjøre oppslag på
+
+### Oppslag av samordnet trekk response
+Som respons vil man få parten man gjorde oppslag på samt en boolsk verdi som er true dersom parten har eller har hatt trekk på nytt regelverk.
+
+### Eksempler på testdata
+Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data.
+[oppslag-samordnet-trekk-kommune.json](../../static/download/utleggstrekk-fra-kommune/oppslag-samordnet-trekk-kommune.json)
+     </p>
+</details>
+## Forklaring til modellen
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-Test">
