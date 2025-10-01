@@ -1,0 +1,173 @@
+{
+  "saksoeker": [
+    {
+      "saksoeker": {
+        "adresse": [
+          {
+            "adressetype": "bopelsadresse",
+            "adresseInnland": {
+              "kommunenummer": "4601",
+              "postnummer": "5231",
+              "adressetekst": "Nattlandsåsen 2"
+            }
+          }
+        ],
+        "virksomhet": {
+          "navn": "UPERSONLIG FRISK TIGER AS",
+          "identifikator": {
+            "taxIdentificationNumber": "311758489",
+            "landkodeIdentifikator": "NO"
+          },
+          "virksomhetstype": "kommune"
+        }
+      },
+      "saksoekerReferanse": "saksoekerReferanse"
+    }
+  ],
+  "saksoekt": [
+    {
+      "saksoekt": {
+        "adresse": [
+          {
+            "adressetype": "bopelsadresse",
+            "adresseInnland": {
+              "kommunenummer": "0301",
+              "postnummer": "0351",
+              "adressetekst": "Josefines gate 3D"
+            }
+          }
+        ],
+        "person": {
+          "personnavn": {
+            "fornavn": "LYSEGUL",
+            "etternavn": "HENSIKT"
+          },
+          "foedselsdato": "2006-09-16",
+          "identifikator": {
+            "taxIdentificationNumber": "44926701751",
+            "annenOffisiellIdentifikator": null,
+            "landkodeIdentifikator": "NO"
+          }
+        }
+      }
+    }
+  ],
+  "beslutning": {
+    "type": "betalingsoppfordring",
+    "filnavn": "betalingsoppfordring.pdf",
+    "uuid": "ec73eb93-8f44-44e5-9ae4-353ccacada52"
+  },
+  "beslutningsdato": "2024-06-18T12:34:56+02:00",
+  "underskrift": "bevilgningsNavn_ikke finnes i PDF",
+  "kravTilInnkreving": [
+    {
+      "kravforfall": {
+        "forfallsdato": "2024-06-15"
+      },
+      "kravreferanse": "00890772001",
+      "opprinneligBeloep": {
+        "beloep": 12469.14,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 12469.14,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "b",
+      "kravdetaljer": "Hovedkrav",
+      "kravbeskrivelse": "kravbeskrivelse",
+      "betalingsoppfordring": [
+        {
+          "betalingsfrist": "2024-07-16",
+          "betalingsoppfordring": {
+            "type": "betalingsoppfordring",
+            "filnavn": "betalingsoppfordring.pdf",
+            "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+          },
+          "brevdato": "2024-07-02"
+        }
+      ],
+      "renteOpplysning": {
+        "avtaltRentesats": 21.99
+      }
+    },
+    {
+      "kravforfall": {
+        "forfallsdato": "2024-06-15"
+      },
+      "kravreferanse": "RentekravPåHovedkrav_00890772001_1",
+      "opprinneligBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "b",
+      "kravdetaljer": "Rentekrav",
+      "kravbeskrivelse": "Renter på hovedkrav",
+      "betalingsoppfordring": [
+        {
+          "betalingsfrist": "2024-07-16",
+          "betalingsoppfordring": {
+            "type": "betalingsoppfordring",
+            "filnavn": "betalingsoppfordring.pdf",
+            "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+          },
+          "brevdato": "2024-07-02"
+        }
+      ],
+      "relatertKrav": [
+        "00890772001"
+      ],
+      "erRentekrav": {
+        "rentePeriode": {
+          "startdato": "2024-06-02",
+          "sluttdato": "2024-07-02"
+        }
+      }
+    },
+    {
+      "kravforfall": {
+        "forfallsdato": "2024-06-15"
+      },
+      "kravreferanse": "UtenrettsligKostnaderPåHovedkrav_00890772001",
+      "opprinneligBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "b",
+      "kravdetaljer": "UtenrettsligeKostnader",
+      "kravbeskrivelse": "UtenrettsligeKostnader på hovedkrav",
+      "betalingsoppfordring": [
+        {
+          "betalingsfrist": "2024-07-16",
+          "betalingsoppfordring": {
+            "type": "betalingsoppfordring",
+            "filnavn": "betalingsoppfordring.pdf",
+            "uuid": "1a107a2d-6398-4675-944c-59f44fbeee82"
+          },
+          "brevdato": "2024-07-02"
+        }
+      ],
+      "relatertKrav": [
+        "00890772001"
+      ],
+      "renteOpplysning": {
+        "avtaltRentesats": 21.99
+      }
+    }
+  ],
+  "betalingsinformasjon": {
+    "norskKonto": true,
+    "kontoinformasjon": {
+      "kontonummer": "69930570044",
+      "kidnummer": "2509937609"
+    }
+  }
+}
