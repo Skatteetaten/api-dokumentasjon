@@ -19,7 +19,7 @@ Tjeneste for innrapportering av tredjepartsopplysninger om internasjonal rapport
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
+* [Sikkerhetsmekanismer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
