@@ -78,7 +78,7 @@ Dersom skyldner har eller har hatt trekk etter nytt regelverk skal beslutning om
 
 Etter 1.1.2027 vil gjelder ny ordning for alle utleggstrekk som besluttes og kommunen må da sende alle beslutninger om utleggstrekk til ny løsning.
 
-For å se dokumentasjon om hvordan betjeningskartet kan benyttes for å bestemme hvorvidt en skyldner skal behandles etter nytt eller gammelt regelverk, se [her](utleggsbegjaering.md) 
+Merk at Betjeningskartet som for innsending av Utleggsbegjæringer skal benyttes for å undersøke hvorvidt skyldner er på nytt regelverk, ikke skal benyttes for beslutning av trekk fra kommune. I stedet skal tjeneste for hvorvidt skyldner har eller har hatt trekk etter nytt regelverk benyttes. 
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-Informasjonsmodell">
