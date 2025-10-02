@@ -129,11 +129,11 @@ I beslutningen har vi 2 såkalte entiteter med generell informasjon som dekker h
 * ValgtNamsmannsdistrikt -skal kun benyttes om man ønsker trekk behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som i kodelisten.
 
 ![Generelle elementer-1](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c1.png)
-![Generelle elementer-3](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c2.png)
-![Generelle elementer-4](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c3.png)
+![Generelle elementer-2](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c2.png)
+![Generelle elementer-3](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c3.png)
 
-![Generelle elementer-5](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c4.png)
-![Generelle elementer-2](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c5.png)
+![Generelle elementer-4](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c4.png)
+![Generelle elementer-5](../../static/download/utleggstrekk-fra-kommune/utleggstrekk-fra-kommune-c5.png)
 
 
 ### d) Kravinformasjon
