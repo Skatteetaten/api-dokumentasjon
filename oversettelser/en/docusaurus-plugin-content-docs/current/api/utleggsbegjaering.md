@@ -127,21 +127,19 @@ If an enforcement request is submitted to the wrong system, it will be rejected 
 
 </TabItem>
 
-<TabItem headerText="Examples" itemKey="itemKey-3"> 
-
-See the Norwegian page for examples of utleggsbegjæring in JSON format.
-
-</TabItem>
 <TabItem headerText="Error codes" itemKey="itemKey-4">
 
 See separate page (Norwegian) for general information concerning [feilhåndtering i tjenestene](../om/feil.md).
 
 The table below provides an overview of various types of validation errors that may occur when submitting or modifying a disbursement request. If the content of the request is syntactically correct but contains semantic errors, the service will return error code 422 along with a list of errors according to the table below.
+
 | Vilkårnavn | Gjelder kun endringer | Tittel | Beskrivelse | Avvikstekst |
 | :--- | :--- | :--- | :--- | :--- |
 | DUPLIKAT_INNSENDING | Nei | Duplikat | Duplikat innsending | Sak med begjæringsdato %begjæringsdato og referanse %innsenderReferanse er allerede sendt inn |
 | DUPLIKAT_SAKSOEKER | Nei | Duplikat saksøker | Det er ikke tillatt med duplikate saksøkere | Det er ikke tillatt med duplikate saksøkere |
 | DUPLIKAT_SAKSOEKT | Nei | Duplikat saksøkt | Det er ikke tillatt med duplikate saksøkte | Det er ikke tillatt med duplikate saksøkte |
+| GEBYR_ELLER_SAKSKOSTNAD_HAR_ET_RELATERTKRAV_SOM_IKKE_ER_HOVEDSTOL | Nei | Uriktig eller manglende relasjon til hovedstol | Gebyr eller sakskostnad kan kun relateres til hovedstol | Kravet kan kun relateres til et krav av typen hovedstol. |
+| HOVEDSTOL_SKAL_IKKE_HA_ET_RELATERT_KRAV | Nei | Hovedstol har et relatert krav | En hovedstol skal ikke ha en relatert krav | Hovedstol har et relatert krav |
 | INNSENDER_IKKE_IDENTIFISERBAR | Nei | Ukjent innsender | Begjæringen må angi en innsender som kan identifiseres | Innsender %innsender kan ikke identifiseres |
 | INNSENDER_IKKE_ORGANISASJON | Nei | Innsender er ikke en organisasjon | Innsender må være en organisasjon | Innsender %innsender er ikke en organisasjon |
 | INNSENDER_MANGLER | Nei | Mangler opplysninger om innsender | Begjæringen må inneholde opplysning om innsender | Begjæringen må inneholde opplysning om innsender |
@@ -160,10 +158,17 @@ The table below provides an overview of various types of validation errors that 
 | PAASTAND_PAAKREVET | Nei | Påstand må fylles ut | Påstand om resultat klager krever ved evt. dom | Ved utlegg og forliksklage kombinert må påstand være utfylt |
 | PARAGRAF_4_18_VARSEL_PAAKREVET | Nei | § 4-18 Varsel må fylles ut | Feltet "Varsel" må fylles ut | For særlige tvangsgrunnlag må varsel etter tvangsfullbyrdelsesloven § 4-18 eller begrunnelse for manglende varsel være utfylt |
 | PARAGRAF_4_19_VARSEL_PAAKREVET | Nei | § 4-19 Varsel må fylles ut | Feltet "Varsel" må fylles ut | Varsel etter tvangsfullbyrdelsesloven § 4-19 eller begrunnelse for manglende varsel må være utfylt |
-| RELATERTE_KRAV_MÅ_FINNES | Nei | Relaterte krav på peke til krav i samme tvangsgrunnlag | Et relatert krav må finnes i samme tvangsgrunnlag | Relaterte krav må finnes i samme tvangsgrunnlag |
-| RELATERTE_KRAV_UGYLDIGE_KRAVREFERANSER | Nei | Relaterte krav peker på krav som ikke eksisterer | Kravreferanser må være gylidige | Krav med kravreferanse %hovedkravRef peker på relatert krav med kravreferanse %relatertKravRef som ikke eksisterer |
+| PRIORITET_MANGLER | Nei | Manglende angivelse av prioritet på kravet | Hvis prioritet er angitt, så må det angis på alle. | Hvis dere har angitt prioritet på en av kravspostene, må det også angis på de øvrige kravspostene |
+| PRIORITET_MANGLER_PÅ_RENTEOPPLYSNINGER | Nei | Prioritet angitt på ett krav men mangler på renter frem i tid | Må melde inn prioritet på renter som skal påløpe senere på alle kravlinjer som er rentebærende, når det er satt prioritet på minst et annet krav (ref. regel I7). Kravlinje for kravlinje.  | Hvis dere har angitt prioritet på en av kravspostene så må det også angis prioritet på fremtidige renteposter |
+| PRIORITET_MANGLER_PÅ_RETTSGEBYR | Nei | Manglende angivelse av prioritet på kravet | Gebyr: Må angi prioritet på rettsgebyret hvis saksøkte skal betale dette og det er satt prioritet på minst et annet krav (ref. regel I7) | Hvis dere har angitt prioritet på en av kravspostene så må det også angis for rettsgebyret |
+| RELATERTE_KRAV_KAN_IKKE_PEKE_PÅ_SEG_SELV | Nei | Relaterte krav kan ikke peke på seg selv | Relaterte krav kan ikke peke på seg selv | Relaterte krav kan ikke peke på seg selv |
+| RELATERTE_KRAV_MÅ_FINNES | Nei | Relaterte krav må peke til krav i samme tvangsgrunnlag | Et relatert krav må finnes i samme tvangsgrunnlag | Relaterte krav må finnes i samme tvangsgrunnlag |
+| RELATERTE_KRAV_UGYLDIGE_KRAVREFERANSER | Nei | Relaterte krav peker på krav som ikke eksisterer | Kravreferanser må være gyldige | Krav med kravreferanse %hovedkravRef peker på relatert krav med kravreferanse %relatertKravRef som ikke eksisterer |
+| RENTEKRAV_KAN_IKKE_HA_RENTEKRAV | Nei | Uriktig relasjon til rentekravet | Rentekrav kan ikke peke på annet rentekrav | Et rentekrav kan ikke være relatert til et annet rentekrav. Oppgi korrekt relasjon til et rentebærende krav. |
+| RENTE_MAA_HA_RELATERT_KRAV | Nei | Relasjon til rentebærende krav mangler | Relasjon til rentebærende krav mangler | Et rentekrav må ha et relatert krav slik at det relaterer seg til et annet krav som er rentebærende. |
 | SAKSOEKERS_INNENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse innenlands for saksøker | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøker %saksøker sin adresse innenlands må minimum inneholde adressetekst og postnummer |
 | SAKSOEKERS_UTENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse utland for saksøker | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøker %saksøker sin adresse utenlands må minimum inneholde poststed og landkode |
+| SAKSOEKT_GAMMELT_REGELVERK | Nei | Saksøkt på gammelt regelverk | Begjæringen angir saksøkt som må behandles etter gammelt regelverk | Saksøkt med identifikator %identifikator må behandles etter gammelt regelverk, og må sendes inn via ELSA |
 | SAKSØKTES_INNENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse innenlands for saksøkte | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøkte %saksøkt sin adresse innenlands må minimum inneholde adressetekst og postnummer |
 | SAKSØKTES_UTENLANDS_ADRESSE_UGYLDIG | Nei | Saksøktes utenlandsadresse er ugyldig | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøkte %saksøkt sin adresse utland må minimum inneholde poststed og landkode |
 | SAMME_SAKSOEKT_SOM_SAKSOEKER | Nei | Saksøker kan ikke være saksøkt | Saksøker kan ikke være saksøkt | Saksøker kan ikke være saksøkt |
@@ -189,13 +194,176 @@ The table below provides an overview of various types of validation errors that 
 | VEDLEGG_SKAL_VAERE_TILGJENGELIG | Nei | Vedlegg referert til i begjæringen er ikke tilgjengelig og kan ikke benyttes | Alle vedlegg knyttet til begjæringen skal være tilgjengelig | En av følgende:<br/>- Vedlegg '%s' med id '%s' finnes ikke.<br/>- Vedlegg '%s' er slettet.<br/>- Vedlegg '%s' er kassert.<br/>- Vedlegg '%s' inneholder virus. |
 | VEDLEGG_SKAL_VAERE_VIRUSSJEKKET_VALIDERT_OG_KONVERTERT | Nei | Vedlegg referert til i begjæringen er ikke klar til å kunne benyttes enda | Alle vedlegg knyttet til begjæringen skal være virussjekket, validert og konvertert | En av følgende:<br/>- Vedlegg '%s' er ikke virussjekket.<br/>- Vedlegg '%s' er ikke konvertert til gyldig pdf.<br/>- Vedlegg '%s' er ikke validert. |
 
-
 </TabItem>
 <TabItem headerText="Information modell" itemKey="itemKey-5">
 
-Thi is the entire information modell Utleggsbegjæring
+ <details>
+      <summary>Utleggsbegjæring version 1.0</summary>
+      <p>
+
+# Change Log
+
+Overview of changes made in version 1.0 of the Enforcement Request:
+
+1. Removed `saksøkerReferanse` from `Saksøker` and `saksøktReferanse` from `Saksøkt`
+2. Changed cardinality of `forpliktet` and `berettiget` in `Domsslutningsinformasjon` from `0..1` to `1..*`
+3. Renamed `prosessfullmektig` to `saksøkersProsessfullmektig`, `innsendersProsessfullmektig`, and `saksøktesProsessfullmektig`
+4. Removed `inkassobevillingshaverNummer` from `Bevillingshaver`
+5. Added code list for `namsmannsdistrikt`
+6. Removed `domsreferanse` from `AlminneligTvangsgrunnlag`
+7. Removed `referanseSak` from `SærligTvangsgrunnlag`
+8. Renamed `alternativElektroniskKanalForMeddelelse` in `Forsendelsemåte` to `alternativElektroniskForesendelsesmåte`
+9. Renamed `kravreferanse` in `Krav` to `innsendersKravreferanse`
+10. Added new optional element `kravEndring` in `Krav`
+11. Changed content in `Rentekrav` and removed relation to `Renteopplysninger`
+12. Split code value `ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon` in code list `BegrunnelseUnnlattVarselType` into `ukjentFullmektigMedKjentOppholdssted` and `ukjentElektroniskKontaktinformasjon`
+13. Corrected to `skyldnererklæring` in `Gjeldsbrev` and `ElektroniskGjeldserklæring`
+14. Corrected to `utleggOgForliksklageKombinert` in `Tvangsfullbyrdelsestype` (removed extra "l")
+15. Changed `avtaltRentesats` in `Renteopplysninger` from type `Decimal` to type `Percent`
+16. Removed `avsender` from `SkriftligMeddelelse`
+
+# Model Explanation
+
+This guide aims to help both functional and technical resources gain a high-level understanding of the elements and their relationships in the ELAN solution. Individual terms are not explained here; refer to the `documentation` element in Swagger (JSON) for that.
+
+The model consists of a **rotEntitet** (root entity) representing overarching information across the enforcement request.
+
+## a) Root Level – Enforcement Request
+
+The root entity `Utleggsbegjæring` contains core information about the submission, such as general attachments and the signature with the name of the responsible person.
+
+- `innsenderReferanse`: The submitter's unique reference for the case.
+- `saksreferanse`: The enforcement authority's unique identifier for the case, used in further communication.
+
+In `tvangsfullbyrdelsestype`, specify whether it's a pure enforcement request or a combined conciliation complaint.
+
+If there is information about a `spesiellUtleggsgjenstand`, it can be included.
+
+![Rotnivå](../../../../../static/download/utleggsbegjaering/begjaering-a1.png)
+
+#### Data types:
+
+![Rotnivå-datatyper-vedlegg](../../../../../static/download/utleggsbegjaering/begjaering-a2.png)
+![Rotnivå-datatyper-tvangsfullbyrdelsestype](../../../../../static/download/utleggsbegjaering/begjaering-a3.png)
+
+## b) Parties in the Enforcement Request
+
+**Innsender** (sumbitter) is the entity submitting the request. Innsender can both be the legal representative or be represented by a legal representative.
+
+**Saksøker** (claimant) The party that declares someone owes Money. Saksøker may have a legal representative (`saksøkersProsessfullmektig`).
+
+**Saksøkt** (Defendant) The person from whom money is claimed; must have a Norwegian identifier.
+
+**Prosessfullmektig** (Legal Representative) A third party with general or specific authorization to act on behalf of a party. Must be a physical person.
+
+If the representative is a lawyer or debt collection license holder, their name must be provided. Otherwise, a power of attorney must be attached.
+
+![Parter](../../../../../static/download/utleggsbegjaering/begjaering-b1.png)
+
+#### Data types:
+
+![Parter-datatyper](../../../../../static/download/utleggsbegjaering/begjaering-b2.png)
+
+## c) General Elements
+
+These entities apply to the entire enforcement request:
+
+- `KreverRettsgebyrErstattet`: Indicates if the legal fee Connected to submittal should be reimbursed by the defendant.
+- `Betalingsinformasjon`: Where, how, and to whom payment should be made.
+- `Namsmannsdistrikt`: Used only if the request should be handled by a different enforcement district than the defendant’s general jurisdiction. Must match the code list exactly.
+
+![Generelle elementer-1](../../../../../static/download/utleggsbegjaering/begjaering-c1.png)
+![Generelle elementer-2](../../../../../static/download/utleggsbegjaering/begjaering-c2.png)
+
+## d) Claim Information
+
+'Krav' (clam) is the smallest object within an enforcement basis and has various types (`kravdetaljer`). Examples include `Hovedkrav`which is the original amount owed and `Rentekrav`which is the accrued interest. Consult 'kodeliste' for a comprehensive overview of all valid types. [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826)
+
+Use `innsendersKravreferanse` to uniquely identify a claim and relate additional claims like `Sakskostnader` or `Rentekrav`. Similarly, a “Rentekrav” (Interest Claim) can be related to “Sakskostnader” (Legal Costs). In practice, the field “relatertKrav” (relatedClaim) is filled in with the origin’s “InnsendersKravreferanse” (Submitter’s Claim Reference).
+
+If one submits a "Rentekrav" (Interest Claim), it is recommended to include the "rentePeriode" (interest period – from and to dates) during which the interest has been calculated, as well as the amount the interest is based on in "renteGrunnlag" (interest basis). This information is entered in the "rentekrav" (interest claim) element. Additionally, it should be specified whether the interest is "beregnetMedForsinkelsesrente" (calculated with late payment interest) or alternatively with an agreed interest rate in "beregnetMedAvtaltRentesats" (calculated with agreed interest rate).
+
+If interest is claimed, `rentebærendeKrav` must be filled.
+
+Payments should be linked to the specific claim with amount and date.
+
+Other adjustments go in `kravEndring`.
+
+If ownership of the claim has changed, use `transporterklæring`. Documentation to this effect must be included.
+
+If `transporterklæring` is provided for a `Hovedkrav`, it need not be repeated for related claims.
+
+![Kravinformasjon](../../../../../static/download/utleggsbegjaering/begjaering-d.png)
+
+## e) Enforcement Basis of the Request
+
+This includes data about the legal basis for the claims. It links to claims via `innsendersKravreferanse` and identifies involved parties.
+
+You may include your own reference (`eksternSaksreferanse`) for each enforcement basis.
+
+If no notice was sent to the debtor, a reason must be provided in `begrunnelseUnnlatvarsel` (not allowed for `SkriftligMeddelelse`).
+
+![BegjæringensTvangsgrunnlag](../../../../../static/download/utleggsbegjaering/begjaering-e.png)
+
+## Example Test Data
+
+The example below uses test parties from Tenor. Replace synthetic data with your own, including attachments and selected actors (submitter, defendant, claimant, legal representative).
+
+[utleggsbegjaering-v1.json](../../../../../static/download/utleggsbegjaering/begjaering-v1.json)
+
+</p>
+</details>
+
+ <details>
+      <summary>Previous Information Model for Enforcement Request (Version 0.9)</summary>
+      <p>
+
+Here you can see the previous information model for the Enforcement Request (version 0.9).
 
 ![Informasjonsmodell](../../../../../static/download/utleggsbegjaering/informasjonsmodell-utleggsbegjaering.png)
+
+Documentation for the previous version of the Enforcement Request can be found here:
+[Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.9.2)
+
+### Simple Example of Enforcement Request
+
+The example below uses test parties from Tenor.  
+The synthetic data in the document should be replaced with your own synthetic data.  
+This includes uploaded attachments, as well as selected actors (submitter, defendant, claimants, and legal representative) from Tenor.
+
+[utleggsbegjaering-enkel-v09.json](../../../../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
+
+### More Complex Example of Enforcement Request
+
+The example below is somewhat more complex, with multiple enforcement bases.
+[utleggsbegjaering-kompleks-v09.json](../../../../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
+
+</p>
+</details>
+
+ <details>
+      <summary>Creditor Access to Ongoing Wage Deductions</summary>
+<p>
+
+According to the Enforcement Act Regulation § 4, creditors have the right to access information about ongoing wage deductions. The conditions for using the service include:
+
+- The legal representative ("prosessfullmektig") can only receive responses for claims in cases where they are the appointed representative.
+- The claims must be part of an established and ongoing deduction.
+
+## Returned Information
+
+| Information Element | What Information Is Returned |
+|---------------------|------------------------------|
+| a. Total amount of claims in the deduction with higher priority than the claimant's claim | Total amount and estimated interest of claims in the deduction that have a higher priority than the current claim (priority type a is higher than b, b higher than c, etc.) or better chronological priority |
+| b. Total amount of claims in the deduction with equal priority as the claimant's claim, and the combined basis for proportional distribution according to the Coverage Act § 2-8 third paragraph | Total amount and estimated interest of claims with the same priority as the current claim. The dividend basis in the deduction (remaining amount for proportional distribution plus accrued interest for proportional distribution) for the claim / other claims' dividend basis |
+| c. Amount of the deduction allocated to non-due child support claims | Decided ongoing child support claims in the deduction |
+| d. Date of the last executed deduction and the amount deducted | Received and allocated amounts today and one month back in time |
+| e. Current decision on the deduction amount and who is obligated to pay | Current and future deduction orders – same as in creditor's case insight |
+
+![Informasjonsmodell-innsyn-trekk](../../../../../static/download/utleggsbegjaering/informasjonsmodell-innsyn-i-ett-trekk.png)
+
+</p>
+</details>
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-6">
