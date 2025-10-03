@@ -30,21 +30,16 @@ Dette apiet kan kun brukes etter nærmere avtale med skatteetaten. Som hovedrege
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringaksjonaerregisteroppgave`
+Du skal bruke scope tilsvarende ordningen man vil rapportere for. Foreløpig er følgende ordninger/scopes støttet:
+
+| Ordning                  | Scope                                                |
+|--------------------------|------------------------------------------------------|
+| Aksjonærregisteroppgaven | skatteetaten:innrapporteringaksjonaerregisteroppgave |
+
 
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
-
-## Systemtilgang
-
-TODO: Avklare om vi vil ha systembruker
-
-Bruk av API-et krever systemtilgang, som er ny funksjonalitet i Maskinporten levert av Digdir.
-Informasjon vedr. dette finnes [her](../om/systembruker.md).
-
-Dette API-et krever at systemet og dets systembrukere har tilgang til ordningen det rapporteres for. Se dokumentasjonen
-for de ordningsspesifikke apiene for hvilke tilganger som kreves for hver ordning.
 
 ## Teknisk spesifikasjon
 
@@ -58,18 +53,11 @@ API-et for innrapportering av tredjepartsopplysninger via filopplasting har fire
 * __POST lastopp__: Laster opp en fil til skatteetaten for kontroll
 * __GET status__: Henter status for en lastet opp fil
 * __DELETE slett__: Sletter en opplastet fil
-* __POST sendinn__: Sender inn en fil til behandling
+* __POST sendinn__: Sender inn en lastet opp og validert fil til behandling
 
 Se [feilkoder](innrapportering-drosjetjenester?tab=Feilkoder) for relaterte feilmeldinger.
 
 Se også [eksempler](innrapportering-filopplasting?tab=Eksempler) for de ulike endepunktene.
-
-### Parameter: idempotencyKey
-
-`idempotencyKey`-parameteren er påkrevet. Innholdet skal være en unik `UUID`. Hvert nye kall til API-et skal ha en
-tilsvarende ny idempotencyKey. Flere etterfølgende `POST` kall med samme request-body og samme `idempotencyKey` vil gi den
-samme responsen. Kun det første av denne rekken med like API kall vil behandles. `idempotencyKey` muliggjør at man trygt
-kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
 
 ## Datakatalog
 
@@ -86,13 +74,205 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 TODO: Avklare url
 ```
 
-### XML
+### Innsending
 
 #### Eksempel på innsending
 
 ```xml
-<oppgave>TODO: Legg inn eksempel</oppgave>
+<?xml version="1.0" encoding="UTF-8"?>
+<melding xmlns="urn:ske:fastsetting:innsamling:aksjonaerregisteroppgave:v5">
+    <leveranse>
+        <kildesystem>Systemtest</kildesystem>
+        <leveransetype>ordinaer</leveransetype>
+        <inntektsaar>2014</inntektsaar>
+        <aksjeselskap>
+            <organisasjonsnummer>983738478</organisasjonsnummer>
+            <organisasjonsnavn>Eksempel 1 Selskap X</organisasjonsnavn>
+            <selskapsinformasjon>
+                <inngaaendeBeholdningAksjekapitalForHeleSelskapet>0
+                </inngaaendeBeholdningAksjekapitalForHeleSelskapet>
+                <utgaaendeBeholdningAksjekapitalForHeleSelskapet>100000
+                </utgaaendeBeholdningAksjekapitalForHeleSelskapet>
+                <erBoersnotert>false</erBoersnotert>
+            </selskapsinformasjon>
+            <kontaktperson>
+                <navn>Tor Heia</navn>
+                <rolle>T Rolle</rolle>
+                <telefonnummer>00000000</telefonnummer>
+                <varselEpostadresse>test@test.com</varselEpostadresse>
+                <varselSmsMobilnummer>00000000</varselSmsMobilnummer>
+            </kontaktperson>
+        </aksjeselskap>
+        <aksjeklasseoppgave>
+            <aksjeklasse>
+                <aksjeklasse>ordinaere</aksjeklasse>
+            </aksjeklasse>
+            <inngaaendeBeholdning>
+                <aksjeklasseAksjekapital>0</aksjeklasseAksjekapital>
+                <aksjePaalydende>0</aksjePaalydende>
+                <aksjeklasseAntallAksjer>0</aksjeklasseAntallAksjer>
+                <aksjeklasseInnbetaltAksjekapital>0
+                </aksjeklasseInnbetaltAksjekapital>
+                <aksjeklasseInnbetaltOverkurs>0</aksjeklasseInnbetaltOverkurs>
+            </inngaaendeBeholdning>
+            <utgaaendeBeholdning>
+                <aksjeklasseAksjekapital>100000</aksjeklasseAksjekapital>
+                <aksjePaalydende>100</aksjePaalydende>
+                <aksjeklasseAntallAksjer>1000</aksjeklasseAntallAksjer>
+                <aksjeklasseInnbetaltAksjekapital>100000
+                </aksjeklasseInnbetaltAksjekapital>
+                <aksjeklasseInnbetaltOverkurs>10000</aksjeklasseInnbetaltOverkurs>
+            </utgaaendeBeholdning>
+            <utbytte>
+                <utbytte>
+                    <utbytteTotalt>1000</utbytteTotalt>
+                    <utbyttePerAksje>1</utbyttePerAksje>
+                    <tidspunkt>2014-12-17T09:30:47+05:00</tidspunkt>
+                </utbytte>
+            </utbytte>
+            <selskapshendelse>
+                <nyutstedteAksjer>
+                    <skattepliktigFusjonTilgang>
+                        <antallNyutstedteAksjer>1</antallNyutstedteAksjer>
+                        <antallAksjerEtter>100</antallAksjerEtter>
+                        <paalydendePerAksje>1000</paalydendePerAksje>
+                        <innbetaltOverkursPerAksje>100</innbetaltOverkursPerAksje>
+                        <tidspunkt>2014-11-19T11:40:00</tidspunkt>
+                        <antallEgneAksjerOverfoert>34</antallEgneAksjerOverfoert>
+                    </skattepliktigFusjonTilgang>
+                </nyutstedteAksjer>
+            </selskapshendelse>
+            <aksjeeierskap>
+                <aksjonaer>
+                    <aksjonaerMedNorskIdentifikator>
+                        <foedselsnummer>01010112345</foedselsnummer>
+                        <adresse>
+                            <landkode>NO</landkode>
+                        </adresse>
+                    </aksjonaerMedNorskIdentifikator>
+                    <navn>Aksjonær A</navn>
+                </aksjonaer>
+                <aksjonaerInngaaendeBeholdning>0</aksjonaerInngaaendeBeholdning>
+                <aksjonaerUtgaaendeBeholdning>1000</aksjonaerUtgaaendeBeholdning>
+                <utbytteForAksjonaer>
+                    <utdeltUtbytteTotalt>1000</utdeltUtbytteTotalt>
+                    <antallAksjer>1000</antallAksjer>
+                    <tidspunkt>2014-12-17T09:30:47+05:00</tidspunkt>
+                </utbytteForAksjonaer>
+                <aksjetransaksjon>
+                    <aksjerITilgang>
+                        <stiftelse>
+                            <antallaksjerITilgang>1000</antallaksjerITilgang>
+                            <tidspunkt>2014-06-30T09:30:47+05:00</tidspunkt>
+                            <totalAnskaffelsesverdi>110000</totalAnskaffelsesverdi>
+                        </stiftelse>
+                    </aksjerITilgang>
+                </aksjetransaksjon>
+            </aksjeeierskap>
+        </aksjeklasseoppgave>
+        <aksjeklasseoppgave>
+            <aksjeklasse>
+                <aksjeklasse>A</aksjeklasse>
+            </aksjeklasse>
+            <inngaaendeBeholdning>
+                <aksjeklasseAksjekapital>0</aksjeklasseAksjekapital>
+                <aksjePaalydende>0</aksjePaalydende>
+                <aksjeklasseAntallAksjer>0</aksjeklasseAntallAksjer>
+                <aksjeklasseInnbetaltAksjekapital>0
+                </aksjeklasseInnbetaltAksjekapital>
+                <aksjeklasseInnbetaltOverkurs>0</aksjeklasseInnbetaltOverkurs>
+            </inngaaendeBeholdning>
+            <utgaaendeBeholdning>
+                <aksjeklasseAksjekapital>100000</aksjeklasseAksjekapital>
+                <aksjePaalydende>100</aksjePaalydende>
+                <aksjeklasseAntallAksjer>1000</aksjeklasseAntallAksjer>
+                <aksjeklasseInnbetaltAksjekapital>100000
+                </aksjeklasseInnbetaltAksjekapital>
+                <aksjeklasseInnbetaltOverkurs>10000</aksjeklasseInnbetaltOverkurs>
+            </utgaaendeBeholdning>
+            <utbytte>
+                <utbytte>
+                    <utbytteTotalt>1000</utbytteTotalt>
+                    <utbyttePerAksje>1</utbyttePerAksje>
+                    <tidspunkt>2014-12-17T09:30:47+05:00</tidspunkt>
+                </utbytte>
+            </utbytte>
+            <selskapshendelse>
+                <nyutstedteAksjer>
+                    <skattepliktigFusjonTilgang>
+                        <antallNyutstedteAksjer>1</antallNyutstedteAksjer>
+                        <antallAksjerEtter>100</antallAksjerEtter>
+                        <paalydendePerAksje>1000</paalydendePerAksje>
+                        <innbetaltOverkursPerAksje>100</innbetaltOverkursPerAksje>
+                        <tidspunkt>2014-11-19T11:40:00</tidspunkt>
+                        <antallEgneAksjerOverfoert>34</antallEgneAksjerOverfoert>
+                    </skattepliktigFusjonTilgang>
+                </nyutstedteAksjer>
+            </selskapshendelse>
+            <aksjeeierskap>
+                <aksjonaer>
+                    <aksjonaerMedNorskIdentifikator>
+                        <foedselsnummer>01010112345</foedselsnummer>
+                        <adresse>
+                            <landkode>NO</landkode>
+                        </adresse>
+                    </aksjonaerMedNorskIdentifikator>
+                    <navn>Aksjonær A</navn>
+                </aksjonaer>
+                <aksjonaerInngaaendeBeholdning>0</aksjonaerInngaaendeBeholdning>
+                <aksjonaerUtgaaendeBeholdning>1000</aksjonaerUtgaaendeBeholdning>
+                <utbytteForAksjonaer>
+                    <utdeltUtbytteTotalt>1000</utdeltUtbytteTotalt>
+                    <antallAksjer>1000</antallAksjer>
+                    <tidspunkt>2014-12-17T09:30:47+05:00</tidspunkt>
+                </utbytteForAksjonaer>
+                <aksjetransaksjon>
+                    <aksjerITilgang>
+                        <stiftelse>
+                            <antallaksjerITilgang>1000</antallaksjerITilgang>
+                            <tidspunkt>2014-06-30T09:30:47+05:00</tidspunkt>
+                            <totalAnskaffelsesverdi>110000</totalAnskaffelsesverdi>
+                        </stiftelse>
+                    </aksjerITilgang>
+                </aksjetransaksjon>
+            </aksjeeierskap>
+        </aksjeklasseoppgave>
+        <oppgaveoppsummering>
+            <antallAksjeklasseoppgaver>1</antallAksjeklasseoppgaver>
+            <antallSelskapshendelser>1</antallSelskapshendelser>
+            <antallUtbytter>1</antallUtbytter>
+            <antallAksjeeierskap>1</antallAksjeeierskap>
+            <antallUtbytteForAksjonaer>1</antallUtbytteForAksjonaer>
+            <antallAksjetransaksjoner>1</antallAksjetransaksjoner>
+        </oppgaveoppsummering>
+    </leveranse>
+</melding>
 ```
+
+#### Eksempel på respons
+```json
+[
+  {
+    "filId": "0199a9b1-3766-72bc-bf4a-c2ee5dbb65a6"
+  }
+]
+```
+
+### Status
+
+#### Eksempel på respons
+```json
+[
+  {
+    "filId": "0199a9b1-3766-72bc-bf4a-c2ee5dbb65a6",
+    "prosessteg": "LASTER_OPP",
+    "feilliste": [],
+    "sistOppdatertTidspunkt": "2025-10-03T12:48:17.573037+02:00"
+  }
+]
+```
+
+### Send inn
 
 #### Eksempel på respons
 
@@ -107,46 +287,33 @@ TODO: Avklare url
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
-TODO: Oppdater når vi har feilhåndtering på plass
-
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne tjenesten kan gi.
 
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
-| GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_004  | 401             | Feil i forbindelse med autentisering         |
-| GLD_005  | 403             | Feil i forbindelse med autorisering          |
 | GLD_006  | 400             | Feil i request                               |
 | GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
 | GLD_010  | 400             | Feil i forbindelse med validering av payload |
-| GLD_011  | 400             | Feil i metadata                              |
 | GLD_017  | 500             | Uspesifisert systemfeil                      |
-| GLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
 | GLD_021  | 404             | Finner ikke forespurt ressurs                |
 | GLD_022  | 405             | HTTP-metode ikke støttet                     |
-| GLD_023  | 500             | Uventet feil i et bakenforliggende system    |
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder tjenesten kan gi.
 Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og
 angitt verdi-feltene.
 
-| Feilspesifiseringskode | Feilområde                                                                                  | Årsak                                                                                                                       |
-|------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| GLD_1007               | Mangler Token                                                                               | Det er ikke lagt ved noen Authorization header med token på request                                                         |
-| GLD_1008               | Ugyldig token                                                                               | Token oppgitt i Authorization header er ugyldig                                                                             |
-| GLD_1015               | Ikke autorisert for å levere på denne dialogen                                              | Organisasjonen som leverer har ikke rettighet til å levere for denne oppgavegiveren                                         |
-| GLD_1022               | Feil i parametre                                                                            | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1023               | Finner ingen ressurs for denne URL-en                                                       | Det er ikke noe innhold tilgjengelig på denne URL-en                                                                        |
-| GLD_1027               | Inntektsår er ikke støttet                                                                  | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
-| GLD_1028               | Header mangler                                                                              | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1030               | Accept-header må være av type application/json                                              | Accept header er feil. API-et har kun støtte for JSON i respons                                                             |
-| GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen                                | Det finnes ikke noe dokument med gitt id på angitt forsendelse                                                              |
-| GLD_1052               | Inntektsår i path og i innsending er ulike                                                  | Inntektsår i innsending i JSON body og inntektsår i path må være like                                                       |
-| GLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere                      |                                                                                                                             |
-| GLD_1054               | Det finnes ingen dialog for denne kombinasjonen av inntektsår, organisjonsnummer og ordning |                                                                                                                             |
+| Feilspesifiseringskode | Feilområde                                                   | Årsak                                                                                                                       |
+|------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| GLD_1001               | Feil i xml innhold"                                          | Feil med innsendt innhold, det er enten uleselig, eller feiler i validering.                                                |
+| GLD_1022               | Feil i parametre                                             | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| GLD_1023               | Finner ingen ressurs for denne URL-en                        | Det er ikke noe innhold tilgjengelig på denne URL-en                                                                        |
+| GLD_1028               | Header mangler                                               | Påkrevd header er ikke med i requesten                                                                                      |
+| GLD_1030               | Accept-header må være av type application/json               | Accept header er feil. API-et har kun støtte for JSON i respons                                                             |
+| GLD_1031               | Content-type-header må være av type application/xml          | Content-type header er feil. API-et har kun støtte for XML                                                                  |
+| GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen | Det finnes ikke noe dokument med gitt id på angitt forsendelse                                                              |
 
 </TabItem>
 
@@ -159,7 +326,6 @@ For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://a
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * DialogPorten
 * Autentisering - Maskinporten
-* Autorisering - systembruker
 * Altinn innboks
 
 Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skatteetaten og Digdir.
