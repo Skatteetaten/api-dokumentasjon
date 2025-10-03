@@ -5,8 +5,8 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ API ]
-keywords: [ grunnlagsdata ]
-last_updated: Sep 24, 2025
+keywords: [ grunnlagsdata, filopplasting ]
+last_updated: Oct 03, 2025
 hide_table_of_contents: true
 ---
 
@@ -55,7 +55,7 @@ API-et for innrapportering av tredjepartsopplysninger via filopplasting har fire
 * __DELETE slett__: Sletter en opplastet fil
 * __POST sendinn__: Sender inn en lastet opp og validert fil til behandling
 
-Se [feilkoder](innrapportering-drosjetjenester?tab=Feilkoder) for relaterte feilmeldinger.
+Se [feilkoder](innrapportering-filopplasting?tab=Feilkoder) for relaterte feilmeldinger.
 
 Se også [eksempler](innrapportering-filopplasting?tab=Eksempler) for de ulike endepunktene.
 
@@ -346,7 +346,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Har du spørsmål til Skatteetaten om Innrapportering Drosjetjenester API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om Innrapportering via Filopplasting, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
 
 </TabItem>
