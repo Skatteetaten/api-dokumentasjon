@@ -24,9 +24,10 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 
-## Bruk av apiet
-Dette apiet kan kun brukes etter nærmere avtale med skatteetaten. Som hovedregel skal man bruke apiet for løsningen man
-ønsker å rapportere for.
+## Bruk av API-et
+Dette API-et kan kun brukes etter nærmere avtale med Skatteetaten og er ment for selskaper som har 
+innsendinger større enn 10MB og som ikke kan dele opp innsendingene. Som hovedregel skal man bruke API-et for 
+løsningen man ønsker å rapportere for.
 
 ## Scope
 
