@@ -66,7 +66,7 @@ For å få tilgang til tjenesten må leverandøren ha underskrevet en pilotavtal
 
 Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten. For å få utstedt token av Maskinporten må inkasso-systemet gjennom sitt virksomhetssertifikat angi hvilket organisasjonsnummer de representerer. Dette organisasjonsnummeret må være godkjent av Skatteetaten.
 
-For å benytte tjenestene for innsending av begjæring skal følgende scope angis ved autentisering i Maskinporten: skatteetaten:utleggsbegjaering
+For å benytte tjenestene for innsending av begjæring skal korrekt scope benyttes.
 
 API-et støtter to varianter av autentisering via Maskinporten. Disse er beskrevet under
 

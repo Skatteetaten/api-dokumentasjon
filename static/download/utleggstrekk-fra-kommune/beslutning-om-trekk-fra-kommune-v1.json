@@ -1,0 +1,262 @@
+{
+  "saksoeker": [
+    {
+      "saksoeker": {
+        "adresse": [
+          {
+            "adressetype": "bopelsadresse",
+            "adresseInnland": {
+              "kommunenummer": "4601",
+              "postnummer": "5231",
+              "adressetekst": "Nattlandsåsen 2",
+              "poststedsnavn": "Oslo"
+            }
+          }
+        ],
+        "virksomhet": {
+          "navn": "UPERSONLIG FRISK TIGER AS",
+          "identifikator": {
+            "taxIdentificationNumber": "311758489",
+            "landkodeIdentifikator": "NO"
+          },
+          "virksomhetstype": "annet"
+        }
+      },
+      "saksoekerKontaktinformasjon": {
+        "epostAdresse": "epost@yahoo.com",
+        "telefonnummer": "99563564"
+      },
+      "innsender": {
+        "innsender": {
+          "adresse": [
+            {
+              "adressetype": "bopelsadresse",
+              "adresseInnland": {
+                "kommunenummer": "0301",
+                "postnummer": "1333",
+                "adressetekst": "Hallagerstrand 54",
+                "poststedsnavn": "Bergen"
+              }
+            }
+          ],
+          "virksomhet": {
+            "navn": "UTROLIG ESTETISK TIGER AS",
+            "identifikator": {
+              "taxIdentificationNumber": "312597772",
+              "landkodeIdentifikator": "NO"
+            },
+            "virksomhetstype": "inkassovirksomhet"
+          }
+        },
+        "innsendersProsessfullmektig": {
+          "prosessfullmektig": {
+            "adresse": [
+              {
+                "adressetype": "bopelsadresse",
+                "adresseInnland": {
+                  "kommunenummer": "0301",
+                  "postnummer": "1333",
+                  "adressetekst": "Ryensvei 55",
+                  "poststedsnavn": "Bergen"
+                }
+              }
+            ],
+            "virksomhet": {
+              "navn": "UTROLIG ESTETISK TIGER AS",
+              "identifikator": {
+                "taxIdentificationNumber": "312597772",
+                "landkodeIdentifikator": "NO"
+              },
+              "virksomhetstype": "inkassovirksomhet"
+            }
+          },
+          "bevillingshaver": {
+            "navn": {
+              "fornavn": "Anna",
+              "etternavn": "Norman"
+            }
+          }
+        },
+        "saksbehandler": "Ola Erikksen",
+        "saksbehandlersKontaktinformasjon": {
+          "epostAdresse": "saksbehandler@epost.com",
+          "telefonnummer": "96673775"
+        }
+      }
+    }
+  ],
+  "saksoekt":
+  {
+    "saksoekt": {
+      "adresse": [
+        {
+          "adressetype": "bopelsadresse",
+          "adresseInnland": {
+            "kommunenummer": "0301",
+            "postnummer": "0351",
+            "adressetekst": "Josefines gate 3D"
+          }
+        }
+      ],
+      "person": {
+        "personnavn": {
+          "fornavn": "HENSIKT",
+          "etternavn": "LYSEGUL"
+        },
+        "foedselsdato": "2006-09-16",
+        "identifikator": {
+          "taxIdentificationNumber": "44926701751",
+          "landkodeIdentifikator": "NO"
+        }
+      }
+    }
+  }
+,
+  "underskrift": "Anna Norman",
+  "beslutningsdato": "2025-09-04T12:34:56+02:00",
+  "kravTilInnkreving": [
+    {
+      "kravforfall": {
+        "forfallsdato": "2025-02-24"
+      },
+      "innsendersKravreferanse": "00890772001",
+      "opprinneligBeloep": {
+        "beloep": 12469.14,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 12000.14,
+        "valuta": "NOK"
+      },
+      "innbetaling": [
+        {
+          "bokfoertDato": "2025-03-08",
+          "beloep": {
+            "beloep": 469.00,
+            "valuta": "NOK"
+          }
+        }
+      ],
+      "prioritetDekningsloven": "e",
+      "prioritetISak": "3",
+      "kravdetaljer": "Hovedkrav",
+      "kravbeskrivelse": "kravbeskrivelse",
+      "betalingsoppfordring": [
+        {
+          "betalingsfrist": "2025-03-20",
+          "betalingsoppfordring": {
+            "type": "betalingsoppfordring",
+            "filnavn": "betalingsoppfordring.pdf",
+            "uuid": "307a6166-c5f8-40e0-b00c-76cd5cf1e515"
+          },
+          "brevdato": "2025-03-07"
+        }
+      ],
+      "rentebaerendeKrav": {
+        "harForsinkelsesrente": true,
+        "prioritetISakFremtidigRentekrav": 2
+      }
+    },
+    {
+      "kravforfall": {
+        "forfallsdato": "2025-02-24"
+      },
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772001_1",
+      "opprinneligBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": "2",
+      "kravdetaljer": "Rentekrav",
+      "kravbeskrivelse": "Renter på hovedkrav",
+      "betalingsoppfordring": [
+        {
+          "betalingsfrist": "2025-03-20",
+          "betalingsoppfordring": {
+            "type": "betalingsoppfordring",
+            "filnavn": "betalingsoppfordring.pdf",
+            "uuid": "307a6166-c5f8-40e0-b00c-76cd5cf1e515"
+          },
+          "brevdato": "2025-03-07"
+        }
+      ],
+      "relatertKrav": [
+        "00890772001"
+      ],
+      "rentekrav": {
+        "rentePeriode": {
+          "startdato": "2025-02-24",
+          "sluttdato": "2025-09-22"
+        },
+        "renteGrunnlag": {
+          "beloep": 12469.14,
+          "valuta": "NOK"
+        },
+        "beregnetMedForsinkelsesrente": true
+      }
+    },
+    {
+      "kravforfall": {
+        "forfallsdato": "2025-02-24"
+      },
+      "innsendersKravreferanse": "UtenrettsligKostnaderAvHovedkrav_00890772001",
+      "opprinneligBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": "3",
+      "kravdetaljer": "UtenrettsligeKostnader",
+      "kravbeskrivelse": "UtenrettsligeKostnader på hovedkrav",
+      "betalingsoppfordring": [
+        {
+          "betalingsfrist": "2025-03-20",
+          "betalingsoppfordring": {
+            "type": "betalingsoppfordring",
+            "filnavn": "betalingsoppfordring.pdf",
+            "uuid": "307a6166-c5f8-40e0-b00c-76cd5cf1e515"
+          },
+          "brevdato": "2025-03-07"
+        }
+      ],
+      "relatertKrav": [
+        "00890772001"
+      ]
+    }
+  ],
+  "betalingsinformasjon": {
+    "betalingsmottaker": {
+      "landkodeIdentifikator": "NO",
+      "taxIdentificationNumber": "312597772"
+    },
+    "norskKonto": true,
+    "kidnummer": "2509937609",
+    "kontoinformasjon": {
+      "bankNavn": "Nordea Bank",
+      "landkodeBank": "NO",
+      "kontovaluta": "NOK",
+      "kontonummer": "69930570044"
+    }
+  },
+  "beslutning":
+  {
+    "type": "tvangsgrunnlag",
+    "filnavn": "tvangsgrunnlag",
+    "uuid": "4264af45-ae7a-4ccc-8a8b-33b9ec669d75"
+  },
+  "saksreferanse": "saksref. 123456",
+  "innsenderReferanse": "InnsenderRef127",
+  "valgtNamsmannsdistrikt": {
+    "namsmannsdistrikt": "Namsfogden i Oslo, Asker og Bærum",
+    "begrunnelse": "begrunnelse for valgt namsmannsdistrikt"
+  }
+}
