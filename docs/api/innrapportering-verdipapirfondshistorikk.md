@@ -1,4 +1,3 @@
-
 ---
 title: Innrapportering verdipapirfondshistorikk API
 slug: /api/innrapportering-verdipapirfondshistorikk
