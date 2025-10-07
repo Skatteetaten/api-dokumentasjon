@@ -1,6 +1,6 @@
 ---
 title: Innkrevingsoppdrag API
-slug: /api/aksjebeholdning
+slug: /api/innkrevingsoppdrag
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
