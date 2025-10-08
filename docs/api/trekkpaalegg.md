@@ -1001,7 +1001,7 @@ Integrasjon med Skatteetatens API for trekkpålegg
 
 ### 2. Tilgang og autentisering
 
-* Skaff virksomhetssertifikat (PKI) 6
+* Opprett en integrasjon i Maskinporten som [API-konsument](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument)
 * Registrer systemet i [Maskinporten](https://docs.digdir.no/docs/Maskinporten/maskinporten_overordnet)
 * [Be Skatteetaten om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d) til test-scope: ```skatteetaten:trekkpaalegg```. Oppgi virksomhetens organisasjonsnummer (ikke syntetisk).
 * Hent testdata fra [Syntetisk Norge](https://www.digdir.no/tenor/syntetisk-norge/3910) via [Tenor testdatasøk](https://tenor.test.norge.no/)
