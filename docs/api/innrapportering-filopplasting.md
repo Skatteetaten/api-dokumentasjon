@@ -74,12 +74,6 @@ En innsending foregår over flere steg.
 - Hvis status er VALIDERT_OK kall send inn endepunkt for å sende inn fila
 - Hvis status er VALIDERT_FEILET, se feil i feilliste på status kallet for hva som feilet
 
-### Eksempel på request-URL
-
-```
-https://tpo-filopplasting-streaming-m2m-api-tpomottak-ei.istio.nebula-skatt-synt.nebula.skatteetaten-it.no/api/v1/lastopp
-```
-
 ### Last opp
 
 #### Eksempel på body
