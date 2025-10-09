@@ -18,7 +18,7 @@ opplysninger fra skattemeldingen som ligger til grunn.</Summary>
 For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
+* [Sikkerhetsmekanismer](../om/sikkerhet.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)

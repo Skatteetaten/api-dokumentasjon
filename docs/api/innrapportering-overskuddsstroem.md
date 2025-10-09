@@ -17,7 +17,7 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
+* [Sikkerhetsmekanismer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
@@ -129,9 +129,7 @@ https://innrapporteringoverskuddstroem.api.{env}.no/v1/{inntektsaar}
                     "maalepunktID": "000000000000000001"
                 },
                 "bruttoBeloep": "1000.00",
-                "vederlagNegativtEnergiledd": "0.00",
-                "stroemperiodeFraOgMed": "2025-06-01",
-                "stroemperiodeTilOgMed": "2025-12-31"
+                "vederlagNegativtEnergiledd": "0.00"
             },
             {
                 "oppgaveeier": {
@@ -146,9 +144,7 @@ https://innrapporteringoverskuddstroem.api.{env}.no/v1/{inntektsaar}
                     "maalepunktID": "000000000000000002"
                 },
                 "bruttoBeloep": "500.00",
-                "vederlagNegativtEnergiledd": "0.00",
-                "stroemperiodeFraOgMed": "2025-09-01",
-                "stroemperiodeTilOgMed": "2025-12-31"
+                "vederlagNegativtEnergiledd": "0.00"
             }
         ],
         "oppgaveOppsummering": {

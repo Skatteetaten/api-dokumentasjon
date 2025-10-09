@@ -24,7 +24,7 @@ Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og
 
 For generell informasjon om tjenestene se egne sider om:
 
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
+* [Sikkerhetsmekanismer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
@@ -53,8 +53,9 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæri
 
 ## Teknisk spesifikasjon
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
-i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som spesifikasjoner på SwaggerHub:
+* [OpenAPI spesifikasjon for Utleggsbegjæring](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-api)
+* [OpenAPI spesifikasjon for innsyn ifm Utlegg](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-innsyn-api)
 
 ## Datakatalog
 
@@ -65,7 +66,7 @@ For å få tilgang til tjenesten må leverandøren ha underskrevet en pilotavtal
 
 Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten. For å få utstedt token av Maskinporten må inkasso-systemet gjennom sitt virksomhetssertifikat angi hvilket organisasjonsnummer de representerer. Dette organisasjonsnummeret må være godkjent av Skatteetaten.
 
-For å benytte tjenestene for innsending av begjæring skal følgende scope angis ved autentisering i Maskinporten: skatteetaten:utleggsbegjaering
+For å benytte tjenestene for innsending av begjæring skal korrekt scope benyttes.
 
 API-et støtter to varianter av autentisering via Maskinporten. Disse er beskrevet under
 
@@ -98,13 +99,14 @@ Gjennom overgangsperioden legges det opp til en gradvis endring av parametrene s
 
 I overgangsperioden skal digitale utleggsbegjæringer for skyldnere som er omfattet av den nye innkrevingsloven sendes inn via ny løsning (ELAN), mens utleggsbegjæringer for skyldnere som ikke er omfattet av den nye innkrevingsloven skal sendes inn som før via eksisterende løsning (ELSA). Dersom en utleggsbegjæring angår flere skyldnere, må alle disse være på samme regelverk, hvis ikke må begjæringen sendes inn på papir.
 
-## Betjeningskartet
+## Betjeningskartet {#betjeningskartet-id}
 
-For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk, kan innkassosystemet benytte en API-tjeneste kalt "Betjeningskartet". Her kan man slå opp gjeldende regelverk for en eller flere skyldnere på identifikator (fødselsnummer). Tjenesten skal kalles rett i forkant av innsending av en ny utleggsbegjæring gjennom API, slik at innsendingen gjøres til riktig system (ELSA eller ELAN). URL-er til betjeningskart API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app) på SwaggerHub.
+For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk, kan innkassosystemet benytte en API-tjeneste kalt "Betjeningskartet". Her kan man slå opp gjeldende regelverk for en eller flere skyldnere på identifikator (fødselsnummer). Tjenesten skal kalles rett i forkant av innsending av en ny utleggsbegjæring gjennom API, slik at innsendingen gjøres til riktig system (ELSA eller ELAN). URL-er til betjeningskart API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [OpenAPI spesifikasjonen for betjeningskartet](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-betjeningskartet-api) på SwaggerHub.
 
 ![Betjeningskartet](../../static/download/utleggsbegjaering/Betjeningskartet.png)
 
 Dersom man sender en utleggsbegjæring til feil system, vil systemet returnere en feilmelding om dette og avvise innsendingen. For ELAN vil det gis en 422-feilkode med feilmeldingen "SAKSOEKT_GAMMELT_REGELVERK".
+
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-Feilkoder">
@@ -185,17 +187,20 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 Oversikt over endringer som er gjort i versjon 1.0 av Utleggsbegjæringen:
 1. Fjernet saksøkerReferanse i Saksøker og saksøktReferanse i Saksøkt
 2. Endret kardinalitet på forpliktet og berettiget i Domsslutningsinformasjon fra 0..1 til 1..*
-3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsenderProsessfullmektig og saksøktesProsessfullmektig
-4. Fjernet domsreferanse i AlminneligTvangsgrunnlag
-5. Fjernet referanseSak i SærligTvangsgrunnlag
-6. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
-7. Endret navn på kravreferanse i Krav til innsendersKravreferanse
-8. Lagt inn nytt valgfritt element kravEndring i Krav
-9. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
-10. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
-11. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
-12. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
-13. Fjernet avsender i SkriftligMeddelelse
+3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsendersProsessfullmektig og saksøktesProsessfullmektig
+4. Fjernet inkassobevillingshaverNummer i Bevillingshaver
+5. Lagt inn kodeliste for namsmannsdistrikt
+6. Fjernet domsreferanse i AlminneligTvangsgrunnlag
+7. Fjernet referanseSak i SærligTvangsgrunnlag
+8. Endret alternativElektroniskKanalForMeddelelse i Forsendelsemåte til alternativElektroniskForesendelsesmåte
+9. Endret navn på kravreferanse i Krav til innsendersKravreferanse
+10. Lagt inn nytt valgfritt element kravEndring i Krav
+11. Endret innhold i Rentekrav og fjernet relasjon til Renteopplysninger
+12. Endret kodeverdien ukjentFullmektigMedKjentOppholdsstedEllerUkjentElektroniskKontaktinformasjon  i kodelisten BegrunnelseUnnlattVarselType til hhv. ukjentFullmektigMedKjentOppholdssted og ukjentElektroniskKontaktinformasjon
+13. Rettet til skyldnererklæring i Gjeldsbrev og ElektroniskGjeldserklæring
+14. Rettet til utleggOgForliksklageKombinert i Tvangsfullbyrdelsestype (fjernet ekstra l)
+15. Endret avtaltRentesats i Renteopplysninger fra type Desimaltall til type Prosent
+16. Fjernet avsender i SkriftligMeddelelse
 
 ## Forklaring til modellen
 Denne veilederen har til formål å veilede både funksjonelle og tekniske ressurser til å få en overordnet forståelse av elementene og sammenhengen mellom disse i ELAN løsningen.
@@ -220,18 +225,23 @@ I elementet tvangsfullbyrdelsestype må man angi om det er en ren utleggsbegjær
 
 Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
 
-![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a.png)
+![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a1.png)
+
+#### Datatyper:
+
+![Rotnivå-datatyper-vedlegg](../../static/download/utleggsbegjaering/begjaering-a2.png)
+![Rotnivå-datatyper-tvangsfullbyrdelsestype](../../static/download/utleggsbegjaering/begjaering-a3.png)
 
 ### b) Parter i utleggsbegjæringen
 Innsender er den som sender inn utleggsbegjæringen. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
 
 Saksøker er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig som representerer seg i sak om tvangsfullbyrdelse(saksøkersProsessfullmektig). Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
 
-Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktes Prosessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktesProsessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
 
 Prosessfullmektig(fullmakt/bevillingshaver/Advokat/avdvokatfullmektig) er tredjeperson med en generell(Bevillingshaver) eller spesifikk fullmakt(Fullmakt) til å opptre på vegne av en part. Dette må være en fysisk person.
 
-Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges. 
+Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges.
 
 ![Parter](../../static/download/utleggsbegjaering/begjaering-b1.png)
 
@@ -244,36 +254,31 @@ Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshav
 I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker hele utleggsbegjæringen, dette er
 * KreverRettsgebyrErstattet - Benyttes om du ønsker å angi at rettsgebyret som ilegges ved innsending, kreves erstattet av saksøkte.
 * Betalingsinformasjon - Informasjon om hvor, hvordan og til hvem innbetalingen skal gjøres, dersom det ender opp i samordnet trekk.
-* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting.
+* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som i kodelisten.
 
-![Generelle elementer](../../static/download/utleggsbegjaering/begjaering-c.png)
+![Generelle elementer-1](../../static/download/utleggsbegjaering/begjaering-c1.png)
+![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
 ### d) Kravinformasjon
 
-Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er Hovedkrav og Rentekrav.
+Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig, og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod.
+Se kodeliste for alle gyldige verdier [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826).
+En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
 
-Eksempler på dette kan være «hovedkrav» som er det opprinnelige beløpet en person er skyldig. Se kodeliste for alle gyldige verdier: [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826).
-I mange tilfeller kan en «opprinnelig faktura» være et slik eksempel. Har man f. eks to fakturaer med ulikt forfall(«kravforfall»), er dette å anse som to krav.
+«InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en Utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav» som for eksempel «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere «Rentekrav» til «Sakskostnader». I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
 
-«InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav».
-
-Eksempler på dette kan være «kravdetaljer» slik som eksempelvis «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere fra «Rentekrav» til «Sakskostnader».
-
-I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
-
-Dersom man sender inn et krav med «kravdetaljer» = «Rentekrav», bør man legge ved hvilken «rentePeriode»(fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av(«renteGrunnlag»).  Dette fylles ut i «rentekrav» elementet.
-
-I tillegg bør man legge ved hvilken type og evnt. «avtaltRentesats» man har benyttet ved beregning(«rentesatsOgType»).
+Dersom man sender inn et «Rentekrav», bør man legge ved hvilken «rentePeriode» (fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av i «renteGrunnlag».  Dette fylles ut i «rentekrav» elementet.
+I tillegg bør man angi om det er "beregnetMedForsinkelsesrente" eller evntuelt med en avtalt rentesats i «beregnetMedAvtaltRentesats».
 
 Sender man inn et krav som det kreves renter for, må man fylle ut «rentebærendeKrav».
 
 Har det kommet innbetalinger på aktuelle krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
 
-Har man andre nedjusteringer på krav, skal dette angis i entiteten KravEndring.
+Har man andre nedjusteringer på krav, skal dette angis i entiteten "kravEndring".
 
-Har kravet byttet «eier», skal informasjon om dette fylles informeres via entiteten «transporterklæring» og vedlegges dokumentasjon.
+Har kravet byttet eier skal informasjon om dette angis i entiteten «transporterklæring», og det må vedlegges dokumentasjon.
 
-Dersom man vedlegger Transporterklæring på eksempelvis et Hovedkrav, trenger man ikke fylle ut posten for andre krav(kravdetaljer) som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav".
+Dersom man angir "transporterklæring" på et Hovedkrav trenger man ikke fylle ut posten for andre krav(kravdetaljer) som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav".
 
 ![Kravinformasjon](../../static/download/utleggsbegjaering/begjaering-d.png)
 
@@ -289,7 +294,9 @@ Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUn
 
 ## Eksempler på testdata
 
-Eksempler på testdata for modell versjon 1.0 kommer snart.
+Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
+
+[utleggsbegjaering-v1.json](../../static/download/utleggsbegjaering/begjaering-v1.json)
 
 </p>
 </details>
@@ -311,13 +318,13 @@ Dokumentasjon av forrige versjon av utleggsbegjæring finnes her:
 
 Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
 
-[utleggsbegjaering-enkel.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
+[utleggsbegjaering-enkel-v09.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
 
 ### Mer komplekst eksempel på utleggsbegjæring
 
 Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
 
-[utleggsbegjaering-kompleks.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
+[utleggsbegjaering-kompleks-v09.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
 
 </p>
 </details>
@@ -354,7 +361,221 @@ Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres p
 ### Testmiljø og testdata
 Systemleverandørene må ha testmiljøer som kun består av syntetiske data. Det skal brukes testdata fra ‘Syntetisk Norge’ og disse hentes ut med Tenor Testdatasøk i de meldingene som sendes inn. Vedlegg skal også kun inneholde syntetiske testdata. Her finnes en bruksveiledning for Tenor Testdatasøk. Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten.
 
-Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/)
+Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/). Det er for testformål konfigurert opp syntetiske personer og virksomheter som i [Betjeningskartet](utleggsbegjaering.md?tab=Overgangsperioden#betjeningskartet-id) i overgangsperioden er låst til gammelt regelverk. Disse kan brukes i test for oppslag i Betjeningskartet og ved innsending av utleggsbegjæring. Ved innsending av utleggsbegjæring mot ELAN i test bør man velge saksøkte som IKKE er på denne lista, hvis ikke vil innsendingen bli avvist da saksøkt skal behandles på gammelt regelverk og i ELSA.
+<details>
+  <summary>Liste over syntetiske personer som er låst til gammelt regelverk</summary>
+  <p>
+| Fødselsnummer / D-nummer
+|:------------------------------
+| 08907395937
+| 25876099732
+| 10866995732
+| 16826098795
+| 23815198670
+| 07854498589
+| 30844996450
+| 07865697079
+| 11830099524
+| 19845596576
+| 28890199277
+| 07871349252
+| 16818999775
+| 16830648546
+| 16851598123
+| 04929698350
+| 16906796930
+| 26876898178
+| 28906599823
+| 08846599399
+| 22849499118
+| 11909096741
+| 29865399209
+| 11865395304
+| 30830248842
+| 26883848240
+| 23882748456
+| 16868196126
+| 05820398698
+| 10878699314
+| 16922749950
+| 10921498832
+| 29865196391
+| 18888897832
+| 22865996385
+| 06818597124
+| 17836595742
+| 19836199688
+| 29845999587
+| 16821748686
+| 17863349532
+| 24821698924
+| 19872849567
+| 24921296564
+| 24912847973
+| 05876196907
+| 05812249675
+| 17923249419
+| 01874798416
+| 19870199417
+| 30845698860
+| 12880899218
+| 11838597957
+| 23874398381
+| 27817897210
+| 14813048990
+| 08921849002
+| 08859999760
+| 20903549832
+| 28909198889
+| 03900899547
+| 03859899098
+| 15863949308
+| 13850597132
+| 03815796623
+| 19928099914
+| 19845097103
+| 01925299312
+| 12915598682
+| 23871899428
+| 04928798777
+| 10876096043
+| 17836196724
+| 15920598568
+| 13917499602
+| 17870899041
+| 01843747953
+| 26816797666
+| 05889499062
+| 06861648492
+| 18879499808
+| 15865898816
+| 13864699671
+| 14857098634
+| 28860999163
+| 27885496518
+| 18831049835
+| 24918696535
+| 17814398307
+| 05845399583
+| 21864699321
+| 29861348812
+| 12882349347
+| 22883348633
+| 11814996982
+| 15852247433
+| 13816197753
+| 12845699338
+| 07859999993
+| 19849997931
+  </p>
+</details>
+<details>
+  <summary>Liste over syntetiske virksomheter som er låst til gammelt regelverk</summary>
+  <p>
+| Organisasjonsnummer
+|:------------------------------
+| 313159949
+| 310844136
+| 213144502
+| 312387921
+| 310222186
+| 214313502
+| 311689916
+| 312399970
+| 213913662
+| 313185486
+| 314053885
+| 315658438
+| 310777609
+| 315687845
+| 214659352
+| 315791677
+| 315723310
+| 315139368
+| 311171941
+| 310382825
+| 311136380
+| 315921953
+| 310598380
+| 311514709
+| 315844827
+| 213732692
+| 310454680
+| 312084414
+| 213668722
+| 313377741
+| 313388840
+| 313388700
+| 310380172
+| 312981432
+| 311040065
+| 313474127
+| 312653834
+| 311790161
+| 311784307
+| 312324431
+| 310007501
+| 315835038
+| 311257145
+| 311243063
+| 314162730
+| 315288754
+| 312865025
+| 313588815
+| 313667634
+| 315226805
+| 313715183
+| 312752182
+| 311109383
+| 313532240
+| 210008292
+| 312362945
+| 315484944
+| 314784235
+| 214147572
+| 314883462
+| 310133019
+| 314272064
+| 310203564
+| 310485519
+| 313032779
+| 312206331
+| 315609739
+| 313638480
+| 311363956
+| 310468126
+| 310061018
+| 315730570
+| 311327313
+| 312250705
+| 313270300
+| 310601284
+| 313225941
+| 310506028
+| 311370308
+| 312522039
+| 310125962
+| 314787811
+| 315705738
+| 313589404
+| 310111856
+| 314839382
+| 213973932
+| 310777277
+| 311788388
+| 311054244
+| 311779834
+| 314386930
+| 313836274
+| 311297384
+| 215026272
+| 214752972
+| 310963089
+| 310407577
+| 312356090
+| 313279472
+  </p>
+</details>
 
 Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på Informasjonsmodeller.
 
@@ -367,16 +588,14 @@ med å pilotere løsningene.
 
 URL til det nye testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
 
-NB! Dette nye miljøet lanseres første del av uke 39. Inntill da kan miljøet for versjon 0.9 benyttes.
-
 ### Tidligere versjoner
 Utleggsbegjæringen ble 22.09.2025 lansert i ny versjon 1.0. Forrige versjon (0.9) av utleggsbegjæring er i en overgangsperiode tilgjengelig på https://api-test.sits.no/api/utleggsbegjaering/v1
 
 ### Bruk av tjenester i testmiljøet
 
-Innsendinger av vedlegg og utleggsbegjæringer i testmiljøet vil ikke bli videre behandlet av Skatttetaten.
+Innsendinger av vedlegg og utleggsbegjæringer i testmiljøet vil ikke bli videre behandlet av Skattetaten.
 
-Tjenessten for Innsyn i trekk vil i testmiljøet gi syntetiske svar, og reponsen fra tjenesten baserer seg ikke på faktiske trekk. For å få et innsyn i trekk i testmiljøet må innsender ha sendt inn en utleggssak knyttet til aktuell saksøker og saksøkt.
+Tjenesten for Innsyn i trekk vil i testmiljøet gi syntetiske svar, og reponsen fra tjenesten baserer seg ikke på faktiske trekk. For å få et innsyn i trekk i testmiljøet må innsender ha sendt inn en utleggssak knyttet til aktuell saksøker og saksøkt.
 
 </TabItem>
 <TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-Sjekkliste">

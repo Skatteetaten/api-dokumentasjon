@@ -40,6 +40,8 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Systemtilgang med systembruker
 Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. Informasjon vedr. dette finnes [her](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker).
 
+Følgende ressurs kan benyttes til dette : `ske-skattekort-til-arbeidsgiver`
+
 Du finner mer informasjon om maskinporten-tokens og eksempler på dette i [Altinn](https://docs.altinn.studio/altinn-studio/guides/integration/sbs/setup/#6-fiken-can-authenticate-against-maskinporten-with-the-system-user)
 
 ## Datakatalog
