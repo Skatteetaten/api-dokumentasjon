@@ -68,16 +68,21 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
 ## Innsending
+En innsending foregår over flere steg.
+- Last opp en fil til last opp endepunktet
+- Poll status endepunktet til prosessteg for fila har blitt enten VALIDERT_FEILET eller VALIDERT_OK
+- Hvis status er VALIDERT_OK kall send inn endepunkt for å sende inn fila
+- Hvis status er VALIDERT_FEILET, se feil i feilliste på status kallet for hva som feilet
 
 ### Eksempel på request-URL
 
 ```
-TODO: Avklare url
+https://tpo-filopplasting-streaming-m2m-api-tpomottak-ei.istio.nebula-skatt-synt.nebula.skatteetaten-it.no/api/v1/lastopp
 ```
 
-### Innsending
+### Last opp
 
-#### Eksempel på innsending
+#### Eksempel på body
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,9 +90,9 @@ TODO: Avklare url
     <leveranse>
         <kildesystem>Systemtest</kildesystem>
         <leveransetype>ordinaer</leveransetype>
-        <inntektsaar>2014</inntektsaar>
+        <inntektsaar>2025</inntektsaar>
         <aksjeselskap>
-            <organisasjonsnummer>983738478</organisasjonsnummer>
+            <organisasjonsnummer>310498025</organisasjonsnummer>
             <organisasjonsnavn>Eksempel 1 Selskap X</organisasjonsnavn>
             <selskapsinformasjon>
                 <inngaaendeBeholdningAksjekapitalForHeleSelskapet>0
@@ -284,6 +289,12 @@ TODO: Avklare url
   "oppgavegiversLeveranseReferanse": "EksternReferanse_2013_1"
 }
 ```
+
+### Slett
+
+#### Eksempel på respons
+200 OK uten mer data
+
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
