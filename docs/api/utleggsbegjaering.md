@@ -361,7 +361,7 @@ Systemleverandørene har ansvar for egen testgjennomføring. Det må fokuseres p
 ### Testmiljø og testdata
 Systemleverandørene må ha testmiljøer som kun består av syntetiske data. Det skal brukes testdata fra ‘Syntetisk Norge’ og disse hentes ut med Tenor Testdatasøk i de meldingene som sendes inn. Vedlegg skal også kun inneholde syntetiske testdata. Her finnes en bruksveiledning for Tenor Testdatasøk. Oppkobling mot testmiljøet i Skatteetaten skjer via Maskinporten.
 
-Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/). Det er for testformål konfigurert opp syntetiske personer og virksomheter som i [Betjeningskartet](utleggsbegjaering.md?tab=Overgangsperioden#betjeningskartet-id) i overgangsperioden er låst til gammelt regelverk. Disse kan brukes i test for oppslag i Betjeningskartet og ved innsending av utleggsbegjæring.
+Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/). Det er for testformål konfigurert opp syntetiske personer og virksomheter som i [Betjeningskartet](utleggsbegjaering.md?tab=Overgangsperioden#betjeningskartet-id) i overgangsperioden er låst til gammelt regelverk. Disse kan brukes i test for oppslag i Betjeningskartet og ved innsending av utleggsbegjæring. Ved innsending av utleggsbegjæring mot ELAN i test bør man velge saksøkte som IKKE er på denne lista, hvis ikke vil innsendingen bli avvist da saksøkt skal behandles på gammelt regelverk og i ELSA.
 <details>
   <summary>Liste over syntetiske personer som er låst til gammelt regelverk</summary>
   <p>
