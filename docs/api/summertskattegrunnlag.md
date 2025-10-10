@@ -99,6 +99,8 @@ For denne tjenesten er det en parameter som må følge med:
 |-------------------------|--------------------------------------------|---------------|
 | 4628_210607_inntektsaar | Parameter for skattegrunnlagets inntektsår | 2022          |
 
+Obs. Digdir jobber nå med en ny samtykketjeneste, ressursid for å benytte denne er `ske-samtykke-sbl-summert-skattegrunnlag`. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø.
+
 ## Støttetjenester
 
 ### Hendelser
