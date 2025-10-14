@@ -146,8 +146,9 @@ Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor t
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om Innrapportering A-melding API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
-Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
+Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot a-meldingen kan du kontakte oss på e-post: [a-ordningen-lps\@skatteetaten.no](mailto:a-ordningen-lps@skatteetaten.no )  
+
+Lenke til å sette opp tilgang til brukerstøttetjenesten og bestille tilgang til ny tjeneste/scope finner dere på denne siden (under «trenger du hjelp»):  [A-meldingen - for sluttbrukersystemer - Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/a-meldingen-sbs/)
   
 </TabItem>
 
