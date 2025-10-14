@@ -20,7 +20,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 
-## Tilgang
+## Tilgang til API-et
 
 ### Scope
 Følgende scope skal benyttes ved autentisering i ID-Porten: `skatteetaten:mvameldinginnsending`.
@@ -29,7 +29,7 @@ Altinn krever også at man har et Altinn scope ved kall mot altinn3-appen, de ak
 https://docs.altinn.studio/nb/authentication/what-do-you-get/id-porten/
 
 ### Skatteetaten må gi tilgang
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et.
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et. Les mer om [hvordan du får tilgang til tjenester for innrapportering til Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/her-kan-du-soke-om-tilgang-til-tjenester-for-innrapportering-til-skatteetaten/).
 
 ## Sikkerhet
 For mva-meldinginnsending er det Altinn token som brukes:
