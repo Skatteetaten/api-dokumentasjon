@@ -28,13 +28,13 @@ POST "https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-meldin
 ```
 Hvor innhold (http body) er mva-meldingen som xml, og med `Content-Type: application/xml` i header.
 
-## Tilgang
+## Tilgang til API-et
 
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvameldingvalidering`
 
 ### Skatteetaten må gi tilgang
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et.
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et. Les mer om [hvordan du får tilgang til tjenester for innrapportering til Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/her-kan-du-soke-om-tilgang-til-tjenester-for-innrapportering-til-skatteetaten/). 
 
 ## Sikkerhet
 For mva-meldingvalidering er det ID-porten token som gjelder:
