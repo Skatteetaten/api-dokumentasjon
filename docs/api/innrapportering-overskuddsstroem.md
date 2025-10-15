@@ -1,16 +1,16 @@
 ---
-title: Innrapportering overskuddstrøm API
-slug: /api/innrapportering-overskuddstroem
+title: Innrapportering overskuddsstrøm API
+slug: /api/innrapportering-overskuddsstroem
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, overskuddstroem]
+tags: [ API, overskuddsstroem]
 keywords: [ grunnlagsdata ]
 last_updated: Jun 25, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av tredjepartsopplysninger om overskuddstrøm</Summary>
+<Summary>Tjeneste for innrapportering av tredjepartsopplysninger om overskuddsstrøm</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -25,7 +25,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringoverskuddstroem`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringoverskuddsstroem`
 
 ## Delegering
 
@@ -55,19 +55,19 @@ Dette API-et krever at systemet og dets systembrukere har tilgang til én eller 
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Open API-spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-overskuddstroem-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-overskuddsstroem-api/0.0.1)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for innrapportering av tredjepartsopplysninger om overskuddstrøm til offentlige myndigheter har to endepunkter:
+API-et for innrapportering av tredjepartsopplysninger om overskuddsstrøm til offentlige myndigheter har to endepunkter:
 
 * __POST innsending__: Innsending av tredjepartsopplysninger om overskuddsstrøm til offentlige myndigheter. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
 * __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i Dialogporten
 
-API-et validerer mottatte data mot JSON-schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-overskuddstroem?tab=Feilkoder) for
+API-et validerer mottatte data mot JSON-schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-overskuddsstroem?tab=Feilkoder) for
 relaterte feilmeldinger.
 
-Se også [eksempler](innrapportering-overskuddstroem?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-overskuddsstroem?tab=Eksempler) for de ulike endepunktene.
 
 ### Parameter: idempotencyKey
 
@@ -88,7 +88,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 ### Eksempel på request-URL
 
 ```
-https://innrapporteringoverskuddstroem.api.{env}.no/v1/{inntektsaar}
+https://innrapporteringoverskuddsstroem.api.{env}.no/v1/{inntektsaar}
 ```
 
 ### JSON
@@ -220,7 +220,7 @@ angitt verdi-feltene.
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-overskuddstroem-api/0.0.1).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-overskuddsstroem-api/0.0.1).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * DialogPorten
@@ -246,7 +246,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Har du spørsmål til Skatteetaten om Innrapportering Overskuddstrøm API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om Innrapportering overskuddsstrøm API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
 
 </TabItem>
