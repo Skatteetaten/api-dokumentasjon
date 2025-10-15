@@ -31,7 +31,7 @@ https://docs.altinn.studio/nb/authentication/what-do-you-get/id-porten/
 ### Skatteetaten må gi tilgang
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et. 
 
-[Bestill tilgang til API-et](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattekort-sbs/#bestill-tilgang-til-tjenesten-krever-innlogging)
+[Bestill tilgang til API-et](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/mva-melding-sbs/#trenger-du-hjelp)
 
 ## Sikkerhet
 For mva-meldinginnsending er det Altinn token som brukes:
