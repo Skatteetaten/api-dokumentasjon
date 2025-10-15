@@ -34,7 +34,9 @@ Hvor innhold (http body) er mva-meldingen som xml, og med `Content-Type: applica
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:mvameldingvalidering`
 
 ### Skatteetaten må gi tilgang
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et. Les mer om [hvordan du får tilgang til tjenester for innrapportering til Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/her-kan-du-soke-om-tilgang-til-tjenester-for-innrapportering-til-skatteetaten/). 
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til API-et. 
+
+[Bestill tilgang til API-et](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/mva-melding-sbs/#trenger-du-hjelp)
 
 ## Sikkerhet
 For mva-meldingvalidering er det ID-porten token som gjelder:
