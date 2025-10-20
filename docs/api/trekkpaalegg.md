@@ -287,7 +287,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-05-10",
+      "startdato": "2025-06-01",
       "trekkprosent": {
         "trekkprosent": 23.0
       }
@@ -316,13 +316,13 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   "trekkstoerrelseForPeriode": [
     {
       "startdato": "2025-05-10",
-      "sluttdato": "2025-08-09",
+      "sluttdato": "2025-08-08",
       "trekkprosent": {
         "trekkprosent": 23.0
       }
     },
     {
-      "startdato": "2025-08-10",
+      "startdato": "2025-08-09",
       "trekkprosent": {
         "trekkprosent": 17.0
       }
@@ -352,7 +352,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-06-10",
+      "startdato": "2025-07-01",
       "trekkprosent": {
         "trekkprosent": 17.0
       }
@@ -380,7 +380,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-06-10",
+      "startdato": "2025-07-01",
       "sluttdato": "2025-09-12",
       "trekkprosent": {
         "trekkprosent": 17.0
@@ -413,7 +413,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-06-10",
+      "startdato": "2025-07-01",
       "trekkprosent": {
         "trekkprosent": 23.0
       }
@@ -429,7 +429,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   "skyldner": "10108412345",
   "opprettet": "2025-08-09T15:00:00.00Z",
   "saksnummer": "TREKK/2025/5",
-  "trekkstatus": "avsluttet",
+  "trekkstatus": "aktiv",
   "trekkpliktig": "123456789",
   "trekkversjon": 2,
   "sekvensnummer": 228,
@@ -490,11 +490,9 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 }
 ```
 ### Beløpstrekk med mange endringer
-* Oppstart trekk 28.08.2025: 8000
-* Endring trekk 15.09.2025: 6000
-* Endring trekk 14.10.2025: 5000
-* Ingen endring trekk - åpen sluttdato
-* Endring trekk 10.02.2026: 7000
+* Opprettet/formidlet trekk 26.08.2025 med startdato 01.10.2025: 8000
+* Formidlet endring trekk 15.09.2025 med startdato 16.10.2025: 6000
+* Formidlet endring trekk 15.11.2025 med startdato 23.11.2025: 7000
 
 #### versjon 1
 
@@ -515,7 +513,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-08-28",
+      "startdato": "2025-10-01",
       "trekkbeloep": {
         "trekkbeloep": 8000
       }
@@ -530,7 +528,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 {
   "trekkid": "10006",
   "skyldner": "10108412345",
-  "opprettet": "2025-09-12T15:00:00.00Z",
+  "opprettet": "2025-10-15T15:00:00.00Z",
   "saksnummer": "TREKK/2025/6",
   "trekkstatus": "aktiv",
   "trekkpliktig": "123456789",
@@ -543,14 +541,14 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-08-28",
-      "sluttdato": "2025-09-14",
+      "startdato": "2025-10-01",
+      "sluttdato": "2025-09-15",
       "trekkbeloep": {
         "trekkbeloep": 8000
       }
     },
     {
-      "startdato": "2025-09-15",
+      "startdato": "2025-10-16",
       "trekkbeloep": {
         "trekkbeloep": 6000
       }
@@ -565,7 +563,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 {
   "trekkid": "10006",
   "skyldner": "10108412345",
-  "opprettet": "2025-10-12T15:00:00.00Z",
+  "opprettet": "2025-11-15T15:00:00.00Z",
   "saksnummer": "TREKK/2025/6",
   "trekkstatus": "aktiv",
   "trekkpliktig": "123456789",
@@ -592,138 +590,9 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
       }
     },
     {
-      "startdato": "2025-10-14",
-      "trekkbeloep": {
-        "trekkbeloep": 5000
-      }
-    }
-  ]
-}
-```
-
-#### versjon 4
-
-```json
-{
-  "trekkid": "10006",
-  "skyldner": "10108412345",
-  "opprettet": "2026-02-09T15:00:00.00Z",
-  "saksnummer": "TREKK/2025/6",
-  "trekkstatus": "aktiv",
-  "trekkpliktig": "123456789",
-  "trekkversjon": 4,
-  "sekvensnummer": 350,
-  "betalingsinformasjon": {
-    "kidnummer": "6487719756",
-    "kontonummer": "70213997155",
-    "betalingsmottaker": "971648199"
-  },
-  "trekkstoerrelseForPeriode": [
-    {
-      "startdato": "2025-08-28",
-      "sluttdato": "2025-09-14",
-      "trekkbeloep": {
-        "trekkbeloep": 8000
-      }
-    },
-    {
-      "startdato": "2025-09-15",
-      "sluttdato": "2025-10-13",
-      "trekkbeloep": {
-        "trekkbeloep": 6000
-      }
-    },
-    {
-      "startdato": "2025-10-14",
-      "sluttdato": "2026-02-09",
-      "trekkbeloep": {
-        "trekkbeloep": 5000
-      }
-    },
-    {
-      "startdato": "2026-02-10",
+      "startdato": "2025-11-23",
       "trekkbeloep": {
         "trekkbeloep": 7000
-      }
-    }
-  ]
-}
-```
-### Midlertidig endring i trekk (pga. uforutsette utgifter hos skyldner)
-* Skyldner har et trekk som løper på 17 %.
-* På grunn av uforutsette utgifter får skyldner innvilget stans i trekk i to måneder.
-* Trekket fortsetter å løpe på 17 % etter stans-perioden.
-
-Sagt på en annen måte
-
-* Skyldner har løpende trekk 17 %
-* Endring i trekket 0 % (men ikke stans/avsluttet)
-* Endring i trekket 17 %
-
-#### versjon 1
-
-```json
-{
-  "trekkid": "10007",
-  "skyldner": "10108412345",
-  "opprettet": "2025-08-26T15:00:00.00Z",
-  "saksnummer": "TREKK/2025/7",
-  "trekkstatus": "aktiv",
-  "trekkpliktig": "123456789",
-  "trekkversjon": 1,
-  "sekvensnummer": 351,
-  "betalingsinformasjon": {
-    "kidnummer": "6487719756",
-    "kontonummer": "70213997155",
-    "betalingsmottaker": "971648199"
-  },
-  "trekkstoerrelseForPeriode": [
-    {
-      "startdato": "2025-08-28",
-      "trekkprosent": {
-        "trekkprosent": 17.0
-      }
-    }
-  ]
-}
-```
-
-#### versjon 2
-
-```json
-{
-  "trekkid": "10007",
-  "skyldner": "10108412345",
-  "opprettet": "2025-10-09T15:00:00.00Z",
-  "saksnummer": "TREKK/2025/7",
-  "trekkstatus": "aktiv",
-  "trekkpliktig": "123456789",
-  "trekkversjon": 2,
-  "sekvensnummer": 380,
-  "betalingsinformasjon": {
-    "kidnummer": "6487719756",
-    "kontonummer": "70213997155",
-    "betalingsmottaker": "971648199"
-  },
-  "trekkstoerrelseForPeriode": [
-    {
-      "startdato": "2025-08-28",
-      "sluttdato": "2025-10-10",
-      "trekkprosent": {
-        "trekkprosent": 17.0
-      }
-    },
-    {
-      "startdato": "2025-10-11",
-      "sluttdato": "2025-12-10",
-      "trekkprosent": {
-        "trekkprosent": 0.0
-      }
-    },
-    {
-      "startdato": "2025-12-11",
-      "trekkprosent": {
-        "trekkprosent": 17.0
       }
     }
   ]
@@ -732,10 +601,8 @@ Sagt på en annen måte
 
 ### Trekk mot skyldner avsluttes. Samme skyldner får så et nytt trekk hos samme arbeidsgiver.
 * Skyldner får et prosenttrekk i lønn på 32 %.
-* Skyldner oppdager at han har fått trekk når han får lønn, typisk den 15. i en måned, og gjør umiddelbart opp for seg.
-* Trekket avsluttes den 17. i samme måned.
-* Det opprettes et nytt trekk på samme skyldner.
-* Nytt trekk med prosenttrekk 33 %.
+* Trekket avsluttes den 1. mars 2026.
+* Skylder får oppstart med nytt trekk 25. mai 2026 med prosenttrekk 33 %.
 
 #### versjon 1
 
@@ -756,7 +623,7 @@ Sagt på en annen måte
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-08-28",
+      "startdato": "2025-10-01",
       "trekkprosent": {
         "trekkprosent": 32.0
       }
@@ -771,7 +638,7 @@ Sagt på en annen måte
 {
   "trekkid": "10008",
   "skyldner": "10108412345",
-  "opprettet": "2025-09-17T23:59:00.00Z",
+  "opprettet": "2026-03-01T23:59:00.00Z",
   "saksnummer": "TREKK/2025/8",
   "trekkstatus": "avsluttet",
   "trekkpliktig": "123456789",
@@ -784,8 +651,8 @@ Sagt på en annen måte
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-08-28",
-      "sluttdato": "2025-09-17",
+      "startdato": "2025-10-01",
+      "sluttdato": "2026-03-01",
       "trekkprosent": {
         "trekkprosent": 32.0
       }
@@ -800,7 +667,7 @@ Sagt på en annen måte
 {
   "trekkid": "10009",
   "skyldner": "10108412345",
-  "opprettet": "2025-09-30T15:00:00.00Z",
+  "opprettet": "2026-05-18T15:00:00.00Z",
   "saksnummer": "TREKK/2025/9",
   "trekkstatus": "aktiv",
   "trekkpliktig": "123456789",
@@ -813,7 +680,7 @@ Sagt på en annen måte
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-10-01",
+      "startdato": "2026-05-25",
       "trekkprosent": {
         "trekkprosent": 33.0
       }
@@ -874,13 +741,13 @@ Sagt på en annen måte
   "trekkstoerrelseForPeriode": [
     {
       "startdato": "2025-10-01",
-      "sluttdato": "2025-10-06",
+      "sluttdato": "2025-10-05",
       "trekkbeloep": {
         "trekkbeloep": 3000
       }
     },
     {
-      "startdato": "2025-10-07",
+      "startdato": "2025-10-06",
       "trekkbeloep": {
         "trekkbeloep": 2000
       }
