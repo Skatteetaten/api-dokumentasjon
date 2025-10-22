@@ -67,7 +67,7 @@ Dette API-et finnes foreløpig ikke i Felles datakatalog.
 
 ## Tilgang til tjenesten
 
-For informasjon om hvordan få tilgang til tjenesten se [Inforrmasjon om tilgang til tjenesten for utleggsbegjæring](utleggsbegjaering.md#Tilgang-til-tjenesten)
+For informasjon om hvordan få tilgang til tjenesten se [Informasjon om tilgang til tjenesten for utleggsbegjæring](utleggsbegjaering.md#Tilgang-til-tjenesten)
 
 </TabItem>
 <TabItem headerText="Overgangsperioden" itemKey="itemKey-Overgangsperioden">

@@ -53,9 +53,15 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæri
 
 ## Teknisk spesifikasjon
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som spesifikasjoner på SwaggerHub:
-* [OpenAPI spesifikasjon for Utleggsbegjæring](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-api)
-* [OpenAPI spesifikasjon for innsyn ifm Utlegg](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-innsyn-api)
+Tjenestene knyttet til begjæring om utlegg er gruppert i ulike APIer, som agitt i tabellen nedenfor. URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger som spesifikasjoner på SwaggerHub.
+
+| API                | Beskrivelse av tjenester                                                                                                                                                                 | Swaggerhub                                                                                                                        |
+|:-------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------| 
+| Utleggsbegjæring   | Tjenester for innsending og oppfølging av utleggsbegjæringer. Herunder tjenester for opplasting av vedlegg, innsending av utleggsbegjæring, endring av utleggsbegjæring samt validering. | [OpenAPI spesifikasjon for utleggsbegjæring](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-api)                  |
+| Innsyn i ett trekk | Tjenester for innsyn i samordnet trekk.                                                                                                                                                  | [OpenAPI spesifikasjon for innsyn i ett trekk](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-innsyn-api)         |
+| Status på sak      | Tjenester for å hente status på en utleggssak, inklusive informasjon om krav og beslutninger. Tjeneste for å få notifikasjon om statusendringer på sak                                   | [OpenAPI spesifikasjon for status på sak](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-status-paa-sak-api)      |
+| Betjeningskartet   | Tjenester for [overgangsperioden](utleggsbegjaering.md#Overgangsperiode-for-utleggsbegjæring)                                                                                            | [OpenAPI spesifikasjon for betjeningskartet](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-betjeningskartet-api) |
+
 
 ## Datakatalog
 
@@ -102,6 +108,10 @@ I overgangsperioden skal digitale utleggsbegjæringer for skyldnere som er omfat
 ## Betjeningskartet {#betjeningskartet-id}
 
 For å avgjøre hvorvidt en skyldner er omfattet av nytt eller gammelt regelverk, kan innkassosystemet benytte en API-tjeneste kalt "Betjeningskartet". Her kan man slå opp gjeldende regelverk for en eller flere skyldnere på identifikator (fødselsnummer). Tjenesten skal kalles rett i forkant av innsending av en ny utleggsbegjæring gjennom API, slik at innsendingen gjøres til riktig system (ELSA eller ELAN). URL-er til betjeningskart API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [OpenAPI spesifikasjonen for betjeningskartet](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-betjeningskartet-api) på SwaggerHub.
+
+:::warning[Merknad]
+Vi ønsker ikke at dere kaller tjenesten unødig. Tjenesten skal kun brukes til å avklare i forkant av en innsending hvorvidt skyldner er på nytt eller gammelt regelverk.
+:::
 
 ![Betjeningskartet](../../static/download/utleggsbegjaering/Betjeningskartet.png)
 
@@ -325,6 +335,17 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
 Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
 
 [utleggsbegjaering-kompleks-v09.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
+
+</p>
+</details>
+
+ <details>
+      <summary>Status på sak</summary>
+<p>
+
+Når Kreditor har sendt inn en utleggsbegjæring, kan man få status på saken ved å bruke tjenesten "Status på sak". Tjenesten gir informasjon om sakens tilstand, samt hvilke beslutninger som eventuelt er fattet i saken. Når en beslutning er fattet angir tjenesten informasjon om alle krav som følges opp av beslutningen. Dette inkluderer informasjon om kravenes kravgrunnlagsidentifikator, som er den identifikator som Alminnelig Namsmann har gitt de enkelte krav. Denne identifikatoren kan brukes til å angi spesifikke krav dersom Kreditor senere for eksempel ønsker å melde en innbetaling på kravet.
+
+![Informasjonsmodell-status-paa-sak](../../static/download/utleggsbegjaering/status-paa-sak.png)
 
 </p>
 </details>
