@@ -38,6 +38,12 @@ Du skal bruke scope tilsvarende ordningen man vil rapportere for. Foreløpig er 
 | Aksjonærregisteroppgaven | skatteetaten:innrapporteringaksjonaerregisteroppgave |
 
 
+Skatteetaten må gi tilgang til scope. 
+
+For aksjonærregisteroppgaven, søk om dette [her](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/aksjonarregisteroppgaven-sbs/#bestill-tilgang-til-tjenesten-krever-innlogging).
+
+For tredjepartsopplysninger, søk om dette [her](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/tredjepartsopplysninger-sbs/#bestill-tilgang-til-tjenesten-krever-innlogging).
+
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
