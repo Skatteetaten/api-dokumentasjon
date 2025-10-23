@@ -44,13 +44,31 @@ Dette API-et krever at systemet og dets systembrukere har tilgang til én eller 
         "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
     },
     {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet"
+    },
+    {
         "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
     },
     {
-        "urn": "urn:altinn:accesspackage:skattegrunnlag"
+        "urn": "urn:altinn:accesspackage:revisormedarbeider"
     },
     {
-        "urn": "urn:altinn:accesspackage:revisormedarbeider"
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
+    }
+]
+```
+
+Ved bruk av standard systembruker kan man også benytte enkeltrettighet for tilgang til tjenesten:
+
+```json
+"rights": [
+    {
+        "resource": [
+            {
+                "id": "urn:altinn:resource",
+                "value": "ske-innrapportering-aksjonaerregisteroppgave"
+            }
+        ]
     }
 ]
 ```

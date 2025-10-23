@@ -27,6 +27,8 @@ For generell informasjon om tjenestene se egne sider om:
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringboligsameie`
 
+Skatteetaten må gi tilgang til scope. Søk om dette [her](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/tredjepartsopplysninger-sbs/#bestill-tilgang-til-tjenesten-krever-innlogging).
+
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
@@ -37,6 +39,44 @@ Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i
 Informasjon vedr. dette finnes [her](../om/systembruker.md). 
 
 Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:revisormedarbeider"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:forretningsforer-eiendom"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skattegrunnlag"
+    }
+]
+```
+
+Ved bruk av standard systembruker kan man også benytte enkeltrettighet for tilgang til tjenesten:
+
+```json
+"rights": [
+    {
+        "resource": [
+            {
+                "id": "urn:altinn:resource",
+                "value": "ske-innrapportering-boligsameie"
+            }
+        ]
+    }
+]
+```
 
 ```json
 "accessPackages": [
