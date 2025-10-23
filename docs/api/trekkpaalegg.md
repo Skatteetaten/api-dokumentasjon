@@ -224,7 +224,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-08-10",
+      "startdato": "2025-09-01",
       "trekkprosent": {
         "trekkprosent": 17.0
       }
@@ -255,7 +255,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-08-10",
+      "startdato": "2025-09-01",
       "trekkbeloep": {
         "trekkbeloep": 5000
       }
@@ -542,7 +542,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   "trekkstoerrelseForPeriode": [
     {
       "startdato": "2025-10-01",
-      "sluttdato": "2025-09-15",
+      "sluttdato": "2025-10-15",
       "trekkbeloep": {
         "trekkbeloep": 8000
       }
@@ -576,21 +576,21 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-08-28",
-      "sluttdato": "2025-09-14",
+      "startdato": "2025-10-01",
+      "sluttdato": "2025-10-15",
       "trekkbeloep": {
         "trekkbeloep": 8000
       }
     },
     {
-      "startdato": "2025-09-15",
-      "sluttdato": "2025-10-13",
+      "startdato": "2025-10-16",
+      "sluttdato": "2025-11-15",
       "trekkbeloep": {
         "trekkbeloep": 6000
       }
     },
     {
-      "startdato": "2025-11-23",
+      "startdato": "2025-11-16",
       "trekkbeloep": {
         "trekkbeloep": 7000
       }
