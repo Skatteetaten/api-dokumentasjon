@@ -229,7 +229,7 @@ I «BegjæringensTvangsgrunnlag» skal man legge inn detaljer om grunnlaget for 
 ### a) Rotnivå - Utleggsbegjæring
 RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen, som generelle vedlegg, underskrift med navn på ansvarlig for innsendingen.
 
-innsenderReferanse er innsenders unike referanse på saken, tilsvarende vil saksreferanse være namsmyndighetens unike identifikator for saken og som skal benyttes senere i prosessen ved kommunikasjon ved namsmyndigheten.
+innsenderReferanse er innsenders unike referanse på saken. Tilsvarende er eksternSaksreferanse, som returneres ved innsending av utleggsbegjæringen, namsmyndighetens unike identifikator for saken og som skal benyttes senere i prosessen ved kommunikasjon ved namsmyndigheten.
 
 I elementet tvangsfullbyrdelsestype må man angi om det er en ren utleggsbegjæring, eller kombinert forliksklage.
 
@@ -302,44 +302,30 @@ Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUn
 
 ![BegjæringensTvangsgrunnlag](../../static/download/utleggsbegjaering/begjaering-e.png)
 
-## Eksempler på testdata
-
-Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
-
-[utleggsbegjaering-v1.json](../../static/download/utleggsbegjaering/begjaering-v1.json)
-
 </p>
 </details>
 
  <details>
-      <summary>Utleggsbegjæring versjon 0.9</summary>
-      <p>
+      <summary>Eksempler på utleggsbegjæring</summary>
+<p>
 
-Her ser du den forrige informasjonsmodellen for Utleggsbegjæring (versjon 0.9).
+I dette avsnittet vises eksempler på data som illusterer hvordan man kan bygge opp en utleggsbegjæring i henhold til informasjonsmodellen.
 
-![Informasjonsmodell](../../static/download/utleggsbegjaering/informasjonsmodell-utleggsbegjaering.png)
+## Eksempel på utleggsbegjæring
+Eksemplene nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
 
-Dokumentasjon av forrige versjon av utleggsbegjæring finnes her:
-[Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.9.2)
+:::info[Enkelt eksempel]
+[utleggsbegjaering-enkel.json](../../static/download/utleggsbegjaering/begjaering-v1.json)
+:::
 
-## Eksempler på testdata
-
-### Enkelt eksempel på utleggsbegjæring
-
-Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
-
-[utleggsbegjaering-enkel-v09.json](../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
-
-### Mer komplekst eksempel på utleggsbegjæring
-
-Eksempelet nedenfor er noe mer komplisert, med flere tvangsgrunnlag.
-
-[utleggsbegjaering-kompleks-v09.json](../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
+:::info[Komplekst eksempel]
+Vi jobber med å få opp et mer komplekst eksempel som viser flere av mulighetene i informasjonsmodellen.
+:::
 
 </p>
 </details>
 
- <details>
+<details>
       <summary>Status på sak</summary>
 <p>
 
@@ -370,7 +356,6 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 
 </p>
 </details>
-
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-Test">
@@ -605,12 +590,7 @@ Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men 
 I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
 med å pilotere løsningene.
 
-### Utleggsbegjæring versjon 1.0
-
-URL til det nye testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
-
-### Tidligere versjoner
-Utleggsbegjæringen ble 22.09.2025 lansert i ny versjon 1.0. Forrige versjon (0.9) av utleggsbegjæring er i en overgangsperiode tilgjengelig på https://api-test.sits.no/api/utleggsbegjaering/v1
+URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
 
 ### Bruk av tjenester i testmiljøet
 
