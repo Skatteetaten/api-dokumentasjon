@@ -440,7 +440,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-06-10",
+      "startdato": "2025-07-01",
       "sluttdato": "2025-08-09",
       "trekkprosent": {
         "trekkprosent": 23.0
@@ -465,7 +465,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   "trekkstatus": "avsluttet",
   "trekkpliktig": "123456789",
   "trekkversjon": 3,
-  "sekvensnummer": 228,
+  "sekvensnummer": 229,
   "betalingsinformasjon": {
     "kidnummer": "6487719756",
     "kontonummer": "70213997155",
@@ -590,7 +590,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
       }
     },
     {
-      "startdato": "2025-11-16",
+      "startdato": "2025-11-22",
       "trekkbeloep": {
         "trekkbeloep": 7000
       }
@@ -691,7 +691,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 
 ### Trekket endres flere ganger innenfor en 10-dagersperiode
 * 1.10. skyldner får beløpstrekk 3000 kr.
-* 7.10. skyldner får endring i beløpstrekk, 2000 kr - ingen sluttdato.
+* 5.10. skyldner får endring i beløpstrekk, 2000 kr - ingen sluttdato.
 
 #### versjon 1
 
