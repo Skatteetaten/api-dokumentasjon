@@ -27,6 +27,8 @@ For generell informasjon om tjenestene se egne sider om:
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringaksjonaerregisteroppgave`
 
+Skatteetaten må gi tilgang til scope. Søk om dette [her](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/aksjonarregisteroppgaven-sbs/#bestill-tilgang-til-tjenesten-krever-innlogging).
+
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
