@@ -206,7 +206,7 @@ Informasjonsmodell for gyldig avtaleforhold for tjenestepensjonsavtale og oversi
 
 | Navn på felt | Beskrivelse |
 | -------------- | ---------------------------------------------- |
-|  gyldig | Boolsk felt som er sann/true dersom det finnes en eller flere gyldige avtaleforhold for hele perioden det blir spurt om. Se [Forutsetning for bruk](./forutsetningerforbruk.md) for ytterligere informasjon om avtaleforhold. |
+|  gyldig | Boolsk felt som er sann/true dersom det finnes en eller flere gyldige avtaleforhold for hele perioden det blir spurt om. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) for ytterligere informasjon om avtaleforhold. |
 | måndederUtenGyldigAvtaleforhold | Liste med måneder som ikke har avtale.  Fylles kun ut når "gyldig" er usann/false |
 
 ### MånederUtenGyldigAvtaleforhold
@@ -226,7 +226,7 @@ Informasjonsmodell for virkningsperiodens gyldighet for tjenestepensjonsavtale o
 
 | Navn på felt | Beskrivelse |
 | -------------- | ---------------------------------------------- |
-|  gyldig | Boolsk felt som er sann/true dersom det finnes en eller flere avtaleforhold med gyldig virkningsperiode for hele perioden det blir spurt om. Se [Forutsetning for bruk](./forutsetningerforbruk.md) for ytterligere informasjon om virkningsperiode.  |
+|  gyldig | Boolsk felt som er sann/true dersom det finnes en eller flere avtaleforhold med gyldig virkningsperiode for hele perioden det blir spurt om. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) for ytterligere informasjon om virkningsperiode.  |
 | måndederUtenforGyldigVirkningsperiode | Liste med måneder som ikke har avtale med gyldig virkningsperiode.  Fylles kun ut når "gyldig" er usann/false |
 
 ### MånederUtenforGyldigVirkningsperiode
