@@ -473,7 +473,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-06-10",
+      "startdato": "2025-07-01",
       "sluttdato": "2025-08-09",
       "trekkprosent": {
         "trekkprosent": 23.0
