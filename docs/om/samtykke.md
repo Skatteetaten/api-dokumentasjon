@@ -13,6 +13,11 @@ hide_table_of_contents: true
 
 [![illustrasjon av samtykkeprosessen](../../static/img/samtykke.png)](../../static/img/samtykke.png)
 
+## Ny samtykkeløsning
+Skatteetaten  er i ferd med å migrere relevante API-er til ny samtykkeløsningen i Altinn 3, og API-ene vil i en overgangsperiode støtte både nytt og gammel samtykke. Se detaljer i Altinn sin dokumentasjon: 
+- [Samtykke i Altinn 3](https://docs.altinn.studio/nb/authorization/what-do-you-get/consent/)
+- [Samtykke for datakonsument](https://docs.altinn.studio/nb/authorization/guides/system-vendor/consent/)
+
 ## Få tilgang
 Før du som konsument kan benytte Skatteetaten API-er som krever samtykke eller fullmakt må du få tilgang til Altinn's samtykkeløsning. Altinn har beskrevet det som skal til for å [komme i gang med samtykke](https://altinn.github.io/docs/utviklingsguider/samtykke/datakonsument/komme-i-gang). Skatteetaten er her datakilden og har på forhånd opprettet tjenestekoder og tjenesteutgavekoder for API-ene. Nærmere informasjon om dette finner du i API-dokumentasjonen. Merk at Skatteetaten ikke benytter tjenesteeierstyrt rettighetsregister.
 
