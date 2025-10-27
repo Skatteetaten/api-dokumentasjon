@@ -315,7 +315,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
   },
   "trekkstoerrelseForPeriode": [
     {
-      "startdato": "2025-05-10",
+      "startdato": "2025-06-01",
       "sluttdato": "2025-08-08",
       "trekkprosent": {
         "trekkprosent": 23.0
@@ -563,7 +563,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 {
   "trekkid": "10006",
   "skyldner": "10108412345",
-  "opprettet": "2025-11-15T15:00:00.00Z",
+  "opprettet": "2025-11-22T15:00:00.00Z",
   "saksnummer": "TREKK/2025/6",
   "trekkstatus": "aktiv",
   "trekkpliktig": "123456789",
@@ -584,13 +584,13 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
     },
     {
       "startdato": "2025-10-16",
-      "sluttdato": "2025-11-15",
+      "sluttdato": "2025-11-22",
       "trekkbeloep": {
         "trekkbeloep": 6000
       }
     },
     {
-      "startdato": "2025-11-22",
+      "startdato": "2025-11-23",
       "trekkbeloep": {
         "trekkbeloep": 7000
       }
