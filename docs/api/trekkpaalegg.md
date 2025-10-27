@@ -563,7 +563,7 @@ Sørg også for å benytte eget organisasjonsnummer for feltet `trekkpliktig` og
 {
   "trekkid": "10006",
   "skyldner": "10108412345",
-  "opprettet": "2025-11-22T15:00:00.00Z",
+  "opprettet": "2025-11-15T15:00:00.00Z",
   "saksnummer": "TREKK/2025/6",
   "trekkstatus": "aktiv",
   "trekkpliktig": "123456789",
