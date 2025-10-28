@@ -100,8 +100,8 @@ Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 | R122  | Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget                                                                    |
 
 
-<Tabs underline={true}>
-<TabItem headerText="Alminnelig- og primærnæring" itemKey="itemKey-1" default>
+### Alminnelig- og primærnæring
+
 Følgende valideringsregler er foreløpig definert for ordinær (alminnelig og primærnæring) mva-meldinger:
 
 | Regel      |	Beskrivelse                                                                                                                                             |
@@ -171,9 +171,9 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 * Innsending og validering tjeneste er ikke tilgjengelig før 01.01.2022 for ordinær (aliminnelig eller primærnæring) mva-meldinger (R000)
 * Innsending og validering av ordinær (alminnelig eller primærnæring) mva-meldinger fra før 2022 er ikke tilgjengelig (R077)
 
-</TabItem>
 
-<TabItem headerText="Omvendt avgiftsplikt" itemKey="itemKey-2">
+
+### Omvendt avgiftsplikt
 Følgende valideringsregler er foreløpig definert for mva-meldinger for omvendt avgiftsplikt:
 
 * Terminlengde må være 3-månedlig (R106)
@@ -205,10 +205,10 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 * Innsending og validering tjeneste er ikke tilgjengelig før 01.02.2023 for mva-meldinger for omvendt avgiftsplikt (R105)
 * Innsending og validering av mva-melding for omvendt avgiftsplikt fra før 2023 er ikke tilgjengelig (R103)
 
-</TabItem>
 
 
-<TabItem headerText="Kompensasjonsmelding" itemKey="itemKey-3">
+
+### Kompensasjonsmelding
 
 Følgende valideringsregler er foreløpig definert for krav om kompensasjon mva-meldinger:
 
@@ -244,8 +244,7 @@ Følgende praktiske regler er også definert for å hindre feilaktige innsending
 * Innsending og validering tjeneste er ikke tilgjengelig før 01.01.2023 for krav om kompensasjon mva-meldinger (R090)
 * Innsending og validering av krav om kompensasjon mva-meldinger fra før 2023 er ikke tilgjengelig (R092)
 
-</TabItem>
-</Tabs>
+
 
 </TabItem>
 
