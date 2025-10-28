@@ -49,7 +49,7 @@ Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-utle
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæring API - På vegne av`
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggsbegjæring API - På vegne av`
 
 ## Teknisk spesifikasjon
 
