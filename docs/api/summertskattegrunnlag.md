@@ -99,7 +99,7 @@ For denne tjenesten er det en parameter som må følge med:
 |-------------------------|--------------------------------------------|---------------|
 | 4628_210607_inntektsaar | Parameter for skattegrunnlagets inntektsår | 2022          |
 
-Obs. Digdir jobber nå med en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø.
+Obs. Digdir jobber nå med en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i både eksternt testmiljø og produksjon.
 
 ## Støttetjenester
 
