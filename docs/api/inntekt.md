@@ -90,7 +90,7 @@ For denne tjenesten er det enkelte parametre som må følge med ved bruk av samt
 | 4804_210607_fraOgMed | Parameter for Inntekt | 2018-03       |
 | 4804_210607_tilOgMed | Parameter for Inntekt | 2018-06       |
 
-Obs. Digdir jobber nå med en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. Skatteetaten vil legge ut en versjon av Inntekt API-et versjon av API-et som støtter ny samtykketjeneste i eksternt testmiljø snart.
+Obs. Digdir jobber nå med en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø.
 
 ## Støttetjeneste
 
