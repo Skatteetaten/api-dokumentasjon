@@ -319,7 +319,9 @@ Eksemplene nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
 :::
 
 :::info[Komplekst eksempel]
-Vi jobber med å få opp et mer komplekst eksempel som viser flere av mulighetene i informasjonsmodellen.
+Eksempelet angir en utleggsbegjæring med flere krav og flere tvangsgrunnlag. I tillegg er det angitt flere saksøkere og saksøkte.
+
+[utleggsbegjaering-kompleks.json](../../static/download/utleggsbegjaering/begjaering-v1-kompleks.json)
 :::
 
 </p>
