@@ -24,15 +24,11 @@ Det er heller ikke noe i veien for å hente skattekort med den gamle løsningen 
 Det er ikke satt noen dato for sanering av RF-1211.
 
 ### Framdriftsplan
-API-ene er nå klare til test.
-
-Planen er å ha en versjon klar i produksjon i løpet av oktober.  
+API-ene er nå klare både i test og produksjon.
 
 ### Teknisk dokumentasjon
 
 Teknisk dokumentasjon, URL-er til API-ene og annen informasjon man trenger finnes på [disse sidene.](https://skatteetaten.github.io/api-dokumentasjon/api/skattekorttilarbeidsgiver)
-
-Dette er en foreløpig versjon, og det vil kunne komme endringer her.
 
 Mer informasjon om [hvordan koble seg opp mot våre reetablerte tjenester finner man her.](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
