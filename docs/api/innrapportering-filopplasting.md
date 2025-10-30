@@ -33,9 +33,9 @@ løsningen man ønsker å rapportere for.
 
 Du skal bruke scope tilsvarende ordningen man vil rapportere for. Foreløpig er følgende ordninger/scopes støttet:
 
-| Ordning                  | Scope                                                |
-|--------------------------|------------------------------------------------------|
-| Aksjonærregisteroppgaven | skatteetaten:innrapporteringaksjonaerregisteroppgave |
+| Ordning                  | Scope                                                             |
+|--------------------------|-------------------------------------------------------------------|
+| Aksjonærregisteroppgaven | skatteetaten:innrapporteringaksjonaerregisteroppgavefilopplasting |
 
 
 ## Delegering
