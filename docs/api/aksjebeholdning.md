@@ -10,7 +10,7 @@ last_updated: Sep 2, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten leverer informasjon en person eller en virksomhet sin aksjebeholdning pr. 31.12 sist kalenderår.</Summary>
+<Summary>Tjenesten leverer informasjon om en person eller en virksomhet sin aksjebeholdning pr. 31.12 sist kalenderår.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
