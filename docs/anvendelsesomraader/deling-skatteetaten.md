@@ -29,6 +29,30 @@ For utlevering av opplysninger fra Skatteetatens delingstjenester gjelder følge
 
 Informasjon om tjenestenivå, varsling, endringshåndtering, fast vedlikehold med mer ligger dokumentert på disse sidene.
 
+### Innsyn i rettighetspakker
+
+Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Innsyn i rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no) 
+
+For å få tilgang til løsningen må du ha Altinn 3 ressursen "Innsyn i rettighetspakker", ressursid: `ske-innsyn-rettighetspakke`
+
+Tilgangen er i utgangspunktet tildelt de i virksomheten med begrenset signeringsrett, og kan delegeres videre til andre i virksomheten ved å følge [Altinns oppskrift]( https://info.altinn.no/hjelp/profil/enkelttjenester-og-roller/hvordan-gi-en-enkelttjeneste-og-rolle-til-andre/) 
+
+Kort oppsummert gjøres det slik:
+1. Person med begrenset signeringsrett logger inn i Altinn med BankID og velg virksomheten hen skal representere
+2. Gå til "Profil" og velg "Andre med rettigheter til skjema og tjenester"
+3. Velg "Legg til ny person eller virksomhet"
+4. Skriv inn fødselsnummer og etternavn til den det skal delegeres til, og velg "Neste"
+5. Velg "Gi tilgang til enkelttjeneste"
+6. Søk opp "Innsyn i rettighetspakker" og velg "Legg til"
+7. Velg "Gå videre", "Fullfør delegering", "Bekreft" og "Ferdig"
+Delegeringen er nå utført. 
+
+Den eller de i virksomheten som har fått delegert ressursen, kan nå logge inn med BankID, og få listet API-ene og rettighetspakkene fra Skatteetaten som virksomheten har tilgang til i Produksjon, med felter og kodelister.  
+
+Dere kan pt. kun se de rettighetespakkene virksomheten har fått direkte tilgang til, men ikke de virksomheten har fått delegert fra andre. Vi vil se på en utvidelse for det etter hvert.
+
+Obs. Det er nå en midlertidig begrensning i Ansattporten som gjør at organisasjonvelgeren kun fungerer for brukere som har fått tilgang til ressursen via enkelttjeneste-delegering direkte til sitt fødselsnummer. Støtte for brukere som har tilgang gjennom en tilgangspakke/rolle kommer mot slutten av 2025. I praksis betyr det at daglig leder selv ikke får logget inn i løsningen, men hen kan delegere ressursen til andre i virksomheten som da kan logge inn. [Begrensningen er beskrevet i Digdir sin dokumentasjon](https://docs.digdir.no/docs/ansattporten/ansattporten_rar.html#datamodell-for-altinn-3-ressurser-ansattportenaltinnresource)
+
 ## Delingsområder
 
 Noen ganger skal API-ene våre brukes sammen, og de viktigste områdene, som ikke står listet under andre "Anvendelsesområder" står kort listet her.
