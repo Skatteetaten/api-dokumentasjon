@@ -25,7 +25,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringtodo`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringoppdragtilutenlandske`
 
 ## Delegering
 
@@ -33,8 +33,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 
 ## Systemtilgang med systembruker
 
-Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.
-Informasjon vedr. dette finnes [her](../om/systembruker.md).
+Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
 For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
 ```JSON
@@ -42,7 +41,7 @@ For å kunne benytte dette api'et med systemtilgang må man gi følgende rettigh
     {
       "Resource": [
         {
-          "value": "ske-innrapportering-boligselskap",
+          "value": "ske-innrapportering-oppdragsregisteret",
           "id": "urn:altinn:resource"
         }
       ]
@@ -53,7 +52,7 @@ For å kunne benytte dette api'et med systemtilgang må man gi følgende rettigh
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/Amelding-mottak-API)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-oppdrag-til-utenlandske-oppdragstakere-api/)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
