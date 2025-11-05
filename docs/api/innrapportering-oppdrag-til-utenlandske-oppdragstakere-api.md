@@ -10,10 +10,12 @@ last_updated: Mar 28, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for...</Summary>
+<Summary>Tjeneste for å rapportere til Oppdrags- og arbeidsforholdsregisteret (OAR) </Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
+
+Les mer om tjenesten på [skatteetaten.no](https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/rapportere-i-oppdrags--og-arbeidsforholdsregisteret-oar/)
 
 For generell informasjon om tjenestene se egne sider om:
 
@@ -72,112 +74,9 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 ## Innsending
 
-### Eksempel på request URL
+Dokumentasjon finner du på [ SwaggerHub  ](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-oppdrag-til-utenlandske-oppdragstakere-api/) 
 
-```
-https://innrapporteringboligselskap.api.{env}.no/v1/{inntektsaar}
-```
 
-### JSON
-
-#### Eksempel på innsending
-
-```
-{
-  "leveranse": [
-    {
-      "oppgavegiversLeveranseReferanse": "Leveranse-1",
-      "inntektsaar": 2023,
-      "oppgavegiver": {
-        "organisasjonsnummer": "932061899",     
-        "kontaktinformasjon": {
-          "navn": "Realt Testutvikling",
-          "telefonnummer": "00000000",
-          "varselEpostadresse": "anonym.varsel@skatteetaten.no",
-          "varselSmsMobilnummer": "00000000"
-        }
-      },
-      "boligselskapFormaal": "bolig",
-      "oppgaveoppsummering": {
-        "antallOppgaver": 2,
-        "sumAndelLikningsverdiBoenhet": 70000,
-        "sumAndelSkattepliktigeInntekter": 2500,
-        "sumAndelFradragsberettigedeKostnader": 0,
-        "sumAndelFormue": 1500,
-        "sumAndelGjeld": 39500
-      },
-      "leveransetype": "ordinaer",
-      "kildesystem": "SBS-1",
-      "oppgave": [
-        {
-          "oppgaveeier": {
-            "foedselsnummer": "00000000000",
-            "navn": "LJILJANA BORLAUG"
-          },
-          "eiertid": {
-            "start": "0101",
-            "slutt": "3112"
-          },
-          "eierandel": {
-            "eierandelTeller": 2,
-            "eierandelNevner": 10
-          },
-          "boenhet": {
-            "aksjeboenhetsnummer": 11,
-            "kommunenummer": "0301",
-            "bolignummer": "U1111",
-            "gatenavnOgHusnummer": "Øvre Sveig 799 Å"
-          },
-          "bruksoverlatt": false,
-          "andelLikningsverdiBoenhet": 20000,
-          "andelSkattepliktigeInntekter": 1000,
-          "andelFradragsberettigedeKostnader": 1500,
-          "andelFormue": 135183,
-          "andelGjeld": 6500
-        },
-        {
-          "oppgaveeier": {
-            "foedselsnummer": "00000000000",
-            "navn": "ODD TORE JOSEPH"
-          },
-          "eiertid": {
-            "start": "0101",
-            "slutt": "3112"
-          },
-          "eierandel": {
-            "eierandelTeller": 8,
-            "eierandelNevner": 10
-          },
-          "boenhet": {
-            "aksjeboenhetsnummer": 11,
-            "kommunenummer": "0301",
-            "bolignummer": "U1111",
-            "gatenavnOgHusnummer": "Øvre Sveig 799 Å"
-          },
-          "bruksoverlatt": false,
-          "andelLikningsverdiBoenhet": 50000,
-          "andelSkattepliktigeInntekter": 1500,
-          "andelFradragsberettigedeKostnader": 0,
-          "andelFormue": 540731,
-          "andelGjeld": 33000
-        }
-      ],
-      "sletteoppgave": []
-    }
-  ]
-}
-```
-
-#### Eksempel på respons
-
-```
-{
-  "dialogId": "018b3d0f-d57e-7f5c-8a04-76dbc7e2fed2",
-  "dialogelementId": "018f5297-fde1-7301-af34-df1bc3fff6b5",
-  "oppgavegiversLeveranseReferanse": "leveranse-1",
-  "antallOppgaver": 11
-}
-```
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
@@ -186,16 +85,16 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
-| GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_005  | 403             | Feil i forbindelse med autorisering          |
-| GLD_006  | 400             | Feil i request                               |
-| GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
-| GLD_010  | 400             | Feil i forbindelse med validering av payload |
-| GLD_011  | 400             | Feil i metadata                              |
-| GLD_017  | 500             | Uspesifisert systemfeil                      |
-| GLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
-| GLD_021  | 404             | Finner ikke forespurt ressurs                |
-| GLD_022  | 405             | HTTP-metode ikke støttet                     |
+| OAR_001  | 403             | Feil i forbindelse med autentisering         |
+| OAR_002  | 401             | Feil i forbindelse med autorisering          |
+| OAR_003  | 400             | Feil i request                               |
+| OAR_004  | 400             | Strukturell feil i tilknyttet dataformat     |
+| OAR_005  | 400             | Feil i forbindelse med validering av payload |
+| OAR_006  | 500             | Uspesifisert systemfeil                      |
+| OAR_007  | 409             | Idempotensnøkkel er benyttet tidligere       |
+| OAR_008  | 404             | Finner ikke forespurt ressurs                |
+| OAR_009  | 405             | HTTP-metode ikke støttet                     |
+| OAR_010  | 500             | Uventet feil i et bakenforliggende system    |
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
@@ -204,7 +103,7 @@ feltene.
 
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| GLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| OAR_1001               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
 | GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
 | GLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
 | GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
