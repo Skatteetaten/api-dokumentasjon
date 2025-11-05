@@ -41,7 +41,7 @@ Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i
 
 Følgende ressurs kan benyttes til dette : `ske-skattekort-til-arbeidsgiver`
 
-Du finner mer informasjon om maskinporten-tokens og eksempler på dette i [Altinn](https://docs.altinn.studio/altinn-studio/guides/integration/sbs/setup/#6-fiken-can-authenticate-against-maskinporten-with-the-system-user)
+Du finner mer informasjon om maskinporten-tokens og eksempler på dette i [Altinn](https://docs.altinn.studio/nb/altinn-studio/v8/guides/integration/sbs/setup/#6-fiken-kan-autentisere-mot-maskinporten-med-systembrukeren)
 
 ## Datakatalog
 
