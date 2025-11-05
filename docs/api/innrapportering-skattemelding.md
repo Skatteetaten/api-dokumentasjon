@@ -27,3 +27,5 @@ For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang.
 [Bestill tilgang til API-et](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/#trenger-du-hjelp)
 
 </TabItem>
+</Tabs>
+
