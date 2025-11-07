@@ -269,13 +269,13 @@ feltene.
 
 ### Testmiljøer
 
-For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aandsverk-api/0.0.1).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aandsverk-api/0.0.1).
 
 Skatteetaten [innboks](https://skatt-test.sits.no/web/innboks/)
 
 Altinn benytter TT02 som testmiljø, hvor følgende tilbys:
 * Dialogporten - [Swagger](https://platform.tt02.altinn.no/dialogporten/swagger/index.html#/)
-* Api for å registere system og systembrukere
+* API for å registere system og systembrukere
 * Brukerflate for tilgangsstyring og administrasjon av systembrukere - [Id-porten login](https://am.ui.tt02.altinn.no/accessmanagement/ui/systemuser/overview)
 * Altinn Autorisasjon - tilgangskontroll
 * Altinn innboks - [Id-porten login](https://af.tt.altinn.no/)
@@ -287,7 +287,7 @@ Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skattee
 ### Tenor testdatasøk
 
 Skatteetaten og Altinn krever syntetiske testdata, og dette kan finnes i [Tenor](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/docs/test/tenor.md).
-For å logge inn i Tenor, benyttes egen personlig bankId.
+For å logge inn i Tenor, benyttes egen personlig BankID.
 
 Her kan man filtrere søket etter behov, om man f.eks. ønsker å finne organiasjoner med regnskapsfører eller finne organiasjoner som er registrert i Skatteetatens manntall for gitte ordninger.
 
@@ -306,7 +306,7 @@ Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelver
 ### Oppskrift for test
 
 * Opprett integrasjon med Maskinporten test. Benytt reellt organisasjonsnummer i denne integrasjonen, da vi kun gir scope-tilgang til klienter koblet til reelle organisasjoner.
-* Opprett integrasjon med api'er hos DigDir (kontakt DigDir for scope-tilganger) for å:
+* Opprett integrasjon med API-er hos Digdir (kontakt Digdir for scope-tilganger) for å:
     * Opprette system i systemregisteret. Systemet kobles til reell organiasjon og Maskinporten klient.
     * Opprette systembrukere. Systembrukere i test skal registreres på syntetiske organisasjoner funnet i Tenor.
     * Godkjenne systembrukere. Login på mottatt url fra opprett systembruker forespørsel med person med rolle hos den syntetiske organisasjoner funnet i Tenor. F.eks. daglig leder.
