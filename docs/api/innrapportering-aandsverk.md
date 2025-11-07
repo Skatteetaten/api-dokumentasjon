@@ -18,7 +18,7 @@ hide_table_of_contents: true
 For generell informasjon om tjenestene se egne sider om:
 
 * [Sikkerhetsmekanismer](../om/sikkerhet.md)
-* [Systemtilgang](../om/systemtilgang.md)
+* [Systemtilgang](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
