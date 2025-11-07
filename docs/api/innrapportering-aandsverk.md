@@ -37,7 +37,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Systemtilgang
 
 Bruk av API-et krever systemtilgang, som er ny funksjonalitet i Maskinporten levert av Digdir.
-Informasjon vedr. dette finnes [her](../om/systemtilgang.md).
+Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
 For systembruker for klientsystemer anbefaler vi å ikke kombinere tilgangspakker på tvers av fullmaktsområder, da det kan medføre at bruker ikke kan utføre [klientdelegering](https://docs.altinn.studio/nb/authorization/guides/end-user/system-user/delegate-clients/). Se fullmaktsområder [her](https://docs.altinn.studio/nb/authorization/what-do-you-get/accessgroups/accessgroups/)
 
