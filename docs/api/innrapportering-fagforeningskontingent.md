@@ -252,7 +252,7 @@ For å logge inn i Tenor, benyttes egen personlig bankId.
 
 Her kan man filtrere søket etter behov, om man f.eks. ønsker å finne organiasjoner med regnskapsfører eller finne organiasjoner som er registrert i Skatteetatens manntall for gitte ordninger.
 
-![Tenor søk](../../static/img/tenor_skjembilde.png)
+![Tenor søk](../../static/img/tenor_skjermbilde.png)
 
 For å finne personer med roller i valgt organisasjon, se kildedata.
 
