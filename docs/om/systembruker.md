@@ -20,7 +20,7 @@ På denne siden sammenfattes kortere stegene som må til for å komme i gang med
 1.	**Maskinporten onboarding:** For å bruke både Skatteetatens og Digdirs API trenger du tilgang til Maskinporten for autentiseringen. Digdir har laget en side som beskriver hva som må til for å [komme i gang i test](https://samarbeid.digdir.no/altinn/kom-i-gang-i-testmiljoet-tt02/2868).
 
 2.	**API-tilganger**: Så trenger du tilgang til API (scopes) både hos Skatteetaten og Digdir: 
-  * Skatteetaten må gi tilgang til vårt API f.eks. Krav og betalinger eller Innrapportering Boligselskap, og du kan skaffe deg tilgang [her](../komigang.md). Du finner informasjon om scope det skal bes om tilgang til i dokumentasjonen for det enkelte API.
+  * Skatteetaten må gi tilgang til vårt API f.eks. Krav og betalinger eller Innrapportering Boligselskap, og du kan skaffe deg tilgang [her](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/). Du finner informasjon om scope det skal bes om tilgang til i dokumentasjonen for det enkelte API.
   *	Digdir (inkl. Altinn) må gi tilgang til sine API. Det må bestilles fra [Digdir](https://forms.office.com/Pages/ResponsePage.aspx?id=D1aOAK8I7EygVrNUR1A5kcdP2Xp78HZOttvolvmHfSJUOFFBMThaOTI1UlVEVU9VM0FaTVZLMzg0Vi4u). Sørg for å bestille følgende tilganger:
       -	`altinn:authentication/systemregister.write`
       -	`altinn:authentication/systemuser.request.read`
