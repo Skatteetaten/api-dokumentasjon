@@ -103,10 +103,10 @@ feltene.
 
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| OAR_1001               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
-| GLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
-| GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
+| OAR_1001               | Ugyldig token                                  | Ugyldig token                                                                                                               |
+| GLD_1002               | Ikke autorisert for denne dialogen             | Ikke autorisert for denne dialogen                                                                                          |
+| GLD_1003               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| GLD_1004               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
 | GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
 | GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
 
@@ -143,7 +143,7 @@ Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor t
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om Boligselskap API, kan du sende oss e-post: [altinnreetablering\@skatteetaten.no](mailto:altinnreetablering@skatteetaten.no)  
+Har du spørsmål til Skatteetaten om Boligselskap API, kan du sende oss e-post: [oar@skatteetaten.no](mailto:oar@skatteetaten.no)  
 Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
   
 </TabItem>
