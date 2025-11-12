@@ -104,16 +104,23 @@ feltene.
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | OAR_1001               | Ugyldig token                                  | Ugyldig token                                                                                                               |
-| GLD_1002               | Ikke autorisert for denne dialogen             | Ikke autorisert for denne dialogen                                                                                          |
-| GLD_1003               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1004               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
-| GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| OAR_1002               | Ikke autorisert for denne dialogen             | Ikke autorisert for denne dialogen                                                                                          |
+| OAR_1003               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| OAR_1004               | Finner ingen ressurs for denne urlen           | Finner ingen ressurs for denne urlen                                                                                        |
+| OAR_1005               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
+| OAR_1006               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
+| OAR_1007               | Feil i JSON-innhold                            | Feil i JSON-innhold                                                                                                         |
+| OAR_1008               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| OAR_1009               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere                                                                                                       |
+| OAR_1010               | Det finnes ingen forsendelse med denne IDen for denne ordningen |                                                                                                            |
+| OAR_1011               | Tokenet mangler informasjon om systembruker i authorization_details |                                                                                                        |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-![informasjonsmodell](../../static/download/Informasjonsmodell_Boligselskap.png)
+![Informasjonsmodellen i pdf-format.](../../static/download/oar/infomodell_oppdragsreg.pdf)
+
+![informasjonsmodell](../../static/download/oar/infomodell_OAR.jpeg)
                                                                                                                                                                                                                                                           |
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
@@ -122,7 +129,7 @@ I første omgang er test kun tilgjengelig for et utvalg leverandører som det er
 
 ### Testmiljøer
 
-For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/Amelding-mottak-API).
+For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-oppdrag-til-utenlandske-oppdragstakere-api/).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * Dialogporten
