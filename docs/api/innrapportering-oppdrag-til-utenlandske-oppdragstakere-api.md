@@ -150,8 +150,8 @@ Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor t
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om Boligselskap API, kan du sende oss e-post: [oar@skatteetaten.no](mailto:oar@skatteetaten.no)  
-Vær oppmerksom på at epostadressen er midlertidig og gjelder bare i perioden tjenestene er i utvikling og test fra Altinn II til Altinn 3.
+Har du spørsmål til Skatteetaten om innrapportering av oppdrag til utenlandske oppdragstakere API, kan du sende oss e-post: [oar@skatteetaten.no](mailto:oar@skatteetaten.no)  
+
   
 </TabItem>
 
