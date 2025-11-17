@@ -58,8 +58,7 @@ standard prosess.
    forsendendelser og dokumenter. Denne integrasjonen krever også token fra Maskinporten med systembruker.
 9. De fleste tjenester har API for å hente ut dokumenter tilknyttet forsendelser, for eksempel innsendinger og
    tilbakemeldinger. Disse API-ene krever som regel identifikatorer for forsendelse og dokument som du får fra
-   Dialogporten i steg 8.  
-   ash
+   Dialogporten i steg 8.
 
 
 
