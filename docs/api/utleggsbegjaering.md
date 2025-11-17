@@ -627,7 +627,7 @@ Integrasjon med Skatteetatens API for utleggsbegjæring
 ### 3. Testmiljø og testdata 
 
 * Sett opp testmiljø med **kun** syntetiske data  
-* Hent testdata fra [Syntetisk Norge](https://www.digdir.no/tenor/syntetisk-norge/3910) via [Tenor testdatasøk](https://tenor.test.norge.no/)
+* Hent testdata fra [Syntetisk Norge](https://data.norge.no/nb/datasets/33833825-8153-481c-a672-311502c97a74/syntetisk-folkeregister) via [Tenor testdatasøk](https://testdata.skatteetaten.no/web/testnorge/)
 * Bruk kun syntetiske data i vedlegg og meldinger  
 * Koble til Skatteetatens testmiljø: ```https://api-test.sits.no```
 
