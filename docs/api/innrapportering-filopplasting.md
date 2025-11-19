@@ -18,12 +18,11 @@ hide_table_of_contents: true
 For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av API-er for innrapportering](../om/bruk_innrapportering.md)
-* [Sikkerhetsmekansimer](../om/sikkerhet.md)
+* [Sikkerhetsmekanismer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
-
 
 ## Bruk av API-et
 Dette API-et kan kun brukes etter nærmere avtale med Skatteetaten og er ment for selskaper som har 
