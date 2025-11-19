@@ -17,6 +17,8 @@ hide_table_of_contents: true
 
 For generell informasjon om tjenestene se egne sider om:
 
+* [Bruk av API-er for innrapportering](../om/bruk_innrapportering.md)
+
 * [Sikkerhetsmekansimer](../om/sikkerhet.md)
 * [Systembruker](../om/systembruker.md)
 * [Feilhåndtering](../om/feil.md)
