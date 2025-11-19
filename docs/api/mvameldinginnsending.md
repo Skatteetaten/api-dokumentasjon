@@ -392,7 +392,7 @@ Systemleverandørene må ha testmiljøer som kun består av syntetiske data.
 Oppkobling mot testmiljøet skjer via ID-porten og i forbindelse med test kan Skatteetatens ID-porten-integrasjon benyttes. Det anbefales å bestille egen integrasjon mot ID-porten så tidlig som mulig da dette er en delvis manuell og tidkrevende prosess.
 
 Systemutviklere skal bruke testbrukere fra Tenor Testdatasøk. Dette er syntetisk testbruker som også skal brukes for pålogging i ID-porten og Altinn. Det vil kun være disse testbrukeren som kan benyttes for å få testet. Testbrukere som ligger tilgjengelig på Digdir sine sider vil ikke kunne brukes. 
-[Her finnes en bruksveiledning for Tenor Testdatasøk.](https://github.com/Skatteetaten/mva-meldingen/blob/master/docs/mvameldingen/test/Bruksveiledning_Tenor.pdf)
+[Her finnes en bruksveiledning for Tenor Testdatasøk.](https://github.com/Skatteetaten/api-dokumentasjon/blob/main/static/img/Bruksveiledning%20Tenor.pdf)
 
 ## Url'er til testmiljøet
 
