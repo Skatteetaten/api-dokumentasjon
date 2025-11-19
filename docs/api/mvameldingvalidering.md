@@ -229,7 +229,7 @@ Følgende valideringsregler er foreløpig definert for krav om kompensasjon mva-
 * Virksomheter som er registrert som et fylkeskommunalt foretak kan ikke sende inn mva-meldingen (R128)
 * Virksomheter som er registrert som et organisasjonsledd kan ikke sende inn mva-meldingen (R129)
 * Virksomheter som er registrert som en underenhet får avvikende skattemelding (R130)
-* Første krav om kompensasjon til utbetaling for {år} må være på minst 20 000 kroner (R134)
+* Første krav om kompensasjon til utbetaling for (år) må være på minst 20 000 kroner (R134)
 * Krav om kompensasjon kan ikke sendes inn før terminen har utløpt (R135)
 
 Følgende tekniske regler er også spesifisert som validerer xsd format og kodelister verdier:
