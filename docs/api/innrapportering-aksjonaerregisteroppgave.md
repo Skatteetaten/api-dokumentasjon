@@ -100,6 +100,7 @@ Innsendt data på hovedskjema endepunktet valideres etter følgende xsd: [hoveds
 
 Innsendt data på underskjema endepunktet valideres etter følgende xsd: [underskjema](../../static/download/aksjonaerregisteroppgaveUnderskjema.xsd)
 
+Øvrige krav til innsending er dokumentert i rettleding til utfylling av akjsonærregisteroppgaven på denne siden: https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/aksjonarregisteroppgaven/
 
 Se også [eksempler](innrapportering-aksjonaerregisteroppgave?tab=Eksempler) for de ulike endepunktene.
 
