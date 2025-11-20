@@ -85,7 +85,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element minOccurs="0" ref="Selskapsidentifikasjon-grp-3986"/>
-                <xs:element minOccurs="0" ref="NorskUtenlandskAksjonar-grp-3988"/>
+                <xs:element ref="NorskUtenlandskAksjonar-grp-3988"/>
             </xs:sequence>
             <xs:attribute fixed="3987" name="gruppeid" type="xs:positiveInteger" use="required"/>
         </xs:complexType>
@@ -750,7 +750,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AntallAksjerPerAksjonar-grp-3989"/>
+                <xs:element ref="AntallAksjerPerAksjonar-grp-3989"/>
                 <xs:element maxOccurs="9999" minOccurs="0" ref="UtdeltUtbyttePerAksjonar-grp-3991"/>
                 <xs:element minOccurs="0" ref="UtdeltUtbytteKildeskatt-grp-9347"/>
                 <xs:element minOccurs="0" ref="TilbakebetalingAvTidligereInnbetaltKapital-grp-7633"/>
@@ -785,7 +785,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AksjerAntallFjoraret-datadef-29168">
+                <xs:element ref="AksjerAntallFjoraret-datadef-29168">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
@@ -799,7 +799,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element minOccurs="0" ref="AksjonarAksjerAntall-datadef-17741">
+                <xs:element ref="AksjonarAksjerAntall-datadef-17741">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">

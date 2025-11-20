@@ -62,8 +62,8 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="GenerellInformasjon-grp-2587"/>
-                <xs:element minOccurs="0" ref="Selskapsopplysninger-grp-2589"/>
+                <xs:element ref="GenerellInformasjon-grp-2587"/>
+                <xs:element ref="Selskapsopplysninger-grp-2589"/>
                 <xs:element minOccurs="0" ref="Utbytte-grp-3449"/>
                 <xs:element minOccurs="0" ref="UtstedelseAvAksjerIfmStiftelseNyemisjonMv-grp-3452"/>
                 <xs:element minOccurs="0" ref="UtstedelseAvAksjerIfmFondsemisjonSplittMv-grp-3454"/>
@@ -117,7 +117,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="Selskap-grp-2588"/>
+                <xs:element ref="Selskap-grp-2588"/>
                 <xs:element minOccurs="0" ref="Kontaktperson-grp-3442"/>
                 <xs:element minOccurs="0" ref="AnnenKontaktperson-grp-5384"/>
             </xs:sequence>
@@ -979,11 +979,11 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AksjekapitalForHeleSelskapet-grp-3443"/>
-                <xs:element minOccurs="0" ref="AksjekapitalIDenneAksjeklassen-grp-3444"/>
-                <xs:element minOccurs="0" ref="PalydendePerAksje-grp-3447"/>
-                <xs:element minOccurs="0" ref="AntallAksjerIDenneAksjeklassen-grp-3445"/>
-                <xs:element minOccurs="0" ref="InnbetaltAksjekapitalIDenneAksjeklassen-grp-3446"/>
+                <xs:element ref="AksjekapitalForHeleSelskapet-grp-3443"/>
+                <xs:element ref="AksjekapitalIDenneAksjeklassen-grp-3444"/>
+                <xs:element ref="PalydendePerAksje-grp-3447"/>
+                <xs:element ref="AntallAksjerIDenneAksjeklassen-grp-3445"/>
+                <xs:element ref="InnbetaltAksjekapitalIDenneAksjeklassen-grp-3446"/>
                 <xs:element minOccurs="0" ref="InnbetaltOverkursIDenneAksjeklassen-grp-3448"/>
             </xs:sequence>
             <xs:attribute fixed="2589" name="gruppeid" type="xs:positiveInteger" use="required"/>
@@ -1022,7 +1022,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AksjekapitalFjoraret-datadef-7129">
+                <xs:element ref="AksjekapitalFjoraret-datadef-7129">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
@@ -1128,7 +1128,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AksjekapitalISINAksjetypeFjoraret-datadef-17663">
+                <xs:element ref="AksjekapitalISINAksjetypeFjoraret-datadef-17663">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
@@ -1142,7 +1142,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element minOccurs="0" ref="AksjekapitalISINAksjetype-datadef-17664">
+                <xs:element ref="AksjekapitalISINAksjetype-datadef-17664">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
@@ -1227,7 +1227,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AksjeMvPalydendeFjoraret-datadef-23944">
+                <xs:element ref="AksjeMvPalydendeFjoraret-datadef-23944">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="EN" brreg:teksttype="FEIL">
@@ -1256,7 +1256,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element minOccurs="0" ref="AksjeMvPalydende-datadef-23945">
+                <xs:element ref="AksjeMvPalydende-datadef-23945">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="EN" brreg:teksttype="FEIL">
@@ -1361,7 +1361,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AksjerMvAntallFjoraret-datadef-29166">
+                <xs:element ref="AksjerMvAntallFjoraret-datadef-29166">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
@@ -1375,7 +1375,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element minOccurs="0" ref="AksjerMvAntall-datadef-29167">
+                <xs:element ref="AksjerMvAntall-datadef-29167">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
@@ -1470,7 +1470,7 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
-                <xs:element minOccurs="0" ref="AksjekapitalInnbetaltFjoraret-datadef-8020">
+                <xs:element ref="AksjekapitalInnbetaltFjoraret-datadef-8020">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
@@ -1484,7 +1484,7 @@
                         </xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element minOccurs="0" ref="AksjekapitalInnbetalt-datadef-5867">
+                <xs:element ref="AksjekapitalInnbetalt-datadef-5867">
                     <xs:annotation>
                         <xs:documentation>
                             <brreg:tekst brreg:lang="NOB" brreg:teksttype="LEDE">
