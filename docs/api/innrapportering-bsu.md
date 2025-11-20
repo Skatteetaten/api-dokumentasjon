@@ -310,7 +310,7 @@ feltene.
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aandsverk-api/0.0.1).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-bsu-api/0.0.1).
 
 Skatteetaten [innboks](https://skatt-test.sits.no/web/innboks/)
 
