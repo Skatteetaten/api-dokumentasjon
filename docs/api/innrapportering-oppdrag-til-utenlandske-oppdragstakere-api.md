@@ -101,24 +101,25 @@ Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
 Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi
 feltene.
 
-| Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
-|------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| OAR_1001               | Ugyldig token                                  | Ugyldig token                                                                                                               |
-| OAR_1002               | Ikke autorisert for denne dialogen             | Ikke autorisert for denne dialogen                                                                                          |
-| OAR_1003               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| OAR_1004               | Finner ingen ressurs for denne urlen           | Finner ingen ressurs for denne urlen                                                                                        |
-| OAR_1005               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
-| OAR_1006               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
-| OAR_1007               | Feil i JSON-innhold                            | Feil i JSON-innhold                                                                                                         |
-| OAR_1008               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
-| OAR_1009               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere                                                                                                       |
-| OAR_1010               | Det finnes ingen forsendelse med denne IDen for denne ordningen |                                                                                                            |
-| OAR_1011               | Tokenet mangler informasjon om systembruker i authorization_details |                                                                                                        |
+| Feilspesifiseringskode | Feilområde                                     |
+|------------------------|------------------------------------------------|
+| OAR_1001               | Ugyldig token                                  | 
+| OAR_1002               | Ikke autorisert for denne dialogen             | 
+| OAR_1003               | Feil i parametre                               | 
+| OAR_1004               | Finner ingen ressurs for denne urlen           | 
+| OAR_1005               | Header mangler                                 |
+| OAR_1006               | Accept-header må være av type application/json | 
+| OAR_1007               | Feil i JSON-innhold                            | 
+| OAR_1008               | Content type må være application/json          | 
+| OAR_1009               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere |
+| OAR_1010               | Det finnes ingen forsendelse med denne IDen for denne ordningen |
+| OAR_1011               | Tokenet mangler informasjon om systembruker i authorization_details |
+| OAR_1012               | Innsendingstype passer ikke overens med om oppdraget eksisterer eller ikke |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-![Informasjonsmodellen i pdf-format.](../../static/download/oar/infomodell_oppdragsreg.pdf)
+![Informasjonsmodellen i pdf-format](../../static/download/oar/infomodell_oppdragsreg.pdf)
 
 ![informasjonsmodell](../../static/download/oar/infomodell_OAR.jpeg)
                                                                                                                                                                                                                                                           |
