@@ -28,7 +28,7 @@ For generell informasjon om tjenestene se egne sider om:
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/krav-og-betalinger-api) på SwaggerHub.
 
-API-et har 4 endepunkter:
+API-et har 2 * 4 endepunkter for oppslag på henholdsvis person og virksomhet: 
 
 * __Åpne krav__: Hent oversikt over åpne krav og uplasserte innbetalinger. Gjør oppslag mot reskontrosystemene på åpne
   krav og uplasserte innbetalinger og oppgir de samlet med en summert oversikt
@@ -38,6 +38,8 @@ API-et har 4 endepunkter:
   innbetalinger innen et gitt tidsrom på maks ett år.
 * __Utbetalinger__: Hent alle utbetalinger innen et gitt tidsrom. Gjør oppslag mot reskontrosystemene på alle
   utbetalinger innen et gitt tidsrom på maks ett år.
+
+Responsen er lik uansett om oppslaget er gjort mot endepunkt for person eller virksomhet. 
 
 Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravogbetalinger?tab=Eksempler) for de ulike endepunktene.
 
