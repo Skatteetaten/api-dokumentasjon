@@ -44,7 +44,7 @@ I mellomtiden – ta kontakt med fremtidensinnkreving@skatteetaten.no.
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`.
 
-Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-utleggsbegjaering` som beskrevet her for produksjon: https://docs.altinn.studio/api/authentication/systemuserapi/systemuserrequest/external/#create-a-standard-system-user-request
+Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-utleggsbegjaering`.
 
 ## Delegering
 
@@ -190,11 +190,30 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-Informasjonsmodell">
 
  <details>
-      <summary>Utleggsbegjæring versjon 1.0</summary>
+      <summary>Utleggsbegjæring</summary>
       <p>
 
 ## Endringslogg
-Oversikt over endringer som er gjort i versjon 1.0 av Utleggsbegjæringen:
+
+### Versjon 1.1
+Oversikt over endringer som er gjort i versjon 1.1 av Utleggsbegjæringen:
+1. Fjernet saksreferanse fra rot-nivået.
+2. Fjernet pålydendeBeløp fra SærligTvangsgrunnlag (hvis feltet sendes inn, vil det bli ignorert av mottaker).
+3. Fjernet beløpSlutningGenerell fra Domsslutningsinformasjon.
+4. Fjernet beløpSlutningSaksOmkostninger fra Domsslutningsinformasjon.
+5. Lagt til nytt valgfritt element postnummerUtland i AdresseFrittFormatUtland.
+6. Lagt til nytt valgfritt element kreverFritakRettsgebyr på rot-nivå.
+7. Lagt til nytt valgfritt element prioritetISakFremtidigRentekrav i KreverRettsgebyrErstattet.
+8. Lagt til nytt valgfritt element forsendelsemaateType i Tvangskraftgrunnlag. Dette vil være påkrevd i neste versjon.
+9. Lagt til nye elementer i kodelisten BegrunnelseUnnlatVarselType. Nye koder: "ingenMulighetForVarsling", "fullbyrdelsenKanBliVanskeliggjort". Eksisterende koder vil bli fjernet i neste versjon.
+10. Lagt til nye elementer i kodelisten ForsendelsesmaateType. Nye koder: "eFaktura", "eBoks". "epost" og "ebox" vil bli fjernet i neste versjon.
+11. Endret beløp i BeløpValuta til å være påkrevd.
+12. Endret startDato i Datoperiode til å være påkrevd.
+13. Endret kravforfall i Krav til å være valgfritt. Påkrevd kun for krav av type hovedkrav, utenrettsligeKostnader, og tidligereRettsligeSakskostnader.
+14. Endret navn på klassen Namsmannsdistrikt til ValgtNamsmannsdistrikt.
+
+### Versjon 1.0
+Oversikt over endringer som ble gjort i versjon 1.0 av Utleggsbegjæringen:
 1. Fjernet saksøkerReferanse i Saksøker og saksøktReferanse i Saksøkt
 2. Endret kardinalitet på forpliktet og berettiget i Domsslutningsinformasjon fra 0..1 til 1..*
 3. Endret prosessfullmektig til hhv. saksøkersProsessfullmektig, innsendersProsessfullmektig og saksøktesProsessfullmektig
@@ -227,13 +246,13 @@ Videre har man entiteten «Krav» som er kjerneinformasjon med detaljer om «pen
 I «BegjæringensTvangsgrunnlag» skal man legge inn detaljer om grunnlaget for Kravene i utleggsbegjæringen.
 
 ### a) Rotnivå - Utleggsbegjæring
-RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen, som generelle vedlegg, underskrift med navn på ansvarlig for innsendingen.
+RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen.
 
-innsenderReferanse er innsenders unike referanse på saken. Tilsvarende er eksternSaksreferanse, som returneres ved innsending av utleggsbegjæringen, namsmyndighetens unike identifikator for saken og som skal benyttes senere i prosessen ved kommunikasjon ved namsmyndigheten.
-
-I elementet tvangsfullbyrdelsestype må man angi om det er en ren utleggsbegjæring, eller kombinert forliksklage.
-
-Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
+* innsenderReferanse er innsenders unike referanse på saken.
+* I elementet tvangsfullbyrdelsestype må man angi om det er en ren Utleggsbegjæring, eller kombinert forliksklage.
+* Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
+* I vedlegg kan det sendes generelle vedlegg som ikke er dekket andre steder i Utleggsbegjæringen.
+* underskrift er navn på ansvarlig for innsendingen.
 
 ![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a1.png)
 
@@ -243,15 +262,15 @@ Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
 ![Rotnivå-datatyper-tvangsfullbyrdelsestype](../../static/download/utleggsbegjaering/begjaering-a3.png)
 
 ### b) Parter i utleggsbegjæringen
-Innsender er den som sender inn utleggsbegjæringen. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
 
-Saksøker er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig som representerer seg i sak om tvangsfullbyrdelse(saksøkersProsessfullmektig). Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
+Informasjon om partene i Utleggsbegjæringen.
 
-Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktesProsessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+* Saksøker er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig som representerer seg i sak om tvangsfullbyrdelse(saksøkersProsessfullmektig). Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
+* Innsender er den som sender inn Utleggsbegjæringen på vegne av saksøker. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
+* Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktesProsessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+* Prosessfullmektig(fullmakt/bevillingshaver/Advokat/avdvokatfullmektig) er tredjeperson med en generell(Bevillingshaver) eller spesifikk fullmakt(Fullmakt) til å opptre på vegne av en part. Dette må være en fysisk person.
+* Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges.
 
-Prosessfullmektig(fullmakt/bevillingshaver/Advokat/avdvokatfullmektig) er tredjeperson med en generell(Bevillingshaver) eller spesifikk fullmakt(Fullmakt) til å opptre på vegne av en part. Dette må være en fysisk person.
-
-Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges.
 
 ![Parter](../../static/download/utleggsbegjaering/begjaering-b1.png)
 
@@ -262,43 +281,34 @@ Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshav
 ### c) Generelle elementer
 
 I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker hele utleggsbegjæringen, dette er
-* KreverRettsgebyrErstattet - Benyttes om du ønsker å angi at rettsgebyret som ilegges ved innsending, kreves erstattet av saksøkte.
+
+* KreverRettsgebyrErstattet - Benyttes om du ønsker å angi at rettsgebyret og eventuelt rentene som ilegges ved innsending kreves erstattet av saksøkte og eventuelt hvilken prioritet de skal ha.
+* KreverFritakRettsgebyr - Benyttes om du ønsker å kreve fritak for rettsgebyret og årsaken til dette.
 * Betalingsinformasjon - Informasjon om hvor, hvordan og til hvem innbetalingen skal gjøres, dersom det ender opp i samordnet trekk.
-* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som i kodelisten.
+* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6).
 
 ![Generelle elementer-1](../../static/download/utleggsbegjaering/begjaering-c1.png)
 ![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
 ### d) Kravinformasjon
 
-Krav er det minste objektet innenfor et tvangsgrunnlag og har ulike typer, kalt «kravdetaljer». Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig, og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod.
-Se kodeliste for alle gyldige verdier [kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826).
-En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
-
-«InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en Utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav» som for eksempel «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere «Rentekrav» til «Sakskostnader». I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
-
-Dersom man sender inn et «Rentekrav», bør man legge ved hvilken «rentePeriode» (fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av i «renteGrunnlag».  Dette fylles ut i «rentekrav» elementet.
-I tillegg bør man angi om det er "beregnetMedForsinkelsesrente" eller evntuelt med en avtalt rentesats i «beregnetMedAvtaltRentesats».
-
-Sender man inn et krav som det kreves renter for, må man fylle ut «rentebærendeKrav».
-
-Har det kommet innbetalinger på aktuelle krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
-
-Har man andre nedjusteringer på krav, skal dette angis i entiteten "kravEndring".
-
-Har kravet byttet eier skal informasjon om dette angis i entiteten «transporterklæring», og det må vedlegges dokumentasjon.
-
-Dersom man angir "transporterklæring" på et Hovedkrav trenger man ikke fylle ut posten for andre krav(kravdetaljer) som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav".
+Krav er det minste objektet innenfor et tvangsgrunnlag.
+* Kravdetaljer angir hvilken type krav det er. Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod. Se [kodelisten for kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826) for alle gyldige verdier. En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
+* «InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en Utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav» som for eksempel «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere «Rentekrav» til «Sakskostnader». I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
+* Dersom man sender inn et «Rentekrav», bør man legge ved hvilken «rentePeriode» (fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av i «renteGrunnlag».  Dette fylles ut i «rentekrav» elementet. I tillegg bør man angi om det er "beregnetMedForsinkelsesrente" eller evntuelt med en avtalt rentesats i «beregnetMedAvtaltRentesats». Sender man inn et krav som det kreves renter for, må man fylle ut «rentebærendeKrav».
+* Har det kommet innbetalinger på aktuelle krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
+* Har man andre nedjusteringer på krav, skal dette angis i entiteten "kravEndring".
+* Har kravet byttet eier skal informasjon om dette angis i entiteten «transporterklæring», og det må vedlegges dokumentasjon. Dersom man angir "transporterklæring" på et Hovedkrav trenger man ikke fylle ut posten for andre typer krav som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav"
 
 ![Kravinformasjon](../../static/download/utleggsbegjaering/begjaering-d.png)
 
 ### e) BegjæringensTvangsgrunnlag
 
-Begjæringens Tvangsgrunnlag omfatter data om og i tvangsgrunnlag(ene) i begjæringen. Tvangsgrunnlaget brukes videre som kobling til krav(innsendersKravreferanse) og identifisere hvem som er parter på kravene.
+Begjæringens Tvangsgrunnlag omfatter data om tvangsgrunnlag(ene) i begjæringen. Tvangsgrunnlaget brukes videre som kobling til krav(innsendersKravreferanse) og identifisere hvem som er parter på kravene.
 
-Som innsender har du mulighet å legge deres egen referanse (eksternSaksreferanse) på hvert begjæringensTvangsgrunnlag.
+Som innsender har du mulighet å legge deres egen referanse (eksternSaksreferanse) på hvert av begjæringensTvangsgrunnlag.
 
-Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUnnlatvarsel(OBS: Er ikke lov å fylle ut for SkriftligMeddelelse).
+Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUnnlatvarsel (OBS: Er ikke lov å fylle ut for SkriftligMeddelelse).
 
 ![BegjæringensTvangsgrunnlag](../../static/download/utleggsbegjaering/begjaering-e.png)
 
@@ -605,65 +615,64 @@ Tjenesten for Innsyn i trekk vil i testmiljøet gi syntetiske svar, og reponsen 
 
 ## Sjekkliste for Inkassosystemleverandører
 
-Integrasjon med Skatteetatens API for utleggsbegjæring 
+Integrasjon med Skatteetatens API for utleggsbegjæring
 
-### 1. Forberedelser og avtaler 
+### 1. Forberedelser og avtaler
 
-  * Avklar roller og ansvar internt (teknisk kontakt, prosjektansvarlig, etc.)  
-  * Sett deg inn i gjeldende informasjon for digital innsending av utleggsbegjæring  
+* Avklar roller og ansvar internt (teknisk kontakt, prosjektansvarlig, etc.)
+* Sett deg inn i gjeldende informasjon for digital innsending av utleggsbegjæring
     * [Github](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering?tab=Om+tjenesten)
     * [Skatteettaten.no](https://www.skatteetaten.no/om-skatteetaten/fremtidens-innkreving/systemleverandorer/inkassosystem/)
     * [Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.0.4)
     * [Nettside for oppkobling](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
-### 2. Tilgang og autentisering 
+### 2. Tilgang og autentisering
 
-* Skaff virksomhetssertifikat (PKI) 6 
+* Skaff virksomhetssertifikat (PKI) 6
 * Registrer systemet i [Maskinporten](https://docs.digdir.no/docs/Maskinporten/maskinporten_overordnet)
-* [Be Skatteetaten om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d) til Slack og test-scope: ```skatteetaten:utleggsbegjaering```. Oppgi virksomhetens organisasjonsnummer (ikke syntetisk). 
-* Sett opp [Systembruker](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/#testplan-for-systemleverandorer) dersom dere utvikler systemer for andre  
-* Test uthenting av token med korrekt org.nr. via Maskinporten  
+* [Be Skatteetaten om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bfremtidensinnkreving%40skatteetaten.no%5d) til Slack og test-scope: ```skatteetaten:utleggsbegjaering```. Oppgi virksomhetens organisasjonsnummer (ikke syntetisk).
+* Sett opp [Systembruker](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/#testplan-for-systemleverandorer) dersom dere utvikler systemer for andre
+* Test uthenting av token med korrekt org.nr. via Maskinporten
 
-### 3. Testmiljø og testdata 
+### 3. Testmiljø og testdata
 
-* Sett opp testmiljø med **kun** syntetiske data  
+* Sett opp testmiljø med **kun** syntetiske data
 * Hent testdata fra [Syntetisk Norge](https://data.norge.no/nb/datasets/33833825-8153-481c-a672-311502c97a74/syntetisk-folkeregister) via [Tenor testdatasøk](https://testdata.skatteetaten.no/web/testnorge/)
-* Bruk kun syntetiske data i vedlegg og meldinger  
+* Bruk kun syntetiske data i vedlegg og meldinger
 * Koble til Skatteetatens testmiljø: ```https://api-test.sits.no```
 
-### 4. Implementasjon og integrasjon 
+### 4. Implementasjon og integrasjon
 
 * Følg [API-spesifikasjonen på SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.0.4)
-* Sørg for robust feilhåndtering og validering  
-* Implementer evt. polling eller event-varsling via [Dialogporten](https://docs.digdir.no/docs/dialogporten/) (valgfritt)  
+* Sørg for robust feilhåndtering og validering
+* Implementer evt. polling eller event-varsling via [Dialogporten](https://docs.digdir.no/docs/dialogporten/) (valgfritt)
 
-### 5. Testing og verifisering 
+### 5. Testing og verifisering
 
-  * Gjennomfør testing inkludert: 
-    * Test full flyt: innsending, feilhåndtering og validering  
-    * Verifiser at dere mottar korrekt respons fra API  
-    * Loggfør testresultater og oppsummer testforløpet  
-    * Dokumenter integrasjon og test  
+* Gjennomfør testing inkludert:
+    * Test full flyt: innsending, feilhåndtering og validering
+    * Verifiser at dere mottar korrekt respons fra API
+    * Loggfør testresultater og oppsummer testforløpet
+    * Dokumenter integrasjon og test
 * Send oppsummering til Skatteetaten ved forespørsel. **Du får ikke tilgang til produksjonsmiljø før dette er gjennomført**
 
-### 6. Overgang til produksjon 
+### 6. Overgang til produksjon
 
-  * [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:utleggsbegjaering```
-    * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur 
-  * Motta og verifiser tilgang til produksjons-scope i Maskinporten  
-  * Bytt miljø i integrasjonen til produksjon  
-  * Utfør teknisk verifikasjon i produksjon  
-  * Klargjør supportrutiner for håndtering av reelle saker  
+* [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:utleggsbegjaering```
+    * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur
+* Motta og verifiser tilgang til produksjons-scope i Maskinporten
+* Bytt miljø i integrasjonen til produksjon
+* Utfør teknisk verifikasjon i produksjon
+* Klargjør supportrutiner for håndtering av reelle saker
 
-### 7. Oppfølging 
+### 7. Oppfølging
 
-  * Abonner på oppdateringer fra Skatteetaten (f.eks. endringer i API eller informasjonsmodell) og følg med på informasjonsmøter mm 
+* Abonner på oppdateringer fra Skatteetaten (f.eks. endringer i API eller informasjonsmodell) og følg med på informasjonsmøter mm
     * Følg med på [Skatteetatens Statusside](https://status.skatteetaten.no/)
     * [Kontaktskjema for datadeling](https://www.skatteetaten.no/deling/kontakt)
-  * Gi tilbakemeldinger eller innspill ved behov
+* Gi tilbakemeldinger eller innspill ved behov
 
 </TabItem>
 
 
 </Tabs>
-
