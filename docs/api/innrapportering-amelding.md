@@ -54,8 +54,14 @@ For å kunne benytte dette api'et med systemtilgang må man gi følgende rettigh
 
 ## Teknisk spesifikasjon
 
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
+
+Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/) 
+
+**VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
+
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
@@ -79,6 +85,10 @@ Dokumentasjon finner du på [SwaggerHub](https://app.swaggerhub.com/apis/skattee
 ## Tilbakemelding
 Dokumentasjon finner du på [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
 Benytt samme scope som for innsending ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`.
+
+**VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
+
+Pr. 28.nov-25 er tilbakemeldingen ikke tilgjengelig i test eller produksjon.
 
 
 </TabItem>
