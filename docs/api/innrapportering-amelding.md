@@ -62,6 +62,8 @@ Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
+**Pr. 28.nov-25 er tilbakemeldingen ikke tilgjengelig i test.**
+
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
@@ -88,7 +90,7 @@ Benytt samme scope som for innsending ved autentisering i Maskinporten: `skattee
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
-Pr. 28.nov-25 er tilbakemeldingen ikke tilgjengelig i test eller produksjon.
+**Pr. 28.nov-25 er tilbakemeldingen ikke tilgjengelig i test.**
 
 
 </TabItem>
