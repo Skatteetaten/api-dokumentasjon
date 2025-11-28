@@ -350,12 +350,11 @@ feltene.
 | GLD_1018               | Oppgitt antall underskjemaer stemmer ikke med antall underskjemaer på innsendingen | Antallet underskjemaer oppgitt i parameter er ikke likt som antall underskjemaer sendt inn på hovedskjemaet                 |
 | GLD_1022               | Feil i parametre                                                                   | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
 | GLD_1023               | Finner ingen ressurs for denne urlen                                               | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
-| GLD_1026               | En innsending må ha minimum ett underskjema                                 | Man kan ikke bekrefte en innsending som ikke har noen innsendte underskjemaer                                               |
-| GLD_1027               | Inntektsår er ikke støttet                                                         | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
+| GLD_1026               | En innsending må ha minimum ett underskjema                                        | Man kan ikke bekrefte en innsending som ikke har noen innsendte underskjemaer                                               |
 | GLD_1028               | Header mangler                                                                     | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1029               | Innsendingen er allerede bekreftet                                            | Denne feilmeldingen gis om man forsøker å sende inn underskjema på en innsending som er bekreftet                           |
+| GLD_1029               | Innsendingen er allerede bekreftet                                                 | Denne feilmeldingen gis om man forsøker å sende inn underskjema på en innsending som er bekreftet                           |
 | GLD_1030               | Accept-header må være av type application/json                                     | Accept header er feil. APIet har kun støtte for json i response                                                             |
-| GLD_1047               | Content type må være application/json                                              | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| GLD_1031               | Content-type må være av type application/xml                                       | Content-type header er feil. APIet har kun støtte for xml i request body                                                    |
 | GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen                       | Det finnes ikke noe dokument med gitt id på angitt forsendelse                                                              |
 | GLD_1052               | Inntektsår i path og i innsending er ulike                                         | Inntektsår i innsending i JSON body og inntektsår i path må være like                                                       |
 | GLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere             |                                                                                                                             |
@@ -370,7 +369,7 @@ For informasjon om hvilke data som skal fylles inn i oppgaven se rettledning og 
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aksjonaerregister-api/0.0.1).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aksjonaerregister-api/1.0.0).
 
 Skatteetaten [innboks](https://skatt-test.sits.no/web/innboks/)
 
