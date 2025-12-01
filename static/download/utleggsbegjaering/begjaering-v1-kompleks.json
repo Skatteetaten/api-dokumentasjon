@@ -6,48 +6,25 @@
           {
             "adressetype": "bopelsadresse",
             "adresseInnland": {
-              "kommunenummer": "3103",
-              "postnummer": "1532",
-              "adressetekst": "Fjordveien 39"
+              "kommunenummer": "4601",
+              "postnummer": "5231",
+              "adressetekst": "Nattlandsåsen 2",
+              "poststedsnavn": "Oslo"
             }
           }
         ],
-        "person": {
-          "personnavn": {
-            "fornavn": "SPISS",
-            "etternavn": "SVIGERINNE"
-          },
-          "foedselsdato": "1978-08-29",
+        "virksomhet": {
+          "navn": "AKUSTISK UKLAR TIGER AS",
           "identifikator": {
-            "taxIdentificationNumber": "26860648244",
+            "taxIdentificationNumber": "314441052",
             "landkodeIdentifikator": "NO"
-          }
-        }
-      }
-    },
-    {
-      "saksoeker": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "kommunenummer": "0301",
-              "postnummer": "0283",
-              "adressetekst": "Skogbrynet 35"
-            }
-          }
-        ],
-        "person": {
-          "personnavn": {
-            "fornavn": "VILJESTERK",
-            "etternavn": "PAPP"
           },
-          "foedselsdato": "1978-08-29",
-          "identifikator": {
-            "taxIdentificationNumber": "28871398382",
-            "landkodeIdentifikator": "NO"
-          }
+          "virksomhetstype": "annet"
         }
+      },
+      "saksoekerKontaktinformasjon": {
+        "epostAdresse": "epost@yahoo.com",
+        "telefonnummer": "99563564"
       }
     }
   ],
@@ -58,45 +35,21 @@
           {
             "adressetype": "bopelsadresse",
             "adresseInnland": {
-              "kommunenummer": "4008",
-              "postnummer": "1103",
-              "adressetekst": "Kannikgata 32"
+              "kommunenummer": "4601",
+              "postnummer": "5231",
+              "adressetekst": "Nattlandsåsen 2",
+              "poststedsnavn": "Oslo"
             }
           }
         ],
         "person": {
           "personnavn": {
-            "fornavn": "Glupsk",
-            "etternavn": "Dagbot"
+            "fornavn": "RIK",
+            "etternavn": "FISKEKROK"
           },
-          "foedselsdato": "1978-08-29",
+          "foedselsdato": "1964-05-17",
           "identifikator": {
-            "taxIdentificationNumber": "08904299791",
-            "landkodeIdentifikator": "NO"
-          }
-        }
-      }
-    },
-    {
-      "saksoekt": {
-        "adresse": [
-          {
-            "adressetype": "bopelsadresse",
-            "adresseInnland": {
-              "kommunenummer": "1834",
-              "postnummer": "8740",
-              "adressetekst": "Nordsolvær 35"
-            }
-          }
-        ],
-        "person": {
-          "personnavn": {
-            "fornavn": "FUNKSJONELL",
-            "etternavn": "BYGG"
-          },
-          "foedselsdato": "1978-08-29",
-          "identifikator": {
-            "taxIdentificationNumber": "20849998936",
+            "taxIdentificationNumber": "10828697949",
             "landkodeIdentifikator": "NO"
           }
         }
@@ -104,83 +57,46 @@
     }
   ],
   "underskrift": "Anna Norman",
-  "tvangsfullbyrdelsestype": "utlegg",
-  "begjaeringsdato": "2025-09-24",
+  "tvangsfullbyrdelsestype": "utleggOgForliksklageKombinert",
+  "begjaeringsdato": "2025-11-21",
   "begjaeringensTvangsgrunnlag": [
     {
       "innsendersKravreferanse": [
-        "101461397",
-        "RentekravPåHovedkrav_101461397_1",
-        "RentekravPåHovedkrav_101461397_2",
-        "UtenrettsligKostnaderAvHovedkrav_101461397",
-        "RentekravPåUtenrettsligeKostnader"
+        "00890772001",
+        "RentekravPåHovedkrav_00890772001_1",
+        "RentekravPåHovedkrav_00890772001_2",
+        "RentekravPåHovedkrav_00890772001_3",
+        "RentekravPåHovedkrav_00890772001_4"
       ],
-      "eksternSaksreferanse": "Saksnr: 150023021",
-      "tvangsgrunnlagsdato": "2025-07-02",
+      "eksternSaksreferanse": "Saksnr: 106109935",
+      "tvangsgrunnlagsdato": "2024-06-01",
       "tvangsgrunnlag": {
         "type": "tvangsgrunnlag",
         "filnavn": "tvangsgrunnlag",
-        "uuid": "c7b6125b-9340-4e2b-9cd1-454e1398c6b7"
+        "uuid": "9e92b84b-4952-4b5e-bebf-14f3131946af"
       },
-      "betegnelseAvTvangsgrunnlag": "Vegfinans E134 Buskerud AS",
-      "varsel": [
-        {
-          "dato": "2025-04-21",
-          "type": "varselTvfbl418",
-          "tvangskraftgrunnlag": {
-            "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "5ac84fd4-6075-4cc1-8aa7-e40f64a1a175"
-          }
-        },
-        {
-          "dato": "2025-04-21",
-          "type": "varselTvfbl418",
-          "tvangskraftgrunnlag": {
-            "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "a95f5cdb-49ba-40d3-bcb9-dbb36bcfd084"
-          }
-        }
-      ],
-
+      "betegnelseAvTvangsgrunnlag": "Kredittkort",
+      "begrunnelseUnnlatVarsel": "fullbyrdelsenKanBliVanskeliggjort",
       "saerligTvangsgrunnlag": {
-        "paalydendeBeloep": 535.79,
         "skyldner": [
           {
-            "taxIdentificationNumber": "08904299791",
-            "landkodeIdentifikator": "NO"
-          },
-          {
-            "taxIdentificationNumber": "20849998936",
+            "taxIdentificationNumber": "10828697949",
             "landkodeIdentifikator": "NO"
           }
         ],
         "kreditor": [
           {
-            "taxIdentificationNumber": "26860648244",
-            "landkodeIdentifikator": "NO"
-          },
-          {
-            "taxIdentificationNumber": "28871398382",
+            "taxIdentificationNumber": "314441052",
             "landkodeIdentifikator": "NO"
           }
         ],
         "skriftligMeddelelse": {
-          "kravetsGrunnlag": "Vegfinans E134 Buskerud AS",
+          "kravetsGrunnlag": "Kredittkort",
           "krevesFravaersdom": true,
           "forsendelsesmaate": {
-            "forsendelsesmaate": "altinn",
-            "alternativElektroniskForesendelsesmaate": {
-              "kanalForMeddelelse": "kanalForMeddelelse",
-              "akseptKanalvalg": {
-                "type": "annet",
-                "filnavn": "akseptKanalvalg",
-                "uuid": "e4f39972-c025-462d-a62c-943b4a85c7dc"
-              }
-            }
+            "forsendelsesmaate": "altinn"
           },
-          "faktiskeForholdForKravet": "Gjelder ubetalte bompenger",
+          "faktiskeForholdForKravet": "Gjelder ubetalt kredittkort",
           "paastand": "Klagemotparten dømmes til å betale bla bla bla lang tekst.",
           "kanBehandlesIForliksraadet": true
         }
@@ -188,77 +104,38 @@
     },
     {
       "innsendersKravreferanse": [
-        "102486836",
-        "RentekravPåHovedkrav_102486836",
-        "UtenrettsligKostnaderPå_102486836",
-        "RentekravPåUtenrettsligeKostnader_1"
+        "00890772002",
+        "RentekravPåHovedkrav_00890772002_1"
       ],
-      "eksternSaksreferanse": "Saksnr: 20889222",
-      "tvangsgrunnlagsdato": "2025-08-18",
+      "eksternSaksreferanse": "Saksnr: 106109936",
+      "tvangsgrunnlagsdato": "2025-08-01",
       "tvangsgrunnlag": {
         "type": "tvangsgrunnlag",
         "filnavn": "tvangsgrunnlag",
-        "uuid": "ce7946c9-80cd-4be6-8b70-61e8957efdac"
+        "uuid": "9e92b84b-4952-4b5e-bebf-14f3131946af"
       },
-      "betegnelseAvTvangsgrunnlag": "Vegfinans Hallingporten AS",
-      "varsel": [
-        {
-          "dato": "2025-08-18",
-          "type": "varselTvfbl418",
-          "tvangskraftgrunnlag": {
-            "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "9a80abd4-6dff-4386-812a-276db8aeb7b9"
-          }
-        },
-        {
-          "dato": "2025-08-18",
-          "type": "varselTvfbl418",
-          "tvangskraftgrunnlag": {
-            "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "cfba16e2-b207-4e7a-a6b1-49a4917a895c"
-          }
-        }
-      ],
-
+      "betegnelseAvTvangsgrunnlag": "Kredittkort",
+      "begrunnelseUnnlatVarsel": "fullbyrdelsenKanBliVanskeliggjort",
       "saerligTvangsgrunnlag": {
-        "paalydendeBeloep": 578.65,
         "skyldner": [
           {
-            "taxIdentificationNumber": "08904299791",
-            "landkodeIdentifikator": "NO"
-          },
-          {
-            "taxIdentificationNumber": "20849998936",
+            "taxIdentificationNumber": "10828697949",
             "landkodeIdentifikator": "NO"
           }
         ],
         "kreditor": [
           {
-            "taxIdentificationNumber": "26860648244",
-            "landkodeIdentifikator": "NO"
-          },
-          {
-            "taxIdentificationNumber": "28871398382",
+            "taxIdentificationNumber": "314441052",
             "landkodeIdentifikator": "NO"
           }
         ],
         "skriftligMeddelelse": {
-          "kravetsGrunnlag": "Vegfinans Hallingporten AS",
+          "kravetsGrunnlag": "Kredittkort",
           "krevesFravaersdom": true,
           "forsendelsesmaate": {
-            "forsendelsesmaate": "altinn",
-            "alternativElektroniskForesendelsesmaate": {
-              "kanalForMeddelelse": "kanalForMeddelelse",
-              "akseptKanalvalg": {
-                "type": "annet",
-                "filnavn": "akseptKanalvalg",
-                "uuid": "4fbe668c-a641-438d-b3d2-f3fb6c3ece1d"
-              }
-            }
+            "forsendelsesmaate": "altinn"
           },
-          "faktiskeForholdForKravet": "Gjelder ubetalte bompenger",
+          "faktiskeForholdForKravet": "Gjelder ubetalt kredittkort",
           "paastand": "Klagemotparten dømmes til å betale bla bla bla lang tekst.",
           "kanBehandlesIForliksraadet": true
         }
@@ -268,251 +145,153 @@
   "kravTilInnkreving": [
     {
       "kravforfall": {
-        "forfallsdato": "2024-07-08"
+        "forfallsdato": "2024-06-15"
       },
-      "innsendersKravreferanse": "101461397",
+      "innsendersKravreferanse": "00890772001",
       "opprinneligBeloep": {
-        "beloep": 76.00,
+        "beloep": 10000,
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 26.00,
+        "beloep": 3000,
         "valuta": "NOK"
       },
-      "kravEndring": [
+      "innbetaling": [
         {
-          "nedjusteringAvInnsender": {
-            "beloep": 50.00,
+          "bokfoertDato": "2024-06-27",
+          "beloep": {
+            "beloep": 2000.00,
             "valuta": "NOK"
-          },
-          "dato": "2025-04-21"
+          }
+        },
+        {
+          "bokfoertDato": "2025-03-10",
+          "beloep": {
+            "beloep": 5000.00,
+            "valuta": "NOK"
+          }
         }
       ],
       "prioritetDekningsloven": "e",
+      "prioritetISak": "3",
       "kravdetaljer": "Hovedkrav",
       "kravbeskrivelse": "kravbeskrivelse",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "305a1981-662d-4758-a10a-5c1928a28bf2"
-          },
-          "brevdato": "2025-04-21"
-        },
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "b8c15564-7b57-4d3c-9f3a-6cefd3173b1a"
-          },
-          "brevdato": "2025-04-21"
-        }
-      ],
-      "prioritetISak": 1,
       "rentebaerendeKrav": {
         "harForsinkelsesrente": true,
         "prioritetISakFremtidigRentekrav": 2
       }
     },
     {
-      "kravforfall": {
-        "forfallsdato": "2024-07-08"
-      },
-      "innsendersKravreferanse": "RentekravPåHovedkrav_101461397_1",
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772001_1",
       "opprinneligBeloep": {
-        "beloep": 2.93,
+        "beloep": 40.98,
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 2.93,
+        "beloep": 40.98,
         "valuta": "NOK"
       },
       "prioritetDekningsloven": "e",
+      "prioritetISak": "1",
       "kravdetaljer": "Rentekrav",
       "kravbeskrivelse": "Renter på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "305a1981-662d-4758-a10a-5c1928a28bf2"
-          },
-          "brevdato": "2025-04-21"
-        },
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "b8c15564-7b57-4d3c-9f3a-6cefd3173b1a"
-          },
-          "brevdato": "2025-04-21"
-        }
-      ],
       "relatertKrav": [
-        "101461397"
+        "00890772001"
       ],
-      "prioritetISak": 2,
       "rentekrav": {
         "rentePeriode": {
-          "startdato": "2024-07-09",
-          "sluttdato": "2024-12-31"
+          "startdato": "2024-06-15",
+          "sluttdato": "2024-06-27"
         },
         "renteGrunnlag": {
-          "beloep": 76.00,
+          "beloep": 10000,
           "valuta": "NOK"
         },
         "beregnetMedForsinkelsesrente": true
       }
     },
     {
-      "kravforfall": {
-        "forfallsdato": "2024-07-08"
-      },
-      "innsendersKravreferanse": "RentekravPåHovedkrav_101461397_2",
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772001_2",
       "opprinneligBeloep": {
-        "beloep": 1.96,
+        "beloep": 699.96,
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 1.96,
+        "beloep": 699.96,
         "valuta": "NOK"
       },
       "prioritetDekningsloven": "e",
+      "prioritetISak": "1",
       "kravdetaljer": "Rentekrav",
       "kravbeskrivelse": "Renter på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "305a1981-662d-4758-a10a-5c1928a28bf2"
-          },
-          "brevdato": "2025-04-21"
-        },
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "b8c15564-7b57-4d3c-9f3a-6cefd3173b1a"
-          },
-          "brevdato": "2025-04-21"
-        }
-      ],
       "relatertKrav": [
-        "101461397"
+        "00890772001"
       ],
-      "prioritetISak": 2,
       "rentekrav": {
         "rentePeriode": {
-          "startdato": "2025-01-01",
-          "sluttdato": "2025-04-21"
+          "startdato": "2024-06-27",
+          "sluttdato": "2025-03-10"
         },
         "renteGrunnlag": {
-          "beloep": 76.00,
+          "beloep": 8000,
           "valuta": "NOK"
         },
         "beregnetMedForsinkelsesrente": true
       }
     },
     {
-      "kravforfall": {
-        "forfallsdato": "2024-07-08"
-      },
-      "innsendersKravreferanse": "UtenrettsligKostnaderAvHovedkrav_101461397",
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772001_3",
       "opprinneligBeloep": {
-        "beloep": 437.50,
+        "beloep": 116.1,
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 437.50,
+        "beloep": 116.1,
         "valuta": "NOK"
       },
       "prioritetDekningsloven": "e",
-      "kravdetaljer": "UtenrettsligeKostnader",
-      "kravbeskrivelse": "UtenrettsligKostnaderPå_102486836",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "305a1981-662d-4758-a10a-5c1928a28bf2"
-          },
-          "brevdato": "2025-04-21"
-        },
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "b8c15564-7b57-4d3c-9f3a-6cefd3173b1a"
-          },
-          "brevdato": "2025-04-21"
-        }
-      ],
-      "relatertKrav": [
-        "101461397"
-      ],
-      "prioritetISak": 3,
-      "rentebaerendeKrav": {
-        "harForsinkelsesrente": true,
-        "prioritetISakFremtidigRentekrav": 2
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2024-07-08"
-      },
-      "innsendersKravreferanse": "RentekravPåUtenrettsligeKostnader",
-      "opprinneligBeloep": {
-        "beloep": 17.40,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 17.40,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
+      "prioritetISak": "1",
       "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "kravbeskrivelse",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "305a1981-662d-4758-a10a-5c1928a28bf2"
-          },
-          "brevdato": "2025-04-21"
-        },
-        {
-          "betalingsfrist": "2025-05-05",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "b8c15564-7b57-4d3c-9f3a-6cefd3173b1a"
-          },
-          "brevdato": "2025-04-21"
-        }
-      ],
+      "kravbeskrivelse": "Renter på hovedkrav",
       "relatertKrav": [
-        "UtenrettsligKostnaderAvHovedkrav_101461397"
+        "00890772001"
       ],
-      "prioritetISak": 3,
       "rentekrav": {
         "rentePeriode": {
-          "startdato": "2024-10-23",
-          "sluttdato": "2024-04-21"
+          "startdato": "2025-03-10",
+          "sluttdato": "2025-07-01"
         },
         "renteGrunnlag": {
-          "beloep": 17.40,
+          "beloep": 3000,
+          "valuta": "NOK"
+        },
+        "beregnetMedForsinkelsesrente": true
+      }
+    },
+    {
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772001_4",
+      "opprinneligBeloep": {
+        "beloep": 143.98,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 143.98,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": "1",
+      "kravdetaljer": "Rentekrav",
+      "kravbeskrivelse": "Renter på hovedkrav",
+      "relatertKrav": [
+        "00890772001"
+      ],
+      "rentekrav": {
+        "rentePeriode": {
+          "startdato": "2025-07-01",
+          "sluttdato": "2025-11-21"
+        },
+        "renteGrunnlag": {
+          "beloep": 3000,
           "valuta": "NOK"
         },
         "beregnetMedForsinkelsesrente": true
@@ -520,190 +299,50 @@
     },
     {
       "kravforfall": {
-        "forfallsdato": "2021-12-07"
+        "forfallsdato": "2025-08-14"
       },
-      "innsendersKravreferanse": "102486836",
+      "innsendersKravreferanse": "00890772002",
       "opprinneligBeloep": {
-        "beloep": 78.00,
+        "beloep": 3000,
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 78.00,
+        "beloep": 3000,
         "valuta": "NOK"
       },
       "prioritetDekningsloven": "e",
+      "prioritetISak": "3",
       "kravdetaljer": "Hovedkrav",
-      "kravbeskrivelse": "Hovedkrav 1",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "9df673c1-14fc-4800-a663-0ab73e272fad"
-          },
-          "brevdato": "2025-08-18"
-        },
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "0745a838-b916-475a-802b-4dfc7658ebc1"
-          },
-          "brevdato": "2025-08-18"
-        }
-      ],
-      "prioritetISak": 1,
+      "kravbeskrivelse": "kravbeskrivelse",
       "rentebaerendeKrav": {
         "harForsinkelsesrente": true,
         "prioritetISakFremtidigRentekrav": 2
       }
     },
     {
-      "kravforfall": {
-        "forfallsdato": "2024-12-07"
-      },
-      "innsendersKravreferanse": "RentekravPåHovedkrav_102486836",
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772002_1",
       "opprinneligBeloep": {
-        "beloep": 6.94,
+        "beloep": 99.68,
         "valuta": "NOK"
       },
       "gjenstaaendeBeloep": {
-        "beloep": 6.94,
+        "beloep": 99.68,
         "valuta": "NOK"
       },
       "prioritetDekningsloven": "e",
+      "prioritetISak": "1",
       "kravdetaljer": "Rentekrav",
       "kravbeskrivelse": "Renter på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "9df673c1-14fc-4800-a663-0ab73e272fad"
-          },
-          "brevdato": "2025-08-18"
-        },
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "0745a838-b916-475a-802b-4dfc7658ebc1"
-          },
-          "brevdato": "2025-08-18"
-        }
-      ],
       "relatertKrav": [
-        "102486836"
+        "00890772002"
       ],
-      "prioritetISak": 2,
       "rentekrav": {
         "rentePeriode": {
-          "startdato": "2024-12-18",
-          "sluttdato": "2025-08-18"
+          "startdato": "2025-08-14",
+          "sluttdato": "2025-11-21"
         },
         "renteGrunnlag": {
-          "beloep": 78.00,
-          "valuta": "NOK"
-        },
-        "beregnetMedForsinkelsesrente": true
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2024-12-07"
-      },
-      "innsendersKravreferanse": "UtenrettsligKostnaderPå_102486836",
-      "opprinneligBeloep": {
-        "beloep": 437.50,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 437.50,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "UtenrettsligeKostnader",
-      "kravbeskrivelse": "UtenrettsligeKostnader på hovedkrav",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "9df673c1-14fc-4800-a663-0ab73e272fad"
-          },
-          "brevdato": "2025-08-18"
-        },
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "0745a838-b916-475a-802b-4dfc7658ebc1"
-          },
-          "brevdato": "2025-08-18"
-        }
-      ],
-      "prioritetISak": 3,
-      "relatertKrav": [
-        "102486836"
-      ],
-      "rentebaerendeKrav": {
-        "harForsinkelsesrente": true,
-        "prioritetISakFremtidigRentekrav": 2
-      }
-    },
-    {
-      "kravforfall": {
-        "forfallsdato": "2024-12-07"
-      },
-      "innsendersKravreferanse": "RentekravPåUtenrettsligeKostnader_1",
-      "opprinneligBeloep": {
-        "beloep": 18.21,
-        "valuta": "NOK"
-      },
-      "gjenstaaendeBeloep": {
-        "beloep": 18.21,
-        "valuta": "NOK"
-      },
-      "prioritetDekningsloven": "e",
-      "kravdetaljer": "Rentekrav",
-      "kravbeskrivelse": "Renter på uttenrettslige kostnader",
-      "betalingsoppfordring": [
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "9df673c1-14fc-4800-a663-0ab73e272fad"
-          },
-          "brevdato": "2025-08-18"
-        },
-        {
-          "betalingsfrist": "2025-09-01",
-          "betalingsoppfordring": {
-            "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "0745a838-b916-475a-802b-4dfc7658ebc1"
-          },
-          "brevdato": "2025-08-18"
-        }
-      ],
-      "relatertKrav": [
-        "UtenrettsligKostnaderPå_102486836"
-      ],
-      "prioritetISak": 3,
-      "rentekrav": {
-        "rentePeriode": {
-          "startdato": "2025-02-19",
-          "sluttdato": "2025-08-18"
-        },
-        "renteGrunnlag": {
-          "beloep": 437.5,
+          "beloep": 3000,
           "valuta": "NOK"
         },
         "beregnetMedForsinkelsesrente": true
@@ -718,18 +357,17 @@
     "norskKonto": true,
     "kidnummer": "2509937609",
     "kontoinformasjon": {
-      "bankNavn": "Nordea Bank",
-      "landkodeBank": "NO",
-      "kontovaluta": "NOK",
       "kontonummer": "69930570044"
     }
   },
-  "saksreferanse": "saksreferanse",
-  "innsenderReferanse": "InnsenderRef128",
-  "valgtNamsmannsdistrikt": {
-    "namsmannsdistrikt": "Namsfogden i Oslo, Asker og Bærum",
-    "begrunnelse": "begrunnelse for valgt namsmannsdistrikt"
-  },
+  "vedlegg": [
+    {
+      "type": "annet",
+      "filnavn": "annet",
+      "uuid": "1207c764-a665-49e0-ae68-3f67b668bb6d"
+    }
+  ],
+  "innsenderReferanse": "InnsenderRef129",
   "innsender": {
     "innsender": {
       "adresse": [
@@ -738,7 +376,7 @@
           "adresseInnland": {
             "kommunenummer": "0301",
             "postnummer": "1333",
-            "adressetekst": "Ryensvei 55",
+            "adressetekst": "Hallagerstrand 54",
             "poststedsnavn": "Bergen"
           }
         }
@@ -749,7 +387,7 @@
           "taxIdentificationNumber": "312597772",
           "landkodeIdentifikator": "NO"
         },
-        "virksomhetstype": "inkassovirksomhet"
+        "virksomhetstype": "annet"
       }
     },
     "innsendersProsessfullmektig": {
@@ -777,14 +415,24 @@
       "bevillingshaver": {
         "navn": {
           "fornavn": "Anna",
-          "etternavn": "Brum"
+          "etternavn": "Norman"
         }
       }
+    },
+    "saksbehandler": "Ola Erikksen",
+    "saksbehandlersKontaktinformasjon": {
+      "epostAdresse": "saksbehandler@epost.com",
+      "telefonnummer": "96673775"
     }
   },
-  "saksbehandler": "Ola Erikksen",
-  "saksbehandlersKontaktinformasjon": {
-    "epostAdresse": "saksbehandler@epost.com",
-    "telefonnummer": "96673775"
+  "spesiellUtleggsgjenstand": [
+    "sofa",
+    "bil",
+    "bror"
+  ],
+  "kreverRettsgebyrErstattet": {
+    "kreverRettsgebyrErstattet": true,
+    "prioritetISakRettsgebyr": 4,
+    "prioritetISakFremtidigRentekrav": 2
   }
 }

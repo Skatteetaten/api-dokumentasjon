@@ -325,19 +325,6 @@ Here you can see the previous information model for the Enforcement Request (ver
 Documentation for the previous version of the Enforcement Request can be found here:
 [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.9.2)
 
-### Simple Example of Enforcement Request
-
-The example below uses test parties from Tenor.  
-The synthetic data in the document should be replaced with your own synthetic data.  
-This includes uploaded attachments, as well as selected actors (submitter, defendant, claimants, and legal representative) from Tenor.
-
-[utleggsbegjaering-enkel-v09.json](../../../../../static/download/utleggsbegjaering/begjaering-v0-enkel.json)
-
-### More Complex Example of Enforcement Request
-
-The example below is somewhat more complex, with multiple enforcement bases.
-[utleggsbegjaering-kompleks-v09.json](../../../../../static/download/utleggsbegjaering/begjaering-v0-kompleks.json)
-
 </p>
 </details>
 
