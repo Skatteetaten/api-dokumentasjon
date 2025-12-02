@@ -53,7 +53,7 @@
           "fullmakt": {
             "type": "fullmakt",
             "filnavn": "Fullmakt",
-            "uuid": "307a6166-c5f8-40e0-b00c-76cd5cf1e515"
+            "uuid": "b538963a-8001-4474-98cc-1852ed0d192d"
           },
           "tilDato": "2024-02-02"
         }
@@ -101,8 +101,8 @@
       "tvangsgrunnlagsdato": "2025-07-02",
       "tvangsgrunnlag": {
         "type": "tvangsgrunnlag",
-        "filnavn": "tvangsgrunnlag",
-        "uuid": "4264af45-ae7a-4ccc-8a8b-33b9ec669d75"
+        "filnavn": "vedlegg",
+        "uuid": "c85a1f04-e531-46af-a87c-0ad40febb694"
       },
       "betegnelseAvTvangsgrunnlag": "Kredittkort",
       "varsel": [
@@ -111,14 +111,14 @@
           "type": "varselTvfbl418",
           "tvangskraftgrunnlag": {
             "type": "tvangskraftgrunnlag",
-            "filnavn": "tvangskraftgrunnlag",
-            "uuid": "227326ae-98f6-42d3-963f-f62f15d5fe09"
-          }
+            "filnavn": "vedlegg",
+            "uuid": "c85a1f04-e531-46af-a87c-0ad40febb694"
+          },
+          "forsendelsemaateType": "eFaktura"
         }
       ],
       "begrunnelseUnnlatVarsel": "ukjentOppholdsstedSakssøkt",
       "saerligTvangsgrunnlag": {
-        "paalydendeBeloep": 14101.38,
         "skyldner": [
           {
             "taxIdentificationNumber": "44926701751",
@@ -135,15 +135,7 @@
           "kravetsGrunnlag": "Kredittkort",
           "krevesFravaersdom": true,
           "forsendelsesmaate": {
-            "forsendelsesmaate": "altinn",
-            "alternativElektroniskForesendelsesmåte": {
-              "kanalForMeddelelse": "kanalForMeddelelse",
-              "akseptKanalvalg": {
-                "type": "annet",
-                "filnavn": "akseptKanalvalg",
-                "uuid": "64a415d6-e3d4-4534-b3e8-f0580d61be13"
-              }
-            }
+            "forsendelsesmaate": "altinn"
           },
           "faktiskeForholdForKravet": "Gjelder ubetalt kredittkort",
           "paastand": "Klagemotparten dømmes til å betale bla bla bla lang tekst.",
@@ -191,8 +183,8 @@
           "betalingsfrist": "2025-03-20",
           "betalingsoppfordring": {
             "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "307a6166-c5f8-40e0-b00c-76cd5cf1e515"
+            "filnavn": "vedlegg",
+            "uuid": "c85a1f04-e531-46af-a87c-0ad40febb694"
           },
           "brevdato": "2025-03-07"
         }
@@ -224,8 +216,8 @@
           "betalingsfrist": "2025-03-20",
           "betalingsoppfordring": {
             "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "307a6166-c5f8-40e0-b00c-76cd5cf1e515"
+            "filnavn": "vedlegg",
+            "uuid": "c85a1f04-e531-46af-a87c-0ad40febb694"
           },
           "brevdato": "2025-03-07"
         }
@@ -267,8 +259,8 @@
           "betalingsfrist": "2025-03-20",
           "betalingsoppfordring": {
             "type": "betalingsoppfordring",
-            "filnavn": "betalingsoppfordring.pdf",
-            "uuid": "307a6166-c5f8-40e0-b00c-76cd5cf1e515"
+            "filnavn": "vedlegg",
+            "uuid": "c85a1f04-e531-46af-a87c-0ad40febb694"
           },
           "brevdato": "2025-03-07"
         }
@@ -295,17 +287,11 @@
   "vedlegg": [
     {
       "type": "tvangsgrunnlag",
-      "filnavn": "tvangsgrunnlag",
-      "uuid": "4264af45-ae7a-4ccc-8a8b-33b9ec669d75"
-    },
-    {
-      "type": "tvangskraftgrunnlag",
-      "filnavn": "tvangskraftgrunnlag",
-      "uuid": "227326ae-98f6-42d3-963f-f62f15d5fe09"
+      "filnavn": "vedlegg",
+      "uuid": "c85a1f04-e531-46af-a87c-0ad40febb694"
     }
   ],
-  "saksreferanse": "saksref. 123456",
-  "innsenderReferanse": "InnsenderRef127",
+  "innsenderReferanse": "InnsenderRef129",
   "valgtNamsmannsdistrikt": {
     "namsmannsdistrikt": "Namsfogden i Oslo, Asker og Bærum",
     "begrunnelse": "begrunnelse for valgt namsmannsdistrikt"
