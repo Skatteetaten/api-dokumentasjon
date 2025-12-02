@@ -329,7 +329,20 @@ Eksemplene nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
 :::
 
 :::info[Komplekst eksempel]
-Eksempelet angir en utleggsbegjæring med flere krav og flere tvangsgrunnlag. I tillegg er det angitt flere saksøkere og saksøkte.
+Eksempelet angir en utleggsbegjæring med begjæringsdato 21.11.2025. Begjæringen har flere krav og innbetalinger, samt en renteendring:
+
+| Beskrivelse                |     Beløp | Dato for innbetaling | Renter fra | Renter til | Sum renter | Antall rentedager             | Forfall    |
+|:---------------------------|----------:|:---------------------|:-----------|:-----------|-----------:|:------------------------------|:-----------|
+| Hovedkrav 1 av 01.06.2024  | 10 000,00 |                      |            |            |            |                               | 15.06.2024 |
+| Påløpte renter hovedkrav 1 |           |                      | 15.06.2024 | 27.06.2024 |      40,98 | 12                            |            |
+| Innbetaling                |  2 000,00 | 27.06.2024           |            |            |            |                               |            |
+| Påløpte renter hovedkrav 1 |           |                      | 27.06.2024 | 10.03.2025 |     699,96 | 188 (i skuddår) + 68 (i 2025) |            |
+| Innbetaling                |  5 000,00 | 10.03.2025           |            |            |            |                               |            |
+| Påløpte renter hovedkrav 1 |           |                      | 10.03.2025 | 01.07.2025 |     116,10 | 113                           |            |
+| Påløpte renter hovedkrav 1 |           |                      | 01.07.2025 | 21.11.2025 |     143,98 | 143 (med ny rentesats)        |            |
+| Hovedkrav 3 av 01.08.2025  |  3 000,00 |                      |            |            |            |                               | 14.08.2025 |
+| Påløpte renter hovedkrav 3 |           |                      | 14.08.2025 | 21.11.2025 |      99,68 | 99                            |            |
+
 
 [utleggsbegjaering-kompleks.json](../../static/download/utleggsbegjaering/begjaering-v1-kompleks.json)
 :::
