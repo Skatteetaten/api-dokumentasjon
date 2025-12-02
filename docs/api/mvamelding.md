@@ -137,7 +137,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/886bada4-e540-38a2-99ae-512d99d1ba28) i Felles datakatalog. 
+[![Aksjebeholdning](../../static/download/Informasjonsmodell_Mvamelding.png)](../../static/download/Informasjonsmodell_Mvamelding.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
