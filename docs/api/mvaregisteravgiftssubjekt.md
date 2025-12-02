@@ -99,7 +99,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell] i Felles datakatalog. 
+[![Aksjebeholdning](../../static/download/Informasjonsmodell_Mvaregister.png)](../../static/download/Informasjonsmodell_Mvaregister.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
