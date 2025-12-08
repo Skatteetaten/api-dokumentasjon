@@ -9,7 +9,7 @@ keywords: [Test, Testmiljø, Testdata]
 last_updated: Des 1, 2022
 hide_table_of_contents: true
 ---
-<Summary>Testdata i Skatteetaens testmiljø for eksterne virksomheter.</Summary>
+<Summary>Det skal utelukkende benyttes syntetiske testdata ved test av Skatteetatens API-er. Det er ikke tillatt å bruke skarpe data i test.</Summary>
 
 ## Testmiljø
 
