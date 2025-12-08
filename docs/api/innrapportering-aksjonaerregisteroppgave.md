@@ -82,7 +82,7 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettighet for tilg
 
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aksjonaerregister-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-aksjonaerregister-api/1.0.0)
 
 Oppbygning av URL-er og åpninger i en evt. brannmur er beskrevet her [Brannmur](../om/sikkerhet#brannmur)
 
