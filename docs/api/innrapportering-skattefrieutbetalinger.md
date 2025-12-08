@@ -81,7 +81,7 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettighet for tilg
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelse av parametere, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skattefrie-utbetalinger-api/1.0.0)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skattefrie-utbetalinger-api/)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
@@ -226,7 +226,7 @@ feltene.
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skattefrie-utbetalinger-api/1.0.0).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-skattefrie-utbetalinger-api/).
 
 Skatteetaten [innboks](https://skatt-test.sits.no/web/innboks/)
 

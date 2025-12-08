@@ -22,7 +22,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Teknisk spesifikasjon
-URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/omregistreringsavgift-api/1.0.0) på SwaggerHub.
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/omregistreringsavgift-api/) på SwaggerHub.
 
 ## Tilgang
 
