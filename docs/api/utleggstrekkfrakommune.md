@@ -1,6 +1,6 @@
 ---
 title: ELAN - API mot kommunene
-slug: /api/utleggstrekk-fra-kommune
+slug: /api/utleggstrekkfrakommune
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
