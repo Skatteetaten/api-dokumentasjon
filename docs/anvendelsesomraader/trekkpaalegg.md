@@ -10,7 +10,7 @@ hide_table_of_contents: true
 ---
 <Summary>Dokumentasjon om Trekkpålegg</Summary>
 
-Trekkpålegg er en tjeneste Skatteetaten tilbyr regnskapssystemer og banker hvor vi via [Trekkpålegg API](../api/trekkpaalegg.md)) som formidler trekkpålegg fra Skatteetaten til arbeidsgivere med ansatte som skal ha utleggstrekk i lønn.
+Trekkpålegg er en tjeneste Skatteetaten tilbyr regnskapssystemer og banker hvor vi via [Trekkpålegg API](../api/trekkpaalegg.md) som formidler trekkpålegg fra Skatteetaten til arbeidsgivere med ansatte som skal ha utleggstrekk i lønn.
 
 Målgruppen for siden er utviklere og IT-arkitekter hos systemleverandører som leverer lønns- og personalsystemer (eller sluttbrukersystemer) til arbeidsgivere. Slike systemer kalles i det videre sluttbrukersystemer og forkortes SBS.
 
