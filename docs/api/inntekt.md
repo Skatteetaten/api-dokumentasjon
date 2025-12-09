@@ -618,56 +618,27 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "In
 </TabItem>
 <TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
-Det er få endringer i forbindelse med årets revisjon i Inntekt API.
-[Open API spesifikasjonen på Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/inntekt-api) er oppdatert med endringene.
+Årsrevisjon for nytt inntektsår i Inntekt API.
 
 ## Tidsplan
 
 | Dato | Aktivitet |
 |------|-----------|
-| 18.12.2024 | Tidsplan for årsrevisjon 2025 distribuert |
-| 18.12.2024 | Informasjon om nye lønnsbeskrivelser fra 2024 |
-| 20.01.2025 | Støtte for nye lønnsbeskrivelser i test |
-| 05-10.2.2025 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
+| 09.12.2025 | Tidsplan for årsrevisjon er distribuert |
+| 09.12.2025 | Informasjon om nye lønnsbeskrivelser |
+| Medio januar 2026 | Støtte for nye lønnsbeskrivelser i test og prod|
+| 05-10.2.2026 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
 
 ## Ny inntektsbeskrivelse tilgjengelig
-| pensjonEllerTrygd	| SBL | OTP |
+| ytelseFraOffentlige | SBL | OTP |
 | -----------------	| --- | --- |
-| barnepensjonFra2025 | x | |
-
-## Inntektsbeskrivelser utgår
-| loennsinntekt	| SBL | OTP |
-| -------------	| --- | --- |
-| bonusFraForsvaret | x	| |
-
-## Ny forskuddsbeskrivelse
-| forskuddstrekkbeskrivelse	| SBL | OTP |
-| -------------------------	| --- | --- |
-| frivillig | x	| |
+| ungdomsprogramytelse | x | x |
+| omstillingsstoenadEtteroppgjoer | x |  |
 
 SBL=samtykkebasert lånesøknad  
 OTP=obligatorisk tjenestepensjon
 
-
-## Felt som ikke lengre er obligatorisk
-Vi ser behov for å gjøre et felt frivillig, siden det ikke alltid vil inneholde verdi. Gjelder følgende felter:
-
-Tilhørende OppgaveInntektsmottaker:
-- Inntektsmottaker
-- Kalendermaaned
-
-Tilhørende Inntekt (OppgaveInntektsmottaker.Inntekt):
-- Beloep
-- Fordel
- 
-Tilhørende Livrente:
-- totaltUtbetaltBeloep
-
-Tilhørende UtenlandskArtist
-- inntektsaar
-- oppgrossingsgrunnlag
-- trukketArtistskatt
-
+Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette på github](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
 
 </TabItem>
 
