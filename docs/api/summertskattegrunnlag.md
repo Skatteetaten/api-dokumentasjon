@@ -340,49 +340,53 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 </TabItem>
 <TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
-Det er få endringer i forbindelse med årets revisjon i Summert skattegrunnlag API.
+Årsrevisjon for inntektsår 2025.
 ​
 ## Tidsplan
 
 | Dato          | Aktivitet                                                                |
 |---------------|--------------------------------------------------------------------------|
-| 18.12.2024    | Tidsplan for årsrevisjon for 2024 distribuert                            |
-| 18.12.2024    | Første versjon av endringer i kodeliste for inntektsår 2024              |
-| Medio januar  | Oppdatert versjon av endringer i kodeliste for inntektsår 2024           |
-| Medio februar | Endelig versjon av kodeliste for inntektsår 2024                         |
-| 14.02.2025 | Støtte for inntektsår 2024 i test for alle stadier                       |
-| 12.03.2025    | Første utkast for inntektsår 2024 tilgjengelig i delingstjenesten        |
-| 22.03.2025    | Første skatteoppgjør for inntektsår 2024 tilgjengelig i delingstjenesten |
+| 09.12.2024    | Tidsplan for årsrevisjon distribuert |
+| 09.12.2024    | Første versjon av endringer i kodeliste |
+| Medio januar 2026 | Oppdatert versjon av endringer i kodeliste |
+| Medio februar 2026 | Endelig versjon av kodeliste |
+| Medio februar 2026 | Støtte for inntektsår i test og prod |
+| 12.03.2025    | Første utkast for inntektsår er tilgjengelig i delingstjenesten        |
+| 21.03.2025    | Første skatteoppgjør for nytt inntektsår er tilgjengelig i delingstjenesten |
 
-## Nye summerte skattegrunnlag fra 2024
+## Nye summerte skattegrunnlag for nytt inntektsår
 
-| Teknisk navn | Kategori | SBL | Blir tilgjengelig i rettighetspakker |
+| Teknisk navn | Kategori | SBL | Blir tilgjengelig i rettighetspakker som fra før har tilgang til* |
 |--------------|---------|---|---|
-| gjeldFraInkassoselskap | formuesfradrag | x | som fra før har gjeldIInnenlandskeBanker |
-| minstefradragILivrenteTilBarn | inntektsfradrag | | som fra før har minstefradragIBarnepensjon |
-| omstillingsstoenad | inntekt | x | som fra før har etterlattepensjonFraFolketrygden |
-| skattepliktigInntektVedSalgAvOverskuddsstroem | inntekt	| x | 	som fra før har nettoinntektVedUtleieAvFastEiendomMv |
-| latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting|
-| latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
-| latentGevinstPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
-| latentGevinstPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetalingAvSkatt | inntekt | x | som fra før har latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
-| latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| latentTapPaaAnnetFinansproduktMvVedUtflyttingUtenUtsattBetalingAvSkatt | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| latentTapPaaOpsjonIArbeidsforholdVedUtflyttingUtenUtsattBetalingAvSkatt | inntektsfradrag | x | som fra før har latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| livsvarigAvtalefestetPensjonIOffentligSektor | inntekt | |  |
+| ungdomsprogramytelse | inntekt | |  |
 
+SBL = samtykkebasert lånesøknad
 
-## Summerte skattegrunnlag som utgår fra 2024
+## Summerte skattegrunnlag som utgår i nytt inntektsår
 
 | Teknisk navn | 
 |--------------|
-| saerfradragForEnsligForsoerger |
-| samletSkattefriDelAvFormue |
-| arbeidsinntektFraKompensasjonsytelseUtbetaltAvNav |
-| naeringsinntektFraKompensasjonsytelseUtbetaltAvNavInnenAnnenNaering |
-| naeringsinntektFraKompensasjonsytelseUtbetaltAvNavInnenBarnepassIBarnepasserensHjem |
-| personinntektFraKompensasjonsytelseUtbetaltAvNavInnenAnnenNaering |
-| personinntektFraKompensasjonsytelseUtbetaltAvNavInnenBarnepassIBarnepasserensHjem |
+| annenPensjonFoerAlderspensjon |
+| gevinstVedSalgAvAndelINOKUS |
+| latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| latentEllerRealisertGevinstPaaAnnetFinansproduktMvVedUtflytting |
+| latentEllerRealisertTapPaaAnnetFinansproduktMvVedUtflytting |
+| latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting |
+| latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting |
+| loennsinntektTilBarn |
+| loennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt |
+| oppjustertTilleggTilGevinstVedSalgAvAndelINOKUS |
+| oppjustertTilleggTilLatentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
+| oppjustertTilleggTilLatentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
+| pensjonFraUtlandetSkattefriINorge |
+| samletBarnepensjonOgLivrente |
+| underskuddAvEnkeltpersonforetakFordeltFraEktefelle |
+| verdiFoerVerdsettingsrabattForAndelINOKUS |
+| verdsettingsrabattForAndelINOKUS |
+
+* Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette på github](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
 
 </TabItem>
 </Tabs>
