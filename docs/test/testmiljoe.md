@@ -14,25 +14,22 @@ hide_table_of_contents: true
 ## Testmiljø
 
 Skatteetaten har to testmiljø for eksterne virksomheter som tester tjenester fra Skatteetaten: 
-* ´api-test.sits.no` benyttes for test av tjenester som leser data fra Skattetaten, f.eks. delingstjenester.
-* ´api-sbstest.sits.no` benyttes for test av innsending av data til Skatteetaten, f.eks. testinnsending av grunnlagsdata, testinnsending av skattemelding og mva-melding.
+* et testmiljø hvor man kan teste Skatteetatens delingstjenester
+* et testmiljø for test av innsending av data til Skatteetaten, f.eks. innrapportering av grunnlagsdata, skattemelding og mva-melding.
 
-I dokumentasjonen av tjenestene, f.eks. i Open API spesifikasjonen, oppgis hvilken url som skal benyttes for test av de ulike tjenestene.
-Denne siden dokumenterer i hovedsak hva som gjelder for miljøet ´api-test.sits.no`.
+I dokumentasjonen av API-ene, f.eks. i Open API spesifikasjonen, oppgis hvilken URL som skal benyttes for test av de ulike API-ene. I de fleste tilfeller vil ikke eksterne se på URL-en hvilket  av Skatteetatens bakenforliggende miljø de tester mot, men dersom dere skal teste både innrapportering og deling, vil dere kunne oppleve at data ikke henger sammen siden det er to ulike miljøer.
 
-## Test Norge
-Skatteetatens testmiljø for eksterne virksomheter inneholder Test-Norge:
+## Testdata
+Skatteetatens testmiljøer for eksterne inneholder Test-Norge:
 
 * Testpersoner fra syntetisk Folkeregister, obs. +80 på måneden
 * Testvirksomheter fra syntetisk Enhetsregister, obs. organisasjonsnumrene starter på 2 og 3
 
-### api-test.sits.no
-
-Obs. Altinn testdatasettene er ikke lengre tilgjengelige i dette eksterne testmiljøet. 
-
 Miljøet inneholder også syntetiske skattedata, både skatteoppgjør og skattemeldinger, med tilhørende skatteplikt, inntekter og andre grunnlagsdata.
 
 Formålet med testdataene er å understøtte integrasjonstest mellom Skatteetaten og eksterne virksomheter. Fokus for integrasjonstesten er på grønne løp, og dataene er ikke ment å representere noen uttømmende funksjonell bredde. For funksjonell testing forventes det at den enkelte virksomhet selv tilrettelegger egne syntetiske testdata, og mocker/simulerer de eksterne tjenestene.
+
+De gamle Altinn testdatasettene er ikke lengre tilgjengelige i Skatteetatens eksterne testmiljør.
 
 ## Testdata som ikke er søkbare i Tenor-testdatasøk
 
