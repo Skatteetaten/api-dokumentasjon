@@ -81,7 +81,7 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettighet for tilg
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Open API-spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-fagforeningskontingent-api/0.0.1).
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-fagforeningskontingent-api/).
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md).
 
@@ -231,7 +231,7 @@ angitt verdi-feltene.
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-fagforeningskontingent-api/0.0.1).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-fagforeningskontingent-api/).
 
 Skatteetaten [innboks](https://skatt-test.sits.no/web/innboks/)
 

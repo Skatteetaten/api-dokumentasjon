@@ -45,7 +45,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Open API-spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-filopplasting-api/0.0.1)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-filopplasting-api/)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
@@ -327,7 +327,7 @@ angitt verdi-feltene.
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-filopplasting-api/0.0.1).
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-filopplasting-api/).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * DialogPorten
