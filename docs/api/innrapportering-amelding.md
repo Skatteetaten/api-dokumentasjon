@@ -111,6 +111,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
 | AMLD_001  | 500             | Uventet feil på tjenesten                    |
+| AMLD_004  | 401             | Feil i forbindelse med autentisering         |
 | AMLD_005  | 403             | Feil i forbindelse med autorisering          |
 | AMLD_006  | 400             | Feil i request                               |
 | AMLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
@@ -120,6 +121,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | AMLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
 | AMLD_021  | 404             | Finner ikke forespurt ressurs                |
 | AMLD_022  | 405             | HTTP-metode ikke støttet                     |
+| AMLD_023  | 500             | Uventet feil i et bakenforliggende system    |
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
