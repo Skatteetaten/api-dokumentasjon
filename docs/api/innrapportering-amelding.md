@@ -90,7 +90,17 @@ Benytt samme scope som for innsending ved autentisering i Maskinporten: `skattee
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
-**Pr. 28.nov-25 er tilbakemeldingen ikke tilgjengelig i test.**
+**Oppdatert 10.des:** 
+Vi har gjort et par justeringer i OpenApi-spesifikasjonen for amelding-tilbakemelding-api for å samstemme den med tilbakemelding-XSD-en.
+
+Endringene er:
+-	Arbeidsforhold: feltet fartoeyMoenstring har endret navn til moenstringPaaFartoey
+-	InternasjonalIdentifikator.identifikatortype: typen InternasjonalIdentifikatortype er endret fra enum til string
+
+Ny versjon, 0.0.4 er tilgjengelig på på [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/).
+
+
+**Pr. 08.des-25 er tilbakemeldingen ikke tilgjengelig i test.**
 
 
 </TabItem>
@@ -100,16 +110,18 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
-| GLD_001  | 500             | Uventet feil på tjenesten                    |
-| GLD_005  | 403             | Feil i forbindelse med autorisering          |
-| GLD_006  | 400             | Feil i request                               |
-| GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
-| GLD_010  | 400             | Feil i forbindelse med validering av payload |
-| GLD_011  | 400             | Feil i metadata                              |
-| GLD_017  | 500             | Uspesifisert systemfeil                      |
-| GLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
-| GLD_021  | 404             | Finner ikke forespurt ressurs                |
-| GLD_022  | 405             | HTTP-metode ikke støttet                     |
+| AMLD_001  | 500             | Uventet feil på tjenesten                    |
+| AMLD_004  | 401             | Feil i forbindelse med autentisering         |
+| AMLD_005  | 403             | Feil i forbindelse med autorisering          |
+| AMLD_006  | 400             | Feil i request                               |
+| AMLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
+| AMLD_010  | 400             | Feil i forbindelse med validering av payload |
+| AMLD_011  | 400             | Feil i metadata                              |
+| AMLD_017  | 500             | Uspesifisert systemfeil                      |
+| AMLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
+| AMLD_021  | 404             | Finner ikke forespurt ressurs                |
+| AMLD_022  | 405             | HTTP-metode ikke støttet                     |
+| AMLD_023  | 500             | Uventet feil i et bakenforliggende system    |
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
@@ -118,12 +130,22 @@ feltene.
 
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| GLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
-| GLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
-| GLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
-| GLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| AMLD_1008               | Ugyldig token                                  | Ugyldig token                                                                                                               | 
+| AMLD_1015               | Ikke autorisert for denne dialogen             | Ikke autorisert for denne dialogen                                                                                          | 
+| AMLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| AMLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
+| AMLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
+| AMLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
+| AMLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
+| AMLD_1032               | Feil i json-innhold                            | Feil i json-innhold                                                                                                         |
+| AMLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| AMLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen | Finner ikke et dokument med denne IDen på denne forsendelsen                                                  |
+| AMLD_1051               | Opplysningspliktig i path og i innsending er ulike | Opplysningspliktig i path og i innsending er ulike                                                                      |
+| AMLD_1052               | Periode (kalendermåned) i path og i innsending er ulike | Periode (kalendermåned) i path og i innsending er ulike                                                            |
+| AMLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere                              |
+| AMLD_1061               | Det finnes ingen forsendelse med denne IDen for denne ordningen | Det finnes ingen forsendelse med denne IDen for denne ordningen                                            |
+| AMLD_1062               | Oppgavegiver er ikke hovedenhet, og kan derfor ikke rapportere for ordningen | Oppgavegiver er ikke hovedenhet, og kan derfor ikke rapportere for ordningen                  |
+| AMLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details | Tokenet mangler informasjon om systembruker i authorization_details                                    |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
