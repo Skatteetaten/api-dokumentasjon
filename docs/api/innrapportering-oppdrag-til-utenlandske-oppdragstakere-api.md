@@ -27,7 +27,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Scope
 
-Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringoppdragtilutenlandske`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringoppdragutenlandskeoppdragstakere`
 
 ## Delegering
 
@@ -119,7 +119,7 @@ feltene.
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-![Informasjonsmodellen i pdf-format](../../static/download/oar/infomodell_oppdragsreg.pdf)
+[Informasjonsmodellen i pdf-format](../../static/download/oar/infomodell_oppdragsreg.pdf)
 
 ![informasjonsmodell](../../static/download/oar/infomodell_OAR.jpeg)
                                                                                                                                                                                                                                                           |
