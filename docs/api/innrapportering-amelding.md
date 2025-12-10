@@ -90,7 +90,7 @@ Benytt samme scope som for innsending ved autentisering i Maskinporten: `skattee
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
-**Oppdatert 08.des:** 
+**Oppdatert 10.des:** 
 Vi har gjort et par justeringer i OpenApi-spesifikasjonen for amelding-tilbakemelding-api for å samstemme den med tilbakemelding-XSD-en.
 
 Endringene er:
@@ -130,12 +130,22 @@ feltene.
 
 | Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| AMLD_1008               | Ugyldig token                                  | Ugyldig token                                                                                                               | 
+| AMLD_1015               | Ikke autorisert for denne dialogen             | Ikke autorisert for denne dialogen                                                                                          | 
 | AMLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
 | AMLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
 | AMLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
 | AMLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
 | AMLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
+| AMLD_1032               | Feil i json-innhold                            | Feil i json-innhold                                                                                                         |
 | AMLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| AMLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen | Finner ikke et dokument med denne IDen på denne forsendelsen                                                  |
+| AMLD_1051               | Opplysningspliktig i path og i innsending er ulike | Opplysningspliktig i path og i innsending er ulike                                                                      |
+| AMLD_1052               | Periode (kalendermåned) i path og i innsending er ulike | Periode (kalendermåned) i path og i innsending er ulike                                                            |
+| AMLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere                              |
+| AMLD_1061               | Det finnes ingen forsendelse med denne IDen for denne ordningen | Det finnes ingen forsendelse med denne IDen for denne ordningen                                            |
+| AMLD_1062               | Oppgavegiver er ikke hovedenhet, og kan derfor ikke rapportere for ordningen | Oppgavegiver er ikke hovedenhet, og kan derfor ikke rapportere for ordningen                  |
+| AMLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details | Tokenet mangler informasjon om systembruker i authorization_details                                    |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
