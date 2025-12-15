@@ -62,7 +62,7 @@ Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
-**15.des-25: Både innsending og tilbakemelding ikke tilgjengelig i test.**
+**15.des-25: Både innsending og tilbakemelding er tilgjengelig i test.**
 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
