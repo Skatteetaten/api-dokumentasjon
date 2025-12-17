@@ -183,7 +183,7 @@ Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor t
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot a-meldingen kan du kontakte oss på e-post: [a-ordningen-lps\@skatteetaten.no](mailto:a-ordningen-lps@skatteetaten.no )  
+Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot a-meldingen kan du kontakte oss via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) 
 
 Lenke til å sette opp tilgang til brukerstøttetjenesten og bestille tilgang til ny tjeneste/scope finner dere på denne siden (under «trenger du hjelp»):  [A-meldingen - for sluttbrukersystemer - Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/a-meldingen-sbs/)
   
