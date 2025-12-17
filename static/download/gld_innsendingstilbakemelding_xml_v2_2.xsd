@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="urn:ske:fastsetting:innsamling:grunnlagsdata:tilbakemelding:innsendingstilbakemelding:v2"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="urn:ske:fastsetting:innsamling:grunnlagsdata:tilbakemelding:innsendingstilbakemelding:v2"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified">
+  <xsd:element name="tilbakemelding" type="Tilbakemelding"/>
+
+  <xsd:complexType name="Tilbakemelding">
+    <xsd:sequence>
+      <xsd:element name="oppgavetype" type="Oppgavetype"/>
+      <xsd:element name="innleveringsfrist" type="xsd:date" minOccurs="0"/>
+      <xsd:element name="innsending" type="Innsending"/>
+      <xsd:element name="fil" type="Fil" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="miljoeinformasjon" type="MiljoeInformasjon" minOccurs="0" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Innsending">
+    <xsd:sequence>
+      <xsd:element name="innsender" type="Innsender"/>
+      <xsd:element name="innsendingstidspunkt" type="DatoKlokkeslett"/>
+      <xsd:element name="behandletTidspunkt" type="DatoKlokkeslett"/>
+      <xsd:element name="altinnreferanse" type="Altinnreferanse" minOccurs="0"/>
+      <xsd:element name="forsendelseid" type="Forsendelseid" minOccurs="0"/>
+      <xsd:element name="filnavnLeveransetilbakemeldinger" type="Filnavn" minOccurs="0"/>
+      <xsd:element name="innsendingsavvik" type="Avvik" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Innsender">
+    <xsd:sequence>
+      <xsd:element name="organisasjonsnummer" type="Organisasjonsnummer"/>
+      <xsd:element name="organisasjonsnavn" type="Organisasjonsnavn" minOccurs="0"/>
+      <xsd:element name="kontaktinformasjon" type="Kontaktinformasjon" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Kontaktinformasjon">
+    <xsd:sequence>
+      <xsd:element name="navn" type="Kontaktnavn" minOccurs="0"/>
+      <xsd:element name="telefonnummer" type="Telefonnummer" minOccurs="0"/>
+      <xsd:element name="varselEpostadresse" type="Epostadresse" minOccurs="0"/>
+      <xsd:element name="varselSmsMobilnummer" type="Telefonnummer" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Fil">
+    <xsd:sequence>
+      <xsd:element name="filnavnFraInnsending" type="Filnavn" minOccurs="0"/>
+      <xsd:element name="filavvik" type="Avvik" minOccurs="0" maxOccurs="unbounded"/>
+      <xsd:element name="leveranseoppsummering" type="Leveranseoppsummering" minOccurs="0"/>
+      <xsd:element name="leveranse" type="Leveranse" minOccurs="0" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Leveranseoppsummering">
+    <xsd:sequence>
+      <xsd:element name="antallLeveranser" type="Verdi"/>
+      <xsd:element name="antallGodkjenteLeveranser" type="Verdi"/>
+      <xsd:element name="antallAvvisteLeveranser" type="Verdi"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Leveranse">
+    <xsd:sequence>
+      <xsd:element name="leveransestatus" type="Leveransestatus"/>
+      <xsd:element name="leveransereferanse" type="Leveransereferanse"/>
+      <xsd:element name="oppgavegiversleveransereferanse" type="Leveransereferanse" minOccurs="0"/>
+      <xsd:element name="oppgavegiver" type="Oppgavegiver"/>
+      <xsd:element name="inntektsaar" type="Inntektsaar"/>
+      <xsd:element name="periode" type="Periode" minOccurs="0"/>
+      <xsd:element name="oppgaveoppsummering" type="Oppgaveoppsummering" minOccurs="0"/>
+      <xsd:element name="filnavnLeveransetilbakemelding" type="Filnavn" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Oppgaveoppsummering">
+    <xsd:sequence>
+      <xsd:element name="antallOppgaver" type="Verdi"/>
+      <xsd:element name="antallAvvisteOppgaver" type="Verdi"/>
+      <xsd:element name="antallOppgaverMedVarsel" type="Verdi"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Oppgavegiver">
+    <xsd:sequence>
+      <xsd:element name="organisasjonsnummer" type="Organisasjonsnummer"/>
+      <xsd:element name="organisasjonsnavn" type="Organisasjonsnavn" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="Avvik">
+    <xsd:sequence>
+      <xsd:element name="avvikskode" type="Avvikskode"/>
+      <xsd:element name="avvikstekst" type="Avvikstekst"/>
+      <xsd:element name="beskrivelse" type="Beskrivelse" minOccurs="0"/>
+      <xsd:element name="veiledning" type="Beskrivelse" minOccurs="0"/>
+      <xsd:element name="alvorlighetsgrad" type="Alvorlighetsgrad"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+  <xsd:simpleType name="Altinnreferanse">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Forsendelseid">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Alvorlighetsgrad">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="avvist"/>
+      <xsd:enumeration value="advarsel"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Avvikendeverdi">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Avvikskode">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Avvikstekst">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Beskrivelse">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Epostadresse">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Filnavn">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Foedselsnummer">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Inntektsaar">
+    <xsd:restriction base="xsd:string">
+      <xsd:length value="4"/>
+      <xsd:pattern value="[0-9]+"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Kontaktnavn">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Leveransereferanse">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Leveransestatus">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="godkjent"/>
+      <xsd:enumeration value="avvist"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Oppgavetype">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1" />
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Organisasjonsnavn">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Organisasjonsnummer">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Periode">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Telefonnummer">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="DatoKlokkeslett">
+    <xsd:restriction base="xsd:dateTime"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="Verdi">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="MiljoeInformasjon">
+    <xsd:restriction base="xsd:string" />
+  </xsd:simpleType>
+</xsd:schema>
