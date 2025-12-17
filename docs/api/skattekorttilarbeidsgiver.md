@@ -31,7 +31,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 ## Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattekorttilarbeidsgiver`
 
-[Bestill tilgang til tjenesten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattekort-sbs/#bestill-tilgang-til-tjenesten-krever-innlogging)
+[Bestill tilgang til tjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global)
 
 ## Delegering
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
