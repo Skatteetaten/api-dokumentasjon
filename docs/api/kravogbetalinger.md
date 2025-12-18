@@ -84,14 +84,6 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 
 ## Åpne krav
 
-### Eksempel på request URL
-
-```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
-```
-
-### Eksempel på respons
-
 ```json
 {
   "partIdentifikator": "212201782",
@@ -309,14 +301,6 @@ https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/aapnekrav
 
 ## Krav
 
-### Eksempel på request URL
-
-```
-https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/krav?fraOgMed=2023-01-01&tilOgMed=2023-09-01
-```
-
-### Eksempel på respons
-
 ```json
 {
   "partIdentifikator": "212201782",
@@ -502,14 +486,6 @@ https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/krav?fraOgMed=
 
 ## Innbetalinger
 
-### Eksempel på request URL
-
-```
-GET https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/innbetalinger?fraOgMed=2023-01-01&tilOgMed=2023-09-01
-```
-
-### Eksempel på respons
-
 ```json
 {
   "partIdentifikator": "212201782",
@@ -558,14 +534,6 @@ GET https://{env}/api/innkreving/kravogbetalinger/v1/finans/212201782/innbetalin
 ```
 
 ## Utbetalinger
-
-### Eksempel på request URL
-
-```
-GET https://{env}/api/innkreving/kravogbetalinger/v1/finans/871978433/utbetalinger?fraOgMed=2022-01-01&tilOgMed=2021-12-31
-```
-
-### Eksempel på respons
 
 ```json
 {
