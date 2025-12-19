@@ -85,4 +85,12 @@ Følgende API-er er tilgjengelige pr. nå:
 | [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                                          | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
 | [Innrapportering verdipapirfondshistorikk API](../api/innrapportering-verdipapirfondshistorikk.md)                                      | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
 
+## Tilbakemelding på innsending
 
+Tilbakemelding på innrapportering av grunnlagsdata kan hentes ut via API, eller lastes ned via innboks på Skatteetaten. De er tilgjengelig i PDF-, XML- og CSV-format.
+
+### Teknisk spesifikasjon av XML tilbakemelding 
+
+Innsendingstilbakemelding [XSD](../../static/download/gld_innsendingstilbakemelding_xml_v2_2.xsd)
+
+Leveransetilbakemelding [XSD](../../static/download/gld_leveransetilbakemelding_xml_v2_2.xsd)
