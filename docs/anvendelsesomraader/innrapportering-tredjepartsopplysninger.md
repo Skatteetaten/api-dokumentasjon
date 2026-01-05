@@ -28,7 +28,7 @@ Her er en oversikt over stegene som må til for å kunne ta i bruk nye tjenester
 
 2. **Kommunikasjon:** Skatteetaten har utviklere og funksjonelle ressurser på vår **Slack** som kan svare på alle
    spørsmål og veilede i prosessen.
-   Trykk [her](https://join.slack.com/t/skatteetaten/shared_invite/zt-2yvnsfetg-yuDEBJkcuj5n8KSyZi9yBg) for å få
+   Trykk [her](https://join.slack.com/t/skatteetaten/shared_invite/zt-3jku54prr-egZIzAE2zjeVzycBWTwJnQ) for å få
    tilgang.
    Vi anbefaler at du benytter en Slack-konto tilknyttet ditt arbeidssted, og at du inkluderer navnet på ditt
    arbeidssted i "Display name" (endres i din profil) som for eksempel "Ola Nordmann (Skatteetaten)".
