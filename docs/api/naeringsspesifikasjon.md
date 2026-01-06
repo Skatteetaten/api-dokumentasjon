@@ -65,121 +65,128 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Næringsspesifikasjon 
 
 ## JSON
 
-Eksempel på en gyldig respons for inntektsår 2023 (V4):
+Eksempel på en gyldig respons for inntektsår 2024 (V5):
 
 ```json
 {
-  "norskIdentifikator": "19875297549",
-  "inntektsaar": "2023",
-  "resultatregnskap": {
-    "driftsinntekt": {
-      "sumDriftsinntekt": 500100.0,
-      "salgsinntekt": {
-        "inntekt": [
-          {
-            "beloep": 500000.0,
-            "id": "3000",
-            "type": "3000"
-          }
-        ]
+  "skjermet" : false,
+  "norskIdentifikator" : "19886699975",
+  "inntektsaar" : "2024",
+  "resultatregnskap" : {
+    "driftsinntekt" : {
+      "sumDriftsinntekt" : 162099.0,
+      "salgsinntekt" : {
+        "inntekt" : [ {
+          "beloep" : 101352.0,
+          "id" : "3100",
+          "type" : "3100"
+        } ]
       },
-      "annenDriftsinntekt": {
-        "inntekt": [
-          {
-            "beloep": 100.0,
-            "id": "3700",
-            "type": "3700"
-          }
-        ]
+      "annenDriftsinntekt" : {
+        "inntekt" : [ {
+          "beloep" : 60747.0,
+          "id" : "3900",
+          "type" : "3900"
+        } ]
       }
     },
-    "driftskostnad": {
-      "sumDriftskostnad": 70333.0,
-      "annenDriftskostnad": {
-        "kostnad": [
-          {
-            "beloep": 45000.0,
-            "id": "6100",
-            "type": "6100"
-          },
-          {
-            "beloep": 22222.0,
-            "id": "7330",
-            "type": "7330"
-          },
-          {
-            "beloep": 3111.0,
-            "id": "7295",
-            "type": "7295"
-          }
-        ]
+    "driftskostnad" : {
+      "sumDriftskostnad" : 45602.0,
+      "varekostnad" : {
+        "kostnad" : [ {
+          "beloep" : 27253.0,
+          "id" : "4005",
+          "type" : "4005"
+        } ]
+      },
+      "annenDriftskostnad" : {
+        "kostnad" : [ {
+          "beloep" : 19769.0,
+          "id" : "6400",
+          "type" : "6400"
+        }, {
+          "beloep" : 1420.0,
+          "id" : "6998",
+          "type" : "6998"
+        } ]
       }
     },
-    "aarsresultat": 429767.0
-  },
-  "beregnetNaeringsinntekt": {
-    "fordeltBeregnetNaeringsinntektForPersonligSkattepliktigEllerSdf": [
-      {
-        "id": "1",
-        "identifikatorForFordeltBeregnetPersoninntekt": "1",
-        "identifikatorForFordeltBeregnetNaeringsinntekt": "1",
-        "naeringstype": "skiferproduksjon",
-        "fordeltSkattemessigResultat": 329767.0,
-        "fordeltSkattemessigResultatEtterKorreksjon": 329767.0,
-        "andelAvFordeltSkattemessigResultatTilordnetInnehaver": 100.0,
-        "fordeltSkattemessigResultatEtterKorreksjonTilordnetInnehaver": 329767.0
-      },
-      {
-        "id": "ba0b7d70-55ac-45b8-ba3f-545c574f5251",
-        "kommunenummer": "5403",
-        "identifikatorForFordeltBeregnetPersoninntekt": "2",
-        "identifikatorForFordeltBeregnetNaeringsinntekt": "2",
-        "naeringstype": "reindrift",
-        "naeringsbeskrivelse": "reindrift",
-        "fordeltSkattemessigResultat": 100000.0,
-        "reindrift": {
-          "korrigertResultat": 100000.0
-        },
-        "fordeltSkattemessigResultatEtterKorreksjon": 100000.0,
-        "andelAvFordeltSkattemessigResultatTilordnetInnehaver": 100.0,
-        "fordeltSkattemessigResultatEtterKorreksjonTilordnetInnehaver": 100000.0
-      }
-    ],
-    "skattemessigResultat": 429767.0
-  },
-  "beregnetPersoninntekt": {
-    "fordeltBeregnetPersoninntekt": [
-      {
-        "id": "2",
-        "identifikatorForFordeltBeregnetPersoninntekt": "2",
-        "identifikatorForFordeltBeregnetNaeringsinntekt": "2",
-        "aaretsBeregnedePersoninntektFoerFordelingOgSamordning": 100000.0,
-        "andelAvPersoninntektTilordnetInnehaver": 100.0,
-        "aaretsBeregnedePersoninntektFoerFordelingOgSamordningTilordnetInnehaver": 100000.0
-      },
-      {
-        "id": "1",
-        "identifikatorForFordeltBeregnetPersoninntekt": "1",
-        "identifikatorForFordeltBeregnetNaeringsinntekt": "1",
-        "aaretsBeregnedePersoninntektFoerFordelingOgSamordning": 329767.0,
-        "andelAvPersoninntektTilordnetInnehaver": 100.0,
-        "aaretsBeregnedePersoninntektFoerFordelingOgSamordningTilordnetInnehaver": 329767.0
-      }
-    ]
-  },
-  "virksomhet": {
-    "regnskapspliktstype": "ingenRegnskapsplikt",
-    "regnskapsperiode": {
-      "start": "2023-01-01T00:00:00+01:00",
-      "slutt": "2023-12-31T23:59:59+01:00"
+    "sumFinansinntekt" : 17132.0,
+    "finansinntekt" : {
+      "inntekt" : [ {
+        "beloep" : 17132.0,
+        "id" : "8079",
+        "type" : "8079"
+      } ]
     },
-    "virksomhetstype": "enkeltpersonforetak",
-    "regeltypeForAarsregnskap": "regnskapslovensAlminneligeRegler"
+    "aarsresultat" : 133629.0
   },
-  "skalBekreftesAvRevisor": false,
-  "skjermet": false,
-  "opprettetDato": "2024-01-29T12:09:07.614+01:00",
-  "ajourholdstidspunkt": "2024-01-29T12:09:07.614+01:00"
+  "balanseregnskap" : {
+    "omloepsmiddel" : {
+      "sumBalanseverdiForOmloepsmiddel" : 19500.0,
+      "balanseverdiForOmloepsmiddel" : {
+        "balanseverdi" : [ {
+          "id" : "1920",
+          "beloep" : 19500.0,
+          "type" : "1920",
+          "ekskluderesFraSkattemeldingen" : false
+        } ]
+      }
+    },
+    "gjeldOgEgenkapital" : {
+      "sumKortsiktigGjeld" : 31932.0,
+      "kortsiktigGjeld" : {
+        "gjeld" : [ {
+          "id" : "2380",
+          "beloep" : 31932.0,
+          "type" : "2380",
+          "ekskluderesFraSkattemeldingen" : false
+        } ]
+      }
+    },
+    "sumBalanseverdiForEiendel" : 19500.0,
+    "sumGjeldOgEgenkapital" : 31932.0
+  },
+  "beregnetNaeringsinntekt" : {
+    "fordeltBeregnetNaeringsinntektForPersonligSkattepliktigEllerSdf" : [ {
+      "id" : "1",
+      "kommunenummer" : "1566",
+      "identifikatorForFordeltBeregnetPersoninntekt" : "1",
+      "identifikatorForFordeltBeregnetNaeringsinntekt" : "1",
+      "naeringstype" : "annenNaering",
+      "fordeltSkattemessigResultat" : 133629.0,
+      "fordeltSkattemessigResultatEtterKorreksjon" : 133629.0,
+      "andelAvFordeltSkattemessigResultatTilordnetInnehaver" : 100.0,
+      "fordeltSkattemessigResultatEtterKorreksjonTilordnetInnehaver" : 133629.0
+    } ],
+    "skattemessigResultat" : 133629.0
+  },
+  "beregnetPersoninntekt" : {
+    "fordeltBeregnetPersoninntekt" : [ {
+      "id" : "1",
+      "identifikatorForFordeltBeregnetPersoninntekt" : "1",
+      "identifikatorForFordeltBeregnetNaeringsinntekt" : "1",
+      "aaretsBeregnedePersoninntektFoerFordelingOgSamordning" : 133629.0,
+      "andelAvPersoninntektTilordnetInnehaver" : 100.0,
+      "aaretsBeregnedePersoninntektFoerFordelingOgSamordningTilordnetInnehaver" : 133629.0
+    } ]
+  },
+  "virksomhet" : {
+    "regnskapspliktstype" : "ingenRegnskapsplikt",
+    "regnskapsperiode" : {
+      "start" : "2024-01-01",
+      "slutt" : "2024-12-31"
+    },
+    "virksomhetstype" : "enkeltpersonforetak",
+    "regeltypeForAarsregnskap" : "regnskapslovensAlminneligeRegler"
+  },
+  "samletGjeldOgFormuesobjekter" : {
+    "formuesverdiForFormuesobjekterIkkeOmfattetAvVerdsettingsrabatt" : 19500.0,
+    "samletGjeld" : 31932.0
+  },
+  "opprettetDato" : "2025-02-13T08:28:25.865+01:00",
+  "skalBekreftesAvRevisor" : false,
+  "ajourholdstidspunkt" : "2025-02-13T08:28:25.865Z"
 }
 ```
 
