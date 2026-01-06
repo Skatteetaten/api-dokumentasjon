@@ -123,19 +123,19 @@ Forespørsel om endringer
               {
                 "trekkode": "LOENN_FRA_HOVEDARBEIDSGIVER",
                 "frikort": {
-                  "frikortbeloep": "100000"
+                  "frikortbeloep": 100000
                 }
               },
               {
                 "trekkode": "LOENN_FRA_BIARBEIDSGIVER",
                 "frikort": {
-                  "frikortbeloep": "100000"
+                  "frikortbeloep": 100000
                 }
               },
               {
                 "trekkode": "LOENN_FRA_NAV",
                 "frikort": {
-                  "frikortbeloep": "100000"
+                  "frikortbeloep": 100000
                 }
               }
             ]
@@ -147,26 +147,26 @@ Forespørsel om endringer
           "resultatForSkattekort": "skattekortopplysningerOK",
           "skattekort": {
             "utstedtDato": "2024-12-07",
-            "skattekortidentifikator": "10771",
+            "skattekortidentifikator": 10771,
             "forskuddstrekk": [
               {
                 "trekkode": "LOENN_FRA_HOVEDARBEIDSGIVER",
                 "trekktabell": {
                   "tabellnummer": "8010",
-                  "prosentsats": "41",
-                  "antallMaanederForTrekk": "10.5"
+                  "prosentsats": 41,
+                  "antallMaanederForTrekk": 10.5
                 }
               },
               {
                 "trekkode": "LOENN_FRA_BIARBEIDSGIVER",
                 "trekkprosent": {
-                  "prosentsats": "34"
+                  "prosentsats": 34
                 }
               },
               {
                 "trekkode": "LOENN_FRA_NAV",
                 "trekkprosent": {
-                  "prosentsats": "34"
+                  "prosentsats": 34
                 }
               }
             ]
@@ -178,20 +178,20 @@ Forespørsel om endringer
           "resultatForSkattekort": "skattekortopplysningerOK",
           "skattekort": {
             "utstedtDato": "2025-01-24",
-            "skattekortidentifikator": "10799",
+            "skattekortidentifikator": 10799,
             "forskuddstrekk": [
               {
                 "trekkode": "PENSJON",
                 "trekkprosent": {
-                  "prosentsats": "25",
-                  "antallMaanederForTrekk": "12"
+                  "prosentsats": 25,
+                  "antallMaanederForTrekk": 12
                 }
               },
               {
                 "trekkode": "PENSJON_FRA_NAV",
                 "trekkprosent": {
-                  "prosentsats": "25",
-                  "antallMaanederForTrekk": "12"
+                  "prosentsats": 25,
+                  "antallMaanederForTrekk": 12
                 }
               }
             ]
