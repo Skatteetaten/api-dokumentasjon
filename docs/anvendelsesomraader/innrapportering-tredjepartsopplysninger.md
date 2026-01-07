@@ -52,38 +52,38 @@ Følgende API-er er tilgjengelige pr. nå:
 
 | API                                                                                                                                     | Test                | Produksjon    |
 |-----------------------------------------------------------------------------------------------------------------------------------------|---------------------|---------------|
-| [Innrapportering aksjesparekonto API](../api/innrapportering-aksjesparekonto.md)                                                        | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md)                            | :white_check_mark:  | 7.november (tilgjengeliggjøres 1. desember 2025) |
-| [Innrapportering betalinger naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)                                 | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)                                                                | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                                              | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                                                | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                                                        | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering fagforeningskontingent API](../api/innrapportering-fagforeningskontingent.md)                                          | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering finansprodukter API](../api/innrapportering-finansprodukter.md)                                                        | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering fondskonto API](../api/innrapportering-fondskonto.md)                                                                  | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                                                | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)                                        | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering individuelle_pensjonsordninger API](../api/innrapportering-individuellepensjonsordninger.md)                           | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                                            | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)                                   | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering kjøp fra primærnæring - egg API](../api/innrapportering-egg.md)                                                        | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering kjøp fra primærnæring - fisk API](../api/innrapportering-fisk.md)                                                      | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering kjøp fra primærnæring - frukt, bær, poteter og grønnsaker (jord- og hagebruk) API](../api/innrapportering-jordbruk.md) | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering kjøp fra primærnæring - korn API](../api/innrapportering-korn.md)                                                      | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering kjøp fra primærnæring - melk API](../api/innrapportering-melk.md)                                                      | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering kjøp fra primærnæring - slakt API](../api/innrapportering-slakt.md)                                                    | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering kjøp fra primærnæring - toemmer API](../api/innrapportering-toemmer.md)                                                | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering livsforsikringer API](../api/innrapportering-livsforsikring.md)                                                        | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering overskuddsstrøm API](../api/innrapportering-overskuddsstroem.md)                                                       | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                                                      | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                                                        | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)                                         | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering skattepliktig kundeutbytte API](../api/innrapportering-skattepliktigkundeutbytte.md)                                   | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                                                      | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering tilskudd, erstatning mv. innen primærnæringene API](../api/innrapportering-tilskudd-prim.md)                           | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                                          | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
-| [Innrapportering verdipapirfondshistorikk API](../api/innrapportering-verdipapirfondshistorikk.md)                                      | :white_check_mark:  | 10. desember (tilgjengeliggjøres 2. januar 2026) |
+| [Innrapportering aksjesparekonto API](../api/innrapportering-aksjesparekonto.md)                                                        | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering aksjonaerregisteroppgave API (RF-1086)](../api/innrapportering-aksjonaerregisteroppgave.md)                            | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering betalinger naeringsdrivende API](../api/innrapportering-betalingernaeringsdrivende.md)                                 | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering boligsameie API](../api/innrapportering-boligsameie.md)                                                                | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering boligselskap API](../api/innrapportering-boligselskap.md)                                                              | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering BSU API](../api/innrapportering-bsu.md)                                                                                | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering drosjetjenester API](../api/innrapportering-drosjetjenester.md)                                                        | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering fagforeningskontingent API](../api/innrapportering-fagforeningskontingent.md)                                          | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering finansprodukter API](../api/innrapportering-finansprodukter.md)                                                        | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering fondskonto API](../api/innrapportering-fondskonto.md)                                                                  | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering gaver til frivillige API](../api/innrapportering-gavertilfrivillige.md)                                                | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering godtgjøring til opphaver til åndsverk API](../api/innrapportering-aandsverk.md)                                        | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering individuelle_pensjonsordninger API](../api/innrapportering-individuellepensjonsordninger.md)                           | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering innskudd utlaan renter API](../api/innrapportering-innskuddutlaanrenter.md)                                            | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering internasjonal rapportering API](../api/innrapportering-internasjonalrapportering.md)                                   | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering kjøp fra primærnæring - egg API](../api/innrapportering-egg.md)                                                        | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering kjøp fra primærnæring - fisk API](../api/innrapportering-fisk.md)                                                      | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering kjøp fra primærnæring - frukt, bær, poteter og grønnsaker (jord- og hagebruk) API](../api/innrapportering-jordbruk.md) | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering kjøp fra primærnæring - korn API](../api/innrapportering-korn.md)                                                      | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering kjøp fra primærnæring - melk API](../api/innrapportering-melk.md)                                                      | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering kjøp fra primærnæring - slakt API](../api/innrapportering-slakt.md)                                                    | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering kjøp fra primærnæring - toemmer API](../api/innrapportering-toemmer.md)                                                | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering livsforsikringer API](../api/innrapportering-livsforsikring.md)                                                        | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering overskuddsstrøm API](../api/innrapportering-overskuddsstroem.md)                                                       | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering pass og stell av barn API](../api/innrapportering-passogstell.md)                                                      | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering skadeforsikring API](../api/innrapportering-skadeforsikring.md)                                                        | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering skattefrie utbetalinger API](../api/innrapportering-skattefrieutbetalinger.md)                                         | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering skattepliktig kundeutbytte API](../api/innrapportering-skattepliktigkundeutbytte.md)                                   | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering tilskudd API](../api/innrapportering-tilskudd.md)                                                                      | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering tilskudd, erstatning mv. innen primærnæringene API](../api/innrapportering-tilskudd-prim.md)                           | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering verdipapirfond API](../api/innrapportering-verdipapirfond.md)                                                          | :white_check_mark:  | :white_check_mark: |
+| [Innrapportering verdipapirfondshistorikk API](../api/innrapportering-verdipapirfondshistorikk.md)                                      | :white_check_mark:  | :white_check_mark: |
 
 ## Tilbakemelding på innsending
 
