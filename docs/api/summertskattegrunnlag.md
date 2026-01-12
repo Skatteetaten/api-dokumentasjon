@@ -348,7 +348,7 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 |---------------|--------------------------------------------------------------------------|
 | 09.12.2025    | Tidsplan for årsrevisjon distribuert |
 | 09.12.2025    | Første versjon av endringer i kodeliste |
-| Medio januar 2026 | Oppdatert versjon av endringer i kodeliste |
+| 12.01.2026    | Oppdatert versjon av endringer i kodeliste (ingen endringer) |
 | Medio februar 2026 | Endelig versjon av kodeliste |
 | Medio februar 2026 | Støtte for inntektsår i test og prod |
 | 12.03.2026    | Første utkast for inntektsår er tilgjengelig i delingstjenesten        |
