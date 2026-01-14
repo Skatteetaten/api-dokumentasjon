@@ -9,10 +9,10 @@ last_updated: Jan 14, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten leverer formuesverdier ved oppslag for én eiers faste eiendom eller andel i boligselskap.
+<Summary>
+Tjenesten leverer formuesverdier ved oppslag for én eiers faste eiendom eller andel i boligselskap.
 Verdiene beregnes basert på boligbruk (primærbolig og sekundærbolig), eller som generell formuesverdi for eiendom som
-ikke er bolig, der boligbruk ikke er aktuelt.
-</Summary>
+ikke er bolig, der boligbruk ikke er aktuelt.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
