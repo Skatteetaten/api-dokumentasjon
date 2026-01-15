@@ -902,7 +902,7 @@ Integrasjon med Skatteetatens API for trekkpålegg
 * [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:trekkpaalegg```
     * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur
 * Motta og verifiser tilgang til produksjons-scope i Maskinporten
-* Bytt miljø i integrasjonen til produksjon
+* Bytt miljø i integrasjonen til produksjonsmiljø - https://api.skatteetaten.no/api/trekkpaalegg/v1
 * Utfør teknisk verifikasjon i produksjon
 * Klargjør supportrutiner for håndtering av reelle saker
 
