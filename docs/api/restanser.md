@@ -120,7 +120,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
- [Informasjonsmodell](https://data.norge.no/informationmodels/a38edde5-9c88-3bda-afb9-174a1aa94077) i Felles datakatalog.
+ Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/restanser-api).
  
  Obs. Hvis denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
 
