@@ -110,7 +110,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/704618c8-ed35-3b12-a486-5df49713e707) i Felles datakatalog.
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/arbeidsgiveravgift-api).
  
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
