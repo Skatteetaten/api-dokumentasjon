@@ -102,7 +102,7 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/7a2c6a3b-d323-3885-8261-a090eaf0e2c7) i Felles datakatalog.
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-i-oppdrag-api).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
