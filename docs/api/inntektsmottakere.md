@@ -101,7 +101,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/df55045f-66d6-35c5-bc89-9ec856397951) i Felles datakatalog.
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/inntektsmottakere-api).
  
 ## Inntektsmottakere
 
