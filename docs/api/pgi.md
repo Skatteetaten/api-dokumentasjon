@@ -103,7 +103,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/f734a9fa-3178-3a91-8910-a68cebac0e15) i Felles datakatalog. 
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivendeinntekt-api).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
