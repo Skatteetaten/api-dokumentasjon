@@ -94,7 +94,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
- Se informasjonsmodell i Felles datakatalog for [Oppdrag utenlandske virksomheter API](https://data.norge.no/informationmodels/bc228914-ba95-3b10-aa49-3a80beeb12c2).
+ Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/oppdrag-utenlandske-virksomheter-api).
  
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
