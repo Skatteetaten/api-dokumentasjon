@@ -141,7 +141,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem> 
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
- [Informasjonsmodell](https://data.norge.no/informationmodels/61726311-9a02-3ccc-adcd-0a18f3a059d4) i Felles datakatalog.
+ Se [Open API spesifikasjonenen](https://app.swaggerhub.com/apis/skatteetaten/mva-meldingsopplysning-api).
  
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
