@@ -91,7 +91,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[informasjonsmodell](https://data.norge.no/informationmodels/cd4cde32-912b-367e-8fe0-6da41b6467b1) i Felles datakatalog.
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/omregistreringsavgift-api/).
  
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
