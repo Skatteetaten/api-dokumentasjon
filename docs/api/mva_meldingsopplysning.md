@@ -141,8 +141,10 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem> 
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
- Se [Open API spesifikasjonenen](https://app.swaggerhub.com/apis/skatteetaten/mva-meldingsopplysning-api).
- 
+[![Mva meldingsopplysning API](../../static/download/informasjonsmodell_mvameldingsopplysning.png)](../../static/download/informasjonsmodell_mvameldingsopplysning.png)
+
+ Se også [Open API spesifikasjonenen](https://app.swaggerhub.com/apis/skatteetaten/mva-meldingsopplysning-api).
+  
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
