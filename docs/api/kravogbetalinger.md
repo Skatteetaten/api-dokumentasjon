@@ -75,6 +75,8 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 |-------------|--------------------|--------|
 | 5928        | 202301             | Kreves for rettighetspakken `finans` |
 
+Obs. Digdir har laget  en ny samtykketjeneste. Ressursid for Krav og betalinger API er `ske-samtykke-krav-og-betalinger`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø.
+
 ## Datakatalog
 
 [Datatjenestebeskrivelse](https://data.norge.no/data-services/67dc3f08-a152-3f0e-a533-b092c026f23b) i Felles datakatalog.
