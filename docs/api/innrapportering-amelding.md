@@ -37,8 +37,33 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 
 Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
+Dette APIet krever at systemet og dets systembrukere har tilgang til én ellerflere av følgende tilgangspakker:
 
-For å kunne benytte dette api'et med systemtilgang må man gi følgende rettighet til systemet ved opprettelse i systemregisteret:
+```json
+"accessPackages": [
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:revisormedarbeider"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-lonn"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:a-ordning"
+    }
+]
+```
+
+
+Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for tilgang til tjenesten:
 ```JSON
 "Rights": [
     {
@@ -51,6 +76,9 @@ For å kunne benytte dette api'et med systemtilgang må man gi følgende rettigh
     }
   ]
 ```
+
+
+
 
 ## Teknisk spesifikasjon
 
