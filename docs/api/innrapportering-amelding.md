@@ -37,7 +37,7 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 
 Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
-Dette APIet krever at systemet og dets systembrukere har tilgang til én ellerflere av følgende tilgangspakker:
+Dette APIet krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
 
 ```json
 "accessPackages": [
