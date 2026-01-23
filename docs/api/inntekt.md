@@ -626,7 +626,7 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "In
 |------|-----------|
 | 09.12.2025 | Tidsplan for årsrevisjon er distribuert |
 | 09.12.2025 | Informasjon om nye lønnsbeskrivelser |
-| Medio januar 2026 | Støtte for nye lønnsbeskrivelser i test og prod|
+| 22.01.2026 | Støtte for nye lønnsbeskrivelser i test og prod|
 | 05-10.2.2026 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
 
 ## Ny inntektsbeskrivelse tilgjengelig
