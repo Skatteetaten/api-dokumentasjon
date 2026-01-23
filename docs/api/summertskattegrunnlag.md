@@ -349,6 +349,7 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 | 09.12.2025    | Tidsplan for årsrevisjon distribuert |
 | 09.12.2025    | Første versjon av endringer i kodeliste |
 | 12.01.2026    | Oppdatert versjon av endringer i kodeliste (ingen endringer) |
+| 26.01.2026    | Oppdatert listen over utgåtte felt |
 | Medio februar 2026 | Endelig versjon av kodeliste |
 | Medio februar 2026 | Støtte for inntektsår i test og prod |
 | 12.03.2026    | Første utkast for inntektsår er tilgjengelig i delingstjenesten        |
@@ -365,26 +366,32 @@ SBL = samtykkebasert lånesøknad
 
 ## Summerte skattegrunnlag som utgår i nytt inntektsår
 
-| Teknisk navn | 
-|--------------|
-| annenPensjonFoerAlderspensjon |
-| gevinstVedSalgAvAndelINOKUS |
-| latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
-| latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| latentEllerRealisertGevinstPaaAnnetFinansproduktMvVedUtflytting |
-| latentEllerRealisertTapPaaAnnetFinansproduktMvVedUtflytting |
-| latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting |
-| latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting |
-| loennsinntektTilBarn |
-| loennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt |
-| oppjustertTilleggTilGevinstVedSalgAvAndelINOKUS |
-| oppjustertTilleggTilLatentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting |
-| oppjustertTilleggTilLatentEllerRealisertTapPaaAksjeAndelMvVedUtflytting |
-| pensjonFraUtlandetSkattefriINorge |
-| samletBarnepensjonOgLivrente |
-| underskuddAvEnkeltpersonforetakFordeltFraEktefelle |
-| verdiFoerVerdsettingsrabattForAndelINOKUS |
-| verdsettingsrabattForAndelINOKUS |
+| Teknisk navn | Kommentar |
+|--------------|-----------|
+| annenPensjonFoerAlderspensjon | |
+| gevinstVedSalgAvAndelINOKUS | |
+| inntektsfoeringAvNegativSaldo | Lagt til i listen 26.1 |
+| latentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting | |
+| latentEllerRealisertTapPaaAksjeAndelMvVedUtflytting | |
+| latentEllerRealisertGevinstPaaAnnetFinansproduktMvVedUtflytting | |
+| latentEllerRealisertTapPaaAnnetFinansproduktMvVedUtflytting | |
+| latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | |
+| latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | |
+| loennsinntektTilBarn | |
+| loennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt | |
+| oppjustertTilleggTilGevinstVedSalgAvAndelINOKUS | |
+| oppjustertTilleggTilLatentEllerRealisertGevinstPaaAksjeAndelMvVedUtflytting | |
+| oppjustertTilleggTilLatentEllerRealisertTapPaaAksjeAndelMvVedUtflytting | |
+| oppjustertTilleggTilTapVedSalgAvAndelINOKUS | Lagt til i listen 26.1 |
+| overskuddAvEnkeltpersonforetakInnenAnnenNaeringUtenTrygdeavgiftsplikt | Lagt til i listen 26.1 |
+| pensjonFraUtlandetSkattefriINorge | |
+| saerskiltInntektsfradragIBarnsInntekt | Lagt til i listen 26.1 |
+| samletBarnepensjonOgLivrente | |
+| tapVedSalgAvAndelINOKUS | Lagt til i listen 26.1 |
+| ufoeretrygdFoerAlderspensjon | Lagt til i listen 26.1 |
+| underskuddAvEnkeltpersonforetakFordeltFraEktefelle | |
+| verdiFoerVerdsettingsrabattForAndelINOKUS | |
+| verdsettingsrabattForAndelINOKUS | |
 
 * Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette på github](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
 
