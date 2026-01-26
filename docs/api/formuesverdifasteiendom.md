@@ -99,6 +99,7 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 | FFE-007  | 404             | Ingen formuesverdi funnet på oppgitt matrikkel/boenhet i boligselskap. |
 | FFE-008  | 406             | Feil tilknyttet dataformat. Kun json er støttet.                       |
 | FFE-009  | 404             | Ingen person/organisasjon funnet med oppgitt identifikator             |
+| FFE-010  | 422             | Kan av andre grunner ikke levere formuesverdi for eiendommen           |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
