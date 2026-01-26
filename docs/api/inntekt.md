@@ -404,7 +404,7 @@ Gyldighetsperiode styrer hvilken periode en *&lt;beskrivelse&gt;* kode er i bruk
 |omsorgspenger|2024-01||X|X|
 |omsorgspengerTilFiskerSomBareHarHyre|2024-01||X|X|
 |omstillingsstoenad|2024-01||X||
-|omstillingsstoenadEtteroppgjoer|2025-09||X||
+|omstillingsstoenadEtteroppgjoer|2024-01||X||
 |opplaeringspenger|2024-01||X|X|
 |opplaeringspengerTilFiskerSomBareHarHyre|2024-01||X|X|
 |overgangsstoenadTilEnsligMorEllerFarSomBegynteAaLoepe1April2014EllerSenere|2014-01||X||
