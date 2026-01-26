@@ -244,7 +244,7 @@ Skattekortene oppdateres hver dag kl. 0600. (Gjelder ikke Frikort med beløpsgre
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Har du spørsmål til Skatteetaten om Skattekort til arbeidsgiver API, kan du sende oss e-post: forskudd@skatteetaten.no  
+Har du spørsmål til Skatteetaten om Skattekort til arbeidsgiver API, kan du [kontakte oss her](https://eksternjira.sits.no/plugins/servlet/desk/site/global) (krever innlogging)
   
 </TabItem>
 </Tabs>
