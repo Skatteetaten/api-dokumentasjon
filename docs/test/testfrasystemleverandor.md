@@ -13,11 +13,11 @@ hide_table_of_contents: true
 
 ## Maskinporten
 
-Maskinporten skal også benyttes under test fra systemleverandør, og krever test-sertifikat. For test av Skatteetatens og Folkeregisterets delingstjenester anbefales for tiden at testsertifikat utstedes på virksomhetens ekte organisajonsnummer.
-
-Dersom det i stedet benyttes syntetisk organisasjonsnummer i test-sertifikatet, vær klar over at tilrettelegging for test kan ta noe lengre tid.
+Maskinporten skal også benyttes under test fra systemleverandør, og krever test-sertifikat. For test av Skatteetatens og Folkeregisterets delingstjenester anbefales at testsertifikat utstedes på virksomhetens ekte organisajonsnummer.
 
 Se egen dokumentasjon om [bruk av Maskinporten](../om/sikkerhet.md).
+
+Dersom det i stedet benyttes syntetisk organisasjonsnummer i test-sertifikatet, vær klar over at tilrettelegging for test kan ta noe lengre tid.
 
 ## Delegering i Test
 
@@ -27,7 +27,7 @@ Digdir har en nærmere beskrivelse av hvordan delegere, se [Digdir sin side om d
 
 ## Innlesing i Altinns testmiljø TT02
 
-Skattetaten vil i dialog med Altinn sørge for at virksomhetene blir lest inn i Altinn TT02 slik at det er mulig å gjennomføre delegeringen. Når det er gjort vil vi gi tilbakemelding om hvilket fødselsnummer som kan benyttes for innlogging i TT02.
+Virksomheter eller semgentansvarlige sørger selv for at det er mulig å teste med delegering. 
 
 For å delegere i test trengs følgende:
 1. Virksomheten med rettigheter til tjenesten som skal testes må være tilgjengelig i TT02.
@@ -37,11 +37,13 @@ For å delegere i test trengs følgende:
 
 Altinns testmiljø TT02 er et testmiljø med hovedsaklig syntetiske testdata, og innlesing av ekte virksomheter gjøres kun ved behov. Vær oppmerksom på at det da leses inn produksjonsdata om virksomheten i et testmiljø.
 
-Ved behov for test fra systemleverandør [kontakt Skatteetaten](https://www.skatteetaten.no/deling/kontakt/) med informasjon om følgende:
+Det er Digdir som leser inn ekte organisasjonsnumre i TT02. Kontakt [Altinn service desk](mailto:servicedesk@altinn.no) ved behov. De vil trenge følgende informasjon:
+
 * Systemleverandørs organisasjonsnummer
 *	Systemleverandørs organisasjonsnavn
 *	Systemleverandørs kontaktpersons e-postadresse (som er tilknyttet testen)
 *	Systemleverandørs kontaktpersons mobiltelefonnummer (som er tilknyttet testen)
+
 *	Virksomheten som har tilgang sitt organisasjonsnummer
 *	Virksomheten som har tilgang sitt organisasjonsnavn
 *	Virksomheten som har tilgang sin kontaktpersons e-postadresse (som er tilknyttet testen)
@@ -49,8 +51,5 @@ Ved behov for test fra systemleverandør [kontakt Skatteetaten](https://www.skat
 
 Samme informasjon må oppgis både for virksomheten med tilgang og systemleverandøren, siden begge virksomhetene må leses inn i TT02 for at det skal være mulig å gjennomføre en delegering i testmiljøet. En systemleverandør som leverer til flere virksomheter, trenger ikke melde inn alle virksomhetene for test, kun den som skal utføre delegeringen i test.
 
-**Systemleverandører som ikke har tilgang til Skatteetatens brukerstøtte, skal sende en henvendelse gjennom virksomheten som har tilgang.**
-
-**Virksomheter med segmentansvarlig, skal sende en henvendelse segmentansvarlig, og ikke Skatteetaten direkte.**
-
+Når Altinn har lest inn en organisajon vil man få tilbake hvilket syntetisk fødselsnummer som kan benyttes for innlogging i TT02 for å gjennomføre delegeringen.
 
