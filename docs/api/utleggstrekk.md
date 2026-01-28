@@ -108,7 +108,7 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Informasjonsmodell kommer i Felles datakatalog.
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggstrekk-api/).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
