@@ -188,7 +188,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/eb60da4f-d6b2-3564-b3a5-e31e25da7538) i Felles datakatalog.
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
