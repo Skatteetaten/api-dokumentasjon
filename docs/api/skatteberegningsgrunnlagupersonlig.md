@@ -83,6 +83,8 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatteberegningsgrunnlag-upersonlig-api/).
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
