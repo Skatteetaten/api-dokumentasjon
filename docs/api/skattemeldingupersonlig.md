@@ -174,7 +174,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Informasjonsmodell](https://data.norge.no/informationmodels/e48e70c9-70b2-3349-9c32-983febe9a2e6) i Felles datakatalog. 
+Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-api).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">  
