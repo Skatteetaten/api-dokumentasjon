@@ -44,7 +44,7 @@ I API-beskrivelsen brukes mva-melding som en samlebetegnelse på de ulike meldin
 
 ### Prosess innsending og validering
 Innsending av Mva Melding gjøres mot Skatteetatens Altinn3 Instans API for Innsending. Detaljert beskrivelse av Altinn3's Instans-API finnes her 
-[Altinn Studio Instans API](https://docs.altinn.studio/api/apps/instances/). Inngående kjennskap til dette API'et er ikke nødvendig da denne dokumentasjonen dekker behovet for Mva Melding Innsending.
+[Altinn Studio Instans API](https://docs.altinn.studio/nb/api/apps/instances/). Inngående kjennskap til dette API'et er ikke nødvendig da denne dokumentasjonen dekker behovet for Mva Melding Innsending.
 
 Det anbefales å benytte [swagger dokumentasjonen](https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-test/swagger/index.html) sammen med denne API-beskrivelsen.
 
