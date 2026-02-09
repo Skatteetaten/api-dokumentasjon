@@ -71,11 +71,15 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 
 For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
+#### Samtykke med Altinn 3
+
+Digdir har laget en ny samtykketjeneste. Ressursid for Krav og betalinger API er `ske-samtykke-krav-og-betalinger`. Krav og betalinger API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø og i Produksjon.
+
+#### Samtykke med Altinn 2
+
 | ServiceCode | ServiceEditionCode | Formål |
 |-------------|--------------------|--------|
 | 5928        | 202301             | Kreves for rettighetspakken `finans` |
-
-Obs. Digdir har laget  en ny samtykketjeneste. Ressursid for Krav og betalinger API er `ske-samtykke-krav-og-betalinger`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø.
 
 ## Datakatalog
 
