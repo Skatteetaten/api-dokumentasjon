@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ skattegrunnlag, skatteoppgjør ]
-last_updated: Sep 2, 2025
+last_updated: Feb 9, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke
@@ -89,6 +89,11 @@ For rettighetspakken `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et
 Datakonsumenter med samtykke har kun lov til å spørre om summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med
 støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
+#### Samtykke med Altinn 2
+
+Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. Summert skattegrunnlag API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i både eksternt testmiljø og produksjon.
+
+#### Samtykke med Altinn 2
 | Tjenestekode | Formål                           |
 |--------------|----------------------------------|
 | 4628_210607  | Kreves for rettighetspakke `sbl` |           
@@ -98,8 +103,6 @@ For denne tjenesten er det en parameter som må følge med:
 | Parameter               | Forklaring                                 | Eksempelverdi |
 |-------------------------|--------------------------------------------|---------------|
 | 4628_210607_inntektsaar | Parameter for skattegrunnlagets inntektsår | 2022          |
-
-Obs. Digdir jobber nå med en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i både eksternt testmiljø og produksjon.
 
 ## Støttetjenester
 
@@ -111,8 +114,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
 ### Siste tilgjengelige skatteoppgjør
 
 Virksomheter med samtykke har kun lov til å spørre om summert skattegrunnlag for seneste tilgjengelige
-*inntektsaar*. [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md) kan brukes uten samtykke
-til å sjekke hva som er seneste tilgjengelige inntektsaar for en skattepliktig.
+*inntektsaar*. [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md) kan brukes uten samtykke til å sjekke hva som er seneste tilgjengelige inntektsaar for en skattepliktig.
 
 ## Datakatalog
 
