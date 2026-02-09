@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Inntekt, Inntektsmottaker ]
 keywords: [ inntekt, inntektsmottaker, oppgave, a-ordning, lønn, inntekt ]
-last_updated: Sep 2, 2025
+last_updated: Feb 9, 2026
 hide_table_of_contents: true
 ---
 
@@ -81,7 +81,7 @@ For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
 #### Samtykke med Altinn 3
 
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø og i Produksjon.
+Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. Inntekt API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø og i Produksjon.
 
 #### Samtykke med Altinn 2
 
