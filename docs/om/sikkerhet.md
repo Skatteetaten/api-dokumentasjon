@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [Sikkerhet,Maskinporten,Delegering]
 keywords: [security,sikkerhet]
-last_updated: Nov 12, 2024
+last_updated: Feb 9, 2026
 hide_table_of_contents: true
 ---
 <Summary>Informasjon om nødvendige sikkerhetsmekanismer, autentisering og autorisasjon.</Summary>
@@ -47,23 +47,16 @@ Hvis man kaller tjenestene fra bak en utgående brannmur må man lage åpninger 
 
 ### Adresser det må åpnes for
 
-Vi forsøker å holde IP statisk, men kan ikke love at det aldri vil komme endringer.
-Hvis vi må gjøre endringer vil dette bli [varslet](./varsler.md).
+Vi anbefaler at brannmuråpninger for trafikk mot Skatteetatens blabla API-er baseres på FQDN/hostname (hostbasert åpning), ikke på IP-adresser.
 
-#### Nye URL-er
-Det kan være at enkelte virksomheter må åpne i brannmurreglene sine. IP-range vil være:
+Skatteetaten forbereder en overgang til skyplattform for API-ene for deling. I denne forbindelse gjør vi oppmerksom på at det ikke lenger er mulig å garantere stabile og statiske IP-adresser over tid. Av driftsmessige og tekniske årsaker er det ikke mulig å garantere stabile IP-adresser over tid. IP-adresser kan endres ved normal drift, for eksempel ved failover, skalering, vedlikehold eller endringer i underliggende infrastruktur.
 
-| Miljø | Host | IP | 
-|---|---|---|
-| Test | *.api.skatteetaten-test.no | 20.100.51.138 / 2a13:6200:1065:13d:f5:52a2:e633:8625 |
-| Prod | *.api.skatteetaten.no | 51.13.21.170 / 2a13:6201:1066:c63:f5:fc5f:3c74:30c0 |
+URL-er/hostnavn vil være stabile og endringer varsles på forhånd. IP-adresser holdes stabile i den grad det er mulig, men endringer kan forekomme under normal drift vil da ikke forhåndsvarsles.
 
-### Subnett
+Der man likevel ønsker å åpne for IP-adresser i brannmur er det adressene i tabellen under som er gjeldende. Alle API-er som er under "api.skatteetaten.no" eller "api.skatteetaten-test.no" vil kunne ha IPer som endres. Mulig endring av IPer er normal teknisk drift som kan skje under failover eller andre tekniske grunner, så tabellen under er best effort.
 
-Hvis man heller ønsker et brannmur oppsett som ikke vil kreve endringer så kan man åpne mot hele Skatteetaten sitt subnett for eksterne.
-Dette innebærer at man åpner mot alle eksternt rettede tjenester Skatteetaten tilbyr (som for eksempel folkeregisteret).
 
-| Miljø | Subnett | Port | 
-|---|---|---|
-| Preprod miljø (Test++) | 159.216.17.128/27 | 443 |
-| Produksjon (Prod) | 159.216.17.160/28 | 443 |
+| Miljø | Host | IPv4 | IPv6 | 
+|---|---|---|---|
+| Test | *.api.skatteetaten-test.no | 20.100.51.138/32 <br>51.13.43.236/32 <br>159.216.17.128/27 | 2a13:6201::/32 |
+| Prod | *.api.skatteetaten.no | 51.13.21.170/32 <br>51.13.39.98/32 <br>159.216.17.160/28 | 2a13:6200::/32 |
