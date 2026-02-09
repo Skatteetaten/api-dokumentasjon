@@ -58,5 +58,5 @@ Der man likevel ønsker å åpne for IP-adresser i brannmur er det adressene i t
 
 | Miljø | Host | IPv4 | IPv6 | 
 |---|---|---|---|
-| Test | *.api.skatteetaten-test.no | 20.100.51.138/32 <br>51.13.43.236/32 <br>159.216.17.128/27 | 2a13:6201::/32 |
-| Prod | *.api.skatteetaten.no | 51.13.21.170/32 <br>51.13.39.98/32 <br>159.216.17.160/28 | 2a13:6200::/32 |
+| Test | *.api.skatteetaten-test.no | 20.100.51.138/32 <br />51.13.43.236/32 <br />159.216.17.128/27 | 2a13:6201::/32 |
+| Prod | *.api.skatteetaten.no | 51.13.21.170/32 <br />51.13.39.98/32 <br />159.216.17.160/28 | 2a13:6200::/32 |
