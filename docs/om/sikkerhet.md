@@ -47,7 +47,7 @@ Hvis man kaller tjenestene fra bak en utgående brannmur må man lage åpninger 
 
 ### Adresser det må åpnes for
 
-Vi anbefaler at brannmuråpninger for trafikk mot Skatteetatens blabla API-er baseres på FQDN/hostname (hostbasert åpning), ikke på IP-adresser.
+Vi anbefaler at brannmuråpninger for trafikk mot Skatteetatens API-er baseres på FQDN/hostname (hostbasert åpning), ikke på IP-adresser.
 
 Skatteetaten forbereder en overgang til skyplattform for API-ene for deling. I denne forbindelse gjør vi oppmerksom på at det ikke lenger er mulig å garantere stabile og statiske IP-adresser over tid. Av driftsmessige og tekniske årsaker er det ikke mulig å garantere stabile IP-adresser over tid. IP-adresser kan endres ved normal drift, for eksempel ved failover, skalering, vedlikehold eller endringer i underliggende infrastruktur.
 
