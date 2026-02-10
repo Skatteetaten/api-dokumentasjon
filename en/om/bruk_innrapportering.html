@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.3">
 <title data-rh="true">Bruk av API-er for innrapportering | API-dokumentasjon</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://skatteetaten.github.io/api-dokumentasjon/en/om/bruk_innrapportering"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="nb"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Bruk av API-er for innrapportering | API-dokumentasjon"><meta data-rh="true" name="description" content="Bruk av re-etablerte tjenester for innrapportering mot Skatteetaten."><meta data-rh="true" property="og:description" content="Bruk av re-etablerte tjenester for innrapportering mot Skatteetaten."><meta data-rh="true" name="keywords" content="datatables,tables,grids,markdown,multimarkdown,jquery plugins"><link data-rh="true" rel="icon" href="/api-dokumentasjon/en/img/favicon.png"><link data-rh="true" rel="canonical" href="https://skatteetaten.github.io/api-dokumentasjon/en/om/bruk_innrapportering"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/om/bruk_innrapportering" hreflang="nb"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/om/bruk_innrapportering" hreflang="en"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/om/bruk_innrapportering" hreflang="x-default"><link rel="alternate" type="application/atom+xml" href="/api-dokumentasjon/en/nyheter-og-driftsvarsler/atom.xml" title="Skatteetaten - API nyheter Atom Feed"><link rel="stylesheet" href="/api-dokumentasjon/en/assets/css/styles.a66604ee.css">
-<script src="/api-dokumentasjon/en/assets/js/runtime~main.db716665.js" defer="defer"></script>
+<script src="/api-dokumentasjon/en/assets/js/runtime~main.734ce235.js" defer="defer"></script>
 <script src="/api-dokumentasjon/en/assets/js/main.94cd3cbb.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -37,18 +37,18 @@ i <a href="https://www.skatteetaten.no/testdata/" target="_blank" rel="noopener 
 brukerflate. Her må person med klientadministrator- eller hovedadministrator-rolle/tilgangspakke logge inn i Altinn
 og godkjenne på vegne av organisasjonen. Ved bruk av systembruker for klientforhold, må SBS-kunde også sørge
 for at systembrukeren har de rette tilgangene til å operere på vegne av deres klienter.</li>
-<li>SBS oppretter integrasjon mot Skatteetatens tjeneste (se mer info under dokumentasjon for hvert spesifikke API) og
-kaller denne med et token fra Maskinporten med systembruker.
+<li>SBS oppretter integrasjon mot Skatteetatens tjeneste (se mer info under &quot;API-er for innrapportering&quot; i venstre meny
+for hvert spesifikke API) og kaller denne med et token fra Maskinporten med systembruker.
 Skatteetaten vil autentisere kallet mot Maskinporten og autorisere mot Altinn Autorisasjon at systembrukeren har
 tilgang til å operere på vegne av den dataene omhandler for en gitt tjenesteressurs.</li>
 <li>Skatteetaten oppretter nødvendige dialoger i Dialogporten, med tilknyttede forsendelser. Hvilke dialoger og
 forsendelser som opprettes kan variere fra tjeneste til tjeneste, men ofte opprettes det dialoger både for den
 organisasjonen dataene omhandler og også for organisasjonen tilknyttet systembrukeren. Det opprettes som regel en
 forsendelse for innrapporteringen og en annen forsendelse for tilbakemeldingen fra Skatteetaten.</li>
-<li>Gjennom integrasjon med Altinn Events kan man abonnere på hendelser som skjer i Dialogporten på vegne av en
+<li>Gjennom integrasjon med <a href="https://docs.altinn.studio/nb/dialogporten/reference/events/" target="_blank" rel="noopener noreferrer">Altinn Events</a> kan man abonnere på hendelser som skjer i Dialogporten på vegne av en
 organisasjon. På denne måten vil SBS kunne få beskjed når for eksempel en tilbakemelding har kommet på en gitt
 innrapportering.</li>
-<li>Gjennom integrasjon med Dialogporten kan SBS se status på innrapporteringer, og hente ut identifikatorer på
+<li>Gjennom integrasjon med <a href="https://docs.altinn.studio/nb/dialogporten/reference/openapi/" target="_blank" rel="noopener noreferrer">Dialogporten</a> kan SBS se status på innrapporteringer, og hente ut identifikatorer på
 forsendendelser og dokumenter. Denne integrasjonen krever også token fra Maskinporten med systembruker.</li>
 <li>De fleste tjenester har API for å hente ut dokumenter tilknyttet forsendelser, for eksempel innsendinger og
 tilbakemeldinger. Disse API-ene krever som regel identifikatorer for forsendelse og dokument som du får fra
