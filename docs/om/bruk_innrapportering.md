@@ -43,18 +43,18 @@ standard prosess.
    brukerflate. Her må person med klientadministrator- eller hovedadministrator-rolle/tilgangspakke logge inn i Altinn
    og godkjenne på vegne av organisasjonen. Ved bruk av systembruker for klientforhold, må SBS-kunde også sørge
    for at systembrukeren har de rette tilgangene til å operere på vegne av deres klienter.
-5. SBS oppretter integrasjon mot Skatteetatens tjeneste (se mer info under dokumentasjon for hvert spesifikke API) og
-   kaller denne med et token fra Maskinporten med systembruker.
+5. SBS oppretter integrasjon mot Skatteetatens tjeneste (se mer info under "API-er for innrapportering" i venstre meny 
+   for hvert spesifikke API) og kaller denne med et token fra Maskinporten med systembruker.
    Skatteetaten vil autentisere kallet mot Maskinporten og autorisere mot Altinn Autorisasjon at systembrukeren har
    tilgang til å operere på vegne av den dataene omhandler for en gitt tjenesteressurs.
 6. Skatteetaten oppretter nødvendige dialoger i Dialogporten, med tilknyttede forsendelser. Hvilke dialoger og
    forsendelser som opprettes kan variere fra tjeneste til tjeneste, men ofte opprettes det dialoger både for den
    organisasjonen dataene omhandler og også for organisasjonen tilknyttet systembrukeren. Det opprettes som regel en
    forsendelse for innrapporteringen og en annen forsendelse for tilbakemeldingen fra Skatteetaten.
-7. Gjennom integrasjon med Altinn Events kan man abonnere på hendelser som skjer i Dialogporten på vegne av en
+7. Gjennom integrasjon med [Altinn Events](https://docs.altinn.studio/nb/dialogporten/reference/events/) kan man abonnere på hendelser som skjer i Dialogporten på vegne av en
    organisasjon. På denne måten vil SBS kunne få beskjed når for eksempel en tilbakemelding har kommet på en gitt
    innrapportering.
-8. Gjennom integrasjon med Dialogporten kan SBS se status på innrapporteringer, og hente ut identifikatorer på
+8. Gjennom integrasjon med [Dialogporten](https://docs.altinn.studio/nb/dialogporten/reference/openapi/) kan SBS se status på innrapporteringer, og hente ut identifikatorer på
    forsendendelser og dokumenter. Denne integrasjonen krever også token fra Maskinporten med systembruker.
 9. De fleste tjenester har API for å hente ut dokumenter tilknyttet forsendelser, for eksempel innsendinger og
    tilbakemeldinger. Disse API-ene krever som regel identifikatorer for forsendelse og dokument som du får fra

@@ -87,7 +87,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
 API-et for innrapportering av tredjepartsopplysninger om skattepliktig kundeutbytte til offentlige myndigheter har to endepunkter:
 
-* __POST innsending__: Innsending av tredjepartsopplysninger om skattepliktig kundeutbytte til offentlige myndigheter. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår.
+* __POST innsending__: Innsending av tredjepartsopplysninger om skattepliktig kundeutbytte til offentlige myndigheter. Et kall mot API-et er en rapportering for en organisasjon gitt av en oppgavegiver og som gjelder et inntektsår. Maksimal størrelse på request body er 10 mb. 
 * __GET uthenting_dokument__: Henter ut et spesifikt dokument knyttet til en forsendelse i Dialogporten
 
 API-et validerer mottatte data mot JSON-schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-skattepliktigkundeutbytte?tab=Feilkoder) for

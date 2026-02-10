@@ -90,7 +90,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 API-et for internasjonal rapportering har to endepunkter:
 
 * __POST innsending__: Mottar tredjepartsopplysninger om internasjonal rapportering. Et kall mot API-et sender inn
-  internasjonal rapportering for én oppgavegiver på et gitt inntektsår.
+  internasjonal rapportering for én oppgavegiver på et gitt inntektsår. Maksimal størrelse på request body er 10 mb.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i Dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.

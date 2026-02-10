@@ -88,7 +88,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 API-et for innrapportering av innskudd, utlån og renter har to endepunkter:
 
 * __POST innsending__: Mottar tredjepartsopplysninger om innskudd, utlån og renter. Et kall mot API-et sender inn
-  rapportering av innskudd, utlån og renter for én oppgavegiver på et gitt inntektsår.
+  rapportering av innskudd, utlån og renter for én oppgavegiver på et gitt inntektsår. Maksimal størrelse på request body er 10 mb.
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub.

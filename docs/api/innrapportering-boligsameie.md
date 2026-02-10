@@ -108,7 +108,7 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 API-et for innrapportering av tredjepartsopplysninger for boligsameie har to endepunkter
 
 * __POST innsending__: Mottar tredjepartsopplysninger for boligsameie. Ett kall mot API-et er en rapportering for en
-  person gitt av en oppgavegiver og som gjelder et inntektsår.
+  person gitt av en oppgavegiver og som gjelder et inntektsår. Maksimal størrelse på request body er 10 mb. 
 * __GET uthenting_dokument__: Henter ut ett spesifikt dokument knyttet til en forsendelse i dialogporten
 
 API-et validerer mottatte data mot JSON schema beskrevet på SwaggerHub. Se [feilkoder](innrapportering-boligsameie?tab=Feilkoder) for
