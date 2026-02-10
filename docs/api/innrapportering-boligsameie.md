@@ -81,23 +81,6 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettighet for tilg
 ]
 ```
 
-```json
-"accessPackages": [
-    {
-        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
-    },
-    {
-        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
-    },
-    {
-        "urn": "urn:altinn:accesspackage:skattegrunnlag"
-    },
-    {
-        "urn": "urn:altinn:accesspackage:forretningsforer-eiendom"
-    }
-]
-```
-
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
