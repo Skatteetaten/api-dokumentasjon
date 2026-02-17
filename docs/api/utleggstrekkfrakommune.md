@@ -1,5 +1,5 @@
 ---
-title: ELAN - API mot kommunene
+title: Utleggstrekkbeslutning fra kommune
 slug: /api/utleggstrekkfrakommune
 folder: api
 sidebar: mydoc_sidebar
@@ -10,7 +10,7 @@ last_updated: Sept 29, 2025
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenester for å kommuner for å støtte behandling av utlegg mot nytt regelverk. 
+<Summary>Tjenester for å kommuner som benytter seg av særnamsmyndigheten og behandler utlegg mot nytt regelverk. 
 Dette består av en tjeneste for å gjøre oppslag på hvilket regelverk en skyldner skal behandles etter, samt en tjeneste for å sende inn utleggstrekk fra kommune gjennom Skatteetatens systemløsninger.</Summary>
 
 <Tabs underline={true}>
@@ -45,16 +45,16 @@ I mellomtiden – ta kontakt med fremtidensinnkreving@skatteetaten.no.
 
 ## Scope
 
-Foreløbig brukes følgende scope ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`.
+Foreløbig brukes følgende scope ved autentisering i Maskinporten: `skatteetaten:utleggstrekkbeslutningkommune`.
 
 
-Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-utleggsbegjaering` som beskrevet her for produksjon: https://docs.altinn.studio/api/authentication/systemuserapi/systemuserrequest/external/#create-a-standard-system-user-request
+Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-utleggstrekkbeslutningkommune` som beskrevet her for produksjon: https://docs.altinn.studio/api/authentication/systemuserapi/systemuserrequest/external/#create-a-standard-system-user-request
 
 
 ## Delegering
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbegjæring API - På vegne av`
+opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggstrekkbeslutning kommune API - På vegne av`
 
 ## Teknisk spesifikasjon
 
