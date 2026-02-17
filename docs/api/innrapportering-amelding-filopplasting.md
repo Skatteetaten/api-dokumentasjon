@@ -1,12 +1,12 @@
 ---
-title: Innrapportering filopplasting API
-slug: /api/innrapportering-filopplasting
+title: Innrapportering A-melding filopplasting API
+slug: /api/innrapportering-amelding-filopplasting
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API ]
-keywords: [ grunnlagsdata, filopplasting ]
-last_updated: Oct 03, 2025
+tags: [ API, A-ordning ]
+keywords: [ amelding, filopplasting ]
+last_updated: Feb 17, 2026
 hide_table_of_contents: true
 ---
 
@@ -324,6 +324,15 @@ angitt verdi-feltene.
 | AMLD_1047              | Content-type-header må være av type application/json                | Content-type header er feil. API-et har kun støtte for JSON                                                                 |
 | AMLD_1063              | Tokenet mangler informasjon om systembruker i authorization_details | Tokenet er ikke et gyldig systembruker token                                                                                |
 
+</TabItem>
+
+<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+
+Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.pdf)
+
+![informasjonsmodell](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.png)
+
+                                                                                                                                                                                                                                                         |
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">

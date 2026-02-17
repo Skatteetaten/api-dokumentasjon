@@ -5,7 +5,7 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, A-ordning]
-keywords: [grunnlagsdata, a-melding, aordning]
+keywords: [a-melding, aordning]
 last_updated: Mar 27, 2025
 hide_table_of_contents: true
 ---
