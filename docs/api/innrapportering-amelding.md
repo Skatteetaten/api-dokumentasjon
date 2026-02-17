@@ -27,6 +27,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`.
 Dette scopet skal også brukes for tilbakemeldingen som skal hentes fra eget API, se [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
+Scopet kan også brukes for [filopplastings-apiet](innrapportering-amelding-filopplasting.md)
  
 
 ## Delegering
