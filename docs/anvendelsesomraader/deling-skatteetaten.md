@@ -51,7 +51,7 @@ Den eller de i virksomheten som har fått delegert ressursen, kan nå logge inn 
 
 Dere kan pt. kun se de rettighetespakkene virksomheten har fått direkte tilgang til, men ikke de virksomheten har fått delegert fra andre. Vi vil se på en utvidelse for det etter hvert.
 
-Obs. Det er nå en midlertidig begrensning i Ansattporten som gjør at organisasjonvelgeren kun fungerer for brukere som har fått tilgang til ressursen via enkelttjeneste-delegering direkte til sitt fødselsnummer. Støtte for brukere som har tilgang gjennom en tilgangspakke/rolle kommer mot slutten av 2025. I praksis betyr det at daglig leder selv ikke får logget inn i løsningen, men hen kan delegere ressursen til andre i virksomheten som da kan logge inn. [Begrensningen er beskrevet i Digdir sin dokumentasjon](https://docs.digdir.no/docs/ansattporten/ansattporten_rar.html#datamodell-for-altinn-3-ressurser-ansattportenaltinnresource)
+Innlogging i løsningen baserer seg på [Ansattporten fra Digdir](https://docs.digdir.no/docs/ansattporten/ansattporten_om.html).
 
 ## Delingsområder
 
