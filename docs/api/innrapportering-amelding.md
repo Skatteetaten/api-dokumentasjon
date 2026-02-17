@@ -85,7 +85,7 @@ REST-api: URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepu
 [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
 
 Filopplasting-api: URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub a-medling filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/). **Spesifikasjonen for a-meldingen (payload) er den samme som for REST-apiet**. 
+[SwaggerHub a-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/). **Spesifikasjonen for a-meldingen (payload) er den samme som for REST-apiet**. 
 Her kan det komme endringer fortløpende når vi får tilbakemeldinger.
 
 

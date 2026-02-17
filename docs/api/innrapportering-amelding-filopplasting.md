@@ -95,8 +95,8 @@ API-et for innrapportering av tredjepartsopplysninger via filopplasting har fire
 
 * __POST /opplastinger__: Laster opp en fil til skatteetaten for kontroll
 * __GET /opplastinger__: Henter status for alle filer som er lastet opp
-* __GET /opplastinger/{id}__: Henter status for en enkelt lastet opp fil
-* __DELETE /opplastinger/{id}__: Sletter en opplastet fil
+* __GET /opplastinger/:id__: Henter status for en enkelt lastet opp fil
+* __DELETE /opplastinger/:id__: Sletter en opplastet fil
 * __PUT /innsending__: Sender inn en lastet opp og validert fil til behandling
 
 Se [feilkoder](innrapportering--amelding-filopplasting?tab=Feilkoder) for relaterte feilmeldinger.
