@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, A-ordning]
 keywords: [a-melding, aordning]
-last_updated: Mar 27, 2025
+last_updated: Feb 17, 2026
 hide_table_of_contents: true
 ---
 

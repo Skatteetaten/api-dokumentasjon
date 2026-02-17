@@ -5,12 +5,12 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, A-ordning ]
-keywords: [ amelding, filopplasting ]
+keywords: [ a-melding, filopplasting ]
 last_updated: Feb 17, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av amelding ved filopplasting</Summary>
+<Summary>Tjeneste for innrapportering av A-melding ved filopplasting</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -25,16 +25,12 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Bruk av API-et
-Dette API-et er ment for selskaper som skal rapportere a-meldingen, som har innsendinger større enn 10MB og 
+Dette API-et er ment for selskaper som skal rapportere A-meldingen, som har innsendinger større enn 10MB og 
 som ikke kan dele opp innsendingene.
 
 ## Scope
 
-Du skal bruke scope tilsvarende ordningen man vil rapportere for. Foreløpig er følgende ordninger/scopes støttet:
-
-| Ordning    | Scope                                  |
-|------------|----------------------------------------|
-| Ameldingen | skatteetaten:innrapporteringamelding |
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`
 
 Dette scopet kan også brukes for [maskin-til-maskin mottaks-apiet](innrapportering-amelding.md) 
 og for tilbakemeldingen som skal hentes fra eget API, se [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
@@ -91,13 +87,13 @@ URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Ope
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for innrapportering av tredjepartsopplysninger via filopplasting har fire endepunkter
+API-et for innrapportering av A-melding via filopplasting har fire endepunkter
 
 * __POST /opplastinger__: Laster opp en fil til skatteetaten for kontroll
 * __GET /opplastinger__: Henter status for alle filer som er lastet opp
-* __GET /opplastinger/:id__: Henter status for en enkelt lastet opp fil
+* __GET /opplastinger/:id__: Henter status for en enkelt opplastet fil
 * __DELETE /opplastinger/:id__: Sletter en opplastet fil
-* __PUT /innsending__: Sender inn en lastet opp og validert fil til behandling
+* __PUT /innsending__: Sender inn en opplastet og validert fil til behandling
 
 Se [feilkoder](innrapportering--amelding-filopplasting?tab=Feilkoder) for relaterte feilmeldinger.
 
@@ -364,7 +360,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot innrapportering av ameldingen kan du kontakte 
+Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot innrapportering av A-meldingen kan du kontakte 
 oss via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) 
 eller på [Slack](https://skatteetaten.slack.com/)
 
