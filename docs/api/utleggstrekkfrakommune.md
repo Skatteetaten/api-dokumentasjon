@@ -45,10 +45,10 @@ I mellomtiden – ta kontakt med fremtidensinnkreving@skatteetaten.no.
 
 ## Scope
 
-Foreløbig brukes følgende scope ved autentisering i Maskinporten: `skatteetaten:utleggstrekkbeslutningkommune`.
+Følgende scope brukes ved autentisering i Maskinporten: `skatteetaten:utleggstrekkbeslutningkommune`.
 
 
-Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-utleggstrekkbeslutningkommune` som beskrevet her for produksjon: https://docs.altinn.studio/api/authentication/systemuserapi/systemuserrequest/external/#create-a-standard-system-user-request
+Ved bruk av systembruker må forespørselen også inneholde ressurs-id `TIL AVKLARING` som beskrevet her for produksjon: https://docs.altinn.studio/api/authentication/systemuserapi/systemuserrequest/external/#create-a-standard-system-user-request
 
 
 ## Delegering
