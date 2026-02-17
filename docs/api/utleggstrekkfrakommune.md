@@ -1,5 +1,5 @@
 ---
-title: Utleggstrekkbeslutning fra kommune
+title: Utleggstrekkbeslutning fra kommune API
 slug: /api/utleggstrekkfrakommune
 folder: api
 sidebar: mydoc_sidebar
