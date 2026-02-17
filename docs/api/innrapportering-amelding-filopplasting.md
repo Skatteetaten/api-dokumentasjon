@@ -108,10 +108,10 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 ## Innsending
 En innsending foregår over flere steg.
-- Last opp en fil til opplastinger endepunktet
-- Poll opplastinger endepunktet for å se om status til fila har blitt enten VALIDERING_FEILET eller KLAR_TIL_INNSENDING
-- Hvis status er KLAR_TIL_INNSENDING kall innsending endepunkt for å sende inn fila
-- Hvis status er VALIDERING_FEILET, se feil i feilliste på status kallet for hva som feilet
+- Last opp en fil til `opplastinger`-endepunktet
+- Poll `opplastinger`-endepunktet for å se om status til fila har blitt enten `VALIDERING_FEILET` eller `KLAR_TIL_INNSENDING`
+- Hvis status er `KLAR_TIL_INNSENDING` kall `innsending`-endepunktet for å sende inn fila
+- Hvis status er `VALIDERING_FEILET`, se feil i feilliste på status kallet for hva som feilet
 
 ### POST /opplastinger
 
