@@ -19,6 +19,7 @@ Skatteetaten  er i ferd med å migrere relevante API-er til ny samtykkeløsninge
 For at bankene skal ta i bruk ny samtykke-løsning må de:
 - Først [sette opp den nye løsnigen som Datakonsument/Sluttbrukersystem](https://docs.altinn.studio/nb/authorization/getting-started/consent/)
 - Deretter [utstede et maskinporten-token med samtykke](https://docs.altinn.studio/nb/authorization/guides/system-vendor/consent/)
+- Anvende dette som et vanlig maskinporten-token i Authorization-header i kall mot Skatteetaten sine API-er som krever samtykke (AltinnSamtykke-header benyttes ikke lenger, det gjelder kun samtykker i Altinn 2).
 
 For Summert skattegrunnlag API må metadata-objektet i consent-requesten inneholde inntektsår. Eksempel:
 ```
