@@ -397,8 +397,9 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 | oppjustertTilleggTilLatentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | oppjusteringAvEierinntekter | x | Deles med konsumenter som mottar oppjusterte tillegg, og samtidig mottar latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt |
 | oppjustertTilleggTilLatentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | oppjusteringAvEierinntekter | x | Deles med konsumenter som mottar oppjusterte tillegg, og samtidig mottar latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt |
 
-
 SBL = samtykkebasert lånesøknad
+
+* Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette på github](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
 
 ## Summerte skattegrunnlag som utgår i nytt inntektsår
 
@@ -428,8 +429,6 @@ SBL = samtykkebasert lånesøknad
 | underskuddAvEnkeltpersonforetakFordeltFraEktefelle | |
 | verdiFoerVerdsettingsrabattForAndelINOKUS | |
 | verdsettingsrabattForAndelINOKUS | |
-
-* Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette på github](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
 
 </TabItem>
 </Tabs>
