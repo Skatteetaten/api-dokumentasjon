@@ -392,8 +392,11 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 
 | Teknisk navn | Kategori | SBL | Blir tilgjengelig i rettighetspakker som fra før har tilgang til* |
 |--------------|---------|---|---|
-| livsvarigAvtalefestetPensjonIOffentligSektor | inntekt | x |  |
-| ungdomsprogramytelse | inntekt | x |  |
+| livsvarigAvtalefestetPensjonIOffentligSektor | inntekt | x |  Deles med konsumenter som mottar samletAvtalefestetPensjon. livsvarigAvtalefestetPensjonIOffentligSektor behandles skatterettslig på samme måte som avtalefestetPensjonIPrivatSektorFom2011 |
+| ungdomsprogramytelse | inntekt | x | Deles med konsumenter som mottar arbeidsavklaringspenger. ungdomsprogramytelse er en NAV-ytelse og skal skatterettslig behandles som arbeidsavklaringspenger (AAP) |
+| oppjustertTilleggTilLatentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | oppjusteringAvEierinntekter | x | Deles med konsumenter som mottar oppjusterte tillegg, og samtidig mottar latentTapPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt |
+| oppjustertTilleggTilLatentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt | oppjusteringAvEierinntekter | x | Deles med konsumenter som mottar oppjusterte tillegg, og samtidig mottar latentGevinstPaaAksjeAndelMvVedUtflyttingUtenUtsattBetalingAvSkatt |
+
 
 SBL = samtykkebasert lånesøknad
 
