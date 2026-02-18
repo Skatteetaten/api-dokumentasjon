@@ -73,105 +73,113 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
 ## JSON
 
 ```json
-  {
-  "personidentifikator": "08457590416",
-  "inntektsaar": 2024,
+{
+  "personidentifikator": "13819699571",
+  "inntektsaar": 2025,
   "skjermet": false,
   "beregnetSkattFastland": {
     "skatteklasse": "1",
-    "beregnetSkatt": 199651,
-    "beregnetSkattFoerSkattefradrag": 199651,
-    "skatteregnskapskommune": "0301",
+    "beregnetSkatt": 170886,
+    "beregnetSkattFoerSkattefradrag": 170886,
+    "skatteregnskapskommune": "4626",
     "anvendtStandardfradrag": false,
     "skattOgAvgift": {
       "formuesskattTilStat": {
-        "grunnlag": 3542369,
-        "beloep": 5527
+        "grunnlag": 0,
+        "beloep": 0
       },
       "inntektsskattTilKommune": {
         "kommunefordeltSkatt": [
           {
-            "kommune": "0301",
-            "grunnlag": 582675,
-            "beloep": 54140
+            "kommune": "4626",
+            "grunnlag": 569308,
+            "beloep": 58747
           }
         ],
-        "grunnlag": 582675,
-        "beloep": 54140
+        "grunnlag": 569308,
+        "beloep": 58747
       },
       "inntektsskattTilFylkeskommune": {
         "kommunefordeltSkatt": [
           {
-            "kommune": "0301",
-            "grunnlag": 582675,
-            "beloep": 11619
+            "kommune": "4626",
+            "grunnlag": 569308,
+            "beloep": 12210
           }
         ],
-        "grunnlag": 582675,
-        "beloep": 11619
+        "grunnlag": 569308,
+        "beloep": 12210
       },
       "inntektsskattTilKommuneOgFylkeskommune": {
-        "grunnlag": 582675,
-        "beloep": 65759
+        "grunnlag": 569308,
+        "beloep": 70957
       },
       "formuesskattTilKommune": {
         "kommunefordeltSkatt": [
           {
-            "kommune": "0301",
-            "grunnlag": 3542369,
-            "beloep": 12897
+            "kommune": "4626",
+            "grunnlag": 0,
+            "beloep": 0
           }
         ],
-        "grunnlag": 3542369,
-        "beloep": 12897
+        "grunnlag": 0,
+        "beloep": 0
       },
       "fellesskatt": {
-        "grunnlag": 582675,
-        "beloep": 43015
+        "grunnlag": 569308,
+        "beloep": 30410
       },
       "trinnskatt": {
-        "grunnlag": 687125,
-        "beloep": 18857
+        "grunnlag": 685933,
+        "beloep": 16702
       },
       "trygdeavgiftAvLoennsinntekt": {
-        "grunnlag": 687125,
-        "beloep": 53596
+        "grunnlag": 685933,
+        "beloep": 52817
       },
       "sumTrygdeavgift": {
-        "grunnlag": 687125,
-        "beloep": 53596
+        "grunnlag": 685933,
+        "beloep": 52817
       }
     },
     "oevrigeResultaterAvBeregning": {
-      "alminneligInntektFoerSaerfradrag": 582675,
-      "pensjonsgivendeInntekt": 687125,
-      "samletGrunnlagForInntektsskattTilKommuneOgFylkeskommuneStatsskattOgFellesskatt": 582675,
+      "alminneligInntektFoerSaerfradrag": 569308,
+      "pensjonsgivendeInntekt": 685933,
+      "samletGrunnlagForInntektsskattTilKommuneOgFylkeskommuneStatsskattOgFellesskatt": 569308,
       "alminneligInntektFoerFordelingsfradrag": [
         {
-          "beloep": 582675,
-          "kommunenummer": "0301"
+          "beloep": 595264,
+          "kommunenummer": "4626"
         }
       ],
+      "fordelingsfradrag": 25956,
       "oevrigFormue": [
         {
-          "beloep": 3542369,
-          "kommunenummer": "0301"
+          "beloep": 66574,
+          "kommunenummer": "4626"
+        }
+      ],
+      "samletGjeld": 865203,
+      "gjeld": [
+        {
+          "beloep": 865203,
+          "kommunenummer": "4626"
         }
       ]
     },
     "informasjonTilSkattelister": {
-      "nettoinntekt": 582675,
-      "nettoformue": 3542369,
-      "beregnetSkatt": 199651,
+      "nettoinntekt": 569308,
+      "nettoformue": 0,
+      "beregnetSkatt": 170886,
       "kommune": [
-        "0301"
+        "4626"
       ]
     }
   },
-  "skatteoppgjoersdato": "2025-01-21",
+  "skatteoppgjoersdato": "2026-02-09",
   "anvendtTolvdelForTrinnskatt": 12,
   "anvendtTolvdelVedArbeidsoppholdINorge": 12,
-  "ajourholdstidspunkt": "2025-01-27T07:18:00.528Z"
+  "ajourholdstidspunkt": "2026-02-09T09:15:08.726Z"
 }
 ```
 
