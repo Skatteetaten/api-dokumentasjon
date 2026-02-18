@@ -21,7 +21,7 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Teknisk spesifikasjon
-Skattemelding upersonlig API følger ikke de generelle reglene for [versjonering](../om/versjoner.md), men har en egen versjon pr. inntektsår. For øyeblikket leverer API-et skattemeldinger for 2024.
+Skattemelding upersonlig API v4 leverer skattemeldinger for 2024 og 2025.
   
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-api) i SwaggerHub.
 
@@ -58,95 +58,88 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 
 ```json
 {
-  "norskIdentifikator": "756118412",
-  "inntektsaar": "2024",
+  "norskIdentifikator": "314028198",
+  "inntektsaar": "2025",
   "inntektOgUnderskudd": {
     "inntekt": {
-      "naeringsinntekt": 1247891
+      "naeringsinntekt": 500000
     },
-    "inntektFoerFradragForEventueltAvgittKonsernbidrag": 1247891,
+    "inntektFoerFradragForEventueltAvgittKonsernbidrag": 500000,
     "samletInntekt": {
-      "beloep": 1247891
+      "beloep": 500000
     }
   },
-  "formueOgGjeld": {
-    "samletVerdiFoerEventuellVerdsettingsrabatt": {
-      "beloep": 6537479
-    }
-  },
-  "opprettetDato": "2025-03-18T09:08:07.336+01:00",
-  "fasteEiendommer": {
-    "fastEiendom": [
+  "spesifikasjonAvForholdRelevanteForBeskatning": {
+    "aksjeIAksjonaerregisteret": [
       {
-        "sergEiendomsidentifikator": "23",
-        "id": "23",
-        "eksternEiendomsidentifikator": {
-          "kommunenummer": "4601",
-          "sergMatrikkelnummer": {
-            "gaardsnummer": 1,
-            "bruksnummer": 11
-          }
-        },
-        "fastEiendomSomFormuesobjekt": [
-          {
-            "formuesspesifikasjonForBolig": {
-              "boligegenskaper": {
-                "boligensAreal": 200,
-                "boligtype": "enebolig",
-                "byggeaar": "2010"
-              },
-              "boligbruk": "sekundaerbolig",
-              "grunnlagForBeregnetMarkedsverdi": {
-                "boligverdi": 6537479
-              },
-              "beregnetMarkedsverdi": 6537479,
-              "markedsverdiErGrunnlagForBeregningAvFormuesverdiForBolig": false
-            },
-            "id": "9d52e232-10ea-4356-bb5b-e5f52f8980c7",
-            "eiendomstype": "selveidBolig",
-            "eierandel": 100,
-            "andelAvFormuesverdi": 100,
-            "verdiFoerVerdsettingsrabattForFormuesandel": 6537479
-          }
-        ]
+        "id": "30d392602e74103e70ccc21af50d5d2a1e102f15",
+        "selskapetsNavn": "FOO 19691 AS",
+        "selskapetsOrganisasjonsnummer": "501963442",
+        "isinnummer": "NO6519286027",
+        "antallAksjer": 229
+      }
+    ],
+    "verdipapirfond": [
+      {
+        "id": "3420517e65b36b836baba11546fb3e837873a7d8",
+        "fondetsNavn": "Aksjefondet RST",
+        "isinnummer": "NO8519673295",
+        "antallAndeler": 110.759,
+        "utbytte": 23900
+      },
+      {
+        "id": "c46208774441cc4c762f651f8e2e080dad736891",
+        "fondetsNavn": "Rentefondet RST",
+        "isinnummer": "NO2190859406",
+        "antallAndeler": 200.105,
+        "renteinntekt": 239000
+      }
+    ],
+    "obligasjonOgSertifikat": [
+      {
+        "id": "d0b06eaf3683e26308f3d2758df799f2d69fd93b",
+        "rentepapiretsNavn": "RST-FIN",
+        "kontofoerersNavn": "HUSLØS RIKTIG LEOPARD ASA",
+        "kontonummer": "NO8437272774",
+        "finansproduktidentifikator": "NO3048216047",
+        "finansproduktidentifikatortype": "ISIN",
+        "antallObligasjonOgSertifikat": 90,
+        "renteinntektAvObligasjonOgSertifikat": 6999999,
+        "gevinstVedRealisasjonAvObligasjonOgSertifikat": 390000
+      }
+    ],
+    "fondskonto": [
+      {
+        "id": "fde7541e964b6c41f16cc4af994e8e4a2dca96a1",
+        "forsikringsselskapetsOrganisasjonsnummer": "312470764",
+        "forsikringsselskapetsNavn": "HELLIG USANNFERDIG TIGER AS",
+        "kontonummer": "74981716829",
+        "skattepliktigGevinstVedRealisasjonAvOgUttakFraAksjedel": 14453,
+        "skattepliktigGevinstVedRealisasjonAvOgUttakFraRentedel": 14453
       }
     ]
+  },
+  "formueOgGjeld": {
+    "formuesobjekt": [
+      {
+        "id": "693bdd68-3549-4804-b9d1-41c8e5c010db",
+        "formuesobjekttype": "formuesobjektIkkeOmfattetAvVerdsettingsrabatt",
+        "verdiFoerEventuellVerdsettingsrabatt": 50339
+      }
+    ],
+    "samletVerdiFoerEventuellVerdsettingsrabatt": {
+      "beloep": 50339
+    }
+  },
+  "opplysningOmSkattesubjekt": {
+    "erBoersnotert": false
   },
   "verdsettingAvAksje": {
     "samletVerdiBakAksjeneISelskapet": {
-      "beloep": 6537479
+      "beloep": 50339
     }
   },
-  "kraftverk": {
-    "spesifikasjonPerKraftverk": [
-      {
-        "id": "e0a3bacc-57c3-41b6-abd5-d49f6d5c20ae",
-        "loepenummer": 123,
-        "kraftverketsNavn": "Krafgt",
-        "samletPaastempletMerkeytelseIKva": 15000,
-        "negativGrunnrenteinntektFoerSamordning": 280395
-      }
-    ],
-    "samordnetGrunnrenteinntekt": {
-      "endeligSamordnetNegativGrunnrenteinntekt": 280395,
-      "samletNegativGrunnrenteinntektFoerSamordning": 280395
-    }
-  },
-  "vindkraftverk": {
-    "spesifikasjonPerVindkraftverk": [
-      {
-        "id": "0bb183d0-9b20-434c-b1ce-a35551e422e1",
-        "loepenummer": 55,
-        "kraftverketsNavn": "jlkjkl",
-        "installertEffektIKwhIHenholdTilKonsesjon": 1000,
-        "negativGrunnrenteinntektFoerSamordning": 116225,
-        "spesifikasjonAvNegativGrunnrenteinntektIVindkraftverk": {
-          "fremfoerbarNegativGrunnrenteinntekt": 116225
-        }
-      }
-    ]
-  },
-  "ajourholdstidspunkt": "2025-03-18T09:08:07.995738Z"
+  "ajourholdstidspunkt": "2026-02-11T05:40:15.975307Z"
 }
 ```
 
@@ -193,6 +186,8 @@ Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Ska
 | 313129624  | 2024       |
 | 310486574  | 2024       |
 | 310030252  | 2024       |
+| 314028198  | 2025       |
+| 310577200  | 2025       |
   
 Ytterligere testdata kan man benytte hendelseslisten for å finne.
   
