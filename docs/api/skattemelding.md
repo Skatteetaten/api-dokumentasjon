@@ -24,7 +24,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Teknisk spesifikasjon
 
-Skattemelding API v5 leverer skattemelding for inntektsåret 2024.
+Skattemelding API v5 leverer skattemelding for inntektsåret 2024 og 2025.
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api) på SwaggerHub.
 
@@ -68,41 +68,41 @@ For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste
 ```json
 {
   "skjermet": false,
-  "norskPersonidentifikator": "21830199869",
-  "registreringstidspunkt": "2025-02-25T15:17:56.014+01:00",
-  "inntektsaar": "2024",
+  "norskPersonidentifikator": "12857097600",
+  "registreringstidspunkt": "2026-02-09T10:32:44.4+01:00",
+  "inntektsaar": "2025",
   "bankLaanOgForsikring": {
     "konto": [
       {
-        "id": "91595767b658108fdacd92169daae7f874e3c757",
-        "bankensNavn": "JUSTERBAR HÅNDFAST ISBJØRN SA",
-        "organisasjonsnummer": "312871262",
-        "kontonummer": "44133176397",
+        "id": "aa18441793d029328924b101a9bd2d4baf39d8e9",
+        "bankensNavn": "UBESTIKKELIG RAKRYGGET APE",
+        "organisasjonsnummer": "314017773",
+        "kontonummer": "55209310928",
         "prosentandelAvGjeldInnskuddOgRente": 100.0,
         "innskudd": {
-          "beloep": 156650.0
+          "beloep": 128168.0
         },
         "andelAvInnskudd": {
-          "beloep": 156650
+          "beloep": 128168
         },
         "opptjenteRenter": {
-          "beloep": 3133.0
+          "beloep": 2563.0
         },
         "andelAvOpptjenteRenter": {
-          "beloep": 3133
+          "beloep": 2563
         },
         "gjeld": {
-          "beloep": 684091.0
+          "beloep": 365562.0
         },
         "andelAvGjeld": {
-          "beloep": 684091
+          "beloep": 365562
         },
         "paaloepteRenter": {
-          "fradragsberettigetBeloep": 20523.0,
-          "beloepUtenHensynTilValgtPrioritertFradragstype": 20523.0
+          "fradragsberettigetBeloep": 10967.0,
+          "beloepUtenHensynTilValgtPrioritertFradragstype": 10967.0
         },
         "andelAvPaaloepteRenter": {
-          "beloep": 20523
+          "beloep": 10967
         }
       }
     ]
@@ -111,57 +111,98 @@ For å følge med på endringer tilbyr vi to [støttetjeneste for hendelsesliste
     "loennOgTilsvarendeYtelser": {
       "arbeidsgiver": [
         {
-          "id": "159237314ca88c061d99c1c4dea175c667911c81",
-          "navn": "EKSEMPLARISK REAL TIGER AS",
+          "id": "2bd6df0bee913a278cfb623feb3b407cb17ab392",
+          "navn": "REFLEKTERENDE OVERNATURLIG PIGGSVIN",
           "samledeYtelserFraArbeidsgiverPerBehandlingsart": [
             {
-              "id": "558c49882d9320242d5b35a46606ff7bd837cd28",
+              "id": "68d3b8e75a0d9f3513edd5374e16eb9452c6b3ee",
               "beloep": {
-                "beloep": 1004947.0
+                "beloep": 37875.0
+              },
+              "behandlingsart": "SYKEPENGER"
+            }
+          ],
+          "organisasjonsnummer": "311169254"
+        },
+        {
+          "id": "71be51a81e35ec85677e04187d8435ddb098b53c",
+          "navn": "AVANSERT DEMOKRATISK TIGER AS",
+          "samledeYtelserFraArbeidsgiverPerBehandlingsart": [
+            {
+              "id": "59cbd617aac01e72b041907eb277f998852f03a9",
+              "beloep": {
+                "beloep": 237970.0
               },
               "behandlingsart": "LONN"
             }
           ],
-          "organisasjonsnummer": "310495670"
+          "organisasjonsnummer": "312955342"
+        },
+        {
+          "id": "afe1c4a6fc523d3641a3a240db9854de808ebcba",
+          "navn": "AVANSERT DEMOKRATISK TIGER AS",
+          "samledeYtelserFraArbeidsgiverPerBehandlingsart": [
+            {
+              "id": "3f5a7e1ede6e30394268dbcde02a5eba50b01b0c",
+              "beloep": {
+                "beloep": 628593.0
+              },
+              "behandlingsart": "HYRE"
+            }
+          ],
+          "organisasjonsnummer": "312955342",
+          "girRettTilSaerskiltFradragForSjoefolk": true
+        }
+      ],
+      "avkortetFordelVedElektroniskKommunikasjon": [
+        {
+          "id": "fe769cdd2ebe473abc590494b2dff7471ba81de7",
+          "beloep": {
+            "beloep": 1500
+          },
+          "elektroniskKommunikasjonPerArbeidsgiver": [
+            {
+              "id": "c27d337160a5f53532d87669a75d488717ce1c78",
+              "organisasjonsnavn": "AVANSERT DEMOKRATISK TIGER AS",
+              "organisasjonsnummer": "312955342",
+              "innberettetBeloep": {
+                "beloep": 1500.0
+              }
+            }
+          ]
         }
       ]
     },
     "fagforeningskontingent": {
       "samletBetaltFagforeningskontingentPerSkattleggingsperiode": {
-        "beloep": 4392.0
+        "beloep": 5292.0
       },
       "inntektsfradragForFagforeningskontingent": {
-        "fradragsberettigetBeloep": 4392.0,
-        "beloepUtenHensynTilValgtPrioritertFradragstype": 4392.0
+        "fradragsberettigetBeloep": 5292.0,
+        "beloepUtenHensynTilValgtPrioritertFradragstype": 5292.0
       }
     },
     "minstefradragOgKostnader": [
       {
         "id": "MINSTEFRADRAG_OG_KOSTNADER_KNYTTET_TIL_ARBEID_OG_ANNEN_INNTEKT",
         "minstefradragIInntekt": {
-          "fradragsberettigetBeloep": 104450.0,
-          "beloepUtenHensynTilValgtPrioritertFradragstype": 104450.0
+          "fradragsberettigetBeloep": 92000.0,
+          "beloepUtenHensynTilValgtPrioritertFradragstype": 92000.0
         }
       }
-    ]
-  },
-  "finans": {
-    "verdipapirfond": [
-      {
-        "id": "f0791bea8cfd62bb1abbe9425bb535a9eb621beb",
-        "fondetsNavn": "Aksjefondet RST",
-        "isinnummer": "NO9190983755",
-        "antallAndeler": 110.759,
-        "verdiFoerVerdsettingsrabattForAndelIAksjedel": {
-          "beloep": 223449.0
-        },
-        "oppgavegiversOrganisasjonsnummer": "310863394",
-        "oppgavegiversNavn": "PRATSOM FANTASILØS STRUTS T.U.W"
+    ],
+    "saerskiltFradragForSjoefolk": {
+      "grunnlagForSaerskiltFradragForSjoefolk": {
+        "beloep": 628593
+      },
+      "saerskiltFradrag": {
+        "fradragsberettigetBeloep": 83000.0,
+        "beloepUtenHensynTilValgtPrioritertFradragstype": 83000.0
       }
-    ]
+    }
   },
-  "opprettetDato": "2025-02-25T14:17:55.948036683+01:00",
-  "ajourholdstidspunkt": "2025-02-25T14:17:56.014116Z"
+  "opprettetDato": "2026-02-09T09:32:44.4+01:00",
+  "ajourholdstidspunkt": "2026-02-09T09:32:44.4Z"
 }
 ```
 
