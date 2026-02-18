@@ -392,8 +392,8 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 
 | Teknisk navn | Kategori | SBL | Blir tilgjengelig i rettighetspakker som fra før har tilgang til* |
 |--------------|---------|---|---|
-| livsvarigAvtalefestetPensjonIOffentligSektor | inntekt | |  |
-| ungdomsprogramytelse | inntekt | |  |
+| livsvarigAvtalefestetPensjonIOffentligSektor | inntekt | x |  |
+| ungdomsprogramytelse | inntekt | x |  |
 
 SBL = samtykkebasert lånesøknad
 
@@ -410,7 +410,6 @@ SBL = samtykkebasert lånesøknad
 | latentEllerRealisertTapPaaAnnetFinansproduktMvVedUtflytting | |
 | latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | |
 | latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | |
-| livsvarigAvtalefestetPensjonIOffentligSektor | Lagt til i listen 18.2 |
 | loennsinntektTilBarn | |
 | loennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt | |
 | oppjustertTilleggTilGevinstVedSalgAvAndelINOKUS | |
@@ -424,7 +423,6 @@ SBL = samtykkebasert lånesøknad
 | tapVedSalgAvAndelINOKUS | Lagt til i listen 26.1 |
 | ufoeretrygdFoerAlderspensjon | Lagt til i listen 26.1 |
 | underskuddAvEnkeltpersonforetakFordeltFraEktefelle | |
-| ungdomsprogramytelse | Lagt til i listen 18.2 |
 | verdiFoerVerdsettingsrabattForAndelINOKUS | |
 | verdsettingsrabattForAndelINOKUS | |
 
