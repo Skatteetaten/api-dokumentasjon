@@ -89,7 +89,7 @@ For rettighetspakken `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et
 Datakonsumenter med samtykke har kun lov til å spørre om summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med
 støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
-#### Samtykke med Altinn 2
+#### Samtykke med Altinn 3
 
 Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. Summert skattegrunnlag API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i både eksternt testmiljø og produksjon.
 
@@ -125,125 +125,155 @@ Virksomheter med samtykke har kun lov til å spørre om summert skattegrunnlag f
 
 ## JSON
 
-Her er et eksempel på respons for inntektsår 2023 for V2 av tjenesten.
+Her er et eksempel på respons for inntektsår 2025 for V2 av tjenesten.
 
 ```json
 {
-  "personidentifikator": "09819899123",
-  "inntektsaar": "2023",
+  "personidentifikator": "13819699571",
+  "inntektsaar": "2025",
   "grunnlag": [
     {
       "tekniskNavn": "samledeOpptjenteRenterIInnenlandskeBanker",
-      "beloep": 19667,
+      "beloep": 1331,
       "spesifisering": [
         {
           "type": "Konto",
-          "kontonummer": "95751752084",
-          "bankensNavn": "FORSIKTIG EMPATISK TIGER AS",
-          "organisasjonsnummer": "310827002",
-          "innskudd": 983351,
-          "opptjenteRenter": 19667
+          "kontonummer": "08346505509",
+          "bankensNavn": "PRAGMATISK BLØT STRUTS S.A.",
+          "organisasjonsnummer": "213017802",
+          "innskudd": 66574,
+          "opptjenteRenter": 1331,
+          "gjeld": 865203,
+          "paaloepteRenter": 25956,
+          "prosentandelAvGjeldOgPaaloepteRenter": 100.0,
+          "andelAvGjeld": 865203,
+          "andelAvPaaloepteRenter": 25956,
+          "andelAvInnskudd": 66574,
+          "andelAvOpptjenteRenter": 1331
         }
       ],
       "kategori": "inntekt"
     },
     {
-      "tekniskNavn": "avkortetFordelVedElektroniskKommunikasjon",
-      "beloep": 4392,
-      "kategori": "inntekt"
-    },
-    {
-      "tekniskNavn": "verdiFoerVerdsettingsrabattForAksjedelIAksjesparekonto",
-      "beloep": 2205524,
+      "tekniskNavn": "gjeldIInnenlandskeBanker",
+      "beloep": 865203,
       "spesifisering": [
         {
-          "type": "Aksjesparekonto",
-          "finansinstitusjonNavn": "FORSKJELLIG SKAPENDE GIRAFF SPAREBANK",
-          "finansinstitusjonOrganisasjonsnummer": "312582465",
-          "kontonummer": "81966764325",
-          "verdiFoerVerdsettingsrabattForAksjedel": 2205524,
-          "formuesverdiForKontanter": 15790
+          "type": "Konto",
+          "kontonummer": "08346505509",
+          "bankensNavn": "PRAGMATISK BLØT STRUTS S.A.",
+          "organisasjonsnummer": "213017802",
+          "innskudd": 66574,
+          "opptjenteRenter": 1331,
+          "gjeld": 865203,
+          "paaloepteRenter": 25956,
+          "prosentandelAvGjeldOgPaaloepteRenter": 100.0,
+          "andelAvGjeld": 865203,
+          "andelAvPaaloepteRenter": 25956,
+          "andelAvInnskudd": 66574,
+          "andelAvOpptjenteRenter": 1331
         }
       ],
-      "kategori": "formue"
-    },
-    {
-      "tekniskNavn": "formuesverdiForKontanterIAksjesparekonto",
-      "beloep": 15790,
-      "spesifisering": [
-        {
-          "type": "Aksjesparekonto",
-          "finansinstitusjonNavn": "FORSKJELLIG SKAPENDE GIRAFF SPAREBANK",
-          "finansinstitusjonOrganisasjonsnummer": "312582465",
-          "kontonummer": "81966764325",
-          "verdiFoerVerdsettingsrabattForAksjedel": 2205524,
-          "formuesverdiForKontanter": 15790
-        }
-      ],
-      "kategori": "formue"
-    },
-    {
-      "tekniskNavn": "samletPersoninntektFraEnkeltpersonforetakInnenJordbrukReindriftSkiferproduksjonOgAnnenNaering",
-      "beloep": 51432,
-      "kategori": "inntekt"
+      "kategori": "formuesfradrag"
     },
     {
       "tekniskNavn": "samletOverskuddPaaUtgiftsgodtgjoerelse",
-      "beloep": 111948,
+      "beloep": 25416,
       "kategori": "inntekt"
     },
     {
-      "tekniskNavn": "innskudd",
-      "beloep": 983351,
+      "tekniskNavn": "samledePaaloepteRenterPaaGjeldIInnenlandskeBanker",
+      "beloep": 25956,
       "spesifisering": [
         {
           "type": "Konto",
-          "kontonummer": "95751752084",
-          "bankensNavn": "FORSIKTIG EMPATISK TIGER AS",
-          "organisasjonsnummer": "310827002",
-          "innskudd": 983351,
-          "opptjenteRenter": 19667
+          "kontonummer": "08346505509",
+          "bankensNavn": "PRAGMATISK BLØT STRUTS S.A.",
+          "organisasjonsnummer": "213017802",
+          "innskudd": 66574,
+          "opptjenteRenter": 1331,
+          "gjeld": 865203,
+          "paaloepteRenter": 25956,
+          "prosentandelAvGjeldOgPaaloepteRenter": 100.0,
+          "andelAvGjeld": 865203,
+          "andelAvPaaloepteRenter": 25956,
+          "andelAvInnskudd": 66574,
+          "andelAvOpptjenteRenter": 1331
         }
       ],
-      "kategori": "formue",
-      "andelSkattefritt": 2000,
-      "andelOverfoertFraBarn": 3000
-    },
-    {
-      "tekniskNavn": "forvaltningskostnadKnyttetTilAksjesparekonto",
-      "beloep": 829,
       "kategori": "inntektsfradrag"
     },
     {
+      "tekniskNavn": "samletGjeld",
+      "beloep": 865203,
+      "kategori": "-"
+    },
+    {
+      "tekniskNavn": "innskudd",
+      "beloep": 66574,
+      "spesifisering": [
+        {
+          "type": "Konto",
+          "kontonummer": "08346505509",
+          "bankensNavn": "PRAGMATISK BLØT STRUTS S.A.",
+          "organisasjonsnummer": "213017802",
+          "innskudd": 66574,
+          "opptjenteRenter": 1331,
+          "gjeld": 865203,
+          "paaloepteRenter": 25956,
+          "prosentandelAvGjeldOgPaaloepteRenter": 100.0,
+          "andelAvGjeld": 865203,
+          "andelAvPaaloepteRenter": 25956,
+          "andelAvInnskudd": 66574,
+          "andelAvOpptjenteRenter": 1331
+        }
+      ],
+      "kategori": "formue"
+    },
+    {
+      "tekniskNavn": "sumInntekterIAlminneligInntektFoerFordelingsfradrag",
+      "beloep": 687264,
+      "kategori": "-"
+    },
+    {
+      "tekniskNavn": "samletGrunnlagForInntektsskattTilKommuneOgFylkeskommuneStatsskattOgFellesskatt",
+      "beloep": 569308,
+      "kategori": "-"
+    },
+    {
       "tekniskNavn": "samletLoennsinntektMedTrygdeavgiftspliktOgMedTrekkplikt",
-      "beloep": 719038,
+      "beloep": 660517,
       "spesifisering": [
         {
           "type": "LoennOgTilsvarendeYtelser",
-          "arbeidsgiversNavn": "UTAKKNEMLIG TANKEFULL TIGER AS",
-          "organisasjonsnummer": "312917408",
-          "beloep": 719038
+          "arbeidsgiversNavn": "LEKKER OFFISIELL TIGER AS",
+          "organisasjonsnummer": "313874788",
+          "beloep": 368317
+        },
+        {
+          "type": "LoennOgTilsvarendeYtelser",
+          "arbeidsgiversNavn": "REFLEKTERENDE OVERNATURLIG PIGGSVIN",
+          "organisasjonsnummer": "311169254",
+          "beloep": 292200
         }
       ],
       "kategori": "inntekt"
     },
     {
-      "tekniskNavn": "samletOverskuddAvEnkeltpersonforetakInnenAnnenNaering",
-      "beloep": 51432,
-      "spesifisering": [
-        {
-          "type": "Naeringsopplysninger",
-          "naeringstype": "annenNaering",
-          "naeringsinntektTilordnetInnehaver": 51432
-        }
-      ],
-      "kategori": "inntekt"
+      "tekniskNavn": "bruttoformue",
+      "beloep": 66574,
+      "kategori": "-"
+    },
+    {
+      "tekniskNavn": "sumFradragIAlminneligInntekt",
+      "beloep": 117956,
+      "kategori": "-"
     }
   ],
   "skjermet": false,
-  "skatteoppgjoersdato": "2024-02-20",
+  "skatteoppgjoersdato": "2026-02-09",
   "stadie": "oppgjoer",
-  "ajourholdstidspunkt": "2024-02-20T08:38:37.72Z"
+  "ajourholdstidspunkt": "2026-02-09T09:15:08.726Z"
 }
 ```
 
@@ -292,6 +322,7 @@ som er mest oppdatert.
 
 | År   | Informasjonsmodell                                                                                                                                  |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2024 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2025](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2025.md) |
 | 2024 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2024](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2024.md) |
 | 2023 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2023](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2023.md) |
 | 2022 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2022](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2022.md) |
