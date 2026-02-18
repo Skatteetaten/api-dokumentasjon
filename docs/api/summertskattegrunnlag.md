@@ -410,6 +410,7 @@ SBL = samtykkebasert lånesøknad
 | latentEllerRealisertTapPaaAnnetFinansproduktMvVedUtflytting | |
 | latentEllerRealisertGevinstPaaOpsjonerIArbeidsforholdVedUtflytting | |
 | latentEllerRealisertTapPaaOpsjonerIArbeidsforholdVedUtflytting | |
+| livsvarigAvtalefestetPensjonIOffentligSektor | Lagt til i listen 18.2 |
 | loennsinntektTilBarn | |
 | loennsinntektUtenTrygdeavgiftspliktOgMedTrekkplikt | |
 | oppjustertTilleggTilGevinstVedSalgAvAndelINOKUS | |
@@ -423,6 +424,7 @@ SBL = samtykkebasert lånesøknad
 | tapVedSalgAvAndelINOKUS | Lagt til i listen 26.1 |
 | ufoeretrygdFoerAlderspensjon | Lagt til i listen 26.1 |
 | underskuddAvEnkeltpersonforetakFordeltFraEktefelle | |
+| ungdomsprogramytelse | Lagt til i listen 18.2 |
 | verdiFoerVerdsettingsrabattForAndelINOKUS | |
 | verdsettingsrabattForAndelINOKUS | |
 
