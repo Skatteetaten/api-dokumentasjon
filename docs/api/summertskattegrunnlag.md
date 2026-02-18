@@ -322,7 +322,7 @@ som er mest oppdatert.
 
 | År   | Informasjonsmodell                                                                                                                                  |
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2024 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2025](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2025.md) |
+| 2025 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2025](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2025.md) |
 | 2024 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2024](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2024.md) |
 | 2023 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2023](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2023.md) |
 | 2022 | [Informasjonsmodell for summert skattegrunnlag og spesifikasjoner 2022](../informasjonsmodeller/summertskattegrunnlag/summertskattegrunnlag2022.md) |
