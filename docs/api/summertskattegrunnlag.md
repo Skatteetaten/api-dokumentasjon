@@ -383,8 +383,8 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "Su
 | 09.12.2025    | Første versjon av endringer i kodeliste |
 | 12.01.2026    | Oppdatert versjon av endringer i kodeliste (ingen endringer) |
 | 26.01.2026    | Oppdatert listen over utgåtte felt |
-| Medio februar 2026 | Endelig versjon av kodeliste |
-| Medio februar 2026 | Støtte for inntektsår i test og prod |
+| 18.02.2026    | Endelig versjon av kodeliste |
+| 18.02.2026    | Støtte for inntektsår i test og prod |
 | 12.03.2026    | Første utkast for inntektsår er tilgjengelig i delingstjenesten        |
 | 21.03.2026    | Første skatteoppgjør for nytt inntektsår er tilgjengelig i delingstjenesten |
 
