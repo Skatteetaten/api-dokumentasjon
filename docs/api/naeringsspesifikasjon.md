@@ -24,7 +24,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Teknisk spesifikasjon
 
-Næringsspesifikasjon API v4 leverer næringsspesifikasjon for inntektsårene 2022 og 2023.
+Næringsspesifikasjon API v5 leverer næringsspesifikasjon for inntektsårene 2024 og 2025.
 
 URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-api) på SwaggerHub.
@@ -65,128 +65,235 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Næringsspesifikasjon 
 
 ## JSON
 
-Eksempel på en gyldig respons for inntektsår 2024 (V5):
+Eksempel på en gyldig respons for inntektsår 2025 (V5):
 
 ```json
 {
-  "skjermet" : false,
-  "norskIdentifikator" : "19886699975",
-  "inntektsaar" : "2024",
-  "resultatregnskap" : {
-    "driftsinntekt" : {
-      "sumDriftsinntekt" : 162099.0,
-      "salgsinntekt" : {
-        "inntekt" : [ {
-          "beloep" : 101352.0,
-          "id" : "3100",
-          "type" : "3100"
-        } ]
+  "skjermet": false,
+  "norskIdentifikator": "14895398862",
+  "inntektsaar": "2025",
+  "resultatregnskap": {
+    "driftsinntekt": {
+      "sumDriftsinntekt": 966388.0,
+      "salgsinntekt": {
+        "inntekt": [
+          {
+            "beloep": 889685.0,
+            "id": "3100",
+            "type": "3100"
+          }
+        ]
       },
-      "annenDriftsinntekt" : {
-        "inntekt" : [ {
-          "beloep" : 60747.0,
-          "id" : "3900",
-          "type" : "3900"
-        } ]
+      "annenDriftsinntekt": {
+        "inntekt": [
+          {
+            "beloep": 26910.0,
+            "id": "3700",
+            "type": "3700"
+          },
+          {
+            "beloep": 21501.0,
+            "id": "3650",
+            "type": "3650"
+          },
+          {
+            "beloep": 28292.0,
+            "id": "3710",
+            "type": "3710"
+          }
+        ]
       }
     },
-    "driftskostnad" : {
-      "sumDriftskostnad" : 45602.0,
-      "varekostnad" : {
-        "kostnad" : [ {
-          "beloep" : 27253.0,
-          "id" : "4005",
-          "type" : "4005"
-        } ]
+    "driftskostnad": {
+      "sumDriftskostnad": 391537.0,
+      "varekostnad": {
+        "kostnad": [
+          {
+            "beloep": 69934.0,
+            "id": "4500",
+            "type": "4500"
+          }
+        ]
       },
-      "annenDriftskostnad" : {
-        "kostnad" : [ {
-          "beloep" : 19769.0,
-          "id" : "6400",
-          "type" : "6400"
-        }, {
-          "beloep" : 1420.0,
-          "id" : "6998",
-          "type" : "6998"
-        } ]
+      "loennskostnad": {
+        "kostnad": [
+          {
+            "beloep": 222313.0,
+            "id": "5000",
+            "type": "5000"
+          },
+          {
+            "beloep": 36904.0,
+            "id": "5400",
+            "type": "5400"
+          },
+          {
+            "beloep": 11591.0,
+            "id": "5950",
+            "type": "5950"
+          }
+        ]
+      },
+      "annenDriftskostnad": {
+        "kostnad": [
+          {
+            "beloep": 9332.0,
+            "id": "6700",
+            "type": "6700"
+          },
+          {
+            "beloep": 2823.0,
+            "id": "7295",
+            "type": "7295"
+          },
+          {
+            "beloep": 2958.0,
+            "id": "6998",
+            "type": "6998"
+          },
+          {
+            "beloep": 4785.0,
+            "id": "6340",
+            "type": "6340"
+          },
+          {
+            "beloep": 36813.0,
+            "id": "6300",
+            "type": "6300"
+          }
+        ]
       }
     },
-    "sumFinansinntekt" : 17132.0,
-    "finansinntekt" : {
-      "inntekt" : [ {
-        "beloep" : 17132.0,
-        "id" : "8079",
-        "type" : "8079"
-      } ]
+    "sumFinansinntekt": 5780.0,
+    "sumFinanskostnad": 7852.0,
+    "finansinntekt": {
+      "inntekt": [
+        {
+          "beloep": 5780.0,
+          "id": "8079",
+          "type": "8079"
+        }
+      ]
     },
-    "aarsresultat" : 133629.0
+    "finanskostnad": {
+      "kostnad": [
+        {
+          "beloep": 7852.0,
+          "id": "8179",
+          "type": "8179"
+        }
+      ]
+    },
+    "aarsresultat": 572779.0
   },
-  "balanseregnskap" : {
-    "omloepsmiddel" : {
-      "sumBalanseverdiForOmloepsmiddel" : 19500.0,
-      "balanseverdiForOmloepsmiddel" : {
-        "balanseverdi" : [ {
-          "id" : "1920",
-          "beloep" : 19500.0,
-          "type" : "1920",
-          "ekskluderesFraSkattemeldingen" : false
-        } ]
+  "balanseregnskap": {
+    "omloepsmiddel": {
+      "sumBalanseverdiForOmloepsmiddel": 51220.0,
+      "balanseverdiForOmloepsmiddel": {
+        "balanseverdi": [
+          {
+            "id": "1920",
+            "beloep": 15964.0,
+            "type": "1920",
+            "ekskluderesFraSkattemeldingen": false
+          },
+          {
+            "id": "1570",
+            "beloep": 35256.0,
+            "type": "1570",
+            "ekskluderesFraSkattemeldingen": false
+          }
+        ]
       }
     },
-    "gjeldOgEgenkapital" : {
-      "sumKortsiktigGjeld" : 31932.0,
-      "kortsiktigGjeld" : {
-        "gjeld" : [ {
-          "id" : "2380",
-          "beloep" : 31932.0,
-          "type" : "2380",
-          "ekskluderesFraSkattemeldingen" : false
-        } ]
+    "gjeldOgEgenkapital": {
+      "sumLangsiktigGjeld": 19988.0,
+      "sumKortsiktigGjeld": 21299.0,
+      "sumEgenkapital": 46872.0,
+      "langsiktigGjeld": {
+        "gjeld": [
+          {
+            "id": "2220",
+            "beloep": 19988.0,
+            "type": "2220",
+            "ekskluderesFraSkattemeldingen": false
+          }
+        ]
+      },
+      "kortsiktigGjeld": {
+        "gjeld": [
+          {
+            "id": "2380",
+            "beloep": 21299.0,
+            "type": "2380",
+            "ekskluderesFraSkattemeldingen": false
+          }
+        ]
+      },
+      "egenkapital": {
+        "kapital": [
+          {
+            "id": "2050",
+            "beloep": 57745.0,
+            "type": "2050",
+            "ekskluderesFraSkattemeldingen": false
+          },
+          {
+            "id": "2080",
+            "beloep": 10873.0,
+            "type": "2080",
+            "ekskluderesFraSkattemeldingen": false
+          }
+        ]
       }
     },
-    "sumBalanseverdiForEiendel" : 19500.0,
-    "sumGjeldOgEgenkapital" : 31932.0
+    "sumBalanseverdiForEiendel": 51220.0,
+    "sumGjeldOgEgenkapital": 88159.0
   },
-  "beregnetNaeringsinntekt" : {
-    "fordeltBeregnetNaeringsinntektForPersonligSkattepliktigEllerSdf" : [ {
-      "id" : "1",
-      "kommunenummer" : "1566",
-      "identifikatorForFordeltBeregnetPersoninntekt" : "1",
-      "identifikatorForFordeltBeregnetNaeringsinntekt" : "1",
-      "naeringstype" : "annenNaering",
-      "fordeltSkattemessigResultat" : 133629.0,
-      "fordeltSkattemessigResultatEtterKorreksjon" : 133629.0,
-      "andelAvFordeltSkattemessigResultatTilordnetInnehaver" : 100.0,
-      "fordeltSkattemessigResultatEtterKorreksjonTilordnetInnehaver" : 133629.0
-    } ],
-    "skattemessigResultat" : 133629.0
+  "beregnetNaeringsinntekt": {
+    "fordeltBeregnetNaeringsinntektForPersonligSkattepliktigEllerSdf": [
+      {
+        "id": "1",
+        "kommunenummer": "5038",
+        "identifikatorForFordeltBeregnetPersoninntekt": "1",
+        "identifikatorForFordeltBeregnetNaeringsinntekt": "1",
+        "naeringstype": "fiskeOgFangst",
+        "fordeltSkattemessigResultat": 572779.0,
+        "fordeltSkattemessigResultatEtterKorreksjon": 572779.0,
+        "andelAvFordeltSkattemessigResultatTilordnetInnehaver": 100.0,
+        "fordeltSkattemessigResultatEtterKorreksjonTilordnetInnehaver": 572779.0
+      }
+    ],
+    "skattemessigResultat": 572779.0
   },
-  "beregnetPersoninntekt" : {
-    "fordeltBeregnetPersoninntekt" : [ {
-      "id" : "1",
-      "identifikatorForFordeltBeregnetPersoninntekt" : "1",
-      "identifikatorForFordeltBeregnetNaeringsinntekt" : "1",
-      "aaretsBeregnedePersoninntektFoerFordelingOgSamordning" : 133629.0,
-      "andelAvPersoninntektTilordnetInnehaver" : 100.0,
-      "aaretsBeregnedePersoninntektFoerFordelingOgSamordningTilordnetInnehaver" : 133629.0
-    } ]
+  "beregnetPersoninntekt": {
+    "fordeltBeregnetPersoninntekt": [
+      {
+        "id": "1",
+        "identifikatorForFordeltBeregnetPersoninntekt": "1",
+        "identifikatorForFordeltBeregnetNaeringsinntekt": "1",
+        "aaretsBeregnedePersoninntektFoerFordelingOgSamordning": 572779.0,
+        "andelAvPersoninntektTilordnetInnehaver": 100.0,
+        "aaretsBeregnedePersoninntektFoerFordelingOgSamordningTilordnetInnehaver": 572779.0
+      }
+    ]
   },
-  "virksomhet" : {
-    "regnskapspliktstype" : "ingenRegnskapsplikt",
-    "regnskapsperiode" : {
-      "start" : "2024-01-01",
-      "slutt" : "2024-12-31"
+  "virksomhet": {
+    "regnskapspliktstype": "ingenRegnskapsplikt",
+    "regnskapsperiode": {
+      "start": "2025-01-01",
+      "slutt": "2025-12-31"
     },
-    "virksomhetstype" : "enkeltpersonforetak",
-    "regeltypeForAarsregnskap" : "regnskapslovensAlminneligeRegler"
+    "virksomhetstype": "enkeltpersonforetak",
+    "regeltypeForAarsregnskap": "regnskapslovensAlminneligeRegler"
   },
-  "samletGjeldOgFormuesobjekter" : {
-    "formuesverdiForFormuesobjekterIkkeOmfattetAvVerdsettingsrabatt" : 19500.0,
-    "samletGjeld" : 31932.0
+  "samletGjeldOgFormuesobjekter": {
+    "formuesverdiForFormuesobjekterIkkeOmfattetAvVerdsettingsrabatt": 51220.0,
+    "samletGjeld": 41287.0
   },
-  "opprettetDato" : "2025-02-13T08:28:25.865+01:00",
-  "skalBekreftesAvRevisor" : false,
-  "ajourholdstidspunkt" : "2025-02-13T08:28:25.865Z"
+  "opprettetDato": "2026-02-10T13:40:20.048+01:00",
+  "skalBekreftesAvRevisor": false,
+  "ajourholdstidspunkt": "2026-02-10T13:40:20.048Z"
 }
 ```
 
