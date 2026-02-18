@@ -792,7 +792,7 @@ Her ser du hele informasjonsmodellen Trekkpålegg API med alle 4 endepunktene.
 | trekkversjon |          | Integer | Versjonen til et trekkpålegg med en ID. Inkrementeres med 1 for hver nye versjon, men beholder samme trekkID | Alltid stigende. |
 | sekvensnummer |         | Integer | Globalt løpenummer på tvers av alle trekkpålegg. Kan benyttes som et 'vannmerke' for å huske siste mottatte trekkpålegg. | Alltid stigende. |
 | opprettet     |         | Date | Dato for trekkversjon. En kombinasjon av typene Dato og Klokkeslett. Kodes som en tekststreng etter datoformatering spesifisert i ISO 8601 (ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times). |  Funksjonelt benyttes denne for å vite når endringen ble formidlet. |
-| saksnummer   |          | String     | Identifiserer saken hvor trekkpålegget ble besluttet. | Unikt per trekkversjon) |
+| saksnummer   |          | String     | Identifiserer saken hvor trekkpålegget ble besluttet. | Unikt per trekkId |
 | trekkpliktig |          | String   | Orgnummeret til den trekkpliktige virksomheten |  |
 | skyldner |              | String   | Fødsels- eller d-nummer til ansatt/ytelsesmottaker som skal trekkes i lønn/ytelse. |  |
 | Trekkstatus  |          |          | Status på utleggstrekket. Når et trekkpålegg er avsluttet skal det ikke lenger trekkes i lønn/ytelse. | *Alltid status aktiv når sluttdatofor siste trekkstørrelse for periode ikke er passert.<br />*Når sluttdato er satt frem i tid, vil status endres til avsluttet etter at sluttdato er passert (ved midnatt).<br/> Når sluttdato settes til i dag, vil status endres til avsluttet i samme trekkversjon som sluttdatoen blir publisert.
