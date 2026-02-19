@@ -5,8 +5,8 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API, A-ordning]
-keywords: [grunnlagsdata, a-melding, aordning]
-last_updated: Mar 27, 2025
+keywords: [a-melding, aordning]
+last_updated: Feb 17, 2026
 hide_table_of_contents: true
 ---
 
@@ -27,6 +27,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`.
 Dette scopet skal også brukes for tilbakemeldingen som skal hentes fra eget API, se [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
+Scopet kan også brukes for [filopplastings-apiet](innrapportering-amelding-filopplasting.md)
  
 
 ## Delegering
@@ -84,7 +85,7 @@ REST-api: URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepu
 [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
 
 Filopplasting-api: URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub a-medling filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/). **Spesifikasjonen for a-meldingen (payload) er den samme som for REST-apiet**. 
+[SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/). **Spesifikasjonen for A-meldingen (payload) er den samme som for REST-apiet**. 
 Her kan det komme endringer fortløpende når vi får tilbakemeldinger.
 
 
@@ -116,7 +117,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 ## Innsending
 Dokumentasjon for REST-api finner du på [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api/).
-Dokumentasjon for filopplasting-api finner du på [SwaggerHub a-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
+Dokumentasjon for filopplasting-api finner du på [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
 
 ## Tilbakemelding
 Dokumentasjon finner du på [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
@@ -196,7 +197,7 @@ I første omgang er test kun tilgjengelig for et utvalg leverandører som det er
 
 For spesifikke URL'er til testmiljø hos Skatteetaten, se
    [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
-   [SwaggerHub a-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
+   [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
    [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
    
 
@@ -220,7 +221,7 @@ Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor t
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
   
-Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot a-meldingen kan du kontakte oss via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) 
+Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot A-meldingen kan du kontakte oss via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) 
 
 Lenke til å sette opp tilgang til brukerstøttetjenesten og bestille tilgang til ny tjeneste/scope finner dere på denne siden (under «trenger du hjelp»):  [A-meldingen - for sluttbrukersystemer - Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/a-meldingen-sbs/)
   
