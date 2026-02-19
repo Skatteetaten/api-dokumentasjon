@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, A-ordning ]
 keywords: [ a-melding, filopplasting ]
-last_updated: Feb 17, 2026
+last_updated: Feb 19, 2026
 hide_table_of_contents: true
 ---
 
@@ -126,127 +126,128 @@ En innsending foregår over flere steg.
 
 ```json
 {
-  "leveranse": {
-    "kildesystem": "EDAG Testutvikling",
-    "opplysningspliktig": {
-      "norskIdentifikator": "210465472"
-    },
-    "meldingsId": "60656973-9df0-4e93-9e8e-9cf48d812be2",
-    "oppgave": {
-      "betalingsinformasjon": {
-        "sumArbeidsgiveravgift": 34605,
-        "sumFinansskattLoenn": 5289,
-        "sumUtleggstrekk": 30532,
-        "sumForskuddstrekkPerLoennsutbetalingsdato": [
-          {
-            "loennsutbetalingsdato": "2026-01-20",
-            "beloep": 178485
-          }
-        ]
-      },
-      "virksomhet": [
-        {
-          "norskIdentifikator": "314768949",
-          "inntektsmottaker": [
-            {
-              "norskIdentifikator": "08842199736",
-              "arbeidsforhold": [
-                {
-                  "arbeidsforholdId": "ORDINAERT",
-                  "typeArbeidsforhold": "ordinaertArbeidsforhold",
-                  "startdato": "2026-01-31",
-                  "sluttdato": "2026-02-28",
-                  "antallTimerPerUkeSomEnFullStillingTilsvarer": 33.6,
-                  "yrke": "3411101",
-                  "arbeidstidsordning": "offshore336",
-                  "stillingsprosent": 74.0,
-                  "sisteLoennsendringsdato": "2012-04-01",
-                  "loennsansiennitet": "1995-05-01",
-                  "sisteDatoForStillingsprosentendring": "2023-04-01",
-                  "loennstrinn": "Ltr50",
-                  "aarsakTilSluttdato": "kontraktEngasjementEllerVikariatErUtloept",
-                  "formForAnsettelse": "midlertidig"
-                }
-              ],
-              "fradrag": [
-                {
-                  "beskrivelse": "fagforeningskontingentSvalbard",
-                  "beloep": -456
-                }
-              ],
-              "forskuddstrekk": [
-                {
-                  "beskrivelse": "ordinaert",
-                  "beloep": -17022
-                }
-              ],
-              "inntekt": [
-                {
-                  "skatteOgAvgiftsregel": "svalbard",
-                  "fordel": "kontantytelse",
-                  "utloeserArbeidsgiveravgift": true,
-                  "inngaarIGrunnlagForTrekk": true,
-                  "beloep": 23989.5,
-                  "loennsinntekt": {
-                    "beskrivelse": "fastloenn",
-                    "tilleggsinformasjon": {
-                      "inntjeningsforhold": "loennUtbetaltFraDenNorskeStatOpptjentIUtlandet"
-                    },
-                    "spesifikasjon": {
-                      "opptjeningsland": "US"
+    "leveranse": {
+        "kildesystem": "EDAG Testutvikling",
+        "opplysningspliktig": {
+            "norskIdentifikator": "211785462"
+        },
+        "meldingsId": "60656973-9df0-4e93-9e8e-9cf48d812be2",
+        "oppgave": {
+            "betalingsinformasjon": {
+                "sumArbeidsgiveravgift": 34605,
+                "sumFinansskattLoenn": 5289,
+                "sumUtleggstrekk": 30532,
+                "sumForskuddstrekkPerLoennsutbetalingsdato": [
+                    {
+                        "loennsutbetalingsdato": "2026-01-20",
+                        "beloep": 178485
                     }
-                  }
-                },
+                ]
+            },
+            "virksomhet": [
                 {
-                  "fordel": "naturalytelse",
-                  "utloeserArbeidsgiveravgift": false,
-                  "inngaarIGrunnlagForTrekk": true,
-                  "beloep": 1569.5,
-                  "pensjonEllerTrygd": {
-                    "beskrivelse": "avtalefestetPensjon",
-                    "tilleggsinformasjon": {
-                      "pensjon": {
-                        "pensjonsgrad": 50,
-                        "tidsrom": {
-                          "startdato": "2023-04-01",
-                          "sluttdato": "2023-04-30"
+                    "norskIdentifikator": "314768949",
+                    "inntektsmottaker": [
+                        {
+                            "norskIdentifikator": "08842199736",
+                            "arbeidsforhold": [
+                                {
+                                    "arbeidsforholdId": "ORDINAERT",
+                                    "typeArbeidsforhold": "ordinaertArbeidsforhold",
+                                    "startdato": "2026-01-31",
+                                    "sluttdato": "2026-02-28",
+                                    "antallTimerPerUkeSomEnFullStillingTilsvarer": "33.6",
+                                    "yrke": "3411101",
+                                    "arbeidstidsordning": "offshore336",
+                                    "stillingsprosent": "74.0",
+                                    "sisteLoennsendringsdato": "2012-04-01",
+                                    "loennsansiennitet": "1995-05-01",
+                                    "sisteDatoForStillingsprosentendring": "2023-04-01",
+                                    "loennstrinn": "Ltr50",
+                                    "aarsakTilSluttdato": "kontraktEngasjementEllerVikariatErUtloept",
+                                    "formForAnsettelse": "midlertidig"
+                                }
+                            ],
+                            "fradrag": [
+                                {
+                                    "beskrivelse": "fagforeningskontingentSvalbard",
+                                    "beloep": "-456.0"
+                                }
+                            ],
+                            "forskuddstrekk": [
+                                {
+                                    "beskrivelse": "ordinaert",
+                                    "beloep": -17022
+                                }
+                            ],
+                            "inntekt": [
+                                {
+                                    "skatteOgAvgiftsregel": "svalbard",
+                                    "fordel": "kontantytelse",
+                                    "utloeserArbeidsgiveravgift": true,
+                                    "inngaarIGrunnlagForTrekk": true,
+                                    "beloep": "23989.5",
+                                    "loennsinntekt": {
+                                        "beskrivelse": "fastloenn",
+                                        "tilleggsinformasjon": {
+                                            "inntjeningsforhold": "loennUtbetaltFraDenNorskeStatOpptjentIUtlandet"
+                                        },
+                                        "spesifikasjon": {
+                                            "opptjeningsland": "US"
+                                        }
+                                    }
+                                },
+                                {
+                                    "fordel": "naturalytelse",
+                                    "utloeserArbeidsgiveravgift": false,
+                                    "inngaarIGrunnlagForTrekk": true,
+                                    "beloep": "1569.5",
+                                    "pensjonEllerTrygd": {
+                                        "beskrivelse": "avtalefestetPensjon",
+                                        "tilleggsinformasjon": {
+                                            "pensjon": {
+                                                "pensjonsgrad": "50",
+                                                "tidsrom": {
+                                                    "startdato": "2023-04-01",
+                                                    "sluttdato": "2023-04-30"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            ],
+                            "utleggstrekk": [
+                                {
+                                    "beskrivelse": "utleggstrekkSkatt",
+                                    "beloep": -1998
+                                }
+                            ]
                         }
-                      }
+                    ],
+                    "arbeidsgiveravgift": {
+                        "loennOgGodtgjoerelse": [
+                            {
+                                "beregningskodeForArbeidsgiveravgift": "generelleNaeringer",
+                                "sone": "1a",
+                                "avgiftsgrunnlagBeloep": "245428.0",
+                                "prosentsatsForAvgiftsberegning": "14.1"
+                            }
+                        ]
                     }
-                  }
                 }
-              ],
-              "utleggstrekk": [
+            ],
+            "pensjonsinnretning": [
                 {
-                  "beskrivelse": "utleggstrekkSkatt",
-                  "beloep": -1998
+                    "identifikator": "899205291"
                 }
-              ]
-            }
-          ],
-          "arbeidsgiveravgift": {
-            "loennOgGodtgjoerelse": [
-              {
-                "beregningskodeForArbeidsgiveravgift": "generelleNaeringer",
-                "sone": "1a",
-                "avgiftsgrunnlagBeloep": 245428.0,
-                "prosentsatsForAvgiftsberegning": 14.1
-              }
             ]
-          }
-        }
-      ],
-      "pensjonsinnretning": [
-        {
-          "identifikator": "899205291"
-        }
-      ]
-    },
-    "leveringstidspunkt": "2026-01-23T14:50:35.920+00:00",
-    "kalendermaaned": "2025-12",
-    "spraakForTilbakemelding": "bokmaal"
-  }
+        },
+        "leveringstidspunkt": "2026-01-23T14:50:35.920+00:00",
+        "kalendermaaned": "2026-01",
+        "spraakForTilbakemelding": "bokmaal"
+    }
 }
+
 ```
 
 #### Eksempel på respons
