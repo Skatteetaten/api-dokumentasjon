@@ -15,6 +15,14 @@ hide_table_of_contents: true
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
+## Status Filopplasting
+| Miljø        | Status             |
+|--------------|--------------------|
+| Ekstern test | :white_check_mark: |
+| Produksjon   | TBA                |
+
+## Om
+
 For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av API-er for innrapportering](../om/bruk_innrapportering.md)
