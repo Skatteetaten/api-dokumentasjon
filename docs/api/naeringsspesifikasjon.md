@@ -326,40 +326,71 @@ Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/naeri
 Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen
 som er mest oppdatert.
 
-Modellene nedenfor avviker litt fra modellen slik den benyttes i tjenesten. Modellen har følgende avvik:
+## Toppnivå 
 
-* Part er erstattet med personidentifikator
-* Intern systemreferanse er ikke med
-* Type Endringsmetadata er ikke med
-* Type BeløpIValuta er konvertert til Beløp
-
-## Toppnivå
-
-![Toppnivå](../../static/download/naeringsopplysninger/2020/naeringsopplysninger_v1.png)
-
-## Næringsinntekt
-
-![Naeringsinntekt](../../static/download/naeringsopplysninger/2020/naeringsinntekt.png)
-
-## Personinntekt
-
-![Personinntekt](../../static/download/naeringsopplysninger/2020/Personinntekt.png)
-
-## Balanse
-
-![Balanse](../../static/download/naeringsopplysninger/2020/balanse.png)
+![Toppnivå](../../static/download/naeringsopplysninger/2025/Oversikt.png)
 
 ## Resultatregnskap
 
-![Resultatregnskap](../../static/download/naeringsopplysninger/2020/resultatregnskap.png)
+![Naeringsinntekt](../../static/download/naeringsopplysninger/2025/Resultatregnskap.png)
 
-## Avskrivning
+## Balanseregnskap
 
-![Avskrivning](../../static/download/naeringsopplysninger/2020/avskrivning.png)
+![Balanseregnskap](../../static/download/naeringsopplysninger/2025/Balanseregnskap.png)
 
-## Spesifikasjon av resultatregnskap og balanse
+## Spesifikasjon av anleggsmiddel
 
-![Spesifikasjon av resultatregnskap og balanse](../../static/download/naeringsopplysninger/2020/spesifikasjonAvResultatregnskapOgBalanse.png)
+![SpesifikasjonAvAnleggsmiddel](../../static/download/naeringsopplysninger/2025/SpesifikasjonAvAnleggsmiddel.png)
+![SpesifikasjonAvAnleggsmiddel_Petroleum](../../static/download/naeringsopplysninger/2025/SpesifikasjonAvAnleggsmiddel_Petroleum.png)
+![SpesifikasjonAvAnleggsmiddel_Vannkraftverk](../../static/download/naeringsopplysninger/2025/SpesifikasjonAvAnleggsmiddel_Vannkraftverk.png)
+
+## Spesifikasjon av omløpsmiddel
+
+![SpesifikasjonAvOmloepsmiddel](../../static/download/naeringsopplysninger/2025/SpesifikasjonAvOmloepsmiddel.png)
+
+## Beregnet næringsinntekt
+
+![BeregnetNaeringsinntekt](../../static/download/naeringsopplysninger/2025/BeregnetNaeringsinntekt.png)
+
+## Beregnet personinntekt
+
+![BeregnetPersoninntekt](../../static/download/naeringsopplysninger/2025/BeregnetPersoninntekt.png)
+
+## Forskjell mellom regnskapsmessig og skattemessig verdi
+
+![ForskjellMellomRegnskapsmessigOgSkattemessigVerdi](../../static/download/naeringsopplysninger/2025/ForskjellMellomRegnskapsmessigOgSkattemessigVerdi.png)
+
+## Egenkapitalavstemming
+
+![Egenkapitalavstemming](../../static/download/naeringsopplysninger/2025/Egenkapitalavstemming.png)
+
+## Andre forhold
+
+![AndreForhold](../../static/download/naeringsopplysninger/2025/AndreForhold.png)
+
+## Egenkapitalavstemming
+
+![Egenkapitalavstemming](../../static/download/naeringsopplysninger/2025/Egenkapitalavstemming.png)
+
+## Skogbruk
+
+![Skogbruk](../../static/download/naeringsopplysninger/2025/Skogbruk.png)
+
+## Kraftverk
+
+![Kraftverk](../../static/download/naeringsopplysninger/2025/Kraftverk.png)
+
+## Havbruksvirksomhet
+
+![Havbruksvirksomhet](../../static/download/naeringsopplysninger/2025/Havbruksvirksomhet.png)
+
+## Vindkraftverk
+
+![Vindkraftverk](../../static/download/naeringsopplysninger/2025/Vindkraftverk.png)
+
+## Jordbruk
+
+![Jordbruk](../../static/download/naeringsopplysninger/2025/Jordbruk.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
