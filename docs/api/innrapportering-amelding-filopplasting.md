@@ -98,7 +98,6 @@ Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 API-et for innrapportering av A-melding via filopplasting har fire endepunkter
 
 * __POST /opplastinger__: Laster opp en fil til skatteetaten for kontroll
-* __GET /opplastinger__: Henter status for alle filer som er lastet opp
 * __GET /opplastinger/:id__: Henter status for en enkelt opplastet fil
 * __DELETE /opplastinger/:id__: Sletter en opplastet fil
 * __PUT /innsending__: Sender inn en opplastet og validert fil til behandling
