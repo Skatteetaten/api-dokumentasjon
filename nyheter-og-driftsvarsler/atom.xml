@@ -13,7 +13,7 @@
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2025/06/02/info-fellesside-mva"/>
         <updated>2025-06-02T08:15:00.000Z</updated>
         <summary type="html"><![CDATA[Den 16.mai ble Fellesside sluttbrukersystemer lansert. Her finnes generell informasjon for deg som lager tjenester og systemer for sluttbrukere,]]></summary>
-        <content type="html"><![CDATA[<p>Den 16.mai ble <a href="https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/" target="_blank" rel="noopener noreferrer">Fellesside sluttbrukersystemer</a> lansert. Her finnes generell informasjon for deg som lager tjenester og systemer for sluttbrukere,
+        <content type="html"><![CDATA[<p>Den 16.mai ble <a href="https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/" target="_blank" rel="noopener noreferrer" class="">Fellesside sluttbrukersystemer</a> lansert. Her finnes generell informasjon for deg som lager tjenester og systemer for sluttbrukere,
 og som har integrasjon mot Skatteetatens eksterne tjenester og API. Vi har derfor samlet linker til alle eksterne MVA-tjenester som API dokumentasjon, driftstatus og brukerstøtteverktøy der.</p>]]></content>
         <category label="nyhet" term="nyhet"/>
     </entry>
@@ -23,7 +23,7 @@ og som har integrasjon mot Skatteetatens eksterne tjenester og API. Vi har derfo
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/11/29/paaminnelse-driftsvarsler"/>
         <updated>2024-11-29T15:15:00.000Z</updated>
         <summary type="html"><![CDATA[Driftsvarsler for Skatteetatens MVA-API-er flyttet til Skatteetatens statusside. Vi anbefaler at alle konsumenter oppretter abonnement på driftsvarsler.]]></summary>
-        <content type="html"><![CDATA[<p>Driftsvarsler for Skatteetatens MVA-API-er flyttet til <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer">Skatteetatens statusside</a>. Vi anbefaler at alle konsumenter oppretter abonnement på driftsvarsler.</p>]]></content>
+        <content type="html"><![CDATA[<p>Driftsvarsler for Skatteetatens MVA-API-er flyttet til <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer" class="">Skatteetatens statusside</a>. Vi anbefaler at alle konsumenter oppretter abonnement på driftsvarsler.</p>]]></content>
         <category label="nyhet" term="nyhet"/>
     </entry>
     <entry>
@@ -33,7 +33,7 @@ og som har integrasjon mot Skatteetatens eksterne tjenester og API. Vi har derfo
         <updated>2024-09-30T13:15:00.000Z</updated>
         <summary type="html"><![CDATA[Som tidligere varslet må alle konsumenter av Skatteetatens API-er for skatt- og inntekt skifte til nye URL-er før 17. oktober. Gamle URL-er saneres fra denne datoen, og konsumenter som ikke har tatt i bruk nye URL-er vil ikke kunne innhente opplysninger fra våre delingstjenester.]]></summary>
         <content type="html"><![CDATA[<p>Som tidligere varslet må alle konsumenter av Skatteetatens API-er for skatt- og inntekt skifte til nye URL-er før 17. oktober. Gamle URL-er saneres fra denne datoen, og konsumenter som ikke har tatt i bruk nye URL-er vil ikke kunne innhente opplysninger fra våre delingstjenester.</p>
-<p>Se liste over API-ene det gjelder og URL-er: <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer">https://skatteetaten.github.io/api-dokumentasjon/om/url</a></p>]]></content>
+<p>Se liste over API-ene det gjelder og URL-er: <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer" class="">https://skatteetaten.github.io/api-dokumentasjon/om/url</a></p>]]></content>
         <category label="nyhet" term="nyhet"/>
     </entry>
     <entry>
@@ -42,8 +42,8 @@ og som har integrasjon mot Skatteetatens eksterne tjenester og API. Vi har derfo
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/09/11/paaminnelse-driftsvarsler"/>
         <updated>2024-09-11T06:40:00.000Z</updated>
         <summary type="html"><![CDATA[Vi minner om at driftsvarsler for Skatteetatens delings-API-er for skatt- og inntekt er flyttet til Skatteetatens statusside. Vi anbefaler at alle konsumenter oppretter abonnement på driftsvarsler.]]></summary>
-        <content type="html"><![CDATA[<p>Vi minner om at driftsvarsler for Skatteetatens delings-API-er for skatt- og inntekt er flyttet til <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer">Skatteetatens statusside</a>. Vi anbefaler at alle konsumenter oppretter abonnement på driftsvarsler.</p>
-<p>Se også <a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/27/ny-statusside" target="_blank" rel="noopener noreferrer">tidligere varsel</a>.</p>]]></content>
+        <content type="html"><![CDATA[<p>Vi minner om at driftsvarsler for Skatteetatens delings-API-er for skatt- og inntekt er flyttet til <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer" class="">Skatteetatens statusside</a>. Vi anbefaler at alle konsumenter oppretter abonnement på driftsvarsler.</p>
+<p>Se også <a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/27/ny-statusside" target="_blank" rel="noopener noreferrer" class="">tidligere varsel</a>.</p>]]></content>
         <category label="nyhet" term="nyhet"/>
     </entry>
     <entry>
@@ -53,10 +53,10 @@ og som har integrasjon mot Skatteetatens eksterne tjenester og API. Vi har derfo
         <updated>2024-08-22T09:10:00.000Z</updated>
         <summary type="html"><![CDATA[Vi vil minne om at Skatteetatens delings-API-er for skatt- og inntekt nå er tilgjengelige på nye URL-er i både Test og Prod, og de gamle URL-ene vil saneres 17. oktober 2024.]]></summary>
         <content type="html"><![CDATA[<p>Vi vil minne om at Skatteetatens delings-API-er for skatt- og inntekt nå er tilgjengelige på nye URL-er i både Test og Prod, og de gamle URL-ene vil saneres 17. oktober 2024.
-Se liste over URL-er: <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer">https://skatteetaten.github.io/api-dokumentasjon/om/url</a></p>
+Se liste over URL-er: <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer" class="">https://skatteetaten.github.io/api-dokumentasjon/om/url</a></p>
 <p>Vær oppmerksom på at det nå er nødvendig å oppgi rettighetspakke for enkelte API-er som før ikke hadde krav om dette.
 Konsumenter av Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API, må også være over på Summert skattegrunnlag API V2 innen samme frist.</p>
-<p>Se tidligere varsel: <a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering" target="_blank" rel="noopener noreferrer">https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering</a></p>]]></content>
+<p>Se tidligere varsel: <a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering" target="_blank" rel="noopener noreferrer" class="">https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering</a></p>]]></content>
         <category label="nyhet" term="nyhet"/>
     </entry>
     <entry>
@@ -158,10 +158,10 @@ Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/31/sanering"/>
         <updated>2024-05-31T10:05:00.000Z</updated>
         <summary type="html"><![CDATA[Alle Skatteetatens API-er nå tilgjengelig på ny URL i både Test og Prod og de gamle URL-ene vil saneres 17. oktober 2024.]]></summary>
-        <content type="html"><![CDATA[<p>Alle Skatteetatens API-er nå tilgjengelig på <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer">ny URL i både Test og Prod</a> og de gamle URL-ene vil saneres 17. oktober 2024.</p>
-<p>Summert skattegrunnlag API V2 er også tilgjengelig i Test og Prod, og <a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/28/summertskattegrunnlag-v2" target="_blank" rel="noopener noreferrer">erstatter Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API</a>. Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API saneres også 17. oktober 2024, og konsumentene må ha tatt i bruk ny tjeneste på ny URL innen den tid.</p>
+        <content type="html"><![CDATA[<p>Alle Skatteetatens API-er nå tilgjengelig på <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer" class="">ny URL i både Test og Prod</a> og de gamle URL-ene vil saneres 17. oktober 2024.</p>
+<p>Summert skattegrunnlag API V2 er også tilgjengelig i Test og Prod, og <a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/28/summertskattegrunnlag-v2" target="_blank" rel="noopener noreferrer" class="">erstatter Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API</a>. Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API saneres også 17. oktober 2024, og konsumentene må ha tatt i bruk ny tjeneste på ny URL innen den tid.</p>
 <p>Vi anbefaler at endringene testes først. For konsumenter som ikke har testet på en stund, så minner vi om å bruke TEST for token mot Maskinporten, ikke VER2.</p>
-<p><a href="https://www.skatteetaten.no/deling/kontakt/" target="_blank" rel="noopener noreferrer">Kontakt Skatteetaten</a> på vanlig måte dersom du har spørsmål til endringen. Konsumenter som er omfattet av et segmentsamarbeid bes kontakte egen segmentansvarlig.</p>]]></content>
+<p><a href="https://www.skatteetaten.no/deling/kontakt/" target="_blank" rel="noopener noreferrer" class="">Kontakt Skatteetaten</a> på vanlig måte dersom du har spørsmål til endringen. Konsumenter som er omfattet av et segmentsamarbeid bes kontakte egen segmentansvarlig.</p>]]></content>
         <category label="nyhet" term="nyhet"/>
         <category label="skatteoppgjør" term="skatteoppgjør"/>
         <category label="skattegrunnlag" term="skattegrunnlag"/>
@@ -177,32 +177,32 @@ Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
         <content type="html"><![CDATA[<p>Skatteetaten slår sammen Summert skattegrunnlag API og Spesifisert summert skattegrunnlag API, og alle konsumenter av begge API-ene må gå over på versjon 2 av Summert skattegrunnlag API.</p>
 <p>Summert skattegrunnlag API versjon 2 er tilgjengelig på ny URL i Test, og er om få dager også tilgjengelig i Prod:</p>
 <ul>
-<li>Test: <a href="https://summertskattegrunnlag.api.skatteetaten-test.no/v2" target="_blank" rel="noopener noreferrer">https://summertskattegrunnlag.api.skatteetaten-test.no/v2</a></li>
-<li>Prod: <a href="https://summertskattegrunnlag.api.skatteetaten.no/v2" target="_blank" rel="noopener noreferrer">https://summertskattegrunnlag.api.skatteetaten.no/v2</a></li>
+<li class="">Test: <a href="https://summertskattegrunnlag.api.skatteetaten-test.no/v2" target="_blank" rel="noopener noreferrer" class="">https://summertskattegrunnlag.api.skatteetaten-test.no/v2</a></li>
+<li class="">Prod: <a href="https://summertskattegrunnlag.api.skatteetaten.no/v2" target="_blank" rel="noopener noreferrer" class="">https://summertskattegrunnlag.api.skatteetaten.no/v2</a></li>
 </ul>
-<p><a href="https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api/2.0.0" target="_blank" rel="noopener noreferrer">Open API spesifikasjonen</a> er oppdatert-
-<a href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/api/summertskattegrunnlag">Dokumentasjon på Github er oppdatert</a></p>
+<p><a href="https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-api/2.0.0" target="_blank" rel="noopener noreferrer" class="">Open API spesifikasjonen</a> er oppdatert-
+<a class="" href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/api/summertskattegrunnlag">Dokumentasjon på Github er oppdatert</a></p>
 <p>Vi anbefaler at endringen testes først. For konsumenter som ikke har testet på en stund, så minner vi om å bruke TEST for token mot Maskinporten, ikke VER2.</p>
 <p><strong>For konsumenter som i dag benytter Summert skattegrunnlag API</strong></p>
 <ul>
-<li>Endringene i modellen har en breaking-change for de som har brukt Summert skattegrunnlag API siden feltet "kategori" er endret fra liste til enkeltverdi.</li>
-<li>Feltet "registreringstidpunkt" har byttet navn til "ajourholdstidspunkt".</li>
-<li>Modellen utvides med nye felter som gjøres tilgjengelig for konsumenter som har behandlingsgrunnlag for disse opplysningene: andelSkattefritt, andelOverfoertFraBarn, skjønnsfastsatt, svalbardSkjønnsfastsatt</li>
-<li>Inntektsår 2016 er ikke lengre støttet.</li>
-<li>{stadie} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: <a href="https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/%7Brettighetspakke%7D/%7Binntektsaar%7D/%7Bpersonidentifikator%7D" target="_blank" rel="noopener noreferrer">https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}</a></li>
+<li class="">Endringene i modellen har en breaking-change for de som har brukt Summert skattegrunnlag API siden feltet "kategori" er endret fra liste til enkeltverdi.</li>
+<li class="">Feltet "registreringstidpunkt" har byttet navn til "ajourholdstidspunkt".</li>
+<li class="">Modellen utvides med nye felter som gjøres tilgjengelig for konsumenter som har behandlingsgrunnlag for disse opplysningene: andelSkattefritt, andelOverfoertFraBarn, skjønnsfastsatt, svalbardSkjønnsfastsatt</li>
+<li class="">Inntektsår 2016 er ikke lengre støttet.</li>
+<li class="">{stadie} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: <a href="https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/%7Brettighetspakke%7D/%7Binntektsaar%7D/%7Bpersonidentifikator%7D" target="_blank" rel="noopener noreferrer" class="">https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}</a></li>
 </ul>
 <p><strong>For konsumenter som i dag benytter Spesifisert summert skattegrunnlag API</strong></p>
 <ul>
-<li>Endringene i modellen er non-breaking-change og bakoverkompatibel for de som har brukt Spesifisert summert skattegrunnlag API med JSON.</li>
-<li>Konsumenter som har benyttet XML vil få et nytt namespace: summertskattegrunnlag</li>
-<li>Scopet skatteetaten<!-- -->:spesifisertsummertskattegrunnlag<!-- --> kan fremdeles benyttes, men man kan også ta i bruk skatteetaten<!-- -->:summertskattegrunnlag<!-- -->.</li>
-<li>Feltet "registreringstidpunkt" har byttet navn til "ajourholdstidspunkt".</li>
-<li>Modellen utvides med nye felter som gjøres tilgjengelig for konsumenter som har behandlingsgrunnlag for disse opplysningene: andelSkattefritt, andelOverfoertFraBarn</li>
-<li>{stadie} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: <a href="https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/%7Brettighetspakke%7D/%7Binntektsaar%7D/%7Bpersonidentifikator%7D" target="_blank" rel="noopener noreferrer">https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}</a></li>
+<li class="">Endringene i modellen er non-breaking-change og bakoverkompatibel for de som har brukt Spesifisert summert skattegrunnlag API med JSON.</li>
+<li class="">Konsumenter som har benyttet XML vil få et nytt namespace: summertskattegrunnlag</li>
+<li class="">Scopet skatteetaten<!-- -->:spesifisertsummertskattegrunnlag<!-- --> kan fremdeles benyttes, men man kan også ta i bruk skatteetaten<!-- -->:summertskattegrunnlag<!-- -->.</li>
+<li class="">Feltet "registreringstidpunkt" har byttet navn til "ajourholdstidspunkt".</li>
+<li class="">Modellen utvides med nye felter som gjøres tilgjengelig for konsumenter som har behandlingsgrunnlag for disse opplysningene: andelSkattefritt, andelOverfoertFraBarn</li>
+<li class="">{stadie} er nå en obligatorisk del av URL. Konsumenter som hittil ikke har oppgitt stadie skal benytte stadie "oppgjoer". Eksempel på sti i Prod blir da: <a href="https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/%7Brettighetspakke%7D/%7Binntektsaar%7D/%7Bpersonidentifikator%7D" target="_blank" rel="noopener noreferrer" class="">https://summertskattegrunnlag.api.skatteetaten.no/v2/oppgjoer/{rettighetspakke}/{inntektsaar}/{personidentifikator}</a></li>
 </ul>
 <p><strong>Sanering av eksisterende tjenester</strong></p>
-<p>Saneringen av Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API vil sammenfalle med sanering av de gamle <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer">URL-ene</a>, og frist vil varsles snart.</p>
-<p><a href="https://www.skatteetaten.no/deling/kontakt/" target="_blank" rel="noopener noreferrer">Kontakt Skatteetaten</a> på vanlig måte dersom du har spørsmål til endringen. Konsumenter som er omfattet av et segmentsamarbeid bes kontakte egen segmentansvarlig.</p>]]></content>
+<p>Saneringen av Summert skattegrunnlag API V1 og Spesifisert summert skattegrunnlag API vil sammenfalle med sanering av de gamle <a href="https://skatteetaten.github.io/api-dokumentasjon/om/url" target="_blank" rel="noopener noreferrer" class="">URL-ene</a>, og frist vil varsles snart.</p>
+<p><a href="https://www.skatteetaten.no/deling/kontakt/" target="_blank" rel="noopener noreferrer" class="">Kontakt Skatteetaten</a> på vanlig måte dersom du har spørsmål til endringen. Konsumenter som er omfattet av et segmentsamarbeid bes kontakte egen segmentansvarlig.</p>]]></content>
         <category label="nyhet" term="nyhet"/>
         <category label="skatteoppgjør" term="skatteoppgjør"/>
         <category label="skattegrunnlag" term="skattegrunnlag"/>
@@ -214,10 +214,10 @@ Dette medfører nedetid og ustabilitet i hele perioden.</p>]]></content>
         <link href="https://skatteetaten.github.io/api-dokumentasjon/nyheter-og-driftsvarsler/2024/05/27/ny-statusside"/>
         <updated>2024-05-27T12:50:00.000Z</updated>
         <summary type="html"><![CDATA[Fra i dag 27. mai vil vi legge ut driftsvarsler for Skatteetatens delingstjenester på Skatteetatens statusside. Frem til 1. september vil vi legge ut driftsvarsler både på statussiden og i RSS-feed på Github. Fra og med 1. september vil Skatteetatens statusside være eneste kanal for driftsvarsler.]]></summary>
-        <content type="html"><![CDATA[<p>Fra i dag 27. mai vil vi legge ut driftsvarsler for Skatteetatens delingstjenester på <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer">Skatteetatens statusside</a>. Frem til 1. september vil vi legge ut driftsvarsler både på statussiden og i RSS-feed på Github. Fra og med 1. september vil Skatteetatens statusside være eneste kanal for driftsvarsler.</p>
+        <content type="html"><![CDATA[<p>Fra i dag 27. mai vil vi legge ut driftsvarsler for Skatteetatens delingstjenester på <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer" class="">Skatteetatens statusside</a>. Frem til 1. september vil vi legge ut driftsvarsler både på statussiden og i RSS-feed på Github. Fra og med 1. september vil Skatteetatens statusside være eneste kanal for driftsvarsler.</p>
 <p>Bruksvilkår for Skatteetatens delingstjenester vil endres som følge av overgangen til Skatteetatens statusside. Endringene består i at Skatteetatens varslingskanal for driftsvarsler endres fra Github til Skatteetatens statusside. I tillegg vil skrivefeil mv. rettes. Revidert versjon av bruksvilkårene vil bli publisert minst én måned før ikrafttredelse.</p>
 <p>RSS-feed på Github vil bestå også etter 1. september, men vil ikke lengre inneholde driftsvarsler for Skatteetatens delingstjenester. Den vil fremdeles inneholde nyheter og varsler om planlagte endringer for Skatteetatens delingstjenester og varsler for innsending av MVA-melding.&nbsp;</p>
-<p>Vi anbefaler at du allerede i dag går til <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer">Skatteetatens statusside</a> for å starte ditt abonnement på varsler.&nbsp;</p>]]></content>
+<p>Vi anbefaler at du allerede i dag går til <a href="https://status.skatteetaten.no/" target="_blank" rel="noopener noreferrer" class="">Skatteetatens statusside</a> for å starte ditt abonnement på varsler.&nbsp;</p>]]></content>
         <category label="nyhet" term="nyhet"/>
         <category label="status" term="status"/>
         <category label="drift" term="drift"/>
