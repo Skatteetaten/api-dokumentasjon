@@ -78,25 +78,22 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for ti
   ]
 ```
 
-
 ## Teknisk spesifikasjon
 
-REST-api: URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+REST-api (for innsendinger mindre enn 10 000 000 bytes): URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
 
-Filopplasting-api: URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+Filopplasting-api (for innsendinger større enn 10 000 000 bytes): URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/). **Spesifikasjonen for A-meldingen (payload) er den samme som for REST-apiet**. 
-Her kan det komme endringer fortløpende når vi får tilbakemeldinger.
-
-
 
 Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
 [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/) 
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
-**15.des-25: Både REST-api og tilbakemelding-api er tilgjengelig i test.**
-**28.jan-26: Filopplasting forventes å være tilgjengelig i test i løpet av uke 8.**
+**REST-api, filopplastings-apiet og tilbakemelding-api er tilgjengelig i test.**
+Se også nyhet [Status overgang til nytt API - 19.02.2026 - Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/status-overgang-til-nytt-api2/) 
+
 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
@@ -125,16 +122,6 @@ Benytt samme scope som for innsending ved autentisering i Maskinporten: `skattee
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
-**Oppdatert 10.des:** 
-Vi har gjort et par justeringer i OpenApi-spesifikasjonen for amelding-tilbakemelding-api for å samstemme den med tilbakemelding-XSD-en.
-
-Endringene er:
--	Arbeidsforhold: feltet fartoeyMoenstring har endret navn til moenstringPaaFartoey
--	InternasjonalIdentifikator.identifikatortype: typen InternasjonalIdentifikatortype er endret fra enum til string
-
-Nyeste versjon er tilgjengelig på på [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/).
-
-**15.des-25: Også tilbakemeldingen er tilgjengelig i test.**
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
@@ -191,8 +178,6 @@ Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-m
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-I første omgang er test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være med å pilotere løsningene.
-
 ### Testmiljøer
 
 For spesifikke URL'er til testmiljø hos Skatteetaten, se
@@ -200,7 +185,6 @@ For spesifikke URL'er til testmiljø hos Skatteetaten, se
    [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
    [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
    
-
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
 * Dialogporten
