@@ -83,7 +83,7 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for ti
 REST-api (for innsendinger mindre enn 10 000 000 bytes): URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
 
-Filopplasting-api (for innsendinger større enn 10 000 000 bytes): URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+Filopplasting-api (kan også brukes for innsendinger større enn 10 000 000 bytes): URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/). **Spesifikasjonen for A-meldingen (payload) er den samme som for REST-apiet**. 
 
 Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
