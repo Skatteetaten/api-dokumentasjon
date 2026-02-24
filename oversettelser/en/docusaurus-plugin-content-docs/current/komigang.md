@@ -15,10 +15,10 @@ The Norwegian Tax Administration offers a range of standardized APIs that can be
 
 In this section, you can find technical information that applies across the Norwegian Tax Administration’s APIs, for example documentation about:
 
-* [Security incluing Maskinporten](./om/sikkerhet.md)
-* [System user](./om/systembruker.md)
-* [Delegation](./om/delegering.md)
-* [Access packages](./om/rettighetspakker.md) 
+* [Security incluing Maskinporten](../../../../docs/om/sikkerhet.md)
+* [System user](../../../../docs/om/systembruker.md)
+* [Delegation](../../../../docs/om/delegering.md)
+* [Access packages](../../../../docs/om/rettighetspakker.md) 
 
 Information about services and solutions that are under development or in pilot can be found on the [Beta page](https://skatteetaten.github.io/beta-apier/).
 
@@ -36,11 +36,11 @@ To be able to use the Norwegian Tax Administration’s APIs, you must have been 
 Each API has its own documentation and is grouped in the left-hand menu under "API-er for deling" and "API-er for innrapportering".
 
 In addition, we have collected documentation that bundles APIs for specific areas or across APIs, referred to as "Anvendelsesområder" (Use cases):
-* [A-meldingen](./anvendelsesomraader/ameldingen.md)
-* [Sharing data from from the Norwegian Tax Administration](./anvendelsesomraader/deling-skatteetaten.md)
+* [A-meldingen](../../../../docs/anvendelsesomraader/ameldingen.md)
+* [Sharing data from from the Norwegian Tax Administration](../../../../docs/anvendelsesomraader/deling-skatteetaten.md)
 * [Reporting third-party data](./anvendelsesomraader/innrapportering-tredjepartsopplysninger.md)
-* [Claims and payments](./anvendelsesomraader/kravogbetalinger.md)
+* [Claims and payments](../../../../docs/anvendelsesomraader/kravogbetalinger.md)
 * [VAT return](./anvendelsesomraader/mvamelding.md)
-* [The tax return](./anvendelsesomraader/skattemelding.md)
+* [The tax return](../../../../docs/anvendelsesomraader/skattemelding.md)
 * [Tax deduction cards for employers](./anvendelsesomraader/skattekorttilarbeidsgiver.md)
 
