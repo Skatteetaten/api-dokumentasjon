@@ -169,6 +169,72 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-upersonlig-api).
 
+Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
+
+# Overordnet struktur
+
+## Inntekt og underskudd
+
+![InntektOgUnderskudd](../../static/download/skattemeldingupersonlig/2025/InntektOgUnderskudd.png)
+![InntektOgUnderskudd_VirksomhetPaaSokkel](../../static/download/skattemeldingupersonlig/2025/InntektOgUnderskudd_virksomhetPaaSokkel.png)
+
+## Formue og gjeld
+
+![FormueOgGjeld](../../static/download/skattemeldingupersonlig/2025/FormueOgGjeld.png)
+
+## Faste eiendommer
+
+![FasteEiendommer](../../static/download/skattemeldingupersonlig/2025/FasteEiendommer.png)
+
+## Fast eiendom som formuesobjekt
+![FasteEiendommerSomFormuesobjekt](../../static/download/skattemeldingupersonlig/2025/FastEiendomSomFormuesobjekt.png)
+
+## Spesifikasjon av forhold relevante for beskatning
+
+![SpesifikasjonAvForholdRelevanteForBeskatning](../../static/download/skattemeldingupersonlig/2025/SpesifikasjonAvForholdRelevanteForBeskatning.png)
+
+## Begrensning av rentefradrag i konsern og mellom nærstående
+
+![BegrensningAvRentefradragIKonsernOgMellomNaerstaende](../../static/download/skattemeldingupersonlig/2025/BegrensningAvRentefradragIKonsernOgMellomNaerstaaende.png)
+
+## Formue og inntekt i selskap med deltakerfastsetting
+
+![FormueOgInntektISDF](../../static/download/skattemeldingupersonlig/2025/FormueOgInntektISelskapMedDeltakerfastsetting.png)
+
+## Metode for å unngå dobbeltbeskatning
+
+![MetodeForÅUnngåDobbeltbeskatning](../../static/download/skattemeldingupersonlig/2025/MetodeForAaUnngaaDobbeltbeskatning.png)
+
+## Kraftverk
+
+![Kraftverk](../../static/download/skattemeldingupersonlig/2025/Kraftverk.png)
+
+## Havbruksvirksomhet
+
+![Havbruksvirksomhet](../../static/download/skattemeldingupersonlig/2025/Havbruksvirksomhet.png)
+
+## Rederiskatteordning
+
+![Rederiskatteordning](../../static/download/skattemeldingupersonlig/2025/Rederiskatteordning.png)
+
+## Kontrollert transaksjon disposisjon og mellomværende
+
+![KontrollertTransaksjonDisposisjonOgMellomvaerende](../../static/download/skattemeldingupersonlig/2025/KontrollertTransaksjonDisposisjonOgMellomvaerende.png)
+
+## Spesifikasjon av skattefradrag for kostnader til forskning og utvikling
+
+![SpesifikasjonAvSkattefradragForKostnaderTilForskningOgUtvikling](../../static/download/skattemeldingupersonlig/2025/SpesifikasjonAvSkattefradragForKostnaderTilForskningOgUtvikling.png)
+
+## Opplysninger om skattesubjekt
+
+![OpplysningerOmSkattesubjekt](../../static/download/skattemeldingupersonlig/2025/OpplysningerOmSkattesubjekt.png)
+
+## Vindkraftverk
+
+![Vindkraftverk](../../static/download/skattemeldingupersonlig/2025/Vindkraftverk.png)
+
+
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">  
 

@@ -231,6 +231,65 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-api).
 
+Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
+
+## Toppnivå
+
+![Toppnivå](../../static/download/skattemelding/2025/Skattemelding_Oversikt.png)
+
+## Andre forhold
+
+![AndreForhold](../../static/download/skattemelding/2025/AndreForhold.png)
+![AndreForhold_Utflyttingsskatt](../../static/download/skattemelding/2025/AndreForhold_Utflyttingsskatt.png)
+![AndreForhold_Utland](../../static/download/skattemelding/2025/AndreForhold_Utland.png)
+
+## Arbeid, trygd og pensjon
+
+![ArbeidTrygdOgPensjon](../../static/download/skattemelding/2025/ArbeidTrygdOgPensjon.png)
+
+## Bank, lån og forsikring
+
+![BankLånOgForsikring](../../static/download/skattemelding/2025/BankLaanOgForsikring.png)
+
+## Bolig og eiendeler
+
+![BoligOgEiendeler](../../static/download/skattemelding/2025/BoligOgEiendeler_Oversikt.png)
+![BoligOgEiendeler_FasteEiendommer_Oversikt](../../static/download/skattemelding/2025/BoligOgEiendeler_FasteEiendommer_oversikt.png)
+![BoligOgEiendeler_FasteEiendommer_FastEiendom](../../static/download/skattemelding/2025/BoligOgEiendeler_FasteEiendommer_FastEiendom.png)
+![BoligOgEiendeler_FastEiendom_OevrigeRoller](../../static/download/skattemelding/2025/BoligOgEiendeler_FastEiendom_OevrigeRoller.png)
+![BoligOgEiendeler_FastEiendomSomFormuesobjekt](../../static/download/skattemelding/2025/BoligOgEiendeler_FastEiendomSomFormuesobjekt.png)
+![BoligOgEiendeler_FastEiendomSomUtleieobjekt](../../static/download/skattemelding/2025/BoligOgEiendeler_FastEiendomSomUtleieobjekt.png)
+
+## Familie og helse
+
+![FamilieOgHelse](../../static/download/skattemelding/2025/FamilieOgHelse.png)
+
+## Finans
+
+![Finans](../../static/download/skattemelding/2025/Finans.png)
+
+## Formue og inntekt i selskap med deltakerfastsetting
+
+![FormueOgInntektISelskapMedDeltakerfastsetting](../../static/download/skattemelding/2025/FormueOgInntektISelskapMedDeltakerfastsetting.png)
+
+## Gave og arv
+
+![GaveOgArv](../../static/download/skattemelding/2025/GaveOgArv.png)
+
+## Metode for å unngå dobbeltbeskatning
+
+![MetodeForÅUnngåDobbeltbeskatning](../../static/download/skattemelding/2025/MetodeForAaUnngaaDobbeltbeskatning.png)
+
+## Næring
+
+![Næring](../../static/download/skattemelding/2025/Naering.png)
+![Næring_FiskeOgFangst](../../static/download/skattemelding/2025/Naering_FiskeOgFangst.png)
+![Næring_Primærnæring](../../static/download/skattemelding/2025/Naering_Primaernaering.png)
+
+## Spesifikasjon av skattefradrag for kostnader til forskning og utvikling
+
+![SpesifikasjonAvSkattefradragForKostnaderTilForskningOgUtvikling](../../static/download/skattemelding/2025/SpesifikasjonAvSkattefradragForKostnaderTilForskningOgUtvikling.png)
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
