@@ -33,4 +33,4 @@ Teknisk dokumentasjon, URL-er til API-ene og annen informasjon man trenger finne
 Mer informasjon om [hvordan koble seg opp mot våre reetablerte tjenester finner man her.](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
 ### Kontakt
-For spørsmål og tilbakemeldinger; kontakt oss gjerne på e-post forskudd@skatteetaten.no
+For spørsmål og tilbakemeldinger; kontakt oss på [brukerstøttetjenesten](https://eksternjira.sits.no/plugins/servlet/desk/site/global)
