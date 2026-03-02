@@ -35,4 +35,4 @@ More information on [how to connect to our re-established services can be found 
 
 ## Contact
 
-If you have questions or feedback, please contact us by email at [forskudd\@skatteetaten.no](mailto:forskudd@skatteetaten.no)  
+If you have questions or feedback, please contact [customer support](https://eksternjira.sits.no/plugins/servlet/desk/site/global)
