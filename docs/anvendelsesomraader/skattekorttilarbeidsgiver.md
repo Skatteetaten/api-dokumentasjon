@@ -21,16 +21,16 @@ Etter hvert vil det også bli mulig å lytte på endringer i dialogporten og hen
 Den gamle løsningen via RF-1211 vil kunne benyttes i parallell med de nye API-ene. Dette betyr at man feks. kan bestille skattekort med den gamle løsningen, og så bestille endringer med den nye. 
 Det er heller ikke noe i veien for å hente skattekort med den gamle løsningen etter at man har hentet med den nye.
 
-Det er ikke satt noen dato for sanering av RF-1211.
+[Altinn II stenger 19. juni 2026 - tjenester må avvikles senest 31. mai.](https://samarbeid.digdir.no/altinn/altinn-ii-stenger-19-juni-2026-tjenester-ma-avvikles-senest-31-mai/3317) Dette betyr at løsningen via RF-1211 da vil slutte å fungere.
 
 ### Framdriftsplan
 API-ene er nå klare både i test og produksjon.
 
 ### Teknisk dokumentasjon
 
-Teknisk dokumentasjon, URL-er til API-ene og annen informasjon man trenger finnes på [disse sidene.](https://skatteetaten.github.io/api-dokumentasjon/api/skattekorttilarbeidsgiver)
+Teknisk dokumentasjon, URL-er til API-ene og annen informasjon finnes på [disse sidene.](https://skatteetaten.github.io/api-dokumentasjon/api/skattekorttilarbeidsgiver)
 
-Mer informasjon om [hvordan koble seg opp mot våre reetablerte tjenester finner man her.](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
+Mer informasjon om [hvordan koble seg opp mot våre reetablerte tjenester finner du her.](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
 ### Kontakt
 For spørsmål og tilbakemeldinger; kontakt oss på [brukerstøttetjenesten](https://eksternjira.sits.no/plugins/servlet/desk/site/global)
