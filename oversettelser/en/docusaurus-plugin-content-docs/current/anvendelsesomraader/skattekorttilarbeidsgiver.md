@@ -19,7 +19,7 @@ The useage pattern will remain the same as before; one API for ordering the tax 
 
 The existing solution via RF-1211 will remain available in parallel with the new APIs. This means, for example, that you can order tax deduction cards using the old solution, and then order changes using the new one. There is also nothing preventing you from retrieving tax cards using the old solution even after having retrieved them using the new one.
 
-No date has been set yet for the reorganisation of RF-1211.
+[Altinn II will close on June 19, 2026 - services must be discontinued no later than May 31.](https://samarbeid.digdir.no/altinn/altinn-ii-stenger-19-juni-2026-tjenester-ma-avvikles-senest-31-mai/3317)
 
 ## Timeline
 
