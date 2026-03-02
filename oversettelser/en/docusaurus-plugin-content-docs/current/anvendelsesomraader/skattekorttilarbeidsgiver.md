@@ -23,8 +23,7 @@ No date has been set yet for the reorganisation of RF-1211.
 
 ## Timeline
 
-The APIs are now ready for test. 
-In production, the plan is to have a version ready during October.
+The APIs are now ready in both test and production. 
 
 ## Technical documentation
 Technical documentation, URLs to the APIs, and other necessary information can be found on [these pages.](https://skatteetaten.github.io/api-dokumentasjon/api/skattekorttilarbeidsgiver)
