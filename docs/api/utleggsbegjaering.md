@@ -130,8 +130,10 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | DUPLIKAT_INNSENDING | Nei | Duplikat | Duplikat innsending | Sak med begjæringsdato %begjæringsdato og referanse %innsenderReferanse er allerede sendt inn |
 | DUPLIKAT_SAKSOEKER | Nei | Duplikat saksøker | Det er ikke tillatt med duplikate saksøkere | Det er ikke tillatt med duplikate saksøkere |
 | DUPLIKAT_SAKSOEKT | Nei | Duplikat saksøkt | Det er ikke tillatt med duplikate saksøkte | Det er ikke tillatt med duplikate saksøkte |
+| ER_IKKE_HOVEDENHET | Nei | Saksøker er ikke angitt med hovedenhet | Kun hovedenhet har partsevne |  |
 | GEBYR_ELLER_SAKSKOSTNAD_HAR_ET_RELATERTKRAV_SOM_IKKE_ER_HOVEDSTOL | Nei | Uriktig eller manglende relasjon til hovedstol | Gebyr eller sakskostnad kan kun relateres til hovedstol | Kravet kan kun relateres til et krav av typen hovedstol. |
 | HOVEDSTOL_SKAL_IKKE_HA_ET_RELATERT_KRAV | Nei | Hovedstol har et relatert krav | En hovedstol skal ikke ha en relatert krav | Hovedstol har et relatert krav |
+| INNBETALING_FRAM_I_TID | Nei | Dato for innbetaling er ugyldig | Dato for innbetaling på krav kan ikke være frem i tid | Dato for innbetaling på krav kan ikke være frem i tid |
 | INNSENDER_IKKE_IDENTIFISERBAR | Nei | Ukjent innsender | Begjæringen må angi en innsender som kan identifiseres | Innsender %innsender kan ikke identifiseres |
 | INNSENDER_IKKE_ORGANISASJON | Nei | Innsender er ikke en organisasjon | Innsender må være en organisasjon | Innsender %innsender er ikke en organisasjon |
 | INNSENDER_MANGLER | Nei | Mangler opplysninger om innsender | Begjæringen må inneholde opplysning om innsender | Begjæringen må inneholde opplysning om innsender |
@@ -140,8 +142,8 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | KRAV_DUPLIKATE_REFERANSER | Nei | Krav har ikke unike kravreferanser | Begjæringens krav må ha unike kravreferanser | Det foreligger flere krav med kravreferanse %kravreferanse |
 | KRAV_IKKE_BENYTTET | Nei | Begjæringen inneholder krav som ikke er dokumentert gjennom tvangsgrunnlag | Alle krav lagt til i begjæringen må dokumenteres | Krav med kravreferanse %kravreferanse er ikke referert til fra begjaeringens tvangsgrunnlag |
 | KRAV_I_FLERE_TVANGSGRUNNLAG | Nei | Krav i flere tvangsgrunnlag | Et krav kan ikke inngå i flere tvangsgrunnlag | Et krav kan ikke inngå i flere tvangsgrunnlag |
-| KRAV_MANGLER_FORFALLSDATO | Nei | Mangler forfallsdato på krav | Kravet må oppgis med forfallsdato | Denne typen krav må oppgis med forfallsdato |
-| KRAV_OPPGIS_UTEN_FORFALLSDATO | Nei | Forfallsdato skal ikke oppgis | Kravet skal oppgis uten forfallsdato | Denne typen krav skal ikke oppgis med forfallsdato |
+| KRAV_MANGLER_FORFALLSDATO | Nei | Mangler forfallsdato | Det må oppgis forfallsdato for kravet | Det må oppgis forfallsdato for %forfallsdato |
+| KRAV_OPPGIS_UTEN_FORFALLSDATO | Nei | Forfallsdato skal ikke oppgis | Dette kravet oppgis uten forfallsdato | %forfallsdato skal oppgis uten forfallsdato |
 | MAKS_EN_ADRESSE_AV_HVER_TYPE | Nei | Maks en adresse av hver type | En aktør kan kun ha en adresse av hver type | Man kan kun definere en adresse av type %ukjentBosted, postadresse, bopelsadresse, forretningsadresse, postboks |
 | MANGELFULLE_KONTOOPPLYSNINGER | Nei | Kontoopplysninger er mangelfulle | Kontoopplysninger må være gyldige | Konto må inneholde minst en verdi |
 | MANGLER_KRAV | Nei | Begjæringen refererer ikke til noen krav | Det må finnes minimum ett krav | Krav mangler |
@@ -158,11 +160,19 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | RELATERTE_KRAV_KAN_IKKE_PEKE_PÅ_SEG_SELV | Nei | Relaterte krav kan ikke peke på seg selv | Relaterte krav kan ikke peke på seg selv | Relaterte krav kan ikke peke på seg selv |
 | RELATERTE_KRAV_MÅ_FINNES | Nei | Relaterte krav må peke til krav i samme tvangsgrunnlag | Et relatert krav må finnes i samme tvangsgrunnlag | Relaterte krav må finnes i samme tvangsgrunnlag |
 | RELATERTE_KRAV_UGYLDIGE_KRAVREFERANSER | Nei | Relaterte krav peker på krav som ikke eksisterer | Kravreferanser må være gyldige | Krav med kravreferanse %hovedkravRef peker på relatert krav med kravreferanse %relatertKravRef som ikke eksisterer |
+| RENTEKRAV_KAN_BARE_RELATERES_TIL_ETT_KRAV | Nei | Rentekrav kan bare være relatert til ett krav | Rentekrav kan bare være relatert til ett krav | Rentekrav må være koblet til ett og bare ett relatert krav og det relaterte kravet må være hovedkrav, kostnad eller gebyr |
 | RENTEKRAV_KAN_IKKE_HA_RENTEKRAV | Nei | Uriktig relasjon til rentekravet | Rentekrav kan ikke peke på annet rentekrav | Et rentekrav kan ikke være relatert til et annet rentekrav. Oppgi korrekt relasjon til et rentebærende krav. |
+| RENTEKRAV_KAN_IKKE_HA_RENTEOPPLYSNINGER | Nei | Rentekrav ka | Rentekrav kan ikke ha tilknyttet renteopplysninger | Rentekrav kan ikke ha renteopplysninger |
+| RENTEKRAV_PERIODE_MAA_HA_GYLDIG_PERIODE | Nei | Renteperiode må ha fradato før tildato og fradato før begjæringsdato | Renteperiode må ha fradato før tildato og fradato før begjæringsdato | Krav med innsenders referanse %innsenderskravreferasnse har ugyldig renteperiode |
+| RENTEKRAV_TILKNYTTET_IKKE_RENTEKRAV | Nei | Rentekrav for ikke rentekrav | Rentekrav må være tilknyttet rentekrav | Rentekrav kan kun tilknyttes krav med kravdetaljer rentekrav |
 | RENTE_MAA_HA_RELATERT_KRAV | Nei | Relasjon til rentebærende krav mangler | Relasjon til rentebærende krav mangler | Et rentekrav må ha et relatert krav slik at det relaterer seg til et annet krav som er rentebærende. |
 | SAKSOEKERS_INNENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse innenlands for saksøker | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøker %saksøker sin adresse innenlands må minimum inneholde adressetekst og postnummer |
 | SAKSOEKERS_UTENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse utland for saksøker | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøker %saksøker sin adresse utenlands må minimum inneholde poststed og landkode |
+| SAKSOEKT_ER_ENK | Nei | Saksøkt er ENK | Der saksøkt er et ENK skal innehaverens fødselsdato og privatadresse benyttes |  |
+| SAKSOEKT_ER_IKKE_HOVEDENHET | Nei | Saksøkt virksomhet er ikke angitt som hovedenhet | Kun hovedenhet har partsevne |  |
 | SAKSOEKT_GAMMELT_REGELVERK | Nei | Saksøkt på gammelt regelverk | Begjæringen angir saksøkt som må behandles etter gammelt regelverk | Saksøkt med identifikator %identifikator må behandles etter gammelt regelverk, og må sendes inn via ELSA |
+| SAKSOEKT_MANGLER_I_REGISTERET | Nei | Saksoekt finnes ikke i registeret | Saksoekt må finnes i partsregisteret |  |
+| SAKSOKER_ER_ENK | Nei | Saksøker er ENK | Der saksøker er et ENK skal innehaverens fødselsdato og privatadresse benyttes |  |
 | SAKSØKTES_INNENLANDS_ADRESSE_UGYLDIG | Nei | Minimumsadresse innenlands for saksøkte | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøkte %saksøkt sin adresse innenlands må minimum inneholde adressetekst og postnummer |
 | SAKSØKTES_UTENLANDS_ADRESSE_UGYLDIG | Nei | Saksøktes utenlandsadresse er ugyldig | Begjæring må inneholde et minimum av opplysninger for adresser | Saksøkte %saksøkt sin adresse utland må minimum inneholde poststed og landkode |
 | SAMME_SAKSOEKT_SOM_SAKSOEKER | Nei | Saksøker kan ikke være saksøkt | Saksøker kan ikke være saksøkt | Saksøker kan ikke være saksøkt |
@@ -181,13 +191,14 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
 | UGYLDIG_VEDLEGG_TVANGSKRAFTGRUNNLAG | Nei | Tvangskraftgrunnlag (varsel) har vedlegg av feil type | Begjæringens tvangskraftgrunnlag (varsel) må ha vedlegg av korrekt type | Vedlegg for tvangskraftgrunnlag med filnavn %filnavn må være av type tvangskraftgrunnlag |
 | ULOVLIG_ENDRING_BEGJAERINGSDATO | Ja | Det er ikke tillatt å endre begjæringens dato | Ulovlig endring |  |
 | ULOVLIG_ENDRING_INNSENDER | Ja | Det er ikke tillatt å endre innsender | Ulovlig endring |  |
+| ULOVLIG_ENDRING_SAKSOEKER | Ja | Det er ikke tillatt å endre saksøker | Ulovlig endring |  |
+| ULOVLIG_ENDRING_SAKSOEKT | Ja | Ny saksøkt kan ikke behandles etter nytt regelverk. Send inn korrigeringen på papir. | Ulovlig endring |  |
 | ULOVLIG_ENDRING_UNDERSKRIFT | Ja | Det er ikke tillatt å endre underskrift | Ulovlig endring |  |
 | VEDLEGG_SKAL_HA_REFERANSE_TIL_BEGJAERINGEN | Nei | Vedlegg referert til i begjæringen har er lastet opp med referanse til en annen begjæring | Alle vedlegg knyttet til begjæringen skal ha referanse til begjæringen | Vedlegg '%s' er lagret med referanse til en annen begjæring og kan ikke benyttes i denne begjæringen. Last opp vedlegg pånytt med referanse til '%s' |
 | VEDLEGG_SKAL_HA_UUID | Nei | Vedlegg referert til i begjæringen har ikke fylt ut uuid | Alle vedlegg knyttet til begjæringen skal ha utfylt uuid | Vedlegg '%s' mangler uuid |
 | VEDLEGG_SKAL_IKKE_HA_FEILET | Nei | Vedlegg referert til i begjæringen har feilet og kan ikke benyttes | Alle vedlegg knyttet til begjæringen skal være uten feil | En av følgende:<br/>- Vedlegg '%s' er er forsøkt validert, men valideringen feilet pga teknisk feil. Vennligst forsøk å laste opp vedlegget på nytt, og hvis problemet vedvarer, kontakt support<br/>- Vedlegg '%s' feilet ved forsøk på konvertering til gyldig pdf.<br/>- Vedlegg '%s' lar seg ikke konvertere til gyldig pdf. |
 | VEDLEGG_SKAL_VAERE_TILGJENGELIG | Nei | Vedlegg referert til i begjæringen er ikke tilgjengelig og kan ikke benyttes | Alle vedlegg knyttet til begjæringen skal være tilgjengelig | En av følgende:<br/>- Vedlegg '%s' med id '%s' finnes ikke.<br/>- Vedlegg '%s' er slettet.<br/>- Vedlegg '%s' er kassert.<br/>- Vedlegg '%s' inneholder virus. |
 | VEDLEGG_SKAL_VAERE_VIRUSSJEKKET_VALIDERT_OG_KONVERTERT | Nei | Vedlegg referert til i begjæringen er ikke klar til å kunne benyttes enda | Alle vedlegg knyttet til begjæringen skal være virussjekket, validert og konvertert | En av følgende:<br/>- Vedlegg '%s' er ikke virussjekket.<br/>- Vedlegg '%s' er ikke konvertert til gyldig pdf.<br/>- Vedlegg '%s' er ikke validert. |
-
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-Informasjonsmodell">
 
@@ -196,6 +207,17 @@ Tabellen nedenfor gir en oversikt over ulike former for valideringsfeil som kan 
       <p>
 
 ## Endringslogg
+
+## Versjon 2.0
+Oversikt over endringer som er gjort i versjon 2.0 av Utleggsbegjæringen:
+
+1. 'eksternSaksreferanse' under begjæringensTvangsgrunnlag er gjort valgfri (er for fremtidig bruk).
+2. Fjernet følgende elementer fra TvangskraftgrunnlagType: oppfyllelsesfrist, erklærtTvangskraftig, vedtattForelegg, inkassovarsel
+3. Fjernet følgende elementer fra BegrunnelseUnnlatVarselType: ukjentOppholdsstedSakssøkt, ukjentFullmektigMedKjentOppholdssted, ukjentElektroniskKontaktinformasjon
+4. Fjernet følgende elementer fra ForsendelsesmaateType: EBOX, EPOST
+5. Endret navn på klassen 'Tvangskraftgrunnlag' til 'Varsel'
+6. Lagt til 'alternativElektroniskForsendelsesmåte' under varsel.
+
 
 ### Versjon 1.1
 Oversikt over endringer som er gjort i versjon 1.1 av Utleggsbegjæringen:
@@ -247,32 +269,36 @@ Videre har man entiteten «Krav» som er kjerneinformasjon med detaljer om «pen
 
 I «BegjæringensTvangsgrunnlag» skal man legge inn detaljer om grunnlaget for Kravene i utleggsbegjæringen.
 
-### a) Rotnivå - Utleggsbegjæring
-RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen.
-
-* innsenderReferanse er innsenders unike referanse på saken.
-* I elementet tvangsfullbyrdelsestype må man angi om det er en ren Utleggsbegjæring, eller kombinert forliksklage.
-* Dersom man har opplysninger om spesiellUtleggsgjenstand, kan dette opplyses.
-* I vedlegg kan det sendes generelle vedlegg som ikke er dekket andre steder i Utleggsbegjæringen.
-* underskrift er navn på ansvarlig for innsendingen.
+### a) Rotnivå - Utleggsbegjæring v2.0
+## RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen.
 
 ![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a1.png)
+
+Beskrivelse av sentrale elementer:
+
+* **innsenderReferanse** er innsenders unike referanse på saken.
+* I elementet **tvangsfullbyrdelsestype** må man angi om det er en ren utleggsbegjæring, eller kombinert forliksklage.
+* **begjæringsdato** er datoen for innsending av utleggsbegjæringen.
+* § 7-9 i innkrevingsloven åpner opp for at partene kan be om et møte. Da skal feltet **berOmInnkallingTilMøteMedBegrunnelse** fylles ut.
+* I henhold til tvangsfullbyrdelsesloven § 7-6 kan saksøker fylle ut feltet **berOmUnnlattForeleggelseMedBegrunnelse**. Begrunnelsen kan være feks. " Vi er kjent med at saksøkte har unndratt formuesgoder tidligere og nærheten til grensen gjør at kjøretøyet kan fraktes ut av landet."
+* Dersom man har opplysninger om **spesiellUtleggsgjenstand**, kan dette opplyses i dette feltet.
+* I **vedlegg** kan det sendes generelle vedlegg som ikke er dekket andre steder i Utleggsbegjæringen som f.eks være erkjennelse av kravet. Da skal "beviset" på erkjennelsen legges ved for å avbryte foreldelse. Dette kan være et dokument eller en skjermdump fra en samtalelogg. .
+* **underskrift** er navn på ansvarlig for innsendingen og er påkrevd å sende.
+
 
 #### Datatyper:
 
 ![Rotnivå-datatyper-vedlegg](../../static/download/utleggsbegjaering/begjaering-a2.png)
 ![Rotnivå-datatyper-tvangsfullbyrdelsestype](../../static/download/utleggsbegjaering/begjaering-a3.png)
 
-### b) Parter i utleggsbegjæringen
+### b) Parter - Utleggsbegjæring v2.0
 
-Informasjon om partene i Utleggsbegjæringen.
+## Informasjon om partene i Utleggsbegjæringen.
 
-* Saksøker er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig som representerer seg i sak om tvangsfullbyrdelse(saksøkersProsessfullmektig). Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
-* Innsender er den som sender inn Utleggsbegjæringen på vegne av saksøker. Innsender kan også være eller ha prosessfullmektig. Typisk kan Innsender være et inkassobyrå og prosessfullmektig være inkassobevillingshaver som har saken.
-* Saksøkt er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan saksøktesProsessfullmektig utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
-* Prosessfullmektig(fullmakt/bevillingshaver/Advokat/avdvokatfullmektig) er tredjeperson med en generell(Bevillingshaver) eller spesifikk fullmakt(Fullmakt) til å opptre på vegne av en part. Dette må være en fysisk person.
-* Dersom prosessfullmektig er Advokat/advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers navn fylles ut. I alle andre tilfeller må fullmakt vedlegges.
-
+* **Saksøker** er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig, **saksøkersProsessfullmektig**, som representerer seg i sak om tvangsfullbyrdelse . Typisk kan dette være en ansatt hos saksøkeren, med fullmakt.
+* **Innsender** er den som sender inn Utleggsbegjæringen på vegne av saksøker. Innsender kan også være eller ha prosessfullmektig, **innsendersProsessfullmektig**. Som inkassoselskap skal du sende inn innsender, innsendersProssesfullmekting og bevillingshaver. Innsender og innsendersprossessfullmektig vil for inkassoselskap være det samme.
+* **Saksøkt** er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan **saksøktesProsessfullmektig** utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+* **Prosessfullmektig** må være en fysisk person, f.eks. en advokat eller avdvokatfullmektig som er en generell **bevillingshaver** eller har en spesifikk **fullmakt** til å opptre på vegne av en part. Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må fullmakt vedlegges.
 
 ![Parter](../../static/download/utleggsbegjaering/begjaering-b1.png)
 
@@ -280,39 +306,108 @@ Informasjon om partene i Utleggsbegjæringen.
 
 ![Parter-datatyper](../../static/download/utleggsbegjaering/begjaering-b2.png)
 
-### c) Generelle elementer
+### c) Generelle elementer - Utleggsbegjæring v2.0
 
-I begjæringen har vi 3 såkalte entiteter med generell informasjon som dekker hele utleggsbegjæringen, dette er
+## Generell informasjon som dekker hele Utleggsbegjæringen.
 
-* KreverRettsgebyrErstattet - Benyttes om du ønsker å angi at rettsgebyret og eventuelt rentene som ilegges ved innsending kreves erstattet av saksøkte og eventuelt hvilken prioritet de skal ha.
-* KreverFritakRettsgebyr - Benyttes om du ønsker å kreve fritak for rettsgebyret og årsaken til dette.
-* Betalingsinformasjon - Informasjon om hvor, hvordan og til hvem innbetalingen skal gjøres, dersom det ender opp i samordnet trekk.
-* Namsmannsdistrikt -skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6).
+* kreverRettsgebyrErstattet benyttes om man ønsker å angi at rettsgebyret og eventuelt rentene som ilegges ved innsending kreves erstattet av saksøkte og eventuelt hvilken prioritet de skal ha.
+* kreverFritakRettsgebyr benyttes om man ønsker å kreve fritak for rettsgebyret og årsaken til dette.
+* betalingsinformasjon angir hvor, hvordan og til hvem innbetalingen skal gjøres dersom det ender opp i samordnet trekk.
+* valgtNamsmannsdistrikt skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6).
 
 ![Generelle elementer-1](../../static/download/utleggsbegjaering/begjaering-c1.png)
 ![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
-### d) Kravinformasjon
+### d) Kravinformasjon - Utleggsbegjæring v2.0
 
-Krav er det minste objektet innenfor et tvangsgrunnlag.
-* Kravdetaljer angir hvilken type krav det er. Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod. Se [kodelisten for kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826) for alle gyldige verdier. En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
-* «InnsendersKravreferanse» har flere formål, det ene er å unikt identifisere et krav innenfor en Utleggsbegjæring, det andre er å kunne relatere såkalte «tilleggskrav» som for eksempel «Sakskostnader» eller «Rentekrav». På samme måte kan man relatere «Rentekrav» til «Sakskostnader». I praksis fyller man ut «relatertKrav» med opphavets «InnsendersKravreferanse».
-* Dersom man sender inn et «Rentekrav», bør man legge ved hvilken «rentePeriode» (fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av i «renteGrunnlag».  Dette fylles ut i «rentekrav» elementet. I tillegg bør man angi om det er "beregnetMedForsinkelsesrente" eller evntuelt med en avtalt rentesats i «beregnetMedAvtaltRentesats». Sender man inn et krav som det kreves renter for, må man fylle ut «rentebærendeKrav».
-* Har det kommet innbetalinger på aktuelle krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
-* Har man andre nedjusteringer på krav, skal dette angis i entiteten "kravEndring".
-* Har kravet byttet eier skal informasjon om dette angis i entiteten «transporterklæring», og det må vedlegges dokumentasjon. Dersom man angir "transporterklæring" på et Hovedkrav trenger man ikke fylle ut posten for andre typer krav som er koblet til dette via å oppgi Hovedkravet/opphavets "innsendersKravreferanse" i "relatertKrav"
+## Detaljering av de enkelte kravene som inngår i Utleggsbegjæringen.
 
 ![Kravinformasjon](../../static/download/utleggsbegjaering/begjaering-d.png)
 
+* kravdetaljer angir hvilken type krav det er. Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod.
+* Se Se [kodelisten for kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826)  for alle gyldige verdier. En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
+* kravbeskrivelse er en beskrivelse av hva kravet omfatter, for eksempel Treningsavgift.
+* prioritetISak angir prioritet for kravet innad i utleggsbegjæringen. Benyttes ved fordeling av innbetaling i utleggstrekk, Verdier 1-99.
+* prioritetDekningsloven angir hvilken prioritet kravet har etter bokstavene i dekningsloven § 2-8 (a til e).
+* innsendersKravreferanse skal unikt identifisere et krav innenfor en Utleggsbegjæring.
+* relatertKrav skal brukes for å knytte renter eller andre omkostninger (tilleggskrav) til det hovedkravet det direkte tilhører.
+* kravgrunnlagsidentifikator er identifikator for kravet i Siro og skal brukes som referanse dersom kravet er begjært tidligere.
+* opprinneligBeløp er pengekravets opprinnelige beløp når kravet oppstod.
+* gjenståendeBeløp er det beløpet som gjenstår når begjæringen sendes inn = opprinnelig beløp minus innbetalinger og nedjusteringer etter at kravet oppstod.
+* sisteFristavbrytendeTiltak er handling som avbryter løpende foreldelsesfrist og/eller gir ny forlenget frist.
+* Dersom man sender inn et rentekrav, bør man legge ved hvilken rentePeriode (fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av i renteGrunnlag.  I tillegg bør man angi om det er beregnetMedForsinkelsesrente eller eventuelt med en avtalt rentesats i beregnetMedAvtaltRentesats.
+* rentebærendeKrav må fylles ut dersom man sender inn et krav som det kreves renter for, f.eks. et hovedkrav.
+* kravforfall/forfallsdato skal fylles ut for Hovedkrav, TidligereRettsligeSakskostnader og UtenrettsligeKostnader, men skal ikke fylles ut for SakskostnaderForSkriving og Rentekrav.
+* betalingsoppfordring er kun relevant for krav på utenrettslige inndrivingskostnader. For å kunne kreve utenrettslige inndrivingskostnader må man ha sendt betalingsoppfordring etter inkl. § 10 og det må være sendt senest 6 måneder før man begjærer, jf. inkl. 11 annet ledd.
+* Har det kommet innbetaling på et krav, må disse knyttes til det enkelte kravet med beløp og dato. Dette blant annet for å kunne beregne og ettergå krevde rentekrav.
+* tilleggsfristForeldelse skal brukes dersom kreditor ber om tilleggsfrist ut over den vanlige foreldelsesfristen ihht foreldelsesloven § 10.
+* I kravEndring kan man angi eventuelle nedjusteringer på kravet.
+* Har kravet byttet eier skal informasjon om dette angis i transporterklæring, og det må vedlegges dokumentasjon. Dersom man angir transporterklæring på et hovedkrav trenger man ikke fylle ut posten for andre typer krav som er koblet til dette via å oppgi hovedkravets innsendersKravreferanse i relatertKrav.
+
+
 ### e) BegjæringensTvangsgrunnlag
 
-Begjæringens Tvangsgrunnlag omfatter data om tvangsgrunnlag(ene) i begjæringen. Tvangsgrunnlaget brukes videre som kobling til krav(innsendersKravreferanse) og identifisere hvem som er parter på kravene.
+Begjæringens tvangsgrunnlag omfatter data om tvangsgrunnlag(ene) i begjæringen. Disse må entes angis som Alminnelige tvangsgrunnlag eller Særlige tvangsgrunnlag.
 
-Som innsender har du mulighet å legge deres egen referanse (eksternSaksreferanse) på hvert av begjæringensTvangsgrunnlag.
+*Merk at kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.*
 
-Dersom man ikke har sendt varsel til skyldner, må årsak oppgis i begrunnelseUnnlatvarsel (OBS: Er ikke lov å fylle ut for SkriftligMeddelelse).
+* [Generell informasjon for alle typer tvangsgrunnlag](#generell-informasjon-for-alle-typer-tvangsgrunnlag)
+* [Informasjon for Alminnelig tvangsgrunnlag](#informasjon-for-alminnelig-tvangsgrunnlag)
+* [Informasjon for Særlig tvangsgrunnlag](#informasjon-for-særlig-tvangsgrunnlag)
 
 ![BegjæringensTvangsgrunnlag](../../static/download/utleggsbegjaering/begjaering-e.png)
+
+## Generell informasjon for alle typer tvangsgrunnlag
+
+Beskrivelse av informasjon som er felles for alle typer tvangsgrunnlag:
+
+* **betegnelseAvTvangsgrunnlag** er en beskrivelse av tvangsgrunnlaget. Kan for eksempel være Faktura 55.
+* **tvangsgrunnlagsdato** er datoen tvangsgrunnlaget ble etablert
+* **innsendersKravreferanse** skal liste alle kravene som er knyttet til dette tvangsgrunnlaget
+* **eksternSaksreferanse** er en unik identifikator for tvangsgrunnlaget for fremtidig bruk. Er ikke påkrevd for utfylling.
+* **begrunnelseUnnlatVarsel** kan angi en begrunnelse for at varsel ikke er sendt til saksøkt. Er ikke lov å fylle ut for SkriftligMeddelelse.
+* **tvangsgrunnlag** er et vedlegg som dokumentasjon av tvangsgrunnlaget som dom, faktura, gjeldsbrev eller annet grunnlag som gjør at et krav kan tvangsfullbyrdes.
+* **varsel** dokumenterer varsling i henhold til tvangsfullbyrdelsesloven $4-18 eller $4-19.  Inkluderer dokumentasjon av vilkår for at tvangsfullbyrdelse kan skje. Kravet må være forfalt og misligholdt og varsel må være sendt.
+
+## Informasjon for Alminnelig tvangsgrunnlag
+
+Beskrivelse av informasjon for alminneligTvangsgrunnlag, dvs. dom eller annen avgjørelse som gjør at et krav kan tvangsfullbyrdes:
+
+* **type** angir type alminnelig tvangsgrunnlag i henhold til kodeliste, f.eks. domEllerKjennelse eller forelegg.
+* **oppfyllelsesfrist** er fristen for betaling som følger av domsslutningen.
+* **forkynnelsesdato** er dato når tvangsgrunnlaget ansees mottatt hos saksøkte.
+* **forpliktet** er den eller de som i følge tvangsgrunnlaget er ansvarlig for pengekravet og kan få en utleggsbegjæring rettet mot seg.
+* **berettiget** er den eller de som i følge tvangsgrunnlaget, kan be om om hjelp til å få inndrevet pengekravet sitt (sette frem en utleggsbegjæring). Det gjelder også de som lovlig har ervervet/kjøpt opp kravet.
+
+## Informasjon for Særlig tvangsgrunnlag
+
+Beskrivelse av informasjon for særligTvangsgrunnlag, dvs. ulike typer avtaler eller annet som i ulike lovbestemmelser er angitt som tvangsgrunnlag. Eksempel: Skatte- og avgiftskrav, skriftlige meddelelser (faktura, betalingsoppfordring), gjeldsbrev, utlegg, avtale om pant, salgspant mv..
+
+Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
+
+* **skyldner** er part eller parter som har en ubetinget betalingsforpliktelse overfor en eller flere kreditorer.
+* **kreditor** er part eller parter som har en ubetinget rett til å motta betaling fra en skyldner.
+* **tvangsmulktEllerLovbestemmelse**
+- **type** med lovlige verdier tvangsmulkt eller lovbestemmelse
+- **juridiskGrunnlag**. Tvangsmulkt må følge av lov eller forskrift, det bør være mulig å angi grunnlaget. Bestemmelsen gjør krav som etter særskilt lovbestemmelse er tvangsgrunnlag til tvangsgrunnlag, det bør være mulig å oppgi grunnlaget.
+- **vedtakendeMyndighet** er myndigheten som har fastsatt tvangsmulkten. Trenger ikke å være samme som kreditor og/eller saksøker.
+* **skriftligMeddelelse**
+- **kravetsGrunnlag** er ment å kort beskrive hva kravet gjelder, feks "treningsavgift januar 2025".
+- **faktiskeForholdForKravet** er ment til å oppfylle vilkåret i tvisteloven § 6-3, bokstav d.
+- **påstand** (til forliksrådet) er uttalelse av det resultatet klageren i tilfelle krever ved dom. Eksempel: Hva A må betale til B, hvilken frist og hvilket beløp.
+- **kanBehandlesIForliksrådet** settes til true dersom saken ønskes behandlet i forliksrådet dersom saksøkte kommer med innsigelser.
+- **krevesFraværsdom** settes til true dersom det kreves fraværsdom.
+- **forsendelsesmåte** kan enten være en definert forsendelsesmåte eller en alternativElektroniskKanal.
+- **mottakeradresse** kan enten være mottakeradresseInnland eller mottakeradresseUtland.
+* **gjeldsbrev** er et signert dokument som inneholder et uforbeholdent løfte om betaling og vedtakelse av at pengene kan innkreves uten dom.
+- **skyldnererklæring** =true angir at det er en signatur eller annen bekreftelse på vedtakelsen av at gjelden kan inndrives uten søksmål.
+- **inndrivelsesklausul** =true angir at det er et vedtak om at gjelden kan inndrives uten søksmål.
+- **vitne**. For en del gjeldsbrev er det krav om vitnepåtegninger for at de skal være gyldige. I så fall er det krav om identifisering av to myndige vitner.
+* **elektroniskGjeldserklæring**
+- **skyldnererklæring** =true angir at det finnes en signatur eller annen bekreftelse på vedtaket om at gjelden kan inndrives uten søksmål,
+- **inndrivelsesklausul** =true angir at det finnes en bestemmelse om at gjelden kan inndrives uten søksmål,
+* **sjekkEllerVeksel** beskriver om det er sjekk (true) eller veksel (true)
+
 
 </p>
 </details>
