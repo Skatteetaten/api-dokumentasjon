@@ -43,6 +43,11 @@ Følgende ressurs kan benyttes til dette : `ske-skattekort-til-arbeidsgiver`
 
 Du finner mer informasjon om maskinporten-tokens og eksempler på dette i [Altinn](https://docs.altinn.studio/nb/altinn-studio/v8/guides/integration/sbs/setup/#6-fiken-kan-autentisere-mot-maskinporten-med-systembrukeren)
 
+## Begrensninger
+Vi har satt en begrensning i hvor mange skattekort som kan hentes pr kall til API-et. Denne grensen er foreløpig satt til 1000 fødselsnummer.
+
+Dette vil ikke gjelde hvis man bestiller endrede skattekort, og det er mer enn 1000 endringer. Man vil uansett få alle endrede skattekort ved bestilling av endringer.
+
 ## Datakatalog
 
 Dette API-et er pt. ikke dokumentert i Felles datakatalog.
