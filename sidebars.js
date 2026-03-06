@@ -81,6 +81,7 @@ const sidebars = {
         { id: 'api/innrapportering-livsforsikring', label: "Livsforsikring", type: 'doc' },
         { id: 'api/mvameldinginnsending', label: "Mva-melding innsending", type: 'doc' },
         { id: 'api/mvameldingvalidering', label: "Mva-melding validering", type: 'doc' },
+        { id: 'api/innrapportering-oppdrag-til-utenlandske-oppdragstakere-api', label: "Oppdrag til utenlandske oppdragstakere", type: 'doc' },
         { id: 'api/innrapportering-overskuddsstroem', label: "Overskuddsstrøm", type: 'doc' },
         { id: 'api/innrapportering-passogstell', label: "Pass og stell", type: 'doc' },
         { id: 'api/innrapportering-egg', label: "Primærnæring egg", type: 'doc' },
