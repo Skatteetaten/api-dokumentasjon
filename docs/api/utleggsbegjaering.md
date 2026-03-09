@@ -327,7 +327,7 @@ Beskrivelse av sentrale elementer:
 * kravdetaljer angir hvilken type krav det er. Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod.
 * Se Se [kodelisten for kravdetaljerUtleggsbegjaering](https://data.skatteetaten.no/web/datakatalog/kodeliste/029271ca-2512-4b5c-a126-ce7072b60826)  for alle gyldige verdier. En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
 * kravbeskrivelse er en beskrivelse av hva kravet omfatter, for eksempel Treningsavgift.
-* prioritetISak angir prioritet for kravet innad i utleggsbegjæringen. Benyttes ved fordeling av innbetaling i utleggstrekk, Verdier 1-99.
+* prioritetISak angir prioritet for kravet innad i utleggsbegjæringen. Benyttes ved fordeling av innbetaling i utleggstrekk, Verdier 1-99. Tallene benyttes som ordenstall der 1 er lik første prioritet etc.
 * prioritetDekningsloven angir hvilken prioritet kravet har etter bokstavene i dekningsloven § 2-8 (a til e).
 * innsendersKravreferanse skal unikt identifisere et krav innenfor en Utleggsbegjæring.
 * relatertKrav skal brukes for å knytte renter eller andre omkostninger (tilleggskrav) til det hovedkravet det direkte tilhører.
