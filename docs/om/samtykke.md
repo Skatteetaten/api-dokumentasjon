@@ -89,7 +89,7 @@ Når du har fått tilgang til Altinn's samtykkeløsning og API-et til Skatteetat
 Den overordnetete flyten for samtykkedialogen blir da som følger:
 1. Bruker logger seg på nettløsningen for å f.eks. søke om lån eller se sine Krav og betalinger. Konsumenter må dermed ha et samtykke eller fullmakt for å innhente opplysninger på vegne av brukeren.
 
-2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Digdir. Dersom det allerede foreligger et gyldig samtykke som er innenfor utløpstiden (f.eks. 90 dager for *Krav og betalinger*), fortsetter flyten i steg 6.  
+2. Konsument innhenter samtykket ved å sende en samtykkeforespørsel for bruker til Digdir. Dersom det allerede foreligger et gyldig samtykke som er innenfor utløpstiden (f.eks. ett år for *Krav og betalinger*), fortsetter flyten i steg 6.  
  
 3. Konsument sender deretter brukeren til samtykkesiden hos Altinn.
  
