@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
 keywords: [arbeidsgiveravgift, virksomheter]
-last_updated: Sep 2, 2025
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer informasjon om en virksomhet sitt grunnlag for arbeidsgiveravgift pr. 2 måneds termin for de siste tre terminer.</Summary>
