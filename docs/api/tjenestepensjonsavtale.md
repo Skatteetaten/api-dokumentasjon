@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Inntekt, Tjenestepensjonsavtale]
 keywords: [tjenestepensjonsavtale] 
-last_updated: Sep 2, 2025
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjeneste hvor pensjonsinnretninger kan registrere, oppdatere og slette opplysninger om pensjonsavtaleforhold. Tjenesten kan også levere informasjon om det foreligger gyldig avtaleforhold mellom arbeidsgiver og pensjonsinnretning.</Summary>
@@ -36,14 +36,12 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Rettighetspakker
-Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakken](../om/rettighetspakker.md).
 
-Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
- 
-| Teknisk navn på rettighetspakker |	Kommentar |
-|---| --- |
-| nav | Kun tilgang til endepunktene for å sjekke gyldighet for virkningsperiode og avtalteforhold|
-| otp | Kun tilgang til å opprette, endre og slette avtaleforhold |
+Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
+
+Rettighetspakke `nav` gir tilgang  til endepunktene for å sjekke gyldighet for virkningsperiode og avtalteforhold.
+Rettighetspakke `otp` gir tilgang til å opprette, endre og slette avtaleforhold.
  
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/8018e29d-f608-31b6-965e-00c290386612) i Felles datakatalog.
