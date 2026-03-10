@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ skatteplikt, inntekt, formue ]
-last_updated: Sep 2, 2025
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 
@@ -41,13 +41,9 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Skatteplikt API - P�
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Rettighetspakker
-Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakken](../om/rettighetspakker.md).
 
-Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
-
-| Teknisk navn på rettighetspakker |	
-|-------------------------|
-| ssb                     |
+Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
 ## Støttetjenester
 
