@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Inntekt, Inntektsmottaker, Inntektsmottakere]
 keywords: [inntektsmottakere, virksomheter]
-last_updated: Sep 2, 2025
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer en liste over inntektsmottakere der arbeidsgiver (opplysningspliktig), via a-ordningen, har rapportert pensjonsavtale med pensjonsinnretningen som utfører kallet.</Summary>
@@ -37,13 +37,12 @@ Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyt
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Rettighetspakker
-Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
 
-Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
- 
-| Teknisk navn på rettighetspakker |	Egenskaper ved rettighetspakker|
-|---|---|
-| otp | Perioden det spørres på må være innenfor avtaleperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
+Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+
+Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
+
+For rettighetspakke `otp` må perioden det spørres på må være innenfor avtaleperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md).
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/463966c2-0a35-3845-b2a4-9446d36526e4) i Felles datakatalog.
