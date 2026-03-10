@@ -173,6 +173,8 @@ Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swa
 
 # Overordnet struktur
 
+![Oversikt](../../static/download/skattemeldingupersonlig/2025/SkattemeldingUpersonlig_overskit.png)
+
 ## Inntekt og underskudd
 
 ![InntektOgUnderskudd](../../static/download/skattemeldingupersonlig/2025/InntektOgUnderskudd.png)
