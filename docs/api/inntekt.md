@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Inntekt, Inntektsmottaker ]
 keywords: [ inntekt, inntektsmottaker, oppgave, a-ordning, lønn, inntekt ]
-last_updated: Feb 9, 2026
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 
@@ -46,34 +46,11 @@ For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til e
 
 ### Rettighetspakker
 
-Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhetens *rettighetspakke* avgjør hvilke
+Skatteetaten utleverer ikke alle inntekt typer til alle virksomheter. Virksomhetens [rettighetspakke](../om/rettighetspakker.md) avgjør hvilke
 inntekter som filtreres vekk før data utleveres. Inntekter som ikke skal utleveres for en rettighetspakke fjernes i sin
 helhet.
 
-Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
-
-| Teknisk navn på rettighetspakker | Egenskaper ved rettighetspakker |
-|----------------------------------|--------------------------------|
-| afp | Hjemmel |
-| digisos | Hjemmel |
-| fiskeridirektoratetkontrollmanntall | Hjemmel|
-| fiskeridirektoratetmanntall | Hjemmel |
-| gff | Hjemmel |
-| husbanken | Hjemmel |
-| kommuneBoligsosialeFormaal | Hjemmel |
-| laanekassen | Hjemmel |
-| ldir | Hjemmel |
-| ldirReindriftstilskudd | Hjemmel |
-| nav | Hjemmel |
-| otp | Hjemmel. Perioden det spørres på må være innenfor virkningsperioden. Se [Forutsetning for bruk](../informasjonsmodeller/tjenestepensjonsavtale/forutsetningerforbruk.md) |
-| pensjonskasseetteroppgjoerufoerafp | Hjemmel |
-| pensjonskasseLivsvarigafpanneninntekt | Hjemmel |
-| pensjonskasseLivsvarigafpandreytelser | Hjemmel |
-| saernamsmann | Hjemmel |
-| sbl | Krever samtykke |
-| spkBoliglaan | Hjemmel |
-| ssb | Hjemmel |
-| udi | Hjemmel |
+Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
 ### Samtykke
 
