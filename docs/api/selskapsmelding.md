@@ -167,6 +167,56 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 
 Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-api/).
 
+Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
+
+# Overordnet struktur
+
+![Oversikt](../../static/download/selskapsmelding/2025/SelskapsmeldingForSelskapMedDeltakerfastsetting_oversikt.png)
+
+## Inntekt og underskudd
+
+![InntektOgUnderskudd](../../static/download/selskapsmelding/2025/inntektOgUnderskudd.png)
+
+## Formue og gjeld
+
+![FormueOgGjeld](../../static/download/selskapsmelding/2025/formueOgGjeld.png)
+
+## Formue og inntekt i selskap med deltakerfastsetting
+
+![FormueOgInntektISDF](../../static/download/selskapsmelding/2025/formueOgInntektISelskapMedDeltakerfastsetting.png)
+
+## Spesifikasjon av forhold relevante for beskatning
+
+![SpesifikasjonAvForholdRelevanteForBeskatning](../../static/download/selskapsmelding/2025/SpesifikasjonAvForholdRelevanteForBeskatningAvDeltakere.png)
+
+## Eierforhold
+
+![Eierforhold](../../static/download/selskapsmelding/2025/eierforhold.png)
+
+## Faste eiendommer
+
+![FasteEiendommer](../../static/download/selskapsmelding/2025/fasteEiendommer.png)
+
+## Fast eiendom som formuesobjekt
+
+![FasteEiendomSomFormuesobjekt](../../static/download/selskapsmelding/2025/FastEiendomSomFormuesobjekt.png)
+
+## Begrensning av rentefradrag i konsern og mellom nærstående
+
+![BegrensningAvRentefradragIKonsernOgMellomNærstående](../../static/download/selskapsmelding/2025/begrensningAvRentefradrag.png)
+
+## Opplysninger om selskap med deltakerfastsetting
+
+![OpplysningerOmSelskapMedDeltakerfastsetting](../../static/download/selskapsmelding/2025/OpplysningOmSelskapMedDeltakerfastsetting.png)
+
+## Vindkraftverk
+
+![Vindkraftverk](../../static/download/selskapsmelding/2025/Vindkraftverk.png)
+
+## Havbruksvirksomhet
+
+![Havbruksvirksomhet](../../static/download/selskapsmelding/2025/Havbruksvirksomhet.png)
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
