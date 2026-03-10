@@ -81,7 +81,7 @@ For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
 #### Samtykke med Altinn 3
 
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. Inntekt API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø og i Produksjon.
+Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. Inntekt API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert i både eksternt testmiljø og i Produksjon.
 
 #### Samtykke med Altinn 2
 
