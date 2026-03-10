@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Aktiv konto]
 keywords: [aktiv konto]
-last_updated: Sep 2, 2025
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer informasjon om valgt konto for utbetalinger av beløp til gode fra Skatteetaten.</Summary>
