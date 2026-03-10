@@ -5,7 +5,7 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, formuesverdi fast eiendom ]
-last_updated: Jan 14, 2026
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 
@@ -46,13 +46,9 @@ om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatt
 
 ### Rettighetspakker
 
-Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakken](../om/rettighetspakker.md).
 
-Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
-
-| Teknisk navn på rettighetspakker |	
-|----------------------------------|
-| eiendomsmeglerOpplysningsplikt   |
+Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
 ## Datakatalog
 
