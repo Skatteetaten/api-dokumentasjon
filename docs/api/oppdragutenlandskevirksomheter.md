@@ -44,9 +44,16 @@ Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakk
 |---|---|
 | arbeidstilsynet | Hjemmel |
 | ebevis | Krever samtykke |
- 
+
 ### Samtykke
-For rettighetspakken `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et.
+
+For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et.
+
+#### Samtykke med Altinn 3
+
+Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Oppdrag utenlandske virksomheter API er `digdir-oppdragutenlandskevirksomheter-skatteetaten`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert både i eksternt testmiljø og i Produksjon.
+
+#### Samtykke med Altinn 2
 
 | Tjenestekode | Formål |
 |--------| ------ |
