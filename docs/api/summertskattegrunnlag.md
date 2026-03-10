@@ -91,7 +91,7 @@ støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligesk
 
 #### Samtykke med Altinn 3
 
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. Summert skattegrunnlag API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i både eksternt testmiljø og produksjon.
+Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. Summert skattegrunnlag API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert i både eksternt testmiljø og produksjon.
 
 #### Samtykke med Altinn 2
 | Tjenestekode | Formål                           |
