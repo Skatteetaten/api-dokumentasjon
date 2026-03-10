@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Innkreving ]
 keywords: [ kravogbetalinger, krav og betalinger, innkreving ]
-last_updated: Sep 2, 2025
+last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 
@@ -57,15 +57,11 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger A
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Rettighetspakker
-Hvilke data en virksomhet får bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakken](../om/rettighetspakker.md).
 
-Virksomheter som har fått tilgang kan kalle API-et med følgende rettighetspakker:
+Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
-| Teknisk navn på rettighetspakker | Formål med rettighetspakke | Egenskaper ved rettighetspakke |
-|---|---|---|
-| finans | Banker og finansforetak som skal vise krav og betalinger i nettbank | Finans-rettighetspakken krever bruk av Altinn-samtykke, og den gir tilgang til alle 4 endepunkter med oppslag for virksomheter (vil etter hvert bli utvidet også til oppslag for personer) |
-| regnskapssystem | Regnskapssystemer som skal vise krav og betalinger i sine sluttbrukersystemer | Regnskapssystem-rettighetspakken krever bruk av den nye [Systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter for virksomheter. Leverandøren kan kun få tilgang til API-et dersom leverandøren er integrert mot minimum ett API for innrapportering av opplysninger, og kunden har innrapportert opplysninger minst én gang gjennom sluttbrukersystemet. Leverandøren kan ikke benytte opplysningene til andre formål enn å tilrettelegge opplysningene for kundens bruk gjennom sluttbrukersystemet. |
-| lovfestetrevisjon | Hjemmelsbasert deling av data med revisorer, gir tilgang til alle 4 endepunkter for virksomheter | |
+Rettighetspakken `regnskapssystem` krever bruk av den nye [systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md), og gir tilgang til alle 4 endepunkter for virksomheter. Leverandøren kan kun få tilgang til API-et dersom leverandøren er integrert mot minimum ett API for innrapportering av opplysninger, og kunden har innrapportert opplysninger minst én gang gjennom sluttbrukersystemet. Leverandøren kan ikke benytte opplysningene til andre formål enn å tilrettelegge opplysningene for kundens bruk gjennom sluttbrukersystemet.
 
 ### Samtykke
 
