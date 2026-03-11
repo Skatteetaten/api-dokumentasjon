@@ -768,8 +768,7 @@ Integrasjon med Skatteetatens API for utleggsbegjæring
 
 ### 6. Overgang til produksjon
 
-* [Be om tilgang](https://encoded-592c9deb-987b-4562-aa3c-9fa3d37d83e9.uri/mailto%3a%5bmailto%3afremtidensinnkreving%40skatteetaten.no%5d) til produksjons-scope: ```skatteetaten:utleggsbegjaering```
-    * Signer avtale (se «vilkår for bruk») med Skatteetaten som kommer i retur
+* [Be om tilgang](https://www.skatteetaten.no/deling/kontakt/) til produksjons-scope: ```skatteetaten:utleggsbegjaering```
 * Motta og verifiser tilgang til produksjons-scope i Maskinporten
 * Bytt miljø i integrasjonen til produksjon
 * Utfør teknisk verifikasjon i produksjon
