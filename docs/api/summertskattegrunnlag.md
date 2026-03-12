@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ skattegrunnlag, skatteoppgjør ]
-last_updated: Mar 10, 2026
+last_updated: Mar 12, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke
@@ -64,7 +64,10 @@ støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligesk
 
 Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. Summert skattegrunnlag API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert i både eksternt testmiljø og produksjon.
 
+OBS: Skatteetaten skrur av støtte for Altinn2-samtykketjenesten 30. april 2026, så innen da må alle konsumenter være over på Altinn3-samtykkeløsningen.
+
 #### Samtykke med Altinn 2
+
 | Tjenestekode | Formål                           |
 |--------------|----------------------------------|
 | 4628_210607  | Kreves for rettighetspakke `sbl` |           
