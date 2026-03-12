@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Innkreving ]
 keywords: [ kravogbetalinger, krav og betalinger, innkreving ]
-last_updated: Mar 10, 2026
+last_updated: Mar 12, 2026
 hide_table_of_contents: true
 ---
 
@@ -70,6 +70,8 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 #### Samtykke med Altinn 3
 
 Digdir har laget en ny samtykketjeneste. Ressursid for Krav og betalinger API er `ske-samtykke-krav-og-betalinger`. Krav og betalinger API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø og i Produksjon.
+
+OBS: Skatteetaten skrur av støtte for Altinn2-samtykketjenesten 30. april 2026, så innen da må alle konsumenter være over på Altinn3-samtykkeløsningen.
 
 #### Samtykke med Altinn 2
 
