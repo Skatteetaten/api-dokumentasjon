@@ -70,7 +70,7 @@ For rettighetspakken `finans` kreves [samtykke](../om/samtykke.md) for dette API
 #### Samtykke med Altinn 3
 
 Digdir har laget en ny samtykketjeneste. Ressursid for Krav og betalinger API er `ske-samtykke-krav-og-betalinger`. Krav og betalinger API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø og i Produksjon.
-Det er konsumentene som setter varigheten på samtykket år de gjør en consentRequest til Altinn. Det er avtalt med Skatteetaten at varigheten på samtykkene skal være ett år, og vi vil feile kallet hvis det varer lengre.
+Det er konsumentene som setter varigheten på samtykket når de gjør en consentRequest til Altinn. Det er avtalt med Skatteetaten at varigheten på samtykkene skal være ett år, og vi vil feile kallet hvis det varer lengre.
 
 OBS: Skatteetaten skrur av støtte for Altinn2-samtykketjenesten 30. april 2026, så innen da må alle konsumenter være over på Altinn3-samtykkeløsningen.
 
