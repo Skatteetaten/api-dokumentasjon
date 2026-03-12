@@ -58,7 +58,7 @@ For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et.
 
 #### Samtykke med Altinn 3
 
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. Inntekt API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert i både eksternt testmiljø og i Produksjon.
+Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`. Inntekt API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert i både eksternt testmiljø og i Produksjon. Det er konsumentene som setter varigheten på samtykket når de gjør en consentRequest til Altinn. Det er avtalt med Skatteetaten at varigheten på samtykkene skal være 3 måneder, og vi vil feile kallet hvis det varer lengre.
 
 OBS: Skatteetaten skrur av støtte for Altinn2-samtykketjenesten 30. april 2026, så innen da må alle konsumenter være over på Altinn3-samtykkeløsningen.
 
