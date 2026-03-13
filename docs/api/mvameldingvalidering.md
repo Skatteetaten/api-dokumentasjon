@@ -98,7 +98,7 @@ Følgende valideringsregler er foreløpig definert for alle mva-meldinger:
 | R104  | Meldingen må være en ordinær (aliminnelig eller primærnæring) melding, krav om kompensasjon eller omvendt avgiftsplikt mva-melding |
 | R116  | Spesifikasjonslinje som gjelder kjøp med kompensasjonsrett må ha med grunnlag og sats                                              |
 | R122  | Merverdiavgift i kodelinjer skal ha lavere beløp enn grunnlaget                                                                    |
-
+| R136  | Oppgitt grunnlag og beregnet avgift må ha samme fortegn                                                                            |
 
 ### Alminnelig- og primærnæring
 
