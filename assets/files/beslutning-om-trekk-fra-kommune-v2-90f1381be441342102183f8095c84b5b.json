@@ -1,0 +1,111 @@
+{
+  "kommune": {
+    "identifikator": "311758489",
+    "kontaktinformasjon": {
+      "epostAdresse": "epost@yahoo.com",
+      "telefonnummer": "99563564"
+    }
+  },
+  "saksoekt": {
+    "adresseLikFolkeregistrert": true,
+    "foedselsnummer": "44926701751",
+    "adresse": {
+      "kommunenummer": "0301",
+      "postnummer": "0351",
+      "adressetekst": "Josefines gate 3D"
+    }
+  },
+  "underskrift": "Anna Norman",
+  "beslutningsdato": "2025-09-04",
+  "kravTilInnkreving": [
+    {
+      "kravforfall": {
+        "forfallsdato": "2025-02-24"
+      },
+      "innsendersKravreferanse": "00890772001",
+      "opprinneligBeloep": {
+        "beloep": 12469.14,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 12000.14,
+        "valuta": "NOK"
+      },
+      "innbetaling": [
+        {
+          "bokfoertDato": "2025-03-08",
+          "beloep": {
+            "beloep": 469.00,
+            "valuta": "NOK"
+          }
+        }
+      ],
+      "prioritetDekningsloven": "e",
+      "prioritetISak": "3",
+      "kravdetaljer": "Hovedkrav",
+      "kravbeskrivelse": "kravbeskrivelse",
+      "rentebaerendeKrav": {
+        "harForsinkelsesrente": true,
+        "prioritetISakFremtidigRentekrav": 2
+      }
+    },
+    {
+      "kravforfall": {
+        "forfallsdato": "2025-02-24"
+      },
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772001_1",
+      "opprinneligBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": "2",
+      "kravdetaljer": "Rentekrav",
+      "kravbeskrivelse": "Renter på hovedkrav",
+      "relatertKrav": [
+        "00890772001"
+      ]
+    },
+    {
+      "kravforfall": {
+        "forfallsdato": "2025-02-24"
+      },
+      "innsendersKravreferanse": "UtenrettsligKostnaderAvHovedkrav_00890772001",
+      "opprinneligBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": "3",
+      "kravdetaljer": "UtenrettsligeKostnader",
+      "kravbeskrivelse": "UtenrettsligeKostnader på hovedkrav",
+      "relatertKrav": [
+        "00890772001"
+      ]
+    }
+  ],
+  "betalingsinformasjon": {
+    "kontonummer": "69930570044",
+    "kidnummer": "2509937609",
+    "betalingsmottaker": "312597772"
+  },
+  "beslutning":
+  {
+    "filnavn": "tvangsgrunnlag",
+    "uuid": "4264af45-ae7a-4ccc-8a8b-33b9ec669d75"
+  },
+  "saksreferanse": "saksref. 123456",
+  "innsenderReferanse": "InnsenderRef127",
+  "valgtNamsmannsdistrikt": {
+    "namsmannsdistrikt": "Namsfogden i Oslo, Asker og Bærum",
+    "begrunnelse": "begrunnelse for valgt namsmannsdistrikt"
+  }
+}
