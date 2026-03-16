@@ -170,6 +170,75 @@ Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumen
 </details>
 
 <details>
+      <summary>Beslutning om trekk fra kommune 2.0</summary>
+     <p>
+
+## Forklaring til modellen
+Formålet med denne brukerveiledningen er å gi både funksjonelle og tekniske ressurser en overordnet forståelse av innholdet i den beslutningen som skal sendes inn til Skatteetaten.
+
+Modellen består av en rotEntitet, **BeslutningOmUtleggstrekkFraKommune** som inneholder overordnet informasjon om beslutningen fra kommune.
+De formelle partene i beslutningen er beskrevet under **Kommune**, **Skyldner** og **Prosessfullmektig**.
+Generell informasjon som gjelder alle kravene i beslutningen er beskrevet under **Betalingsinformasjon** og **ValgtNammsmannsdistrikt**.
+Hvert av kravene som meldes inn til innkreving er beskrevet under **Krav**.
+![utleggstrekk-fra-kommune-all.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-all.png)
+
+### a) Rotnivå - Beslutning om trekk fra kommune
+#### Inneholder kjerneinformasjon om innsendingen.
+![utleggstrekk-fra-kommune-a1.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-a1.png)
+![utleggstrekk-fra-kommune-a2.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-a2.png)
+* **beslutning** består av et vedlegg med underlag for beslutningen.
+* **beslutningsdato** er dato for beslutning hos kommunen.
+* **underskrift** er navn på ansvarlig for innsendingen og er påkrevd å sende.
+* **innsendersReferanse** er innsenders unike referanse på saken og er valgfritt å sende inn.
+* **beslutningsdatoTrekkEtterGammeltRegelverk** inneholder dato for når et eventuelt trekk etter gammelt regelverk ble besluttet på et tidligere tidspunkt. Dette for å sikre riktig prioritet på det nye kravet.
+
+### b) Parter i Beslutning om trekk fra kommune
+#### Informasjon om partene i beslutningen
+![utleggstrekk-fra-kommune-b1.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-b1.png)
+![utleggstrekk-fra-kommune-b2.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-b2.png)
+
+* **kommune** må identifiseres med organisasjonsnummer og kan ha med kontaktinformasjon til kontaktperson hos kommunen.
+* **skyldner** må identifiseres med fødselsnummer eller d-nummer.
+* **adresseLikFolkeregistrert** skal settes til true dersom skyldners adresse er lik den som er registrert i Folkeregisteret. Alternativt skal adresse eller ukjentBosted angis.
+* Skyldner kan ha en **prosessfullmektig** som må identifiseres med fødselsnummer eller d-nummer. I tillegg skal selskapet som prosessfullmektig er ansatt i angis i identifiseres i **orgnummerProsessfullmektig**.
+* Prosessfullmektig må ha en **fullmakt** eller være **bevillingshaver** (satt til true).
+
+### c) Generelle elementer i Beslutning om trekk fra kommune
+#### Generell informasjon som dekker hele beslutningen
+![utleggstrekk-fra-kommune-c1.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-c1.png)
+
+* **betalingsinformasjon** inneholder betalingsinformasjon til mottaker (kommunen).
+* **valgtNamsmannsdistrikt** skal kun benyttes om man ønsker at saken skal behandles av annet namsmannsdistrikt enn det skyldner normalt er hjemmehørende i.
+Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [Kodelisten for Namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6/0.5/?size=25).
+
+### d) Kravinformasjon i Beslutning om trekk fra kommune
+#### Informasjon om hvert enkelt krav i beslutningen
+![utleggstrekk-fra-kommune-d1.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-d1.png)
+
+![utleggstrekk-fra-kommune-d2.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-d2.png)
+
+* **innsendersKravreferanse** skal unikt identifisere et krav innenfor en beslutning.
+* **kravdetaljer** angir hvilken type krav det er. Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig og "Sakskostnader".
+* **kravgrunnlagsidentifikator** er identifikator for kravet i Siro og skal brukes som referanse dersom kravet er meldt inn tidligere.
+* **relatertKrav** skal brukes for å knytte renter eller andre omkostninger (tilleggskrav) til det hovedkravet det direkte tilhører.
+* **opprinneligBeløp** er pengekravets opprinnelige beløp når kravet oppstod.
+* **gjenståendeBeløp** er det beløpet som gjenstår når beslutningen sendes inn = opprinnelig beløp minus innbetalinger og nedjusteringer etter at kravet oppstod.
+* **prioritetISak** angir prioritet for kravet innad i beslutningen. Benyttes ved fordeling av innbetaling i utleggstrekk, Verdier 1-99.
+* **prioritetDekningsloven** angir hvilken prioritet kravet har etter bokstavene i dekningsloven § 2-8 (a til e).
+* **rentebærendeKrav** må fylles ut dersom man sender inn et krav som det kreves renter for, f.eks. et hovedkrav.
+
+
+## Eksempler på testdata
+
+Eksempelet nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører fra Tenor.
+
+[beslutning-om-trekk-fra-kommune.json](../../static/download/utleggstrekk-fra-kommune/beslutning-om-trekk-fra-kommune-v2.json)
+
+
+</p>
+</details>
+
+<details>
       <summary>Oppslag samordnet trekk fra kommune 1.0</summary>
      <p>
 
