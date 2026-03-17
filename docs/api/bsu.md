@@ -103,15 +103,17 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og tes
 ## Testdata
 Følgende testdata er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne: 
 
-| Fødselsnummer | Inntektsår |
-|---|---|
+| Fødselsnummer | Inntektsår               |
+|---|--------------------------|
 | 01899699552	| 2020, 2021, 2022 og 2023 | 
 | 21839199217	| 2020, 2021, 2022 og 2023 |
 | 01840098245	| 2020, 2021, 2022 og 2023 |
 | 06889197542	| 2020, 2021, 2022 og 2023 |
 | 01898999749	| 2020, 2021, 2022 og 2023 |
+| 20890698132	| 2024 og 2025             |
+| 06920097667	| 2025                     |
 
-Disse har også skattemeldinger og skatteoppgjør for 2020, 2021, 2022 og 2023.
+Disse har også skattemeldinger og skatteoppgjør for disse årene.
   
 </TabItem>
 </Tabs>
