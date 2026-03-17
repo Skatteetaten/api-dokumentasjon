@@ -23,12 +23,19 @@ For generell informasjon om tjenestene se egne sider om:
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
+## Status nye APIer
+Tilgjengelig i **produksjonsmiljø**: REST-api og tilbakemelding
+
+Tilgjengelig i **testmiljø**: REST-api, filopplasting og tilbakemelding
+
+Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
+
 ## Scope
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`.
-Dette scopet skal også brukes for tilbakemeldingen som skal hentes fra eget API, se [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
-Scopet kan også brukes for [filopplastings-apiet](innrapportering-amelding-filopplasting.md)
- 
+Dette scopet skal brukes for REST-api, filopplasting-api og tilbakemelding-api.
+
+Mer informasjon og søknad på scope finner du på [tilgang til scope - skatteetaten.no](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/her-kan-du-soke-om-tilgang-til-tjenester-for-innrapportering-til-skatteetaten/) 
 
 ## Delegering
 
@@ -90,9 +97,6 @@ Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
 [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/) 
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
-
-**REST-api, filopplastings-apiet og tilbakemelding-api er tilgjengelig i test.**
-Se også nyhet [Status overgang til nytt API - 19.02.2026 - Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/status-overgang-til-nytt-api2/) 
 
 
 
