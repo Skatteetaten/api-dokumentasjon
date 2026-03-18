@@ -33,7 +33,7 @@ Informasjon om tjenestenivå, varsling, endringshåndtering, fast vedlikehold me
 
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Innsyn i rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no) 
 
-For å få tilgang til løsningen må du ha Altinn 3 ressursen "Innsyn i rettighetspakker", ressursid: `ske-innsyn-rettighetspakke`
+For å få tilgang til løsningen må du ha tilgang til Altinn-ressursen "Innsyn i rettighetspakker", ressursid: `ske-innsyn-rettighetspakke`
 
 Tilgangen er i utgangspunktet tildelt de i virksomheten med begrenset signeringsrett, og kan delegeres videre til andre i virksomheten ved å følge [Altinns oppskrift]( https://info.altinn.no/hjelp/profil/enkelttjenester-og-roller/hvordan-gi-en-enkelttjeneste-og-rolle-til-andre/) 
 
@@ -49,7 +49,7 @@ Delegeringen er nå utført.
 
 Den eller de i virksomheten som har fått delegert ressursen, kan nå logge inn med BankID, og få listet API-ene og rettighetspakkene fra Skatteetaten som virksomheten har tilgang til i Produksjon, med felter og kodelister.  
 
-Dere kan pt. kun se de rettighetespakkene virksomheten har fått direkte tilgang til, men ikke de virksomheten har fått delegert fra andre. Vi vil se på en utvidelse for det etter hvert.
+Dere kan pt. kun se de rettighetespakkene virksomheten har fått direkte tilgang til, men ikke de som virksomheten har fått delegert fra andre. Vi vil se på en utvidelse for det etter hvert.
 
 Innlogging i løsningen baserer seg på [Ansattporten fra Digdir](https://docs.digdir.no/docs/ansattporten/ansattporten_om.html).
 
