@@ -731,7 +731,7 @@ Integrasjon med Skatteetatens API for utleggsbegjæring
 
 * Avklar roller og ansvar internt (teknisk kontakt, prosjektansvarlig, etc.)
 * Sett deg inn i gjeldende informasjon for digital innsending av utleggsbegjæring
-    * [Github](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering?tab=Om+tjenesten)
+    * [Github](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-api/2.0.0)
     * [Skatteettaten.no](https://www.skatteetaten.no/om-skatteetaten/fremtidens-innkreving/systemleverandorer/inkassosystem/)
     * [Swaggerhub](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-app/0.0.4)
     * [Nettside for oppkobling](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
