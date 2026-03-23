@@ -52,6 +52,19 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
 ## JSON
+```json
+{
+  "organisasjonsnummer": "311079271",
+  "inntektsaar": 2025,
+  "fastland": {
+    "samletUnderskudd": 3175431,
+    "samletVerdiBakAksjeneISelskapet": 236579,
+    "fremfoerbartUnderskuddIInntekt": 3175431
+  },
+  "skatteoppgjoersdato": "2026-02-25",
+  "ajourholdstidspunkt": "2026-02-25T07:21:36.134Z"
+}
+```
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
@@ -76,7 +89,11 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-[Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-upersonlig-api).
+## Informasjonsmodell - skjema
+
+[![SkatteberegningsgrunnlagUpersonlig](../../static/download/summertskattegrunnlag/upersonlig/summertSkattegrunnlagUpersonlig_api.png)](../../static/download/summertskattegrunnlag/upersonlig/summertSkattegrunnlagUpersonlig_api.png)
+
+Se også [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/summert-skattegrunnlag-upersonlig-api).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">

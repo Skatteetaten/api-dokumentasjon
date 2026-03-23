@@ -56,6 +56,25 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør uperson
 
 ## JSON
 
+```json
+{
+  "organisasjonsnummer": "313258025",
+  "inntektsaar": 2025,
+  "fastland": {
+    "inntekt": 15160518,
+    "formue": 249974,
+    "grunnlagForSkatteberegningFraFoU": {
+      "skattefradragForKostnaderTilFoU": 0
+    }
+  },
+  "opplysningOmSkattesubjekt": {
+    "erBoersnotert": false
+  },
+  "skatteoppgjoersdato": "2026-03-05",
+  "ajourholdstidspunkt": "2026-03-05T10:35:29.204Z"
+}
+```
+
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
@@ -79,7 +98,11 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatteberegningsgrunnlag-upersonlig-api/).
+## Informasjonsmodell - skjema
+
+[![SkatteberegningsgrunnlagUpersonlig](../../static/download/skatteberegningsgrunnlagupersonlig/skatteberegningsgrunnlagUpersonlig_api.png)](../../static/download/skatteberegningsgrunnlagupersonlig/skatteberegningsgrunnlagUpersonlig_api.png)
+
+Se også [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatteberegningsgrunnlag-upersonlig-api/).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">

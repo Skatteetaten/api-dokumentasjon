@@ -56,6 +56,34 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør uperson
 
 ## JSON
 
+```json
+{
+  "fastland": {
+    "beregnetSkatt": 3336034,
+    "skatt": {
+      "sumSkatt": 3336034,
+      "formuesskattTilStat": 720,
+      "inntektsskattTilStat": 3335314,
+      "grunnlagForFormuesskattTilStat": 249974,
+      "grunnlagForInntektsskattTilStat": 15160518
+    },
+    "skattefradrag": {
+      "skattefradragForKostnaderTilFou": 0,
+      "skattefradragForFormuesskattBetaltIUtlandet": 0
+    },
+    "informasjonTilSkattelister": {
+      "nettoinntekt": 15160518,
+      "beregnetSkatt": 3336034
+    }
+  },
+  "organisasjonsnummer": "313258025",
+  "inntektsaar": 2025,
+  "skatteoppgjoersdato": "2026-03-05",
+  "ajourholdstidspunkt": "2026-03-05T10:35:29.204Z"
+}
+```
+
+
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
@@ -79,7 +107,11 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/beregnet-skatt-upersonlig-api).
+## Informasjonsmodell - skjema
+
+[![BeregnetSkattUpersonlig](../../static/download/beregnetskattupersonlig/beregnetSkattUpersonlig_api.png)](../../static/download/beregnetskattupersonlig/beregnetSkattUpersonlig_api.png)
+
+Se også [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/beregnet-skatt-upersonlig-api).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">

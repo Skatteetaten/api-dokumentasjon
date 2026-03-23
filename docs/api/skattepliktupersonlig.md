@@ -54,11 +54,11 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 ## JSON
 ```json
 {
-  "organisasjonsnummer": "310977101",
-  "inntektsaar": 2024,
+  "organisasjonsnummer": "313178250",
+  "inntektsaar": 2025,
   "harSkattepliktTilNorge": true,
   "harSkattepliktTilSvalbard": false,
-  "erFritattForFormuesskatt": true,
+  "erFritattForFormuesskatt": false,
   "erOmfattetAvSaerreglerForKraftforetak": false,
   "erOmfattetAvPetroleumsskatteloven": false,
   "erOmfattetAvRederiskatteordningen": false,
@@ -67,11 +67,10 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
   "harLeveringsfritak": false,
   "skalViseAksjeopplysningerPaaSkatteoppgjoer": true,
   "skatteregnskapskommune": [
-    "1149"
+    "4640"
   ],
-  "ajourholdstidspunkt": "2025-03-20T13:13:23.121Z",
-  "erOmfattetAvSaerreglerForHavbruksvirksomhet": false,
-  "erOmfattetAvSaerreglerForLandbasertVindkraft": false
+  "ajourholdstidspunkt": "2026-02-27T11:44:46.819Z",
+  "erOmfattetAvSaerreglerForHavbruksvirksomhet": false
 }
 ```
 
@@ -99,7 +98,11 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatteplikt-upersonlig-api).
+## Informasjonsmodell - skjema
+
+[![SkatteberegningsgrunnlagUpersonlig](../../static/download/skattepliktupersonlig/skattepliktUpersonlig_api.png)](../../static/download/skattepliktupersonlig/skattepliktUpersonlig_api.png)
+
+Se også [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/skatteplikt-upersonlig-api).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
