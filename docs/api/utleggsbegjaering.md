@@ -707,19 +707,27 @@ Testdata finner man i [Tenor](https://www.skatteetaten.no/testdata/). Det er for
 
 Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på Informasjonsmodeller.
 
-Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
+### Status på sak
 
-I første omgang er det test kun tilgjengelig for et utvalg leverandører som det er inngått avtale med og som skal være
-med å pilotere løsningene.
-
-URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
+Innsendte saker i testmiljøet behandles ikke videre og man kan derfor ikke spørre på status mot disse. For å teste Status på sak benytter man verdiene i tabellen under:
+# |	EksternSaksreferanse |	Saksstatus |	Innhold i respons |	Beskrivelse
+1 |	TEST_SAK_OPPRETTET |	sakOpprettet |	Krav, Saksøkere, Saksøkte |	Saken er nylig opprettet
+2	| TEST_SAK_UNDER_BEHANDLING |	sakUnderBehandling |	Krav, Saksøkere, Saksøkte |	Saken er under behandling
+3	| TEST_SAK_NEKTET_FREMMET |	sakNektetFremmet |	Krav, Saksøkere, Saksøkte |	Saken er nektet fremmet
+4	| TEST_SAK_FORELAGT |	sakForelagt |	Krav, Saksøkere, Saksøkte	| Saken er forelagt
+5	| TEST_SAK_BESLUTTET |	sakBesluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon |	Saken er besluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant
+6	| TEST_SAK_AVSLUTTET |	sakAvsluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon	| Saken er avsluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant
+7 |	TEST_SAK_AVBRUTT |	sakAvbrutt |	Krav, Saksøkere, Saksøkte |	Saken er avbrutt
+8	| TEST_UGYLDIG |	Feilmelding |	Feilobjekt (HTTP 404) |	Ugyldig saksreferanse – returnerer feilmelding
 
 ### Bruk av tjenester i testmiljøet
 
 Innsendinger av vedlegg og utleggsbegjæringer i testmiljøet vil ikke bli videre behandlet av Skattetaten.
 
-Tjenesten for Innsyn i trekk vil i testmiljøet gi syntetiske svar, og reponsen fra tjenesten baserer seg ikke på faktiske trekk. For å få et innsyn i trekk i testmiljøet må innsender ha sendt inn en utleggssak knyttet til aktuell saksøker og saksøkt.
+Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
 
+URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
+URL til testmiljø Status på sak er https://api-test.sits.no/api/utleggsbegjaering/v2/sak/:eksternSaksreferanse
 </TabItem>
 <TabItem headerText="Sjekkliste for inkassosystemleverandører" itemKey="itemKey-Sjekkliste">
 
