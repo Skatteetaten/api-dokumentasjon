@@ -710,7 +710,7 @@ Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på I
 ### Status på sak
 
 Innsendte saker i testmiljøet behandles ikke videre og man kan derfor ikke spørre på status mot disse. For å teste Status på sak benytter man verdiene i tabellen under:
-| # |	EksternSaksreferanse |	Saksstatus |	Innhold i respons |	Beskrivelse |
+| Nr |	EksternSaksreferanse |	Saksstatus |	Innhold i respons |	Beskrivelse |
 | 1 |	TEST_SAK_OPPRETTET |	sakOpprettet |	Krav, Saksøkere, Saksøkte |	Saken er nylig opprettet |
 | 2	| TEST_SAK_UNDER_BEHANDLING |	sakUnderBehandling |	Krav, Saksøkere, Saksøkte |	Saken er under behandling |
 | 3	| TEST_SAK_NEKTET_FREMMET |	sakNektetFremmet |	Krav, Saksøkere, Saksøkte |	Saken er nektet fremmet |
