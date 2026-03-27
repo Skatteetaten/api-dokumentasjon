@@ -710,15 +710,15 @@ Eksempel på en utleggsbegjæring som følger informasjonsmodellen er gitt på I
 ### Status på sak
 
 Innsendte saker i testmiljøet behandles ikke videre og man kan derfor ikke spørre på status mot disse. For å teste Status på sak benytter man verdiene i tabellen under:
-# |	EksternSaksreferanse |	Saksstatus |	Innhold i respons |	Beskrivelse
-1 |	TEST_SAK_OPPRETTET |	sakOpprettet |	Krav, Saksøkere, Saksøkte |	Saken er nylig opprettet
-2	| TEST_SAK_UNDER_BEHANDLING |	sakUnderBehandling |	Krav, Saksøkere, Saksøkte |	Saken er under behandling
-3	| TEST_SAK_NEKTET_FREMMET |	sakNektetFremmet |	Krav, Saksøkere, Saksøkte |	Saken er nektet fremmet
-4	| TEST_SAK_FORELAGT |	sakForelagt |	Krav, Saksøkere, Saksøkte	| Saken er forelagt
-5	| TEST_SAK_BESLUTTET |	sakBesluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon |	Saken er besluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant
-6	| TEST_SAK_AVSLUTTET |	sakAvsluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon	| Saken er avsluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant
-7 |	TEST_SAK_AVBRUTT |	sakAvbrutt |	Krav, Saksøkere, Saksøkte |	Saken er avbrutt
-8	| TEST_UGYLDIG |	Feilmelding |	Feilobjekt (HTTP 404) |	Ugyldig saksreferanse – returnerer feilmelding
+# |	EksternSaksreferanse |	Saksstatus |	Innhold i respons |	Beskrivelse |
+1 |	TEST_SAK_OPPRETTET |	sakOpprettet |	Krav, Saksøkere, Saksøkte |	Saken er nylig opprettet |
+2	| TEST_SAK_UNDER_BEHANDLING |	sakUnderBehandling |	Krav, Saksøkere, Saksøkte |	Saken er under behandling |
+3	| TEST_SAK_NEKTET_FREMMET |	sakNektetFremmet |	Krav, Saksøkere, Saksøkte |	Saken er nektet fremmet |
+4	| TEST_SAK_FORELAGT |	sakForelagt |	Krav, Saksøkere, Saksøkte	| Saken er forelagt |
+5	| TEST_SAK_BESLUTTET |	sakBesluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon |	Saken er besluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant |
+6	| TEST_SAK_AVSLUTTET |	sakAvsluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon	| Saken er avsluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant |
+7 |	TEST_SAK_AVBRUTT |	sakAvbrutt |	Krav, Saksøkere, Saksøkte |	Saken er avbrutt |
+8	| TEST_UGYLDIG |	Feilmelding |	Feilobjekt (HTTP 404) |	Ugyldig saksreferanse – returnerer feilmelding |
 
 ### Bruk av tjenester i testmiljøet
 
