@@ -102,7 +102,7 @@ Forespørsel om endringer
     "epostadresse": "john.smith@example.com",
     "mobiltelefonummer": "+4794123456"
   },
-  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING",
+  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING"
 }
 ```
 
