@@ -24,9 +24,9 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Status nye APIer
-Tilgjengelig i **produksjonsmiljø**: REST-api og tilbakemelding
+Tilgjengelig i **produksjonsmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding
 
-Tilgjengelig i **testmiljø**: REST-api, filopplasting og tilbakemelding
+Tilgjengelig i **testmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding
 
 Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
 
