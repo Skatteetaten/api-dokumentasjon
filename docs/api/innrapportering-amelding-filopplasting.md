@@ -19,7 +19,7 @@ hide_table_of_contents: true
 | Miljø        | Status             |
 |--------------|--------------------|
 | Ekstern test | :white_check_mark: |
-| Produksjon   | TBA                |
+| Produksjon   | :white_check_mark: |
 
 ## Om
 
