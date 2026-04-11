@@ -42,6 +42,7 @@ const sidebars = {
         "api/pgi",
         "api/pgi_folketrygden",
         "api/restanser",
+        "api/rettsinformasjon",
         "api/selskapsmelding",
         "api/sistetilgjengeligeskatteoppgjoer",
         "api/skatteberegningsgrunnlagupersonlig",
