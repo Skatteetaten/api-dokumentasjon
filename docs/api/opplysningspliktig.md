@@ -30,6 +30,8 @@ SwaggerHub.
 
 ## Tilgang
 
+Dette API-et er kun tilgjengelig for NAV og SSB i forbindelse med innrapportering av data fra a-ordningen. Andre virksomheter har ikke lovhjemmel til å innhente disse dataene.
+
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:opplysningspliktig`
 
