@@ -10,8 +10,7 @@ last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten leverer informasjon om arbeidsgivers (opplysningspliktiges) innrapporterte
-arbeidsforholdsopplysninger for en inntektsmottaker for en gitt periode.</Summary>
+<Summary>Tjenesten leverer informasjon om arbeidsgivers (opplysningspliktiges) innrapporterte arbeidsforholdsopplysninger for en inntektsmottaker for en gitt periode.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -30,6 +29,8 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
 i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-api) på SwaggerHub.
 
 ## Tilgang
+
+Dette API-et er kun tilgjengelig for NAV og SSB i forbindelse med innrapportering av data fra a-ordningen.  Andre virksomheter har ikke lovhjemmel til å innhente disse dataene.
 
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:arbeidsforhold`
