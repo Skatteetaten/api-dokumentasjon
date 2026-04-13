@@ -1,4 +1,3 @@
-
 ---
 title: A-melding avstemmingsrapport API
 slug: /api/amelding-avstemmingsrapport
@@ -25,16 +24,16 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Status nye APIer
-Tilgjengelig i **produksjonsmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding
 
-Tilgjengelig i **testmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding
+Planlagt tilgjengelig i **testmiljø** fra månedsskiftet april/mai. 
+
+[Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/) er tilgjengelig som tidligere.
 
 Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
 
 ## Scope
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`.
-Dette scopet skal brukes for REST-api, filopplasting-api og tilbakemelding-api.
 
 Mer informasjon og søknad på scope finner du på [tilgang til scope - skatteetaten.no](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/her-kan-du-soke-om-tilgang-til-tjenester-for-innrapportering-til-skatteetaten/) 
 
@@ -88,16 +87,9 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for ti
 
 ## Teknisk spesifikasjon
 
-REST-api (for innsendinger mindre enn 10 000 000 bytes): URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+Noe tekst - kanskje en enkel skisse her? REST-api
+URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
 [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
-
-Filopplasting-api (kan også brukes for innsendinger større enn 10 000 000 bytes): URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/). **Spesifikasjonen for A-meldingen (payload) er den samme som for REST-apiet**. 
-
-Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
-[SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/) 
-
-**VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
 
 
@@ -117,16 +109,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-## Innsending
-Dokumentasjon for REST-api finner du på [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api/).
-Dokumentasjon for filopplasting-api finner du på [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
-
-## Tilbakemelding
-Dokumentasjon finner du på [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
-Benytt samme scope som for innsending ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`.
-
-**VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
-
+xxxxx
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
@@ -175,7 +158,7 @@ feltene.
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.pdf)
+Må oppdateres til avstemmingsrapporten: Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.pdf)
 
 ![informasjonsmodell](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.png)
 
@@ -186,16 +169,16 @@ Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-m
 ### Testmiljøer
 
 For spesifikke URL'er til testmiljø hos Skatteetaten, se
+
+Må oppdateres nåt klart:
    [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
    [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
    [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
    
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
-* Dialogporten
 * Autentisering med Maskinporten
 * Autorisering med Systembruker
-* Altinn innboks
 
 Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skatteetaten og Digdir.
 
@@ -205,7 +188,7 @@ Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skattee
 
 ### Testdata
 
-Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette. Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
+Det benyttes utelukkende syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette. Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
 
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
