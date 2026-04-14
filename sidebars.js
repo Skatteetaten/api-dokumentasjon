@@ -28,6 +28,7 @@ const sidebars = {
         "api/formuesobjektfasteiendom",
         "api/formuesverdifasteiendom",
         "api/hendelser",
+        "api/innkrevingsoppdrag",
         "api/inntekt",
         "api/inntektsmottakere",
         "api/kravogbetalinger",
