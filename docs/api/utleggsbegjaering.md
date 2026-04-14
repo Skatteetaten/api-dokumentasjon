@@ -279,7 +279,7 @@ Beskrivelse av sentrale elementer:
 * **innsenderReferanse** er innsenders unike referanse på saken.
 * I elementet **tvangsfullbyrdelsestype** må man angi om det er en ren utleggsbegjæring, eller kombinert forliksklage.
 * **begjæringsdato** er datoen for innsending av utleggsbegjæringen.
-* § 7-9 i innkrevingsloven åpner opp for at partene kan be om et møte. Da skal feltet **berOmInnkallingTilMøteMedBegrunnelse** fylles ut.
+* § 7-9 i tvangsfullbyrdelsesloven åpner opp for at partene kan be om et møte. Da skal feltet **berOmInnkallingTilMøteMedBegrunnelse** fylles ut.
 * I henhold til tvangsfullbyrdelsesloven § 7-6 kan saksøker fylle ut feltet **berOmUnnlattForeleggelseMedBegrunnelse**. Begrunnelsen kan være feks. " Vi er kjent med at saksøkte har unndratt formuesgoder tidligere og nærheten til grensen gjør at kjøretøyet kan fraktes ut av landet."
 * Dersom man har opplysninger om **spesiellUtleggsgjenstand**, kan dette opplyses i dette feltet.
 * I **vedlegg** kan det sendes generelle vedlegg som ikke er dekket andre steder i Utleggsbegjæringen som f.eks være erkjennelse av kravet. Da skal "beviset" på erkjennelsen legges ved for å avbryte foreldelse. Dette kan være et dokument eller en skjermdump fra en samtalelogg. .
