@@ -719,7 +719,7 @@ Innsendte saker i testmiljøet behandles ikke videre og man kan derfor ikke spø
 | 4	| TEST_SAK_FORELAGT |	sakForelagt |	Krav, Saksøkere, Saksøkte	| Saken er forelagt |
 | 5	| TEST_SAK_BESLUTTET |	sakBesluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon |	Saken er besluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant |
 | 6	| TEST_SAK_AVSLUTTET |	sakAvsluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon	| Saken er avsluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant |
-| 7 |	TEST_SAK_AVBRUTT |	sakAvbrutt |	Krav, Saksøkere, Saksøkte |	Saken er avbrutt |
+| 7 |	TEST_SAK_HEVET |	sakHevet |	Krav, Saksøkere, Saksøkte |	Saken er hevet |
 | 8	| TEST_UGYLDIG |	Feilmelding |	Feilobjekt (HTTP 404) |	Ugyldig saksreferanse – returnerer feilmelding |
 
 ### Bruk av tjenester i testmiljøet
