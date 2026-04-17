@@ -25,9 +25,11 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Status nye APIer
 
+[**Swagger-dokumentasjon**](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) er tilgjengelig. Det vil kunne komme mindre justeringer i konstruksjons- og testfasene. 
+
 Planlagt tilgjengelig i **testmiljø** fra månedsskiftet april/mai. 
 
-[Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/) er tilgjengelig som tidligere.
+Innholdsmessig gir dette APIet samme rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/) og den utgående tjensten A06/A07.
 
 Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
 
