@@ -1,0 +1,204 @@
+---
+title: Avstemmingsrapport A-melding API
+slug: /api/avstemmingsrapport-amelding
+folder: api
+sidebar: mydoc_sidebar
+datatable: true
+tags: [API, A-ordning, avstemming]
+keywords: [a-melding, aordning, avstemming]
+last_updated: Apr 17, 2026
+hide_table_of_contents: true
+---
+
+<Summary>Tjeneste for avstemmingsrapport A-melding (tidligere A06/A07).</Summary>
+
+<Tabs underline={true}>
+<TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
+
+For generell informasjon om tjenestene se egne sider om:
+
+* [Sikkerhetsmekanismer](../om/sikkerhet.md)
+* [Systembruker](../om/systembruker.md)
+* [Feilhåndtering](../om/feil.md)
+* [Versjonering](../om/versjoner.md)
+* [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
+
+## Status nye APIer
+
+[**Swagger-dokumentasjon**](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) er tilgjengelig. Det vil kunne komme mindre justeringer i konstruksjons- og testfasene. 
+
+Planlagt tilgjengelig i **testmiljø** fra månedsskiftet april/mai. 
+
+Innholdsmessig gir dette APIet samme rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/) og den utgående tjensten A06/A07.
+
+Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
+
+## Scope
+
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringamelding`.
+
+Mer informasjon og søknad på scope finner du på [tilgang til scope - skatteetaten.no](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/her-kan-du-soke-om-tilgang-til-tjenester-for-innrapportering-til-skatteetaten/) 
+
+## Delegering
+
+Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. 
+
+## Systemtilgang med systembruker
+
+Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
+
+Dette APIet krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:revisormedarbeider"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-lonn"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:a-ordning"
+    }
+]
+```
+
+
+Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for tilgang til tjenesten:
+```JSON
+"Rights": [
+    {
+      "Resource": [
+        {
+          "value": "ske-innrapportering-amelding",
+          "id": "urn:altinn:resource"
+        }
+      ]
+    }
+  ]
+```
+
+## Teknisk spesifikasjon
+
+Noe tekst - kanskje en enkel skisse her? REST-api
+URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
+[SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
+
+
+
+Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
+
+### Parameter: idempotencyKey
+
+idempotencyKey parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en
+tilsvarende ny idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den
+samme responsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt
+kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
+
+## Datakatalog
+
+Dette API-et er pt. ikke dokumentert i Felles datakatalog.
+
+</TabItem>
+<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
+
+xxxxx
+
+</TabItem>
+<TabItem headerText="Feilkoder" itemKey="itemKey-3">
+
+Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi.
+
+| Feilkode | HTTP Statuskode | Feilområde                                   |
+|----------|-----------------|----------------------------------------------|
+| AMLD_001  | 500             | Uventet feil på tjenesten                    |
+| AMLD_004  | 401             | Feil i forbindelse med autentisering         |
+| AMLD_005  | 403             | Feil i forbindelse med autorisering          |
+| AMLD_006  | 400             | Feil i request                               |
+| AMLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
+| AMLD_010  | 400             | Feil i forbindelse med validering av payload |
+| AMLD_011  | 400             | Feil i metadata                              |
+| AMLD_017  | 500             | Uspesifisert systemfeil                      |
+| AMLD_019  | 409             | Idempotensnøkkel er benyttet tidligere       |
+| AMLD_021  | 404             | Finner ikke forespurt ressurs                |
+| AMLD_022  | 405             | HTTP-metode ikke støttet                     |
+| AMLD_023  | 500             | Uventet feil i et bakenforliggende system    |
+
+Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
+Tabellen under viser hvilke feilspesifiseringskoder applikasjonen kan gi.
+Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og angitt verdi
+feltene.
+
+| Feilspesifiseringskode | Feilområde                                     | Årsak                                                                                                                       |
+|------------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| AMLD_1008               | Ugyldig token                                  | Ugyldig token                                                                                                               | 
+| AMLD_1015               | Ikke autorisert for denne dialogen             | Ikke autorisert for denne dialogen                                                                                          | 
+| AMLD_1022               | Feil i parametre                               | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| AMLD_1023               | Finner ingen ressurs for denne urlen           | Det er ikke noe innhold tilgjengelig på denne URLen                                                                         |
+| AMLD_1027               | Inntektsår er ikke støttet                     | Det er ikke tillatt å levere på oppgitt inntektsår                                                                          |
+| AMLD_1028               | Header mangler                                 | Påkrevd header er ikke med i requesten                                                                                      |
+| AMLD_1030               | Accept-header må være av type application/json | Accept header er feil. APIet har kun støtte for json i response                                                             |
+| AMLD_1032               | Feil i json-innhold                            | Feil i json-innhold                                                                                                         |
+| AMLD_1047               | Content type må være application/json          | Content-type header er feil. APIet har kun støtte for json i request body                                                   |
+| AMLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen | Finner ikke et dokument med denne IDen på denne forsendelsen                                                  |
+| AMLD_1051               | Opplysningspliktig i path og i innsending er ulike | Opplysningspliktig i path og i innsending er ulike                                                                      |
+| AMLD_1052               | Periode (kalendermåned) i path og i innsending er ulike | Periode (kalendermåned) i path og i innsending er ulike                                                            |
+| AMLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere                              |
+| AMLD_1061               | Det finnes ingen forsendelse med denne IDen for denne ordningen | Det finnes ingen forsendelse med denne IDen for denne ordningen                                            |
+| AMLD_1062               | Oppgavegiver er ikke hovedenhet, og kan derfor ikke rapportere for ordningen | Oppgavegiver er ikke hovedenhet, og kan derfor ikke rapportere for ordningen                  |
+| AMLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details | Tokenet mangler informasjon om systembruker i authorization_details                                    |
+
+</TabItem>
+<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+
+Må oppdateres til avstemmingsrapporten: Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.pdf)
+
+![informasjonsmodell](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.png)
+
+                                                                                                                                                                                                                                                         |
+</TabItem>
+<TabItem headerText="Test" itemKey="itemKey-5">
+
+### Testmiljøer
+
+For spesifikke URL'er til testmiljø hos Skatteetaten, se
+
+Må oppdateres nåt klart:
+   [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
+   [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
+   [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
+   
+
+Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
+* Autentisering med Maskinporten
+* Autorisering med Systembruker
+
+Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skatteetaten og Digdir.
+
+### Tenor testdatasøk
+
+[Testdata] (https://www.skatteetaten.no/testdata/)
+
+### Testdata
+
+Det benyttes utelukkende syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette. Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
+
+</TabItem>
+<TabItem headerText="Kontakt oss" itemKey="itemKey-6">
+  
+Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot A-meldingen kan du kontakte oss via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) 
+
+Lenke til å sette opp tilgang til brukerstøttetjenesten og bestille tilgang til ny tjeneste/scope finner dere på denne siden (under «trenger du hjelp»):  [A-meldingen - for sluttbrukersystemer - Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/a-meldingen-sbs/)
+  
+</TabItem>
+
+</Tabs>
