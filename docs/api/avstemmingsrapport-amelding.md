@@ -89,10 +89,8 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for ti
 
 ## Teknisk spesifikasjon
 
-Noe tekst - kanskje en enkel skisse her? REST-api
 URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og respons ligger i Open API spesifikasjonen på
-[SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
-
+[SwaggerHub avstemmingsrapport a-melding](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) 
 
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
@@ -111,7 +109,7 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-xxxxx
+Ikke tilgjengelig
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
@@ -158,24 +156,19 @@ feltene.
 | AMLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details | Tokenet mangler informasjon om systembruker i authorization_details                                    |
 
 </TabItem>
+
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Må oppdateres til avstemmingsrapporten: Informasjonsmodell kan også lastes ned i [PDF-format](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.pdf)
+Ikke tilgjengelig foreløpig
 
-![informasjonsmodell](../../static/download/a-melding/Informasjonsmodell_A-meldingen_V2_3.png)
 
-                                                                                                                                                                                                                                                         |
 </TabItem>
+
 <TabItem headerText="Test" itemKey="itemKey-5">
 
 ### Testmiljøer
 
-For spesifikke URL'er til testmiljø hos Skatteetaten, se
-
-Må oppdateres nåt klart:
-   [SwaggerHub REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api)
-   [SwaggerHub A-melding filopplasting](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
-   [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/)
+For spesifikke URL'er til testmiljø hos Skatteetaten, se [SwaggerHub avstemmingsrapport a-melding](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) 
    
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
