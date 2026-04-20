@@ -27,6 +27,7 @@ const sidebars = {
         "api/formuesgrunnlageiendomsskatt",
         "api/formuesobjektfasteiendom",
         "api/formuesverdifasteiendom",
+        "api/frister",
         "api/hendelser",
         "api/inntekt",
         "api/inntektsmottakere",
