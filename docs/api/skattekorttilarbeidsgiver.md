@@ -233,7 +233,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | 400         | FOR_001  | Request payload validerer ikke            |
 | 400         | FOR_002  | Request payload parser ikke               |
 | 400         | FOR_003  | Request parameter validerer ikke. Oppstår kun ved henting av svar dersom man ikke bruker en referanse på formen: BR[0-9]+ |
-| 403         |          | Denne vil man også kunne få hvis requesten inneholder for mange fødselsnummer. Se også de generelle http-statuskodene. |
+| 403         |          | Denne vil man kunne få hvis requesten inneholder for mange fødselsnummer. Se også de generelle http-statuskodene. |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
