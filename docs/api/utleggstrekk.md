@@ -9,7 +9,7 @@ last_updated: Mar 10, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>TODO: Legg inn beskrivelse</Summary>
+<Summary>Tjenesten leverer informasjon om arbeidsgivers (opplysningspliktiges) innrapporterte utleggstrekk for en inntektsmottaker for en gitt periode.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -89,17 +89,17 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
 variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
-| Feilkode | HTTP Statuskode | Feilområde                                                                    |
-|----------|-----------------|-------------------------------------------------------------------------------|
-| OAF-001  | 500             | Uventet feil på tjenesten.                                                    |
-| OAF-002  | 500             | Uventet feil i et bakenforliggende system.                                    |
-| OAF-003  | 404             | Ukjent url benyttet.                                                          |
-| OAF-004  | 401             | Feil i forbindelse med autentisering.                                         |
-| OAF-005  | 403             | Feil i forbindelse med autorisering.                                          |
-| OAF-006  | 400             | Feil i forbindelse med validering av inputdata.                               |
-| OAF-007  | 404             | Fant ikke opplysninger om arbeidsforhold for angitt identifikator og periode. |
-| OAF-008  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                    |
-| OAF-009  | 406             | Opplysninger om arbeidsforhold er slettet for periode.                        |
+| Feilkode | HTTP Statuskode | Feilområde                                                                  |
+|----------|-----------------|-----------------------------------------------------------------------------|
+| UTL-001  | 500             | Uventet feil på tjenesten.                                                  |
+| UTL-002  | 500             | Uventet feil i et bakenforliggende system.                                  |
+| UTL-003  | 404             | Ukjent url benyttet.                                                        |
+| UTL-004  | 401             | Feil i forbindelse med autentisering.                                       |
+| UTL-005  | 403             | Feil i forbindelse med autorisering.                                        |
+| UTL-006  | 400             | Feil i forbindelse med validering av inputdata.                             |
+| UTL-007  | 404             | Fant ikke opplysninger om utleggstrekk for angitt identifikator og periode. |
+| UTL-008  | 406             | Feil tilknyttet dataformat. Kun json eller xml er støttet.                  |
+| UTL-009  | 406             | Opplysninger om utleggstrekk er slettet for periode.                        |
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">

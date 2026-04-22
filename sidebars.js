@@ -58,6 +58,7 @@ const sidebars = {
         "api/tjenestepensjonsavtale",
         "api/trekkpaalegg",
         "api/underenhetaordningen",
+        "api/utleggstrekk",
       ],
     },
     {
