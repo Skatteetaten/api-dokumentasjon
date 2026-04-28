@@ -37,11 +37,12 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:sk
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen.
 
 ## Systemtilgang med systembruker
-Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir. Informasjon vedr. dette finnes [her](https://skatteetaten.github.io/api-dokumentasjon/om/systembruker).
+Bruk av API-et krever systemtilgang med systembruker, som er ny funksjonalitet i Maskinporten levert av Digdir.  
+Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
-Følgende ressurs kan benyttes til dette : `ske-skattekort-til-arbeidsgiver`
+Følgende ressurs skal benyttes til dette : `ske-skattekort-til-arbeidsgiver`
 
-Du finner mer informasjon om maskinporten-tokens og eksempler på dette i [Altinn](https://docs.altinn.studio/nb/altinn-studio/v8/guides/integration/sbs/setup/#6-fiken-kan-autentisere-mot-maskinporten-med-systembrukeren)
+Du finner mer informasjon om integrasjon mot Altinn 3 på [Altinn sine sider](https://samarbeid.digdir.no/altinn/kom-i-gang-med-integrasjon-mot-altinn-3/2868)
 
 ## Begrensninger
 Vi har satt en begrensning i hvor mange skattekort som kan hentes pr kall til API-et. Denne grensen er foreløpig satt til 1000 fødselsnummer.
