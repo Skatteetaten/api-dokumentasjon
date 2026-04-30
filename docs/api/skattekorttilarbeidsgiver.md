@@ -42,7 +42,36 @@ Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://
 
 Følgende ressurs skal benyttes til dette : `ske-skattekort-til-arbeidsgiver`
 
-Du finner mer informasjon om integrasjon mot Altinn 3 på [Altinn sine sider](https://samarbeid.digdir.no/altinn/kom-i-gang-med-integrasjon-mot-altinn-3/2868)
+Dette APIet krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+
+```json
+"accessPackages": [
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:revisormedarbeider"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:regnskapsforer-lonn"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:lonn"
+    },
+    {
+        "urn": "urn:altinn:accesspackage:skatt-naering"
+    }
+]
+```
+
+
+Du finner mer informasjon om integrasjon mot Altinn 3 på [Altinn sine sider](https://samarbeid.digdir.no/altinn/kom-i-gang-med-integrasjon-mot-altinn-3/2868).
 
 ## Begrensninger
 Vi har satt en begrensning i hvor mange skattekort som kan hentes pr kall til API-et. Denne grensen er foreløpig satt til 1000 fødselsnummer.
