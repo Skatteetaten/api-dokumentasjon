@@ -50,6 +50,16 @@ Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakk
 
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
+### Systembruker
+Rettighetspakken `regnskapssystem` krever bruk av [systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md). Tilgangspakkene som gir tilgang til ressursen som benyttes er:
+- ansvarlig-revisor
+- krav-og-utlegg
+- regnskapsforer-med-signeringsrettighet
+- regnskapsforer-uten-signeringsrettighet
+- revisormedarbeider
+
+Leverandøren kan kun få tilgang til API-et dersom leverandøren er integrert mot minimum ett API for innrapportering av opplysninger, og kunden har innrapportert opplysninger minst én gang gjennom sluttbrukersystemet. Leverandøren kan ikke benytte opplysningene til andre formål enn å tilrettelegge opplysningene for kundens bruk gjennom sluttbrukersystemet.
+
 ## Datakatalog
 
 Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
