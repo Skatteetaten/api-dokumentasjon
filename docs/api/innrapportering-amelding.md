@@ -24,9 +24,11 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Status nye APIer
-Tilgjengelig i **produksjonsmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding
+Tilgjengelig i **produksjonsmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding.
 
-Tilgjengelig i **testmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding
+Tilgjengelig i **testmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding.
+
+Manuell filopplasting er også tilgjengelig i test: [Manuell filopplasting](https://ameldingfilopplasting.skatteetaten-test.no/web/amelding-filopplasting/) for XML-filer.
 
 Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
 
@@ -97,6 +99,30 @@ Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
 [SwaggerHub tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/) 
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
+
+OBS OBS!!
+Informasjon angående m2m-uthenting av tilbakemeldingen via API:
+
+Forsendelsen (transmission-en) i Dialogporten inneholder to URL-er, som vist under.
+
+```json
+"urls": [
+            {
+              "id": "019e1687-...",
+              "url": "https://skatt-test.sits.no/web/aor-tilbakemelding/uthenting/v1/dialoger/019c27bc-...",
+              "mediaType": "application/json",
+              "consumerType": "Gui"               <<<—————— for nedlasting fra innboks
+            },
+            {
+              "id": "019e1687-...",
+              "url": "https://ameldingtilbakemelding.api.skatteetaten-test.no/v1/forsendelser/019e1687-...",
+              "mediaType": "application/json",
+              "consumerType": "Api"               <<<—————— for oppslag fra API
+            }
+          ]
+```
+
+Det er URL-en med "consumerType": "Api" som er grunnlag for oppslag mot tilbakemelding-API.
 
 
 
