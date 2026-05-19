@@ -24,9 +24,9 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Status nye APIer
-Tilgjengelig i **produksjonsmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding.
+Tilgjengelig i **produksjonsmiljø**: [REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api/), [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og [tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/).
 
-Tilgjengelig i **testmiljø**: REST-api, [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og tilbakemelding.
+Tilgjengelig i **testmiljø**: [REST-api](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-api/), [filopplasting-api](https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-amelding-filopplasting) og [tilbakemelding](https://app.swaggerhub.com/apis/skatteetaten/amelding-tilbakemelding-api/).
 
 Manuell filopplasting er også tilgjengelig i test: [Manuell filopplasting](https://ameldingfilopplasting.skatteetaten-test.no/web/amelding-filopplasting/) for XML-filer.
 
@@ -100,10 +100,8 @@ Tilsvarende for tilbakemeldingen ligger i Open API spesifikasjonen på
 
 **VIKTIG!!** For å hente tilbakemeldingen må man lytte på hendelser hos Dialogporten. Dette er beskrevet hos Digdir: [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869)
 
-OBS OBS!!
-Informasjon angående m2m-uthenting av tilbakemeldingen via API:
-
-Forsendelsen (transmission-en) i Dialogporten inneholder to URL-er, som vist under.
+**OBS OBS!! Endring - foreløpig kun i testmiljø**
+I test har nå forsendelsen (transmission-en) i Dialogporten to URL-er, som vist under.
 
 ```json
 "urls": [
@@ -122,7 +120,10 @@ Forsendelsen (transmission-en) i Dialogporten inneholder to URL-er, som vist und
           ]
 ```
 
-Det er URL-en med "consumerType": "Api" som er grunnlag for oppslag mot tilbakemelding-API.
+**De systemene som allerede er i produksjon bør verifisere i test at de bruker riktig URL - slik at uthenting også vil fungere i produkjson når endringen deployes der.** 
+Nyhet om tidspunkt for endrigen i produksjon vil bli publisert på skatteetaten.no og Slack.   
+
+ 
 
 
 
