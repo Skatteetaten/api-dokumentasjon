@@ -39,7 +39,7 @@ Dette scopet skal brukes for REST-api, filopplasting-api og tilbakemelding-api.
 
 Mer informasjon og søknad på scope finner du på [tilgang til scope - skatteetaten.no](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/her-kan-du-soke-om-tilgang-til-tjenester-for-innrapportering-til-skatteetaten/) 
 
-## Delegering
+## Delegering 
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. 
 
