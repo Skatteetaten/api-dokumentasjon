@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, A-ordning, avstemming]
 keywords: [a-melding, aordning, avstemming]
-last_updated: Apr 17, 2026
+last_updated: Mai 21, 2026
 hide_table_of_contents: true
 ---
 
@@ -25,11 +25,14 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Status nye APIer
 
-[**Swagger-dokumentasjon**](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) er tilgjengelig. Det vil kunne komme mindre justeringer i konstruksjons- og testfasene. 
+**21.mai oppdatert**: Avstemmingsrapporten er lagt ut i testmiljø. Ny versjon av [Swagger-dokumentasjon](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) har endepunkt for testmiljø. 
+Under [Systemtilgang med systembruker](https://skatteetaten.github.io/api-dokumentasjon/api/avstemmingsrapport-amelding#systemtilgang-med-systembruker) er Resource value endret til "ske-avstemmingsinformasjon-amelding".  
 
-Planlagt tilgjengelig i **testmiljø** fra månedsskiftet april/mai. 
+Avstemmingsrapporten-APIet er altså tilgjengelig for test. 
 
-Innholdsmessig gir dette APIet samme rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/) og den utgående tjensten A06/A07.
+
+
+Innholdsmessig gir dette APIet samme rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/) som den utgående tjensten A06/A07.
 
 Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
 
@@ -79,7 +82,7 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for ti
     {
       "Resource": [
         {
-          "value": "ske-innrapportering-amelding",
+          "value": "ske-avstemmingsinformasjon-amelding",
           "id": "urn:altinn:resource"
         }
       ]
