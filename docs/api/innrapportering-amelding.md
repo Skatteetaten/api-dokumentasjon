@@ -120,6 +120,10 @@ I test har nå forsendelsen (transmission-en) i Dialogporten to URL-er, som vist
           ]
 ```
 
+Gui-URLen må Skatteetaten ha for å gjøre tilbakemeldingen nedlastbar fra Dialogpottens innboks og Skatteetatens Min side.
+
+Api-URL er for oppslag for m2m-uthenting av tilbakemeldingen.
+
 **De systemene som allerede er i produksjon bør verifisere i test at de bruker riktig URL - slik at uthenting også vil fungere i produkjson når endringen deployes der.** 
 Nyhet om tidspunkt for endrigen i produksjon vil bli publisert på skatteetaten.no og Slack.   
 
