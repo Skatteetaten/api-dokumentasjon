@@ -58,9 +58,15 @@ const sidebars = {
         "api/tjenestepensjonsavtale",
         "api/trekkpaalegg",
         "api/underenhetaordningen",
-        "api/utleggstrekk",
       ],
     },
+     {
+      "API-er for å hente data": [
+        "api/frister",
+        "api/kravogbetalinger",
+         "api/utleggstrekk",
+     ],
+    },   
     {
       "API-er for innrapportering": [
         { id: 'api/innrapportering-amelding', label: "A-melding", type: 'doc' },
