@@ -997,7 +997,13 @@ Et POST-kall mot `https://api-test.sits.no/api/innkreving/innkrevingsoppdrag/v1/
 
 ## Tenor testdatasøk
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten.
+Testdata
+
+For testing av APIene skal det kun benyttes syntetiske testdata. Det skal ikke være noen koblinger til data i produksjon.
+
+Syntetiske personer og virksomheter kan hentes fra Tenor ( https://testdata.skatteetaten.no/web/testnorge/soek/freg)
+
+Innhold i oppdragsgiversreferanse og oppdragsgiverskravidentifikator skal også være syntetiske.
 
 </TabItem>
 </Tabs>
