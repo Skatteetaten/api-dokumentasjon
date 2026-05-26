@@ -58,13 +58,14 @@ const sidebars = {
         "api/tjenestepensjonsavtale",
         "api/trekkpaalegg",
         "api/underenhetaordningen",
+        "api/utleggstrekk",
       ],
     },
      {
       "API-er for å hente data": [
         "api/frister",
         "api/kravogbetalinger",
-         "api/utleggstrekk",
+        { id: 'api/utleggsbegjaering', label: "Utleggsbegjæring", type: 'doc' },
      ],
     },   
     {
@@ -110,7 +111,6 @@ const sidebars = {
         { id: 'api/innrapportering-tilskudd-prim', label: "Tilskudd, erstatning mv. innen primærnæringene", type: 'doc' },
         { id: 'api/innrapportering-verdipapirfond', label: "Verdipapirfond", type: 'doc' },
         { id: 'api/innrapportering-verdipapirfondshistorikk', label: "Verdipapirfondshistorikk", type: 'doc' },
-        { id: 'api/utleggsbegjaering', label: "Utleggsbegjæring", type: 'doc' },
         { id: 'api/utleggstrekkfrakommune', label: "Utleggstrekk fra kommune", type: 'doc' },
       ],
     },
