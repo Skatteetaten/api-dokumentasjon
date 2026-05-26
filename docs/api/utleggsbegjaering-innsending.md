@@ -1,6 +1,6 @@
 ---
 title: ELAN - Utleggsbegjæring API - Innsending
-slug: /api/utleggsbegjaering
+slug: /api/utleggsbegjaering-innsending
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
