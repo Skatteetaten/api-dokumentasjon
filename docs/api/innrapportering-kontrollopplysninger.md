@@ -41,7 +41,8 @@ Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
 For systembruker for klientsystemer anbefaler vi å ikke kombinere tilgangspakker på tvers av fullmaktsområder, da det kan medføre at bruker ikke kan utføre [klientdelegering](https://docs.altinn.studio/nb/authorization/guides/end-user/system-user/delegate-clients/). Se fullmaktsområder [her](https://docs.altinn.studio/nb/authorization/what-do-you-get/accessgroups/accessgroups/)
 
-Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker, merk at ordinær-post tilgangspakken kun gir lesetilgang til allerede innsendt data. 
+De andre tilgangspakkene gir både les og skriv.
 
 ```json
 "accessPackages": [
@@ -55,10 +56,13 @@ Dette API-et krever at systemet og dets systembrukere har tilgang til én eller 
         "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
     },
     {
+        "urn": "urn:altinn:accesspackage:ordinaer-post-til-virksomheten"
+    },
+    {
         "urn": "urn:altinn:accesspackage:revisormedarbeider"
     },
     {
-        "urn": "urn:altinn:accesspackage:skattegrunnlag"
+        "urn": "urn:altinn:accesspackage:skatt-naering"
     }
 ]
 ```
