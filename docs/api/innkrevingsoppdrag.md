@@ -995,15 +995,15 @@ https://api-test.sits.no/api/innkreving/innkrevingsoppdrag/v1/
 
 Et POST-kall mot `https://api-test.sits.no/api/innkreving/innkrevingsoppdrag/v1/innkrevingsoppdrag` med tilhørende token fra Maskinporten vil opprette et nytt innkrevingsoppdrag.
 
-## Tenor testdatasøk
-
-Testdata
+## Testdata
 
 For testing av APIene skal det kun benyttes syntetiske testdata. Det skal ikke være noen koblinger til data i produksjon.
 
-Syntetiske personer og virksomheter kan hentes fra Tenor ( https://testdata.skatteetaten.no/web/testnorge/soek/freg)
-
 Innhold i oppdragsgiversreferanse og oppdragsgiverskravidentifikator skal også være syntetiske.
+
+## Tenor testdatasøk
+
+Syntetiske personer og virksomheter kan hentes fra Tenor ( https://testdata.skatteetaten.no/web/testnorge/soek/freg)
 
 </TabItem>
 </Tabs>
