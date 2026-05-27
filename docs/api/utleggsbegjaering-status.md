@@ -62,7 +62,7 @@ opp følgende tjeneste i Altinn for å delegere tilgangen: `Utleggsbegjæring AP
 Dersom systemleverandør ønsker å tilby funksjonalitet der en annen organisasjon (kunde av systemleverandøren) skal benytte systemet til å sende inn utleggsbegjæringer, skal Altinn sin nye funksjonalitet for [systembruker-løsningen fra Digdir for virksomhet](../om/systembruker.md) benyttes. Mer informasjon om dette finnes også i Altinn Systembruker for SBS og Systembruker roadmap.
 
 Tilgangspakkene som gir tilgang til ressursen som benyttes er:
-- lag liste
+- Krav, betalinger og utlegg
 
 ## Datakatalog
 
