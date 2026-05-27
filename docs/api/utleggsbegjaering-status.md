@@ -71,7 +71,6 @@ Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-Legg inn eksempler
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
