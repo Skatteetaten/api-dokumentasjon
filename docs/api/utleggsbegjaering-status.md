@@ -92,8 +92,10 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+Når Kreditor har sendt inn en utleggsbegjæring, kan man få status på saken ved å bruke tjenesten "Status på sak". Tjenesten gir informasjon om sakens tilstand, samt hvilke beslutninger som eventuelt er fattet i saken. Den returnerer også referansen som benyttes av alminnelig namsmann (AN) i den videre behandlingen (UTLBGJ/2026/XX) og som skal benyttes når man kontakter AN. Når en beslutning er fattet angir tjenesten informasjon om alle krav som følges opp av beslutningen. Dette inkluderer informasjon om kravenes kravgrunnlagsidentifikator, som er den identifikator som Alminnelig Namsmann har gitt de enkelte krav. Denne identifikatoren kan brukes til å angi spesifikke krav dersom Kreditor senere for eksempel ønsker å melde en innbetaling på kravet.
 
 Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-api) på SwaggerHub for beskrivelse av informasjonsmodellen.
+![Informasjonsmodell-status-paa-sak](../../static/download/utleggsbegjaering/status-paa-sak.png)
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
