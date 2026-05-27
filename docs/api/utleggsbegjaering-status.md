@@ -15,6 +15,14 @@ hide_table_of_contents: true
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
+APIet benyttes til å hente status på innsendte utleggsbegjæringer.
+Målgruppen er dagens inkassosystemer, kommunene og andre systemleverandører.
+Dersom du ønsker å ta i bruk APIet eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.
+
+Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og prøving av utleggsbegjæringer. Merk at figuren er en illustrasjon av måbildet, og det er ikke alle tjenestene i figuren som er implementert ennå. Det vil også i fremtiden kunne legges til nye tjenester som ikke er angitt i figuren.
+
+![Oversiktsfigur](../../static/download/utleggsbegjaering/Utleggsbegjaering_oversikt.png)
+
 For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av tjenestene](../om/bruk.md)
@@ -30,12 +38,20 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 ## Tilgang
 
 ### Skatteetaten må gi tilgang
+For å få tilgang til tjenesten må leverandøren ha akseptert bruksvilkår for APIet. Dette gjøres i sammneheng med at man søker om tilgang til APIet i [Skatteetatens saks- og serviceverktøy](https://www.skatteetaten.no/deling/kontakt/)
 
-For å få tilgang til tjenesten må leverandøren ha underskrevet en pilotavtale med Skatteetaten. 
+### Alternativ 1 - Systemleverandør er innsender
+Dersom systemleverandør handler på vegne av sin egen organisasjon, kan man benytte klassisk autentisering via Maskinporten.
+
+### Alternativ 2 - Systembruker
+Dersom systemleverandør ønsker å tilby funksjonalitet der en annen organisasjon (kunde av systemleverandøren) skal benytte systemet til å sende inn utleggsbegjæringer, skal Altinn sin nye funksjonalitet for ‘systembruker’ benyttes. Mer informasjon om dette finnes i Altinn Systembruker for SBS og Systembruker roadmap.
+
+Systemleverandør må for å støtte systembruker registrere seg i Maskinporten og Altinn test environment.
 
 ### Scope
 
-Dersom systemleverandør kun skal sende inn utleggsbegjæringer på vegne av sin egen organisasjon, kan man benytte klassisk autentisering via Maskinporten. Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`
+Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:utleggsbegjaering`
+Ved bruk av systembruker må forespørselen også inneholde ressurs-id `ske-utleggsbegjaering`.
 
 ### Delegering
 
@@ -82,14 +98,19 @@ Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleg
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Bruk valgfrie organisasjoner fra Tenor som innsender av utleggsbegjæring.
-Innsendinger av vedlegg og utleggsbegjæringer i testmiljøet vil ikke bli videre behandlet av Skattetaten.
+Innsendte saker i testmiljøet behandles ikke videre og man kan derfor ikke spørre på status mot disse. For å teste Status på sak benytter man verdiene i tabellen under:
 
-## Test der systemleverandør er innsender (alternativ 1)
-Når systemleverandør er innsender kan vilkårlige organisasjoner i Tenor benyttes som innsender.
+| Nr |	EksternSaksreferanse |	Saksstatus |	Innhold i respons |	Beskrivelse |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 |	TEST_SAK_OPPRETTET |	sakOpprettet |	Krav, Saksøkere, Saksøkte |	Saken er nylig opprettet |
+| 2	| TEST_SAK_UNDER_BEHANDLING |	sakUnderBehandling |	Krav, Saksøkere, Saksøkte |	Saken er under behandling |
+| 3	| TEST_SAK_NEKTET_FREMMET |	sakNektetFremmet |	Krav, Saksøkere, Saksøkte |	Saken er nektet fremmet |
+| 4	| TEST_SAK_FORELAGT |	sakForelagt |	Krav, Saksøkere, Saksøkte	| Saken er forelagt |
+| 5	| TEST_SAK_BESLUTTET |	sakBesluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon |	Saken er besluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant |
+| 6	| TEST_SAK_AVSLUTTET |	sakAvsluttet |	Krav, Saksøkere, Saksøkte, Beslutningsinformasjon	| Saken er avsluttet – inkluderer utleggstrekk, intet til utlegg og utleggspant |
+| 7 |	TEST_SAK_HEVET |	sakHevet |	Krav, Saksøkere, Saksøkte |	Saken er hevet |
+| 8	| TEST_UGYLDIG |	Feilmelding |	Feilobjekt (HTTP 404) |	Ugyldig saksreferanse – returnerer feilmelding |
 
-## Test der systembruker benyttes (alternativ 2)
-Den valgte organisasjonen i Tenor (som representerer en test-inkassovirksomhet) må godkjenne at dens fagsystem kan benytte tilgangsressursen/tjenesten «Innsending og oppfølging av utleggsbegjæring» på vegne av virksomheten. Det opprettes da en «systembruker» som er koblingen mellom bruker, system, leverandør og API.
 
 </TabItem>
 </Tabs>
