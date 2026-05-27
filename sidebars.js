@@ -76,6 +76,7 @@ const sidebars = {
         { id: 'api/innrapportering-individuellepensjonsordninger', label: "Individuelle pensjonsordninger", type: 'doc' },
         { id: 'api/innrapportering-innskuddutlaanrenter', label: "Innskudd, utlån og renter", type: 'doc' },
         { id: 'api/innrapportering-internasjonalrapportering', label: "Internasjonal rapportering (CRS/FATCA)", type: 'doc' },
+        { id: 'api/innrapportering-kontrollopplysninger', label: "Kontrollopplysninger", type: 'doc' },
         { id: 'api/innrapportering-livsforsikring', label: "Livsforsikring", type: 'doc' },
         { id: 'api/mvameldinginnsending', label: "Mva-melding innsending", type: 'doc' },
         { id: 'api/mvameldingvalidering', label: "Mva-melding validering", type: 'doc' },
