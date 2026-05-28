@@ -112,10 +112,9 @@ Bruk valgfrie organisasjoner fra Tenor som innsender av utleggsbegjæring.
 Innsendinger av vedlegg og utleggsbegjæringer i testmiljøet vil ikke bli videre behandlet av Skattetaten.
 
 ## Test der systemleverandør er innsender (alternativ 1)
-Når systemleverandør er innsender kan vilkårlige organisasjoner i Tenor benyttes som innsender.
-
+Informasjon kommer
 ## Test der systembruker benyttes (alternativ 2)
-Den valgte organisasjonen i Tenor (som representerer en test-inkassovirksomhet) må godkjenne at dens fagsystem kan benytte tilgangsressursen/tjenesten «Innsending og oppfølging av utleggsbegjæring» på vegne av virksomheten. Det opprettes da en «systembruker» som er koblingen mellom bruker, system, leverandør og API.
+Informasjon kommer
 
 </TabItem>
 </Tabs>
