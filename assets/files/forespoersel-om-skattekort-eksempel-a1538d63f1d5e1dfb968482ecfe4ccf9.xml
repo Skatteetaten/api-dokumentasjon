@@ -1,0 +1,15 @@
+<forespoerselOmSkattekortTilArbeidsgiver xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:no:skatteetaten:fastsetting:formueinntekt:forskudd:forespoerselomskattekorttilarbeidsgiver:v2">
+  <arbeidsgiver>
+    <arbeidsgiveridentifikator>
+      <organisasjonsnummer>312485494</organisasjonsnummer>
+    </arbeidsgiveridentifikator>
+    <arbeidstakeridentifikator>27899996262</arbeidstakeridentifikator>
+    <arbeidstakeridentifikator>16880499614</arbeidstakeridentifikator>
+    <arbeidstakeridentifikator>15859997632</arbeidstakeridentifikator>
+    <arbeidstakeridentifikator>06880498930</arbeidstakeridentifikator>
+    <arbeidstakeridentifikator>09880498514</arbeidstakeridentifikator>
+    <arbeidstakeridentifikator>18896498858</arbeidstakeridentifikator>
+    <arbeidstakeridentifikator>06859899852</arbeidstakeridentifikator>
+    <arbeidstakeridentifikator>11850197786</arbeidstakeridentifikator>
+  </arbeidsgiver>
+</forespoerselOmSkattekortTilArbeidsgiver>
