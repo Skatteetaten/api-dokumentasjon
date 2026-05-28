@@ -180,7 +180,7 @@ Konsumenter må ha egne testmiljøer som kan kobles mot testmiljøer hos Skattee
 Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette.
 Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
 
-For å kunne teste tjenesten må dere få opprettet en kontrollsak på en syntetisk organisasjon. Ta kontakt på SETT INN KONTAKTPUNKT for å få satt opp dette.
+For å kunne teste tjenesten må dere få opprettet en kontrollsak på en syntetisk organisasjon. Ta kontakt gjennom [brukerstøtte](https://eksternjira.sits.no/plugins/servlet/desk/site/global) for å få en organisasjon med en kontrollsak.
 
 ### Oppskrift for test
 

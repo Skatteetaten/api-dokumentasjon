@@ -34,7 +34,7 @@ Her er en oversikt over stegene som må til for å kunne ta i bruk nye tjenester
    Her vil du behøve informasjon om Maskinporten scope og Altinn ressurs fra dokumentasjonen for den enkelte tjenesten
    du skal sette opp tilgang til.
 
-3. **Integrasjon mot testmiljø:** Følg dokumentasjonen for den enkelte tjenesten for å sette opp integrasjonen mot vårt
+3. **Integrasjon mot testmiljø:** Følg dokumentasjonen for [Innrapportering kontrollopplysninger API](../api/innrapportering-kontrollopplysninger.md) for å sette opp integrasjonen mot vårt
    testmiljø. Her vil du finne teknisk spesifikasjon og link til **Swaggerhub** hvor du finner mer detaljert informasjon
    om api'et.
    Vårt testmiljø krever utelukkende syntetiske data, se mer informasjon under test-fanen for den enkelte tjenesten.
