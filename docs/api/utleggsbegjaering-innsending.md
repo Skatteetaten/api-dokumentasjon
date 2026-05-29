@@ -326,8 +326,6 @@ Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 * **sjekkEllerVeksel** beskriver om det er sjekk (true) eller veksel (true)
 
 
-</p>
-</details>
 
  <details>
       <summary>Eksempler på utleggsbegjæring</summary>
