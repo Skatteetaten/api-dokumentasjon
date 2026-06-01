@@ -1,16 +1,15 @@
 ---
-title: Innrapportering kontrollopplysninger API
-slug: /api/innrapportering-kontrollopplysninger
-folder: api
+title: Innsending av kontrollopplysninger
+slug: /anvendelsesomraader/innsending-kontrollopplysninger
+folder: anvendelsesomraader
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, kontrollopplysninger, SAFT]
-keywords: [ kontroll ]
-last_updated: May 27, 2026
+tags: [ API, altinn, kontrollopplysninger, SAFT ]
+last_updated: Jun 01, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for innrapportering av kontrollopplysninger (SAFT-regnskap, SAFT-kassasystem og andre kontrollopplysninger)</Summary>
+<Summary>Tjeneste for innsending av kontrollopplysninger (SAFT-regnskap, SAFT-kassasystem og andre kontrollopplysninger)</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -23,6 +22,17 @@ For generell informasjon om tjenestene se egne sider om:
 * [Feilhåndtering](../om/feil.md)
 * [Versjonering](../om/versjoner.md)
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
+
+## Kommunikasjon
+
+Skatteetaten har utviklere og funksjonelle ressurser på vår **Slack** som kan svare på alle
+spørsmål og veilede i prosessen.
+Trykk [her](https://join.slack.com/t/skatteetaten/shared_invite/zt-2yvnsfetg-yuDEBJkcuj5n8KSyZi9yBg) for å få
+tilgang.
+Vi anbefaler at du benytter en Slack-konto tilknyttet ditt arbeidssted, og at du inkluderer navnet på ditt
+arbeidssted i "Display name" (endres i din profil) som for eksempel "Ola Nordmann (Skatteetaten)".
+
+Mer informasjon om selve kontrollprosessen kan du finne på [informasjonssidene](https://www.skatteetaten.no/bedrift-og-organisasjon/starte-og-drive/kontroll-av-skatt-og-avgift/)
 
 ## Scope
 
@@ -41,7 +51,7 @@ Informasjon vedr. dette finnes [her](../om/systembruker.md).
 
 For systembruker for klientsystemer anbefaler vi å ikke kombinere tilgangspakker på tvers av fullmaktsområder, da det kan medføre at bruker ikke kan utføre [klientdelegering](https://docs.altinn.studio/nb/authorization/guides/end-user/system-user/delegate-clients/). Se fullmaktsområder [her](https://docs.altinn.studio/nb/authorization/what-do-you-get/accessgroups/accessgroups/)
 
-Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker, merk at ordinær-post tilgangspakken kun gir lesetilgang til allerede innsendt data. 
+Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker, merk at ordinær-post tilgangspakken kun gir lesetilgang til allerede innsendt data.
 De andre tilgangspakkene gir både les og skriv.
 
 ```json
@@ -89,7 +99,7 @@ URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Ope
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-Se også [eksempler](innrapportering-kontrollopplysninger?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innsending-kontrollopplysninger?tab=Eksempler) for de ulike endepunktene.
 
 ## Datakatalog
 
@@ -133,7 +143,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne tjeneste
 
 Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
 Tabellen under viser hvilke feilspesifiseringskoder tjenesten kan gi.
-Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og 
+Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og
 angitt verdi-feltene.
 
 | Feilspesifiseringskode | Feilområde                                                             | Årsak                                                                                                                       |
@@ -186,9 +196,9 @@ For å kunne teste tjenesten må dere få opprettet en kontrollsak på en syntet
 
 * Opprett integrasjon med Maskinporten test. Benytt reellt organisasjonsnummer i denne integrasjonen, da vi kun gir scope-tilgang til klienter koblet til reelle organisasjoner.
 * Opprett integrasjon med API-er hos Digdir (kontakt Digdir for scope-tilganger) for å:
-    * Opprette system i systemregisteret. Systemet kobles til reell organiasjon og Maskinporten klient.
-    * Opprette systembrukere. Systembrukere i test skal registreres på syntetiske organisasjoner funnet i Tenor.
-    * Godkjenne systembrukere. Login på mottatt url fra opprett systembruker forespørsel med person med rolle hos den syntetiske organisasjoner funnet i Tenor. F.eks. daglig leder.
+   * Opprette system i systemregisteret. Systemet kobles til reell organiasjon og Maskinporten klient.
+   * Opprette systembrukere. Systembrukere i test skal registreres på syntetiske organisasjoner funnet i Tenor.
+   * Godkjenne systembrukere. Login på mottatt url fra opprett systembruker forespørsel med person med rolle hos den syntetiske organisasjoner funnet i Tenor. F.eks. daglig leder.
 * Søk om scope-tilgang for tjenesten hos Skatteetaten som beskrevet.
 * Da er du klar til å sende inn syntetiske testdata i test.
 
@@ -196,7 +206,8 @@ For å kunne teste tjenesten må dere få opprettet en kontrollsak på en syntet
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Har du spørsmål til Skatteetaten om Innrapportering Kontrollopplysninger API, kan du kontakte oss via [brukerstøtte](https://eksternjira.sits.no/plugins/servlet/desk/site/global)
+Har du spørsmål til Skatteetaten om Innsending Kontrollopplysninger API, kan du kontakte oss via [brukerstøtte](https://eksternjira.sits.no/plugins/servlet/desk/site/global)
 
 </TabItem>
 </Tabs>
+
