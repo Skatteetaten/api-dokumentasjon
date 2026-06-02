@@ -25,14 +25,16 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Status nye APIer
 
-**21.mai oppdatert**: Avstemmingsrapporten er lagt ut i testmiljø. Ny versjon av [Swagger-dokumentasjon](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) har endepunkt for testmiljø. 
+**2.juni oppdatert**: Fjernet punktet i dokumentasjonen med at idempotencyKey parameteren er påkrevet (det er det altså ikke).
+Avstemmingsrapporten er kun i json-format. Det vil vurderes på sikt om Skatteetaten vil tilby andre formater, f.eks ODS og XML. 
+
+**21.mai oppdatert**: Avstemmingsrapporten er lagt ut i testmiljø. Ny versjon av [Swagger-dokumentasjon](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) har endepunkt for testmiljø.
 Under [Systemtilgang med systembruker](https://skatteetaten.github.io/api-dokumentasjon/api/avstemmingsrapport-amelding#systemtilgang-med-systembruker) er Resource value endret til "ske-avstemmingsinformasjon-amelding".  
 
-Avstemmingsrapporten-APIet er altså tilgjengelig for test. 
+Avstemmingsrapporten-APIet er tilgjengelig for test. 
 
 
-
-Innholdsmessig gir dette APIet samme rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/) som den utgående tjensten A06/A07.
+Innholdsmessig gir dette APIet samme innholdsmessige rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/), men kun i JSON-format.
 
 Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
 
@@ -98,12 +100,6 @@ URL-er til innrapprterings API-et, beskrivelsen av parameterne, endepunkter og r
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-### Parameter: idempotencyKey
-
-idempotencyKey parameteren er påkrevet. Innholdet skal være en unik UUID. Hvert nye kall til API-et skal ha en
-tilsvarende ny idempotencyKey. Flere etterfølgende POST kall med samme request-body og samme idempotencyKey vil gi den
-samme responsen. Kun det første av denne rekken med like API kall vil behandles. IdempotencyKey muliggjør at man trygt
-kan prøve innsendinger på nytt der man av ulike årsaker ikke har fått en tilbakemelding fra API-et.
 
 ## Datakatalog
 
