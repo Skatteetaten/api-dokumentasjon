@@ -26,7 +26,7 @@ For generell informasjon om tjenestene se egne sider om:
 ## Status nye APIer
 
 **2.juni oppdatert**: Fjernet punktet i dokumentasjonen med at idempotencyKey parameteren er påkrevet (det er det altså ikke).
-Avstemmingsrapporten er kun i json-format. Det vil vurderes på sikt om Skatteetaten vil tilby andre formater, f.eks ODS og XML. 
+Avstemmingsrapporten er kun i JSON-format. Det vil vurderes på sikt om Skatteetaten vil tilby andre formater, f.eks ODS og XML. 
 
 **21.mai oppdatert**: Avstemmingsrapporten er lagt ut i testmiljø. Ny versjon av [Swagger-dokumentasjon](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) har endepunkt for testmiljø.
 Under [Systemtilgang med systembruker](https://skatteetaten.github.io/api-dokumentasjon/api/avstemmingsrapport-amelding#systemtilgang-med-systembruker) er Resource value endret til "ske-avstemmingsinformasjon-amelding".  
