@@ -32,6 +32,7 @@ const sidebars = {
         "api/inntekt",
         "api/inntektsmottakere",
         "api/kravogbetalinger",
+        "api/mvafastsetting",
         "api/mva_meldingsopplysning",
         "api/mvamelding",
         "api/mvaregisteravgiftssubjekt",
