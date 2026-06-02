@@ -34,7 +34,7 @@ Under [Systemtilgang med systembruker](https://skatteetaten.github.io/api-dokume
 Avstemmingsrapporten-APIet er tilgjengelig for test. 
 
 
-Innholdsmessig gir dette APIet samme innholdsmessige rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/), men kun i JSON-format.
+Dette APIet gir innholdsmessig samme rapport som [Avstemmingsportalen](https://www.skatteetaten.no/skjema/avstemmingsinformasjon/), men kun i JSON-format.
 
 Følg gjerne nyheter på [Nyheter for sluttbrukersystemer](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/sbs-nyheter/)
 
