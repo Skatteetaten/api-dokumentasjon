@@ -37,7 +37,7 @@ Hvert API har sin egen dokumentasjon, og er i venstremenyen grupper under "API-e
 I tillegg har vi samlet dokumentasjon som pakker inn API-ene for ulike områder eller på tvers av API-er som "Anvendelsesområder":
 * [A-meldingen](./anvendelsesomraader/ameldingen.md)
 * [Deling fra Skatteetaten](./anvendelsesomraader/deling-skatteetaten.md)
-* [Innrapportering av kontrollopplysninger](./anvendelsesomraader/innrapportering-kontrollopplysninger.md)
+* [Innsending av kontrollopplysninger](./anvendelsesomraader/innsending-kontrollopplysninger.md)
 * [Innrapportering av tredjepartsopplysninger](./anvendelsesomraader/innrapportering-tredjepartsopplysninger.md)
 * [Krav og betalinger](./anvendelsesomraader/kravogbetalinger.md)
 * [Mva-meldingen](./anvendelsesomraader/mvamelding.md)
