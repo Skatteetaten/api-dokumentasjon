@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, A-ordning, avstemming]
 keywords: [a-melding, aordning, avstemming]
-last_updated: Mai 21, 2026
+last_updated: Juni 03, 2026
 hide_table_of_contents: true
 ---
 
@@ -24,6 +24,8 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Status nye APIer
+
+**3.juni oppdatert**: Avstemmingsrapporten er lagt ut i produksjonsmiljø. Ny versjon av [Swagger-dokumentasjon](https://app.swaggerhub.com/apis/skatteetaten/avstemmingsrapport-amelding-api/) har endepunkt for produksjonsmiljø.
 
 **2.juni oppdatert**: Fjernet punktet i dokumentasjonen med at idempotencyKey parameteren er påkrevet (det er det altså ikke).
 Avstemmingsrapporten er kun i JSON-format. Det vil vurderes på sikt om Skatteetaten vil tilby andre formater, f.eks ODS og XML. 
