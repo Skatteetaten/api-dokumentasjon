@@ -399,6 +399,10 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 
 Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/mva-fastsetting-api/) på SwaggerHub for beskrivelse av informasjonsmodellen.
 
+Obs. Hvis modellene på denne siden avviker fra Open API spesifikasjonen på Swaggerhub, er det Open API spesifikasjonen som er mest oppdatert.
+
+![Toppnivå](../../static/download/mvafastsetting/MerverdiavgiftFastsetting.png)
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
