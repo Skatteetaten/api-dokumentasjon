@@ -62,27 +62,29 @@ TODO: Må oppdateres
 
 ```json
 {
-  "inntektsmottakerOgArbeidsgiver": [
+  "oppgaveInntektsmottaker": [
     {
-      "kalendermaaned": "2023-08",
-      "aggregatId": 2,
-      "norskIdentifikator": "01916499716",
-      "opplysningspliktig": "314086945",
-      "underenhet": "315608589",
-      "kildesystem": "testdatagenerator-rst-ekstern-deling",
-      "opptjeningsgrunnlag": [
-        {}
-      ]
+      "opplysningspliktigId": "212403792",
+      "virksomhetId": "315482054",
+      "kalendermaaned": "2025-08",
+      "opprettet": "2026-03-24T14:35:30.935328+01:00",
+      "ajourholdstidspunkt": "2025-08-20T08:16:46.079+02:00",
+      "inntektsmottaker": {
+        "norskIdentifikator": "18848698543",
+        "utleggstrekk": [
+          {
+            "beskrivelse": "utleggstrekkSkatt",
+            "beloep": -482
+          }
+        ]
+      }
     }
   ]
 }
-
 ```
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
-
-TODO: Må oppdateres
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 
