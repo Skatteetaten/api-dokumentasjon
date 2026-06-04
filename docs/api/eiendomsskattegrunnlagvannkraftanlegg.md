@@ -47,7 +47,7 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
 
 ## Støttetjenester
 
-For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Utleggstrekk hendelser API`
+For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Eiendomsskattegrunnlag vannkraftanlegg hendelser API`
 
 ## Datakatalog
 
