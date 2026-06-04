@@ -35,6 +35,7 @@ URL-er til API-ene, beskrivelsen av parameterne, endepunkter og respons ligger i
 hendelseslistene på SwaggerHub:
 
 - [Arbeidsforhold hendelser API](https://app.swaggerhub.com/apis/skatteetaten/arbeidsforhold-hendelser-api)
+- [Eiendomsskattegrunnlag vannkraftanlegg hendelser API](https://app.swaggerhub.com/apis/skatteetaten/eiendomsskattegrunnlag-vannkraftanlegg-hendelser-api)
 - [Formuesgrunnlag for eiendomsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesgrunnlag-for-endomsskatt-hendelser-api)
 - [Formuesobjekt fast eiendom hendelser API](https://app.swaggerhub.com/apis/skatteetaten/formuesobjekt-fast-eiendom-hendelser-api)
 - [Inntekt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/inntekt-hendelser-api)
@@ -52,6 +53,7 @@ hendelseslistene på SwaggerHub:
 - [Skattemelding utkast hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skattemelding-utkast-hendelser-api)
 - [Tilleggsskatt hendelser API](https://app.swaggerhub.com/apis/skatteetaten/tilleggsskatt-hendelser-api)
 - [Underenhet fra A-ordningen hendelser API](https://app.swaggerhub.com/apis/skatteetaten/underenhet-fra-a-ordningen-hendelser-api)
+- [Utleggstrekk hendelser API](https://app.swaggerhub.com/apis/skatteetaten/utleggstrekk-hendelser-api)
 
 ## Tilgang
 
@@ -60,8 +62,9 @@ hendelseslistene på SwaggerHub:
 Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som relaterte oppslagstjenester:
 
 | Hendelsesliste                                                        | Scope                                                                                                                                                                                                |
-| --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Arbeidsforhold hendelser API                                          | skatteetaten:arbeidsforhold                                                                                                                                                                          |
+| Eiendomsskattegrunnlag vannkraftanlegg hendelser API                  | skatteetaten:eiendomsskattegrunnlagvannkraftanlegg                                                                                                                                                   |
 | Formuesgrunnlag for eiendomsskatt hendelser API                       | skatteetaten:formuesgrunnlageiendomsskatt                                                                                                                                                            |
 | Formuesobjekt fast eiendom hendelser API                              | skatteetaten:formuesobjektfasteiendom                                                                                                                                                                |
 | Inntekt hendelser API                                                 | skatteetaten:inntekt                                                                                                                                                                                 |
@@ -79,6 +82,7 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 | Skattemelding utkast hendelser API                                    | skatteetaten:skattemelding                                                                                                                                                                           |
 | Tilleggsskatt hendelser API                                           | skatteetaten:tilleggsskatt                                                                                                                                                                           |
 | Underenhet fra A-ordningen hendelser API                              | skatteetaten:underenhetaordningen                                                                                                                                                                    |
+| Utleggstrekk API                                                      | skatteetaten:utleggstrekk                                                                                                                                                                            |
 
 ### Delegering
 
