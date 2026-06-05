@@ -105,5 +105,30 @@ Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/eiend
 Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, men man kan benytte hendelseslisten for å finne
 testdata man kan benytte for å teste oppslagstjenesten.
 
+Det er produsert testdata på følgende virksomheter:
+
+| Orgnummer	| Beskrivelse |
+|---|---|
+| 312168421 | Stort kraftverk lineær avskrivning 	|
+| 314101138	| Stort kraftverk alle avskrivning variant	|
+| 310209597	| Kun kraftverk stort	|
+| 313542068	| Stort kraftverk kun særskilt	|
+| 312428490 | Lite kraftverk med ikke avskrivbart anlaggsmiddel	|
+| 313946363	| Lite kraftverk med anleggsmiddel som ikke er aktivert	|
+| 214290162	| Lite kraftverk med saldoavskravtanleggsmiddel som ikke er aktivert	|
+| 313623882	| Tre kraftverk 2 store og en liten	|
+| 311716476 | Selskap a eier samme kraftselskap med 75 %	|
+| 312253828	| Selskap b eier samme kraftselskap med 25 %	|
+| 310176583	| Stort kraftverk fradrag for kostander	|
+| 313538591	| Stort og lite kraftverk med fradrag for kostander	|
+| 313890236	| Stort kraftverk fradrag til kostander	|
+| 310622850	| Lite kraftverk uten avskrivning	|
+| 312882450	| Tre små kraftverk	|
+| 313379450	| Stort kraftverk fradrag for kostander og 4 særskilte driftsmiddel utgiftsført i grunnrente	|
+| 310661449	| Stort kraftverk med 3 lineære og 3 saldoavskrivningner |
+| 313373614 | Stort kraftverk fradrag for kostander	|
+| 313595412	|	Kun to store kraftverk med fradrag for kostnader	|
+| 312435837	|	To kraftverk flere ikke avskrivbare elementer	|
+
 </TabItem>
 </Tabs>
