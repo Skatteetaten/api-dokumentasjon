@@ -232,7 +232,7 @@ Beskrivelse av sentrale elementer:
 * **Saksøkt** er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan **saksøktesProsessfullmektig** utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
 * **Prosessfullmektig** må være en fysisk person, f.eks. en advokat eller avdvokatfullmektig som er en generell **bevillingshaver** eller har en spesifikk **fullmakt** til å opptre på vegne av en part. Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må fullmakt vedlegges.
 
-![Parter](../../static/download/utleggsbegjaering/begjaering-b1.png)
+![Parter](../../static/download/utleggsbegjaering/b%20parter.png)
 
 #### Datatyper:
 
@@ -247,7 +247,7 @@ Beskrivelse av sentrale elementer:
 * **betalingsinformasjon** angir hvor, hvordan og til hvem innbetalingen skal gjøres dersom det ender opp i samordnet trekk.
 * **valgtNamsmannsdistrikt** skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6).
 
-![Generelle elementer-1](../../static/download/utleggsbegjaering/begjaering-c1.png)
+![Generelle elementer-1](../../static/download/utleggsbegjaering/c%20generelle%20elementer.png)
 ![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
 ### d) Kravinformasjon - Utleggsbegjæring v2.0
@@ -286,7 +286,7 @@ Begjæringens tvangsgrunnlag omfatter data om tvangsgrunnlag(ene) i begjæringen
 * [Informasjon for Alminnelig tvangsgrunnlag](#informasjon-for-alminnelig-tvangsgrunnlag)
 * [Informasjon for Særlig tvangsgrunnlag](#informasjon-for-særlig-tvangsgrunnlag)
 
-![BegjæringensTvangsgrunnlag](../../static/download/utleggsbegjaering/begjaering-e.png)
+![BegjæringensTvangsgrunnlag](../../static/download/utleggsbegjaering/e%20begjaeringens%20tvangsgrunnlag.png)
 
 ## Generell informasjon for alle typer tvangsgrunnlag
 
