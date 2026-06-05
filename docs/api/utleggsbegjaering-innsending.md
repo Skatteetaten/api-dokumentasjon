@@ -227,10 +227,10 @@ Beskrivelse av sentrale elementer:
 
 ## Informasjon om partene i Utleggsbegjæringen.
  
-* **Saksøker** er den som erklærer at noen er skyldig penger. Saksøker skal ha en prosessfullmektig, **saksøkersProsessfullmektig**, som representerer seg i sak om tvangsfullbyrdelse . Typisk kan dette være en ansatt hos saksøkeren, med fullmakt. Dersom man sender inn begjæring som prosessfullmektig for saksøker, så skal prosessfullmektigen være lagt inn som innsender OG saksøkers prosessfullmektig.
-* **Innsender** er den som sender inn Utleggsbegjæringen på vegne av saksøker. Innsender kan også være eller ha prosessfullmektig, **innsendersProsessfullmektig**. Dette feltet er vil fases ut. Som inkassoselskap skal du sende inn innsender, innsendersProssesfullmekting og bevillingshaver. Innsender og innsendersprossessfullmektig vil for inkassoselskap være det samme.
+* **Saksøker** er den som har et pengekrav mot saksøkte. Saksøker kan være representert av en prosessfullmektig som er **saksøkersProsessfullmektig**. Typisk kan dette være en ansatt hos saksøkeren, med fullmakt. Dersom man sender inn begjæring som prosessfullmektig for saksøker, så skal prosessfullmektigen være lagt inn som innsender OG saksøkers prosessfullmektig.
+* **Innsender** er den som sender inn utleggsbegjæringen. Hvis saksøker sender inn begjæringen selv vil vedkommende være både saksøker og innsender. Hvis saksøkers prosessfullmektig sender inn begjæringen på vegne av saksøker skal den som er prosessfullmektig både føres som saksøkers prosessfullmektig og som innsender.
 * **Saksøkt** er den man krever penger fra. Dersom man er kjent med at denne er representert av prosessfullmektig, kan **saksøktesProsessfullmektig** utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
-* **Prosessfullmektig** må være en fysisk person, f.eks. en advokat eller avdvokatfullmektig som er en generell **bevillingshaver** eller har en spesifikk **fullmakt** til å opptre på vegne av en part. Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må fullmakt vedlegges.
+* **Prosessfullmektig** må være en fysisk person, f.eks. en advokat eller avdvokatfullmektig som er en generell **bevillingshaver** eller har en spesifikk **fullmakt** til å opptre på vegne av en part. Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må fullmakt vedlegges. **Innsedersprosessfullmektig** vil fjernes fra modellen i en senere utgave. Det som eventuelt sendes inn i dette feltet vil ikke bli benyttet til noe. 
 
 ![Parter](../../static/download/utleggsbegjaering/b%20parter.png)
 
