@@ -186,6 +186,21 @@ Videre har man entiteten «Krav» som er kjerneinformasjon med detaljer om «pen
 
 I «BegjæringensTvangsgrunnlag» skal man legge inn detaljer om grunnlaget for Kravene i utleggsbegjæringen.
 
+### Oversikt over endringer som er gjort i versjon 2.1 av Utleggsbegjæringen.
+- Lagt inn nytt element kreverRenterAvRettsgebyr under KreverRettsgebyrErstattet
+- Gjort virksomhetstype under Virksomhet valgfritt
+- Følgende elementer er gjort valgfrie i v2.1 og satt som deprecated, dvs. at de er planlagt fjernet helt fra modellen i neste versjon:
+eksternSaksreferanse under BegjæringensTvangsgrunnlag
+type under Varsel
+forkynnelsesdato under Domsslutningsinformasjon
+forpliktet og berettiget under Domsslutningsinformasjon
+skyldner og kreditor under SærligTvangsgrunnlag
+vedtakendeMyndighet under TvangsmulktEllerLovbestemmelse
+kravetsGrunnlag under SkriftligMeddelelse
+vitne under Gjeldsbrev
+inndrivelsesklausul under ElektroniskGjeldserklæring
+- I tillegg er hele entiteten Rentekrav under Krav satt som deprecated (er allerede valgfri)
+
 ### a) Rotnivå - Utleggsbegjæring v2.1
 ## RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen.
 
