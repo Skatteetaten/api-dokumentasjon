@@ -5,7 +5,7 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [API,eiendomsskattegrunnlag,vannkraftanlegg]
-last_updated: Jun 4, 2026
+last_updated: Jun 5, 2026
 hide_table_of_contents: true
 ---
 
