@@ -45,6 +45,9 @@ Se også [eksempler](https://skatteetaten.github.io/api-dokumentasjon/api/kravog
 
 ## Tilgang
 
+### Skatteetaten må gi tilgang
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en rettighetspakke. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:kravogbetalinger`
 
@@ -52,9 +55,6 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:kr
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Krav og betalinger API - På vegne av`
-
-### Skatteetaten må gi tilgang
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Rettighetspakker
 Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakken](../om/rettighetspakker.md).
