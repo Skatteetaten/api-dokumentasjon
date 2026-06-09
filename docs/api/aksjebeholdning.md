@@ -30,7 +30,7 @@ URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger i 
 ## Tilgang til API-et
 
 ### Skatteetaten må gi tilgang
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en rettighetspakke. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:aksjebeholdning`
