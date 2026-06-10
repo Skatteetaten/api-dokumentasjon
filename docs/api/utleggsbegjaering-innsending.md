@@ -409,6 +409,18 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 </p>
 </details>
 
+## Valideringsregler
+| Vilkårnavn | Gjelder kun endringer | Tittel | Beskrivelse | 
+| :--- | :--- | :--- | :--- | :--- |
+| BETALINGSOPPFORDRING_PAA_GYLDIG_KRAVTYPE |  | Betalingsoppfordring kan bare angis på utenrettslig kostnad | Dersom betalingsoppfordring er angitt, så må den være angitt på krav av type Utenrettslig kostnad | Krav %s kan ikke ha betalingsoppfordring. Kravtype %s |
+| ENTEN_SAKSKOSTNADER_FOR_SKRIVING_ELLER_SAKSKOSTNADER |  | Det er kun lov å be om sakskostnad for skriving eller sakskostnader | Det er ikke lov å anføre både Sakskostnader for skriving og Sakskostnader. Man kan kun be om en slik kostnad | Det er oppgitt mer enn en Sakskostnad for skriving eller Sakskostnad%s  |
+| FRISTAVBRYTENDE_TILTAK_PAA_GYLDIG_KRAVTYPE |  | Fristavbrytende tiltak kan ikke angis på sakskostnader for skriving eller sakskostnader | Fristavbrytende tiltak kan ikke angis på krav av type Sakskostnader for skriving eller sakskostnader | Krav %s kan ikke ha  Fristavbrytende tiltak. Kravtype %s |
+| GJENSTAAENDEBELOEP_MAA_STEMME_MED_INNBETALINGER_OG_KRAVENDRINGER |  | Gjenstående beløp på begjæringsdato er ikke i henhold til rapportere innbetalinger og kravendringer | Gjenstående beløp må være Opprinnelig beløp minus innbetalinger og kravendringer som er gjort til og med begjæringsdato | Krav %s  er oppgitt med  opprinnelig beløp %d og gjenstående beløp %d. Innbetalinger og kravendringer til og med begjæringsdato %s tilsier at gjenstående beløp skulle vært %d |
+| HOVEDKRAV_KAN_BARE_HA_ETT_TVANGSGRUNNLAG |  | Hovedkrav kan bare ha ett tvangsgrunnlag | Hovedkrav kan bare bli pekt på av ett tvangsgrunnlag | Hovedkrav %s har for mange  tvangsgrunnlag %s | 
+| HOVEDKRAV_KAN_IKKE_RELATERES_TIL_ANDRE_KRAV |  | Hovedkrav skal ligge på toppnivå og kan derfor ikke peke på andre krav | Hovedkrav skal være på toppnivå og kan derfor ikke peke på andre krav | Hovedkrav %s peker på krav %s |
+
+
+
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
