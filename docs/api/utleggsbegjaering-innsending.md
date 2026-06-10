@@ -411,7 +411,7 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 
 ## Valideringsregler
 | Vilkårnavn | Gjelder kun endringer | Tittel | Beskrivelse | 
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | BETALINGSOPPFORDRING_PAA_GYLDIG_KRAVTYPE |  | Betalingsoppfordring kan bare angis på utenrettslig kostnad | Dersom betalingsoppfordring er angitt, så må den være angitt på krav av type Utenrettslig kostnad | Krav %s kan ikke ha betalingsoppfordring. Kravtype %s |
 | ENTEN_SAKSKOSTNADER_FOR_SKRIVING_ELLER_SAKSKOSTNADER |  | Det er kun lov å be om sakskostnad for skriving eller sakskostnader | Det er ikke lov å anføre både Sakskostnader for skriving og Sakskostnader. Man kan kun be om en slik kostnad | Det er oppgitt mer enn en Sakskostnad for skriving eller Sakskostnad%s  |
 | FRISTAVBRYTENDE_TILTAK_PAA_GYLDIG_KRAVTYPE |  | Fristavbrytende tiltak kan ikke angis på sakskostnader for skriving eller sakskostnader | Fristavbrytende tiltak kan ikke angis på krav av type Sakskostnader for skriving eller sakskostnader | Krav %s kan ikke ha  Fristavbrytende tiltak. Kravtype %s |
