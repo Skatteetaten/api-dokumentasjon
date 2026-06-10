@@ -418,6 +418,9 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 | GJENSTAAENDEBELOEP_MAA_STEMME_MED_INNBETALINGER_OG_KRAVENDRINGER |  | Gjenstående beløp på begjæringsdato er ikke i henhold til rapportere innbetalinger og kravendringer | Gjenstående beløp må være Opprinnelig beløp minus innbetalinger og kravendringer som er gjort til og med begjæringsdato | Krav %s  er oppgitt med  opprinnelig beløp %d og gjenstående beløp %d. Innbetalinger og kravendringer til og med begjæringsdato %s tilsier at gjenstående beløp skulle vært %d |
 | HOVEDKRAV_KAN_BARE_HA_ETT_TVANGSGRUNNLAG |  | Hovedkrav kan bare ha ett tvangsgrunnlag | Hovedkrav kan bare bli pekt på av ett tvangsgrunnlag | Hovedkrav %s har for mange  tvangsgrunnlag %s | 
 | HOVEDKRAV_KAN_IKKE_RELATERES_TIL_ANDRE_KRAV |  | Hovedkrav skal ligge på toppnivå og kan derfor ikke peke på andre krav | Hovedkrav skal være på toppnivå og kan derfor ikke peke på andre krav | Hovedkrav %s peker på krav %s |
+| HOVEDKRAV_MAA_HA_TVANGSGRUNNLAG |  | Hovedkrav må ha tvangsgrunnlag | Hovedkrav må bli pekt på av et tvangsgrunnlag | 	Hovedkrav %s  mangler tvangsgrunnlag |
+| KRAV_GYLDIG_FORFALLSDATO |  | Krav må ha gyldig forfallsdato | Kravets forfallsdato må være før begjæringsdato | Kravets forfallsdato må være før begjæringsdato
+Krav %s har forfallsdato %d. Begjæringsdato er %d |
 
 
 
