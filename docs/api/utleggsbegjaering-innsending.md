@@ -197,6 +197,7 @@ I «BegjæringensTvangsgrunnlag» skal man legge inn detaljer om grunnlaget for 
 
 ### Oversikt over endringer som er gjort i versjon 2.1 av Utleggsbegjæringen.
 - Lagt inn nytt element kreverRenterAvRettsgebyr under KreverRettsgebyrErstattet
+- Lagt inn nytt element ukjentAdresse under AdresseIBegjæring. Vil erstatte ukjentBosted som vil bli fjernet i neste versjon av modellen.
 - Gjort virksomhetstype under Virksomhet valgfritt
 - Følgende elementer er gjort valgfrie i v2.1 og satt som deprecated, dvs. at de er planlagt fjernet helt fra modellen i neste versjon:
 eksternSaksreferanse under BegjæringensTvangsgrunnlag
