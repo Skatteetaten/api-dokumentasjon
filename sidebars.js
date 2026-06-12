@@ -68,10 +68,8 @@ const sidebars = {
       "API-er for å hente data": [
         "api/frister",
         "api/kravogbetalinger",
-        { id: 'api/utleggsbegjaering-innsending', label: "Utleggsbegjæring innsending", type: 'doc' },
-        { id: 'api/utleggsbegjaering-innsyn', label: "Utleggsbegjæring innsyn", type: 'doc' },
-        { id: 'api/utleggsbegjaering-status', label: "Utleggsbegjæring status", type: 'doc' },
-     ],
+                { id: 'api/utleggsbegjaering-innsyn', label: "Utleggsbegjæring innsyn", type: 'doc' },
+      ],
     },   
     {
       "API-er for innrapportering": [
@@ -116,6 +114,8 @@ const sidebars = {
         { id: 'api/innrapportering-tilskudd-prim', label: "Tilskudd, erstatning mv. innen primærnæringene", type: 'doc' },
         { id: 'api/innrapportering-verdipapirfond', label: "Verdipapirfond", type: 'doc' },
         { id: 'api/innrapportering-verdipapirfondshistorikk', label: "Verdipapirfondshistorikk", type: 'doc' },
+        { id: 'api/utleggsbegjaering-innsending', label: "Utleggsbegjæring innsending", type: 'doc' },
+        { id: 'api/utleggsbegjaering-status', label: "Utleggsbegjæring status", type: 'doc' },
         { id: 'api/utleggstrekkfrakommune', label: "Utleggstrekk fra kommune", type: 'doc' },
       ],
     },
