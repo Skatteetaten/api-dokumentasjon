@@ -68,7 +68,9 @@ const sidebars = {
       "API-er for å hente data": [
         "api/frister",
         "api/kravogbetalinger",
-        { id: 'api/utleggsbegjaering', label: "Utleggsbegjæring", type: 'doc' },
+        { id: 'api/utleggsbegjaering-innsending', label: "Utleggsbegjæring innsending", type: 'doc' },
+        { id: 'api/utleggsbegjaering-innsyn', label: "Utleggsbegjæring innsyn", type: 'doc' },
+        { id: 'api/utleggsbegjaering-status', label: "Utleggsbegjæring status", type: 'doc' },
      ],
     },   
     {
