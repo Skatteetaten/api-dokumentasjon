@@ -135,6 +135,27 @@ Forespørsel om endringer
   "varslingstype": "VARSEL_VED_FOERSTE_ENDRING"
 }
 ```
+Forespørsel om endringer for kun 1 arbeidsgiver
+```
+{
+  "inntektsaar": "2025",
+  "bestillingstype": "HENT_KUN_ENDRING",
+  "kontaktinformasjon": {
+    "epostadresse": "john.smith@example.com",
+    "mobiltelefonummer": "+4794123456"
+  },
+  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING",
+  "forespoerselOmSkattekortTilArbeidsgiver": {
+    "arbeidsgiver": [
+      {
+        "arbeidsgiveridentifikator": {
+          "organisasjonsnummer": "312444659"
+        }
+      }
+    ]
+  }
+}
+```
 
 
 ## Eksempel på respons
