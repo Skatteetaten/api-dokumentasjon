@@ -263,6 +263,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikas
 | 400         | FOR_001  | Request payload validerer ikke            |
 | 400         | FOR_002  | Request payload parser ikke               |
 | 400         | FOR_003  | Request parameter validerer ikke. Oppstår kun ved henting av svar dersom man ikke bruker en referanse på formen: BR[0-9]+ |
+| 400         | FOR_004  | Ugyldig forespørsel: Du må angi i bestillingen hvilken arbeidsgiver du ønsker skattekortendringer for. Denne meldingen vil man få hvis man bestiller endringer uten å angi hvilken arbeidsgiver man ønsker endringer for. Dette gjelder kun for systembrukere som henter for flere arbeidsgivere. |
 | 403         |          | Denne vil man kunne få hvis requesten inneholder for mange fødselsnummer eller hvis maskinportentokenet ikke er gyldig (feks at det mangler systembruker). Se også den generelle beskrivelsen av http-statuskodene. |
 
 </TabItem>
