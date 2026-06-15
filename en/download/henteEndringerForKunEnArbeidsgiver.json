@@ -1,0 +1,18 @@
+{
+  "inntektsaar": 2026,
+  "bestillingstype": "HENT_KUN_ENDRING",
+  "kontaktinformasjon": {
+    "epostadresse": "ola.normann@firma.no",
+    "mobiltelefonummer": "12345678"
+  },
+  "varslingstype": "VARSEL_VED_FOERSTE_ENDRING",
+  "forespoerselOmSkattekortTilArbeidsgiver": {
+    "arbeidsgiver": [
+      {
+        "arbeidsgiveridentifikator": {
+          "organisasjonsnummer": "312444659"
+        }
+      }
+    ]
+  }
+}
