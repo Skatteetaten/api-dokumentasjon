@@ -110,15 +110,177 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 
 ## Innsending
 
-### JSON
+### Eksempel på innsending
 
-#### Eksempel på innsending
+En innsending består minst av følgende kall:
+* Opprett innsending
+* Last opp fil
+* Sjekk status (Hent opplasting/innsending)
+* Send inn
 
-Her vil det bli lagt ut eksempler
+#### Opprett innsending
 
-#### Eksempel på respons
+Request url for testmiljø:
+POST https://innrapporteringkontroll.api.skatteetaten-test.no/api/v1/innsendinger
 
-Her vil det bli lagt ut eksempler
+**Request body**
+
+```json
+{
+  "metadata": {
+    "kommentarTilFiler": "Beskrivelse av filene, svar på evt. spørsmål fra saksbehandler, osv.",
+    "kontaktinformasjon": {
+      "navn": "Navn på kontaktperson",
+      "telefonnummer": "00000000",
+      "epostadresse": "test3@skatteetaten.no"
+    }
+  },
+  "dialogid": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+}
+```
+
+**Response**
+
+```json
+{
+  "metadata": {
+    "kommentarTilFiler": "Beskrivelse av filene, svar på evt. spørsmål fra saksbehandler, osv.",
+    "kontaktinformasjon": {
+      "navn": "Navn på kontaktperson",
+      "telefonnummer": "00000000",
+      "epostadresse": "test3@skatteetaten.no"
+    }
+  },
+  "dialogid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "id": "8d53faf7-08db-43f1-9307-9b42e713e5d4",
+  "status": "UNDER_INNSENDING",
+  "opplastinger": [
+    {
+      "id": "7381b493-0d00-4b05-86e8-029c473eb0d8",
+      "status": "LASTER_OPP",
+      "feilliste": [],
+      "sistOppdatertTidspunkt": "2026-06-16T08:27:00.223Z"
+    }
+  ]
+}
+```
+
+#### Last opp fil
+
+Request url for testmiljø:
+POST https://innrapporteringkontroll.api.skatteetaten-test.no/api/v1/innsendinger/{innsendingid}/opplastinger
+Bruk id feltet fra responsen i post innsendinger som innsendingid
+
+**Request headere**
+* filnavn - Navnet på fila som lastes opp
+* content-type - type fil, se api-spesifikasjonen for hvilke typer som er tillatt
+
+**Request body**
+
+Fila som skal lastes opp
+
+**Response**
+
+```json
+{
+  "id": "6df3b5d4-d035-423f-b93e-7ccc32ce4f0c",
+  "status": "LASTER_OPP",
+  "feilliste": [],
+  "sistOppdatertTidspunkt": "2026-06-16T09:19:24.368Z"
+}
+```
+
+#### Sjekk status
+Her kan man enten sjekke status for hele innsendingen + alle opplastinger, eller spesifikt for en og en opplasting. Dette eksempelet viser hele innsendingen.
+
+Validering av opplastede filer skjer asynkront. Det betyr at man må polle statusendepunktet frem til innsendingen får status "KLAR_TIL_INNSENDING"
+
+
+Request url for testmiljø:
+GET https://innrapporteringkontroll.api.skatteetaten-test.no/api/v1/innsendinger/{innsendingid}/opplastinger
+Bruk id feltet fra responsen i post innsendinger som innsendingid
+
+**Response**
+
+```json
+{
+  "metadata": {
+    "kommentarTilFiler": "Beskrivelse av filene, svar på evt. spørsmål fra saksbehandler, osv.",
+    "kontaktinformasjon": {
+      "navn": "Navn på kontaktperson",
+      "telefonnummer": "00000000",
+      "epostadresse": "test3@skatteetaten.no"
+    }
+  },
+  "dialogid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "id": "8d53faf7-08db-43f1-9307-9b42e713e5d4",
+  "status": "KLAR_TIL_INNSENDING",
+  "opplastinger": [
+    {
+      "id": "6df3b5d4-d035-423f-b93e-7ccc32ce4f0c",
+      "status": "VALIDERT_OK",
+      "feilliste": [],
+      "sistOppdatertTidspunkt": "2026-06-16T09:34:31.374Z"
+    }
+  ]
+}
+```
+
+#### Send inn
+Request url for testmiljø:
+PUT https://innrapporteringkontroll.api.skatteetaten-test.no/api/v1/innsending
+
+**Request body**
+
+```json
+  "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+```
+
+**Response body**
+```json
+  {
+    "dialogId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "forsendelseId": "2dc69668-86c1-4837-a363-32ab35cbb8c4"
+  }
+```
+
+### Eksempel med feilet validering
+Dersom en opplastet fil ikke passerer validering vil den få status "VALIDERING_FEILET" med en liste over feil i feilliste. Responsen fra GET innsending vil da se omtrent slik ut:
+
+**Response body**
+```json
+{
+  "metadata": {
+    "kommentarTilFiler": "kommentar",
+    "kontaktinformasjon": {
+      "navn": "navn",
+      "telefonnummer": "telefon",
+      "epostadresse": "epost"
+    }
+  },
+  "dialogid": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "id": "019ecfee-f1c5-74e3-ad5f-94c7c5d28bd8",
+  "status": "VALIDERING_FEILET",
+  "opplastinger": [
+    {
+      "id": "019ecfef-0bcb-703a-b8e1-8a2d0bea9c84",
+      "status": "VALIDERING_FEILET",
+      "feilliste": [
+        {
+          "kode": "GLD_010",
+          "melding": "cvc-datatype-valid.1.2.1: '1957-15-13' is not a valid value for 'date'.",
+          "sti": "Line: 95, Column: 70",
+          "angittVerdi": null,
+          "antallTilfeller": 1
+        }
+      ],
+      "sistOppdatertTidspunkt": "2026-06-16T12:16:59.544902+02:00"
+    }
+  ]
+}
+```
+
+
 
 
 </TabItem>
