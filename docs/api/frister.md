@@ -5,7 +5,7 @@ folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, frister ]
-last_updated: Apr 20, 2026
+last_updated: Jun 22, 2026
 hide_table_of_contents: true
 ---
 
