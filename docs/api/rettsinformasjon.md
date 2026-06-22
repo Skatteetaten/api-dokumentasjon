@@ -29,6 +29,7 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/rettsi
 SwaggerHub.
 
 ## Tilgang
+Tjenesten inneholder ikke taushetsbelagte opplysninger, og krever derfor ikke særskilt hjemmel for tilgang, men forutsetter at bruken er i samsvar med de til enhver tid gjeldende bruks- og delingsvilkår.
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en rettighetspakke. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
