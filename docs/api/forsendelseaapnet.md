@@ -10,7 +10,7 @@ last_updated: Jun 22, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>Tjeneste for å markere en forsendelse som åpnet. Når forsendelsen er markert som åpnet vil ikke lenger sluttbruker motta varslinger for forsendelsen.</Summary>
+<Summary>Tjeneste for å markere en enkelt forsendelse i en dialog som åpnet. Når forsendelsen er markert som åpnet vil ikke lenger sluttbruker motta varslinger for forsendelsen, og den vises som åpnet i Skatteetaten og Altinn sine innbokser.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -21,7 +21,7 @@ For generell informasjon om tjenestene se egne sider om:
 
 ## Dialogtoken
 
-API'et krevet et dialogtoken i Authorization header for autentisering. Dialogtokenet hentes fra Dialogporten, og er gyldig for én forsendelse i Dialogporten. Det vil si at det må hentes nytt dialogtoken for hver forsendelse.
+API'et krevet et dialogtoken i Authorization header for autentisering. Dialogtokenet hentes fra Dialogporten, og er gyldig for én dialog i Dialogporten.
 Informasjon i dialogtokenet benyttes til å knytte åpnet aktiviteten til en bestemt part. 
 Les mer om dialogtoken og hvordan det hentes i Dialogporten i [dokumentasjonen for Dialogporten](https://docs.altinn.studio/nb/dialogporten/reference/authorization/dialog-tokens/).
 
@@ -75,7 +75,7 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne tjeneste
 | 404             | Finner ikke forespurt ressurs                |
 | 405             | HTTP-metode ikke støttet                     |
 
-Feilresponsene inneholder ProblemDetails som presiserer feilen ytterligere.
+Feilresponsene inneholder ProblemDetails som presiserer feilen ytterligere. Mer info [her](https://docs.altinn.studio/nb/dialogporten/reference/front-end/front-channel-embeds/#feilhåndtering).
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-3">
