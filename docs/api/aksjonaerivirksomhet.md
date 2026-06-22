@@ -30,6 +30,11 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/aksjon
 på SwaggerHub.
 
 ## Tilgang til API-et
+Tjenesten er tilgjengelig i en taushetsbelagt utgave og i en åpen utgave.
+ 
+Tilgang til tjenesten som inneholder taushetsbelagte opplysninger og krever eksplisitt lovregulering for tilgang. For å få tilgang til taushetsbelagte opplysninger, for videre bruk i annen oppgaveløsning, må den som ber om tilgang ha et behandlingsgrunnlag for mottak og bruk som er bygget på hjemmel i lov, ikke samtykke, og Skatteetaten må ha grunnlag som opphever vår taushetsplikt for utlevering.
+ 
+Tilgang til tjenesten uten taushetsbelagte opplysninger krever ikke særskilt hjemmel, men forutsetter at bruken er i samsvar med de til enhver tid gjeldende bruks- og delingsvilkår. 
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en rettighetspakke. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
