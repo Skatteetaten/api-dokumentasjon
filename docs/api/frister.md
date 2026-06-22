@@ -29,6 +29,11 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/friste
 SwaggerHub.
 
 ## Tilgang
+Tjenesten er tilgjengelig i en taushetsbelagt utgave og i en utgave som støtter systembrukerløsningen for innsyn i egne data.
+ 
+Tilgang til tjenesten som inneholder taushetsbelagte opplysninger og krever eksplisitt lovregulering for tilgang. For å få tilgang til taushetsbelagte opplysninger om andre personer eller virksomheter, for videre bruk i annen oppgaveløsning, må den som ber om tilgang ha et behandlingsgrunnlag for mottak og bruk som er bygget på hjemmel i lov, ikke samtykke, og Skatteetaten må ha grunnlag som opphever vår taushetsplikt for utlevering.
+ 
+For leverandører av sluttbrukersystemer som ønsker å tilgjengeliggjøre opplysninger for sine kunder, gjelder [egne krav til tilgang til tjenesten.](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/frister-sbs/)
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en rettighetspakke. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
