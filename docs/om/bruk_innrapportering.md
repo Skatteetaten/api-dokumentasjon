@@ -60,5 +60,9 @@ standard prosess.
    tilbakemeldinger. Disse API-ene krever som regel identifikatorer for forsendelse og dokument som du får fra
    Dialogporten i steg 8.
 
+## API for å markere en forsendelse som åpnet
+
+Skatteetaten har en tjeneste for å markere en forsendelse som åpnet. Når en forsendelse er markert som åpnet vil ikke lenger sluttbruker motta varslinger for forsendelsen. 
+Les mer om denne tjenesten i dokumentasjonen for [Forsendelse åpnet](../api/forsendelseaapnet.md).
 
 
