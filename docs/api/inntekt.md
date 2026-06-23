@@ -31,6 +31,13 @@ i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/inntek
 
 ## Tilgang
 
+Tjenesten inneholder taushetsbelagte opplysninger om alle skattepliktige personer og/eller virksomheter, og krever eksplisitt lovregulering for tilgang. Tjenesten er ikke tilrettelagt for systembrukerløsningen og visning i sluttbrukersystem.
+For å få tilgang til dette API-et, for videre bruk av opplysninger om andre personer eller virksomheter i annen oppgaveløsning, må den som ber om tilgang ha et behandlingsgrunnlag for mottak og bruk som er bygget på hjemmel i lov, ikke samtykke, og Skatteetaten må ha grunnlag som opphever vår taushetsplikt for utlevering
+
+### Skatteetaten må gi tilgang
+
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+
 ### Scope
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:inntekt`
@@ -39,10 +46,6 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:in
 
 Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
 opp følgende tjeneste i Altinn for å delegere tilgangen: `Inntekt API - På vegne av`
-
-### Skatteetaten må gi tilgang
-
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Rettighetspakker
 
