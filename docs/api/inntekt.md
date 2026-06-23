@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Inntekt, Inntektsmottaker ]
 keywords: [ inntekt, inntektsmottaker, oppgave, a-ordning, lønn, inntekt ]
-last_updated: Mar 12, 2026
+last_updated: Jun 23, 2026
 hide_table_of_contents: true
 ---
 
@@ -36,7 +36,7 @@ For å få tilgang til dette API-et, for videre bruk av opplysninger om andre pe
 
 ### Skatteetaten må gi tilgang
 
-For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en eller flere rettighetspakker. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
+For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang til en rettighetspakke. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/deling/).
 
 ### Scope
 
