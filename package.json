@@ -36,7 +36,10 @@
     "@docusaurus/module-type-aliases": "^3.9.2",
     "@docusaurus/tsconfig": "^3.9.2",
     "@types/cheerio": "0.22.35",
+    "@types/jest": "^30.0.0",
     "@types/lunr": "2.3.7",
+    "jest": "^30.4.2",
+    "ts-jest": "^29.4.10",
     "typescript": "5.5.2"
   },
   "browserslist": {
