@@ -52,10 +52,6 @@ For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang. Les 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattdialogdokument`
 I en overgangsperiode, så vil følgende scope også gi tilgang til tjenesten: `skatteetaten:formueinntekt/skattemelding`
 
-### Delegering
-Tilgang til dette API-et kan delegeres i Altinn, f.eks. dersom leverandør benyttes for den tekniske oppkoblingen. Søk
-opp følgende tjeneste i Altinn for å delegere tilgangen: `Frister API - På vegne av`
-
 ### ID-porten
 For noen dialoger kan et sluttbrukersystem oppleve å mangle API-tilgang til dokumentet. I disse tilfellene vil en innlogget bruker via ID-porten likevel kunne ha tilgang til dokumentet via GUI URL-en på Skatteetatens brukerflater. Denne forskjellen skyldes at Maskinporten og ID-porten har forskjellige tilgangsmekanismer, og at denne API-tjenesten kun støtter Maskinporten.
 
@@ -69,23 +65,7 @@ Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 ## JSON
 
 ```json
-{
-  "kilder": [
-    {
-      "frister": [
-        {
-          "tittel": "Husk å levere skattemeldingen for selskap.",
-          "aktivitetsbeskrivelse": "Det er mulig å søke utsatt frist.",
-          "aktivitetstype": "rapporteringskrav",
-          "frist": "2026-05-31"
-        }
-      ],
-      "kilde": "skatt",
-      "status": "OK"
-    }
-  ],
-  "virksomhet": "123456789"
-}
+Legg inn eksempler
 ```
 
 </TabItem>
@@ -98,25 +78,18 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 
 | Feilkode | HTTP Statuskode | Feilområde                                     |
 |----------|-----------------|------------------------------------------------|
-| FRI-001  | 500             | Uventet feil på tjenesten.                     |
-| FRI-002  | 500             | Uventet feil i et bakenforliggende system.     |
-| FRI-003  | 404             | Ukjent url benyttet.                           |
-| FRI-004  | 401             | Feil i forbindelse med autentisering.          |
-| FRI-005  | 403             | Feil i forbindelse med autorisering.           |
-| FRI-006  | 400             | Feil i forbindelse med validering av inputdata. |
-| FRI-007  | 404             | Ingen frister funnet for angitt organisasjonsnummer |
-| FRI-008  | 406             | Feil tilknyttet dataformat. Kun json er støttet. |
-| FRI-009   | 403            | Feil i forbindelse med samtykke.               |
+| NNN-001  | 500             | Legg inn feilkoder                  |
+
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/frister-api/) på SwaggerHub for beskrivelse av informasjonsmodellen.
+Legg inn informasjon om informasjonsmodell
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten.
+Legg inn informasjon om testdata
 
 </TabItem>
 </Tabs>
