@@ -4,8 +4,8 @@ slug: /api/skattdialogdokumenter
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, skatt ]
-last_updated: Jun 30, 2026
+tags: [ API, skatt, skatteoppgjør, skattemelding ]
+last_updated: July 6, 2026
 hide_table_of_contents: true
 ---
 
@@ -13,6 +13,10 @@ hide_table_of_contents: true
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
+
+<InfoMessageBar>
+  Denne tjenesten er ikke i produksjon enda. Produksjonssetting er planlagt i løpet av august 2026.
+</InfoMessageBar>
 
 Tjenesten lar sluttbrukersystem hente ut dokumenter knyttet til formues- og inntektsskatt. Eksempler på dokumenter som kan hentes er skatteoppgjør og brev angående skattemeldingen.
 
@@ -43,13 +47,14 @@ ID-ene i eksemplene under er fiktive og brukes kun for å illustrere URL-mønste
 Den fullstendige URL-en hentes fra dialogen i Dialogporten, og skal ikke settes sammen manuelt.
 
 ## Tilgang
-Tjenesten benytter Maskinporten med dialogen er relatert til systembruker. Tilgangen autoriseres mot ressursen dialogen er relatert til.
+Tjenesten benytter Maskinporten med dialogen er relatert til systembruker. Tilgangen autoriseres mot ressursen dialogen er knyttet til.
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/).
 
 ### Scope
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:skattdialogdokument`
+
 I en overgangsperiode, så vil følgende scope også gi tilgang til tjenesten: `skatteetaten:formueinntekt/skattemelding`
 
 ### ID-porten
@@ -60,15 +65,6 @@ For noen dialoger kan et sluttbrukersystem oppleve å mangle API-tilgang til dok
 Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 
 </TabItem>
-<TabItem headerText="Eksempler" itemKey="itemKey-2"> 
-
-## JSON
-
-```json
-Legg inn eksempler
-```
-
-</TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
 
 Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
@@ -76,20 +72,44 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne applikasjonen kan gi. Feilmeldingen vil kunne
 variere selv om samme feilkode returneres. Dette er for å kunne gi en så presis beskrivelse av feilen som mulig.
 
-| Feilkode | HTTP Statuskode | Feilområde                                     |
-|----------|-----------------|------------------------------------------------|
-| NNN-001  | 500             | Legg inn feilkoder                  |
+| Feilkode | HTTP Statuskode | Feilområde                              |
+|----------|-----------------|----------------------------------------|
+| DUT-001  | 500             | Intern serverfeil                       |
+| DUT-002  | 403             | Ikke autorisert                         |
+| DUT-003  | 404             | Dokument ikke funnet                    |
+| DUT-004  | 400             | Ugyldig forespørsel                     |
+| DUT-000  | 500             | Ukjent feil                             |
 
+
+Feilsituasjoner leveres ut på format `application/json`. Eksempel:
+```json
+{
+    "kode": "DUT-001",
+    "melding": "Det oppsto en intern serverfeil ved uthenting av dokumentet. Vennligst prøv igjen senere."
+}
+```
 
 </TabItem>
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
 
-Legg inn informasjon om informasjonsmodell
+Dokument leveres ut på format `application/pdf`. 
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-5">
 
-Legg inn informasjon om testdata
+## Skatteoppgjør upersonlig
+
+<InfoMessageBar>
+  Endepunktene er foreløpig ufullstendige. 
+</InfoMessageBar>
+
+### Testcase 1
+- Organisasjonsnummer: 313909026
+- Daglig leder fødselsnummer: 19918299532
+- Api-endepunkt: https://api-test.sits.no/api/skatt-dialog-dokumenter/v1/...
+- Gui-endepunkt: https://skatt-test.sits.no/web/skatt-dialog-dokumenter/v1/...
+
+
 
 </TabItem>
 </Tabs>
