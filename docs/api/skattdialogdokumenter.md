@@ -47,7 +47,7 @@ ID-ene i eksemplene under er fiktive og brukes kun for å illustrere URL-mønste
 Den fullstendige URL-en hentes fra dialogen i Dialogporten, og skal ikke settes sammen manuelt.
 
 ## Tilgang
-Tjenesten benytter Maskinporten med dialogen er relatert til systembruker. Tilgangen autoriseres mot ressursen dialogen er knyttet til.
+Tjenesten benytter Maskinporten med systembruker. Tilgangen autoriseres mot ressursen dialogen er knyttet til.
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke dette API-et må Skatteetaten gi din virksomhet tilgang. Les mer om [hvordan du får tilgang til opplysninger fra Skatteetaten](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/).
@@ -108,7 +108,6 @@ Dokument leveres ut på format `application/pdf`.
 - Daglig leder fødselsnummer: 19918299532
 - Api-endepunkt: https://api-test.sits.no/api/skatt-dialog-dokumenter/v1/...
 - Gui-endepunkt: https://skatt-test.sits.no/web/skatt-dialog-dokumenter/v1/...
-
 
 
 </TabItem>
