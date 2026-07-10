@@ -220,7 +220,7 @@ https://api-test.sits.no/api/aksjonaerregister/v1/2023/1086H
 #### Eksempel på respons fra hovedskjema endepunkt
 ```
 {
-    "hovedskjemaid": "0193de1a-d956-739e-980e-ab57ae7de73c"
+    "hovedskjemaId": "0193de1a-d956-739e-980e-ab57ae7de73c"
 }
 ```
 
