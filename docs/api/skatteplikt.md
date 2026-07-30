@@ -56,7 +56,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Skatteoppgjør hendels
 
 ## Datakatalog
 
-[Datatjenestebeskrivelse](https://data.norge.no/dataservices/0411748d-0f94-3bce-b981-fd2b3930b6b2) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/nb/data-services/cc62a2c4-a5d3-3d94-a67e-861957bd69da) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2">
