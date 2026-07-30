@@ -62,7 +62,7 @@ Leverandøren kan kun få tilgang til API-et dersom leverandøren er integrert m
 
 ## Datakatalog
 
-Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
+[Datatjenestebeskrivelse](https://data.norge.no/nb/data-services/c64ad388-ebf8-3557-becc-137465f29371) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
