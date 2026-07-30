@@ -55,7 +55,7 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
 
 ## Datakatalog
 
-Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
+[Datatjenestebeskrivelse](https://data.norge.no/nb/data-services/82e71f27-b072-3016-847a-b40b195c13e5) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
