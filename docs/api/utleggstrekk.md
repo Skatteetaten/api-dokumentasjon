@@ -50,7 +50,7 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 
 ## Datakatalog
 
-Datatjenestebeskrivelse kommer i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/nb/data-services/4cfca71d-b6f0-326b-bf82-8e07b0ffa9b0) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
