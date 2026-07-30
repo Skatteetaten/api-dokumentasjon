@@ -60,7 +60,7 @@ en [støttetjeneste for hendelsesliste](./hendelser.md): `Formuesobjekt fast eie
 
 ## Datakatalog
 
-Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
+[Datatjenestebeskrivelse](https://data.norge.no/nb/data-services/a73a3f26-7795-3e56-893a-8c9b814c25e8) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
