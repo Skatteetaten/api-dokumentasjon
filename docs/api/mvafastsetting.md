@@ -46,7 +46,7 @@ Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakk
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
   
 ## Datakatalog
-[Datatjenestebeskrivelse](https://data.norge.no/dataservices/e4e328cf-6af2-3086-b9ab-9a5dbf3c484d) i Felles datakatalog.
+[Datatjenestebeskrivelse](https://data.norge.no/nb/data-services/394123ff-f818-3eaf-a8a5-c22c2c4e100a) i Felles datakatalog.
 
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
