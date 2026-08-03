@@ -243,9 +243,9 @@ Det finnes pt. ikke søk i [Tenor](../test/tenor.md) for denne tjenesten, og tes
 
 Under har vi listet noen testdata som er tilgjengelige for denne tjenesten i Skatteetatens testmiljø for eksterne:
 
-| Organisasjonsnummer | Kalenderår |
-|---------------------|------------|
-| 313136841           | 2022       |
+| Organisasjonsnummer | Kalenderår                   |
+|---------------------|------------------------------|
+| 313136841           | 2022, 2023, 2024, 2025       |
 
 </TabItem>
 </Tabs>
