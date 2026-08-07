@@ -95,7 +95,7 @@ API-et for innsending av aksjonaerregisteroppgaven har bare fem endepunkter:
   * Dette endepunktet anbefales brukt om man ønsker å hente ut alle innsendte hoved/underskjemaer. Endepunktet kan levere opp til 50 skjemaer pr kall og hovedskjemaet vil alltid være første skjema på første page.
 * __GET dokument__: Henter ut et enkelt dokument fra en forsendelse
   * Dette endepunktet anbefales brukt om man skal hente ut enkeltdokumenter som f.eks tilbakemeldinger. 
-* __GET prefill__: Henter ut et tidligere godkjent innrapportering av aksjonærregisteroppgaven
+* __GET prefill__: Henter ut en tidligere godkjent innrapportering av aksjonærregisteroppgaven
   * I endepunktet spesifiserer man inntektsår, oppgavegiver og et optional felt for paginering
   * Hvis det ikke finnes godkjent innrapportering for inntektsåret man spør om, så sjekkes året før. Finnes det heller ikke for året før så returneres det 404
 
