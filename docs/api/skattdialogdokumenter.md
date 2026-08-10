@@ -99,16 +99,17 @@ Dokument leveres ut på format `application/pdf`.
 
 ## Skatteoppgjør upersonlig
 
-<InfoMessageBar>
-  Endepunktene er foreløpig ufullstendige. 
-</InfoMessageBar>
-
 ### Testcase 1
-- Organisasjonsnummer: 313909026
-- Daglig leder fødselsnummer: 19918299532
-- Api-endepunkt: https://api-test.sits.no/api/skatt-dialog-dokumenter/v1/...
-- Gui-endepunkt: https://skatt-test.sits.no/web/skatt-dialog-dokumenter/v1/...
+- Inntektsår: 2025
+- Organisasjonsnummer: 312454823
+- Daglig leder fødselsnummer: 22854298775
+- Api-endepunkt: https://api-test.sits.no/api/skatt-dialog-dokumenter/v1/019f27eb-797e-71f1-a2d2-429d1cb66249/019f27eb-8938-7590-860c-db9d950bc959/D/019f27eb-85b3-70aa-8c54-3fb3ba62ee7f
 
+### Testcase 2
+- Inntektsår: 2025
+- Organisasjonsnummer: 311105671
+- Daglig leder fødselsnummer: 12906098383
+- Api-endepunkt: https://api-test.sits.no/api/skatt-dialog-dokumenter/v1/019f27eb-7e22-72d7-aad2-f716bb13cc5f/019f27eb-8b8a-7639-9afd-01fc4cbbeac7/D/019f27eb-8ac1-7607-ae61-e6946009fa48
 
 </TabItem>
 </Tabs>
