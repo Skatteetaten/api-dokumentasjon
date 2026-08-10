@@ -85,7 +85,8 @@ Feilsituasjoner leveres ut på format `application/json`. Eksempel:
 ```json
 {
     "kode": "DUT-001",
-    "melding": "Det oppsto en intern serverfeil ved uthenting av dokumentet. Vennligst prøv igjen senere."
+    "melding": "Det oppsto en intern serverfeil ved uthenting av dokumentet. Vennligst prøv igjen senere.",
+    "timestamp":"2026-08-10T13:37:09.205884664+02:00"
 }
 ```
 
