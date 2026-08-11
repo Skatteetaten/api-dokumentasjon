@@ -95,6 +95,9 @@ API-et for innsending av aksjonaerregisteroppgaven har bare fem endepunkter:
   * Dette endepunktet anbefales brukt om man ønsker å hente ut alle innsendte hoved/underskjemaer. Endepunktet kan levere opp til 50 skjemaer pr kall og hovedskjemaet vil alltid være første skjema på første page.
 * __GET dokument__: Henter ut et enkelt dokument fra en forsendelse
   * Dette endepunktet anbefales brukt om man skal hente ut enkeltdokumenter som f.eks tilbakemeldinger. 
+* __GET prefill__: Henter ut en tidligere godkjent innrapportering av aksjonærregisteroppgaven
+  * I endepunktet spesifiserer man inntektsår, oppgavegiver og et optional felt for paginering
+  * Hvis det ikke finnes godkjent innrapportering for inntektsåret man spør om, så sjekkes året før. Finnes det heller ikke for året før så returneres det 404
 
 Innsendt data på hovedskjema endepunktet valideres etter følgende xsd: [hovedskjema](../../static/download/aksjonaerregisteroppgaveHovedskjema.xsd)
 
@@ -311,6 +314,35 @@ https://api-test.sits.no/api/aksjonaerregister/v1/2023/{{hovedskjemaid}}/bekreft
     "oppgavegiversLeveranseReferanse": "0193de1a-d956-739e-980e-ab57ae7de73c",
     "dialogId": "0193d51a-ec30-7d58-b727-6ce65964d3d4",
     "forsendelseId": "0193de1b-0483-740a-9e0b-f60a2d519638"
+}
+```
+
+## Uthenting
+
+### Prefill endepunktet
+
+#### Prefill url
+```
+https://api-test.sits.no/api/aksjonaerregister/v1/prefill/{{inntektsår}}/{{oppgavegiver}}?page=0
+```
+
+#### Eksempel på respons fra prefill endepunkt
+
+```
+{
+  "totalItems": 17,
+  "totalPages": 1,
+  "currentPage": 0,
+  "dokumenter": [
+    {
+      "aksjeklasse": "ordinaer",
+      "namespace": "xmlns:brreg=\"http://www.brreg.no/or\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
+      "dokument": "<Skjema xmlns:brreg=\"http://www.brreg.no/or\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" skjemanummer=\"890\" spesifikasjonsnummer=\"12144\" 
+      blankettnummer=\"RF-1086\" etatid=\"999999999\"><GenerellInformasjon-grp-2587 gruppeid=\"2587\"><Selskap-grp-2588 gruppeid=\"2588\"><EnhetOrganisasjonsnummer-datadef-18 
+      orid=\"18\">888888888</EnhetOrganisasjonsnummer-datadef-18><AksjeType-datadef-17659 orid=\"17659\">ordinaer</AksjeType-datadef-17659><Inntektsar-datadef-692 
+      orid=\"692\">2026</Inntektsar-datadef-692></Selskap-grp-2588>......"
+    }
+  ]
 }
 ```
 
