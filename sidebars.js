@@ -49,6 +49,7 @@ const sidebars = {
         "api/rettsinformasjon",
         "api/selskapsmelding",
         "api/sistetilgjengeligeskatteoppgjoer",
+        "api/skattdialogdokumenter",
         "api/skatteberegningsgrunnlagupersonlig",
         "api/skatteetatenregistrertselskap",
         "api/skattemelding",

@@ -14,10 +14,6 @@ hide_table_of_contents: true
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
-<InfoMessageBar>
-  Denne tjenesten er ikke i produksjon enda. Produksjonssetting er planlagt i løpet av august 2026.
-</InfoMessageBar>
-
 Tjenesten lar sluttbrukersystem hente ut dokumenter knyttet til formues- og inntektsskatt. Eksempler på dokumenter som kan hentes er skatteoppgjør og brev angående skattemeldingen.
 
 Dokumentene tilgjengeliggjøres som vedlegg i en dialog i Dialogporten, hvor de er representert som `Attachment` med `consumerType` lik `Api`. Selve endepunktet som skal kalles er hardkodet i forsendelsen i dialogen. Et sluttbrukersystem må derfor først hente dialogen fra Dialogporten, lese ut URL-en til dokumentet, og deretter kalle Skatteetatens tjeneste for å hente dokumentet.
