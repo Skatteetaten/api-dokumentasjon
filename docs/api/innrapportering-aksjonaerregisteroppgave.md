@@ -97,7 +97,7 @@ API-et for innsending av aksjonaerregisteroppgaven har bare fem endepunkter:
   * Dette endepunktet anbefales brukt om man skal hente ut enkeltdokumenter som f.eks tilbakemeldinger. 
 * __GET prefill__: Henter ut en tidligere godkjent innrapportering av aksjonærregisteroppgaven
   * I endepunktet spesifiserer man inntektsår, oppgavegiver og et optional felt for paginering
-  * Hvis det ikke finnes godkjent innrapportering for inntektsåret man spør om, så sjekkes året før. Finnes det heller ikke for året før så returneres det 404
+  * Hvis det ikke finnes godkjent innrapportering for inntektsåret man spør om, så sjekkes året før. Finnes det en innrapportering fra året før, uansett status, så returneres denne. Finnes det heller ikke for året før så returneres det 404
 
 Innsendt data på hovedskjema endepunktet valideres etter følgende xsd: [hovedskjema](../../static/download/aksjonaerregisteroppgaveHovedskjema.xsd)
 
