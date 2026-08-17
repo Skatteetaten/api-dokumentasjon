@@ -260,7 +260,7 @@ Beskrivelse av sentrale elementer:
 ![Generelle elementer-1](../../static/download/utleggsbegjaering/c%20generelle%20elementer.png)
 ![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
-### d) Kravinformasjon - Utleggsbegjæring v2.0
+### d) Kravinformasjon - Utleggsbegjæring v2.1
 
 ## Detaljering av de enkelte kravene som inngår i Utleggsbegjæringen.
 
@@ -277,6 +277,7 @@ Beskrivelse av sentrale elementer:
 * **gjenståendeBeløp** er det beløpet som gjenstår når begjæringen sendes inn = opprinnelig beløp minus innbetalinger og nedjusteringer etter at kravet oppstod.
 * **sisteFristavbrytendeTiltak** er handling som avbryter løpende foreldelsesfrist og/eller gir ny forlenget frist.
 * Dersom man sender inn et **rentekrav**, bør man legge ved hvilken **rentePeriode** (fra og til dato) rentene er beregnet, samt hvilket beløp det er beregnet rente av i **renteGrunnlag**.  I tillegg bør man angi om det er **beregnetMedForsinkelsesrente** eller eventuelt med en avtalt rentesats i **beregnetMedAvtaltRentesats**.
+* **rentekrav** vil bli fjernet fra modellen i neste versjon
 * **rentebærendeKrav** må fylles ut dersom man sender inn et krav som det kreves renter for, f.eks. et hovedkrav.
 * **kravforfall/forfallsdato** skal fylles ut for **Hovedkrav**, **TidligereRettsligeSakskostnader** og **UtenrettsligeKostnader**, men skal ikke fylles ut for **SakskostnaderForSkriving** og **Rentekrav**.
 * **betalingsoppfordring** er kun relevant for krav på utenrettslige inndrivingskostnader. For å kunne kreve utenrettslige inndrivingskostnader må man ha sendt betalingsoppfordring etter inkl. § 10 og det må være sendt senest 6 måneder før man begjærer, jf. inkl. 11 annet ledd.
