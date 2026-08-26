@@ -97,7 +97,7 @@ API-et for innsending av aksjonaerregisteroppgaven har bare fem endepunkter:
   * Dette endepunktet anbefales brukt om man skal hente ut enkeltdokumenter som f.eks tilbakemeldinger. 
 * __GET prefill__: Henter ut en tidligere godkjent innrapportering av aksjonærregisteroppgaven
   * I endepunktet spesifiserer man inntektsår, oppgavegiver og et optional felt for paginering
-  * Hvis det ikke finnes godkjent innrapportering for inntektsåret man spør om, så sjekkes året før. Finnes det en innrapportering fra året før, uansett status, så returneres denne. Finnes det heller ikke for året før så returneres det 404
+  * Sjekker om det finnes prefill for inntektsåret man spør om. Setter man inntektsår 2026, så sjekkes det om det finnes innrapportert oppgave for 2025 med enten status "GODKJENT" eller "AVVIST". Finnes det ikke så returneres 404.
 
 Innsendt data på hovedskjema endepunktet valideres etter følgende xsd: [hovedskjema](../../static/download/aksjonaerregisteroppgaveHovedskjema.xsd)
 
@@ -333,9 +333,10 @@ https://api-test.sits.no/api/aksjonaerregister/v1/prefill/{{inntektsår}}/{{oppg
   "totalItems": 17,
   "totalPages": 1,
   "currentPage": 0,
+  "oppgaveStatus": "GODKJENT",
   "dokumenter": [
     {
-      "aksjeklasse": "ordinaer",
+      "aksjeklasse": "01",
       "namespace": "xmlns:brreg=\"http://www.brreg.no/or\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"",
       "dokument": "<Skjema xmlns:brreg=\"http://www.brreg.no/or\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" skjemanummer=\"890\" spesifikasjonsnummer=\"12144\" 
       blankettnummer=\"RF-1086\" etatid=\"999999999\"><GenerellInformasjon-grp-2587 gruppeid=\"2587\"><Selskap-grp-2588 gruppeid=\"2588\"><EnhetOrganisasjonsnummer-datadef-18 
