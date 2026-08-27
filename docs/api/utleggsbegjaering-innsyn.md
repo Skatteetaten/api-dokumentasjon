@@ -1,5 +1,5 @@
 ---
-title: ELAN - Utleggsbegjæring API - Innsyn i krav
+title: ELAN - Utleggsbegjæring API - Innsyn i trekk
 slug: /api/utleggsbegjaering-innsyn
 folder: api
 sidebar: mydoc_sidebar
@@ -15,7 +15,7 @@ hide_table_of_contents: true
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
-APIet benyttes til å gi innsyn i krav fra innsendte utleggsbegjæringer. Målgruppen er dagens inkassosystemer, kommunene og andre systemleverandører. Dersom du ønsker å ta i bruk APIet eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.
+APIet benyttes til å gi innsyn i trekk fra innsendte utleggsbegjæringer. Målgruppen er dagens inkassosystemer, kommunene og andre systemleverandører. Dersom du ønsker å ta i bruk APIet eller har spørsmål knyttet til dette, ta kontakt med fremtidensinnkreving@skatteetaten.no.
 
 Figuren nedenfor angir overordnet tjenester Skatteetaten vil tilby for mottak og prøving av utleggsbegjæringer. Merk at figuren er en illustrasjon av måbildet, og det er ikke alle tjenestene i figuren som er implementert ennå. Det vil også i fremtiden kunne legges til nye tjenester som ikke er angitt i figuren.
 
