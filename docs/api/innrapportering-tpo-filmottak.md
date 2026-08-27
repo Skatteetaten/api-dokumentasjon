@@ -116,20 +116,20 @@ Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for ti
 ## Teknisk spesifikasjon
 
 URL-er til API-et, beskrivelse av parametre, endepunkter og respons ligger i Open API-spesifikasjonen på
-[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-amelding-filopplasting-api/)
+[SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tpo-filmottak-api/)
 
 Nødvendige åpninger i en evt. brannmur er beskrevet [her](../om/sikkerhet.md)
 
-API-et for innrapportering av A-melding via filopplasting har fire endepunkter
+API-et for innrapportering via filopplasting har fire endepunkter
 
 * __POST /opplastinger__: Laster opp en fil til skatteetaten for kontroll
 * __GET /opplastinger/:id__: Henter status for en enkelt opplastet fil
 * __DELETE /opplastinger/:id__: Sletter en opplastet fil
 * __PUT /innsending__: Sender inn en opplastet og validert fil til behandling
 
-Se [feilkoder](innrapportering--amelding-filopplasting?tab=Feilkoder) for relaterte feilmeldinger.
+Se [feilkoder](innrapportering-tpo-filmottak?tab=Feilkoder) for relaterte feilmeldinger.
 
-Se også [eksempler](innrapportering-amelding-filopplasting?tab=Eksempler) for de ulike endepunktene.
+Se også [eksempler](innrapportering-tpo-filmottak?tab=Eksempler) for de ulike endepunktene.
 
 ## Datakatalog
 
@@ -384,7 +384,7 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot innrapportering av A-meldingen kan du kontakte 
+Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot innrapportering av tredjepartsopplysninger kan du kontakte 
 oss via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) 
 eller på [Slack](https://skatteetaten.slack.com/)
 
