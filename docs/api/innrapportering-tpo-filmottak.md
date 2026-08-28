@@ -338,22 +338,23 @@ Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feil
 hvilke feilspesifiseringskoder tjenesten kan gi. Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde
 vil det beskrives i melding, sti og angitt verdi-feltene.
 
-| Feilspesifiseringskode | Feilområde                                                             | Årsak                                                                                                                       |
-|------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| GLD_1001               | Feil i xml innhold                                                     | Feil med innsendt innhold, det er enten uleselig, eller feiler i validering.                                                |
-| GLD_1008               | Ugyldig token                                                          | Feil i forbindelse ved validering av token                                                                                  |
-| GLD_1015               | Ikke autorisert for denne dialogen                                     | Feil i forbindelse ved autorisering.                                                                                        |
-| GLD_1022               | Feil i parametre                                                       | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1023               | Finner ingen ressurs for denne URL-en                                  | Det er ikke noe innhold tilgjengelig på denne URL-en                                                                        |
-| GLD_1028               | Header mangler                                                         | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1030               | Accept-header må være av type application/json                         | Accept header er feil. API-et har kun støtte for JSON i respons                                                             |
-| GLD_1031               | Content-type må være av type application/xml                           | Content-type header er feil. API-et har kun støtte for XML                                                                  |
-| GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen           | Feil med dokumentId i forbindelse med uthenting av dokument                                                                 |
-| GLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere | Uventet feil i et bakenforliggende system                                                                                   |
-| GLD_1055               | Finner ikke organisasjon med gitt organisasjonsnummer                  | Organisasjonsnummer er ugyldig og kan ikke brukes som oppgavegiver"                                                         |
-| GLD_1061               | Det finnes ingen forsendelse med denne IDen for denne ordningen        | Feil med forsendelseId i forbindelse med uthenting av dokument                                                              |
-| GLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details    | Tokenet er ikke et gyldig systembruker token                                                                                |
-| GLD_1069               | Alle leveranser i en melding må ha samme inntektsår                    | Feil med innsendint innhold, inntektsår må være like om man sender inn flere leveranser i samme request                     |
+| Feilspesifiseringskode | Feilområde                                                              | Årsak                                                                                                                       |
+|------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| GLD_1001               | Feil i xml innhold                                                      | Feil med innsendt innhold, det er enten uleselig, eller feiler i validering.                                                |
+| GLD_1008               | Ugyldig token                                                           | Feil i forbindelse ved validering av token                                                                                  |
+| GLD_1015               | Ikke autorisert for denne dialogen                                      | Feil i forbindelse ved autorisering.                                                                                        |
+| GLD_1022               | Feil i parametre                                                        | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| GLD_1023               | Finner ingen ressurs for denne URL-en                                   | Det er ikke noe innhold tilgjengelig på denne URL-en                                                                        |
+| GLD_1028               | Header mangler                                                          | Påkrevd header er ikke med i requesten                                                                                      |
+| GLD_1030               | Accept-header må være av type application/json                          | Accept header er feil. API-et har kun støtte for JSON i respons                                                             |
+| GLD_1031               | Content-type må være av type application/xml                            | Content-type header er feil. API-et har kun støtte for XML                                                                  |
+| GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen            | Feil med dokumentId i forbindelse med uthenting av dokument                                                                 |
+| GLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere  | Uventet feil i et bakenforliggende system                                                                                   |
+| GLD_1055               | Finner ikke organisasjon med gitt organisasjonsnummer                   | Organisasjonsnummer er ugyldig og kan ikke brukes som oppgavegiver"                                                         |
+| GLD_1061               | Det finnes ingen forsendelse med denne IDen for denne ordningen         | Feil med forsendelseId i forbindelse med uthenting av dokument                                                              |
+| GLD_1062               | Oppgavegiver er underenhet, og kan derfor ikke rapportere for ordningen | Underenheter kan ikke rapportere inn data                                                                                   |
+| GLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details     | Tokenet er ikke et gyldig systembruker token                                                                                |
+| GLD_1069               | Alle leveranser i en melding må ha samme inntektsår                     | Feil med innsendint innhold, inntektsår må være like om man sender inn flere leveranser i samme request                     |
 
 </TabItem>
 
