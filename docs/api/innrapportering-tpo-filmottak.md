@@ -1,12 +1,12 @@
 ---
-title: Innrapportering TPO Filmottak API
+title: Innrapportering TPO filopplasting API
 slug: /api/innrapportering-tpo-filmottak
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
-tags: [ API, A-ordning ]
+tags: [ API ]
 keywords: [ tredjepartsopplysninger, grunnlagsdata, filopplasting ]
-last_updated: Feb 19, 2026
+last_updated: Aug 28, 2026
 hide_table_of_contents: true
 ---
 
@@ -16,6 +16,7 @@ hide_table_of_contents: true
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
 ## Status Filopplasting
+
 | Miljø        | Status             |
 |--------------|--------------------|
 | Ekstern test | :white_check_mark: |
@@ -33,8 +34,10 @@ For generell informasjon om tjenestene se egne sider om:
 * [Teknisk spesifikasjon](../om/tekniskspesifikasjon.md)
 
 ## Bruk av API-et
-Dette API-et er ment for selskaper som skal rapportere tredjepartsopplysninger, som har innsendinger større enn 10MB og 
+
+Dette API-et er ment for selskaper som skal rapportere tredjepartsopplysninger, som har innsendinger større enn 10MB og
 som ikke kan dele opp innsendingene. Følgende ordninger er støttet:
+
 - AKSJESPAREKONTO
 - BOLIGSPARING UNGDOM
 - INTERNASJONAL RAPPORTERING
@@ -50,67 +53,69 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:in
 
 ## Systemtilgang med systembruker
 
-Steg for steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
+Steg for
+steg: [Slik kobler du deg opp til våre reetablerte tjenester](https://www.skatteetaten.no/samarbeidspartnere/reetablering-altinn/systemleverandor/oppkobling/)
 
 Dette APIet krever at systemet og dets systembrukere har tilgang til én eller flere av følgende tilgangspakker:
 
 ```json
 "accessPackages": [
-    {
-        "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
-    },
-    {
-        "urn": "urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet"
-    },
-    {
-        "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
-    },
-    {
-        "urn": "urn:altinn:accesspackage:revisormedarbeider"
-    },
-    {
-        "urn": "urn:altinn:accesspackage:regnskapsforer-lonn"
-    }
+  {
+    "urn": "urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet"
+  },
+  {
+    "urn": "urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet"
+  },
+  {
+    "urn": "urn:altinn:accesspackage:ansvarlig-revisor"
+  },
+  {
+    "urn": "urn:altinn:accesspackage:revisormedarbeider"
+  },
+  {
+    "urn": "urn:altinn:accesspackage:skattegrunnlag"
+  }
 ]
 ```
 
-
 Ved bruk av standard systembruker kan man også benytte enkeltrettigheter for tilgang til tjenesten:
+Velg den som passer for det du skal sende inn
+
 ```JSON
 "Rights": [
-    {
-      "Resource": [
-        {
-          "value": "ske-innrapportering-aksjesparekonto",
-          "id": "urn:altinn:resource"
-        },
-        {
-          "value": "ske-innrapportering-boligsparing-ungdom",
-          "id": "urn:altinn:resource"
-        },
-        {
-          "value": "ske-innrapportering-internasjonal-rapportering",
-          "id": "urn:altinn:resource"
-        },
-        {
-          "value": "ske-innrapportering-finansprodukter",
-          "id": "urn:altinn:resource"
-        },
-        {
-          "value": "ske-innrapportering-innskudd-utlaan-renter",
-          "id": "urn:altinn:resource"
-        },
-        {
-          "value": "ske-innrapportering-skattepliktig-kundeutbytte",
-          "id": "urn:altinn:resource"
-        },
-        {
-          "value": "ske-innrapportering-verdipapirfond",
-          "id": "urn:altinn:resource"
-        }
-      ]
-    }
-  ]
+  {
+    "Resource": [
+      {
+        "value": "ske-innrapportering-aksjesparekonto",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-boligsparing-ungdom",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-internasjonal-rapportering",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-finansprodukter",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-innskudd-utlaan-renter",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-skattepliktig-kundeutbytte",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-verdipapirfond",
+        "id": "urn:altinn:resource"
+      }
+    ]
+  }
+]
 ```
 
 ## Teknisk spesifikasjon
@@ -139,17 +144,22 @@ Dette API-et er pt. ikke dokumentert i Felles datakatalog.
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
 ## Innsending
+
 En innsending foregår over flere steg.
+
 - Last opp en XML fil til `opplastinger`-endepunktet
-- Poll `opplastinger`-endepunktet for å se om status til fila har blitt enten `VALIDERING_FEILET`, `TEKNISK_FEIL_VALIDERING` eller `KLAR_TIL_INNSENDING`
+- Poll `opplastinger`-endepunktet for å se om status til fila har blitt enten `VALIDERING_FEILET`,
+  `TEKNISK_FEIL_VALIDERING` eller `KLAR_TIL_INNSENDING`
 - Hvis status er `KLAR_TIL_INNSENDING` kall `innsending`-endepunktet for å sende inn fila
-- Hvis status er `VALIDERING_FEILET` eller `TEKNISK_FEIL_VALIDERING`, se feil i feilliste på status kallet for hva som feilet
+- Hvis status er `VALIDERING_FEILET` eller `TEKNISK_FEIL_VALIDERING`, se feil i feilliste på status kallet for hva som
+  feilet
 
 ### POST /opplastinger
 
 #### Eksempel på body
 
 AKSJESPAREKONTO EKSEMPEL
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <melding xmlns="urn:ske:fastsetting:innsamling:aksjesparekonto:v3"
@@ -261,6 +271,7 @@ AKSJESPAREKONTO EKSEMPEL
 ```
 
 #### Eksempel på respons
+
 ```json
 {
   "status": "LASTER_OPP",
@@ -273,6 +284,7 @@ AKSJESPAREKONTO EKSEMPEL
 ### Status
 
 #### Eksempel på respons
+
 ```json
 [
   {
@@ -299,6 +311,7 @@ AKSJESPAREKONTO EKSEMPEL
 ### Slett
 
 #### Eksempel på respons
+
 200 OK uten mer data
 
 
@@ -311,32 +324,35 @@ Tabellen under viser en oversikt over hvilke spesifikke feilkoder denne tjeneste
 
 | Feilkode | HTTP Statuskode | Feilområde                                   |
 |----------|-----------------|----------------------------------------------|
-| GLD_004 | 401             | Feil i forbindelse med autentisering         |
-| GLD_005 | 403             | Feil i forbindelse med autorisering          |
-| GLD_006 | 400             | Feil i request                               |
-| GLD_008 | 400             | Strukturell feil i tilknyttet dataformat     |
-| GLD_010 | 400             | Feil i forbindelse med validering av payload |
-| GLD_017 | 500             | Uspesifisert systemfeil                      |
-| GLD_021 | 404             | Finner ikke forespurt ressurs                |
-| GLD_022 | 405             | HTTP-metode ikke støttet                     |
-| GLD_023 | 500             | Uventet feil i et bakenforliggende system    |
+| GLD_004  | 401             | Feil i forbindelse med autentisering         |
+| GLD_005  | 403             | Feil i forbindelse med autorisering          |
+| GLD_006  | 400             | Feil i request                               |
+| GLD_008  | 400             | Strukturell feil i tilknyttet dataformat     |
+| GLD_010  | 400             | Feil i forbindelse med validering av payload |
+| GLD_017  | 500             | Uspesifisert systemfeil                      |
+| GLD_021  | 404             | Finner ikke forespurt ressurs                |
+| GLD_022  | 405             | HTTP-metode ikke støttet                     |
+| GLD_023  | 500             | Uventet feil i et bakenforliggende system    |
 
-Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere.
-Tabellen under viser hvilke feilspesifiseringskoder tjenesten kan gi.
-Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde vil det beskrives i melding, sti og
-angitt verdi-feltene.
+Feilresponsene kan også inneholde en feilspesifiseringskode som presiserer feilen ytterligere. Tabellen under viser
+hvilke feilspesifiseringskoder tjenesten kan gi. Dersom det finnes mer detaljert feilinformasjon enn generelt feilområde
+vil det beskrives i melding, sti og angitt verdi-feltene.
 
-| Feilspesifiseringskode | Feilområde                                                          | Årsak                                                                                                                       |
-|------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| GLD_1008              | Ugyldig token                                                       | Feil i forbindelse ved validering av token                                                                                  |
-| GLD_1015              | Ikke autorisert for denne dialogen                                  | Feil i forbindelse ved autorisering.                                                                                        |
-| GLD_1022              | Feil i parametre                                                    | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
-| GLD_1023              | Finner ingen ressurs for denne URL-en                               | Det er ikke noe innhold tilgjengelig på denne URL-en                                                                        |
-| GLD_1028              | Header mangler                                                      | Påkrevd header er ikke med i requesten                                                                                      |
-| GLD_1030              | Accept-header må være av type application/json                      | Accept header er feil. API-et har kun støtte for JSON i respons                                                             |
-| GLD_1032              | Feil i JSON-innhold                                                 | Feil med innsendt innhold, det er enten uleselig, eller feiler i validering.                                                |
-| GLD_1047              | Content-type-header må være av type application/json                | Content-type header er feil. API-et har kun støtte for JSON                                                                 |
-| GLD_1063              | Tokenet mangler informasjon om systembruker i authorization_details | Tokenet er ikke et gyldig systembruker token                                                                                |
+| Feilspesifiseringskode | Feilområde                                                             | Årsak                                                                                                                       |
+|------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| GLD_1001               | Feil i xml innhold                                                     | Feil med innsendt innhold, det er enten uleselig, eller feiler i validering.                                                |
+| GLD_1008               | Ugyldig token                                                          | Feil i forbindelse ved validering av token                                                                                  |
+| GLD_1015               | Ikke autorisert for denne dialogen                                     | Feil i forbindelse ved autorisering.                                                                                        |
+| GLD_1022               | Feil i parametre                                                       | Diverse feil med parametre i request. Mer detaljert beskrivelse ligger i melding, sti og angitt verdi dersom det er aktuelt |
+| GLD_1023               | Finner ingen ressurs for denne URL-en                                  | Det er ikke noe innhold tilgjengelig på denne URL-en                                                                        |
+| GLD_1028               | Header mangler                                                         | Påkrevd header er ikke med i requesten                                                                                      |
+| GLD_1030               | Accept-header må være av type application/json                         | Accept header er feil. API-et har kun støtte for JSON i respons                                                             |
+| GLD_1031               | Content-type må være av type application/xml                           | Content-type header er feil. API-et har kun støtte for XML                                                                  |
+| GLD_1050               | Finner ikke et dokument med denne IDen på denne forsendelsen           | Feil med dokumentId i forbindelse med uthenting av dokument                                                                 |
+| GLD_1053               | Uventet feil i et bakenforliggende system, vennligst prøv igjen senere | Uventet feil i et bakenforliggende system                                                                                   |
+| GLD_1061               | Det finnes ingen forsendelse med denne IDen for denne ordningen        | Feil med forsendelseId i forbindelse med uthenting av dokument                                                              |
+| GLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details    | Tokenet er ikke et gyldig systembruker token                                                                                |
+| GLD_1069               | Alle leveranser i en melding må ha samme inntektsår                    | Feil med innsendint innhold, inntektsår må være like om man sender inn flere leveranser i samme request                     |
 
 </TabItem>
 
@@ -359,9 +375,11 @@ Informasjonsmodeller finnes i dokumentasjonen til de respektive ordningene:
 
 ### Testmiljøer
 
-For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tpo-filmottak-api/).
+For spesifikke URL-er til testmiljø hos Skatteetaten,
+se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/innrapportering-tpo-filmottak-api/).
 
 Digdir benytter TT02 som testmiljø, hvor følgende tilbys:
+
 * DialogPorten
 * Autentisering - Maskinporten
 * Altinn innboks
@@ -375,8 +393,8 @@ denne tjenesten. Men egenskaper ved enhetene som har testdata kan søkes frem i 
 
 ### Testdata
 
-Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette.
-Det er ikke tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
+Det skal utelukkende benyttes syntetiske testdata ved test av tjenesten. Tenor testdatasøk tilbyr dette. Det er ikke
+tillatt å bruke/sende skarpe data i test pga krav fra GDPR-regelverket.
 
 Det finnes foreløpig ingen testdata for denne tjenesten. Denne siden oppdateres fortløpende ettersom testdata blir
 tilgjengelig.
@@ -384,8 +402,9 @@ tilgjengelig.
 </TabItem>
 <TabItem headerText="Kontakt oss" itemKey="itemKey-6">
 
-Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot innrapportering av tredjepartsopplysninger kan du kontakte 
-oss via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global) 
+Trenger du faglig eller teknisk brukerstøtte knyttet til integrasjon mot innrapportering av tredjepartsopplysninger kan
+du kontakte oss
+via [Brukerstøttetjenesten](https://eksternjira.sits.no/servicedesk/customer/user/login?destination=plugins/servlet/desk/site/global)
 eller på [Slack](https://skatteetaten.slack.com/)
 
 </TabItem>
