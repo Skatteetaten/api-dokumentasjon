@@ -356,6 +356,8 @@ vil det beskrives i melding, sti og angitt verdi-feltene.
 | GLD_1063               | Tokenet mangler informasjon om systembruker i authorization_details     | Tokenet er ikke et gyldig systembruker token                                                                                |
 | GLD_1069               | Alle leveranser i en melding må ha samme inntektsår                     | Feil med innsendt innhold, inntektsår må være like om man sender inn flere leveranser i samme request                       |
 | GLD_1070               | Fil er ødelagt eller har mulig skadelig innhold                         | Opplastet fil passerte ikke viruskontroll                                                                                   |
+| GLD_1102               | Alle leveranser i en melding må ha samme oppgavegiver                   | Feil med innsendt innhold, oppgavegiver må være lik om man sender inn flere leveranser i samme request                      |
+| GLD_1201               | Ugyldig organisasjonnummer - feil antall sifre                          | Feil med innsendt innhold, oppgavegivers organisasjonsnummer er ikke på 9 siffer                                            |
 
 </TabItem>
 
