@@ -113,6 +113,7 @@ const sidebars = {
         { id: 'api/skattekorttilarbeidsgiver', label: "Skattekort til arbeidsgiver", type: 'doc' },
         { id: 'api/innrapportering-skattemelding', label: "Skattemelding", type: 'doc' },
         { id: 'api/innrapportering-skattepliktigkundeutbytte', label: "Skattepliktig kundeutbytte", type: 'doc' },
+        { id: 'api/innrapportering-tpo-filmottak', label: "Tredjepartsopplysninger Filmottak", type: 'doc' },
         { id: 'api/innrapportering-tilskudd', label: "Tilskudd til vitenskapelig forskning eller yrkesopplæring", type: 'doc' },
         { id: 'api/innrapportering-tilskudd-prim', label: "Tilskudd, erstatning mv. innen primærnæringene", type: 'doc' },
         { id: 'api/innrapportering-verdipapirfond', label: "Verdipapirfond", type: 'doc' },
