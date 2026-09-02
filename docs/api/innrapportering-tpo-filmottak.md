@@ -1,11 +1,11 @@
 ---
-title: Innrapportering TPO filopplasting API
+title: Innrapportering TPO filmottak API
 slug: /api/innrapportering-tpo-filmottak
 folder: api
 sidebar: mydoc_sidebar
 datatable: true
 tags: [ API ]
-keywords: [ tredjepartsopplysninger, grunnlagsdata, filopplasting ]
+keywords: [ tredjepartsopplysninger, grunnlagsdata, filmottak ]
 last_updated: Aug 28, 2026
 hide_table_of_contents: true
 ---
@@ -15,7 +15,7 @@ hide_table_of_contents: true
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
 
-## Status Filopplasting
+## Status Filmottak
 
 | Miljø        | Status             |
 |--------------|--------------------|
