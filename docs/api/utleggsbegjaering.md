@@ -10,10 +10,10 @@ last_updated: Apr 11, 2025
 hide_table_of_contents: true
 ---
 
-### Denne siden er utløpt, erstattes av følgende sider
-- [Utleggsbegjæring-innsending](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering-innsending)
-- [Utleggsbegjæring-innsyn](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering-innsyn)
-- [Utleggsbegjæring-status](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering-status)
+# Denne siden er utløpt, erstattes av følgende sider
+## - [Utleggsbegjæring-innsending](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering-innsending)
+## - [Utleggsbegjæring-innsyn](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering-innsyn)
+## - [Utleggsbegjæring-status](https://skatteetaten.github.io/api-dokumentasjon/api/utleggsbegjaering-status)
 
 <Summary>ELAN (Utleggsbegjæring API) er en tjeneste for å sende utleggsbegjæringer til namsmannen gjennom Skatteetatens systemløsninger.</Summary>
 
