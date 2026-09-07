@@ -795,23 +795,14 @@ Her ser du hele informasjonsmodellen Trekkpålegg API med alle 4 endepunktene.
 | trekkpliktig |          | Orgnummeret til den trekkpliktige virksomheten |  |
 | skyldner |              | Fødsels- eller d-nummer til ansatt/ytelsesmottaker som skal trekkes i lønn/ytelse. |  |
 | trekkstatus  |          | Status på utleggstrekket. Når et trekkpålegg er avsluttet skal det ikke lenger trekkes i lønn/ytelse. | <ul><li>Alltid status aktiv når sluttdato for siste trekkstørrelse for periode ikke er passert. </li><li>Når sluttdato er satt frem i tid, vil status endres til avsluttet etter at sluttdato er passert (ved midnatt). </li><li> Når sluttdato settes til i dag, vil status endres til avsluttet i samme trekkversjon som sluttdatoen blir publisert. </li></ul>|
-
 | trekkstoerrelseForPeriode |        | Liste over beløp eller prosent som skal trekkes. Den trekkpliktige må velge korrekt beløp eller prosent avhengig av utbetalingsdatoen for lønnen/ytelsen. | Trekkpliktig skal trekke det som står i den perioden som gjelder lønnsutbetalingsdatoen. |
-
 |              | startdato | Dato for oppstart av trekkperioden.| <ul><li>Kan ikke settes eller endres bakover i tid eller i dag.</li><li>Kan settes fremover i tid, tidligste mulighet er å sette den til i morgen.</li><li>Kan ikke være lik sluttdato på forrige periode. </li></ul>|
-
 |              | sluttdato | Dato for avslutning av trekkperioden. | <ul><li>Kan ikke settes eller endres bakover i tid.</li><li>Kan settes til i dag enten fordi ny periode skal starte i morgen (da er trekkets status fortsatt "aktiv"). Eller fordi trekket skal avsluttes helt her og nå (da er status samtidig "avsluttet")</li><li>Kan settes fremover i tid.</li><li>Kan være lik startdato i samme periode </li><li>Kan være før startdato når trekkpålegget avsluttes før det har startet opp </li></ul> |
-
 |              | trekkbeløp | Angi enten trekkbeløp eller trekkprosent | <ul><li>Kan være 0.</li><li>Hvis det er flere lønnsutbetalinger i samme måned, er det den trekkpliktiges ansvar å sørge for at hele beløpet i trekkpålegget blir trukket i løpet av måneden. Det må trekkes ved minst én av lønnsutbetalingene. </li></ul> |
-
 |              | trekkprosent | Angi enten trekkbeløp eller trekkprosent. | <ul><li> Kan være 0.</li><li>Trekkes av brutto inntekt.</li><li>Trekkes ved hver lønnsutbetaling </li></ul> |
-
 | betalingsinformasjon | |  | Informasjon som skal benyttes ved innbetaling. | 
-
 |              | betalingsmottaker | Organisasjonsnummer til mottaker av betaling | Organisasjonsnummer til Innkrevingsmyndigheten, felles for alle trekkpålegg |
-
 |             | kidnummer | KID-nummer for trekkpålegget | Unikt per trekkpålegg<br /> <ul><li>ny trekkID, men samme trekkpliktige og skyldner</li><li>samme trekkID, men ny trekkversjon = uendret kidnummer </li></ul>|
-
 |          | kontonummer | Kontonummer til mottaker av betaling. | Kontonummer til Innkrevingsmyndigheten, felles for alle trekkpålegg. |
 
 
