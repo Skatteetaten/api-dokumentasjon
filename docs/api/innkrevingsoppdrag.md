@@ -982,18 +982,18 @@ Tilleggsinformasjon spesifikt for Brønnøysundregistrene.
 Tjenestene ligger i Skatteetatens testmiljø for ekstern testing på følgende URL:
 
 ```
-https://api-test.sits.no/
+https://innkrevingsoppdrag-eksternt-api-iop-ekstern-innsending-pub.nebula-innkreving-synt.nebula.skatteetaten-it.no/
 ```
 
 Base URL for API-et er:
 
 ```
-https://api-test.sits.no/api/innkreving/innkrevingsoppdrag/v1/
+https://innkrevingsoppdrag-eksternt-api-iop-ekstern-innsending-pub.nebula-innkreving-synt.nebula.skatteetaten-it.no/api/innkreving/innkrevingsoppdrag/v1/
 ```
 
 ### Eksempel
 
-Et POST-kall mot `https://api-test.sits.no/api/innkreving/innkrevingsoppdrag/v1/innkrevingsoppdrag` med tilhørende token fra Maskinporten vil opprette et nytt innkrevingsoppdrag.
+Et POST-kall mot `https://innkrevingsoppdrag-eksternt-api-iop-ekstern-innsending-pub.nebula-innkreving-synt.nebula.skatteetaten-it.no/api/innkreving/innkrevingsoppdrag/v1/innkrevingsoppdrag` med tilhørende token fra Maskinporten vil opprette et nytt innkrevingsoppdrag.
 
 ## Testdata
 
