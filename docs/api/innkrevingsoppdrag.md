@@ -979,17 +979,7 @@ Tilleggsinformasjon spesifikt for Brønnøysundregistrene.
 
 ## Testmiljø
 
-Tjenestene ligger i Skatteetatens testmiljø for ekstern testing på følgende URL:
-
-```
-https://innkrevingsoppdrag-eksternt-api-iop-ekstern-innsending-pub.nebula-innkreving-synt.nebula.skatteetaten-it.no/
-```
-
-Base URL for API-et er:
-
-```
-https://innkrevingsoppdrag-eksternt-api-iop-ekstern-innsending-pub.nebula-innkreving-synt.nebula.skatteetaten-it.no/api/innkreving/innkrevingsoppdrag/v1/
-```
+For spesifikke URL-er til testmiljø hos Skatteetaten, se [SwaggerHub](https://app.swaggerhub.com/apis/skatteetaten/oppdragsinnkreving-api/1.0.3).
 
 ### Eksempel
 
