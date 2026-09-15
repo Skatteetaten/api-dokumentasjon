@@ -177,7 +177,7 @@ variere selv om samme feilkode returneres. Dette er for å kunne gi en så presi
 
 
 </TabItem>
-<TabItem headerText="Informasjonsmodell" itemKey="itemKey-4">
+<TabItem headerText="Informasjonsmodell 2.1" itemKey="itemKey-4">
 
 Se [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/utleggsbegjaering-api) på SwaggerHub for beskrivelse av informasjonsmodellen.
 
@@ -421,8 +421,194 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 </details>
 
 
+
+
+
+
+
+
+
+
+
+
 </TabItem>
-<TabItem headerText="Test" itemKey="itemKey-5">
+<TabItem headerText="Informasjonsmodell 3.0" itemKey="itemKey-5">
+
+### UNDER ARBEID
+
+### Oversikt over endringer som er gjort i versjon 3.0 av Utleggsbegjæringen.
+- Lagt inn nytt element forsinkelsesrente under Krav for å angi informasjon om periodisert rentesats på rentebærende krav. Dette erstatter rentebærendeKrav som er fjernet.
+- Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men alle felt gjøres valgfrie.
+- Fjernet rentekrav under Krav (ble varslet om i v2.1).
+- Fjernet kommunenummer under AdresseFrittFormatInnland.
+- Fjernet innehaverEnkeltpersonforetak (ENK) under Person.
+- Fjernet ukjentBosted og postboks i kodeliste AdresseType.
+- Gjort adresse under Aktør valgfritt og fjernet forretningsadresse i kodeliste AdresseType (vi trenger kun å motta bopelsadresse for saksøkte personer og eventuelt postadresse for virksomheter).
+- Fjernet ukjentBosted under AdresseIBegjæring
+- Fjernet rettshjelper, annet og kommune i kodeliste VirksomhetsType.
+- Fjernet innsendersProsessfullmektig under Innsender.
+- Fjernet kravEndring under Krav (alle nedjusteringer skal sendes som innbetaling).
+- Fjernet følgende elementer som ble satt som deprecated i v2.1:
+eksternSaksreferanse under BegjæringensTvangsgrunnlagtype under Varsel
+forkynnelsesdato under Domsslutningsinformasjon
+forpliktet og berettiget under Domsslutningsinformasjon
+skyldner og kreditor under SærligTvangsgrunnlag
+vedtakendeMyndighet under TvangsmulktEllerLovbestemmelse
+kravetsGrunnlag under SkriftligMeddelelse
+vitne under Gjeldsbrev
+inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
+
+
+
+### a) Rotnivå - Utleggsbegjæring 3.0
+## RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen.
+
+![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a1.png)
+
+Beskrivelse av sentrale elementer:
+
+* **innsenderReferanse** er innsenders unike referanse på saken.
+* I elementet **tvangsfullbyrdelsestype** må man angi om det er en ren utleggsbegjæring, eller kombinert forliksklage.
+* **begjæringsdato** er datoen for innsending av utleggsbegjæringen.
+* Tvangsfullbyrdelsesloven åpner opp for at partene kan be om et møte. Da skal feltet **berOmInnkallingTilMøteMedBegrunnelse** fylles ut.
+* I henhold til tvangsfullbyrdelsesloven § 7-6 kan saksøker fylle ut feltet **berOmUnnlattForeleggelseMedBegrunnelse**. Begrunnelsen kan være feks. " Vi er kjent med at saksøkte har unndratt formuesgoder tidligere og nærheten til grensen gjør at kjøretøyet kan fraktes ut av landet."
+* Dersom man har opplysninger om **spesiellUtleggsgjenstand**, kan dette opplyses i dette feltet.
+* I **vedlegg** kan det sendes generelle vedlegg som ikke er dekket andre steder i Utleggsbegjæringen som f.eks være erkjennelse av kravet. Da skal "beviset" på erkjennelsen legges ved for å avbryte foreldelse. Dette kan være et dokument eller en skjermdump fra en samtalelogg. .
+* **underskrift** er navn på ansvarlig for innsendingen og er påkrevd å sende.
+
+
+#### Datatyper:
+
+![Rotnivå-datatyper-vedlegg](../../static/download/utleggsbegjaering/begjaering-a2.png)
+![Rotnivå-datatyper-tvangsfullbyrdelsestype](../../static/download/utleggsbegjaering/begjaering-a3.png)
+
+
+### b) Parter - Utleggsbegjæring v3.0
+
+## Informasjon om partene i Utleggsbegjæringen.
+- **Saksøker** er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig, **saksøkersProsessfullmektig**, som representerer seg i sak om tvangsfullbyrdelse.
+- **Innsender** skal angis dersom det er en tredjepart som sender inn begjæringen på vegne av saksøker, f.eks. et inkassoselskap.
+- **Saksøkt** er den man krever penger fra. Dersom denne er representert av en prosessfullmektig, skal **saksøktesProsessfullmektig** utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
+- **Prosessfullmektig** må være en fysisk person. Dette kan være en advokat eller advokatfullmektig som er en generell **bevillingshaver**, eller en privatperson som har en spesifikk **fullmakt** til å opptre på vegne av en part. Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må **fullmakt** vedlegges med en **fraDato** som denne gjelder fra.
+
+STRUKTUR
+
+DATATYPER
+
+
+
+
+### c) Generelle elementer - Utleggsbegjæring v3.0
+
+## Generell informasjon som dekker hele Utleggsbegjæringen.
+
+* **kreverRettsgebyrErstattet** benyttes om man ønsker å angi at rettsgebyret og eventuelt rentene som ilegges ved innsending kreves erstattet av saksøkte og eventuelt hvilken prioritet de skal ha.
+* **kreverFritakRettsgebyr** benyttes om man ønsker å kreve fritak for rettsgebyret og årsaken til dette.
+* **betalingsinformasjon** angir hvor, hvordan og til hvem innbetalingen skal gjøres dersom det ender opp i samordnet trekk.
+* **valgtNamsmannsdistrikt** skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6).
+
+![Generelle elementer-1](../../static/download/utleggsbegjaering/c%20generelle%20elementer.png)
+![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
+
+
+
+### d) Kravinformasjon - Utleggsbegjæring v3.0
+
+## Detaljering av de enkelte kravene som inngår i Utleggsbegjæringen.
+
+STRUKTUR
+
+- **kravdetaljer** angir hvilken type krav det er i henhold til kodeliste KravdetaljerUtleggsbegjaering. Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod.
+En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
+- **kravbeskrivelse** er en beskrivelse av hva kravet omfatter, for eksempel Treningsavgift.
+- **prioritetISak** angir prioritet for kravet innad i utleggsbegjæringen. Benyttes ved fordeling av innbetaling i utleggstrekk, Verdier 1-99 der 1 er høyeste prioritet.
+- **prioritetDekningsloven** angir hvilken prioritet kravet har etter bokstavene i dekningsloven § 2-8 (a til e).
+- **innsendersKravreferanse** skal unikt identifisere et krav innenfor en Utleggsbegjæring.
+- **relatertKrav** skal brukes for å knytte renter eller andre omkostninger (tilleggskrav) til det hovedkravet det direkte tilhører.
+- **kravgrunnlagsidentifikator** er identifikator for kravet i Siro og skal brukes som referanse dersom kravet er begjært tidligere.
+- **opprinneligBeløp** er pengekravets opprinnelige beløp når kravet oppstod. 
+- **gjenståendeBeløp** er det beløpet som gjenstår når begjæringen sendes inn = opprinnelig beløp minus innbetalinger og nedjusteringer etter at kravet oppstod.
+- **sisteFristavbrytendeTiltak** er handling som avbryter løpende foreldelsesfrist og/eller gir ny forlenget frist.
+- **forsinkelsesrente** brukes for å angi historiske rentesatser på et rentebærende krav
+**rentesatsPeriode** angir perioden (fra og til dato) rentene er beregnet. Renten kan enten være beregnet med **standardForsinkelsesrente** eller **AvtaltRentesats**.
+I tillegg kan **prioritetISakFremtidigRentekrav** angis.
+- **kravforfall/forfallsdato** skal fylles ut for **Hovedkrav**, **TidligereRettsligeSakskostnader** og **UtenrettsligeKostnader**, men skal ikke fylles ut for **SakskostnaderForSkriving** og **Rentekrav**.
+- **betalingsoppfordring** er kun relevant for krav på utenrettslige inndrivingskostnader. For å kunne kreve utenrettslige inndrivingskostnader må man ha sendt betalingsoppfordring etter inkl. § 10 og det må være sendt senest 6 måneder før man begjærer, jf. inkl. 11 annet ledd.
+- **tilleggsfristForeldelse** skal brukes dersom kreditor ber om tilleggsfrist ut over den vanlige foreldelsesfristen ihht foreldelsesloven § 10.
+- I **innbetaling** kan man angi eventuelle innbetalinger eller andre nedjusteringer på kravet.
+- **transporterklæring** skal sendes dersom kravet har byttet eier, og det må vedlegges dokumentasjon.
+Dersom man angir **transporterklæring** på et hovedkrav trenger man ikke fylle ut posten for andre typer krav som er koblet til dette via å oppgi hovedkravets innsendersKravreferanse i relatertKrav.
+
+
+### e) BegjæringensTvangsgrunnlag
+
+Begjæringens tvangsgrunnlag omfatter data om tvangsgrunnlag(ene) i begjæringen. Disse må entes angis som Alminnelige tvangsgrunnlag eller Særlige tvangsgrunnlag.
+*Merk at kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.*
+
+STRUKTUR BILDE
+
+
+## Til bruk i forliksrådet
+Informasjon som vil gjelde alle tvangsgrunnlag som skal sendes til forliksrådet. Denne informasjonen trenger da ikke å gjentas for hvert tvangsgrunnlag.
+
+- **faktiskeForholdForKravet** er ment til å oppfylle vilkåret i tvisteloven § 6-3, bokstav d.
+- **påstand** (til forliksrådet) er uttalelse av det resultatet klageren i tilfelle krever ved dom. Eksempel: Hva A må betale til B, hvilken frist og hvilket beløp.
+- **kanBehandlesIForliksrådet** settes til true dersom saken ønskes behandlet i forliksrådet dersom saksøkte kommer med innsigelser.
+- **krevesFraværsdom** settes til true dersom det kreves fraværsdom.
+
+## Generell informasjon for alle typer tvangsgrunnlag
+Beskrivelse av informasjon som er felles for alle typer tvangsgrunnlag:
+
+- **tvangsgrunnlagsdato** er datoen tvangsgrunnlaget ble etablert
+- **innsendersKravreferanse** skal liste alle kravene som er knyttet til dette tvangsgrunnlaget
+- **begrunnelseUnnlatVarsel** kan angi en begrunnelse for at varsel ikke er sendt til saksøkt. Er ikke lov å fylle ut for SkriftligMeddelelse.
+- **tvangsgrunnlag** er et vedlegg som dokumentasjon av tvangsgrunnlaget som dom, faktura, gjeldsbrev eller annet grunnlag som gjør at et krav kan tvangsfullbyrdes.
+Merk: Kun en av typene **alminneligTvangsgrunnlag** eller **særligTvangsgrunnlagkan** sendes pr. tvangsgrunnlag.
+
+## Informasjon for Alminnelig tvangsgrunnlag
+Beskrivelse av informasjon for **alminneligTvangsgrunnlag**, dvs. dom eller annen avgjørelse som gjør at et krav kan tvangsfullbyrdes:
+- **type** angir type alminnelig tvangsgrunnlag i henhold til kodeliste, f.eks. domEllerKjennelse eller forelegg.
+- **oppfyllelsesfrist** er fristen for betaling som følger av domsslutningen.
+
+
+## Informasjon for Særlig tvangsgrunnlag
+Beskrivelse av informasjon for **særligTvangsgrunnlag**, dvs. ulike typer avtaler eller annet som i ulike lovbestemmelser er angitt som tvangsgrunnlag. Eksempel: Skatte- og avgiftskrav, skriftlige meddelelser (faktura, betalingsoppfordring), gjeldsbrev, utlegg, avtale om pant, salgspant mv..
+Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
+
+- **tvangsmulktEllerLovbestemmelse**
+-  type med lovlige verdier tvangsmulkt eller lovbestemmelse
+-  juridiskGrunnlag. Tvangsmulkt må følge av lov eller forskrift, det bør være mulig å angi grunnlaget. Bestemmelsen gjør krav som etter særskilt lovbestemmelse er tvangsgrunnlag til tvangsgrunnlag, det bør være mulig å oppgi grunnlaget.
+skriftligMeddelelse 
+- faktiskeForholdForKravet er ment til å oppfylle vilkåret i tvisteloven § 6-3, bokstav d.
+- kanBehandlesIForliksrådet settes til true dersom saken ønskes behandlet i forliksrådet dersom saksøkte kommer med innsigelser.
+- krevesFraværsdom settes til true dersom det kreves fraværsdom.
+- forsendelsesmåte kan enten være en definert forsendelsesmåte eller en alternativElektroniskKanal.
+- mottakeradresse kan enten være mottakeradresseInnland eller mottakeradresseUtland.
+gjeldsbrev er et signert dokument som inneholder et uforbeholdent løfte om betaling og vedtakelse av at pengene kan innkreves uten dom.
+ - skyldnererklæring =true angir at det er en signatur eller annen bekreftelse på vedtakelsen av at gjelden kan inndrives uten søksmål.
+ - inndrivelsesklausul =true angir at det er et vedtak om at gjelden kan inndrives uten søksmål. Vil bli fjernet i neste versjon av modellen.
+elektroniskGjeldserklæring
+- skyldnererklæring =true angir at det finnes en signatur eller annen bekreftelse på vedtaket om at gjelden kan inndrives uten søksmål,
+sjekkEllerVeksel beskriver om det er sjekk (true) eller veksel (true)
+Informasjon for Varsel
+varsel dokumenterer varsling i henhold til tvangsfullbyrdelsesloven $4-18 eller $4-19.  Inkluderer dokumentasjon av vilkår for at tvangsfullbyrdelse kan skje. Kravet må være forfalt og misligholdt og varsel må være sendt.
+
+dato angir dato når varslingen ble utført.
+tvangskraftgrunnlag inneholder dokumentasjon av vilkår for at tvangsfullbyrdelse kan skje. Kravet må være forfalt og misligholdt og varsel må være sendt.
+forsendelsesmåtetype angir type forsendelsesmåte i henhold til kodeliste ForsendelsesmåteType, f.eks. eBoks, altinn eller alminneligPost.
+alternativElektroniskForsendelsesmåte er alternativ forsendelsesmåtetype ut over valg i kodelisten ForsendelsesmåteType. Her må det angis kanalForMeddelelse og dokumentasjon fra mottaker i akseptForkanalvalg.
+mottakeradresse er adresse som varselet er sendt til.
+
+
+
+
+
+
+
+
+
+</TabItem>
+<TabItem headerText="Test" itemKey="itemKey-6">
 
 Testmiljøet til Skatteetaten vil i utgangspunktet være tilgjengelig 24/7, men det kan ikke forventes teknisk support eller restart av miljøet hvis det går ned utenfor ordinær arbeidstid (kl. 8 – 15:45 alle ukedager). Miljø kan også være nede på kveldstid og i helger på grunn av vedlikehold.
 URL til testmiljøet er https://api-test.sits.no/api/utleggsbegjaering/v2
