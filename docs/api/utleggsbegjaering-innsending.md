@@ -514,7 +514,7 @@ Beskrivelse av sentrale elementer:
 
 ## Detaljering av de enkelte kravene som inngår i Utleggsbegjæringen.
 
-STRUKTUR
+![Struktur](../../static/download/utleggsbegjaering/3.0%20D%20struktur.png)
 
 - **kravdetaljer** angir hvilken type krav det er i henhold til kodeliste KravdetaljerUtleggsbegjaering. Eksempler på kravdetaljer er "Hovedkrav" som er det opprinnelige beløpet en person er skyldig og "Rentekrav" som omfatter renter som er påløpt etter at kravet oppstod.
 En opprinnelig faktura kan være et eksempel på et "Hovedkrav". Har man f. eks to fakturaer med ulikt forfall («kravforfall»), er dette å anse som to krav.
@@ -543,8 +543,7 @@ Dersom man angir **transporterklæring** på et hovedkrav trenger man ikke fylle
 Begjæringens tvangsgrunnlag omfatter data om tvangsgrunnlag(ene) i begjæringen. Disse må entes angis som Alminnelige tvangsgrunnlag eller Særlige tvangsgrunnlag.
 *Merk at kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.*
 
-STRUKTUR BILDE
-
+![Struktur](../../static/download/utleggsbegjaering/3.0%20E%20struktur.png)
 
 ## Til bruk i forliksrådet
 Informasjon som vil gjelde alle tvangsgrunnlag som skal sendes til forliksrådet. Denne informasjonen trenger da ikke å gjentas for hvert tvangsgrunnlag.
