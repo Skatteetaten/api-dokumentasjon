@@ -491,11 +491,9 @@ Beskrivelse av sentrale elementer:
 - **Saksøkt** er den man krever penger fra. Dersom denne er representert av en prosessfullmektig, skal **saksøktesProsessfullmektig** utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
 - **Prosessfullmektig** må være en fysisk person. Dette kan være en advokat eller advokatfullmektig som er en generell **bevillingshaver**, eller en privatperson som har en spesifikk **fullmakt** til å opptre på vegne av en part. Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må **fullmakt** vedlegges med en **fraDato** som denne gjelder fra.
 
-STRUKTUR
+![Struktur](../../static/download/utleggsbegjaering/3.0%20B%20Struktur.png)
 
-DATATYPER
-
-
+![Datatyper](../../static/download/utleggsbegjaering/3.0%20B%20akt%C3%B8rer.png)
 
 
 ### c) Generelle elementer - Utleggsbegjæring v3.0
