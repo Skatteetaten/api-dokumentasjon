@@ -438,7 +438,7 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 
 ### Oversikt over endringer som er gjort i versjon 3.0 av Utleggsbegjæringen.
 - Lagt inn nytt element forsinkelsesrente under Krav for å angi informasjon om periodisert rentesats på rentebærende krav. Dette erstatter rentebærendeKrav som er fjernet.
-- Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men alle felt gjøres valgfrie.
+- Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men beholder kun forsendelsesmåte og mottaksadresse.
 - Fjernet rentekrav under Krav (ble varslet om i v2.1).
 - Fjernet kommunenummer under AdresseFrittFormatInnland.
 - Fjernet innehaverEnkeltpersonforetak (ENK) under Person.
@@ -573,32 +573,26 @@ Beskrivelse av informasjon for **særligTvangsgrunnlag**, dvs. ulike typer avtal
 Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 
 - **tvangsmulktEllerLovbestemmelse**
--  type med lovlige verdier tvangsmulkt eller lovbestemmelse
--  juridiskGrunnlag. Tvangsmulkt må følge av lov eller forskrift, det bør være mulig å angi grunnlaget. Bestemmelsen gjør krav som etter særskilt lovbestemmelse er tvangsgrunnlag til tvangsgrunnlag, det bør være mulig å oppgi grunnlaget.
-skriftligMeddelelse 
-- faktiskeForholdForKravet er ment til å oppfylle vilkåret i tvisteloven § 6-3, bokstav d.
-- kanBehandlesIForliksrådet settes til true dersom saken ønskes behandlet i forliksrådet dersom saksøkte kommer med innsigelser.
-- krevesFraværsdom settes til true dersom det kreves fraværsdom.
-- forsendelsesmåte kan enten være en definert forsendelsesmåte eller en alternativElektroniskKanal.
-- mottakeradresse kan enten være mottakeradresseInnland eller mottakeradresseUtland.
-gjeldsbrev er et signert dokument som inneholder et uforbeholdent løfte om betaling og vedtakelse av at pengene kan innkreves uten dom.
- - skyldnererklæring =true angir at det er en signatur eller annen bekreftelse på vedtakelsen av at gjelden kan inndrives uten søksmål.
- - inndrivelsesklausul =true angir at det er et vedtak om at gjelden kan inndrives uten søksmål. Vil bli fjernet i neste versjon av modellen.
-elektroniskGjeldserklæring
-- skyldnererklæring =true angir at det finnes en signatur eller annen bekreftelse på vedtaket om at gjelden kan inndrives uten søksmål,
-sjekkEllerVeksel beskriver om det er sjekk (true) eller veksel (true)
-Informasjon for Varsel
-varsel dokumenterer varsling i henhold til tvangsfullbyrdelsesloven $4-18 eller $4-19.  Inkluderer dokumentasjon av vilkår for at tvangsfullbyrdelse kan skje. Kravet må være forfalt og misligholdt og varsel må være sendt.
+- -  **type** med lovlige verdier tvangsmulkt eller lovbestemmelse
+  -  -  **juridiskGrunnlag***. Tvangsmulkt må følge av lov eller forskrift, det bør være mulig å angi grunnlaget. Bestemmelsen gjør krav som etter særskilt lovbestemmelse er tvangsgrunnlag til tvangsgrunnlag, det bør være mulig å oppgi grunnlaget.
+- **skriftligMeddelelse**
+- - **forsendelsesmåte** kan enten være en definert **forsendelsesmåte** eller en **alternativElektroniskKanal**.
+- - **mottakeradresse** kan enten være **mottakeradresseInnland** eller **mottakeradresseUtland**.
+- **gjeldsbrev** er et signert dokument som inneholder et uforbeholdent løfte om betaling og vedtakelse av at pengene kan innkreves uten dom.
+ - - **skyldnererklæring** =true angir at det er en signatur eller annen bekreftelse på vedtakelsen av at gjelden kan inndrives uten søksmål.
+ - - **inndrivelsesklausul** =true angir at det er et vedtak om at gjelden kan inndrives uten søksmål. Vil bli fjernet i neste versjon av modellen.
+- **elektroniskGjeldserklæring**
+- - **skyldnererklæring** =true angir at det finnes en signatur eller annen bekreftelse på vedtaket om at gjelden kan inndrives uten søksmål,
+- **sjekkEllerVeksel** beskriver om det er sjekk (true) eller veksel (true)
 
-dato angir dato når varslingen ble utført.
-tvangskraftgrunnlag inneholder dokumentasjon av vilkår for at tvangsfullbyrdelse kan skje. Kravet må være forfalt og misligholdt og varsel må være sendt.
-forsendelsesmåtetype angir type forsendelsesmåte i henhold til kodeliste ForsendelsesmåteType, f.eks. eBoks, altinn eller alminneligPost.
-alternativElektroniskForsendelsesmåte er alternativ forsendelsesmåtetype ut over valg i kodelisten ForsendelsesmåteType. Her må det angis kanalForMeddelelse og dokumentasjon fra mottaker i akseptForkanalvalg.
-mottakeradresse er adresse som varselet er sendt til.
+## Informasjon for Varsel
+**varsel** dokumenterer varsling i henhold til tvangsfullbyrdelsesloven $4-18 eller $4-19.  Inkluderer dokumentasjon av vilkår for at tvangsfullbyrdelse kan skje. Kravet må være forfalt og misligholdt og varsel må være sendt.
 
-
-
-
+- **dato** angir dato når varslingen ble utført.
+- **tvangskraftgrunnlag** inneholder dokumentasjon av vilkår for at tvangsfullbyrdelse kan skje. Kravet må være forfalt og misligholdt og varsel må være sendt.
+- **forsendelsesmåtetype** angir type forsendelsesmåte i henhold til kodeliste **ForsendelsesmåteType**, f.eks. eBoks, altinn eller alminneligPost.
+- **alternativElektroniskForsendelsesmåte** er alternativ forsendelsesmåtetype ut over valg i kodelisten **ForsendelsesmåteType**. Her må det angis **kanalForMeddelelse** og dokumentasjon fra mottaker i **akseptForkanalvalg**.
+- **mottakeradresse** er adresse som varselet er sendt til.
 
 
 
