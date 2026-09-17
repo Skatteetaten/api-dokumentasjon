@@ -359,7 +359,7 @@ Beskrivelse av informasjon for **særligTvangsgrunnlag**, dvs. ulike typer avtal
 
 I dette avsnittet vises eksempler på data som illusterer hvordan man kan bygge opp en utleggsbegjæring i henhold til informasjonsmodellen.
 
-## Eksempel på utleggsbegjæring
+## Eksempel på utleggsbegjæring v2.1
 Eksemplene nedenfor bruker testparter fra Tenor. De syntetiske dataene i dokumentet byttes ut med deres egne syntetiske data. Dette inkluderer opplastede vedlegg, samt valgte aktører (innsender, saksøkte, saksøkere og prosessfullmektig) fra Tenor.
 
 :::info[Enkelt eksempel]
