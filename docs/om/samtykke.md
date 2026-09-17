@@ -11,15 +11,15 @@ hide_table_of_contents: true
 ---
 <Summary> Skatteetaten tilbyr samtykkebasert datauthenting basert på Altinn sin løsning for digitalt samtykke.</Summary>
 
-## Ny samtykkeløsning
-Skatteetaten  er i ferd med å migrere relevante API-er til ny samtykkeløsningen i Altinn 3, og API-ene vil i en overgangsperiode støtte både nytt og gammel samtykke. Detaljerer beskrevet i Digdir sin dokumentasjon: 
+## Samtykkeløsning
+Skatteetaten benytter Altinn sin løsning for digitalt samtykke, og detaljene er beskrevet i Digdir sin dokumentasjon: 
 - [Samtykke i Altinn 3](https://docs.altinn.studio/nb/authorization/what-do-you-get/consent/)
 - [Samtykke for datakonsument](https://docs.altinn.studio/nb/authorization/guides/system-vendor/consent/)
 
-For at bankene skal ta i bruk ny samtykke-løsning må de:
-- Først [sette opp den nye løsnigen som Datakonsument/Sluttbrukersystem](https://docs.altinn.studio/nb/authorization/getting-started/consent/)
+For å ta i bruk samtykke-løsningen må virksomheten:
+- Først [sette opp løsnigen som Datakonsument/Sluttbrukersystem](https://docs.altinn.studio/nb/authorization/getting-started/consent/)
 - Deretter [utstede et maskinporten-token med samtykke](https://docs.altinn.studio/nb/authorization/guides/system-vendor/consent/)
-- Anvende dette som et vanlig maskinporten-token i Authorization-header i kall mot Skatteetaten sine API-er som krever samtykke (AltinnSamtykke-header benyttes ikke lenger, det gjelder kun samtykker i Altinn 2).
+- Anvende dette som et vanlig maskinporten-token i Authorization-header i kall mot Skatteetaten sine API-er som krever samtykke (AltinnSamtykke-header benyttes ikke lenger, det gjaldt kun samtykker i Altinn 2).
 
 For Summert skattegrunnlag API må metadata-objektet i consent-requesten inneholde inntektsår. Eksempel:
 ```
@@ -72,7 +72,7 @@ For Inntekt API må metadata-objektet i consent-requesten inneholde fraogtil og 
 }
 ```
 
-Den tekniske flyten blir nå slik (oppsummert fra Digdir sin dokumentasjon](https://docs.altinn.studio/nb/authorization/guides/system-vendor/consent/):
+Den tekniske flyten blir slik (oppsummert fra Digdir sin dokumentasjon](https://docs.altinn.studio/nb/authorization/guides/system-vendor/consent/):
 
 1. Be om samtykke i en consent-request med med egengenerert id (uuid)
 2. Får respons som bekrefter at samtykke er etterspurt med lenke (viewId) som må aksesseres av parten som skal gi samtykke for å bekrefte at samtykke er avgitt. 
