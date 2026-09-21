@@ -461,7 +461,7 @@ inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
 
 
 ### a) Rotnivå - Utleggsbegjæring 3.0
-## RotEntiteten Utleggsbegjæring inneholder kjernerneinformasjon om innsendingen.
+## RotEntiteten Utleggsbegjæring inneholder kjerneinformasjon om innsendingen.
 
 ![Rotnivå](../../static/download/utleggsbegjaering/begjaering-a1.png)
 
