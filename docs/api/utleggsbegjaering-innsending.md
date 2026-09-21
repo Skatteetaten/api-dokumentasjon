@@ -607,18 +607,18 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
   "kreverRettsgebyrErstattet": {
     "kreverRettsgebyrErstattet": true,
     "prioritetISakRettsgebyr": 4,
-    "prioritetISakFremtidigRentekrav": 2
-    "kreverRenterAvRettsgebyr": true
+    "prioritetISakFremtidigRentekrav": 2,
+    "kreverRenterAvRettsgebyr": true,
   },
-  "betalingsinformasjon": {
+  "betalingsinformasjon": {}
     "betalingsmottaker": {
       "landkodeIdentifikator": "NO",
-      "taxIdentificationNumber": "312597772"
+      "taxIdentificationNumber": "312597772",
     },
     "norskKonto": true,
     "kidnummer": "2509937609",
     "kontoinformasjon": {
-      "kontonummer": "69930570044"
+      "kontonummer": "69930570044",
     }
   },
   "saksoeker": [
@@ -627,7 +627,7 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
         "virksomhet": {
           "navn": "AKUSTISK UKLAR TIGER AS",
           "identifikator": {
-            "taxIdentificationNumber": "314441052",
+            "taxIdentificationNumber": "314441052"
             "landkodeIdentifikator": "NO"
           }
         }
