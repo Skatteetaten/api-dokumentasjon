@@ -424,13 +424,6 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 
 
 
-
-
-
-
-
-
-
 </TabItem>
 <TabItem headerText="Informasjonsmodell 3.0" itemKey="itemKey-5">
 
@@ -441,22 +434,23 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 2. Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men beholder kun forsendelsesmåte og mottaksadresse.
 3. Fjernet rentekrav under Krav (ble varslet om i v2.1).
 4. Fjernet kommunenummer under AdresseFrittFormatInnland.
-Fjernet innehaverEnkeltpersonforetak (ENK) under Person.
-5. Fjernet ukjentBosted og postboks i kodeliste AdresseType.
-6. Gjort adresse under Aktør valgfritt og fjernet forretningsadresse i kodeliste AdresseType (vi trenger kun å motta bopelsadresse for saksøkte personer og eventuelt postadresse for virksomheter).
-7. Fjernet ukjentBosted under AdresseIBegjæring
-8. Fjernet rettshjelper, annet og kommune i kodeliste VirksomhetsType.
-9. Fjernet innsendersProsessfullmektig under Innsender.
-10. Fjernet kravEndring under Krav (alle nedjusteringer skal sendes som innbetaling).
-11. Fjernet følgende elementer som ble satt som deprecated i v2.1:
-    a. eksternSaksreferanse under BegjæringensTvangsgrunnlagtype under Varsel
-    b. forkynnelsesdato under Domsslutningsinformasjon
-    c. forpliktet og berettiget under Domsslutningsinformasjon
-    d. skyldner og kreditor under SærligTvangsgrunnlag
-    e. vedtakendeMyndighet under TvangsmulktEllerLovbestemmelse
-    f. kravetsGrunnlag under SkriftligMeddelelse
-    g. vitne under Gjeldsbrev
-    h. inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
+5. Fjernet innehaverEnkeltpersonforetak (ENK) under Person.
+6. Fjernet ukjentBosted og postboks i kodeliste AdresseType.
+7. Gjort adresse under Aktør valgfritt og fjernet forretningsadresse i kodeliste AdresseType (vi trenger kun å motta bopelsadresse for saksøkte personer og eventuelt postadresse for virksomheter).
+8. Fjernet ukjentBosted under AdresseIBegjæring
+9. Fjernet rettshjelper, annet og kommune i kodeliste VirksomhetsType.
+10. Fjernet innsendersProsessfullmektig under Innsender.
+11. Fjernet kravEndring under Krav (alle nedjusteringer skal sendes som innbetaling).
+12. Fjernet følgende elementer som ble satt som deprecated i v2.1:
+    a. eksternSaksreferanse under BegjæringensTvangsgrunnlag
+    b.type under Varsel
+    c. forkynnelsesdato under Domsslutningsinformasjon
+    d. forpliktet og berettiget under Domsslutningsinformasjon
+    e. skyldner og kreditor under SærligTvangsgrunnlag
+    f. vedtakendeMyndighet under TvangsmulktEllerLovbestemmelse
+    g. kravetsGrunnlag under SkriftligMeddelelse
+    h. vitne under Gjeldsbrev
+    i. inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
 
 
 
@@ -595,9 +589,262 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 - **mottakeradresse** er adresse som varselet er sendt til.
 
 
-## Eksempel
-![Informasjonsmodell-innsyn-trekk](../../static/download/utleggsbegjaering/Eksempelfil%20v3%201.0)
+ <details>
+      <summary>Eksempel</summary>
+<p>
+{
+  "innsenderReferanse": "InnsenderRef129",
+  "underskrift": "Anna Norman",
+  "tvangsfullbyrdelsestype": "utleggOgForliksklageKombinert",
+  "begjaeringsdato": "2026-07-02",
+  "vedlegg": [
+    {
+      "type": "annet",
+      "filnavn": "annet",
+      "uuid": "1207c764-a665-49e0-ae68-3f67b668bb6d"
+    }
+  ],
+  "kreverRettsgebyrErstattet": {
+    "kreverRettsgebyrErstattet": true,
+    "prioritetISakRettsgebyr": 4,
+    "prioritetISakFremtidigRentekrav": 2
+    "kreverRenterAvRettsgebyr": true
+  },
+  "betalingsinformasjon": {
+    "betalingsmottaker": {
+      "landkodeIdentifikator": "NO",
+      "taxIdentificationNumber": "312597772"
+    },
+    "norskKonto": true,
+    "kidnummer": "2509937609",
+    "kontoinformasjon": {
+      "kontonummer": "69930570044"
+    }
+  },
+  "saksoeker": [
+    {
+      "saksoeker": {
+        "virksomhet": {
+          "navn": "AKUSTISK UKLAR TIGER AS",
+          "identifikator": {
+            "taxIdentificationNumber": "314441052",
+            "landkodeIdentifikator": "NO"
+          }
+        }
+	  },
+	  "saksoekerKontaktinformasjon": {
+		"epostAdresse": "epost@yahoo.com",
+		"telefonnummer": "99563564"
+	  },
+	  "saksoekersProsessfullmektig": {
+		"prosessfullmektig": {
+		  "virksomhet": {
+		  "navn": "UTROLIG ESTETISK TIGER AS",
+		  "identifikator": {
+			"taxIdentificationNumber": "312597772",
+			"landkodeIdentifikator": "NO"
+		  },
+		  "virksomhetstype": "inkassovirksomhet",
+		  "adresse": [
+			  {
+				"adressetype": "postadresse",
+				"adresseInnland": {
+					"postnummer": "5231",
+					"adressetekst": "Ryensvei 55",
+					"poststedsnavn": "Bergen"
+				}
+			  }
+			]
+		  },
+		  "bevillingshaver": {
+			"navn": {
+			  "fornavn": "Anna",
+			  "etternavn": "Norman"
+			}
+		  }
+		}
+	  }  
+	}  
+  ],
+  "saksoekt": [
+	{
+	  "saksoekt": {
+		"adresse": [
+		  {
+			"adressetype": "bopelsadresse",
+			"adresseInnland": {
+			  "postnummer": "1333",
+			  "adressetekst": "Nattlandsåsen 2",
+			  "poststedsnavn": "Oslo"
+			}
+		  }
+		],
+		"person": {
+		  "personnavn": {
+			"fornavn": "RIK",
+			"etternavn": "FISKEKROK"
+		  },
+		  "foedselsdato": "1964-05-17",
+		  "identifikator": {
+			"taxIdentificationNumber": "10828697949",
+			"landkodeIdentifikator": "NO"
+		  }
+		}
+	  }
+    }
+  ],
+  "tilBrukIForliksraadet": {
+	  "krevesFravaersdom": true,
+	  "faktiskeForholdForKravet": "Gjelder ubetalt kredittkortgjeld",
+	  "paastand": "Klagemotparten dømmes til å betale bla bla bla lang tekst.",
+	  "kanBehandlesIForliksraadet": true
+  },
+  "begjaeringensTvangsgrunnlag": [
+    {
+      "innsendersKravreferanse": [
+        "termin1",
+        "termin2",
+        "kort123",
+        "renter123"
+     ],
+     "tvangsgrunnlagsdato": "2026-04-01",
+     "tvangsgrunnlag": {
+        "type": "tvangsgrunnlag",
+        "filnavn": "tvangsgrunnlag",
+        "uuid": "9e92b84b-4952-4b5e-bebf-14f3131946af"
+     },
+     "begrunnelseUnnlatVarsel": "fullbyrdelsenKanBliVanskeliggjort",
+     "saerligTvangsgrunnlag": {
+        "skriftligMeddelelse": {
+          "forsendelsesmaate": {
+            "forsendelsesmaate": "altinn"
+          }
+        }
+      }
+    }
+  ],
+  "kravTilInnkreving": [
+	  {
+		"kravforfall": {
+			"forfallsdato": "2026-04-01"
+		},
+		"innsendersKravreferanse": "termin1",
+		"opprinneligBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"gjenstaaendeBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"prioritetDekningsloven": "e",
+		"prioritetISak": 1,
+		"kravdetaljer": "Hovedkrav",
+		"kravbeskrivelse": "Terminbeløp",
+		"forsinkelsesrente": [
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-04-01"
+				},
+				"avtaltRentesats": 18.0,
+				"prioritetISakFremtidigRentekrav": 2
+			}
+		]
+	  },
+	  {
+		"kravforfall": {
+			"forfallsdato": "2026-05-01"
+		},
+		"innsendersKravreferanse": "termin2",
+		"opprinneligBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"gjenstaaendeBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"prioritetDekningsloven": "e",
+		"prioritetISak": 1,
+		"kravdetaljer": "Hovedkrav",
+		"kravbeskrivelse": "Terminbeløp",
+		"forsinkelsesrente": [
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-05-01"
+				},
+				"avtaltRentesats": 18.0,
+				"prioritetISakFremtidigRentekrav": 2
+			}
+		]
+	  },
+	  {
+		"kravforfall": {
+			"forfallsdato": "2026-05-26"
+		},
+		"innsendersKravreferanse": "kort123",
+		"opprinneligBeloep": {
+			"beloep": 100000.0,
+			"valuta": "NOK"
+		},
+		"gjenstaaendeBeloep": {
+			"beloep": 100000.0,
+			"valuta": "NOK"
+		},
+		"prioritetDekningsloven": "e",
+		"prioritetISak": 1,
+		"kravdetaljer": "Hovedkrav",
+		"kravbeskrivelse": "Restgjeld",
+		"forsinkelsesrente": [
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-05-26",
+					"tilOgMedDato": "2026-06-30"
+				},
+				"avtaltRentesats": 8.5,
+				"prioritetISakFremtidigRentekrav": 2
+			},
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-06-30",
+					"tilOgMedDato": "2026-07-02"
+				},
+				"avtaltRentesats": 7.15,
+				"prioritetISakFremtidigRentekrav": 2
+			},
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-07-02"
+				},
+				"avtaltRentesats": 18.0,
+				"prioritetISakFremtidigRentekrav": 2
+			}
+		]
+   	},
+	{
+	  "kravforfall": {
+		"forfallsdato": "2026-07-02"
+	  },
+	  "innsendersKravreferanse": "renter123",
+	  "relatertKrav": "kort123",
+	  "opprinneligBeloep": {
+		"beloep": 930.20,
+		"valuta": "NOK"
+	  },
+	  "gjenstaaendeBeloep": {
+		"beloep": 930.20,
+		"valuta": "NOK"
+	  },
+	  "prioritetDekningsloven": "e",
+	  "prioritetISak": 2,
+	  "kravdetaljer": "Rentekrav",
+	  "kravbeskrivelse": "Renter på alle hovedkrav"
+	}
+  ]
+}
 
+</p>
+</details>
 
 </TabItem>
 <TabItem headerText="Test" itemKey="itemKey-6">
