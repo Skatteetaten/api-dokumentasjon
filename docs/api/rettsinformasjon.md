@@ -46,6 +46,10 @@ Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakk
 
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
+## Støttetjenester
+
+For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste](./hendelser.md): `Rettsinformasjon hendelser API`
+
 ## Datakatalog
 
 [Datatjenestebeskrivelse](https://data.norge.no/nb/data-services/a6b73c2f-cee9-3be7-af65-6e21f8ecc5e1) i Felles datakatalog.
