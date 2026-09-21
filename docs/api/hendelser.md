@@ -44,6 +44,7 @@ hendelseslistene på SwaggerHub:
 - [Næringsspesifikasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/naeringsspesifikasjon-hendelser-api)
 - [Opplysningspliktig hendelser API](https://app.swaggerhub.com/apis/skatteetaten/opplysningspliktig-hendelser-api)
 - [Pensjonsgivende inntekt for folketrygden hendelser API](https://app.swaggerhub.com/apis/skatteetaten/pensjonsgivende-inntekt-for-folketrygden-hendelser-api/)
+- [Rettsinformasjon hendelser API](https://app.swaggerhub.com/apis/skatteetaten/rettsinformasjon-hendelser-api)
 - [Selskapsmelding hendelser API](https://app.swaggerhub.com/apis/skatteetaten/selskapsmelding-hendelser-api)
 - [Skatteetaten-registrert selskap hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteetaten-registrert-selskap-hendelser-api)
 - [Skatteoppgjør hendelser API](https://app.swaggerhub.com/apis/skatteetaten/skatteoppgjor-hendelser-api)
@@ -73,6 +74,7 @@ Man trenger ikke egne scope for hendelseslistene, de benytter samme scope som re
 | Næringsspesifikasjon hendelser API                                    | skatteetaten:naeringsspesifikasjon                                                                                                                                                                   |
 | Opplysningspliktig hendelser API                                      | skatteetaten:opplysningspliktig                                                                                                                                                                      |
 | Pensjonsgivende inntekt for folketrygden hendelser API                | skatteetaten:pensjonsgivendeinntektforfolketrygden                                                                                                                                                   |
+| Rettsinformasjon hendelser API                                        | skatteetaten:rettsinformasjon                                                                                                                                                                        |
 | Selskapsmelding hendelser API                                         | skatteetaten:selskapsmelding                                                                                                                                                                         |
 | Skatteetaten-registrert selskap hendelser API                         | skatteetaten:skatteetatenregistrertselskap                                                                                                                                                           |
 | Skatteoppgjør hendelser API                                           | skatteetaten:spesifisertsummertskattegrunnlag, skatteetaten:summertskattegrunnlag, skatteetaten:beregnetskatt, skatteetaten:avregning, skatteetaten:skatteplikt, skatteetaten:pensjonsgivendeinntekt |
