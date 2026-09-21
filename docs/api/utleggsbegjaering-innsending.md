@@ -437,26 +437,26 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 ### UNDER ARBEID
 
 ### Oversikt over endringer som er gjort i versjon 3.0 av Utleggsbegjæringen.
-- Lagt inn nytt element forsinkelsesrente under Krav for å angi informasjon om periodisert rentesats på rentebærende krav. Dette erstatter rentebærendeKrav som er fjernet.
-- Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men beholder kun forsendelsesmåte og mottaksadresse.
-- Fjernet rentekrav under Krav (ble varslet om i v2.1).
-- Fjernet kommunenummer under AdresseFrittFormatInnland.
-- Fjernet innehaverEnkeltpersonforetak (ENK) under Person.
-- Fjernet ukjentBosted og postboks i kodeliste AdresseType.
-- Gjort adresse under Aktør valgfritt og fjernet forretningsadresse i kodeliste AdresseType (vi trenger kun å motta bopelsadresse for saksøkte personer og eventuelt postadresse for virksomheter).
-- Fjernet ukjentBosted under AdresseIBegjæring
-- Fjernet rettshjelper, annet og kommune i kodeliste VirksomhetsType.
-- Fjernet innsendersProsessfullmektig under Innsender.
-- Fjernet kravEndring under Krav (alle nedjusteringer skal sendes som innbetaling).
-- Fjernet følgende elementer som ble satt som deprecated i v2.1:
-eksternSaksreferanse under BegjæringensTvangsgrunnlagtype under Varsel
-forkynnelsesdato under Domsslutningsinformasjon
-forpliktet og berettiget under Domsslutningsinformasjon
-skyldner og kreditor under SærligTvangsgrunnlag
-vedtakendeMyndighet under TvangsmulktEllerLovbestemmelse
-kravetsGrunnlag under SkriftligMeddelelse
-vitne under Gjeldsbrev
-inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
+1. Lagt inn nytt element forsinkelsesrente under Krav for å angi informasjon om periodisert rentesats på rentebærende krav. Dette erstatter rentebærendeKrav som er fjernet.
+2. Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men beholder kun forsendelsesmåte og mottaksadresse.
+3. Fjernet rentekrav under Krav (ble varslet om i v2.1).
+4. Fjernet kommunenummer under AdresseFrittFormatInnland.
+Fjernet innehaverEnkeltpersonforetak (ENK) under Person.
+5. Fjernet ukjentBosted og postboks i kodeliste AdresseType.
+6. Gjort adresse under Aktør valgfritt og fjernet forretningsadresse i kodeliste AdresseType (vi trenger kun å motta bopelsadresse for saksøkte personer og eventuelt postadresse for virksomheter).
+7. Fjernet ukjentBosted under AdresseIBegjæring
+8. Fjernet rettshjelper, annet og kommune i kodeliste VirksomhetsType.
+9. Fjernet innsendersProsessfullmektig under Innsender.
+10. Fjernet kravEndring under Krav (alle nedjusteringer skal sendes som innbetaling).
+11. Fjernet følgende elementer som ble satt som deprecated i v2.1:
+    a. eksternSaksreferanse under BegjæringensTvangsgrunnlagtype under Varsel
+    b. forkynnelsesdato under Domsslutningsinformasjon
+    c. forpliktet og berettiget under Domsslutningsinformasjon
+    d. skyldner og kreditor under SærligTvangsgrunnlag
+    e. vedtakendeMyndighet under TvangsmulktEllerLovbestemmelse
+    f. kravetsGrunnlag under SkriftligMeddelelse
+    g. vitne under Gjeldsbrev
+    h. inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
 
 
 
@@ -595,7 +595,8 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 - **mottakeradresse** er adresse som varselet er sendt til.
 
 
-
+## Eksempel
+![Informasjonsmodell-innsyn-trekk](../../static/download/utleggsbegjaering/Eksempelfil%20v3%201.0)
 
 
 </TabItem>
