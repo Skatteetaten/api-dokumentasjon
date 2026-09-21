@@ -1,0 +1,250 @@
+{
+  "innsenderReferanse": "InnsenderRef129",
+  "underskrift": "Anna Norman",
+  "tvangsfullbyrdelsestype": "utleggOgForliksklageKombinert",
+  "begjaeringsdato": "2026-07-02",
+  "vedlegg": [
+    {
+      "type": "annet",
+      "filnavn": "annet",
+      "uuid": "1207c764-a665-49e0-ae68-3f67b668bb6d"
+    }
+  ],
+  "kreverRettsgebyrErstattet": {
+    "kreverRettsgebyrErstattet": true,
+    "prioritetISakRettsgebyr": 4,
+    "prioritetISakFremtidigRentekrav": 2
+    "kreverRenterAvRettsgebyr": true
+  },
+  "betalingsinformasjon": {
+    "betalingsmottaker": {
+      "landkodeIdentifikator": "NO",
+      "taxIdentificationNumber": "312597772"
+    },
+    "norskKonto": true,
+    "kidnummer": "2509937609",
+    "kontoinformasjon": {
+      "kontonummer": "69930570044"
+    }
+  },
+  "saksoeker": [
+    {
+      "saksoeker": {
+        "virksomhet": {
+          "navn": "AKUSTISK UKLAR TIGER AS",
+          "identifikator": {
+            "taxIdentificationNumber": "314441052",
+            "landkodeIdentifikator": "NO"
+          }
+        }
+	  },
+	  "saksoekerKontaktinformasjon": {
+		"epostAdresse": "epost@yahoo.com",
+		"telefonnummer": "99563564"
+	  },
+	  "saksoekersProsessfullmektig": {
+		"prosessfullmektig": {
+		  "virksomhet": {
+		  "navn": "UTROLIG ESTETISK TIGER AS",
+		  "identifikator": {
+			"taxIdentificationNumber": "312597772",
+			"landkodeIdentifikator": "NO"
+		  },
+		  "virksomhetstype": "inkassovirksomhet",
+		  "adresse": [
+			  {
+				"adressetype": "postadresse",
+				"adresseInnland": {
+					"postnummer": "5231",
+					"adressetekst": "Ryensvei 55",
+					"poststedsnavn": "Bergen"
+				}
+			  }
+			]
+		  },
+		  "bevillingshaver": {
+			"navn": {
+			  "fornavn": "Anna",
+			  "etternavn": "Norman"
+			}
+		  }
+		}
+	  }  
+	}  
+  ],
+  "saksoekt": [
+	{
+	  "saksoekt": {
+		"adresse": [
+		  {
+			"adressetype": "bopelsadresse",
+			"adresseInnland": {
+			  "postnummer": "1333",
+			  "adressetekst": "Nattlandsåsen 2",
+			  "poststedsnavn": "Oslo"
+			}
+		  }
+		],
+		"person": {
+		  "personnavn": {
+			"fornavn": "RIK",
+			"etternavn": "FISKEKROK"
+		  },
+		  "foedselsdato": "1964-05-17",
+		  "identifikator": {
+			"taxIdentificationNumber": "10828697949",
+			"landkodeIdentifikator": "NO"
+		  }
+		}
+	  }
+    }
+  ],
+  "tilBrukIForliksraadet": {
+	  "krevesFravaersdom": true,
+	  "faktiskeForholdForKravet": "Gjelder ubetalt kredittkortgjeld",
+	  "paastand": "Klagemotparten dømmes til å betale bla bla bla lang tekst.",
+	  "kanBehandlesIForliksraadet": true
+  },
+  "begjaeringensTvangsgrunnlag": [
+    {
+      "innsendersKravreferanse": [
+        "termin1",
+        "termin2",
+        "kort123",
+        "renter123"
+     ],
+     "tvangsgrunnlagsdato": "2026-04-01",
+     "tvangsgrunnlag": {
+        "type": "tvangsgrunnlag",
+        "filnavn": "tvangsgrunnlag",
+        "uuid": "9e92b84b-4952-4b5e-bebf-14f3131946af"
+     },
+     "begrunnelseUnnlatVarsel": "fullbyrdelsenKanBliVanskeliggjort",
+     "saerligTvangsgrunnlag": {
+        "skriftligMeddelelse": {
+          "forsendelsesmaate": {
+            "forsendelsesmaate": "altinn"
+          }
+        }
+      }
+    }
+  ],
+  "kravTilInnkreving": [
+	  {
+		"kravforfall": {
+			"forfallsdato": "2026-04-01"
+		},
+		"innsendersKravreferanse": "termin1",
+		"opprinneligBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"gjenstaaendeBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"prioritetDekningsloven": "e",
+		"prioritetISak": 1,
+		"kravdetaljer": "Hovedkrav",
+		"kravbeskrivelse": "Terminbeløp",
+		"forsinkelsesrente": [
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-04-01"
+				},
+				"avtaltRentesats": 18.0,
+				"prioritetISakFremtidigRentekrav": 2
+			}
+		]
+	  },
+	  {
+		"kravforfall": {
+			"forfallsdato": "2026-05-01"
+		},
+		"innsendersKravreferanse": "termin2",
+		"opprinneligBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"gjenstaaendeBeloep": {
+			"beloep": 1000.0,
+			"valuta": "NOK"
+		},
+		"prioritetDekningsloven": "e",
+		"prioritetISak": 1,
+		"kravdetaljer": "Hovedkrav",
+		"kravbeskrivelse": "Terminbeløp",
+		"forsinkelsesrente": [
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-05-01"
+				},
+				"avtaltRentesats": 18.0,
+				"prioritetISakFremtidigRentekrav": 2
+			}
+		]
+	  },
+	  {
+		"kravforfall": {
+			"forfallsdato": "2026-05-26"
+		},
+		"innsendersKravreferanse": "kort123",
+		"opprinneligBeloep": {
+			"beloep": 100000.0,
+			"valuta": "NOK"
+		},
+		"gjenstaaendeBeloep": {
+			"beloep": 100000.0,
+			"valuta": "NOK"
+		},
+		"prioritetDekningsloven": "e",
+		"prioritetISak": 1,
+		"kravdetaljer": "Hovedkrav",
+		"kravbeskrivelse": "Restgjeld",
+		"forsinkelsesrente": [
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-05-26",
+					"tilOgMedDato": "2026-06-30"
+				},
+				"avtaltRentesats": 8.5,
+				"prioritetISakFremtidigRentekrav": 2
+			},
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-06-30",
+					"tilOgMedDato": "2026-07-02"
+				},
+				"avtaltRentesats": 7.15,
+				"prioritetISakFremtidigRentekrav": 2
+			},
+			{
+				"rentesatsperiode": {
+					"fraOgMedDato": "2026-07-02"
+				},
+				"avtaltRentesats": 18.0,
+				"prioritetISakFremtidigRentekrav": 2
+			}
+		]
+   	},
+	{
+	  "kravforfall": {
+		"forfallsdato": "2026-07-02"
+	  },
+	  "innsendersKravreferanse": "renter123",
+	  "relatertKrav": "kort123",
+	  "opprinneligBeloep": {
+		"beloep": 930.20,
+		"valuta": "NOK"
+	  },
+	  "gjenstaaendeBeloep": {
+		"beloep": 930.20,
+		"valuta": "NOK"
+	  },
+	  "prioritetDekningsloven": "e",
+	  "prioritetISak": 2,
+	  "kravdetaljer": "Rentekrav",
+	  "kravbeskrivelse": "Renter på alle hovedkrav"
+	}
+  ]
+}
