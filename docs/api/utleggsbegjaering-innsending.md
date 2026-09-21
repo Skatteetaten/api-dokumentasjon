@@ -592,7 +592,7 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
  <details>
       <summary>Eksempel</summary>
 <p>
-{
+{}
   "innsenderReferanse": "InnsenderRef129",
   "underskrift": "Anna Norman",
   "tvangsfullbyrdelsestype": "utleggOgForliksklageKombinert",
