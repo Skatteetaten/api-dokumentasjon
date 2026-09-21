@@ -591,8 +591,10 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 
  <details>
       <summary>Eksempel</summary>
-<p>
-{}
+
+	 <p>
+```json
+{
   "innsenderReferanse": "InnsenderRef129",
   "underskrift": "Anna Norman",
   "tvangsfullbyrdelsestype": "utleggOgForliksklageKombinert",
@@ -842,7 +844,7 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 	}
   ]
 }
-
+```
 </p>
 </details>
 
