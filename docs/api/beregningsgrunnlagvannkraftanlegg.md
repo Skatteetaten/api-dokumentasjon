@@ -65,12 +65,13 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
 
 ```json
 {
+  "ajourholdstidspunkt": "2026-09-03T10:47:59.929Z",
   "kraftverk": [
     {
       "spesifikasjonAvKraftverk": {
         "id": "72d46587-8656-487f-b0ab-de447c99fbb4",
-        "navn": "Skjærviken kraft",
         "loepenummer": "0001",
+        "navn": "Skjærviken kraft",
         "aarForDriftssettelse": "1971",
         "samletPaastempletMerkeytelseIKva": 250000,
         "beregnetFormuesverdiOgGrunnlagForBeregningAvSaerskiltEiendomsskattegrunnlag": {
@@ -83,13 +84,12 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
               "salgsinntekt": 75000000
             },
             "bruttoSalgsinntekt": 75100000,
-            "fradragForKostnader": 50100000,
             "fradragForGrunnrenteskatt": 50000000
           },
           "kontantstroemForDriften": 27022853,
           "naaverdiPaaKontantstroemOverUendeligLevetid": 600507848,
-          "fradragForFremtidigeUtskiftningskostnader": 37896394,
-          "formuesverdi": 562611454,
+          "fradragForFremtidigeUtskiftningskostnader": 25042839,
+          "formuesverdi": 575465008,
           "minimumsverdiForEiendomsskattegrunnlag": 95000000,
           "maksimumsverdiForEiendomsskattegrunnlag": 274000000,
           "eiendomsskattegrunnlag": 274000000,
@@ -112,19 +112,48 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
           "grunnlagForNaturressursskattPerInntektsaar": [
             {
               "id": "909640bc-e20c-4361-8946-121c3810162e",
-              "inntektsaar": "2023",
+              "inntektsaar": "2024",
               "aarsproduksjon": 100000000
             }
           ]
         }
       }
+    },
+    {
+      "spesifikasjonAvKraftverk": {
+        "id": "001b14f8-47a0-430f-940b-23371ef4db57",
+        "loepenummer": "0007",
+        "navn": "UNDER BYGGING",
+        "aarForDriftssettelse": "2028",
+        "samletPaastempletMerkeytelseIKva": 70000,
+        "beregnetFormuesverdiOgGrunnlagForBeregningAvSaerskiltEiendomsskattegrunnlag": {
+          "eiendomsskattegrunnlag": 3050000
+        },
+        "eierandel": 100.0
+      }
     }
   ],
   "spesifikasjonAvAnleggsmiddel": [
     {
+      "saerskiltAnleggsmiddelIKraftverk": [
+        {
+          "kraftverketsLoepenummer": "0001",
+          "anleggsmiddelidentifikator": "Vispen",
+          "anleggsmiddeltype": "dam",
+          "beskrivelse": "Vispen",
+          "anskaffelseAvEllerPaakostningPaaSaerskiltAnleggsmiddelIKraftverk": [
+            {
+              "anskaffelsesEllerPaakostningsdato": "2017-01-01",
+              "avskrivningstid": 40,
+              "gjenstaaendeLevetid": 58,
+              "konsumprisindeksjustertInvesteringskostnadForBeregningAvNaaverdi": 52208530.81,
+              "naaverdiAvFremtidigeUtskiftningskostnader": 4289086.33
+            }
+          ]
+        }
+      ],
       "saldoavskrevetAnleggsmiddel": [
         {
-          "id": "b6e5345e-f9ea-4f2f-a1ae-8c848d87e726",
           "objektidentifikator": "E25-1",
           "objektbeskrivelse": "El. installasjon i kraftverk",
           "ervervsdato": "2025-08-01",
@@ -135,81 +164,28 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
             "konsumprisindeksjustertInvesteringskostnad": 1000000.0,
             "tilleggsopplysningForSaldogruppeG": [
               {
-                "id": "ead17b32-8531-4134-9b86-5e5d4e2d5235",
                 "erDriftsmiddelElektrotekniskUtrustningIKraftforetak": true,
                 "kommunenummer": "3107"
               }
             ]
           },
-          "utgaaendeVerdi": 950000.0,
-          "aaretsAvskrivning": 50000.0,
           "saldogruppe": "g",
-          "nyanskaffelse": 1000000.0
+          "nyanskaffelse": 1000000.0,
+          "konsumprisindeksjustertInvesteringskostnadForKorrigeringAvKommunefordelingAvEiendomsskattegrunnlagISaldogruppeG": 507625.27
         }
       ],
       "lineaertavskrevetAnleggsmiddel": [
         {
-          "id": "208c0955-e8ab-4a35-966b-d7fd8cfe28b9",
           "objektidentifikator": "111111",
           "objektbeskrivelse": "Programvare",
           "ervervsdato": "2022-01-01",
           "spesifikasjonAvOrdinaertAnleggsmiddelIVannkraftverk": {
-            "kraftverketsLoepenummer": "0001",
             "gjenstaaendeLevetid": 6,
             "naaverdiAvFremtidigeUtskiftningskostnaderForVannkraftverk": 4836482.43,
             "konsumprisindeksjustertInvesteringskostnad": 2242671.01
           },
-          "utgaaendeVerdi": 1200000.0,
           "anskaffelseskost": 2000000.0,
-          "levetid": 120,
-          "aaretsAvskrivning": 200000.0
-        }
-      ],
-      "ikkeAvskrivbartAnleggsmiddel": [
-        {
-          "id": "00f9335f-42b6-4f08-909a-136f16cedf01",
-          "objektidentifikator": "A",
-          "objektbeskrivelse": "Tomt",
-          "ervervsdato": "2020-01-01",
-          "spesifikasjonAvOrdinaertAnleggsmiddelIVannkraftverk": {
-            "kraftverketsLoepenummer": "0001"
-          },
-          "utgaaendeVerdi": 1333333.0,
-          "justeringForAapenbarVerdiendring": 333333.0
-        }
-      ],
-      "saerskiltAnleggsmiddelIKraftverk": [
-        {
-          "id": "fe7b25a9-e4d7-4fa7-9cb7-a476e7681431",
-          "kraftverketsLoepenummer": "0001",
-          "anleggsmiddelidentifikator": "LA-8",
-          "anleggsmiddeltype": "dam",
-          "beskrivelse": "Bjørnedammen",
-          "aaretsSamledeAvskrivningForSaerskiltAnleggsmiddelIKraftverk": 17419.75,
-          "utgaaendeVerdiForSaerskiltAnleggsmiddelIKraftverk": 1982580.25,
-          "anskaffelseAvEllerPaakostningPaaSaerskiltAnleggsmiddelIKraftverk": [
-            {
-              "id": ["a3e60e97-b87b-46d6-954e-c3d515cc386a"],
-              "anskaffelsesEllerPaakostningsidentifikator": "LA-8",
-              "anskaffelsesEllerPaakostningsdato": "2025-06-02",
-              "avskrivningstid": 67,
-              "gjenstaaendeLevetid": 66,
-              "historiskKostpris": 2000000.0,
-              "konsumprisindeksjustertInvesteringskostnadForBeregningAvNaaverdi": 2000000.0,
-              "konsumprisindeksjustertInvesteringskostnadForKorrigeringAvKommunefordelingAvEiendomsskattegrunnlag": 1015250.54,
-              "naaverdiAvFremtidigeUtskiftningskostnader": 115537.51,
-              "kommune": ["3107"]
-            }
-          ]
-        }
-      ],
-      "anleggsmiddelUnderUtfoerelseSomIkkeErAktivert": [
-        {
-          "id": "6a926b28-6262-425e-b182-1e59431e0cc1",
-          "objektidentifikator": "B2B1",
-          "objektbeskrivelse": "Dam",
-          "kraftverketsLoepenummer": "0001",
-          "anskaffelseskost": 2000000.0
+          "levetid": 120
         }
       ]
     }
