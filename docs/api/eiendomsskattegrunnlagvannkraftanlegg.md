@@ -64,18 +64,19 @@ For å følge med på endringer tilbyr vi en [støttetjeneste for hendelsesliste
 
 ```json
 {
-  "organisasjonsnummer": "312802562",
+  "kraftselskapetsSamledeGrunnlagForEiendomsskatt": 19600000,
+  "ajourholdstidspunkt": "2026-08-07T06:17:06.914Z",
+  "organisasjonsnummer": "312848945",
   "kommunefordeltEiendomsskattegrunnlagForKraftverk": [
     {
-      "samletEiendomsskattegrunnlagForKraftverk": 9857000,
-      "kraftverketsLoepenummer": "1001",
-      "anvendtFordelingsnoekkel": 14.854211,
-      "grunnlagForEiendomsskatt": 1464180,
-      "kommunenummer": "3101",
-      "kraftverketsNavn": "Storvannet"
+      "kommunenummer": "5601",
+      "kraftverketsNavn": "Skagen kraftverk",
+      "samletEiendomsskattegrunnlagForKraftverk": 19600000,
+      "kraftverketsLoepenummer": "0094",
+      "anvendtFordelingsnoekkel": 25.14579,
+      "grunnlagForEiendomsskatt": 4928575
     }
-  ],
-  "kraftselskapetsSamledeGrunnlagForEiendomsskatt": 20817000
+  ]
 }
 ```
 
