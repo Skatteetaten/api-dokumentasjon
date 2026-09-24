@@ -27,7 +27,7 @@ Så snart korrekt API og rettighetspakke for virksomheten er avklart, vil Skatte
 Når virksomheten har fått beskjed at tilgangen (scopet) er opprettet i Maskinporten må tilgangen provisjoneres fra den klienten virksomheten skal benytte for å hente data. Dette gjøres ved å oppdatere Oauth2 klienten som skal ha tilgangen med det nye scopet, via [ID-porten sitt API for selvbetjening av integrasjoner](https://docs.digdir.no/oidc_api_admin_maskinporten) eller via et brukergrensesnitt i samarbeidsportalen. All kommunikasjon mot Maskinporten er sikret med "server-to-server oauth2" med bruk av virksomhetssertifikat. For test trenger man et testsertifikat av typen 'signering'. Når dette er gjort kan man begynne å bruke skatteetatatens API-er.
 
 ### Bruke Skatteetatens API-er med token fra Maskinporten
-All kommunikasjon mellom virksomheten, Maskinporten og Skatteetaten gjøres over HTTPS (TLS). Bruk av REST-API-er hos Maskinporten er sikret med "server-to-server oauth2", se mer informasjon om dette her: [Digidr oauth2](https://docs.digdir.no/oidc_auth_server-to-server-oauth2).
+All kommunikasjon mellom virksomheten, Maskinporten og Skatteetaten gjøres over HTTPS (TLS). Bruk av REST-API-er hos Maskinporten er sikret med "server-to-server oauth2", se mer informasjon om dette her: [Server-to-server API-autorisasjon med Oauth2](https://docs.digdir.no/docs/Maskinporten/maskinporten_auth_server-to-server-oauth2).
 
 **Overordnet gjøres følgende:**
 1. Først gjøres et kall til Maskinporten for å få et token som kan brukes mot Skatteetaten. Fremgangsmåten er beskrevet på [Digdir sine side for hvordan bruke Maskinporten som konsument](https://docs.digdir.no/docs/Maskinporten/maskinporten_guide_apikonsument#bruke-delegering-som-konsument). Merk at "Resource" er valgfri og skal ikke settes for Skatteetatens API. Dette medfører at audience blir "unspecified" - som Skatteetaten forventer.
@@ -40,6 +40,10 @@ Se egen side for informasjon om [hvordan opptre på vegne av en annen virksomhet
 
 ### Systemtilgang med systembruker
 Se egen side for informasjon om [systemtilgang for systembruker](./systembruker.md).
+
+## ID-porten
+For noen tjenester er det behov for å vite identiteten til sluttbrukeren, for eksempel ved integrasjon mot Altinn. Personlig innlogging for sluttbrukere gjøres ved hjelp av [ID-porten fra DigDir](https://samarbeid.digdir.no/id-porten/id-porten/18).
+[Digdirs samarbeidsportal](https://samarbeid.digdir.no/) benyttes på lik linje med Maskinporten for å opprette en klient med de aktuelle scopes for å hente ut et token fra ID-Porten, som benyttes for autorisering mot de respektive API-ene. 
 
 ## Brannmur
 
