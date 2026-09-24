@@ -483,7 +483,8 @@ Beskrivelse av sentrale elementer:
 - **Saksøker** er den som erklærer at noen er skyldig penger. Saksøker kan ha en prosessfullmektig, **saksøkersProsessfullmektig**, som representerer seg i sak om tvangsfullbyrdelse.
 - **Innsender** skal angis dersom det er en tredjepart som sender inn begjæringen på vegne av saksøker, f.eks. et inkassoselskap.
 - **Saksøkt** er den man krever penger fra. Dersom denne er representert av en prosessfullmektig, skal **saksøktesProsessfullmektig** utfylles. OBS! Det er påkrevd med norsk identifikator for saksøkt.
-- **Prosessfullmektig** må være en fysisk person. Dette kan være en advokat eller advokatfullmektig som er en generell **bevillingshaver**, eller en privatperson som har en spesifikk **fullmakt** til å opptre på vegne av en part. Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må **fullmakt** vedlegges med en **fraDato** som denne gjelder fra.
+- **Prosessfullmektig** må være en fysisk person. Dette kan være en advokat eller advokatfullmektig som er en generell **bevillingshaver**, eller en privatperson som har en spesifikk **fullmakt** til å opptre på vegne av en part.
+- Dersom prosessfullmektig er advokat, advokatfullmektig eller inkassobevillingshaver, skal bevillingshavers **navn** fylles ut. I alle andre tilfeller må **fullmakt** vedlegges med en **fraDato** som denne gjelder fra.
 
 ![Struktur](../../static/download/utleggsbegjaering/3.0%20B%20Struktur.png)
 
