@@ -427,8 +427,6 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 </TabItem>
 <TabItem headerText="Informasjonsmodell 3.0" itemKey="itemKey-5">
 
-### UNDER ARBEID
-
 ### Oversikt over endringer som er gjort i versjon 3.0 av Utleggsbegjæringen.
 1. Lagt inn nytt element forsinkelsesrente under Krav for å angi informasjon om periodisert rentesats på rentebærende krav. Dette erstatter rentebærendeKrav som er fjernet.
 2. Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men beholder kun forsendelsesmåte og mottaksadresse.
