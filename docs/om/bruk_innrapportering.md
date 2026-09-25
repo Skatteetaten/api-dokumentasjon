@@ -62,7 +62,17 @@ standard prosess.
 
 ## API for å markere en forsendelse som åpnet
 
-Skatteetaten har en tjeneste for å markere en forsendelse som åpnet. Når en forsendelse er markert som åpnet vil ikke lenger sluttbruker motta varslinger for forsendelsen. 
-Les mer om denne tjenesten i dokumentasjonen for [Forsendelse åpnet](../api/forsendelseaapnet.md).
+Skatteetaten tilbyr egne tjenester for å markere en forsendelse som åpnet. Når en forsendelse er markert som åpnet vil ikke lenger sluttbruker motta varslinger for forsendelsen.
 
+SBS som har en maskinell integrasjon med Skatteetaten og henter tilbakemelding eller andre utsendinger fra API tilbudt av Skatteetaten, kan også markere en forsendelse som åpnet maskinelt.
+Et slikt kall forteller Skatteetaten at forsendelsen er åpnet av sluttbrukersystemet og at det ikke er behov for revarsel på forsendelsen.
 
+Dersom forsendelse sendt ut av Skatteetaten  har fylt ut feltet for FCE-innhold så kan URL-en i dette feltet kalles for å markere forsendelsen som åpnet av SBS.
+
+API-ene benytter seg av FCE-funksjonalitet tilbudt av Dialogporten og krever et dialogtoken i Authorization header for autentisering.
+Se Altinn sin dokumentasjon for å [hente dialogdetaljer](https://docs.altinn.studio/nb/dialogporten/user-guides/getting-dialog-details/#h%C3%A5ndtering-av-front-channel-embeds) for mer informasjon om hvordan man integrer med endepunktene.
+
+Merk at URL-er knyttet til innhold markert med mediaType «application/vnd.dialogporten.frontchannelembed-url;type=text/html»
+understøttes av API som også vil kunne returnere innhold for forsendelsen, ikke bare for å markere en forsendelsen åpnet.
+
+Teknisk dokumentasjon for tjenesten(e) finner du her: [Forsendelse åpnet](../api/forsendelseaapnet.md).
