@@ -131,6 +131,7 @@ API-et for innrapportering via filopplasting har fire endepunkter
 * __GET /opplastinger/:id__: Henter status for en enkelt opplastet fil
 * __DELETE /opplastinger/:id__: Sletter en opplastet fil
 * __PUT /innsending__: Sender inn en opplastet og validert fil til behandling
+* __GET /forsendelser/:forsendelseId/dokumenter/:dokumentId__: Henter ut tilbakemelding eller tidligere innsendt fil
 
 Se [feilkoder](innrapportering-tpo-filmottak?tab=Feilkoder) for relaterte feilmeldinger.
 
@@ -281,7 +282,7 @@ AKSJESPAREKONTO EKSEMPEL
 }
 ```
 
-### Status
+### GET /opplastinger/:id
 
 #### Eksempel på respons
 
@@ -296,7 +297,7 @@ AKSJESPAREKONTO EKSEMPEL
 ]
 ```
 
-### Send inn
+### PUT /innsending
 
 #### Eksempel på respons
 
@@ -308,11 +309,20 @@ AKSJESPAREKONTO EKSEMPEL
 }
 ```
 
-### Slett
+### DELETE /opplastinger/:id
 
 #### Eksempel på respons
 
 200 OK uten mer data
+
+### GET /forsendelser/:forsendelseId/dokumenter/:dokumentId
+
+#### Eksempel på respons
+
+200 OK med forventet fil.
+
+Returnert filtype kan være enten application/json, application/xml, application/pdf eller text/csv.
+
 
 
 </TabItem>
