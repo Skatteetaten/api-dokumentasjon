@@ -499,7 +499,6 @@ Beskrivelse av sentrale elementer:
 * **valgtNamsmannsdistrikt** skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6).
 
 ![Generelle elementer-1](../../static/download/utleggsbegjaering/c%20generelle%20elementer.png)
-![Generelle elementer-2](../../static/download/utleggsbegjaering/begjaering-c2.png)
 
 
 
