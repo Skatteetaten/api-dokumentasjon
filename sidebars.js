@@ -49,7 +49,6 @@ const sidebars = {
         "api/rettsinformasjon",
         "api/selskapsmelding",
         "api/sistetilgjengeligeskatteoppgjoer",
-        "api/skattdialogdokumenter",
         "api/skatteberegningsgrunnlagupersonlig",
         "api/skatteetatenregistrertselskap",
         "api/skattemelding",
@@ -69,6 +68,7 @@ const sidebars = {
       "API-er for å hente data": [
         "api/frister",
         "api/kravogbetalinger",
+        "api/skattdialogdokumenter",
         { id: 'api/utleggsbegjaering-innsyn', label: "Utleggsbegjæring innsyn", type: 'doc' },
         { id: 'api/utleggsbegjaering-status', label: "Utleggsbegjæring status", type: 'doc' },
       ],

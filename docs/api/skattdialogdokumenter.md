@@ -53,6 +53,25 @@ Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:sk
 
 I en overgangsperiode, så vil følgende scope også gi tilgang til tjenesten: `skatteetaten:formueinntekt/skattemelding`
 
+### Ressurser
+
+Liste over støttede ressurser / dialogtyper:
+ - app_skd_formueinntekt-skattemelding-v2
+ - ske-eiendomsskatt-kraftselskap
+ - ske-endre-konto
+ - ske-forskuddsskatt-upersonlig
+ - ske-kildeskatt-renter-royalty-leie
+ - ske-kildeskatt-utbytte
+ - ske-skattekort
+ - ske-skattekort-a0282
+ - ske-skattekort-til-arbeidsgiver
+ - ske-skattekort-utenlandsk-arbeidstaker
+ - ske-skattemessig-bostedsbekreftelse
+ - ske-skatteoppgjoer-personlig
+ - ske-skatteoppgjoer-upersonlig
+ - ske-trekkontroll-forskuddstrekk
+ - ske-utsatt-frist-skattemelding-klienter
+
 ### ID-porten
 For noen dialoger kan et sluttbrukersystem oppleve å mangle API-tilgang til dokumentet. I disse tilfellene vil en innlogget bruker via ID-porten likevel kunne ha tilgang til dokumentet via GUI URL-en på Skatteetatens brukerflater. Denne forskjellen skyldes at Maskinporten og ID-porten har forskjellige tilgangsmekanismer, og at denne API-tjenesten kun støtter Maskinporten.
 
