@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
 keywords: [arbeidsgiveravgift, virksomheter]
-last_updated: Jun 23, 2026
+last_updated: Oct 5, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer informasjon om en virksomhet sitt grunnlag for arbeidsgiveravgift pr. 2 måneds termin for de siste tre terminer.</Summary>
@@ -44,18 +44,7 @@ Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakk
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
  
 ### Samtykke
-
-For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et.
-
-#### Samtykke med Altinn 3
-
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Arbeidsgiveravgift API er `digdir-arbeidsgiveravgift-skatteetaten`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert både i eksternt testmiljø og i Produksjon.
-
-#### Samtykke med Altinn 2
-
-| Tjenestekode | Formål |
-|--------| ------ |
-| 5616_3 | Kreves for rettighetspakke `ebevis`|
+For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md), og ressursid for Arbeidsgiveravgift API er `digdir-arbeidsgiveravgift-skatteetaten`.
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/53514316-7696-33cf-8e03-c5f4133f0050) i Felles datakatalog.
