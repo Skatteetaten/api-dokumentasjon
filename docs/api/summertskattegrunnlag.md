@@ -58,7 +58,7 @@ Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakk
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
 ### Samtykke
-For rettighetspakken `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et, og ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`.
+For rettighetspakken `sbl` kreves [samtykke](../om/samtykke.md), og ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`.
 
 Datakonsumenter med samtykke har kun lov til å spørre om summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
