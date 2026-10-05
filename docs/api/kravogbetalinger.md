@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Innkreving ]
 keywords: [ kravogbetalinger, krav og betalinger, innkreving ]
-last_updated: Mar 12, 2026
+last_updated: Oct 5, 2026
 hide_table_of_contents: true
 ---
 
@@ -77,21 +77,9 @@ Rettighetspakken `regnskapssystem` krever bruk av [systembruker-løsningen fra D
 Regnskapssystem-rettighetspakken gir tilgang til alle 4 endepunkter for virksomheter. Leverandøren kan kun få tilgang til API-et dersom leverandøren er integrert mot minimum ett API for innrapportering av opplysninger, og kunden har innrapportert opplysninger minst én gang gjennom sluttbrukersystemet. Leverandøren kan ikke benytte opplysningene til andre formål enn å tilrettelegge opplysningene for kundens bruk gjennom sluttbrukersystemet.
 
 ### Samtykke
-Rettighetspakken `finans` krever [samtykke](../om/samtykke.md).
+Rettighetspakken `finans` krever [samtykke](../om/samtykke.md), og ressursid for Krav og betalinger API er `ske-samtykke-krav-og-betalinger`. 
 
 Konsumenter setter selv varighet på samtykke med validTo-attributtet i consentRequesten de utfører mot Altinn, og for Krav og betalinger API skal varighet være ett år. Skatteetaten validerer at varighet ikke overstiger ett år fra samtykket er avgitt.
-
-#### Samtykke med Altinn 3
-
-Digdir har laget en ny samtykketjeneste. Ressursid for Krav og betalinger API er `ske-samtykke-krav-og-betalinger`. Krav og betalinger API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste. En versjon av API-et som støtter ny samtykketjeneste ligger nå ute i eksternt testmiljø og i Produksjon.
-
-OBS: Skatteetaten skrur av støtte for Altinn2-samtykketjenesten 30. april 2026, så innen da må alle konsumenter være over på Altinn3-samtykkeløsningen.
-
-#### Samtykke med Altinn 2
-
-| ServiceCode | ServiceEditionCode | Formål |
-|-------------|--------------------|--------|
-| 5928        | 202301             | Kreves for rettighetspakken `finans` |
 
 ## Datakatalog
 
