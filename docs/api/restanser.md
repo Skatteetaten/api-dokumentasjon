@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet, MVA]
 keywords: [restanser, skatteyter]
-last_updated: Jun 23, 2026
+last_updated: Oct 5, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer informasjon om forfalte og ubetalte skatter og avgifter for en virksomhet.</Summary>
@@ -45,17 +45,8 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
  
 ### Samtykke
 
-For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et.
+For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et, og ressursid for Restanser API er `digdir-restanser-skatteetaten`.
 
-#### Samtykke med Altinn 3
-
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Restanser API er `digdir-restanser-skatteetaten`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert både i eksternt testmiljø og i Produksjon.
-
-#### Samtykke med Altinn 2
-
-| Tjenestekode | Formål |
-|--------| ------ |
-| 5616_5 | Kreves for rettighetspakke `ebevis`|
  
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/0682ff1e-05b9-3031-8add-780f28853571) i Felles datakatalog.
