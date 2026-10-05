@@ -45,18 +45,8 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
 
 ### Samtykke
 
-For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et.
+For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et, og ressursid for Oppdrag utenlandske virksomheter API er `digdir-oppdragutenlandskevirksomheter-skatteetaten`.
 
-#### Samtykke med Altinn 3
-
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Oppdrag utenlandske virksomheter API er `digdir-oppdragutenlandskevirksomheter-skatteetaten`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert både i eksternt testmiljø og i Produksjon.
-
-#### Samtykke med Altinn 2
-
-| Tjenestekode | Formål |
-|--------| ------ |
-| 5616_2 | Kreves for rettighetspakke `ebevis`|
- 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/3f6f9089-163d-3fe0-86d2-691900806514) i Felles datakatalog.
 
