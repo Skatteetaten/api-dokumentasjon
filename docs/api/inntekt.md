@@ -57,7 +57,7 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
 
 ### Samtykke
 
-For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et, og ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`
+For rettighetspakke `sbl` kreves [samtykke](../om/samtykke.md), og ressursid for Inntekt API er `ske-samtykke-sbl-inntekt`
 
 Konsumenter setter selv varighet på samtykke med validTo-attributtet i consentRequesten de utfører mot Altinn, og for Inntekt API skal varighet være 3 måneder. Skatteetaten validerer at varighet ikke overstiger 93 dager fra samtykket er avgitt.
 
