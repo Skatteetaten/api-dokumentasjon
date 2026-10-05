@@ -45,7 +45,7 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
  
 ### Samtykke
 
-For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et. og ressursid for Mva-meldingsopplysning API er `digdir-mvameldingsopplysning-skatteetaten`.
+For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md), og ressursid for Mva-meldingsopplysning API er `digdir-mvameldingsopplysning-skatteetaten`.
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/38eb829e-33cb-3976-b789-5209c926473e) i Felles datakatalog.
