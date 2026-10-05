@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet, MVA]
 keywords: [mva, meldingsopplysning]
-last_updated: Jun 23, 2026
+last_updated: Oct 5, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer status på mva-melding og informasjon fra reskontro for en virksomhet for de siste tre terminene.</Summary>
@@ -45,17 +45,7 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
  
 ### Samtykke
 
-For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et.
-
-#### Samtykke med Altinn 3
-
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Mva-meldingsopplysning API er `digdir-mvameldingsopplysning-skatteetaten`. API-et vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert både i eksternt testmiljø og i Produksjon.
-
-#### Samtykke med Altinn 2
-
-| Tjenestekode | Formål |
-|--------| ------ |
-| 5616_4 | Kreves for rettighetspakke `ebevis`|
+For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et. og ressursid for Mva-meldingsopplysning API er `digdir-mvameldingsopplysning-skatteetaten`.
 
 ## Datakatalog
 [Datatjenestebeskrivelse](https://data.norge.no/dataservices/38eb829e-33cb-3976-b789-5209c926473e) i Felles datakatalog.
