@@ -45,7 +45,7 @@ Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i 
  
 ### Samtykke
 
-For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md) for dette API-et, og ressursid for Restanser API er `digdir-restanser-skatteetaten`.
+For rettighetspakke `ebevis` kreves [samtykke](../om/samtykke.md), og ressursid for Restanser API er `digdir-restanser-skatteetaten`.
 
  
 ## Datakatalog
