@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [ API, Skatteoppgjør ]
 keywords: [ skattegrunnlag, skatteoppgjør ]
-last_updated: Jun 23, 2026
+last_updated: Oct 5, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer en oppsummering av grunnlag for skatt for en person, inkludert spesifisering av hvilke
@@ -58,24 +58,11 @@ Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakk
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/), og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
 ### Samtykke
-For rettighetspakken `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et.
+For rettighetspakken `sbl` kreves [samtykke](../om/samtykke.md) for dette API-et, og ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`.
 
-Datakonsumenter med samtykke har kun lov til å spørre om summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med
-støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
+Datakonsumenter med samtykke har kun lov til å spørre om summert skattegrunnlag for siste tilgjengelige inntektsår, og dette kan sjekkes med støttetjenesten [Siste tilgjengelige skatteoppgjør API](./sistetilgjengeligeskatteoppgjoer.md).
 
 Konsumenter setter selv varighet på samtykke med validTo-attributtet i consentRequesten de utfører mot Altinn, og for Summert skattegrunnlag API skal varighet være 3 måneder. Skatteetaten validerer at varighet ikke overstiger 93 dager fra samtykket er avgitt.
-
-#### Samtykke med Altinn 3
-
-Digdir har laget en [ny samtykketjeneste](https://samarbeid.digdir.no/altinn/samtykketjenesten/2337). Ressursid for Summert skattegrunnlag API er `ske-samtykke-sbl-summert-skattegrunnlag`. Summert skattegrunnlag API vil i en overgangsperiode støtte både gammel- og ny samtykketjeneste, og er oppdatert i både eksternt testmiljø og produksjon. 
-
-OBS: Skatteetaten skrur av støtte for Altinn2-samtykketjenesten 30. april 2026, så innen da må alle konsumenter være over på Altinn3-samtykkeløsningen.
-
-#### Samtykke med Altinn 2
-
-| Tjenestekode | Formål                           |
-|--------------|----------------------------------|
-| 4628_210607  | Kreves for rettighetspakke `sbl` |           
 
 For denne tjenesten er det en parameter som må følge med:
 
