@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 datatable: true
 tags: [API, Seriøsitet]
 keywords: [oppdrag, virksomheter, utenlandske]
-last_updated: Jun 23, 2026
+last_updated: Ovt 5, 2026
 hide_table_of_contents: true
 ---
 <Summary>Tjenesten leverer informasjon fra Oppdrags- og arbeidsforholdsregisteret om utenlandske virksomheters oppdrag i Norge.</Summary>
