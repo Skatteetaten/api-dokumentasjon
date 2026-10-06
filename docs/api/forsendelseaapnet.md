@@ -19,6 +19,9 @@ For generell informasjon om tjenestene se egne sider om:
 
 * [Bruk av API-er for innrapportering](../om/bruk_innrapportering.md)
 
+API-et skal kun benyttes for forsendelser som har url som peker på denne tjenesten satt i feltet content.contentReference.value[].value og hvor content.contentReference = mediaType er «application/vnd.dialogporten.frontchannelembed-url;type=text/html».
+Dersom feltet er tomt eller det er satt en annen url skal ikke dette API-et benyttes.
+
 ## Dialogtoken
 
 API'et krevet et dialogtoken i Authorization header for autentisering. Dialogtokenet hentes fra Dialogporten, og er gyldig for én dialog i Dialogporten.
