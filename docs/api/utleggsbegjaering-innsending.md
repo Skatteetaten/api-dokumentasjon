@@ -81,7 +81,7 @@ Datatjenestebeskrivelse er ikke i Felles datakatalog enda.
 </TabItem>
 <TabItem headerText="Eksempler" itemKey="itemKey-2"> 
 
-Legg inn eksempler
+Se under henholdsvis "Informasjonsmodell 2.1" og "Informasjonsmodell 3.0"
 
 </TabItem>
 <TabItem headerText="Feilkoder" itemKey="itemKey-3">
