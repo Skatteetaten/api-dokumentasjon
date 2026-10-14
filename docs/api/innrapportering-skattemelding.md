@@ -547,7 +547,7 @@ Dersom en skal forhåndsfastsette før skattemeldingen er tilgjengelig, vil tjen
 og skattemeldingen må klargjøres for forhåndsfastsetting.
 
 ### 2. Klargjør for forhåndsfastsetting
-Dersom skattemeldingen ikke er klar på forhåndsfastsettingtidspunktet, må endepunktet
+Dersom skattemeldingen for inntektsåret ikke er klar på forhåndsfastsettingtidspunktet, må endepunktet
 `POST /api/skattemelding/v2/klargjoerforhaandsfastsetting/{inntektsår}/{identifikator}` kalles for å klargjøre skattemeldingen for forhåndsfastsetting.
 Når det er gjort, skal utkast kunne hentes for den skattepliktige. Utkastet vil da 
 
@@ -555,7 +555,18 @@ Når det er gjort, skal utkast kunne hentes for den skattepliktige. Utkastet vil
 Dersom en organisasjon mangler utkast etter at det er klargjort for forhåndsfassetting,
 kan endepunktet `POST /api/skattemelding/v2/klargjoerpart/{inntektsår}/{identifikator}` kalles for å klargjøre parten.
 
-4. 
+### 4. Klargjør dokumentene for innsending
+Når skattemeldingen er tilgjengelig, må skattemeldingen inneholde objektet `gjelderForhaandsfastsetting`.
+`innsendingsformat` er definert fra kodelisten `forhaandsfassettingsformattype.xml`.<br/>
+Om årets modeller og kodelister er tilgjengelig på forhåndsfastsettingstidspunktet, skal `aaretsSkattemelding` benyttes med gjeldende modeller for inntektsåret. <br/>
+Om det forhåndsfastsettes før årets modeller og kodelister er tilgjengelig, skal `fjoraaretsSkattemelding` benyttes på fjorårets innsendingsformat.
+Det er derimot noen unntak hvor inntektsårets kodelister skal benyttes. Disse er dokumentert i [informasjonsmodell/README.md på GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/informasjonsmodell/README.md).
+
+I tillegg må en i `skattemeldingOgNaeringsspesifikasjonRequest` angi hvilket navnerom skattemeldingen
+og eventuelt næringsspesifikasjonen er lagret på. Dette spesifiseres i `navneromVedForhaandsfastsetting` per `dokument`-objekt.
+Navnerommet ligger som en attributt i XSD-en til skattemeldingen og næringsspesifikasjonen, og må inkludere versjonsnummeret.
+
+Når skattemeldingen og næringsspesifikasjonen er utfylt, valideres og sendes disse inn på vanlig måte som beskrevet tidligere.
 
 </TabItem>
 
