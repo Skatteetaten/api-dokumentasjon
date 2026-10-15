@@ -44,7 +44,7 @@ API-ene for innsending vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på S
 
 Det tilbys to sett med API-er:
 
-- Skatteetatens API: har tjenester for henting- og validering av skattemeldinger, eiendomskalkulator, hent vedlegg og
+- Skatteetatens API: har tjenester for henting og validering av skattemeldinger, eiendomskalkulator, hent vedlegg og
   foreløpig avregning.
 - Altinn3 API: har tjenester for opprettelse og innsending av en skattemelding.
 
@@ -154,7 +154,7 @@ som illustrerer flyten ut fra endepunktene som skal benyttes.
 For en overordnet beskrivelse av noen sentrale konsepter i flyten, er [Skattemelding for selskap](https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/selskap/)
 nyttig bakgrunnsinformasjon.
 
-### 1. Hent gjeldende skattemelding
+## 1. Hent gjeldende skattemelding
 Første steg i innsendingsprosessen er å hente ut den siste gjeldende skattemeldingen.
 Denne danner grunnlaget for videre utfylling og senere innsending av skattemeldingen, og kan ha status utkast eller fastsatt:
 
@@ -167,7 +167,7 @@ XSD-filen for responsobjektet til tjenesten er `skattemeldingognaeringsspesifika
 Hvert dokument i responsen har et `id`-felt som må brukes ved innsending til å referere til det aktuelle dokumentet.
 De Base64-encodede dokumentene i konvolutten til responsobjektet er nærmere beskrevet i [fanen Informasjonsmodell](#informasjonsmodell-hent-gjeldende-skattemelding).
 
-#### 1.1 Utvidet veiledning
+### 1.1 Utvidet veiledning
 Det er mulig å etterspørre eventuelle ubesvarte utvidede veiledninger som del av dette API-et.
 
 En utvidet veiledning representerer opplysninger som Skatteetaten har om skatteyter som muligens burde vært oppgitt i skattmeldingen, men som ikke er det.
@@ -185,14 +185,14 @@ Parameteren støttes fra inntektsår 2022. Hvis request-parameteren sendes med f
 Normalt inneholder dokumentet i responsen informasjon som tilsvarer én entitet i skattemeldingen.
 I de tilfeller det er flere foreslår i praksis Skatteetaten at én av entitetene skal legges til, ikke alle.
 
-#### 1.2 Låste felter
+### 1.2 Låste felter
 Skatteetaten har muligheten til å låse enkeltfelter eller hele skattemeldingen og/eller næringsspesifikasjonen.
 Dette vil kun forekomme på en fastsatt skattemelding, og aldri utkast.
 
 Responsen til hent gjeldende skattemelding vil inneholde en liste over eventuelle låste felter for en fastsatt skattemelding.
 Dette er nærmere beskrevet i [Informasjonsmodell](#låste-felt).
 
-### 2. Søk etter eiendomsinformasjon, hent formuesgrunnlag og beregn markedsverdi
+## 2. Søk etter eiendomsinformasjon, hent formuesgrunnlag og beregn markedsverdi
 Skatteetaten har utviklet egne tjenester for å hente eiendomsinformasjon og formuesgrunnlag fra Eiendomsregisteret, og beregne korrekt markedsverdi.
 Eiendomsdataene som hentes ut og beregnes sendes inn til valideringstjenesten og senere som en del av skattemeldingen for at Skatteetaten skal få beregnet korrekt formuesverdi for eiendommene.
 Valideringstjenesten beregner og returnerer også formuesverdien for hele eiendommene, formuesverdien for den skattepliktiges formuesandel av
@@ -200,7 +200,7 @@ eiendommene, og verdi før verdsettingsrabatt for den skattepliktiges formuesand
 
 Eiendomsopplysninger preutfylles for personlige skattepliktige, men må fastsettes for upersonlige.
 
-#### 2.1 Søk etter eiendom
+### 2.1 Søk etter eiendom
 Søketjenesten brukes til å identifisere brukerens eiendommer som skal inngå i skattemeldingen.
 Tjenesten fungerer som inngangsport til de øvrige eiendomstjenestene, og leverer en eiendomsidentifikator som brukes videre i prosessen.
 Det er mulig å søke på alle norske veiadresser og matrikkelnummer.
@@ -212,7 +212,7 @@ Følgende forretningsregler gjelder for `query`-parameteren:
 * `Hvis første tegn man angir er en bokstav vil søket kun lete blant veiadresser.`
 * `Søket krever streng plassering av tegn.`
 
-#### 2.2 Hent formuesgrunnlag
+### 2.2 Hent formuesgrunnlag
 Formuesgrunnlag hentes ut for hver eiendom som skal inngå i skattemeldingen. Eiendomsidentifikatoren fra søketjenesten brukes til å identifisere eiendommene.
 Tjenesten henter ut ulik informasjon basert på hvilken eiendomstype eiendomsidentifikator har, samt inntektsåret det søkes for.
 Noen detaljer vil fjernes fra responsen hvis skatteyter ikke er eier av eiendommen.
@@ -230,7 +230,7 @@ For følgende eiendomstyper skal det beregnes markedsverdi gjennom tjenestene be
 Bruk endepunktet `/api/skattemelding/v2/eiendom/formuesgrunnlag/{inntektsår}/{eiendomsidentifikator}/{identifikator}`.
 `eiendomsIdentifikator` er `SERG eiendomsidentifikator` for eiendommen fra søketjenesten.
 
-#### 2.3 Beregning av markedsverdi/utleieverdi
+### 2.3 Beregning av markedsverdi/utleieverdi
 Det er tre tjenester som benyttes for å beregne markedsverdi for eiendommer basert på eiendomstype:
 * Selveid bolig, boenhet i boligselskap: tjenesten for beregning av markedsverdi for bolig
 * Flerboligbygning: tjenesten for å beregne markedsverdi for flerbolig
@@ -264,14 +264,14 @@ I responsen returneres feltene `beregnetMarkedsverdiForFlerboligbygning` for hel
 
 Skal det sendes med dokumentert markedsverdi for flerboligbygning, sendes feltet `dokumentertMarkedsverdiForFlerboligbygning` med i request-objektet sammen med `aarForMottattMarkedsverdiForFlerboligbygning`.
 
-#### 2.3.2 Beregning av utleieverdi for næringseiendom
+#### 2.3.3 Beregning av utleieverdi for næringseiendom
 Beregningen er basert på næringssjablong fra SSB hvor næringstype, areal, bystatus, sentralitet og skatteleggingsperiode inngår i beregningen.
 
 Endepunktet `/api/skattemelding/v2/eiendom/utleieverdi/{inntektsår}/{eiendomsidentifikator}` benyttes for å beregne utleieverdi for næringseiendom.
 
 Skal det sendes med dokumentert utleieverdi for næringseiendom, sendes feltet `dokumentertMarkedsverdiForIkkeUtleidNaeringseiendomINorge` med i request-objektet.
 
-### 3. Valideringstjenesten
+## 3. Valideringstjenesten
 Før innsending av skattemelding med næringsspesifikasjon, valideres innsendingen ved bruk av valideringstjenesten for å sikre at skattemeldingen er korrekt og mest sannsynligvis vil bli godkjent ved innsending.
 Samme tjeneste benyttes av Skatteetatens mottak ved validering av innsendt skattemelding. Som beskervet i de fire hovedstrategiene for implementasjon, kan SBS velge å implementere alle beregninger selv, eller integrere valideringstjenesten i sitt system.
 
@@ -309,7 +309,7 @@ XSD-en for requestobjektet til tjenesten er `skattemeldingognaeringsspesifikasjo
 og XSD til responsobjektet er `skattemeldingognaeringsspesifikasjonresponse_{versjon}.xsd`.
 XSD-ene er nærmere beskrevet i [Informasjonsmodell for validering og innsending av skattemelding med næringsspesifikasjon](#informasjonsmodell-for-validering-og-innsending-av-skattemelding-med-næringsspesifikasjon)
 
-#### 3.1 Kontrollutslag på kontroller av innsendte oppgaver
+### 3.1 Kontrollutslag på kontroller av innsendte oppgaver
 I forbindelse med validering kjøres eksterne kontroller i Skatteetatens saksbehandlingssystemer (SMIA). Kontroller som kjøres eksternt er benevnt som veiledning.
 Alle veiledningsforekomster har en betjeningsstrategi som returneres i responsdokumentet. Noen få av disse hindrer innsending, de fleste ikke.
 
@@ -317,7 +317,7 @@ Objektet `veiledningEtterKontroll` i responsen til valideringstjenesten innehold
 Objektet inneholder betjeningsstrategi og tekstlig gjengivelse av veiledningen.
 Disse er nærmere beskrevet i fanen [Informasjonsmodell](#respons-objekt).
 
-#### 3.2 Valideringsresultat og eventuelle avvisningsårsaker
+### 3.2 Valideringsresultat og eventuelle avvisningsårsaker
 Valideringstjenesten vil inneholde eget felt som viser valideringsresultatet, slik at man før innsending kan se om innsendt skattemelding med
 næringsspesifikasjon vil bli avvist eller ikke.
 
@@ -327,7 +327,7 @@ eller `validertMedFeil` om innsending vil medføre at skattemeldingen med nærin
 I tillegg returneres `aarsakTilValidertMedFeil` hvis valideringsresultatet er ´validertMedFeil´, gir en tekstkode for feilårsaken.
 `avvikVedValidering` returnerer en liste med alle avvik som ble funnet under valideringen.
 
-#### 3.3 Krav til næringsspesifikasjon
+### 3.3 Krav til næringsspesifikasjon
 * Næringsspesifikasjon skal alltid sendes inn sammen med skattemelding upersonlig
   * Valideringsregel vil gi feil dersom dette ikke er gjort, og eventuell senere innsending uten vil bli avvist
 * Næringsspesifikasjon skal alltid sendes inn sammen med skattemelding personlig, når den skattepliktige er definert til å ha
@@ -338,7 +338,7 @@ I tillegg returneres `aarsakTilValidertMedFeil` hvis valideringsresultatet er ´
 * Næringsspesifikasjon kan sendes inn sammen med skattemelding personlig når den skattepliktige ikke er definert som å ha
   enkeltpersonforetak for det året i skatteetatens systemer
 
-#### 3.4 Avrundingsregler
+### 3.4 Avrundingsregler
 For å unngå avvik i beregnede beløp må SBS og Skatteetatens valideringstjeneste benytte de samme prinsippene for avrunding av beløp.
 
 * 2 desimaler er tillatt for opplysningene i XML for næringsspesifikasjon.
@@ -350,14 +350,14 @@ For å unngå avvik i beregnede beløp må SBS og Skatteetatens valideringstjene
 Bruk av desimaler for opplysninger i XML for skattemelding tillates ikke fordi det vil kunne skape utfordringer når summene skal
 sendes videre til skatteberegning.
 
-#### 3.5 Validering av låste felter
+### 3.5 Validering av låste felter
 Ved validering av skattemelding som inneholder endringer på et felt som er låst vil følgende valideringsresultat returneres: `KanIkkeOverskriveMyndighetsfastsattVerdi` eller `KanIkkeSletteMyndighetsfastsattVerdi`
 Dette skyldes at en forekomst som har blitt låst har blitt endret eller slettet.
 
 ![myndighetsfastsatt_kort.png](../../static/download/skattemeldingupersonlig/myndighetsfastsatt_kort.png)
 <br/>_Eksempel på låst felt i SME_.
 
-### 4. Innsending av skattemelding med næringsspesifikasjon i Altinn3 App API
+## 4. Innsending av skattemelding med næringsspesifikasjon i Altinn3 App API
 Resten av prosessen for innsending av skattemelding med næringsspesifikasjon skjer ved bruk av Altinn3.
 Skatteetaten har opprettet en egen app i Altinn3 som håndterer innsendingen av skattemeldingen med næringsspesifikasjon,
 opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
@@ -367,8 +367,9 @@ som lar sluttbrukerne se innholdet i XML-dokumentene som er lastet opp på Altin
 Signering av den skattepliktige og eventuell revisor skjer også via klienten.
 Etter at skattemeldingen er sendt inn vil det være mulig å hente ut innholdet som ble sendt inn via klienten.
 
-Endepunkter med beskrivelse av parametre og respons ligger i [Open API-spesifikasjonen til Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
+Endepunkter med beskrivelse av parametre og respons ligger i [Open API-spesifikasjonen til Altinn3-appen for skattemeldingen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 Denne genereres og administreres av Altinn basert på appen utviklet av Skatteetaten.
+Altinn har også tilgjengeliggjort en [generisk OpenAPI-spesifikasjon](https://docs.altinn.studio/nb/api/apps/spec/) for Altinn3-API-et som er relevant ved uthenting/oppdatering/sletting av elemeter på instansen.
 
 Autentisering mot Altinns API er beskrevet i [Tilgang til Altinn3 App API](#tilgang-til-altinn3-app-api) med referanse til detaljert dokumentasjon på Altinns sider.
 Det er det innvekslede Altinn-tokenet som benyttes for å opprette instansen i Altinn3 og øvrige kall til Altinn3-API.
@@ -378,7 +379,7 @@ Diagrammet under viser den overordnede forretningsprosessen for innsending av sk
 [![Forretningsprosess Altinn3](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)
 <br/>_Overordnet forretningsprosess for Altinn3-appen._.
 
-#### 4.1 Opprettelse av instans i Altinn3
+### 4.1 Opprettelse av instans i Altinn3
 Første steg i innsendingen er å opprette en instans i Altinn3. En instans brukes av Altinn for å bevare tilstanden til innsendingen av skattemeldingen med næringsspesifikasjon, inklusive alle dokumenter og vedlegg.
 Detaljert dokumentasjon for hva en instans er og hvordan den brukes finnes i [Altinns API-dokumentasjon](https://docs.altinn.studio/nb/api/apps/instances/).
 * `org` i Altinns dokumentasjon er `skd`
@@ -388,7 +389,7 @@ Spesifikt for Skatteetatens app er at `ìnntektsaar` skattemeldingen gjelder for
 
 Når instansen er opprettet får den status `data`, og det er klart for å laste opp skattemeldingen med næringsspesifikasjon og eventuelle vedlegg.
 
-##### 4.1.1. Revisors signering
+#### 4.1.1. Revisors signering
 Om revisjonsplikt foreligger og det er forekomster som skal bekreftes av revisor, må også `skalBekreftesavRevisor` settes til `true` ved opprettelse av instansen.
 Disse parameterne sendes inn i et `dataValues`-objekt som en del av requesten til Altinn3-API-et som vist i eksempelet under:
 
@@ -411,7 +412,7 @@ og revisor skal senere signere de signaturpliktige forekomstene som er angitt i 
 
 I kapittel [4.5 Sende videre til revisors signering](#45-sende-videre-til-revisors-signering) beskrives flyten ved signering av revisor.
 
-#### 4.2 Laste opp vedlegg til skattemeldingen
+### 4.2 Laste opp vedlegg til skattemeldingen
 Ved behov for å laste opp vedlegg gjøres dette etter at instansen er opprettet og før innsending av skattemeldingen.
 
 Vedlegg til skattemeldingen lastes opp til instansen ved å benytte endepunktet [`POST /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/type/skattemelding-vedlegg`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
@@ -422,7 +423,7 @@ Når vedlegget er lastet opp på instansen må `id` hentes ut fra responsen og l
 Det anbefales å sende skattemeldingsdokumentet til valideringstjenesten på nytt etter at dette har blitt oppdatert med vedleggsreferanser, for å sikre at alle vedleggene er korrekt referert i skattemeldingen.
 En oversikt over vedleggstyper og hvordan disse legges til skattemeldingen i henhold til XSD er beskrevet i [informasjonsmodell](#vedlegg).
 
-#### 4.3 Innsending av skattemelding med næringsspesifikasjon
+### 4.3 Laste opp skattemelding med næringsspesifikasjon
 Når de foregående stegene i prosessen er utført og skattemeldingen og næringsspesifikasjonen skal sendes videre til bekreftelse,
 må skattemeldingensdokumentet for personlig, upersonlig eller selskapsmelding med næringsspesifikasjonen først lastes opp på instansen.
 
@@ -433,10 +434,20 @@ Dette er samme format som benyttes i valideringstjenesten.
 
 Filnavnet som spesifiseres i `Content-Disposition` skal være `attachment; filename=skattemelding.xml` __uten double quotes__.
 
-Responsen vil inneholde metadata om objektet som ble opprettet.
-<span style={{ color: "red" }}>En unik identifikator (id) vil bli returnert som senere kan brukes til å oppdatere, sjekke status etc..</span>
+Responsen vil inneholde metadata om objektet som ble opprettet, inkludet en `id` som kan brukes til å oppdatere, hente ut og slette dokumentet ved behov senere.
 
-#### 4.4 Sende skattemeldingen til signering
+#### 4.3.1 Oppdatere skattemeldingen
+Det er mulig å gjøre oppdateringer på den opplastede skattemeldingen med næringsspesifikasjon før den [sendes til behandling hos Skatteetaten](#46-innsending-av-skattemelding-med-næringsspesifikasjon-til-skatteetaten).
+
+For å gjøre det trengs `id` til dataelementet for typen `skattemeldingOgNaeringsspesifikasjon` som ble sendt inn i steget over.
+Hvis SBS har lagret `id` fra forrige respons, kan denne brukes. Hvis ikke må `id` hentes ut fra instansen ved å gjøre følgende:
+1. Hent ut instansdata fra endepunktet [`GET /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
+2. Hent ut `id`-feltet fra vedlegget `skattemeldingOgNaeringsspesifikasjon` i responsen
+
+Når nødvendige oppdateringer er gjort, sendes `id` i `dataGuid`-parameteren i endepunktet [`PUT /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/{dataGuid}`](https://docs.altinn.studio/nb/api/apps/spec/)
+sammen med oppdaterte dokumenter i requesten.
+
+### 4.4 Sende skattemeldingen til signering
 Når skattemeldingen med næringsspesifikasjon er lastet opp på instansen, og eventuelle vedlegg er lastet opp, kan skattemeldingen sendes til signering.
 Dette gjøres ved å benytte endepunktet [`PUT /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/process/next`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 Dette setter instansen i status `confirmation`.
@@ -447,7 +458,7 @@ slik at SBS kan lenke direkte til klienten, eller via innboksen i Altinn.
 
 Hele signeringsprosessen kan håndteres direkte fra SBS uten å gå via Altinn eller visningsklienten.
 
-##### 4.5 Sende videre til revisors signering
+### 4.5 Sende videre til revisors signering
 Hvis det er spesifisert i instansen at forekomster i skattemeldingen eller næringsspesifikasjonen skal signeres av revisor,
 vil instansen etter at den skattepliktige har signert gå videre til revisors signering. Hvis den skattepliktige har signert
 i visningsklienten vil denne håndtere endring av status til revisors signering.
@@ -458,14 +469,14 @@ Instansen vil fortsatt være i status `confirmation`, men instansen inneholder o
 Revisor signerer på samme måte som den skattepliktige som beskrevet i [kapittel 4.4](#44-sende-skattemeldingen-til-signering),
 enten via visningsklienten eller direkte fra SBS.
 
-##### 4.5.1 Revisors vedlegg
+#### 4.5.1 Revisors vedlegg
 Det kan være tilfeller hvor revisor har behov for å laste opp vedlegg i forbindelse med revisjonen.
 Dette kan eksempelvis være hvis revisor avslår en forekomst i skattemeldingen eller næringsspesifikasjonen.
 
 Ved opplasting av vedlegg fra revisor benyttes endepunktet [`POST /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/type/revisor-vedlegg`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 `id`-feltet i responsen til opplastingen av vedlegget må legges inn i XML-dokumentet for revisors bekreftelse som er beskrevet under.
 
-##### 4.5.2 Revisors bekreftelse
+#### 4.5.2 Revisors bekreftelse
 Revisors bekreftelse er en egen XSD-fil som skal lastes opp på instansen etter at revisor har signert.
 Ved signering i visningsklienten er det ikke behov for å laste opp revisors bekreftelse, da visningsklienten håndterer dette.
 
@@ -478,12 +489,12 @@ Når revisor har godkjent/avslått de aktuelle forekomstene og XML-dokumentet er
 skal dette lastes opp på instansen ved å benytte endepunktet
 [`POST /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/type/revisor-bekreftelse`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 
-#### 4.6 Innsending av skattemelding med næringsspesifikasjon til Skatteetaten
+### 4.6 Innsending av skattemelding med næringsspesifikasjon til Skatteetaten
 Når både den skattepliktige og eventuell revisor har signert, kan skattemeldingen med næringsspesifikasjon sendes videre til behandling hos Skatteetaten.
 Dette trigges av nok et kall til [`PUT /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/process/next`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 Instansen vil da settes til status `feedback`.
 
-#### 4.7 Opprettelse av gjeldende fastsetting og kvittering på innsendt skattemelding
+### 4.7 Opprettelse av gjeldende fastsetting og kvittering på innsendt skattemelding
 :::warning
 Denne må oppdateres med ny flyt for arkivering når denne er klar
 :::
@@ -492,7 +503,7 @@ Etter at Skatteetaten har mottatt skattemeldingen med næringsspesifikasjon vil 
 Denne kan hentes ut på følgende måte:
 1. Hent ut instansdata fra endepunktet [`GET /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 2. Hent ut `id`-feltet fra vedlegget `tilbakemelding` i responsen, og send denne i `dataGuid`-parameteren i endepunktet
-[`GET /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/{dataGuid}/type/tilbakemelding`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
+[`GET /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/{dataGuid}`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 
 Når Skatteetaten har ferdigbehandlet innsendingen, vil instansen i Altinn3-appen bli satt til status `arkivert`.
 Dette er ensbetydende med at det er opprettet _gjeldende fastsetting_ for skattemeldingen.
@@ -514,13 +525,10 @@ I noen tilfeller er det ønskelig å hente ut den siste gjeldende skattemeldinge
 Endepunktet som benyttes til dette er `GET /api/skattemelding/v2/{type}/{inntektsår}/{identifikator}`, hvor `type` kan være `utkast` eller `fastsatt`.
 
 ## Valider skattemeldingen uten dokumentreferanseTilGjeldendeDokument
-:::warning[Denne tjenesten erstatter ikke valideringstjenesten for innsending]
-:::
-
 Hvis det er et behov for å gjøre beregninger fra SBS før Skatteetaten har publisert utkast for et inntektsår, kan denne tjenesten benyttes.
 Den er helt lik som valideringstjenesten, men krever ikke `dokumentreferanseTilGjeldendeDokument`.
 
-Denne tjenesten skal ikke brukes for validering før innsending, da vi har en del kontroller som sjekker mot gjeldende utkast som denne tjenesten ikke utfører.
+Denne tjenesten skal ikke brukes for validering før innsending, da det er en del kontroller som sjekker mot gjeldende utkast som denne tjenesten ikke utfører.
 
 Endepunktet for denne tjenesten er `POST /api/skattemelding/v2/validertest/{inntektsår}/{identifikator}`
 
@@ -567,6 +575,25 @@ og eventuelt næringsspesifikasjonen er lagret på. Dette spesifiseres i `navner
 Navnerommet ligger som en attributt i XSD-en til skattemeldingen og næringsspesifikasjonen, og må inkludere versjonsnummeret.
 
 Når skattemeldingen og næringsspesifikasjonen er utfylt, valideres og sendes disse inn på vanlig måte som beskrevet tidligere.
+
+## Søk om utsatt frist for levering av skattemeldingen
+Den skattepliktige kan søke om utsatt frist for levering av skattemeldingen før ordinær innleveringsfrist.
+Informasjon og innleveringsfrister finnes på [Skatteetatens nettsider](https://www.skatteetaten.no/person/skatt/skattemelding/utsattfrist/).
+
+Leverandører kan søke om utsettelse på vegne av inntil 10 prosent av klientmassen.
+
+For å søke om utsatt frist fra SBS kan endepunktet `POST /api/skattemelding/v2/utsattfristsoeknad/{identifikator}` benyttes.
+Informasjon om den skattepliktige sendes inn i request body.
+Responsen inneholder en kvittering på at søknaden er mottatt, samt en unik `referanse` for å senere kunne polle status på søknaden.
+
+Det kan også søkes for flere skattepliktige samtidig. Da benyttes `POST /api/skattemelding/v2/utsattfristsoeknad/bulk/{identifikator}`,
+hvor det sendes inn en liste med `klienter`/skattepliktige i requesten.
+
+Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skattemelding/v2/utsattfristsoeknad/innsendingstatus/{referanse}`.
+Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
+
+# Klage
+<span style={{ color: "red" }}>Må dokumenteres, men trenger en gjennomgang først</span>
 
 </TabItem>
 
@@ -865,9 +892,8 @@ Objektet inneholder følgende informasjon som må fylles ut av sluttbrukersystem
 #### Respons-objekt
 XSD for respons-objektet er `skattemeldingognaeringsspesifikasjonrespons_{versjon}.xsd`.
 
-`dokumenter`-objektet kan inneholde flere av dokumenttypene i tabellen under:
-
-<span style={{ color: "red" }}>Kan vi legge til mer info om hvilke dokumenter som returneres når?</span>
+`dokumenter`-objektet kan inneholde flere av dokumenttypene i tabellen under basert skattepliktstype.
+Dette er for øvrig også dokumentert i [informasjonsmodellen på GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/informasjonsmodell/README.md) per skattepliktstype og inntektsår.
 
 | Dokumenttype i respons-XSD                                                                                                                                       | XSD-filnavn uten versjonsnummer                                                                                                                         | Beskrivelse                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
