@@ -161,7 +161,7 @@ Denne danner grunnlaget for videre utfylling og senere innsending av skattemeldi
 * Utkast er en preutfylt skattemelding Skatteetaten har laget for den skattepliktige basert på innrapporterte data og data fra skattemeldingen tidligere år.
 * Fastsatt betyr at skattemeldingen er manuelt innlevert eller automatisk innlevert ved utløp av innleveringsfrist. Denne kan også inneholde et eller flere myndighetsfastsatte felter. For mer informasjon om myndighetsfastsatte felter se avsnittet under valider skattemeldingen.
 
-Tjenesten som benyttes for å hente ut den siste gjeldende skattemeldingen er [`GET /api/skattemelding/v2/{inntektsår}/{identifikator}`]().
+Tjenesten som benyttes for å hente ut den siste gjeldende skattemeldingen er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}`.
 
 XSD-filen for responsobjektet til tjenesten er `skattemeldingognaeringsspesifikasjonforespoerselresponse_{versjon}.xsd`.
 Hvert dokument i responsen har et `id`-felt som må brukes ved innsending til å referere til det aktuelle dokumentet.
@@ -211,6 +211,8 @@ Følgende forretningsregler gjelder for `query`-parameteren:
 * `Hvis første tegn man angir er et tall vil søket kun lete blant matrikkeladresser.`
 * `Hvis første tegn man angir er en bokstav vil søket kun lete blant veiadresser.`
 * `Søket krever streng plassering av tegn.`
+
+`resultSize` spesifiserer maks antall resultater som skal returneres. Default er 10.
 
 ### 2.2 Hent formuesgrunnlag
 Formuesgrunnlag hentes ut for hver eiendom som skal inngå i skattemeldingen. Eiendomsidentifikatoren fra søketjenesten brukes til å identifisere eiendommene.
@@ -593,7 +595,16 @@ Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skat
 Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
 
 # Klage
-<span style={{ color: "red" }}>Må dokumenteres, men trenger en gjennomgang først</span>
+<span style={{ color: "red" }}>Må dokumenteres, men trenger en gjennomgang først</span><br/>
+For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
+
+Ved klage må `innsendingsformaal` i `skattemeldingOgNaeringsspesifikasjonRequest` settes til `klage`.
+
+Last opp relevante vedlegg på Altinn-instansen og valider. Ved klage på en myndighetsfastsetting som ikke gjelder skjønnsfastsetting, krever kontrollene vedleggskategori klage.
+Gjelder den eksisterende skattemeldingen skjønnsfastsetting, krever kontrollene at den nye meldingen beholder 
+`gjelderSkjoennsfastsetting=true` og ikke oppgir et annet formål enn klage.
+
+Deretter sendes skattemeldingen med næringsspesifikasjon inn på vanlig måte som beskrevet tidligere.
 
 </TabItem>
 
@@ -670,7 +681,8 @@ Eksempel:
 </code>
 </pre>
 
-Referansen i `skatt:eksternKodeliste` angir hvilken kodeliste som skal brukes for feltet.
+Referansen i `skatt:eksternKodeliste` angir hvilken kodeliste som skal brukes for feltet. Noen kodelister er definert direkte i XSD-en.
+Disse vil ha verdien `skatt:eksternKodeliste="inline"`. <br/>
 Kodelistene er tilgjengelige på [GitHub](https://github.com/Skatteetaten/skattemeldingen/tree/master/src/resources/kodeliste).
 
 ## Egenskaper på objekter og felter
@@ -811,6 +823,8 @@ overføres eller omvendt.
 </span>
 
 ### Regnskapspliktstyper i næringsspesifikasjonen
+Regnskapspliktstypene finnes som filtreringsmuligheter i veilederen, og i kodelisten `{inntektsår}_regnskapsplikttype.xml`.
+I tillegg følger en kort beskrivelse av de ulike typene her:
 * `ingenRegnskapsplikt`: næringsdrivende som har bokføringsplikt, men ikke regnskapsplikt. Disse rapporterer resultatregnskap og balanse
 basert på skattemessige prinsipper.
 * `fullRegnskapsplikt`: næringsdrivende som har bokføringsplikt og full regnskapsplikt, og som må utarbeide Årsregnskap som sendes til
@@ -887,7 +901,10 @@ Objektet inneholder følgende informasjon som må fylles ut av sluttbrukersystem
   * `innsendingstype`: `komplett` eller `ikkeKomplett`
   * `opprettetAv`: navn på sluttbrukersystem
   * `tin`: fødselsnummer/d-nummer (Tax Identification Number) for den skattepliktige som sender inn skattemeldingen.
-  * `innsendingsformaal`: Innsendingens formål. Gyldige typer er definert i XSD-en, men er eksempelvis her det spesifiseres om det sendes inn en klage.
+  * `innsendingsformaal`: Innsendingens formål. Gyldige typer er:
+    * `egenfastsetting`: Skattemeldingen fastsettes på grunnlag av opplysningene den skattepliktige har innrapportert
+    * `endringsanmodning`: <span style={{ color : "red" }}>Endre skattemeldingen 3 år etter inntektsåret for personlig og ett år etter for upersonlig (må verifiseres)</span>
+    * `klage`: Les mer om klage i [eget kapittel](#klage).
 
 #### Respons-objekt
 XSD for respons-objektet er `skattemeldingognaeringsspesifikasjonrespons_{versjon}.xsd`.
