@@ -21,12 +21,12 @@ Den primære målgruppen er systemleverandører av årsoppgjørsprogram eller re
 innrapportering av skattemeldingen og næringsopplysninger. Slike systemer kalles heretter
 sluttbrukersystemer (SBS).
 
-Løsningen legger opp til at en innsending skal inneholde en skattemelding. For personlige som driver ENK, upersonlige (selskaper) og for selskaper
+Løsningen legger opp til at en innsending skal inneholde en skattemelding. For personlig skattepliktige som driver ENK, upersonlig skattepliktige (selskaper) og for selskaper
 med deltakerfastsetting skal innsendingen også __alltid__ inneholde næringsspesifikasjon. Det er kun lønnstakere og pensjonister som kun sender inn
 skattemelding. Dette illustreres her:
 
 ![Skattemeldingsvarianter.PNG](../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.PNG)
-<br></br> _Illustrasjon av skattemeldingsvarianter for personlige og upersonlige skattepliktige._
+<br/>_Illustrasjon av skattemeldingsvarianter for personlige og upersonlige skattepliktige._
 
 For generell informasjon om tjenestene se egne sider om:
 
@@ -84,11 +84,11 @@ En mer teknisk dokumentasjon finnes i [Altinns API-dokumentasjon](https://docs.a
 #### Skatteetaten API
 Følgende scopes med respektive maks-levetider skal benyttes ved autentisering i Maskinporten mot Skatteetatens API-er:
 
-| Scope                                            | Beskrivelse                                                                                  | Levetid access-token | Levetid refresh-token |
-|--------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------|-----------------------|
-| skatteetaten:formueinntekt/skattemelding         | Tilgang til skattemeldingstjenester                                                          | 8 timer              | 90 dager              |
-| skatteetaten:formueinntekt/skattemelding/eiendom | Tilgang til eiendomstjenester                                                                | 8 timer              | 90 dager              |
-| app_skd_formueinntekt-skattemelding-v2           | Ressursen systembrukeren må ha for kontrollere rettighetspakker. Brukes også for Altinn3 API |
+| Scope                                            | Beskrivelse                                                                                                    | Levetid access-token | Levetid refresh-token |
+|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------|-----------------------|
+| skatteetaten:formueinntekt/skattemelding         | Tilgang til skattemeldingstjenester                                                                            | 8 timer              | 90 dager              |
+| skatteetaten:formueinntekt/skattemelding/eiendom | Tilgang til eiendomstjenester                                                                                  | 8 timer              | 90 dager              |
+| app_skd_formueinntekt-skattemelding-v2           | Ressursen systembrukeren må ha for å kontrollere rettigheter til innlogget bruker. Brukes også for Altinn3 API |
 
 :::info
 Scopet med den korteste levetiden vil være gjeldende for hele access-tokenet.
@@ -107,8 +107,12 @@ Disse er listet opp i tabellen under:
 
 For å se maksimal levetid til Altinn sine scopes, finner man oversikt over disse på [DigDir Scopes - Altinn dokumentasjon](https://docs.altinn.studio/nb/api/authentication/digdirscopes/).
 
-### Rettighetspakker
-Hvilke data en virksomhet får tilgang til i API-et bestemmes av [rettighetspakken](../om/rettighetspakker.md).
+### Delegering
+For at leverandør skal få tilgang til å benytte API-et på vegne av en virksomhet, må virksomheten delegere tilgang til leverandøren i Altinn.
+Dette gjøres ved at den skattepliktige søker opp tjenesten `Skattemelding API - På vegne av` i Altinn og delegerer tilgang til leverandøren.
+
+### Tilgangspakker
+Hvilke data en virksomhet får tilgang til i API-et bestemmes av [tilgangspakken](../om/rettighetspakker.md).
 
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/),
 og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
@@ -118,6 +122,11 @@ For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
 [Bestill tilgang til API-et](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/#trenger-du-hjelp)
 
 ## Teknisk spesifikasjon
+Gjennom den tekniske spesifikasjonen vil begrepet _skattepliktig_ brukes for personen eller selskapet skattemeldingen 
+med eventuell næringsspesifikasjon sendes inn for. Det er ikke nsbetydende med at det er den skattepliktige som utfører innleveringsprosessen
+dokumentert her. Eksempelvis kan en regnskapsfører, daglig leder eller styreleder være den som leverer inn skattemeldingen
+på vegne av den skattepliktige.
+
 Følgende figur gir en en overordnet flyt med aktører og komponenter for innsending av skattemelding med næringsspesifikasjon:
 
 [![Overordnet løsningsoversikt](../../static/download/skattemeldingupersonlig/Komponentoversikt%20skattemelding%20næring%20for%20SBS.png)](../../static/download/skattemeldingupersonlig/Komponentoversikt%20skattemelding%20næring%20for%20SBS.png)
@@ -498,7 +507,7 @@ Instansen vil da settes til status `feedback`.
 
 ### 4.7 Opprettelse av gjeldende fastsetting og kvittering på innsendt skattemelding
 :::warning
-Denne må oppdateres med ny flyt for arkivering når denne er klar
+Ny flyt for arkivering er under utvikling. Denne seksjonen vil derfor bli oppdatert når ny prosess er klar.
 :::
 
 Etter at Skatteetaten har mottatt skattemeldingen med næringsspesifikasjon vil det sendes en kvittering i XML-format tilbake til Altinn3-appen.
@@ -534,12 +543,23 @@ Denne tjenesten skal ikke brukes for validering før innsending, da det er en de
 
 Endepunktet for denne tjenesten er `POST /api/skattemelding/v2/validertest/{inntektsår}/{identifikator}`
 
+## Lagre skattemelding for midlertidig visning
+Ved behov for å vise skattemeldingen i visningsklienten før innsending, kan denne lastes opp til Skatteetaten.
+Tjenesten skiller på personlige og upersonlige skattepliktige, og det er derfor to endepunkter for dette:
+* Personlig skattepliktig: `POST /api/skattemelding/v2/til-midlertidig-lagret-skattemelding-for-visning`
+* Upersonlig skattepliktig: `POST /api/skattemelding/v2/til-midlertidig-lagret-skattemelding-for-visning-upersonlig/{identifikator}`<br/>
+  Identifikator er organisasjonsnummer for upersonlig skattepliktig.
+
+Request body er skattemeldingen med næringsspesifikasjon på samme format som i validerings- og innsendingstjenesten.
+
+Skattemeldingen vil bli lagret i 24 timer for visning via `url`-feltet som returneres i responsen.
+
 ## Foreløpig avregning
 Det er laget en egen tjeneste for å kunne gjøre en foreløpig avregning basert på den beregnede skatten man sender inn til komponenten.
 Endelig avregning i forbindelse med skatteoppgjøret kan gi et annet avregningsresultat enn ved foreløpig avregning.
 
 Tjenesten tar ikke høyde for eventuelte tidligere skatteoppgjør for aktuelt inntektsår.
-Hvis skattyter har et skatteoppgjør og fått utbetalt tilgode, og skal gjøre en endring, så vil denne tjenesten avregne som om det var første skatteoppgjør.
+Hvis skattyter har et skatteoppgjør og fått utbetalt tilgode, og skal gjøre en endring, vil denne tjenesten avregne som om det var første skatteoppgjør.
 
 Endepunktet som benyttes er `POST /api/skattemelding/v2/avregning/avregn/{inntektsår}/{identifikator}`.
 
@@ -578,7 +598,32 @@ Navnerommet ligger som en attributt i XSD-en til skattemeldingen og næringsspes
 
 Når skattemeldingen og næringsspesifikasjonen er utfylt, valideres og sendes disse inn på vanlig måte som beskrevet tidligere.
 
-## Søk om utsatt frist for levering av skattemeldingen
+## Hent opplastede vedlegg til fastsatte skattelemdlinger
+For å hente ut tidligere innsendte vedlegg til fastsatte skattemeldinger, enten fastsatt i gjeldende/nyeste skattemelding eller fra tidligere fastsettinger,
+kan følgende endepunkt benyttes: `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/vedlegg/{vedleggId}`.
+
+`vedleggId` er ID fra stien "/skattemelding/vedlegg/id" til den aktuelle skattemelding-XML-en. Dette er ID-en som ble
+returnert fra Altinn3-appen ved opplasting av vedlegget, og referert til i skattemeldingen.
+
+## Hent gjeldende fastsetting i PDF-format
+For å hente ut gjeldende fastsetting i PDF-format kan følgende endepunkt benyttes:
+`/api/skattemelding/v2/{inntektsår}/{identifikator}/gjeldende-fastsetting.pdf`
+
+Query-parameteren `spraak` benyttes for å angi ønsket språk i PDF-en. Norsk bokmål returneres om ikke spraak er satt.
+
+## Hent gjeldende skatteoppgjør som PDF
+For å hente ut gjeldende skatteoppgjør i PDF-format kan følgende endepunkt benyttes:
+`/api/skattemelding/v2/skatteoppgjoer/{inntektsår}/{identifikator}/{skatteoppgjoerType}/gjeldende.pdf`
+
+Språk i PDF-en for skatteoppgjøret vil utledes fra kommunikasjonsspråket til den skattepliktige.
+
+## Hent lenker til publikumsportaler
+Leverandører kan lenke direkte til publikumsportaler fra SBS. For personlige returneres lenker til Min Skatt, skattemeldingen og Tilsvar.
+For upersonlige returneres lenke til Tilsvar.
+
+Tjenesten som benyttes er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/lenker/publikumsportaler`.
+
+# Søk om utsatt frist for levering av skattemeldingen
 Den skattepliktige kan søke om utsatt frist for levering av skattemeldingen før ordinær innleveringsfrist.
 Informasjon og innleveringsfrister finnes på [Skatteetatens nettsider](https://www.skatteetaten.no/person/skatt/skattemelding/utsattfrist/).
 
@@ -595,7 +640,9 @@ Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skat
 Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
 
 # Klage
-<span style={{ color: "red" }}>Må dokumenteres, men trenger en gjennomgang først</span><br/>
+<span style={{ color: "red" }}>Må dokumenteres, men trenger en gjennomgang først
+* Myndighetsfastsetting
+* Skjønnsfastsetting</span><br/>
 For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
 
 Ved klage må `innsendingsformaal` i `skattemeldingOgNaeringsspesifikasjonRequest` settes til `klage`.
@@ -605,6 +652,10 @@ Gjelder den eksisterende skattemeldingen skjønnsfastsetting, krever kontrollene
 `gjelderSkjoennsfastsetting=true` og ikke oppgir et annet formål enn klage.
 
 Deretter sendes skattemeldingen med næringsspesifikasjon inn på vanlig måte som beskrevet tidligere.
+
+# Endringsanmodning
+<span style={{ color : "red" }}>Endre skattemeldingen 3 år etter inntektsåret for personlig og ett år etter for upersonlig (må verifiseres)</span>
+
 
 </TabItem>
 
@@ -903,7 +954,7 @@ Objektet inneholder følgende informasjon som må fylles ut av sluttbrukersystem
   * `tin`: fødselsnummer/d-nummer (Tax Identification Number) for den skattepliktige som sender inn skattemeldingen.
   * `innsendingsformaal`: Innsendingens formål. Gyldige typer er:
     * `egenfastsetting`: Skattemeldingen fastsettes på grunnlag av opplysningene den skattepliktige har innrapportert
-    * `endringsanmodning`: <span style={{ color : "red" }}>Endre skattemeldingen 3 år etter inntektsåret for personlig og ett år etter for upersonlig (må verifiseres)</span>
+    * `endringsanmodning`: Les mer om endringsanmodning i [kapittelet om endringsanmodning](#endringsanmodning).
     * `klage`: Les mer om klage i [eget kapittel](#klage).
 
 #### Respons-objekt
