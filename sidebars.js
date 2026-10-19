@@ -69,6 +69,7 @@ const sidebars = {
         "api/kravogbetalinger",
         "api/skattdialogdokumenter",
         "api/trekkpaalegg",
+        "api/utlegg-dataprodukt-namsfogden",
         { id: 'api/utleggsbegjaering-innsyn', label: "Utleggsbegjæring innsyn", type: 'doc' },
         { id: 'api/utleggsbegjaering-status', label: "Utleggsbegjæring status", type: 'doc' },
       ],
