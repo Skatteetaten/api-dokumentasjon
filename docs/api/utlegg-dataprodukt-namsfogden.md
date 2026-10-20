@@ -10,7 +10,7 @@ last_updated: October 05, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenesten leverer et API for å fortløpende hente data/hendelser om utleggsbegjæringssaker og utleggssaker som er behandlet av Namsfogden i systemet SIRO.</Summary>
+<Summary> Tjenesten leverer et API for å fortløpende hente data/hendelser om utleggsbegjæringssaker og utleggssaker som er behandlet av Namsfogden i systemet SIRO.</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
