@@ -91,7 +91,7 @@ Se egen side for generell info om [feilhåndtering i tjenestene](../om/feil.md).
 </TabItem>
 
 <TabItem headerText="Test" itemKey="itemKey-5">
-Informasjon kommer.
+Ta kontakt med FI/Utleggsprosjektet for å få tilgang til testmiljø for API-et.
 </TabItem>
 
 <TabItem headerText="Datakatalog" itemKey="itemKey-6">
