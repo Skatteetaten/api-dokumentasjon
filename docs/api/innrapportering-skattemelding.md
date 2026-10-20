@@ -196,7 +196,7 @@ I de tilfeller det er flere foreslår i praksis Skatteetaten at én av entiteten
 
 ### 1.2 Låste felter
 Skatteetaten har muligheten til å låse enkeltfelter eller hele skattemeldingen og/eller næringsspesifikasjonen.
-Dette vil kun forekomme på en fastsatt skattemelding, og aldri utkast.
+Dette vil kun forekomme på en fastsatt skattemelding ved [myndighetsfastsetting](#klage), og aldri utkast.
 
 Responsen til hent gjeldende skattemelding vil inneholde en liste over eventuelle låste felter for en fastsatt skattemelding.
 Dette er nærmere beskrevet i [Informasjonsmodell](#låste-felt).
@@ -522,7 +522,11 @@ Dette er ensbetydende med at det er opprettet _gjeldende fastsetting_ for skatte
 * Hvis SBS har sendt inn en ikke-komplett skattemelding, vil Altinn3-instansen bli ha status `feedback` inntil den skattepliktige har sendt inn i SME.
 * Hvis skattemeldingen er validert til _Ikke OK_, blir status satt til `arkivert` direkte med melding om resultatet uavhengig av om den er komplett eller ikke-komplett.
 
-Skatteetaten oppdaterer innboksen i Altinn med oppdatert status på innsendingen.
+Skatteetaten oppdaterer innboksen i Altinn med oppdatert status på innsendingen. SBS kan benytte Dialogporten til å spørre
+om nye meldinger fra Skatteetaten for den skattepliktige og dermed utlede når en ikke-komplett innsending er fullført.
+Se [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869) for mer informasjon.
+
+Den skattepliktige kan sende inn skattemelding gjentatte ganger. For hver nye innsending må Altinn3-prosessen startes på nytt med en ny instans.
 
 # Sekvensdiagram for innsending av skattemelding med næringsspesifikasjon
 ![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
@@ -640,29 +644,19 @@ Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skat
 Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
 
 # Klage
-<div style={{ color: "red" }}>
-
-Må dokumenteres, men trenger en gjennomgang først
-
-* Myndighetsfastsetting
-* Skjønnsfastsetting
-
-</div>
-<br/>
-
 For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
 
 Ved klage må `innsendingsformaal` i `skattemeldingOgNaeringsspesifikasjonRequest` settes til `klage`.
 
-Last opp relevante vedlegg på Altinn-instansen og valider. Ved klage på en myndighetsfastsetting som ikke gjelder skjønnsfastsetting, krever kontrollene vedleggskategori klage.
-Gjelder den eksisterende skattemeldingen skjønnsfastsetting, krever kontrollene at den nye meldingen beholder 
-`gjelderSkjoennsfastsetting=true` og ikke oppgir et annet formål enn klage.
+Ved klage på et myndighetsfastsatt vedtak, kreves det at det legges med vedlegg med vedleggskategori `klage`.
+Feltene som har blitt myndighetsfastsatt ligger som [låste felter](#12-låste-felter) ved uthenting av siste gjeldende skattemelding.
+Ved innsending av klage er det mulig å endre hele skattemeldingen med næringsspesifikasjon, inklusive låste felter.
+
+Ved skjønnsfastsetting fastsetter Skatteetaten skattrgrunnlaget ved skjønn fordi den skattepliktige ikke har levert inn skattemelding innen fristen.
+Ved skjønnsfastsetting krever valideringen at skattemeldingsobjektet som skal sendes inn
+setter feltet `gjelderSkjoennsfastsetting` til `true`. Det er ikke påkrevd med vedlegg ved skjønnsfastsetting.
 
 Deretter sendes skattemeldingen med næringsspesifikasjon inn på vanlig måte som beskrevet tidligere.
-
-# Endringsanmodning
-<span style={{ color : "red" }}>Endre skattemeldingen 3 år etter inntektsåret for personlig og ett år etter for upersonlig (må verifiseres)</span>
-
 
 </TabItem>
 
@@ -942,6 +936,8 @@ I de tilfeller det er flere opplysninger per veiledningsdokument, er anbefalinge
 Som beskrevet i [den funksjonelle spesifikasjonen](#12-låste-felter) kan det være låste felter i skattemeldingen eller næringsspesifikasjonen.
 Disse returneres i objektet `laasteFelt`, og er delt inn i hhv. `laastFeltSkattemelding` og `laastFeltNaeringsspesifikasjon`.
 
+Låste felt er kun mulige å endre ved innsending av [klage](#klage).
+
 ### Informasjonsmodell for validering og innsending av skattemelding med næringsspesifikasjon
 Valideringstjenesten og Altinn3-tjenesten for innsending av skattemelding med næringsspesifikasjon benytter samme XSD-filer.
 Dette gjør at det er mulig å validere skattemeldingen med næringsspesifikasjon før innsending, og at det ikke er behov for å endre på XML-filen mellom validering og innsending.
@@ -960,8 +956,9 @@ Objektet inneholder følgende informasjon som må fylles ut av sluttbrukersystem
   * `opprettetAv`: navn på sluttbrukersystem
   * `tin`: fødselsnummer/d-nummer (Tax Identification Number) for den skattepliktige som sender inn skattemeldingen.
   * `innsendingsformaal`: Innsendingens formål. Gyldige typer er:
-    * `egenfastsetting`: Skattemeldingen fastsettes på grunnlag av opplysningene den skattepliktige har innrapportert
-    * `endringsanmodning`: Les mer om endringsanmodning i [kapittelet om endringsanmodning](#endringsanmodning).
+    * `egenfastsetting`: Skattemeldingen fastsettes på grunnlag av opplysningene den skattepliktige har innrapportert.
+      Dette er verdien som benyttes ved ordinær innsending av skattemeldingen.
+    * `endringsanmodning`: _Skal ikke benyttes_.
     * `klage`: Les mer om klage i [eget kapittel](#klage).
 
 #### Respons-objekt
