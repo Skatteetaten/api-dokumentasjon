@@ -10,7 +10,7 @@ last_updated: Oct 22, 2026
 hide_table_of_contents: true
 ---
 
-<Summary>Tjenester for innrapportering av skattemeldingen for næringsdrivende fra sluttbrukersystemer</Summary>
+<Summary>Tjenester for innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>
 
 <Tabs underline={true}>
 <TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
@@ -568,7 +568,7 @@ Skattemeldingen vil bli lagret i 24 timer for visning via `url`-feltet som retur
 Det er laget en egen tjeneste for å kunne gjøre en foreløpig avregning basert på den beregnede skatten man sender inn til komponenten.
 Endelig avregning i forbindelse med skatteoppgjøret kan gi et annet avregningsresultat enn ved foreløpig avregning.
 
-Tjenesten tar ikke høyde for eventuelte tidligere skatteoppgjør for aktuelt inntektsår.
+Tjenesten tar ikke høyde for eventuelle tidligere skatteoppgjør for aktuelt inntektsår.
 Hvis skattyter har et skatteoppgjør og fått utbetalt tilgode, og skal gjøre en endring, vil denne tjenesten avregne som om det var første skatteoppgjør.
 
 Endepunktet som benyttes er `POST /api/skattemelding/v2/avregning/avregn/{inntektsår}/{identifikator}`.
@@ -608,7 +608,12 @@ Navnerommet ligger som en attributt i XSD-en til skattemeldingen og næringsspes
 
 Når skattemeldingen og næringsspesifikasjonen er utfylt, valideres og sendes disse inn på vanlig måte som beskrevet tidligere.
 
-## Hent opplastede vedlegg til fastsatte skattelemdlinger
+## Hent innsendt skattemelding
+For å hente den siste innsendte skattemeldingen for gitt inntektsår kan endepunktet `GET /api/skattemelding/v2/innsendt/{inntektsår}/{identifikator}` benyttes.
+
+En innsendt skattemelding er den versjonen regnskaps-/årsoppgjørsystemet har lastet opp og signert via Altinn3.
+
+## Hent opplastede vedlegg til fastsatte skattemeldinger
 For å hente ut tidligere innsendte vedlegg til fastsatte skattemeldinger, enten fastsatt i gjeldende/nyeste skattemelding eller fra tidligere fastsettinger,
 kan følgende endepunkt benyttes: `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/vedlegg/{vedleggId}`.
 
