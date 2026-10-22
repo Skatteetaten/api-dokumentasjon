@@ -440,8 +440,9 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 10. Fjernet innsendersProsessfullmektig under Innsender.
 11. Fjernet kravEndring under Krav (alle nedjusteringer skal sendes som innbetaling).
 12. Fjernet følgende elementer som ble satt som deprecated i v2.1:
-    a. eksternSaksreferanse under BegjæringensTvangsgrunnlag
-    b.type under Varsel
+
+     a. eksternSaksreferanse under BegjæringensTvangsgrunnlag
+    b. type under Varsel
     c. forkynnelsesdato under Domsslutningsinformasjon
     d. forpliktet og berettiget under Domsslutningsinformasjon
     e. skyldner og kreditor under SærligTvangsgrunnlag
@@ -449,7 +450,7 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
     g. kravetsGrunnlag under SkriftligMeddelelse
     h. vitne under Gjeldsbrev
     i. inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
-13. Endret fra "Namsmann" til "Namsfogd"
+14. Endret fra "Namsmann" til "Namsfogd"
 
 
 ### a) Rotnivå - Utleggsbegjæring 3.0
