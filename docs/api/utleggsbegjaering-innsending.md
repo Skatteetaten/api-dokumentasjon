@@ -496,7 +496,7 @@ Beskrivelse av sentrale elementer:
 * **kreverRettsgebyrErstattet** benyttes om man ønsker å angi at rettsgebyret og eventuelt rentene som ilegges ved innsending kreves erstattet av saksøkte og eventuelt hvilken prioritet de skal ha.
 * **kreverFritakRettsgebyr** benyttes om man ønsker å kreve fritak for rettsgebyret og årsaken til dette.
 * **betalingsinformasjon** angir hvor, hvordan og til hvem innbetalingen skal gjøres dersom det ender opp i samordnet trekk.
-* **valgtNamsmannsdistrikt** skal kun benyttes om man ønsker begjæringen behandlet av annet namsmannsdistrikt, enn saksøktes alminnelige verneting. Merk at namsmannsdistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsmannsdistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/6549b54b-809f-4d6a-b944-d607e90731b6).
+* **valgtNamsfogddistrikt** skal kun benyttes om man ønsker begjæringen behandlet av annet namsfogddistrikt, enn saksøktes alminnelige verneting. Merk at namsfogddistrikt må være skrevet nøyaktig som kodenavnet i [kodelisten for namsfogddistrikt](https://data.skatteetaten.no/web/datakatalog/kodeliste/c3dad197-c59e-4664-ac80-e615f00b66ba/0.5/?page=1).
 
 ![Generelle elementer-1](../../static/download/utleggsbegjaering/3.0%20C%20Struktur.png)
 
