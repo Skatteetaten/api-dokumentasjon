@@ -449,7 +449,7 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
     g. kravetsGrunnlag under SkriftligMeddelelse
     h. vitne under Gjeldsbrev
     i. inndrivelsesklausul under Gjeldsbrev og ElektroniskGjeldserklæring
-
+13. Endret fra "Namsmann" til "Namsfogd"
 
 
 ### a) Rotnivå - Utleggsbegjæring 3.0
