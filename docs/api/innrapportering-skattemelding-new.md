@@ -155,7 +155,7 @@ SBS implementerer kun støtte for beregning av næringsspesifikasjon, og sender 
 SBS integrerer valideringstjenesten kun for næringsspesifikasjon, og sender inn utkast til skattemelding fra Skatteetaten uten endringer.
 
 De påfølgende kapitlene beskriver funksjonell flyt fra et sluttbrukersystems perspektiv for en _komplett innsending med integrert valideringstjeneste_.
-Nederst på denne siden er det et [sekvensdiagram for innrapportering av skattemelding næring](#sekvensdiagram-for-innsending-av-skattemelding-med-næringsspesifikasjon)
+Nederst på denne siden er det et [sekvensdiagram for innrapportering av skattemelding næring](#sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon)
 som illustrerer flyten ut fra endepunktene som skal benyttes.
 
 For en overordnet beskrivelse av noen sentrale konsepter i flyten, er [Skattemelding for selskap](https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/selskap/)
@@ -531,6 +531,8 @@ om nye meldinger fra Skatteetaten for den skattepliktige og dermed utlede når e
 Se [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869) for mer informasjon.
 
 Den skattepliktige kan sende inn skattemelding gjentatte ganger. For hver nye innsending må Altinn3-prosessen startes på nytt med en ny instans.
+
+<span id="sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon"></span>
 
 # Sekvensdiagram for innsending av skattemelding med næringsspesifikasjon
 ![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
