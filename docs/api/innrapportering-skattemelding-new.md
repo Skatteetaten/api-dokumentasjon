@@ -99,11 +99,12 @@ Vi anbefaler å begrense levetiden på access-tokenet ytterligere, og heller ta 
 For Altinn3 benyttes en systembruker som beskrevet tidligere. Ressursen krever egne scopes mot Altinn3-appen.
 Disse er listet opp i tabellen under:
 
-| Scope                                  | Beskrivelse                                                                                         |
-|----------------------------------------|-----------------------------------------------------------------------------------------------------|
-| app_skd_formueinntekt-skattemelding-v2 | Ressursen systembrukeren må ha for å bli autorisert er å hente og sende inn innhold i Altinn3-appen |
-| altinn:instances.read                  | Scope Altinn krever for å hente innhold i Altinn3-appen fra sluttbrukersystem                       |
-| altinn:instances.write                 | Scope Altinn krever for å sende inn innhold i Altinn3-appen fra sluttbrukersystem                   |
+| Scope                                    | Beskrivelse                                                                                         |
+|------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| app_skd_formueinntekt-skattemelding-v2   | Ressursen systembrukeren må ha for å bli autorisert er å hente og sende inn innhold i Altinn3-appen |
+| skatteetaten:formueinntekt/skattemelding | Skatteetaten-scope spesielt relevant for å endre status på innsendingen i Altinn3                   |
+| altinn:instances.read                    | Scope Altinn krever for å hente innhold i Altinn3-appen fra sluttbrukersystem                       |
+| altinn:instances.write                   | Scope Altinn krever for å sende inn innhold i Altinn3-appen fra sluttbrukersystem                   |
 
 For å se maksimal levetid til Altinn sine scopes, finner man oversikt over disse på [DigDir Scopes - Altinn dokumentasjon](https://docs.altinn.studio/nb/api/authentication/digdirscopes/).
 
@@ -115,7 +116,7 @@ Dette gjøres ved at den skattepliktige søker opp tjenesten `Skattemelding API 
 Hvilke data en virksomhet får tilgang til i API-et bestemmes av [tilgangspakken](../om/rettighetspakker.md).
 
 Skatteetaten har laget en selvbetjeningsløsning som gir virksomheter [innsyn i egne rettighetspakker](https://rettighetspakke-innsyn.skatteetaten.no/),
-og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
+og lister derfor ikke lengre rettighetspakkene på Github. Se egen dokumentasjon om [hvordan logge inn](../anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker).
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
@@ -135,9 +136,6 @@ Som det fremkommer av figuren kan skattemeldingen med tilhørende næringsspesif
 * Ved __komplett innsending__ sendes ferdig utfylt skattemelding og næringsspesifikasjon inn fra SBS og lagres hos Skatteetaten som <u>gjeldende fastsetting</u>.
 * __Ikke-komplett innsending__ er kun støttet for personlig skattepliktige. SBS kan velge å la den skattepliktige fylle ut deler av personlig skattemelding,
   eller å kun støtte næringsspesifikasjon, og la den den skattepliktige fullføre innsending av skattemelding i Skatteetatens portalløsning (SME).
-  Det er ikke mulig å kun sende inn næringsspesifikasjon, så om SBS kun skal støtte innsending av næringsspesifikasjon
-  må det gjeldende utkastet til skattemelding hentes ut som beskrevet lenger nede og sendes inn sammen med næringsspesifikasjonen
-  slik at den skattepliktige kan fylle inn dette selv i Skatteetatens portal.
 
 Næringsspesifikasjonen kan ikke redigeres. Skal næringsspesifikasjon endres, må denne sendes inn på nytt fra SBS.
 
@@ -638,7 +636,7 @@ For upersonlige returneres lenke til Tilsvar.
 
 Tjenesten som benyttes er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/lenker/publikumsportaler`.
 
-# Søk om utsatt frist for levering av skattemeldingen
+## Søk om utsatt frist for levering av skattemeldingen
 Den skattepliktige kan søke om utsatt frist for levering av skattemeldingen før ordinær innleveringsfrist.
 Informasjon og innleveringsfrister finnes på [Skatteetatens nettsider](https://www.skatteetaten.no/person/skatt/skattemelding/utsattfrist/).
 
@@ -654,7 +652,14 @@ hvor det sendes inn en liste med `klienter`/skattepliktige i requesten.
 Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skattemelding/v2/utsattfristsoeknad/innsendingstatus/{referanse}`.
 Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
 
-# Klage
+## # Tjenester for skattepliktige med begrenset skatteplikt
+SBS kan tilrettelegge for levering av skattemeldingen for skattepliktige med begrenset skatteplikt i perioder av året.
+
+Tjenestene som tilbys gir tilgang til å hente, vurdere og lagre periodegrunnlaget med hensikten å korrigere tolvdeler og skatteplikt for den skattepliktige.
+
+Disse tjenestene er dokumentert i [Perioder API på GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/skatteplikt/README.md).
+
+## Klage
 For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
 
 Ved klage må `innsendingsformaal` i `skattemeldingOgNaeringsspesifikasjonRequest` settes til `klage`.
