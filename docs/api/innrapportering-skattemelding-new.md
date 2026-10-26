@@ -1091,17 +1091,24 @@ De 3 aktørene i dette scenariet kan ha hvert sitt SBS fra ulike leverandører.
 
 <TabItem headerText ="Test" itemKey="itemKey-3">
 
-## Demoklienter for scenarier for innsending av skattemelding med næringsspesifikasjon
-Skatteetaten har utviklet flere demoklienter i Python med Jupyter notebook som viser hvordan koble seg på ID-porten og kalle
+## Testscenarier for innsending av skattemelding med næringsspesifikasjon
+Skatteetaten har utviklet flere demoklienter i Python med Jupyter Notebook som blant annet demonstrerer hvordan koble seg på ID-porten og kalle
 Skatteetatens API, og sende inn skattemeldingen med vedlegg via Altinn3. Fremgangsmåten og testklienter finnes på
 [Skatteetatens GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/test). 
 Det er også laget en [brukerveiledning for testdata](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/test/testdata/Brukerveiledning%20testdata.pptx)
 i PowerPoint.
 
-GitHub-siden lenker også til blant annet eksempel-XML-filer, Tenor testdatasøk og fremgangsmåte for å opprette 
-Maskinporten-integrasjon til bruk for testing og senere produksjon.
+:::info
+Å ta i bruk ID-Porten for autentisering mot testmiljøene krever et etablert kundeforhold hos Digdir.
+Denne prosessen er delvis manuell så det anbefales å starte prosessen så tidlig som mulig.
+Ved bestilling må det oppgis at det ønskes tilgang til Skattemeldings-API fra Skatteetaten.
+:::
 
-## Testdata for eiendommer
+Se for øvrig [Tilgang til API-et](#tilgang-til-api-et) for mer informasjon om hvordan man etablerer tilgang til API-ene.
+
+## Testdata
+Testdata kan søkes opp i [Tenor testdatasøk](../test/tenor.md).
+
 For å teste eiendomstjenestene er det laget en oversikt over hvilke eiendommer som kan søkes opp i en [egen CSV-fil på Skatteetatens GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/api-v2/Syntetiske_eiendommer_v5.csv).
 
 </TabItem>
