@@ -42,11 +42,13 @@ For informasjon og oppdateringer for systemleverandører med integrasjon mot ska
 Dokumentasjonen for innsending av skattemeldingen ligger foreløpig på [en egen Github-side](https://github.com/Skatteetaten/skattemeldingen).
 API-ene for innsending vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. Dette er ikke enda klart.
 
-Det tilbys to sett med API-er:
+Det tilbys to sett med tjenester:
 
-- Skatteetatens API: har tjenester for henting og validering av skattemeldinger, eiendomskalkulator, hent vedlegg og
-  foreløpig avregning.
-- Altinn3 API: har tjenester for opprettelse og innsending av en skattemelding.
+- Skatteetaten tilbyr egne tjenester for blant annet henting og validering av skattemeldinger, eiendomskalkulator,
+  søknad om utsatt frist, m.m. API-dokumentasjon for tjenestene vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. Dette er ikke enda klart.
+- Skatteetaten har opprettet en egen app i Altinn3 som håndterer innsendingen av skattemeldingen med næringsspesifikasjon,
+  opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
+  Altinn3-API-ene er dokumentert i en egen [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 
 ## Ordliste
 | Begrep | Beskrivelse                                                                                                |
@@ -70,11 +72,12 @@ Autentisering skjer enten via ID-porten eller Maskinporten:
 - Personlig innlogging vil skje via ID-porten med bruk av sluttbrukerens eget personnummer.
 - Systemer/maskiner som ønsker å opptre på vegne av en organisasjon kan autentisere seg via Maskinporten.
 
+For tilgang til API-ene må man ha en systembruker. Systembrukeren må ha tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`
+for å bli autorisert til API-ene til Skatteetaten og Altinn. Mer informasjon om systembrukere og hvordan ta det i bruk er dokumentert under [Systembruker](../om/systembruker.md).
+
 For mer informasjon om autentisering og autorisasjon, se [Sikkerhet](../om/sikkerhet.md).
 
 ### Tilgang til Altinn3 App API
-For tilgang til Altinn3-tjenestene må man ha en systembruker. Du kan lese mer om systembruker og hvordan systemet ditt kan ta det i bruk under [Systembruker](../om/systembruker.md).
-
 Access-tokenet systembrukeren har mottatt fra Maskinporten må veksles til et Altinn-token for å autentisere seg mot Altinn3 API-et for innsending av skattemeldingen.
 Mer informasjon om veksling av Maskinporten-token til Altinn-token og generell dokumentasjon om Altinn3 API finnes på
 [Altinns side for autentisering med ID-Porten](https://docs.altinn.studio/nb/authorization/getting-started/authentication/id-porten/).
@@ -88,7 +91,6 @@ Følgende scopes med respektive maks-levetider skal benyttes ved autentisering i
 |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------|-----------------------|
 | skatteetaten:formueinntekt/skattemelding         | Tilgang til skattemeldingstjenester                                                                            | 8 timer              | 90 dager              |
 | skatteetaten:formueinntekt/skattemelding/eiendom | Tilgang til eiendomstjenester                                                                                  | 8 timer              | 90 dager              |
-| app_skd_formueinntekt-skattemelding-v2           | Ressursen systembrukeren må ha for å kontrollere rettigheter til innlogget bruker. Brukes også for Altinn3 API |
 
 :::info
 Scopet med den korteste levetiden vil være gjeldende for hele access-tokenet.
@@ -101,7 +103,6 @@ Disse er listet opp i tabellen under:
 
 | Scope                                    | Beskrivelse                                                                                         |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| app_skd_formueinntekt-skattemelding-v2   | Ressursen systembrukeren må ha for å bli autorisert er å hente og sende inn innhold i Altinn3-appen |
 | skatteetaten:formueinntekt/skattemelding | Skatteetaten-scope spesielt relevant for å endre status på innsendingen i Altinn3                   |
 | altinn:instances.read                    | Scope Altinn krever for å hente innhold i Altinn3-appen fra sluttbrukersystem                       |
 | altinn:instances.write                   | Scope Altinn krever for å sende inn innhold i Altinn3-appen fra sluttbrukersystem                   |
@@ -394,7 +395,7 @@ som lar sluttbrukerne se innholdet i XML-dokumentene som er lastet opp på Altin
 Signering av den skattepliktige og eventuell revisor skjer også via klienten.
 Etter at skattemeldingen er sendt inn vil det være mulig å hente ut innholdet som ble sendt inn via klienten.
 
-Endepunkter med beskrivelse av parametre og respons ligger i [Open API-spesifikasjonen til Altinn3-appen for skattemeldingen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
+Endepunkter med beskrivelse av parametre og respons ligger i [OpenAPI-spesifikasjonen til Altinn3-appen for skattemeldingen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 Denne genereres og administreres av Altinn basert på appen utviklet av Skatteetaten.
 Altinn har også tilgjengeliggjort en [generisk OpenAPI-spesifikasjon](https://docs.altinn.studio/nb/api/apps/spec/) for Altinn3-API-et som er relevant ved uthenting/oppdatering/sletting av elemeter på instansen.
 
