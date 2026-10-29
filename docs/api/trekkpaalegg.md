@@ -791,7 +791,7 @@ Her ser du hele informasjonsmodellen Trekkpålegg API med alle 4 endepunktene.
 | trekkversjon |          | Versjonen til et trekkpålegg med en ID. Inkrementeres med 1 for hver nye versjon, men beholder samme trekkID. | Alltid stigende. |
 | sekvensnummer |         | Globalt løpenummer på tvers av alle trekkpålegg. Kan benyttes som et 'vannmerke' for å huske siste mottatte trekkpålegg. | Alltid stigende. |
 | opprettet     |         | Dato og klokkeslett for trekkversjon. |  Funksjonelt benyttes denne for å vite når endringen ble formidlet. |
-| saksnummer   |          | Identifiserer saken hvor trekkpålegget ble besluttet. | Unikt per trekkId |
+| saksnummer   |          | Identifiserer saken som endret trekkpålegget  | Unikt per trekkversjon  |
 | trekkpliktig |          | Orgnummeret til den trekkpliktige virksomheten |  |
 | skyldner |              | Fødsels- eller d-nummer til ansatt/ytelsesmottaker som skal trekkes i lønn/ytelse. |  |
 | trekkstatus  |          | Status på utleggstrekket. Når et trekkpålegg er avsluttet skal det ikke lenger trekkes i lønn/ytelse. | <ul><li>Alltid status aktiv når sluttdato for siste trekkstørrelse for periode ikke er passert. </li><li>Når sluttdato er satt frem i tid, vil status endres til avsluttet etter at sluttdato er passert (ved midnatt). </li><li> Når sluttdato settes til i dag, vil status endres til avsluttet i samme trekkversjon som sluttdatoen blir publisert. </li></ul>|
