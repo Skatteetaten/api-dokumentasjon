@@ -51,6 +51,8 @@ som ikke kan dele opp innsendingene. Følgende ordninger er støttet:
 
 Følgende scope skal benyttes ved autentisering i Maskinporten: `skatteetaten:innrapporteringtpofilopplasting`
 
+Skatteetaten må gi tilgang til scope. Søk om dette [her](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/tredjepartsopplysninger-sbs/#bestill-tilgang-til-tjenesten-krever-innlogging).
+
 ## Systemtilgang med systembruker
 
 Steg for
