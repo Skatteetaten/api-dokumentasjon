@@ -689,6 +689,12 @@ setter feltet `gjelderSkjoennsfastsetting` til `true`. Det er ikke påkrevd med 
 
 Deretter sendes skattemeldingen med næringsspesifikasjon inn på vanlig måte som beskrevet tidligere.
 
+## Asynkront API for innsending
+Det tilbys et eget API for asynkron innsending av skattemeldinger med næringsspesifikasjoner større enn 10 MB.
+I disse tilfellene er det påkrevd å bruke de asynkrone tjenestene for innsending.
+
+Det asynkrone API-et er dokumentert på [GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/api-asynk/README.md).
+
 </TabItem>
 
 <TabItem headerText="Informasjonsmodell" itemKey="itemKey-2">
