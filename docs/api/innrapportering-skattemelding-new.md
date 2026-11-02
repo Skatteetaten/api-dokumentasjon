@@ -72,20 +72,22 @@ Autentisering skjer enten via ID-porten eller Maskinporten:
 - Personlig innlogging vil skje via ID-porten med bruk av sluttbrukerens eget personnummer.
 - Systemer/maskiner som ønsker å opptre på vegne av en organisasjon kan autentisere seg via Maskinporten.
 
-For tilgang til API-ene må man ha en systembruker. Systembrukeren må ha tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`
-for å bli autorisert til API-ene til Skatteetaten og Altinn. Mer informasjon om systembrukere og hvordan ta det i bruk er dokumentert under [Systembruker](../om/systembruker.md).
+Tilgang til API-ene kan gis til en bruker som logger inn via ID-porten, eller til en systembruker som autentiseres via Maskinporten.
+Systembrukere må ha tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`.
+Mer informasjon om opprettelse og bruk av systembruker finnes under [Systembruker](../om/systembruker.md).
 
 For mer informasjon om autentisering og autorisasjon, se [Sikkerhet](../om/sikkerhet.md).
 
 ### Tilgang til Altinn3 App API
-Access-tokenet systembrukeren har mottatt fra Maskinporten må veksles til et Altinn-token for å autentisere seg mot Altinn3 API-et for innsending av skattemeldingen.
-Mer informasjon om veksling av Maskinporten-token til Altinn-token og generell dokumentasjon om Altinn3 API finnes på
-[Altinns side for autentisering med ID-Porten](https://docs.altinn.studio/nb/authorization/getting-started/authentication/id-porten/).
+Access-tokenet fra ID-porten eller Maskinporten må veksles til et Altinn-token for å autentisere seg mot Altinn3 API-et for innsending av skattemeldingen.
+Mer informasjon om autentisering med ID-porten finnes på
+[Altinns side for autentisering med ID-porten](https://docs.altinn.studio/nb/authorization/getting-started/authentication/id-porten/).
 En mer teknisk dokumentasjon finnes i [Altinns API-dokumentasjon](https://docs.altinn.studio/nb/api/scenarios/authentication/).
 
 ### Scope
 #### Skatteetaten API
-Følgende scopes med respektive maks-levetider skal benyttes ved autentisering i Maskinporten mot Skatteetatens API-er:
+Følgende scopes benyttes ved autentisering mot Skatteetatens API-er.
+Maksimal levetid i tabellen gjelder token fra Maskinporten:
 
 | Scope                                            | Beskrivelse                                                                                                    | Levetid access-token | Levetid refresh-token |
 |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------|-----------------------|
@@ -94,12 +96,11 @@ Følgende scopes med respektive maks-levetider skal benyttes ved autentisering i
 
 :::info
 Scopet med den korteste levetiden vil være gjeldende for hele access-tokenet.
-Vi anbefaler å begrense levetiden på access-tokenet ytterligere, og heller ta i bruk refresh-token.
+Det anbefales å begrense levetiden på access-tokenet ytterligere, og heller ta i bruk refresh-token.
 :::
 
 #### Altinn3 API
-For Altinn3 benyttes en systembruker som beskrevet tidligere. Ressursen krever egne scopes mot Altinn3-appen.
-Disse er listet opp i tabellen under:
+For Altinn3 trengs det i tillegg til scope for skattemelding noen Altinn-spesifikke scopes, som listet opp i tabellen under:
 
 | Scope                                    | Beskrivelse                                                                                         |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -110,8 +111,8 @@ Disse er listet opp i tabellen under:
 For å se maksimal levetid til Altinn sine scopes, finner man oversikt over disse på [DigDir Scopes - Altinn dokumentasjon](https://docs.altinn.studio/nb/api/authentication/digdirscopes/).
 
 ### Tilgangspakker
-Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av tilgangspakkene i tabellen under.
-Tilgangspakker settes ut fra hvem systembrukeren skal representere:
+Dette API-et krever at brukeren som logger inn via ID-porten, eller systembrukeren som autentiseres via Maskinporten, har tilgang til én eller flere av tilgangspakkene i tabellen under.
+Hvilke tilgangspakker som er aktuelle, avhenger av hvem brukeren eller systembrukeren skal representere:
 
 | Tilgangspakke                               | URN                                                                | Når den er aktuell og tilgang i innsendingsløpet                                                                                                                  |
 |---------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -128,8 +129,9 @@ Bare **Ansvarlig revisor** og **Revisorattesterer** kan bekrefte i revisors sign
 
 [Tjenesteoversikten utviklet av Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2) beskriver tilgangspakkene ytterligere. Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.
 
-For å ta tilgangspakken i bruk må systemleverandøren oppgi pakkens URN i `accessPackages` ved [registrering av systemet og opprettelse av forespørsel om systembruker](../om/systembruker.md#steg-for-steg).
-Den som skal gi tilgang, må godkjenne forespørselen i Altinn. For klientsystembruker knyttes aktuelle klienter til systemtilgangen.
+Ved bruk av systembruker må systemleverandøren oppgi pakkens URN i `accessPackages` ved [registrering av systemet og opprettelse av forespørsel om systembruker](../om/systembruker.md#steg-for-steg).
+Den som skal gi systembrukeren tilgang, må godkjenne forespørselen i Altinn. For klientsystembruker knyttes aktuelle klienter til systemtilgangen.
+Ved bruk av ID-porten må den innloggede brukeren ha de aktuelle tilgangene i Altinn.
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
