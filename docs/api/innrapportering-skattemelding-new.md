@@ -40,13 +40,13 @@ For generell informasjon om tjenestene se egne sider om:
 For informasjon og oppdateringer for systemleverandører med integrasjon mot skattemeldingen for person og næring, se våre [fellessider for systemleverandører](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/).
 
 Dokumentasjonen for innsending av skattemeldingen ligger foreløpig på [en egen Github-side](https://github.com/Skatteetaten/skattemeldingen).
-API-ene for innsending vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. Dette er ikke enda klart. 
+API-ene for innsending vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. 
 Utkast til OpenAPI-spesifikasjon for Skattemeldingen finnes [her](pathname:///download/skattemeldingupersonlig/openapi.html).
 
 Det tilbys to sett med tjenester:
 
 - Skatteetaten tilbyr egne tjenester for blant annet henting og validering av skattemeldinger, eiendomskalkulator,
-  søknad om utsatt frist, m.m. API-dokumentasjon for tjenestene vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. Dette er ikke enda klart.
+  søknad om utsatt frist, m.m. API-dokumentasjon for tjenestene vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. 
 - Skatteetaten har opprettet en egen app i Altinn3 som håndterer innsendingen av skattemeldingen med næringsspesifikasjon,
   opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
   Altinn3-API-ene er dokumentert i en egen [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
