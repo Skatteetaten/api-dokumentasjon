@@ -669,6 +669,10 @@ hvor det sendes inn en liste med `klienter`/skattepliktige i requesten.
 Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skattemelding/v2/utsattfristsoeknad/innsendingstatus/{referanse}`.
 Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
 
+:::info
+Tjenestene for søknad om utsatt frist støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Tjenester for skattepliktige med begrenset skatteplikt
 SBS kan tilrettelegge for levering av skattemeldingen for skattepliktige med begrenset skatteplikt i perioder av året.
 
