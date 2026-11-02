@@ -74,6 +74,7 @@ Autentisering skjer enten via ID-porten eller Maskinporten:
 - Systemer/maskiner som ønsker å opptre på vegne av en organisasjon kan autentisere seg via Maskinporten.
 
 Tilgang til API-ene kan gis til en bruker som logger inn via ID-porten, eller til en systembruker som autentiseres via Maskinporten.
+For noen tjenester er autentisering med ID-Porten påkrevd. Dette gjelder blant annet tjenesten for å bekrefte skattemeldingen i Altinn3.
 Systembrukere må ha tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`.
 Mer informasjon om opprettelse og bruk av systembruker finnes under [Systembruker](../om/systembruker.md).
 
@@ -488,6 +489,10 @@ gjennom Skatteetatens visningsklient. Visningsklienten er tilgjengelig på URL `
 slik at SBS kan lenke direkte til klienten, eller via innboksen i Altinn.
 
 Hele signeringsprosessen kan håndteres direkte fra SBS uten å gå via Altinn eller visningsklienten.
+
+:::info
+For å sende instansen videre etter signering av den skattepliktige og eventuelt revisor, må  ID-Porten benyttes for autentisering da Skatteetaten er avhengig av å vite hvem som har utført handlingen.
+:::
 
 ### 4.5 Sende videre til revisors signering
 Hvis det er spesifisert i instansen at forekomster i skattemeldingen eller næringsspesifikasjonen skal signeres av revisor,
