@@ -40,12 +40,13 @@ For generell informasjon om tjenestene se egne sider om:
 For informasjon og oppdateringer for systemleverandører med integrasjon mot skattemeldingen for person og næring, se våre [fellessider for systemleverandører](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/).
 
 Dokumentasjonen for innsending av skattemeldingen ligger foreløpig på [en egen Github-side](https://github.com/Skatteetaten/skattemeldingen).
-API-ene for innsending vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. Dette er ikke enda klart.
+API-ene for innsending vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. 
+Utkast til OpenAPI-spesifikasjon for Skattemeldingen finnes [her](pathname:///download/skattemeldingupersonlig/openapi.html).
 
 Det tilbys to sett med tjenester:
 
 - Skatteetaten tilbyr egne tjenester for blant annet henting og validering av skattemeldinger, eiendomskalkulator,
-  søknad om utsatt frist, m.m. API-dokumentasjon for tjenestene vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. Dette er ikke enda klart.
+  søknad om utsatt frist, m.m. API-dokumentasjon for tjenestene vil tilgjengeliggjøres som OpenAPI-spesifikasjoner på SwaggerHub. 
 - Skatteetaten har opprettet en egen app i Altinn3 som håndterer innsendingen av skattemeldingen med næringsspesifikasjon,
   opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
   Altinn3-API-ene er dokumentert i en egen [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
@@ -72,20 +73,23 @@ Autentisering skjer enten via ID-porten eller Maskinporten:
 - Personlig innlogging vil skje via ID-porten med bruk av sluttbrukerens eget personnummer.
 - Systemer/maskiner som ønsker å opptre på vegne av en organisasjon kan autentisere seg via Maskinporten.
 
-For tilgang til API-ene må man ha en systembruker. Systembrukeren må ha tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`
-for å bli autorisert til API-ene til Skatteetaten og Altinn. Mer informasjon om systembrukere og hvordan ta det i bruk er dokumentert under [Systembruker](../om/systembruker.md).
+Tilgang til API-ene kan gis til en bruker som logger inn via ID-porten, eller til en systembruker som autentiseres via Maskinporten.
+For noen tjenester er autentisering med ID-Porten påkrevd. Dette gjelder blant annet tjenesten for å bekrefte skattemeldingen i Altinn3.
+Systembrukere må ha tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`.
+Mer informasjon om opprettelse og bruk av systembruker finnes under [Systembruker](../om/systembruker.md).
 
 For mer informasjon om autentisering og autorisasjon, se [Sikkerhet](../om/sikkerhet.md).
 
 ### Tilgang til Altinn3 App API
-Access-tokenet systembrukeren har mottatt fra Maskinporten må veksles til et Altinn-token for å autentisere seg mot Altinn3 API-et for innsending av skattemeldingen.
-Mer informasjon om veksling av Maskinporten-token til Altinn-token og generell dokumentasjon om Altinn3 API finnes på
-[Altinns side for autentisering med ID-Porten](https://docs.altinn.studio/nb/authorization/getting-started/authentication/id-porten/).
+Access-tokenet fra ID-porten eller Maskinporten må veksles til et Altinn-token for å autentisere seg mot Altinn3 API-et for innsending av skattemeldingen.
+Mer informasjon om autentisering med ID-porten finnes på
+[Altinns side for autentisering med ID-porten](https://docs.altinn.studio/nb/authorization/getting-started/authentication/id-porten/).
 En mer teknisk dokumentasjon finnes i [Altinns API-dokumentasjon](https://docs.altinn.studio/nb/api/scenarios/authentication/).
 
 ### Scope
 #### Skatteetaten API
-Følgende scopes med respektive maks-levetider skal benyttes ved autentisering i Maskinporten mot Skatteetatens API-er:
+Følgende scopes benyttes ved autentisering mot Skatteetatens API-er.
+Maksimal levetid i tabellen gjelder token fra Maskinporten:
 
 | Scope                                            | Beskrivelse                                                                                                    | Levetid access-token | Levetid refresh-token |
 |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------|----------------------|-----------------------|
@@ -94,12 +98,11 @@ Følgende scopes med respektive maks-levetider skal benyttes ved autentisering i
 
 :::info
 Scopet med den korteste levetiden vil være gjeldende for hele access-tokenet.
-Vi anbefaler å begrense levetiden på access-tokenet ytterligere, og heller ta i bruk refresh-token.
+Det anbefales å begrense levetiden på access-tokenet ytterligere, og heller ta i bruk refresh-token.
 :::
 
 #### Altinn3 API
-For Altinn3 benyttes en systembruker som beskrevet tidligere. Ressursen krever egne scopes mot Altinn3-appen.
-Disse er listet opp i tabellen under:
+For Altinn3 trengs det i tillegg til scope for skattemelding noen Altinn-spesifikke scopes, som listet opp i tabellen under:
 
 | Scope                                    | Beskrivelse                                                                                         |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -110,8 +113,8 @@ Disse er listet opp i tabellen under:
 For å se maksimal levetid til Altinn sine scopes, finner man oversikt over disse på [DigDir Scopes - Altinn dokumentasjon](https://docs.altinn.studio/nb/api/authentication/digdirscopes/).
 
 ### Tilgangspakker
-Dette API-et krever at systemet og dets systembrukere har tilgang til én eller flere av tilgangspakkene i tabellen under.
-Tilgangspakker settes ut fra hvem systembrukeren skal representere:
+Dette API-et krever at brukeren som logger inn via ID-porten, eller systembrukeren som autentiseres via Maskinporten, har tilgang til én eller flere av tilgangspakkene i tabellen under.
+Hvilke tilgangspakker som er aktuelle, avhenger av hvem brukeren eller systembrukeren skal representere:
 
 | Tilgangspakke                               | URN                                                                | Når den er aktuell og tilgang i innsendingsløpet                                                                                                                  |
 |---------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -128,8 +131,9 @@ Bare **Ansvarlig revisor** og **Revisorattesterer** kan bekrefte i revisors sign
 
 [Tjenesteoversikten utviklet av Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2) beskriver tilgangspakkene ytterligere. Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.
 
-For å ta tilgangspakken i bruk må systemleverandøren oppgi pakkens URN i `accessPackages` ved [registrering av systemet og opprettelse av forespørsel om systembruker](../om/systembruker.md#steg-for-steg).
-Den som skal gi tilgang, må godkjenne forespørselen i Altinn. For klientsystembruker knyttes aktuelle klienter til systemtilgangen.
+Ved bruk av systembruker må systemleverandøren oppgi pakkens URN i `accessPackages` ved [registrering av systemet og opprettelse av forespørsel om systembruker](../om/systembruker.md#steg-for-steg).
+Den som skal gi systembrukeren tilgang, må godkjenne forespørselen i Altinn. For klientsystembruker knyttes aktuelle klienter til systemtilgangen.
+Ved bruk av ID-porten må den innloggede brukeren ha de aktuelle tilgangene i Altinn.
 
 ### Skatteetaten må gi tilgang
 For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
@@ -486,6 +490,10 @@ slik at SBS kan lenke direkte til klienten, eller via innboksen i Altinn.
 
 Hele signeringsprosessen kan håndteres direkte fra SBS uten å gå via Altinn eller visningsklienten.
 
+:::info
+For å sende instansen videre etter signering av den skattepliktige og eventuelt revisor, må  ID-Porten benyttes for autentisering da Skatteetaten er avhengig av å vite hvem som har utført handlingen.
+:::
+
 ### 4.5 Sende videre til revisors signering
 Hvis det er spesifisert i instansen at forekomster i skattemeldingen eller næringsspesifikasjonen skal signeres av revisor,
 vil instansen etter at den skattepliktige har signert gå videre til revisors signering. Hvis den skattepliktige har signert
@@ -577,6 +585,10 @@ Request body er skattemeldingen med næringsspesifikasjon på samme format som i
 
 Skattemeldingen vil bli lagret i 24 timer for visning via `url`-feltet som returneres i responsen.
 
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Foreløpig avregning
 Det er laget en egen tjeneste for å kunne gjøre en foreløpig avregning basert på den beregnede skatten man sender inn til komponenten.
 Endelig avregning i forbindelse med skatteoppgjøret kan gi et annet avregningsresultat enn ved foreløpig avregning.
@@ -586,12 +598,21 @@ Hvis skattyter har et skatteoppgjør og fått utbetalt tilgode, og skal gjøre e
 
 Endepunktet som benyttes er `POST /api/skattemelding/v2/avregning/avregn/{inntektsår}/{identifikator}`.
 
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Forhåndsfastsetting
 Det er mulig å be om forhåndsfastsetting for **upersonlig skattemelding** før ordinær fastsettingsperiode starter.
 Eksempelvis skal et selskap kunne få forhåndsfastsetting i mars inneværende år. Da skal skattemeldingen for inneværende _og_ foregående år leveres.
 Begge skattemeldingene må da leveres på foregående års informasjonsmodell.
 
 Under beskrives flyten for å foreta en forhåndsfastsetting.
+
+:::info
+Tjenestene [Klargjør for forhåndsfastsetting](#2-klargjør-for-forhåndsfastsetting) og [Klargjør part som mangler utkast](#3-klargjør-part-som-mangler-utkast)
+støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
 
 ### 1. Hent gjeldende skattemelding for inneværende år
 For å forhåndsfastsette må først gjeldende skattemelding for året som skal forhåndsfastsettes hentes vha. [tjenesten for å hente gjeldende skattemelding](#1-hent-gjeldende-skattemelding).
@@ -602,7 +623,7 @@ og skattemeldingen må klargjøres for forhåndsfastsetting.
 ### 2. Klargjør for forhåndsfastsetting
 Dersom skattemeldingen for inntektsåret ikke er klar på forhåndsfastsettingtidspunktet, må endepunktet
 `POST /api/skattemelding/v2/klargjoerforhaandsfastsetting/{inntektsår}/{identifikator}` kalles for å klargjøre skattemeldingen for forhåndsfastsetting.
-Når det er gjort, skal utkast kunne hentes for den skattepliktige. Utkastet vil da 
+Når det er gjort, skal utkast kunne hentes for den skattepliktige.
 
 ### 3. Klargjør part som mangler utkast
 Dersom en organisasjon mangler utkast etter at det er klargjort for forhåndsfassetting,
@@ -633,6 +654,10 @@ kan følgende endepunkt benyttes: `GET /api/skattemelding/v2/{inntektsår}/{iden
 `vedleggId` er ID fra stien "/skattemelding/vedlegg/id" til den aktuelle skattemelding-XML-en. Dette er ID-en som ble
 returnert fra Altinn3-appen ved opplasting av vedlegget, og referert til i skattemeldingen.
 
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Hent gjeldende fastsetting i PDF-format
 For å hente ut gjeldende fastsetting i PDF-format kan følgende endepunkt benyttes:
 `/api/skattemelding/v2/{inntektsår}/{identifikator}/gjeldende-fastsetting.pdf`
@@ -651,6 +676,10 @@ For upersonlige returneres lenke til Tilsvar.
 
 Tjenesten som benyttes er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/lenker/publikumsportaler`.
 
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Søk om utsatt frist for levering av skattemeldingen
 Den skattepliktige kan søke om utsatt frist for levering av skattemeldingen før ordinær innleveringsfrist.
 Informasjon og innleveringsfrister finnes på [Skatteetatens nettsider](https://www.skatteetaten.no/person/skatt/skattemelding/utsattfrist/).
@@ -667,12 +696,20 @@ hvor det sendes inn en liste med `klienter`/skattepliktige i requesten.
 Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skattemelding/v2/utsattfristsoeknad/innsendingstatus/{referanse}`.
 Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
 
+:::info
+Tjenestene for søknad om utsatt frist støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Tjenester for skattepliktige med begrenset skatteplikt
 SBS kan tilrettelegge for levering av skattemeldingen for skattepliktige med begrenset skatteplikt i perioder av året.
 
 Tjenestene som tilbys gir tilgang til å hente, vurdere og lagre periodegrunnlaget med hensikten å korrigere tolvdeler og skatteplikt for den skattepliktige.
 
 Disse tjenestene er dokumentert i [Perioder API på GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/skatteplikt/README.md).
+
+:::info
+Tjenestene for begrenset skatteplikt støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
 
 ## Klage
 For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
