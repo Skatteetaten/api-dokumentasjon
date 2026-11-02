@@ -585,6 +585,10 @@ Request body er skattemeldingen med næringsspesifikasjon på samme format som i
 
 Skattemeldingen vil bli lagret i 24 timer for visning via `url`-feltet som returneres i responsen.
 
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Foreløpig avregning
 Det er laget en egen tjeneste for å kunne gjøre en foreløpig avregning basert på den beregnede skatten man sender inn til komponenten.
 Endelig avregning i forbindelse med skatteoppgjøret kan gi et annet avregningsresultat enn ved foreløpig avregning.
@@ -594,12 +598,21 @@ Hvis skattyter har et skatteoppgjør og fått utbetalt tilgode, og skal gjøre e
 
 Endepunktet som benyttes er `POST /api/skattemelding/v2/avregning/avregn/{inntektsår}/{identifikator}`.
 
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Forhåndsfastsetting
 Det er mulig å be om forhåndsfastsetting for **upersonlig skattemelding** før ordinær fastsettingsperiode starter.
 Eksempelvis skal et selskap kunne få forhåndsfastsetting i mars inneværende år. Da skal skattemeldingen for inneværende _og_ foregående år leveres.
 Begge skattemeldingene må da leveres på foregående års informasjonsmodell.
 
 Under beskrives flyten for å foreta en forhåndsfastsetting.
+
+:::info
+Tjenestene [Klargjør for forhåndsfastsetting](#2-klargjør-for-forhåndsfastsetting) og [Klargjør part som mangler utkast](#3-klargjør-part-som-mangler-utkast)
+støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
 
 ### 1. Hent gjeldende skattemelding for inneværende år
 For å forhåndsfastsette må først gjeldende skattemelding for året som skal forhåndsfastsettes hentes vha. [tjenesten for å hente gjeldende skattemelding](#1-hent-gjeldende-skattemelding).
@@ -610,7 +623,7 @@ og skattemeldingen må klargjøres for forhåndsfastsetting.
 ### 2. Klargjør for forhåndsfastsetting
 Dersom skattemeldingen for inntektsåret ikke er klar på forhåndsfastsettingtidspunktet, må endepunktet
 `POST /api/skattemelding/v2/klargjoerforhaandsfastsetting/{inntektsår}/{identifikator}` kalles for å klargjøre skattemeldingen for forhåndsfastsetting.
-Når det er gjort, skal utkast kunne hentes for den skattepliktige. Utkastet vil da 
+Når det er gjort, skal utkast kunne hentes for den skattepliktige.
 
 ### 3. Klargjør part som mangler utkast
 Dersom en organisasjon mangler utkast etter at det er klargjort for forhåndsfassetting,
@@ -641,6 +654,10 @@ kan følgende endepunkt benyttes: `GET /api/skattemelding/v2/{inntektsår}/{iden
 `vedleggId` er ID fra stien "/skattemelding/vedlegg/id" til den aktuelle skattemelding-XML-en. Dette er ID-en som ble
 returnert fra Altinn3-appen ved opplasting av vedlegget, og referert til i skattemeldingen.
 
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
+
 ## Hent gjeldende fastsetting i PDF-format
 For å hente ut gjeldende fastsetting i PDF-format kan følgende endepunkt benyttes:
 `/api/skattemelding/v2/{inntektsår}/{identifikator}/gjeldende-fastsetting.pdf`
@@ -658,6 +675,10 @@ Leverandører kan lenke direkte til publikumsportaler fra SBS. For personlige re
 For upersonlige returneres lenke til Tilsvar.
 
 Tjenesten som benyttes er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/lenker/publikumsportaler`.
+
+:::info
+Tjenesten støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
 
 ## Søk om utsatt frist for levering av skattemeldingen
 Den skattepliktige kan søke om utsatt frist for levering av skattemeldingen før ordinær innleveringsfrist.
@@ -685,6 +706,10 @@ SBS kan tilrettelegge for levering av skattemeldingen for skattepliktige med beg
 Tjenestene som tilbys gir tilgang til å hente, vurdere og lagre periodegrunnlaget med hensikten å korrigere tolvdeler og skatteplikt for den skattepliktige.
 
 Disse tjenestene er dokumentert i [Perioder API på GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/skatteplikt/README.md).
+
+:::info
+Tjenestene for begrenset skatteplikt støtter kun autentisering med ID-Porten, ikke Maskinporten.
+:::
 
 ## Klage
 For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
