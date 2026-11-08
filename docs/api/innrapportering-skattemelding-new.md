@@ -7,13 +7,25 @@ datatable: true
 tags: [API, Skattemelding]
 keywords: [skattemelding]
 last_updated: Oct 22, 2026
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
+
+import Onboarding from '../api/innrapportering-skattemelding-onboarding.md';
+import Viderekomne from '../api/innrapportering-skattemelding-viderekomne.md';
 
 <Summary>Tjenester for innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>
 
 <Tabs underline={true}>
-<TabItem headerText="Om tjenesten" itemKey="itemKey-1" default>
+
+<TabItem headerText = "Onboardingsguide" itemKey="itemKey-00" default>
+<Onboarding />
+</TabItem>
+
+<TabItem headerText = "Avansert bruk" itemKey="itemKey-01">
+<Viderekomne />
+</TabItem>
+
+<TabItem headerText="Om tjenesten" itemKey="itemKey-1">
 
 Denne siden inneholder funksjonell og teknisk dokumentasjon for hvordan innrapportering av
 skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige skal leveres fra sluttbrukersystem.
@@ -51,6 +63,9 @@ Det tilbys to sett med tjenester:
   opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
   Altinn3-API-ene er dokumentert i en egen [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 
+I tillegg tilbyr Skatteetaten tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter)
+for å hente ut dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen.
+
 ## Ordliste
 | Begrep | Beskrivelse                                                                                                |
 |--------|------------------------------------------------------------------------------------------------------------|
@@ -60,7 +75,7 @@ Det tilbys to sett med tjenester:
 | SME    | Skattemelding, modernisert versjon. (benyttes oftest om publikumssiden for innlevering av skattemeldingen) |
 | SMIA   | Skattemelding interne arbeidsflate (nytt saksbehandlingssystem 2020)                                       |
 
-## Tilgang til API-et
+## Tilgang til API-ene
 Når en skattepliktig skal benytte et sluttbrukersystem for å sende inn skattemeldingen og næringsopplysninger gjennom
 API må sluttbrukeren og/eller sluttbrukersystemet være autentisert og autorisert gjennom en påloggingsprosess.
 
@@ -141,9 +156,9 @@ For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
 
 ## Teknisk spesifikasjon
 Gjennom den tekniske spesifikasjonen vil begrepet _skattepliktig_ brukes for personen eller selskapet skattemeldingen 
-med eventuell næringsspesifikasjon sendes inn for. Det er ikke nsbetydende med at det er den skattepliktige som utfører innleveringsprosessen
-dokumentert her. Eksempelvis kan en regnskapsfører, daglig leder eller styreleder være den som leverer inn skattemeldingen
-på vegne av den skattepliktige.
+med eventuell næringsspesifikasjon sendes inn for. Det er ikke ensbetydende med at det er den skattepliktige som utfører innleveringsprosessen
+dokumentert her. Eksempelvis kan en regnskapsfører være den som leverer inn skattemeldingen
+på vegne av den skattepliktige. For selskaper representerer daglig leder eller styreleder den skattepliktige.
 
 Følgende figur gir en en overordnet flyt med aktører og komponenter for innsending av skattemelding med næringsspesifikasjon:
 
@@ -304,7 +319,7 @@ Skal det sendes med dokumentert utleieverdi for næringseiendom, sendes feltet `
 Beregnet utleieverdi returneres i feltet `beregnetUtleieverdiForIkkeUtleidNaeringseiendomINorge` i responsen fra inntektsår 2024.
 
 ## 3. Valideringstjenesten
-Før innsending av skattemelding med næringsspesifikasjon, valideres innsendingen ved bruk av valideringstjenesten for å sikre at skattemeldingen er korrekt og mest sannsynligvis vil bli godkjent ved innsending.
+Før innsending av skattemelding med næringsspesifikasjon, valideres innsendingen ved bruk av valideringstjenesten for å sikre at skattemeldingen er korrekt og mest sannsynlig vil bli godkjent ved innsending.
 Samme tjeneste benyttes av Skatteetatens mottak ved validering av innsendt skattemelding. Som beskervet i de fire hovedstrategiene for implementasjon, kan SBS velge å implementere alle beregninger selv, eller integrere valideringstjenesten i sitt system.
 
 :::tip[Lagring av valideringsdata]
@@ -408,8 +423,8 @@ Det er det innvekslede Altinn-tokenet som benyttes for å opprette instansen i A
 
 Diagrammet under viser den overordnede forretningsprosessen for innsending av skattemelding med næringsspesifikasjon via Altinn3-appen.
 
-[![Forretningsprosess Altinn3](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)
-<br/>_Overordnet forretningsprosess for Altinn3-appen._.
+![Forretningsprosess Altinn3](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)
+<br/>_Overordnet forretningsprosess for Altinn3-appen._
 
 ### 4.1 Opprettelse av instans i Altinn3
 Første steg i innsendingen er å opprette en instans i Altinn3. En instans brukes av Altinn for å bevare tilstanden til innsendingen av skattemeldingen med næringsspesifikasjon, inklusive alle dokumenter og vedlegg.
@@ -531,7 +546,7 @@ Dette trigges av nok et kall til [`PUT /skd/formueinntekt-skattemelding-v2/insta
 Instansen vil da settes til status `feedback`.
 
 ### 4.7 Opprettelse av gjeldende fastsetting og kvittering på innsendt skattemelding
-:::warning
+:::info
 Ny flyt for arkivering er under utvikling. Denne seksjonen vil derfor bli oppdatert når ny prosess er klar.
 :::
 
@@ -559,7 +574,7 @@ Den skattepliktige kan sende inn skattemelding gjentatte ganger. For hver nye in
 ![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
 
 # Valgfrie tilleggstjenester
-Nedenfor dokumenteres tjenester som er utviklet basret på behov fra sluttbrukersystemer, men som ikke er en del av den obligatoriske flyten for innsending av skattemeldingen.
+Nedenfor dokumenteres tjenester som er utviklet basert på behov fra sluttbrukersystemer, men som ikke er en del av den obligatoriske flyten for innsending av skattemeldingen.
 
 ## Hent gjeldende skattemelding for gitt type
 I noen tilfeller er det ønskelig å hente ut den siste gjeldende skattemeldingen for en gitt type, f.eks. for å hente ut siste gjeldende utkast av skattemeldingen etter fastsettelse.
@@ -626,7 +641,7 @@ Dersom skattemeldingen for inntektsåret ikke er klar på forhåndsfastsettingti
 Når det er gjort, skal utkast kunne hentes for den skattepliktige.
 
 ### 3. Klargjør part som mangler utkast
-Dersom en organisasjon mangler utkast etter at det er klargjort for forhåndsfassetting,
+Dersom en organisasjon mangler utkast etter at det er klargjort for forhåndsfastsetting,
 kan endepunktet `POST /api/skattemelding/v2/klargjoerpart/{inntektsår}/{identifikator}` kalles for å klargjøre parten.
 
 ### 4. Klargjør dokumentene for innsending
@@ -669,6 +684,8 @@ For å hente ut gjeldende skatteoppgjør i PDF-format kan følgende endepunkt be
 `/api/skattemelding/v2/skatteoppgjoer/{inntektsår}/{identifikator}/{skatteoppgjoerType}/gjeldende.pdf`
 
 Språk i PDF-en for skatteoppgjøret vil utledes fra kommunikasjonsspråket til den skattepliktige.
+
+Gjeldende skatteoppgjør vil også kunne hentes via tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter).
 
 ## Hent lenker til publikumsportaler
 Leverandører kan lenke direkte til publikumsportaler fra SBS. For personlige returneres lenker til Min Skatt, skattemeldingen og Tilsvar.
@@ -752,7 +769,7 @@ De samme opplysningene kan derfor være strukturert annerledes i en brukerflate 
 
 Dette gjelder også lede- og hjelpetekster. Tekstene som Skatteetaten har definert for skattemeldingen er knyttet til presentasjonen av opplysningene,
 og er ikke en del av XSD-en. Tekstene er mappet mot XPath-uttrykk som angir hvor i XML-strukturen den enkelte teksten hører til.
-Lede- og hjelpetekstene er tilgjengelige i maskinlesbart format på [GitHub](https://github.com/Skatteetaten/skattemeldingen/tree/master/docs/tekster).
+Lede- og hjelpetekstene er tilgjengelige på bokmål, nynorsk, engelsk og samisk i maskinlesbart JSON-format på [GitHub](https://github.com/Skatteetaten/skattemeldingen/tree/master/docs/tekster).
 
 Dokumentinnholdet i XML-forespørselene og responsene serialiseres i Base64-encodet format i henhold til [RFC 4648](https://datatracker.ietf.org/doc/html/rfc4648).
 Responsen fra Skatteetaten vil alltid inneholde Base64 som er formatert på denne måten.
@@ -856,7 +873,7 @@ vises slik i XSD (merket rødt):
 Alle felt som er avledet vil bli reberegnet i mottak av skattemeldingen, og hvis verdien som er sendt inn ikke er lik verdien den beregnes til vil
 innsendingen bli avvist.
 
-Det er mulig å ikke sende inn avledede felter - disse vil da bli beregnet ved mottak og slik sett bli endel av fastsettingen
+Det er mulig å ikke sende inn avledede felter - disse vil da bli beregnet ved mottak og dermed bli en del av fastsettingen
 (det blir markert som et avvik i valideringstjenesten, men vil ikke bli avvist).
 
 #### Overstyring av fastsettingsberegninger
@@ -880,6 +897,15 @@ XSD for skattemelding for personlige skattepliktige er `skattemelding_{versjon}_
 
 <span style={{ color: "red" }}>
 ### Beskrivelse av spesielle forhold (hentet fra funksjonell spesifikasjon, må vurdere om skal videreføres)
+#### Preutfylling
+* Eier man del av en eiendom, preutfylles hele eiendommens markedsverdi, og tilhørende andel formuesverdi som den skattepliktige
+  er skattepliktig for.
+* Lønnsinntekt overført fra barn til foreldre preutfylles med den lønnsinntekten barnet hadde i begge foreldres skattemelding,
+  forsørgerprosenten styrer hvilken andel av inntekten de beskattes for.
+* Ønsker man å overføre eksempelvis bank eller utleieinntekter, vil det være mulig å i % angi hvor stor del av totalen en selv skal
+  være skattepliktig for og beregne tilhørende andel formue/inntekt som den skattepliktige er skattepliktig for.
+* På foreldrefradrag for ektefeller/samboere vil begges kostnader og begges barn preutfylles i begges skattemelding og man vil
+  deretter fordele foreldrefradraget andelsmessig.
 #### Innbo - %-andel av bunnfradrag
 Siden bunnfradraget gjelder for begge ektefeller har vi måttet innføre en prosent som angir prosenten av bunnfradraget den enkelt skal benytte.
 Denne brukes inn i fastsettingsberegningen for å komme frem til skattepliktig beløp.
@@ -889,8 +915,23 @@ helhet legges til denne skattemelding.
 #### Gaver til frivillige – får ikke fradrag for det som ikke er innrapportert
 Fastsettingsberegningen på gaver til frivillige sjekker hva det har blitt innrapportert grunnlagsdata på og det er kun det man får fradrag for uavhengig
 av hva som er innrapportert. Det vil være mulig å redusere beløpet, men ikke øke det til over det vi har 3.parts data på.
-#### Eiendom
-Er spesielt, men beskrevet i eget kapitel 5
+</span>
+
+<span style={{ color: "red" }}>
+## Spesielle forhold i skattemeldingen for upersonlig skattepliktige
+### Beregning av verdsettingsrabatt for selskaper som hhv betaler og ikke betaler formuesskatt
+Som hovedregel betaler ikke selskaper formuesskatt. For disse selskapene vil fastsettingsberegningene IKKE returnere verdier for
+følgende avledede felter:
+
+* formuesverdi
+* verdsettingsrabatt
+
+For å ikke få avvik i valideringstjenesten som gjør at innsending avvises er det viktig å ikke sende inn verdier på
+verdsettingsrabatt og formuesverdi når selskapet ikke betaler formuesskatt.
+
+Selskaper som betaler formuesskatt (og hvor valideringstjenesten da beregner verdsettingsrabatt og formuesverdi) er:
+* Sparebank, gjensidig forsikringsselskap og samvirkeforetak betaler formuesskatt til kommunen etter reglene i skatteloven
+* Annet selskap og sammenslutning betaler formuesskatt til staten etter reglene i skatteloven
 </span>
 
 ## XSD for upersonlig skattemelding
@@ -1041,6 +1082,8 @@ XSD for respons-objektet er `skattemeldingognaeringsspesifikasjonrespons_{versjo
 `dokumenter`-objektet kan inneholde flere av dokumenttypene i tabellen under basert skattepliktstype.
 Dette er for øvrig også dokumentert i [informasjonsmodellen på GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/informasjonsmodell/README.md) per skattepliktstype og inntektsår.
 
+<div className="responsive-table">
+
 | Dokumenttype i respons-XSD                                                                                                                                       | XSD-filnavn uten versjonsnummer                                                                                                                         | Beskrivelse                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | `summertskattegrunnlagforVisningPersonlig` <br/> `summertSkattegrunnlagForVisningPersonligSvalbard`                                                              | `skatteberegningsgrunnlag_{versjon}.xsd`                                                                                                                | Skatteberegningsgrunnlag for personlige skattepliktige                     |
@@ -1052,8 +1095,20 @@ Dette er for øvrig også dokumentert i [informasjonsmodellen på GitHub](https:
 | `selskapsmeldingSdfEtterBeregning`                                                                                                                               | `selskapsmeldingSelskapMedDeltakerFastsetting_{versjon}_ekstern.xsd` <br/> `selskapsmeldingSelskapMedDeltakerFastsetting_{versjon}_kompakt_ekstern.xsd` | Selskapsmelding for SDF med og uten begrepsreferanser                      |
 | `naeringsspesifikasjonEtterBeregning`                                                                                                                            | `naeringsspesifikasjon_{versjon}_ekstern.xsd` <br/> `naeringsspesifikasjon_{versjon}_kompakt_ekstern.xsd`                                               | Næringsspesifikasjon med og uten begrepsreferanser                         |
 
+</div>
+
 `resultatAvValidering` sier om skattemeldingen med næringsspesifikasjon er `validertOK` eller `validertMedFeil`.
 Hvis resultatet er `validertMedFeil`, vil det være én eller flere forekomster av `aarsakTilValidertMedFeil`.
+
+Eksempler på årsaker til validert med feil kan være:
+* Feil bruk av ID-er på forekomster i XML der det er satt eksplisitte krav til innhold på id, eksempelvis i næringsspesifikasjonen
+* Summeringer samsvarer ikke med summeringsresultatet fra beregningstjenesten og summen er ikke angitt som overstyrt. Dette medfører at:
+  * valideringstjenesten vil gi avvik der valideringstjenesten beregner en sum som avviker fra innsendt sum fra SBS (over grensen for avvik vi aksepterer) - innsending avvises
+  * valideringstjenesten vil gi mangel der valideringstjenesten beregner en sum som ikke ble sendt inn fra SBS - innsending avvises ikke som følge av dette
+* Veiledning inneholder forekomster med betjeningsstrategi `faktiskFeil`. Betjeningsstrategier er nærmere beskrevet nedenfor.
+* Egenfastsatt informasjon som avviker fra tidligere myndighetsfastsatt informasjon
+* Innsendt skattemelding er ikke basert på gjeldende skattemelding (utkast eller fastsatt)
+* Parten har ikke tilgang den skattepliktiges skattemelding
 
 En vesentlig forskjell i responsobjektet mellom valideringstjenesten og innsendingstjenesten er at 
 i valideringstjenesten vil objektet `avvikVedValidering` returneres ved eventuelle avvik,
@@ -1084,7 +1139,7 @@ per inntektsår. Forekomstene inneholder følgende felter:
 `informasjonOmPersonligSkattesubjekt` og `informasjonOmUpersonligSkattesubjekt` inneholder sentrale skatteelementer tilknyttet hhv. personlig og upersonlig skattesubjekt.
 
 ### Revisors bekreftelse
-Som beskrevet i [den funksjonelle spesifikasjonen](#452-revisors-bekreftelse) er det XSD-en `revisorsbekreftelse_\{versjon}\_ekstern.xsd` 
+Som beskrevet i [den funksjonelle spesifikasjonen](#452-revisors-bekreftelse) er det XSD-en `revisorsbekreftelse_{versjon}_ekstern.xsd` 
 som benyttes for å signere forekomster av revisor.
 
 Som nevnt tidligere er forekomster som krever signatur av revisor dokumentert i [Revisors plikter i forbindelse med signering av signaturpliktige opplysninger i næringsspesifikasjon og skattemelding.](https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/revisors-plikter-i-forbindelse-med-signering-av-signaturpliktige-opplysninger-i-naringsspesifikasjon-og-skattemelding/).

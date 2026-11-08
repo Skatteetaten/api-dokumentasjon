@@ -112,7 +112,17 @@ const sidebars = {
         { id: 'api/innrapportering-skadeforsikring', label: "Skadeforsikring", type: 'doc' },
         { id: 'api/innrapportering-skattefrieutbetalinger', label: "Skattefrie utbetalinger fra offentlige myndigheter", type: 'doc' },
         { id: 'api/skattekorttilarbeidsgiver', label: "Skattekort til arbeidsgiver", type: 'doc' },
-        { id: 'api/innrapportering-skattemelding', label: "Skattemelding", type: 'doc' },
+        {
+          type: "category",
+          label: "Skattemelding",
+          link: { type: "doc", id: "api/innrapportering-skattemelding-new" },
+          items: [
+            { type: "doc", id: "api/innrapportering-skattemelding-utfylling", label: "Utfyllingstjenester" },
+            { type: "doc", id: "api/innrapportering-skattemelding-eiendom", label: "Eiendomstjenester" },
+            { type: "doc", id: "api/innrapportering-skattemelding-innsending", label: "Innsendingstjenester" },
+            { type: "doc", id: "api/innrapportering-skattemelding-andre-tjenester", label: "Andre tjenester" },
+          ],
+        },
         { id: 'api/innrapportering-skattepliktigkundeutbytte', label: "Skattepliktig kundeutbytte", type: 'doc' },
         { id: 'api/innrapportering-tpo-filmottak', label: "Tredjepartsopplysninger Filmottak", type: 'doc' },
         { id: 'api/innrapportering-tilskudd', label: "Tilskudd til vitenskapelig forskning eller yrkesopplæring", type: 'doc' },
