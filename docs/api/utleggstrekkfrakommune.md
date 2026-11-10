@@ -96,10 +96,9 @@ Etter 1.1.2027 skal kommunen behandle alle skyldnere etter nytt regelverk
 ## Forklaring til modellen
 Formålet med denne brukerveiledningen er å gi både funksjonelle og tekniske ressurser en overordnet forståelse av innholdet i den beslutningen som skal sendes inn til Skatteetaten.
 
-ENDRE til 2 bilder
 ![utleggstrekk-fra-kommune-all.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-all.png)
 
-![utleggstrekk-fra-kommune-all.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-all1.png)
+![utleggstrekk-fra-kommune-all1.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-all1.png)
 
 ### a) Rotnivå - Beslutning om trekk fra kommune
 #### Inneholder kjerneinformasjon om innsendingen.
