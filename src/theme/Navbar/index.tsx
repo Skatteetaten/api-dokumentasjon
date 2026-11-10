@@ -39,16 +39,16 @@ export default function Navbar(): JSX.Element {
   );
 
   return (
-    <BrowserOnly>
-      {() => {
-        const Link = require("@skatteetaten/frontend-components/Link").Link;
-        const TopStripe =
-          require("@skatteetaten/frontend-components/TopStripe").TopStripe;
-        const TopStripeMenu =
-          require("@skatteetaten/frontend-components/TopStripe/TopStripeMenu").TopStripeMenu;
+    <div className={`${styles.navigation} navbar`}>
+      <BrowserOnly>
+        {() => {
+          const Link = require("@skatteetaten/frontend-components/Link").Link;
+          const TopStripe =
+            require("@skatteetaten/frontend-components/TopStripe").TopStripe;
+          const TopStripeMenu =
+            require("@skatteetaten/frontend-components/TopStripe/TopStripeMenu").TopStripeMenu;
 
-        return (
-          <div className={`${styles.navigation} navbar`}>
+          return (
             <TopBanner
               logoLink="https://www.skatteetaten.no/"
               homeText="skatteetaten.no"
@@ -89,9 +89,9 @@ export default function Navbar(): JSX.Element {
                 message: "Skatteetatens API-er",
               })}
             />
-          </div>
-        );
-      }}
-    </BrowserOnly>
+          );
+        }}
+      </BrowserOnly>
+    </div>
   );
 }

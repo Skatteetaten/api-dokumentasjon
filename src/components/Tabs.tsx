@@ -9,9 +9,10 @@ const TAB_LOCATION_SEARCH_NAME = "tab";
 interface Props {
   children: any;
   tabName?: string;
+  compact?: boolean;
 }
 
-export const Tabs = ({ children, tabName }: Props): JSX.Element => {
+export const Tabs = ({ children, tabName, compact = false }: Props): JSX.Element => {
   const location = useLocation();
   const history = useHistory();
   const [tabsElement, setTabsElement] = useState<HTMLDivElement | null>(null);
@@ -108,7 +109,7 @@ export const Tabs = ({ children, tabName }: Props): JSX.Element => {
         return (
           <div ref={setTabsElement}>
             <STabs
-              className={styles.tabs}
+              className={`${styles.tabs} ${compact ? styles.compact : ""}`}
               underline={true}
               onLinkClick={onLinkClick}
               selectedKey={selectedTabKey}

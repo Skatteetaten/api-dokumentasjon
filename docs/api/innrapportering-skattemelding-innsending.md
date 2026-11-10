@@ -12,7 +12,7 @@ hide_table_of_contents: false
 
 <Summary>Innsendingstjenester i forbindelse med innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>
 
-<Tabs underline={true}>
+<Tabs underline={true} compact>
 <TabItem headerText="Hent gjeldende skattemelding" itemKey="itemKey-1">
 Første steg i innsendingsprosessen er å hente ut den siste gjeldende skattemeldingen.
 Denne danner grunnlaget for videre utfylling og senere innsending av skattemeldingen, og kan ha status utkast eller fastsatt:
