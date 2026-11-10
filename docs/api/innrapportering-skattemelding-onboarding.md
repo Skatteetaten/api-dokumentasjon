@@ -236,7 +236,7 @@ Eksempel:
 <pre>
 <code>
 &lt;xsd:simpleType name="Heltall" <span style={{ color: "red" }}>skatt:begrepsreferanse="https://data.skatteetaten.no/web/datakatalog/begrep/20b52af0-9fe1-11e5-a9f8-e4115b280940"</span>&gt;
-    &lt;xsd:restriction base="xsd:long" /&gt;
+{"  "}&lt;xsd:restriction base="xsd:long" /&gt;
 &lt;/xsd:simpleType&gt;
 </code>
 </pre>
@@ -249,7 +249,7 @@ Eksempel:
 <pre>
 <code>
 &lt;xsd:simpleType name="SaerskiltSkatteplikt" <span style={{ color: "red" }}>skatt:eksternKodeliste="/formuesOgInntektsskatt/2026_saerskiltSkatteplikt.xml"</span>&gt;
-    &lt;xsd:restriction base="xsd:string" /&gt;
+{"  "}&lt;xsd:restriction base="xsd:string" /&gt;
 &lt;/xsd:simpleType&gt;
 </code>
 </pre>

@@ -7,7 +7,7 @@ datatable: true
 tags: [API, Skattemelding]
 keywords: [skattemelding]
 last_updated: Oct 22, 2026
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 <Summary>Andre nyttige tjenester til bruk ved innrapportering av skattemelding</Summary>

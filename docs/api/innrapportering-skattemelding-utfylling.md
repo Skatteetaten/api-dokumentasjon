@@ -7,7 +7,7 @@ datatable: true
 tags: [API, Skattemelding, Eiendom]
 keywords: [skattemelding, eiendom]
 last_updated: Oct 22, 2026
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 <Summary>Utfyllingstjenester benyttet for innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>
@@ -52,15 +52,15 @@ vises slik i XSD (merket rødt):
 <pre>
 <code>
 &lt;xsd:complexType name="FormueOgGjeld"&gt;
-  &lt;xsd:sequence&gt;
-    &lt;xsd:element maxOccurs="unbounded" minOccurs="0" name="formuesobjekt" type="Formuesobjekt"/&gt;
-    &lt;xsd:element name="id" type="Tekst"/&gt;
-    &lt;xsd:element minOccurs="0" name="gjeld" type="Gjeld"/&gt;
-    &lt;xsd:element minOccurs="0" name="samletVerdiFoerEventuellVerdsettingsrabatt" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
-    &lt;xsd:element minOccurs="0" name="samletGjeld" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
-    &lt;xsd:element minOccurs="0" name="samletVerdiBakAksjeneISelskapet" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
-    &lt;xsd:element minOccurs="0" name="fasteEiendommer" type="FasteEiendommer"/&gt;
-  &lt;/xsd:sequence&gt;
+{"  "}&lt;xsd:sequence&gt;
+{"    "}&lt;xsd:element maxOccurs="unbounded" minOccurs="0" name="formuesobjekt" type="Formuesobjekt"/&gt;
+{"    "}&lt;xsd:element name="id" type="Tekst"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="gjeld" type="Gjeld"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="samletVerdiFoerEventuellVerdsettingsrabatt" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="samletGjeld" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="samletVerdiBakAksjeneISelskapet" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="fasteEiendommer" type="FasteEiendommer"/&gt;
+{"  "}&lt;/xsd:sequence&gt;
 &lt;/xsd:complexType&gt;
 </code>
 </pre>

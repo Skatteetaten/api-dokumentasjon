@@ -7,7 +7,7 @@ datatable: true
 tags: [API, Skattemelding, Eiendom]
 keywords: [skattemelding, eiendom]
 last_updated: Oct 22, 2026
-hide_table_of_contents: true
+hide_table_of_contents: false
 ---
 
 <Summary>Eiendomstjenester benyttet for innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>

@@ -795,7 +795,7 @@ Eksempel:
 <pre>
 <code>
 &lt;xsd:simpleType name="Heltall" <span style={{ color: "red" }}>skatt:begrepsreferanse="https://data.skatteetaten.no/web/datakatalog/begrep/20b52af0-9fe1-11e5-a9f8-e4115b280940"</span>&gt;
-    &lt;xsd:restriction base="xsd:long" /&gt;
+{"  "}&lt;xsd:restriction base="xsd:long" /&gt;
 &lt;/xsd:simpleType&gt;
 </code>
 </pre>
@@ -819,7 +819,7 @@ Eksempel:
 <pre>
 <code>
 &lt;xsd:simpleType name="SaerskiltSkatteplikt" <span style={{ color: "red" }}>skatt:eksternKodeliste="/formuesOgInntektsskatt/2026_saerskiltSkatteplikt.xml"</span>&gt;
-    &lt;xsd:restriction base="xsd:string" /&gt;
+{"  "}&lt;xsd:restriction base="xsd:string" /&gt;
 &lt;/xsd:simpleType&gt;
 </code>
 </pre>
@@ -857,15 +857,15 @@ vises slik i XSD (merket rødt):
 <pre>
 <code>
 &lt;xsd:complexType name="FormueOgGjeld"&gt;
-  &lt;xsd:sequence&gt;
-    &lt;xsd:element maxOccurs="unbounded" minOccurs="0" name="formuesobjekt" type="Formuesobjekt"/&gt;
-    &lt;xsd:element name="id" type="Tekst"/&gt;
-    &lt;xsd:element minOccurs="0" name="gjeld" type="Gjeld"/&gt;
-    &lt;xsd:element minOccurs="0" name="samletVerdiFoerEventuellVerdsettingsrabatt" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
-    &lt;xsd:element minOccurs="0" name="samletGjeld" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
-    &lt;xsd:element minOccurs="0" name="samletVerdiBakAksjeneISelskapet" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
-    &lt;xsd:element minOccurs="0" name="fasteEiendommer" type="FasteEiendommer"/&gt;
-  &lt;/xsd:sequence&gt;
+{"  "}&lt;xsd:sequence&gt;
+{"    "}&lt;xsd:element maxOccurs="unbounded" minOccurs="0" name="formuesobjekt" type="Formuesobjekt"/&gt;
+{"    "}&lt;xsd:element name="id" type="Tekst"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="gjeld" type="Gjeld"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="samletVerdiFoerEventuellVerdsettingsrabatt" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="samletGjeld" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="samletVerdiBakAksjeneISelskapet" <span style={{ color: "red" }}>skatt:erAvledet="true"</span> type="BeloepSomHeltallMedOverstyring"/&gt;
+{"    "}&lt;xsd:element minOccurs="0" name="fasteEiendommer" type="FasteEiendommer"/&gt;
+{"  "}&lt;/xsd:sequence&gt;
 &lt;/xsd:complexType&gt;
 </code>
 </pre>
