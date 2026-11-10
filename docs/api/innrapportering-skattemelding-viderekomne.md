@@ -26,7 +26,6 @@ Følgende lenker kan være nyttige:
 
 Det refereres for øvrig til de andre sidene i API-dokumentasjonen for dokumentasjon av den generelle innsendingsprosessen:
 - [Utfyllingstjenester](../api/innrapportering-skattemelding-utfylling.md)
-- [Eiendomstjenester](../api/innrapportering-skattemelding-eiendom.md)
 - [Innsendingstjenester](../api/innrapportering-skattemelding-innsending.md)
 - [Andre tjenester](../api/innrapportering-skattemelding-andre-tjenester.md)
 - [Skatt dialogdokumenter](../api/skattdialogdokumenter): Ikke direkte tilknyttet innrapportering av skattemelding, men støtter

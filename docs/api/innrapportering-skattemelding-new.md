@@ -1203,7 +1203,7 @@ Denne prosessen er delvis manuell så det anbefales å starte prosessen så tidl
 Ved bestilling må det oppgis at det ønskes tilgang til Skattemeldings-API fra Skatteetaten.
 :::
 
-Se for øvrig [Tilgang til API-et](#tilgang-til-api-et) for mer informasjon om hvordan man etablerer tilgang til API-ene.
+Se for øvrig [Tilgang til API-ene](#tilgang-til-api-ene) for mer informasjon om hvordan man etablerer tilgang til API-ene.
 
 ## Testdata
 Testdata kan søkes opp i [Tenor testdatasøk](../test/tenor.md).

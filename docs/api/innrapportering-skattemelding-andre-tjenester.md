@@ -12,8 +12,6 @@ hide_table_of_contents: false
 
 <Summary>Andre nyttige tjenester til bruk ved innrapportering av skattemelding</Summary>
 
-<Tabs underline={true}>
-<TabItem headerText="Funksjonell dokumentasjon" itemKey="itemKey-1" default>
 Nedenfor dokumenteres tjenester som er utviklet basert på behov fra sluttbrukersystemer, men som ikke er en del av den obligatoriske flyten for innsending av skattemeldingen.
 
 ## Hent gjeldende skattemelding for gitt type
@@ -70,7 +68,7 @@ støtter kun autentisering med ID-Porten, ikke Maskinporten.
 :::
 
 ### 1. Hent gjeldende skattemelding for inneværende år
-For å forhåndsfastsette må først gjeldende skattemelding for året som skal forhåndsfastsettes hentes vha. [tjenesten for å hente gjeldende skattemelding](#1-hent-gjeldende-skattemelding).
+For å forhåndsfastsette må først gjeldende skattemelding for året som skal forhåndsfastsettes hentes vha. [tjenesten for å hente gjeldende skattemelding](../api/innrapportering-skattemelding-innsending?tab=Hent%20gjeldende%20skattemelding).
 
 Dersom en skal forhåndsfastsette før skattemeldingen er tilgjengelig, vil tjenesten returnere en feilmelding med HTTP-status _403_,
 og skattemeldingen må klargjøres for forhåndsfastsetting.
@@ -163,7 +161,7 @@ For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes e
 Ved klage må `innsendingsformaal` i `skattemeldingOgNaeringsspesifikasjonRequest` settes til `klage`.
 
 Ved klage på et myndighetsfastsatt vedtak, kreves det at det legges med vedlegg med vedleggskategori `klage`.
-Feltene som har blitt myndighetsfastsatt ligger som [låste felter](#12-låste-felter) ved uthenting av siste gjeldende skattemelding.
+Feltene som har blitt myndighetsfastsatt ligger som [låste felter](../api/innrapportering-skattemelding-innsending#låste-felter) ved uthenting av siste gjeldende skattemelding.
 Ved innsending av klage er det mulig å endre hele skattemeldingen med næringsspesifikasjon, inklusive låste felter.
 
 Ved skjønnsfastsetting fastsetter Skatteetaten skattrgrunnlaget ved skjønn fordi den skattepliktige ikke har levert inn skattemelding innen fristen.
@@ -171,7 +169,3 @@ Ved skjønnsfastsetting krever valideringen at skattemeldingsobjektet som skal s
 setter feltet `gjelderSkjoennsfastsetting` til `true`. Det er ikke påkrevd med vedlegg ved skjønnsfastsetting.
 
 Deretter sendes skattemeldingen med næringsspesifikasjon inn på vanlig måte som beskrevet tidligere.
-
-</TabItem>
-
-</Tabs>

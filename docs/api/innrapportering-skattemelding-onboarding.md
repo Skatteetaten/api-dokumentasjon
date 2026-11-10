@@ -31,7 +31,7 @@ Løsningen legger opp til at en innsending skal inneholde en skattemelding. For 
 med deltakerfastsetting skal innsendingen også __alltid__ inneholde næringsspesifikasjon. Det er kun lønnstakere og pensjonister som kun sender inn
 skattemelding. Dette illustreres her:
 
-![Skattemeldingsvarianter.PNG](../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.PNG)
+![Skattemeldingsvarianter.PNG(../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.PNG)](../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.PNG)
 <br/>_Illustrasjon av skattemeldingsvarianter for personlige og upersonlige skattepliktige._
 
 Det anbefales å lese følgende generelle sider før denne onboardingsguiden:
@@ -46,19 +46,36 @@ Det anbefales å lese følgende generelle sider før denne onboardingsguiden:
 
 For informasjon og oppdateringer for systemleverandører med integrasjon mot skattemeldingen for person og næring, se Skatteetatens [fellessider for systemleverandører](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/).
 
-Det tilbys to sett med tjenester:
+## API-er for innrapportering av skattemeldingen
+Det tilbys to sett med tjenester for innrapportering:
 
 - Skatteetaten tilbyr egne tjenester for blant annet henting og validering av skattemeldinger, eiendomskalkulator,
-  søknad om utsatt frist, m.m. Disse er dokumentert på egne sider:
-  - [Utfylling](../api/innrapportering-skattemelding-utfylling.md)
-  - [Eiendom](../api/innrapportering-skattemelding-eiendom.md)
-  - [Innsending](../api/innrapportering-skattemelding-innsending.md)
-  - [Andre tjenester](../api/innrapportering-skattemelding-andre-tjenester.md)
+  søknad om utsatt frist, m.m. Disse er dokumentert på egne sider under _API-er for innrapportering_:
+  - [Skattemelding utfyllingstjenester](../api/innrapportering-skattemelding-utfylling.md)
+  - [Skattemelding andre tjenester](../api/innrapportering-skattemelding-andre-tjenester.md)
   - Utkast til OpenAPI-spesifikasjon for Skattemeldingen finnes [her](pathname:///download/skattemeldingupersonlig/openapi.html)
 - Skatteetaten har opprettet en egen app i Altinn3 som håndterer innsendingen av skattemeldingen med næringsspesifikasjon,
   opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
-  Altinn3-API-ene er dokumentert i en egen [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
+  Dette er dokumentert på en egen side under _API-er for innrapportering_:
+  - [Skattemelding innsendingstjenester](../api/innrapportering-skattemelding-innsending.md)
+  - Altinn3-API-ene har sin egen OpenAPI-spesifikasjon tilgjengelig på [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 
+## API-er for deling for skattemeldingen
+I tillegg til API-ene knyttet til innsending av skattemeldingen, er det laget noen klassiske delingstjenester for SSB og enkelte andre partnere:
+* [__Beregnet skatt API__](../api/beregnetskatt)
+* [__Beregnet skatt upersonlig API__](../api/beregnetskattupersonlig)
+* [Næringsspesifikasjon API](../api/naeringsspesifikasjon)
+* [__Selskapsmelding API__](../api/selskapsmelding)
+* [__Skatteberegningsgrunnlag upersonlig API__](../api/skatteberegningsgrunnlagupersonlig)
+* [Skattemelding API](../api/skattemelding)
+* [Skattemelding upersonlig API](../api/skattemeldingupersonlig)
+* [__Skatteplikt API__](../api/skatteplikt)
+* [__Skatteplikt upersonlig API__](../api/skattepliktupersonlig)
+* [__Summert skattegrunnlag API__](../api/summertskattegrunnlag)
+* [__Summert skattegrunnlag upersonlig API__](../api/summertskattegrunnlagupersonlig)
+* [Tilleggsskatt API](../api/tilleggsskatt)
+
+## Andre relevante API-er for skattemeldingen
 I tillegg tilbyr Skatteetaten tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter)
 for å hente ut dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen.
 
@@ -130,7 +147,7 @@ Felles for alle tilgangspakkene er at de også gir tilgang til ressursen `app_sk
 | **Skatteforhold for privatpersoner**        | `urn:altinn:accesspackage:innbygger-skatteforhold-privatpersoner`  | For fullmakt til skatteforhold for privatpersoner. Kan lese og arbeide med utkast og bekrefte innsendingssteget for privatpersoner.                               |
 
 Alle pakkene gir tilgang til å opprette og lese en instans i Altinn og arbeide med skattemeldingen og næringsspesifikasjonen.
-Bare **Ansvarlig revisor** og **Revisorattesterer** kan bekrefte i revisors signeringssteg, ikke **Revisormedarbeider**. Se [kapittel 4.5 Sende videre til revisors signering](#45-sende-videre-til-revisors-signering) for den detaljerte flyten.
+Bare **Ansvarlig revisor** og **Revisorattesterer** kan bekrefte i revisors signeringssteg, ikke **Revisormedarbeider**. Se [kapittel 5 Sende videre til revisors signering](../api/innrapportering-skattemelding-innsending#5--sende-videre-til-revisors-signering) for den detaljerte flyten.
 
 [Tjenesteoversikten utviklet av Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2) beskriver tilgangspakkene ytterligere. Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.
 
@@ -317,5 +334,5 @@ De 3 aktørene i dette scenariet kan ha hvert sitt SBS fra ulike leverandører.
 <span id="sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon"></span>
 
 # Sekvensdiagram for innsending av skattemelding med næringsspesifikasjon
-Dette sekvensdiagrammet som illustrerer flyten for bruk av de ulike API-ene for [utfylling](../api/innrapportering-skattemelding-utfylling.md), [eiendom](../api/innrapportering-skattemelding-eiendom.md) og [innsending](../api/innrapportering-skattemelding-innsending.md).
+Dette sekvensdiagrammet som illustrerer flyten for bruk av de ulike API-ene for [utfylling](../api/innrapportering-skattemelding-utfylling.md) og [innsending](../api/innrapportering-skattemelding-innsending.md).
 ![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)

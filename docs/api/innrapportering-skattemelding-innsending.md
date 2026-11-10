@@ -226,7 +226,7 @@ Hvilke forekomster i skattemeldingen og næringsspesifikasjonen som krever signa
 Regnskapspliktige som ikke er revisjonspliktige kan også velge å engasjere en revisor. Feltet `skalBekreftesavRevisor` må da også settes til `true` ved opprettelse av instansen,
 og revisor skal senere signere de signaturpliktige forekomstene som er angitt i skattemeldingen og næringsspesifikasjonen.
 
-I kapittel [4.5 Sende videre til revisors signering](#45-sende-videre-til-revisors-signering) beskrives flyten ved signering av revisor.
+I kapittel [5 Sende videre til revisors signering](#5--sende-videre-til-revisors-signering) beskrives flyten ved signering av revisor.
 
 ## 2 &nbsp; Laste opp vedlegg til skattemeldingen
 Ved behov for å laste opp vedlegg gjøres dette etter at instansen er opprettet og før innsending av skattemeldingen.
@@ -253,7 +253,7 @@ Filnavnet som spesifiseres i `Content-Disposition` skal være `attachment; filen
 Responsen vil inneholde metadata om objektet som ble opprettet, inkludet en `id` som kan brukes til å oppdatere, hente ut og slette dokumentet ved behov senere.
 
 ### 3.1 &nbsp; Oppdatere skattemeldingen
-Det er mulig å gjøre oppdateringer på den opplastede skattemeldingen med næringsspesifikasjon før den [sendes til behandling hos Skatteetaten](#46-innsending-av-skattemelding-med-næringsspesifikasjon-til-skatteetaten).
+Det er mulig å gjøre oppdateringer på den opplastede skattemeldingen med næringsspesifikasjon før den [sendes til behandling hos Skatteetaten](#6--innsending-av-skattemelding-med-næringsspesifikasjon-til-skatteetaten).
 
 For å gjøre det trengs `id` til dataelementet for typen `skattemeldingOgNaeringsspesifikasjon` som ble sendt inn i steget over.
 Hvis SBS har lagret `id` fra forrige respons, kan denne brukes. Hvis ikke må `id` hentes ut fra instansen ved å gjøre følgende:
@@ -286,7 +286,7 @@ Hvis SBS håndterer signeringen direkte, må SBS selv endre status til revisors 
 ved å benytte endepunktet [`PUT /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/process/next`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 Instansen vil fortsatt være i status `confirmation`, men instansen inneholder også en separat _task_ som vil endres til _Task\_2Revisor_ når revisor skal signere.
 
-Revisor signerer på samme måte som den skattepliktige som beskrevet i [kapittel 4.4](#4-sende-skattemeldingen-til-signering),
+Revisor signerer på samme måte som den skattepliktige som beskrevet i [kapittel 4](#4--sende-skattemeldingen-til-signering),
 enten via visningsklienten eller direkte fra SBS.
 
 ### 5.1 &nbsp; Revisors vedlegg
@@ -296,7 +296,7 @@ Dette kan eksempelvis være hvis revisor avslår en forekomst i skattemeldingen 
 Ved opplasting av vedlegg fra revisor benyttes endepunktet [`POST /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/type/revisor-vedlegg`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 `id`-feltet i responsen til opplastingen av vedlegget må legges inn i XML-dokumentet for revisors bekreftelse som er beskrevet under.
 
-#### 4.5.2 &nbsp; Revisors bekreftelse
+#### 5.2 &nbsp; Revisors bekreftelse
 Revisors bekreftelse er en egen XSD-fil som skal lastes opp på instansen etter at revisor har signert.
 Ved signering i visningsklienten er det ikke behov for å laste opp revisors bekreftelse, da visningsklienten håndterer dette.
 
@@ -465,7 +465,7 @@ I tillegg følger en kort beskrivelse av de ulike typene her:
   prinsipper.
 
 ## Revisors bekreftelse
-Som beskrevet i [den funksjonelle spesifikasjonen](#452-revisors-bekreftelse) er det XSD-en `revisorsbekreftelse_{versjon}_ekstern.xsd` 
+Som beskrevet i [den funksjonelle spesifikasjonen](#452--revisors-bekreftelse) er det XSD-en `revisorsbekreftelse_{versjon}_ekstern.xsd` 
 som benyttes for å signere forekomster av revisor.
 
 Som nevnt tidligere er forekomster som krever signatur av revisor dokumentert i [Revisors plikter i forbindelse med signering av signaturpliktige opplysninger i næringsspesifikasjon og skattemelding.](https://www.skatteetaten.no/rettskilder/type/skattedirektoratets-meldinger/revisors-plikter-i-forbindelse-med-signering-av-signaturpliktige-opplysninger-i-naringsspesifikasjon-og-skattemelding/).
