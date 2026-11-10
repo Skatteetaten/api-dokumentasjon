@@ -1,0 +1,92 @@
+{
+  "kommune": {
+    "organisasjonsnummer": "311758489",
+    "kontaktinformasjon": {
+      "epostAdresse": "epost@yahoo.com",
+      "telefonnummer": "99563564"
+    }
+  },
+  "skyldner": {
+    "foedselsEllerDnummer": "44926701751",
+    "adresseLikFolkeregistrert": true,
+    "skyldnersProsessfullmektig": {
+      "foedselsEllerDnummer": "30066001760",
+      "orgnummerProsessfullmektig": "123758489",
+      "erBevillingshaver": true
+	}
+  },
+  "underskrift": "Anna Norman",
+  "beslutningsdato": "2026-09-04",
+  "innsenderReferanse": "InnsenderRef127",
+  "betalingsinformasjon": {
+    "kontonummer": "69930570044",
+    "kidnummer": "2509937609",
+    "betalingsmottaker": "311758489"
+  },
+  "beslutning":
+  {
+    "type": "tvangsgrunnlag",
+    "filnavn": "tvangsgrunnlag127",
+    "uuid": "4264af45-ae7a-4ccc-8a8b-33b9ec669d75"
+  },
+  "valgtNamsfogddistrikt": {
+    "namsfogddistrikt": "Namsfogden i Oslo, Asker og Bærum",
+    "begrunnelse": "saken er knyttet til sekundærbolig"
+  },
+  "kravTilInnkreving": [
+    {
+	  "innsendersKravreferanse": "00890772001",
+      "kravdetaljer": "Hovedkrav",
+	  "opprinneligBeloep": {
+        "beloep": 12469.14,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 12000.14,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": 1,
+      "forfallsdato": "2026-02-24",
+      "forsinkelsesrente": {
+	    "rentesatsperiode": {
+          "fraOgMedDato": "2026-02-24"
+        },
+        "standardForsinkelsesrente": true,
+        "prioritetISakFremtidigRentekrav": 2
+      }
+    },
+    {
+      "innsendersKravreferanse": "RentekravPåHovedkrav_00890772001",
+      "kravdetaljer": "Rentekrav",
+      "relatertKrav": "00890772001",
+      "opprinneligBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 232.24,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": 3,
+      "forfallsdato": "2026-02-24"
+    },
+    {
+      "innsendersKravreferanse": "UtenrettsligeKostnaderPåHovedkrav_00890772001",
+      "kravdetaljer": "UtenrettsligeKostnader",
+      "relatertKrav": "00890772001",
+      "opprinneligBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "gjenstaaendeBeloep": {
+        "beloep": 1400,
+        "valuta": "NOK"
+      },
+      "prioritetDekningsloven": "e",
+      "prioritetISak": 3,
+      "forfallsdato": "2026-02-24"
+    }
+  ]
+}
