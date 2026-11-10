@@ -98,7 +98,7 @@ Formålet med denne brukerveiledningen er å gi både funksjonelle og tekniske r
 
 ![utleggstrekk-fra-kommune-all.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-all.png)
 
-![utleggstrekk-fra-kommune-all1.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-all1.png)
+![utleggstrekk-fra-kommune-all2.png](../../static/download/utleggstrekk-fra-kommune/v2/utleggstrekk-fra-kommune-all2.png)
 
 ### a) Rotnivå - Beslutning om trekk fra kommune
 #### Inneholder kjerneinformasjon om innsendingen.
