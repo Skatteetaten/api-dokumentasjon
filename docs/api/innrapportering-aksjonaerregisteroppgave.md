@@ -95,9 +95,10 @@ API-et for innsending av aksjonaerregisteroppgaven har bare fem endepunkter:
   * Dette endepunktet anbefales brukt om man ønsker å hente ut alle innsendte hoved/underskjemaer. Endepunktet kan levere opp til 50 skjemaer pr kall og hovedskjemaet vil alltid være første skjema på første page.
 * __GET dokument__: Henter ut et enkelt dokument fra en forsendelse
   * Dette endepunktet anbefales brukt om man skal hente ut enkeltdokumenter som f.eks tilbakemeldinger. 
-* __GET prefill__: Henter ut en tidligere godkjent innrapportering av aksjonærregisteroppgaven
+* __GET prefill__: Henter ut en tidligere innrapportering av aksjonærregisteroppgaven
   * I endepunktet spesifiserer man inntektsår, oppgavegiver og et optional felt for paginering
   * Sjekker om det finnes prefill for inntektsåret man spør om. Setter man inntektsår 2026, så sjekkes det om det finnes innrapportert oppgave for 2025 med status "GODKJENT", "AVVIST" eller "UNDER_BEHANDLING". Finnes det ikke så returneres 404.
+  * Den innrapporteringen som er sist gjeldende vil returneres. Sist gjeldende er den innrapporteringen som saksbehandler har sist behandlet, uavhengig av status.
 
 Innsendt data på hovedskjema endepunktet valideres etter følgende xsd: [hovedskjema](../../static/download/aksjonaerregisteroppgaveHovedskjema.xsd)
 
