@@ -20,7 +20,8 @@ I noen tilfeller er det ønskelig å hente ut den siste gjeldende skattemeldinge
 Endepunktet som benyttes til dette er `GET /api/skattemelding/v2/{type}/{inntektsår}/{identifikator}`, hvor `type` kan være `utkast` eller `fastsatt`.
 
 ## Valider skattemeldingen uten dokumentreferanseTilGjeldendeDokument
-Hvis det er et behov for å gjøre beregninger fra SBS før Skatteetaten har publisert utkast for et inntektsår, kan denne tjenesten benyttes.
+Hvis det er et behov for å gjøre beregninger fra sluttbrukersystemet før Skatteetaten har publisert utkast for et inntektsår,
+kan denne tjenesten benyttes.
 Den er helt lik som valideringstjenesten, men krever ikke `dokumentreferanseTilGjeldendeDokument`.
 
 Denne tjenesten skal ikke brukes for validering før innsending, da det er en del kontroller som sjekker mot gjeldende utkast som denne tjenesten ikke utfører.
@@ -123,10 +124,10 @@ For å hente ut gjeldende skatteoppgjør i PDF-format kan følgende endepunkt be
 
 Språk i PDF-en for skatteoppgjøret vil utledes fra kommunikasjonsspråket til den skattepliktige.
 
-Gjeldende skatteoppgjør vil også kunne hentes via tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter).
+Gjeldende skatteoppgjør vil også kunne hentes via tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter) for leverandører som har tilgang til den tjenesten.
 
 ## Hent lenker til publikumsportaler
-Leverandører kan lenke direkte til publikumsportaler fra SBS. For personlige returneres lenker til Min Skatt, skattemeldingen og Tilsvar.
+Leverandører kan lenke direkte til publikumsportaler fra deres sluttbrukersystem. For personlige returneres lenker til Min Skatt, skattemeldingen og Tilsvar.
 For upersonlige returneres lenke til Tilsvar.
 
 Tjenesten som benyttes er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/lenker/publikumsportaler`.
@@ -141,7 +142,7 @@ Informasjon og innleveringsfrister finnes på [Skatteetatens nettsider](https://
 
 Leverandører kan søke om utsettelse på vegne av inntil 10 prosent av klientmassen.
 
-For å søke om utsatt frist fra SBS kan endepunktet `POST /api/skattemelding/v2/utsattfristsoeknad/{identifikator}` benyttes.
+For å søke om utsatt frist fra sluttbrukersystem kan endepunktet `POST /api/skattemelding/v2/utsattfristsoeknad/{identifikator}` benyttes.
 Informasjon om den skattepliktige sendes inn i request body.
 Responsen inneholder en kvittering på at søknaden er mottatt, samt en unik `referanse` for å senere kunne polle status på søknaden.
 
@@ -149,7 +150,7 @@ Det kan også søkes for flere skattepliktige samtidig. Da benyttes `POST /api/s
 hvor det sendes inn en liste med `klienter`/skattepliktige i requesten.
 
 Status på søknaden om utsatt frist kan følges opp ved å kalle `GET /api/skattemelding/v2/utsattfristsoeknad/innsendingstatus/{referanse}`.
-Her er `referanse` den samme som ble sendt inn av SBS i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
+Her er `referanse` den samme som ble sendt inn av sluttbrukersystemet i søknaden. Responsen vil inneholde eventuell ny `innvilgetFrist`.
 
 :::info
 Tjenestene for søknad om utsatt frist støtter kun autentisering med ID-Porten, ikke Maskinporten.

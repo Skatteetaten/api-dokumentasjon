@@ -10,7 +10,7 @@ last_updated: Oct 22, 2026
 hide_table_of_contents: true
 ---
 
-Denne siden inneholder informasjon for leverandører som har en fungerende integrasjon mot Skatteetaten og Altinn,
+Denne siden inneholder informasjon for leverandører som har en etablert integrasjon mot Skatteetaten og Altinn,
 og som trenger å søke opp spesifikke detaljer knyttet til integrasjonene.
 Følgende lenker kan være nyttige:
 

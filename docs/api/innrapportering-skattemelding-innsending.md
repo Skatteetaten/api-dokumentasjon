@@ -13,81 +13,21 @@ hide_table_of_contents: false
 <Summary>Innsendingstjenester i forbindelse med innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>
 
 <Tabs underline={true} compact>
-<TabItem headerText="Hent gjeldende skattemelding" itemKey="itemKey-1">
-Første steg i innsendingsprosessen er å hente ut den siste gjeldende skattemeldingen.
-Denne danner grunnlaget for videre utfylling og senere innsending av skattemeldingen, og kan ha status utkast eller fastsatt:
-
-* Utkast er en preutfylt skattemelding Skatteetaten har laget for den skattepliktige basert på innrapporterte data og data fra skattemeldingen tidligere år.
-* Fastsatt betyr at skattemeldingen er manuelt innlevert eller automatisk innlevert ved utløp av innleveringsfrist. Denne kan også inneholde et eller flere myndighetsfastsatte felter. For mer informasjon om myndighetsfastsatte felter se avsnittet under valider skattemeldingen.
-
-Tjenesten som benyttes for å hente ut den siste gjeldende skattemeldingen er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}`.
-
-## Informasjonsmodell
-XSD for responsobjektet til hent gjeldende skattemelding er `skattemeldingognaeringsspesifikasjonforespoerselrespons_{versjon}_kompakt.xsd`,
-og skiller seg ut fra XSD-ene for validering og innsending i Altinn3 som er beskrevet i fanen [Informasjonsmodell for validering og innsending](#informasjonsmodell-for-validering-og-innsending-av-skattemelding-med-næringsspesifikasjon).
-Merk at denne XSD-en kun kommer i kompakt versjon uten begrepsreferanser. 
-
-På rotnivå er det to objekter, `dokumenter` og `laasteFelt`.
-
-`skattemeldingdokument` i `dokumenter`-objektet har en `type` og `content` som inneholder Base64-encodet XML for skattemeldingen.
-Tabellen under viser hvilke typer som kan returneres i responsen, og hvilken XSD som beskriver innholdet i `content`-feltet:
-
-<div className="responsive-table">
-
-| Dokumenttype i respons-XSD                                               | XSD-filnavn uten versjonsnummer (skattemeldingsdokument)                                                 | Beskrivelse                                  |
-|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| `skattemeldingPersonligUtkast` <br /> `skattemeldingPersonligFastsatt`   | [`skattemelding_{versjon}_ekstern.xsd`](#xsd-for-personlig-skattemelding)                                | Skattemelding for personlige skattepliktige  |
-| `skattemeldingUpersonligUtkast` <br /> `skattemeldingUpersonligFastsatt` | [`skattemeldingUpersonlig_{versjon}_ekstern.xsd`](#xsd-for-upersonlig-skattemelding)                     | Skattemelding for upersonlige skattepliktige |
-| `selskapsmeldingSdfUtkast` <br /> `selskapsmeldingSdfFastsatt`           | [`selskapsmeldingSelskapMedDeltakerFastsetting_{versjon}_ekstern.xsd`](#xsd-for-selskapsmelding-for-sdf) | Selskapsmelding for SDF                      |
-
-</div>
-
-`naeringsspesifikasjondokument` i `dokumenter`-objektet inneholder `content` Base64-encodet XML for næringsspesifikasjonen.
-XSD-en som beskriver innholdet i `content`-feltet er `naeringsspesifikasjon_{versjon}_ekstern.xsd`.
-
-Begge dokumentene har et `id`-felt. Disse må hentes ut og brukes som `dokumentreferanseTilGjeldendeDokument`
-i skattemeldings- og næringsspesifikasjonsdokumentene som sendes inn for validering og innsending.
-
-### Utvidet veiledning
-Det er mulig å etterspørre eventuelle ubesvarte utvidede veiledninger som del av dette API-et.
-
-En utvidet veiledning representerer opplysninger som Skatteetaten har om skatteyter som muligens burde vært oppgitt i skattmeldingen, men som ikke er det.
-Disse opplysningene er gjerne ikke fullstendige, og kan derfor ikke forhåndsutfylles.
-Opplysningene vil trolig heller ikke validere mot valideringstjenesten senere i prosessen uten å ha blitt besvart.
-
-Bare "ubesvarte" utvidede veiledninger returneres i responsen. En veiledning kan besvares på to måter:
-* Gjennom Skatteetatens innleveringsportal for personlige skatteytere, der de kan velge å avvise eller legge til opplysningene.
-* Ved innsending av `komplett` skattemelding fra et sluttbrukersystem. Når en slik innsending er fullført og fører til fastsetting, vil alle ubesvarte veiledninger _på fastsettingstidspunktet_ bli besvart som at de er "hentet av SBS".
-  * Siden nye utvidede veiledninger kan oppstå fortløpende, så finnes det en risiko for at det har kommet nye mellom tidspunktet hvor SBS henter veiledningene og fastsetting utføres. Det er derfor en risiko for at veiledninger som ikke har blitt hentet av SBSen og fremvist bruker blir besvart som det.
-
-For å etterspørre utvidet veiledning, sendes query-parameteren `ìnkluderUtvidetVeiledning=true` med i kallet til <br/> `GET /api/skattemelding/v2/{inntektsaar}/{identifikator}`.
-Parameteren støttes fra inntektsår 2022. Hvis request-parameteren sendes med for tidligere år vil den ignoreres.
-
-Det kan være mange `utvidetVeiledningdokument` i responsen, én per opplysning Skattetaten ønsker at skatteyter skal ta stilling til.
-`content`-delen av `utvidetVeiledningdokument` inneholder et skattemeldingsdokument med foreslått tillegg for skatteyter.
-Dette er ikke en fullstendig XML iht. skattemelding-XSD.
-I de tilfeller det er flere opplysninger per veiledningsdokument, er anbefalingen at én av entitetene skal legges til, ikke alle.
-
-### Låste felter
-Skatteetaten har muligheten til å låse enkeltfelter eller hele skattemeldingen og/eller næringsspesifikasjonen.
-Dette vil kun forekomme på en fastsatt skattemelding ved [myndighetsfastsetting](../api/innrapportering-skattemelding-andre-tjenester#klage), og aldri utkast.
-
-Responsen til hent gjeldende skattemelding vil inneholde en liste over eventuelle låste felter for en fastsatt skattemelding.
-Disse returneres i objektet `laasteFelt`, og er delt inn i hhv. `laastFeltSkattemelding` og `laastFeltNaeringsspesifikasjon`.
-
-</TabItem>
-
 <TabItem headerText="Valideringstjenesten" itemKey="itemKey-2">
 
-Før innsending av skattemelding med næringsspesifikasjon, valideres innsendingen ved bruk av valideringstjenesten for å sikre at skattemeldingen er korrekt og mest sannsynlig vil bli godkjent ved innsending.
-Samme tjeneste benyttes av Skatteetatens mottak ved validering av innsendt skattemelding. Som beskervet i de fire hovedstrategiene for implementasjon, kan SBS velge å implementere alle beregninger selv, eller integrere valideringstjenesten i sitt system.
+## Introduksjon
+Før innsending av skattemelding med næringsspesifikasjon, validerer dere innsendingen ved bruk av valideringstjenesten for å sikre at skattemeldingen er korrekt og mest sannsynlig vil bli godkjent ved innsending.
+Samme tjeneste benyttes av Skatteetatens mottak ved validering av innsendt skattemelding. Som beskervet i de fire hovedstrategiene for implementasjon, kan dere velge velge å implementere alle beregninger selv, eller integrere valideringstjenesten i deres system.
+
+Dere kan velge å validere løpende etter hvert som sluttbruker fyller inn informasjon, eller som én samlet validering før innsending.
+Dette avhenger av flyten i sluttbrukersystemet deres.
 
 :::tip[Lagring av valideringsdata]
 Skatteetaten vil ikke lagre eller følge opp informasjonen som sendes inn i valideringstjenesten på noen måte. Skatteetaten anser disse dataene som eid av den skattepliktige og ikke av Skatteetaten.
 :::
 
 Valideringen utfører følgende steg:
-1. Kontroll av XML-meldingsformatet for skattemeldingen og næringsspesifikasjon mot de tilhørende XSD-ene
+1. Kontroll av XML-meldingsformatet for skattemeldingen og næringsspesifikasjon mot de tilhørende XSD-filene.
 2. Utføring av alle relevante beregninger for å finne Skatteetatens versjon av de kalkulerte verdiene.
    Beregningene hensyntar også ektefelle.
 3. Sammenligning av Skatteetatens kalkulerte verdier mot de innsendte kalkulerte verdiene
@@ -98,7 +38,7 @@ Valideringen utfører følgende steg:
 <br/>  c. Foreløpig beregnet skatt
 <br/>  d. Summert skattegrunnlag for visning (nivå av inntekt, fradrag, formue, gjeld)
           Dette er de samme tallene som ligger i skatteoppgjøret for personlig skattepliktige som underlag for å kunne forstå grunnlagene i beregnet skatt
-<br/>  e. Alle avvik som ble funnet på beregninger gruppert etter summer hvor det er avvik og summer Skatteetaten har beregnet hvor SBS ikke sendte inn noen verdi
+<br/>  e. Alle avvik som ble funnet på beregninger gruppert etter summer hvor det er avvik og summer Skatteetaten har beregnet hvor sluttbrukersystemet ikke sendte inn noen verdi
 <br/>  f. Kontrollutslag på kontroller av innsendte oppgaver (noen obligatoriske, andre til info)
 <br/>  g. Valideringsresultat og eventuelle avvisningsårsaker
 <br/>  h. Sentrale elementer fra skattesubjektet benyttet i skatteberegningen
@@ -107,24 +47,21 @@ Valideringen utfører følgende steg:
 Merk at skatteberegningen kun er en foreløpig beregning. Den endelige skatteberegningen utføres i skatteoppgjøret.
 :::
 
-Validering kan gjøres løpende etter hvert som sluttbruker fyller inn informasjon, eller som én samlet validering før innsending.
-Dette avhenger av flyten i sluttbrukersystemet.
-
 Endepunktet som benyttes for validering er `/api/skattemelding/v2/valider/{inntektsår}/{identifikator}`.
 
 XSD-en for requestobjektet til tjenesten er `skattemeldingognaeringsspesifikasjonrequest_{versjon}.xsd`,
 og XSD til responsobjektet er `skattemeldingognaeringsspesifikasjonresponse_{versjon}.xsd`.
 XSD-ene er nærmere beskrevet i [Informasjonsmodell for validering og innsending av skattemelding med næringsspesifikasjon](#informasjonsmodell-for-validering-og-innsending-av-skattemelding-med-næringsspesifikasjon).
 
-### Kontrollutslag på kontroller av innsendte oppgaver
+## Kontrollutslag på kontroller av innsendte oppgaver
 I forbindelse med validering kjøres eksterne kontroller i Skatteetatens saksbehandlingssystemer (SMIA). Kontroller som kjøres eksternt er benevnt som veiledning.
 Alle veiledningsforekomster har en betjeningsstrategi som returneres i responsdokumentet. Noen få av disse hindrer innsending, de fleste ikke.
 
 Objektet `veiledningEtterKontroll` i responsen til valideringstjenesten inneholder en liste med veiledningsforekomster som er funnet under valideringen.
 Objektet inneholder betjeningsstrategi og tekstlig gjengivelse av veiledningen.
-Disse er nærmere beskrevet i fanen [Informasjonsmodell](#respons-objekt).
+Disse er nærmere beskrevet i [responsobjektet](#respons-objekt).
 
-### Valideringsresultat og eventuelle avvisningsårsaker
+## Valideringsresultat og eventuelle avvisningsårsaker
 Valideringstjenesten vil inneholde eget felt som viser valideringsresultatet, slik at man før innsending kan se om innsendt skattemelding med
 næringsspesifikasjon vil bli avvist eller ikke.
 
@@ -134,7 +71,7 @@ eller `validertMedFeil` om innsending vil medføre at skattemeldingen med nærin
 I tillegg returneres `aarsakTilValidertMedFeil` hvis valideringsresultatet er ´validertMedFeil´, gir en tekstkode for feilårsaken.
 `avvikVedValidering` returnerer en liste med alle avvik som ble funnet under valideringen.
 
-### Krav til næringsspesifikasjon
+## Krav til næringsspesifikasjon
 * Næringsspesifikasjon skal alltid sendes inn sammen med skattemelding upersonlig
   * Valideringsregel vil gi feil dersom dette ikke er gjort, og eventuell senere innsending uten vil bli avvist
 * Næringsspesifikasjon skal alltid sendes inn sammen med skattemelding personlig, når den skattepliktige er definert til å ha
@@ -145,7 +82,7 @@ I tillegg returneres `aarsakTilValidertMedFeil` hvis valideringsresultatet er ´
 * Næringsspesifikasjon kan sendes inn sammen med skattemelding personlig når den skattepliktige ikke er definert som å ha
   enkeltpersonforetak for det året i skatteetatens systemer
 
-### Avrundingsregler
+## Avrundingsregler
 For å unngå avvik i beregnede beløp må SBS og Skatteetatens valideringstjeneste benytte de samme prinsippene for avrunding av beløp.
 
 * 2 desimaler er tillatt for opplysningene i XML for næringsspesifikasjon.
@@ -157,15 +94,20 @@ For å unngå avvik i beregnede beløp må SBS og Skatteetatens valideringstjene
 Bruk av desimaler for opplysninger i XML for skattemelding tillates ikke fordi det vil kunne skape utfordringer når summene skal
 sendes videre til skatteberegning.
 
-### Validering av låste felter
+## Validering av låste felter
 Ved validering av skattemelding som inneholder endringer på et felt som er låst vil følgende valideringsresultat returneres: `KanIkkeOverskriveMyndighetsfastsattVerdi` eller `KanIkkeSletteMyndighetsfastsattVerdi`
 Dette skyldes at en forekomst som har blitt låst har blitt endret eller slettet.
 
-![myndighetsfastsatt_kort.png](../../static/download/skattemeldingupersonlig/myndighetsfastsatt_kort.png)
+[![myndighetsfastsatt_kort.png](../../static/download/skattemeldingupersonlig/myndighetsfastsatt_kort.png)](../../static/download/skattemeldingupersonlig/myndighetsfastsatt_kort.png)
 <br/>_Eksempel på låst felt i SME_.
+
+## Neste steg
+Når dere har integrert med valideringstjenesten og laget støtte for at brukerne kan rette opp eventuelle avvik, kan dere gå videre til prosessen for innsending av skattemelding med næringsspesifikasjon via Altinn3-appen i [neste fane](../api/innrapportering-skattemelding-innsending?tab=Altinn3-app+for+innsending).
 
 </TabItem>
 <TabItem headerText="Altinn3-app for innsending" itemKey="itemKey-3">
+
+## Introduksjon
 Resten av prosessen for innsending av skattemelding med næringsspesifikasjon skjer ved bruk av Altinn3.
 Skatteetaten har opprettet en egen app i Altinn3 som håndterer innsendingen av skattemeldingen med næringsspesifikasjon,
 opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
@@ -186,7 +128,7 @@ Diagrammet under viser den overordnede forretningsprosessen for innsending av sk
 
 XSD-ene er nærmere beskrevet i [Informasjonsmodell for validering og innsending av skattemelding med næringsspesifikasjon](#informasjonsmodell-for-validering-og-innsending-av-skattemelding-med-næringsspesifikasjon).
 
-![Forretningsprosess Altinn3](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)
+[![Forretningsprosess Altinn3](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)
 <br/>_Overordnet forretningsprosess for Altinn3-appen._
 
 ## Asynkront API for innsending
@@ -348,6 +290,10 @@ Dette gjør at det er mulig å validere skattemeldingen med næringsspesifikasjo
 Opplasting av skattedata til Altinn gjøres i en såkalt konvolutt som inneholder aktuelle dokumenter, dokumentreferanse,
 inntektsår og innsendingsinformasjon.
 
+Nedenfor beskrives de ulike XSD-filene overordnet. Versjonsnummeret er tatt bort fra filnavnet fordi disse revideres årlig
+som vi beskriver i [årsrevisjon av spesifikasjonene](../anvendelsesomraader/skattemelding#årsrevisjon-av-spesifikasjonene).
+Dokumentasjonen vil ikke ta for seg alle felter i XSD-ene, men det henvises til [veilederen](https://skattemelding-veileder.formueinntekt.skatt.skatteetaten.no/) og [begrepskatalogen](https://data.skatteetaten.no/web/datakatalog/begreper) for informasjon om de ulike feltene.
+
 ### Request-objekt
 XSD for request-objektet er `skattemeldingognaeringsspesifikasjonrequest_{versjon}.xsd`.
 
@@ -425,6 +371,8 @@ per inntektsår. Forekomstene inneholder følgende felter:
 
 `informasjonOmPersonligSkattesubjekt` og `informasjonOmUpersonligSkattesubjekt` inneholder sentrale skatteelementer tilknyttet hhv. personlig og upersonlig skattesubjekt.
 
+## XSD for personlig skattemelding
+XSD for skattemelding for personlige skattepliktige er `skattemelding_{versjon}_ekstern.xsd`, og `skattemelding_{versjon}_kompakt_ekstern.xsd` for kompakt versjon uten begrepsreferanser.
 
 ## XSD for upersonlig skattemelding
 XSD for skattemelding for upersonlige skattepliktige er `skattemeldingUpersonlig_{versjon}_ekstern.xsd`, og `skattemeldingUpersonlig_{versjon}_kompakt_ekstern.xsd` for kompakt versjon uten begrepsreferanser.
@@ -504,7 +452,7 @@ Vedlegg kan knyttes direkte til en forekomst ved hjelp av de to sistnevnte eleme
 <span id="sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon"></span>
 
 # Sekvensdiagram for innsending av skattemelding med næringsspesifikasjon
-![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
+[![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
 
 
 </TabItem>

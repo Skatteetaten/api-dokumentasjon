@@ -10,31 +10,26 @@ last_updated: Oct 22, 2026
 hide_table_of_contents: true
 ---
 
-## Ordliste
-| Begrep | Beskrivelse                                                                                                |
-|--------|------------------------------------------------------------------------------------------------------------|
-| SBS    | Sluttbrukersystem                                                                                          |
-| SDF    | Selskap med deltakerfastsetting                                                                            |
-| SERG   | Betegnelse på Eiendomsregisteret                                                                           |
-| SME    | Skattemelding, modernisert versjon. (benyttes oftest om publikumssiden for innlevering av skattemeldingen) |
-| SMIA   | Skattemelding interne arbeidsflate (nytt saksbehandlingssystem 2020)                                       |
-
-# Introduksjon
-
+## Introduksjon
 Denne siden inneholder en onboardingsguide for innrapportering av
 skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige fra sluttbrukersystem.
+Har du en etablert integrasjon mot Skatteetatens API-er for innrapportering av skattemeldingen og ser etter spesifikke detaljer,
+kan du gå til [Avansert bruk](../anvendelsesomraader/skattemelding?tab=Avansert+bruk).
+For delingstjenester tilknyttet skattemeldingen, se [API-er for deling for skattemeldingen](../anvendelsesomraader/skattemelding#api-er-for-deling-for-skattemeldingen).
+
 Den primære målgruppen er systemleverandører av årsoppgjørsprogram eller regnskapssystem for
 innrapportering av skattemeldingen og næringsopplysninger. Slike systemer kalles heretter
 sluttbrukersystemer (SBS).
 
-Løsningen legger opp til at en innsending skal inneholde en skattemelding. For personlig skattepliktige som driver ENK, upersonlig skattepliktige (selskaper) og for selskaper
-med deltakerfastsetting skal innsendingen også __alltid__ inneholde næringsspesifikasjon. Det er kun lønnstakere og pensjonister som kun sender inn
+Løsningen legger opp til at en innsending skal inneholde en skattemelding. For personlig skattepliktige som driver
+enkeltpersonforetak (ENK), upersonlig skattepliktige (selskaper) og for selskaper med deltakerfastsetting (SDF),
+skal innsendingen også __alltid__ inneholde næringsspesifikasjon. Det er kun lønnstakere og pensjonister som kun sender inn
 skattemelding. Dette illustreres her:
 
-![Skattemeldingsvarianter.PNG(../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.PNG)](../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.PNG)
+[![Skattemeldingsvarianter.png](../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.png)](../../static/download/skattemeldingupersonlig/Skattemeldingsvarianter.png)
 <br/>_Illustrasjon av skattemeldingsvarianter for personlige og upersonlige skattepliktige._
 
-Det anbefales å lese følgende generelle sider før denne onboardingsguiden:
+Vi anbefaler at du leser følgende generelle sider før denne onboardingsguiden:
 
 * [Kom i gang](../komigang.md)
 * [Bruk av API-er for innrapportering](../om/bruk_innrapportering.md)
@@ -61,7 +56,7 @@ Det tilbys to sett med tjenester for innrapportering:
   - Altinn3-API-ene har sin egen OpenAPI-spesifikasjon tilgjengelig på [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 
 ## API-er for deling for skattemeldingen
-I tillegg til API-ene knyttet til innsending av skattemeldingen, er det laget noen klassiske delingstjenester for SSB og enkelte andre partnere:
+I tillegg til API-ene knyttet til innsending av skattemeldingen, har vi laget noen klassiske delingstjenester for SSB og enkelte andre partnere med hjemmel for innsyn i skattemeldingsdata:
 * [__Beregnet skatt API__](../api/beregnetskatt)
 * [__Beregnet skatt upersonlig API__](../api/beregnetskattupersonlig)
 * [Næringsspesifikasjon API](../api/naeringsspesifikasjon)
@@ -77,7 +72,7 @@ I tillegg til API-ene knyttet til innsending av skattemeldingen, er det laget no
 
 ## Andre relevante API-er for skattemeldingen
 I tillegg tilbyr Skatteetaten tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter)
-for å hente ut dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen.
+for å hente ut dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen. Denne tjenesten krever separate tilganger og er ikke en del av innsendingsløpet for skattemeldingen.
 
 ## Tilgang til API-ene
 Når en skattepliktig skal benytte et sluttbrukersystem for å sende inn skattemeldingen og næringsopplysninger gjennom
@@ -151,7 +146,7 @@ Bare **Ansvarlig revisor** og **Revisorattesterer** kan bekrefte i revisors sign
 
 [Tjenesteoversikten utviklet av Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2) beskriver tilgangspakkene ytterligere. Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.
 
-Ved bruk av systembruker må systemleverandøren oppgi pakkens _URN_ i `accessPackages` ved [registrering av systemet og opprettelse av forespørsel om systembruker](../om/systembruker.md#steg-for-steg).
+Ved bruk av systembruker må systemleverandøren oppgi de aktuelle pakkenes _URN_ i `accessPackages` ved [registrering av systemet og opprettelse av forespørsel om systembruker](../om/systembruker.md#steg-for-steg).
 Den som skal gi systembrukeren tilgang, må godkjenne forespørselen i Altinn. For klientsystembruker knyttes aktuelle klienter til systemtilgangen.
 Ved bruk av ID-porten må den innloggede brukeren ha de aktuelle tilgangene i Altinn.
 
@@ -165,33 +160,36 @@ For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
 I øvrig dokumentasjonen benyttes begrepet _skattepliktig_  for personen eller selskapet skattemeldingen 
 med eventuell næringsspesifikasjon sendes inn for. Det er ikke ensbetydende med at det er den skattepliktige som utfører innleveringsprosessen
 dokumentert her. Eksempelvis kan en regnskapsfører være den som leverer inn skattemeldingen
-på vegne av den skattepliktige. For selskaper representerer daglig leder eller styreleder den skattepliktige.
+på vegne av den skattepliktige. For selskaper representerer daglig leder eller styreleder den skattepliktige enheten.
 
 Følgende figur gir en en overordnet flyt med aktører og komponenter for innsending av skattemelding med næringsspesifikasjon:
 
 [![Overordnet løsningsoversikt](../../static/download/skattemeldingupersonlig/Komponentoversikt%20skattemelding%20næring%20for%20SBS.png)](../../static/download/skattemeldingupersonlig/Komponentoversikt%20skattemelding%20næring%20for%20SBS.png)
+<br/> _Overordnet løsningsoversikt for innrapportering av skattemelding med næringsspesifikasjon fra sluttbrukersystem._
 
 Som det fremkommer av figuren kan skattemeldingen med tilhørende næringsspesifikasjon sendes inn som _komplett_ eller _ikke-komplett_.
-* Ved __komplett innsending__ sendes ferdig utfylt skattemelding og næringsspesifikasjon inn fra SBS og lagres hos Skatteetaten som <u>gjeldende fastsetting</u>.
-* __Ikke-komplett innsending__ er kun støttet for personlig skattepliktige. SBS kan velge å la den skattepliktige fylle ut deler av personlig skattemelding,
-  eller å kun støtte næringsspesifikasjon, og la den den skattepliktige fullføre innsending av skattemelding i Skatteetatens portalløsning (SME).
+* Ved __komplett innsending__ sendes ferdig utfylt skattemelding og næringsspesifikasjon inn fra sluttbrukersystemet
+  og lagres hos Skatteetaten som <u>gjeldende fastsetting</u>.
+* __Ikke-komplett innsending__ er kun støttet for personlig skattepliktige. Sluttbrukersystemet kan velge å la den
+  skattepliktige fylle ut deler av personlig skattemelding, eller å kun støtte næringsspesifikasjon,
+  og la den den skattepliktige fullføre innsending av skattemelding i Skatteetatens portalløsning (SME).
 
-Næringsspesifikasjonen kan ikke redigeres. Skal næringsspesifikasjon endres, må denne sendes inn på nytt fra SBS.
+Næringsspesifikasjonen kan ikke redigeres. Skal næringsspesifikasjon endres, må denne sendes inn på nytt fra sluttbrukersystemet.
 
 Det er fire hovedstrategier for hvordan man integrerer seg mot Skatteetatens tjenester for innsending av skattemelding og næringsspesifikasjon.
 Dette er ikke en uttømmende liste, men representerer de mest vanlige scenariene:
 
 #### Komplett innsending med full beregningsimplementasjon:
-SBS implementerer alle beregninger som Skatteetaten gjør i valideringstjenesten, og sender inn skattemelding og næringsspesifikasjon som komplett.
+Sluttbrukersystemet implementerer alle beregninger som Skatteetaten gjør i valideringstjenesten, og sender inn skattemelding og næringsspesifikasjon som komplett.
 
 #### Komplett innsending med integrert valideringstjeneste:
-SBS integrerer valideringstjenesten i sitt sluttbrukersystem, og sender inn skattemelding og næringsspesifikasjon som komplett.
+Sluttbrukersystemet integrerer valideringstjenesten i sitt system, og sender inn skattemelding og næringsspesifikasjon som komplett.
 
 #### Ikke-komplett innsending med beregningsstøtte kun for næringsspesifikasjon:
-SBS implementerer kun støtte for beregning av næringsspesifikasjon, og sender inn utkast til skattemelding fra Skatteetaten uten endringer.
+Sluttbrukersystemet implementerer kun støtte for beregning av næringsspesifikasjon, og sender inn utkast til skattemelding fra Skatteetaten uten endringer.
 
 #### Ikke-komplett innsending med integrert valideringstjeneste kun for næringsspesifikasjon:
-SBS integrerer valideringstjenesten kun for næringsspesifikasjon, og sender inn utkast til skattemelding fra Skatteetaten uten endringer.
+Sluttbrukersystemet integrerer valideringstjenesten kun for næringsspesifikasjon, og sender inn utkast til skattemelding fra Skatteetaten uten endringer.
 
 Nederst på denne siden er det et [sekvensdiagram for innrapportering av skattemelding næring](#sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon)
 som illustrerer flyten ut fra endepunktene som skal benyttes.
@@ -202,18 +200,13 @@ nyttig bakgrunnsinformasjon.
 ---
 <span id="informasjonsmodell-onboarding"></span>
 
-# Informasjonsmodell
+## Informasjonsmodell
 
 Skattemeldingen og næringsopplysninger skal leveres som XML-filer. Innhold og format på XML-filene er spesifisert gjennom XML Schema Definition, XSD.
 
-Følgende informasjonsmodeller skal brukes for fastsetting:
-* [skattemelding for formues- og inntektsskatt for personlige skattepliktige](#xsd-for-personlig-skattemelding)
-* [skattemelding for formues- og inntektsskatt for upersonlige skattepliktige](#xsd-for-upersonlig-skattemelding)
-* [selskapsmeldingen for selskap med deltakerfastsetting (SDF)](#xsd-for-selskapsmelding-for-sdf)
-* [næringsspesifikasjon](#xsd-for-næringsspesifikasjon)
-
 De til enhver tid gjeldende XSD-filene for informasjonsmodellene per inntektsår er tilgjengelig på [skattemeldingen på GitHub](https://github.com/Skatteetaten/skattemeldingen/tree/master/src/resources/xsd).
-Gjeldende versjoner oppdateres årlig iht. [årsrevisjon av spesifikasjonene](#årsrevisjon-av-spesifikasjonene).
+Gjeldende versjoner oppdateres årlig iht. [årsrevisjon av spesifikasjonene](#årsrevisjon-av-spesifikasjonene). Konvoluttene til de ulike XSD-filene
+er dokumentert på de ulike tjenestene for [utfylling](../api/innrapportering-skattemelding-utfylling) og [innsending](../api/innrapportering-skattemelding-innsending?tab=Informasjonsmodell+for+validering+og+innsending), hvor årsspesifikk informasjon er abstrahert bort.
 
 XSD-ene beskriver informasjonsmodellen som benyttes ved utveksling av data mellom sluttbrukersystemet og Skatteetaten.
 Strukturen i informasjonsmodellen er ikke en beskrivelse av hvordan opplysningene skal presenteres for sluttbrukeren.
@@ -275,64 +268,53 @@ Referansen i `skatt:eksternKodeliste` angir hvilken kodeliste som skal brukes fo
 Disse vil ha verdien `skatt:eksternKodeliste="inline"`. <br/>
 Kodelistene er tilgjengelige på [GitHub](https://github.com/Skatteetaten/skattemeldingen/tree/master/src/resources/kodeliste).
 
-# Spesifikasjon av konvolutt for skattemelding, selskapsmelding og næringsspesifikasjon
-Nedenfor beskrives de ulike XSD-filene overordnet. Versjonsnummeret er tatt bort fra filnavnet fordi disse revideres årlig.
-Dokumentasjonen vil ikke ta for seg alle felter i XSD-ene, men det henvises til [veilederen](https://skattemelding-veileder.formueinntekt.skatt.skatteetaten.no/) og [begrepskatalogen](https://data.skatteetaten.no/web/datakatalog/begreper) for mer informasjon.
-
-## XSD for personlig skattemelding
-XSD for skattemelding for personlige skattepliktige er `skattemelding_{versjon}_ekstern.xsd`, og `skattemelding_{versjon}_kompakt_ekstern.xsd` for kompakt versjon uten begrepsreferanser.
-
-## XSD for upersonlig skattemelding
-XSD for skattemelding for upersonlige skattepliktige er `skattemeldingUpersonlig_{versjon}_ekstern.xsd`, og `skattemeldingUpersonlig_{versjon}_kompakt_ekstern.xsd` for kompakt versjon uten begrepsreferanser.
-
-## XSD for selskapsmelding for SDF
-XSD for selskapsmelding for selskap med deltakerfastsetting (SDF) er `selskapsmeldingSelskapMedDeltakerFastsetting_{versjon}_ekstern.xsd`,
-og `selskapsmeldingSelskapMedDeltakerFastsetting_{versjon}_kompakt_ekstern.xsd` for kompakt versjon uten begrepsreferanser.
-
-## XSD for næringsspesifikasjon
-XSD for næringsspesifikasjon er `naeringsspesifikasjon_{versjon}_ekstern.xsd`, og `naeringsspesifikasjon_{versjon}_kompakt_ekstern.xsd` for kompakt versjon uten begrepsreferanser.
-
-Merk at informasjonen som skal sendes inn i næringsspesifikasjonen avhenger av hvilken `virksomhetstype` og `regnskapspliktstype` denne har.
-Disse feltene finnes under `virksomhet`-objektet på rotnivået i næringsspesifikasjonen.
-Ved å filtrere på virksomhets- og regnskapspliktstype i [veilederen](https://skattemelding-veileder.formueinntekt.skatt.skatteetaten.no/2025/naering),
-skal det være mulig å se hvilke felter som skal fylles ut i næringsspesifikasjonen for den aktuelle virksomheten og skattepliktige.
-
-`virksomhetstype` er definert av kodelisten `{inntektsår}_virksomhetstype.xml`. <br/>
-`regnskapspliktstype` er definert av kodelisten `{inntektsår}_regnskapsplikttype.xml`. <br/>
-I tillegg bruker feltet `regeltypeForAarsregnskap` kodelisten `{inntektsår}_regeltypeForAarsregnskap.xml`.
-Denne er det foreløpig ikke mulig å filtrere på i veilederen.
-
 ## Interoperabilitet mellom ulike sluttbrukersystemer via Altinn
-Alle ledd i løsningen skal være så standardiserte at det er mulig for en skattepliktig eller annen aktør å bytte ut ett SBS med et annet
-uten at det fører til problemer med å behandle skattemeldingen i det nye systemet. Dette gjelder også mellom ulike SBS-er fra ulike leverandører.
-Dette oppnås ved at Altinn blir et felles opplastingsområde som kan benyttes til å utveksle data på tvers av ulike SBS-er.
-Dataene som er lagret i Altinn eller sendt inn til Skatteetaten er sluttbrukerens eiendom og skal være tilgjengelig fra alle typer SBS.
+Alle ledd i løsningen skal være så standardiserte at det er mulig for en skattepliktig eller annen aktør å bytte ut ett sluttbrukersystem med et annet
+uten at det fører til problemer med å behandle skattemeldingen i det nye systemet. Dette gjelder også mellom ulike sluttbrukersystemer fra ulike leverandører.
+Dette oppnås ved at Altinn blir et felles opplastingsområde som kan benyttes til å utveksle data på tvers av ulike sluttbrukersystemer.
+Dataene som er lagret i Altinn eller sendt inn til Skatteetaten er sluttbrukerens eiendom og skal være tilgjengelig fra alle typer sluttbrukersystemer.
 
-Dette betyr at de ulike operasjonene i flyten i løsningen kan kunne utføres av SBS-er av ulik type.
-Det er ikke et krav at en SBS-type støtter alle operasjoner i flyten eller må støtte data for alle inntektsår, men de operasjonene og
-inntektsårene som støttes må følge standarden. Det er dermed mulig å tilby et SBS som kun leverer deler av flyten i løsningen, men
-et slikt system kan ha begrenset verdi for de skattepliktige sluttbrukene.
+Dette betyr at de ulike operasjonene i flyten i løsningen kan kunne utføres av sluttbrukersystemer av ulik type.
+Det er ikke et krav at en sluttbrukersystem-type støtter alle operasjoner i flyten eller må støtte data for alle inntektsår, men de operasjonene og
+inntektsårene som støttes må følge standarden. Det er dermed mulig å tilby et sluttbrukersystem som kun leverer deler av flyten i løsningen, men
+et slikt system kan ha begrenset verdi for de skattepliktige sluttbrukerne.
 
-Det er ikke et krav at SBS-ene har samme interne datamodell for skattemeldingen.
+Det er ikke et krav at sluttbrukersystemene har samme interne datamodell for skattemeldingen.
 
-### Eksempel på samspill og interoperabilitet mellom ulike SBS-system
-* Regnskapsfører som benytter SBS av type "A" sammenstiller et utkast av skattemeldingen og næringsspesifikasjon og laster disse filene opp
-til Altinn som versjon 1.
-* Den næringsdrivende som benytter SBS av type "B" får skattemeldingen og næringsspesifikasjon lastet ned fra Altinn til sitt SBS og
+### Eksempel på samspill og interoperabilitet mellom ulike sluttbrukersystemer
+* Regnskapsfører som benytter sluttbrukersystem av type "A" sammenstiller et utkast av skattemeldingen og næringsspesifikasjon og laster disse filene opp til Altinn som versjon 1.
+* Den næringsdrivende som benytter sluttbrukersystem av type "B" får skattemeldingen og næringsspesifikasjon lastet ned fra Altinn til sitt sluttbrukersystem og
 kan der kontrollere eller komplettere skattemeldingen og næringsspesifikasjon . Deretter lastes skattemeldingen og næringsspesifikasjon opp
 til Altinn som versjon 2.
-* Revisor som benytter SBS av type "C" får skattemeldingen og næringsspesifikasjon lastet ned fra Altinn til sitt SBS og kan der
+* Revisor som benytter sluttbrukersystem av type "C" får skattemeldingen og næringsspesifikasjon lastet ned fra Altinn til sitt sluttbrukersystem og kan der
 kontrollere og signere skattemeldingen og næringsspesifikasjon . Deretter oppdateres status på skattemeldingen og næringsspesifikasjon til
-"signert" ved at SBS oppdaterer statusen til Altinn.
+"signert" ved at sluttbrukersystemet oppdaterer statusen til Altinn.
 * Siden status nå er signert kan skattemeldingen og næringsspesifikasjon bli sendt inn til skatteetaten. Dette utføres via et API-kall fra et av de
-samarbeidende SBS-systemene.
-* Året etter har regnskapsfører byttet til SBS av type "D". Fra denne SBS-en kan regnskapsfører hente skattemeldingen for sine kunder for
+samarbeidende sluttbrukersystemene.
+* Året etter har regnskapsfører byttet til sluttbrukersystem av type "D". Fra dette sluttbrukersystemet kan regnskapsfører hente skattemeldingen for sine kunder for
 tidligere år fra Altinn/Skatteetaten. 
 
-De 3 aktørene i dette scenariet kan ha hvert sitt SBS fra ulike leverandører.
+De tre aktørene i dette scenariet kan ha hvert sitt sluttbrukersystem fra ulike leverandører.
+
+# Neste steg
+Når tilgang til testmiljøet er på plass, er neste steg å integrere mot tjenesten for å hente gjeldende skattemelding
+for å starte utfylling av skattemeldingen og næringsspesifikasjonen.
+Dette er dokumentert på siden [Skattemelding utfyllingstjenester](../api/innrapportering-skattemelding-utfylling).
+Les først den generelle informasjon på siden før du går videre til fanen [Hent gjeldende skattemelding](../api/innrapportering-skattemelding-utfylling?tab=Hent+gjeldende+skattemelding).
+
+Når gjeldende skattemelding er hentet, kan dere starte å fylle ut skattemeldingen og næringsspesifikasjonen i sluttbrukersystemet.
+
+Eiendomsinformasjon må fylles inn når dette ikke er preutfylt. Utfylling av eiendomsinformasjon er dokumentert i en egen
+fane på siden [Skattemelding utfyllingstjenester](../api/innrapportering-skattemelding-utfylling?tab=Eiendomstjenester).
+
+Når brukeren er ferdig med utfylling, skal skattemeldingen og næringsspesifikasjonen valideres ved bruk av
+[valideringstjenesten](../api/innrapportering-skattemelding-innsending?tab=Valideringstjeneste). Valideringstjenesten vil gi tilbakemelding om eventuelle feil og mangler i skattemeldingen og næringsspesifikasjonen som brukeren enten må 
+eller bør rette opp før endelig innsending.
+
+Til slutt sendere dere skattemeldingen inn ved å følge prosessen i [Altinn3-appen for innsending](../api/innrapportering-skattemelding-innsending?tab=Altinn3-app+for+innsending).
 
 <span id="sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon"></span>
 
 # Sekvensdiagram for innsending av skattemelding med næringsspesifikasjon
-Dette sekvensdiagrammet som illustrerer flyten for bruk av de ulike API-ene for [utfylling](../api/innrapportering-skattemelding-utfylling.md) og [innsending](../api/innrapportering-skattemelding-innsending.md).
-![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
+Dette sekvensdiagrammet illustrerer hovedflyten for bruk av de ulike API-ene for [utfylling](../api/innrapportering-skattemelding-utfylling.md) og [innsending](../api/innrapportering-skattemelding-innsending.md).
+[![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
