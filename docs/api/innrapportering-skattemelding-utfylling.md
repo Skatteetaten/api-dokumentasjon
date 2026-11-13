@@ -149,15 +149,15 @@ Disse opplysningene er gjerne ikke fullstendige, og kan derfor ikke forhåndsutf
 Opplysningene vil trolig heller ikke validere mot valideringstjenesten senere i prosessen uten å ha blitt besvart.
 
 Bare "ubesvarte" utvidede veiledninger returneres i responsen. En veiledning kan besvares på to måter:
-* Gjennom Skatteetatens innleveringsportal for personlige skatteytere, der de kan velge å avvise eller legge til opplysningene.
+* Gjennom Skatteetatens innleveringsportal for personlig skattepliktige, der de kan velge å avvise eller legge til opplysningene.
 * Ved innsending av `komplett` skattemelding fra et sluttbrukersystem. Når en slik innsending er fullført og fører til fastsetting, vil alle ubesvarte veiledninger _på fastsettingstidspunktet_ bli besvart som at de er "hentet av SBS".
   * Siden nye utvidede veiledninger kan oppstå fortløpende, så finnes det en risiko for at det har kommet nye mellom tidspunktet hvor SBS henter veiledningene og fastsetting utføres. Det er derfor en risiko for at veiledninger som ikke har blitt hentet av SBSen og fremvist bruker blir besvart som det.
 
 For å etterspørre utvidet veiledning, sendes query-parameteren `ìnkluderUtvidetVeiledning=true` med i kallet til <br/> `GET /api/skattemelding/v2/{inntektsaar}/{identifikator}`.
 Parameteren støttes fra inntektsår 2022. Hvis request-parameteren sendes med for tidligere år vil den ignoreres.
 
-Det kan være mange `utvidetVeiledningdokument` i responsen, én per opplysning Skattetaten ønsker at skatteyter skal ta stilling til.
-`content`-delen av `utvidetVeiledningdokument` inneholder et skattemeldingsdokument med foreslått tillegg for skatteyter.
+Det kan være mange `utvidetVeiledningdokument` i responsen, én per opplysning Skattetaten ønsker at den skattepliktige skal ta stilling til.
+`content`-delen av `utvidetVeiledningdokument` inneholder et skattemeldingsdokument med foreslått tillegg for den skattepliktige.
 Dette er ikke en fullstendig XML iht. skattemelding-XSD.
 I de tilfeller det er flere opplysninger per veiledningsdokument, er anbefalingen at én av entitetene skal legges til, ikke alle.
 
@@ -209,45 +209,6 @@ Søketjenesten brukes til å identifisere den skattepliktiges eiendommer som ska
 Tjenesten fungerer som inngangsport til de øvrige eiendomstjenestene, og leverer en eiendomsidentifikator som brukes videre i prosessen.
 Det er mulig å søke på alle norske veiadresser og matrikkelnummer. Søket returnerer kun eiendommer som eksisterer for inntektsåret det søkes for.
 
-## 2. Hent formuesgrunnlag
-Om ikke formuesgrunnlaget for eiendommene som skal inngå i skattemeldingen skal egenfastsettes, kan det hentes ut fra denne tjenesten.
-Eiendomsidentifikatoren fra søketjenesten brukes til å identifisere eiendommene.
-Tjenesten henter ut ulik informasjon basert på hvilken eiendomstype eiendomsidentifikator har, samt inntektsåret det søkes for.
-Noen detaljer vil fjernes fra responsen hvis skatteyter ikke er eier av eiendommen.
-
-Eiendomstypen bestemmer også om det skal beregnes markedsverdi, ev. utleieverdi, før validering og innsending av skattemeldingen.
-For følgende eiendomstyper skal det beregnes markedsverdi gjennom tjenestene beskrevet i neste avsnitt:
-* Selveid bolig
-* Boenhet i boligselskap
-* Flerboligbygning
-* Ikke utleid næringseiendom
-
-## 3. Beregning av markedsverdi/utleieverdi
-Det er tre tjenester som benyttes for å beregne markedsverdi for eiendommer basert på eiendomstype:
-* Selveid bolig, boenhet i boligselskap: tjenesten for beregning av markedsverdi for bolig
-* Flerboligbygning: tjenesten for å beregne markedsverdi for flerbolig
-* Ikke utleid næringseiendom: tjenesten for beregning av utleieverdi for næringseiendom
-* For andre eiendomstyper gjør valideringstjenesten nødvendige beregninger for å fastsette formuesverdien, og det er ikke nødvendig å kalle tjenestene for beregning av markedsverdi.
-
-For de ovennevnte eiendomstypene det skal beregnes markedsverdi/utleieverdi for, sendes formuesgrunnlaget fra den foregående tjenesten som input til tjenesten.
-Sender man inn hele responsen fra hent formuesgrunnlag vil responsen til beregningen innholde alt som ble sendt inn pluss de beregnede feltene.
-
-Det er også er mulig å oppgi dokumentert markedsverdi.
-Ugyldig dokumentert markedsverdi i forhold til klagegrense vil ikke hensyntas. Mer informasjon om klage finnes på [Klage til Skatteetaten](https://www.skatteetaten.no/kontakt/klage/).
-Om dokumentert markedsverdi har blitt hensyntatt vil responsen fra beregningstjenesten inkludere justert markedsverdi.
-
-Eventuell opplasting av vedlegg for å dokumentere markedsverdi/utleieverdi er dokumentert på [siden for innsending av skattemeldingen](../api/innrapportering-skattemelding-innsending#2--laste-opp-vedlegg-til-skattemeldingen).
-
-De tre tjenestene for beregningning av markedsverdi/utleieverdi er dokumentert under [teknisk dokumentasjon](#Beregning-av-markedsverdiutleieverdi).
-
----
-
-# Teknisk dokumentasjon
-
-På denne siden dokumenteres sentrale tekniske elementer for eiendomstjenestene.
-Endepunktene med fullstendige informasjonsmodeller er dokumentert under [Eiendomstjenester i OpenAPI](pathname:///download/skattemeldingupersonlig/openapi.html).
-
-## Søk etter eiendom
 Bruk endepunktet `/api/skattemelding/v2/eiendom/soek/v2/{inntektsår}?query={query}&resultSize={resultSize}` for å søke etter eiendommer.
 
 Følgende forretningsregler gjelder for `query`-parameteren:
@@ -257,7 +218,19 @@ Følgende forretningsregler gjelder for `query`-parameteren:
 
 `resultSize` spesifiserer maks antall resultater som skal returneres. Default er 10.
 
-## Hent formuesgrunnlag
+## 2. Hent formuesgrunnlag
+Om ikke formuesgrunnlaget for eiendommene som skal inngå i skattemeldingen skal egenfastsettes, kan det hentes ut fra denne tjenesten.
+Eiendomsidentifikatoren fra søketjenesten brukes til å identifisere eiendommene.
+Tjenesten henter ut ulik informasjon basert på hvilken eiendomstype eiendomsidentifikator har, samt inntektsåret det søkes for.
+Noen detaljer vil fjernes fra responsen hvis den skattepliktige ikke er eier av eiendommen.
+
+Eiendomstypen bestemmer også om det skal beregnes markedsverdi, ev. utleieverdi, før validering og innsending av skattemeldingen.
+For følgende eiendomstyper skal det beregnes markedsverdi gjennom tjenestene beskrevet i neste avsnitt:
+* Selveid bolig
+* Boenhet i boligselskap
+* Flerboligbygning
+* Ikke utleid næringseiendom
+
 Bruk endepunktet `/api/skattemelding/v2/eiendom/formuesgrunnlag/{inntektsår}/{eiendomsidentifikator}/{identifikator}`.
 `eiendomsIdentifikator` er `SERG eiendomsidentifikator` for eiendommen fra søketjenesten.
 
@@ -272,15 +245,29 @@ Eiendomstypene som støttes av beregningstjenesten er mappet til følgende feltn
 
 For næringseiendom er det i tillegg en egen `naeringseiendomstype` som benytter en egen kodeliste `{inntektsår}_naeringseiendomstype.xml` for å angi type næringseiendom.
 
-## Beregning av markedsverdi/utleieverdi
-Beregning av markedsverdi/utleieverdi benytter en av tre tjenester avhenegig av eiendomstype.
+## 3. Beregning av markedsverdi/utleieverdi
+Det er tre tjenester som benyttes for å beregne markedsverdi for eiendommer basert på eiendomstype:
+* Selveid bolig, boenhet i boligselskap: tjenesten for beregning av markedsverdi for bolig
+* Flerboligbygning: tjenesten for å beregne markedsverdi for flerbolig
+* Ikke utleid næringseiendom: tjenesten for beregning av utleieverdi for næringseiendom
+* For andre eiendomstyper gjør valideringstjenesten nødvendige beregninger for å fastsette formuesverdien, og det er ikke nødvendig å kalle tjenestene for beregning av markedsverdi.
+
+For de ovennevnte eiendomstypene dere skal beregnes markedsverdi/utleieverdi for, sendes formuesgrunnlaget fra den foregående tjenesten som input til tjenesten.
+Sender dere inn hele responsen fra hent formuesgrunnlag vil responsen til beregningen innholde alt som ble sendt inn pluss de beregnede feltene.
+
+Det er også er mulig å oppgi dokumentert markedsverdi.
+Ugyldig dokumentert markedsverdi i forhold til klagegrense vil ikke hensyntas. Mer informasjon om klage finnes på [Klage til Skatteetaten](https://www.skatteetaten.no/kontakt/klage/).
+Om dokumentert markedsverdi har blitt hensyntatt vil responsen fra beregningstjenesten inkludere justert markedsverdi.
+
+Eventuell opplasting av vedlegg for å dokumentere markedsverdi/utleieverdi er dokumentert på [siden for innsending av skattemeldingen](../api/innrapportering-skattemelding-innsending#2--laste-opp-vedlegg-til-skattemeldingen).
 
 Informasjonsmodellene fra inntektsår 2024 er forskjellige fra tidligere inntektsår.
 Blant annet er feltnavnene for dokumentert markedsverdi, justert markedsverdi og beregnet markedsverdi hhv. `dokumentertMarkedsverdi`, `justertMarkedsverdi` og `beregnetMarkedsverdi` før inntektsår 2024,
 mens det er spesifikke feltnavn per boligtype fra inntektsår 2024 som er dokumentert nedenfor.
 
 ### 3.1 Beregning av markedsverdi for bolig
-Beregningen er basert på sjablong fra SSB hvor boligegenskaper og inntektsår inngår i beregningen.
+Beregningen er basert på sjablong fra SSB hvor boligegenskaper og inntektsår inngår i beregningen. Vi tilbyr også en
+[kalkulator for beregning av markedsverdi og formuesverdi på bolig på våre nettsider](https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/bolig-og-eiendeler/bolig-eiendom-tomt/formuesverdi/boligverdikalkulator/). Denne bruker samme beregninger som API-ene, så dere kan bruke kalkulatoren til å sammenligne resultatene.
 
 Endepunktet `/api/skattemelding/v2/eiendom/markedsverdi/bolig/{inntektsår}/{eiendomsidentifikator}` benyttes for å beregne markedsverdi for bolig.
 Feltet `beregnetMarkedsverdiForBolig` i responsen er den beregnede markedsverdien for boligen.
@@ -299,7 +286,8 @@ Skal det sendes med dokumentert markedsverdi for flerboligbygning, sendes feltet
 I responsen returneres justert markedsverdi for flerboligbygning i feltet `justertMarkedsverdiForFlerboligbygning`.
 
 ### 3.3 Beregning av utleieverdi for næringseiendom
-Beregningen er basert på næringssjablong fra SSB hvor næringstype, areal, bystatus, sentralitet og skatteleggingsperiode inngår i beregningen.
+Beregningen er basert på næringssjablong fra SSB hvor næringstype, areal, bystatus, sentralitet og skatteleggingsperiode inngår i beregningen. Vi tilbyr også en
+[kalkulator for beregning av utleieverdi av ikke-utleid næringseiendom på våre nettsider](https://www.skatteetaten.no/bedrift-og-organisasjon/rapportering-og-bransjer/bransjer-med-egne-regler/eiendom-og-bolig/naringseiendomkalkulator/). Denne bruker samme beregninger som API-ene, så dere kan bruke kalkulatoren til å sammenligne resultatene.
 
 Endepunktet `/api/skattemelding/v2/eiendom/utleieverdi/{inntektsår}/{eiendomsidentifikator}` benyttes for å beregne utleieverdi for næringseiendom.
 

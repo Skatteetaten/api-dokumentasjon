@@ -84,7 +84,7 @@ hente skattemeldingen til eller sende inn skattemelding for.
 
 Autentisering skjer enten via ID-porten eller Maskinporten:
 
-- Personlig innlogging vil skje via ID-porten med bruk av sluttbrukerens eget personnummer.
+- Personlig innlogging vil skje via ID-porten med bruk av sluttbrukerens eget fødselsnummer.
 - Systemer/maskiner som ønsker å opptre på vegne av en organisasjon kan autentisere seg via Maskinporten.
 
 Tilgang til API-ene kan gis til en bruker som logger inn via ID-porten, eller til en systembruker som autentiseres via Maskinporten.
@@ -127,9 +127,8 @@ For Altinn3 trengs det i tillegg til scope for skattemelding noen Altinn-spesifi
 For å se maksimal levetid til Altinn sine scopes, finner man oversikt over disse på [DigDir Scopes - Altinn dokumentasjon](https://docs.altinn.studio/nb/api/authentication/digdirscopes/).
 
 ### Tilgangspakker
-API-ene krever at brukeren som logger inn via ID-porten, eller systembrukeren som autentiseres via Maskinporten, har tilgang til én eller flere av tilgangspakkene i tabellen under.
+Vi anbefaler å bruke tilgangspakker fra Altinn for å kontrollere tilgangsstyringen til tjenestene.
 Hvilke tilgangspakker som er aktuelle, avhenger av hvem brukeren eller systembrukeren skal representere.
-Felles for alle tilgangspakkene er at de også gir tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`, som er påkrevd både for Skatteetatens og Altinns tjenester:
 
 | Tilgangspakke                               | URN                                                                | Når den er aktuell og tilgang i innsendingsløpet                                                                                                                  |
 |---------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -141,7 +140,11 @@ Felles for alle tilgangspakkene er at de også gir tilgang til ressursen `app_sk
 | **Skatt næring**                            | `urn:altinn:accesspackage:skatt-naering`                           | For skattetjenester for næringsvirksomhet. Kan lese og arbeide med utkast og bekrefte innsendingssteget.                                                          |
 | **Skatteforhold for privatpersoner**        | `urn:altinn:accesspackage:innbygger-skatteforhold-privatpersoner`  | For fullmakt til skatteforhold for privatpersoner. Kan lese og arbeide med utkast og bekrefte innsendingssteget for privatpersoner.                               |
 
-Alle pakkene gir tilgang til å opprette og lese en instans i Altinn og arbeide med skattemeldingen og næringsspesifikasjonen.
+Felles for alle tilgangspakkene er at de også gir tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`.
+Denne ressursen er påkrevd både for Skatteetatens og Altinns tjenester.
+Ved bruk av standard systembruker kan dere også få delegert tilgang til enkelttjenester direkte på ressursen `app_skd_formueinntekt-skattemelding-v2`.
+
+Alle tilgangspakkene gir også tilgang til å opprette og lese en instans i Altinn og arbeide med skattemeldingen og næringsspesifikasjonen.
 Bare **Ansvarlig revisor** og **Revisorattesterer** kan bekrefte i revisors signeringssteg, ikke **Revisormedarbeider**. Se [kapittel 5 Sende videre til revisors signering](../api/innrapportering-skattemelding-innsending#5--sende-videre-til-revisors-signering) for den detaljerte flyten.
 
 [Tjenesteoversikten utviklet av Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2) beskriver tilgangspakkene ytterligere. Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.
@@ -174,7 +177,8 @@ Som det fremkommer av figuren kan skattemeldingen med tilhørende næringsspesif
   skattepliktige fylle ut deler av personlig skattemelding, eller å kun støtte næringsspesifikasjon,
   og la den den skattepliktige fullføre innsending av skattemelding i Skatteetatens portalløsning (SME).
 
-Næringsspesifikasjonen kan ikke redigeres. Skal næringsspesifikasjon endres, må denne sendes inn på nytt fra sluttbrukersystemet.
+Næringsspesifikasjon dere sender inn fra sluttbrukersystemet kan ikke redigeres av personlig skattepliktige i Skattemeldingsportalen.
+Skal næringsspesifikasjon redigeres, må denne redigeres og sendes inn på nytt fra sluttbrukersystemet.
 
 Det er fire hovedstrategier for hvordan man integrerer seg mot Skatteetatens tjenester for innsending av skattemelding og næringsspesifikasjon.
 Dette er ikke en uttømmende liste, men representerer de mest vanlige scenariene:
