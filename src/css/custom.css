@@ -49,3 +49,15 @@
   margin-top: 0.8rem !important;
 }
 
+.responsive-table table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.responsive-table th,
+.responsive-table td,
+.responsive-table code {
+  overflow-wrap: anywhere;
+}
+
