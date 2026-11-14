@@ -14,8 +14,8 @@ hide_table_of_contents: true
 Denne siden inneholder en onboardingsguide for innrapportering av
 skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige fra sluttbrukersystem.
 Har du en etablert integrasjon mot Skatteetatens API-er for innrapportering av skattemeldingen og ser etter spesifikke detaljer,
-kan du gå til [Avansert bruk](../anvendelsesomraader/skattemelding?tab=Avansert+bruk).
-For delingstjenester tilknyttet skattemeldingen, se [API-er for deling for skattemeldingen](../anvendelsesomraader/skattemelding#api-er-for-deling-for-skattemeldingen).
+kan du gå til [Avansert bruk](skattemelding-new.md?tab=Avansert+bruk).
+For delingstjenester tilknyttet skattemeldingen, se [API-er for deling for skattemeldingen](skattemelding-new.md#api-er-for-deling-for-skattemeldingen).
 
 Den primære målgruppen er systemleverandører av årsoppgjørsprogram eller regnskapssystem for
 innrapportering av skattemeldingen og næringsopplysninger. Slike systemer kalles heretter
@@ -304,7 +304,7 @@ De tre aktørene i dette scenariet kan ha hvert sitt sluttbrukersystem fra ulike
 Når tilgang til testmiljøet er på plass, er neste steg å integrere mot tjenesten for å hente gjeldende skattemelding
 for å starte utfylling av skattemeldingen og næringsspesifikasjonen.
 Dette er dokumentert på siden [Skattemelding utfyllingstjenester](../api/innrapportering-skattemelding-utfylling).
-Les først den generelle informasjon på siden før du går videre til fanen [Hent gjeldende skattemelding](../api/innrapportering-skattemelding-utfylling?tab=Hent+gjeldende+skattemelding).
+Les først den generelle informasjon på siden før du går videre til fanen _Hent gjeldende skattemelding_.
 
 Når gjeldende skattemelding er hentet, kan dere starte å fylle ut skattemeldingen og næringsspesifikasjonen i sluttbrukersystemet.
 

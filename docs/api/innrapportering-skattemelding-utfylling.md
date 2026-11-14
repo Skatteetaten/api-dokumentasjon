@@ -8,6 +8,7 @@ tags: [API, Skattemelding, Eiendom, Perioder]
 keywords: [skattemelding, eiendom, perioder]
 last_updated: Oct 22, 2026
 hide_table_of_contents: false
+unlisted: true
 ---
 
 import Perioder from '../api/innrapportering-skattemelding-perioder.md';
@@ -33,7 +34,7 @@ Merk at dere har anledning til å foreta løpende valideringer underveis i utfyl
 vente med å integrere valideringstjenesten til utfylling er fullført.
 
 ## Generelle konsepter i XSD-filene
-Noen typer og egenskaper brukes på tvers av informasjonsmodellene dokumentert i [onboardingsguiden](../anvendelsesomraader/skattemelding#informasjonsmodell-onboarding). XSD-ene angir hvilke egenskaper som er tilgjengelige på det enkelte objektet eller feltet.
+Noen typer og egenskaper brukes på tvers av informasjonsmodellene dokumentert i [onboardingsguiden](skattemelding-new.md#informasjonsmodell-onboarding). XSD-ene angir hvilke egenskaper som er tilgjengelige på det enkelte objektet eller feltet.
 
 ### ID-er
 Objekter i skattemeldingen har en `id` som identifiserer den enkelte forekomsten. Når et objekt kommer fra et utkast,
@@ -181,7 +182,7 @@ eiendommer som inngår i skattemeldingen.
 
 | Begrep          | Beskrivelse                                                                                                |
 |-----------------|------------------------------------------------------------------------------------------------------------|
-| x             | Sluttbrukersystem                                                                                          |
+| SBS             | Sluttbrukersystem                                                                                          |
 | SERG            | Betegnelse på Eiendomsregisteret                                                                           |
 | Markedsverdi    | Markedsverdien som sluttbrukersystem beregner ved hjelp av eiendomstjenestene                              |
 | Formuesverdi    | Formuesverdien som Skatteetaten beregner basert på markedsverdien ved innsending av skattemeldingen        |
@@ -201,7 +202,7 @@ Endepunktene med informasjonsmodeller er dokumentert under [Eiendomstjenester i 
 <br/> _Funksjonell flyt for beregning av markedsverdi for eiendommer som inngår i skattemeldingen_
 
 ## Scope
-Som beskrevet i [hovedsiden for innrapportering av skattemelding](../anvendelsesomraader/skattemelding#scopes)
+Som beskrevet i [hovedsiden for innrapportering av skattemelding](skattemelding-new.md#scopes)
 trengs det et eget scope `skatteetaten:formueinntekt/skattemelding/eiendom` for å få tilgang til eiendomstjenestene.
 
 ## 1. Søk etter eiendom

@@ -8,6 +8,7 @@ tags: [API, Skattemelding]
 keywords: [skattemelding]
 last_updated: Oct 22, 2026
 hide_table_of_contents: false
+unlisted: true
 ---
 
 <Summary>Innsendingstjenester i forbindelse med innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>
@@ -291,7 +292,7 @@ Opplasting av skattedata til Altinn gjøres i en såkalt konvolutt som inneholde
 inntektsår og innsendingsinformasjon.
 
 Nedenfor beskrives de ulike XSD-filene overordnet. Versjonsnummeret er tatt bort fra filnavnet fordi disse revideres årlig
-som vi beskriver i [årsrevisjon av spesifikasjonene](../anvendelsesomraader/skattemelding#årsrevisjon-av-spesifikasjonene).
+som vi beskriver i [årsrevisjon av spesifikasjonene](skattemelding-new.md#årsrevisjon-av-spesifikasjonene).
 Dokumentasjonen vil ikke ta for seg alle felter i XSD-ene, men det henvises til [veilederen](https://skattemelding-veileder.formueinntekt.skatt.skatteetaten.no/) og [begrepskatalogen](https://data.skatteetaten.no/web/datakatalog/begreper) for informasjon om de ulike feltene.
 
 ### Request-objekt
@@ -452,6 +453,12 @@ Vedlegg kan knyttes direkte til en forekomst ved hjelp av de to sistnevnte eleme
 <span id="sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon"></span>
 
 # Sekvensdiagram for innsending av skattemelding med næringsspesifikasjon
+Når dere har integrert med valideringstjenesten og Altinn3-tjenesten etter å ha fulgt de foregående stegene i prosessen,
+vil sekvensen av integrasjoner se ut som vist i sekvensdiagrammet under.
+
+Vi tilbyr også flere andre nyttige tjenester til bruk ved innrapportering av skattemelding som ikke er en del av den 
+nødvendige flyten for innsending av skattemeldingen. Dere finner dokumentasjon av disse under [andre tjenester](../api/innrapportering-skattemelding-andre-tjenester).
+
 [![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
 
 
