@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="nb" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api/innrapportering-skattemelding-onboarding" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Onboarding for innrapportering skattemelding API | API-dokumentasjon</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-onboarding"><meta data-rh="true" property="og:locale" content="nb"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="nb"><meta data-rh="true" name="docsearch:language" content="nb"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Onboarding for innrapportering skattemelding API | API-dokumentasjon"><meta data-rh="true" name="description" content="Introduksjon"><meta data-rh="true" property="og:description" content="Introduksjon"><meta data-rh="true" name="keywords" content="skattemelding"><link data-rh="true" rel="icon" href="/api-dokumentasjon/img/favicon.png"><link data-rh="true" rel="canonical" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-onboarding"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-onboarding" hreflang="nb"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-onboarding" hreflang="en"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-onboarding" hreflang="x-default"><link rel="alternate" type="application/atom+xml" href="/api-dokumentasjon/nyheter-og-driftsvarsler/atom.xml" title="Skatteetaten - API nyheter Atom Feed"><link rel="stylesheet" href="/api-dokumentasjon/assets/css/styles.93f12caa.css">
+<script src="/api-dokumentasjon/assets/js/runtime~main.eb84cb06.js" defer="defer"></script>
+<script src="/api-dokumentasjon/assets/js/main.ed6cb4f2.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div dir="ltr" class="body-98"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="navigation_AME2 navbar"></div><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col"><div class="docItemContainer_Djhp"><article><div class="theme-doc-markdown markdown"><header><h1>Onboarding for innrapportering skattemelding API</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduksjon">Introduksjon<a href="#introduksjon" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Denne siden inneholder en onboardingsguide for innrapportering av
+skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige fra sluttbrukersystem.
+Har du en etablert integrasjon mot Skatteetatens API-er for innrapportering av skattemeldingen og ser etter spesifikke detaljer,
+kan du gå til <a class="" href="/api-dokumentasjon/anvendelsesomraader/skattemelding-new?tab=Avansert+bruk">Avansert bruk</a>.
+For delingstjenester tilknyttet skattemeldingen, se <a class="" href="/api-dokumentasjon/anvendelsesomraader/skattemelding-new#api-er-for-deling-for-skattemeldingen">API-er for deling for skattemeldingen</a>.</p>
+<p>Den primære målgruppen er systemleverandører av årsoppgjørsprogram eller regnskapssystem for
+innrapportering av skattemeldingen og næringsopplysninger. Slike systemer kalles heretter
+sluttbrukersystemer (SBS).</p>
+<p>Løsningen legger opp til at en innsending skal inneholde en skattemelding. For personlig skattepliktige som driver
+enkeltpersonforetak (ENK), upersonlig skattepliktige (selskaper) og for selskaper med deltakerfastsetting (SDF),
+skal innsendingen også <strong>alltid</strong> inneholde næringsspesifikasjon. Det er kun lønnstakere og pensjonister som kun sender inn
+skattemelding. Dette illustreres her:</p>
+<p><a href="/api-dokumentasjon/assets/files/Skattemeldingsvarianter-a0f4f07cb2247c06c3aac49e0acbaafe.png" target="_blank" class=""><img decoding="async" loading="lazy" alt="Skattemeldingsvarianter.png" src="/api-dokumentasjon/assets/images/Skattemeldingsvarianter-a0f4f07cb2247c06c3aac49e0acbaafe.png" width="676" height="440" class="img_ev3q"></a>
+<br><em>Illustrasjon av skattemeldingsvarianter for personlige og upersonlige skattepliktige.</em></p>
+<p>Vi anbefaler at du leser følgende generelle sider før denne onboardingsguiden:</p>
+<ul>
+<li class=""><a class="" href="/api-dokumentasjon/">Kom i gang</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/om/bruk_innrapportering">Bruk av API-er for innrapportering</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/om/sikkerhet">Sikkerhetsmekanismer</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/om/systembruker">Systembruker</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/om/feil">Feilhåndtering</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/om/versjoner">Versjonering</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/om/tekniskspesifikasjon">Teknisk spesifikasjon</a></li>
+</ul>
+<p>For informasjon og oppdateringer for systemleverandører med integrasjon mot skattemeldingen for person og næring, se Skatteetatens <a href="https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/" target="_blank" rel="noopener noreferrer" class="">fellessider for systemleverandører</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-er-for-innrapportering-av-skattemeldingen">API-er for innrapportering av skattemeldingen<a href="#api-er-for-innrapportering-av-skattemeldingen" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Det tilbys to sett med tjenester for innrapportering:</p>
+<ul>
+<li class="">Skatteetaten tilbyr egne tjenester for blant annet henting og validering av skattemeldinger, eiendomskalkulator,
+søknad om utsatt frist, m.m. Disse er dokumentert på egne sider under <em>API-er for innrapportering</em>:<!-- -->
+<ul>
+<li class=""><a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-utfylling">Skattemelding utfyllingstjenester</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-andre-tjenester">Skattemelding andre tjenester</a></li>
+<li class="">Utkast til OpenAPI-spesifikasjon for Skattemeldingen finnes <a href="/api-dokumentasjon/download/skattemeldingupersonlig/openapi.html" target="_blank" rel="noopener noreferrer" class="">her</a></li>
+</ul>
+</li>
+<li class="">Skatteetaten har opprettet en egen app i Altinn3 som håndterer innsendingen av skattemeldingen med næringsspesifikasjon,
+opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å hente ut kvittering på innsendt skattemelding i ettertid.
+Dette er dokumentert på en egen side under <em>API-er for innrapportering</em>:<!-- -->
+<ul>
+<li class=""><a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-innsending">Skattemelding innsendingstjenester</a></li>
+<li class="">Altinn3-API-ene har sin egen OpenAPI-spesifikasjon tilgjengelig på <a href="https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2" target="_blank" rel="noopener noreferrer" class="">OpenAPI-spesifikasjon for Altinn3-appen</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-er-for-deling-for-skattemeldingen">API-er for deling for skattemeldingen<a href="#api-er-for-deling-for-skattemeldingen" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>I tillegg til API-ene knyttet til innsending av skattemeldingen, har vi laget noen klassiske delingstjenester for SSB og enkelte andre partnere med hjemmel for innsyn i skattemeldingsdata:</p>
+<ul>
+<li class=""><a class="" href="/api-dokumentasjon/api/beregnetskatt"><strong>Beregnet skatt API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/beregnetskattupersonlig"><strong>Beregnet skatt upersonlig API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/naeringsspesifikasjon">Næringsspesifikasjon API</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/selskapsmelding"><strong>Selskapsmelding API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/skatteberegningsgrunnlagupersonlig"><strong>Skatteberegningsgrunnlag upersonlig API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/skattemelding">Skattemelding API</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/skattemeldingupersonlig">Skattemelding upersonlig API</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/skatteplikt"><strong>Skatteplikt API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/skattepliktupersonlig"><strong>Skatteplikt upersonlig API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/summertskattegrunnlag"><strong>Summert skattegrunnlag API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/summertskattegrunnlagupersonlig"><strong>Summert skattegrunnlag upersonlig API</strong></a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/tilleggsskatt">Tilleggsskatt API</a></li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="andre-relevante-api-er-for-skattemeldingen">Andre relevante API-er for skattemeldingen<a href="#andre-relevante-api-er-for-skattemeldingen" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>I tillegg tilbyr Skatteetaten tjenesten <a class="" href="/api-dokumentasjon/api/skattdialogdokumenter">Skatt dialogdokumenter</a>
+for å hente ut dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen. Denne tjenesten krever separate tilganger og er ikke en del av innsendingsløpet for skattemeldingen.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilgang-til-api-ene">Tilgang til API-ene<a href="#tilgang-til-api-ene" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Når en skattepliktig skal benytte et sluttbrukersystem for å sende inn skattemeldingen og næringsopplysninger gjennom
+API må sluttbrukeren og/eller sluttbrukersystemet være autentisert og autorisert gjennom en påloggingsprosess.</p>
+<p>Ved kall til skattemelding-API ønsker Skatteetaten å kjenne til identiteten til innsender. Identiteten til pålogget
+bruker, kombinert med informasjon fra Altinn autorisasjon vil avgjøre hvilken person/selskap en pålogget bruker kan
+hente skattemeldingen til eller sende inn skattemelding for.</p>
+<p>Autentisering skjer enten via ID-porten eller Maskinporten:</p>
+<ul>
+<li class="">Personlig innlogging vil skje via ID-porten med bruk av sluttbrukerens eget fødselsnummer.</li>
+<li class="">Systemer/maskiner som ønsker å opptre på vegne av en organisasjon kan autentisere seg via Maskinporten.</li>
+</ul>
+<p>Tilgang til API-ene kan gis til en bruker som logger inn via ID-porten, eller til en systembruker som autentiseres via Maskinporten.
+For noen tjenester er autentisering med ID-Porten påkrevd. Dette gjelder blant annet tjenesten for å bekrefte skattemeldingen i Altinn3.</p>
+<p>En mer detaljert guide for hvordan opprette en systembruker finnes under <a class="" href="/api-dokumentasjon/om/systembruker">Systembruker</a>.
+I likhet med Maskinporten-integrasjon benyttes Samarbeidsportalen til å opprette en ID-Porten-integrasjon.
+For mer informasjon om autentisering og autorisasjon, inkludert hvordan komme i gang med ID-Porten, se <a class="" href="/api-dokumentasjon/om/sikkerhet">Sikkerhet</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilgang-til-altinn3-app-api">Tilgang til Altinn3 App API<a href="#tilgang-til-altinn3-app-api" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p>Access-tokenet fra ID-porten eller Maskinporten må veksles til et Altinn-token for å autentisere seg mot Altinn3 API-et for innsending av skattemeldingen.
+Mer informasjon om autentisering med ID-porten finnes på
+<a href="https://docs.altinn.studio/nb/authorization/getting-started/authentication/id-porten/" target="_blank" rel="noopener noreferrer" class="">Altinns side for autentisering med ID-porten</a>.
+En mer teknisk dokumentasjon finnes i <a href="https://docs.altinn.studio/nb/api/scenarios/authentication/" target="_blank" rel="noopener noreferrer" class="">Altinns API-dokumentasjon</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="scopes">Scopes<a href="#scopes" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="skatteetaten-api">Skatteetaten API<a href="#skatteetaten-api" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<p>Følgende scopes må konfigureres i Samarbeidsportalen for autentisering mot Skatteetatens API-er.
+Maksimal levetid i tabellen gjelder token fra Maskinporten:</p>
+<table><thead><tr><th>Scope</th><th>Beskrivelse</th><th>Levetid access-token</th><th>Levetid refresh-token</th></tr></thead><tbody><tr><td>skatteetaten<!-- -->:formueinntekt<!-- -->/skattemelding</td><td>Tilgang til skattemeldingstjenester</td><td>8 timer</td><td>90 dager</td></tr><tr><td>skatteetaten<!-- -->:formueinntekt<!-- -->/skattemelding/eiendom</td><td>Tilgang til eiendomstjenester</td><td>8 timer</td><td>90 dager</td></tr></tbody></table>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Scopet med den korteste levetiden vil være gjeldende for hele access-tokenet.
+Det anbefales å begrense levetiden på access-tokenet ytterligere, og heller ta i bruk refresh-token.</p></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="altinn3-api">Altinn3 API<a href="#altinn3-api" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<p>For Altinn3 trengs det i tillegg til scope for skattemelding noen Altinn-spesifikke scopes, som listet opp i tabellen under:</p>
+<table><thead><tr><th>Scope</th><th>Beskrivelse</th></tr></thead><tbody><tr><td>skatteetaten<!-- -->:formueinntekt<!-- -->/skattemelding</td><td>Skatteetaten-scope spesielt relevant for å endre status på innsendingen i Altinn3</td></tr><tr><td>altinn<!-- -->:instances<!-- -->.read</td><td>Scope Altinn krever for å hente innhold i Altinn3-appen fra sluttbrukersystem</td></tr><tr><td>altinn<!-- -->:instances<!-- -->.write</td><td>Scope Altinn krever for å sende inn innhold i Altinn3-appen fra sluttbrukersystem</td></tr></tbody></table>
+<p>For å se maksimal levetid til Altinn sine scopes, finner man oversikt over disse på <a href="https://docs.altinn.studio/nb/api/authentication/digdirscopes/" target="_blank" rel="noopener noreferrer" class="">DigDir Scopes - Altinn dokumentasjon</a>.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilgangspakker">Tilgangspakker<a href="#tilgangspakker" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p>Vi anbefaler å bruke tilgangspakker fra Altinn for å kontrollere tilgangsstyringen til tjenestene.
+Hvilke tilgangspakker som er aktuelle, avhenger av hvem brukeren eller systembrukeren skal representere.</p>
+<table><thead><tr><th>Tilgangspakke</th><th>URN</th><th>Når den er aktuell og tilgang i innsendingsløpet</th></tr></thead><tbody><tr><td><strong>Ansvarlig revisor</strong></td><td><code>urn:altinn:accesspackage:ansvarlig-revisor</code></td><td>For ansvarlig revisor på vegne av en kunde. Kan lese og arbeide med utkast og bekrefte i revisors eget steg, men ikke i innsendingssteget før revisors signatur.</td></tr><tr><td><strong>Revisormedarbeider</strong></td><td><code>urn:altinn:accesspackage:revisormedarbeider</code></td><td>For revisormedarbeider på vegne av en kunde. Kan lese og arbeide med utkast, men ikke bekrefte innsendingssteget.</td></tr><tr><td><strong>Revisorattesterer</strong></td><td><code>urn:altinn:accesspackage:revisorattesterer</code></td><td>For tjenester som krever revisorattestering. Kan lese og arbeide med utkast og bekrefte i revisors eget steg, men ikke i innsendingssteget før revisors signatur.</td></tr><tr><td><strong>Regnskapsfører med signeringsrettighet</strong></td><td><code>urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet</code></td><td>For regnskapsfører med signeringsrett på vegne av en kunde. Kan lese og arbeide med utkast og bekrefte innsendingssteget.</td></tr><tr><td><strong>Regnskapsfører uten signeringsrettighet</strong></td><td><code>urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet</code></td><td>For regnskapsfører uten signeringsrett på vegne av en kunde. Kan lese og arbeide med utkast, men ikke bekrefte innsendingssteget.</td></tr><tr><td><strong>Skatt næring</strong></td><td><code>urn:altinn:accesspackage:skatt-naering</code></td><td>For skattetjenester for næringsvirksomhet. Kan lese og arbeide med utkast og bekrefte innsendingssteget.</td></tr><tr><td><strong>Skatteforhold for privatpersoner</strong></td><td><code>urn:altinn:accesspackage:innbygger-skatteforhold-privatpersoner</code></td><td>For fullmakt til skatteforhold for privatpersoner. Kan lese og arbeide med utkast og bekrefte innsendingssteget for privatpersoner.</td></tr></tbody></table>
+<p>Felles for alle tilgangspakkene er at de også gir tilgang til ressursen <code>app_skd_formueinntekt-skattemelding-v2</code>.
+Denne ressursen er påkrevd både for Skatteetatens og Altinns tjenester.
+Ved bruk av standard systembruker kan dere også få delegert tilgang til enkelttjenester direkte på ressursen <code>app_skd_formueinntekt-skattemelding-v2</code>.</p>
+<p>Alle tilgangspakkene gir også tilgang til å opprette og lese en instans i Altinn og arbeide med skattemeldingen og næringsspesifikasjonen.
+Bare <strong>Ansvarlig revisor</strong> og <strong>Revisorattesterer</strong> kan bekrefte i revisors signeringssteg, ikke <strong>Revisormedarbeider</strong>. Se <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-innsending#5--sende-videre-til-revisors-signering">kapittel 5 Sende videre til revisors signering</a> for den detaljerte flyten.</p>
+<p><a href="https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2" target="_blank" rel="noopener noreferrer" class="">Tjenesteoversikten utviklet av Altinn</a> beskriver tilgangspakkene ytterligere. Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.</p>
+<p>Ved bruk av systembruker må systemleverandøren oppgi de aktuelle pakkenes <em>URN</em> i <code>accessPackages</code> ved <a class="" href="/api-dokumentasjon/om/systembruker#steg-for-steg">registrering av systemet og opprettelse av forespørsel om systembruker</a>.
+Den som skal gi systembrukeren tilgang, må godkjenne forespørselen i Altinn. For klientsystembruker knyttes aktuelle klienter til systemtilgangen.
+Ved bruk av ID-porten må den innloggede brukeren ha de aktuelle tilgangene i Altinn.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="skatteetaten-må-gi-tilgang">Skatteetaten må gi tilgang<a href="#skatteetaten-må-gi-tilgang" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p>For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
+<a href="https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/#trenger-du-hjelp" target="_blank" rel="noopener noreferrer" class="">Bestill tilgang til API-et</a></p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ta-i-bruk-api-ene">Ta i bruk API-ene<a href="#ta-i-bruk-api-ene" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>I øvrig dokumentasjonen benyttes begrepet <em>skattepliktig</em>  for personen eller selskapet skattemeldingen
+med eventuell næringsspesifikasjon sendes inn for. Det er ikke ensbetydende med at det er den skattepliktige som utfører innleveringsprosessen
+dokumentert her. Eksempelvis kan en regnskapsfører være den som leverer inn skattemeldingen
+på vegne av den skattepliktige. For selskaper representerer daglig leder eller styreleder den skattepliktige enheten.</p>
+<p>Følgende figur gir en en overordnet flyt med aktører og komponenter for innsending av skattemelding med næringsspesifikasjon:</p>
+<p><a href="/api-dokumentasjon/assets/files/Komponentoversikt skattemelding næring for SBS-c0198ac2d5dae688cf36102829eb37f6.png" target="_blank" class=""><img decoding="async" loading="lazy" alt="Overordnet løsningsoversikt" src="/api-dokumentasjon/assets/images/Komponentoversikt skattemelding næring for SBS-c0198ac2d5dae688cf36102829eb37f6.png" width="1325" height="1195" class="img_ev3q"></a>
+<br> <em>Overordnet løsningsoversikt for innrapportering av skattemelding med næringsspesifikasjon fra sluttbrukersystem.</em></p>
+<p>Som det fremkommer av figuren kan skattemeldingen med tilhørende næringsspesifikasjon sendes inn som <em>komplett</em> eller <em>ikke-komplett</em>.</p>
+<ul>
+<li class="">Ved <strong>komplett innsending</strong> sendes ferdig utfylt skattemelding og næringsspesifikasjon inn fra sluttbrukersystemet
+og lagres hos Skatteetaten som <u>gjeldende fastsetting</u>.</li>
+<li class=""><strong>Ikke-komplett innsending</strong> er kun støttet for personlig skattepliktige. Sluttbrukersystemet kan velge å la den
+skattepliktige fylle ut deler av personlig skattemelding, eller å kun støtte næringsspesifikasjon,
+og la den den skattepliktige fullføre innsending av skattemelding i Skatteetatens portalløsning (SME).</li>
+</ul>
+<p>Næringsspesifikasjon dere sender inn fra sluttbrukersystemet kan ikke redigeres av personlig skattepliktige i Skattemeldingsportalen.
+Skal næringsspesifikasjon redigeres, må denne redigeres og sendes inn på nytt fra sluttbrukersystemet.</p>
+<p>Det er fire hovedstrategier for hvordan man integrerer seg mot Skatteetatens tjenester for innsending av skattemelding og næringsspesifikasjon.
+Dette er ikke en uttømmende liste, men representerer de mest vanlige scenariene:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="komplett-innsending-med-full-beregningsimplementasjon">Komplett innsending med full beregningsimplementasjon:<a href="#komplett-innsending-med-full-beregningsimplementasjon" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<p>Sluttbrukersystemet implementerer alle beregninger som Skatteetaten gjør i valideringstjenesten, og sender inn skattemelding og næringsspesifikasjon som komplett.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="komplett-innsending-med-integrert-valideringstjeneste">Komplett innsending med integrert valideringstjeneste:<a href="#komplett-innsending-med-integrert-valideringstjeneste" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<p>Sluttbrukersystemet integrerer valideringstjenesten i sitt system, og sender inn skattemelding og næringsspesifikasjon som komplett.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ikke-komplett-innsending-med-beregningsstøtte-kun-for-næringsspesifikasjon">Ikke-komplett innsending med beregningsstøtte kun for næringsspesifikasjon:<a href="#ikke-komplett-innsending-med-beregningsstøtte-kun-for-næringsspesifikasjon" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<p>Sluttbrukersystemet implementerer kun støtte for beregning av næringsspesifikasjon, og sender inn utkast til skattemelding fra Skatteetaten uten endringer.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="ikke-komplett-innsending-med-integrert-valideringstjeneste-kun-for-næringsspesifikasjon">Ikke-komplett innsending med integrert valideringstjeneste kun for næringsspesifikasjon:<a href="#ikke-komplett-innsending-med-integrert-valideringstjeneste-kun-for-næringsspesifikasjon" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h4>
+<p>Sluttbrukersystemet integrerer valideringstjenesten kun for næringsspesifikasjon, og sender inn utkast til skattemelding fra Skatteetaten uten endringer.</p>
+<p>Nederst på denne siden er det et <a href="#sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon" class="">sekvensdiagram for innrapportering av skattemelding næring</a>
+som illustrerer flyten ut fra endepunktene som skal benyttes.</p>
+<p>For en overordnet beskrivelse av noen sentrale konsepter i flyten, er <a href="https://www.skatteetaten.no/bedrift-og-organisasjon/skatt/skattemelding-naringsdrivende/selskap/" target="_blank" rel="noopener noreferrer" class="">Skattemelding for selskap</a>
+nyttig bakgrunnsinformasjon.</p>
+<hr>
+<span id="informasjonsmodell-onboarding"></span>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="informasjonsmodell">Informasjonsmodell<a href="#informasjonsmodell" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Skattemeldingen og næringsopplysninger skal leveres som XML-filer. Innhold og format på XML-filene er spesifisert gjennom XML Schema Definition, XSD.</p>
+<p>De til enhver tid gjeldende XSD-filene for informasjonsmodellene per inntektsår er tilgjengelig på <a href="https://github.com/Skatteetaten/skattemeldingen/tree/master/src/resources/xsd" target="_blank" rel="noopener noreferrer" class="">skattemeldingen på GitHub</a>.
+Gjeldende versjoner oppdateres årlig iht. <a href="#%C3%A5rsrevisjon-av-spesifikasjonene" class="">årsrevisjon av spesifikasjonene</a>. Konvoluttene til de ulike XSD-filene
+er dokumentert på de ulike tjenestene for <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-utfylling">utfylling</a> og <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-innsending?tab=Informasjonsmodell+for+validering+og+innsending">innsending</a>, hvor årsspesifikk informasjon er abstrahert bort.</p>
+<p>XSD-ene beskriver informasjonsmodellen som benyttes ved utveksling av data mellom sluttbrukersystemet og Skatteetaten.
+Strukturen i informasjonsmodellen er ikke en beskrivelse av hvordan opplysningene skal presenteres for sluttbrukeren.
+De samme opplysningene kan derfor være strukturert annerledes i en brukerflate enn i XML-en.</p>
+<p>På <a href="https://github.com/Skatteetaten/skattemeldingen/tree/master/src/resources/xsd" target="_blank" rel="noopener noreferrer" class="">GitHub</a> ligger de versjonerte XSD-filene som benyttes for skattemelding personlig og upersonlig, selskapsmelding og næringsspesifikasjon, i fullstendig og kompakt format.
+I de fullstendige versjonene av XSD-filene er det referanser til <a href="https://data.skatteetaten.no/web/datakatalog/begreper" target="_blank" rel="noopener noreferrer" class="">begrepskatalogen</a>, hvor de ulike feltene er dokumentert. XSD-ene kommer også i en <a href="#kompakt-xsd" class="">kompakt versjon</a> uten referanser til begrepskatalogen.</p>
+<p>Skatteetaten har også en <a href="https://skattemelding-veileder.formueinntekt.skatt.skatteetaten.no/" target="_blank" rel="noopener noreferrer" class="">veileder</a> til skattemeldingen og næringsspesifikasjonen, hvor de ulike informasjonsmodellene er dokumentert per inntektsår.
+Dette vil være <strong>hovedkilden</strong> for informasjon om de ulike feltene i XSD-ene.</p>
+<p>Lede- og hjelpetekstene er tilgjengelige på bokmål, nynorsk, engelsk og samisk i maskinlesbart JSON-format på <a href="https://github.com/Skatteetaten/skattemeldingen/tree/master/docs/tekster" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.
+Tekstene som Skatteetaten har definert for skattemeldingen er knyttet til presentasjonen av opplysningene,
+og er ikke en del av XSD-en. Tekstene er mappet mot XPath-uttrykk som angir hvor i XML-strukturen den enkelte teksten hører til.</p>
+<p>Dokumentinnholdet i XML-forespørselene og responsene serialiseres i Base64-encodet format i henhold til <a href="https://datatracker.ietf.org/doc/html/rfc4648" target="_blank" rel="noopener noreferrer" class="">RFC 4648</a>.
+Responsen fra Skatteetaten vil alltid inneholde Base64 som er formatert på denne måten.
+Dette gjelder både ved uthenting av gjeldende skattemelding, validering og innsending av skattemeldingen med næringsspesifikasjon.
+Encodingen er gjort på <code>UTF-8</code>-format. Dette fremkommer også i <code>encoding</code>-feltet i XSD-ene.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="årsrevisjon-av-spesifikasjonene">Årsrevisjon av spesifikasjonene<a href="#årsrevisjon-av-spesifikasjonene" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>XSD-spesifikasjonene vil gjennomgå en årlig revisjon slik at det normalt kommer én ny versjon av disse per inntektsår.
+Skatteetaten har valgt å ikke ha inntektsåret i filnavnet, men derimot ha et løpende versjonsnummer.
+Dette er for å kunne støtte breaking changes i XSD-ene etter at en versjon er låst når det er strengt nødvendig.
+Før en versjon av XSD-ene låses, kan det gjøres endringer på disse fortløpende uten at dette utløser en ny versjon.</p>
+<p>Informasjon om nye versjoner av XSD-ene publiseres på <a href="https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/" target="_blank" rel="noopener noreferrer" class="">Skatteetatens side for sluttbrukersystemer</a>,
+og kan abonneres på. I tillegg oppdateres GitHub-siden <a href="https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/informasjonsmodell/README.md" target="_blank" rel="noopener noreferrer" class="">Informasjonsmodell og kodeverk</a> med gjeldende versjoner per inntektsår.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kompakt-xsd">Kompakt XSD<a href="#kompakt-xsd" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Alle XSD-filer med begrepsreferanser kommer i en &quot;kompakt versjon&quot; med <em>_kompakt</em> i filnavnet. De kompakte utgavene følger samme versjonering som de vanlige XSD-filene, men inneholder ikke referanser til begrepskatalogen.
+Siden de ikke inneholder referansen til begrepskatalogen, vil det være enklere å følge med på funksjonelle endringer fra en versjon til neste ved hjelp av Git-funksjonalitet eller eksterne verktøy for å sammenligne to XSD-er.</p>
+<p>Referanser til begrepskatalogen er angitt med egenskapen <code>skatt:begrepsreferanse</code> i de originale XSD-filene og er disse som er fjernet i de kompakte XSD-filene.</p>
+<p>Eksempel:</p>
+<pre><code><p>&lt;xsd<!-- -->:simpleType<!-- --> name=&quot;Heltall&quot; <span style="color:red">skatt<!-- -->:begrepsreferanse<!-- -->=&quot;<a href="https://data.skatteetaten.no/web/datakatalog/begrep/20b52af0-9fe1-11e5-a9f8-e4115b280940" target="_blank" rel="noopener noreferrer" class="">https://data.skatteetaten.no/web/datakatalog/begrep/20b52af0-9fe1-11e5-a9f8-e4115b280940</a>&quot;</span>&gt;
+<!-- -->  <!-- -->&lt;xsd<!-- -->:restriction<!-- --> base=&quot;xsd<!-- -->:long<!-- -->&quot; /&gt;
+&lt;/xsd<!-- -->:simpleType<!-- -->&gt;</p></code></pre>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="kodelister">Kodelister<a href="#kodelister" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>For enkelte felt er verdiene som kan angis definert i eksterne kodelister.
+Når en type i XSD-en bruker en slik kodeliste, er det angitt med egenskapen <code>skatt:eksternKodeliste</code>.</p>
+<p>Eksempel:</p>
+<pre><code><p>&lt;xsd<!-- -->:simpleType<!-- --> name=&quot;SaerskiltSkatteplikt&quot; <span style="color:red">skatt<!-- -->:eksternKodeliste<!-- -->=&quot;/formuesOgInntektsskatt/2026_saerskiltSkatteplikt.xml&quot;</span>&gt;
+<!-- -->  <!-- -->&lt;xsd<!-- -->:restriction<!-- --> base=&quot;xsd<!-- -->:string<!-- -->&quot; /&gt;
+&lt;/xsd<!-- -->:simpleType<!-- -->&gt;</p></code></pre>
+<p>Referansen i <code>skatt:eksternKodeliste</code> angir hvilken kodeliste som skal brukes for feltet. Noen kodelister er definert direkte i XSD-en.
+Disse vil ha verdien <code>skatt:eksternKodeliste=&quot;inline&quot;</code>. <br>
+Kodelistene er tilgjengelige på <a href="https://github.com/Skatteetaten/skattemeldingen/tree/master/src/resources/kodeliste" target="_blank" rel="noopener noreferrer" class="">GitHub</a>.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="interoperabilitet-mellom-ulike-sluttbrukersystemer-via-altinn">Interoperabilitet mellom ulike sluttbrukersystemer via Altinn<a href="#interoperabilitet-mellom-ulike-sluttbrukersystemer-via-altinn" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Alle ledd i løsningen skal være så standardiserte at det er mulig for en skattepliktig eller annen aktør å bytte ut ett sluttbrukersystem med et annet
+uten at det fører til problemer med å behandle skattemeldingen i det nye systemet. Dette gjelder også mellom ulike sluttbrukersystemer fra ulike leverandører.
+Dette oppnås ved at Altinn blir et felles opplastingsområde som kan benyttes til å utveksle data på tvers av ulike sluttbrukersystemer.
+Dataene som er lagret i Altinn eller sendt inn til Skatteetaten er sluttbrukerens eiendom og skal være tilgjengelig fra alle typer sluttbrukersystemer.</p>
+<p>Dette betyr at de ulike operasjonene i flyten i løsningen kan kunne utføres av sluttbrukersystemer av ulik type.
+Det er ikke et krav at en sluttbrukersystem-type støtter alle operasjoner i flyten eller må støtte data for alle inntektsår, men de operasjonene og
+inntektsårene som støttes må følge standarden. Det er dermed mulig å tilby et sluttbrukersystem som kun leverer deler av flyten i løsningen, men
+et slikt system kan ha begrenset verdi for de skattepliktige sluttbrukerne.</p>
+<p>Det er ikke et krav at sluttbrukersystemene har samme interne datamodell for skattemeldingen.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="eksempel-på-samspill-og-interoperabilitet-mellom-ulike-sluttbrukersystemer">Eksempel på samspill og interoperabilitet mellom ulike sluttbrukersystemer<a href="#eksempel-på-samspill-og-interoperabilitet-mellom-ulike-sluttbrukersystemer" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Regnskapsfører som benytter sluttbrukersystem av type &quot;A&quot; sammenstiller et utkast av skattemeldingen og næringsspesifikasjon og laster disse filene opp til Altinn som versjon 1.</li>
+<li class="">Den næringsdrivende som benytter sluttbrukersystem av type &quot;B&quot; får skattemeldingen og næringsspesifikasjon lastet ned fra Altinn til sitt sluttbrukersystem og
+kan der kontrollere eller komplettere skattemeldingen og næringsspesifikasjon . Deretter lastes skattemeldingen og næringsspesifikasjon opp
+til Altinn som versjon 2.</li>
+<li class="">Revisor som benytter sluttbrukersystem av type &quot;C&quot; får skattemeldingen og næringsspesifikasjon lastet ned fra Altinn til sitt sluttbrukersystem og kan der
+kontrollere og signere skattemeldingen og næringsspesifikasjon . Deretter oppdateres status på skattemeldingen og næringsspesifikasjon til
+&quot;signert&quot; ved at sluttbrukersystemet oppdaterer statusen til Altinn.</li>
+<li class="">Siden status nå er signert kan skattemeldingen og næringsspesifikasjon bli sendt inn til skatteetaten. Dette utføres via et API-kall fra et av de
+samarbeidende sluttbrukersystemene.</li>
+<li class="">Året etter har regnskapsfører byttet til sluttbrukersystem av type &quot;D&quot;. Fra dette sluttbrukersystemet kan regnskapsfører hente skattemeldingen for sine kunder for
+tidligere år fra Altinn/Skatteetaten.</li>
+</ul>
+<p>De tre aktørene i dette scenariet kan ha hvert sitt sluttbrukersystem fra ulike leverandører.</p>
+<h1>Neste steg</h1>
+<p>Når tilgang til testmiljøet er på plass, er neste steg å integrere mot tjenesten for å hente gjeldende skattemelding
+for å starte utfylling av skattemeldingen og næringsspesifikasjonen.
+Dette er dokumentert på siden <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-utfylling">Skattemelding utfyllingstjenester</a>.
+Les først den generelle informasjon på siden før du går videre til fanen <em>Hent gjeldende skattemelding</em>.</p>
+<p>Når gjeldende skattemelding er hentet, kan dere starte å fylle ut skattemeldingen og næringsspesifikasjonen i sluttbrukersystemet.</p>
+<p>Eiendomsinformasjon må fylles inn når dette ikke er preutfylt. Utfylling av eiendomsinformasjon er dokumentert i en egen
+fane på siden <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-utfylling?tab=Eiendomstjenester">Skattemelding utfyllingstjenester</a>.</p>
+<p>Når brukeren er ferdig med utfylling, skal skattemeldingen og næringsspesifikasjonen valideres ved bruk av
+<a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-innsending?tab=Valideringstjeneste">valideringstjenesten</a>. Valideringstjenesten vil gi tilbakemelding om eventuelle feil og mangler i skattemeldingen og næringsspesifikasjonen som brukeren enten må
+eller bør rette opp før endelig innsending.</p>
+<p>Til slutt sendere dere skattemeldingen inn ved å følge prosessen i <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-innsending?tab=Altinn3-app+for+innsending">Altinn3-appen for innsending</a>.</p>
+<span id="sekvensdiagram-for-innsending-av-skattemelding-med-naeringsspesifikasjon"></span>
+<h1>Sekvensdiagram for innsending av skattemelding med næringsspesifikasjon</h1>
+<p>Dette sekvensdiagrammet illustrerer hovedflyten for bruk av de ulike API-ene for <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-utfylling">utfylling</a> og <a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-innsending">innsending</a>.
+<a href="/api-dokumentasjon/assets/files/Flytdiagram innrapportering av skattemelding næring-8a8c819f0b7997a841a408bc094ebd14.png" target="_blank" class=""><img decoding="async" loading="lazy" alt="Flytdiagram innrapportering av skattemelding næring.png" src="/api-dokumentasjon/assets/images/Flytdiagram innrapportering av skattemelding næring-8a8c819f0b7997a841a408bc094ebd14.png" width="1274" height="3943" class="img_ev3q"></a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/api-dokumentasjon/tags/api">API</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/api-dokumentasjon/tags/skattemelding">Skattemelding</a></li></ul></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages navigation"></nav></div></div></div></div></main></div></div></div></div></div>
+</body>
+</html>

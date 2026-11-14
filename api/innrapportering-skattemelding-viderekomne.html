@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="nb" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api/innrapportering-skattemelding-viderekomne" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Avansert bruk Innrapportering skattemelding API | API-dokumentasjon</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-viderekomne"><meta data-rh="true" property="og:locale" content="nb"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="nb"><meta data-rh="true" name="docsearch:language" content="nb"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Avansert bruk Innrapportering skattemelding API | API-dokumentasjon"><meta data-rh="true" name="description" content="Denne siden inneholder informasjon for leverandører som har en etablert integrasjon mot Skatteetaten og Altinn,"><meta data-rh="true" property="og:description" content="Denne siden inneholder informasjon for leverandører som har en etablert integrasjon mot Skatteetaten og Altinn,"><meta data-rh="true" name="keywords" content="skattemelding"><link data-rh="true" rel="icon" href="/api-dokumentasjon/img/favicon.png"><link data-rh="true" rel="canonical" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-viderekomne"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-viderekomne" hreflang="nb"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-viderekomne" hreflang="en"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-viderekomne" hreflang="x-default"><link rel="alternate" type="application/atom+xml" href="/api-dokumentasjon/nyheter-og-driftsvarsler/atom.xml" title="Skatteetaten - API nyheter Atom Feed"><link rel="stylesheet" href="/api-dokumentasjon/assets/css/styles.93f12caa.css">
+<script src="/api-dokumentasjon/assets/js/runtime~main.eb84cb06.js" defer="defer"></script>
+<script src="/api-dokumentasjon/assets/js/main.ed6cb4f2.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div dir="ltr" class="body-98"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="navigation_AME2 navbar"></div><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col"><div class="docItemContainer_Djhp"><article><div class="theme-doc-markdown markdown"><header><h1>Avansert bruk Innrapportering skattemelding API</h1></header><p>Denne siden inneholder informasjon for leverandører som har en etablert integrasjon mot Skatteetaten og Altinn,
+og som trenger å søke opp spesifikke detaljer knyttet til integrasjonene.
+Følgende lenker kan være nyttige:</p>
+<table><thead><tr><th>Lenke</th><th>Beskrivelse</th></tr></thead><tbody><tr><td><a href="https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/" target="_blank" rel="noopener noreferrer" class="">Skatteetatens fellessider for systemleverandører</a></td><td>Informasjon og oppdateringer for systemleverandører med integrasjon mot skattemeldingen for person og næring.</td></tr><tr><td><a href="https://skattemelding-veileder.formueinntekt.skatt.skatteetaten.no/" target="_blank" rel="noopener noreferrer" class="">Veilederen</a></td><td>Veilederen for feltene i skattemeldingen og næringsspesifikasjonen. Hovedkilden for beskrivelse av innholdet i XSD-filene.</td></tr><tr><td><a href="https://data.skatteetaten.no/web/datakatalog/begreper" target="_blank" rel="noopener noreferrer" class="">Begrepskatalogen</a></td><td>Dokumentasjon av begreper brukt i XSD-filene hvor det er henvisning til <code>begrepsreferanse</code></td></tr><tr><td><a href="/api-dokumentasjon/download/skattemeldingupersonlig/openapi.html" target="_blank" rel="noopener noreferrer" class="">OpenAPI-spesifikasjon for Skatteetatens tjenester</a></td><td>Utkast til OpenAPI-spesifikasjon for Skatteetatens API-er.</td></tr><tr><td><a href="https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2" target="_blank" rel="noopener noreferrer" class="">OpenAPI-spesifikasjon for Altinn3-appen</a></td><td>OpenAPI-spesifikasjon for Altinn3-appen som håndterer instans og innsending av skattemeldingen med næringsspesifikasjon.</td></tr><tr><td><a href="https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2" target="_blank" rel="noopener noreferrer" class="">Tjenesteoversikten fra Altinn</a></td><td>Beskrivelse av tilgangspakker tilgjengelige for skattemeldingen</td></tr><tr><td><a href="https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/informasjonsmodell/README.md" target="_blank" rel="noopener noreferrer" class="">Informasjonsmodell og kodeverk</a></td><td>Oversikt over gjeldende versjoner av XSD-filene</td></tr></tbody></table>
+<p>Det refereres for øvrig til de andre sidene i API-dokumentasjonen for dokumentasjon av den generelle innsendingsprosessen:</p>
+<ul>
+<li class=""><a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-utfylling">Utfyllingstjenester</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-innsending">Innsendingstjenester</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/innrapportering-skattemelding-andre-tjenester">Andre tjenester</a></li>
+<li class=""><a class="" href="/api-dokumentasjon/api/skattdialogdokumenter">Skatt dialogdokumenter</a>: Ikke direkte tilknyttet innrapportering av skattemelding, men støtter
+uthenting av dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spesielle-forhold-i-skattemeldingen-for-personlig-skattepliktige">Spesielle forhold i skattemeldingen for personlig skattepliktige<a href="#spesielle-forhold-i-skattemeldingen-for-personlig-skattepliktige" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="preutfylling">Preutfylling<a href="#preutfylling" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<ul>
+<li class="">Eier man del av en eiendom, preutfylles hele eiendommens markedsverdi og tilhørende andel formuesverdi som den skattepliktige
+er skattepliktig for.</li>
+<li class="">Lønnsinntekt overført fra barn til foreldre preutfylles med den lønnsinntekten barnet hadde i begge foreldres skattemelding.
+Forsørgerprosenten styrer hvilken andel av inntekten de beskattes for.</li>
+<li class="">Ønsker man å overføre eksempelvis bank eller utleieinntekter, vil det være mulig å angi i prosent hvor stor del av totalen en selv skal
+være skattepliktig for og beregne tilhørende andel formue/inntekt som den skattepliktige er skattepliktig for.</li>
+<li class="">På foreldrefradrag for ektefeller/samboere vil begges kostnader og begges barn preutfylles i begges skattemelding og man vil
+deretter fordele foreldrefradraget andelsmessig.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="innbo---prosentandel-av-bunnfradrag">Innbo - prosentandel av bunnfradrag<a href="#innbo---prosentandel-av-bunnfradrag" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p>Siden bunnfradraget gjelder for begge ektefeller, angis prosentandelen av bunnfradraget den enkelte skal benytte.
+Denne brukes i fastsettingsberegningen for å komme frem til skattepliktig beløp.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="foreldrefradag--økning-skal-kun-tillegges-en-selv-ikke-den-andre">Foreldrefradag – økning skal kun tillegges en selv, ikke den andre<a href="#foreldrefradag--økning-skal-kun-tillegges-en-selv-ikke-den-andre" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p>Man benytter som hovedregel ikke prosentfordeling av foreldrefradrag som beskrevet for innbo over. På foreldrefradrag vil man i stedet
+angi andelen av totalfradraget som skal overføres til ektefelle, og resten vil i fastsettingsberegningen tilfalle en selv.
+Årsaken er at det en ektefelle legger til (som mangler i utkast), skal i sin helhet legges til denne skattemelding.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="gaver-til-frivillige--får-ikke-fradrag-for-det-som-ikke-er-innrapportert">Gaver til frivillige – får ikke fradrag for det som ikke er innrapportert<a href="#gaver-til-frivillige--får-ikke-fradrag-for-det-som-ikke-er-innrapportert" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p>Fastsettingsberegningen på gaver til frivillige sjekker hva det har blitt innrapportert grunnlagsdata på og det er kun det man får fradrag for uavhengig
+av hva som er innrapportert. Det vil være mulig å redusere beløpet, men ikke øke det til over det vi har 3.parts data på.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="spesielle-forhold-i-skattemeldingen-for-upersonlig-skattepliktige">Spesielle forhold i skattemeldingen for upersonlig skattepliktige<a href="#spesielle-forhold-i-skattemeldingen-for-upersonlig-skattepliktige" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="beregning-av-verdsettingsrabatt-for-selskaper-som-hhv-betaler-og-ikke-betaler-formuesskatt">Beregning av verdsettingsrabatt for selskaper som hhv betaler og ikke betaler formuesskatt<a href="#beregning-av-verdsettingsrabatt-for-selskaper-som-hhv-betaler-og-ikke-betaler-formuesskatt" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h3>
+<p>Som hovedregel betaler ikke selskaper formuesskatt. For disse selskapene vil fastsettingsberegningene IKKE returnere verdier for
+følgende avledede felter:</p>
+<ul>
+<li class="">formuesverdi</li>
+<li class="">verdsettingsrabatt</li>
+</ul>
+<p>For å ikke få avvik i valideringstjenesten som gjør at innsending avvises er det viktig å ikke sende inn verdier på
+verdsettingsrabatt og formuesverdi når selskapet ikke betaler formuesskatt.</p>
+<p>Selskaper som betaler formuesskatt (og hvor valideringstjenesten da beregner verdsettingsrabatt og formuesverdi) er:</p>
+<ul>
+<li class="">Sparebank, gjensidig forsikringsselskap og samvirkeforetak betaler formuesskatt til kommunen etter reglene i skatteloven</li>
+<li class="">Annet selskap og sammenslutning betaler formuesskatt til staten etter reglene i skatteloven</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overføring-av-tall-i-næringsspesifikasjonen">Overføring av tall i næringsspesifikasjonen<a href="#overføring-av-tall-i-næringsspesifikasjonen" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Det er tre &quot;informasjonsgrupper&quot; som overføres fra næringsspesifikasjon til skattemeldingene :</p>
+<ul>
+<li class="">FordelingAvNæringsinntekt<!-- -->
+<ul>
+<li class="">Næringstype, beløp, andel innehaver, både totalbeløpet og andel innehaver som overføres til skattemeldingen.</li>
+</ul>
+</li>
+<li class="">Personinntekt fra enkeltpersonforetak (kun til skattemelding personlig)<!-- -->
+<ul>
+<li class="">Bruker samme id som på næringsinntekt for å klare å summere inn på samme forekomst i skattemeldingen (identifikatorForFordelingAvNæringsinntektOgPersoninntekt)</li>
+<li class="">SamletGjeldOgFormuesobjekter (kun til skattemelding personlig)<!-- -->
+<ul>
+<li class="">Her summeres opp fra balanse det som skal overføres videre til skattemeldingen. Formuespostene er splittet på om formuen gir
+verdsettingsrabatt eller ikke og videre andelsmessig redusert med den andelen som skal overføres til innehaver</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>*På skattemelding upersonlig må eiendeler som inngår i samlet verdi bak aksjene i selskapet fastsettes direkte i skattemeldingen. Det overføres ikke
+verdier fra balanseregnskapet inn i skattemeldingen.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="overføring-fra-næringsspesifikasjonen-til-skattemeldingen">Overføring fra næringsspesifikasjonen til skattemeldingen<a href="#overføring-fra-næringsspesifikasjonen-til-skattemeldingen" class="hash-link" aria-label="Direct link to heading" title="Direct link to heading" translate="no">​</a></h2>
+<p>Følgende egenskap ligger på alle balansekontoer i næringsspesifikasjon: <code>ekskluderesFraSkattemeldingen</code>.
+Dersom en formuespost ikke skal overføres til skattemeldingen (som regel fordi informasjonen allerede er preutfylt i skattemeldingen), så angis det
+her. Da skal kontoen ikke summeres opp til samletGjeldOgFormuesobjekter og følgelig heller ikke bli summert til skattemeldingen.</p>
+<p>Det ligger en endringsårsak på preutfylte kort i skattemeldingen som angir at &quot;<em>Verdien i denne posten inngår i formue overført fra næringsspesifikasjon</em>&quot;.
+Denne kan brukes dersom man setter preutfylte verdier til 0 som følge at av tallet er tatt inn fra næringsspesifikasjonen.</p>
+<p>Det er opp til innsender/skattepliktig å velge hvordan man styrer formue fra næring - om man vil beholde preutfylling og markere at kontoen ikke skal
+overføres eller omvendt.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/api-dokumentasjon/tags/api">API</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/api-dokumentasjon/tags/skattemelding">Skattemelding</a></li></ul></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages navigation"></nav></div></div></div></div></main></div></div></div></div></div>
+</body>
+</html>

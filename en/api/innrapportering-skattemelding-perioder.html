@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api/innrapportering-skattemelding-perioder" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">innrapportering-skattemelding-perioder | API-dokumentasjon</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-perioder"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="nb"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="innrapportering-skattemelding-perioder | API-dokumentasjon"><meta data-rh="true" name="description" content="Perioder API"><meta data-rh="true" property="og:description" content="Perioder API"><link data-rh="true" rel="icon" href="/api-dokumentasjon/en/img/favicon.png"><link data-rh="true" rel="canonical" href="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-perioder"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-perioder" hreflang="nb"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-perioder" hreflang="en"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-perioder" hreflang="x-default"><link rel="alternate" type="application/atom+xml" href="/api-dokumentasjon/en/nyheter-og-driftsvarsler/atom.xml" title="Skatteetaten - API nyheter Atom Feed"><link rel="stylesheet" href="/api-dokumentasjon/en/assets/css/styles.93f12caa.css">
+<script src="/api-dokumentasjon/en/assets/js/runtime~main.5da28f29.js" defer="defer"></script>
+<script src="/api-dokumentasjon/en/assets/js/main.7aa9c059.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div dir="ltr" class="body-98"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="navigation_AME2 navbar"></div><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>innrapportering-skattemelding-perioder</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="perioder-api">Perioder API<a href="#perioder-api" class="hash-link" aria-label="Direct link to Perioder API" title="Direct link to Perioder API" translate="no">​</a></h2>
+<p>API-ene er rettet mot brukere av sluttbrukersystemer som bistår skattepliktige med begrenset skatteplikt, med leveringen av skattemeldingen.</p>
+<p>API-ene gir tilgang til å hente, vurdere og lagre periodegrunnlaget med hensikten å korrigere tolvdeler og skatteplikt for den skattepliktige.
+Tolvdeler og skatteplikt kan ikke registreres eller overstyres manuelt, de beregnes automatisk basert på den skattepliktiges registrerte oppholdsperioder og arbeidsforholdsperioder.</p>
+<p>Funksjonaliteten tilsvarer det som er tilgjengelig i Min skatt under «Arbeid og opphold i Norge», der skattepliktige selv kan logge inn og registrere eller endre oppholds- og arbeidsforholdsperioder.</p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>info</div><div class="admonitionContent_BuS1"><p>Tjenestene for begrenset skatteplikt støtter kun autentisering med ID-Porten, ikke Maskinporten.</p></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hent-perioder">Hent perioder<a href="#hent-perioder" class="hash-link" aria-label="Direct link to Hent perioder" title="Direct link to Hent perioder" translate="no">​</a></h3>
+<p>API-et returnerer gjeldende antall tolvdeler, skatteplikt og alle registrerte oppholds- og arbeidsforholdsperioder for en skattepliktig for et gitt inntektsår.</p>
+<p><strong>URL</strong> : <code>GET https://&lt;env&gt;/api/skattemelding/v2/skatteplikt/perioder/&lt;inntektsaar&gt;/&lt;identifikator&gt;/</code></p>
+<p><strong>Eksempel URL</strong> : <code>GET https://idporten.api.skatteetaten.no/api/skattemelding/v2/skatteplikt/perioder/2025/60875800372</code></p>
+<p><strong>Forespørsel</strong> :</p>
+<ul>
+<li class=""><code>&lt;inntektsaar&gt;</code>: inntektsåret det hentes informasjon for (format: YYYY)</li>
+<li class=""><code>&lt;identifikator&gt;</code>: Fødselsnummer eller D‑nummer til den skattepliktig</li>
+</ul>
+<p><strong>Respons</strong> :</p>
+<ul>
+<li class="">
+<p>Iht. XSD: <a class="" href="/api-dokumentasjon/en/src/resources/xsd/perioderformottakogutveksling_v1.xsd">perioderformottakogutveksling_v1.xsd</a></p>
+</li>
+<li class="">
+<p>Eksempel respons JSON:</p>
+</li>
+</ul>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     &quot;tin&quot; : &quot;28818698897&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     &quot;skattepliktTilNorge&quot; : &quot;BEGRENSET&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     &quot;skatteordning&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     &quot;tolvdeler&quot; : 1,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     &quot;perioder&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;oppholdsperiode&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">               {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;kanEndres&quot; : true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;norskPersonidentifikator&quot; : &quot;28818698897&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;kommune&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;periodeidentifikator&quot; : &quot;2518d6ba-4989-4aee-b86a-c5054fc49a94&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;fraOgMedDato&quot; : &quot;2025-05-01&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;tilOgMedDato&quot; : &quot;2025-05-31&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;informasjonskilde&quot; : &quot;OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;erMerketSomSlettet&quot; : false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;antallDagerOverstyrt&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">               }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;arbeidsforholdsperiode&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">               {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;kanEndres&quot; : true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;arbeidsforholdIOppdrag&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;arbeidsforholdSomSjoemann&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;spesifikasjonAvInntektsgivendeAktivitet&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         &quot;oppholdsstedVedInntektsgivendeAktivitet&quot; : &quot;FASTLAND&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         &quot;inntektsgivendeAktivitetstype&quot; : &quot;ARBEIDSTAKER&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;ansvarligEnhetEllerPart&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         &quot;norskIdentifikator&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                              &quot;organisasjonsnummer&quot; : &quot;315078385&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                              &quot;personidentifikator&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         &quot;hovedorganisasjon&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         &quot;underenhetensOrganisasjonsnummer&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         &quot;naeringsdrivendeUtenKravTilOrganisasjonsnummer&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                         &quot;navn&quot; : &quot;ENKEL ENKEL KATT INVITASJON&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;norskPersonidentifikator&quot; : &quot;28818698897&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;kommune&quot; : &quot;4641&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;periodeidentifikator&quot; : &quot;b1e6b902-07b7-495b-9933-1fbb6cb23dc9&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;fraOgMedDato&quot; : &quot;2025-05-01&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;tilOgMedDato&quot; : &quot;2025-05-31&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;informasjonskilde&quot; : &quot;OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;erMerketSomSlettet&quot; : false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">                    &quot;antallDagerOverstyrt&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">               }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;endringsnoekkel&quot; : &quot;42653453&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">     }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p><strong>Forklaring til respons</strong></p>
+<ul>
+<li class="">tin - fødselsnummer/d-nummer</li>
+<li class="">skattepliktTilNorge - hvilken skatteplikt den skattepliktige har (Begrenset | Global | Ingen skatteplikt)</li>
+<li class="">skatteordning – hvilken skatteordning den skattepliktige er omfattet av (f.eks. kildeskatt på lønn)</li>
+<li class="">tolvdeler – antall tolvdeler</li>
+<li class="">perioder - se forklaring av opphold og arbeidsforholdsperioder under XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="beregne-perioder">Beregne perioder<a href="#beregne-perioder" class="hash-link" aria-label="Direct link to Beregne perioder" title="Direct link to Beregne perioder" translate="no">​</a></h3>
+<p>API‑et mottar alle endrede perioder, validerer dem og beregner skatteplikt samt tolvdeler, som returneres i responsen. Endringene lagres ikke, men API‑et opplyser om beregningen ville ha medført et nytt utkast til skattemeldingen.</p>
+<p><strong>URL</strong> : <code>POST https://&lt;env&gt;/api/skattemelding/v2/skatteplikt/perioder/&lt;inntektsaar&gt;/&lt;identifikator&gt;/beregn</code></p>
+<p><strong>Eksempel URL</strong> : <code>POST https://idporten.api.skatteetaten.no/api/skattemelding/v2/skatteplikt/perioder/2025/60875800372/beregn</code></p>
+<p><strong>Forespørsel</strong> :</p>
+<ul>
+<li class=""><code>&lt;inntektsaar&gt;</code>: inntektsåret det hentes informasjon for (format: YYYY)</li>
+<li class=""><code>&lt;identifikator&gt;</code>: Fødselsnummer eller D‑nummer til den skattepliktig</li>
+</ul>
+<p>Body:</p>
+<ul>
+<li class="">Iht. XSD: <a class="" href="/api-dokumentasjon/en/src/resources/xsd/perioderformottakogutveksling_v1.xsd">perioderformottakogutveksling_v1.xsd</a> - se forklaring av oppholdperiode og arbeidsforholdsperioder under XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder</li>
+<li class="">Eksempel input JSON:</li>
+</ul>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;oppholdsperiode&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;kanEndres&quot; : true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;norskPersonidentifikator&quot; : &quot;28818698897&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;kommune&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;periodeidentifikator&quot; : &quot;2518d6ba-4989-4aee-b86a-c5054fc49a94&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;fraOgMedDato&quot; : &quot;2025-05-01&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;tilOgMedDato&quot; : &quot;2025-05-31&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;informasjonskilde&quot; : &quot;OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;erMerketSomSlettet&quot; : false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;antallDagerOverstyrt&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;arbeidsforholdsperiode&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;kanEndres&quot; : true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;arbeidsforholdIOppdrag&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;arbeidsforholdSomSjoemann&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;spesifikasjonAvInntektsgivendeAktivitet&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;oppholdsstedVedInntektsgivendeAktivitet&quot; : &quot;FASTLAND&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;inntektsgivendeAktivitetstype&quot; : &quot;ARBEIDSTAKER&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;ansvarligEnhetEllerPart&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;norskIdentifikator&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;organisasjonsnummer&quot; : &quot;315078385&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;personidentifikator&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;hovedorganisasjon&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;underenhetensOrganisasjonsnummer&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;naeringsdrivendeUtenKravTilOrganisasjonsnummer&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;navn&quot; : &quot;ENKEL ENKEL KATT INVITASJON&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;norskPersonidentifikator&quot; : &quot;28818698897&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;kommune&quot; : &quot;4641&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;periodeidentifikator&quot; : &quot;b1e6b902-07b7-495b-9933-1fbb6cb23dc9&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;fraOgMedDato&quot; : &quot;2025-05-01&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;tilOgMedDato&quot; : &quot;2025-05-31&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;informasjonskilde&quot; : &quot;OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;erMerketSomSlettet&quot; : false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;antallDagerOverstyrt&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;endringsnoekkel&quot; : &quot;42653453&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p><em><strong>Respons</strong></em>:</p>
+<p>Ved vellykket beregning:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;response&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;inntektsaar&quot; : &quot;2025&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;skattepliktTilNorge&quot; : &quot;BEGRENSET&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;skatteordning&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;tolvdeler&quot; : 1,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;nyttUtkastProduseres&quot; : true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;merknader&quot; : [ ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p>Forklaring til respons</p>
+<ul>
+<li class="">inntektsaar – hvilket inntektsår opplysningene gjelder</li>
+<li class="">skattepliktTilNorge – hvilken skatteplikt den skattepliktige har (Begrenset | Global | Ingen skatteplikt)</li>
+<li class="">skatteordning – hvilken skatteordning den skattepliktige er omfattet av (f.eks. kildeskatt på lønn)</li>
+<li class="">tolvdeler – antall tolvdeler etter endringen</li>
+<li class="">nyttUtkastProduseres – angir om endringen medfører at et nytt utkast til skattemeldingen opprettes</li>
+<li class="">merknader – eventuelle merknader</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="lagre-perioder">Lagre perioder<a href="#lagre-perioder" class="hash-link" aria-label="Direct link to Lagre perioder" title="Direct link to Lagre perioder" translate="no">​</a></h3>
+<p>API-et mottar og validerer alle perioder, beregner nødvendige verdier og oppdaterer periodedataene. Oppdateringen kan resultere i et nytt utkast til skattemeldingen</p>
+<p><strong>URL</strong> : <code>POST https://&lt;env&gt;//api/skattemelding/v2/skatteplikt/perioder/&lt;inntektsaar&gt;/&lt;identifikator&gt;/lagre</code></p>
+<p><strong>Eksempel</strong> URL : <code>POST https://idporten.api.skatteetaten.no/api/skattemelding/v2/skatteplikt/perioder/2025/60875800372/lagre</code></p>
+<p>Forespørsel :</p>
+<ul>
+<li class=""><code>&lt;inntektsaar&gt;</code>: inntektsåret det hentes informasjon for (format: YYYY)</li>
+<li class=""><code>&lt;identifikator&gt;</code>: Fødselsnummer eller D‑nummer til den skattepliktig</li>
+</ul>
+<p>Body:</p>
+<ul>
+<li class="">Iht. XSD: <a class="" href="/api-dokumentasjon/en/src/resources/xsd/perioderformottakogutveksling_v1.xsd">perioderformottakogutveksling_v1.xsd</a> - se forklaring av oppholdperioder og arbeidsforholdsperioder under XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder</li>
+<li class="">JSON: samme som ved beregning</li>
+</ul>
+<p><strong>Respons</strong></p>
+<p>Ved vellykket lagring:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;response&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;inntektsaar&quot; : &quot;2025&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;skattepliktTilNorge&quot; : &quot;BEGRENSET&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;skatteordning&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;tolvdeler&quot; : 1,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;nyttUtkastProduseres&quot; : true,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;merknader&quot; : [ ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p>Forklaring til respons</p>
+<ul>
+<li class="">inntektsaar – hvilket inntektsår opplysningene gjelder</li>
+<li class="">skattepliktTilNorge – hvilken skatteplikt den skattepliktige har (Begrenset | Global | Ingen skatteplikt)</li>
+<li class="">skatteordning – hvilken skatteordning den skattepliktige er omfattet av (f.eks. kildeskatt på lønn)</li>
+<li class="">tolvdeler – antall tolvdeler etter endringen</li>
+<li class="">nyttUtkastProduseres – angir om endringen medfører at et nytt utkast til skattemeldingen opprettes</li>
+<li class="">merknader– eventuelle merknader</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="feil-respons-ifm-bad-request">Feil respons ifm bad request<a href="#feil-respons-ifm-bad-request" class="hash-link" aria-label="Direct link to Feil respons ifm bad request" title="Direct link to Feil respons ifm bad request" translate="no">​</a></h3>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;feilmeldinger&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;feilkode&quot; : &quot;Skatteplikt-001&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;beskrivelse&quot; : &quot;Til og med dato er satt til før fra og med dato på periode&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;periodeIdentifikator&quot; : &quot;2518d6ba-4989-4aee-b86a-c5054fc49a94&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p><strong>Feilmeldinger</strong></p>
+<ul>
+<li class="">SKATTEPLIKT-001 - Til og med dato er satt til før fra og med dato på periode</li>
+<li class="">SKATTEPLIKT-002 - Når du skal endre fra og med dato i en periode, må du stå i det det første året som blir påvirket av endringen</li>
+<li class="">SKATTEPLIKT-003 - Overstyring av antall dager må skje innen inntektsår</li>
+<li class="">SKATTEPLIKT-004 - Til og med dato er obligatorisk når overstyrte dager er satt</li>
+<li class="">SKATTEPLIKT-005 - Antall overstyrte dager kan ikke overstige antall dager i perioden</li>
+<li class="">SKATTEPLIKT-006 - Antall overstyrte dager kan ikke være mindre enn 1 dag eller mer enn inntektsårets lengde</li>
+<li class="">SKATTEPLIKT-007 - Tin skrevet på periode tilhører ikke denne personen</li>
+<li class="">SKATTEPLIKT-008 - Mangler informasjon om oppholdssted</li>
+<li class="">SKATTEPLIKT-009 - Ugyldig kombinasjon av oppholdssted og inntektsgivende aktivitet</li>
+<li class="">SKATTEPLIKT-010 - Når arbeidsperioder er registrert på fastland i Norge og/eller på fiskefartøy innenfor tolvmilssonen, må opphold i Norge også registreres for samme tidsrom</li>
+<li class="">SKATTEPLIKT-011 - Datoer på fastsatt periode må være innenfor inntektsår</li>
+<li class="">SKATTEPLIKT-012 - Mangler informasjon om kommune</li>
+<li class="">SKATTEPLIKT-013 - Arbeid som grensegjenger, men kommunenummer grenser ikke til Sverige eller Finland</li>
+<li class="">SKATTEPLIKT-014 - Kan ikke slette periode som opprinnelig startet før inntektsåret</li>
+<li class="">SKATTEPLIKT-015 - Når du skal endre til og med dato i en periode, må du stå i det første året som blir påvirket av endringen. Du kan også sette til og med datoen til 31.12. året før, hvis denne datoen var dekket av den opprinnelige perioden</li>
+<li class="">SKATTEPLIKT-016 - Kan ikke flytte periode fra tidligere inntektsår</li>
+<li class="">SKATTEPLIKT-017 - Mangler informasjon om arbeidsgiver</li>
+<li class="">SKATTEPLIKT-018 - Ikke mulig å lagre eller endre periode med oppholdssted</li>
+<li class="">SKATTEPLIKT-019 - Ikke mulig å lagre eller endre periode med oppholdssted og inntektsgivende aktivitet</li>
+<li class="">SKATTEPLIKT-020 - Ikke mulig å overstyre antall dager for periode med oppholdssted</li>
+<li class="">SKATTEPLIKT-021 - Ikke mulig å overstyre antall dager for periode med oppholdssted og inntektsgivende aktivitet</li>
+<li class="">SKATTEPLIKT-022 - Kan ikke legge til en ny periode med oppholdssteds og inntektsgivende aktivitet</li>
+<li class="">SKATTEPLIKT-023 - Kan ikke slette periode med oppholdssteds og inntektsgivende aktivitet</li>
+<li class="">SKATTEPLIKT-024 - Kun datoer er redigerbare for tredjeparts informasjonskilde</li>
+<li class="">SKATTEPLIKT-025 - Ugyldig verdi i felt</li>
+<li class="">SKATTEPLIKT-026 - Ukjent arbeidsgiver</li>
+<li class="">SKATTEPLIKT-027 - Periode er myndighetsfastsatt og kan derfor ikke endres</li>
+<li class="">SKATTEPLIKT-028 - Det er ikke registrert arbeidsperioder som krever registrering av oppholdstid i Norge. Dersom det foreligger arbeid utført på norsk fastland, må dette registreres</li>
+<li class="">SKATTEPLIKT-101 - Ugyldig inntektsår</li>
+<li class="">SKATTEPLIKT-102 - Mangler perioder</li>
+<li class="">SKATTEPLIKT-103 - Ukjent personidentifikator</li>
+<li class="">SKATTEPLIKT-104 - XSD validering feilet</li>
+<li class="">SKATTEPLIKT-105 - Periode innhold tilhører ikke request TIN</li>
+<li class="">SKATTEPLIKT-106 - Flere perioder registrert på samme ID</li>
+<li class="">SKATTEPLIKT-107 - Utdatert endringsnøkkel</li>
+<li class="">SKATTEPLIKT-108 - Feil ved beregning for inntektsår</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="xsd-beskrivelse-av-oppholdsperioder-og-arbeidsforholdsperioder">XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder<a href="#xsd-beskrivelse-av-oppholdsperioder-og-arbeidsforholdsperioder" class="hash-link" aria-label="Direct link to XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder" title="Direct link to XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder" translate="no">​</a></h3>
+<p>En oppholdsperiode angir hvor mange dager den skattepliktige har oppholdt seg på fastlandet i Norge. Dersom oppholdet varer deler av en dag, regnes dette som én hel dag. Antall registrerte dager påvirker om den skattepliktige anses som global eller begrenset skattepliktig. Det er derfor viktig at korrekt antall dager registreres.</p>
+<p>Arbeidsperiode skal vise tidsrommet den ansatte var ansatt og utførte arbeid for arbeidsgiver. Perioden skal inkludere avspasering, helger og ferier. Antall tolvdeler blir beregnet ut i fra arbeidsperiodene.</p>
+<ul>
+<li class="">Oppholdsperiode<!-- -->
+<ul>
+<li class="">norskPersonidentifikator - Norsk personidentifikator (fødselsnummer eller D-nummer).</li>
+<li class="">periodeidentifikator - Unik identifikator per TIN / norskPersonidentifikator.</li>
+<li class="">fraOgMedDato - Første dag med opphold på fastlandet i Norge.</li>
+<li class="">tilOgMedDato - Siste dag med opphold på fastlandet i Norge.</li>
+<li class="">antallDagerOverstyrt (ikke påkrevd)- Dersom den skattepliktige har mange korte opphold i Norge i løpet av året, kan totalt antall oppholdsdager registreres samlet. Ankomstdag og utreisedag må være innenfor samme kalenderår. Alle dager med opphold i Norge skal telles som hele dager.</li>
+<li class="">erMerketSomSlettet (ikke påkrevd) - true/false</li>
+<li class="">informasjonskilde - Hvor informasjonen kommer fra. [Oppdragasregister | AA-register | Folkeregister | OpplystAvSkatteplikt | OpplystTilSaksbehandlerAvSkattepliktig ]</li>
+<li class="">KanEndres - Om perioden kan oppdateres eller slettes</li>
+</ul>
+</li>
+<li class="">Arbeidsperiode - Arbeidet skal vise tidsrommet den ansatte var ansatt og utførte arbeid for arbeidsgiver. Perioden skal inkludere avspasering, helger og ferier.<!-- -->
+<ul>
+<li class="">spesifikasjonAvInntektsgivendeAktivitet<!-- -->
+<ul>
+<li class="">oppholdsstedVedInntektsgivendeAktivitet -  Arbeidssted (kodeliste OppholdsstedVedInntektsgivendeAktivitet)</li>
+<li class="">inntektsgivendeAktivitetstype - Beskrivelse av arbeidsforhold (kodeliste RolleVedInntektsgivendeAktivitet)</li>
+</ul>
+</li>
+<li class="">ansvarligEnhetEllerPart<!-- -->
+<ul>
+<li class="">hovedorganisasjon<!-- -->
+<ul>
+<li class="">organisasjonsnummer&quot; : Enkeltperson foretakets organisasjonsnummer</li>
+</ul>
+</li>
+<li class="">naeringsdrivendeUtenKravTilOrganisasjonsnummer - Om virksomheten er selvstendig næringsdrivende uten krav om norsk organisasjonsnummer.</li>
+<li class="">norskIdentifikator<!-- -->
+<ul>
+<li class="">organisasjonsnummer - Arbeidsgivers organisasjonsnummer</li>
+</ul>
+</li>
+<li class="">navn - Arbeidsgivers navn</li>
+</ul>
+</li>
+<li class="">norskPersonidentifikator - Norsk personidentifikator (fødselsnummer eller D-nummer).</li>
+<li class="">kommune - Oppgi kommunenr der arbeidstakeren først bosatte seg eller oppholdt seg dette året</li>
+<li class="">periodeidentifikator - Unik identifikator per TIN / norskPersonidentifikator.</li>
+<li class="">fraOgMedDato - Første arbeidsdag</li>
+<li class="">tilOgMedDato (ikke påkrevd) - Siste arbeidsdag</li>
+<li class="">antallDagerOverstyrt (ikke påkrevd) - Dersom den skattepliktige har mange korte arbeidsperioder i Norge i løpet av året for samme arbeidsgiver, kan totalt antall oppholdsdager registreres samlet. Første og siste arbeidsdag må være innenfor samme kalenderår. Når man teller antall dager i arbeidsperiode skal helger, ferier og avspasering telles med</li>
+<li class="">erMerketSomSlettet (ikke påkrevd) - true/false</li>
+<li class="">informasjonskilde - Hvor informasjonen kommer fra. [Oppdragasregister | AA-register | Folkeregister | OpplystAvSkatteplikt | OpplystTilSaksbehandlerAvSkattepliktig ] Perioder oppdatert/opprettet via api-et vil få kilde OpplystAvSkatteplikt.</li>
+<li class="">KanEndres - Om perioden kan oppdateres eller slettes</li>
+</ul>
+</li>
+<li class="">endringsnøkkel – Send med endringsnøkkelen som ble hentet via API-et «hent perioder». Dersom endringsnøkkelen ikke samsvarer, vil beregning eller lagring feile fordi periodene har blitt oppdatert.</li>
+</ul>
+<p>APIet håndterer enum verdier i følgende formater: camelCase, SNAKE_CASE og lower_snake_case</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="opprett-ny-oppholdsperiode">Opprett ny oppholdsperiode<a href="#opprett-ny-oppholdsperiode" class="hash-link" aria-label="Direct link to Opprett ny oppholdsperiode" title="Direct link to Opprett ny oppholdsperiode" translate="no">​</a></h3>
+<p>Når du skal registrere en ny oppholdsperiode, må følgende informasjon fylles ut:</p>
+<ul>
+<li class="">norskPersonidentifikator</li>
+<li class="">periodeidentifikator - Oppgi en unik ID for perioden. Tradisjonelt brukt UUID</li>
+<li class="">fraOgMedDato</li>
+<li class="">tilOgMedDato (valgfritt)</li>
+<li class="">antallDagerOverstyrt (valgfritt)</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="endre-oppholdsperiode">Endre oppholdsperiode<a href="#endre-oppholdsperiode" class="hash-link" aria-label="Direct link to Endre oppholdsperiode" title="Direct link to Endre oppholdsperiode" translate="no">​</a></h3>
+<p>For å endre en periode, skriv inn periodeidentifikatoren til perioden du vil oppdatere.</p>
+<p>Følgende felter kan endres:</p>
+<ul>
+<li class="">fraOgMedDato</li>
+<li class="">tilOgMedDato</li>
+<li class="">antallDagerOverstyrt</li>
+<li class="">erMerketSomSlettet</li>
+</ul>
+<p>Dersom informasjonen er fra en tredjepartskilde (Oppdragsregisteret, AA-registeret eller Folkeregisteret), vil den opprinnelige perioden ikke bli endret av API-et. I stedet oppretter API-et en ny fastsatt periode. Når en slik periode opprettes, vil den opprinnelige perioden ikke inngå i beregningsgrunnlaget. Den vil ikke bli hente dersom du kaller get, bare perioder som inngår i beregningsgrunnlaget vil bli hentet.</p>
+<p>Dersom den fastsatte perioden senere slettes, vil den opprinnelige perioden automatisk inngå i beregningsgrunnlaget igjen.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="opprett-ny-arbeidsforholdsperiode">Opprett ny arbeidsforholdsperiode<a href="#opprett-ny-arbeidsforholdsperiode" class="hash-link" aria-label="Direct link to Opprett ny arbeidsforholdsperiode" title="Direct link to Opprett ny arbeidsforholdsperiode" translate="no">​</a></h3>
+<p>Når du skal registrere en ny arbeidsperiode, må følgende informasjon fylles ut:</p>
+<ul>
+<li class="">spesifikasjonAvInntektsgivendeAktivitet - se tabell for gyldige kombinasjoner<!-- -->
+<ul>
+<li class="">oppholdsstedVedInntektsgivendeAktivitet -  Arbeidssted (kodeliste OppholdsstedVedInntektsgivendeAktivitet)</li>
+<li class="">inntektsgivendeAktivitetstype - beskrivelse av arbeidsforhold (kodeliste RolleVedInntektsgivendeAktivitet)</li>
+</ul>
+</li>
+<li class="">ansvarligEnhetEllerPart<!-- -->
+<ul>
+<li class="">norskIdentifikator<!-- -->
+<ul>
+<li class="">organisasjonsnummer - arbeidsgivers organisasjonsnummer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">norskPersonidentifikator</li>
+<li class="">kommune - kommune må fylles inn for FASTLAND</li>
+<li class="">periodeidentifikator - Oppgi en unik ID for perioden. Tradisjonelt brukt UUID</li>
+<li class="">fraOgMedDato</li>
+<li class="">tilOgMedDato (valgfritt)</li>
+<li class="">antallDagerOverstyrt (valgfritt)</li>
+</ul>
+<p>Gyldig kombinasjon av oppholdsstedVedInntektsgivendeAktivitet og inntektsgivendeAktivitetstype:</p>
+<table><tr><td>oppholdsstedVedInntektsgivendeAktivitet</td><td>inntektsgivendeAktivitetstype</td><td>opprettes ny</td><td>endres</td><td>slettes</td></tr><tr><td>FASTLAND</td><td>ARBEIDSTAKER</td><td>Ja</td><td>Ja</td><td>Ja</td></tr><tr><td>FASTLAND</td><td>SELVSTENDIG_NAERINGSDRIVENDE</td><td>Ja</td><td>Ja</td><td>Ja</td></tr><tr><td>FASTLAND</td><td>GRENSEGJENGER</td><td>Ja</td><td>Ja</td><td>Ja</td></tr><tr><td>FASTLAND</td><td>MOTTAR_INTRODUKSJONSSTOENAD</td><td>nei</td><td>nei</td><td>nei</td></tr><tr><td>SJOE</td><td>ARBEIDSTAKER</td><td>nei</td><td>ja</td><td>ja</td></tr><tr><td>FISKEFARTOEY_INNENFOR_12_MILSSONE</td><td>ARBEIDSTAKER</td><td>Ja</td><td>Ja</td><td>Ja</td></tr><tr><td>KONTINENTALSOKKEL</td><td>ARBEIDSTAKER_PAA_SKIP_I_FART</td><td>nei</td><td>Ja</td><td>Ja</td></tr><tr><td>KONTINENTALSOKKEL</td><td>ARBEIDSTAKER_INNENFOR_PETROLEUMSVIRKSOMHET</td><td>Ja</td><td>Ja</td><td>Ja</td></tr><tr><td>KONTINENTALSOKKEL</td><td>ARBEIDSTAKER_INNENFOR_HAVBRUK_MINERALVIRKSOMHET_FORNYBAR_ENERGI_ELLER_KARBONFANGST</td><td>Ja</td><td>Ja</td><td>Ja</td></tr><tr><td>FISKEFARTOEY_UTENFOR_12_MILSSONE</td><td>ARBEIDSTAKER</td><td>Nei</td><td>Nei</td><td>Nei</td></tr><tr><td>FASTLAND_UTENFOR_NORGE</td><td>ARBEIDSTAKER_FINANSIERT_AV_DEN_NORSKE_STAT</td><td>Nei</td><td>Nei</td><td>Nei</td></tr><tr><td>FASTLAND_UTENFOR_NORGE</td><td>ARBEIDSTAKER_FOR_FORSVARET_ELLER_UTENRIKSSTASJON</td><td>Nei</td><td>Nei</td><td>Nei</td></tr><tr><td>FASTLAND_UTENFOR_NORGE</td><td>ARBEIDSTAKER_SOM_GJESTEFORELESER_ELLER_FORSKER</td><td>Nei</td><td>Nei</td><td>Nei</td></tr><tr><td>FASTLAND_UTENFOR_NORGE</td><td>FLYVENDE_PERSONELL</td><td>Nei</td><td>Nei</td><td>Nei</td></tr><tr><td>FASTLAND_UTENFOR_NORGE</td><td>LANDTRANSPORTSJAAFOER</td><td>Nei</td><td>Nei</td><td>Nei</td></tr><tr><td>FASTLAND_UTENFOR_NORGE</td><td>MOTTAR_STYREHONORAR</td><td>Nei</td><td>Nei</td><td>Nei</td></tr></table>
+<p>Eksempel på opprettelse av ny arbeidsperiode</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;arbeidsforholdsperiode&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;ansvarligEnhetEllerPart&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;norskIdentifikator&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;organisasjonsnummer&quot; : &quot;315072492&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;personidentifikator&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;navn&quot; : &quot;RETTFERDIG SPISS KATT DALSIDE&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;spesifikasjonAvInntektsgivendeAktivitet&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;inntektsgivendeAktivitetstype&quot; : &quot;ARBEIDSTAKER_INNENFOR_PETROLEUMSVIRKSOMHET&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;oppholdsstedVedInntektsgivendeAktivitet&quot; : &quot;KONTINENTALSOKKEL&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;norskPersonidentifikator&quot; : &quot;03904299382&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;periodeidentifikator&quot; : &quot;b3597abd-efc3-48ad-8207-36a3ead1b59a&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;fraOgMedDato&quot; : &quot;2025-03-01&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;tilOgMedDato&quot; : &quot;2025-05-03&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;kommune&quot; : &quot;4203&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;endringsnoekkel&quot; : &quot;92&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="endre-arbeidsforholdperioder">Endre arbeidsforholdperioder<a href="#endre-arbeidsforholdperioder" class="hash-link" aria-label="Direct link to Endre arbeidsforholdperioder" title="Direct link to Endre arbeidsforholdperioder" translate="no">​</a></h3>
+<p>For å endre en arbeidsperiode, skriv inn periodeidentifikatoren til perioden du vil oppdatere.</p>
+<p>Følgende felter kan endres dersom informasjonskilde IKKE er tredjepartskilde:</p>
+<ul>
+<li class="">spesifikasjonAvInntektsgivendeAktivitet<!-- -->
+<ul>
+<li class="">oppholdsstedVedInntektsgivendeAktivitet</li>
+<li class="">inntektsgivendeAktivitetstype</li>
+</ul>
+</li>
+<li class="">fraOgMedDato</li>
+<li class="">tilOgMedDato</li>
+<li class="">antallDagerOverstyrt</li>
+<li class="">erMerketSomSlettet</li>
+</ul>
+<p>Følgende felter kan endres dersom informasjonskilde er tredjepartskilde:</p>
+<ul>
+<li class="">fraOgMedDato</li>
+<li class="">tilOgMedDato</li>
+<li class="">antallDagerOverstyrt</li>
+<li class="">erMerketSomSlettet</li>
+</ul>
+<p>Dersom informasjonen er fra en tredjepartskilde (Oppdragsregisteret, AA-registeret eller Folkeregisteret), vil den opprinnelige perioden ikke bli endret av API-et. I stedet oppretter API-et en ny fastsatt periode. Når en slik periode opprettes, vil den opprinnelige perioden ikke inngå i beregningsgrunnlaget. Den vil ikke bli hente dersom du kaller get, bare perioder som inngår i beregningsgrunnlaget vil bli hentet.</p>
+<p>Dersom den fastsatte perioden senere slettes, vil den opprinnelige perioden automatisk inngå i beregningsgrunnlaget igjen.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="selvstendig-næringsdrivende">Selvstendig næringsdrivende<a href="#selvstendig-næringsdrivende" class="hash-link" aria-label="Direct link to Selvstendig næringsdrivende" title="Direct link to Selvstendig næringsdrivende" translate="no">​</a></h4>
+<p>Når inntektsgivendeAktivitetstype er satt til SELVSTENDIG_NAERINGSDRIVENDE, skal ansvarligEnhetEllerPart tolkes annerledes enn for arbeidstakerforhold.</p>
+<p>I disse tilfellene representerer ansvarligEnhetEllerPart den selvstendige virksomheten, og ikke en arbeidsgiver.</p>
+<ul>
+<li class="">ansvarligEnhetEllerPart<!-- -->
+<ul>
+<li class="">norskIdentifikator : null</li>
+<li class="">hovedorganisasjon<!-- -->
+<ul>
+<li class="">organisasjonsnummer : Enkeltperson foretakets norske organisasjonsnummer</li>
+<li class="">navn : null</li>
+</ul>
+</li>
+<li class="">naeringsdrivendeUtenKravTilOrganisasjonsnummer - Settes til true dersom virksomheten er selvstendig næringsdrivende uten krav om norsk organisasjonsnummer. Default verdi er false.</li>
+</ul>
+</li>
+</ul>
+<p>Dette innebærer at ansvarligEnhetEllerPart alltid er påkrevd, men at identifikasjonsmåten varierer basert på type inntektsgivende aktivitet.</p>
+<p><em><strong>Eksempel selvstendig næringsdrivende:</strong></em></p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-json codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;arbeidsforholdsperiode&quot; : [</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;ansvarligEnhetEllerPart&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;norskIdentifikator&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;hovedorganisasjon&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;organisasjonsnummer&quot; : &quot;621905422&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">          &quot;navn&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;naeringsdrivendeUtenKravTilOrganisasjonsnummer&quot; : false,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;underenhetensOrganisasjonsnummer&quot; : null,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;navn&quot; : null</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;spesifikasjonAvInntektsgivendeAktivitet&quot; : {</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;inntektsgivendeAktivitetstype&quot; : &quot;SELVSTENDIG_NAERINGSDRIVENDE&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">        &quot;oppholdsstedVedInntektsgivendeAktivitet&quot; : &quot;FASTLAND&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      },</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;norskPersonidentifikator&quot; : &quot;50679699854&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;periodeidentifikator&quot; : &quot;2c2c6214-3917-485f-b35a-1ebc214a8b4c_92&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;fraOgMedDato&quot; : &quot;2025-02-02&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;tilOgMedDato&quot; : &quot;2025-02-04&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;informasjonskilde&quot; : &quot;OPPLYST_AV_SKATTEPLIKTIG&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      &quot;kommune&quot; : &quot;1554&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    }</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  ],</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &quot;endringsnoekkel&quot; : &quot;42824332&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#perioder-api" class="table-of-contents__link toc-highlight">Perioder API</a><ul><li><a href="#hent-perioder" class="table-of-contents__link toc-highlight">Hent perioder</a></li><li><a href="#beregne-perioder" class="table-of-contents__link toc-highlight">Beregne perioder</a></li><li><a href="#lagre-perioder" class="table-of-contents__link toc-highlight">Lagre perioder</a></li><li><a href="#feil-respons-ifm-bad-request" class="table-of-contents__link toc-highlight">Feil respons ifm bad request</a></li><li><a href="#xsd-beskrivelse-av-oppholdsperioder-og-arbeidsforholdsperioder" class="table-of-contents__link toc-highlight">XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder</a></li><li><a href="#opprett-ny-oppholdsperiode" class="table-of-contents__link toc-highlight">Opprett ny oppholdsperiode</a></li><li><a href="#endre-oppholdsperiode" class="table-of-contents__link toc-highlight">Endre oppholdsperiode</a></li><li><a href="#opprett-ny-arbeidsforholdsperiode" class="table-of-contents__link toc-highlight">Opprett ny arbeidsforholdsperiode</a></li><li><a href="#endre-arbeidsforholdperioder" class="table-of-contents__link toc-highlight">Endre arbeidsforholdperioder</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div></div>
+</body>
+</html>
