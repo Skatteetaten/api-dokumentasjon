@@ -158,16 +158,45 @@ Tjenestene for søknad om utsatt frist støtter kun autentisering med ID-Porten,
 :::
 
 ## Klage
-For å sende inn en klage på et vedtak fra Skatteetaten må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
+For å sende inn en klage på et vedtak om myndighetsfastsetting eller skjønnsfastsetting fra Skatteetaten,
+må det først finnes en fastsatt skattemelding for det aktuelle inntektsåret.
 
-Ved klage må `innsendingsformaal` i `skattemeldingOgNaeringsspesifikasjonRequest` settes til `klage`.
+* Ved [myndighetsfastsetting](https://www.skatteetaten.no/rettskilder/type/handboker/skatteforvaltningshandboken/2020/kapittel-9-fastsetting/ID-9-0.002/ID-9-0.009/) endrer Skatteetaten den skattepliktiges fastsetting
+basert på avdekkede feil eller mangler i den innsendte skattemeldingen.
+* Ved [skjønnsfastsetting](https://www.skatteetaten.no/rettskilder/type/handboker/skatteforvaltningshandboken/gjeldende/kapittel-12-endring-uten-klage/ID-12-2.001/), som er en særskilt form for myndighetsfastsetting, fastsetter Skatteetaten skattegrunnlaget ved skjønn basert på tilgjengelige opplysninger fordi den skattepliktige ikke har levert inn skattemelding innen fristen eller den innleverte skattemeldingen ikke gir et godt nok grunnlag å bygge fastsettingen på.
+
+En klage må skje innen klagefristen i [skatteforvaltningsloven § 13-4](https://lovdata.no/dokument/NL/lov/2016-05-27-14/KAPITTEL_13#%C2%A713-4).
 
 Ved klage på et myndighetsfastsatt vedtak, kreves det at det legges med vedlegg med vedleggskategori `klage`.
 Feltene som har blitt myndighetsfastsatt ligger som [låste felter](../api/innrapportering-skattemelding-innsending#låste-felter) ved uthenting av siste gjeldende skattemelding.
 Ved innsending av klage er det mulig å endre hele skattemeldingen med næringsspesifikasjon, inklusive låste felter.
 
-Ved skjønnsfastsetting fastsetter Skatteetaten skattrgrunnlaget ved skjønn fordi den skattepliktige ikke har levert inn skattemelding innen fristen.
 Ved skjønnsfastsetting krever valideringen at skattemeldingsobjektet som skal sendes inn
-setter feltet `gjelderSkjoennsfastsetting` til `true`. Det er ikke påkrevd med vedlegg ved skjønnsfastsetting.
+setter feltet `gjelderSkjoennsfastsetting` til `true`. Det er ikke påkrevd med vedlegg ved skjønnsfastsetting, det holder
+å sende inn skattemeldingen med næringsspesifikasjon med endrede opplysninger.
 
-Deretter sendes skattemeldingen med næringsspesifikasjon inn på vanlig måte som beskrevet tidligere.
+Ved klage må `innsendingsformaal` i `skattemeldingOgNaeringsspesifikasjonRequest` settes til `klage`.
+
+Deretter validerer dere og sender inn skattemeldingen med næringsspesifikasjon fra sluttbrukersystemet på vanlig måte som beskrevet tidligere.
+Dersom dere sender inn en ikke-komplett skattemelding for en personlig skattepliktig, må den skattepliktige fullføre innsendingen i Skattemeldingsportalen.
+
+Før Skatteetaten gjør et vedtak om myndighetsfastsetting eller skjønnsfastsetting, vil den skattepliktige i de fleste tilfeller motta et varsel
+i forkant av vedtaket. Varselet er tilgjengelig i _Tilsvarsportalen_, og dere kan velge å benytte tjenesten [hent lenker til publikumsportaler](#hent-lenker-til-publikumsportaler)
+for å hente ut lenke til Tilsvar. Ved myndighetsfastsetting vil den skattepliktige kunne svare på varselet i Tilsvar.
+Skatteetaten vil da vurdere svaret og eventuelt gjøre endringer i fastsettingen før vedtaket om myndighetsfastsetting fattes og den skattepliktige varsles om vedtaket.
+
+Varselet er også tilgjengelig via innboksen i Altinn, og dere kan hente det ut via [Dialogporten](../api/skattdialogdokumenter)
+om dere har tilgang til den tjenesten og ønsker å tilgjengeliggjøre varselet direkte i sluttbrukersystemet.
+
+### Endre fastsetting uten klage
+Den skattepliktige kan selv endre på tidligere skattemeldinger uten å sende inn klage hvis det ikke foreligger et vedtak fra Skatteetaten
+eller varsel om vedtak om myndighetsfastsetting. Endringer utenom klage kalles for _endringsmelding_, og er dokumentert i [skatteforvaltningshåndboken](https://www.skatteetaten.no/rettskilder/type/handboker/skatteforvaltningshandboken/skatteforvaltningshandboken-2024/kapittel-9-fastsetting/ID-9-5.001/),
+inklusive frist for å sende inn en endringsmelding.
+
+Ved varsel om skjønnsfastsetting får den skattepliktige mulighet til å endre på skattemeldingen før Skatteetaten gjør et vedtak om skjønnsfastsetting.
+I varselet i Tilsvar ligger det lenke til et utkast til skattemeldingen som den skattepliktige kan endre på og sende inn fra
+_Skattemeldingsportalen_ for personlige skattepliktige, eller _Min Side_ for upersonlig skattepliktige.
+Tjenesten [hent gjeldende skattemelding](../api/innrapportering-skattemelding-utfylling?tab=Hent+gjeldende+skattemelding)
+vil returnere utkastet slik at dere kan tilrettelegge for utfylling og innsending av skattemeldingen fra sluttbrukersystemet.
+Sender den skattepliktige inn en komplett innsending før fristen i varselet om skjønnsfastsetting, vil varselet kunne oppheves fra Skatteetaten.
+Det vil da ikke være nødvendig å sende inn en klage, og den skattepliktige vil få en ny fastsetting basert på den endrede skattemeldingen.
