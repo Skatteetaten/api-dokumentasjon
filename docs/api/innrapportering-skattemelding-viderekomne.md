@@ -23,6 +23,7 @@ Følgende lenker kan være nyttige:
 | [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2) | OpenAPI-spesifikasjon for Altinn3-appen som håndterer instans og innsending av skattemeldingen med næringsspesifikasjon.   |
 | [Tjenesteoversikten fra Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2)                                                                                         | Beskrivelse av tilgangspakker tilgjengelige for skattemeldingen                                                            |
 | [Informasjonsmodell og kodeverk](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/informasjonsmodell/README.md)                                                                        | Oversikt over gjeldende versjoner av XSD-filene                                                                            |
+| [Bruksvilkår](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/bruksvilkar/) | Bruksvilkår for tilgang til Skatteetatens tjenester som leverandør av sluttbrukersystem |
 
 Det refereres for øvrig til de andre sidene i API-dokumentasjonen for dokumentasjon av den generelle innsendingsprosessen:
 - [Utfyllingstjenester](../api/innrapportering-skattemelding-utfylling.md)

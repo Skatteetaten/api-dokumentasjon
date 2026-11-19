@@ -8,6 +8,7 @@ tags: [API, Skattemelding, test]
 keywords: [skattemelding]
 last_updated: Oct 22, 2026
 hide_table_of_contents: true
+unlisted: true
 ---
 
 ## Hvordan komme i gang
@@ -31,7 +32,7 @@ Konkret må sluttbrukersystemet gjøre følgende:
 Skatteetaten har tilgjengeliggjort en testapplikasjon som viser hvordan trinnene beskrevet over kan utføres.
 Den er skrevet i [Jupyter notebook-formatet](https://jupyter.org/):
 
-1. [Jupyter notebook demo for henting, validering og innsending](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/test/testinnsending/person-enk-med-vedlegg-2021.ipynb). Last ned katalogen testinnsending og kjør skriptet demo.ipynb (skriptet vil utføre alle trinn som inngår i prosessen: hente/velidere skattemelding og innsending av skattemelding til Altinn)  
+1. [Jupyter notebook demo for henting, validering og innsending](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/test/testinnsending/person-enk-med-vedlegg-2021.ipynb). Last ned katalogen testinnsending og kjør skriptet demo.ipynb (skriptet vil utføre alle trinn som inngår i prosessen: hente/validere skattemelding og innsending av skattemelding til Altinn)  
 2. [Eksempel XML-er](https://github.com/Skatteetaten/skattemeldingen/blob/master/src/resources/eksempler)
 3. Flere demoklienter finnes på [Skatteetatens GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/test)
 
@@ -55,17 +56,18 @@ Et kundeforhold hos DigDir gir tilgang til deres selvbetjeningsløsning som igje
 Se [Tilgang til API-ene](../api/innrapportering-skattemelding-onboarding#tilgang-til-api-ene) for mer informasjon om hvordan dere etablerer tilgang til API-ene.
 
 Andre nyttige lenker:
-- Klienten bruker test-miljøet i DigDir, "verifikasjon 2": https://www.skatteetaten.no/skjema/testdata/
+- Klienten bruker test-miljøet i DigDir, "verifikasjon 2": https://www.skatteetaten.no/skjema/testdata/.
+- Se [Testmiljø og testdata](../test/testmiljoe) for informasjon om Skatteetatens testmiljø. 
 - OIDC-integrasjonen er beskrevet her: https://docs.digdir.no/docs/idporten/oidc/oidc_guide_idporten
 - Hvordan lage en klient i selvregistreringen: https://docs.digdir.no/docs/idporten/oidc/oidc_api_admin.html
 - Tenor testdatasøk: https://www.skatteetaten.no/skjema/testdata
 
 ## Logge inn hos ID-porten
 
-Klienten må foreta følgende REST kall mot ID-porten:
+Klienten må foreta følgende REST-kall mot ID-porten:
 
 - Starte system browser og gjøre autorisasjonskall mot ID-porten. Les mer om det her: https://docs.digdir.no/docs/idporten/oidc/oidc_protocol_authorize
-- Brukeren blir da sendt til ID-porten for innlogging. Dere kan benytte eksisterende test-brukere som dere benytter til test mot skattemeldingen i dag.
+- Brukeren blir da sendt til ID-porten for innlogging. Dere kan benytte eksisterende testbrukere som dere benytter til test mot skattemeldingen i dag.
 - Sette opp en webserver som venter på callback fra browseren. Etter vellykket pålogging i ID-porten sendes brukes til denne webserveren. Denne webserveren må være satt til å lytte på callback-URL http://localhost:12345/token (ref. forrige kapittel).
 - Gjøre et tokenforespørsel. Les mer om det her: https://docs.digdir.no/docs/idporten/oidc/oidc_protocol_token
 
@@ -74,7 +76,7 @@ Vi benytter følgende testmiljø hos ID-porten:
 - /authorize endpoint: https://login.test.idporten.no/authorize
 - /token endpoint: https://test.idporten.no/token
 
-For detaljer rundt hvilke HTTP-parametere som må sendes med i kallet, se filen [hent.py](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/test/testinnsending/skatteetaten_api.py)
+For detaljer rundt hvilke HTTP-parametere som må sendes med i kallet, se filen [skatteetaten_api.py](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/test/testinnsending/skatteetaten_api.py)
 
 ## Kalle skattemeldings-API
 
@@ -89,18 +91,17 @@ Første testen bør være å teste at klienten når frem, dette kan gjøres ved 
 
 # Se skattemelding i portal
 
-Hvis du gjør en ikke komplett insending så dukker det opp en melding i innboksen i Altinn. Denne sier at du må logge på skatteetatens sider for å fullføre innsendingen, med en lenke til "Min skatt" sidene i produksjon. 
+Hvis du gjør en ikke-komplett insending så dukker det opp en melding i innboksen i Altinn. Denne sier at du må logge på Skatteetatens sider for å fullføre innsendingen, med en lenke til "Min skatt"-sidene i produksjon. 
 Lenken i testmiljøet til "Min skatt" sidene er: https://skatt-test.sits.no/web/mineskatteforhold/
 
-Det er også mulig å gå direkte til skattemelding portalen.  
-Direkte URL til skattemelding portal: https://skatt-test.sits.no/web/skattemeldingen/2021
+Det er også mulig å gå direkte til Skattemeldingsportalen.  
+Direkte URL til Skattemeldingsportalen: https://skatt-test.sits.no/web/skattemeldingen/2021
 
-
-Bruk TestId innlogging; fnr på testbruker
+Bruk innlogging med TestId med fødselsnummeret til testbrukeren.
 
 Merk at dere også kan endre/tilføye opplysninger og sende inn skattemelding. Fastsatt skattemelding (endret skattemelding) vil da også være tilgjengelig for nedlasting.
 
 ## Testdata
-Testdata kan søkes opp i [Tenor testdatasøk](../test/tenor.md).
+Testdata kan søkes opp i Tenor testdatasøk. Du kan lese mer om tjenesten under [Test](../test/tenor.md).
 
 For å teste eiendomstjenestene er det laget en oversikt over hvilke eiendommer som kan søkes opp i en [egen CSV-fil på Skatteetatens GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/api-v2/Syntetiske_eiendommer_v5.csv).

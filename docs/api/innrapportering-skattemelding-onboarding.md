@@ -15,7 +15,7 @@ Denne siden inneholder en onboardingsguide for innrapportering av
 skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige fra sluttbrukersystem.
 Har du en etablert integrasjon mot Skatteetatens API-er for innrapportering av skattemeldingen og ser etter spesifikke detaljer,
 kan du gå til [Avansert bruk](skattemelding-new.md?tab=Avansert+bruk).
-For delingstjenester tilknyttet skattemeldingen, se [API-er for deling for skattemeldingen](skattemelding-new.md#api-er-for-deling-for-skattemeldingen).
+For delingstjenester tilknyttet skattemeldingen, se [API-er for deling for skattemeldingen](#api-er-for-deling-for-skattemeldingen).
 
 Den primære målgruppen er systemleverandører av årsoppgjørsprogram eller regnskapssystem for
 innrapportering av skattemeldingen og næringsopplysninger. Slike systemer kalles heretter
@@ -57,17 +57,9 @@ Det tilbys to sett med tjenester for innrapportering:
 
 ## API-er for deling for skattemeldingen
 I tillegg til API-ene knyttet til innsending av skattemeldingen, har vi laget noen klassiske delingstjenester for SSB og enkelte andre partnere med hjemmel for innsyn i skattemeldingsdata:
-* [__Beregnet skatt API__](../api/beregnetskatt)
-* [__Beregnet skatt upersonlig API__](../api/beregnetskattupersonlig)
 * [Næringsspesifikasjon API](../api/naeringsspesifikasjon)
-* [__Selskapsmelding API__](../api/selskapsmelding)
-* [__Skatteberegningsgrunnlag upersonlig API__](../api/skatteberegningsgrunnlagupersonlig)
 * [Skattemelding API](../api/skattemelding)
 * [Skattemelding upersonlig API](../api/skattemeldingupersonlig)
-* [__Skatteplikt API__](../api/skatteplikt)
-* [__Skatteplikt upersonlig API__](../api/skattepliktupersonlig)
-* [__Summert skattegrunnlag API__](../api/summertskattegrunnlag)
-* [__Summert skattegrunnlag upersonlig API__](../api/summertskattegrunnlagupersonlig)
 * [Tilleggsskatt API](../api/tilleggsskatt)
 
 ## Andre relevante API-er for skattemeldingen
@@ -128,34 +120,44 @@ For å se maksimal levetid til Altinn sine scopes, finner man oversikt over diss
 
 ### Tilgangspakker
 Vi anbefaler å bruke tilgangspakker fra Altinn for å kontrollere tilgangsstyringen til tjenestene.
-Hvilke tilgangspakker som er aktuelle, avhenger av hvem brukeren eller systembrukeren skal representere.
+De aktuelle tilgangspakkene avhenger av hvem brukeren eller systembrukeren skal representere. Dette styres av
+rollen brukeren har i Altinn.
 
-| Tilgangspakke                               | URN                                                                | Når den er aktuell og tilgang i innsendingsløpet                                                                                                                  |
+| Tilgangspakke                               | URN                                                                | Når den er aktuell og tilgang i signeringssteget                                                                                                                  |
 |---------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Ansvarlig revisor**                       | `urn:altinn:accesspackage:ansvarlig-revisor`                       | For ansvarlig revisor på vegne av en kunde. Kan lese og arbeide med utkast og bekrefte i revisors eget steg, men ikke i innsendingssteget før revisors signatur.  |
-| **Revisormedarbeider**                      | `urn:altinn:accesspackage:revisormedarbeider`                      | For revisormedarbeider på vegne av en kunde. Kan lese og arbeide med utkast, men ikke bekrefte innsendingssteget.                                                 |
-| **Revisorattesterer**                       | `urn:altinn:accesspackage:revisorattesterer`                       | For tjenester som krever revisorattestering. Kan lese og arbeide med utkast og bekrefte i revisors eget steg, men ikke i innsendingssteget før revisors signatur. |
-| **Regnskapsfører med signeringsrettighet**  | `urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet`  | For regnskapsfører med signeringsrett på vegne av en kunde. Kan lese og arbeide med utkast og bekrefte innsendingssteget.                                         |
-| **Regnskapsfører uten signeringsrettighet** | `urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet` | For regnskapsfører uten signeringsrett på vegne av en kunde. Kan lese og arbeide med utkast, men ikke bekrefte innsendingssteget.                                 |
-| **Skatt næring**                            | `urn:altinn:accesspackage:skatt-naering`                           | For skattetjenester for næringsvirksomhet. Kan lese og arbeide med utkast og bekrefte innsendingssteget.                                                          |
-| **Skatteforhold for privatpersoner**        | `urn:altinn:accesspackage:innbygger-skatteforhold-privatpersoner`  | For fullmakt til skatteforhold for privatpersoner. Kan lese og arbeide med utkast og bekrefte innsendingssteget for privatpersoner.                               |
-
-Felles for alle tilgangspakkene er at de også gir tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`.
-Denne ressursen er påkrevd både for Skatteetatens og Altinns tjenester.
-Ved bruk av standard systembruker kan dere også få delegert tilgang til enkelttjenester direkte på ressursen `app_skd_formueinntekt-skattemelding-v2`.
+| **Ansvarlig revisor**                       | `urn:altinn:accesspackage:ansvarlig-revisor`                       | For ansvarlig revisor på vegne av en kunde. Kan bekrefte i revisors eget steg, men ikke i signeringssteget før revisors signatur.  |
+| **Revisormedarbeider**                      | `urn:altinn:accesspackage:revisormedarbeider`                      | For revisormedarbeider på vegne av en kunde. Kan ikke bekrefte i signeringssteget.                                                 |
+| **Revisorattesterer**                       | `urn:altinn:accesspackage:revisorattesterer`                       | For tjenester som krever revisorattestering. Kan bekrefte i revisors eget steg, men ikke i signeringssteget før revisors signatur. |
+| **Regnskapsfører med signeringsrettighet**  | `urn:altinn:accesspackage:regnskapsforer-med-signeringsrettighet`  | For regnskapsfører med signeringsrett på vegne av en kunde. Kan bekrefte i signeringssteget.                                         |
+| **Regnskapsfører uten signeringsrettighet** | `urn:altinn:accesspackage:regnskapsforer-uten-signeringsrettighet` | For regnskapsfører uten signeringsrett på vegne av en kunde. Kan ikke bekrefte i signeringssteget.                                 |
+| **Skatt næring**                            | `urn:altinn:accesspackage:skatt-naering`                           | For skattetjenester for næringsvirksomhet. Kan bekrefte i signeringssteget.                                                          |
+| **Skatteforhold for privatpersoner**        | `urn:altinn:accesspackage:innbygger-skatteforhold-privatpersoner`  | For fullmakt til skatteforhold for privatpersoner. Kan bekrefte i signeringssteget for privatpersoner.                               |
 
 Alle tilgangspakkene gir også tilgang til å opprette og lese en instans i Altinn og arbeide med skattemeldingen og næringsspesifikasjonen.
 Bare **Ansvarlig revisor** og **Revisorattesterer** kan bekrefte i revisors signeringssteg, ikke **Revisormedarbeider**. Se [kapittel 5 Sende videre til revisors signering](../api/innrapportering-skattemelding-innsending#5--sende-videre-til-revisors-signering) for den detaljerte flyten.
 
-[Tjenesteoversikten utviklet av Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2) beskriver tilgangspakkene ytterligere. Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.
+Felles for alle tilgangspakkene er at de også gir tilgang til ressursen `app_skd_formueinntekt-skattemelding-v2`.
+Denne ressursen er påkrevd både for Skatteetatens og Altinns tjenester.
+Ved bruk av standard systembruker kan dere også få delegert tilgang til enkelttjenester direkte på ressursen `app_skd_formueinntekt-skattemelding-v2` uten bruk av tilgangspakker.
+
+[Tjenesteoversikten utviklet av Altinn](https://tjenesteoversikten.no/resource/app_skd_formueinntekt-skattemelding-v2) gir også en oversikt over tilganspakker og roller i Altinn3-appen.
+Merk at dette er en uoffisiell tjeneste fra Altinn, og endringer kan forekomme.
 
 Ved bruk av systembruker må systemleverandøren oppgi de aktuelle pakkenes _URN_ i `accessPackages` ved [registrering av systemet og opprettelse av forespørsel om systembruker](../om/systembruker.md#steg-for-steg).
 Den som skal gi systembrukeren tilgang, må godkjenne forespørselen i Altinn. For klientsystembruker knyttes aktuelle klienter til systemtilgangen.
 Ved bruk av ID-porten må den innloggede brukeren ha de aktuelle tilgangene i Altinn.
 
-### Skatteetaten må gi tilgang
-For å kunne bruke API-ene må Skatteetaten gi din virksomhet tilgang.
-[Bestill tilgang til API-et](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/#trenger-du-hjelp)
+### Bestill tilgang til API-ene
+For å kunne bruke Skatteetatens API-er må Skatteetaten gi din virksomhet tilgang til Skatteetatens tjenester og scopes.
+[Bestill tilgang til API-et](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/skattemelding-sbs/#trenger-du-hjelp).
+
+Tilgang til Altinns API-er og scopes må bestilles av Digdir. Se [systembruker](../om/systembruker.md) og [sikkerhet](../om/sikkerhet.md) for mer informasjon om hvordan bestille tilgang til Altinns API-er
+og tilgangspakker.
+
+### Bruksvilkår
+Som leverandør av sluttbrukersystemer må dere sette dere inn i Skatteetatens [bruksvilkår for tilgang til Skatteetatens tjenester - Leverandør av sluttbrukersystem](https://www.skatteetaten.no/samarbeidspartnere/sluttbrukersystemer/bruksvilkar/).
+
+Bruksvilkårene beskriver blant annet deres plikter som databehandler inklusive forutsetning om gyldig databehandleravtale med deres kunder.
 
 ---
 

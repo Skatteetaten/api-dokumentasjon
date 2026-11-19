@@ -128,8 +128,8 @@ Språk i PDF-en for skatteoppgjøret vil utledes fra kommunikasjonsspråket til 
 Gjeldende skatteoppgjør vil også kunne hentes via tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter) for leverandører som har tilgang til den tjenesten.
 
 ## Hent lenker til publikumsportaler
-Leverandører kan lenke direkte til publikumsportaler fra deres sluttbrukersystem. For personlige returneres lenker til Min Skatt, skattemeldingen og Tilsvar.
-For upersonlige returneres lenke til Tilsvar.
+Leverandører kan lenke direkte til publikumsportaler fra deres sluttbrukersystem. For personlige returneres lenker til Min Skatt, skattemeldingsportalen og Brev om skattemeldingen.
+For upersonlige returneres lenke til Brev om skattemeldingen.
 
 Tjenesten som benyttes er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}/lenker/publikumsportaler`.
 
@@ -181,8 +181,8 @@ Deretter validerer dere og sender inn skattemeldingen med næringsspesifikasjon 
 Dersom dere sender inn en ikke-komplett skattemelding for en personlig skattepliktig, må den skattepliktige fullføre innsendingen i Skattemeldingsportalen.
 
 Før Skatteetaten gjør et vedtak om myndighetsfastsetting eller skjønnsfastsetting, vil den skattepliktige i de fleste tilfeller motta et varsel
-i forkant av vedtaket. Varselet er tilgjengelig i _Tilsvarsportalen_, og dere kan velge å benytte tjenesten [hent lenker til publikumsportaler](#hent-lenker-til-publikumsportaler)
-for å hente ut lenke til Tilsvar. Ved myndighetsfastsetting vil den skattepliktige kunne svare på varselet i Tilsvar.
+i forkant av vedtaket. Varselet er tilgjengelig i portalen _Brev om skattemeldingen_, og dere kan velge å benytte tjenesten [hent lenker til publikumsportaler](#hent-lenker-til-publikumsportaler)
+for å hente ut lenke til portalen. Ved myndighetsfastsetting vil den skattepliktige kunne svare på varselet i portalen.
 Skatteetaten vil da vurdere svaret og eventuelt gjøre endringer i fastsettingen før vedtaket om myndighetsfastsetting fattes og den skattepliktige varsles om vedtaket.
 
 Varselet er også tilgjengelig via innboksen i Altinn, og dere kan hente det ut via [Dialogporten](../api/skattdialogdokumenter)
@@ -194,8 +194,8 @@ eller varsel om vedtak om myndighetsfastsetting. Endringer utenom klage kalles f
 inklusive frist for å sende inn en endringsmelding.
 
 Ved varsel om skjønnsfastsetting får den skattepliktige mulighet til å endre på skattemeldingen før Skatteetaten gjør et vedtak om skjønnsfastsetting.
-I varselet i Tilsvar ligger det lenke til et utkast til skattemeldingen som den skattepliktige kan endre på og sende inn fra
-_Skattemeldingsportalen_ for personlige skattepliktige, eller _Min Side_ for upersonlig skattepliktige.
+I varselet i Brev om skattemeldingen ligger det lenke til et utkast til skattemeldingen som den skattepliktige kan
+endre på og sende inn fra _Skattemeldingsportalen_ for personlige skattepliktige, eller _Min Side_ for upersonlig skattepliktige.
 Tjenesten [hent gjeldende skattemelding](../api/innrapportering-skattemelding-utfylling?tab=Hent+gjeldende+skattemelding)
 vil returnere utkastet slik at dere kan tilrettelegge for utfylling og innsending av skattemeldingen fra sluttbrukersystemet.
 Sender den skattepliktige inn en komplett innsending før fristen i varselet om skjønnsfastsetting, vil varselet kunne oppheves fra Skatteetaten.

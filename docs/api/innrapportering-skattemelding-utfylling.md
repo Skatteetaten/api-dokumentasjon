@@ -109,7 +109,9 @@ Første steg i innsendingsprosessen er å hente ut den siste gjeldende skattemel
 Denne danner grunnlaget for videre utfylling og senere innsending av skattemeldingen, og kan ha status utkast eller fastsatt:
 
 * Utkast er en preutfylt skattemelding Skatteetaten har laget for den skattepliktige basert på innrapporterte data og data fra skattemeldingen tidligere år.
-* Fastsatt betyr at skattemeldingen er manuelt innlevert eller automatisk innlevert ved utløp av innleveringsfrist. Denne kan også inneholde et eller flere myndighetsfastsatte felter. For mer informasjon om myndighetsfastsatte felter se avsnittet under valider skattemeldingen.
+* Fastsatt betyr at skattemeldingen er egenfastsatt av den skattepliktige eller skjønnsfastsatt av Skatteetaten ved utløp av innleveringsfrist.
+  Denne kan også inneholde ett eller flere myndighetsfastsatte felter.
+  For mer informasjon om myndighetsfastsatte felter se [validering av låste felter under Innsendingstjenester](../api/innrapportering-skattemelding-innsending#validering-av-låste-felter).
 
 Tjenesten som benyttes for å hente ut den siste gjeldende skattemeldingen er `GET /api/skattemelding/v2/{inntektsår}/{identifikator}`.
 

@@ -7,9 +7,17 @@ Tolvdeler og skatteplikt kan ikke registreres eller overstyres manuelt, de bereg
 
 Funksjonaliteten tilsvarer det som er tilgjengelig i Min skatt under «Arbeid og opphold i Norge», der skattepliktige selv kan logge inn og registrere eller endre oppholds- og arbeidsforholdsperioder.
 
+Tjenestene er dokumentert under "Skatteplikt" i [OpenAPI-spesifikasjonen for skattemeldingen](pathname:///download/skattemeldingupersonlig/openapi.html). Nedenfor er en kortfattet beskrivelse av de tilgjengelige tjenestene.
+
 :::info
 Tjenestene for begrenset skatteplikt støtter kun autentisering med ID-Porten, ikke Maskinporten.
 :::
+
+### XSD for oppholds- og arbeidsforholdsperioder
+Request og respons i noen av tjenestene dokumentert under benytter XSD-filen [perioderformottakogutveksling_v1.xsd](https://github.com/Skatteetaten/skattemeldingen/blob/master/src/resources/xsd/perioderformottakogutveksling_v1.xsd). Denne har i motsetning til XSD-filene benyttet for alminnelig innsending av skattemeldingen ikke årlige
+revisjoner, og det gjeldende versjonsnummeret oppdateres her og lastes opp på GitHub ved vesentlige endringer.
+
+Oppholds- og arbeidsforholdsperioder er nærmere beskrevet under [XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder](#XSD-Beskrivelse-av-oppholdsperioder-og-arbeidsforholdsperioder).
 
 ### Hent perioder
 
@@ -17,275 +25,28 @@ API-et returnerer gjeldende antall tolvdeler, skatteplikt og alle registrerte op
 
 **URL** : `GET https://<env>/api/skattemelding/v2/skatteplikt/perioder/<inntektsaar>/<identifikator>/`
 
-**Eksempel URL** : `GET https://idporten.api.skatteetaten.no/api/skattemelding/v2/skatteplikt/perioder/2025/60875800372`
-
-
-**Forespørsel** :
-
-- `<inntektsaar>`: inntektsåret det hentes informasjon for (format: YYYY)
-- `<identifikator>`: Fødselsnummer eller D‑nummer til den skattepliktig
-
 **Respons** :
+Responsobjektet er i henhold til [XSD for oppholds- og arbeidsforholdsperioder](#XSD-for-oppholds--og-arbeidsforholdsperioder).
 
-- Iht. XSD: [perioderformottakogutveksling_v1.xsd](/src/resources/xsd/perioderformottakogutveksling_v1.xsd)
-
-- Eksempel respons JSON: 
-
-``` json
-{
-     "tin" : "28818698897",
-     "skattepliktTilNorge" : "BEGRENSET",
-     "skatteordning" : null,
-     "tolvdeler" : 1,
-     "perioder" : {
-          "oppholdsperiode" : [
-               {
-                    "kanEndres" : true,
-                    "norskPersonidentifikator" : "28818698897",
-                    "kommune" : null,
-                    "periodeidentifikator" : "2518d6ba-4989-4aee-b86a-c5054fc49a94",
-                    "fraOgMedDato" : "2025-05-01",
-                    "tilOgMedDato" : "2025-05-31",
-                    "informasjonskilde" : "OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG",
-                    "erMerketSomSlettet" : false,
-                    "antallDagerOverstyrt" : null
-               }
-          ],
-          "arbeidsforholdsperiode" : [
-               {
-                    "kanEndres" : true,
-                    "arbeidsforholdIOppdrag" : null,
-                    "arbeidsforholdSomSjoemann" : null,
-                    "spesifikasjonAvInntektsgivendeAktivitet" : {
-                         "oppholdsstedVedInntektsgivendeAktivitet" : "FASTLAND",
-                         "inntektsgivendeAktivitetstype" : "ARBEIDSTAKER"
-                    },
-                    "ansvarligEnhetEllerPart" : {
-                         "norskIdentifikator" : {
-                              "organisasjonsnummer" : "315078385",
-                              "personidentifikator" : null
-                         },
-                         "hovedorganisasjon" : null,
-                         "underenhetensOrganisasjonsnummer" : null,
-                         "naeringsdrivendeUtenKravTilOrganisasjonsnummer" : null,
-                         "navn" : "ENKEL ENKEL KATT INVITASJON"
-                    },
-                    "norskPersonidentifikator" : "28818698897",
-                    "kommune" : "4641",
-                    "periodeidentifikator" : "b1e6b902-07b7-495b-9933-1fbb6cb23dc9",
-                    "fraOgMedDato" : "2025-05-01",
-                    "tilOgMedDato" : "2025-05-31",
-                    "informasjonskilde" : "OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG",
-                    "erMerketSomSlettet" : false,
-                    "antallDagerOverstyrt" : null
-               }
-          ],
-          "endringsnoekkel" : "42653453"
-     }
-}
-```
-
-**Forklaring til respons**
-
-- tin - fødselsnummer/d-nummer
-- skattepliktTilNorge - hvilken skatteplikt den skattepliktige har (Begrenset | Global | Ingen skatteplikt)
-- skatteordning – hvilken skatteordning den skattepliktige er omfattet av (f.eks. kildeskatt på lønn)
-- tolvdeler – antall tolvdeler
-- perioder - se forklaring av opphold og arbeidsforholdsperioder under XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder
+Eksempelrespons og forklaring av responsen finnes i [OpenAPI-spesifikasjonen for tjenesten](pathname:///download/skattemeldingupersonlig/openapi.html).
 
 ### Beregne perioder
 API‑et mottar alle endrede perioder, validerer dem og beregner skatteplikt samt tolvdeler, som returneres i responsen. Endringene lagres ikke, men API‑et opplyser om beregningen ville ha medført et nytt utkast til skattemeldingen.
 
-**URL** : `POST https://<env>/api/skattemelding/v2/skatteplikt/perioder/<inntektsaar>/<identifikator>/beregn`
+**URL** : `POST /api/skattemelding/v2/skatteplikt/perioder/<inntektsaar>/<identifikator>/beregn`
 
-**Eksempel URL** : `POST https://idporten.api.skatteetaten.no/api/skattemelding/v2/skatteplikt/perioder/2025/60875800372/beregn`
+**Request og respons** :
+Request-objektet er i henhold til [XSD for oppholds- og arbeidsforholdsperioder](#XSD-for-oppholds--og-arbeidsforholdsperioder).
 
-
-
-**Forespørsel** :
-
-- `<inntektsaar>`: inntektsåret det hentes informasjon for (format: YYYY)
-- `<identifikator>`: Fødselsnummer eller D‑nummer til den skattepliktig
-
-Body:
-
-- Iht. XSD: [perioderformottakogutveksling_v1.xsd](/src/resources/xsd/perioderformottakogutveksling_v1.xsd) - se forklaring av oppholdperiode og arbeidsforholdsperioder under XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder
-- Eksempel input JSON:
-
-```json
-{
-  "oppholdsperiode" : [
-    {
-      "kanEndres" : true,
-      "norskPersonidentifikator" : "28818698897",
-      "kommune" : null,
-      "periodeidentifikator" : "2518d6ba-4989-4aee-b86a-c5054fc49a94",
-      "fraOgMedDato" : "2025-05-01",
-      "tilOgMedDato" : "2025-05-31",
-      "informasjonskilde" : "OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG",
-      "erMerketSomSlettet" : false,
-      "antallDagerOverstyrt" : null
-    }
-  ],
-  "arbeidsforholdsperiode" : [
-    {
-      "kanEndres" : true,
-      "arbeidsforholdIOppdrag" : null,
-      "arbeidsforholdSomSjoemann" : null,
-      "spesifikasjonAvInntektsgivendeAktivitet" : {
-        "oppholdsstedVedInntektsgivendeAktivitet" : "FASTLAND",
-        "inntektsgivendeAktivitetstype" : "ARBEIDSTAKER"
-      },
-      "ansvarligEnhetEllerPart" : {
-        "norskIdentifikator" : {
-          "organisasjonsnummer" : "315078385",
-          "personidentifikator" : null
-        },
-        "hovedorganisasjon" : null,
-        "underenhetensOrganisasjonsnummer" : null,
-        "naeringsdrivendeUtenKravTilOrganisasjonsnummer" : null,
-        "navn" : "ENKEL ENKEL KATT INVITASJON"
-      },
-      "norskPersonidentifikator" : "28818698897",
-      "kommune" : "4641",
-      "periodeidentifikator" : "b1e6b902-07b7-495b-9933-1fbb6cb23dc9",
-      "fraOgMedDato" : "2025-05-01",
-      "tilOgMedDato" : "2025-05-31",
-      "informasjonskilde" : "OPPLYST_TIL_SAKSBEHANDLER_AV_SKATTEPLIKTIG",
-      "erMerketSomSlettet" : false,
-      "antallDagerOverstyrt" : null
-    }
-  ],
-  "endringsnoekkel" : "42653453"
-}
-```
-
-***Respons***:
-
-Ved vellykket beregning:
-
-```json
-{
-  "response" : [
-    {
-      "inntektsaar" : "2025",
-      "skattepliktTilNorge" : "BEGRENSET",
-      "skatteordning" : null,
-      "tolvdeler" : 1,
-      "nyttUtkastProduseres" : true,
-      "merknader" : [ ]
-    }
-  ]
-}
-```
-Forklaring til respons
-
-- inntektsaar – hvilket inntektsår opplysningene gjelder
-- skattepliktTilNorge – hvilken skatteplikt den skattepliktige har (Begrenset | Global | Ingen skatteplikt)
-- skatteordning – hvilken skatteordning den skattepliktige er omfattet av (f.eks. kildeskatt på lønn)
-- tolvdeler – antall tolvdeler etter endringen
-- nyttUtkastProduseres – angir om endringen medfører at et nytt utkast til skattemeldingen opprettes
-- merknader – eventuelle merknader
+Eksempelrequest og respons finnes i [OpenAPI-spesifikasjonen for tjenesten](pathname:///download/skattemeldingupersonlig/openapi.html).
 
 ### Lagre perioder
 
 API-et mottar og validerer alle perioder, beregner nødvendige verdier og oppdaterer periodedataene. Oppdateringen kan resultere i et nytt utkast til skattemeldingen
 
-**URL** : `POST https://<env>//api/skattemelding/v2/skatteplikt/perioder/<inntektsaar>/<identifikator>/lagre`
+**URL** : `POST /api/skattemelding/v2/skatteplikt/perioder/<inntektsaar>/<identifikator>/lagre`
 
-**Eksempel** URL : `POST https://idporten.api.skatteetaten.no/api/skattemelding/v2/skatteplikt/perioder/2025/60875800372/lagre`
-
-
-
-Forespørsel :
-
-- `<inntektsaar>`: inntektsåret det hentes informasjon for (format: YYYY)
-- `<identifikator>`: Fødselsnummer eller D‑nummer til den skattepliktig
-
-Body:
-
-- Iht. XSD: [perioderformottakogutveksling_v1.xsd](/src/resources/xsd/perioderformottakogutveksling_v1.xsd) - se forklaring av oppholdperioder og arbeidsforholdsperioder under XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder
-- JSON: samme som ved beregning
-
-
-**Respons**
-
-Ved vellykket lagring:
-
-```json
-{
-  "response" : [
-    {
-      "inntektsaar" : "2025",
-      "skattepliktTilNorge" : "BEGRENSET",
-      "skatteordning" : null,
-      "tolvdeler" : 1,
-      "nyttUtkastProduseres" : true,
-      "merknader" : [ ]
-    }
-  ]
-}
-```
-Forklaring til respons
-
-- inntektsaar – hvilket inntektsår opplysningene gjelder
-- skattepliktTilNorge – hvilken skatteplikt den skattepliktige har (Begrenset | Global | Ingen skatteplikt)
-- skatteordning – hvilken skatteordning den skattepliktige er omfattet av (f.eks. kildeskatt på lønn)
-- tolvdeler – antall tolvdeler etter endringen
-- nyttUtkastProduseres – angir om endringen medfører at et nytt utkast til skattemeldingen opprettes
-- merknader– eventuelle merknader
-
-### Feil respons ifm bad request
-
-```json
-{
-  "feilmeldinger" : [
-    {
-      "feilkode" : "Skatteplikt-001",
-      "beskrivelse" : "Til og med dato er satt til før fra og med dato på periode",
-      "periodeIdentifikator" : "2518d6ba-4989-4aee-b86a-c5054fc49a94"
-    }
-  ]
-}
-```
-
-**Feilmeldinger**
-- SKATTEPLIKT-001 - Til og med dato er satt til før fra og med dato på periode
-- SKATTEPLIKT-002 - Når du skal endre fra og med dato i en periode, må du stå i det det første året som blir påvirket av endringen
-- SKATTEPLIKT-003 - Overstyring av antall dager må skje innen inntektsår
-- SKATTEPLIKT-004 - Til og med dato er obligatorisk når overstyrte dager er satt
-- SKATTEPLIKT-005 - Antall overstyrte dager kan ikke overstige antall dager i perioden
-- SKATTEPLIKT-006 - Antall overstyrte dager kan ikke være mindre enn 1 dag eller mer enn inntektsårets lengde
-- SKATTEPLIKT-007 - Tin skrevet på periode tilhører ikke denne personen
-- SKATTEPLIKT-008 - Mangler informasjon om oppholdssted
-- SKATTEPLIKT-009 - Ugyldig kombinasjon av oppholdssted og inntektsgivende aktivitet
-- SKATTEPLIKT-010 - Når arbeidsperioder er registrert på fastland i Norge og/eller på fiskefartøy innenfor tolvmilssonen, må opphold i Norge også registreres for samme tidsrom
-- SKATTEPLIKT-011 - Datoer på fastsatt periode må være innenfor inntektsår
-- SKATTEPLIKT-012 - Mangler informasjon om kommune
-- SKATTEPLIKT-013 - Arbeid som grensegjenger, men kommunenummer grenser ikke til Sverige eller Finland
-- SKATTEPLIKT-014 - Kan ikke slette periode som opprinnelig startet før inntektsåret
-- SKATTEPLIKT-015 - Når du skal endre til og med dato i en periode, må du stå i det første året som blir påvirket av endringen. Du kan også sette til og med datoen til 31.12. året før, hvis denne datoen var dekket av den opprinnelige perioden
-- SKATTEPLIKT-016 - Kan ikke flytte periode fra tidligere inntektsår
-- SKATTEPLIKT-017 - Mangler informasjon om arbeidsgiver
-- SKATTEPLIKT-018 - Ikke mulig å lagre eller endre periode med oppholdssted
-- SKATTEPLIKT-019 - Ikke mulig å lagre eller endre periode med oppholdssted og inntektsgivende aktivitet
-- SKATTEPLIKT-020 - Ikke mulig å overstyre antall dager for periode med oppholdssted
-- SKATTEPLIKT-021 - Ikke mulig å overstyre antall dager for periode med oppholdssted og inntektsgivende aktivitet
-- SKATTEPLIKT-022 - Kan ikke legge til en ny periode med oppholdssteds og inntektsgivende aktivitet
-- SKATTEPLIKT-023 - Kan ikke slette periode med oppholdssteds og inntektsgivende aktivitet
-- SKATTEPLIKT-024 - Kun datoer er redigerbare for tredjeparts informasjonskilde
-- SKATTEPLIKT-025 - Ugyldig verdi i felt
-- SKATTEPLIKT-026 - Ukjent arbeidsgiver
-- SKATTEPLIKT-027 - Periode er myndighetsfastsatt og kan derfor ikke endres
-- SKATTEPLIKT-028 - Det er ikke registrert arbeidsperioder som krever registrering av oppholdstid i Norge. Dersom det foreligger arbeid utført på norsk fastland, må dette registreres
-- SKATTEPLIKT-101 - Ugyldig inntektsår
-- SKATTEPLIKT-102 - Mangler perioder
-- SKATTEPLIKT-103 - Ukjent personidentifikator
-- SKATTEPLIKT-104 - XSD validering feilet
-- SKATTEPLIKT-105 - Periode innhold tilhører ikke request TIN
-- SKATTEPLIKT-106 - Flere perioder registrert på samme ID
-- SKATTEPLIKT-107 - Utdatert endringsnøkkel
-- SKATTEPLIKT-108 - Feil ved beregning for inntektsår
+Request og respons er de samme som for beregne perioder over.
 
 ### XSD: Beskrivelse av oppholdsperioder og arbeidsforholdsperioder
 

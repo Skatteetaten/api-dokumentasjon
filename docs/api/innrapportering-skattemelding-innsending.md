@@ -11,6 +11,8 @@ hide_table_of_contents: false
 unlisted: true
 ---
 
+import Asynkront from '../api/innrapportering-skattemelding-innsending-asynkront.md';
+
 <Summary>Innsendingstjenester i forbindelse med innrapportering av skattemeldingen fra sluttbrukersystemer</Summary>
 
 <Tabs underline={true} compact>
@@ -18,7 +20,8 @@ unlisted: true
 
 ## Introduksjon
 Før innsending av skattemelding med næringsspesifikasjon, validerer dere innsendingen ved bruk av valideringstjenesten for å sikre at skattemeldingen er korrekt og mest sannsynlig vil bli godkjent ved innsending.
-Samme tjeneste benyttes av Skatteetatens mottak ved validering av innsendt skattemelding. Som beskervet i de fire hovedstrategiene for implementasjon, kan dere velge velge å implementere alle beregninger selv, eller integrere valideringstjenesten i deres system.
+Samme tjeneste benyttes av Skatteetatens mottak ved validering av innsendt skattemelding.
+Som beskrevet i de fire hovedstrategiene for implementasjon, kan dere velge å implementere alle beregninger selv, eller integrere valideringstjenesten i deres system.
 
 Dere kan velge å validere løpende etter hvert som sluttbruker fyller inn informasjon, eller som én samlet validering før innsending.
 Dette avhenger av flyten i sluttbrukersystemet deres.
@@ -115,14 +118,14 @@ opplasting av vedlegg, signering av skattepliktig og eventuell revisor, og å he
 
 Det er mulig å følge prosessen for innsending via en oppgave i innboksen i Altinn, og få opp en forenklet visningsklient
 som lar sluttbrukerne se innholdet i XML-dokumentene som er lastet opp på Altinn-instansen i et lesbart format.
-Signering av den skattepliktige og eventuell revisor skjer også via klienten.
+Signering av den skattepliktige og eventuell revisor kan også utføres via klienten.
 Etter at skattemeldingen er sendt inn vil det være mulig å hente ut innholdet som ble sendt inn via klienten.
 
 Endepunkter med beskrivelse av parametre og respons ligger i [OpenAPI-spesifikasjonen til Altinn3-appen for skattemeldingen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 Denne genereres og administreres av Altinn basert på appen utviklet av Skatteetaten.
 Altinn har også tilgjengeliggjort en [generisk OpenAPI-spesifikasjon](https://docs.altinn.studio/nb/api/apps/spec/) for Altinn3-API-et som er relevant ved uthenting/oppdatering/sletting av elemeter på instansen.
 
-Autentisering mot Altinns API er beskrevet i [Tilgang til Altinn3 App API](#tilgang-til-altinn3-app-api) med referanse til detaljert dokumentasjon på Altinns sider.
+Autentisering mot Altinns API er beskrevet i [Tilgang til Altinn3 App API](../anvendelsesomraader/skattemelding-new?tab=Onboardingsguide#tilgang-til-altinn3-app-api) med referanse til detaljert dokumentasjon på Altinns sider.
 Det er det innvekslede Altinn-tokenet som benyttes for å opprette instansen i Altinn3 og øvrige kall til Altinn3-API.
 
 Diagrammet under viser den overordnede forretningsprosessen for innsending av skattemelding med næringsspesifikasjon via Altinn3-appen.
@@ -132,11 +135,24 @@ XSD-ene er nærmere beskrevet i [Informasjonsmodell for validering og innsending
 [![Forretningsprosess Altinn3](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)](../../static/download/skattemeldingupersonlig/BPMN%20Altinn3%20innrapportering%20skattemelding.png)
 <br/>_Overordnet forretningsprosess for Altinn3-appen._
 
-## Asynkront API for innsending
-Det tilbys et eget API for asynkron innsending av skattemeldinger med næringsspesifikasjoner større enn 10 MB.
-I disse tilfellene er det påkrevd å bruke de asynkrone tjenestene for innsending.
+## Tilgangspakker og rettigheter i Altinn3
+I [onboardingsguiden](../api/anvendelsesomraader/skattemelding-new?tab=Onboardingsguide#Tilgangspakker) viser vi en oversikt
+over de ulike tilgangspakkene som er støttet i Altinn3-appen. I tabellen under viser vi hvilke roller i Altinn som gir
+de ulike tilgangspakkene, og hvilke rettigheter de gir i de ulike stegene i innsendingen av skattemeldingen med næringsspesifikasjon i Altinn3-appen.
 
-Det asynkrone API-et er dokumentert på [GitHub](https://github.com/Skatteetaten/skattemeldingen/blob/master/docs/api-asynk/README.md).
+| Rolle i Altinn | Tilgangspakke | [Klargjøre innsendingen](#1--opprettelse-av-instans-i-altinn3) (Utfylling) | [Signere skattemeldingen](#4--sende-skattemeldingen-til-signering) (Bekreftelse) | [Signere som revisor](#5--sende-videre-til-revisors-signering) (BekreftelseRevisor) | [Hente tilbakemelding](#7--opprettelse-av-gjeldende-fastsetting-og-kvittering-på-innsendt-skattemelding) (Tilbakemelding) |
+|---|---|---|---|---|---|
+| Regnskapsfører med signeringsrettighet (`urn:altinn:rolecode:a0239`)| Regnskapsfører med signeringsrettighet  | Lese, skrive, slette, sende videre | Lese, skrive, slette, bekrefte | Lese, slette | Lese |
+| Regnskapsfører uten signeringsrettighet (`urn:altinn:rolecode:a0240`)| Regnskapsfører uten signeringsrettighet  | Lese, skrive, slette, sende videre | Lese, slette | Lese, slette | Lese |
+| Ansvarlig revisor (`urn:altinn:rolecode:a0237`)| Ansvarlig revisor  | Lese, skrive, slette, sende videre | Lese, slette | Lese, skrive, slette, bekrefte | Lese |
+| Revisormedarbeider (`urn:altinn:rolecode:a0238`)| Revisormedarbeider  | Lese, skrive, slette, sende videre | Lese, slette | Lese, slette | Lese |
+| Kontaktperson NUF (`urn:altinn:rolecode:knuf`)| Skatt næring  | Lese, skrive, slette, sende videre | Lese, skrive, slette, bekrefte | Lese, slette | Lese |
+| Revisorattesterer (`urn:altinn:rolecode:a0298`) | Revisorattesterer  | Lese, skrive, slette, sende videre | Lese, slette | Lese, skrive, slette, bekrefte | Lese |
+| Skatteforhold for privatpersoner (`urn:altinn:rolecode:a0282`) | Skatteforhold for privatpersoner  | Lese, skrive, slette, sende videre | Lese, skrive, slette, bekrefte | Lese, slette | Lese |
+| Begrenset signeringsrettighet (`urn:altinn:rolecode:siskd`)| _Ingen tilhørende tilgangspakke_  | Lese, skrive, slette, sende videre | Lese, skrive, slette, bekrefte | Lese, slette | Lese |
+
+Alle tilgangspakkene og rollene i tabellen gir rett til å opprette en instans. «Sende videre» under `Utfylling` betyr å fullføre dette steget slik at instansen går til Bekreftelse, som beskrevet i [steg 4](#4--sende-skattemeldingen-til-signering). «Bekrefte» i signeringsstegene sender instansen videre til neste steg,
+som enten er `BekreftelseRevisor` eller `Tilbakemelding` avhengig av om revisor skal signere eller ikke.
 
 ## 1 &nbsp; Opprettelse av instans i Altinn3
 Første steg i innsendingen er å opprette en instans i Altinn3. En instans brukes av Altinn for å bevare tilstanden til innsendingen av skattemeldingen med næringsspesifikasjon, inklusive alle dokumenter og vedlegg.
@@ -146,7 +162,24 @@ Detaljert dokumentasjon for hva en instans er og hvordan den brukes finnes i [Al
 
 Spesifikt for Skatteetatens app er at `ìnntektsaar` skattemeldingen gjelder for må spesifiseres ved opprettelse av intansen.
 
-Når instansen er opprettet får den status `data`, og det er klart for å laste opp skattemeldingen med næringsspesifikasjon og eventuelle vedlegg.
+Endepunktet i Altinn3-API-et som benyttes for å opprette instansen er [`POST /skd/formueinntekt-skattemelding-v2/instances`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
+Når instansen er opprettet får prosessen status `Utfylling`, og det er klart for å laste opp skattemeldingen med næringsspesifikasjon og eventuelle vedlegg. Status på prosessen ser slik ut i responsen til instansen. Noen felt er fjernet for å gjøre det mer lesbart, men `name`-feltet viser at prosessen er i status `Utfylling`:
+
+<pre>
+<code>
+"process": &#123;
+    {"  "}"currentTask": &#123;
+    {"  "}"flow": 2,
+    {"  "}"elementId": "Task_1",
+    {"  "}<span style={{ color: "red" }}>"name": "Utfylling", </span>
+    {"  "}"altinnTaskType": "data",
+    {"  "}"ended": null,
+    {"  "}"validated": null,
+    {"  "}"flowType": "CompleteCurrentMoveToNext"
+    {"  "}&#125;
+  &#125;
+</code>
+</pre>
 
 ### 1.1 &nbsp; Revisors signering
 Om revisjonsplikt foreligger og det er forekomster som skal bekreftes av revisor, må også `skalBekreftesavRevisor` settes til `true` ved opprettelse av instansen.
@@ -209,7 +242,7 @@ sammen med oppdaterte dokumenter i requesten.
 ## 4 &nbsp; Sende skattemeldingen til signering
 Når skattemeldingen med næringsspesifikasjon er lastet opp på instansen, og eventuelle vedlegg er lastet opp, kan skattemeldingen sendes til signering.
 Dette gjøres ved å benytte endepunktet [`PUT /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/process/next`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
-Dette setter instansen i status `confirmation`.
+Dette setter prosessen til instansen i status `Bekreftelse`.
 
 Når prosessen har blitt sendt til signering, vil den skattepliktige få tilgang til å se gjennom og signere skattemeldingen med næringsspesifikasjon
 gjennom Skatteetatens visningsklient. Visningsklienten er tilgjengelig på URL `https://skatt.skatteetaten.no/web/skattemelding-visning/altinn?appId=skd/formueinntekt-skattemelding-v2&instansId={instanceGuid}`
@@ -227,7 +260,7 @@ vil instansen etter at den skattepliktige har signert gå videre til revisors si
 i visningsklienten vil denne håndtere endring av status til revisors signering.
 Hvis SBS håndterer signeringen direkte, må SBS selv endre status til revisors signering etter at den skattepliktige har signert
 ved å benytte endepunktet [`PUT /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/process/next`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
-Instansen vil fortsatt være i status `confirmation`, men instansen inneholder også en separat _task_ som vil endres til _Task\_2Revisor_ når revisor skal signere.
+Prosessen i instansen settes da til status `BekreftelseRevisor`.
 
 Revisor signerer på samme måte som den skattepliktige som beskrevet i [kapittel 4](#4--sende-skattemeldingen-til-signering),
 enten via visningsklienten eller direkte fra SBS.
@@ -255,7 +288,7 @@ skal dette lastes opp på instansen ved å benytte endepunktet
 ## 6 &nbsp; Innsending av skattemelding med næringsspesifikasjon til Skatteetaten
 Når både den skattepliktige og eventuell revisor har signert, kan skattemeldingen med næringsspesifikasjon sendes videre til behandling hos Skatteetaten.
 Dette trigges av nok et kall til [`PUT /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/process/next`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
-Instansen vil da settes til status `feedback`.
+Prosessen i instansen vil da settes til status `Tilbakemelding`.
 
 ## 7 &nbsp; Opprettelse av gjeldende fastsetting og kvittering på innsendt skattemelding
 :::info
@@ -269,9 +302,8 @@ Denne kan hentes ut på følgende måte:
 [`GET /skd/formueinntekt-skattemelding-v2/instances/{instanceOwnerPartyId}/{instanceGuid}/data/{dataGuid}`](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
 
 Når Skatteetaten har ferdigbehandlet innsendingen, vil instansen i Altinn3-appen bli satt til status `arkivert`.
-Dette er ensbetydende med at det er opprettet _gjeldende fastsetting_ for skattemeldingen.
-* Hvis SBS har sendt inn en komplett skattemelding og den er validert OK, vil Altinn3-instansen bli satt til `arkivert` direkte ved innsending fra SBS.
-* Hvis SBS har sendt inn en ikke-komplett skattemelding, vil Altinn3-instansen bli ha status `feedback` inntil den skattepliktige har sendt inn i SME.
+* Hvis sluttbrukersystemet har sendt inn en komplett skattemelding og den er validert OK, vil Altinn3-instansen bli satt til `arkivert` direkte ved innsending fra slutbrukersystemet.
+* Hvis sluttbrukersystemet har sendt inn en ikke-komplett skattemelding, vil Altinn3-instansen bli ha status `feedback` inntil den skattepliktige har sendt inn i Skattemeldingsportalen (SME).
 * Hvis skattemeldingen er validert til _Ikke OK_, blir status satt til `arkivert` direkte med melding om resultatet uavhengig av om den er komplett eller ikke-komplett.
 
 Skatteetaten oppdaterer innboksen i Altinn med oppdatert status på innsendingen. SBS kan benytte Dialogporten til å spørre
@@ -279,6 +311,12 @@ om nye meldinger fra Skatteetaten for den skattepliktige og dermed utlede når e
 Se [Hvordan hente meldinger gjennom Dialogporten](https://samarbeid.digdir.no/altinn/hvordan-hente-meldinger-gjennom-dialogporten/2869) for mer informasjon.
 
 Den skattepliktige kan sende inn skattemelding gjentatte ganger. For hver nye innsending må Altinn3-prosessen startes på nytt med en ny instans.
+
+## Asynkront API for innsending
+Det tilbys et eget API for asynkron innsending av skattemeldinger med næringsspesifikasjoner større enn 10 MB.
+I disse tilfellene er det påkrevd å bruke de asynkrone tjenestene for innsending.
+
+Det asynkrone API-et er dokumentert i fanen [Asynkront API for innsending](../api/innrapportering-skattemelding-innsending?tab=Asynkront+API+for+innsending).
 
 </TabItem>
 
@@ -461,6 +499,9 @@ nødvendige flyten for innsending av skattemeldingen. Dere finner dokumentasjon 
 
 [![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
 
+</TabItem>
 
+<TabItem headerText="Asynkront API for innsending" itemKey="itemKey-5">
+<Asynkront />
 </TabItem>
 </Tabs>

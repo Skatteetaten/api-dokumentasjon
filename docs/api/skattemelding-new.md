@@ -13,8 +13,8 @@ import Onboarding from '../api/innrapportering-skattemelding-onboarding.md';
 import Viderekomne from '../api/innrapportering-skattemelding-viderekomne.md';
 import Test from '../api/innrapportering-skattemelding-test.md';
 
-<Summary>API-er for deling og innrapportering knyttet til Skattemeldingen. Se fanen [_Onboardingsguide_](../api/skattemelding-new.md?tab=Onboardingsguide) om du er ny leverandør som skal etablere tilgang
-til skattemeldingstjenester. Se [_Avansert bruk_](../api/skattemelding-new.md?tab=Avansert+bruk) om du er en etablert leverandør som ser etter spesifikke detaljer.</Summary>
+<Summary>API-er for innrapportering knyttet til Skattemeldingen. Se fanen [_Onboardingsguide_](../api/skattemelding-new.md?tab=Onboardingsguide) om du er ny leverandør som skal etablere tilgang
+til skattemeldingstjenester. Se [_Avansert bruk_](../api/skattemelding-new.md?tab=Avansert+bruk) om du er en etablert leverandør som ser etter spesifikke detaljer.<br/><br/> For API-er knyttet til Deling fra Skatteetaten, se [Deling fra Skatteetaten](../anvendelsesomraader/deling-skatteetaten).</Summary>
 
 <Tabs underline="true">
 <TabItem headerText = "Onboardingsguide" itemKey="itemKey-1" default>
