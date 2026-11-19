@@ -36,7 +36,7 @@ For generell informasjon om tjenestene se egne sider om:
 ## Bruk av API-et
 
 Dette API-et er ment for selskaper som skal rapportere tredjepartsopplysninger, som har innsendinger større enn 10MB og
-som ikke kan dele opp innsendingene. Følgende ordninger er støttet:
+som ikke kan dele opp innsendingene. Vi anbefaler maksimal filstørrelse på 2GB. Følgende ordninger er støttet:
 
 - AKSJESPAREKONTO
 - BOLIGSPARING UNGDOM
@@ -46,6 +46,10 @@ som ikke kan dele opp innsendingene. Følgende ordninger er støttet:
 - SKATTEPLIKTIG KUNDEUTBYTTE
 - VERDIPAPIRFOND
 - VERDIPAPIRFONDSHISTORIKK
+- SKADEFORSIKRING
+- LIVSFORSIKRING
+- FONDSKONTO
+- INDIVIDUELLE PENSJONSORDNINGER
 
 ## Scope
 
