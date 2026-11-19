@@ -13,13 +13,6 @@ hide_table_of_contents: true
 ## Introduksjon
 Denne siden inneholder en onboardingsguide for innrapportering av
 skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige fra sluttbrukersystem.
-Har du en etablert integrasjon mot Skatteetatens API-er for innrapportering av skattemeldingen og ser etter spesifikke detaljer,
-kan du gå til [Avansert bruk](skattemelding-new.md?tab=Avansert+bruk).
-For delingstjenester tilknyttet skattemeldingen, se [API-er for deling for skattemeldingen](#api-er-for-deling-for-skattemeldingen).
-
-Den primære målgruppen er systemleverandører av årsoppgjørsprogram eller regnskapssystem for
-innrapportering av skattemeldingen og næringsopplysninger. Slike systemer kalles heretter
-sluttbrukersystemer (SBS).
 
 Løsningen legger opp til at en innsending skal inneholde en skattemelding. For personlig skattepliktige som driver
 enkeltpersonforetak (ENK), upersonlig skattepliktige (selskaper) og for selskaper med deltakerfastsetting (SDF),
@@ -54,17 +47,6 @@ Det tilbys to sett med tjenester for innrapportering:
   Dette er dokumentert på en egen side under _API-er for innrapportering_:
   - [Skattemelding innsendingstjenester](../api/innrapportering-skattemelding-innsending.md)
   - Altinn3-API-ene har sin egen OpenAPI-spesifikasjon tilgjengelig på [OpenAPI-spesifikasjon for Altinn3-appen](https://skd.apps.altinn.no/skd/formueinntekt-skattemelding-v2/swagger/index.html?urls.primaryName=End+user+app+API+for+skd%2Fformueinntekt-skattemelding-v2).
-
-## API-er for deling for skattemeldingen
-I tillegg til API-ene knyttet til innsending av skattemeldingen, har vi laget noen klassiske delingstjenester for SSB og enkelte andre partnere med hjemmel for innsyn i skattemeldingsdata:
-* [Næringsspesifikasjon API](../api/naeringsspesifikasjon)
-* [Skattemelding API](../api/skattemelding)
-* [Skattemelding upersonlig API](../api/skattemeldingupersonlig)
-* [Tilleggsskatt API](../api/tilleggsskatt)
-
-## Andre relevante API-er for skattemeldingen
-I tillegg tilbyr Skatteetaten tjenesten [Skatt dialogdokumenter](../api/skattdialogdokumenter)
-for å hente ut dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen. Denne tjenesten krever separate tilganger og er ikke en del av innsendingsløpet for skattemeldingen.
 
 ## Tilgang til API-ene
 Når en skattepliktig skal benytte et sluttbrukersystem for å sende inn skattemeldingen og næringsopplysninger gjennom
