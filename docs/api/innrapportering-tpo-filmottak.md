@@ -118,6 +118,22 @@ Velg den som passer for det du skal sende inn
       {
         "value": "ske-innrapportering-verdipapirfond",
         "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-skadeforsikring",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-livsforsikring",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-fondskonto",
+        "id": "urn:altinn:resource"
+      },
+      {
+        "value": "ske-innrapportering-individuelle-pensjonsordninger",
+        "id": "urn:altinn:resource"
       }
     ]
   }
