@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">Onboarding for innrapportering skattemelding API | API-dokumentasjon</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-onboarding"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="nb"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Onboarding for innrapportering skattemelding API | API-dokumentasjon"><meta data-rh="true" name="description" content="Introduksjon"><meta data-rh="true" property="og:description" content="Introduksjon"><meta data-rh="true" name="keywords" content="skattemelding"><link data-rh="true" rel="icon" href="/api-dokumentasjon/en/img/favicon.png"><link data-rh="true" rel="canonical" href="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-onboarding"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-onboarding" hreflang="nb"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/en/api/innrapportering-skattemelding-onboarding" hreflang="en"><link data-rh="true" rel="alternate" href="https://skatteetaten.github.io/api-dokumentasjon/api/innrapportering-skattemelding-onboarding" hreflang="x-default"><link rel="alternate" type="application/atom+xml" href="/api-dokumentasjon/en/nyheter-og-driftsvarsler/atom.xml" title="Skatteetaten - API nyheter Atom Feed"><link rel="stylesheet" href="/api-dokumentasjon/en/assets/css/styles.93f12caa.css">
-<script src="/api-dokumentasjon/en/assets/js/runtime~main.75838fed.js" defer="defer"></script>
+<script src="/api-dokumentasjon/en/assets/js/runtime~main.09857900.js" defer="defer"></script>
 <script src="/api-dokumentasjon/en/assets/js/main.56edb032.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -13,13 +13,7 @@
 </defs></svg>
 <script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div dir="ltr" class="body-98"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="navigation_AME2 navbar"></div><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col"><div class="docItemContainer_Djhp"><article><div class="theme-doc-markdown markdown"><header><h1>Onboarding for innrapportering skattemelding API</h1></header><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="introduksjon">Introduksjon<a href="#introduksjon" class="hash-link" aria-label="Direct link to Introduksjon" title="Direct link to Introduksjon" translate="no">​</a></h2>
 <p>Denne siden inneholder en onboardingsguide for innrapportering av
-skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige fra sluttbrukersystem.
-Har du en etablert integrasjon mot Skatteetatens API-er for innrapportering av skattemeldingen og ser etter spesifikke detaljer,
-kan du gå til <a class="" href="/api-dokumentasjon/en/anvendelsesomraader/skattemelding-new?tab=Avansert+bruk">Avansert bruk</a>.
-For delingstjenester tilknyttet skattemeldingen, se <a href="#api-er-for-deling-for-skattemeldingen" class="">API-er for deling for skattemeldingen</a>.</p>
-<p>Den primære målgruppen er systemleverandører av årsoppgjørsprogram eller regnskapssystem for
-innrapportering av skattemeldingen og næringsopplysninger. Slike systemer kalles heretter
-sluttbrukersystemer (SBS).</p>
+skattemelding med eventuell næringsspesifikasjon for personlige og upersonlige skattepliktige fra sluttbrukersystem.</p>
 <p>Løsningen legger opp til at en innsending skal inneholde en skattemelding. For personlig skattepliktige som driver
 enkeltpersonforetak (ENK), upersonlig skattepliktige (selskaper) og for selskaper med deltakerfastsetting (SDF),
 skal innsendingen også <strong>alltid</strong> inneholde næringsspesifikasjon. Det er kun lønnstakere og pensjonister som kun sender inn
@@ -57,17 +51,6 @@ Dette er dokumentert på en egen side under <em>API-er for innrapportering</em>:
 </ul>
 </li>
 </ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="api-er-for-deling-for-skattemeldingen">API-er for deling for skattemeldingen<a href="#api-er-for-deling-for-skattemeldingen" class="hash-link" aria-label="Direct link to API-er for deling for skattemeldingen" title="Direct link to API-er for deling for skattemeldingen" translate="no">​</a></h2>
-<p>I tillegg til API-ene knyttet til innsending av skattemeldingen, har vi laget noen klassiske delingstjenester for SSB og enkelte andre partnere med hjemmel for innsyn i skattemeldingsdata:</p>
-<ul>
-<li class=""><a class="" href="/api-dokumentasjon/en/api/naeringsspesifikasjon">Næringsspesifikasjon API</a></li>
-<li class=""><a class="" href="/api-dokumentasjon/en/api/skattemelding">Skattemelding API</a></li>
-<li class=""><a class="" href="/api-dokumentasjon/en/api/skattemeldingupersonlig">Skattemelding upersonlig API</a></li>
-<li class=""><a class="" href="/api-dokumentasjon/en/api/tilleggsskatt">Tilleggsskatt API</a></li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="andre-relevante-api-er-for-skattemeldingen">Andre relevante API-er for skattemeldingen<a href="#andre-relevante-api-er-for-skattemeldingen" class="hash-link" aria-label="Direct link to Andre relevante API-er for skattemeldingen" title="Direct link to Andre relevante API-er for skattemeldingen" translate="no">​</a></h2>
-<p>I tillegg tilbyr Skatteetaten tjenesten <a class="" href="/api-dokumentasjon/en/api/skattdialogdokumenter">Skatt dialogdokumenter</a>
-for å hente ut dokumenter som tilgjengeliggjøres i dialoger for formues- og inntektsskatt, blant annet skatteoppgjør og brev om skattemeldingen. Denne tjenesten krever separate tilganger og er ikke en del av innsendingsløpet for skattemeldingen.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="tilgang-til-api-ene">Tilgang til API-ene<a href="#tilgang-til-api-ene" class="hash-link" aria-label="Direct link to Tilgang til API-ene" title="Direct link to Tilgang til API-ene" translate="no">​</a></h2>
 <p>Når en skattepliktig skal benytte et sluttbrukersystem for å sende inn skattemeldingen og næringsopplysninger gjennom
 API må sluttbrukeren og/eller sluttbrukersystemet være autentisert og autorisert gjennom en påloggingsprosess.</p>
