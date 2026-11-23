@@ -28,6 +28,9 @@ POST "https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-meldin
 ```
 Hvor innhold (http body) er mva-meldingen som xml, og med `Content-Type: application/xml` i header.
 
+URL-er til API-et, beskrivelsen av parameterne, endepunkter og respons ligger
+i [Open API spesifikasjonen](https://app.swaggerhub.com/apis/skatteetaten/mva-melding-validering-api) på SwaggerHub.
+
 ## Tilgang til API-et
 
 ### Scope
