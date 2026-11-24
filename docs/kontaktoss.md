@@ -18,7 +18,7 @@ Se [mer info om varsling](/om/varsler) på egen side.
 
 ## Brukerstøtteverktøy
 
-For henvendelser om API-er for deling av skatte- og inntekt eller MVA, kontakt oss gjennom vårt [verktøy for brukerstøtte](https://www.skatteetaten.no/deling/kontakt/). API og korrelasjonsid fra feilmelding må inkluderes i henvendelser for å kunne undersøke effektivt.
+For henvendelser om Skatteetatens API-er, kontakt oss gjennom vårt [verktøy for brukerstøtte](https://www.skatteetaten.no/deling/kontakt/). Navn på API og korrelasjonsid fra feilmelding må inkluderes i henvendelser for å kunne undersøkes effektivt.
 
 ## Slack
 
