@@ -500,8 +500,92 @@ nødvendige flyten for innsending av skattemeldingen. Dere finner dokumentasjon 
 [![Flytdiagram innrapportering av skattemelding næring.png](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)](../../static/download/skattemeldingupersonlig/Flytdiagram%20innrapportering%20av%20skattemelding%20næring.png)
 
 </TabItem>
+<TabItem headerText="Ikke-komplett innsending ved endring" itemKey="itemKey-5">
 
-<TabItem headerText="Asynkront API for innsending" itemKey="itemKey-5">
+Denne siden beskriver hvordan et sluttbrukersystem (SBS) kan sende inn endringer i skattemeldingen med
+`innsendingstype` satt til `ikkeKomplett`, uten å sende med næringsspesifikasjonen.
+
+Ved `ikkeKomplett` er innsendingen ikke ferdig før den skattepliktige har logget inn i skattemeldingen på
+skatteetaten.no, kontrollert opplysningene og sendt inn. Dette er aktuelt for SBS som kun leverer deler av
+skattemeldingen, for eksempel virtuelle eiendeler (kryptovaluta). Hvis skattepliktig er ENK, så kan næringsspesifikasjonen fylles ut i portalen uten at den blir låst.
+
+Se [Informasjonsmodell for validering og innsending](#informasjonsmodell-for-validering-og-innsending-av-skattemelding-med-næringsspesifikasjon) for beskrivelse av `innsendingsinformasjon`.
+
+## Låsing av næringsspesifikasjon
+
+Når en næringsspesifikasjon sendes inn fra SBS, regnes den som levert fra et regnskapssystem. Næringsspesifikasjonen
+låses da for redigering i skattemeldingen, og den skattepliktige må gjøre eventuelle endringer i regnskapssystemet og
+rapportere inn på nytt.
+
+[![nsp-laast-i-portal.png](../../static/download/skattemeldingupersonlig/nsp-laast-i-portal.png)](../../static/download/skattemeldingupersonlig/nsp-laast-i-portal.png)
+
+Dette gjelder både for `komplett` og `ikkeKomplett` innsending.
+
+## Ikke-komplett innsending uten næringsspesifikasjon
+
+Næringsspesifikasjon som den skattepliktige selv fyller ut i skattemeldingen etter en `ikkeKomplett` innsending uten
+næringsspesifikasjon, låses ikke. En ny `ikkeKomplett` innsending kan sendes med **kun skattemeldingen**.
+Næringsspesifikasjonen skal ikke sendes med, og den forblir redigerbar for den skattepliktige.
+
+### Eksempel på flyt
+
+#### Første innsending
+
+1. SBS [henter gjeldende skattemelding](../api/innrapportering-skattemelding-utfylling.md?tab=Hent+gjeldende+skattemelding). Gjeldende er et utkast
+   uten næringsspesifikasjon.
+2. SBS legger til sine opplysninger i skattemeldingen, [validerer](../api/innrapportering-skattemelding-innsending?tab=Valideringstjenesten) og
+   sender inn via Altinn med `innsendingstype` satt til `ikkeKomplett`. Konvolutten inneholder kun skattemeldingen:
+
+```xml
+<skattemeldingOgNaeringsspesifikasjonRequest xmlns="no:skatteetaten:fastsetting:formueinntekt:skattemeldingognaeringsspesifikasjon:request:v2">
+    <dokumenter>
+        <dokument>
+            <type>skattemeldingPersonlig</type>
+            <encoding>utf-8</encoding>
+            <content>{sme_base64}</content>
+        </dokument>
+    </dokumenter>
+    <dokumentreferanseTilGjeldendeDokument>
+        <dokumenttype>skattemeldingPersonlig</dokumenttype>
+        <dokumentidentifikator>{dok_ref}</dokumentidentifikator>
+    </dokumentreferanseTilGjeldendeDokument>
+    <inntektsaar>2025</inntektsaar>
+    <innsendingsinformasjon>
+        <innsendingstype>ikkeKomplett</innsendingstype>
+        <opprettetAv>sluttbrukersystem</opprettetAv>
+        <innsendingsformaal>egenfastsetting</innsendingsformaal>
+    </innsendingsinformasjon>
+</skattemeldingOgNaeringsspesifikasjonRequest>
+```
+
+3. Den skattepliktige logger inn i skattemeldingen, fyller ut næringsspesifikasjonen og sender inn.
+   Næringsspesifikasjonen er ikke levert fra SBS, og forblir redigerbar:
+
+[![nsp-redigerbar-i-portal.png](../../static/download/skattemeldingupersonlig/nsp-redigerbar-i-portal.png)](../../static/download/skattemeldingupersonlig/nsp-redigerbar-i-portal.png)
+
+#### Ny innsending
+
+Når den skattepliktige senere starter en ny innsending fra SBS:
+
+1. SBS henter gjeldende skattemelding på nytt. Gjeldende er nå fastsatt, og responsen inneholder både
+   `skattemeldingdokument` og `naeringsspesifikasjondokument`.
+2. SBS tar utgangspunkt i skattemeldingen fra gjeldende, oppdaterer sine opplysninger og sender inn en ny
+   `ikkeKomplett`. Konvolutten skal inneholde **kun skattemeldingen**, på samme måte som ved første innsending.
+   `dokumentreferanseTilGjeldendeDokument` skal peke på den fastsatte skattemeldingen fra steg 1.
+3. Næringsspesifikasjonen fra forrige innsending benyttes videre, og forblir redigerbar for den skattepliktige.
+   Tilbakemeldingen fra innsendingen inneholder `naeringsspesifikasjonEtterBeregning`, beregnet ut fra gjeldende
+   næringsspesifikasjon.
+
+### Viktig å vite
+
+- Sendes næringsspesifikasjonen med i en `ikkeKomplett` konvolutt, regnes den som levert fra SBS og låses i
+  skattemeldingen.
+- Vi støtter ikke flere samtidige ikke-komplette innsendinger. Hvis skattepliktig har flere leverandører, så må hver ikke-komplett sendes inn som en egen innsending i portalen. Hvis det kommer en ny ikke-komplett på topp av den eksisterende, så vil innhold i den eksisterende bli forkastet.
+- Mellomlagret næringsspesifikasjon som er fylt ut i portalen vil ikke bli overskrevet av en ikke-komplett skattemelding.
+- Mellomlagret endringer i skattemeldingen *vil bli overskrevet* av en ikke-komplett skattemelding.
+
+</TabItem>
+<TabItem headerText="Asynkront API for innsending" itemKey="itemKey-6">
 <Asynkront />
 </TabItem>
 </Tabs>
