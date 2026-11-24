@@ -460,7 +460,7 @@ Tvangsforbyrdelseslovens forskrift [§ 4 Fordringshaveres innsyn i opplysninger 
 <TabItem headerText="Informasjonsmodell 3.0" itemKey="itemKey-5">
 
 ### Oversikt over endringer som er gjort i versjon 3.0 av Utleggsbegjæringen.
-1. Lagt inn nytt element forsinkelsesrente under Krav for å angi informasjon om periodisert rentesats på rentebærende krav. Dette erstatter rentebærendeKrav som er fjernet.
+1. Lagt inn nytt element forsinkelsesrente under Krav for å angi informasjon om periodisert rentesats på rentebærende krav. Dette erstatter rentebærendeKrav som er fjernet. prioritetISakFremtidigRentekrav under Forsinkelsesrente har endret navn til prioritetISakFremtidigForsinkelsesrente og er flyttet til Krav.
 2. Lagt til nytt element tilBrukIForliksrådet under Utleggsbegjæring. Innhold er kopiert fra skriftligMeddelelse minus forsendelsesmåte og mottaksadresse. skriftligMeddelelse beholdes under SærligTvangsgrunnlag, men beholder kun forsendelsesmåte og mottaksadresse.
 3. Fjernet rentekrav under Krav (ble varslet om i v2.1).
 4. Fjernet kommunenummer under AdresseFrittFormatInnland.
@@ -641,17 +641,17 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
     "kreverRettsgebyrErstattet": true,
     "prioritetISakRettsgebyr": 4,
     "prioritetISakFremtidigRentekrav": 2,
-    "kreverRenterAvRettsgebyr": true,
+    "kreverRenterAvRettsgebyr": true
   },
-  "betalingsinformasjon": {}
+  "betalingsinformasjon": {
     "betalingsmottaker": {
       "landkodeIdentifikator": "NO",
-      "taxIdentificationNumber": "312597772",
+      "taxIdentificationNumber": "312597772"
     },
     "norskKonto": true,
     "kidnummer": "2509937609",
     "kontoinformasjon": {
-      "kontonummer": "69930570044",
+      "kontonummer": "69930570044"
     }
   },
   "saksoeker": [
@@ -660,7 +660,7 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
         "virksomhet": {
           "navn": "AKUSTISK UKLAR TIGER AS",
           "identifikator": {
-            "taxIdentificationNumber": "314441052"
+            "taxIdentificationNumber": "314441052",
             "landkodeIdentifikator": "NO"
           }
         }
@@ -774,13 +774,13 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 		"prioritetISak": 1,
 		"kravdetaljer": "Hovedkrav",
 		"kravbeskrivelse": "Terminbeløp",
+		"prioritetISakFremtidigForsinkelsesrente": 2,
 		"forsinkelsesrente": [
 			{
 				"rentesatsperiode": {
 					"fraOgMedDato": "2026-04-01"
 				},
-				"avtaltRentesats": 18.0,
-				"prioritetISakFremtidigRentekrav": 2
+				"avtaltRentesats": 18.0
 			}
 		]
 	  },
@@ -801,13 +801,13 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 		"prioritetISak": 1,
 		"kravdetaljer": "Hovedkrav",
 		"kravbeskrivelse": "Terminbeløp",
+		"prioritetISakFremtidigForsinkelsesrente": 2,
 		"forsinkelsesrente": [
 			{
 				"rentesatsperiode": {
 					"fraOgMedDato": "2026-05-01"
 				},
-				"avtaltRentesats": 18.0,
-				"prioritetISakFremtidigRentekrav": 2
+				"avtaltRentesats": 18.0
 			}
 		]
 	  },
@@ -828,29 +828,27 @@ Merk: Kun en av typene særlig tvangsgrunnlag kan sendes pr. tvangsgrunnlag.
 		"prioritetISak": 1,
 		"kravdetaljer": "Hovedkrav",
 		"kravbeskrivelse": "Restgjeld",
+		"prioritetISakFremtidigForsinkelsesrente": 2,
 		"forsinkelsesrente": [
 			{
 				"rentesatsperiode": {
 					"fraOgMedDato": "2026-05-26",
 					"tilOgMedDato": "2026-06-30"
 				},
-				"avtaltRentesats": 8.5,
-				"prioritetISakFremtidigRentekrav": 2
+				"avtaltRentesats": 8.5
 			},
 			{
 				"rentesatsperiode": {
-					"fraOgMedDato": "2026-06-30",
+					"fraOgMedDato": "2026-07-01",
 					"tilOgMedDato": "2026-07-02"
 				},
-				"avtaltRentesats": 7.15,
-				"prioritetISakFremtidigRentekrav": 2
+				"avtaltRentesats": 7.15
 			},
 			{
 				"rentesatsperiode": {
-					"fraOgMedDato": "2026-07-02"
+					"fraOgMedDato": "2026-07-03"
 				},
-				"avtaltRentesats": 18.0,
-				"prioritetISakFremtidigRentekrav": 2
+				"avtaltRentesats": 18.0
 			}
 		]
    	},
