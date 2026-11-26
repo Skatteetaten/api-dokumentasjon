@@ -596,27 +596,22 @@ Testdata for tjenesten kan finnes i [Tenor](../test/tenor.md) med søket for "In
 </TabItem>
 <TabItem headerText="Årsrevisjon" itemKey="itemKey-6">
 
-Årsrevisjon for nytt inntektsår i Inntekt API.
+Det er få endringer i forbindelse med revisjon for 2027 i Inntekt API.
 
 ## Tidsplan
 
 | Dato | Aktivitet |
 |------|-----------|
-| 09.12.2025 | Tidsplan for årsrevisjon er distribuert |
-| 09.12.2025 | Informasjon om nye lønnsbeskrivelser |
-| 22.01.2026 | Støtte for nye lønnsbeskrivelser i test og prod|
+| 21.01.2021 | Støtte for nye lønnsbeskrivelser i test og prod|
 | 05-10.2.2026 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
 
 ## Ny inntektsbeskrivelse tilgjengelig
-| ytelseFraOffentlige | SBL | OTP |
-| -----------------	| --- | --- |
-| ungdomsprogramytelse | x | x |
-| omstillingsstoenadEtteroppgjoer | x |  |
+| Beskrivelsestype | Teknisk navn | Visningsnavn | Beskrivelse | Gyldig fra | Blir tilgjengelig i rettighetspakker som fra før har tilgang til* |
+| --- | --- | --- |--- | --- | --- |
+| Ytelse fra offentlige | aktivitetspengerForUnge | Aktivitetspenger for unge | Innrapporterte opplysninger om forsøksordning for unge mellom 18 og 30 år som trenger hjelp fra Nav for å komme i arbeid. | 2026-09 | ungdomsprogramytelse |
+| Lønnsinntekt | jobbsjansen | Jobbsjansen | Stønad betalt av kommuner til deltakere i jobbsjansen. | 2027-01 | fastloenn |
 
-SBL=samtykkebasert lånesøknad  
-OTP=obligatorisk tjenestepensjon
-
-Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette på github](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
+* Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
 
 </TabItem>
 
