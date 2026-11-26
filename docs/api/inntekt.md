@@ -609,7 +609,7 @@ Det er få endringer i forbindelse med revisjon for 2027 i Inntekt API.
 | Beskrivelsestype | Teknisk navn | Visningsnavn | Beskrivelse | Gyldig fra | Blir tilgjengelig i rettighetspakker som fra før har tilgang til* |
 | --- | --- | --- |--- | --- | --- |
 | Ytelse fra offentlige | aktivitetspengerForUnge | Aktivitetspenger for unge | Innrapporterte opplysninger om forsøksordning for unge mellom 18 og 30 år som trenger hjelp fra Nav for å komme i arbeid. | 2026-09 | ungdomsprogramytelse |
-| Lønnsinntekt | jobbsjansen | Jobbsjansen | Stønad betalt av kommuner til deltakere i jobbsjansen. | 2027-01 | fastloenn |
+| Lønnsinntekt | jobbsjansen | Jobbsjansen | Stønad betalt av kommuner til deltakere i jobbsjansen. | 2027-01 | info kommer |
 
 * Skatteetaten har gjort tilgjengelig en selvbetjent løsning som gir virksomheter innsyn i egne rettighetspakker hos Skatteetaten: [Les mer om dette](https://skatteetaten.github.io/api-dokumentasjon/anvendelsesomraader/deling-skatteetaten#innsyn-i-rettighetspakker)
 
