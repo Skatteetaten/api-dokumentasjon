@@ -602,8 +602,8 @@ Det er få endringer i forbindelse med revisjon for 2027 i Inntekt API.
 
 | Dato | Aktivitet |
 |------|-----------|
-| 21.01.2021 | Støtte for nye lønnsbeskrivelser i test og prod|
-| 05-10.2.2026 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
+| 21.01.2027 | Støtte for nye lønnsbeskrivelser i test og prod|
+| 05-10.02.2027 | Opplysningspliktige virksomheter har frist for innrapportering til A-ordningen for januar, og nye lønnsbeskrivelser blir derfor tilgjengelig i produksjon |
 
 ## Ny inntektsbeskrivelse tilgjengelig
 | Beskrivelsestype | Teknisk navn | Visningsnavn | Beskrivelse | Gyldig fra | Blir tilgjengelig i rettighetspakker som fra før har tilgang til* |
